@@ -1,7 +1,7 @@
 {
   "name": "device-detector",
   "version": "1.0.0",
-  "description": "detect device device type:mobile,tabled,os,brand,model",
+  "description": "detect device device type:mobile,tablet,os,brand,model",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,13 +13,14 @@
   "keywords": [
     "device-detector"
   ],
-  "devDependencies": {
-    "yamljs": "^1.0.0"
-  },
+  "devDependencies": {},
   "author": "sanchezzzhak",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sanchezzzhak/node-device-detector/issues"
   },
-  "homepage": "https://github.com/sanchezzzhak/node-device-detector#readme"
+  "homepage": "https://github.com/sanchezzzhak/node-device-detector#readme",
+  "dependencies": {
+    "yamljs": "^0.2.8"
+  }
 }
