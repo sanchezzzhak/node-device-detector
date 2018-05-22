@@ -13,7 +13,6 @@
   "keywords": [
     "device-detector"
   ],
-  "devDependencies": {},
   "author": "sanchezzzhak",
   "license": "MIT",
   "bugs": {
@@ -22,5 +21,14 @@
   "homepage": "https://github.com/sanchezzzhak/node-device-detector#readme",
   "dependencies": {
     "yamljs": "^0.2.8"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^4.0.2",
+    "faker": "^4.1.0",
+    "mocha": "^3.4.2",
+    "nock": "^9.2.6",
+    "nyc": "^11.8.0",
+    "sinon": "^4.5.0"
   }
 }
