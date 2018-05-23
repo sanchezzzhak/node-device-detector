@@ -1,62 +1,38 @@
 const detector = new (require('../index'));
 
-// var user_agents =  [
-//     "Mozilla/5.0 (Linux; U; Android 4.1.2; zh-CN; Amaze 4G Build/JZO54K) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.5.0.360 U3/0.8.0 Mobile Safari/533.1"
-// ];
-//
-// for(var i= 0, l = user_agents.length; i < l; i++){
-//    console.dir());
-// }
-//
-//
-// const should = require('chai').should;
-// const assert = require('chai').assert;
-// const expect = require('chai').expect;
-// const async = require('async');
+
+const should = require('chai').should;
+const assert = require('chai').assert;
+const expect = require('chai').expect;
+
 //
 const fs = require('fs');
 const YML = require('yamljs');
 
 let ymlFiles = [];
-let fixtureFolder = __dirname + '/fixtures/tests';
+let fixtureFolder = __dirname + '/fixtures/tests/';
+
+ymlFiles = fs.readdirSync(fixtureFolder);
 
 
+describe('tests from fixtures' , function () {
+    this.timeout(6000);
 
-describe('tests from fixtures', function () {
-    
-    fs.readdir(fixtureFolder, (err, files) => {
-        files.forEach(file => {
-            console.log(file);
-            ymlFiles.push(file);
+
+    ymlFiles.forEach(function(file) {
+        describe('file fixture ' + file, function(){
+            let fixtureData = YML.load(fixtureFolder + file);
+            let total = fixtureData.length;
+            fixtureData.forEach(function (fixture, pos) {
+                it(pos + '/' + total, () => {
+                    let result = detector.detect(fixture.user_agent);
+                    console.log(result);
+
+                })
+            });
+
         });
-    });
-
-
-    before(function(done){
-
-        console.log(ymlFiles);
-        done();
-    });
-
-    for(let i, l = ymlFiles.length; i < l; i++){
-
-    }
-
-    // describe('file ' + ymlFiles[i], function(){
-    //     let fixtureData = YML.load(fixtureFolder + file);
-    //
-    // });
-    // it('1', () => {})
-
-
+    })
 
 
 });
-
-
-//
-// $clientInfo = $dd->getClient(); // holds information about browser, feed reader, media player, ...
-// $osInfo = $dd->getOs();
-// $device = $dd->getDevice();
-// $brand = $dd->getBrandName();
-// $model = $dd->getModel();

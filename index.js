@@ -2,10 +2,11 @@ module.exports = DeviceDetector;
 module.exports.DeviceDetector = DeviceDetector;
 
 const YAML = require('yamljs');
-
+//const XRegExp = require('xregexp')
 
 function getBaseRegExp(str) {
     str = str.replace(new RegExp('/', 'g'), '\\/');
+    str = str.replace(new RegExp('\\+\\+', 'g'), '+');
     str = '(?:^|[^A-Z0-9\-_]|[^A-Z0-9\-]_|sprd-)(?:' + str + ')';
     return new RegExp(str, 'i');
 }
@@ -64,8 +65,16 @@ DeviceDetector.prototype.buildByMatch = function (item, matches) {
 
 DeviceDetector.prototype.findBrand = function (user_agent) {
     for (let key in this.brand_collection) {
-        let regex = getBaseRegExp(this.brand_collection[key]['regex']), match;
-        if (match = regex.exec(user_agent)) {
+
+        let regex;
+        let match;
+        try {
+            regex = getBaseRegExp(this.brand_collection[key]['regex']);
+            match = regex.exec(user_agent)
+        }catch (e){
+            return [];
+        }
+        if (match) {
             let model = null;
             for (let i = 0, l = this.brand_collection[key]['models'].length; i < l; i++) {
                 let data = this.brand_collection[key]['models'][i];
@@ -82,7 +91,7 @@ DeviceDetector.prototype.findBrand = function (user_agent) {
             };
         }
     }
-    return [];
+    return {};
 };
 
 DeviceDetector.prototype.findBrowser = function (user_agent) {
