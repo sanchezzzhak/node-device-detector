@@ -45,15 +45,18 @@ DeviceDetector.prototype.loadBrandCollection = function () {
     this.brand_collection = YAML.load(path);
 };
 
+DeviceDetector.prototype.fixStringName = function (result) {
+    return result.replace(new RegExp('_', 'g'), ' ').replace(/ TD$/i, '');
+};
 
 DeviceDetector.prototype.buildModel = function (model, matches) {
-    model = this.buildByMatch(model, matches).replace('_', ' ').replace('/ TD$/i', '');
+    model = this.fixStringName(this.buildByMatch(model, matches));
     return (model === 'Build') ? null : model;
 };
 
 DeviceDetector.prototype.buildByMatch = function (item, matches) {
     for (let nb = 1; nb <= 3; nb++) {
-        if (item.indexOf('$' + nb) == -1) {
+        if (item.indexOf('$' + nb) === -1) {
             continue;
         }
         let replace = (matches[nb] !== undefined) ? matches[nb] : '';
@@ -63,31 +66,36 @@ DeviceDetector.prototype.buildByMatch = function (item, matches) {
 };
 
 
-DeviceDetector.prototype.findBrand = function (user_agent) {
-    for (let key in this.brand_collection) {
+DeviceDetector.prototype.findDevice = function (userAgent) {
 
-        let regex;
-        let match;
-        try {
-            regex = getBaseRegExp(this.brand_collection[key]['regex']);
-            match = regex.exec(user_agent)
-        }catch (e){
-            return [];
-        }
+
+    for (let brand in this.brand_collection) {
+        
+        let match = getBaseRegExp(this.brand_collection[brand]['regex']).exec(userAgent);
+        let deviceType = this.brand_collection[brand]['device'];
+        let model = '';
+
         if (match) {
-            let model = null;
-            for (let i = 0, l = this.brand_collection[key]['models'].length; i < l; i++) {
-                let data = this.brand_collection[key]['models'][i];
-                let model_preg = getBaseRegExp(data.regex), model_match;
-                if (model_match = model_preg.exec(user_agent)) {
-                    model = this.buildModel(data.model, model_match);
-                    break;
+            if(this.brand_collection[brand]['models']!==undefined){
+                let models = this.brand_collection[brand]['models'];
+                for (let i = 0, l = models.length; i < l; i++) {
+                    let data = models[i];
+                    let modelMatch = getBaseRegExp(data.regex).exec(userAgent);
+                    if (modelMatch) {
+                        model = this.buildModel(data.model, modelMatch);
+                        if (data.device !== undefined) {
+                            deviceType = data.device;
+                        }
+                        break;
+                    }
                 }
+            }else if(this.brand_collection[brand]['model']!==undefined){
+                model = this.buildModel(this.brand_collection[brand]['model'], match);
             }
             return {
-                name: key,
-                model: model,
-                device: this.brand_collection[key].device
+                brand: String(brand).trim(),
+                model: String(model).trim(),
+                type: deviceType
             };
         }
     }
@@ -100,8 +108,11 @@ DeviceDetector.prototype.findBrowser = function (user_agent) {
         let match;
         if (match = regex.exec(user_agent)) {
             let browser = this.browser_collection[i].name;
+            let version =  this.browser_collection[i].version;
+            version =  version.length > 0 ? this.buildByMatch(version, match) : '';
             return {
-                name: browser
+                name: browser,
+                version: version
             }
         }
     }
@@ -113,24 +124,31 @@ DeviceDetector.prototype.findOs = function (user_agent) {
         let regex = getBaseRegExp(this.os_collection[i].regex);
         let match;
         if (match = regex.exec(user_agent)) {
-            let os = this.os_collection[i].name;
+            let name = this.os_collection[i].name;
+            let version =  this.os_collection[i].version;
+            version =  version.length > 0 ? this.buildByMatch(version, match) : '';
             return {
-                name: os
+                name: name,
+                version: version
             }
         }
     }
-    return [];
+    return {};
 };
 
 DeviceDetector.prototype.detect = function (user_agent) {
-    let browser_data = this.findBrowser(user_agent);
-    let os_data = this.findOs(user_agent);
-    let brand_data = this.findBrand(user_agent);
+    let browserData = this.findBrowser(user_agent);
+    let osData = this.findOs(user_agent);
+    let deviceData = this.findDevice(user_agent);
 
     return {
-        brand: brand_data,
-        os: os_data,
-        browser: browser_data
+        device: {
+            brand: deviceData.brand,
+            model: deviceData.model,
+            type: deviceData.type,
+        },
+        os: osData,
+        browser: browserData
     }
 
 };
