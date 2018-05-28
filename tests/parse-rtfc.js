@@ -17,7 +17,8 @@
 
 const DeviceDetector = require('./../index');
 
-let userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+//let userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+let userAgent = 'Mozilla/5.0 (Linux; Android 7.0; Moto C Plus Build/NRD90M.01.033) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36';
 let detector = new DeviceDetector;
 let result = detector.detect(userAgent);
 

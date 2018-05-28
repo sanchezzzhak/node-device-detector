@@ -29,8 +29,6 @@ const expect = require('chai').expect;
 */
 
 
-
-
 const fs = require('fs');
 const YML = require('yamljs');
 const util = require('util');
@@ -41,12 +39,12 @@ let fixtureFolder = __dirname + '/fixtures/tests/';
 ymlFiles = fs.readdirSync(fixtureFolder);
 
 
-describe('tests from fixtures' , function () {
+describe('tests from fixtures', function () {
     this.timeout(6000);
 
 
-    ymlFiles.forEach(function(file) {
-        describe('file fixture ' + file, function(){
+    ymlFiles.forEach(function (file) {
+        describe('file fixture ' + file, function () {
             let fixtureData = YML.load(fixtureFolder + file);
             let total = fixtureData.length;
             fixtureData.forEach(function (fixture, pos) {
@@ -54,7 +52,7 @@ describe('tests from fixtures' , function () {
                     let result;
                     try {
                         result = detector.detect(fixture.user_agent);
-                    } catch (e){
+                    } catch (e) {
                         console.log('error parse', fixture.user_agent);
                         throw new SyntaxError(e.stack);
                     }
@@ -63,15 +61,9 @@ describe('tests from fixtures' , function () {
                     expect(result.device.model, messageError).to.equal(String(fixture.device.model));
                     expect(result.device.type, messageError).to.equal(String(fixture.device.type));
 
-                    expect(result.os, messageError).to.deep.equal({
-                        name: fixture.os.name,
-                        version: fixture.os.version,
-                    });
 
-                    expect(result.browser, messageError).to.deep.equal({
-                        name: fixture.client.name,
-                        version: fixture.client.version,
-                    });
+                    expect(fixture.os, messageError).to.have.deep.equal(result.os);
+                    expect(fixture.client, messageError).to.have.deep.equal(result.client);
                 })
             });
 
