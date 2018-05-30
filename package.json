@@ -1,7 +1,7 @@
 {
-  "name": "device-detector",
+  "name": "node-device-detector",
   "version": "1.0.0",
-  "description": "detect device device type:mobile,tablet,os,brand,model",
+  "description": "Nodejs device detector (port Piwik)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,12 @@
     "url": "git+https://github.com/sanchezzzhak/node-device-detector.git"
   },
   "keywords": [
-    "device-detector"
+    "device-detector",
+	"detect mobile", 
+	"detect tablet",
+	"detect os",
+	"detect device brand", 
+	"detect device model"
   ],
   "author": "sanchezzzhak",
   "license": "MIT",
