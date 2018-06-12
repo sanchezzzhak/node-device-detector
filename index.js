@@ -80,6 +80,7 @@ DeviceDetector.prototype.buildModel = function (model, matches) {
 };
 
 DeviceDetector.prototype.buildByMatch = function (item, matches) {
+  item = item.toString();
   if (item.indexOf('$') !== -1) {
     for (let nb = 1; nb <= 3; nb++) {
       if (item.indexOf('$' + nb) === -1) {
@@ -214,26 +215,27 @@ DeviceDetector.prototype.detect = function (user_agent) {
   let osData = this.findOs(user_agent);
   let clientData = this.findApp(user_agent);
   let deviceData = this.findDevice(user_agent);
-
+  let ret = {
+    os: osData
+  };
 
   if (clientData.name === undefined) {
     clientData = this.findBrowser(user_agent);
-  }
-
-  return {
-    os: osData,
-    client: {
+    ret.client = {
       name: clientData.name,
       version: clientData.version,
       type: clientData.type
-    },
-    device: {
+    };
+  }
+  if (deviceData) {
+    ret.device = {
       brand: deviceData.brand,
       model: deviceData.model,
       type: deviceData.type,
-    }
+    };
   }
 
+  return ret;
 };
 
 
