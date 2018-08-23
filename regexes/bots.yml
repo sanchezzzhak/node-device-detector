@@ -53,6 +53,14 @@
     name: 'Alexa Internet'
     url: 'http://www.alexa.com'
 
+- regex: 'alexa site audit'
+  name: 'Alexa Site Audit'
+  category: 'Site Monitor'
+  url: 'http://www.alexa.com/help/webmasters'
+  producer:
+    name: 'Alexa Internet'
+    url: 'http://www.alexa.com'
+
 - regex: 'AmorankSpider'
   name: 'Amorank Spider'
   category: 'Crawler'
@@ -931,7 +939,15 @@
   producer:
     name: 'Pingdom AB'
     url: 'https://www.pingdom.com'
-    
+
+- regex: 'Quora Link Preview'
+  name: 'Quora Link Preview'
+  category: 'Crawler'
+  url: ''
+  producer:
+    name: 'Quora'
+    url: 'http://www.quora.com'
+
 - regex: 'RamblerMail'
   name: 'RamblerMail Image Proxy'
   category: 'Crawler'
@@ -1461,7 +1477,7 @@
     name: 'Yahoo! Inc.'
     url: 'http://www.yahoo.com'
 
-- regex: 'Yandex(SpravBot|ScreenshotBot|MobileBot|AccessibilityBot|ForDomain|Vertis|Market|Catalog|Calendar|Sitelinks|AdNet|Pagechecker|Webmaster|Media|Video|Bot|Images|Antivirus|Direct|Blogs|Favicons|ImageResizer|News(links)?|Metrika|\.Gazeta Bot)|YaDirectFetcher'
+- regex: 'Yandex(SpravBot|ScreenshotBot|MobileBot|AccessibilityBot|ForDomain|Vertis|Market|Catalog|Calendar|Sitelinks|AdNet|Pagechecker|Webmaster|Media|Video|Bot|Images|Antivirus|Direct|Blogs|Favicons|ImageResizer|Verticals|News(links)?|Metrika|\.Gazeta Bot)|YaDirectFetcher'
   name: 'Yandex Bot'
   category: 'Search bot'
   url: 'http://www.yandex.com/bots'
@@ -1681,5 +1697,5 @@
     name: 'The Apache Software Foundation'
     url: 'http://www.apache.org/foundation/'
 
-- regex: '[a-z0-9\-_]*((?<!cu|power )bot(?! TAB| ?5[0-9])|crawler|crawl|checker|archiver|transcoder|spider)([^a-z]|$)'
+- regex: '[a-z0-9\-_]*((?<!cu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9])|crawler|crawl|checker|archiver|transcoder|spider)([^a-z]|$)'
   name: 'Generic Bot'
