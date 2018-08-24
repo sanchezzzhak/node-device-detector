@@ -6,7 +6,26 @@ const YAML = require('yamljs');
 const BASE_REGEXES_DIR = __dirname + '/regexes';
 const BASE_DATA_DIR = __dirname + '/data';
 
+const CLIENT_TYPE = {
+  MOBILE_APP: 'mobile app'
+};
+
+const DEVICE_TYPE = {
+  DESKTOP: 'desktop',
+  SMARTPHONE: 'smartphone',
+  TABLET: 'tablet',
+  FEATURE_PHONE: 'feature phone',
+  CONSOLE: 'console',
+  TV: 'tv',
+  CAR_BROWSER: 'car browser',
+  SMART_DISPLAY: 'smart display',
+  CAMERA: 'camera',
+  PORTABLE_MEDIA_PAYER: 'portable media player',
+  PHABLET: 'phablet',
+};
+
 /**
+ * helper prepare version
  * @param ver1
  * @param ver2
  * @return {boolean}
@@ -17,6 +36,11 @@ function versionCompare(ver1, ver2) {
   return ver1 <= ver2;
 }
 
+/**
+ * helper prepare base regExp + part regExp
+ * @param str
+ * @return {RegExp}
+ */
 function getBaseRegExp(str) {
   str = str.replace(new RegExp('/', 'g'), '\\/');
   str = str.replace(new RegExp('\\+\\+', 'g'), '+');
@@ -24,6 +48,10 @@ function getBaseRegExp(str) {
   return new RegExp(str, 'i');
 }
 
+/**
+ * @param options
+ * @constructor
+ */
 function DeviceDetector(options) {
 
   this.browser_collection = [];
@@ -40,6 +68,9 @@ function DeviceDetector(options) {
   this.init();
 }
 
+/**
+ * load collections
+ */
 DeviceDetector.prototype.init = function() {
   this.loadAppCollection();
   this.loadBrowserCollection();
@@ -52,7 +83,6 @@ DeviceDetector.prototype.init = function() {
  *  Collections
  *  ===================================
  */
-
 
 DeviceDetector.prototype.loadAppCollection = function () {
   this.app_collection = YAML.load(BASE_REGEXES_DIR + '/client/mobile_apps.yml');
@@ -183,15 +213,15 @@ DeviceDetector.prototype.buildByMatch = function (item, matches) {
  * @return {*}
  */
 DeviceDetector.prototype.findDevice = function (userAgent) {
-  for (let brand in this.device_collection) {
-
-    let match = getBaseRegExp(this.device_collection[brand]['regex']).exec(userAgent);
-    let deviceType = this.device_collection[brand]['device'];
-    let model = '';
-
+  let model = '';
+  let brand = '';
+  let deviceType = '';
+  for (let cursor in this.device_collection) {
+    let match = getBaseRegExp(this.device_collection[cursor]['regex']).exec(userAgent);
     if (match) {
-      if (this.device_collection[brand]['models'] !== undefined) {
-        let models = this.device_collection[brand]['models'];
+      deviceType = this.device_collection[cursor]['device'];
+      if (this.device_collection[cursor]['models'] !== undefined) {
+        let models = this.device_collection[cursor]['models'];
         for (let i = 0, l = models.length; i < l; i++) {
           let data = models[i];
           let modelMatch = getBaseRegExp(data.regex).exec(userAgent);
@@ -203,18 +233,28 @@ DeviceDetector.prototype.findDevice = function (userAgent) {
             break;
           }
         }
-      } else if (this.device_collection[brand]['model'] !== undefined) {
-        model = this.buildModel(this.device_collection[brand]['model'], match);
+      } else if (this.device_collection[cursor]['model'] !== undefined) {
+        model = this.buildModel(this.device_collection[cursor]['model'], match);
       }
-      return {
-        brand: String(brand).trim(),
-        model: String(model).trim(),
-        type: deviceType
-      };
+
+      brand = String(cursor).trim();
+      model = String(model).trim();
+      break;
     }
   }
-  return null;
+
+  if(deviceType === ''){
+    deviceType = this.findDeviceType(userAgent)
+  }
+
+  return {
+    brand: brand,
+    model: model,
+    type: deviceType
+  };
 };
+
+
 
 /**
  *
@@ -225,12 +265,12 @@ DeviceDetector.prototype.findApp = function (userAgent) {
   for (let i = 0, l = this.app_collection.length; i < l; i++) {
     let item = this.app_collection[i];
     let regex = getBaseRegExp(item.regex);
-    let match;
-    if (match = regex.exec(userAgent)) {
+    let match  = regex.exec(userAgent);
+    if (match !== null ) {
       return {
         name: this.buildByMatch(item.name, match),
         version: this.buildVersion(item.version, match),
-        type: 'mobile app'
+        type: CLIENT_TYPE.MOBILE_APP
       }
     }
   }
@@ -335,27 +375,65 @@ DeviceDetector.prototype.findPlatform = function (userAgent) {
   return '';
 };
 
+/**
+ * has check userAgent fragment is android tabled
+ * @param {String} userAgent
+ * @return {Boolean}
+ */
+DeviceDetector.prototype.isAndroidTable = function(userAgent){
+  let regex =  'Android( [\.0-9]+)?; Tablet;';
+  let match = getBaseRegExp(regex).exec(userAgent);
+  return match !== null;
+};
 
-DeviceDetector.prototype.detect = function (user_agent) {
-  let osData = this.findOs(user_agent);
-  let clientData = this.findApp(user_agent);
-  let deviceData = this.findDevice(user_agent);
-  let ret = {
-    os: osData
-  };
+/**
+ * has check userAgent fragment is android mobile
+ * @param {String} userAgent
+ * @return {Boolean}
+ */
+DeviceDetector.prototype.isAndroidMobile = function(userAgent){
+  let regex = 'Android( [\.0-9]+)?; Mobile;';
+  let match = getBaseRegExp(regex).exec(userAgent);
+  return match !== null;
+};
+/**
+ * find devuce type
+ * @param userAgent
+ * @return {string}
+ */
+DeviceDetector.prototype.findDeviceType = function (userAgent) {
+  if(this.isAndroidMobile(userAgent)){
+    return DEVICE_TYPE.SMARTPHONE;
+  }
+  if(this.isAndroidTable(userAgent)){
+    return DEVICE_TYPE.TABLET;
+  }
+  return '';
+};
 
+/**
+ *
+ * @param {String} userAgent
+ * @return {{}}
+ */
+DeviceDetector.prototype.detect = function (userAgent) {
+  let osData = this.findOs(userAgent);
+  let clientData = this.findApp(userAgent);
+  let deviceData = this.findDevice(userAgent);
+
+  let result = {};
+  if (osData) {
+    result.os = osData;
+  }
+  // is app not found then find browser
   if (clientData.name === undefined) {
-    ret.client = this.findBrowser(user_agent);
+    result.client = this.findBrowser(userAgent);
+  }else {
+    result.client = clientData;
   }
-  if (deviceData) {
-    ret.device = {
-      brand: deviceData.brand,
-      model: deviceData.model,
-      type: deviceData.type,
-    };
-  }
+  result.device = deviceData;
 
-  return ret;
+  return result;
 };
 
 
