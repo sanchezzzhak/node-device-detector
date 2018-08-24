@@ -80,6 +80,7 @@ DeviceDetector.prototype.buildModel = function (model, matches) {
 };
 
 DeviceDetector.prototype.buildByMatch = function (item, matches) {
+  item = item || '';
   item = item.toString();
   if (item.indexOf('$') !== -1) {
     for (let nb = 1; nb <= 3; nb++) {
@@ -134,12 +135,12 @@ DeviceDetector.prototype.findApp = function (userAgent) {
     let item = this.app_collection[i];
     let regex = getBaseRegExp(item.regex);
     let match;
-    if (match = regex.exec(userAgent)) {
+    if ((match = regex.exec(userAgent))) {
       return {
         name: this.buildByMatch(item.name, match),
         version: this.buildVersion(item.version, match),
         type: 'mobile app'
-      }
+      };
     }
   }
   return {};
@@ -151,12 +152,12 @@ DeviceDetector.prototype.findBrowser = function (user_agent) {
     let item = this.browser_collection[i];
     let regex = getBaseRegExp(item.regex);
     let match;
-    if (match = regex.exec(user_agent)) {
+    if ((match = regex.exec(user_agent))) {
       return {
         name: this.buildByMatch(item.name, match),
         version: this.buildVersion(item.version, match),
         type: 'browser'
-      }
+      };
     }
   }
   return null;
@@ -172,7 +173,7 @@ DeviceDetector.prototype.findOs = function (userAgent) {
     let item = this.os_collection[i];
     let regex = getBaseRegExp(item.regex);
     let match;
-    if (match = regex.exec(userAgent)) {
+    if ((match = regex.exec(userAgent))) {
 
       let name = this.buildByMatch(item.name, match);
       let short = 'UNK';
@@ -190,7 +191,7 @@ DeviceDetector.prototype.findOs = function (userAgent) {
         version: this.buildVersion(item.version, match),
         platform: this.findPlatform(userAgent),
         short_name: short
-      }
+      };
     }
   }
   return null;
@@ -215,17 +216,21 @@ DeviceDetector.prototype.detect = function (user_agent) {
   let osData = this.findOs(user_agent);
   let clientData = this.findApp(user_agent);
   let deviceData = this.findDevice(user_agent);
-  let ret = {
-    os: osData
-  };
+  let ret = {};
+
+  if (osData) {
+    ret.os = osData;
+  }
 
   if (clientData.name === undefined) {
     clientData = this.findBrowser(user_agent);
-    ret.client = {
-      name: clientData.name,
-      version: clientData.version,
-      type: clientData.type
-    };
+    if (clientData) {
+      ret.client = {
+        name: clientData.name,
+        version: clientData.version,
+        type: clientData.type
+      };
+    }
   }
   if (deviceData) {
     ret.device = {
