@@ -24,6 +24,48 @@ const DEVICE_TYPE = {
   PHABLET: 'phablet',
 };
 
+const OS_ANDROID = 'Android';
+const OS_DESKTOP = [
+  'AmigaOS',
+  'IBM',
+  'GNU/Linux',
+  'Mac',
+  'Unix',
+  'Windows',
+  'BeOS',
+  'Chrome OS'
+];
+const UNKNOWN = 'UNK';
+/**
+ *  ===================================
+ *  JsDocs: Structure data result
+ *  ===================================
+ /**
+ * @typedef {Object} DeviceDataObject
+ * @property {String} type
+ * @property {String} brand
+ * @property {String} model
+ *
+ * @typedef {Object} AppDataObject
+ * @property {String} name
+ * @property {String} version
+ * @property {String} type
+ *
+ * @typedef {Object} ClientDataObject
+ * @property {String} type
+ * @property {String} name
+ * @property {String} short_name
+ * @property {String} version
+ * @property {String} engine
+ * @property {String} engine_version
+ *
+ * @typedef {Object} OsDataObject
+ * @property {String} name
+ * @property {String} short_name
+ * @property {String} version
+ * @property {String} platform
+ */
+
 /**
  * helper prepare version
  * @param ver1
@@ -53,6 +95,10 @@ function getBaseRegExp(str) {
  * @constructor
  */
 function DeviceDetector(options) {
+
+  this.osData = null;
+  this.clientData = null;
+  this.deviceData = null;
 
   this.browser_collection = [];
   this.browser_shorts_collection= [];
@@ -110,7 +156,7 @@ DeviceDetector.prototype.loadBrandCollection = function () {
 
 /**
  *  ===================================
- *  Helper methods find
+ *  helpers
  *  ===================================
  */
 
@@ -208,9 +254,8 @@ DeviceDetector.prototype.buildByMatch = function (item, matches) {
 };
 
 /**
- *
  * @param userAgent
- * @return {*}
+ * @return {DeviceDataObject}
  */
 DeviceDetector.prototype.findDevice = function (userAgent) {
   let model = '';
@@ -236,7 +281,6 @@ DeviceDetector.prototype.findDevice = function (userAgent) {
       } else if (this.device_collection[cursor]['model'] !== undefined) {
         model = this.buildModel(this.device_collection[cursor]['model'], match);
       }
-
       brand = String(cursor).trim();
       model = String(model).trim();
       break;
@@ -255,11 +299,10 @@ DeviceDetector.prototype.findDevice = function (userAgent) {
 };
 
 
-
 /**
  *
  * @param userAgent
- * @return {*}
+ * @return {AppDataObject|*}
  */
 DeviceDetector.prototype.findApp = function (userAgent) {
   for (let i = 0, l = this.app_collection.length; i < l; i++) {
@@ -274,7 +317,7 @@ DeviceDetector.prototype.findApp = function (userAgent) {
       }
     }
   }
-  return {};
+  return null;
 };
 
 /**
@@ -290,12 +333,9 @@ DeviceDetector.prototype.findBrowser = function (userAgent) {
     if (match = regex.exec(userAgent)) {
       let name = this.buildByMatch(item.name, match);
       let version = this.buildVersion(item.version, match);
-      let short = 'UNK';
+      let short = UNKNOWN;
       let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
       if (engine === '') {
-
-        console.log('empty engine', item);
-
         for(let i=0, l =this.browser_engine_collection.length; i < l; i++){
           let engineItem = this.browser_engine_collection[i];
           if (this.buildByMatch(engineItem.regex, match)) {
@@ -325,10 +365,9 @@ DeviceDetector.prototype.findBrowser = function (userAgent) {
   return null;
 };
 
-
 /**
  * @param userAgent
- * @return {{name: string, version: string, platform: string, short_name: string}}|null
+ * @return {OsDataObject|*}
  */
 DeviceDetector.prototype.findOs = function (userAgent) {
   for (let i = 0, l = this.os_collection.length; i < l; i++) {
@@ -336,10 +375,8 @@ DeviceDetector.prototype.findOs = function (userAgent) {
     let regex = getBaseRegExp(item.regex);
     let match;
     if (match = regex.exec(userAgent)) {
-
       let name = this.buildByMatch(item.name, match);
-      let short = 'UNK';
-
+      let short = UNKNOWN;
       for(let key in this.os_systems){
         if (String(name).toLowerCase() === String(this.os_systems[key]).toLowerCase()) {
           name = this.os_systems[key];
@@ -381,7 +418,18 @@ DeviceDetector.prototype.findPlatform = function (userAgent) {
  * @return {Boolean}
  */
 DeviceDetector.prototype.isAndroidTable = function(userAgent){
-  let regex =  'Android( [\.0-9]+)?; Tablet;';
+  let regex =  'Android( [\.0-9]+)?;.*Tablet;';
+  let match = getBaseRegExp(regex).exec(userAgent);
+  return match !== null;
+};
+
+/**
+ * has check userAgent fragment is opera table
+ * @param {String} userAgent
+ * @return {Boolean}
+ */
+DeviceDetector.prototype.isOperaTablet = function(userAgent){
+  let regex =  'Opera Tablet';
   let match = getBaseRegExp(regex).exec(userAgent);
   return match !== null;
 };
@@ -392,48 +440,82 @@ DeviceDetector.prototype.isAndroidTable = function(userAgent){
  * @return {Boolean}
  */
 DeviceDetector.prototype.isAndroidMobile = function(userAgent){
-  let regex = 'Android( [\.0-9]+)?; Mobile;';
+  let regex = 'Android( [\.0-9]+)?;.*Mobile;';
   let match = getBaseRegExp(regex).exec(userAgent);
   return match !== null;
 };
+
 /**
- * find devuce type
+ * find device type
  * @param userAgent
  * @return {string}
  */
 DeviceDetector.prototype.findDeviceType = function (userAgent) {
-  if(this.isAndroidMobile(userAgent)){
-    return DEVICE_TYPE.SMARTPHONE;
+  let osData = this.osData;
+  if(osData === null){
+    let osData = this.findOs(userAgent);
+  }
+  if(osData.hasOwnProperty('name') && osData.name === OS_ANDROID){
+    if (getBaseRegExp('Chrome/[\.0-9]* Mobile').exec(userAgent)!==null) {
+      return DEVICE_TYPE.SMARTPHONE;
+    } else if (getBaseRegExp('Chrome/[\.0-9]* (?!Mobile)').exec(userAgent)!==null) {
+      return DEVICE_TYPE.TABLET;
+    }
+  }
+  if(this.isOperaTablet(userAgent)){
+    return DEVICE_TYPE.TABLET;
   }
   if(this.isAndroidTable(userAgent)){
     return DEVICE_TYPE.TABLET;
+  }
+  if(this.isAndroidMobile(userAgent)){
+    return DEVICE_TYPE.SMARTPHONE;
+  }
+
+  if(osData.hasOwnProperty('name') && osData.name === OS_ANDROID){
+    if (!versionCompare(osData.version, '2.0')) {
+      return DEVICE_TYPE.SMARTPHONE;
+    } else if (versionCompare(osData.version, '3.0') && !versionCompare(osData.version, '4.0')) {
+      return DEVICE_TYPE.TABLET;
+    }
+  }
+
+  if(OS_DESKTOP.indexOf(osData.name) !== -1){
+    return DEVICE_TYPE.DESKTOP;
   }
   return '';
 };
 
 /**
+ * reset last search result
+ */
+DeviceDetector.prototype.reset = function(){
+  this.osData = null;
+  this.clientData = null;
+  this.deviceData = null;
+};
+
+/**
  *
  * @param {String} userAgent
- * @return {{}}
+ * @return {*}
  */
 DeviceDetector.prototype.detect = function (userAgent) {
-  let osData = this.findOs(userAgent);
-  let clientData = this.findApp(userAgent);
-  let deviceData = this.findDevice(userAgent);
+  this.reset();
 
-  let result = {};
-  if (osData) {
-    result.os = osData;
-  }
+  this.osData = this.findOs(userAgent);
+  this.clientData = this.findApp(userAgent);
+  this.deviceData = this.findDevice(userAgent);
+
   // is app not found then find browser
-  if (clientData.name === undefined) {
-    result.client = this.findBrowser(userAgent);
-  }else {
-    result.client = clientData;
+  if (this.clientData === null) {
+    this.clientData = this.findBrowser(userAgent);
   }
-  result.device = deviceData;
-
-  return result;
+  return {
+    os: this.osData,
+    client: this.clientData,
+    device: this.deviceData
+  };
 };
 
 
