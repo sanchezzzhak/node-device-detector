@@ -71,7 +71,7 @@ const UNKNOWN = 'UNK';
  * helper prepare version
  * @param ver1
  * @param ver2
- * @return {boolean}
+ * @return {Number}
  */
 function versionCompare(ver1, ver2) {
   if (ver1 === ver2) {
@@ -79,7 +79,7 @@ function versionCompare(ver1, ver2) {
   }
   let left = ver1.split(".");
   let right = ver2.split(".");
-  var len = Math.min(left.length, right.length);
+  let len = Math.min(left.length, right.length);
   for (let i = 0; i < len; i++) {
     if (parseInt(left[i]) > parseInt(right[i])) {
       return 1;

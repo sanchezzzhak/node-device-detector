@@ -47,7 +47,7 @@ describe('tests from fixtures', function () {
     describe('file fixture ' + file, function () {
       let fixtureData = YML.load(fixtureFolder + file);
       let total = fixtureData.length;
-      //fixtureData= [  fixtureData[34] ];
+      //fixtureData= [  fixtureData[208] ];
       fixtureData.forEach(function (fixture, pos) {
         it(pos + '/' + total, () => {
           let result;
@@ -67,7 +67,7 @@ describe('tests from fixtures', function () {
             expect(result.device.type, messageError).to.equal(String(fixture.device.type));
           }
           // test os data
-          if (fixture.os !== undefined) {
+          if (fixture.os !== undefined && typeof fixture.os === 'Object')  {
             expect(result.os, messageError).to.have.deep.equal(fixture.os);
           }
           // test client data
