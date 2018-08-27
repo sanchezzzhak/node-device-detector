@@ -7,7 +7,8 @@ const BASE_REGEXES_DIR = __dirname + '/regexes';
 const BASE_DATA_DIR = __dirname + '/data';
 
 const CLIENT_TYPE = {
-  MOBILE_APP: 'mobile app'
+  MOBILE_APP: 'mobile app',
+  BROWSER: 'browser'
 };
 
 const DEVICE_TYPE = {
@@ -73,9 +74,27 @@ const UNKNOWN = 'UNK';
  * @return {boolean}
  */
 function versionCompare(ver1, ver2) {
-  ver1 = ver1.split('.').map( s => s.padStart(10) ).join('.');
-  ver2 = ver2.split('.').map( s => s.padStart(10) ).join('.');
-  return ver1 <= ver2;
+  if (ver1 === ver2) {
+    return 0;
+  }
+  let left = ver1.split(".");
+  let right = ver2.split(".");
+  var len = Math.min(left.length, right.length);
+  for (let i = 0; i < len; i++) {
+    if (parseInt(left[i]) > parseInt(right[i])) {
+      return 1;
+    }
+    if (parseInt(left[i]) < parseInt(right[i])) {
+      return -1;
+    }
+  }
+  if (left.length > right.length) {
+    return 1;
+  }
+  if (left.length < right.length) {
+    return -1;
+  }
+  return 0;
 }
 
 /**
@@ -190,7 +209,7 @@ DeviceDetector.prototype.buildVersion = function (version, matches) {
 /**
  * @param userAgent
  * @param engine
- * @return {*}
+ * @return {string}
  */
 DeviceDetector.prototype.buildEngineVersion = function(userAgent, engine){
   if(engine === ''){
@@ -211,13 +230,13 @@ DeviceDetector.prototype.buildEngineVersion = function(userAgent, engine){
  */
 DeviceDetector.prototype.buildEngine = function (engine, browserVersion) {
   let result = '';
-  if (engine.default !== undefined && engine.default !== '') {
+  if (engine.hasOwnProperty('default') && engine.default !== '') {
     result = engine.default;
   }
-  if (engine.hasOwnProperty('versions') && Array.isArray(engine.versions)) {
+  if (engine.hasOwnProperty('versions')) {
     for (let version in engine.versions) {
-      if (versionCompare(browserVersion, version) > 0) {
-        result = versionEngine;
+      if (versionCompare(browserVersion, version) >=0) {
+        result = engine.versions[version];
       }
     }
   }
@@ -320,6 +339,20 @@ DeviceDetector.prototype.findApp = function (userAgent) {
   return null;
 };
 
+DeviceDetector.prototype.findEngine = function(userAgent) {
+  let result = '';
+  for (let i = 0, l = this.browser_engine_collection.length; i < l; i++) {
+    let item = this.browser_engine_collection[i];
+    let regex = getBaseRegExp(item.regex);
+    let match = regex.exec(userAgent);
+    if (match !==null ) {
+      result = item.name;
+      break;
+    }
+  }
+  return result;
+};
+
 /**
  *
  * @param userAgent
@@ -334,23 +367,18 @@ DeviceDetector.prototype.findBrowser = function (userAgent) {
       let name = this.buildByMatch(item.name, match);
       let version = this.buildVersion(item.version, match);
       let short = UNKNOWN;
-      let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
-      if (engine === '') {
-        for(let i=0, l =this.browser_engine_collection.length; i < l; i++){
-          let engineItem = this.browser_engine_collection[i];
-          if (this.buildByMatch(engineItem.regex, match)) {
-            engine = engineItem.name;
-            break;
-          }
-        }
-      }
-      let engineVersion = this.buildEngineVersion(userAgent, engine);
+
       for (let key in this.browser_shorts_collection) {
         if (String(name).toLowerCase() === String(this.browser_shorts_collection[key]).toLowerCase()) {
           short = key;
           break;
         }
       }
+      let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
+      if(engine === ''){
+        engine = this.findEngine(userAgent);
+      }
+      let engineVersion = this.buildEngineVersion(userAgent, engine);
 
       return {
         engine: engine,
@@ -358,7 +386,7 @@ DeviceDetector.prototype.findBrowser = function (userAgent) {
         short_name: short,
         name: name,
         version: version,
-        type: 'browser'
+        type: CLIENT_TYPE.BROWSER
       }
     }
   }
