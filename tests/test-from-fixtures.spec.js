@@ -38,37 +38,58 @@ let fixtureFolder = __dirname + '/fixtures/tests/';
 
 ymlFiles = fs.readdirSync(fixtureFolder);
 
+function expectDetectByFixture(fixture){
+  let result;
+  try {
+    result = detector.detect(fixture.user_agent);
+  } catch (e) {
+    console.log('error parse', fixture.user_agent);
+    throw new SyntaxError(e.stack);
+  }
+  console.log(result);
+  let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2)
+  // test device data
+  if (fixture.device !== undefined) {
+    expect(result.device.model, messageError).to.equal(String(fixture.device.model));
+    expect(result.device.type, messageError).to.equal(String(fixture.device.type));
+  }
+  // test os data
+  if (fixture.os !== undefined && typeof fixture.os === 'Object')  {
+    expect(result.os, messageError).to.have.deep.equal(fixture.os);
+  }
+  // test client data
+  if (fixture.client !== undefined) {
+    expect(result.client, messageError).to.have.deep.equal(fixture.client);
+  }
+}
 
-describe('tests from fixtures', function () {
-    this.timeout(6000);
+// describe('tests one file', function () {
+//   let file = 'tablet.yml';
+//   let fixtureData = YML.load(fixtureFolder + file);
+//   let total = fixtureData.length;
+//     //fixtureData= [  fixtureData[208] ];
+//
+//     fixtureData.forEach(function (fixture, pos) {
+//       it(pos + '/' + total, () => {
+//         expectDetectByFixture(fixture);
+//       });
+//     });
+// });
+//
+// return;
 
-
-    ymlFiles.forEach(function (file) {
-        describe('file fixture ' + file, function () {
-            let fixtureData = YML.load(fixtureFolder + file);
-            let total = fixtureData.length;
-            fixtureData.forEach(function (fixture, pos) {
-                it(pos + '/' + total, () => {
-                    let result;
-                    try {
-                        result = detector.detect(fixture.user_agent);
-                    } catch (e) {
-                        console.log('error parse', fixture.user_agent);
-                        throw new SyntaxError(e.stack);
-                    }
-                    let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2)
-
-                    expect(result.device.model, messageError).to.equal(String(fixture.device.model));
-                    expect(result.device.type, messageError).to.equal(String(fixture.device.type));
-
-
-                    expect(fixture.os, messageError).to.have.deep.equal(result.os);
-                    expect(fixture.client, messageError).to.have.deep.equal(result.client);
-                })
-            });
-
+describe('tests', function () {
+  this.timeout(6000);
+  ymlFiles.forEach(function (file) {
+    describe('file fixture ' + file, function () {
+      let fixtureData = YML.load(fixtureFolder + file);
+      let total = fixtureData.length;
+      //fixtureData= [  fixtureData[208] ];
+      fixtureData.forEach(function (fixture, pos) {
+        it(pos + '/' + total, () => {
+          expectDetectByFixture(fixture);
         });
-    })
-
-
+      });
+    });
+  })
 });

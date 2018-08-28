@@ -4,7 +4,8 @@
   "description": "Nodejs device detector (port Piwik)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "coverage": "istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R spec tests/*.spec.js",
+    "test": "mocha -- -R spec tests/*.spec.js"
   },
   "repository": {
     "type": "git",
