@@ -64,7 +64,7 @@ function expectDetectByFixture(fixture){
 }
 
 // describe('tests one file', function () {
-//   let file = 'tablet.yml';
+//   let file = 'tv.yml';
 //   let fixtureData = YML.load(fixtureFolder + file);
 //   let total = fixtureData.length;
 //     //fixtureData= [  fixtureData[208] ];
@@ -81,6 +81,11 @@ function expectDetectByFixture(fixture){
 describe('tests', function () {
   this.timeout(6000);
   ymlFiles.forEach(function (file) {
+
+    if(file === 'bots.yml'){
+      return;
+    }
+
     describe('file fixture ' + file, function () {
       let fixtureData = YML.load(fixtureFolder + file);
       let total = fixtureData.length;

@@ -11,6 +11,21 @@ const CLIENT_TYPE = {
   BROWSER: 'browser'
 };
 
+const COLLECTION = {
+  DEVICE: 'device_collection',
+  CAMERA: 'camera_collection',
+  PORTABLE_MEDIA_PLAYER: 'portable_media_player_collection',
+  CONSOLE: 'console_collection',
+  APP: 'app_collection',
+  OS: 'os_collection',
+  BROWSER: 'browser_collection',
+  BROWSER_ENGINE: 'browser_engine_collection',
+  BROWSER_SHORTS: 'browser_shorts_collection',
+  OS_FAMILIES: 'os_families',
+  OS_SYSTEMS: 'os_systems',
+  TV: 'tv_collection',
+};
+
 const DEVICE_TYPE = {
   DESKTOP: 'desktop',
   SMARTPHONE: 'smartphone',
@@ -21,7 +36,7 @@ const DEVICE_TYPE = {
   CAR_BROWSER: 'car browser',
   SMART_DISPLAY: 'smart display',
   CAMERA: 'camera',
-  PORTABLE_MEDIA_PAYER: 'portable media player',
+  PORTABLE_MEDIA_PLAYER: 'portable media player',
   PHABLET: 'phablet',
 };
 
@@ -45,6 +60,7 @@ const UNKNOWN = 'UNK';
  * @typedef {Object} DeviceDataObject
  * @property {String} type
  * @property {String} brand
+ * @property {String} brand_id
  * @property {String} model
  *
  * @typedef {Object} AppDataObject
@@ -110,6 +126,15 @@ function getBaseRegExp(str) {
 }
 
 /**
+ * helper is DeviceDataObject empty
+ * @param result {DeviceDataObject}
+ * @return {boolean}
+ */
+function isEmptyDeviceResult(result) {
+  return result.brand === '' && result.model === '' && result.type === '';
+}
+
+/**
  * @param options
  * @constructor
  */
@@ -129,6 +154,10 @@ function DeviceDetector(options) {
   this.os_families = [];
   this.os_collection = [];
   this.device_collection = [];
+  this.camera_collection = [];
+  this.portable_media_player_collection = [];
+  this.console_collection = [];
+  this.tv_collection = [];
 
   this.init();
 }
@@ -137,41 +166,43 @@ function DeviceDetector(options) {
  * load collections
  */
 DeviceDetector.prototype.init = function() {
-  this.loadAppCollection();
-  this.loadBrowserCollection();
-  this.loadOsCollection();
-  this.loadBrandCollection();
+  this.loadCollectionYml(COLLECTION.APP, '/client/mobile_apps.yml');
+  this.loadCollectionYml(COLLECTION.APP, '/client/mobile_apps.yml');
+  this.loadCollectionYml(COLLECTION.PORTABLE_MEDIA_PLAYER, '/device/portable_media_player.yml');
+  this.loadCollectionYml(COLLECTION.CAMERA, '/device/cameras.yml');
+  this.loadCollectionYml(COLLECTION.CONSOLE, '/device/consoles.yml');
+  this.loadCollectionYml(COLLECTION.DEVICE, '/device/mobiles.yml');
+  this.loadCollectionYml(COLLECTION.OS, '/oss.yml');
+  this.loadCollectionJSON(COLLECTION.OS_FAMILIES, '/os_families.json');
+  this.loadCollectionJSON(COLLECTION.OS_SYSTEMS, '/os_systems.json');
+  this.loadCollectionYml(COLLECTION.BROWSER, '/client/browsers.yml');
+  this.loadCollectionYml(COLLECTION.BROWSER_ENGINE, '/client/browser_engine.yml');
+  this.loadCollectionJSON(COLLECTION.BROWSER_SHORTS, '/browsers.json');
+  this.loadCollectionYml(COLLECTION.TV, '/device/televisions.yml');
+
 };
 
 /**
- *  ===================================
- *  Collections
- *  ===================================
+ * @param collection
+ * @param file
  */
-
-DeviceDetector.prototype.loadAppCollection = function () {
-  this.app_collection = YAML.load(BASE_REGEXES_DIR + '/client/mobile_apps.yml');
+DeviceDetector.prototype.loadCollectionYml = function (collection, file) {
+  if(!this.hasOwnProperty(collection)){
+    throw new Error(`Property "${collection}" does not exist`);
+  }
+  this[collection] = YAML.load(BASE_REGEXES_DIR + file);
 };
 
-DeviceDetector.prototype.loadBrowserCollection = function () {
-  this.browser_collection = YAML.load(BASE_REGEXES_DIR + '/client/browsers.yml');
-  this.browser_engine_collection = YAML.load(BASE_REGEXES_DIR + '/client/browser_engine.yml');
-  this.browser_shorts_collection = require(BASE_DATA_DIR + '/browsers.json');
+/**
+ * @param collection
+ * @param file
+ */
+DeviceDetector.prototype.loadCollectionJSON = function (collection, file) {
+  if(!this.hasOwnProperty(collection)){
+    throw new Error(`Property "${collection}" does not exist`);
+  }
+  this[collection] = require(BASE_DATA_DIR + file);
 };
-
-DeviceDetector.prototype.loadOsCollection = function () {
-  this.os_collection = YAML.load( BASE_REGEXES_DIR + '/oss.yml');
-
-  this.os_families = require(BASE_DATA_DIR + '/os_families.json');
-  this.os_systems = require(BASE_DATA_DIR + '/os_systems.json');
-};
-
-DeviceDetector.prototype.loadBrandCollection = function () {
-  console.log('DeviceDetector load device/mobiles.yml');
-  let path = BASE_REGEXES_DIR + '/device/mobiles.yml';
-  this.device_collection = YAML.load(path);
-};
-
 
 /**
  *  ===================================
@@ -274,19 +305,38 @@ DeviceDetector.prototype.buildByMatch = function (item, matches) {
 };
 
 /**
+ * @param collection
  * @param userAgent
- * @return {DeviceDataObject}
+ * @return {{DeviceDataObject}}
+ * @throws
  */
-DeviceDetector.prototype.findDevice = function (userAgent) {
+DeviceDetector.prototype.findBaseDevice = function(collection, userAgent){
   let model = '';
   let brand = '';
   let deviceType = '';
-  for (let cursor in this.device_collection) {
-    let match = getBaseRegExp(this.device_collection[cursor]['regex']).exec(userAgent);
+  let brandId = '';
+
+  let allowCollection = [
+    COLLECTION.PORTABLE_MEDIA_PLAYER,
+    COLLECTION.CAMERA,
+    COLLECTION.DEVICE,
+    COLLECTION.CONSOLE,
+    COLLECTION.TV
+  ];
+  if(!this.hasOwnProperty(collection)){
+    throw new Error(`Property "${collection}" does not exist`);
+  }
+  if(allowCollection.indexOf(collection) === -1){
+    throw new Error(`You cannot use this collection of "${collection}" the here`);
+  }
+
+  for (let cursor in this[collection]) {
+    let collectionItem = this[collection][cursor];
+    let match = getBaseRegExp(collectionItem['regex']).exec(userAgent);
     if (match) {
-      deviceType = this.device_collection[cursor]['device'];
-      if (this.device_collection[cursor]['models'] !== undefined) {
-        let models = this.device_collection[cursor]['models'];
+      deviceType = collectionItem['device'];
+      if (collectionItem['models'] !== undefined) {
+        let models = collectionItem['models'];
         for (let i = 0, l = models.length; i < l; i++) {
           let data = models[i];
           let modelMatch = getBaseRegExp(data.regex).exec(userAgent);
@@ -298,26 +348,51 @@ DeviceDetector.prototype.findDevice = function (userAgent) {
             break;
           }
         }
-      } else if (this.device_collection[cursor]['model'] !== undefined) {
-        model = this.buildModel(this.device_collection[cursor]['model'], match);
+      } else if (collectionItem['model'] !== undefined) {
+        model = this.buildModel(collectionItem['model'], match);
       }
       brand = String(cursor).trim();
       model = String(model).trim();
       break;
     }
   }
-
-  if(deviceType === ''){
-    deviceType = this.findDeviceType(userAgent)
-  }
-
   return {
     brand: brand,
+    brand_id: brandId,  // todo add detect result brand short name
     model: model,
     type: deviceType
   };
 };
 
+
+
+/**
+ * @param userAgent
+ * @return {DeviceDataObject}
+ */
+DeviceDetector.prototype.findDevice = function (userAgent) {
+
+  let result = this.findBaseDevice(COLLECTION.CAMERA, userAgent);
+
+  if(isEmptyDeviceResult(result)){
+    result = this.findBaseDevice(COLLECTION.PORTABLE_MEDIA_PLAYER, userAgent);
+  }
+  if(isEmptyDeviceResult(result)){
+    result = this.findBaseDevice(COLLECTION.CONSOLE, userAgent);
+  }
+  if(isEmptyDeviceResult(result)){
+    result = this.findBaseDevice(COLLECTION.TV, userAgent);
+  }
+  if(isEmptyDeviceResult(result)){
+    result = this.findBaseDevice(COLLECTION.DEVICE, userAgent);
+  }
+
+  if(result.type === ''){
+    result.type = this.findDeviceType(userAgent);
+  }
+
+  return result;
+};
 
 /**
  *
@@ -486,7 +561,6 @@ DeviceDetector.prototype.findDeviceType = function (userAgent) {
   if(osData === null){
     let osData = this.findOs(userAgent);
   }
-
   if(osData!==null && osData.hasOwnProperty('name') && osData.name === OS_ANDROID){
     if (getBaseRegExp('Chrome/[\.0-9]* Mobile').exec(userAgent)!==null) {
       return DEVICE_TYPE.SMARTPHONE;
@@ -513,10 +587,14 @@ DeviceDetector.prototype.findDeviceType = function (userAgent) {
     }
   }
 
-  if(osData!==null && osData.hasOwnProperty('name') && OS_DESKTOP.indexOf(osData.name) !== -1){
-    return DEVICE_TYPE.DESKTOP;
-  }
+  if(osData!==null && osData.hasOwnProperty('name')){
+    if(OS_DESKTOP.indexOf(osData.name) !== -1){
+      return DEVICE_TYPE.DESKTOP;
+    }
 
+
+
+  }
   return '';
 };
 
@@ -536,15 +614,15 @@ DeviceDetector.prototype.reset = function(){
  */
 DeviceDetector.prototype.detect = function (userAgent) {
   this.reset();
-
   this.osData = this.findOs(userAgent);
-  this.clientData = this.findApp(userAgent);
   this.deviceData = this.findDevice(userAgent);
+  this.clientData = this.findApp(userAgent);
 
   // is app not found then find browser
   if (this.clientData === null) {
     this.clientData = this.findBrowser(userAgent);
   }
+
   return {
     os: this.osData,
     client: this.clientData,
