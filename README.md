@@ -45,3 +45,11 @@ console.log(detector.detect(userAgent));
     } 
 }
 ```
+
+Result is not detect
+```json
+{ 
+  device: null;
+
+}
+```

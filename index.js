@@ -40,6 +40,10 @@ const DEVICE_TYPE = {
   PHABLET: 'phablet',
 };
 
+const TV_BROWSER = [
+  'Kylo',
+  'Espial TV Browser'
+];
 const OS_ANDROID = 'Android';
 const OS_DESKTOP = [
   'AmigaOS',
@@ -319,9 +323,9 @@ DeviceDetector.prototype.findBaseDevice = function(collection, userAgent){
   let allowCollection = [
     COLLECTION.PORTABLE_MEDIA_PLAYER,
     COLLECTION.CAMERA,
-    COLLECTION.DEVICE,
     COLLECTION.CONSOLE,
-    COLLECTION.TV
+    COLLECTION.TV,
+    COLLECTION.DEVICE
   ];
   if(!this.hasOwnProperty(collection)){
     throw new Error(`Property "${collection}" does not exist`);
@@ -530,6 +534,17 @@ DeviceDetector.prototype.isAndroidTable = function(userAgent){
 };
 
 /**
+ * has check userAgent fragment is hub tv
+ * @param {String} userAgent
+ * @return {Boolean}
+ */
+DeviceDetector.prototype.isHubTv = function(userAgent){
+  let regex =  'HbbTV/([1-9]{1}(?:\.[0-9]{1}){1,2})';
+  let match = getBaseRegExp(regex).exec(userAgent);
+  return match !== null;
+};
+
+/**
  * has check userAgent fragment is opera table
  * @param {String} userAgent
  * @return {Boolean}
@@ -559,7 +574,7 @@ DeviceDetector.prototype.isAndroidMobile = function(userAgent){
 DeviceDetector.prototype.findDeviceType = function (userAgent) {
   let osData = this.osData;
   if(osData === null){
-    let osData = this.findOs(userAgent);
+    osData = this.findOs(userAgent);
   }
   if(osData!==null && osData.hasOwnProperty('name') && osData.name === OS_ANDROID){
     if (getBaseRegExp('Chrome/[\.0-9]* Mobile').exec(userAgent)!==null) {
@@ -587,14 +602,16 @@ DeviceDetector.prototype.findDeviceType = function (userAgent) {
     }
   }
 
+  // if(this.clientData!== null && TV_BROWSER.indexOf(this.clientData.name)!== -1 || this.isHubTv(userAgent) ){
+  //   return DEVICE_TYPE.TV;
+  // }
+
   if(osData!==null && osData.hasOwnProperty('name')){
     if(OS_DESKTOP.indexOf(osData.name) !== -1){
       return DEVICE_TYPE.DESKTOP;
     }
-
-
-
   }
+
   return '';
 };
 
@@ -615,14 +632,12 @@ DeviceDetector.prototype.reset = function(){
 DeviceDetector.prototype.detect = function (userAgent) {
   this.reset();
   this.osData = this.findOs(userAgent);
-  this.deviceData = this.findDevice(userAgent);
   this.clientData = this.findApp(userAgent);
-
   // is app not found then find browser
   if (this.clientData === null) {
     this.clientData = this.findBrowser(userAgent);
   }
-
+  this.deviceData = this.findDevice(userAgent);
   return {
     os: this.osData,
     client: this.clientData,
