@@ -50,8 +50,11 @@ function expectDetectByFixture(fixture){
   let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2)
   // test device data
   if (fixture.device !== undefined) {
-    expect(result.device.model, messageError).to.equal(String(fixture.device.model));
+    if(fixture.device.model!==null){
+      expect(result.device.model, messageError).to.equal(String(fixture.device.model));
+    }
     expect(result.device.type, messageError).to.equal(String(fixture.device.type));
+
   }
   // test os data
   if (fixture.os !== undefined && typeof fixture.os === 'Object')  {
@@ -59,6 +62,9 @@ function expectDetectByFixture(fixture){
   }
   // test client data
   if (fixture.client !== undefined) {
+    if(fixture.client.version === null){
+      fixture.client.version = '';
+    }
     expect(result.client, messageError).to.have.deep.equal(fixture.client);
   }
 }
