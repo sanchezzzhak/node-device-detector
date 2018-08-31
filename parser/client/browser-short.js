@@ -1,4 +1,4 @@
-{
+module.exports = {
   "36": "360 Phone Browser",
   "3B": "360 Browser",
   "AA": "Avant Browser",
@@ -155,4 +155,4 @@
   "WT": "WeTab Browser",
   "YA": "Yandex Browser",
   "XI": "Xiino"
-}
+};

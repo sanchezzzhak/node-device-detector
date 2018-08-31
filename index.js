@@ -148,7 +148,7 @@ function DeviceDetector(options) {
   this.clientData = null;
   this.deviceData = null;
 
-  this.browser_collection = [];
+  this.collection = [];
   this.browser_shorts_collection= [];
   this.browser_engine_collection = [];
 
@@ -440,38 +440,7 @@ DeviceDetector.prototype.findEngine = function(userAgent) {
  * @return {*}
  */
 DeviceDetector.prototype.findBrowser = function (userAgent) {
-  for (let i = 0, l = this.browser_collection.length; i < l; i++) {
-    let item = this.browser_collection[i];
-    let regex = getBaseRegExp(item.regex);
-    let match;
 
-    if (match = regex.exec(userAgent)) {
-      let name = this.buildByMatch(item.name, match);
-      let version = this.buildVersion(item.version, match);
-      let short = UNKNOWN;
-
-      for (let key in this.browser_shorts_collection) {
-        if (String(name).toLowerCase() === String(this.browser_shorts_collection[key]).toLowerCase()) {
-          short = key;
-          break;
-        }
-      }
-      let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
-      if(engine === ''){
-        engine = this.findEngine(userAgent);
-      }
-      let engineVersion = this.buildEngineVersion(userAgent, engine);
-
-      return {
-        engine: engine,
-        engine_version: engineVersion,
-        short_name: short,
-        name: name,
-        version: version,
-        type: CLIENT_TYPE.BROWSER
-      }
-    }
-  }
   return null;
 };
 

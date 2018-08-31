@@ -38,36 +38,36 @@ let fixtureFolder = __dirname + '/fixtures/tests/';
 
 ymlFiles = fs.readdirSync(fixtureFolder);
 
-// function expectDetectByFixture(fixture){
-//   let result;
-//   try {
-//     result = detector.detect(fixture.user_agent);
-//   } catch (e) {
-//     console.log('error parse', fixture.user_agent);
-//     throw new SyntaxError(e.stack);
-//   }
-//   console.log(result);
-//   let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2)
-//   // test device data
-//   if (fixture.device !== undefined) {
-//     expect(result.device.model, messageError).to.equal(String(fixture.device.model));
-//     expect(result.device.type, messageError).to.equal(String(fixture.device.type));
-//   }
-//   // test os data
-//   if (fixture.os !== undefined && typeof fixture.os === 'Object')  {
-//     expect(result.os, messageError).to.have.deep.equal(fixture.os);
-//   }
-//   // test client data
-//   if (fixture.client !== undefined) {
-//     expect(result.client, messageError).to.have.deep.equal(fixture.client);
-//   }
-// }
+function expectDetectByFixture(fixture){
+  let result;
+  try {
+    result = detector.detect(fixture.user_agent);
+  } catch (e) {
+    console.log('error parse', fixture.user_agent);
+    throw new SyntaxError(e.stack);
+  }
+  console.log(result);
+  let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2)
+  // test device data
+  if (fixture.device !== undefined) {
+    expect(result.device.model, messageError).to.equal(String(fixture.device.model));
+    expect(result.device.type, messageError).to.equal(String(fixture.device.type));
+  }
+  // test os data
+  if (fixture.os !== undefined && typeof fixture.os === 'Object')  {
+    expect(result.os, messageError).to.have.deep.equal(fixture.os);
+  }
+  // test client data
+  if (fixture.client !== undefined) {
+    expect(result.client, messageError).to.have.deep.equal(fixture.client);
+  }
+}
 
 describe('tests one file', function () {
-  let file = 'tv.yml';
+  let file = 'mobile_apps.yml';
   let fixtureData = YML.load(fixtureFolder + file);
   let total = fixtureData.length;
-  //fixtureData= [  fixtureData[208] ];
+  //fixtureData= [  fixtureData[9] ];
 
   fixtureData.forEach(function (fixture, pos) {
     it(pos + '/' + total, () => {
