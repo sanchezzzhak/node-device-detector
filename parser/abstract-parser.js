@@ -35,7 +35,16 @@ function ParserAbstract() {
  * load collection
  */
 ParserAbstract.prototype.loadCollection = function(){
-  this.collection = YAML.load(BASE_REGEXES_DIR + this.fixtureFile);
+  this.collection = this.loadYMLFile(this.fixtureFile);
+};
+
+/**
+ *
+ * @param file
+ * @return {*}
+ */
+ParserAbstract.prototype.loadYMLFile = function(file){
+  return YAML.load(BASE_REGEXES_DIR + file);
 };
 
 /**

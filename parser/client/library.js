@@ -3,22 +3,22 @@ const util = require('util');
 
 const CLIENT_TYPE = require('./../const/client-type');
 
-function PIM() {
-  this.fixtureFile = 'client/pim.yml';
+function Library() {
+  this.fixtureFile = 'client/libraries.yml';
   this.loadCollection();
   this.reset();
 }
 
-util.inherits(PIM, ClientAbstractParser);
+util.inherits(Library, ClientAbstractParser);
 
 
-PIM.prototype.parse = function(userAgent){
+Library.prototype.parse = function(userAgent){
 
   if (ClientAbstractParser.prototype.parse.call(this, [userAgent])) {
-    this.type = CLIENT_TYPE.PIM;
+    this.type = CLIENT_TYPE.LIBRARY;
     return true;
   }
   return false
 };
 
-module.exports = PIM;
+module.exports = Library;

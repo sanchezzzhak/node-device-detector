@@ -3,22 +3,22 @@ const util = require('util');
 
 const CLIENT_TYPE = require('./../const/client-type');
 
-function PIM() {
-  this.fixtureFile = 'client/pim.yml';
+function MediaPlayer() {
+  this.fixtureFile = 'client/mediaplayers.yml';
   this.loadCollection();
   this.reset();
 }
 
-util.inherits(PIM, ClientAbstractParser);
+util.inherits(MediaPlayer, ClientAbstractParser);
 
 
-PIM.prototype.parse = function(userAgent){
+MediaPlayer.prototype.parse = function(userAgent){
 
   if (ClientAbstractParser.prototype.parse.call(this, [userAgent])) {
-    this.type = CLIENT_TYPE.PIM;
+    this.type = CLIENT_TYPE.MEDIA_PLAYER;
     return true;
   }
   return false
 };
 
-module.exports = PIM;
+module.exports = MediaPlayer;

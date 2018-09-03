@@ -34,6 +34,7 @@ DeviceParserAbstract.prototype.getParseData = function(){
  */
 DeviceParserAbstract.prototype.parse = function(userAgent) {
   this.reset();
+
   let model = '';
   let deviceType = '';
   let brandId = '';
@@ -43,7 +44,10 @@ DeviceParserAbstract.prototype.parse = function(userAgent) {
     let match = this.getBaseRegExp(item['regex']).exec(userAgent);
 
     if (match) {
-      deviceType = item['device'];
+      if(item['device']!== undefined){
+        deviceType = item['device'];
+      }
+
       if (item['models'] !== undefined) {
         let models = item['models'];
         for (let i = 0, l = models.length; i < l; i++) {

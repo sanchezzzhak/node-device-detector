@@ -9,8 +9,13 @@ const Camera = require('./parser/device/camera');
 const PortableMediaPlayer = require('./parser/device/portable-media-player');
 // client parsers
 const MobileApp = require('./parser/client/mobile-app');
+const MediaPlayer = require('./parser/client/media-player');
 const Browser = require('./parser/client/browser');
-
+const Library = require('./parser/client/library');
+const FeedReader = require('./parser/client/feed-reader');
+const PIM = require('./parser/client/pim');
+// os
+const OsParser = require('./parser/os-abstract-parser');
 
 
 const DEVICE_PARSER = {
@@ -28,25 +33,32 @@ const CLIENT_PARSER = {
   PIM: 'PIM',
   MOBILE_APP: 'MobileApp',
   LIBRARY: 'Library',
-  BROWSER: 'Browser'
+  BROWSER: 'Browser',
 };
 
 
 function DeviceDetector(options){
+  this.osData = null;
   this.deviceData = null;
   this.clientData = null;
+
+  this.osParserList = {};
   this.deviceParserList = {};
   this.clientParserList = {};
+
   this.init();
 }
 
 DeviceDetector.prototype.init = function(){
-  //FeedReader
+
+  this.addParseOs("Os", new OsParser);
+
+  this.addParseClient(CLIENT_PARSER.FEED_READER, new FeedReader);
   this.addParseClient(CLIENT_PARSER.MOBILE_APP, new MobileApp);
-  //MediaPlayer
-  //PIM
+  this.addParseClient(CLIENT_PARSER.MEDIA_PLAYER, new MediaPlayer);
+  this.addParseClient(CLIENT_PARSER.PIM, new PIM);
   this.addParseClient(CLIENT_PARSER.BROWSER, new Browser);
-  //Library
+  this.addParseClient(CLIENT_PARSER.LIBRARY, new Library);
 
   this.addParseDevice(DEVICE_PARSER.HBBTV, new HbbTvParser);
   this.addParseDevice(DEVICE_PARSER.CONSOLE, new Console);
@@ -61,8 +73,23 @@ DeviceDetector.prototype.addParseDevice = function(name, parser){
   this.deviceParserList[name] = parser;
 };
 
+DeviceDetector.prototype.addParseOs = function(name, parser){
+  this.osParserList[name] = parser;
+};
+
 DeviceDetector.prototype.addParseClient = function(name, parser){
   this.clientParserList[name] = parser;
+};
+
+DeviceDetector.prototype.parseOs = function(){
+  for(let name in this.osParserList){
+    let parser = this.osParserList[name];
+    let result = parser.parse(this.userAgent);
+    if(result){
+      this.osData = parser.getParseData();
+      break;
+    }
+  }
 };
 
 
@@ -75,8 +102,9 @@ DeviceDetector.prototype.parseDevice = function(){
       break;
     }
   }
-  // old check
-  //
+};
+
+DeviceDetector.prototype.parseBot = function(){
 
 };
 
@@ -89,16 +117,19 @@ DeviceDetector.prototype.parseClient = function(){
       break;
     }
   }
-
 };
 
 DeviceDetector.prototype.detect = function(userAgent){
   this.reset();
   this.userAgent = userAgent;
+
+  this.parseBot();
+  this.parseOs();
   this.parseDevice();
   this.parseClient();
 
   return {
+    os: this.osData,
     device: this.deviceData,
     client: this.clientData
   };

@@ -3,22 +3,22 @@ const util = require('util');
 
 const CLIENT_TYPE = require('./../const/client-type');
 
-function PIM() {
-  this.fixtureFile = 'client/pim.yml';
+function MobileApp() {
+  this.fixtureFile = 'client/mobile_apps.yml';
   this.loadCollection();
   this.reset();
 }
 
-util.inherits(PIM, ClientAbstractParser);
+util.inherits(MobileApp, ClientAbstractParser);
 
 
-PIM.prototype.parse = function(userAgent){
+MobileApp.prototype.parse = function(userAgent){
 
   if (ClientAbstractParser.prototype.parse.call(this, [userAgent])) {
-    this.type = CLIENT_TYPE.PIM;
+    this.type = CLIENT_TYPE.MOBILE_APP;
     return true;
   }
   return false
 };
 
-module.exports = PIM;
+module.exports = MobileApp;

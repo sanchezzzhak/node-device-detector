@@ -153,10 +153,10 @@ function DeviceDetector(options) {
   this.browser_engine_collection = [];
 
   this.app_collection = [];
-  this.os_collection = [];
+  this.collection = [];
   this.os_systems = [];
   this.os_families = [];
-  this.os_collection = [];
+  this.collection = [];
   this.device_collection = [];
   this.camera_collection = [];
   this.portable_media_player_collection = [];
@@ -449,8 +449,8 @@ DeviceDetector.prototype.findBrowser = function (userAgent) {
  * @return {OsDataObject|*}
  */
 DeviceDetector.prototype.findOs = function (userAgent) {
-  for (let i = 0, l = this.os_collection.length; i < l; i++) {
-    let item = this.os_collection[i];
+  for (let i = 0, l = this.collection.length; i < l; i++) {
+    let item = this.collection[i];
     let regex = getBaseRegExp(item.regex);
     let match;
     if (match = regex.exec(userAgent)) {

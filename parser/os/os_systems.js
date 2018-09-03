@@ -1,4 +1,4 @@
-{
+module.exports = {
   "AIX": "AIX",
   "AND": "Android",
   "AMG": "AmigaOS",
@@ -77,4 +77,4 @@
   "IOS": "iOS",
   "POS": "palmOS",
   "WOS": "webOS"
-}
+};

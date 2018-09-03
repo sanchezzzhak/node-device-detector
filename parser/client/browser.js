@@ -1,10 +1,12 @@
 const ClientAbstractParser = require('./../client-abstract-parser');
 const util = require('util');
+const YAML = require('yamljs');
 
 const CLIENT_TYPE = require('./../const/client-type');
 const BROWSER_SHORT = require('./browser-short');
 
 function Browser() {
+  this.engine_collection = [];
   this.fixtureFile = 'client/browsers.yml';
   this.loadCollection();
   this.reset();
@@ -22,6 +24,11 @@ Browser.prototype.getParseData = function(){
     version : this.version,
     type: this.type
   };
+};
+
+Browser.prototype.loadCollection = function(){
+  ClientAbstractParser.prototype.loadCollection.call(this);
+  this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
 };
 
 Browser.prototype.reset = function(){
@@ -46,7 +53,7 @@ Browser.prototype.parse = function (userAgent) {
 
       let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
       if (engine === '') {
-        engine = this.findEngine(userAgent);
+        engine = this.parseEngine(userAgent);
       }
       let engineVersion = this.buildEngineVersion(userAgent, engine);
 
@@ -62,6 +69,21 @@ Browser.prototype.parse = function (userAgent) {
   }
   return false;
 };
+
+Browser.prototype.parseEngine = function (userAgent) {
+  let result = '';
+  for (let i = 0, l = this.engine_collection.length; i < l; i++) {
+    let item = this.engine_collection[i];
+    let regex = this.getBaseRegExp(item.regex);
+    let match = regex.exec(userAgent);
+    if (match !== null) {
+      result = item.name;
+      break;
+    }
+  }
+  return result;
+};
+
 
 /**
  * @param engine

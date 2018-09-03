@@ -47,42 +47,64 @@ function expectDetectByFixture(fixture){
     throw new SyntaxError(e.stack);
   }
   console.log(result);
-  let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2)
+
+
+
+  let messageError = 'fixture data: ' + JSON.stringify(fixture, null, 2);
+
   // test device data
-  if (fixture.device !== undefined) {
+  if (fixture.device !== undefined && fixture.device!==null && result.device!==null) {
+
     if(fixture.device.model!==null){
       expect(result.device.model, messageError).to.equal(String(fixture.device.model));
     }
-    expect(result.device.type, messageError).to.equal(String(fixture.device.type));
+    if(fixture.device.type!==null){
+      expect(result.device.type, messageError).to.equal(String(fixture.device.type));
+    }
+  }
+
+
+
+  // test os data
+  if (fixture.os !== undefined && typeof fixture.os !== null && fixture.os.length > 0)  {
+
+    if(fixture.os.name!==null){
+      expect(fixture.os.name, messageError).to.have.deep.equal(result.os.name);
+    }
+    if(fixture.os.short_name!==null){
+      expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
+    }
+    if(fixture.os.version!==null){
+      expect(fixture.os.version, messageError).to.have.deep.equal(result.os.version);
+    }
+    if(fixture.os.platform!==null){
+      expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
+    }
 
   }
-  // test os data
-  if (fixture.os !== undefined && typeof fixture.os === 'Object')  {
-    expect(result.os, messageError).to.have.deep.equal(fixture.os);
-  }
   // test client data
-  if (fixture.client !== undefined) {
+  if (fixture.client!== null && fixture.client !== undefined) {
     if(fixture.client.version === null){
       fixture.client.version = '';
     }
     expect(result.client, messageError).to.have.deep.equal(fixture.client);
   }
 }
-
-describe('tests one file', function () {
-  let file = 'mobile_apps.yml';
-  let fixtureData = YML.load(fixtureFolder + file);
-  let total = fixtureData.length;
-  //fixtureData= [  fixtureData[9] ];
-
-  fixtureData.forEach(function (fixture, pos) {
-    it(pos + '/' + total, () => {
-      expectDetectByFixture(fixture);
-    });
-  });
-});
-
-return;
+//
+// describe('tests one file', function () {
+//   let file = 'feed_reader.yml';
+//   let fixtureData = YML.load(fixtureFolder + file);
+//   let total = fixtureData.length;
+//   //fixtureData= [  fixtureData[23] ];
+//
+//   fixtureData.forEach(function (fixture, pos) {
+//     it(pos + '/' + total, () => {
+//       expectDetectByFixture(fixture);
+//     });
+//   });
+// });
+//
+// return;
 
 describe('tests', function () {
   this.timeout(6000);

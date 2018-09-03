@@ -1,4 +1,4 @@
-{
+module.exports = {
   "Android": [
     "AND",
     "CYN",
@@ -123,4 +123,4 @@
     "WRT",
     "WIO"
   ]
-}
+};
