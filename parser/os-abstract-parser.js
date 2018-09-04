@@ -77,11 +77,11 @@ OsAbstractParser.prototype.reset = function () {
  * @return {string}
  */
 OsAbstractParser.prototype.parsePlatform = function (userAgent) {
-  if (/arm/i.test(userAgent)) {
+  if (this.getBaseRegExp('arm').test(userAgent)) {
     return 'ARM';
-  } else if (/WOW64|x64|win64|amd64|x86_64/i.test(userAgent)) {
+  } else if (this.getBaseRegExp('WOW64|x64|win64|amd64|x86_6').test(userAgent)) {
     return 'x64';
-  } else if (/i[0-9]86|i86pc/i.test(userAgent)) {
+  } else if (this.getBaseRegExp('i[0-9]86|i86pc').test(userAgent)) {
     return 'x86';
   }
   return '';

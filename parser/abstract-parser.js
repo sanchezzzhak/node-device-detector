@@ -17,10 +17,10 @@ function fixStringName(result) {
  * @return {string}
  */
 function fixStringVersion(result) {
-  return result.replace(new RegExp('_', 'g'), '.').trim();
+  result = result.replace(new RegExp('_', 'g'), '.');
+  result = result.replace(new RegExp('[\.]$', 'g'), '');
+  return result.trim();
 }
-
-
 
 /**
  * @constructor
@@ -77,6 +77,8 @@ ParserAbstract.prototype.versionCompare = function(ver1, ver2) {
   return 0;
 };
 
+
+
 /**
  * @param item
  * @param matches
@@ -125,6 +127,12 @@ ParserAbstract.prototype.buildModel =function(model, matches) {
  * @return {string}
  */
 ParserAbstract.prototype.buildVersion = function(version, matches) {
+  // const maxMinorParts = 1;
+  // let versionParts = String(version).split('.');
+  // if (versionParts.length > maxMinorParts) {
+  //   versionParts = versionParts.slice(0, 1 + maxMinorParts);
+  //   version = versionParts.join('.');
+  // }
   return fixStringVersion(this.buildByMatch(version, matches));
 };
 

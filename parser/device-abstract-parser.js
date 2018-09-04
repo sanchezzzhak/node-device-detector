@@ -66,7 +66,7 @@ DeviceParserAbstract.prototype.parse = function(userAgent) {
       }
 
       this.brand = String(cursor).trim();
-      this.model = String(model).trim();
+      this.model = model!== null ? String(model).trim() : '';
       this.type = deviceType;
       this.id = brandId;
 

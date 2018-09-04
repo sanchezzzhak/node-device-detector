@@ -11,9 +11,7 @@ function Browser() {
   this.loadCollection();
   this.reset();
 }
-
 util.inherits(Browser, ClientAbstractParser);
-
 
 Browser.prototype.getParseData = function(){
   return {
@@ -50,16 +48,14 @@ Browser.prototype.parse = function (userAgent) {
       let name = this.buildByMatch(item.name, match);
       let version = this.buildVersion(item.version, match);
       let short = this.buildShortName(name);
-
       let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
-      if (engine === '') {
+      if(engine === '' ){
         engine = this.parseEngine(userAgent);
       }
       let engineVersion = this.buildEngineVersion(userAgent, engine);
-
       this.engine = engine;
       this.engine_version = engineVersion;
-      this.short_name = short;
+      this.short_name = String(short);
       this.name = name;
       this.version = version;
       this.type = CLIENT_TYPE.BROWSER;
@@ -69,21 +65,6 @@ Browser.prototype.parse = function (userAgent) {
   }
   return false;
 };
-
-Browser.prototype.parseEngine = function (userAgent) {
-  let result = '';
-  for (let i = 0, l = this.engine_collection.length; i < l; i++) {
-    let item = this.engine_collection[i];
-    let regex = this.getBaseRegExp(item.regex);
-    let match = regex.exec(userAgent);
-    if (match !== null) {
-      result = item.name;
-      break;
-    }
-  }
-  return result;
-};
-
 
 /**
  * @param engine
@@ -95,11 +76,26 @@ Browser.prototype.buildEngine = function (engine, browserVersion) {
   if (engine.hasOwnProperty('default') && engine.default !== '') {
     result = engine.default;
   }
-  if (engine.hasOwnProperty('versions')) {
-    for (let version in engine.versions) {
-      if (this.versionCompare(browserVersion, version) >=0) {
-        result = engine.versions[version];
+  if (engine.hasOwnProperty('versions') ) {
+    let versions = Object.keys(engine.versions).sort(this.versionCompare);
+    for (let i=0, l = versions.length; i < l; i++) {
+      if (this.versionCompare(browserVersion, versions[i]) >= 0 ) {
+        result = engine.versions[ versions[i] ];
       }
+    }
+  }
+  return result;
+};
+
+Browser.prototype.parseEngine = function (userAgent) {
+  let result = '';
+  for (let i = 0, l = this.engine_collection.length; i < l; i++) {
+    let item = this.engine_collection[i];
+    let regex = this.getBaseRegExp(item.regex);
+    let match = regex.exec(userAgent);
+    if (match !== null) {
+      result = item.name;
+      break;
     }
   }
   return result;
