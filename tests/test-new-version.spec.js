@@ -119,7 +119,7 @@ function testsFromFixture(fixture){
 
 
 describe('tests one file', function () {
-  let file = 'console.yml';
+  let file = 'feed_reader.yml';
   let fixtureData = YML.load(fixtureFolder + file);
   let total = fixtureData.length;
   //fixtureData= [  fixtureData[1] ];
@@ -131,7 +131,7 @@ describe('tests one file', function () {
   });
 });
 
-return;
+//return;
 
 describe('tests', function () {
   this.timeout(6000);

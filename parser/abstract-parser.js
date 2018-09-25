@@ -48,38 +48,6 @@ ParserAbstract.prototype.loadYMLFile = function(file){
 };
 
 /**
- * helper prepare version
- * @param ver1
- * @param ver2
- * @return {Number}
- */
-ParserAbstract.prototype.versionCompare = function(ver1, ver2) {
-  if (ver1 === ver2) {
-    return 0;
-  }
-  let left = ver1.split(".");
-  let right = ver2.split(".");
-  let len = Math.min(left.length, right.length);
-  for (let i = 0; i < len; i++) {
-    if (parseInt(left[i]) > parseInt(right[i])) {
-      return 1;
-    }
-    if (parseInt(left[i]) < parseInt(right[i])) {
-      return -1;
-    }
-  }
-  if (left.length > right.length) {
-    return 1;
-  }
-  if (left.length < right.length) {
-    return -1;
-  }
-  return 0;
-};
-
-
-
-/**
  * @param item
  * @param matches
  * @return {string|*}
@@ -87,6 +55,7 @@ ParserAbstract.prototype.versionCompare = function(ver1, ver2) {
 ParserAbstract.prototype.buildByMatch = function(item, matches) {
   item = item || '';
   item = item.toString();
+
   if (item.indexOf('$') !== -1) {
     for (let nb = 1; nb <= 3; nb++) {
       if (item.indexOf('$' + nb) === -1) {
@@ -127,13 +96,21 @@ ParserAbstract.prototype.buildModel =function(model, matches) {
  * @return {string}
  */
 ParserAbstract.prototype.buildVersion = function(version, matches) {
-  // const maxMinorParts = 1;
-  // let versionParts = String(version).split('.');
+  version = fixStringVersion(this.buildByMatch(version, matches));
+  const skipVersion = [
+      'Portable', ''
+  ];
+  if(skipVersion.indexOf(version) !== -1){
+    return version;
+  }
+  let versionParts = String(version).split('.');
+  //  const maxMinorParts = 4;
+  //  console.log(versionParts, versionParts.length);
   // if (versionParts.length > maxMinorParts) {
   //   versionParts = versionParts.slice(0, 1 + maxMinorParts);
-  //   version = versionParts.join('.');
   // }
-  return fixStringVersion(this.buildByMatch(version, matches));
+  version = versionParts.join('.');
+  return version;
 };
 
 module.exports = ParserAbstract;

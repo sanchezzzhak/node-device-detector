@@ -4,6 +4,8 @@ const YAML = require('yamljs');
 
 const CLIENT_TYPE = require('./../const/client-type');
 const BROWSER_SHORT = require('./browser-short');
+const helper = require('./../helper');
+
 
 function Browser() {
   this.engine_collection = [];
@@ -44,14 +46,17 @@ Browser.prototype.parse = function (userAgent) {
     let item = this.collection[i];
     let regex = this.getBaseRegExp(item.regex);
     let match = regex.exec(userAgent);
+
     if (match !== null) {
       let name = this.buildByMatch(item.name, match);
       let version = this.buildVersion(item.version, match);
+
       let short = this.buildShortName(name);
       let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
       if(engine === '' ){
         engine = this.parseEngine(userAgent);
       }
+
       let engineVersion = this.buildEngineVersion(userAgent, engine);
       this.engine = engine;
       this.engine_version = engineVersion;
@@ -77,9 +82,9 @@ Browser.prototype.buildEngine = function (engine, browserVersion) {
     result = engine.default;
   }
   if (engine.hasOwnProperty('versions') ) {
-    let versions = Object.keys(engine.versions).sort(this.versionCompare);
+    let versions = Object.keys(engine.versions).sort(helper.versionCompare);
     for (let i=0, l = versions.length; i < l; i++) {
-      if (this.versionCompare(browserVersion, versions[i]) >= 0 ) {
+      if (helper.versionCompare(browserVersion, versions[i]) >= 0 ) {
         result = engine.versions[ versions[i] ];
       }
     }
