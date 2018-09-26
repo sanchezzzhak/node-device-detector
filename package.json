@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/sanchezzzhak/node-device-detector#readme",
   "dependencies": {
-    "js-yaml": "^3.12.0",
     "yamljs": ">=0.3.0"
   },
   "devDependencies": {
