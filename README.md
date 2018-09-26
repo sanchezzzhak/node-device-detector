@@ -24,6 +24,14 @@ const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWe
 const detector = new DeviceDetector;
 
 console.log(detector.detect(userAgent));
+console.log('helper methods check type device');
+console.log('isDesktop', detector.isDesktop()); // false
+console.log(detector.isTabled()); // false
+console.log(detector.isPhablet()); // false
+console.log(detector.isIOs()); // false
+console.log(detector.isAndoid()); // true
+console.log('isMobile', detector.isMobile()); // true
+
 ```
 
 ### Result parse
@@ -31,6 +39,7 @@ console.log(detector.detect(userAgent));
 ```json
 { 
     "device": {
+        "id" : "",
         "brand": "ZTE",
         "model": "Nubia Z7 max",
         "type": "smartphone" 
@@ -49,7 +58,8 @@ console.log(detector.detect(userAgent));
 Result is not detect
 ```json
 { 
-  device: null;
-
+  os: null,
+  device: null,
+  browser: null
 }
 ```

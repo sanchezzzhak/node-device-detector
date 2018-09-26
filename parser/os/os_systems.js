@@ -24,6 +24,7 @@ module.exports = {
   "HAI": "Haiku OS",
   "IRI": "IRIX",
   "INF": "Inferno",
+  "KOS": "KaiOS",
   "KNO": "Knoppix",
   "KBT": "Kubuntu",
   "LIN": "GNU/Linux",

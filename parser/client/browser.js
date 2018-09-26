@@ -13,29 +13,30 @@ function Browser() {
   this.loadCollection();
   this.reset();
 }
+
 util.inherits(Browser, ClientAbstractParser);
 
-Browser.prototype.getParseData = function(){
+Browser.prototype.getParseData = function () {
   return {
-    engine : this.engine,
-    engine_version : this.engine_version,
-    short_name : this.short_name,
-    name : this.name,
-    version : this.version,
+    engine: this.engine,
+    engine_version: this.engine_version,
+    short_name: this.short_name,
+    name: this.name,
+    version: this.version,
     type: this.type
   };
 };
 
-Browser.prototype.loadCollection = function(){
+Browser.prototype.loadCollection = function () {
   ClientAbstractParser.prototype.loadCollection.call(this);
   this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
 };
 
-Browser.prototype.reset = function(){
+Browser.prototype.reset = function () {
   this.engine = '';
-  this.engine_version =  '';
-  this.short_name =  '';
-  this.name =  '';
+  this.engine_version = '';
+  this.short_name = '';
+  this.name = '';
   this.version = '';
   this.type = '';
 };
@@ -53,11 +54,11 @@ Browser.prototype.parse = function (userAgent) {
 
       let short = this.buildShortName(name);
       let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
-      if(engine === '' ){
+      if (engine === '') {
         engine = this.parseEngine(userAgent);
       }
-
       let engineVersion = this.buildEngineVersion(userAgent, engine);
+
       this.engine = engine;
       this.engine_version = engineVersion;
       this.short_name = String(short);
@@ -81,11 +82,11 @@ Browser.prototype.buildEngine = function (engine, browserVersion) {
   if (engine.hasOwnProperty('default') && engine.default !== '') {
     result = engine.default;
   }
-  if (engine.hasOwnProperty('versions') ) {
+  if (engine.hasOwnProperty('versions')) {
     let versions = Object.keys(engine.versions).sort(helper.versionCompare);
-    for (let i=0, l = versions.length; i < l; i++) {
-      if (helper.versionCompare(browserVersion, versions[i]) >= 0 ) {
-        result = engine.versions[ versions[i] ];
+    for (let i = 0, l = versions.length; i < l; i++) {
+      if (browserVersion !== '' && helper.versionCompare(browserVersion, versions[i]) >= 0) {
+        result = engine.versions[versions[i]];
       }
     }
   }
@@ -111,13 +112,13 @@ Browser.prototype.parseEngine = function (userAgent) {
  * @param engine
  * @return {string}
  */
-Browser.prototype.buildEngineVersion = function(userAgent, engine){
-  if(engine === ''){
+Browser.prototype.buildEngineVersion = function (userAgent, engine) {
+  if (engine === '') {
     return '';
   }
   let regexp = new RegExp(engine + '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))', 'i');
   let match = regexp.exec(userAgent);
-  if(match){
+  if (match !== null) {
     return match.pop();
   }
   return '';
@@ -127,7 +128,7 @@ Browser.prototype.buildEngineVersion = function(userAgent, engine){
  * @param name
  * @return {*}
  */
-Browser.prototype.buildShortName = function(name){
+Browser.prototype.buildShortName = function (name) {
   const UNKNOWN = 'UNK';
   for (let key in BROWSER_SHORT) {
     if (String(name).toLowerCase() === String(BROWSER_SHORT[key]).toLowerCase()) {

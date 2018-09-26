@@ -752,11 +752,23 @@
   bot:
     name: Generic Bot
 - 
+  user_agent: help@dataminr.com
+  bot:
+    name: Generic Bot
+- 
   user_agent: 'HybridBot (hybrid.ru/about. If our bot caused problems please contact us. Contact email: m.lyashkov@targetix.net)'
   bot:
     name: Generic Bot
 - 
+  user_agent: Mozilla/5.0 (compatible; +http://tweetedtimes.com)
+  bot:
+    name: Generic Bot
+- 
   user_agent: Mozilla/5.0 (compatible; Shareaholicbot/2.0; +http://www.shareaholic.com/bot)
+  bot:
+    name: Generic Bot
+- 
+  user_agent: Mozilla/5.0 (compatible; TrendsmapResolver/0.1)
   bot:
     name: Generic Bot
 - 
@@ -1688,6 +1700,15 @@
   bot:
     name: Octopus
 - 
+  user_agent: omgili/0.5 +http://omgili.com
+  bot:
+    name: Omgili bot
+    category: Search bot
+    url: http://www.omgili.com/Crawler.html
+    producer:
+      name: Omgili
+      url: http://www.omgili.com
+- 
   user_agent: omgilibot/0.3 +http://www.omgili.com/Crawler.html
   bot:
     name: Omgili bot
@@ -2439,6 +2460,15 @@
       name: Uptime
       url: https://uptime.com
 - 
+  user_agent: Mozilla/5.0 (compatible; vkShare; +http://vk.com/dev/Share)
+  bot:
+    name: VK Share Button
+    category: Crawler
+    url: http://vk.com/dev/Share
+    producer:
+      name: VK
+      url: http://vk.com/
+- 
   user_agent: 'Mozilla/4.0 (compatible;  Vagabondo/4.0; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)'
   bot:
     name: Vagabondo
@@ -2554,6 +2584,12 @@
     producer:
       name: WeSEE Ltd
       url: http://www.wesee.com
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Mobile Safari/537.36 PTST/180829.190838
+  bot:
+    name: WebPageTest
+    category: Site Monitor
+    url: https://www.webpagetest.org
 - 
   user_agent: websitepulse checker/1.1 (compatible; MSIE 5.5; Netscape 4.75; Linux)
   bot:

@@ -17,7 +17,8 @@ OsAbstractParser.prototype.getParseData = function(){
     short_name: this.short_name,
     name: this.name,
     version: this.version,
-    platform: this.platform
+    platform: this.platform,
+    family: this.family
   };
 };
 
@@ -25,13 +26,13 @@ OsAbstractParser.prototype.getParseData = function(){
  * @param name
  * @return {*}
  */
-OsAbstractParser.prototype.getOsFamily = function(name){
+OsAbstractParser.prototype.parseOsFamily = function(name){
   for(let family in this.os_families){
     if (this.os_families[family].indexOf(name) !== -1) {
       return String(family);
     }
   }
-  return null;
+  return '';
 };
 
 OsAbstractParser.prototype.parse = function (userAgent) {
@@ -56,6 +57,7 @@ OsAbstractParser.prototype.parse = function (userAgent) {
       this.short_name = short;
       this.version = this.buildVersion(item.version, match);
       this.platform = this.parsePlatform(userAgent);
+      this.family = this.parseOsFamily(short);
 
       return true
     }
@@ -69,6 +71,7 @@ OsAbstractParser.prototype.reset = function () {
   this.name = '';
   this.version = '';
   this.platform = '';
+  this.family = '';
 };
 
 /**

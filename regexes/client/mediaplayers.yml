@@ -25,7 +25,7 @@
   name: 'Deezer'
   version: '$1'
 
-- regex: 'iTunes(?:/([\d\.]+))?'
+- regex: 'iTunes(?:-iPhone|-iPad)?(?:/([\d\.]+))?'
   name: 'iTunes'
   version: '$1'
 
@@ -87,8 +87,4 @@
 
 - regex: 'stagefright(?:/([\d\.]+))?'
   name: 'Stagefright'
-  version: '$1'
-
-- regex: 'Instacast(?:/([\d\.]+))? CFNetwork/([\d\.]+)'
-  name: 'Instacast'
   version: '$1'
