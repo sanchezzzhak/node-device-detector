@@ -148,20 +148,20 @@ function testsFromFixture(fixture){
 }
 
 
-describe('tests one file', function () {
-  let file = 'desktop.yml';
-  let fixtureData = YML.load(fixtureFolder + file);
-  let total = fixtureData.length;
- // fixtureData= [  fixtureData[415] ];
-
-  fixtureData.forEach((fixture, pos) => {
-    it(pos + '/' + total, function(){
-      testsFromFixture.call(this, fixture);
-    });
-  });
-});
-
-return;
+// describe('tests one file', function () {
+//   let file = 'desktop.yml';
+//   let fixtureData = YML.load(fixtureFolder + file);
+//   let total = fixtureData.length;
+//  // fixtureData= [  fixtureData[415] ];
+//
+//   fixtureData.forEach((fixture, pos) => {
+//     it(pos + '/' + total, function(){
+//       testsFromFixture.call(this, fixture);
+//     });
+//   });
+// });
+//
+// return;
 
 describe('tests', function () {
   this.timeout(6000);

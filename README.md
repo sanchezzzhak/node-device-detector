@@ -1,6 +1,6 @@
 # node-device-detector
 
-port phplib piwik/device-detector from nodejs
+port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) from nodejs
 
 ### library works only under nodejs v10+
 
@@ -26,10 +26,10 @@ const detector = new DeviceDetector;
 console.log(detector.detect(userAgent));
 console.log('helper methods check type device');
 console.log('isDesktop', detector.isDesktop()); // false
-console.log(detector.isTabled()); // false
-console.log(detector.isPhablet()); // false
-console.log(detector.isIOs()); // false
-console.log(detector.isAndoid()); // true
+console.log('isTabled', detector.isTabled()); // false
+console.log('isPhablet', detector.isPhablet()); // false
+console.log('isIOS', detector.isIOS()); // false
+console.log('isAndroid', detector.isAndroid()); // true
 console.log('isMobile', detector.isMobile()); // true
 
 ```
@@ -37,29 +37,41 @@ console.log('isMobile', detector.isMobile()); // true
 ### Result parse
 
 ```json
-{ 
-    "device": {
-        "id" : "",
-        "brand": "ZTE",
-        "model": "Nubia Z7 max",
-        "type": "smartphone" 
-    },
-    "os": {
-        "name": "Android",
-        "version": "5.0" 
-    },
-    "browser": {
-        "name": "Chrome Mobile",
-        "version": "43.0.2357.78" 
-    } 
+{
+	"os" : {
+		"short_name" : "AND",
+		"name" : "Android",
+		"version" : "5.0",
+		"platform" : "",
+		"family" : "Android"
+	},
+	"device" : {
+		"id" : "",
+		"type" : "smartphone",
+		"brand" : "ZTE",
+		"model" : "Nubia Z7 max"
+	},
+	"client" : {
+		"engine" : "Blink",
+		"engine_version" : "",
+		"short_name" : "CM",
+		"name" : "Chrome Mobile",
+		"version" : "43.0.2357.78",
+		"type" : "browser"
+	}
 }
 ```
 
 Result is not detect
 ```json
 { 
-  os: null,
-  device: null,
-  browser: null
+  "os": null,
+  "device": {
+    "id": "",
+    "type" : "is type detect not empty attr",
+    "brand": "",
+    "model": ""
+  },
+  "browser": null
 }
 ```

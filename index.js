@@ -285,7 +285,7 @@ DeviceDetector.prototype.isAndroid = function () {
  * is device type apple table
  * @return {boolean}
  */
-DeviceDetector.prototype.isIOs = function () {
+DeviceDetector.prototype.isIOS = function () {
   let osFamily = this.getOsAttr('family', '');
   return osFamily === 'iOS';
 };
