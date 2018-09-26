@@ -72,6 +72,6 @@ Result is not detect
     "brand": "",
     "model": ""
   },
-  "browser": null
+  "client": null
 }
 ```
