@@ -1,8 +1,9 @@
-# node-device-detector
+# [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) from nodejs
+Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) to NodeJs
 
-### library works only under nodejs v10+
+### !!! library works only under nodejs v10+
+
 
 ### Install
 
