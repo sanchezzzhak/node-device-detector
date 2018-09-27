@@ -270,6 +270,7 @@ DeviceDetector.prototype.isTabled = function () {
  * @return {boolean}
  */
 DeviceDetector.prototype.isPhablet = function () {
+  let type = this.getDeviceAttr('type', '');
   return [DEVICE_TYPE.PHABLET].indexOf(type) !== -1;
 };
 /**
