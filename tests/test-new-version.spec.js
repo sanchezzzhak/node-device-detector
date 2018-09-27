@@ -63,6 +63,36 @@ function isObjNotEmpty(value) {
   return typeof value !== 'undefined' && value!== null;
 }
 
+function testsFromFixtureBot(fixture){
+  let result;
+  try {
+    console.log('UserAgent\n\x1b[33m%s\x1b[0m', fixture.user_agent);
+    detector.detect(fixture.user_agent);
+    result = detector.botData;
+    console.log('Result\n\x1b[34m%s\x1b[0m', perryJSON(result));
+    console.log('Fixture\n\x1b[36m%s\x1b[0m', perryJSON(fixture));
+  } catch (e) {
+    throw new SyntaxError(e.stack);
+  }
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+
+  if (isObjNotEmpty(fixture.bot.name)) {
+    expect(fixture.bot.name, messageError).to.equal(detector.botData.name);
+
+  }
+  if (isObjNotEmpty(fixture.bot.category)) {
+    expect(fixture.bot.category, messageError).to.equal(detector.botData.category);
+  }
+  if (isObjNotEmpty(fixture.bot.url)) {
+    expect(fixture.bot.url, messageError).to.equal(detector.botData.url);
+  }
+  if (isObjNotEmpty(fixture.bot.producer)) {
+    expect(fixture.bot.producer, messageError).to.have.deep.equal(detector.botData.producer);
+  }
+}
+
+
+
 function testsFromFixture(fixture){
   let result;
   try {
@@ -147,9 +177,8 @@ function testsFromFixture(fixture){
 
 }
 
-
-// describe('tests one file', function () {
-//   let file = 'desktop.yml';
+// describe('dev test one file', function () {
+//   let file = 'bots.yml';
 //   let fixtureData = YML.load(fixtureFolder + file);
 //   let total = fixtureData.length;
 //  // fixtureData= [  fixtureData[415] ];
@@ -163,14 +192,28 @@ function testsFromFixture(fixture){
 //
 // return;
 
-describe('tests', function () {
+
+describe('tests bots', function () {
+  let file = 'bots.yml';
+  describe('file fixture ' + file, function () {
+    let fixtureData = YML.load(fixtureFolder + file);
+    let total = fixtureData.length;
+    fixtureData= [  fixtureData[85] ];
+
+    fixtureData.forEach((fixture, pos) => {
+      it(pos + '/' + total, function(){
+        testsFromFixtureBot.call(this, fixture);
+      });
+    });
+  });
+});
+
+describe('tests old all fixtures', function () {
   this.timeout(6000);
   ymlFiles.forEach(function (file) {
-
     if(file === 'bots.yml'){
       return;
     }
-
     describe('file fixture ' + file, function () {
 
       let fixtureData = YML.load(fixtureFolder + file);

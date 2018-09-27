@@ -49,3 +49,15 @@ exports.hasAndroidMobileFragment = function (userAgent) {
 exports.hasOperaTVStoreFragment = function (userAgent) {
   return this.matchUserAgent('Opera TV Store', userAgent) !== null;
 };
+
+/**
+* @param options
+* @param propName
+* @param defaultValue
+* @return {*|null}
+*/
+exports.getPropertyValue = function(options, propName, defaultValue){
+  return options !== undefined && options[propName] !==undefined
+      ?  options[propName]
+      : defaultValue !== undefined ? defaultValue : null;
+};

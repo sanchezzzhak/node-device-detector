@@ -17,6 +17,8 @@ const FeedReader = require('./parser/client/feed-reader');
 const PIM = require('./parser/client/pim');
 // os parsers
 const OsParser = require('./parser/os-abstract-parser');
+// bot parsers
+const BotParser= require('./parser/bot-abstract-parser');
 
 const DEVICE_TYPE = require('./parser/const/device-type');
 const DEVICE_PARSER = {
@@ -40,14 +42,19 @@ const TV_CLIENT_LIST = ['Kylo', 'Espial TV Browser'];
 const DESKTOP_OS_LIST = ['AmigaOS', 'IBM', 'GNU/Linux', 'Mac', 'Unix', 'Windows', 'BeOS', 'Chrome OS'];
 const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile'];
 
+
 function DeviceDetector(options) {
   this.osData = null;
   this.deviceData = null;
   this.clientData = null;
+  this.botData = null;
 
   this.osParserList = {};
+  this.botParserList = {};
   this.deviceParserList = {};
   this.clientParserList = {};
+
+  this.skipBotDetection = helper.getPropertyValue(options, "skipBotDetection", false);
 
   this.init();
 }
@@ -70,6 +77,7 @@ DeviceDetector.prototype.init = function () {
   this.addParseDevice(DEVICE_PARSER.PORTABLE_MEDIA_PLAYER, new PortableMediaPlayer());
   this.addParseDevice(DEVICE_PARSER.MOBILE, new MobileParser);
 
+  this.addParseBot("Bot", new BotParser);
 };
 
 DeviceDetector.prototype.getParseDevice = function (name) {
@@ -90,6 +98,10 @@ DeviceDetector.prototype.addParseDevice = function (name, parser) {
 
 DeviceDetector.prototype.addParseOs = function (name, parser) {
   this.osParserList[name] = parser;
+};
+
+DeviceDetector.prototype.addParseBot = function (name, parser) {
+  this.botParserList[name] = parser;
 };
 
 DeviceDetector.prototype.addParseClient = function (name, parser) {
@@ -196,11 +208,18 @@ DeviceDetector.prototype.parseDevice = function () {
 
 };
 
-/**
- * @todo need realisation
- */
 DeviceDetector.prototype.parseBot = function () {
-
+  if(this.skipBotDetection){
+    return;
+  }
+  for (let name in this.botParserList) {
+    let parser = this.botParserList[name];
+    let result = parser.parse(this.userAgent);
+    if (result) {
+      this.botData = parser.getParseData();
+      break;
+    }
+  }
 };
 
 /**
@@ -226,17 +245,24 @@ DeviceDetector.prototype.detect = function (userAgent) {
   this.reset();
   this.userAgent = userAgent;
 
-  this.parseBot();
   this.parseOs();
   this.parseClient();
   this.parseDevice();
   this.parseDeviceType();
+  this.parseBot();
 
   return {
     os: this.osData,
     device: this.deviceData,
     client: this.clientData
   };
+};
+
+/**
+ * @return {boolean}
+ */
+DeviceDetector.prototype.isBot = function () {
+  return this.botData !== null;
 };
 
 /**
@@ -295,6 +321,7 @@ DeviceDetector.prototype.isIOS = function () {
  * reset detect result
  */
 DeviceDetector.prototype.reset = function () {
+  this.botData = null;
   this.userAgent = null;
   this.osData = null;
   this.clientData = null;
