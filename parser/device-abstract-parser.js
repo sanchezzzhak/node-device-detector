@@ -1,6 +1,9 @@
 const ParserAbstract = require('./abstract-parser');
 const util = require('util');
 
+const collectionBrand = Object.assign({},
+    ...Object.entries(require('./device/brand-short')).map(([a, b]) => ({[b]: a})), {});
+
 function DeviceParserAbstract() {
   this.model = '';
   this.brand = '';
@@ -11,16 +14,16 @@ function DeviceParserAbstract() {
 util.inherits(DeviceParserAbstract, ParserAbstract);
 
 
-DeviceParserAbstract.prototype.reset = function(){
+DeviceParserAbstract.prototype.reset = function () {
   this.model = '';
   this.brand = '';
   this.type = '';
   this.id = '';
 };
 
-DeviceParserAbstract.prototype.getParseData = function(){
+DeviceParserAbstract.prototype.getParseData = function () {
   return {
-    id : this.id,
+    id: this.id,
     type: this.type,
     brand: this.brand,
     model: this.model
@@ -32,19 +35,22 @@ DeviceParserAbstract.prototype.getParseData = function(){
  * @param {string} userAgent
  * @return {boolean}
  */
-DeviceParserAbstract.prototype.parse = function(userAgent) {
+DeviceParserAbstract.prototype.parse = function (userAgent) {
   this.reset();
 
   let model = '';
   let deviceType = '';
-  let brandId = '';
-  
+  let brandName = '';
+
   for (let cursor in this.collection) {
     let item = this.collection[cursor];
     let match = this.getBaseRegExp(item['regex']).exec(userAgent);
 
     if (match) {
-      if(item['device']!== undefined){
+
+      brandName = String(cursor).trim();
+
+      if (item['device'] !== undefined) {
         deviceType = item['device'];
       }
 
@@ -58,24 +64,29 @@ DeviceParserAbstract.prototype.parse = function(userAgent) {
             if (data.device !== undefined) {
               deviceType = data.device;
             }
+            if (data.brand !== undefined) {
+              brandName = data.brand;
+            }
             break;
           }
+
         }
       } else if (item['model'] !== undefined) {
         model = this.buildModel(item['model'], match);
       }
 
-      this.brand = String(cursor).trim();
-      this.model = model!== null ? String(model).trim() : '';
+      let brandId = collectionBrand[brandName];
+
+      this.brand = brandName;
+      this.model = model !== null ? String(model).trim() : '';
       this.type = deviceType;
-      this.id = brandId;
+      this.id = brandId !== undefined ? brandId : '';
 
       return true;
     }
   }
   return false;
 };
-
 
 
 module.exports = DeviceParserAbstract;

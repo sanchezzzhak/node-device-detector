@@ -4,6 +4,7 @@ const util = require('util');
 const DEVICE_TYPE = require('./../const/device-type');
 
 function PortableMediaPlayer() {
+  PortableMediaPlayer.super_.call(this);
   this.fixtureFile = 'device/portable_media_player.yml';
   this.loadCollection();
   this.reset();

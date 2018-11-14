@@ -145,6 +145,12 @@ DeviceDetector.prototype.parseDeviceType = function () {
   let clientName = this.getClientAttr('name', '');
   let deviceType = this.getDeviceAttr('type', '');
 
+  //@todo add parser vendor fragment
+
+  if (this.deviceData.id === '' && ['ATV', 'IOS', 'MAC'].indexOf(osShortName) !== -1) {
+    this.deviceData.id = 'AP';
+  }
+
   if (deviceType === '' && this.isAndroid() && CHROME_CLIENT_LIST.indexOf(clientName) !== -1) {
     if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', this.userAgent) !== null) {
       deviceType = DEVICE_TYPE.SMARTPHONE

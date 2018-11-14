@@ -4,6 +4,7 @@ const util = require('util');
 const DEVICE_TYPE = require('./../const/device-type');
 
 function HbbTv() {
+  HbbTv.super_.call(this);
   this.fixtureFile = 'device/televisions.yml';
   this.loadCollection();
 }

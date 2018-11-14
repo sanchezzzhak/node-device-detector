@@ -3,6 +3,7 @@ const util = require('util');
 
 
 function Mobile() {
+  Mobile.super_.call(this);
   this.fixtureFile = 'device/mobiles.yml';
   this.loadCollection();
   this.reset();

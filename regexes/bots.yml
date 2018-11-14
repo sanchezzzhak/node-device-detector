@@ -506,6 +506,14 @@
     name: 'NTT Resonant'
     url: 'http://goo.ne.jp'
 
+- regex: 'Google Search Console'
+  name: 'Google Search Console'
+  category: 'Crawler'
+  url: 'https://search.google.com/search-console/about'
+  producer:
+    name: 'Google Inc.'
+    url: 'http://www.google.com'
+
 - regex: 'Google Page Speed Insights'
   name: 'Google PageSpeed Insights'
   category: 'Site Monitor'
@@ -570,7 +578,7 @@
     name: 'Visual Meta'
     url: 'https://www.shopalike.cz/'
 
-- regex: 'Googlebot(-Mobile|-Image|-Video|-News)?|Feedfetcher-Google|Google-Test|Google-Site-Verification|Google Web Preview|AdsBot-Google(-Mobile)?|Google-Adwords-Instant|Mediapartners-Google|Google.*/\+/web/snippet|GoogleProducer|Google[ -]Publisher[ -]Plugin|Google-Shopping-Quality|Google-Adwords-DisplayAds'
+- regex: 'Googlebot(-Mobile|-Image|-Video|-News)?|Feedfetcher-Google|Google-Test|Google-Site-Verification|Google Web Preview|AdsBot-Google(-Mobile)?|Google-Adwords-Instant|Mediapartners-Google|Google.*/\+/web/snippet|GoogleProducer|Google[ -]Publisher[ -]Plugin|Google-Shopping-Quality|Google-Adwords-DisplayAds|Google-Assess'
   name: 'Googlebot'
   category: 'Search bot'
   url: 'http://www.google.com/bot.html'
@@ -1595,6 +1603,14 @@
   producer:
     name: 'Site24x7'
     url: 'https://www.site24x7.com'
+
+- regex: 's~snapchat-proxy'
+  name: 'Snapchat Proxy'
+  category: 'Crawler'
+  url: 'https://www.snapchat.com'
+  producer:
+    name: 'Snapchat Inc.'
+    url: 'https://www.snapchat.com'
 
 - regex: "Let's Encrypt validation server"
   name: "Let's Encrypt Validation"

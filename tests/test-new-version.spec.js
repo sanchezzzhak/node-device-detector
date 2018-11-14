@@ -117,7 +117,9 @@ function testsFromFixture(fixture){
     if(isObjNotEmpty(fixture.device.type)){
       expect(String(fixture.device.type), messageError).to.equal(result.device.type);
     }
-
+    if(isObjNotEmpty(fixture.device.brand)){
+      expect(String(fixture.device.brand), messageError).to.equal(result.device.id);
+    }
   }
 
   // test os data
@@ -178,7 +180,7 @@ function testsFromFixture(fixture){
 }
 
 // describe('dev test one file', function () {
-//   let file = 'bots.yml';
+//   let file = 'camera.yml';
 //   let fixtureData = YML.load(fixtureFolder + file);
 //   let total = fixtureData.length;
 //  // fixtureData= [  fixtureData[415] ];
