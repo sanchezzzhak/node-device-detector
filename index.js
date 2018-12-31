@@ -19,8 +19,13 @@ const PIM = require('./parser/client/pim');
 const OsParser = require('./parser/os-abstract-parser');
 // bot parsers
 const BotParser= require('./parser/bot-abstract-parser');
+// vendor fragment parsers
+const VendorFragmentParser = require('./parser/vendor-fragment-abstract-parser');
 
 const DEVICE_TYPE = require('./parser/const/device-type');
+
+const VENDOR_FRAGMENT_PARSER = 'vendor-fragment';
+
 const DEVICE_PARSER = {
   MOBILE: 'Mobile',
   HBBTV: 'hbbtv',
@@ -49,6 +54,7 @@ function DeviceDetector(options) {
   this.clientData = null;
   this.botData = null;
 
+  this.vendorParserList = {};
   this.osParserList = {};
   this.botParserList = {};
   this.deviceParserList = {};
@@ -72,10 +78,12 @@ DeviceDetector.prototype.init = function () {
 
   this.addParseDevice(DEVICE_PARSER.HBBTV, new HbbTvParser);
   this.addParseDevice(DEVICE_PARSER.CONSOLE, new Console);
-  this.addParseDevice(DEVICE_PARSER.CAR_BROWSER, new CarBrowser());
+  this.addParseDevice(DEVICE_PARSER.CAR_BROWSER, new CarBrowser);
   this.addParseDevice(DEVICE_PARSER.CAMERA, new Camera());
-  this.addParseDevice(DEVICE_PARSER.PORTABLE_MEDIA_PLAYER, new PortableMediaPlayer());
+  this.addParseDevice(DEVICE_PARSER.PORTABLE_MEDIA_PLAYER, new PortableMediaPlayer);
   this.addParseDevice(DEVICE_PARSER.MOBILE, new MobileParser);
+
+  this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser);
 
   this.addParseBot("Bot", new BotParser);
 };
@@ -92,6 +100,10 @@ DeviceDetector.prototype.getParseOs = function (name) {
   return this.osParserList[name] ? this.osParserList[name] : null;
 };
 
+DeviceDetector.prototype.getParseVendor = function (name) {
+    return this.vendorParserList[name] ? this.vendorParserList[name] : null;
+};
+
 DeviceDetector.prototype.addParseDevice = function (name, parser) {
   this.deviceParserList[name] = parser;
 };
@@ -106,6 +118,10 @@ DeviceDetector.prototype.addParseBot = function (name, parser) {
 
 DeviceDetector.prototype.addParseClient = function (name, parser) {
   this.clientParserList[name] = parser;
+};
+
+DeviceDetector.prototype.addParseVendor = function (name, parser) {
+    this.vendorParserList[name] = parser;
 };
 
 /**
@@ -144,8 +160,6 @@ DeviceDetector.prototype.parseDeviceType = function () {
   let osVersion = this.getOsAttr('version', '');
   let clientName = this.getClientAttr('name', '');
   let deviceType = this.getDeviceAttr('type', '');
-
-  //@todo add parser vendor fragment
 
   if (this.deviceData.id === '' && ['ATV', 'IOS', 'MAC'].indexOf(osShortName) !== -1) {
     this.deviceData.id = 'AP';
@@ -212,6 +226,16 @@ DeviceDetector.prototype.parseDevice = function () {
     }
   }
 
+  if(this.deviceData.brand === ''){
+      let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
+      let result = parser.parse(this.userAgent);
+      if (result) {
+          let vendorData = parser.getParseData();
+
+          this.deviceData.brand = vendorData.name;
+          this.deviceData.id = vendorData.id;
+      }
+  }
 };
 
 DeviceDetector.prototype.parseBot = function () {

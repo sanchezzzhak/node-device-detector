@@ -2,6 +2,7 @@ module.exports = {
     '3Q' : '3Q',
     '4G' : '4Good',
     'AC' : 'Acer',
+    'AD' : 'Advance',
     'AZ' : 'Ainol',
     'AI' : 'Airness',
     'AW' : 'Aiwa',
@@ -97,6 +98,7 @@ module.exports = {
     'ER' : 'Ericy',
     'EE' : 'Essential',
     'EN' : 'Eton',
+    'E2' : 'Essentielb',
     'ET' : 'eTouch',
     'EV' : 'Evertek',
     'EO' : 'Evolveo',
@@ -151,6 +153,7 @@ module.exports = {
     'IQ' : 'INQ',
     'IT' : 'Intek',
     'IV' : 'Inverto',
+    'I3' : 'Impression',
     'IZ' : 'iTel',
     'JA' : 'JAY-Tech',
     'JI' : 'Jiayu',
@@ -224,6 +227,7 @@ module.exports = {
     'NO' : 'Nous',
     'NI' : 'Nintendo',
     'N1' : 'Noain',
+    'N2' : 'Nextbit',
     'NK' : 'Nokia',
     'NV' : 'Nvidia',
     'NB' : 'Noblex',
@@ -275,6 +279,7 @@ module.exports = {
     'RK' : 'Roku',
     'RO' : 'Rover',
     'SA' : 'Samsung',
+    'S0' : 'Sanei',
     'SD' : 'Sega',
     'SE' : 'Sony Ericsson',
     'S1' : 'Sencor',
@@ -349,6 +354,7 @@ module.exports = {
     'VR' : 'Vernee',
     'VL' : 'Verykool',
     'VV' : 'Vivo',
+    'V3' : 'Vinsoc',
     'V2' : 'Vonino',
     'V1' : 'Voto',
     'VO' : 'Voxtel',
@@ -376,9 +382,9 @@ module.exports = {
     'ZT' : 'ZTE',
     'ZU' : 'Zuum',
     'ZN' : 'Zen',
+    'ZY' : 'Zync',
 
     // legacy brands, might be removed in future versions
     'WB' : 'Web TV',
     'XX' : 'Unknown'
-
 };
