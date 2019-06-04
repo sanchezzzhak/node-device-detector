@@ -221,9 +221,7 @@ DeviceDetector.prototype.parseDevice = function (userAgent) {
   for (let name in this.deviceParserList) {
     let parser = this.deviceParserList[name];
     let resultMerge = parser.parse(userAgent);
-	console.log("resultMerge", name, resultMerge);
     if (resultMerge) {
-
 	  result = Object.assign(result, resultMerge);
 	  break;
     }
@@ -292,9 +290,7 @@ DeviceDetector.prototype.detect = function (userAgent) {
   let clientData = this.parseClient(userAgent);
   let deviceData = this.parseDevice(userAgent);
   let deviceDataType = this.parseDeviceType(userAgent, osData, clientData, deviceData);
-  console.log("device-data 1", deviceData);
   deviceData = Object.assign(deviceData, deviceDataType);
-  console.log("device-data 2", deviceData);
   return {
     os: osData,
 	client: clientData,
