@@ -4,7 +4,6 @@ const util = require('util');
 function OsAbstractParser() {
   this.fixtureFile = 'oss.yml';
   this.loadCollection();
-  this.reset();
 }
 
 util.inherits(OsAbstractParser, ParserAbstract);
@@ -12,15 +11,6 @@ util.inherits(OsAbstractParser, ParserAbstract);
 OsAbstractParser.prototype.os_systems = require('./os/os_systems');
 OsAbstractParser.prototype.os_families = require('./os/os_families');
 
-OsAbstractParser.prototype.getParseData = function(){
-  return {
-    short_name: this.short_name,
-    name: this.name,
-    version: this.version,
-    platform: this.platform,
-    family: this.family
-  };
-};
 
 /**
  * @param name
@@ -36,8 +26,7 @@ OsAbstractParser.prototype.parseOsFamily = function(name){
 };
 
 OsAbstractParser.prototype.parse = function (userAgent) {
-  this.reset();
-
+  
   for (let i = 0, l = this.collection.length; i < l; i++) {
     let item = this.collection[i];
     let regex = this.getBaseRegExp(item.regex);
@@ -52,27 +41,19 @@ OsAbstractParser.prototype.parse = function (userAgent) {
           break;
         }
       }
-
-      this.name = name;
-      this.short_name = short;
-      this.version = this.buildVersion(item.version, match);
-      this.platform = this.parsePlatform(userAgent);
-      this.family = this.parseOsFamily(short);
-
-      return true
+      return {
+        name: name,
+		short_name: short,
+		version: this.buildVersion(item.version, match),
+		platform: this.parsePlatform(userAgent),
+		family: this.parseOsFamily(short)
+	  };
     }
   }
 
-  return false;
+  return null;
 };
 
-OsAbstractParser.prototype.reset = function () {
-  this.short_name = '';
-  this.name = '';
-  this.version = '';
-  this.platform = '';
-  this.family = '';
-};
 
 /**
  * parse ua platform

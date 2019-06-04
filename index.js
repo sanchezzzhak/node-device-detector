@@ -127,57 +127,49 @@ DeviceDetector.prototype.addParseVendor = function (name, parser) {
 /**
  * parse os
  */
-DeviceDetector.prototype.parseOs = function () {
+DeviceDetector.prototype.parseOs = function (userAgent) {
+  let result = {};
   for (let name in this.osParserList) {
     let parser = this.osParserList[name];
-    let result = parser.parse(this.userAgent);
-    if (result) {
-      this.osData = parser.getParseData();
+    let resultMerge = parser.parse(userAgent);
+    if (resultMerge) {
+      result = Object.assign(result, resultMerge);
       break;
     }
   }
+  return result;
 };
 
-DeviceDetector.prototype.getDeviceAttr = function (attr, defaultValue) {
-  return this.deviceData && this.deviceData[attr] ? this.deviceData[attr] : defaultValue;
-};
-
-DeviceDetector.prototype.getOsAttr = function (attr, defaultValue) {
-  return this.osData && this.osData[attr] ? this.osData[attr] : defaultValue;
-};
-
-DeviceDetector.prototype.getClientAttr = function (attr, defaultValue) {
-  return this.clientData && this.clientData[attr] ? this.clientData[attr] : defaultValue;
-};
-
-/**
- * parse device
- */
-DeviceDetector.prototype.parseDeviceType = function () {
-  let osName = this.getOsAttr('name', '');
-  let osFamily = this.getOsAttr('family', '');
-  let osShortName = this.getOsAttr('short_name', '');
-  let osVersion = this.getOsAttr('version', '');
-  let clientName = this.getClientAttr('name', '');
-  let deviceType = this.getDeviceAttr('type', '');
-
-  if (this.deviceData.id === '' && ['ATV', 'IOS', 'MAC'].indexOf(osShortName) !== -1) {
-    this.deviceData.id = 'AP';
+DeviceDetector.prototype.parseDeviceType = function (userAgent, osData, clientData, deviceData) {
+  let osName = osData && osData['name'] ? osData['name'] : '';
+  let osFamily = osData && osData['family'] ? osData['family'] : '';
+  let osShortName = osData && osData['short_name'] ? osData['short_name'] : '';
+  let osVersion = osData && osData['version'] ? osData['version'] : '';
+  
+  let clientName = clientData && clientData['name'] ? clientData['name'] : '';
+  
+  let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
+  let deviceId = deviceData && deviceData['id'] ? deviceData['id'] : '';
+  
+  let isAndroid = osFamily === 'Android';
+  
+  if (deviceId === '' && ['ATV', 'IOS', 'MAC'].indexOf(osShortName) !== -1) {
+	deviceId = 'AP';
   }
 
-  if (deviceType === '' && this.isAndroid() && CHROME_CLIENT_LIST.indexOf(clientName) !== -1) {
-    if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', this.userAgent) !== null) {
+  if (deviceType === '' && isAndroid && CHROME_CLIENT_LIST.indexOf(clientName) !== -1) {
+    if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', userAgent) !== null) {
       deviceType = DEVICE_TYPE.SMARTPHONE
-    } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', this.userAgent) !== null) {
+    } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
       deviceType = DEVICE_TYPE.TABLET
     }
   }
 
-  if (deviceType === '' && (helper.hasAndroidTableFragment(this.userAgent) || helper.hasOperaTableFragment(this.userAgent)  )) {
+  if (deviceType === '' && (helper.hasAndroidTableFragment(userAgent) || helper.hasOperaTableFragment(userAgent)  )) {
     deviceType = DEVICE_TYPE.TABLET;
   }
 
-  if (deviceType === '' && helper.hasAndroidMobileFragment(this.userAgent)) {
+  if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
     deviceType = DEVICE_TYPE.SMARTPHONE;
   }
 
@@ -189,19 +181,19 @@ DeviceDetector.prototype.parseDeviceType = function () {
     }
   }
 
-  if (deviceType === DEVICE_TYPE.FEATURE_PHONE && this.isAndroid()) {
+  if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
     deviceType = DEVICE_TYPE.SMARTPHONE;
   }
 
-  if (deviceType === '' && (osShortName === 'WRT' || (osShortName === 'WIN' && helper.versionCompare(osVersion, '8.0'))) && helper.hasTouchFragment(this.userAgent)) {
+  if (deviceType === '' && (osShortName === 'WRT' || (osShortName === 'WIN' && helper.versionCompare(osVersion, '8.0'))) && helper.hasTouchFragment(userAgent)) {
     deviceType = DEVICE_TYPE.TABLET;
   }
 
-  if (helper.hasOperaTVStoreFragment(this.userAgent)) {
+  if (helper.hasOperaTVStoreFragment(userAgent)) {
     deviceType = DEVICE_TYPE.TABLET;
   }
 
-  if (helper.hasOperaTVStoreFragment(this.userAgent)) {
+  if (helper.hasOperaTVStoreFragment(userAgent)) {
     deviceType = DEVICE_TYPE.TV;
   }
 
@@ -212,58 +204,81 @@ DeviceDetector.prototype.parseDeviceType = function () {
   if (deviceType === '' && DESKTOP_OS_LIST.indexOf(osFamily) !== -1) {
     deviceType = DEVICE_TYPE.DESKTOP;
   }
-
-  this.deviceData.type = deviceType;
+  
+  return {
+    id: deviceId,
+    type: deviceType
+  }
 };
 
-DeviceDetector.prototype.parseDevice = function () {
+DeviceDetector.prototype.parseDevice = function (userAgent) {
+  let result = {
+	"id": "",
+	"type": "",
+	"brand": "",
+	"model": ""
+  };
   for (let name in this.deviceParserList) {
     let parser = this.deviceParserList[name];
-    let result = parser.parse(this.userAgent);
-    if (result) {
-      this.deviceData = parser.getParseData();
-      break;
+    let resultMerge = parser.parse(userAgent);
+	console.log("resultMerge", name, resultMerge);
+    if (resultMerge) {
+
+	  result = Object.assign(result, resultMerge);
+	  break;
     }
   }
-
-  if(this.deviceData.brand === ''){
-      let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
-      let result = parser.parse(this.userAgent);
-      if (result) {
-          let vendorData = parser.getParseData();
-
-          this.deviceData.brand = vendorData.name;
-          this.deviceData.id = vendorData.id;
-      }
+  
+  if(result && result.brand === ''){
+    let resultVendor = this.parseVendor(userAgent);
+	if (resultVendor) {
+	  result.brand = resultVendor.name;
+	  result.id = resultVendor.id;
+	}
+  
   }
+  
+  return result;
 };
 
-DeviceDetector.prototype.parseBot = function () {
+DeviceDetector.prototype.parseVendor = function (userAgent) {
+  let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
+  return parser.parse(userAgent);
+};
+
+DeviceDetector.prototype.parseBot = function (userAgent) {
+  let result = {};
+  
   if(this.skipBotDetection){
-    return;
+    return result;
   }
+  
   for (let name in this.botParserList) {
     let parser = this.botParserList[name];
-    let result = parser.parse(this.userAgent);
-    if (result) {
-      this.botData = parser.getParseData();
-      break;
+    let resultMerge = parser.parse(userAgent);
+    if (resultMerge) {
+     result = Object.assign(result, resultMerge);
+	  break;
     }
   }
+  return result;
 };
 
 /**
  * parse client
  */
-DeviceDetector.prototype.parseClient = function () {
+DeviceDetector.prototype.parseClient = function (userAgent) {
+  let result = {};
   for (let name in this.clientParserList) {
     let parser = this.clientParserList[name];
-    let result = parser.parse(this.userAgent);
-    if (result) {
-      this.clientData = parser.getParseData();
-      break;
+    let resultMerge = parser.parse(userAgent);
+    if (resultMerge) {
+      result = Object.assign(result, resultMerge);
+	  break;
     }
+    
   }
+  return result;
 };
 
 
@@ -272,93 +287,77 @@ DeviceDetector.prototype.parseClient = function () {
  * @return {{os: (null|*), device: (null|*), client: (null|*)}}
  */
 DeviceDetector.prototype.detect = function (userAgent) {
-  this.reset();
-  this.userAgent = userAgent;
-
-  this.parseOs();
-  this.parseClient();
-  this.parseDevice();
-  this.parseDeviceType();
-  this.parseBot();
-
+  
+  let osData = this.parseOs(userAgent);
+  let clientData = this.parseClient(userAgent);
+  let deviceData = this.parseDevice(userAgent);
+  let deviceDataType = this.parseDeviceType(userAgent, osData, clientData, deviceData);
+  console.log("device-data 1", deviceData);
+  deviceData = Object.assign(deviceData, deviceDataType);
+  console.log("device-data 2", deviceData);
   return {
-    os: this.osData,
-    device: this.deviceData,
-    client: this.clientData
+    os: osData,
+	client: clientData,
+    device: deviceData
   };
 };
 
-/**
- * @return {boolean}
- */
-DeviceDetector.prototype.isBot = function () {
-  return this.botData !== null;
-};
 
-/**
- * is device type desktop
- * @return {boolean}
- */
-DeviceDetector.prototype.isDesktop = function () {
-  return !this.isMobile() && !this.isTabled() && !this.isPhablet();
-};
-
-/**
- * is device type mobile
- * @return {boolean}
- */
-DeviceDetector.prototype.isMobile = function () {
-  let type = this.getDeviceAttr('type', '');
-  return [DEVICE_TYPE.SMARTPHONE, DEVICE_TYPE.FEATURE_PHONE].indexOf(type) !== -1;
-};
-
-/**
- * is device type table
- * @return {boolean}
- */
-DeviceDetector.prototype.isTabled = function () {
-  let type = this.getDeviceAttr('type', '');
-  return [DEVICE_TYPE.TABLET].indexOf(type) !== -1;
-};
-
-/**
- * is device type phablet
- * @return {boolean}
- */
-DeviceDetector.prototype.isPhablet = function () {
-  let type = this.getDeviceAttr('type', '');
-  return [DEVICE_TYPE.PHABLET].indexOf(type) !== -1;
-};
-/**
- * is device type android table
- * @return {boolean}
- */
-DeviceDetector.prototype.isAndroid = function () {
-  let osFamily = this.getOsAttr('family', '');
-  return osFamily === 'Android';
-};
-
-/**
- * is device type apple table
- * @return {boolean}
- */
-DeviceDetector.prototype.isIOS = function () {
-  let osFamily = this.getOsAttr('family', '');
-  return osFamily === 'iOS';
-};
-
-/**
- * reset detect result
- */
-DeviceDetector.prototype.reset = function () {
-  this.botData = null;
-  this.userAgent = null;
-  this.osData = null;
-  this.clientData = null;
-  this.deviceData = {
-    id: '',
-    type: '',
-    brand: '',
-    model: ''
-  };
-};
+// /**
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isBot = function () {
+//   return this.botData !== null;
+// };
+//
+// /**
+//  * is device type desktop
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isDesktop = function () {
+//   return !this.isMobile() && !this.isTabled() && !this.isPhablet();
+// };
+//
+// /**
+//  * is device type mobile
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isMobile = function () {
+//   let type = this.getDeviceAttr('type', '');
+//   return [DEVICE_TYPE.SMARTPHONE, DEVICE_TYPE.FEATURE_PHONE].indexOf(type) !== -1;
+// };
+//
+// /**
+//  * is device type table
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isTabled = function () {
+//   let type = this.getDeviceAttr('type', '');
+//   return [DEVICE_TYPE.TABLET].indexOf(type) !== -1;
+// };
+//
+// /**
+//  * is device type phablet
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isPhablet = function () {
+//   let type = this.getDeviceAttr('type', '');
+//   return [DEVICE_TYPE.PHABLET].indexOf(type) !== -1;
+// };
+// /**
+//  * is device type android table
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isAndroid = function () {
+//   let osFamily = this.getOsAttr('family', '');
+//   return osFamily === 'Android';
+// };
+//
+// /**
+//  * is device type apple table
+//  * @return {boolean}
+//  */
+// DeviceDetector.prototype.isIOS = function () {
+//   let osFamily = this.getOsAttr('family', '');
+//   return osFamily === 'iOS';
+// };

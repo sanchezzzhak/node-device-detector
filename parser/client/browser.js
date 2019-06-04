@@ -11,38 +11,16 @@ function Browser() {
   this.engine_collection = [];
   this.fixtureFile = 'client/browsers.yml';
   this.loadCollection();
-  this.reset();
 }
 
 util.inherits(Browser, ClientAbstractParser);
-
-Browser.prototype.getParseData = function () {
-  return {
-    engine: this.engine,
-    engine_version: this.engine_version,
-    short_name: this.short_name,
-    name: this.name,
-    version: this.version,
-    type: this.type
-  };
-};
 
 Browser.prototype.loadCollection = function () {
   ClientAbstractParser.prototype.loadCollection.call(this);
   this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
 };
 
-Browser.prototype.reset = function () {
-  this.engine = '';
-  this.engine_version = '';
-  this.short_name = '';
-  this.name = '';
-  this.version = '';
-  this.type = '';
-};
-
 Browser.prototype.parse = function (userAgent) {
-  this.reset();
   for (let i = 0, l = this.collection.length; i < l; i++) {
     let item = this.collection[i];
     let regex = this.getBaseRegExp(item.regex);
@@ -58,18 +36,20 @@ Browser.prototype.parse = function (userAgent) {
         engine = this.parseEngine(userAgent);
       }
       let engineVersion = this.buildEngineVersion(userAgent, engine);
-
-      this.engine = engine;
-      this.engine_version = engineVersion;
-      this.short_name = String(short);
-      this.name = name;
-      this.version = version;
-      this.type = CLIENT_TYPE.BROWSER;
-
-      return true;
+      
+	  return {
+		type: CLIENT_TYPE.BROWSER,
+		name: name,
+		short_name: String(short),
+		version: version,
+		engine: engine,
+		engine_version: engineVersion,
+	  };
+   
     }
   }
-  return false;
+  
+  return null;
 };
 
 /**

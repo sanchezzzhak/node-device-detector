@@ -12,12 +12,15 @@ function HbbTv() {
 util.inherits(HbbTv, DeviceAbstractParser);
 
 HbbTv.prototype.parse = function (userAgent) {
-  if(!this.isHubTv(userAgent)){
-      return false;
+  if (!this.isHubTv(userAgent)) {
+	return null;
   }
-  DeviceAbstractParser.prototype.parse.call(this, [userAgent]);
-  this.type = DEVICE_TYPE.TV;
-  return true;
+  
+  let result = DeviceAbstractParser.prototype.parse.call(this, [userAgent]);
+  if (result) {
+	result['type'] = DEVICE_TYPE.TV;
+  }
+  return result;
 };
 
 /**
@@ -25,8 +28,8 @@ HbbTv.prototype.parse = function (userAgent) {
  * @param {String} userAgent
  * @return {Boolean}
  */
-HbbTv.prototype.isHubTv = function(userAgent){
-  let regex =  'HbbTV/([1-9]{1}(?:\.[0-9]{1}){1,2})';
+HbbTv.prototype.isHubTv = function (userAgent) {
+  let regex = 'HbbTV/([1-9]{1}(?:\.[0-9]{1}){1,2})';
   let match = this.getBaseRegExp(regex).exec(userAgent);
   return match !== null;
 };

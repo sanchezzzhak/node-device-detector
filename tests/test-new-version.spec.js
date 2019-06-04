@@ -3,6 +3,9 @@ const should = require('chai').should;
 const assert = require('chai').assert;
 const expect = require('chai').expect;
 
+const Table = require('cli-table');
+
+
 // fixture format
 /*
   user_agent: ""
@@ -96,10 +99,21 @@ function testsFromFixtureBot(fixture){
 function testsFromFixture(fixture){
   let result;
   try {
-    console.log('UserAgent\n\x1b[33m%s\x1b[0m', fixture.user_agent);
+
     result = detector.detect(fixture.user_agent);
-    console.log('Result\n\x1b[34m%s\x1b[0m', perryJSON(result));
-    console.log('Fixture\n\x1b[36m%s\x1b[0m', perryJSON(fixture));
+
+	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
+	const table = new Table({
+	  head: ['Result', 'Fixture']
+	  , colWidths: [100, 100]
+	});
+	table.push([
+	  perryJSON(result),
+	   perryJSON(fixture)
+	]);
+	console.log(table.toString());
+  
+  
   } catch (e) {
     throw new SyntaxError(e.stack);
   }

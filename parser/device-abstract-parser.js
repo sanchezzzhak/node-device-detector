@@ -4,40 +4,12 @@ const util = require('util');
 const collectionBrand = Object.assign({},
     ...Object.entries(require('./device/brand-short')).map(([a, b]) => ({[b]: a})), {});
 
-function DeviceParserAbstract() {
-  this.model = '';
-  this.brand = '';
-  this.type = '';
-  this.id = '';
-}
+function DeviceParserAbstract() {}
 
 util.inherits(DeviceParserAbstract, ParserAbstract);
 
 
-DeviceParserAbstract.prototype.reset = function () {
-  this.model = '';
-  this.brand = '';
-  this.type = '';
-  this.id = '';
-};
-
-DeviceParserAbstract.prototype.getParseData = function () {
-  return {
-    id: this.id,
-    type: this.type,
-    brand: this.brand,
-    model: this.model
-  };
-};
-
-/**
- *
- * @param {string} userAgent
- * @return {boolean}
- */
 DeviceParserAbstract.prototype.parse = function (userAgent) {
-  this.reset();
-
   let model = '';
   let deviceType = '';
   let brandName = '';
@@ -76,16 +48,16 @@ DeviceParserAbstract.prototype.parse = function (userAgent) {
       }
 
       let brandId = collectionBrand[brandName];
-
-      this.brand = brandName;
-      this.model = model !== null ? String(model).trim() : '';
-      this.type = deviceType;
-      this.id = brandId !== undefined ? brandId : '';
-
-      return true;
+  
+	  return {
+		id: brandId !== undefined ? brandId : '',
+		brand: brandName,
+		model: model !== null ? String(model).trim() : '',
+		type: deviceType,
+	  };
     }
   }
-  return false;
+  return null;
 };
 
 

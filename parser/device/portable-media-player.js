@@ -7,7 +7,6 @@ function PortableMediaPlayer() {
   PortableMediaPlayer.super_.call(this);
   this.fixtureFile = 'device/portable_media_player.yml';
   this.loadCollection();
-  this.reset();
 }
 
 util.inherits(PortableMediaPlayer, DeviceAbstractParser);

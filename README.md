@@ -10,7 +10,7 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 local install production
 
 ```
-npm install node-device-detector --production
+npm install node-device-detector --save
 ```
 local machine install is developer
 ```

@@ -26,7 +26,6 @@ function fixStringVersion(result) {
  * @constructor
  */
 function ParserAbstract() {
-  this.userAgent = null;
   this.fixtureFile = null;
   this.collection = null;
 }

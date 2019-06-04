@@ -6,7 +6,6 @@ function Mobile() {
   Mobile.super_.call(this);
   this.fixtureFile = 'device/mobiles.yml';
   this.loadCollection();
-  this.reset();
 }
 
 util.inherits(Mobile, DeviceAbstractParser);
