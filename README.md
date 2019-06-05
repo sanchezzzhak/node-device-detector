@@ -5,7 +5,8 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 ### !!! library works only under nodejs v10+
 
 
-### Install
+Install
+-
 
 local install production
 
@@ -17,62 +18,109 @@ local machine install is developer
 npm install node-device-detector --only=dev
 ```
 
-### Usage
+# Before upgrading to up version, pls read;
+### (ChangeLog)
+
+* v1.1.5
+    * Remove methods: isBot(), isMobile(), isPhablet() is* etc...
+    * All parsing results are no longer stored in the class object, the result is given immediately, this will allow you to use asynchrony
+    * Update fixtures from the motamo-org/devicedetect package#3.11.7
+
+Usage
+-
 
 ```js
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector;
 
-console.log(detector.detect(userAgent));
-console.log('helper methods check type device');
-console.log('isDesktop', detector.isDesktop()); // false
-console.log('isTabled', detector.isTabled()); // false
-console.log('isPhablet', detector.isPhablet()); // false
-console.log('isIOS', detector.isIOS()); // false
-console.log('isAndroid', detector.isAndroid()); // true
-console.log('isMobile', detector.isMobile()); // true
+const result = detector.detect(userAgent);
 
+/*
+const DEVICE_TYPE = require('node-device-detector/parser/const/device-type');
+const isTabled  = result.device && [DEVICE_TYPE.TABLET].indexOf(result.device.type) !== -1;
+const isMobile = result.device && [DEVICE_TYPE.SMARTPHONE, DEVICE_TYPE.FEATURE_PHONE].indexOf(result.device.type) !== -1;
+const isPhablet = result.device && [DEVICE_TYPE.PHABLET].indexOf(result.device.type) !== -1;
+const isIOS = result.os && result.os.family === 'iOS';
+const isAndroid = result.os && result.os.family === 'Android';
+const isDesktop = !isTabled && !isMobile && !isPhablet;
+*/
+
+console.log('result parse', result);
 ```
 
 ### Result parse
 
-```json
-{
-	"os" : {
-		"short_name" : "AND",
-		"name" : "Android",
-		"version" : "5.0",
-		"platform" : "",
-		"family" : "Android"
-	},
-	"device" : {
-		"id" : "",
-		"type" : "smartphone",
-		"brand" : "ZTE",
-		"model" : "Nubia Z7 max"
-	},
-	"client" : {
-		"engine" : "Blink",
-		"engine_version" : "",
-		"short_name" : "CM",
-		"name" : "Chrome Mobile",
-		"version" : "43.0.2357.78",
-		"type" : "browser"
-	}
+```text
+{ 
+    os: { 
+        name: 'Android',
+        short_name: 'AND',
+        version: '5.0',
+        platform: '',
+        family: 'Android'
+    },
+    client:  { 
+        type: 'browser',
+        name: 'Chrome Mobile',
+        short_name: 'CM',
+        version: '43.0.2357.78',
+        engine: 'Blink',
+        engine_version: '' 
+    },
+    device: { 
+        id: 'ZT',
+        type: 'smartphone',
+        brand: 'ZTE',
+        model: 'Nubia Z7 max'
+    }
 }
+
 ```
 
 Result is not detect
-```json
+```text
 { 
-  "os": null,
-  "device": {
-    "id": "",
-    "type" : "is type detect not empty attr",
-    "brand": "",
-    "model": ""
-  },
-  "client": null
+  os: {},
+  client: {},
+  device: {
+    id: '',
+    type : 'device type',
+    brand: '',
+    model: ''
+  }
 }
 ```
+
+Using parsers singly
+-
+
+Detect Bot
+```js
+const DeviceDetector = require('node-device-detector');
+const userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)';
+const detector = new DeviceDetector;
+const result = detector.parseBot(userAgent);
+```
+
+Detect Os
+```js
+const DeviceDetector = require('node-device-detector');
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+const detector = new DeviceDetector;
+const result = detector.parseOs(userAgent);
+console.log('Result parse os', result);  
+```
+
+Detect Client 
+```js
+const DeviceDetector = require('node-device-detector');
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+const detector = new DeviceDetector;
+const result = detector.parseClient(userAgent);
+console.log('Result parse client', result);
+```
+
+Others
+-
+- [MoleculerJs Service](https://gist.github.com/sanchezzzhak/168180f811bc6993242f1d97f9f98d5a) Service device detect

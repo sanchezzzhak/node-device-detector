@@ -291,69 +291,10 @@ DeviceDetector.prototype.detect = function (userAgent) {
   let deviceData = this.parseDevice(userAgent);
   let deviceDataType = this.parseDeviceType(userAgent, osData, clientData, deviceData);
   deviceData = Object.assign(deviceData, deviceDataType);
+  
   return {
     os: osData,
 	client: clientData,
     device: deviceData
   };
 };
-
-
-// /**
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isBot = function () {
-//   return this.botData !== null;
-// };
-//
-// /**
-//  * is device type desktop
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isDesktop = function () {
-//   return !this.isMobile() && !this.isTabled() && !this.isPhablet();
-// };
-//
-// /**
-//  * is device type mobile
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isMobile = function () {
-//   let type = this.getDeviceAttr('type', '');
-//   return [DEVICE_TYPE.SMARTPHONE, DEVICE_TYPE.FEATURE_PHONE].indexOf(type) !== -1;
-// };
-//
-// /**
-//  * is device type table
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isTabled = function () {
-//   let type = this.getDeviceAttr('type', '');
-//   return [DEVICE_TYPE.TABLET].indexOf(type) !== -1;
-// };
-//
-// /**
-//  * is device type phablet
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isPhablet = function () {
-//   let type = this.getDeviceAttr('type', '');
-//   return [DEVICE_TYPE.PHABLET].indexOf(type) !== -1;
-// };
-// /**
-//  * is device type android table
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isAndroid = function () {
-//   let osFamily = this.getOsAttr('family', '');
-//   return osFamily === 'Android';
-// };
-//
-// /**
-//  * is device type apple table
-//  * @return {boolean}
-//  */
-// DeviceDetector.prototype.isIOS = function () {
-//   let osFamily = this.getOsAttr('family', '');
-//   return osFamily === 'iOS';
-// };
