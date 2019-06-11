@@ -95,7 +95,7 @@ Result is not detect
 Using parsers singly
 -
 
-Detect Bot
+#### Detect Bot
 ```js
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)';
@@ -103,7 +103,7 @@ const detector = new DeviceDetector;
 const result = detector.parseBot(userAgent);
 ```
 
-Detect Os
+#### Detect Os
 ```js
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
@@ -112,7 +112,7 @@ const result = detector.parseOs(userAgent);
 console.log('Result parse os', result);  
 ```
 
-Detect Client 
+#### Detect Client 
 ```js
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
@@ -121,6 +121,18 @@ const result = detector.parseClient(userAgent);
 console.log('Result parse client', result);
 ```
 
+#### Lite parse not detect brand
+```js
+const DeviceDetector = require('node-device-detector');
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+const detector = new DeviceDetector;
+const resultOs = detector.parseOs(userAgent);
+const resultClient = detector.parseClient(userAgent);
+const resultDeviceType = detector.parseDeviceType(userAgent, resultOs, resultClient, {});
+const result = Object.assign({os:resultOs}, {client:resultClient}, {device: resultDeviceType});
+console.log('Result parse lite', result);
+```
+
 Others
 -
-- [MoleculerJs Service](https://gist.github.com/sanchezzzhak/168180f811bc6993242f1d97f9f98d5a) Service device detect
+* [Micro service](MICROSERVICE.MD)  from framework [moleculer js](http://moleculer.services)
