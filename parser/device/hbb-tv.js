@@ -16,9 +16,18 @@ HbbTv.prototype.parse = function (userAgent) {
 	return null;
   }
   
-  let result = DeviceAbstractParser.prototype.parse.call(this, [userAgent]);
-  if (result) {
-	result['type'] = DEVICE_TYPE.TV;
+  let result = {
+	id: '',
+	type: DEVICE_TYPE.TV,
+	brand: '',
+	model: ''
+  };
+  
+  let resultParse = DeviceAbstractParser.prototype.parse.call(this, [userAgent]);
+  if (resultParse) {
+	result.id = resultParse.id;
+	result.brand = resultParse.brand;
+	result.model = resultParse.model;
   }
   return result;
 };
