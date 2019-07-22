@@ -7,7 +7,6 @@ const expect = require('chai').expect;
 
 const Table = require('cli-table');
 
-
 // fixture format
 /*
   user_agent: ""
@@ -196,12 +195,8 @@ function testsFromFixtureDevice(fixture){
 }
 
 function testsFromFixtureClient(fixture){
-  console.log(fixture);
-  
-  return;
   let result;
-  try {
-	
+
 	result = detector.detect(fixture.user_agent);
 	
 	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
@@ -210,11 +205,33 @@ function testsFromFixtureClient(fixture){
 	  , colWidths: [100, 100]
 	});
 	table.push([
-	  perryJSON(result),
-	  perryJSON(fixture)
+	  perryJSON(result.client),
+	  perryJSON(fixture.client)
 	]);
 	console.log(table.toString());
-	
+
+    // fix values fixture null
+	if(!result.client.version && fixture.client.version === null){
+	  result.client.version = fixture.client.version;
+    }
+
+    if(!result.client.engine_version && fixture.client.engine_version === null){
+      result.client.engine_version = fixture.client.engine_version;
+    }
+
+    if(!result.client.engine && fixture.client.engine === null){
+      result.client.engine = fixture.client.engine;
+    }
+
+    // fix version fixture
+    if(fixture.client.version !== null && typeof fixture.client.version === 'number'){
+     fixture.client.version = normalizeVersion(String(fixture.client.version), 2);
+    }
+
+	expect(result.client.short_name).to.not.equal("UNK");
+	expect(result.client).to.have.deep.equal(fixture.client);
+  try {
+
   } catch (e) {
 	throw new SyntaxError(e.stack);
   }
