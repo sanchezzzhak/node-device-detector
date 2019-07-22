@@ -1,3 +1,5 @@
+
+
 const detector = new (require('../index'));
 const should = require('chai').should;
 const assert = require('chai').assert;
@@ -35,10 +37,12 @@ const YML = require('yamljs');
 const util = require('util');
 
 
-let ymlFiles = [];
-let fixtureFolder = __dirname + '/fixtures/tests/';
+let ymlDeviceFiles = [];
+let ymlClientFiles = [];
+let fixtureFolder = __dirname + '/fixtures/';
 
-ymlFiles = fs.readdirSync(fixtureFolder);
+ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
+ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 
 function normalizeVersion(version, count){
@@ -94,9 +98,7 @@ function testsFromFixtureBot(fixture){
   }
 }
 
-
-
-function testsFromFixture(fixture){
+function testsFromFixtureDevice(fixture){
   let result;
   try {
 
@@ -193,6 +195,33 @@ function testsFromFixture(fixture){
 
 }
 
+function testsFromFixtureClient(fixture){
+  console.log(fixture);
+  
+  return;
+  let result;
+  try {
+	
+	result = detector.detect(fixture.user_agent);
+	
+	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
+	const table = new Table({
+	  head: ['Result', 'Fixture']
+	  , colWidths: [100, 100]
+	});
+	table.push([
+	  perryJSON(result),
+	  perryJSON(fixture)
+	]);
+	console.log(table.toString());
+	
+  } catch (e) {
+	throw new SyntaxError(e.stack);
+  }
+}
+
+
+
 // describe('dev test one file', function () {
 //   let file = 'camera.yml';
 //   let fixtureData = YML.load(fixtureFolder + file);
@@ -201,18 +230,34 @@ function testsFromFixture(fixture){
 //
 //   fixtureData.forEach((fixture, pos) => {
 //     it(pos + '/' + total, function(){
-//       testsFromFixture.call(this, fixture);
+//       testsFromFixtureDevice.call(this, fixture);
 //     });
 //   });
 // });
 //
 // return;
 
+describe('tests clients fixtures', function () {
+  this.timeout(6000);
+  ymlClientFiles.forEach(function (file) {
+	describe('file fixture ' + file, function () {
+	  
+	  let fixtureData = YML.load(fixtureFolder + 'clients/' + file);
+	  let total = fixtureData.length;
+	  //fixtureData= [  fixtureData[208] ];
+	  fixtureData.forEach((fixture, pos) => {
+		it(pos + '/' + total, function(){
+		  testsFromFixtureClient().call(this, fixture);
+		});
+	  });
+	});
+  })
+});
 
 describe('tests bots', function () {
   let file = 'bots.yml';
   describe('file fixture ' + file, function () {
-    let fixtureData = YML.load(fixtureFolder + file);
+    let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
     let total = fixtureData.length;
     fixtureData= [  fixtureData[85] ];
 
@@ -224,20 +269,21 @@ describe('tests bots', function () {
   });
 });
 
-describe('tests old all fixtures', function () {
+
+describe('tests devices fixtures', function () {
   this.timeout(6000);
-  ymlFiles.forEach(function (file) {
+  ymlDeviceFiles.forEach(function (file) {
     if(file === 'bots.yml'){
       return;
     }
     describe('file fixture ' + file, function () {
 
-      let fixtureData = YML.load(fixtureFolder + file);
+      let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
       let total = fixtureData.length;
       //fixtureData= [  fixtureData[208] ];
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function(){
-          testsFromFixture.call(this, fixture);
+          testsFromFixtureDevice.call(this, fixture);
         });
       });
     });

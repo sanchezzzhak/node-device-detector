@@ -20,7 +20,8 @@ npm install node-device-detector --only=dev
 
 # Before upgrading to up version, pls read;
 ### (ChangeLog)
-
+* v1.1.7
+    * Update fixtures from the motamo-org/devicedetect package#3.12.0
 * v1.1.6
     * Update fixtures from the motamo-org/devicedetect package#3.11.8
 * v1.1.5
