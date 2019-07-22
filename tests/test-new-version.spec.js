@@ -247,7 +247,7 @@ describe('tests clients fixtures', function () {
 	  //fixtureData= [  fixtureData[208] ];
 	  fixtureData.forEach((fixture, pos) => {
 		it(pos + '/' + total, function(){
-		  testsFromFixtureClient().call(this, fixture);
+		  testsFromFixtureClient.call(this, fixture);
 		});
 	  });
 	});
