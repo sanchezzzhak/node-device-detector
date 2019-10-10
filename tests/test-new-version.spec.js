@@ -73,8 +73,8 @@ function testsFromFixtureBot(fixture){
   let result;
   try {
     console.log('UserAgent\n\x1b[33m%s\x1b[0m', fixture.user_agent);
-    detector.detect(fixture.user_agent);
-    result = detector.botData;
+	detector.skipBotDetection = false;
+	result = detector.parseBot(fixture.user_agent);
     console.log('Result\n\x1b[34m%s\x1b[0m', perryJSON(result));
     console.log('Fixture\n\x1b[36m%s\x1b[0m', perryJSON(fixture));
   } catch (e) {
@@ -83,17 +83,17 @@ function testsFromFixtureBot(fixture){
   let messageError = 'fixture data\n' + perryJSON(fixture);
 
   if (isObjNotEmpty(fixture.bot.name)) {
-    expect(fixture.bot.name, messageError).to.equal(detector.botData.name);
-
+    expect(fixture.bot.name, messageError).to.equal(result.name);
   }
+  
   if (isObjNotEmpty(fixture.bot.category)) {
-    expect(fixture.bot.category, messageError).to.equal(detector.botData.category);
+    expect(fixture.bot.category, messageError).to.equal(result.category);
   }
   if (isObjNotEmpty(fixture.bot.url)) {
-    expect(fixture.bot.url, messageError).to.equal(detector.botData.url);
+    expect(fixture.bot.url, messageError).to.equal(result.url);
   }
   if (isObjNotEmpty(fixture.bot.producer)) {
-    expect(fixture.bot.producer, messageError).to.have.deep.equal(detector.botData.producer);
+    expect(fixture.bot.producer, messageError).to.have.deep.equal(result.producer);
   }
 }
 
@@ -129,9 +129,11 @@ function testsFromFixtureDevice(fixture){
       expect(null, messageError).to.not.equal(result.device);
       expect(String(fixture.device.model), messageError).to.equal(result.device.model);
     }
+    
     if(isObjNotEmpty(fixture.device.type)){
       expect(String(fixture.device.type), messageError).to.equal(result.device.type);
     }
+    
     if(isObjNotEmpty(fixture.device.brand)){
       expect(String(fixture.device.brand), messageError).to.equal(result.device.id);
     }
@@ -228,6 +230,11 @@ function testsFromFixtureClient(fixture){
      fixture.client.version = normalizeVersion(String(fixture.client.version), 2);
     }
 
+    // fix fixture is short_name numeric
+	if (fixture.client.short_name && isFinite(fixture.client.short_name)) {
+	  fixture.client.short_name = String(fixture.client.short_name);
+	}
+	
 	expect(result.client.short_name).to.not.equal("UNK");
 	expect(result.client).to.have.deep.equal(fixture.client);
   try {

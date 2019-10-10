@@ -20,6 +20,11 @@ npm install node-device-detector --only=dev
 
 # Before upgrading to up version, pls read;
 ### (ChangeLog)
+<details>
+<summary>Show details</summary>
+
+* v1.1.8
+    * Update fixtures from the motamo-org/devicedetect package#3.12.0 (update to 2019/10/03)
 * v1.1.7
     * Update fixtures from the motamo-org/devicedetect package#3.12.0
 * v1.1.6
@@ -28,7 +33,8 @@ npm install node-device-detector --only=dev
     * Update fixtures from the motamo-org/devicedetect package#3.11.7
     * Remove methods: isBot(), isMobile(), isPhablet() is* etc...
     * All parsing results are no longer stored in the class object, the result is given immediately, this will allow you to use asynchrony
-
+    
+</details>
 Usage
 -
 

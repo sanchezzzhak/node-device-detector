@@ -85,6 +85,22 @@
       name: Alexa Internet
       url: http://www.alexa.com
 - 
+  user_agent: Amazon Route 53 Health Check Service; ref:xxxxxxxx-xxxx-xxxxxxxxx-xxxxxxxxxxxx; report http://amzn.to/xxxxxxx
+  bot:
+    name: Amazon Route53 Health Check
+    category: Service Agent
+    producer:
+      name: Amazon Web Services
+      url: https://aws.amazon.com/
+- 
+  user_agent: Amazon-Route53-Health-Check-Service (ref b0eb04d5-cb5e-40e7-839b-558e52fc3f0d; report http://amzn.to/1vsZADi)
+  bot:
+    name: Amazon Route53 Health Check
+    category: Service Agent
+    producer:
+      name: Amazon Web Services
+      url: https://aws.amazon.com/
+- 
   user_agent: AmorankSpider/0.1; +http://amorank.com/webcrawler.html
   bot:
     name: Amorank Spider
@@ -552,6 +568,15 @@
     producer:
       name: SEOmoz, Inc.
       url: http://moz.com/
+- 
+  user_agent: DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)
+  bot:
+    name: DuckDuckGo Bot
+    category: Search bot
+    url: https://duckduckgo.com/duckduckbot
+    producer:
+      name: DuckDuckGo
+      url: https://duckduckgo.com/
 - 
   user_agent: Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
   bot:
@@ -1977,6 +2002,10 @@
       name: Roihunter a.s.
       url: http://roihunter.com/
 - 
+  user_agent: RSSRadio (Push Notification Scanner;support@dorada.co.uk)
+  bot:
+    name: RSSRadio Bot
+- 
   user_agent: Rainmeter WebParser plugin
   bot:
     name: Rainmeter
@@ -2051,6 +2080,24 @@
     name: SISTRIX Crawler
     category: Crawler
     url: http://crawler.sistrix.net
+    producer:
+      name: SISTRIX GmbH
+      url: http://www.sistrix.de
+- 
+  user_agent: Mozilla/5.0 (compatible; SISTRIX Optimizer; Uptime; +https://www.sistrix.com/faq/uptime)
+  bot:
+    name: SISTRIX Optimizer
+    category: Crawler
+    url: https://optimizer.sistrix.com
+    producer:
+      name: SISTRIX GmbH
+      url: http://www.sistrix.de
+- 
+  user_agent: Mozilla/5.0 (compatible; SISTRIX Optimizer)
+  bot:
+    name: SISTRIX Optimizer
+    category: Crawler
+    url: https://optimizer.sistrix.com
     producer:
       name: SISTRIX GmbH
       url: http://www.sistrix.de
@@ -2350,6 +2397,13 @@
     producer:
       name: Tailrank Inc
       url: http://spinn3r.com
+- 
+  user_agent: Spotify/1.0
+  bot:
+    name: Spotify
+    producer:
+      name: Spotify
+      url: https://www.spotify.com
 - 
   user_agent: Mozilla/5.0 (compatible; SputnikBot/2.2)
   bot:
@@ -3125,8 +3179,11 @@
       name: sqlmap
       url: http://sqlmap.org/
 - 
-  user_agent: Mozilla/5.0 zgrab/0.x
+  user_agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
   bot:
-    name: zgrab
-    category: Security Checker
-    url: https://github.com/zmap/zgrab
+    name: Datanyze
+    url: ""
+    category: Crawler
+    producer:
+      name: Datanyze
+      url: https://www.datanyze.com

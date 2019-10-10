@@ -841,3 +841,51 @@
     model: vk900
   os_family: Unknown
   browser_family: Unknown
+- 
+  user_agent: lephone K7/Dorado WAP-Browser/1.0.0
+  os: [ ]
+  client:
+    type: browser
+    name: Dorado
+    short_name: DO
+    version: "1.0.0"
+    engine: ""
+    engine_version: ""
+  device:
+    type: feature phone
+    brand: L7
+    model: K7
+  os_family: Unknown
+  browser_family: Nokia Browser
+- 
+  user_agent: lephone K10/Dorado WAP-Browser/1.0.0
+  os: [ ]
+  client:
+    type: browser
+    name: Dorado
+    short_name: DO
+    version: "1.0.0"
+    engine: ""
+    engine_version: ""
+  device:
+    type: feature phone
+    brand: L7
+    model: K10
+  os_family: Unknown
+  browser_family: Nokia Browser
+- 
+  user_agent: VK-VK700 UP.Browser/6.2.3.4 (GUI) MMP/2.0
+  os: [ ]
+  client:
+    type: browser
+    name: Openwave Mobile Browser
+    short_name: OV
+    version: "6.2.3.4"
+    engine: ""
+    engine_version: ""
+  device:
+    type: feature phone
+    brand: VK
+    model: VK700
+  os_family: Unknown
+  browser_family: Unknown
