@@ -1,5 +1,1659 @@
 ---
 - 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; IdeaPadA10 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaPad A10
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Ideapad K1 Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.1.3/k1
+  os:
+    name: CyanogenMod
+    short_name: CYN
+    version: "10.1.3"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaPad K1
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A7600-H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A10-70
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A7600-F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A10-70
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Orca-Android/2.2.5-release OS/4.0.3 Model/IdeaTab_A2107A-H VersionCode/108531 Product/Messenger Carrier/o2_-_de Manufacturer/LENOVO Brand/Lenovo
+  os:
+    name: Android
+    short_name: AND
+    version: "2.2.5"
+    platform: ""
+  client: null
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A2107A
+  os_family: Android
+  browser_family: Unknown
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; IdeaTabA2109A Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.0.4"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A2109A
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.1.1; IdeaTabA2109A Build/JRO03R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "31.0.1650.59"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A2109A
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A3000-H Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A3000
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A3500-FL Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "31.0.1650.59"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A7-40
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A3500-HV Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "46.0.2490.76"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A7-50
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A3500-F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A7-50
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A3500-H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A7-50
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A5500-H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A8-50
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A5500-F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab A8-50
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; es-ve; IdeaTabS2109A-F Build/IMM76D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1
+  os:
+    name: Android
+    short_name: AND
+    version: "4.0.4"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "533.1"
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab S2109A
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lenovo S5000-F Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab S5000
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lenovo S5000-H Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab S5000
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; IdeaTab S6000-H Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "32.0.1700.99"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab S6000
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lenovo S6000L-F Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab S6000
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; S6000 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "55.0.2883.91"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: IdeaTab S6000
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 9; Lenovo TB-X505F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "9"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "76.0.3809.132"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: M10
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; TB-X704A Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "69.0.3497.100"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Moto Tab
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; Lenovo TB2-X30F Build/LenovoTB2-X30F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Tab 2 A10-30
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; Lenovo TB2-X30L Build/LenovoTB2-X30L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Tab 2 A10-30
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.0.1; Lenovo TAB 2 A10-70L Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 2 A10-70L
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.0; Tab2A7-10F Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 2 A7-10F
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; LenovoA3300-GV Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 2 A7-30
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; LenovoA3300-H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 2 A7-30
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo TAB 2 A7-30D Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 2 A7-30D
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1; Lenovo TAB 2 A8-50L Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 2 A8-50L
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; TB-X304F Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "68.0.3440.91"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 4 10
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-X704F Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "63.0.3239.111"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Tab 4 10 Plus
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; TB-8504F Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "61.0.3163.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB 4 8
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lenovo TAB S8-50L Build/BMAIN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB S8-50L
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-730X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "75.0.3770.101"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB3 7
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.0.1; Lenovo TB3-710F Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB3 7 Essential
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1; Lenovo TB3-710I Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB3 7 Essential
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-850M Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "46.0.2490.76"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB3 8
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-850M Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.123 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "64.0.3282.123"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB3 8
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-X304L Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "67.0.3396.87"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB4 10
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-X304L Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 YaBrowser/17.7.0.1173.01 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Yandex Browser
+    short_name: YA
+    version: "17.7.0.1173.01"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB4 10
+  os_family: Android
+  browser_family: Unknown
+- 
+  user_agent: Mozilla/5.0 Linux; Android 7.1.1; TB-X704V Build/NMF26F AppleWebKit/537.36 KHTML, like Gecko Chrome/69.0.3497.86 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "69.0.3497.86"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: TAB4 10 Plus
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.1.2; ThinkPadTablet Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "33.0.1750.166"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: ThinkPad Tablet
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 3.1; fr-ca; ThinkPad Tablet Build/ThinkPadTablet_A310_02) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
+  os:
+    name: Android
+    short_name: AND
+    version: "3.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.13"
+  device:
+    type: tablet
+    brand: LE
+    model: ThinkPad Tablet A310
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; ThinkPad Tablet Build/ThinkPadTablet_A400_03) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.0.3"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: ThinkPad Tablet A400
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1; Lenovo YT3-X90X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga 3 Pro
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1; Lenovo YT3-X90L Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga 3 Pro
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; Lenovo YT3-X90F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "55.0.2883.91"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga 3 Pro
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; Lenovo YT3-X50F Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tab 3
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; Lenovo YT3-X50L Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tab 3
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; Lenovo YT3-850F Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tab 3 8
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; Lenovo YT3-850L Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tab 3 8
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Lenovo B8000-F Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 10
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Lenovo B8000-H/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2.2 Mobile Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 10
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2;pl-pl; Lenovo B8000-F/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2.2 Mobile Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 10
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; YOGA Tablet 2 Pro-1380L Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "36.0.1985.135"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 2 Pro-1380L
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; YOGA Tablet 2-1050F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "42.0.2311.111"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 2-1050F
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; YOGA Tablet 2-830L Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "42.0.2311.111"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 2-830L
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2;pl-pl; Lenovo B6000-F/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2.2 Mobile Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LE
+    model: Yoga Tablet 8
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.0.2; LG-V700 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.0.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad 10.1
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.0.2; LG-V490 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.0.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad 8.0
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; LG-V500 Build/KOT49I.V50020f) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad 8.3
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.0.2; VK810 4G Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.0.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "57.0.2987.132"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad 8.3 LTE
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; LG-V935 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "52.0.2743.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad II 10.1
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; LG-V521 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "51.0.2704.81"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad X 8.0
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; VK815) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "74.0.3729.157"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: G Pad X 8.3
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Android 3.1;AppleWebKit/534.13;Build/HMJ37;LG Optimus Pad L-06C Build/HMJ37
+  os:
+    name: Android
+    short_name: AND
+    version: "3.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.13"
+  device:
+    type: tablet
+    brand: LG
+    model: Optimus Pad L-06C
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 3.0.1; LG-V905R Build/HRI66) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36 OPR/16.0.1212.63780
+  os:
+    name: Android
+    short_name: AND
+    version: "3.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Opera
+    short_name: OP
+    version: "16.0.1212.63780"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LG
+    model: V905R
+  os_family: Android
+  browser_family: Opera
+- 
+  user_agent: Dalvik/1.6.0 (Linux; U; Android 4.2.2; Lark Evolution 10 Build/JDQ39)
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: Evolution 10
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Lark Evolution X2 7 3G-GPS Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "42.0.2311.111"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: Evolution X2 7 3G-GPS
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; LARK_Evolution_X4_10.1 Build/LARK) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "54.0.2840.85"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: Evolution X4 10.1
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.4; Evolution X4 7 IPS Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.4"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "33.0.0.0"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: Evolution X4 7 IPS
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Lark FreeMe X2 7 Build/JDQ39) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "537.16"
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 7
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Lark FreeMe X2 7 ver.2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 7 Version 2
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Lark FreeMe X2 7 ver.3 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "30.0.0.0"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 7 Version 3
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Lark FreeMe X2 8 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 8
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Lark FreeMe X2 9 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 9
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; FreeMe x2 9 v.2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "30.0.0.0"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 9 Version 2
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; FreeMe x2 9 ver.3 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "30.0.0.0"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X2 9 Version 3
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 Linux; Android 5.1; (Lark FreeMe X4 7 3G HD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "72.0.3626.76"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X4 7HD 3G
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.4; FreeMe X4 9 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.4"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "33.0.0.0"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: FreeMe X4 9
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; PHABLET 7 Build/LARK) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "50.0.2661.89"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: Phablet 7
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 Linux; Android 4.4.4; Ultimate 7i Build/KTU84P AppleWebKit/537.36 KHTML, like Gecko Chrome/62.0.3202.84 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.4"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "62.0.3202.84"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: LK
+    model: Ultimate 7i
+  os_family: Android
+  browser_family: Chrome
+- 
   user_agent: Mozilla/5.0 (Linux; Android 6.0; Ultimate X4 10.1 3G IPS Build/Lark; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Safari/537.36
   os:
     name: Android
@@ -2020,26 +3674,6 @@
   os_family: Android
   browser_family: Chrome
 - 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; M-MP1S4A3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "30.0.0.0"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: MC
-    model: SmartPad 10.1 S4 3G
-  os_family: Android
-  browser_family: Chrome
-- 
   user_agent: Mozilla/5.0 (Linux; Android 4.4.2; M-MP1S4B3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Safari/537.36
   os:
     name: Android
@@ -2051,6 +3685,26 @@
     name: Chrome
     short_name: CH
     version: "43.0.2357.93"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: MC
+    model: SmartPad 10.1 S4 3G
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; M-MP1S4A3G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "30.0.0.0"
     engine: Blink
     engine_version: ""
   device:
@@ -2160,26 +3814,6 @@
   os_family: Android
   browser_family: Android Browser
 - 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; M-MP726GOx Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "30.0.0.0"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: MC
-    model: SmartPad 7.0 Go
-  os_family: Android
-  browser_family: Chrome
-- 
   user_agent: Mozilla/5.0 (Linux; Android 4.4.2; M-MP740GOx Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36
   os:
     name: Android
@@ -2191,6 +3825,26 @@
     name: Chrome
     short_name: CH
     version: "42.0.2311.111"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: MC
+    model: SmartPad 7.0 Go
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; M-MP726GOx Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "30.0.0.0"
     engine: Blink
     engine_version: ""
   device:
@@ -2679,6 +4333,66 @@
     model: SmartPad 970 S2 3G
   os_family: Android
   browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0; M-SP10MXA Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "78.0.3904.108"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: MC
+    model: SmartPad MX 10
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.0; E1041X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "71.0.3578.99"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: MD
+    model: E1041X
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.0; E1051X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "75.0.3770.143"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: MD
+    model: E1051X
+  os_family: Android
+  browser_family: Chrome
 - 
   user_agent: Mozilla/5.0 (Linux; Android 4.1.1; LIFETAB_E10310 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Safari/537.36
   os:
@@ -4091,23 +5805,6 @@
   os_family: Android
   browser_family: Android Browser
 - 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; fr-be; SlidePad704CE Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 GSA/3.1.24.941712.arm
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ARM
-  client:
-    type: mobile app
-    name: Google Search App
-    version: "3.1.24.941712"
-  device:
-    type: tablet
-    brand: MU
-    model: SlidePad 704CE
-  os_family: Android
-  browser_family: Unknown
-- 
   user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; SlidePad704CE Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
   os:
     name: Android
@@ -4127,6 +5824,23 @@
     model: SlidePad 704CE
   os_family: Android
   browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; fr-be; SlidePad704CE Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 GSA/3.1.24.941712.arm
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.1"
+    platform: ARM
+  client:
+    type: mobile app
+    name: Google Search App
+    version: "3.1.24.941712"
+  device:
+    type: tablet
+    brand: MU
+    model: SlidePad 704CE
+  os_family: Android
+  browser_family: Unknown
 - 
   user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; SlidePad 816P Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
   os:
@@ -5205,26 +6919,6 @@
   os_family: Android
   browser_family: Android Browser
 - 
-  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; THOR_10 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "6.0.1"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "59.0.3071.125"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: O1
-    model: Thor 10
-  os_family: Android
-  browser_family: Chrome
-- 
   user_agent: Mozilla/5.0 (Linux; Android 6.0.1; THOR10 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36
   os:
     name: Android
@@ -5236,6 +6930,26 @@
     name: Chrome
     short_name: CH
     version: "60.0.3112.78"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: O1
+    model: Thor 10
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; THOR_10 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "6.0.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "59.0.3071.125"
     engine: Blink
     engine_version: ""
   device:
@@ -5625,6 +7339,26 @@
   os_family: Android
   browser_family: Chrome
 - 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; Oysters T104HVi 3G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/54.3.2672.50220
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Opera
+    short_name: OP
+    version: "54.3.2672.50220"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: OY
+    model: T104HVi 3G
+  os_family: Android
+  browser_family: Opera
+- 
   user_agent: Mozilla/5.0 (Linux; Android 4.2.2; OYSTERS T14N 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36 OPR/19.0.1340.69721
   os:
     name: Android
@@ -5682,6 +7416,26 @@
     type: tablet
     brand: OY
     model: T72HM3G
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1; T72HMs_3G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "78.0.3904.108"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: OY
+    model: T72HMs 3G
   os_family: Android
   browser_family: Chrome
 - 
@@ -6084,6 +7838,26 @@
     model: PI3210G
   os_family: Android
   browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.0; TLE722G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "7.0"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "77.0.3865.92"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: PH
+    model: TLE722G
+  os_family: Android
+  browser_family: Chrome
 - 
   user_agent: Mozilla/5.0 (Linux; Android 6.0; TLE821L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Safari/537.36
   os:
@@ -6722,6 +8496,26 @@
   os_family: Android
   browser_family: Chrome
 - 
+  user_agent: Mozilla/5.0 (Linux; U; Android 5.1.1; PSP5551DUO Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36 OPR/44.1.2254.143214
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Opera Mobile
+    short_name: OM
+    version: "44.1.2254.143214"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: PR
+    model: Grace S5
+  os_family: Android
+  browser_family: Opera
+- 
   user_agent: Mozilla/5.0 (Linux; Android 4.3; PMT3277_3G Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36
   os:
     name: Android
@@ -6761,6 +8555,26 @@
     model: MultiPad Ranger 8.0 3G
   os_family: Android
   browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; PMT3208_3G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36 OPR/55.0.2719.50560
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Opera
+    short_name: OP
+    version: "55.0.2719.50560"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: PR
+    model: MultiPad Wize 8.0 3G
+  os_family: Android
+  browser_family: Opera
 - 
   user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; PMP3370B Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
   os:
@@ -7659,6 +9473,266 @@
   os_family: Android
   browser_family: Android Browser
 - 
+  user_agent: Mozilla/5.0 (Linux; Android 4.4.4; VIA-T7D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.4"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "78.0.3904.108"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: R4
+    model: VIA T7D
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; RMD_600 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: R5
+    model: RMD-600
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; RMD-974R Build/MASTER) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: R5
+    model: RMD-974R
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; arm; Android 5.1; RoverPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 YaBrowser/19.9.6.88.00 Mobile Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "5.1"
+    platform: ARM
+  client:
+    type: browser
+    name: Yandex Browser
+    short_name: YA
+    version: "19.9.6.88.00"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: R6
+    model: ""
+  os_family: Android
+  browser_family: Unknown
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.0.3; RoverPad 10.4 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.122 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.0.3"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "35.0.1916.122"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: R6
+    model: "10.4"
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 2.2.1; ru-ru; RoverPad 3W A73 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+  os:
+    name: Android
+    short_name: AND
+    version: "2.2.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "533.1"
+  device:
+    type: tablet
+    brand: R6
+    model: 3W A73
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; RoverPad 3W7 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.0.3"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: R6
+    model: 3W7
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; RoverPad 3W9.4 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "534.30"
+  device:
+    type: tablet
+    brand: R6
+    model: 3W9.4
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; U; Android 2.1; ru-ru; RoverPad 3WT70 Build/MASTER) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17
+  os:
+    name: Android
+    short_name: AND
+    version: "2.1"
+    platform: ""
+  client:
+    type: browser
+    name: Android Browser
+    short_name: AN
+    version: ""
+    engine: WebKit
+    engine_version: "530.17"
+  device:
+    type: tablet
+    brand: R6
+    model: 3WT70
+  os_family: Android
+  browser_family: Android Browser
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; Roverpad 9.7 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36 OPR/50.3.2426.136976
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Opera
+    short_name: OP
+    version: "50.3.2426.136976"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: R6
+    model: 9.7 3G
+  os_family: Android
+  browser_family: Opera
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.1.2; RoverPad Air S70 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31
+  os:
+    name: Android
+    short_name: AND
+    version: "4.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Mobile
+    short_name: CM
+    version: "26.0.1410.58"
+    engine: WebKit
+    engine_version: "537.31"
+  device:
+    type: tablet
+    brand: R6
+    model: Air S70
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 Linux; Android 4.4.2; RoverPad sky 7.85 Build/KOT49H AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/30.0.0.0 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.4.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome Webview
+    short_name: CV
+    version: "30.0.0.0"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: R6
+    model: Sky 7.85
+  os_family: Android
+  browser_family: Chrome
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; RoverPad Sky 9.7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2.2"
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    short_name: CH
+    version: "70.0.3538.110"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: tablet
+    brand: R6
+    model: Sky 9.7
+  os_family: Android
+  browser_family: Chrome
+- 
   user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; Ramosi9 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
   os:
     name: Android
@@ -7889,2077 +9963,3 @@
     model: BlackBerry Playbook
   os_family: BlackBerry
   browser_family: BlackBerry Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; cs-cz; ELEMENT10 1 Build/ICS.g08refem611.20121108) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 10.1
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; ELEMENT7V2) U2/1.0.0 UCBrowser/9.3.0.321 U2/1.0.0 Mobile
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: UC Browser
-    short_name: UC
-    version: "9.3.0.321"
-    engine: ""
-    engine_version: ""
-  device:
-    type: tablet
-    brand: S1
-    model: Element 7 V2
-  os_family: Android
-  browser_family: Unknown
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.0.4; ELEMENT 7 V2 BASIC Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.65583
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Opera Mobile
-    short_name: OM
-    version: "16.0.1212.65583"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: S1
-    model: Element 7 V2 Basic
-  os_family: Android
-  browser_family: Opera
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; cs-cz; ELEMENT 7V3 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 7 V3
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; cs-cz; ELEMENT8 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 8
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android; en-us; SENCOR_ELEMENT_8V2 Build/FRF91) AppleWebKit/533.1
-  os:
-    name: Android
-    short_name: AND
-    version: ""
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "533.1"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 8 V2
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; SENCOR ELEMENT 8V2 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 8 V2
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; hu-hu; ELEMENT 8V3 Build/JRO03H) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "537.16"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 8 V3
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; hu-hu; SENCOR ELEMENT 9.7V3 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: S1
-    model: Element 9.7 V3
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; SUPRA M726G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 YaBrowser/14.5.1847.18432.00 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Yandex Browser
-    short_name: YA
-    version: "14.5.1847.18432.00"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: S5
-    model: M726G
-  os_family: Android
-  browser_family: Unknown
-- 
-  user_agent: Dalvik/1.6.0 (Linux; U; Android 4.4.2; SUPRA M74AG Build/KOT49H)
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: ""
-  device:
-    type: tablet
-    brand: S5
-    model: M74AG
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 5.1; en-US; SUPRA M74JG Build/LMY47D)
-  os:
-    name: Android
-    short_name: AND
-    version: "5.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: ""
-  device:
-    type: tablet
-    brand: S5
-    model: M74JG
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 Linux; U; Android 4.1.1; ru-ru; NVTAB 7.0 3G Build/JRO03C AppleWebKit/534.30 KHTML, like Gecko Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: S5
-    model: NVTAB 7.0 3G
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; cs-cz; GT-N8000 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.3; tr-tr; SAMSUNG SM-P602 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.3"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" 2014 Edition
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.3; SM-P601 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.3"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.136"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" 2014 Edition
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.3; SM-P605 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.3"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.166"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" 2014 Edition LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-P607T Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "5.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Samsung Browser
-    short_name: SB
-    version: "3.3"
-    engine: WebKit
-    engine_version: "537.36"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" 2014 Edition LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.3; SM-P600 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.3"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "32.0.1700.99"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" 2014 Edition WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; da-dk; GT-N8020 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" LTE
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; GT-N8010 Build/IMM76D; 1280*752) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1'
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "528.5"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 10.1" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-N5100 Build/JZO54K) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.123 Safari/537.22
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "25.0.1364.123"
-    engine: WebKit
-    engine_version: "537.22"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 8.0"
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; N5100 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "533.1"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 8.0"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; fi-fi; GT-N5120 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 8.0" LTE
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-N5110 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "18.0.1025.166"
-    engine: WebKit
-    engine_version: "535.19"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 8.0" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; N5110 Build/JLS36C) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025438 Mobile Safari/533.1 MicroMessenger/6.2.0.52_r1162382.561 NetType/3gnet Language/zh_CN
-  os:
-    name: Android
-    short_name: AND
-    version: "4.3"
-    platform: ""
-  client:
-    type: mobile app
-    name: WeChat
-    version: "6.2.0.52.r1162382.561"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Note 8.0" WiFi
-  os_family: Android
-  browser_family: Unknown
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; fr-fr; SAMSUNG SM-P901 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY NotePRO 12.2"
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG SM-P905 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY NotePRO 12.2" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; en-gb; SAMSUNG SM-P900 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY NotePRO 12.2" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 2.2; fr-ca; GT-P1000M Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
-  os:
-    name: Android
-    short_name: AND
-    version: "2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "533.1"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; SCH-I800 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
-  os:
-    name: Android
-    short_name: AND
-    version: "2.3.5"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "533.1"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; GT-P1000 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: CyanogenMod
-    short_name: CYN
-    version: "10"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; id-id; GT-P1000 Build/IMM76L; CyanogenMod-9.0.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: CyanogenMod
-    short_name: CYN
-    version: "9.0.0"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.1; el-gr; GT-P7500 Build/HMJ37) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.1; fr-ca; GT-P7500D Build/HMJ37) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.1; sv-se; GT-P7510 Build/HMJ37) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.2; ar-il; GT-P7500 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.2; cs-cz; GT-P7510 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SAMSUNG GT-P7500/P7500BULP5 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; en-au; GT-P7500 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; en-ca; GT-P7500R Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; fr-ca; GT-P7500M Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.1; vi-vn; GT-P7500 Build/JOP40D; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: CyanogenMod
-    short_name: CYN
-    version: "10.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; GT-P7100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 10.1v
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; pt-pt; GT-P5100 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.3"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.0.3; GT-P5100 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.3"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "32.0.1700.99"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1"
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; GT-P5100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; ar-ae; GT-P5100 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; SCH-I915 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; fr-ch; SAMSUNG GT-P5100/P5100XXDMJ2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; fr-ch; GT-P5110 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; ko-kr; GT-P5113 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; zh-hk; GT-P5110 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; GT-P5110 Build/JDQ39E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "31.0.1650.59"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 10.1" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; ca-es; GT-P3100 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.3"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; GT-P3100B Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; th-th; GT-P3100 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; th-th; GT-P3100B Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: UCWEB/2.0 (MIDP-2.0; U; Adr 4.1.2; en-US; GT-P3100) U2/1.0.0 UCBrowser/8.8.1.359 U2/1.0.0 Mobile
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: UC Browser
-    short_name: UC
-    version: "8.8.1.359"
-    engine: ""
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7"
-  os_family: Android
-  browser_family: Unknown
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; GT-P3100 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36 OPR/20.0.1396.73172
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Opera
-    short_name: OP
-    version: "20.0.1396.73172"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7"
-  os_family: Android
-  browser_family: Opera
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; en-nz; GT-P3110 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.3"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; GT-P3113 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; pt-br; GT-P3113 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; GT-P3110 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 2 7" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; fr-be; SAMSUNG GT-P5200/P5200XXUAMI8 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 10.1"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; GT-P5200 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.132 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.132"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 10.1"
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; fr-ch; GT-P5220-ORANGE/P5220XXUAMK2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 10.1" LTE
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; GT-P5210 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 10.1" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; GT-P5210 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.166"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 10.1" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; az-az; SM-T211 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; pl-pl; SAMSUNG SM-T211/T211XXAMJ5 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: UCWEB/2.0 (MIDP-2.0; U; Adr 4.1.2; en-US; SM-T211) U2/1.0.0 UCBrowser/8.8.1.359 U2/1.0.0 Mobile
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: UC Browser
-    short_name: UC
-    version: "8.8.1.359"
-    engine: ""
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0"
-  os_family: Android
-  browser_family: Unknown
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; SAMSUNG-SM-T217A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; SM-T217S Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.136"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0"
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.1.2; SM-T2105 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "34.0.1847.114"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0" Kids
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; SM-T111 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0" Lite
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; SM-T110 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 GSA/3.1.8.914827.arm
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ARM
-  client:
-    type: mobile app
-    name: Google Search App
-    version: "3.1.8.914827"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0" Lite WiFi
-  os_family: Android
-  browser_family: Unknown
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; fr-fr; SM-T210-ORANGE/T210XXAMI9 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2; fr-fr; SM-T210R Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0" WiFi
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.1.2; SM-T210 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.1.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.136"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 7.0" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; SM-T311 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.166"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 8.0"
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; SM-T315 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.166"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 8.0" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; SM-T310 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.2.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "33.0.1750.136"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 8.0" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.4; SM-T116NY Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.4"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "40.0.2214.109"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 V
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.4; SM-T116NU Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.85 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.4"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "68.0.3440.85"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 3 V
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; en-gb; SAMSUNG SM-T535 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 10.1" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; fr-fr; SAMSUNG SM-T530 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 10.1" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-T530NU Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "34.0.1847.114"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 10.1" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-T231 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "40.0.2214.109"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 7.0" 3G
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-T230NU Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "34.0.1847.114"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 7.0" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 4.4.2; en-gb; SAMSUNG SM-T335 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "4.4.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome Webview
-    short_name: CV
-    version: "28.0.1500.94"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 8.0" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-T330 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "5.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "55.0.2883.91"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 4 8.0" WiFi
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.2; sr-rs; GT-P6200 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 7" Plus
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; GT-P6200 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-  os:
-    name: Android
-    short_name: AND
-    version: "4.0.4"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.30"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 7" Plus
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.2; de-de; GT-P6201 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 7" Plus N
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; U; Android 3.2; en-gb; GT-P6810 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13
-  os:
-    name: Android
-    short_name: AND
-    version: "3.2"
-    platform: ""
-  client:
-    type: browser
-    name: Android Browser
-    short_name: AN
-    version: ""
-    engine: WebKit
-    engine_version: "534.13"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab 7.7"
-  os_family: Android
-  browser_family: Android Browser
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 7.0; SM-P585) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "7.0"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "70.0.3538.110"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 10.1" WiFi (2016)
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 8.1.0; SM-T585 Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "8.1.0"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "68.0.3440.91"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 10.1" WiFi (2016)
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 8.1.0; SM-T597W Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "8.1.0"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "68.0.3440.91"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 10.5" LTE (2018)
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-T285 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.5 Chrome/38.0.2125.102 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "5.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Samsung Browser
-    short_name: SB
-    version: "3.5"
-    engine: WebKit
-    engine_version: "537.36"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 7.0" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 5.0.2; SM-P350 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "5.0.2"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "63.0.3239.111"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 8.0" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-T355Y Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "6.0.1"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "54.0.2840.85"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 8.0" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; SM-T385 Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "7.1.1"
-    platform: ""
-  client:
-    type: browser
-    name: Chrome
-    short_name: CH
-    version: "68.0.3440.70"
-    engine: Blink
-    engine_version: ""
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 8.0" LTE
-  os_family: Android
-  browser_family: Chrome
-- 
-  user_agent: Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-T295 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Safari/537.36
-  os:
-    name: Android
-    short_name: AND
-    version: "9"
-    platform: ""
-  client:
-    type: browser
-    name: Samsung Browser
-    short_name: SB
-    version: "9.2"
-    engine: WebKit
-    engine_version: "537.36"
-  device:
-    type: tablet
-    brand: SA
-    model: GALAXY Tab A 8.0" LTE (2019)
-  os_family: Android
-  browser_family: Chrome

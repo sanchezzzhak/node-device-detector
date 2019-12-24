@@ -31,7 +31,7 @@
 ##########
 # Windows Mobile
 ##########
-- regex: 'Windows Phone (?:OS)?[ ]?(\d+[\.\d]+)'
+- regex: '(?:Windows Phone (?:OS)?|wds)[ ]?(\d+[\.\d]+)'
   name: 'Windows Phone'
   version: '$1'
   
@@ -724,11 +724,10 @@
 ##########
 # Gaming Console
 ##########
-- regex: 'Nintendo Wii'
+- regex: 'Nintendo (Wii|Switch)'
   name: 'Nintendo'
-  version: 'Wii'
-  
-  
+  version: '$1'
+
 - regex: 'PlayStation ?([3|4])'
   name: 'PlayStation'
   version: '$1'
