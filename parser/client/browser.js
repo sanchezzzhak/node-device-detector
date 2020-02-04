@@ -4,6 +4,7 @@ const YAML = require('yamljs');
 
 const CLIENT_TYPE = require('./../const/client-type');
 const BROWSER_SHORT = require('./browser-short');
+const BROWSER_FAMILIES = require('./browser-families');
 const helper = require('./../helper');
 
 
@@ -35,7 +36,9 @@ Browser.prototype.parse = function (userAgent) {
       if (engine === '') {
         engine = this.parseEngine(userAgent);
       }
+      
       let engineVersion = this.buildEngineVersion(userAgent, engine);
+      let family = this.buildFamily(short);
       
 	  return {
 		type: CLIENT_TYPE.BROWSER,
@@ -44,12 +47,23 @@ Browser.prototype.parse = function (userAgent) {
 		version: version,
 		engine: engine,
 		engine_version: engineVersion,
+		family: family
 	  };
-   
+	  
     }
   }
   
   return null;
+};
+
+
+Browser.prototype.buildFamily = function(shortName){
+  for(let browserFamily in BROWSER_FAMILIES){
+    if(browserFamily &&  BROWSER_FAMILIES[browserFamily] && BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1){
+      return browserFamily;
+	}
+  }
+  return '';
 };
 
 /**

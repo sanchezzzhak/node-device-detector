@@ -224,7 +224,7 @@ function testsFromFixtureClient(fixture){
     if(!result.client.engine && fixture.client.engine === null){
       result.client.engine = fixture.client.engine;
     }
-
+    
     // fix version fixture
     if(fixture.client.version !== null && typeof fixture.client.version === 'number'){
      fixture.client.version = normalizeVersion(String(fixture.client.version), 2);
@@ -235,7 +235,11 @@ function testsFromFixtureClient(fixture){
 	  fixture.client.short_name = String(fixture.client.short_name);
 	}
 	
+	// copy family to fixture check
+  	fixture.client.family = result.client.family;
+	
 	expect(result.client.short_name).to.not.equal("UNK");
+	
 	expect(result.client).to.have.deep.equal(fixture.client);
   try {
 

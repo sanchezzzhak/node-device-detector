@@ -45,7 +45,7 @@ const CLIENT_PARSER = {
 
 const TV_CLIENT_LIST = ['Kylo', 'Espial TV Browser'];
 const DESKTOP_OS_LIST = ['AmigaOS', 'IBM', 'GNU/Linux', 'Mac', 'Unix', 'Windows', 'BeOS', 'Chrome OS'];
-const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile'];
+const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile', 'Chrome Webview'];
 
 
 function DeviceDetector(options) {
@@ -147,9 +147,11 @@ DeviceDetector.prototype.parseDeviceType = function (userAgent, osData, clientDa
   let osVersion = osData && osData['version'] ? osData['version'] : '';
   
   let clientName = clientData && clientData['name'] ? clientData['name'] : '';
+  let clientFamily = clientData && clientData['family'] ? clientData['family'] : '';
   
   let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
   let deviceId = deviceData && deviceData['id'] ? deviceData['id'] : '';
+
   
   let isAndroid = osFamily === 'Android';
   
@@ -157,7 +159,7 @@ DeviceDetector.prototype.parseDeviceType = function (userAgent, osData, clientDa
 	deviceId = 'AP';
   }
 
-  if (deviceType === '' && isAndroid && CHROME_CLIENT_LIST.indexOf(clientName) !== -1) {
+  if (deviceType === '' && isAndroid && clientFamily === 'Chrome') {
     if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', userAgent) !== null) {
       deviceType = DEVICE_TYPE.SMARTPHONE
     } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
