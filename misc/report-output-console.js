@@ -9,7 +9,7 @@ Brands.sort((a, b) => {
 });
 
 
-console.log('Support detect device list (%s): ', Brands.length);
+console.log('Support detect brands list (%s): ', Brands.length);
 console.log(
   Brands.join(', ')
 );
