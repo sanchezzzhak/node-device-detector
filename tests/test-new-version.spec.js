@@ -239,8 +239,12 @@ function testsFromFixtureClient(fixture){
   	fixture.client.family = result.client.family;
 	
 	expect(result.client.short_name).to.not.equal("UNK");
-	
-	expect(result.client).to.have.deep.equal(fixture.client);
+	if(fixture.client.family){
+	  expect(result.client.family).to.have.equal(fixture.client.family);
+	}
+	expect(result.client.type).to.have.equal(fixture.client.type);
+	expect(result.client.name).to.have.equal(fixture.client.name);
+	expect(result.client.version).to.have.equal(fixture.client.version);
   try {
 
   } catch (e) {

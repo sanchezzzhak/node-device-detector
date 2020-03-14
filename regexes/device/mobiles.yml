@@ -56,7 +56,7 @@ SFR:
 
 # HTC
 HTC:
-  regex: 'HTC|Sprint (?:APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;/)]+)(?: Build|\))|(Amaze[ _]4G|One ?[XELSV\+]+)[);/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);/ ]|2PYB2|2PZC5|0PJA10|0PJA2'
+  regex: 'HTC|Sprint (?:APA|ATP)|ADR(?!910L)[a-z0-9]+|NexusHD2|Amaze[ _]4G[);/ ]|(Desire|Sensation|Evo ?3D|IncredibleS|Wildfire|Butterfly)[ _]?([^;/)]+)(?: Build|\))|(Amaze[ _]4G|One ?[XELSV\+]+)[);/ ]|SPV E6[05]0|One M8|X525a|PG86100|PC36100|XV6975|PJ83100[);/ ]|2PYB2|2PZC5|0PJA10|0PJA2|HTV33'
   device: 'smartphone'
   models:
     # explicit smartphone models
@@ -68,6 +68,8 @@ HTC:
       model: 'Evo 3G'
     - regex: 'PC36100[);/ ]'
       model: 'Evo 4G'
+    - regex: 'HTV33[);/ ]'
+      model: 'U11'
     - regex: 'PJ83100[);/ ]'
       model: 'One X'
     - regex: '(?:0PJA2|0PJA10)[);/ ]'
@@ -405,7 +407,7 @@ Palm:
 
 # HP
 HP:
-  regex: 'TouchPad/\d+\.\d+|hp-tablet|HP ?iPAQ|webOS.*P160U|HP Slate|HP [78]|Compaq [7|8]|HP; [^;/)]+'
+  regex: 'TouchPad/\d+\.\d+|hp-tablet|HP ?iPAQ|webOS.*P160U|HP (?:Pro )?Slate|HP [78]|Compaq [7|8]|HP; [^;/)]+'
   device: 'smartphone'
   models:
     - regex: 'HP Slate 6 Voice Tab'
@@ -416,6 +418,9 @@ HP:
       device: 'tablet'
     - regex: 'Compaq ([78][^/;]*) Build'
       model: 'Compaq $1'
+      device: 'tablet'
+    - regex: 'HP Pro Slate 8'
+      model: 'Pro Slate 8'
       device: 'tablet'
     - regex: 'HP Slate ?(.+) Build'
       model: 'Slate $1'
@@ -982,7 +987,7 @@ Arian Space:
 
 # Alcatel
 Alcatel:
-  regex: 'Alcatel|Alc(?!or )[a-z0-9]+|One[ _]?Touch|idol3|(?:4003[AJ]|4009[ADEFIKMSX]|4013[DEJKMX]|4014[ADEKMX]|4015[ADNTX]|4016[ADX]|4017[ADEFSX]|4018[ADEFMX]|4024[EDX]|4027[ADNX]|4028[AEJS]|4032[ADEX]|4034[ADEFGX]|4035[ADXY]|4045[ADEX]|4047[ADFGNX]|4049[DEGMX]|4060[SW]|4114E|5009[AD]|5010[DEGSUX]|5011A|5012[DFG]|5015[ADEX]|5016[AXJ]|5017[ABDEOX]|5019D|5022[EDX]|5023[EF]|5024A|5025[DEG]|5026[AD]|5027B|5033[AX]|5033D[ _]RU|5034D|5038[ADEX]|5041C|5042[ADEFGWX]|5044[ADGIKOPSTY]|5045[ADFGIJTXY]|5046[ADGIJSTUY]|5047[DIUY]|5049[EGSWZ]|5050[ASXY]|5051[ADEJMTWX]|5052[AD]|5054[ADNSTWX]|5056[ADEGIJMNTUWX]|5057M|5058[AIY]|5059[ADXYZ]|5065[ADNWX]|5070D|5080[ADFQUX]|5085[ABCDGHIJNOQY]|5086[ADY]|5090[AIY]|5095[IKY]|5098[OS]|5099[ADYUI]|5116J|5145A|6016[ADEX]|6036[AXY]|6037[BKY]|6039[AHJKY]|6043[AD]|6044D|6045[BFIKOY]|6050[AFY]|6055[ABDHIKPUYZ]|6058[ADX]|6060S|6062W|6070K|7040[ADEFKRT]|7041[DX]|7043[AEKY]|7044[AX]|7045Y|7048[ASWX]|7055A|7070X|8030Y|8050[DEGX]|8063|9001[DIX]|9002X|9003[AX]|9024O|9005X|9007[ATX]|9008[ADIJNTUX]|9010X|9022X|9203A|A570BL|I213|I216X)[);/ ]|TIMXL'
+  regex: 'Alcatel|Alc(?!or )[a-z0-9]+|One[ _]?Touch|idol3|(?:4003[AJ]|4009[ADEFIKMSX]|4013[DEJKMX]|4014[ADEKMX]|4015[ADNTX]|4016[ADX]|4017[ADEFSX]|4018[ADEFMX]|4024[EDX]|4027[ADNX]|4028[AEJS]|4032[ADEX]|4034[ADEFGX]|4035[ADXY]|4045[ADEX]|4047[ADFGNX]|4049[DEGMX]|4060[SW]|4114E|5009[AD]|5010[DEGSUX]|5011A|5012[DFG]|5015[ADEX]|5016[AXJ]|5017[ABDEOX]|5019D|5022[EDX]|5023[EF]|5024[AD](?:_RU)?|5025[DEG]|5026[AD]|5027B|5033[AX]|5033D[ _]RU|5034D|5038[ADEX]|5041C|5042[ADEFGWX]|5044[ADGIKOPSTY]|5045[ADFGIJTXY]|5046[ADGIJSTUY]|5047[DIUY]|5049[EGSWZ]|5050[ASXY]|5051[ADEJMTWX]|5052[AD]|5054[ADNSTWX]|5056[ADEGIJMNTUWX]|5057M|5058[AIY]|5059[ADXYZ]|5065[ADNWX]|5070D|5080[ADFQUX]|5085[ABCDGHIJNOQY]|5086[ADY]|5090[AIY]|5095[IKY]|5098[OS]|5099[ADYUI](_RU)?|5116J|5145A|6016[ADEX]|6036[AXY]|6037[BKY]|6039[AHJKY]|6043[AD]|6044D|6045[BFIKOY]|6050[AFY]|6055[ABDHIKPUYZ]|6058[ADX]|6060S|6062W|6070K|7040[ADEFKRT]|7041[DX]|7043[AEKY]|7044[AX]|7045Y|7048[ASWX]|7055A|7070X|8030Y|8050[DEGX]|8063|9001[DIX]|9002X|9003[AX]|9024O|9005X|9007[ATX]|9008[ADIJNTUX]|9010X|9022X|9203A|A570BL|I213|I216X)[);/ ]|TIMXL'
   device: 'smartphone'
   models:
     - regex: '(?:5022[EDX]|5070D)[);/ ]'
@@ -1049,7 +1054,7 @@ Alcatel:
       model: 'One Touch Idol 2'
     - regex: '5027B[);/ ]'
       model: 'One Touch Dawn'
-    - regex: '5024A[);/ ]'
+    - regex: '5024[AD](?:_RU)?[);/ ]'
       model: '1S'
     - regex: '5034D[);/ ]'
       model: '3L'
@@ -1252,7 +1257,7 @@ Alcatel:
       model: '1X'
     - regex: '5052[AD][);/ ]'
       model: '3'
-    - regex: '5099[ADYUI][);/ ]'
+    - regex: '5099[ADYUI](_RU)?[);/ ]'
       model: '3V'
     - regex: '5026[AD][);/ ]'
       model: '3C'
@@ -1279,7 +1284,7 @@ Alcatel:
 
 # Allview
 Allview:
-  regex: 'Allview|A4You|A5_(?:Easy(?:_TM)?|Ready(?:_TM)?|Quad|Quad_Plus_TM)|A[56789]_Lite|A5Smiley|A6_Duo|A10_Lite_2019|A10_Plus|AX2_Frenzy|AX4Nano|AX5NanoQ|C6_Duo|E[23]_Living|E3_(?:Jump|Sign)|E4_Lite|M9_Connect|P(?:43_Easy|[5689]_Energy|6_Energy_Lite|[68]_Energy_Mini(?:_TM)?|(41|[458])_eMagic(?:_TM)?|[589](?:_)?Life(?:_TM)?|[567]_Lite(?:_TM)?|6_plus|[45678]_Pro|7_Seon|10_Life|10_Style|7_Xtreme|6_Qmax|4_Quad)|V(?:[13]_Viper|1_Viper_I|2_Viper_(?:E|I|S|X|X_plus|Xe))|X(?:[1234]_Soul_Xtreme|[12345]_Soul|3_Soul_Lite|[24]Soul_Mini(?:_TM)?|4_Soul_Mini_S(?:_TM)?|[234]_Soul_Style(?:_TM)?|2_Soul_Style_Plus|2_Twin)|Viva_H801'
+  regex: 'Allview|A4You|A5_(?:Easy(?:_TM)?|Ready(?:_TM)?|Quad|Quad_Plus_TM)|A[56789]_Lite|A5Smiley|A6_Duo|A10_Lite_2019|A10_Plus|AX2_Frenzy|AX4Nano|AX5NanoQ|C6_Duo|E[23]_Living|E3_(?:Jump|Sign)|E4_Lite|M9_Connect|P(?:43_Easy|[5689]_Energy|6_Energy_Lite|[68]_Energy_Mini(?:_TM)?|(41|[458])_eMagic(?:_TM)?|[589](?:_)?Life(?:_TM)?|[567]_Lite(?:_TM)?|6_plus|[45678]_Pro|7_Seon|10_Life|10_Style|7_Xtreme|6_Qmax|4_Quad)|V(?:[13]_Viper|1_Viper_I|2_Viper_(?:E|I|S|X|X_plus|Xe))|X(?:[1234]_Soul_Xtreme|[12345]_Soul|3_Soul_Lite|[24]Soul_Mini(?:_TM)?|4_Soul_Mini_S(?:_TM)?|[234]_Soul_Style(?:_TM)?|2_Soul_Style_Plus|2_Twin)|Viva_(H801|100[13]G)'
   device: 'smartphone'
   models:
     - regex: 'A4You'
@@ -1413,9 +1418,9 @@ Allview:
     - regex: 'Allview3SpeedQuad'
       device: 'tablet'
       model: 'Alldro 3 Speed Quad'
-    - regex: 'Viva_H801'
+    - regex: 'Viva_(H801|100[13]G)'
       device: 'tablet'
-      model: 'Viva H801'
+      model: 'Viva $1'
     - regex: 'ALLVIEW ?SPEEDI'
       device: 'tablet'
       model: 'Speed I'
@@ -1505,15 +1510,19 @@ Amoi:
 
 # Ainol
 Ainol:
-  regex: 'Numy|novo[0-9]'
+  regex: 'Numy|novo[0-9]|Novo 10 Hero'
   device: 'tablet'
   models:
     - regex: 'Numy 3G AX1'
       model: 'Novo 7 Numy AX1 3G'
     - regex: 'Numy_3G_AX3'
       model: 'Numy AX3 Sword'
+    - regex: 'Numy3GTalos'
+      model: 'Numy 3G Talos'
     - regex: 'Numy_3G_BW1'
       model: 'Numy 3G Talos 2'
+    - regex: '(Novo 10 Hero QuadCore)'
+      model: '$1'
 
     - regex: 'Numy[ _]([^;/]+) Build'
       model: 'Numy $1'
@@ -1648,7 +1657,7 @@ ANS:
 
 # Assistant
 Assistant:
-  regex: '(AS[-_](?:543[1-6]|44[12]1|541[12]|54[23]1|6431|401L)|AP-(?:721N|753G|7[25]7G|106|107G|110N|941))[;/)_ ]'
+  regex: '(AS[-_](?:502|543[1-6]|44[12]1|541[12]|54[23]1|6431|401L)|AP-(?:109|721N|753G|7[25]7G|10[68]|107G|110N|941))[;/)_ ]'
   device: 'smartphone'
   models:
     - regex: 'AS[-_]401L '
@@ -1665,6 +1674,8 @@ Assistant:
       model: 'Unami'
     - regex: 'AS-5431'
       model: 'Prima'
+    - regex: 'AS-502'
+      model: 'Shot'
     - regex: 'AS-5435'
       model: 'Shine'
     - regex: 'AS-5436[ _]'
@@ -1681,19 +1692,22 @@ Assistant:
     - regex: 'AP-941'
       model: 'AP-941'
       device: 'tablet'
+    - regex: 'AP-108'
+      model: 'Cetus'
+      device: 'tablet'
     - regex: 'AP-106'
       model: 'AP-106 Force'
       device: 'tablet'
-    - regex: '(AP-(?:7[25]7G|753G|107G|110N))[/;) ]'
+    - regex: '(AP-(?:109|7[25]7G|753G|107G|110N))[/;) ]'
       device: 'tablet'
       model: '$1'
 
 # Ark
 Ark:
-  regex: '(ARK[_ -])?Benefit[_ -]([^/;]*) Build|EDGE A5HD|ICON (R40\+|R45)|Impulse[ _](P[12])|Wizard_1[/;) ]'
+  regex: '(ARK[_ -])?Benefit[_ -]([^/;]*)(?: Build|\))|EDGE A5HD|ICON (R40\+|R45)|Impulse[ _](P[12])|Wizard_1[/;) ]'
   device: 'smartphone'
   models:
-    - regex: '(?:ARK[_ -])?Benefit[_ -]([^/;]*) Build'
+    - regex: '(?:ARK[_ -])?Benefit[_ -]([^/;]*)(?: Build|\))'
       model: 'Benefit $1'
     - regex: 'Impulse[ _]P1\+'
       model: 'Impulse P1 Plus'
@@ -1720,7 +1734,7 @@ Garmin-Asus:
 
 # Asus
 Asus:
-  regex: 'Asus|Transformer|TF300T|Slider SL101|PadFone|ME302(?:C|KL)|ME301T|ME371MG|ME17(?:1|2V|3X)|(?:K0[01][0-9a-z]|P(?:00[18ACIL]|01[MTVWYZ]|01MA|01T_1|02[13478])(?: Build|\))|X015D|X018D|X003|X00[7ABT]D|Z00D|Z00[MTY]D|Z01[7FGHKMR]D)[);/ ]|ZB(631|602|633|55[135]|50[01])KL|ZC(55[134]|520|600)KL|ZA550KL|ZE(520|620|55[2345])KL|ZD55[23]KL|ZS(6[23]0|551)KL|ZB(500KG|601KL)'
+  regex: 'Asus|Transformer|TF300T|Slider SL101|PadFone|ME302(?:C|KL)|ME301T|ME371MG|ME17(?:1|2V|3X)|(?:K0[01][0-9a-z]|P(?:00[18ACIL]|01[MTVWYZ]|01MA|01T_1|02[13478])(?: Build|\))|X015D|X018D|X003|X00[7ABT]D|Z00D|Z00[MTY]D|Z01[7FGHKMR]D)[);/ ]|G553KL|ZB(631|602|633|55[135]|50[01])KL|ZC(55[134]|520|600)KL|ZA550KL|ZE(520|620|55[2345])KL|ZD55[23]KL|ZS(6[236]0|55[10])KL|ZB(500KG|601KL)'
   device: 'smartphone'
   models:
     # explicit tablet models
@@ -1847,7 +1861,7 @@ Asus:
       model: 'ZenFone Max M1'
     - regex: '(?:ASUS_)?(ZB601KL)'
       model: 'ZenFone Max Pro M1'
-    - regex: '(?:ASUS_)?(X01AD|ZB633KL)'
+    - regex: '(?:ASUS_)?(X01([AB]D)|ZB633KL)[);/ ]'
       model: 'ZenFone Max M2'
     - regex: '(?:ASUS_)?(?:Z00[AD]|Z008D|Z008|Z00AD[AB]?)'
       model: 'ZenFone 2'
@@ -1855,6 +1869,8 @@ Asus:
       model: 'ZenFone Live'
     - regex: '(?:ASUS_)?X00RD'
       model: 'ZenFone Live L1'
+    - regex: 'G553KL'
+      model: 'ZenFone Lite L1'
     - regex: '(?:ASUS_)Z00YD'
       model: 'Live'
     - regex: '(?:ASUS_)?(?:Z00[ERLMT]D|Z011D)'
@@ -1869,7 +1885,7 @@ Asus:
       model: 'ZenFone 5 Lite'
     - regex: '(?:ASUS_)?(?:Z01RD|ZS620KL)'
       model: 'ZenFone 5Z'
-    - regex: '(?:ASUS_)?(?:T00G|Z002|ZS630KL)'
+    - regex: '(?:ASUS_)?(?:T00G|Z002|ZS630KL|I01WD[X]?)'
       model: 'ZenFone 6'
     - regex: '(?:ASUS_)?Z010D'
       model: 'ZenFone Max'
@@ -1897,6 +1913,8 @@ Asus:
       model: 'ZenFone 3 Pegasus'
     - regex: '(?:ASUS_)?(ZE553KL|Z01HD)'
       model: 'ZenFone 3 Zoom'
+    - regex: '(?:ASUS_)?ZS550KL'
+      model: 'ZenFone 3 Deluxe'
     - regex: '(?:ASUS_)?Z00UD'
       model: 'ZenFone Selfie'
     - regex: '(?:ASUS_)?(Z016[DS]|Z01FD)'
@@ -1929,7 +1947,7 @@ Asus:
       model: 'ZenFone Zoom'
     - regex: '(?:ASUS_)?Z01QD'
       model: 'ROG Phone'
-    - regex: '(?:ASUS_)?I001DA'
+    - regex: '(?:ASUS_)?(I001D[ABCE]?|ZS660KL)'
       model: 'ROG Phone 2'
 
     # general detections
@@ -2102,7 +2120,7 @@ Bluegood:
 
 # Blackview
 Blackview:
-  regex: '(BV([2456789]000|(5[589]|9[156])00)(?:[ _](?:PRO))?|(P10000(?:[ _](?:PRO))?)|omega[ _]pro|Alife[ _][PS]1|Heatwave|DM550|BV9700Pro|(?<!Lenovo[_ ])A60(?:Pro)?\))'
+  regex: '(BV([2456789]000|(5[589]|9[156])00|6800)(?:[ _](?:PRO))?|(P10000(?:[ _](?:PRO))?)|omega[ _]pro|Alife[ _][PS]1|Heatwave|DM550|BV9700Pro|(?<!Lenovo[_ ])A60(?:Pro)?\))'
   device: 'smartphone'
   models:
     - regex: 'A60Pro\)'
@@ -2115,7 +2133,7 @@ Blackview:
       model: '$1 Pro'
     - regex: 'BV9000Pro-F'
       model: 'BV9000 Pro F'
-    - regex: '(BV([48]000|9[56]00))Pro'
+    - regex: '(BV([48]000|9[56]00|6800))Pro'
       model: '$1 Pro'
     - regex: '(BV([2456789]000|(5[589]|9[15])00)(?:[ _](?:PRO))?)'
       model: '$1'
@@ -2144,11 +2162,13 @@ Bluboo:
 
 # Black Fox
 'Black Fox':
-  regex: 'BMM[ _-]?((44[123]D|431D|533D|54[12]S|541[AB]|54[123]D|531[ABD]))[;/) ]'
+  regex: 'BMM[ _-]?((44[123]D|441S|431D|533D|54[12]S|541[AB]|54[123]D|543S|531[ABD]))[;/) ]'
   device: 'smartphone'
   models:
     - regex: 'BMM443D'
       model: 'B7 Fox+'
+    - regex: 'BMM441S'
+      model: 'B8 Fox'
     - regex: 'BMM442D'
       model: 'B7'
     - regex: 'BMM531D'
@@ -2157,7 +2177,7 @@ Bluboo:
       model: 'B5'
     - regex: 'BMM541A'
       model: 'B5+'
-    - regex: 'BMM543D'
+    - regex: 'BMM543[DS]'
       model: 'B4'
     - regex: 'BMM441D'
       model: 'B4 Mini'
@@ -2235,22 +2255,28 @@ VGO TEL:
 
 # Vivo
 Vivo:
-  regex: '((?:VIV-|BBG-)?vivo)|V1813B[AT]|V1818T|V1731CA|V1809T|V1813[AT]|V1901A|V18[13]8A|V1932[AT]'
+  regex: '((?:VIV-|BBG-)?vivo)|V1801A0|V1730(DT|GA)|V1813B[AT]|V1818T|V1731CA|V1809[AT]|V1813[AT]|V1901A|V18[13]8A|V1932[AT]|V1814A'
   device: 'smartphone'
   models:
     - regex: '(?:VIV-|BBG-)?vivo[ _]1601[);/ ]'
       model: 'V5'
     - regex: 'V1932[AT]'
       model: 'S5'
+    - regex: 'V1801A0'
+      model: 'Z1'
+    - regex: 'V1730DT'
+      model: 'Z1i'
     - regex: 'V1813B[AT]'
       model: 'Z3'
+    - regex: 'V1730GA'
+      model: 'Z3x'
     - regex: 'Vivo ONE'
       model: 'One'
     - regex: 'X9Plus'
       model: 'X9 Plus'
     - regex: 'X20Plus'
       model: 'X20 Plus'
-    - regex: 'V1809T'
+    - regex: 'V1809[AT]'
       model: 'X23'
     - regex: 'V1818[AT]|vivo 181[45]'
       model: 'Y93'
@@ -2294,6 +2320,8 @@ Vivo:
       model: 'Y71'
     - regex: 'vivo 1725'
       model: 'X21'
+    - regex: 'V1814A'
+      model: 'X21S'
     - regex: 'V1838A'
       model: 'X27'
     - regex: 'vivo 1727'
@@ -2407,7 +2435,7 @@ Blaupunkt:
       model: 'Polaris $1'
     - regex: 'Atlantis[_ ](1001A|1010A|A10\.G402)'
       model: 'Atlantis $1'
-    - regex: 'Blaupunkt (SL 0[24]|SM 01)'
+    - regex: 'Blaupunkt (SL 0[124]|SM 01)'
       device: 'smartphone'
       model: '$1'
 
@@ -2829,24 +2857,27 @@ Casio:
 
 # Casper
 Casper:
-  regex: 'CASPER_|VIA_(G4|M4|P2|V8C)|VIA-T7D[);/ ]'
+  regex: 'CASPER_|VIA_(F1|G4|M4|P2|V8C|A1_Plus)|VIA-T7D[);/ ]'
   device: 'smartphone'
   models:
-    - regex: 'CASPER_VIA_([AE]2|M[13]|V[69])'
+    - regex: 'CASPER_VIA_([AE]2|M[13]|V[35689]|V10)'
       model: 'VIA $1'
-    - regex: 'VIA_(G4|M4|P2|V8C)'
+    - regex: 'VIA_(F1|G4|M4|P2|V8C|A1_Plus)'
       model: 'VIA $1'
     - regex: 'VIA-(T7D)[);/ ]'
       model: 'VIA $1'
       device: 'tablet'
 
-# Cat
+# Cat (Caterpillar, Catphones)
 Cat:
-  regex: 'Cat ?(tablet|stargate|nova)|B15Q'
+  regex: 'Cat ?(tablet|stargate|nova)|B15Q|CAT B35'
   device: 'tablet'
   models:
     - regex: 'B15Q'
       model: 'B15Q'
+      device: 'smartphone'
+    - regex: 'CAT B35'
+      model: 'B35'
       device: 'smartphone'
     - regex: 'Cat ?(?:tablet)? ?((?:Galactica|Nova|StarGate|PHOENIX)[^/;]*) Build'
       model: '$1'
@@ -3044,12 +3075,15 @@ ConCorde:
 
 # Condor
 Condor:
-  regex: 'Allure M[13]|Griffe T6|(?:PGN\-?[456][012][0-9]|PHS\-601|Plume L[12])[;/) ]|CTAB[^/;]+ Build'
+  regex: 'Allure M[13]|Griffe T6|TGW[-]?(710G|709)|(?:PGN\-?[456][012][0-9]|PHS\-601|Plume L[12])[;/) ]|CTAB[^/;]+ Build'
   device: 'smartphone'
   models:
     - regex: 'CTAB([^/;]+) Build'
       device: 'tablet'
       model: 'CTAB $1'
+    - regex: '(TGW)-?(710G|709)[);/ ]'
+      device: 'tablet'
+      model: '$1 $2'
 
     - regex: 'PHS\-601'
       model: 'C8'
@@ -3125,10 +3159,10 @@ Condor:
 
 # Coolpad
 Coolpad:
-  regex: '(?:YL-)?Coolpad|8190Q[ ;/\)]|(8295|5860S) Build|CP8676_I0[23] Build|CP8298_I00 Build|REVVLPLUS C3701A|VCR-I0|C106-7'
+  regex: '(?:YL-)?Coolpad|8190Q[ ;/\)]|(8295|5860S) Build|CP8676_I0[23] Build|CP8298_I00 Build|REVVLPLUS C3701A|VCR-[AI]0|C106-7'
   device: 'smartphone'
   models:
-    - regex: 'VCR-I0'
+    - regex: 'VCR-[AI]0'
       model: 'Cool Play 6'
     - regex: 'REVVLPLUS C3701A'
       model: 'REVVL Plus'
@@ -3346,21 +3380,21 @@ Desay:
 
 # DEXP
 DEXP:
-  regex: 'DEXP|(?:Ursus|Ixion)[ _]([^;/)]+)|H135[ _]Build|(BL150|BS155|BS160|BS550|BS650)[);/ ]'
+  regex: 'DEXP|(?:Ursus|Ixion)[ _]([^;/)]+)|H135[ _]Build|(BL150|BS155|BS160|BS550|BS650|AL[12]40)[);/ ]'
   device: 'smartphone'
   models:
 
     - regex: 'Ixion[_ ]([^;/]+)(?: Build|\))'
       model: 'Ixion $1'
 
-    - regex: 'Ursus ([^;/]+) Build'
+    - regex: 'Ursus ([^;/)]+)(?: Build|\))'
       model: 'Ursus $1'
       device: 'tablet'
 
     - regex: 'H135[ _]Build'
       model: 'Atlas'
       device: 'desktop'
-    - regex: '(BL150|BS155|BS160|BS550|BS650)[);/ ]'
+    - regex: '(BL150|BS155|BS160|BS550|BS650|AL[12]40)[);/ ]'
       model: '$1'
     - regex: 'DEXP[ _]([^;/]+) Build'
       model: '$1'
@@ -3412,7 +3446,7 @@ Digiland:
 
 # Digma
 Digma:
-  regex: 'Digma[_ ]([^;/]+) Build|HIT HT707[10]MG|CITI 1902 3G|(CITI[_ ](?:[A-Z0-9]+)[_ ][34]G)[ _]C[ST](500[67]PG|8209MG|8139ML)|iDrQ10 3G|iDxD8 3G|iDnD7|HIT 4G HT7074ML|IDX5|(iDx10|iDx7)|MVM900H(?:WZ|C)|MVM908HCZ|iDxD10 3G|(iDxD[45]|iDxQ5)|iDxD7[_ ]3G|PS604M|PT452E|Linx A400 3G LT4001PG|Linx C500 3G LT5001PG|Linx PS474S|LS504[01]PL|LT40(47|54)MG|LS405[01]MG|LS5053ML|LT5048MG|LT5052ML|HT5035PG|HT4039PG|LT4049PG|NS6902QL|NS9797MG|((?:Optima|Platina|Plane)[ _](?:[EM])?(?:[0-9\.ST]+|Prime)(?:[ _][43]G)?)|(VOX[ _](?:[0-9\.A-Z]+)[_ ][43]G)'
+  regex: 'Digma[_ ]([^;/]+) Build|HIT HT707[10]MG|CITI 1902 3G|CITI Z530 3G|(CITI[_ ](?:[A-Z0-9]+)[_ ][34]G)[ _]C[ST](500[67]PG|8209MG|8139ML)|iDrQ10 3G|iDxD8 3G|iDnD7|HIT 4G HT7074ML|IDX5|(iDx10|iDx7)|MVM900H(?:WZ|C)|MVM908HCZ|iDxD10 3G|(iDxD[45]|iDxQ5)|iDxD7[_ ]3G|PS604M|PT452E|Linx A400 3G LT4001PG|Linx C500 3G LT5001PG|Linx PS474S|LS504[01]PL|LT40(47|54)MG|LS405[01]MG|LS5053ML|LT5048MG|LT5052ML|HT5035PG|HT4039PG|LT4049PG|NS6902QL|NS9797MG|((?:Optima|Platina|Plane)[ _](?:[EM])?(?:[0-9\.ST]+|Prime)(?:[ _][43]G)?)|(VOX[ _](?:[0-9\.A-Z]+)[_ ][43]G)'
   device: 'smartphone'
   models:
     - regex: 'HIT HT707[10]MG'
@@ -3478,6 +3512,8 @@ Digma:
     - regex: '(CITI 1902 3G)'
       model: '$1'
       device: 'tablet'
+    - regex: '(CITI Z530 3G)'
+      model: '$1'
     - regex: '(CITI_8527_4G)'
       model: '$1'
       device: 'tablet'
@@ -3781,7 +3817,7 @@ Senseit:
 
 # Sony & Sony Ericsson (combined as they are mixed up)
 Sony:
-  regex: 'Sony(?: ?Ericsson)?|SGP|Xperia|([456]0[12]|701)SO|C1[569]0[45]|C2[01]0[45]|C230[45]|C530[236]|C550[23]|C6[56]0[236]|C6616|C68(?:0[26]|[34]3)|C69(?:0[236]|16|43)|D200[45]|D21(?:0[45]|14)|D22(?:0[236]|12|43)|D230[2356]|D240[36]|D25(?:02|33)|D510[236]|D530[36]|D5316|D5322|D5503|D58[03]3|D65(?:0[23]|43|63)|D66[03458]3|D66[14]6|D6708|E(?:20[0345]3|2006|210[45]|2115|2124|230[36]|2312|23[356]3|530[36]|53[3456]3|5506|55[356]3|56[46305][36]|58[02]3|65[35]3|66[0358]3|68[358]3)|I[34]312|I4332|F311[12356]|F331[13]|F321[12356]|F5[13]21|F5122|F813[12]|F833[12]|G312[135]|G311[26]|G322[136]|G3212|G331[123]|G3412|G3416|G342[136]|G823[12]|G834[123]|G8[14]4[12]|H(?:3113|3123|3133|3213|3223|3311|3321|4113|4133|4213|4233|4311|4331|4413|4433|82[167]6|83[12]4|8416|9436)|(?:WT|LT|SO|ST|SK|MK)[0-9]+[a-z]+[0-9]*(?: Build|\))|X?L39H|XM50[ht]|W960|portalmmm/2\.0 K|S3[69]h|SOL2[246]|SOV3[1234567]|X10[ia]v?|E1[05][ai]v?|MT[0-9]{2}[a-z]? Build|SO-0(?:[12]C|[345]D|[234]E|[1235]F|[1234]G|[134]H|[1234]J|[12]K)|R800[aix]|J9110|J81[17]0|I[34]113|I3[12]23|I42[19]3|H9493|H8296|H8166|H4493|LiveWithWalkman'
+  regex: 'Sony(?: ?Ericsson)?|SGP|Xperia|([456]0[12]|701)SO|C1[569]0[45]|C2[01]0[45]|C230[45]|C530[236]|C550[23]|C6[56]0[236]|C6616|C68(?:0[26]|[34]3)|C69(?:0[236]|16|43)|D200[45]|D21(?:0[45]|14)|D22(?:0[236]|12|43)|D230[2356]|D240[36]|D25(?:02|33)|D510[236]|D530[36]|D5316|D5322|D5503|D58[03]3|D65(?:0[23]|43|63)|D66[03458]3|D66[14]6|D6708|E(?:20[0345]3|2006|210[45]|2115|2124|230[36]|2312|23[356]3|530[36]|53[3456]3|5506|55[356]3|56[46305][36]|58[02]3|65[35]3|66[0358]3|68[358]3)|I[34]312|I4332|F311[12356]|F331[13]|F321[12356]|F5[13]21|F5122|F813[12]|F833[12]|G312[135]|G311[26]|G322[136]|G3212|G331[123]|G3412|G3416|G342[136]|G823[12]|G834[123]|G8[14]4[12]|H(?:3113|3123|3133|3213|3223|3311|3321|4113|4133|4213|4233|4311|4331|4413|4433|82[167]6|83[12]4|8416|9436)|(?:WT|LT|SO|ST|SK|MK)[0-9]+[a-z]+[0-9]*(?: Build|\))|X?L39H|XM50[ht]|W960|portalmmm/2\.0 K|S3[69]h|SOL2[246]|SOV3[1234567]|X10[ia]v?|E1[05][ai]v?|MT[0-9]{2}[a-z]? Build|SO-0(?:[12]C|[345]D|[234]E|[1-5]F|[1234]G|[134]H|[1234]J|[12]K|1L)|R800[aix]|J9110|J81[17]0|I[34]113|I3[12]23|I42[19]3|H9493|H8296|H8166|H4493|LiveWithWalkman'
   device: 'smartphone'
   models:
     # SONY ERICSSON: explicit smartphone models
@@ -3908,6 +3944,8 @@ Sony:
       device: 'feature phone'
 
     # SONY: explicit smartphone models
+    - regex: 'SO-04F'
+      model: 'Xperia A2'
     - regex: 'SO-04G'
       model: 'Xperia A4'
     - regex: '(?:Sony(?:Ericsson)?)?I(?:4113|31[12]3)'
@@ -4105,7 +4143,7 @@ Sony:
       model: 'Xperia XZ2 Dual'
     - regex: 'H8166'
       model: 'Xperia XZ2 Premium Dual'
-    - regex: '(?:Sony(?:Ericsson)?)?H(8416|9436|9493)'
+    - regex: '(?:Sony(?:Ericsson)?)?(?:H(8416|9436|9493)|SO-01L)'
       model: 'Xperia XZ3'
     - regex: '(?:Sony(?:Ericsson)?)?G331[13]'
       model: 'Xperia L1'
@@ -4202,9 +4240,9 @@ Ergo:
       model: 'V550 Vision'
     - regex: 'B504[_ ]Unit'
       model: 'B504 Unit'
-    - regex: 'A500 Best'
+    - regex: '(ERGO_)?A500[ _]Best'
       model: 'A500 Best'
-    - regex: 'A550 Maxx'
+    - regex: '(ERGO_)?A550[ _]Maxx'
       model: 'A550 Maxx'
     - regex: 'Prime B400'
       model: 'Prime B400'
@@ -4585,11 +4623,13 @@ General Mobile:
 
 # Geotel
 Geotel:
-  regex: 'GEOTEL'
+  regex: 'GEOTEL[ _]?'
   device: 'smartphone'
   models:
     - regex: 'G1'
       model: 'G1'
+    - regex: 'GEOTEL[ _]?Note'
+      model: 'Note'
 
 # Ghia
 Ghia:
@@ -4606,10 +4646,10 @@ Ghia:
 
 # Gigabyte
 Gigabyte:
-  regex: 'GSmart [a-z0-9 ]+ Build|Gigabyte-[a-z0-9]+'
+  regex: 'GSmart[ _][a-z0-9 ]+(?: Build|\))|Gigabyte-[a-z0-9]+'
   device: 'smartphone'
   models:
-    - regex: '(GSmart [a-z0-9 ]+) Build'
+    - regex: '(GSmart[ _][a-z0-9 ]+)(?: Build|\))'
       model: '$1'
     - regex: 'Gigabyte-([a-z0-9]+)'
       model: '$1'
@@ -4629,22 +4669,22 @@ Gigaset:
 
 # Ginzzu
 Ginzzu:
-  regex: 'GINZZU[_ ]|((?:RS(?:7[14]|81|9[67])D)|S50[45]0|S5120|RS(6[12]|94)D|S40[23]0|RS8502|RS9602)[);/ ]'
+  regex: 'GINZZU[_ ]|((?:RS(?:7[14]|81|9[67])D)|S50[45]0|S5120|RS(6[12]|9[45])D|S40[23]0|RS8502|RS9602)[);/ ]'
   device: 'smartphone'
   models:
     - regex: 'GINZZU[_ ]?(S40[17]0|S4710|ST6040|ST6120)'
       model: '$1'
-    - regex: 'GINZZU[_ ]?(GT-(?:7105|X831|7810))'
+    - regex: 'GINZZU[_ ]?(GT-(?:7105|70[1-4]0|7115|7210|[WX]831|7810))'
       model: '$1'
       device: 'tablet'
     - regex: '(RS6[12]D) ULTIMATE'
       model: '$1 Ultimate'
-    - regex: '((?:RS(?:7[14]|81|9[67])D)|S50[45]0|S5120|S40[23]0|RS8502|RS9602|RS94D)[);/ ]'
+    - regex: '(?:GINZZU[ _])?((?:RS(?:7[14]|81|9[4-7])D)|S50[45]0|S5120|S40[23]0|RS8502|RS9602|RS94D)[);/ ]'
       model: '$1'
 
 # Gionee
 Gionee:
-  regex: '(?:GIO-)?GIONEE[ _-]?[a-z0-9]+|(?:Dream_D1|V188S?|GN[0-9]{3,4}[a-z]?)[);/ ]|F103(?: Pro)? Build|P5 mini Build|P7 Max Build|M7 Power '
+  regex: '(?:GIO-)?GIONEE[ _-]?[a-z0-9]+|(?:Dream_D1|V188S?|GN[0-9]{3,4}[a-z]?)[);/ ]|F103(?: Pro)? Build|P5 mini Build|P7 Max Build|M7 Power |F106L'
   device: 'smartphone'
   models:
     - regex: 'GN810[);/ ]'
@@ -4654,6 +4694,8 @@ Gionee:
       model: 'GN$1'
     - regex: 'V188S[);/ ]'
       model: 'V188S'
+    - regex: 'F106L[);/ ]'
+      model: 'F106L'
     - regex: 'V188[);/ ]'
       model: 'V188'
     - regex: 'F103( Pro)? Build'
@@ -4699,8 +4741,8 @@ GOCLEVER:
     - regex: 'QUANTUM_(1010N|1010M|900)'
       model: 'QUANTUM $1'
       device: 'tablet'
-    - regex: 'INSIGNIA_785_PRO'
-      model: 'INSIGNIA 785 PRO'
+    - regex: 'INSIGNIA_(785_PRO|1010M|800M)'
+      model: 'INSIGNIA $1'
       device: 'tablet'
     - regex: '(ORION|ARIES|ELIPSO)[_ ](71|101|102)'
       model: '$1 $2'
@@ -4708,7 +4750,7 @@ GOCLEVER:
     - regex: 'TQ700N'
       model: 'QUANTUM 700N'
       device: 'tablet'
-    - regex: '((?:QUANTUM|ARIES|INSIGNIA|ORION|ELIPSO)[ _-]?[^;/]+) Build'
+    - regex: '((?:QUANTUM|ARIES|INSIGNIA|ORION|ELIPSO)[ _-]?[^;/]+)(?: Build|\))'
       model: '$1'
     - regex: 'GOCLEVER[ _-]TAB[ _-]?([^;/]+) Build'
       model: 'TAB $1'
@@ -4751,7 +4793,7 @@ Goly:
 
 # Google
 Google:
-  regex: 'Nexus|GoogleTV|Glass|CrKey[^a-z0-9]|Pixel(?: Build|\))|Pixel (?:XL|C|[2-4]|[2-4] XL)'
+  regex: 'Nexus|GoogleTV|Glass|CrKey[^a-z0-9]|Pixel(?: Build|\))|Pixel (?:XL|C|[2-4]|[2-4] XL)|Google 2XL'
   device: 'smartphone'
   models:
     - regex: 'Glass'
@@ -4788,6 +4830,8 @@ Google:
       model: 'Pixel 4'
     - regex: 'Pixel 2'
       model: 'Pixel 2'
+    - regex: 'Google 2XL'
+      model: 'Pixel 2 XL'
     - regex: 'Pixel C'
       device: 'tablet'
       model: 'Pixel C'
@@ -4825,12 +4869,16 @@ Hafury:
 
 # Haier
 Haier:
-  regex: 'Haier|Titan[ _]T[13]|(?:HW-)?W(?:716|757|860|970)[);/ ]|(?:HM-)?(G(?:152|303|353|552|70[01])?-FL|G(?:303)?-W|I(?:557)?-FL)|(?:PAD[ _](D71|G781|d85))'
+  regex: 'Haier|I6_Infinity|Titan[ _]T[13]|(?:HW-)?W(?:716|757|860|970)[);/ ]|(?:HM-)?(N700|G(?:152|303|353|552|70[01])?-FL|HM-N501-FL|G(?:303)?-W|I(?:557)?-FL)|(?:PAD[ _](D71|G781|d85))'
   device: 'smartphone'
   models:
+    - regex: 'HM-N700-FL'
+      model: 'L7'
+    - regex: 'HM-N501-FL'
+      model: 'L56'
     - regex: '(?:HM-)?(G(?:152|353|552|70[01])|G(?:303)|I(?:557))'
       model: '$1'
-    - regex: '(Titan[_ ]T[13])'
+    - regex: '(Titan[_ ]T[13]|I6_Infinity)'
       model: '$1'
     - regex: '(?:HW-)?W(716|757|860|970)[);/ ]'
       model: 'W$1'
@@ -4879,7 +4927,7 @@ Hasee:
 
 # Hisense
 Hisense:
-  regex: '(?:HS-)?Hisense ([^;/]+) Build|Hisense [^);/]+|HS-(?:G|U|EG?|I|L|T|X)[0-9]+[a-z0-9\-]*|E270BSA|M470BS[AE]|E2281|EG680|HLTE700T'
+  regex: '(?:HS-)?Hisense ([^;/]+) Build|Hisense [^);/]+|HS-(?:G|U|EG?|I|L|T|X)[0-9]+[a-z0-9\-]*|E270BSA|M470BS[AE]|E2281|EG680|HLTE(700T|22[13]E)'
   device: 'smartphone'
   models:
     # explicit tablet models
@@ -4894,6 +4942,10 @@ Hisense:
       model: 'Sero 8'
     - regex: 'HLTE700T'
       model: 'A6'
+    - regex: 'HLTE221E'
+      model: 'E Max'
+    - regex: 'HLTE223E'
+      model: 'H30'
     - regex: 'EG680'
       model: 'Smartfren Andromax Z'
 
@@ -4949,7 +5001,7 @@ Hoozo:
 
 # Huawei
 Huawei:
-  regex: '(HW-)?(?:Huawei|Ideos|Honor[ _]?|(?:(?:AGS|AGS2|ALE|ALP|AMN|ANE|ARE|ARS|ATH|ATU|AUM|BAC|BAH|BAH2|BG2|BGO|BKK|BKL|BLA|BLL|BLN|BND|BTV|CAG|CAM|CAN|CAZ|CHC|CHE[12]?|CHM|CLT|CMR|COL|COR|CPN|CRO|CRR|CUN|DIG|DIG|DLI|DRA|DUA|DUB|DUK|EDI|ELE|EML|EVA|EVR|FDR|FIG|FLA|FRD|GRA|HLK|HMA|HRY|HWI|H[36]0|INE|JAT|JDN|JDN2|JKM|JMM|JSN|KIW|KNT|KOB|KSA|LDN|LLD|LND|LON|LUA|LY[AO]|MAR|MHA|MRD|MYA|NCE|NEM|NEO|NXT|PAR|PCT|PIC|PLE|PLK|POT|PRA|RIO|RNE|RVL|SCC|SCL|SEA|SHT|SLA|SNE|STF|STK|TAG|TIT|TNY|TRT|VCE|VEN|VIE|VKY|VNS|VOG|VRD|VTR|WAS|YAL|G(?:527|620S|621|630|735)|Y(?:221|330|550|6[23]5))-(?:[A-Z]{0,2}[0-9]{1,4}[A-Z]{0,2}?)|H1711|U(?:8230|8500|8661|8665|8667|8800|8818|8860|9200|9508))[);/ ])|hi6210sft|SPN-AL00|HRY-LX1MEB|GEM-70[1-3]L|PE-(UL00|TL10)|VRD-W09|T1-A21[Lw]|T1-701u|G7-L01| ASK-AL00x'
+  regex: '(HW-)?(?:Huawei|Ideos|Honor[ _]?|(?:(?:AGS|AGS2|ALE|ALP|AMN|ANE|ARE|ARS|ATH|ATU|AUM|BAC|BAH|BAH2|BG2|BGO|BKK|BKL|BLA|BLL|BLN|BND|BTV|CAG|CAM|CAN|CAZ|CHC|CHE[12]?|CHM|CLT|CMR|COL|COR|CPN|CRO|CRR|CUN|DIG|DIG|DLI|DRA|DUA|DUB|DUK|EDI|ELE|EML|EVA|EVR|FDR|FIG|FLA|FRD|GRA|HLK|HMA|HRY|HWI|H[36]0|INE|JAT|JDN|JDN2|JKM|JMM|JSN|KIW|KNT|KOB|KSA|LDN|LLD|LND|LON|LUA|LY[AO]|MAR|MHA|MRD|MYA|NCE|NEM|NEO|NXT|PAR|PCT|PIC|PLE|PLK|POT|PRA|RIO|RNE|RVL|SCC|SCL|SEA|SHT|SLA|SNE|STF|STK|TAG|TIT|TNY|TRT|VCE|VEN|VIE|VKY|VNS|VOG|VRD|VTR|WAS|YAL|G(?:527|620S|621|630|735)|Y(?:221|330|550|6[23]5))-(?:[A-Z]{0,2}[0-9]{1,4}[A-Z]{0,2}?)|H1711|U(?:8230|8500|8661|8665|8667|8800|8818|8860|9200|9508))[);/ ])|hi6210sft|SPN-AL00|SCM-(AL09|W09)|HRY-LX1MEB|GEM-70[1-3]L|PE-(UL00|TL10)|VRD-W09|T1-A21[Lw]|T1-701u|G7-L01| ASK-AL00x|LIO-(?:[TA]L00|L29|AN00)|HW-01K|LRA-AL00|HDN-W09'
   device: 'smartphone'
   models:
     - regex: 'ARS-([AT]L00|L22)[);/ ]'
@@ -5020,7 +5072,9 @@ Huawei:
       model: 'Honor 2'
     - regex: 'YAL-(?:L21|AL00)'
       model: 'Honor 20'
-    - regex: 'MAR-LX1H'
+    - regex: 'LRA-AL00'
+      model: 'Honor 20 Lite'
+    - regex: 'MAR-LX1H|YAL-AL50'
       model: 'Honor 20S'
     - regex: 'YAL-(L41|AL10)[);/ ]'
       model: 'Honor 20 Pro'
@@ -5032,8 +5086,11 @@ Huawei:
       model: 'Honor Play 4C'
     - regex: 'ASK-AL00x'
       model: 'Honor Play 3'
-    - regex: 'JDN-AL00'
+    - regex: 'JDN-(?:AL00|W09)'
       model: 'Honor Pad 2'
+      device: 'tablet'
+    - regex: 'HDN-W09'
+      model: 'Honor Water Play 10.1'
       device: 'tablet'
     - regex: 'JAT-AL00'
       model: 'Honor Play 8A'
@@ -5061,6 +5118,8 @@ Huawei:
       model: 'Honor 5A'
     - regex: '(?:Honor_|HW-)?KIW-(?:AL10|TL00H|[TC]L00|L2[124]|UL00)(?:_TD)?[);/ ]'
       model: 'Honor 5X'
+    - regex: '(?:Honor_|HW-)?CUN-AL00[);/ ]'
+      model: 'Honor 5 Play'
     - regex: '(?:Honor_|HW-)?CHM-U01(?:_TD)?[);/ ]'
       model: 'Honor 4C'
     - regex: '((?:Honor_|HW-)?H60-L(?:01|02|03|04|11|12)(?:_TD)?|HW-H60-J1)[);/ ]'
@@ -5069,7 +5128,7 @@ Huawei:
       model: 'Honor 6 Play'
     - regex: 'PE-(UL00|TL10)'
       model: 'Honor 6 Plus'
-    - regex: '(?:Honor_|HW-)?SCL-L01(?:_TD)?[);/ ]'
+    - regex: '(?:Honor_|HW-)?SCL-L(01|32)(?:_TD)?[);/ ]'
       model: 'Honor Y6'
     - regex: '(?:Honor_|HW-)?LYO-L21'
       model: 'Honor Y6 II Compact' # Honor 5A
@@ -5107,7 +5166,7 @@ Huawei:
       model: 'Honor 8C'
     - regex: 'JSN-L(?:2[123]|42)|JSN-[TA]L00[a]?'
       model: 'Honor 8X'
-    - regex: 'KSA-LX9'
+    - regex: 'KSA-(LX[29]|AL00)'
       model: 'Honor 8S'
     - regex: 'ARE-(?:AL[10]0|L22HN|TL00)'
       model: 'Honor 8X Max'
@@ -5123,13 +5182,15 @@ Huawei:
       model: 'Honor 9'
     - regex: 'HLK-AL00'
       model: 'Honor 9X'
+    - regex: 'HLK-AL10'
+      model: 'Honor 9X Pro'
     - regex: 'LLD-AL[23]0'
       model: 'Honor 9i'
     - regex: 'LLD-(?:AL[01]0|L[23]1|TL10)'
       model: 'Honor 9 Lite'
     - regex: 'COL-(?:AL[01]0|TL[01]0|L29)'
       model: 'Honor 10'
-    - regex: 'HRY-(?:AL00|LX[12])|HRY-LX1MEB'
+    - regex: 'HRY-(?:[AT]L00|LX[12]|LX1MEB)'
       model: 'Honor 10 Lite'
     - regex: 'VKY-TL00'
       model: 'Honor P10 Plus'
@@ -5171,6 +5232,8 @@ Huawei:
       model: 'Nova 3e'
     - regex: 'INE-(?:AL00|LX1r|LX[12]|TL00)'
       model: 'Nova 3i'
+    - regex: 'SEA-AL00'
+      model: 'Nova 5'
     - regex: 'SEA-AL10'
       model: 'Nova 5 Pro'
     - regex: 'VCE-(L22|[AT]L00)'
@@ -5205,13 +5268,13 @@ Huawei:
       model: 'P20'
     - regex: 'ANE-(?:LX[123]|TL00)'
       model: 'P20 Lite'
-    - regex: 'CLT-(?:AL0[01]|TL00|L(?:04|[02]9))'
+    - regex: 'CLT-(?:AL0[01]|TL00|L(?:04|[02]9))|HW-01K'
       model: 'P20 Pro'
-    - regex: 'ELE-L(?:04|09|29)|ELE-AL00'
+    - regex: 'ELE-L(?:04|09|29)|ELE-[AT]L00'
       model: 'P30'
     - regex: 'VOG-L(?:04|09|29)|VOG-TL00'
       model: 'P30 Pro'
-    - regex: 'MAR-LX(1M|2)'
+    - regex: 'MAR-(?:LX(1[BM]|2)|TL00)'
       model: 'P30 Lite'
     - regex: 'MAR-LX[13]A'
       model: 'P30 Lite Dual SIM'
@@ -5219,7 +5282,7 @@ Huawei:
       model: 'P smart'
     - regex: 'STK-LX1'
       model: 'P smart Z'
-    - regex: 'POT-LX[13]'
+    - regex: 'POT-LX([13]|2J)'
       model: 'P smart (2019)'
     - regex: 'POT-[TA]L00a'
       model: '9S'
@@ -5227,7 +5290,7 @@ Huawei:
       model: 'Y3 (2017)'
     - regex: 'CAG-L[02]2'
       model: 'Y3 (2018)'
-    - regex: 'LUA-U22'
+    - regex: 'LUA-(U22|L2[12]|U03)'
       model: 'Y3II'
     - regex: 'CUN-L(?:0[123]|2[123]|33)'
       model: 'Y5II'
@@ -5317,7 +5380,7 @@ Huawei:
       model: 'Mate 20 Pro'
     - regex: 'SNE-(?:AL00|LX[0-3])'
       model: 'Mate 20 Lite'
-    - regex: 'EVR-(?:[TA]L00|L29)'
+    - regex: 'EVR-(?:[TA]L00|L29|N29)'
       model: 'Mate 20 X'
     - regex: 'CRR-(?:L09|UL00)'
       model: 'Mate S'
@@ -5329,6 +5392,8 @@ Huawei:
       model: 'Mate SE'
     - regex: 'SPN-AL00'
       model: 'Mate 30 Lite' # Nova 5i Pro
+    - regex: 'LIO-(?:[TA]L00|L29|AN00)'
+      model: 'Mate 30 Pro'
     - regex: 'Bucare Y330-U05'
       model: 'Y330-U05'
     - regex: 'DRA-L(?:01|03|21|23|X3)'
@@ -5338,6 +5403,9 @@ Huawei:
     - regex: 'CMR-(?:AL[01]9|W09)'
       device: 'tablet'
       model: 'MediaPad M5 10.8'
+    - regex: 'SCM-AL09'
+      device: 'tablet'
+      model: 'MediaPad M5 Pro'
     - regex: 'GEM-70[1-3]L'
       device: 'tablet'
       model: 'MediaPad X2'
@@ -5347,9 +5415,12 @@ Huawei:
     - regex: 'SHT-(?:AL|W)09'
       device: 'tablet'
       model: 'MediaPad M5 8.4'
-    - regex: 'VRD-(AL|W)09'
+    - regex: 'VRD-(?:(AL|W)09|AL10)'
       device: 'tablet'
       model: 'MediaPad M6 8.4'
+    - regex: 'SCM-W09'
+      device: 'tablet'
+      model: 'MediaPad M6 10'
     - regex: 'BTV-W09'
       device: 'tablet'
       model: 'MediaPad M3 8'
@@ -5479,12 +5550,18 @@ iRola:
     - regex: 'iRola ([^/;]+) Build'
       model: '$1'
 
+# iRulu
+iRulu:
+  regex: 'iRULU[ _](X11|V[34])[;)\ ]'
+  device: 'tablet'
+  model: '$1'
+
 # Irbis
 Irbis:
-  regex: 'TZ(150|165|17[5-8]|77[17]|753|794|8[34]1|85[47]|86[45]|878|88[124]|89[12]|49|71[467]|75[47]|772|96[01])|T(?:Zone|Zart)|(SP(?:0[56]|2[01]|4[1-36]|45[45]|50))[;)\ ]'
+  regex: 'TZ(1(?:50|65|7[5-8]|9[578])|49|7(?:1[467]|2[05]|37|42|5[2347]|62|72|7[17]|9[47])|8(?:[34]1|5[347]|6[45]|78|8[1-5]|9[12])|96[01359])|T(?:Zone|Zart)|(SP(?:0[56]|2[01]|4[1-36]|45[45]|50))[;)\ ]'
   device: 'tablet'
   models:
-    - regex: '(TZ(?:150|165|17[5-8]|77[17]|753|794|8[34]1|85[47]|86[45]|878|88[124]|89[12]|49|71[467]|75[47]|772|96[01])|T(?:Zone|Zart))[;)\ ]'
+    - regex: '(TZ(?:[0-9]+)|T(?:Zone|Zart))[;)\ ]'
       model: '$1'
     - regex: '(SP(?:0[56]|2[01]|4[1-36]|45[45]|50))[;)\ ]'
       device: 'smartphone'
@@ -5614,6 +5691,8 @@ LYF:
       model: 'Wind 7'
     - regex: 'LS-5504'
       model: 'Water 7'
+    - regex: 'LS-5507'
+      model: 'Water 7S'
     - regex: 'LS-5017'
       model: 'Water 11'
     - regex: 'LS-5018'
@@ -6310,12 +6389,14 @@ K-Touch:
 
 # kyocera
 Kyocera:
-  regex: 'Kyocera|KWC-|QC-|C5120|C5170|C5155|C5215|C6730|C6750|C6522N?|C6530N|C6740|C6743|E6[89]10|KYL21|KYY23|S2151|KC-S701'
+  regex: 'Kyocera|KWC-|QC-|C5120|C5170|C5155|C5215|C6730|C6750|C6522N?|C6530N|C6740|C6743|E6[89]10|KYL21|KYY23|S2151|KC-S701|S4-KC[;/) ]'
   device: 'smartphone'
   models:
     # explicit smartphone models
     - regex: 'C5120'
       model: 'Milano'
+    - regex: 'S4-KC'
+      model: 'One S4'
     - regex: 'C5155'
       model: 'Rise'
     - regex: 'C5170'
@@ -6359,19 +6440,25 @@ Kyocera:
     - regex: '(?:KWC|QC)-([a-z0-9]+)'
       model: '$1'
 
-# Krüger&Matz
+# Krüger&Matz (Kruger&Matz)
 Krüger&Matz:
-  regex: 'Kruger[ _&]Matz|MOVE_'
+  regex: 'Kruger[ _&]Matz|MOVE_|LIVE4_KM043[89]'
   device: 'smartphone'
   models:
     - regex: 'MOVE_6_mini'
       model: 'MOVE 6 Mini'
-    - regex: 'MOVE_([78])'
+    - regex: 'MOVE[_ ]([78]|6S)'
       model: 'MOVE $1'
     - regex: 'DRIVE 4 mini LTE'
       model: 'DRIVE 4 mini LTE'
+    - regex: 'DRIVE 4[;/) ]'
+      model: 'DRIVE 4'
     - regex: 'Drive 5[;/) ]'
       model: 'DRIVE 5'
+    - regex: 'FLOW (4[S]?)[;/) ]'
+      model: 'FLOW $1'
+    - regex: 'LIVE4_(KM043[89])[;/) ]'
+      model: 'LIVE 4 $1'
 
 # LAIQ
 LAIQ:
@@ -6544,6 +6631,8 @@ LeEco:
       model: 'Max X900+'
     - regex: 'X50[10]'
       model: 'Le 1S'
+    - regex: '(X910)'
+      model: '$1'
     - regex: 'X900 Build'
       model: 'Le X900'
     - regex: 'Le ?X526 Build'
@@ -6592,7 +6681,7 @@ Lenco:
 
 # lenovo
 Lenovo:
-  regex: '(?:LNV-)?Lenovo|IdeaTab|IdeaPad|Thinkpad|Yoga Tablet|Tab2A[0-9]-[0-9]{2}[a-z]?|YT3-X50L|ZUK[ -_]|K50a40|TB-(8504F|X304F|X704V|X704A)|A2107A-H|S6000[ ;)]|Z2 Plus|VIBE Z2'
+  regex: '(?:LNV-)?Lenovo|IdeaTab|IdeaPad|Thinkpad|Yoga Tablet|Tab2A[0-9]-[0-9]{2}[a-z]?|TB3-710I|YT3-X50[ML]|ZUK[ -_]|K50a40|TB-(8504F|X304F|X704V|X704A)|A2107A-H|S6000[ ;)]|Z2 Plus|VIBE Z2|Vibe K5 Plus'
   device: 'smartphone'
   models:
     - regex: 'Lenovo ?G780'
@@ -6616,7 +6705,7 @@ Lenovo:
     - regex: 'TB2-X30[FL]'
       model: 'Tab 2 A10-30'
       device: 'tablet'
-    - regex: 'YT3-X50[FL]'
+    - regex: 'YT3-X50[FLM]'
       model: 'Yoga Tab 3'
       device: 'tablet'
     - regex: 'TB3-730X'
@@ -6640,10 +6729,10 @@ Lenovo:
     - regex: 'Lenovo ?B8000(-[FH])?'
       model: 'Yoga Tablet 10'
       device: 'tablet'
-    - regex: 'YOGA Tablet 2 Pro-1380F'
+    - regex: 'YOGA Tablet 2 Pro-1380[FL]'
       model: 'Yoga Tablet 2 Pro 13.3"'
       device: 'tablet'
-    - regex: 'YOGA Tablet 2-1050F'
+    - regex: 'YOGA Tablet 2-1050[FL]'
       model: 'Yoga Tablet 2 10.1"'
       device: 'tablet'
     - regex: 'YOGA Tablet 2-830(?:[FL]|LC)'
@@ -6729,7 +6818,7 @@ Lenovo:
       model: 'K5 Note'
     - regex: '(?:Lenovo-)?A6020(?:a40|l36)(?: Build|\))'
       model: 'K5 Vibe'
-    - regex: 'A6020a46(?: Build|\))'
+    - regex: 'A6020a46(?: Build|\))|Vibe K5 Plus'
       model: 'K5 Vibe Plus'
     - regex: 'VIBE Z2[);/ ]'
       model: 'Vibe Z2'
@@ -6845,7 +6934,7 @@ Lexibook:
 
 # LG
 LG:
-  regex: 'LG|portalmmm/2\.0 (?:KE|KG|KP|L3)|(?:VX[0-9]+|L-0[12]D|L-07C|P713|(LM-[A-Z][0-9]{3}[A-Z]{0,3}(?:\(FGN?\)|\(G\)|\.FN|\.F(?:GN?)?)?)|LM-(X625N1|G820QM[0127]))[);/ ]|NetCast|RS987|RS500|VS(?:50[01]|835|98[78]|99[56]|(410|415|425|500)PP)|Nexsus 5|LML(414D|211B|713D|212V)L|VK810 4G|VK815'
+  regex: 'LG|portalmmm/2\.0 (?:KE|KG|KP|L3)|(?:VX[0-9]+|L-0[12]D|L-07C|P713|(LM-[A-Z][0-9]{3}[A-Z]{0,3}(?:\(FGN?\)|\(G\)|\.FN|\.F(?:GN?)?)?)|LM-(X625N1|G820QM[0127]))[);/ ]|NetCast|RS987|RS500|VS(?:50[01]|835|876|880|98[0578]|99[56]|(410|415|425|500|880)PP)|Nexsus 5|LML(41[34]D|211B|713D|212V)L|VK810 4G|VK815'
   device: 'smartphone'
   models:
     - regex: 'LG-D325'
@@ -6858,7 +6947,9 @@ LG:
       model: 'Zone 4'
     - regex: 'LM-X220PM'
       model: 'Tribute Empire'
-    - regex: 'LG-D85[0125]'
+    - regex: 'VS980'
+      model: 'G2'
+    - regex: 'LG-D85[0125]|VS985'
       model: 'G3'
     - regex: 'LG-D72[2458]'
       model: 'G3 Beat'
@@ -6928,7 +7019,7 @@ LG:
       model: 'Fortune 2'
     - regex: 'LM-X410\.F[);/ ]'
       model: 'Premier Pro'
-    - regex: 'LML414DL[);/ ]'
+    - regex: 'LML41[34]DL[);/ ]'
       model: 'Premier Pro LTE'
     - regex: 'LM-X525'
       model: 'Q60'
@@ -7034,8 +7125,12 @@ LG:
       model: 'Spirit'
     - regex: '(?:LG)?C660'
       model: 'Optimus Pro'
-    - regex: 'LML211BL|LML212VL'
+    - regex: 'LML21(?:1B|2V)L'
       model: 'Rebel 4'
+    - regex: 'VS876'
+      model: 'Lucid 3'
+    - regex: 'VS880(PP)?'
+      model: 'G Vista'
 
     - regex: 'LG-V490'
       model: 'G Pad 8.0'
@@ -7753,7 +7848,7 @@ Mofut:
 
 # motorola
 Motorola:
-  regex: 'MOT(?!TO)|(?<!AN)DROID ?(?:Build|[a-z0-9]+)|portalmmm/2.0 (?:E378i|L6|L7|v3)|XOOM [^;/]*Build|XT1021|XT180[3-5]|(?:XT|MZ|MB|ME)[0-9]{3,4}[a-z]?(?:\(Defy\)|-0[1-5])?(?: Build|\))'
+  regex: 'MOT(?!TO)|(?<!AN)DROID ?(?:Build|[a-z0-9]+)|portalmmm/2.0 (?:E378i|L6|L7|v3)|XOOM [^;/]*Build|XT1799-2|XT1021|XT180[3-5]|(?:XT|MZ|MB|ME)[0-9]{3,4}[a-z]?(?:\(Defy\)|-0[1-5])?(?: Build|\))'
   device: 'smartphone'
   models:
     # Explicit feature phone models
@@ -7838,6 +7933,8 @@ Motorola:
       model: 'Droid Turbo'
     - regex: '(?:MOT-|Motorola-)?XT10(?:28|3[1234]|68|69)'
       model: 'Moto G'
+    - regex: '(?:MOT-|Motorola-)?XT1799-2'
+      model: 'Moto G5s'
     - regex: '(?:MOT-|Motorola-)?XT180[3-5]'
       model: 'Moto G5s Plus'
     - regex: '(?:MOT-|Motorola-)?XT168[57]'
@@ -7854,6 +7951,8 @@ Motorola:
       model: 'Moto Z'
     - regex: '(?:MOT-|Motorola-)?XT1635(?:-0[1-3])?'
       model: 'Moto Z Play'
+    - regex: '(?:MOT-|Motorola-)?XT1710-(?:-02)?'
+      model: 'Moto Z2 Play'
     - regex: '(?:MOT-|Motorola-)?XT1663'
       model: 'Moto M'
 
@@ -8141,7 +8240,7 @@ Noblex:
 
 # Nomi
 Nomi:
-  regex: 'Nomi[ _-]|(C101010 Ultra2|i501[23]|i5032|i5050|i5532)[;/) ]'
+  regex: 'Nomi[ _-]|(C101010 Ultra2|i501[23]|i5032|i5050|i5532|C0(700(?:[02358]|2HD)|7850)|C1010[0-3])[;/) ]'
   device: 'smartphone'
   models:
     - regex: 'i501[23][;/) ]'
@@ -8154,6 +8253,9 @@ Nomi:
       model: 'Space X2'
     - regex: 'C101010 Ultra2'
       model: 'Ultra 2'
+      device: 'tablet'
+    - regex: '(C0(?:700(?:[02358]|2HD)|7850)|C1010[0-3])[;/) ]'
+      model: '$1'
       device: 'tablet'
     - regex: 'Nomi[ _-]([^;/]+) Build'
       model: '$1'
@@ -8414,12 +8516,12 @@ OnePlus:
 
 # oppo
 OPPO:
-  regex: '(?:OB-)?OPPO[ _]?([a-z0-9]+)|N1T|(?:X90[07][0679]|U707T?|X909T?|R(?:10[01]1|2001|201[07]|6007|7005|7007|80[13579]|81[13579]|82[01379]|83[013]|800[067]|8015|810[679]|811[13]|820[057])[KLSTW]?|N520[79]|N5117|A33f|A33fw|A37fw?|PAAM00|PAC[T|M]00|PBAM00)[);/ ]|R7kf|R7plusf|R7Plusm|A1601|CPH[0-9]{4}|PCAM10|PADM00|PBBT00|PBBM[03]0|RMX18(0[1579]|11|3[13]|2[15]|[45]1|45)|CPH19(69|79|23|1[179])|RMX(1827|194[135]|19[01]1|1971|1921)|PC[CD]M00|PBAT00|PBBT30|PBCM[13]0|P[CB]E[MT]00|PBFM00|PAFM00'
+  regex: '(?:OB-)?OPPO[ _]?([a-z0-9]+)|N1T|(?:X90[07][0679]|U707T?|X909T?|R(?:10[01]1|2001|201[07]|6007|7005|7007|80[13579]|81[13579]|82[01379]|83[013]|800[067]|8015|810[679]|811[13]|820[057])[KLSTW]?|N520[79]|N5117|A33f|A33fw|A37fw?|PAAM00|PAC[T|M]00|PBAM00)[);/ ]|R7kf|R7plusf|R7Plusm|A1601|CPH[0-9]{4}|PCAM10|PADM00|PBBT00|PBBM[03]0|RMX18(0[1579]|11|3[13]|2[15]|[45]1|45)|CPH19(69|79|23|1[179])|RMX(1827|194[1235]|199[23]|19[01379]1|192[157])|PC[CDG]M00|PB(AT00|BT30|CM[13]0|[FD]M00)|P[CB]E[MT]00|P(AFM00|ADT00|AHM00|CA[MT]00|CDM10|CHM[13]0|CKM[08]0|CLM10|DBM00)'
   device: 'smartphone'
   models:
     - regex: '(?:OPPO[ _]?)?U707T?[);/ ]'
       model: 'Find Way S'
-    - regex: '(?:OPPO[ _]?)?CPH1979[);/ ]'
+    - regex: '(?:OPPO[ _]?)?(?:CPH1979|PCDM10)[);/ ]'
       model: 'Reno Z'
     - regex: 'CPH1945'
       model: 'Reno2 Z'
@@ -8427,10 +8529,18 @@ OPPO:
       model: 'F11 Pro'
     - regex: 'CPH1911'
       model: 'F11'
-    - regex: 'CPH1917'
+    - regex: '(?:CPH1917|PCA[MT]00)[);/ ]'
       model: 'Reno'
+    - regex: 'PCLM10'
+      model: 'Reno Ace'
+    - regex: 'PCKM00'
+      model: 'Reno 2'
+    - regex: 'PCKM80'
+      model: 'Reno 2Z'
     - regex: 'CPH1921'
       model: 'Reno 5G'
+    - regex: 'PCGM00[);/ ]'
+      model: 'Reno K3'
     - regex: 'PCCM00'
       model: 'Reno 10X'
     - regex: 'CPH1919'
@@ -8515,6 +8625,8 @@ OPPO:
       model: 'A83'
     - regex: '(?:OPPO[ _]?)?CPH1801[);/ ]'
       model: 'A71'
+    - regex: 'PADT00[);/ ]'
+      model: 'A3'
     - regex: '(?:OPPO[ _]?)?CPH18(0[35]|53)[);/ ]'
       model: 'A3s'
     - regex: '(?:OPPO[ _]?)?(?:CPH1809|PBAT00|PBBT30)[);/ ]'
@@ -8523,8 +8635,10 @@ OPPO:
       model: 'A5 (2020)'
     - regex: '(?:OPPO[ _]?)?CPH1938[);/ ]'
       model: 'A9 (EN)'
-    - regex: 'CPH1937'
+    - regex: 'CPH1937|PCHM30'
       model: 'A9 (2020)'
+    - regex: 'PCHM10'
+      model: 'A11'
     - regex: '(?:OPPO[ _]?)?CPH18(19|21)[);/ ]'
       model: 'F7'
     - regex: '(?:OPPO[ _]?)?CPH1823[);/ ]'
@@ -8535,8 +8649,6 @@ OPPO:
       model: 'R15 Pro'
     - regex: '(?:OPPO[ _]?)?CPH1835[);/ ]'
       model: 'R15'
-    - regex: '(?:OPPO[ _]?)?CPH1837[);/ ]'
-      model: 'A3'
     - regex: '(?:OPPO[ _]?)?CPH1851[);/ ]'
       model: 'AX5'
     - regex: 'CPH1920'
@@ -8549,13 +8661,15 @@ OPPO:
       model: 'K1'
     - regex: 'RMX1811'
       model: 'RealMe C1'
-    - regex: 'RMX194[135]'
+    - regex: 'RMX194[1235]'
       model: 'RealMe C2'
     - regex: 'RMX1831'
       model: 'RealMe U1'
     - regex: '(?:OPPO[ _]?)?(?:CPH187[15]|PAFM00)[);/ ]'
       model: 'Find X'
-    - regex: '(?:OPPO[ _]?)?CPH1877[);/ ]'
+    - regex: '(?:OPPO[ _]?)?(?:PAHM00)[);/ ]'
+      model: 'Find X Lamborghini'
+    - regex: '(?:OPPO[ _]?)?(?:CPH1877|PBDM00)[);/ ]'
       model: 'R17 Pro'
     - regex: '(?:OPPO[ _]?)?(?:CPH1879|PBE[MT]00)[);/ ]'
       model: 'R17'
@@ -8565,11 +8679,13 @@ OPPO:
       model: 'R17 Neo'
     - regex: '(?:OPPO[ _]?)?(?:CPH1901|PBFM00)[);/ ]'
       model: 'A7'
+    - regex: '(?:OPPO[ _]?)?(?:PDBM00)[);/ ]'
+      model: 'A8'
     - regex: '(?:OPPO[ _]?)?CPH1903[);/ ]'
       model: 'AX7'
     - regex: '(?:OPPO[ _]?)?A37f(w)?(?: Build|\))'
       model: 'A37f$1'
-    - regex: '(?:OPPO[ _]?)?PADM00'
+    - regex: '(?:OPPO[ _]?)?(CPH1837|PADM00)[);/ ]'
       model: 'A3'
     - regex: '(?:OPPO[ _]?)?PBAM00'
       model: 'A5'
@@ -8593,12 +8709,20 @@ OPPO:
       model: 'Realme 3 Pro'
     - regex: 'RMX1901'
       model: 'Realme X'
+    - regex: 'RMX199[12]'
+      model: 'Realme X2'
+    - regex: 'RMX1993'
+      model: 'Realme X2 Dual'
+    - regex: 'RMX1931'
+      model: 'Realme X2 Pro'
     - regex: 'RMX1921'
       model: 'Realme XT'
-    - regex: 'RMX1911'
+    - regex: 'RMX19(11|27)'
       model: 'Realme 5'
     - regex: 'RMX1971'
       model: 'Realme 5 Pro'
+    - regex: 'RMX1925'
+      model: 'Realme 5S'
     - regex: '(PBBT00|PBBM00)[);/ ]'
       model: 'A7x'
     - regex: 'PCDM00[);/ ]'
@@ -8733,13 +8857,16 @@ Panacom:
 
 # panasonic
 Panasonic:
-  regex: 'Panasonic|PANATV[0-9]+|Viera/|P902i[);/ ]|Eluga[ _]|FZ-N1|P55 Novo 4G'
+  regex: 'Panasonic|PANATV[0-9]+|Viera/|P902i[);/ ]|Eluga[ _]|FZ-N1|P55 Novo 4G|DMC-CM1'
   device: 'smartphone'
   models:
     - regex: 'Eluga[ _-]([^;/]+) Build'
       model: 'Eluga $1'
     - regex: 'Eluga[ _-]([^;/]+)[;/)]'
       model: 'Eluga $1'
+    - regex: '(DMC-CM1)'
+      model: 'Lumix $1'
+      device: 'camera'
     - regex: 'FZ-N1'
       model: 'Toughpad'
     - regex: 'P55 Novo 4G'
@@ -8985,9 +9112,13 @@ Rokit:
 
 # Rombica
 Rombica:
-  regex: 'SSQ-A0500[);/ ]'
+  regex: '(Rombica|SSQ-A0500)[);/ ]'
   device: 'tv'
-  model: 'Smart Stick 4K'
+  models:
+    - regex: 'SSQ-A0500[);/ ]'
+      model: 'Smart Stick 4K'
+    - regex: 'Infinity K8[);/ ]'
+      model: 'Infinity K8'
 
 # Rover
 Rover:
@@ -10466,21 +10597,27 @@ Spice:
 
 # Sharp
 Sharp:
-  regex: 'SHARP|SBM|SH-?[0-9]+[a-z]?[);/ ]|SH-Z10|AQUOS|506SH|SHL22|FS80(1[08]|32|28|0[29])[);/ ]|TG-L900S'
+  regex: 'SHARP|SBM|SH-?[0-9]+[a-z]?[);/ ]|SH-M0[89]|S3-SH|SH-Z(10|01)|AQUOS|506SH|SHL22|FS80(1[08]|32|28|0[29])[);/ ]|TG-L900S'
   device: 'smartphone'
   models:
     # explicit smartphone models
     - regex: '506SH'
       model: 'Aquos Xx3'
+    - regex: 'S3-SH'
+      model: 'One S3'
     - regex: 'SH-Z10'
       model: 'Aquos zero'
+    - regex: 'SH-Z01'
+      model: 'Aquos S2 (C10)'
     - regex: 'SH-02E'
       model: 'Aquos Phone Zeta'
     - regex: 'SH06D'
       model: 'Aquos Phone SH-06D'
     - regex: 'SHL22'
       model: 'Aquos Phone SHL22'
-    - regex: 'FS8010'
+    - regex: 'SH-M09'
+      model: 'Aquos R2'
+    - regex: 'FS8010|SH-M08'
       model: 'Aquos S2'
     - regex: 'FS8032'
       model: 'Aquos S3'
@@ -10642,11 +10779,13 @@ Q-Touch:
 
 # T-Mobile
 T-Mobile:
-  regex: 'T-Mobile[ _][a-z0-9 ]+|REVVL 2( PLUS)?[);/ ]'
+  regex: 'T-Mobile[ _][a-z0-9 ]+|REVVLRY|REVVL 2( PLUS)?[);/ ]'
   device: 'smartphone'
   models:
     - regex: 'REVVL 2 PLUS'
       model: 'REVVL 2 Plus'
+    - regex: 'REVVLRY'
+      model: 'REVVL Plus'
     - regex: 'REVVL 2[);/ ]'
       model: 'REVVL 2'
     - regex: 'T-Mobile[ _]([a-z0-9_ ]+) Build'
@@ -10750,7 +10889,7 @@ Tesco:
 
 # teXet
 teXet:
-  regex: 'Texet|(NaviPad [^/;]*) Build|TM-(?:1046|1058|1057|1067|3000|3200R|3500|4003|4071|450[34]|451[30]|4377|4082R|550[83]|5010|5017|507[4-7]|5[23]77|6003|6906|702[13]|7055HD|709[69]|9747BT|9758|9751HD|9767|5513|520[410]|5505|507[13]|5581|7859|8044|9748[ _]3G|9720|7047HD[ _]3G|9757|9740|4982|4515|4083|500[3567]|5571|3204R|5016|8043|7047HD[ _]3G|8041HD|8066|705[23]|7041|8041HD|8051|8048|974[96]|973[78]W|974[10]|9743W|9750HD|7043XD|7049|7887|7037W|702[46])|TB-(771A|711A)|X-Force[\(-]?TM-5009\)?|X-Plus[\(-]?TM-5577\)?|X-pad (?:AIR 8|iX 7) 3G'
+  regex: 'Texet|(NaviPad [^/;]*) Build|TM-(?:1046|1058|1057|1067|3000|3200R|3500|4003|4071|450[34]|451[30]|4377|4082R|550[83]|5010|5017|507[4-7]|5[23]77|6003|6906|702[13]|7055HD|709[69]|9747BT|9758|9751HD|9767|5513|520[410]|5505|507[13]|5581|7859|8044|9748[ _]3G|9720|7047HD[ _]3G|9757|9740|4982|4515|4083|500[3567]|5571|3204R|5016|8043|7047HD[ _]3G|8041HD|8066|705[23]|7041|8041HD|8051|8048|974[96]|973[78]W|974[170]|9743W|9750HD|7043XD|7049|7887|7037W|702[46])|TB-(771A|711A)|X-Force[\(-]?TM-5009\)?|X-Plus[\(-]?TM-5577\)?|X-pad (?:AIR 8|iX 7) 3G'
   device: 'tablet'
   models:
     - regex: 'TM-9749'
@@ -10785,7 +10924,7 @@ teXet:
       model: 'NaviPad TM-7887 3G'
     - regex: 'TM-8066'
       model: 'X-pad Rapid 8.2 4G'
-    - regex: '(TM-(?:1057|1067|6906|8043|9748[_ ]3G|9740|9757(?:[_ ]3G)?|7047HD[ _]3G|9747BT|9751HD|702[13]|705[23]|7041|9720|7047HD[_ ]3G|8044|8041HD|973[78]W|9743W|974[10]|9750HD|7043XD|7037W|702[46])|TB-(?:771A|711A|8041HD))'
+    - regex: '(TM-(?:1057|1067|6906|8043|9748[_ ]3G|9740|9757(?:[_ ]3G)?|7047HD[ _]3G|9747BT|9751HD|702[13]|705[23]|7041|9720|7047HD[_ ]3G|8044|8041HD|973[78]W|9743W|974[710]|9750HD|7043XD|7037W|702[46])|TB-(?:771A|711A|8041HD))'
       model: '$1'
     - regex: 'TM-4503'
       device: 'smartphone'
@@ -11180,6 +11319,9 @@ ViewSonic:
     - regex: '(?:ViewSonic-)?V500[);/ ]'
       model: 'V500'
       device: 'smartphone'
+    - regex: 'ViewSonic A8\+[);/ ]'
+      model: 'A8 Plus'
+      device: 'smartphone'
     - regex: '(?:ViewSonic-)?ViewPhone ?([^;/]+) Build'
       model: 'ViewPhone $1'
       device: 'smartphone'
@@ -11275,7 +11417,7 @@ Verykool:
 
 # Vestel
 Vestel:
-  regex: 'Venus[ _](V[1-9]|Z[1-9]0)|V_?TAB|VP74|VT97PRO|VSP145M|VSP250G|VSP355[GS]'
+  regex: 'Venus[ _](GO|V[1-9]|Z[1-9]0)|V_?TAB|VP74|VT97PRO|VSP145M|VSP250G|VSP355[GS]'
   device: 'smartphone'
   models:
     - regex: 'VT97PRO'
@@ -11305,6 +11447,8 @@ Vestel:
       model: 'Venus V$1'
     - regex: 'Venus[ _]Z([1-9]0)'
       model: 'Venus Z$1'
+    - regex: 'Venus[ _]GO'
+      model: 'Venus Go'
 
 # Videocon
 Videocon:
@@ -11318,7 +11462,7 @@ Videocon:
 
 # Vodafone
 Vodafone:
-  regex: 'Vodafone[ _-]|Smart ?Tab ?(?:III? ?)?(?:|4G|7|10)[);/ -]|VodafoneSmartChat|VFD[ _][0-9]+[;/) ]|VFD320|VF6[89]5|VF-795|VF-895N'
+  regex: 'Vodafone[ _-]|Smart ?Tab ?(?:III? ?)?(?:|4G|7|10)[);/ -]|VodafoneSmartChat|VFD[ _][0-9]+[;/) ]|VFD320|VF6[89]5|VF-(795|895N|1497)'
   device: 'smartphone'
   models:
     - regex: 'VFD 100'
@@ -11367,6 +11511,9 @@ Vodafone:
       model: 'Smart Speed 6'
     - regex: 'VF-895N'
       model: 'Smart Prime 6'
+    - regex: 'VF-1497'
+      model: 'Tab Prime 6'
+      device: 'tablet'
 
     # explicit table models
     - regex: 'VFD 1100'
@@ -11556,7 +11703,7 @@ Wexler:
 
 # Wiko
 Wiko:
-  regex: '(?:WIKO[_ -])|(?:WIKO-)?CINK_[a-z0-9_]+|(?:WIKO-)?HIGHWAY_[a-z0-9_]+|(?:WIKO-)?(?:Cink([^/;]*)|Highway([^/;]*)|Iggy|Stairway|Rainbow ?(Jam|Lite|Up)?|Darkside|Darkmoon|Darkfull|Darknight|Freddy|FEVER|Jerry[2]?|Sublim|Ozzy|JIMMY|Barry|Birdy|Bloom|Getaway|Goa|Kite|Robby|Lenny[2-9]?|Slide|Sunset[2-9]?|Sunny[2-9]?|Tommy[2-9]?|PULP(?: Fab)?|Wax|HARRY|WIM Lite|Ridge(?: Fab)?|U FEEL(?: Prime| Lite)?|U PULSE(?: LITE)?|View XL|View Prime)(?: Plus)?(?: 4G)?(?: Build|$)|W_(?:C800|K[346]00)|LENNY[234]|SUNSET2|JERRY|Tommy3|PULP FAB 4G|WC300|W-(V800|P611)-EEA'
+  regex: '(?:WIKO[_ -])|(?:WIKO-)?CINK_[a-z0-9_]+|(?:WIKO-)?HIGHWAY_[a-z0-9_]+|(?:WIKO-)?(?:Cink([^/;]*)|Highway([^/;]*)|Iggy|Stairway|Rainbow ?(Jam|Lite|Up)?|Darkside|Darkmoon|Darkfull|Darknight|Freddy|FEVER|Jerry[2]?|Sublim|Ozzy|JIMMY|Barry|Birdy|Bloom|Getaway|Goa|Kite|Robby|Lenny[2-9]?|Slide|Sunset[2-9]?|Sunny[2-9]?|Tommy[2-9]?|PULP(?: Fab)?|Wax|HARRY|WIM Lite|Ridge(?: Fab)?|U FEEL(?: Prime| Lite)?|U PULSE(?: LITE)?|View XL|View Prime)(?: Plus)?(?: 4G)?(?: Build|$)|W_(?:C800|K[346]00)|LENNY[234]|SUNSET2|JERRY|Tommy3|PULP FAB 4G|WC300|W-(V800|P611|K510)-EEA'
   device: 'smartphone'
   models:
     - regex: '(?:Wiko-)?Cink([^/;]*) Build'
@@ -11685,12 +11832,20 @@ Wiko:
       model: 'View 2'
     - regex: 'W-V800-EEA'
       model: 'View 3 Lite'
+    - regex: 'W-K510-EEA'
+      model: 'Y60'
     - regex: 'W-P611-EEA'
       model: 'View 3 Pro'
     - regex: 'Wiko ([^/;]+) Build'
       model: '$1'
     - regex: 'Wiko ([^/; ]+)'
       model: '$1'
+
+# Wieppo
+Wieppo:
+  regex: 'Wieppo (S6 Lite|S[658])[;/) ]'
+  device: 'smartphone'
+  model: '$1'
 
 # Wink
 Wink:
@@ -11775,15 +11930,17 @@ X-View:
 
 # Xiaomi
 Xiaomi:
-  regex: 'Xiaomi(?!/MiuiBrowser)|(?:MI [a-z0-9]+|Mi-4c|MI-One[ _]?[a-z0-9]+|MIX(?: 2S?)?)[);/ ]|HM (?:[^/;]+) (?:Build|MIUI)|(?:2014501|2014011|201481[12378]|201302[23]|2013061) Build|Redmi|POCOPHONE|SKR-[AH]0|SKW-[AH]0|POCO F1|DLT-H0'
+  regex: 'Xiaomi(?!/MiuiBrowser)|(?:MI [a-z0-9]+|Mi-4c|MI-One[ _]?[a-z0-9]+|MIX(?: 2S?)?)[);/ ]|HM (?:[^/;]+) (?:Build|MIUI)|(?:2014501|2014011|201481[12378]|201302[23]|2013061) Build|Redmi|POCOPHONE|SKR-[AH]0|SKW-[AH]0|POCO F1|DLT-[AH]0|MIBOX[34]|MiTV4[CSX]|AWM-A0'
   device: 'smartphone'
   models:
     # specific smartphone models
     - regex: 'SKR-[AH]0'
       model: 'Black Shark'
+    - regex: 'AWM-A0'
+      model: 'Black Shark Helo'
     - regex: 'SKW-[AH]0'
       model: 'Black Shark 2'
-    - regex: 'DLT-H0'
+    - regex: 'DLT-[AH]0'
       model: 'Black Shark 2 Pro'
     - regex: 'Xiaomi_2014501|2014501 Build'
       model: 'Hongmi 4G'
@@ -11846,6 +12003,12 @@ Xiaomi:
     - regex: 'MI PAD[);/ ]'
       model: 'Mi Pad'
       device: 'tablet'
+    - regex: 'MIBOX([34])[);/ ]'
+      model: 'Mi Box $1'
+      device: 'tv'
+    - regex: '(MiTV)(4[CSX]|4)[);/ ]'
+      model: '$1 $2'
+      device: 'tv'
     - regex: 'HM NOTE 1W (?:Build|MIUI)'
       device: 'phablet'
       model: 'Redmi Note'
@@ -12124,7 +12287,7 @@ ZYQ:
 
 # Toshiba
 Toshiba:
-  regex: 'Toshiba|TSBNetTV/|portalmmm/[12].0 TS|T-01C|T-0[12]D|IS04|IS11T|AT1S0|AT300SE|AT(10-A|10[PL]E-A|100|200|270|300|330|374|400|470|500|503|570|703|830)'
+  regex: 'Toshiba|TSBNetTV/|portalmmm/[12].0 TS|T-01C|T-0[12]D|IS04|IS11T|AT1S0|AT300SE|AT(7-C|10-A|10[PL]E-A|100|200|270|300|330|374|400|470|500|503|570|703|830)'
   device: 'smartphone'
   models:
     # explicit smartphone models
@@ -12140,6 +12303,9 @@ Toshiba:
       model: 'Regza IS11T'
 
     # explicit tablet models
+    - regex: 'AT7-C'
+      model: 'Excite'
+      device: 'tablet'
     - regex: 'AT1S0'
       model: 'Regza AT1S0'
       device: 'tablet'
@@ -12178,6 +12344,8 @@ Vivax:
       model: 'Fly 5 Lite'
     - regex: 'VIVAX[ _]Fly3'
       model: 'Fly 3'
+    - regex: 'VIVAX (Point X551)'
+      model: '$1'
     - regex: 'SMART Point X5010'
       model: 'Smart Point X5010'
 
@@ -12450,10 +12618,10 @@ Zenek:
 
 # Zopo
 Zopo:
-  regex: '(?:ZOPO[_ ])?(Flash X3|ZP[0-9]{2,}[^/;]+)(?:\)| Build)'
+  regex: 'ZOPO|(?:ZOPO[_ ])?(Flash X3|ZP[0-9]{2,}[^/;]+)(?:\)| Build)'
   device: 'smartphone'
   models:
-    - regex: 'ZP998[);/ ]'
+    - regex: '(ZOPO_C2_MOD|ZP998)[);/ ]'
       model: 'C2 II'
     - regex: '(?:ZOPO_)?ZP980[+][);/ ]'
       model: 'ZP980+'
@@ -12463,6 +12631,8 @@ Zopo:
       model: 'Speed 7 Plus'
     - regex: 'ZP951[);/ ]'
       model: 'Speed 7'
+    - regex: 'ZP955[);/ ]'
+      model: 'Speed 8'
     - regex: 'ZP950[+h]?[);/ ]'
       model: 'Leader Max'
     - regex: 'ZP(?:900H?|910)[);/ ]'
@@ -12473,6 +12643,12 @@ Zopo:
       model: 'Libero'
     - regex: 'ZP330[);/ ]'
       model: 'Color C'
+    - regex: 'ZP370[);/ ]'
+      model: 'Color S'
+    - regex: 'ZP5(63|86)[);/ ]'
+      model: 'Color X'
+    - regex: 'ZP567[);/ ]'
+      model: 'Color C5i'
     - regex: 'ZP300[S+]?[);/ ]'
       model: 'Field'
     - regex: 'ZP200[+]?[);/ ]'
@@ -12481,17 +12657,21 @@ Zopo:
       model: 'Pilot'
     - regex: 'ZP1790[);/ ]'
       model: 'Flash X2'
+    - regex: 'ZP781[);/ ]'
+      model: 'Flash G5 Plus'
     - regex: '(Flash X3|ZP[0-9]{2,}[^/;]+) Build'
       model: '$1'
 
 # ZTE
 ZTE:
-  regex: 'ZTE|AxonPhone|([a-z0-9]+)_USA_Cricket|(?:Blade (?:L110|L[2357]|L7A|S6|V[6789]|V8Q|V8 SE|V9 VITA|X7|A(310|460|465|475|520|530|602)|V580)|N9[15]8St|NX(?:403A|404H|406E|40[X2]|507J|503A|505J|506J|508J|510J|512J|511J|513J|521J|523J_V1|529J|531J|541J|549J|551J|563J|569[HJ]|573J|575J|591J|595J|597J|60[19]J|907J|616J)|N951[0579]|N9180|N9101|N913[67]|N952[01]|N9560|N9810|N799D|[UV]9180|[UV]9815|Z(?:233V|331|667T|768G|792|81[25]|82[08]|83[12359]|85[125]|851M|(557|71[67]|798|836|861|916)BL|986DL|(232|718|828)TL|(233|353|558|717|799|837|862|899|917|963)VL|955A|95[678]|965|97[018]|98[1237]|986U|999)|Apex2|G (LTE|Lux)|Vec)[);/ ]|KIS II Max|Kis 3|Z930L|Blade A5 2019-T|BLADE A6 MAX'
+  regex: 'ZTE|AxonPhone|([a-z0-9]+)_USA_Cricket|(?:Blade (?:L110|L[2357]|L7A|S6|V[6789]|V8Q|V8 SE|V9 VITA|X7|A(310|460|465|475|520|530|602)|V580)|N9[15]8St|NX(?:403A|404H|406E|40[X2]|507J|503A|505J|506J|508J|510J|512J|511J|513J|521J|523J_V1|529J|531J|541J|549J|551J|563J|569[HJ]|573J|575J|591J|595J|597J|60[19]J|61[69]J|62[79]J|907J)|N951[0579]|N9180|N9101|N913[67]|N952[01]|N9560|N9810|N799D|[UV]9180|[UV]9815|Z(?:233V|331|667T|768G|792|81[25]|82[08]|83[12359]|85[125]|851M|(557|71[67]|798|836|861|916)BL|986DL|(232|718|828)TL|(233|353|558|717|799|837|862|899|917|963)VL|955A|95[678]|965|97[018]|98[1237]|986U|999)|Apex2|G (LTE|Lux)|Vec)[);/ ]|KIS II Max|Kis 3|K3DX-V5G|Z930L|Blade A5 2019-T|BLADE A6 MAX|Nubia Z9'
   device: 'smartphone'
   models:
     # explicit smartphone models
     - regex: 'N799D[);/ ]'
       model: 'Blade Eg'
+    - regex: 'K3DX-V5G[);/ ]'
+      model: 'V5G'
     - regex: 'N918St[);/ ]'
       model: 'V5S'
     - regex: 'N958St[);/ ]'
@@ -12536,9 +12716,9 @@ ZTE:
       model: 'Nubia Z7 max'
     - regex: 'NX508J[);/ ]'
       model: 'Nubia Z9'
-    - regex: 'NX5[12]1J[);/ ]'
+    - regex: '(NX5[12]1J|Nubia Z9 mini)[);/ ]'
       model: 'Nubia Z9 mini'
-    - regex: 'NX510J[);/ ]'
+    - regex: '(NX510J|Nubia Z9 Max)[);/ ]'
       model: 'Nubia Z9 max'
     - regex: 'NX512J[);/ ]'
       model: 'Nubia Z9 max dual'
@@ -12560,6 +12740,8 @@ ZTE:
       model: 'Nubia Z17 Mini'
     - regex: 'NX595J'
       model: 'Nubia Z17S'
+    - regex: 'NX627J'
+      model: 'Nubia Z20'
     - regex: 'NX513J[);/ ]'
       model: 'Nubia My Prague'
     - regex: 'NX591J[);/ ]'
@@ -12570,6 +12752,10 @@ ZTE:
       model: 'Nubia X6'
     - regex: 'NX609J[);/ ]'
       model: 'Nubia Red Magic'
+    - regex: 'NX619J[);/ ]'
+      model: 'Nubia Red Magic Mars'
+    - regex: 'NX629J[);/ ]'
+      model: 'Nubia Red Magic 3'
     - regex: 'NX573J'
       model: 'Nubia M2 Lite'
     - regex: 'NX907J[);/ ]'
@@ -12855,7 +13041,7 @@ Lemhoov:
       model: '$1'
 # MTC
 MTC:
-  regex: 'MTC[ _](97[82]|970|982[OT]|982|1078)|SMART[ _]?(Race|Sprint|Run)[ _]4G|MTC975'
+  regex: 'MTC[ _](97[82]|970|982[OT]|982|1078)|SMART[ _]?(Race|Sprint|Run|Surf2)[ _]4G|MTC975'
   device: 'smartphone'
   models:
     - regex: 'MTC[ _](97[82]|970[H]?|982[OT]|982)'
@@ -12871,17 +13057,19 @@ MTC:
       model: 'Smart Sprint 4G'
     - regex: 'SMART[ _]?Run[ _]4G'
       model: 'Smart Run 4G'
+    - regex: 'SMART[ _]Surf2[ _]4G'
+      model: 'Smart Surf 2 4G'
 
 # MegaFon
 MegaFon:
-  regex: 'MFLoginPh|(MFLogin[34]T?|MS3B|SP-A5|SP-A20i)[)\; ]'
+  regex: 'MegaFon|MFLoginPh|MegLogPh|(MFLogin[34]T?|MS3B|SP-A5|SP-A20i)[)\; ]'
   device: 'smartphone'
   models:
-    - regex: 'MFLoginPh'
+    - regex: 'MFLoginPh|MegLogPh'
       model: 'Login+'
     - regex: 'MFLogin4'
       model: 'Login 4 LTE'
-    - regex: 'MFLogin3T'
+    - regex: 'MFLogin3T|MegaFon Login 3'
       model: 'Login 3'
       device: 'tablet'
     - regex: 'MS3B'
@@ -12920,7 +13108,7 @@ Unknown:
 
 # Starway
 Starway:
-  regex: 'Andromeda[ _]S(707|84[05])[;/) ]'
+  regex: 'Andromeda[ _]S(707|84[05]|8)[;/) ]'
   device: 'tablet'
   model: 'Andromeda S$1'
 
@@ -12974,9 +13162,13 @@ X-TIGI:
 
 # Xiaolajiao
 Xiaolajiao:
-  regex: '(LA2-(?:L|S[N]?))[);/ ]'
+  regex: '(LA2-(?:L|S[N]?)|HLA Note3)[);/ ]'
   device: 'smartphone'
-  model: '$1'
+  models:
+    - regex: 'HLA Note3[);/ ]'
+      model: 'Red Pepper Note 3'
+    - regex: '(LA2-(?:L|S[N]?))[);/ ]'
+      model: '$1'
 
 # Ritmix
 Ritmix:
@@ -13019,9 +13211,9 @@ NEXBOX:
       model: 'Smart 4G Speedy 5.0 Plus'
 
 Yandex:
-  regex: '(YNDX-000SB)[;)\ ]'
+  regex: '(YNDX-?000SB)[;)\ ]'
   device: 'smartphone'
-  model: '$1'
+  model: 'YNDX-000SB'
 
 # FORME
 FORME:
@@ -13047,7 +13239,7 @@ BDF:
 
 # Highscreen
 Highscreen:
-  regex: '(Power Ice Max|Power Rage Evo|Zera[ _][UFS]|PowerFivePro|PowerFour)[;)/ ]'
+  regex: 'HIGHSCREEN|(Power Ice Max|Power Rage Evo|Zera[ _][UFS]|PowerFivePro|PowerFour|BOOST II)[;)/ ]'
   device: 'smartphone'
   models:
     - regex: '(Power Ice Max|Power Rage Evo|Zera[ _][UFS])[;)/ ]'
@@ -13056,6 +13248,10 @@ Highscreen:
       model: 'Power Five Pro'
     - regex: 'PowerFour[;)/ ]'
       model: 'Power Four'
+    - regex: 'HIGHSCREEN Easy-Power-Pro[;)/ ]'
+      model: 'Easy Power Pro'
+    - regex: 'BOOST II[;)/ ]'
+      model: 'Boost 2'
 
 # CVTE
 CVTE:
@@ -13092,9 +13288,14 @@ Qumo:
 
 # Umax
 Umax:
-  regex: '(VisionBook[ _](?:7Qi 3G|P55 LTE Pro|10Qi_3G))[;)/ ]'
+  regex: 'VisionBook[ _]'
   device: 'tablet'
-  model: '$1'
+  models:
+    - regex: '(VisionBook[ _](?:7Qi 3G|7Q Plus|8Q LTE|8Q_Plus|10Qi_3G))[;)/ ]'
+      model: '$1'
+    - regex: '(VisionBook[ _](?:P50 LTE|P55 LTE(?: Pro)?))[;)/ ]'
+      device: 'smartphone'
+      model: '$1'
 
 # Mann
 Mann:
@@ -13111,3 +13312,148 @@ Unihertz:
       model: '$1 $2'
     - regex: '(Titan)[;)/ ]'
       model: '$1'
+
+# Chuwi
+Chuwi:
+  regex: 'CW-(Hi8-super|Hi12|V99|V17HD3G|VX8-3G|V88-QUAD|V9-DUAL|V88S|Vi[78]|[HV]i10 (pro|plus))[;)/ ]'
+  device: 'tablet'
+  models:
+    - regex: '(CW-Hi8-super)[;)/ ]'
+      model: 'Hi8'
+    - regex: 'CW-(Vi10) plus[;)/ ]'
+      model: '$1 Plus'
+    - regex: 'CW-(V88)-QUAD[;)/ ]'
+      model: '$1 Quad'
+    - regex: 'CW-(V9)-DUAL[;)/ ]'
+      model: '$1 Dual'
+    - regex: 'CW-(V17HD|VX8)-?(3G)[;)/ ]'
+      model: '$1 $2'
+    - regex: 'CW-(Hi10) pro[;)/ ]'
+      model: '$1 Pro'
+    - regex: 'CW-(Vi[78]|Hi12|V99|V88S)[;)/ ]'
+      model: '$1'
+
+# Bezkam
+Bezkam:
+  regex: 'BEZKAM (BK-RAM2)[;)/ ]'
+  device: 'smartphone'
+  model: '$1'
+
+# NG Optics
+'NG Optics':
+  regex: '(NG3128HD)[;)/ ]'
+  device: 'tv'
+  model: '$1'
+
+# KATV1
+KATV1:
+  regex: '(KATV-01) PRO[;)/ ]'
+  device: 'tv'
+  model: '$1 Pro'
+
+# Ghong
+Ghong:
+  regex: 'GHONG(V10)[;)/ ]'
+  device: 'smartphone'
+  model: '$1'
+
+# Xoro
+Xoro:
+  regex: 'TelePAD(795|731|1032|10A3|7A3)|Era 2X[;)/ ]'
+  device: 'tablet'
+  models:
+    - regex: 'TelePAD(7|10)A3 4G[;)/ ]'
+      model: 'TelePad $1 A3 4G'
+    - regex: 'TelePAD(795|731|1032)[;)/ ]'
+      model: 'TelePad $1'
+    - regex: '(Era 2X)[;)/ ]'
+      model: '$1'
+      device: 'smartphone'
+
+# Vinga
+Vinga:
+  regex: 'VMP-(021-82|041-162|011-81)[);/ ]'
+  device: 'tv'
+  models:
+    - regex: 'VMP-021-82'
+      model: '021'
+    - regex: 'VMP-041-162'
+      model: '041'
+    - regex: 'VMP-011-81'
+      model: '011'
+
+# Nuvo
+Nuvo:
+  regex: 'Nuvo[_ ](NS35|Blue ND40|Green[_ ]ND[_ ]45)[);/ ]'
+  device: 'smartphone'
+  models:
+    - regex: 'Nuvo[_ ](NS35)[);/ ]'
+      model: '$1'
+    - regex: 'Blue (ND40)[);/ ]'
+      model: '$1'
+    - regex: 'Green[_ ]ND[_ ]45[);/ ]'
+      model: 'ND45'
+
+# Sunvell
+Sunvell:
+  regex: 'T95ZPLUS[);/ ]'
+  device: 'tv'
+  model: 'T95Z Plus'
+
+# AllDocube
+AllDocube:
+  regex: 'T1001XS[);/ ]'
+  device: 'tablet'
+  model: 'M5XS'
+
+# Ugoos
+Ugoos:
+  regex: 'UGOOS-AM6[);/ ]'
+  device: 'tv'
+  model: 'AM6'
+
+# Yxtel
+Yxtel:
+  regex: 'YXTEL_([HU]1|U3)[);/ ]'
+  device: 'smartphone'
+  model: '$1'
+
+# Proline
+Proline:
+  regex: '(H10882M-TN)[);/ ]'
+  device: 'tablet'
+  model: '$1'
+
+# Yota
+Yota:
+  regex: '(YD201)[);/ ]'
+  device: 'smartphone'
+  model: 'Phone 2'
+
+# Mystery
+Mystery:
+  regex: '(MYSTERY|MID-(?:123G|72[12]|7[01348]3G|753G|833G))[);/ ]'
+  device: 'tablet'
+  models:
+    - regex: 'MID-(123G|72[12]|7[01348]3G|753G|833G)[);/ ]'
+      model: 'MID-$1'
+
+# Ritzviva
+Ritzviva:
+    regex: '(RITZVIVA[_ ]S500C)[);/ ]'
+    device: 'smartphone'
+    model: 'S500C'
+
+# DeWalt
+DeWalt:
+   regex: 'DeWalt (MD501)[);/ ]'
+   device: 'smartphone'
+   model: '$1'
+
+# Runbo
+Runbo:
+   regex: 'Runbo'
+   device: 'smartphone'
+   models:
+      - regex: 'Runbo[ _-]?(X5-W|F1 Plus|F1-TT|F1-EN|F1|TT|Q5-S|X5-King)[);/ ]'
+        model: '$1'
