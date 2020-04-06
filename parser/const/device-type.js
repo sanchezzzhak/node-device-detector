@@ -11,4 +11,5 @@ module.exports = {
   PORTABLE_MEDIA_PLAYER: 'portable media player',
   PHABLET: 'phablet',
   DEVICE_TYPE_SMART_SPEAKER: 'smart speaker',
+  DEVICE_TYPE_WEARABLE: 'wearable',
 };
