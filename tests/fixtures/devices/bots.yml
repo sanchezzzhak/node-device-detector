@@ -164,6 +164,24 @@
       name: Ask Jeeves Inc.
       url: http://www.ask.com
 - 
+  user_agent: Mozilla/5.0 (compatible;AspiegelBot)
+  bot:
+    name: AspiegelBot
+    category: Crawler
+    url: "https://aspiegel.com/"
+    producer:
+      name: Huawei
+      url: https://www.huawei.com/
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
+  bot:
+    name: AspiegelBot
+    category: Crawler
+    url: "https://aspiegel.com/"
+    producer:
+      name: Huawei
+      url: https://www.huawei.com/
+- 
   user_agent: AwarioRssBot/1.0 (+https://awario.com/bots.html; bots@awario.com)
   bot:
     name: Awario
@@ -3670,3 +3688,30 @@
     producer:
       name: Cốc Cốc
       url: https://coccoc.com/
+- 
+  user_agent: XenForo/2.x (https://www.example.com)
+  bot:
+    name: XenForo
+    category: Service Agent
+    url: https://xenforo.com/
+    producer:
+      name: XenForo Ltd.
+      url: https://xenforo.com/
+- 
+  user_agent: Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; DuplexWeb-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36
+  bot:
+    name: Googlebot
+    category: Search bot
+    url: http://www.google.com/bot.html
+    producer:
+      name: Google Inc.
+      url: http://www.google.com
+- 
+  user_agent: Mozilla/5.0 (X11; Linux x86_64; GTmetrix https://gtmetrix.com/) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+  bot:
+    name: GTmetrix
+    category: Crawler
+    url: https://gtmetrix.com/
+    producer:
+      name: Carbon60 Operating Co. Ltd.
+      url: https://www.carbon60.com/
