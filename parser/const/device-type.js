@@ -10,6 +10,6 @@ module.exports = {
   CAMERA: 'camera',
   PORTABLE_MEDIA_PLAYER: 'portable media player',
   PHABLET: 'phablet',
-  DEVICE_TYPE_SMART_SPEAKER: 'smart speaker',
-  DEVICE_TYPE_WEARABLE: 'wearable',
+  SMART_SPEAKER: 'smart speaker',
+  WEARABLE: 'wearable',
 };

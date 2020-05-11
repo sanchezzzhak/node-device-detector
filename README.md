@@ -61,8 +61,9 @@ const isTabled  = result.device && [DEVICE_TYPE.TABLET].indexOf(result.device.ty
 const isMobile = result.device && [DEVICE_TYPE.SMARTPHONE, DEVICE_TYPE.FEATURE_PHONE].indexOf(result.device.type) !== -1;
 const isPhablet = result.device && [DEVICE_TYPE.PHABLET].indexOf(result.device.type) !== -1;
 const isIOS = result.os && result.os.family === 'iOS';
+const isWearable = result.device.type === DEVICE_TYPE.WEARABLE;
 const isAndroid = result.os && result.os.family === 'Android';
-const isDesktop = !isTabled && !isMobile && !isPhablet;
+const isDesktop = !isTabled && !isMobile && !isPhablet && !isWearable;
 */
 
 console.log('result parse', result);
@@ -156,24 +157,51 @@ Others
 -
 * [Micro service](MICROSERVICE.MD)  from framework [moleculer js](http://moleculer.services)
 
-Support detect brands list (587):
-* 3Q, 4Good, Ace, Acer, Advan, Advance, AGM, Ainol, Airness, AIS, Aiwa, Akai, Alba, Alcatel, Aligator, AllCall, AllDocube, Allview, Allwinner, altron, Amazon, AMGOO, Amoi, ANS, Apple, Archos, Arian Space, Ark, ArmPhone, Arnova, ARRIS, Ask, Assistant, Asus, Atom,
-Audiovox, AVH, Avvio, Axxion, Azumi Mobile, Barnes & Noble, BDF, Becker, Beeline, Beetel, BenQ, BenQ-Siemens, Bezkam, BGH, Bird, Bitel, Black Fox, Blackview, Blaupunkt, Blu, Bluboo, Bluegood, Bmobile, bogo, Boway, bq, Bravis, Brondi, Bush, CAGI, Capitel, Captiv
-a, Carrefour, Casio, Casper, Cat, Celkon, Changhong, Cherry Mobile, China Mobile, Chuwi, Clarmin, CnM, Coby Kyros, Comio, Compal, ComTrade Tesla, Concord, ConCorde, Condor, Coolpad, Crescent, Cricket, Crius Mea, Crosscall, Cube, CUBOT, CVTE, Cyrus, Daewoo, Dane
-w, Datang, Datsun, Dbtel, Dell, Denver, Desay, DeWalt, DEXP, Dialog, Dicam, Digi, Digicel, Digiland, Digma, Divisat, DNS, DoCoMo, Doogee, Doov, Dopod, Doro, Dune HD, E-Boda, E-tel, Easypix, EBEST, Echo Mobiles, ECS, EE, EKO, Eks Mobility, Element, Elenberg, Ele
-phone, Energizer, Energy Sistem, Ergo, Ericsson, Ericy, Essential, Essentielb, Eton, eTouch, Etuline, Eurostar, Evercoss, Evertek, Evolio, Evolveo, EvroMedia, Explay, Extrem, Ezio, Ezze, Fairphone, Famoco, Fengxiang, FiGO, FinePower, Fly, FNB, Fondi, FORME, For
-star, Foxconn, Freetel, Fujitsu, G-TiDE, Garmin-Asus, Gemini, General Mobile, Geotel, Ghia, Ghong, Gigabyte, Gigaset, Ginzzu, Gionee, Globex, GOCLEVER, Goly, Gome, GoMobile, Google, Gradiente, Grape, Grundig, Hafury, Haier, HannSpree, Hasee, Hi-Level, Highscree
-n, Hisense, Hoffmann, Homtom, Hoozo, Hosin, HP, HTC, Huadoo, Huawei, Hyundai, i-Joy, i-mate, i-mobile, iBall, iBerry, IconBIT, iGet, iHunt, iKoMo, iLA, IMO Mobile, Impression, iNew, Infinix, InFocus, Inkti, InnJoo, Innostream, Inoi, INQ, Insignia, Intex, iOcean
-, iPro, Irbis, iRola, iRulu, iTel, iVA, iView, iZotron, JAY-Tech, JFone, Jiayu, Jolla, Just5, K-Touch, Kaan, Kaiomy, Kalley, Kanji, Karbonn, KATV1, Kazam, KDDI, Kempler & Strauss, Keneksi, Kiano, Kingsun, Kivi, Kocaso, Kodak, Kogan, Komu, Konka, Konrow, Koobee,
- KOPO, Koridy, KRONO, Krüger&Matz, KT-Tech, Kumai, Kyocera, LAIQ, Land Rover, Landvo, Lanix, Lark, Lava, LCT, Le Pan, Leagoo, Ledstar, LeEco, Lemhoov, Lenco, Lenovo, Leotec, Lephone, Lexand, Lexibook, LG, Lingwin, Logicom, Lumus, Luna, LYF, M.T.T., M4tel, Majes
-tic, Mann, Manta Multimedia, Masstel, Maxcom, Maxwest, Maze, Mecer, Mecool, Mediacom, Medion, MEEG, MegaFon, Meitu, Meizu, Memup, MEU, MicroMax, Microsoft, Mio, Miray, Mitsubishi, MIXC, MLLED, Mobicel, Mobiistar, Mobiola, Mobistel, Modecom, Mofut, Motorola, Mov
-ic, Mpman, MSI, MTC, MTN, MYFON, MyPhone, Myria, Mystery, MyWigo, National, Navon, NEC, Neffos, Netgear, NeuImage, Newgen, NewsMy, NEXBOX, Nexian, Nextbit, NextBook, NG Optics, NGM, NOA, Noain, Nobby, Noblex, Nokia, Nomi, Nous, NUU Mobile, Nuvo, Nvidia, NYX Mob
-ile, O+, O2, Obi, Odys, Onda, OnePlus, OPPO, Opsson, Orange, Ouki, Oukitel, Overmax, öwn, Oysters, Palm, Panacom, Panasonic, Pantech, PCBOX, PCD, PCD Argentina, Pentagram, Phicomm, Philips, phoneOne, Pioneer, Pixus, Ployer, Plum, Point of View, Polaroid, PolyPa
-d, Polytron, Pomp, Positivo, PPTV, Prestigio, Primepad, Proline, ProScan, Protruly, PULID, Q-Touch, Qilive, QMobile, Qtek, Quantum, Quechua, Qumo, R-TV, Ramos, Razer, RCA Tablets, Readboy, Rikomagic, RIM, Rinno, Ritmix, Ritzviva, Riviera, Roadrover, Rokit, Roku
-, Rombica, Ross&Moor, Rover, RoverPad, RT Project, RugGear, Runbo, Ryte, Safaricom, Sagem, Samsung, Sanei, Santin, Sanyo, Savio, Selfix, Sencor, Sendo, Senseit, Senwa, SFR, Sharp, Shift Phones, Shuttle, Siemens, Sigma, Silent Circle, Simbans, Sky, Skyworth, Sma
-rtfren, Smartisan, Softbank, Sonim, Sony, Soyes, Spectrum, Spice, Star, Starway, STF Mobile, STK, Stonex, Storex, Sumvision, SunVan, Sunvell, SuperSonic, Supra, SWISSMOBILITY, Symphony, Syrox, T-Mobile, TB Touch, TCL, TechPad, Teclast, Tecno Mobile, Telefunken,
- Telego, Telenor, Telit, Tesco, teXet, ThL, Thomson, TIANYU, Timovi, TiPhone, Tolino, Tooky, Top House, Toplux, Toshiba, Touchmate, TrekStor, Trevi, True, Tunisie Telecom, Turbo, Turbo-X, TVC, U.S. Cellular, Ugoos, Uhans, Uhappy, Ulefone, Umax, UMIDIGI, Unihert
-z, Unimax, Uniscope, Unknown, Unnecto, Unonu, Unowhy, UTOK, UTStarcom, Vastking, Venso, Verizon, Vernee, Vertex, Vertu, Verykool, Vesta, Vestel, VGO TEL, Videocon, ViewSonic, Vinga, Vinsoc, Vitelcom, Vivax, Vivo, Vizio, VK Mobile, Vodafone, Vonino, Vontar, Vora
-go, Vorke, Voto, Voxtel, Voyo, Vsun, Vulcan, Walton, Weimei, WellcoM, Wexler, Wieppo, Wigor, Wiko, Wileyfox, Wink, Wolder, Wolfgang, Wonu, Woo, Woxter, X-TIGI, X-View, Xiaolajiao, Xiaomi, Xion, Xolo, Xoro, Yandex, Yarvik, Yes, Yezz, Yota, Ytone, Yu, Yuandao, Yu
-sun, Yxtel, Zeemi, Zen, Zenek, Zfiner, Zidoo, Zonda, Zopo, ZTE, Zuum, Zync, ZYQ
+##### Support detect brands list (618):
+
+<details>
+<summary>Show details</summary>
+
+3Q, 4Good, Ace, Acer, Advan, Advance, AGM, Ainol, Airness, Airties, AIS, Aiwa, Akai, Alba, Alcatel, Aligator, AllCall, AllDocube, Allview, Allwinner, Altech UEC, altron, Amazon, AMGOO, Amoi, ANS, Apple, Archos, Arian Space, Ark, ArmPhone, Arnova, ARRIS, Ask, As
+sistant, Asus, Atom, Audiovox, AVH, Avvio, Axxion, Azumi Mobile, BangOlufsen, Barnes & Noble, BBK, BDF, Becker, Beeline, Beetel, BenQ, BenQ-Siemens, Bezkam, BGH, Bird, Bitel, Black Fox, Blackview, Blaupunkt, Blu, Bluboo, Bluegood, Bmobile, bogo, Boway, bq, Brav
+is, Brondi, Bush, CAGI, Capitel, Captiva, Carrefour, Casio, Casper, Cat, Celkon, Changhong, Cherry Mobile, China Mobile, Chuwi, Clarmin, CnM, Coby Kyros, Comio, Compal, Compaq, ComTrade Tesla, Concord, ConCorde, Condor, Coolpad, Cowon, CreNova, Crescent, Cricke
+t, Crius Mea, Crosscall, Cube, CUBOT, CVTE, Cyrus, Daewoo, Danew, Datang, Datsun, Dbtel, Dell, Denver, Desay, DeWalt, DEXP, Dialog, Dicam, Digi, Digicel, Digiland, Digma, Divisat, DMM, DNS, DoCoMo, Doogee, Doov, Dopod, Doro, Dune HD, E-Boda, E-tel, Easypix, EBE
+ST, Echo Mobiles, ECS, EE, EKO, Eks Mobility, Element, Elenberg, Elephone, Energizer, Energy Sistem, Ergo, Ericsson, Ericy, Essential, Essentielb, Eton, eTouch, Etuline, Eurostar, Evercoss, Evertek, Evolio, Evolveo, EvroMedia, Explay, Extrem, Ezio, Ezze, Fairph
+one, Famoco, Fengxiang, FiGO, FinePower, Fly, FNB, Fondi, FORME, Forstar, Foxconn, Freetel, Fujitsu, G-TiDE, Garmin-Asus, Gateway, Gemini, General Mobile, Geotel, Ghia, Ghong, Gigabyte, Gigaset, Ginzzu, Gionee, Globex, GOCLEVER, Goly, Gome, GoMobile, Google, Gr
+adiente, Grape, Grundig, Hafury, Haier, HannSpree, Hasee, Hi-Level, Highscreen, Hisense, Hoffmann, Homtom, Hoozo, Hosin, HP, HTC, Huadoo, Huawei, Humax, Hyrican, Hyundai, i-Joy, i-mate, i-mobile, iBall, iBerry, IconBIT, iGet, iHunt, Ikea, iKoMo, iLA, IMO Mobile
+, Impression, iNew, Infinix, InFocus, Inkti, InnJoo, Innostream, Inoi, INQ, Insignia, Intek, Intex, Inverto, iOcean, iPro, Irbis, iRola, iRulu, iTel, iVA, iView, iZotron, JAY-Tech, JFone, Jiayu, Jolla, Just5, K-Touch, Kaan, Kaiomy, Kalley, Kanji, Karbonn, KATV1
+, Kazam, KDDI, Kempler & Strauss, Keneksi, Kiano, Kingsun, Kivi, Kocaso, Kodak, Kogan, Komu, Konka, Konrow, Koobee, KOPO, Koridy, KRONO, Krüger&Matz, KT-Tech, Kumai, Kyocera, LAIQ, Land Rover, Landvo, Lanix, Lark, Lava, LCT, Le Pan, Leagoo, Ledstar, LeEco, Lemh
+oov, Lenco, Lenovo, Leotec, Lephone, Lexand, Lexibook, LG, Lingwin, Loewe, Logicom, Lumus, Luna, LYF, M.T.T., M4tel, Majestic, Mann, Manta Multimedia, Masstel, Maxcom, Maxwest, Maze, Mecer, Mecool, Mediacom, MediaTek, Medion, MEEG, MegaFon, Meitu, Meizu, Memup,
+ Metz, MEU, MicroMax, Microsoft, Mio, Miray, Mitsubishi, MIXC, MLLED, Mobicel, Mobiistar, Mobiola, Mobistel, Modecom, Mofut, Motorola, Movic, Mpman, MSI, MTC, MTN, MYFON, MyPhone, Myria, Mystery, MyWigo, National, Navon, NEC, Neffos, Netgear, NeuImage, Newgen,
+NewsMy, NEXBOX, Nexian, Nextbit, NextBook, NG Optics, NGM, Nikon, Nintendo, NOA, Noain, Nobby, Noblex, Nokia, Nomi, Nous, NUU Mobile, Nuvo, Nvidia, NYX Mobile, O+, O2, Obi, Odys, Onda, OnePlus, OPPO, Opsson, Orange, Ordissimo, Ouki, Oukitel, OUYA, Overmax, öwn,
+ Oysters, Palm, Panacom, Panasonic, Pantech, PCBOX, PCD, PCD Argentina, PEAQ, Pentagram, Phicomm, Philips, phoneOne, Pioneer, Pixus, Ployer, Plum, Point of View, Polaroid, PolyPad, Polytron, Pomp, Positivo, PPTV, Prestigio, Primepad, Proline, ProScan, Protruly,
+ PULID, Q-Touch, Qilive, QMobile, Qtek, Quantum, Quechua, Qumo, R-TV, Ramos, Razer, RCA Tablets, Readboy, Rikomagic, RIM, Rinno, Ritmix, Ritzviva, Riviera, Roadrover, Rokit, Roku, Rombica, Ross&Moor, Rover, RoverPad, RT Project, RugGear, Runbo, Ryte, Safaricom,
+ Sagem, Samsung, Sanei, Santin, Sanyo, Savio, Sega, Selevision, Selfix, Sencor, Sendo, Senseit, Senwa, SFR, Sharp, Shift Phones, Shuttle, Siemens, Sigma, Silent Circle, Simbans, Sky, Skyworth, Smart, Smartfren, Smartisan, Softbank, Sonim, Sony, Sony Ericsson, S
+oyes, Spectrum, Spice, Star, Starway, STF Mobile, STK, Stonex, Storex, Sumvision, SunVan, Sunvell, SuperSonic, Supra, SWISSMOBILITY, Symphony, Syrox, T-Mobile, TB Touch, TCL, TechniSat, TechnoTrend, TechPad, Teclast, Tecno Mobile, Telefunken, Telego, Telenor, T
+elit, Tesco, Tesla, teXet, ThL, Thomson, TIANYU, Timovi, TiPhone, Tolino, Tooky, Top House, Toplux, Toshiba, Touchmate, TrekStor, Trevi, True, Tunisie Telecom, Turbo, Turbo-X, TVC, U.S. Cellular, Ugoos, Uhans, Uhappy, Ulefone, Umax, UMIDIGI, Unihertz, Unimax, U
+niscope, Unknown, Unnecto, Unonu, Unowhy, UTOK, UTStarcom, Vastking, Venso, Verizon, Vernee, Vertex, Vertu, Verykool, Vesta, Vestel, VGO TEL, Videocon, Videoweb, ViewSonic, Vinga, Vinsoc, Vitelcom, Vivax, Vivo, Vizio, VK Mobile, Vodafone, Vonino, Vontar, Vorago
+, Vorke, Voto, Voxtel, Voyo, Vsun, Vulcan, Walton, Web TV, Weimei, WellcoM, Wexler, Wieppo, Wigor, Wiko, Wileyfox, Wink, Wolder, Wolfgang, Wonu, Woo, Woxter, X-TIGI, X-View, Xiaolajiao, Xiaomi, Xion, Xolo, Xoro, Yandex, Yarvik, Yes, Yezz, Yota, Ytone, Yu, Yuand
+ao, Yusun, Yxtel, Zeemi, Zen, Zenek, Zfiner, Zidoo, Zonda, Zopo, ZTE, Zuum, Zync, ZYQ
+</details>
+
+##### Support detect browsers list (259):
+
+<details>
+<summary>Show details</summary>
+
+115 Browser, 2345 Browser, 360 Browser, 360 Phone Browser, ABrowse, Aloha Browser, Aloha Browser Lite, Amaya, Amiga Aweb, Amiga Voyager, Amigo, Android Browser, ANT Fresco, ANTGalio, AOL Desktop, AOL Shield, Arctic Fox, Arora, Atom, Atomic Web Browser, Avant Br
+owser, Avast Secure Browser, AVG Secure Browser, B-Line, Baidu Browser, Baidu Spark, Basilisk, Beaker Browser, Beamrise, Beonex, BlackBerry Browser, BlackHawk, Brave, BriskBard, BrowseX, Bunjalloo, Camino, CCleaner, Centaury, Charon, Cheetah Browser, Cheshire,
+Chrome, Chrome Frame, Chrome Mobile, Chrome Mobile iOS, Chrome Webview, ChromePlus, Chromium, CM Browser, Coast, Coc Coc, Colibri, CometBird, Comodo Dragon, Conkeror, CoolNovo, COS Browser, Crusta, Cunaguaro, Cyberfox, dbrowser, Deepnet Explorer, Delta Browser,
+ Dillo, Dolphin, Dooble, Dorado, DuckDuckGo Privacy Browser, Ecosia, Element Browser, Elements Browser, Elinks, Epic, Espial TV Browser, EUI Browser, eZ Browser, Falkon, Faux Browser, Fennec, Firebird, Firefox, Firefox Focus, Firefox Mobile, Firefox Mobile iOS,
+ Firefox Reality, Firefox Rocket, Fireweb, Fireweb Navigator, Flock, Fluid, FreeU, Galeon, Glass Browser, GNOME Web, Google Earth, Hawk Turbo Browser, Headless Chrome, hola! Browser, HotJava, Huawei Browser, IBrowse, iCab, iCab Mobile, IceCat, IceDragon, Icewea
+sel, IE Mobile, Internet Explorer, Iridium, Iron, Iron Mobile, Isivioo, Jasmine, Jig Browser, Jig Browser Plus, Jio Browser, K-meleon, K.Browser, Kapiko, Kazehakase, Kindle Browser, Kinza, Kiwi, Konqueror, Kylo, LG Browser, LieBaoFast, Light, Links, Lovense Bro
+wser, LuaKit, Lulumi, Lunascape, Lunascape Lite, Lynx, Maxthon, mCent, Meizu Browser, Mercury, MicroB, Microsoft Edge, Midori, Minimo, Mint Browser, MIUI Browser, Mobicip, Mobile Safari, Mobile Silk, Mypal, NCSA Mosaic, NetFront, NetFront Life, NetPositive, Net
+scape, NetSurf, Nokia Browser, Nokia OSS Browser, Nokia Ovi Browser, Nox Browser, NTENT Browser, Obigo, Oculus Browser, Odyssey Web Browser, Off By One, OhHai Browser, OmniWeb, ONE Browser, Openwave Mobile Browser, Opera, Opera Devices, Opera GX, Opera Mini, Op
+era Mini iOS, Opera Mobile, Opera Neon, Opera Next, Opera Touch, Oppo Browser, Ordissimo, Oregano, Origin In-Game Overlay, Origyn Web Browser, Otter Browser, Pale Moon, Palm Blazer, Palm Pre, Palm WebPro, Palmscape, Phoenix, Polaris, Polarity, Polypane, Puffin,
+ QQ Browser, QQ Browser Mini, QtWebEngine, QupZilla, Qutebrowser, Qwant Mobile, Realme Browser, Rekonq, RockMelt, Safari, Safe Exam Browser, Sailfish Browser, SalamWeb, Samsung Browser, SEMC-Browser, Seraphic Sraf, Seznam Browser, Shiira, SimpleBrowser, Sizzy,
+Skyfire, Sleipnir, Snowshoe, Sogou Explorer, Sogou Mobile Browser, Splash, Sputnik Browser, START Internet Browser, Steam In-Game Overlay, Streamy, Sunrise, Super Fast Browser, SuperBird, surf, Swiftfox, t-online.de Browser, Tao Browser, TenFourFox, Tenta Brows
+er, Tizen Browser, ToGate, Tungsten, TV Bro, TweakStyle, UBrowser, UC Browser, UC Browser Mini, UC Browser Turbo, Uzbl, Vision Mobile Browser, Vivaldi, vivo Browser, VMware AirWatch, Waterfox, Wear Internet Browser, Web Explorer, WebPositive, WeTab Browser, Wha
+le Browser, wOSBrowser, Xiino, Xvast, Yahoo! Japan Browser, Yandex Browser, Yandex Browser Lite
+<details>
+
 

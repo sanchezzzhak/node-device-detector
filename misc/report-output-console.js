@@ -1,15 +1,20 @@
-const readline = require('readline');
-const DeviceDetector = require('../index');
-const detector = new DeviceDetector;
+const Brands = Object.values(require('./../parser/device/brand-short'));
+const Browsers = Object.values(require('./../parser/client/browser-short'));
 
-const Brands = Object.keys(detector.deviceParserList['Mobile']['collection']);
-
-Brands.sort((a, b) => {
+const sortABC = (a, b) => {
   return String(a).localeCompare(String(b), 'en', {sensitivity: 'base'});
-});
+};
 
+Brands.sort(sortABC);
+Browsers.sort(sortABC);
 
 console.log('Support detect brands list (%s): ', Brands.length);
 console.log(
-  Brands.join(', ')
+  '* ' + Brands.join(', ')
+);
+console.log('\n');
+
+console.log('Support detect browsers list (%s): ', Browsers.length);
+console.log(
+  '* ' + Browsers.join(', ')
 );
