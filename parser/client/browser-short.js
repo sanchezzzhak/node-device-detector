@@ -196,6 +196,7 @@ module.exports = {
   "Q1": "QQ Browser Mini",
   "QQ": "QQ Browser",
   "QT": "Qutebrowser",
+  "QU": "Quark",
   "QZ": "QupZilla",
   "QM": "Qwant Mobile",
   "QW": "QtWebEngine",
@@ -258,4 +259,5 @@ module.exports = {
   "YL": "Yandex Browser Lite",
   "XI": "Xiino",
   "XV": "Xvast",
+  "ZV": "Zvu"
 };
