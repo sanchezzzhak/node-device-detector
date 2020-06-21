@@ -203,6 +203,4 @@ n, QQ Browser, QQ Browser Mini, QtWebEngine, Quark, QupZilla, Qutebrowser, Qwant
 nta Browser, Tizen Browser, ToGate, Tungsten, TV Bro, TweakStyle, UBrowser, UC Browser, UC Browser Mini, UC Browser Turbo, Uzbl, Vision Mobile Browser, Vivaldi, vivo Browser, VMware AirWatch, Waterfox, Wear Internet Browser, Web Explorer, WebPositive, WeTab Bro
 wser, Whale Browser, wOSBrowser, Xiino, Xvast, Yahoo! Japan Browser, Yandex Browser, Yandex Browser Lite, Zvu
 
-<details>
-
-
+</details>
