@@ -143,6 +143,15 @@ const result = Object.assign({os:resultOs}, {client:resultClient}, {device: resu
 console.log('Result parse lite', result);
 ```
 
+### Parse commercial model (model raw name)
+```js
+const AliasDevice = require('node-device-detector/parser/device/alias-device');
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+const aliasDevice = new AliasDevice;
+const result = aliasDevice.parse(userAgent);
+console.log('Result parse commercial model', result);  // result {name: "NX505J"}
+```
+
 Others
 -
 * [Micro service](MICROSERVICE.MD)  from framework [moleculer js](http://moleculer.services)

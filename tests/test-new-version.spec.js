@@ -1,6 +1,7 @@
 
 
 const detector = new (require('../index'));
+const AliasDevice = new (require('../parser/device/alias-device'));
 const should = require('chai').should;
 const assert = require('chai').assert;
 const expect = require('chai').expect;
@@ -36,6 +37,7 @@ const YML = require('yamljs');
 const util = require('util');
 
 
+let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let ymlDeviceFiles = [];
 let ymlClientFiles = [];
 let fixtureFolder = __dirname + '/fixtures/';
@@ -97,12 +99,33 @@ function testsFromFixtureBot(fixture){
   }
 }
 
+function testsFromFixtureAliasDevice(fixture){
+  let result;
+  result = AliasDevice.parse(fixture.user_agent);
+  try {
+	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
+	const table = new Table({
+	  head: ['Result', 'Fixture']
+	  , colWidths: [100, 100]
+	});
+	table.push([
+	  perryJSON(result),
+	  perryJSON(fixture)
+	]);
+	console.log(table.toString());
+
+  } catch (e) {
+	throw new SyntaxError(e.stack);
+  }
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+  expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
+}
+
 function testsFromFixtureDevice(fixture){
   let result;
   try {
 
     result = detector.detect(fixture.user_agent);
-
 	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
 	const table = new Table({
 	  head: ['Result', 'Fixture']
@@ -113,8 +136,7 @@ function testsFromFixtureDevice(fixture){
 	   perryJSON(fixture)
 	]);
 	console.log(table.toString());
-  
-  
+
   } catch (e) {
     throw new SyntaxError(e.stack);
   }
@@ -301,11 +323,23 @@ describe('tests bots', function () {
   });
 });
 
+describe('tests alisas devices fixtures', function () {
+  this.timeout(6000);
+  let file = 'alias_devices.yml';
+  let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
+  let total = fixtureData.length;
+  fixtureData.forEach((fixture, pos) => {
+	it(pos + '/' + total, function(){
+	  testsFromFixtureAliasDevice.call(this, fixture);
+	});
+  });
+});
+
 
 describe('tests devices fixtures', function () {
   this.timeout(6000);
   ymlDeviceFiles.forEach(function (file) {
-    if(file === 'bots.yml'){
+    if(excludeFilesNames.indexOf(file) !== -1){
       return;
     }
     describe('file fixture ' + file, function () {

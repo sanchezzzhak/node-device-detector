@@ -8,6 +8,9 @@ function DeviceParserAbstract() {}
 
 util.inherits(DeviceParserAbstract, ParserAbstract);
 
+DeviceParserAbstract.prototype.getCollectionBrands = function () {
+  return collectionBrand;
+};
 
 DeviceParserAbstract.prototype.parse = function (userAgent) {
   let model = '';
