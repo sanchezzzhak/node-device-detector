@@ -1,6 +1,6 @@
 {
   "name": "node-device-detector",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Nodejs device detector (port Piwik)",
   "main": "index.js",
   "scripts": {
