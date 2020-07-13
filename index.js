@@ -18,7 +18,7 @@ const PIM = require('./parser/client/pim');
 // os parsers
 const OsParser = require('./parser/os-abstract-parser');
 // bot parsers
-const BotParser= require('./parser/bot-abstract-parser');
+const BotParser = require('./parser/bot-abstract-parser');
 // vendor fragment parsers
 const VendorFragmentParser = require('./parser/vendor-fragment-abstract-parser');
 
@@ -101,7 +101,7 @@ DeviceDetector.prototype.getParseOs = function (name) {
 };
 
 DeviceDetector.prototype.getParseVendor = function (name) {
-    return this.vendorParserList[name] ? this.vendorParserList[name] : null;
+  return this.vendorParserList[name] ? this.vendorParserList[name] : null;
 };
 
 DeviceDetector.prototype.addParseDevice = function (name, parser) {
@@ -121,7 +121,7 @@ DeviceDetector.prototype.addParseClient = function (name, parser) {
 };
 
 DeviceDetector.prototype.addParseVendor = function (name, parser) {
-    this.vendorParserList[name] = parser;
+  this.vendorParserList[name] = parser;
 };
 
 /**
@@ -130,12 +130,12 @@ DeviceDetector.prototype.addParseVendor = function (name, parser) {
 DeviceDetector.prototype.parseOs = function (userAgent) {
   let result = {};
   for (let name in this.osParserList) {
-    let parser = this.osParserList[name];
-    let resultMerge = parser.parse(userAgent);
-    if (resultMerge) {
-      result = Object.assign(result, resultMerge);
-      break;
-    }
+	let parser = this.osParserList[name];
+	let resultMerge = parser.parse(userAgent);
+	if (resultMerge) {
+	  result = Object.assign(result, resultMerge);
+	  break;
+	}
   }
   return result;
 };
@@ -145,71 +145,72 @@ DeviceDetector.prototype.parseDeviceType = function (userAgent, osData, clientDa
   let osFamily = osData && osData['family'] ? osData['family'] : '';
   let osShortName = osData && osData['short_name'] ? osData['short_name'] : '';
   let osVersion = osData && osData['version'] ? osData['version'] : '';
-  
+
   let clientName = clientData && clientData['name'] ? clientData['name'] : '';
   let clientFamily = clientData && clientData['family'] ? clientData['family'] : '';
-  
+
   let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
   let deviceId = deviceData && deviceData['id'] ? deviceData['id'] : '';
 
-  
+
   let isAndroid = osFamily === 'Android';
-  
+
   if (deviceId === '' && ['ATV', 'IOS', 'MAC'].indexOf(osShortName) !== -1) {
 	deviceId = 'AP';
   }
 
-  if (deviceType === '' && isAndroid && clientFamily === 'Chrome') {
-    if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', userAgent) !== null) {
-      deviceType = DEVICE_TYPE.SMARTPHONE
-    } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
-      deviceType = DEVICE_TYPE.TABLET
-    }
+  let isClientFamilyChrome = clientFamily === 'Chrome' || helper.matchUserAgent('Chrome/[\.0-9]*', userAgent);
+  if (deviceType === '' && isAndroid && isClientFamilyChrome) {
+	if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', userAgent) !== null) {
+	  deviceType = DEVICE_TYPE.SMARTPHONE
+	} else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
+	  deviceType = DEVICE_TYPE.TABLET
+	}
   }
 
-  if (deviceType === '' && (helper.hasAndroidTableFragment(userAgent) || helper.hasOperaTableFragment(userAgent)  )) {
-    deviceType = DEVICE_TYPE.TABLET;
+  if (deviceType === '' && (helper.hasAndroidTableFragment(userAgent) || helper.hasOperaTableFragment(userAgent))) {
+	deviceType = DEVICE_TYPE.TABLET;
   }
 
   if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
-    deviceType = DEVICE_TYPE.SMARTPHONE;
+	deviceType = DEVICE_TYPE.SMARTPHONE;
   }
 
   if (deviceType === '' && osShortName === 'AND' && osVersion !== '') {
-    if (helper.versionCompare(osVersion, '2.0') === -1) {
-      deviceType = DEVICE_TYPE.SMARTPHONE;
-    } else if (helper.versionCompare(osVersion, '3.0') >= 0 && helper.versionCompare(osVersion, '4.0') === -1) {
-      deviceType = DEVICE_TYPE.TABLET;
-    }
+	if (helper.versionCompare(osVersion, '2.0') === -1) {
+	  deviceType = DEVICE_TYPE.SMARTPHONE;
+	} else if (helper.versionCompare(osVersion, '3.0') >= 0 && helper.versionCompare(osVersion, '4.0') === -1) {
+	  deviceType = DEVICE_TYPE.TABLET;
+	}
   }
 
   if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
-    deviceType = DEVICE_TYPE.SMARTPHONE;
+	deviceType = DEVICE_TYPE.SMARTPHONE;
   }
 
   if (deviceType === '' && (osShortName === 'WRT' || (osShortName === 'WIN' && helper.versionCompare(osVersion, '8.0'))) && helper.hasTouchFragment(userAgent)) {
-    deviceType = DEVICE_TYPE.TABLET;
+	deviceType = DEVICE_TYPE.TABLET;
   }
 
   if (helper.hasOperaTVStoreFragment(userAgent)) {
-    deviceType = DEVICE_TYPE.TABLET;
+	deviceType = DEVICE_TYPE.TABLET;
   }
 
   if (helper.hasOperaTVStoreFragment(userAgent)) {
-    deviceType = DEVICE_TYPE.TV;
+	deviceType = DEVICE_TYPE.TV;
   }
 
   if (deviceType === '' && TV_CLIENT_LIST.indexOf(clientName) !== -1) {
-    deviceType = DEVICE_TYPE.TV;
+	deviceType = DEVICE_TYPE.TV;
   }
 
   if (deviceType === '' && DESKTOP_OS_LIST.indexOf(osFamily) !== -1) {
-    deviceType = DEVICE_TYPE.DESKTOP;
+	deviceType = DEVICE_TYPE.DESKTOP;
   }
-  
+
   return {
-    id: deviceId,
-    type: deviceType
+	id: deviceId,
+	type: deviceType
   }
 };
 
@@ -221,23 +222,23 @@ DeviceDetector.prototype.parseDevice = function (userAgent) {
 	"model": ""
   };
   for (let name in this.deviceParserList) {
-    let parser = this.deviceParserList[name];
-    let resultMerge = parser.parse(userAgent);
-    if (resultMerge) {
+	let parser = this.deviceParserList[name];
+	let resultMerge = parser.parse(userAgent);
+	if (resultMerge) {
 	  result = Object.assign(result, resultMerge);
 	  break;
-    }
+	}
   }
-  
-  if(result && result.brand === ''){
-    let resultVendor = this.parseVendor(userAgent);
+
+  if (result && result.brand === '') {
+	let resultVendor = this.parseVendor(userAgent);
 	if (resultVendor) {
 	  result.brand = resultVendor.name;
 	  result.id = resultVendor.id;
 	}
-  
+
   }
-  
+
   return result;
 };
 
@@ -248,18 +249,18 @@ DeviceDetector.prototype.parseVendor = function (userAgent) {
 
 DeviceDetector.prototype.parseBot = function (userAgent) {
   let result = {};
-  
-  if(this.skipBotDetection){
-    return result;
+
+  if (this.skipBotDetection) {
+	return result;
   }
-  
+
   for (let name in this.botParserList) {
-    let parser = this.botParserList[name];
-    let resultMerge = parser.parse(userAgent);
-    if (resultMerge) {
-     result = Object.assign(result, resultMerge);
+	let parser = this.botParserList[name];
+	let resultMerge = parser.parse(userAgent);
+	if (resultMerge) {
+	  result = Object.assign(result, resultMerge);
 	  break;
-    }
+	}
   }
   return result;
 };
@@ -270,13 +271,13 @@ DeviceDetector.prototype.parseBot = function (userAgent) {
 DeviceDetector.prototype.parseClient = function (userAgent) {
   let result = {};
   for (let name in this.clientParserList) {
-    let parser = this.clientParserList[name];
-    let resultMerge = parser.parse(userAgent);
-    if (resultMerge) {
-      result = Object.assign(result, resultMerge);
+	let parser = this.clientParserList[name];
+	let resultMerge = parser.parse(userAgent);
+	if (resultMerge) {
+	  result = Object.assign(result, resultMerge);
 	  break;
-    }
-    
+	}
+
   }
   return result;
 };
@@ -287,16 +288,16 @@ DeviceDetector.prototype.parseClient = function (userAgent) {
  * @return {{os: (null|*), device: (null|*), client: (null|*)}}
  */
 DeviceDetector.prototype.detect = function (userAgent) {
-  
+
   let osData = this.parseOs(userAgent);
   let clientData = this.parseClient(userAgent);
   let deviceData = this.parseDevice(userAgent);
   let deviceDataType = this.parseDeviceType(userAgent, osData, clientData, deviceData);
   deviceData = Object.assign(deviceData, deviceDataType);
-  
+
   return {
-    os: osData,
+	os: osData,
 	client: clientData,
-    device: deviceData
+	device: deviceData
   };
 };
