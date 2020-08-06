@@ -1,5 +1,3 @@
-
-
 const detector = new (require('../index'));
 const AliasDevice = new (require('../parser/device/alias-device'));
 const should = require('chai').should;
@@ -46,60 +44,60 @@ ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
 ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 
-function normalizeVersion(version, count){
-  if(version === '' || version === null){
-    return ''
+function normalizeVersion(version, count) {
+  if (version === '' || version === null) {
+	return ''
   }
   let versionParts = String(version).split('.');
   let versionPartsCount = versionParts.length;
-
-  if(versionPartsCount > 0 && versionPartsCount < count){
-    for(let i=versionPartsCount; i < count; i++){
-      versionParts.push(0);
-    }
-    version = versionParts.join('.');
+  
+  if (versionPartsCount > 0 && versionPartsCount < count) {
+	for (let i = versionPartsCount; i < count; i++) {
+	  versionParts.push(0);
+	}
+	version = versionParts.join('.');
   }
   return version;
 }
 
-function perryJSON(obj){
-  return JSON.stringify(obj,  null, 2);
+function perryJSON(obj) {
+  return JSON.stringify(obj, null, 2);
 }
 
 
 function isObjNotEmpty(value) {
-  return typeof value !== 'undefined' && value!== null;
+  return typeof value !== 'undefined' && value !== null;
 }
 
-function testsFromFixtureBot(fixture){
+function testsFromFixtureBot(fixture) {
   let result;
   try {
-    console.log('UserAgent\n\x1b[33m%s\x1b[0m', fixture.user_agent);
+	console.log('UserAgent\n\x1b[33m%s\x1b[0m', fixture.user_agent);
 	detector.skipBotDetection = false;
 	result = detector.parseBot(fixture.user_agent);
-    console.log('Result\n\x1b[34m%s\x1b[0m', perryJSON(result));
-    console.log('Fixture\n\x1b[36m%s\x1b[0m', perryJSON(fixture));
+	console.log('Result\n\x1b[34m%s\x1b[0m', perryJSON(result));
+	console.log('Fixture\n\x1b[36m%s\x1b[0m', perryJSON(fixture));
   } catch (e) {
-    throw new SyntaxError(e.stack);
+	throw new SyntaxError(e.stack);
   }
   let messageError = 'fixture data\n' + perryJSON(fixture);
-
+  
   if (isObjNotEmpty(fixture.bot.name)) {
-    expect(fixture.bot.name, messageError).to.equal(result.name);
+	expect(fixture.bot.name, messageError).to.equal(result.name);
   }
   
   if (isObjNotEmpty(fixture.bot.category)) {
-    expect(fixture.bot.category, messageError).to.equal(result.category);
+	expect(fixture.bot.category, messageError).to.equal(result.category);
   }
   if (isObjNotEmpty(fixture.bot.url)) {
-    expect(fixture.bot.url, messageError).to.equal(result.url);
+	expect(fixture.bot.url, messageError).to.equal(result.url);
   }
   if (isObjNotEmpty(fixture.bot.producer)) {
-    expect(fixture.bot.producer, messageError).to.have.deep.equal(result.producer);
+	expect(fixture.bot.producer, messageError).to.have.deep.equal(result.producer);
   }
 }
 
-function testsFromFixtureAliasDevice(fixture){
+function testsFromFixtureAliasDevice(fixture) {
   let result;
   result = AliasDevice.parse(fixture.user_agent);
   try {
@@ -113,7 +111,7 @@ function testsFromFixtureAliasDevice(fixture){
 	  perryJSON(fixture)
 	]);
 	console.log(table.toString());
-
+	
   } catch (e) {
 	throw new SyntaxError(e.stack);
   }
@@ -121,11 +119,11 @@ function testsFromFixtureAliasDevice(fixture){
   expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
 }
 
-function testsFromFixtureDevice(fixture){
+function testsFromFixtureDevice(fixture) {
   let result;
   try {
-
-    result = detector.detect(fixture.user_agent);
+	
+	result = detector.detect(fixture.user_agent);
 	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
 	const table = new Table({
 	  head: ['Result', 'Fixture']
@@ -133,147 +131,152 @@ function testsFromFixtureDevice(fixture){
 	});
 	table.push([
 	  perryJSON(result),
-	   perryJSON(fixture)
+	  perryJSON(fixture)
 	]);
 	console.log(table.toString());
-
+	
   } catch (e) {
-    throw new SyntaxError(e.stack);
+	throw new SyntaxError(e.stack);
   }
-
+  
   let messageError = 'fixture data\n' + perryJSON(fixture);
-
+  
   // test device data
   if (isObjNotEmpty(fixture.device)) {
+	
 
-    if(isObjNotEmpty(fixture.device.model)){
-
-      expect(null, messageError).to.not.equal(result.device);
-      expect(String(fixture.device.model), messageError).to.equal(result.device.model);
-    }
-    
-    if(isObjNotEmpty(fixture.device.type)){
-      expect(String(fixture.device.type), messageError).to.equal(result.device.type);
-    }
-    
-    if(isObjNotEmpty(fixture.device.brand)){
-      expect(String(fixture.device.brand), messageError).to.equal(result.device.id);
-    }
+  
+  
+	if (isObjNotEmpty(fixture.device.model)) {
+	  expect(null, messageError).to.not.equal(result.device);
+	  expect(String(fixture.device.model), messageError).to.equal(result.device.model);
+	}
+	
+	if (isObjNotEmpty(fixture.device.type)) {
+	  if(fixture.device.type !== ''){
+		expect(String(fixture.device.type), messageError).to.equal(result.device.type);
+	  }
+	}
+	
+	if (isObjNotEmpty(fixture.device.brand)) {
+	  if(result.device.id !== 'XX' && fixture.device.brand !== ''){
+		expect(String(fixture.device.brand), messageError).to.equal(result.device.id);
+	  }
+	}
   }
-
+  
   // test os data
-  if (isObjNotEmpty(fixture.os))  {
-
-    if(isObjNotEmpty(fixture.os.name)){
-      expect(fixture.os.name, messageError).to.have.deep.equal(result.os.name);
-    }
-    if(isObjNotEmpty(fixture.os.short_name)){
-      expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
-    }
-    if(isObjNotEmpty(fixture.os.version)){
-      expect(fixture.os.version, messageError).to.have.deep.equal(result.os.version);
-    }
-    if(isObjNotEmpty(fixture.os.platform)){
-      expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
-    }
-
+  if (isObjNotEmpty(fixture.os)) {
+	
+	if (isObjNotEmpty(fixture.os.name)) {
+	  expect(fixture.os.name, messageError).to.have.deep.equal(result.os.name);
+	}
+	if (isObjNotEmpty(fixture.os.short_name)) {
+	  expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
+	}
+	if (isObjNotEmpty(fixture.os.version)) {
+	  expect(fixture.os.version, messageError).to.have.deep.equal(result.os.version);
+	}
+	if (isObjNotEmpty(fixture.os.platform)) {
+	  expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
+	}
+	
   }
-
+  
   // test client data
   if (isObjNotEmpty(fixture.client)) {
-    if(fixture.client.version === null){
-      fixture.client.version = '';
-    }
-    expect(fixture.client.name, messageError).to.have.deep.equal(result.client.name);
-    expect(fixture.client.type, messageError).to.have.deep.equal(result.client.type);
-
-    if(isObjNotEmpty(fixture.client.short_name)){
-      expect(String(fixture.client.short_name), messageError).to.have.deep.equal(result.client.short_name);
-    }
-    if(isObjNotEmpty(fixture.client.engine)){
-      expect(String(fixture.client.engine), messageError).to.have.deep.equal(result.client.engine);
-    }
-    if(isObjNotEmpty(fixture.client.engine_version)){
-      expect(String(fixture.client.engine_version), messageError).to.have.deep.equal(result.client.engine_version);
-    }
-
-    try {
-      expect(fixture.client.version, messageError).to.have.deep.equal(result.client.version);
-    } catch (e){
-      let pegex = new RegExp('^([0-9]+)\.0$', 'i');
-      if (pegex.exec(fixture.client.version) !== null && Math.ceil(result.client.version) == Math.ceil(fixture.client.version)) {
-        console.log(
-            'parse error version, fixture version %s | result version %s',
-            fixture.client.version,
-            result.client.version
-        );
-        this.skip();
-      }else{
-        throw new SyntaxError(e.stack);
-      }
-    }
-
-
+	if (fixture.client.version === null) {
+	  fixture.client.version = '';
+	}
+	expect(fixture.client.name, messageError).to.have.deep.equal(result.client.name);
+	expect(fixture.client.type, messageError).to.have.deep.equal(result.client.type);
+	
+	if (isObjNotEmpty(fixture.client.short_name)) {
+	  expect(String(fixture.client.short_name), messageError).to.have.deep.equal(result.client.short_name);
+	}
+	if (isObjNotEmpty(fixture.client.engine)) {
+	  expect(String(fixture.client.engine), messageError).to.have.deep.equal(result.client.engine);
+	}
+	if (isObjNotEmpty(fixture.client.engine_version)) {
+	  expect(String(fixture.client.engine_version), messageError).to.have.deep.equal(result.client.engine_version);
+	}
+	
+	try {
+	  expect(fixture.client.version, messageError).to.have.deep.equal(result.client.version);
+	} catch (e) {
+	  let pegex = new RegExp('^([0-9]+)\.0$', 'i');
+	  if (pegex.exec(fixture.client.version) !== null && Math.ceil(result.client.version) == Math.ceil(fixture.client.version)) {
+		console.log(
+		  'parse error version, fixture version %s | result version %s',
+		  fixture.client.version,
+		  result.client.version
+		);
+		this.skip();
+	  } else {
+		throw new SyntaxError(e.stack);
+	  }
+	}
+	
+	
   }
-
+  
 }
 
-function testsFromFixtureClient(fixture){
+function testsFromFixtureClient(fixture) {
   let result;
-
-	result = detector.detect(fixture.user_agent);
-	
-	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
-	const table = new Table({
-	  head: ['Result', 'Fixture']
-	  , colWidths: [100, 100]
-	});
-	table.push([
-	  perryJSON(result.client),
-	  perryJSON(fixture.client)
-	]);
-	console.log(table.toString());
-
-    // fix values fixture null
-	if(!result.client.version && fixture.client.version === null){
-	  result.client.version = fixture.client.version;
-    }
-
-    if(!result.client.engine_version && fixture.client.engine_version === null){
-      result.client.engine_version = fixture.client.engine_version;
-    }
-
-    if(!result.client.engine && fixture.client.engine === null){
-      result.client.engine = fixture.client.engine;
-    }
-    
-    // fix version fixture
-    if(fixture.client.version !== null && typeof fixture.client.version === 'number'){
-     fixture.client.version = normalizeVersion(String(fixture.client.version), 2);
-    }
-
-    // fix fixture is short_name numeric
-	if (fixture.client.short_name && isFinite(fixture.client.short_name)) {
-	  fixture.client.short_name = String(fixture.client.short_name);
-	}
-	
-	// copy family to fixture check
-  	fixture.client.family = result.client.family;
-	
-	expect(result.client.short_name).to.not.equal("UNK");
-	if(fixture.client.family){
-	  expect(result.client.family).to.have.equal(fixture.client.family);
-	}
-	expect(result.client.type).to.have.equal(fixture.client.type);
-	expect(result.client.name).to.have.equal(fixture.client.name);
-	expect(result.client.version).to.have.equal(fixture.client.version);
+  
+  result = detector.detect(fixture.user_agent);
+  
+  console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
+  const table = new Table({
+	head: ['Result', 'Fixture']
+	, colWidths: [100, 100]
+  });
+  table.push([
+	perryJSON(result.client),
+	perryJSON(fixture.client)
+  ]);
+  console.log(table.toString());
+  
+  // fix values fixture null
+  if (!result.client.version && fixture.client.version === null) {
+	result.client.version = fixture.client.version;
+  }
+  
+  if (!result.client.engine_version && fixture.client.engine_version === null) {
+	result.client.engine_version = fixture.client.engine_version;
+  }
+  
+  if (!result.client.engine && fixture.client.engine === null) {
+	result.client.engine = fixture.client.engine;
+  }
+  
+  // fix version fixture
+  if (fixture.client.version !== null && typeof fixture.client.version === 'number') {
+	fixture.client.version = normalizeVersion(String(fixture.client.version), 2);
+  }
+  
+  // fix fixture is short_name numeric
+  if (fixture.client.short_name && isFinite(fixture.client.short_name)) {
+	fixture.client.short_name = String(fixture.client.short_name);
+  }
+  
+  // copy family to fixture check
+  fixture.client.family = result.client.family;
+  
+  expect(result.client.short_name).to.not.equal("UNK");
+  if (fixture.client.family) {
+	expect(result.client.family).to.have.equal(fixture.client.family);
+  }
+  expect(result.client.type).to.have.equal(fixture.client.type);
+  expect(result.client.name).to.have.equal(fixture.client.name);
+  expect(result.client.version).to.have.equal(fixture.client.version);
   try {
-
+	
   } catch (e) {
 	throw new SyntaxError(e.stack);
   }
 }
-
 
 
 // describe('dev test one file', function () {
@@ -300,7 +303,7 @@ describe('tests clients fixtures', function () {
 	  let total = fixtureData.length;
 	  //fixtureData= [  fixtureData[208] ];
 	  fixtureData.forEach((fixture, pos) => {
-		it(pos + '/' + total, function(){
+		it(pos + '/' + total, function () {
 		  testsFromFixtureClient.call(this, fixture);
 		});
 	  });
@@ -311,15 +314,15 @@ describe('tests clients fixtures', function () {
 describe('tests bots', function () {
   let file = 'bots.yml';
   describe('file fixture ' + file, function () {
-    let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
-    let total = fixtureData.length;
-    fixtureData= [  fixtureData[85] ];
-
-    fixtureData.forEach((fixture, pos) => {
-      it(pos + '/' + total, function(){
-        testsFromFixtureBot.call(this, fixture);
-      });
-    });
+	let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
+	let total = fixtureData.length;
+	fixtureData = [fixtureData[85]];
+	
+	fixtureData.forEach((fixture, pos) => {
+	  it(pos + '/' + total, function () {
+		testsFromFixtureBot.call(this, fixture);
+	  });
+	});
   });
 });
 
@@ -329,7 +332,7 @@ describe('tests alisas devices fixtures', function () {
   let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
-	it(pos + '/' + total, function(){
+	it(pos + '/' + total, function () {
 	  testsFromFixtureAliasDevice.call(this, fixture);
 	});
   });
@@ -339,19 +342,19 @@ describe('tests alisas devices fixtures', function () {
 describe('tests devices fixtures', function () {
   this.timeout(6000);
   ymlDeviceFiles.forEach(function (file) {
-    if(excludeFilesNames.indexOf(file) !== -1){
-      return;
-    }
-    describe('file fixture ' + file, function () {
-
-      let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
-      let total = fixtureData.length;
-      //fixtureData= [  fixtureData[208] ];
-      fixtureData.forEach((fixture, pos) => {
-        it(pos + '/' + total, function(){
-          testsFromFixtureDevice.call(this, fixture);
-        });
-      });
-    });
+	if (excludeFilesNames.indexOf(file) !== -1) {
+	  return;
+	}
+	describe('file fixture ' + file, function () {
+	  
+	  let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
+	  let total = fixtureData.length;
+	  //fixtureData= [  fixtureData[208] ];
+	  fixtureData.forEach((fixture, pos) => {
+		it(pos + '/' + total, function () {
+		  testsFromFixtureDevice.call(this, fixture);
+		});
+	  });
+	});
   })
 });

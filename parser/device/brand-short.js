@@ -1,4 +1,5 @@
 module.exports = {
+  "36": "360",
   "3Q": "3Q",
   "4G": "4Good",
   "AE": "Ace",
@@ -31,6 +32,7 @@ module.exports = {
   "AS": "ARRIS",
   "AB": "Arian Space",
   "AT": "Airties",
+  "6A": "AT&T",
   "A6": "Ark",
   "A4": "Ask",
   "A8": "Assistant",
@@ -46,6 +48,7 @@ module.exports = {
   "B5": "Beeline",
   "BI": "Bird",
   "BT": "Bitel",
+  "B8": "BIHEE",
   "B7": "Bitmore",
   "BG": "BGH",
   "BL": "Beetel",
@@ -411,6 +414,7 @@ module.exports = {
   "OV": "Overmax",
   "OY": "Oysters",
   "OW": "öwn",
+  "O2": "Owwo",
   "PN": "Panacom",
   "PA": "Panasonic",
   "PB": "PCBOX",
@@ -456,6 +460,7 @@ module.exports = {
   "RA": "Ramos",
   "RE": "Realme",
   "R8": "RED",
+  "R9": "Ravoz",
   "RZ": "Razer",
   "RC": "RCA Tablets",
   "RB": "Readboy",
@@ -502,6 +507,7 @@ module.exports = {
   "SC": "Smartfren",
   "SO": "Sony",
   "OI": "Sonim",
+  "X2": "Soundmax",
   "8S": "Soyes",
   "SP": "Spice",
   "6S": "Spectrum",
@@ -538,6 +544,7 @@ module.exports = {
   "TB": "Tecno Mobile",
   "TP": "TechPad",
   "TD": "Tesco",
+  "T0": "TD Systems",
   "TI": "TIANYU",
   "TG": "Telego",
   "TL": "Telefunken",
@@ -546,6 +553,7 @@ module.exports = {
   "TN": "Thomson",
   "TQ": "Timovi",
   "TY": "Tooky",
+  "0T": "Tone",
   "T1": "Tolino",
   "T9": "Top House",
   "TO": "Toplux",
@@ -653,7 +661,7 @@ module.exports = {
   "XS": "Xshitou",
   "XT": "X-TIGI",
   "XB": "NEXBOX",
-
+  
   // legacy brands, might be removed in future versions
   "WB": "Web TV",
   "XX": "Unknown"

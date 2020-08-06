@@ -32,6 +32,7 @@ module.exports = {
   "BH": "BlackHawk",
   "BJ": "Bunjalloo",
   "BL": "B-Line",
+  "BU": "Blue Browser",
   "BR": "Brave",
   "BK": "BriskBard",
   "BX": "BrowseX",
@@ -257,7 +258,8 @@ module.exports = {
   "YJ": "Yahoo! Japan Browser",
   "YA": "Yandex Browser",
   "YL": "Yandex Browser Lite",
+  "YN": "Yaani Browser",
   "XI": "Xiino",
   "XV": "Xvast",
-  "ZV": "Zvu"
+  "ZV": "Zvu",
 };
