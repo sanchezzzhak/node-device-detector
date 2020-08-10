@@ -47,13 +47,12 @@ const TV_CLIENT_LIST = ['Kylo', 'Espial TV Browser'];
 const DESKTOP_OS_LIST = ['AmigaOS', 'IBM', 'GNU/Linux', 'Mac', 'Unix', 'Windows', 'BeOS', 'Chrome OS'];
 const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile', 'Chrome Webview'];
 
-
+/**
+ *
+ * @param {{skipBotDetection: false}} options
+ * @constructor
+ */
 function DeviceDetector(options) {
-  this.osData = null;
-  this.deviceData = null;
-  this.clientData = null;
-  this.botData = null;
-
   this.vendorParserList = {};
   this.osParserList = {};
   this.botParserList = {};
@@ -88,44 +87,82 @@ DeviceDetector.prototype.init = function () {
   this.addParseBot("Bot", new BotParser);
 };
 
+/**
+ * @param {string} name
+ * @return {DeviceParserAbstract|null}
+ */
 DeviceDetector.prototype.getParseDevice = function (name) {
   return this.deviceParserList[name] ? this.deviceParserList[name] : null;
 };
 
+/**
+ * @param {string} name
+ * @return {*}
+ */
 DeviceDetector.prototype.getParseClient = function (name) {
   return this.clientParserList[name] ? this.clientParserList[name] : null;
 };
 
+/**
+ * @param name
+ * @return {*}
+ */
 DeviceDetector.prototype.getParseOs = function (name) {
   return this.osParserList[name] ? this.osParserList[name] : null;
 };
 
+/**
+ * @param {string} name
+ * @return {*}
+ */
 DeviceDetector.prototype.getParseVendor = function (name) {
   return this.vendorParserList[name] ? this.vendorParserList[name] : null;
 };
 
+/**
+ * @param {string} name
+ * @param parser
+ */
 DeviceDetector.prototype.addParseDevice = function (name, parser) {
   this.deviceParserList[name] = parser;
 };
 
+/**
+ * @param {string} name
+ * @param {OsAbstractParser} parser
+ */
 DeviceDetector.prototype.addParseOs = function (name, parser) {
   this.osParserList[name] = parser;
 };
 
+/**
+ * @param {string} name
+ * @param {BotAbstractParser} parser
+ */
 DeviceDetector.prototype.addParseBot = function (name, parser) {
   this.botParserList[name] = parser;
 };
 
+/**
+ * @param {string} name
+ * @param {ClientAbstractParser} parser
+ */
 DeviceDetector.prototype.addParseClient = function (name, parser) {
   this.clientParserList[name] = parser;
 };
 
+/**
+ * @param {string} name
+ * @param {VendorFragmentParser} parser
+ */
 DeviceDetector.prototype.addParseVendor = function (name, parser) {
   this.vendorParserList[name] = parser;
 };
 
 /**
- * parse os
+ * parse OS
+ * @param {string} userAgent
+ * @return {ResultOs}
  */
 DeviceDetector.prototype.parseOs = function (userAgent) {
   let result = {};
@@ -140,6 +177,14 @@ DeviceDetector.prototype.parseOs = function (userAgent) {
   return result;
 };
 
+/**
+ *
+ * @param {string} userAgent
+ * @param osData {ResultOs}
+ * @param clientData {ResultClient}
+ * @param deviceData {{*}}
+ * @return {DeviceType}
+ */
 DeviceDetector.prototype.parseDeviceType = function (userAgent, osData, clientData, deviceData) {
   let osName = osData && osData['name'] ? osData['name'] : '';
   let osFamily = osData && osData['family'] ? osData['family'] : '';
@@ -214,6 +259,11 @@ DeviceDetector.prototype.parseDeviceType = function (userAgent, osData, clientDa
   }
 };
 
+/**
+ * parse device
+ * @param {string} userAgent
+ * @return {ResultDevice}
+ */
 DeviceDetector.prototype.parseDevice = function (userAgent) {
   let result = {
 	"id": "",
@@ -242,11 +292,22 @@ DeviceDetector.prototype.parseDevice = function (userAgent) {
   return result;
 };
 
+/**
+ * parse vendor
+ * @todo create interface
+ * @param {string} userAgent
+ * @return {{name:'', id:''}|null}
+ */
 DeviceDetector.prototype.parseVendor = function (userAgent) {
   let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
   return parser.parse(userAgent);
 };
 
+/**
+ * parse bot
+ * @param {string} userAgent
+ * @return {ResultBot}
+ */
 DeviceDetector.prototype.parseBot = function (userAgent) {
   let result = {};
 
@@ -267,6 +328,8 @@ DeviceDetector.prototype.parseBot = function (userAgent) {
 
 /**
  * parse client
+ * @param {string} userAgent
+ * @return {ResultClient|{}}
  */
 DeviceDetector.prototype.parseClient = function (userAgent) {
   let result = {};
@@ -284,11 +347,10 @@ DeviceDetector.prototype.parseClient = function (userAgent) {
 
 
 /**
- * @param userAgent
- * @return {{os: (null|*), device: (null|*), client: (null|*)}}
+ * @param {string} userAgent
+ * @return {DetectResult}
  */
 DeviceDetector.prototype.detect = function (userAgent) {
-
   let osData = this.parseOs(userAgent);
   let clientData = this.parseClient(userAgent);
   let deviceData = this.parseDevice(userAgent);

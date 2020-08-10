@@ -3,8 +3,10 @@ const AliasDevice = new (require('../parser/device/alias-device'));
 const should = require('chai').should;
 const assert = require('chai').assert;
 const expect = require('chai').expect;
-
 const Table = require('cli-table');
+
+// show console petty table set env DEBUG_TABLE=true
+const PERRY_TABLE_ENABLE = process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true';
 
 // fixture format
 /*
@@ -70,16 +72,10 @@ function isObjNotEmpty(value) {
 }
 
 function testsFromFixtureBot(fixture) {
-  let result;
-  try {
-	console.log('UserAgent\n\x1b[33m%s\x1b[0m', fixture.user_agent);
-	detector.skipBotDetection = false;
-	result = detector.parseBot(fixture.user_agent);
-	console.log('Result\n\x1b[34m%s\x1b[0m', perryJSON(result));
-	console.log('Fixture\n\x1b[36m%s\x1b[0m', perryJSON(fixture));
-  } catch (e) {
-	throw new SyntaxError(e.stack);
-  }
+  detector.skipBotDetection = false;
+  let result = detector.parseBot(fixture.user_agent);
+  perryTable(fixture, result);
+  
   let messageError = 'fixture data\n' + perryJSON(fixture);
   
   if (isObjNotEmpty(fixture.bot.name)) {
@@ -97,9 +93,15 @@ function testsFromFixtureBot(fixture) {
   }
 }
 
-function testsFromFixtureAliasDevice(fixture) {
-  let result;
-  result = AliasDevice.parse(fixture.user_agent);
+/**
+ * @param fixture
+ * @param result
+ */
+function perryTable(fixture, result) {
+  if (!PERRY_TABLE_ENABLE) {
+	return;
+  }
+  
   try {
 	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
 	const table = new Table({
@@ -115,51 +117,43 @@ function testsFromFixtureAliasDevice(fixture) {
   } catch (e) {
 	throw new SyntaxError(e.stack);
   }
+}
+
+/**
+ * @param fixture
+ */
+function testsFromFixtureAliasDevice(fixture) {
+  let result;
+  result = AliasDevice.parse(fixture.user_agent);
+  perryTable(fixture, result);
   let messageError = 'fixture data\n' + perryJSON(fixture);
   expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
 }
 
+/**
+ * @param fixture
+ */
 function testsFromFixtureDevice(fixture) {
-  let result;
-  try {
-	
-	result = detector.detect(fixture.user_agent);
-	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
-	const table = new Table({
-	  head: ['Result', 'Fixture']
-	  , colWidths: [100, 100]
-	});
-	table.push([
-	  perryJSON(result),
-	  perryJSON(fixture)
-	]);
-	console.log(table.toString());
-	
-  } catch (e) {
-	throw new SyntaxError(e.stack);
-  }
+  let result = detector.detect(fixture.user_agent);
+  perryTable(fixture, result);
   
   let messageError = 'fixture data\n' + perryJSON(fixture);
   
   // test device data
   if (isObjNotEmpty(fixture.device)) {
-	
-
-  
-  
 	if (isObjNotEmpty(fixture.device.model)) {
 	  expect(null, messageError).to.not.equal(result.device);
 	  expect(String(fixture.device.model), messageError).to.equal(result.device.model);
 	}
 	
 	if (isObjNotEmpty(fixture.device.type)) {
-	  if(fixture.device.type !== ''){
+	  if (fixture.device.type !== '') {
 		expect(String(fixture.device.type), messageError).to.equal(result.device.type);
 	  }
 	}
 	
 	if (isObjNotEmpty(fixture.device.brand)) {
-	  if(result.device.id !== 'XX' && fixture.device.brand !== ''){
+	  if (result.device.id !== 'XX' && fixture.device.brand !== '') {
 		expect(String(fixture.device.brand), messageError).to.equal(result.device.id);
 	  }
 	}
@@ -216,27 +210,12 @@ function testsFromFixtureDevice(fixture) {
 		throw new SyntaxError(e.stack);
 	  }
 	}
-	
-	
   }
-  
 }
 
 function testsFromFixtureClient(fixture) {
-  let result;
-  
-  result = detector.detect(fixture.user_agent);
-  
-  console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
-  const table = new Table({
-	head: ['Result', 'Fixture']
-	, colWidths: [100, 100]
-  });
-  table.push([
-	perryJSON(result.client),
-	perryJSON(fixture.client)
-  ]);
-  console.log(table.toString());
+  let result = detector.detect(fixture.user_agent);
+  perryTable(fixture, result);
   
   // fix values fixture null
   if (!result.client.version && fixture.client.version === null) {
@@ -271,11 +250,6 @@ function testsFromFixtureClient(fixture) {
   expect(result.client.type).to.have.equal(fixture.client.type);
   expect(result.client.name).to.have.equal(fixture.client.name);
   expect(result.client.version).to.have.equal(fixture.client.version);
-  try {
-	
-  } catch (e) {
-	throw new SyntaxError(e.stack);
-  }
 }
 
 
@@ -326,7 +300,7 @@ describe('tests bots', function () {
   });
 });
 
-describe('tests alisas devices fixtures', function () {
+describe('tests alias devices fixtures', function () {
   this.timeout(6000);
   let file = 'alias_devices.yml';
   let fixtureData = YML.load(fixtureFolder + 'devices/' + file);

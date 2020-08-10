@@ -21,8 +21,9 @@ server.listen({port, timeout}, (err, result) => {
   
 router.get('/detect', (req, res) => {
   let useragent = req.headers['user-agent'];
-  let result = detector.detect(useragent)
-  res.end(JSON.stringify({useragent, result}));
+  let deviceResult = detector.detect(useragent);
+  let botResult = detector.parseBot(useragent);
+  res.end(JSON.stringify({useragent, deviceResult, botResult}));
 });
 
 ```

@@ -150,8 +150,9 @@ console.log('Result parse commercial model', result);  // result {name: "NX505J"
 
 Others
 -
-* [Micro service detect device](MICROSERVICE.MD) from framework [moleculer js](http://moleculer.services)
-* [Example1 detect device in native server](NATIVE_SERVER.MD)
+* [Micro service detect device](docs/MICROSERVICE.MD) from framework [moleculer js](http://moleculer.services)
+* [Example1 detect device in native server](docs/NATIVE_SERVER.MD)
+* [Example2 detect device in express.js](docs/EXPRESS_SERVER.MD)
 
 ##### Support detect brands list (664):
 

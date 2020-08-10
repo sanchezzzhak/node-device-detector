@@ -1,11 +1,11 @@
 const readline = require('readline');
 const DeviceDetector =  require('../index');
-const detector = new DeviceDetector;
+const detector = new DeviceDetector({skipBotDetection: false});
 
-function parse(userAgent){
+function parse(useragent){
   console.log({
-    "userAgent" : userAgent,
-    "parse": detector.detect(userAgent),
+    "useragent" : useragent,
+    "parse": detector.detect(useragent),
   });
 }
 

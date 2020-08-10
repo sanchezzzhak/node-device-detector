@@ -5,6 +5,7 @@ declare module 'node-device-detector' {
         parseBot: (userAgent: string) => ResultBot;
         parseOs: (userAgent: string) => ResultOs;
         parseClient: (userAgent: string) => ResultClient;
+        parseDevice: (userAgent: string) => ResultDevice;
         parseDeviceType: (userAgent: string, os: ResultOs, client: ResultClient, data?: any) => DeviceType;
     }
 
