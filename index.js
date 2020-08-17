@@ -4,6 +4,7 @@ const helper = require('./parser/helper');
 // device parsers
 const MobileParser = require('./parser/device/mobile');
 const HbbTvParser = require('./parser/device/hbb-tv');
+const NotebookParser = require('./parser/device/notebook');
 const Console = require('./parser/device/console');
 const CarBrowser = require('./parser/device/car-browser');
 const Camera = require('./parser/device/camera');
@@ -29,6 +30,7 @@ const VENDOR_FRAGMENT_PARSER = 'vendor-fragment';
 const DEVICE_PARSER = {
   MOBILE: 'Mobile',
   HBBTV: 'hbbtv',
+  NOTEBOOK: 'Notebook',
   CONSOLE: 'console',
   CAR_BROWSER: 'CarBrowser',
   CAMERA: 'Camera',
@@ -74,8 +76,8 @@ DeviceDetector.prototype.init = function () {
   this.addParseClient(CLIENT_PARSER.PIM, new PIM);
   this.addParseClient(CLIENT_PARSER.BROWSER, new Browser);
   this.addParseClient(CLIENT_PARSER.LIBRARY, new Library);
-
   this.addParseDevice(DEVICE_PARSER.HBBTV, new HbbTvParser);
+  this.addParseDevice(DEVICE_PARSER.NOTEBOOK, new NotebookParser);
   this.addParseDevice(DEVICE_PARSER.CONSOLE, new Console);
   this.addParseDevice(DEVICE_PARSER.CAR_BROWSER, new CarBrowser);
   this.addParseDevice(DEVICE_PARSER.CAMERA, new Camera());
