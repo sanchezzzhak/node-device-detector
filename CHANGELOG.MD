@@ -1,5 +1,7 @@
 CHANGELOG
 -
+* v1.2.5
+    * Update fixtures from the motamo-org/devicedetect package#3.12.6 (update to 2020/07/13)
 * v1.2.4
     * Update fixtures from the motamo-org/devicedetect package#3.12.5 (update to 2020/06/09)
 * v1.2.3
