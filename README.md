@@ -23,6 +23,7 @@ npm install node-device-detector --only=dev
 
 * v1.2.8
     * Update fixtures from the motamo-org/devicedetect package#3.13.0 (update to 2020/09/03)
+    * Added new methods: setOsVersionTruncate, setClientVersionTruncate
 
 * v1.2.7
     * Update fixtures from the motamo-org/devicedetect package#3.13.0 (update to 2020/08/17)
@@ -106,7 +107,7 @@ Using parsers singly
 ```js
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)';
-const detector = new DeviceDetector;
+const detector = new DeviceDetector();
 const result = detector.parseBot(userAgent);
 ```
 
@@ -147,8 +148,19 @@ const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWe
 const aliasDevice = new AliasDevice;
 const result = aliasDevice.parse(userAgent);
 console.log('Result parse commercial model', result);  // result {name: "NX505J"}
-```
+``` 
 
+### Getter/Setter/Options methods
+```js
+
+const detector = new DeviceDetector({
+  osVersionTruncate: 0, // Truncate Os version from 5.0 to 5 (default '' or null)
+  clientVersionTruncate: 2  // Truncate Client version Chrome from 43.0.2357 .78 to 43.0.2357 (default '' or null)
+});
+// You can override these settings at any time using special methods, example
+detector.setOsVersionTruncate(0);
+detector.setClientVersionTruncate(2);
+```
 Others
 -
 * [Micro service detect device](docs/MICROSERVICE.MD) from framework [moleculer js](http://moleculer.services)
