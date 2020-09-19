@@ -1,0 +1,29 @@
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101 PLATINUM Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
+  set: ''
+  os_version: '4.2.2'
+  client_version: '34.0.1847.114'
+
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101 PLATINUM Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
+  set: 3
+  os_version: '4.2.2'
+  client_version: '34.0.1847.114'
+
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101 PLATINUM Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
+  set: 2
+  os_version: '4.2.2'
+  client_version: '34.0.1847'
+
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101 PLATINUM Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
+  set: 1
+  os_version: '4.2'
+  client_version: '34.0'
+
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101 PLATINUM Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36
+  set: 0
+  os_version: '4'
+  client_version: '34'

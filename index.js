@@ -49,9 +49,12 @@ const TV_CLIENT_LIST = ['Kylo', 'Espial TV Browser'];
 const DESKTOP_OS_LIST = ['AmigaOS', 'IBM', 'GNU/Linux', 'Mac', 'Unix', 'Windows', 'BeOS', 'Chrome OS'];
 const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile', 'Chrome Webview'];
 
+let osVersionTruncate;
+let clientVersionTruncate;
+
 /**
  *
- * @param {{skipBotDetection: false}} options
+ * @param {{skipBotDetection: false, osVersionTruncate: null, clientVersionTruncate: null}} options
  * @constructor
  */
 function DeviceDetector(options) {
@@ -62,6 +65,9 @@ function DeviceDetector(options) {
   this.clientParserList = {};
 
   this.skipBotDetection = helper.getPropertyValue(options, "skipBotDetection", false);
+
+  osVersionTruncate = helper.getPropertyValue(options, "osVersionTruncate", null);
+  clientVersionTruncate = helper.getPropertyValue(options, "clientVersionTruncate", null);
 
   this.init();
 }
@@ -87,7 +93,20 @@ DeviceDetector.prototype.init = function () {
   this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser);
 
   this.addParseBot("Bot", new BotParser);
+
+  this.setOsVersionTruncate(osVersionTruncate)
+  this.setClientVersionTruncate(clientVersionTruncate)
 };
+DeviceDetector.prototype.setOsVersionTruncate = function (num) {
+  for (let name in this.osParserList) {
+	this.osParserList[name].setVersionTruncation(num)
+  }
+}
+DeviceDetector.prototype.setClientVersionTruncate = function (num) {
+  for (let name in this.clientParserList) {
+	this.clientParserList[name].setVersionTruncation(num)
+  }
+}
 
 /**
  * @param {string} name

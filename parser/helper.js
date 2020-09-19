@@ -29,6 +29,13 @@ exports.versionCompare = function (ver1, ver2) {
   return 0;
 };
 
+exports.versionTruncate = function (version, maxMinorParts) {
+  let versionParts = String(version).split('.');
+  if (maxMinorParts !== null && maxMinorParts !== '' && versionParts.length > maxMinorParts) {
+    versionParts = versionParts.slice(0, 1 + maxMinorParts);
+  }
+  return versionParts.join('.');
+}
 
 exports.hasAndroidTableFragment = function (userAgent) {
   return this.matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null;

@@ -1,12 +1,15 @@
 const detector = new (require('../index'));
-const AliasDevice = new (require('../parser/device/alias-device'));
+const aliasDevice = new (require('../parser/device/alias-device'));
+const helper = require('../parser/helper');
+
 const should = require('chai').should;
 const assert = require('chai').assert;
 const expect = require('chai').expect;
 const Table = require('cli-table');
 
 // show console petty table set env DEBUG_TABLE=true
-const PERRY_TABLE_ENABLE = process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true';
+const PERRY_TABLE_ENABLE = true;
+// const PERRY_TABLE_ENABLE = process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true';
 
 // fixture format
 /*
@@ -124,7 +127,7 @@ function perryTable(fixture, result) {
  */
 function testsFromFixtureAliasDevice(fixture) {
   let result;
-  result = AliasDevice.parse(fixture.user_agent);
+  result = aliasDevice.parse(fixture.user_agent);
   perryTable(fixture, result);
   let messageError = 'fixture data\n' + perryJSON(fixture);
   expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
@@ -213,6 +216,20 @@ function testsFromFixtureDevice(fixture) {
   }
 }
 
+function testsFromFixtureVersionTruncate(fixture){
+  let result = detector.detect(fixture.user_agent);
+
+  let osVersion = helper.versionTruncate(result.os.version,  fixture.set);
+  let clientVersion = helper.versionTruncate(result.client.version,  fixture.set);
+
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+
+  expect(String(osVersion), messageError).to.have.deep.equal(fixture.os_version);
+  expect(String(clientVersion), messageError).to.have.deep.equal(fixture.client_version);
+
+}
+
+
 function testsFromFixtureClient(fixture) {
   let result = detector.detect(fixture.user_agent);
   perryTable(fixture, result);
@@ -270,9 +287,15 @@ function testsFromFixtureClient(fixture) {
 
 describe('tests clients fixtures', function () {
   this.timeout(6000);
+
+  let skipFiles = ['version_truncate.yml'];
+
   ymlClientFiles.forEach(function (file) {
 	describe('file fixture ' + file, function () {
-	  
+
+	  if(skipFiles.indexOf(file) !== -1) {
+	    return;
+	  }
 	  let fixtureData = YML.load(fixtureFolder + 'clients/' + file);
 	  let total = fixtureData.length;
 	  //fixtureData= [  fixtureData[208] ];
@@ -332,3 +355,15 @@ describe('tests devices fixtures', function () {
 	});
   })
 });
+
+
+describe('tests version truncate', function () {
+  let fixtureData = YML.load(fixtureFolder + 'clients/version_truncate.yml');
+  let total = fixtureData.length;
+  fixtureData.forEach((fixture, pos) => {
+	it(pos + '/' + total, function () {
+	  testsFromFixtureVersionTruncate.call(this, fixture);
+	});
+  });
+})
+
