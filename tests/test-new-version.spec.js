@@ -8,8 +8,8 @@ const expect = require('chai').expect;
 const Table = require('cli-table');
 
 // show console petty table set env DEBUG_TABLE=true
-const PERRY_TABLE_ENABLE = true;
-// const PERRY_TABLE_ENABLE = process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true';
+
+const PERRY_TABLE_ENABLE = process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true';
 
 // fixture format
 /*
