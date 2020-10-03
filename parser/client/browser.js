@@ -110,6 +110,16 @@ Browser.prototype.buildEngineVersion = function (userAgent, engine) {
   if (engine === '') {
     return '';
   }
+
+  if(engine === 'Gecko'){
+    let pattern = '[ ](?:rv[: ]([0-9\.]+)).*gecko/[0-9]{8,10}';
+    let regexp = new RegExp(pattern, 'i');
+    let match = regexp.exec(userAgent);
+    if(match !== null){
+      return match.pop();
+    }
+  }
+
   let regexp = new RegExp(engine + '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))', 'i');
   let match = regexp.exec(userAgent);
   if (match !== null) {
