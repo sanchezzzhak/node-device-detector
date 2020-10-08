@@ -1,5 +1,4 @@
 .idea
-config.yml
 node_modules
 .nyc_output
 package-lock.json
