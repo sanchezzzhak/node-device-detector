@@ -5,7 +5,7 @@ const BASE_REGEXES_DIR = __dirname + '/../regexes/';
 
 
 /**
- * @param result
+ * @param {string} result
  * @return {string}
  */
 function fixStringName(result) {
@@ -13,7 +13,7 @@ function fixStringName(result) {
 }
 
 /**
- * @param result
+ * @param {string} result
  * @return {string}
  */
 function fixStringVersion(result) {
@@ -48,8 +48,9 @@ ParserAbstract.prototype.loadYMLFile = function (file) {
 };
 
 /**
- * @param item
- * @param matches
+ * A special method that overwrites placeholders in a string
+ * @param {string} item
+ * @param {array} matches
  * @return {string|*}
  */
 ParserAbstract.prototype.buildByMatch = function (item, matches) {
@@ -70,7 +71,7 @@ ParserAbstract.prototype.buildByMatch = function (item, matches) {
 
 /**
  * helper prepare base regExp + part regExp
- * @param str
+ * @param {string} str
  * @return {RegExp}
  */
 ParserAbstract.prototype.getBaseRegExp = function (str) {
@@ -90,7 +91,12 @@ ParserAbstract.prototype.buildModel = function (model, matches) {
   return (model === 'Build') ? null : model;
 };
 
-
+/**
+ * Set the number of characters in the version where number is the number of characters +1
+ * There is a line string version 1.2.3.4.555
+ * If you set 0 we get version 1, if 2 we get 1.2.3 and so on.
+ * @param {number} num
+ */
 ParserAbstract.prototype.setVersionTruncation = function (num) {
   this.versionTruncation = num;
 }

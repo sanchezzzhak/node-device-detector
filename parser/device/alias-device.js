@@ -35,7 +35,7 @@ AliasDevice.prototype.getBrandReplaceRegexp = function () {
 	for(let i =0, l= escapeeChars.length; i < l; i++){
 	  brands = brands.replace(escapeeChars[i], replaceChars[i]);
 	}
-	this.__brandReplaceRegexp = brands;
+	this.__brandReplaceRegexp = '(' + brands + ')[ _]';
   }
 
   return this.__brandReplaceRegexp;

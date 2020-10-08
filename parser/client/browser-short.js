@@ -96,6 +96,7 @@ module.exports = {
   "GA": "Galeon",
   "GB": "Glass Browser",
   "GE": "Google Earth",
+  "GO": "GOG Galaxy",
   "HA": "Hawk Turbo Browser",
   "HO": "hola! Browser",
   "HJ": "HotJava",

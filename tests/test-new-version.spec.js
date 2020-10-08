@@ -172,7 +172,7 @@ function testsFromFixtureDevice(fixture) {
 	  expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
 	}
 	if (isObjNotEmpty(fixture.os.version)) {
-	  expect(fixture.os.version, messageError).to.have.deep.equal(result.os.version);
+	  expect(String(fixture.os.version), messageError).to.have.deep.equal(String(result.os.version));
 	}
 	if (isObjNotEmpty(fixture.os.platform)) {
 	  expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
