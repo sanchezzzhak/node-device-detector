@@ -108,8 +108,8 @@ function perryTable(fixture, result) {
   try {
 	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
 	const table = new Table({
-	  head: ['Result', 'Fixture']
-	  , colWidths: [100, 100]
+	  head: ['Result', 'Fixture'],
+	   colWidths: [50, 50]
 	});
 	table.push([
 	  perryJSON(result),
