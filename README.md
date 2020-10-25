@@ -20,17 +20,16 @@ npm install node-device-detector --only=dev
 
 # Before upgrading to up version, pls read;
 ### (ChangeLog)
+* v1.2.9
+    * Update fixtures from the motamo-org/device-detect package#3.13.1 (update to 2020/10/25)
 
 * v1.2.8
-    * Update fixtures from the motamo-org/devicedetect package#3.13.0 (update to 2020/10/03)
+    * Update fixtures from the motamo-org/device-detect package#3.13.0 (update to 2020/10/03)
     * Added new methods: setOsVersionTruncate, setClientVersionTruncate
     * Added definition of engine version Gecko
-
-* v1.2.7
-    * Update fixtures from the motamo-org/devicedetect package#3.13.0 (update to 2020/08/17)
     
-* v1.2.6
-    * Update fixtures from the motamo-org/devicedetect package#3.12.6 (update to 2020/08/06)
+* v1.2.7
+    * Update fixtures from the motamo-org/device-detect package#3.13.0 (update to 2020/08/17)
     
 * OLD VERSIONS [CHANGELOG.MD](CHANGELOG.MD)
 

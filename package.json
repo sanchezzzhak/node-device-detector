@@ -1,6 +1,6 @@
 {
   "name": "node-device-detector",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Nodejs device detector (port Piwik)",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "npm": ">= 6.x"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#3.11.7"
+    "device-detector": "https://github.com/matomo-org/device-detector#3.13.1"
   },
   "napa-config": {
     "cache": false
