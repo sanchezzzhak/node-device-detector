@@ -203,7 +203,7 @@ function testsFromFixtureDevice(fixture) {
       expect(String(fixture.client.engine_version), messageError).to.have.deep.equal(result.client.engine_version);
     }
 
-    testVersionAndSkip(result.client.version, fixture.client.version, messageError);
+    testVersionAndSkip.call(this, result.client.version, fixture.client.version, messageError);
   }
 }
 
@@ -211,8 +211,8 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
   try {
     expect(resultVersion, messageError).to.have.equal(String(fixtureVersion));
   } catch (e) {
-    let pegex = new RegExp('^([0-9]+)\.0$', 'i');
-    if (pegex.exec(fixtureVersion) !== null && Math.ceil(resultVersion) == Math.ceil(fixtureVersion)) {
+    let regex = new RegExp('^([0-9]+)\.0$', 'i');
+    if (regex.exec(fixtureVersion) !== null && Math.ceil(resultVersion) == Math.ceil(fixtureVersion)) {
       console.log(
           'parse error version, fixture version %s | result version %s',
           fixtureVersion,
@@ -234,7 +234,7 @@ function testsFromFixtureVersionTruncate(fixture) {
   expect(String(clientVersion), messageError).to.have.deep.equal(fixture.client_version);
 }
 
-function testsFromFixtureVendorfragment(fixture) {
+function testsFromFixtureVendorFragment(fixture) {
   let result = detector.detect(fixture.useragent);
   let messageError = 'fixture data\n' + perryJSON(fixture);
   expect(result.device.brand, messageError).to.have.deep.equal(fixture.vendor);
@@ -251,11 +251,11 @@ function testsFromFixtureOss(fixture) {
   if (isObjNotEmpty(fixture.os.short_name)) {
     expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
   }
-  if (isObjNotEmpty(fixture.os.version)) {
-    testVersionAndSkip(result.os.version, fixture.os.version, messageError);
-  }
   if (isObjNotEmpty(fixture.os.platform)) {
     expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
+  }
+  if (isObjNotEmpty(fixture.os.version)) {
+    testVersionAndSkip.call(this, result.os.version, fixture.os.version, messageError);
   }
 }
 
@@ -385,12 +385,12 @@ describe('tests devices fixtures', function () {
   })
 });
 
-describe('tests vendorfragment', function () {
+describe('tests vendor fragment', function () {
   let fixtureData = YML.load(fixtureFolder + 'vendorfragments.yml');
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      testsFromFixtureVendorfragment.call(this, fixture);
+      testsFromFixtureVendorFragment.call(this, fixture);
     });
   });
 });
