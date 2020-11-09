@@ -17,7 +17,6 @@ class FeedReader extends ClientAbstractParser {
 	 */
 	parse(userAgent) {
 		let result = super.parse(userAgent);
-		console.log({result});
 		if (result) {
 			result = Object.assign(result, {
 				type: CLIENT_TYPE.FEED_READER
