@@ -1,13 +1,12 @@
 const DeviceAbstractParser = require('./../device-abstract-parser');
-const util = require('util');
 
-function PortableMediaPlayer() {
-  PortableMediaPlayer.super_.call(this);
-  this.fixtureFile = 'device/portable_media_player.yml';
-  this.loadCollection();
+class PortableMediaPlayer extends DeviceAbstractParser {
+	constructor() {
+		super();
+		this.fixtureFile = 'device/portable_media_player.yml';
+		this.loadCollection();
+	}
+	
 }
-
-util.inherits(PortableMediaPlayer, DeviceAbstractParser);
-
 
 module.exports = PortableMediaPlayer;
