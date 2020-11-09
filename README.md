@@ -20,6 +20,10 @@ npm install node-device-detector --only=dev
 
 # Before upgrading to up version, pls read;
 ### (ChangeLog)
+* v1.3.0
+    * Update fixtures from the motamo-org/device-detect package#4.0.0 (update to 2020/10/30)
+    * Mason js prototyping has been replaced by ES classes
+    
 * v1.2.9
     * Update fixtures from the motamo-org/device-detect package#3.13.1 (update to 2020/10/25)
 
@@ -27,9 +31,6 @@ npm install node-device-detector --only=dev
     * Update fixtures from the motamo-org/device-detect package#3.13.0 (update to 2020/10/03)
     * Added new methods: setOsVersionTruncate, setClientVersionTruncate
     * Added definition of engine version Gecko
-    
-* v1.2.7
-    * Update fixtures from the motamo-org/device-detect package#3.13.0 (update to 2020/08/17)
     
 * OLD VERSIONS [CHANGELOG.MD](CHANGELOG.MD)
 
