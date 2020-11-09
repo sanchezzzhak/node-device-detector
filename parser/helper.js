@@ -58,13 +58,13 @@ exports.hasOperaTVStoreFragment = function (userAgent) {
 };
 
 /**
-* @param options
-* @param propName
-* @param defaultValue
-* @return {*|null}
-*/
-exports.getPropertyValue = function(options, propName, defaultValue){
-  return options !== undefined && options[propName] !==undefined
-      ?  options[propName]
+ * @param options
+ * @param propName
+ * @param defaultValue
+ * @return {*|null}
+ */
+exports.getPropertyValue = function (options, propName, defaultValue) {
+  return options !== undefined && options[propName] !== undefined
+      ? options[propName]
       : defaultValue !== undefined ? defaultValue : null;
 };

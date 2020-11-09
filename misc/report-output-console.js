@@ -10,11 +10,11 @@ Browsers.sort(sortABC);
 
 console.log('Support detect brands list (%s): ', Brands.length);
 console.log(
-  '* ' + Brands.join(', ')
+    '* ' + Brands.join(', ')
 );
 console.log('\n');
 
 console.log('Support detect browsers list (%s): ', Browsers.length);
 console.log(
-  '* ' + Browsers.join(', ')
+    '* ' + Browsers.join(', ')
 );
