@@ -1,7 +1,7 @@
 {
   "name": "node-device-detector",
   "version": "1.2.9",
-  "description": "Nodejs device detector (port Piwik)",
+  "description": "Nodejs device detector (port matomo-org/device-detector)",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R spec tests/*.spec.js",
@@ -13,6 +13,7 @@
   },
   "keywords": [
     "device-detector",
+    "device detect",
     "detect mobile",
     "detect tablet",
     "detect os",
@@ -33,7 +34,7 @@
     "npm": ">= 6.x"
   },
   "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#3.13.1"
+    "device-detector": "https://github.com/matomo-org/device-detector#4.0.0"
   },
   "napa-config": {
     "cache": false
