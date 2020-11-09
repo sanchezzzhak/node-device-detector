@@ -11,28 +11,28 @@ class VendorFragmentAbstractParser extends ParserAbstract {
   }
 
   /**
-   *
    * @param userAgent
-   * @returns {null|{name: string, id: (*|string)}}
+   * @returns {null|{name: string, id: string}}
    */
   parse(userAgent) {
+    for (let cursor in this.collection) {
+      let name = String(cursor);
+      let collection = this.collection[name];
 
-    for (let key in this.collection) {
-      let collection = this.collection[key];
       for (let i = 0, l = collection.length; i < l; i++) {
         let item = collection[i];
-        let regex = this.getBaseRegExp(item);
+        let pattern = item + '[^a-z0-9]+';
+        let regex = this.getBaseRegExp(pattern);
         let match = regex.exec(userAgent);
         if (match !== null) {
-          let brandId = COLLECTION_BRAND_LIST[key];
+          let brandId = COLLECTION_BRAND_LIST[name];
           return {
-            name: key,
+            name: name,
             id: brandId !== undefined ? brandId : ''
           };
         }
       }
     }
-
     return null;
   }
 }

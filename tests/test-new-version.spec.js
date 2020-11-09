@@ -203,37 +203,61 @@ function testsFromFixtureDevice(fixture) {
       expect(String(fixture.client.engine_version), messageError).to.have.deep.equal(result.client.engine_version);
     }
 
-    try {
-      expect(fixture.client.version, messageError).to.have.deep.equal(result.client.version);
-    } catch (e) {
-      let pegex = new RegExp('^([0-9]+)\.0$', 'i');
-      if (pegex.exec(fixture.client.version) !== null && Math.ceil(result.client.version) == Math.ceil(fixture.client.version)) {
-        console.log(
-            'parse error version, fixture version %s | result version %s',
-            fixture.client.version,
-            result.client.version
-        );
-        this.skip();
-      } else {
-        throw new SyntaxError(e.stack);
-      }
+    testVersionAndSkip(result.client.version, fixture.client.version, messageError);
+  }
+}
+
+function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
+  try {
+    expect(resultVersion, messageError).to.have.equal(String(fixtureVersion));
+  } catch (e) {
+    let pegex = new RegExp('^([0-9]+)\.0$', 'i');
+    if (pegex.exec(fixtureVersion) !== null && Math.ceil(resultVersion) == Math.ceil(fixtureVersion)) {
+      console.log(
+          'parse error version, fixture version %s | result version %s',
+          fixtureVersion,
+          resultVersion
+      );
+      this.skip();
+    } else {
+      throw new SyntaxError(e.stack);
     }
   }
 }
 
 function testsFromFixtureVersionTruncate(fixture) {
   let result = detector.detect(fixture.user_agent);
-
   let osVersion = helper.versionTruncate(result.os.version, fixture.set);
   let clientVersion = helper.versionTruncate(result.client.version, fixture.set);
-
   let messageError = 'fixture data\n' + perryJSON(fixture);
-
   expect(String(osVersion), messageError).to.have.deep.equal(fixture.os_version);
   expect(String(clientVersion), messageError).to.have.deep.equal(fixture.client_version);
-
 }
 
+function testsFromFixtureVendorfragment(fixture) {
+  let result = detector.detect(fixture.useragent);
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+  expect(result.device.brand, messageError).to.have.deep.equal(fixture.vendor);
+  expect(result.device.id !== '', messageError).to.have.deep.equal(true);
+}
+
+function testsFromFixtureOss(fixture) {
+  let result = detector.detect(fixture.user_agent);
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+  // test os data
+  if (isObjNotEmpty(fixture.os.name)) {
+    expect(fixture.os.name, messageError).to.have.deep.equal(result.os.name);
+  }
+  if (isObjNotEmpty(fixture.os.short_name)) {
+    expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
+  }
+  if (isObjNotEmpty(fixture.os.version)) {
+    testVersionAndSkip(result.os.version, fixture.os.version, messageError);
+  }
+  if (isObjNotEmpty(fixture.os.platform)) {
+    expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
+  }
+}
 
 function testsFromFixtureClient(fixture) {
   let result = detector.detect(fixture.user_agent);
@@ -292,12 +316,9 @@ function testsFromFixtureClient(fixture) {
 
 describe('tests clients fixtures', function () {
   this.timeout(6000);
-
   let skipFiles = ['version_truncate.yml'];
-
   ymlClientFiles.forEach(function (file) {
     describe('file fixture ' + file, function () {
-
       if (skipFiles.indexOf(file) !== -1) {
         return;
       }
@@ -364,6 +385,25 @@ describe('tests devices fixtures', function () {
   })
 });
 
+describe('tests vendorfragment', function () {
+  let fixtureData = YML.load(fixtureFolder + 'vendorfragments.yml');
+  let total = fixtureData.length;
+  fixtureData.forEach((fixture, pos) => {
+    it(pos + '/' + total, function () {
+      testsFromFixtureVendorfragment.call(this, fixture);
+    });
+  });
+});
+
+describe('tests oss', function () {
+  let fixtureData = YML.load(fixtureFolder + 'oss.yml');
+  let total = fixtureData.length;
+  fixtureData.forEach((fixture, pos) => {
+    it(pos + '/' + total, function () {
+      testsFromFixtureOss.call(this, fixture);
+    });
+  });
+});
 
 describe('tests version truncate', function () {
   let fixtureData = YML.load(fixtureFolder + 'clients/version_truncate.yml');

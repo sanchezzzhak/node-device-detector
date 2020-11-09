@@ -12,7 +12,11 @@ module.exports = {
   "IBM": ["OS2"],
   "iOS": ["IOS"],
   "RISC OS": ["ROS"],
-  "GNU\/Linux": ["LIN", "ARL", "DEB", "KNO", "MIN", "UBT", "KBT", "XBT", "LBT", "FED", "RHT", "VLN", "MDR", "GNT", "SAB", "SLW", "SSE", "CES", "BTR", "SAF", "ORD"],
+  "GNU/Linux": [
+    "LIN", "ARL", "DEB", "KNO", "MIN", "UBT", "KBT", "XBT", "LBT", "FED",
+    "RHT", "VLN", "MDR", "GNT", "SAB", "SLW", "SSE", "CES", "BTR", "SAF",
+    "ORD", "TOS",
+  ],
   "Mac": ["MAC"],
   "Mobile Gaming Console": ["PSP", "NDS", "XBX"],
   "Real-time OS": ["MTK", "TDX"],
@@ -21,5 +25,5 @@ module.exports = {
   "Unix": ["SOS", "AIX", "HPX", "BSD", "NBS", "OBS", "DFB", "SYL", "IRI", "T64", "INF"],
   "WebTV": ["WTV"],
   "Windows": ["WIN"],
-  "Windows Mobile": ["WPH", "WMO", "WCE", "WRT", "WIO"]
+  "Windows Mobile": ["WPH", "WMO", "WCE", "WRT", "WIO"],
 };

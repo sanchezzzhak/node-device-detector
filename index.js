@@ -24,7 +24,7 @@ const VendorFragmentParser = require('./parser/vendor-fragment-abstract-parser')
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
-const DESKTOP_OS_LIST = require('./parser/const/desctop-os');
+const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 
 const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile', 'Chrome Webview'];
 const APPLE_OS_LIST = ['Apple TV', 'iOS', 'Mac'];
@@ -228,9 +228,9 @@ class DeviceDetector {
   /**
    *
    * @param {string} userAgent
-   * @param osData {ResultOs}
-   * @param clientData {ResultClient}
-   * @param deviceData {{*}}
+   * @param {ResultOs} osData
+   * @param {ResultClient} clientData
+   * @param {ResultDevice} deviceData
    * @return {DeviceType}
    */
   parseDeviceType(userAgent, osData, clientData, deviceData) {
@@ -333,7 +333,7 @@ class DeviceDetector {
   /**
    * parse vendor
    * @param {string} userAgent
-   * @return {{name:'', id:''}}
+   * @return {{name:'', id:''}|null}
    */
   parseVendor(userAgent) {
     let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);

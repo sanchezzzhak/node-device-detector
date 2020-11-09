@@ -66,6 +66,7 @@ module.exports = {
   "SY3": "Symbian^3",
   "TDX": "ThreadX",
   "TIZ": "Tizen",
+  "TOS": "TmaxOS",
   "UBT": "Ubuntu",
   "WTV": "WebTV",
   "WIN": "Windows",
@@ -79,5 +80,5 @@ module.exports = {
   "YNS": "YunOs",
   "IOS": "iOS",
   "POS": "palmOS",
-  "WOS": "webOS"
+  "WOS": "webOS",
 };
