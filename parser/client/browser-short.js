@@ -113,6 +113,7 @@ module.exports = {
   "IE": "Internet Explorer",
   "IM": "IE Mobile",
   "IR": "Iron",
+  "JB": "Japan Browser",
   "JS": "Jasmine",
   "JI": "Jig Browser",
   "JP": "Jig Browser Plus",
@@ -151,6 +152,7 @@ module.exports = {
   "MT": "Mint Browser",
   "MX": "Maxthon",
   "MY": "Mypal",
+  "MR": "Monument Browser",
   "NB": "Nokia Browser",
   "NO": "Nokia OSS Browser",
   "NV": "Nokia Ovi Browser",
@@ -263,4 +265,8 @@ module.exports = {
   "XI": "Xiino",
   "XV": "Xvast",
   "ZV": "Zvu",
+
+// detected browsers in older versions
+// "IA" : "Iceape",  : pim
+// "SM" : "SeaMonkey",  : pim
 };

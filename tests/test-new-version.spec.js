@@ -4,9 +4,12 @@ const aliasDevice = new (require('../parser/device/alias-device'));
 const collectionBrand = Object.assign({},
     ...Object.entries(require('../parser/device/brand-short')).map(([a, b]) => ({[b]: a})), {});
 
+const collectionBrowser = Object.assign({},
+    ...Object.entries(require('../parser/client/browser-short.js')).map(([a, b]) => ({[b]: a})), {});
+
+const collectionBrowserFamily = require('../parser/client/browser-families.js')
 
 const helper = require('../parser/helper');
-
 const should = require('chai').should;
 const assert = require('chai').assert;
 const expect = require('chai').expect;
@@ -76,7 +79,7 @@ function perryJSON(obj) {
 
 
 function isObjNotEmpty(value) {
-  return typeof value !== 'undefined' && value !== null;
+  return value !== void 0 && value !== null;
 }
 
 function testsFromFixtureBot(fixture) {
@@ -138,6 +141,7 @@ function testsFromFixtureAliasDevice(fixture) {
   expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
 }
 
+
 /**
  * @param fixture
  */
@@ -149,40 +153,68 @@ function testsFromFixtureDevice(fixture) {
 
   // test device data
   if (isObjNotEmpty(fixture.device)) {
+
     if (isObjNotEmpty(fixture.device.model)) {
-      expect(null, messageError).to.not.equal(result.device);
-      expect(String(fixture.device.model), messageError).to.equal(result.device.model);
+      expect(null,
+          `wrong type for result, must be object {}, ${messageError}`
+      ).to.not.equal(result.device);
+      expect(String(fixture.device.model),
+          `Device model name is detect incorrectly, ${messageError}`
+      ).to.equal(result.device.model);
     }
 
     if (isObjNotEmpty(fixture.device.type)) {
-      if (fixture.device.type !== '') {
-        expect(String(fixture.device.type), messageError).to.equal(result.device.type);
-      }
+      expect(String(fixture.device.type),
+          `Device type name is detect incorrectly, ${messageError}`
+      ).to.equal(result.device.type);
     }
-    if (isObjNotEmpty(fixture.device.brand)) {
-      expect(String(fixture.device.brand), messageError).to.equal(result.device.brand);
-      if (fixture.device.brand !== '') {
-        expect(collectionBrand[result.device.brand] !== undefined, `shortBrand id not found, ${messageError}`).to.equal(true);
-      }
 
+    if (isObjNotEmpty(fixture.device.brand)) {
+      expect(String(fixture.device.brand),
+          `Device brand name is detect incorrectly, ${messageError}`
+      ).to.equal(result.device.brand);
+
+      if (fixture.device.brand !== '') {
+        expect(collectionBrand[result.device.brand] !== void 0,
+            `Device brand name not added to brands list, ${messageError}`
+        ).to.equal(true);
+      }
     }
   }
 
   // test os data
   if (isObjNotEmpty(fixture.os)) {
+
     if (isObjNotEmpty(fixture.os.name)) {
-      expect(fixture.os.name, messageError).to.have.deep.equal(result.os.name);
-    }
-    if (isObjNotEmpty(fixture.os.short_name)) {
-      expect(fixture.os.short_name, messageError).to.have.deep.equal(result.os.short_name);
-    }
-    if (isObjNotEmpty(fixture.os.version)) {
-      expect(String(fixture.os.version), messageError).to.have.deep.equal(String(result.os.version));
-    }
-    if (isObjNotEmpty(fixture.os.platform)) {
-      expect(fixture.os.platform, messageError).to.have.deep.equal(result.os.platform);
+      expect(fixture.os.name,
+          `Device os name is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(result.os.name);
     }
 
+    if (isObjNotEmpty(fixture.os.short_name)) {
+      expect(fixture.os.short_name,
+          `Device os short name is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(result.os.short_name);
+
+      expect(fixture.os.family,
+          `Device os family name is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(result.os.family);
+
+
+
+    }
+
+    if (isObjNotEmpty(fixture.os.version)) {
+      expect(String(fixture.os.version),
+          `Device os version is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(String(result.os.version));
+    }
+
+    if (isObjNotEmpty(fixture.os.platform)) {
+      expect(fixture.os.platform,
+          `Device os platform is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(result.os.platform);
+    }
   }
 
   // test client data
@@ -193,14 +225,26 @@ function testsFromFixtureDevice(fixture) {
     expect(fixture.client.name, messageError).to.have.deep.equal(result.client.name);
     expect(fixture.client.type, messageError).to.have.deep.equal(result.client.type);
 
-    if (isObjNotEmpty(fixture.client.short_name)) {
-      expect(String(fixture.client.short_name), messageError).to.have.deep.equal(result.client.short_name);
+    if (result.client.short_name !== void 0 && fixture.client.type === 'browser') {
+      expect(collectionBrowser[result.client.name] !== void 0,
+          `Device client short name not added to client list, ${messageError}`
+      ).to.equal(true);
+
+      expect(fixture.browser_family,
+          `Device os family name is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(result.client.family);
     }
+
     if (isObjNotEmpty(fixture.client.engine)) {
-      expect(String(fixture.client.engine), messageError).to.have.deep.equal(result.client.engine);
+      expect(String(fixture.client.engine),
+          `Device client engine is detect incorrectly, ${messageError}`
+      ).to.have.deep.equal(result.client.engine);
     }
+
     if (isObjNotEmpty(fixture.client.engine_version)) {
-      expect(String(fixture.client.engine_version), messageError).to.have.deep.equal(result.client.engine_version);
+      expect(String(fixture.client.engine_version),
+          `Device client engine version is detect incorrectly, ${messageError}`)
+      .to.have.deep.equal(result.client.engine_version);
     }
 
     testVersionAndSkip.call(this, result.client.version, fixture.client.version, messageError);
@@ -287,7 +331,7 @@ function testsFromFixtureClient(fixture) {
   }
 
   // copy family to fixture check
-  fixture.client.family = result.client.family;
+  // fixture.client.family = result.client.family;
 
   expect(result.client.short_name).to.not.equal("UNK");
   if (fixture.client.family) {
@@ -297,22 +341,6 @@ function testsFromFixtureClient(fixture) {
   expect(result.client.name).to.have.equal(fixture.client.name);
   expect(result.client.version).to.have.equal(fixture.client.version);
 }
-
-
-// describe('dev test one file', function () {
-//   let file = 'camera.yml';
-//   let fixtureData = YML.load(fixtureFolder + file);
-//   let total = fixtureData.length;
-//  // fixtureData= [  fixtureData[415] ];
-//
-//   fixtureData.forEach((fixture, pos) => {
-//     it(pos + '/' + total, function(){
-//       testsFromFixtureDevice.call(this, fixture);
-//     });
-//   });
-// });
-//
-// return;
 
 describe('tests clients fixtures', function () {
   this.timeout(6000);

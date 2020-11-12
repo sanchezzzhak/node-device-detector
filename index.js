@@ -244,7 +244,7 @@ class DeviceDetector {
     let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
 
     if (deviceType === '' && osFamily === 'Android' && (clientFamily === 'Chrome' || helper.matchUserAgent('Chrome/[\.0-9]*', userAgent))) {
-      if (helper.matchUserAgent('Chrome/[\\.0-9]* Mobile', userAgent) !== null) {
+      if (helper.matchUserAgent('Chrome/[\.0-9]* Mobile', userAgent) !== null) {
         deviceType = DEVICE_TYPE.SMARTPHONE
       } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
         deviceType = DEVICE_TYPE.TABLET
