@@ -246,7 +246,7 @@ class DeviceDetector {
 	let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
 	
 	if (deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[\.0-9]*', userAgent)) {
-	  if (helper.matchUserAgent('Chrome/[\.0-9]* Mobile', userAgent) !== null) {
+	  if (helper.matchUserAgent('Chrome/[\.0-9]* (Mobile|eliboM)', userAgent) !== null) {
 		deviceType = DEVICE_TYPE.SMARTPHONE
 	  } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
 		deviceType = DEVICE_TYPE.TABLET
@@ -293,9 +293,8 @@ class DeviceDetector {
 	  deviceType = DEVICE_TYPE.TV;
 	}
 	
-	
 	if (deviceType === '') {
-	  if((DESKTOP_OS_LIST.indexOf(osName) !== -1 || DESKTOP_OS_LIST.indexOf(osFamily) !== -1)){
+	  if ((DESKTOP_OS_LIST.indexOf(osName) !== -1 || DESKTOP_OS_LIST.indexOf(osFamily) !== -1)) {
 		if (MOBILE_BROWSER_LIST.indexOf(clientShortName) === -1) {
 		  deviceType = DEVICE_TYPE.DESKTOP;
 		}
