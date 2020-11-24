@@ -45,7 +45,7 @@ const PERRY_TABLE_ENABLE = process.env.DEBUG_TABLE && process.env.DEBUG_TABLE ==
 
 
 const fs = require('fs');
-const YML = require('yamljs');
+const YAML = require('js-yaml');
 const util = require('util');
 
 
@@ -56,6 +56,10 @@ let fixtureFolder = __dirname + '/fixtures/';
 
 ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
 ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
+
+function YAMLLoad(yamlPath) {
+  return YAML.safeLoad(fs.readFileSync(yamlPath, 'utf8'));
+}
 
 
 function normalizeVersion(version, count) {
@@ -261,13 +265,16 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
 	expect(resultVersion, messageError).to.have.equal(String(fixtureVersion));
   } catch (e) {
 	let regex = new RegExp('^([0-9]+)\.0$', 'i');
-	if (regex.exec(fixtureVersion) !== null && Math.ceil(resultVersion) == Math.ceil(fixtureVersion)) {
+	let check = regex.exec(fixtureVersion) !== null
+	  && Math.ceil(resultVersion) == Math.ceil(fixtureVersion)
+	
+	if (check) {
 	  console.log(
 		'parse error version, fixture version %s | result version %s',
 		fixtureVersion,
 		resultVersion
 	  );
-	  // this.skip();
+
 	} else {
 	  throw new SyntaxError(e.stack);
 	}
@@ -355,7 +362,7 @@ describe('tests clients fixtures', function () {
 	  if (skipFiles.indexOf(file) !== -1) {
 		return;
 	  }
-	  let fixtureData = YML.load(fixtureFolder + 'clients/' + file);
+	  let fixtureData = YAMLLoad(fixtureFolder + 'clients/' + file);
 	  let total = fixtureData.length;
 	  //fixtureData= [  fixtureData[208] ];
 	  fixtureData.forEach((fixture, pos) => {
@@ -371,7 +378,7 @@ describe('tests bots', function () {
   
   let file = 'bots.yml';
   describe('file fixture ' + file, function () {
-	let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
+	let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
 	let total = fixtureData.length;
 	fixtureData = [fixtureData[85]];
 	
@@ -388,7 +395,7 @@ describe('tests bots', function () {
 describe('tests alias devices fixtures', function () {
   this.timeout(6000);
   let file = 'alias_devices.yml';
-  let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
+  let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
 	it(pos + '/' + total, function () {
@@ -405,7 +412,7 @@ describe('tests devices fixtures', function () {
 	  return;
 	}
 	describe('file fixture ' + file, function () {
-	  let fixtureData = YML.load(fixtureFolder + 'devices/' + file);
+	  let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
 	  let total = fixtureData.length;
 	  //fixtureData= [  fixtureData[208] ];
 	  fixtureData.forEach((fixture, pos) => {
@@ -418,7 +425,7 @@ describe('tests devices fixtures', function () {
 });
 
 describe('tests vendor fragment', function () {
-  let fixtureData = YML.load(fixtureFolder + 'vendorfragments.yml');
+  let fixtureData = YAMLLoad(fixtureFolder + 'vendorfragments.yml');
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
 	it(pos + '/' + total, function () {
@@ -428,7 +435,7 @@ describe('tests vendor fragment', function () {
 });
 
 describe('tests oss', function () {
-  let fixtureData = YML.load(fixtureFolder + 'oss.yml');
+  let fixtureData = YAMLLoad(fixtureFolder + 'oss.yml');
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
 	it(pos + '/' + total, function () {
@@ -438,7 +445,7 @@ describe('tests oss', function () {
 });
 
 describe('tests version truncate', function () {
-  let fixtureData = YML.load(fixtureFolder + 'clients/version_truncate.yml');
+  let fixtureData = YAMLLoad(fixtureFolder + 'clients/version_truncate.yml');
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
 	it(pos + '/' + total, function () {

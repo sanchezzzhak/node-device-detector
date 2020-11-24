@@ -27,27 +27,20 @@
   },
   "homepage": "https://github.com/sanchezzzhak/node-device-detector#readme",
   "dependencies": {
-    "yamljs": ">=0.3.0"
+    "js-yaml": "^3.14.0"
   },
   "engines": {
     "node": ">= 10.x",
     "npm": ">= 6.x"
-  },
-  "napa": {
-    "device-detector": "https://github.com/matomo-org/device-detector#4.0.1"
-  },
-  "napa-config": {
-    "cache": false
   },
   "devDependencies": {
     "benchmark": "^2.1.4",
     "chai": "^4.0.2",
     "cli-table": "^0.3.1",
     "faker": "^4.1.0",
-    "mocha": "^3.4.2",
-    "napa": "3.0.0",
+    "mocha": "^8.2.1",
     "nock": "^9.6.1",
-    "nyc": "^11.9.0",
+    "nyc": "^15.1.0",
     "sinon": "^4.5.0"
   }
 }
