@@ -1,5 +1,8 @@
 module.exports = [
-  '36', 'OC', 'PU', 'SK', 'MF', 'OI', 'OM', 'DD', 'DB', 'ST', 'BL', 'IV', 'FM', 'C1', 'AL', 'SA', 'SB', 'FR',
-  'WP', 'HA', 'NX', 'HU', 'VV', 'RE', 'CB', 'MZ', 'UM', 'FK', 'FX', 'WI', 'MN', 'M1', 'AH', 'SU', 'EU', 'EZ',
-  'UT', 'DT', 'S0', 'QU', 'YN', 'JB',
+  '36', 'OC', 'PU', 'SK', 'MF', 'OI', 'OM', 'DD', 'DB',
+  'ST', 'BL', 'IV', 'FM', 'C1', 'AL', 'SA', 'SB', 'FR',
+  'WP', 'HA', 'NX', 'HU', 'VV', 'RE', 'CB', 'MZ', 'UM',
+  'FK', 'FX', 'WI', 'MN', 'M1', 'AH', 'SU', 'EU', 'EZ',
+  'UT', 'DT', 'S0', 'QU', 'YN', 'JB', 'GH', 'PI', 'SG',
+  'KD',
 ];
