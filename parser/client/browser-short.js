@@ -219,6 +219,7 @@ module.exports = {
   "RM": "RockMelt",
   "SB": "Samsung Browser",
   "SA": "Sailfish Browser",
+  "S8": "Seewo Browser",
   "SC": "SEMC-Browser",
   "SE": "Sogou Explorer",
   "SF": "Safari",
@@ -280,7 +281,7 @@ module.exports = {
   "YB": "Yolo Browser",
   "XI": "Xiino",
   "XV": "Xvast",
-  "ZV": "Zvu"
+  "ZV": "Zvu",
 
 // detected browsers in older versions
 // "IA" : "Iceape",  : pim

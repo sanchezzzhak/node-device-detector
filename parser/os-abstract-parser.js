@@ -66,7 +66,7 @@ class OsAbstractParser extends ParserAbstract {
    * @return {string}
    */
   parsePlatform(userAgent) {
-    if (this.getBaseRegExp('arm').test(userAgent)) {
+    if (this.getBaseRegExp('aarch64|Watch ?OS|Watch1,[12]').test(userAgent)) {
       return 'ARM';
     }
     if (this.getBaseRegExp('WOW64|x64|win64|amd64|x86_6').test(userAgent)) {
