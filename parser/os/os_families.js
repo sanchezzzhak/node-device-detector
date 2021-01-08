@@ -5,7 +5,7 @@ module.exports = {
   "BlackBerry": ["BLB", "QNX"],
   "Brew": ["BMP"],
   "BeOS": ["BEO", "HAI"],
-  "Chrome OS": ["COS"],
+  "Chrome OS": ["COS", "FYD", "SEE"],
   "Firefox OS": ["FOS", "KOS"],
   "Gaming Console": ["WII", "PS3"],
   "Google TV": ["GTV"],
@@ -26,4 +26,5 @@ module.exports = {
   "WebTV": ["WTV"],
   "Windows": ["WIN"],
   "Windows Mobile": ["WPH", "WMO", "WCE", "WRT", "WIO"],
+  "Other Smart TV": ["WHS"],
 };
