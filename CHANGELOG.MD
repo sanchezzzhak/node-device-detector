@@ -1,5 +1,7 @@
 CHANGELOG
 -
+* v1.2.9
+    * Update fixtures from the motamo-org/device-detect package#3.13.1 (update to 2020/10/25)
 * v1.2.8
     * Update fixtures from the motamo-org/device-detect package#3.13.0 (update to 2020/10/03)
     * Added new methods: setOsVersionTruncate, setClientVersionTruncate
