@@ -1,0 +1,16 @@
+###############
+# Node Device Detector - The Universal Device Detection library for parsing User Agents
+#
+# @license MIT
+###############
+
+# Asus
+asus:
+  zenfone 4:
+    display:
+      size: "5.5"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "155.4x75.2x7.7"
+    weight: "165"
+    release: "2017"

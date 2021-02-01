@@ -143,16 +143,7 @@ const result = Object.assign({os:resultOs}, {client:resultClient}, {device: resu
 console.log('Result parse lite', result);
 ```
 
-### Parse commercial model (model raw name)
-```js
-const AliasDevice = require('node-device-detector/parser/device/alias-device');
-const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
-const aliasDevice = new AliasDevice;
-const result = aliasDevice.parse(userAgent);
-console.log('Result parse commercial model', result);  // result {name: "NX505J"}
-``` 
-
-### Getter/Setter/Options methods
+### Getter/Setter/Options
 ```js
 
 const detector = new DeviceDetector({
@@ -163,6 +154,43 @@ const detector = new DeviceDetector({
 detector.setOsVersionTruncate(0);
 detector.setClientVersionTruncate(2);
 ```
+
+### Parse commercial model (model raw name)
+> Get device code as is
+
+```js
+const AliasDevice = require('node-device-detector/parser/device/alias-device');
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+const aliasDevice = new AliasDevice;
+const result = aliasDevice.parse(userAgent);
+console.log('Result parse commercial model', result);  // result {name: "NX505J"}
+``` 
+
+### Get more information about device
+> get device year release, display size, ratio
+```js
+ const InfoDevice = require('node-device-detector/parser/device/info-device');
+const infoDevice = new InfoDevice;
+const result = infoDevice.info('asus', 'zenfone 4');
+console.log('Result information about device', result); 
+/*
+ result
+{
+  display: { size: '5.5', resolution: '1080x1920', ratio: '16:9' },
+  size: '155.4x75.2x7.7',
+  weight: '165',
+  release: '2017'
+}
+is not found result null
+*/
+
+```
+cast methods
+```js
+infoDevice.setSizeConvertObject(true);
+infoDevice.setResolutionConvertObject(true);
+```
+
 Others
 -
 * [Micro service detect device](docs/MICROSERVICE.MD) from framework [moleculer js](http://moleculer.services)

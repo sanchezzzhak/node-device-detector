@@ -1,5 +1,6 @@
 const detector = new (require('../index'));
 const aliasDevice = new (require('../parser/device/alias-device'));
+const infoDevice = new (require('../parser/device/info-device'));
 
 const collectionBrand = Object.assign({},
   ...Object.entries(require('../parser/device/brand-short')).map(([a, b]) => ({[b]: a})), {});
@@ -454,3 +455,33 @@ describe('tests version truncate', function () {
   });
 })
 
+describe('tests device info', function () {
+  
+  it('test get results', () => {
+	let result = infoDevice.info('Asus', 'ZenFone 4');
+	
+	console.log(result);
+	
+	expect(result.display.size).to.equal('5.5');
+	expect(result.display.ratio).to.equal('16:9');
+	expect(result.display.resolution).to.equal('1080x1920');
+	expect(result.size).to.equal('155.4x75.2x7.7');
+	expect(result.weight).to.equal('165');
+	expect(result.release).to.equal('2017');
+  });
+  
+  it('test case size', () => {
+	infoDevice.setSizeConvertObject(true);
+	let result = infoDevice.info('Asus', 'ZenFone 4');
+	infoDevice.setSizeConvertObject(false);
+	
+	expect(result.size.width).to.equal('155.4');
+	expect(result.size.height).to.equal('75.2');
+	expect(result.size.thickness).to.equal('7.7');
+  });
+  
+  it('test get unknown result', () => {
+	let result = infoDevice.info('unknown', 'unknown');
+	expect(result).to.equal(null);
+  });
+})

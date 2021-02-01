@@ -1,3 +1,9 @@
+###############
+# Node Device Detector - The Universal Device Detection library for parsing User Agents
+#
+# @license MIT
+###############
+
 # AppleWebKit
 - regex: 'Android (?:[\d\.]+;)\s?(?:[^;]+;)?\s?(.+) Build/(?:.+)\) AppleWebKit'
   name: '$1'
