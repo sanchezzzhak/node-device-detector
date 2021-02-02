@@ -4956,7 +4956,7 @@
   device:
     type: smartphone
     brand: Sharp
-    model: Disney Mobile
+    model: Disney Mobile DM-01J
   os_family: Android
   browser_family: Chrome
 -
@@ -9074,7 +9074,7 @@
     engine: Blink
     engine_version: ""
   device:
-    type: smartphone
+    type: tablet
     brand: Navon
     model: Platinum 10.1" 3G
   os_family: Android
