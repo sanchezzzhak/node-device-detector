@@ -1,11 +1,29 @@
-###############
-# Node Device Detector - The Universal Device Detection library for parsing User Agents
-#
-# @license MIT
-###############
-
 # Asus
 asus:
+  zenfone 2:
+    display:
+      size: "5.5"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "152.5x77.2x10.9"
+    weight: "170"
+    release: "2015"
+  zenfone 2 laser:
+    display:
+      size: "5.0"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "143.7x71.5x10.5"
+    weight: "140"
+    release: "2015"
+  zenfone 2e:
+    display:
+      size: "5.0"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "148.1x71.4x10.9"
+    weight: "155"
+    release: "2015"
   zenfone 4:
     display:
       size: "5.5"
@@ -14,3 +32,139 @@ asus:
     size: "155.4x75.2x7.7"
     weight: "165"
     release: "2017"
+  zenfone 5:
+    display:
+      size: "6.2"
+      resolution: "11080x2246"
+      ratio: "18.7:9"
+    size: "153x75.7x7.7"
+    weight: "165"
+    release: "2018"
+  zenfone 5 lte:
+    display:
+      size: "5.0"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "148.2x72.8x10.3"
+    weight: "145"
+    release: "2014"
+  zenfone 5 lite:
+    display:
+      size: "6.0"
+      resolution: "1080x2160"
+      ratio: "18:9"
+    size: "160.6x76.2x7.8"
+    weight: "168"
+    release: "2018"
+  padfone s:
+    display:
+      size: "5.0"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "143.4x72.5x10"
+    weight: "150"
+    release: "2014"
+  padfone mini:
+    display:
+      size: "4.3"
+      resolution: "540x960"
+      ratio: "16:9"
+    size: "129.3x65.6x8.7"
+    weight: "105"
+    release: "2014"
+  padfone x mini:
+    display:
+      size: "4.5"
+      resolution: "480x854"
+      ratio: "16:9"
+    size: "132.1x66.3x12.7"
+    weight: "148.8"
+    release: "2014"
+  zenfone ar:
+    display:
+      size: "5.7"
+      resolution: "1440x2560"
+      ratio: "16:9"
+    size: "158.7x77.7x9"
+    weight: "170"
+    release: "2017"
+  zenfone v:
+    display:
+      size: "5.2"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "146.6x72.6x7.6"
+    weight: "147.1"
+    release: "2017"
+  zenfone v live:
+    display:
+      size: "5.0"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "145x72x8.1"
+    weight: "147.1"
+    release: "2017"
+  zenfone c:
+    display:
+      size: "4.5"
+      resolution: "480x854"
+      ratio: "16:9"
+    size: "136.5x67x10.9"
+    weight: "150"
+    release: "2015"
+  zenfone max m1:
+    display:
+      size: "5.5"
+      resolution: "720x1440"
+      ratio: "16:10"
+    size: "147.3x70.9x8.7"
+    weight: "150"
+    release: "2018"
+  zenfone max pro m1:
+    display:
+      size: "5.99"
+      resolution: "1080x2160"
+      ratio: "18:9"
+    size: "159x76x8.5"
+    weight: "180"
+    release: "2018"
+  zenfone max m2:
+    display:
+      size: "6.26"
+      resolution: "720x1520"
+      ratio: "19:9"
+    size: "158.4x76.3x7.7"
+    weight: "160"
+    release: "2018"
+  zenfone live:
+    display:
+      size: "5.0"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "141.2x71.7x8"
+    weight: "120"
+    release: "2017"
+  zenfone live l1:
+    display:
+      size: "5.5"
+      resolution: "720x1440"
+      ratio: "18:9"
+    size: "147.3x71.8x8.2"
+    weight: "140"
+    release: "2018"
+  zenfone lite l1:
+    display:
+      size: "5.45"
+      resolution: "720x1440"
+      ratio: "18:9"
+    size: "147.3x71.8x8.2"
+    weight: "140"
+    release: "2018"
+  zenfone selfie:
+    display:
+      size: "5.5"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "156.5x77.2x10.8"
+    weight: "170"
+    release: "2015"

@@ -322,7 +322,7 @@ class DeviceDetector {
 	  let parser = this.deviceParserList[name];
 	  let resultMerge = parser.parse(userAgent);
 	  if (resultMerge) {
-		result = Object.assign(result, resultMerge);
+		result = Object.assign({}, result, resultMerge);
 		break;
 	  }
 	}

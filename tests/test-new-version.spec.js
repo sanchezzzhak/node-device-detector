@@ -49,6 +49,9 @@ const fs = require('fs');
 const YAML = require('js-yaml');
 const util = require('util');
 
+// set result regex in detect model
+detector.getParseDevice('Mobile').resultModelRegex = true;
+
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let ymlDeviceFiles = [];
@@ -61,7 +64,6 @@ ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 function YAMLLoad(yamlPath) {
   return YAML.safeLoad(fs.readFileSync(yamlPath, 'utf8'));
 }
-
 
 function normalizeVersion(version, count) {
   if (version === '' || version === null) {
@@ -136,6 +138,10 @@ function perryTable(fixture, result) {
   }
 }
 
+const DATA_DEVICE_INFO = YAMLLoad(__dirname + '/../regexes/device/info-device.yml');
+const DATA_DEVICE_MOBILES = YAMLLoad(__dirname + '/../regexes/device/mobiles.yml');
+
+
 /**
  * @param fixture
  */
@@ -148,11 +154,78 @@ function testsFromFixtureAliasDevice(fixture) {
 }
 
 
+function testsFromFixtureDeviceInfo(fixture) {
+  // test device data
+  if (!isObjNotEmpty(fixture.device)) {
+	return;
+  }
+  if (!isObjNotEmpty(fixture.device.model) || !isObjNotEmpty(fixture.device.brand)) {
+	return;
+  }
+  let {brand, model} = fixture.device;
+  infoDevice.setSizeConvertObject(true);
+  infoDevice.setResolutionConvertObject(true);
+  
+  let result = infoDevice.info(brand, model);
+  if (result === null) {
+	return;
+  }
+  brand = brand.toLowerCase();
+  model = model.toLowerCase();
+  
+  if (DATA_DEVICE_INFO[brand] && DATA_DEVICE_INFO[brand][model] !== void 0) {
+	delete DATA_DEVICE_INFO[brand][model];
+  }
+  
+  let patternSize = /^[0-9\.]+$/i
+  let patternRatio = /^[0-9\.]+:[0-9\.]+$/i
+  let formatMessageSize = `value does not match format ^[0-9]+$ result: ${perryJSON(result)}`;
+  let formatMessageRatio = `value does not match format ^[0-9\\.]+:[0-9\\.]+$ result: ${perryJSON(result)}`;
+  
+  expect(patternRatio.test(result.display.ratio), formatMessageRatio).to.equal(true);
+  expect(patternSize.test(result.display.resolution.width), formatMessageSize).to.equal(true);
+  expect(patternSize.test(result.display.resolution.height), formatMessageSize).to.equal(true);
+  
+  expect(patternSize.test(result.size.width), formatMessageSize).to.equal(true);
+  expect(patternSize.test(result.size.height), formatMessageSize).to.equal(true);
+  expect(patternSize.test(result.size.thickness), formatMessageSize).to.equal(true);
+  
+}
+
+function testsFromFixtureDeviceMobile(fixture) {
+  // test device data
+  if (!isObjNotEmpty(fixture.device)) {
+	return;
+  }
+  if (!isObjNotEmpty(fixture.device.model) || !isObjNotEmpty(fixture.device.brand)) {
+	return;
+  }
+  let {brand, regex} = fixture.device;
+  
+  if (DATA_DEVICE_MOBILES[brand] === void 0) {
+	return;
+  }
+  if (!Array.isArray(DATA_DEVICE_MOBILES[brand].models)) {
+	return;
+  }
+  // marks regex in tests exists
+  for (let i = 0, l = DATA_DEVICE_MOBILES[brand].models.length; i < l; i++) {
+	if (DATA_DEVICE_MOBILES[brand].models[i].regex === regex) {
+	  if (DATA_DEVICE_MOBILES[brand].models[i].count === undefined) {
+		DATA_DEVICE_MOBILES[brand].models[i].count = 0;
+	  }
+	  DATA_DEVICE_MOBILES[brand].models[i].count += 1;
+	  break;
+	}
+  }
+}
+
 /**
+ * @param result
  * @param fixture
  */
-function testsFromFixtureDevice(fixture) {
-  let result = detector.detect(fixture.user_agent);
+function testsFromFixtureDevice(result, fixture) {
+  
   perryTable(fixture, result);
   
   let messageError = 'fixture data\n' + perryJSON(fixture);
@@ -275,7 +348,7 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
 		fixtureVersion,
 		resultVersion
 	  );
-
+	  
 	} else {
 	  throw new SyntaxError(e.stack);
 	}
@@ -376,7 +449,6 @@ describe('tests clients fixtures', function () {
 });
 
 describe('tests bots', function () {
-  
   let file = 'bots.yml';
   describe('file fixture ' + file, function () {
 	let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
@@ -389,8 +461,6 @@ describe('tests bots', function () {
 	  });
 	});
   });
-  
-  
 });
 
 describe('tests alias devices fixtures', function () {
@@ -418,11 +488,75 @@ describe('tests devices fixtures', function () {
 	  //fixtureData= [  fixtureData[208] ];
 	  fixtureData.forEach((fixture, pos) => {
 		it(pos + '/' + total, function () {
-		  testsFromFixtureDevice.call(this, fixture);
+		  let result = detector.detect(fixture.user_agent);
+		  testsFromFixtureDevice.call(this, result, fixture);
+		  testsFromFixtureDeviceInfo.call(this, fixture);
+		  testsFromFixtureDeviceMobile.call(this, result);
 		});
 	  });
 	});
   })
+});
+
+describe('check tests exists for devices mobiles', function () {
+  it('generating a report on not found tests', function () {
+	let reports = [];
+	for (let brand in DATA_DEVICE_MOBILES) {
+	  if (!Array.isArray(DATA_DEVICE_MOBILES[brand].models)) {
+		continue;
+	  }
+	  DATA_DEVICE_MOBILES[brand].models.forEach((model) => {
+		if (model.count === void 0) {
+		  reports.push({brand, model});
+		}
+	  });
+	}
+	expect(reports.length === 0, `not tests exists for rules:` + perryJSON(reports)).to.equal(true);
+  });
+});
+
+
+describe('check tests exists for devices info', function () {
+  it('generating a report on not found tests', function () {
+	let reports = [];
+	for (let brand in DATA_DEVICE_INFO) {
+	  let models = Object.keys(DATA_DEVICE_INFO[brand]);
+	  if (models.length) {
+		reports.push({brand, models});
+	  }
+	}
+	expect(reports.length === 0, `not tests exists for rules:` + perryJSON(reports)).to.equal(true);
+  });
+});
+
+describe('tests devices info', function () {
+  it('test get results', () => {
+	infoDevice.setResolutionConvertObject(false);
+	infoDevice.setSizeConvertObject(false);
+	
+	let result = infoDevice.info('Asus', 'ZenFone 4');
+	expect(result.display.size).to.equal('5.5');
+	expect(result.display.ratio).to.equal('16:9');
+	expect(result.display.resolution).to.equal('1080x1920');
+	expect(result.size).to.equal('155.4x75.2x7.7');
+	expect(result.weight).to.equal('165');
+	expect(result.release).to.equal('2017');
+  });
+  
+  it('test case size', () => {
+	infoDevice.setSizeConvertObject(true);
+	let result = infoDevice.info('Asus', 'ZenFone 4');
+	infoDevice.setSizeConvertObject(false);
+	
+	expect(result.size.width).to.equal('155.4');
+	expect(result.size.height).to.equal('75.2');
+	expect(result.size.thickness).to.equal('7.7');
+  });
+  
+  it('test get unknown result', () => {
+	let result = infoDevice.info('unknown', 'unknown');
+	expect(result).to.equal(null);
+  });
 });
 
 describe('tests vendor fragment', function () {
@@ -452,36 +586,5 @@ describe('tests version truncate', function () {
 	it(pos + '/' + total, function () {
 	  testsFromFixtureVersionTruncate.call(this, fixture);
 	});
-  });
-})
-
-describe('tests device info', function () {
-  
-  it('test get results', () => {
-	let result = infoDevice.info('Asus', 'ZenFone 4');
-	
-	console.log(result);
-	
-	expect(result.display.size).to.equal('5.5');
-	expect(result.display.ratio).to.equal('16:9');
-	expect(result.display.resolution).to.equal('1080x1920');
-	expect(result.size).to.equal('155.4x75.2x7.7');
-	expect(result.weight).to.equal('165');
-	expect(result.release).to.equal('2017');
-  });
-  
-  it('test case size', () => {
-	infoDevice.setSizeConvertObject(true);
-	let result = infoDevice.info('Asus', 'ZenFone 4');
-	infoDevice.setSizeConvertObject(false);
-	
-	expect(result.size.width).to.equal('155.4');
-	expect(result.size.height).to.equal('75.2');
-	expect(result.size.thickness).to.equal('7.7');
-  });
-  
-  it('test get unknown result', () => {
-	let result = infoDevice.info('unknown', 'unknown');
-	expect(result).to.equal(null);
   });
 })
