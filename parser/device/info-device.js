@@ -1,5 +1,7 @@
 const ParserAbstract = require('./../abstract-parser');
 
+// declaration doc object
+
 /**
  * @typedef InfoDisplay
  * @param {string} size
@@ -10,11 +12,31 @@ const ParserAbstract = require('./../abstract-parser');
  * @param {InfoDisplay} display
  * @param {string} size
  * @param {string} weight
- *
  * @param {string|null} release
- *
  */
 
+// private methods
+
+/**
+ * Convert string 100x100 to object {width, height}
+ * @param size
+ * @return {{width: string, height: string}}
+ */
+const castResolutionToObject = (size) => {
+  let [width, height] = size.split('x');
+  return {width, height}
+}
+/**
+ * Convert string 100x100x100 to object {width, height,thickness}
+ * @param size
+ * @return {{thickness: string, width: string, height: string}}
+ */
+const castSizeToObject = (size) => {
+  let [width, height, thickness] = size.split('x');
+  return {width, height, thickness}
+}
+
+// help block
 
 /**
  * @usage
@@ -31,30 +53,43 @@ const ParserAbstract = require('./../abstract-parser');
  * // result in not found
  * null
  */
+
+/**
+ * Class for obtaining information on a device
+ */
 class InfoDevice extends ParserAbstract {
   
   constructor() {
 	super();
-	this.sizeConvertObject = false;  // convert result.size 155.4x75.2x7.7 to object {width, height, thickness}
-	this.resolutionConvertObject = false;  // convert result.display.resolution 1080x1920 to object {width, height}
+	
+	/** @type {boolean} convert size 155.4x75.2x7.7 to object {width, height, thickness} */
+	this.sizeConvertObject = false;
+	/** @type {boolean} convert display.resolution 1080x1920 to object {width, height} */
+	this.resolutionConvertObject = false;
+	/** @type {string} fixture path to file */
 	this.fixtureFile = 'device/info-device.yml';
+	
 	this.loadCollection();
   }
   
   /**
    * Overwrite config sizeConvertObject
-   * @param {Boolean} value
+   * @param {boolean} value
    */
   setSizeConvertObject(value) {
 	this.sizeConvertObject = !!value;
   }
   
+  /**
+   * Overwrite config resolutionConvertObject
+   * @param {boolean} value
+   */
   setResolutionConvertObject(value) {
 	this.resolutionConvertObject = !!value;
   }
   
   /**
-   * result info device
+   * The main method for obtaining information on brand and device
    * @param {String} deviceBrand
    * @param {String} deviceModel
    * @return {InfoResult|null}
@@ -63,7 +98,6 @@ class InfoDevice extends ParserAbstract {
 	if (!deviceBrand.length || !deviceModel.length) {
 	  return null;
 	}
-	
 	let brand = deviceBrand.trim().toLowerCase();
 	let model = deviceModel.trim().toLowerCase();
 	
@@ -73,30 +107,19 @@ class InfoDevice extends ParserAbstract {
 	if (this.collection[brand][model] === undefined) {
 	  return null;
 	}
+
 	let result = Object.assign({}, this.collection[brand][model]);
 	
-	if (this.resolutionConvertObject === true && result.display.resolution && result.display.resolution.length > 0) {
+	if (this.resolutionConvertObject && result.display.resolution) {
 	  result.display.resolution = castResolutionToObject(result.display.resolution);
 	}
-	if (this.sizeConvertObject && result.size && result.size.length > 0) {
+	if (this.sizeConvertObject && result.size) {
 	  result.size = castSizeToObject(result.size);
 	}
 	
 	return result;
   }
   
-}
-
-
-const castResolutionToObject = (size) => {
-  let [width, height] = size.split('x');
-  return {width, height}
-}
-
-
-const castSizeToObject = (size) => {
-  let [width, height, thickness] = size.split('x');
-  return {width, height, thickness}
 }
 
 module.exports = InfoDevice;

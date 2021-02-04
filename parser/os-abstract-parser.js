@@ -3,12 +3,8 @@ const ParserAbstract = require('./abstract-parser');
 OS_SYSTEMS = require('./os/os_systems');
 OS_FAMILIES = require('./os/os_families');
 
-
 class OsAbstractParser extends ParserAbstract {
   
-  /**
-   *
-   */
   constructor() {
 	super();
 	this.fixtureFile = 'oss.yml';
