@@ -20,6 +20,10 @@ npm install node-device-detector --only=dev
 
 # Before upgrading to up version, pls read;
 ### (ChangeLog)
+* v1.3.3
+    * Update fixtures from the motamo-org/device-detect package#4.1.0 (update to 2021/02/04)
+    * Create new parser [InfoDevice](#get-more-information-about-a-device-experimental)
+    
 * v1.3.2
     * Update fixtures from the motamo-org/device-detect package#4.1.0 (update to 2021/01/08)
     
@@ -30,19 +34,18 @@ npm install node-device-detector --only=dev
     * Update fixtures from the motamo-org/device-detect package#4.0.1 (update to 2020/11/12)
     * Mason js prototyping has been replaced by ES classes
     
-
-
     
 * OLD VERSIONS [CHANGELOG.MD](CHANGELOG.MD)
+* [Online demo](https://iehol.sse.codesandbox.io/)
+
 
 Usage
 -
-
 ```js
 const DeviceDetector = require('node-device-detector');
-const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector;
 
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const result = detector.detect(userAgent);
 
 /*
@@ -58,6 +61,8 @@ const isDesktop = !isTabled && !isMobile && !isPhablet && !isWearable;
 
 console.log('result parse', result);
 ```
+> PS: When creating an object`detector = new DeviceDetector;` data for parsing is reloaded from files, consider this, the best option is initialization at application start
+> I recommend seeing [examples](#-others)
 
 ### Result parse
 
@@ -85,9 +90,7 @@ console.log('result parse', result);
         model: 'Nubia Z7 max'
     }
 }
-
 ```
-
 Result is not detect
 ```text
 { 
@@ -145,7 +148,6 @@ console.log('Result parse lite', result);
 
 ### Getter/Setter/Options
 ```js
-
 const detector = new DeviceDetector({
   osVersionTruncate: 0, // Truncate Os version from 5.0 to 5 (default '' or null)
   clientVersionTruncate: 2  // Truncate Client version Chrome from 43.0.2357 .78 to 43.0.2357 (default '' or null)
@@ -155,7 +157,7 @@ detector.setOsVersionTruncate(0);
 detector.setClientVersionTruncate(2);
 ```
 
-### Parse commercial model (model raw name)
+### Getting device code as it is from the useragent (experimental)
 > Get device code as is
 
 ```js
@@ -163,18 +165,25 @@ const AliasDevice = require('node-device-detector/parser/device/alias-device');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const aliasDevice = new AliasDevice;
 const result = aliasDevice.parse(userAgent);
-console.log('Result parse commercial model', result);  // result {name: "NX505J"}
-``` 
+console.log('Result parse code model', result);
+/*
+result 
+{
+  name: "NX505J"
+}
+is not parse result  {name: ""}
+*/
 
-### Get more information about device
-> get device year release, display size, ratio
+``` 
+### Get more information about a device (experimental)
+> year, weight, release, display.size, display.resolution, display.ratio
 ```js
- const InfoDevice = require('node-device-detector/parser/device/info-device');
+const InfoDevice = require('node-device-detector/parser/device/info-device');
 const infoDevice = new InfoDevice;
-const result = infoDevice.info('asus', 'zenfone 4');
+const result = infoDevice.info('Asus', 'Zenfone 4');
 console.log('Result information about device', result); 
 /*
- result
+result
 {
   display: { size: '5.5', resolution: '1080x1920', ratio: '16:9' },
   size: '155.4x75.2x7.7',
@@ -183,7 +192,6 @@ console.log('Result information about device', result);
 }
 is not found result null
 */
-
 ```
 cast methods
 ```js
