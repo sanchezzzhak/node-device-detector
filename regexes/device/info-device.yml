@@ -168,3 +168,78 @@ asus:
     size: "156.5x77.2x10.8"
     weight: "170"
     release: "2015"
+
+# Samsung
+samsung:
+  galaxy note 8.0":
+    display:
+      size: "8.0"
+      resolution: "800x1280"
+      ratio: "16:10"
+    size: "210.8x135.9x8"
+    weight: "345"
+    release: "2013"
+  galaxy view 18.4" lte:
+    display:
+      size: "18.4"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "451.8x275.8x11.9"
+    weight: "2650"
+    release: "2015"
+  galaxy view 18.4" wifi:
+    display:
+      size: "18.4"
+      resolution: "1080x1920"
+      ratio: "16:9"
+    size: "451.8x275.8x11.9"
+    weight: "2650"
+    release: "2015"
+  galaxy note 8.0" wifi:
+    display:
+      size: "8.0"
+      resolution: "800x1280"
+      ratio: "16:10"
+    size: "210.8x135.9x8"
+    weight: "338"
+    release: "2013"
+  galaxy note 8.0" lte:
+    display:
+      size: "8.0"
+      resolution: "800x1280"
+      ratio: "16:10"
+    size: "210.8x135.9x8"
+    weight: "338"
+    release: "2013"
+  galaxy note 10.1":
+    display:
+      size: "10.1"
+      resolution: "800x1280"
+      ratio: "16:10"
+    size: "262x180x8.9"
+    weight: "600"
+    release: "2012"
+  galaxy note 10.1" wifi:
+    display:
+      size: "10.1"
+      resolution: "800x1280"
+      ratio: "16:10"
+    size: "262x180x8.9"
+    weight: "597"
+    release: "2012"
+  galaxy note 10.1" lte:
+    display:
+      size: "10.1"
+      resolution: "800x1280"
+      ratio: "16:10"
+    size: "262x180x8.9"
+    weight: "600"
+    release: "2012"
+  galaxy tab:
+    display:
+      size: "7.0"
+      resolution: "600x1024"
+      ratio: "16:9"
+    size: "190.1x120.5x12"
+    weight: "380"
+    release: "2010"
