@@ -80,11 +80,17 @@ function testsFromFixtureDeviceInfo(fixture) {
   if (!isObjNotEmpty(fixture.device.model) || !isObjNotEmpty(fixture.device.brand)) {
 	return;
   }
+  
   let {brand, model} = fixture.device;
   infoDevice.setSizeConvertObject(true);
   infoDevice.setResolutionConvertObject(true);
+  let result = null;
+  try {
+	result = infoDevice.info(brand, model);
+  } catch (e) {
+    throw new Error(`error in ${brand}, ${model}`)
+  }
   
-  let result = infoDevice.info(brand, model);
   if (result === null) {
 	return;
   }

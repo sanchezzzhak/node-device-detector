@@ -107,17 +107,23 @@ class InfoDevice extends ParserAbstract {
 	if (this.collection[brand][model] === undefined) {
 	  return null;
 	}
+	
+	let result = this.collection[brand][model];
 
-	let result = Object.assign({}, this.collection[brand][model]);
-	
-	if (this.resolutionConvertObject && result.display.resolution) {
-	  result.display.resolution = castResolutionToObject(result.display.resolution);
-	}
-	if (this.sizeConvertObject && result.size) {
-	  result.size = castSizeToObject(result.size);
-	}
-	
-	return result;
+	return {
+	  display: {
+		size: result.display.size,
+		resolution: this.resolutionConvertObject && result.display.resolution
+		  ? castResolutionToObject(result.display.resolution)
+		  : result.display.resolution,
+		ratio: result.display.ratio
+	  },
+	  size: this.sizeConvertObject && result.size
+		? castSizeToObject(result.size)
+		: result.size,
+	  weight: result.weight,
+	  release: result.release
+	};
   }
   
 }
