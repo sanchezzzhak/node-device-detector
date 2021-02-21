@@ -1,5 +1,5 @@
 module.exports = {
-  "Android": ["AND", "CYN", "FIR", "REM", "RZD", "MLD", "MCD", "YNS"],
+  "Android": ["AND", "CYN", "FIR", "REM", "RZD", "MLD", "MCD", "YNS", "GRI"],
   "AmigaOS": ["AMG", "MOR"],
   "Apple TV": ["ATV"],
   "BlackBerry": ["BLB", "QNX"],
@@ -13,9 +13,9 @@ module.exports = {
   "iOS": ["IOS", "WAS"],
   "RISC OS": ["ROS"],
   "GNU/Linux": [
-	"LIN", "ARL", "DEB", "KNO", "MIN", "UBT", "KBT", "XBT", "LBT", "FED",
-	"RHT", "VLN", "MDR", "GNT", "SAB", "SLW", "SSE", "CES", "BTR", "SAF",
-	"ORD", "TOS", "RSO", "DEE", "FRE", "MAG", "FEN",
+    "LIN", "ARL", "DEB", "KNO", "MIN", "UBT", "KBT", "XBT", "LBT", "FED",
+    "RHT", "VLN", "MDR", "GNT", "SAB", "SLW", "SSE", "CES", "BTR", "SAF",
+    "ORD", "TOS", "RSO", "DEE", "FRE", "MAG", "FEN", "CAI", "PCL",
   ],
   "Mac": ["MAC"],
   "Mobile Gaming Console": ["PSP", "NDS", "XBX"],

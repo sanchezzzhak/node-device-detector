@@ -21,8 +21,7 @@ npm install node-device-detector --only=dev
 # Before upgrading to up version, pls read;
 ### (ChangeLog)
 * v1.3.3
-    * Update fixtures from the motamo-org/device-detect package#4.1.0 (update to 2021/02/04)
-    * Create new parser [InfoDevice](#get-more-information-about-a-device-experimental)
+    * Update fixtures from the motamo-org/device-detect package#4.1.0 (update to 2021/02/22)
     
 * v1.3.2
     * Update fixtures from the motamo-org/device-detect package#4.1.0 (update to 2021/01/08)
@@ -175,29 +174,6 @@ is not parse result  {name: ""}
 */
 
 ``` 
-### Get more information about a device (experimental)
-> year, weight, release, display.size, display.resolution, display.ratio
-```js
-const InfoDevice = require('node-device-detector/parser/device/info-device');
-const infoDevice = new InfoDevice;
-const result = infoDevice.info('Asus', 'Zenfone 4');
-console.log('Result information about device', result); 
-/*
-result
-{
-  display: { size: '5.5', resolution: '1080x1920', ratio: '16:9' },
-  size: '155.4x75.2x7.7',
-  weight: '165',
-  release: '2017'
-}
-is not found result null
-*/
-```
-cast methods
-```js
-infoDevice.setSizeConvertObject(true);
-infoDevice.setResolutionConvertObject(true);
-```
 
 Others
 -

@@ -1,6 +1,45 @@
 const ParserAbstract = require('./../abstract-parser');
 
+// this is a test functionality do not try to use this class in production
+// this is a test functionality do not try to use this class in production
+// this is a test functionality do not try to use this class in production
+// this is a test functionality do not try to use this class in production
+// this is a test functionality do not try to use this class in production
+// this is a test functionality do not try to use this class in production
+// this is a test functionality do not try to use this class in production
+
+
 // declaration doc object
+
+/*
+
+### Get more information about a device (experimental)
+> year, weight, release, display.size, display.resolution, display.ratio
+```js
+const InfoDevice = require('node-device-detector/parser/device/info-device');
+const infoDevice = new InfoDevice;
+const result = infoDevice.info('Asus', 'Zenfone 4');
+console.log('Result information about device', result);
+/*
+result
+{
+  display: { size: '5.5', resolution: '1080x1920', ratio: '16:9' },
+  size: '155.4x75.2x7.7',
+  weight: '165',
+  release: '2017'
+}
+is not found result null
+*/
+/*
+```
+cast methods
+```js
+infoDevice.setSizeConvertObject(true);
+infoDevice.setResolutionConvertObject(true);
+```
+ */
+
+
 
 /**
  * @typedef InfoDisplay
