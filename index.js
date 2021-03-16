@@ -290,7 +290,11 @@ class DeviceDetector {
 	}
 
 	if (deviceType === '') {
-	  deviceType = DEVICE_TYPE.DESKTOP;
+	  if ((DESKTOP_OS_LIST.indexOf(osName) !== -1 || DESKTOP_OS_LIST.indexOf(osFamily) !== -1)) {
+		if (MOBILE_BROWSER_LIST.indexOf(clientShortName) === -1) {
+		  deviceType = DEVICE_TYPE.DESKTOP;
+		}
+	  }
 	}
 
 	return {
