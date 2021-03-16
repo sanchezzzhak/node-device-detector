@@ -285,7 +285,7 @@ class DeviceDetector {
 	  deviceType = DEVICE_TYPE.TABLET;
 	}
 	
-	if (helper.hasOperaTVStoreFragment(userAgent)) {
+	if (deviceType === '' && helper.hasTVFragment(userAgent)) {
 	  deviceType = DEVICE_TYPE.TV;
 	}
 	
