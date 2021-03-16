@@ -3,7 +3,7 @@ name: YAML Lint
 on:
   pull_request:
   push:
-    branches: [ master ]
+    branches: [ $default-branch ]
 
 jobs:
   phpcs:
