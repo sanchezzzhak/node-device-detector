@@ -254,3 +254,29 @@ doro:
     size: "71x138x11"
     weight: "144"
     release: "2016"
+
+bravis:
+  delta:
+    display:
+      size: "5.0"
+      resolution: "540x960"
+      ratio: "16:9"
+    size: "69x138x8.9"
+    weight: "125"
+    release: "2015"
+  crystal:
+    display:
+      size: "5.0"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "71.6x141.9x8.6"
+    weight: "160"
+    release: "2018"
+  discovery:
+    display:
+      size: "5.5"
+      resolution: "720x1280"
+      ratio: "16:9"
+    size: "77x153.8x7.9"
+    weight: "177"
+    release: "2017"
