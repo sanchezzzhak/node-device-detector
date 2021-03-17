@@ -3,3 +3,4 @@ tests/
 .npmignore
 .github/
 .yamllint
+.idea/
