@@ -243,3 +243,14 @@ samsung:
     size: "190.1x120.5x12"
     weight: "380"
     release: "2010"
+
+# Doro
+doro:
+  "8030":
+    display:
+      size: "4.5"
+      resolution: "480x854"
+      ratio: "16:9"
+    size: "71x138x11"
+    weight: "144"
+    release: "2016"
