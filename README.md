@@ -23,7 +23,8 @@ npm install node-device-detector --only=dev
 * v1.3.4
     * Update fixtures from the motamo-org/device-detect `version#4.2.2` (update to 2021/03/17)
     * Added detect devices 532~ 
-    * Added tests for github actions
+    * Added tests runs nodes [10.x, 15.x] for github actions
+    * Added new experimental parser `InfoDevice`
 
 * v1.3.3
     * Update fixtures from the motamo-org/device-detect `version#4.1.0` (update to 2021/02/22)
@@ -173,8 +174,49 @@ result
 }
 is not parse result  {name: ""}
 */
-
 ``` 
+
+### Get more information about a device (experimental)
+> This parser is experimental and contains few devices. (30 devices)
+
+```js
+const InfoDevice = require('node-device-detector/parser/device/info-device');
+const infoDevice = new InfoDevice;
+const result = infoDevice.info('Asus', 'Zenfone 4');
+console.log('Result information', result);
+/*
+result
+{
+  display: { size: '5.5', resolution: '1080x1920', ratio: '16:9' },
+  size: '155.4x75.2x7.7',
+  weight: '165',
+  release: '2017'
+}
+is not found result null
+*/
+```
+Cast methods
+```js
+const InfoDevice = require('node-device-detector/parser/device/info-device');
+const infoDevice = new InfoDevice;
+infoDevice.setSizeConvertObject(true);
+infoDevice.setResolutionConvertObject(true);
+const result = infoDevice.info('Asus', 'Zenfone 4');
+console.log('Result information', result);
+/*
+result
+{
+  display: {
+    size: '5.5',
+    resolution: { width: '1080', height: '1920' },
+    ratio: '16:9'
+  },
+  size: { width: '155.4', height: '75.2', thickness: '7.7' },
+  weight: '165',
+  release: '2017'
+}
+*/
+```
 
 Others
 -
