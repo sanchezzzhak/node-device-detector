@@ -53,8 +53,18 @@ exports.hasAndroidMobileFragment = function (userAgent) {
   return this.matchUserAgent('Android( [.0-9]+)?; Mobile;', userAgent) !== null;
 };
 
+/**
+ * All devices running Opera TV Store are assumed to be a tv
+ */
 exports.hasOperaTVStoreFragment = function (userAgent) {
   return this.matchUserAgent('Opera TV Store', userAgent) !== null;
+};
+
+/**
+ * All devices running Tizen TV or SmartTV are assumed to be a tv
+ */
+exports.hasTVFragment = function (userAgent) {
+  return this.matchUserAgent('SmartTV|Tizen.+ TV .+$', userAgent) !== null;
 };
 
 /**

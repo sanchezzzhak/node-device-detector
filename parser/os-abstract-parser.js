@@ -74,7 +74,7 @@ class OsAbstractParser extends ParserAbstract {
 	if (this.getBaseRegExp('WOW64|x64|win64|amd64|x86_?64').test(userAgent)) {
 	  return 'x64';
 	}
-	if (this.getBaseRegExp('i[0-9]86|i86pc').test(userAgent)) {
+	if (this.getBaseRegExp('(?:i[0-9]|x)86|i86pc').test(userAgent)) {
 	  return 'x86';
 	}
 	

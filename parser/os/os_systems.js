@@ -29,6 +29,7 @@ module.exports = {
   "GTV": "Google TV",
   "HPX": "HP-UX",
   "HAI": "Haiku OS",
+  "HAS": "HasCodingOS",
   "IRI": "IRIX",
   "INF": "Inferno",
   "KOS": "KaiOS",
