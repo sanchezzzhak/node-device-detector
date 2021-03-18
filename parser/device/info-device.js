@@ -1,4 +1,5 @@
 const ParserAbstract = require('./../abstract-parser');
+const DataPacker = require('./../../lib/data-packer');
 
 // this is a test functionality do not try to use this class in production
 // this is a test functionality do not try to use this class in production
@@ -38,7 +39,6 @@ infoDevice.setSizeConvertObject(true);
 infoDevice.setResolutionConvertObject(true);
 ```
  */
-
 
 
 /**
@@ -93,30 +93,42 @@ const castSizeToObject = (size) => {
  * null
  */
 
+const SHORT_KEYS = {
+  DS: 'display.size',
+  RS: 'display.resolution',
+  RT: 'display.ratio',
+  SZ: 'size',
+  WT: 'weight',
+  RE: 'release'
+};
+
+
+
 /**
  * Class for obtaining information on a device
  */
 class InfoDevice extends ParserAbstract {
   
   constructor() {
-	super();
-	
-	/** @type {boolean} convert size 155.4x75.2x7.7 to object {width, height, thickness} */
-	this.sizeConvertObject = false;
-	/** @type {boolean} convert display.resolution 1080x1920 to object {width, height} */
-	this.resolutionConvertObject = false;
-	/** @type {string} fixture path to file */
-	this.fixtureFile = 'device/info-device.yml';
-	
-	this.loadCollection();
+    super();
+    
+    /** @type {boolean} convert size 155.4x75.2x7.7 to object {width, height, thickness} */
+    this.sizeConvertObject = false;
+    /** @type {boolean} convert display.resolution 1080x1920 to object {width, height} */
+    this.resolutionConvertObject = false;
+    /** @type {string} fixture path to file */
+    this.fixtureFile = 'device/info-device.yml';
+    
+    this.loadCollection();
   }
+  
   
   /**
    * Overwrite config sizeConvertObject
    * @param {boolean} value
    */
   setSizeConvertObject(value) {
-	this.sizeConvertObject = !!value;
+    this.sizeConvertObject = !!value;
   }
   
   /**
@@ -124,7 +136,7 @@ class InfoDevice extends ParserAbstract {
    * @param {boolean} value
    */
   setResolutionConvertObject(value) {
-	this.resolutionConvertObject = !!value;
+    this.resolutionConvertObject = !!value;
   }
   
   /**
@@ -134,35 +146,36 @@ class InfoDevice extends ParserAbstract {
    * @return {InfoResult|null}
    */
   info(deviceBrand, deviceModel) {
-	if (!deviceBrand.length || !deviceModel.length) {
-	  return null;
-	}
-	let brand = deviceBrand.trim().toLowerCase();
-	let model = deviceModel.trim().toLowerCase();
-	
-	if (this.collection[brand] === undefined) {
-	  return null;
-	}
-	if (this.collection[brand][model] === undefined) {
-	  return null;
-	}
-	
-	let result = this.collection[brand][model];
-
-	return {
-	  display: {
-		size: result.display.size,
-		resolution: this.resolutionConvertObject && result.display.resolution
-		  ? castResolutionToObject(result.display.resolution)
-		  : result.display.resolution,
-		ratio: result.display.ratio
-	  },
-	  size: this.sizeConvertObject && result.size
-		? castSizeToObject(result.size)
-		: result.size,
-	  weight: result.weight,
-	  release: result.release
-	};
+    if (!deviceBrand.length || !deviceModel.length) {
+      return null;
+    }
+    let brand = deviceBrand.trim().toLowerCase();
+    let model = deviceModel.trim().toLowerCase();
+    
+    if (this.collection[brand] === undefined) {
+      return null;
+    }
+    if (this.collection[brand][model] === undefined) {
+      return null;
+    }
+    
+    let data = this.collection[brand][model];
+    let result = DataPacker.unpack(data, SHORT_KEYS);
+    
+    return {
+      display: {
+        size: result.display.size,
+        resolution: this.resolutionConvertObject && result.display.resolution
+          ? castResolutionToObject(result.display.resolution)
+          : result.display.resolution,
+        ratio: result.display.ratio
+      },
+      size: this.sizeConvertObject && result.size
+        ? castSizeToObject(result.size)
+        : result.size,
+      weight: result.weight,
+      release: result.release
+    };
   }
   
 }

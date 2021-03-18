@@ -1,282 +1,45 @@
 # Asus
 asus:
-  zenfone 2:
-    display:
-      size: "5.5"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "152.5x77.2x10.9"
-    weight: "170"
-    release: "2015"
-  zenfone 2 laser:
-    display:
-      size: "5.0"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "143.7x71.5x10.5"
-    weight: "140"
-    release: "2015"
-  zenfone 2e:
-    display:
-      size: "5.0"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "148.1x71.4x10.9"
-    weight: "155"
-    release: "2015"
-  zenfone 4:
-    display:
-      size: "5.5"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "155.4x75.2x7.7"
-    weight: "165"
-    release: "2017"
-  zenfone 5:
-    display:
-      size: "6.2"
-      resolution: "11080x2246"
-      ratio: "18.7:9"
-    size: "153x75.7x7.7"
-    weight: "165"
-    release: "2018"
-  zenfone 5 lte:
-    display:
-      size: "5.0"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "148.2x72.8x10.3"
-    weight: "145"
-    release: "2014"
-  zenfone 5 lite:
-    display:
-      size: "6.0"
-      resolution: "1080x2160"
-      ratio: "18:9"
-    size: "160.6x76.2x7.8"
-    weight: "168"
-    release: "2018"
-  padfone s:
-    display:
-      size: "5.0"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "143.4x72.5x10"
-    weight: "150"
-    release: "2014"
-  padfone mini:
-    display:
-      size: "4.3"
-      resolution: "540x960"
-      ratio: "16:9"
-    size: "129.3x65.6x8.7"
-    weight: "105"
-    release: "2014"
-  padfone x mini:
-    display:
-      size: "4.5"
-      resolution: "480x854"
-      ratio: "16:9"
-    size: "132.1x66.3x12.7"
-    weight: "148.8"
-    release: "2014"
-  zenfone ar:
-    display:
-      size: "5.7"
-      resolution: "1440x2560"
-      ratio: "16:9"
-    size: "158.7x77.7x9"
-    weight: "170"
-    release: "2017"
-  zenfone v:
-    display:
-      size: "5.2"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "146.6x72.6x7.6"
-    weight: "147.1"
-    release: "2017"
-  zenfone v live:
-    display:
-      size: "5.0"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "145x72x8.1"
-    weight: "147.1"
-    release: "2017"
-  zenfone c:
-    display:
-      size: "4.5"
-      resolution: "480x854"
-      ratio: "16:9"
-    size: "136.5x67x10.9"
-    weight: "150"
-    release: "2015"
-  zenfone max m1:
-    display:
-      size: "5.5"
-      resolution: "720x1440"
-      ratio: "16:10"
-    size: "147.3x70.9x8.7"
-    weight: "150"
-    release: "2018"
-  zenfone max pro m1:
-    display:
-      size: "5.99"
-      resolution: "1080x2160"
-      ratio: "18:9"
-    size: "159x76x8.5"
-    weight: "180"
-    release: "2018"
-  zenfone max m2:
-    display:
-      size: "6.26"
-      resolution: "720x1520"
-      ratio: "19:9"
-    size: "158.4x76.3x7.7"
-    weight: "160"
-    release: "2018"
-  zenfone live:
-    display:
-      size: "5.0"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "141.2x71.7x8"
-    weight: "120"
-    release: "2017"
-  zenfone live l1:
-    display:
-      size: "5.5"
-      resolution: "720x1440"
-      ratio: "18:9"
-    size: "147.3x71.8x8.2"
-    weight: "140"
-    release: "2018"
-  zenfone lite l1:
-    display:
-      size: "5.45"
-      resolution: "720x1440"
-      ratio: "18:9"
-    size: "147.3x71.8x8.2"
-    weight: "140"
-    release: "2018"
-  zenfone selfie:
-    display:
-      size: "5.5"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "156.5x77.2x10.8"
-    weight: "170"
-    release: "2015"
+  zenfone 2: 'DS=5.5;RS=1080x1920;RT=16:9;SZ=152.5x77.2x10.9;WT=170;RE=2015;'
+  zenfone 2 laser: 'DS=5.0;RS=720x1280;RT=16:9;SZ=143.7x71.5x10.5;WT=140;RE=2015;'
+  zenfone 2e: 'DS=5.0;RS=720x1280;RT=16:9;SZ=148.1x71.4x10.9;WT=155;RE=2015;'
+  zenfone 4: 'DS=5.5;RS=1080x1920;RT=16:9;SZ=155.4x75.2x7.7;WT=165;RE=2017;'
+  zenfone 5: 'DS=6.2;RS=11080x2246;RT=18.7:9;SZ=153x75.7x7.7;WT=165;RE=2018;'
+  zenfone 5 lte: 'DS=5.0;RS=720x1280;RT=16:9;SZ=148.2x72.8x10.3;WT=145;RE=2014;'
+  zenfone 5 lite: 'DS=6.0;RS=1080x2160;RT=18:9;SZ=160.6x76.2x7.8;WT=168;RE=2018;'
+  padfone s: 'DS=5.0;RS=1080x1920;RT=16:9;SZ=143.4x72.5x10;WT=150;RE=2014;'
+  padfone mini: 'DS=4.3;RS=540x960;RT=16:9;SZ=129.3x65.6x8.7;WT=105;RE=2014;'
+  padfone x mini: 'DS=4.5;RS=480x854;RT=16:9;SZ=132.1x66.3x12.7;WT=148.8;RE=2014;'
+  zenfone ar: 'DS=5.7;RS=1440x2560;RT=16:9;SZ=158.7x77.7x9;WT=170;RE=2017;'
+  zenfone v: 'DS=5.2;RS=1080x1920;RT=16:9;SZ=146.6x72.6x7.6;WT=147.1;RE=2017;'
+  zenfone v live: 'DS=5.0;RS=720x1280;RT=16:9;SZ=145x72x8.1;WT=147.1;RE=2017;'
+  zenfone c: 'DS=4.5;RS=480x854;RT=16:9;SZ=136.5x67x10.9;WT=150;RE=2015;'
+  zenfone max m1: 'DS=5.5;RS=720x1440;RT=16:10;SZ=147.3x70.9x8.7;WT=150;RE=2018;'
+  zenfone max pro m1: 'DS=5.99;RS=1080x2160;RT=18:9;SZ=159x76x8.5;WT=180;RE=2018;'
+  zenfone max m2: 'DS=6.26;RS=720x1520;RT=19:9;SZ=158.4x76.3x7.7;WT=160;RE=2018;'
+  zenfone live: 'DS=5.0;RS=720x1280;RT=16:9;SZ=141.2x71.7x8;WT=120;RE=2017;'
+  zenfone live l1: 'DS=5.5;RS=720x1440;RT=18:9;SZ=147.3x71.8x8.2;WT=140;RE=2018;'
+  zenfone lite l1: 'DS=5.45;RS=720x1440;RT=18:9;SZ=147.3x71.8x8.2;WT=140;RE=2018;'
+  zenfone selfie: 'DS=5.5;RS=1080x1920;RT=16:9;SZ=156.5x77.2x10.8;WT=170;RE=2015;'
 
 # Samsung
 samsung:
-  galaxy note 8.0":
-    display:
-      size: "8.0"
-      resolution: "800x1280"
-      ratio: "16:10"
-    size: "210.8x135.9x8"
-    weight: "345"
-    release: "2013"
-  galaxy view 18.4" lte:
-    display:
-      size: "18.4"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "451.8x275.8x11.9"
-    weight: "2650"
-    release: "2015"
-  galaxy view 18.4" wifi:
-    display:
-      size: "18.4"
-      resolution: "1080x1920"
-      ratio: "16:9"
-    size: "451.8x275.8x11.9"
-    weight: "2650"
-    release: "2015"
-  galaxy note 8.0" wifi:
-    display:
-      size: "8.0"
-      resolution: "800x1280"
-      ratio: "16:10"
-    size: "210.8x135.9x8"
-    weight: "338"
-    release: "2013"
-  galaxy note 8.0" lte:
-    display:
-      size: "8.0"
-      resolution: "800x1280"
-      ratio: "16:10"
-    size: "210.8x135.9x8"
-    weight: "338"
-    release: "2013"
-  galaxy note 10.1":
-    display:
-      size: "10.1"
-      resolution: "800x1280"
-      ratio: "16:10"
-    size: "262x180x8.9"
-    weight: "600"
-    release: "2012"
-  galaxy note 10.1" wifi:
-    display:
-      size: "10.1"
-      resolution: "800x1280"
-      ratio: "16:10"
-    size: "262x180x8.9"
-    weight: "597"
-    release: "2012"
-  galaxy note 10.1" lte:
-    display:
-      size: "10.1"
-      resolution: "800x1280"
-      ratio: "16:10"
-    size: "262x180x8.9"
-    weight: "600"
-    release: "2012"
-  galaxy tab:
-    display:
-      size: "7.0"
-      resolution: "600x1024"
-      ratio: "16:9"
-    size: "190.1x120.5x12"
-    weight: "380"
-    release: "2010"
+  galaxy note 8.0": 'DS=8.0;RS=800x1280;RT=16:10;SZ=210.8x135.9x8;WT=345;RE=2013;'
+  galaxy view 18.4" lte: 'DS=18.4;RS=1080x1920;RT=16:9;SZ=451.8x275.8x11.9;WT=2650;RE=2015;'
+  galaxy view 18.4" wifi: 'DS=18.4;RS=1080x1920;RT=16:9;SZ=451.8x275.8x11.9;WT=2650;RE=2015;'
+  galaxy note 8.0" wifi: 'DS=8.0;RS=800x1280;RT=16:10;SZ=210.8x135.9x8;WT=338;RE=2013;'
+  galaxy note 8.0" lte: 'DS=8.0;RS=800x1280;RT=16:10;SZ=210.8x135.9x8;WT=338;RE=2013;'
+  galaxy note 10.1": 'DS=10.1;RS=800x1280;RT=16:10;SZ=262x180x8.9;WT=600;RE=2012;'
+  galaxy note 10.1" wifi: 'DS=10.1;RS=800x1280;RT=16:10;SZ=262x180x8.9;WT=597;RE=2012;'
+  galaxy note 10.1" lte: 'DS=10.1;RS=800x1280;RT=16:10;SZ=262x180x8.9;WT=600;RE=2012;'
+  galaxy tab: 'DS=7.0;RS=600x1024;RT=16:9;SZ=190.1x120.5x12;WT=380;RE=2010;'
 
 # Doro
 doro:
-  "8030":
-    display:
-      size: "4.5"
-      resolution: "480x854"
-      ratio: "16:9"
-    size: "71x138x11"
-    weight: "144"
-    release: "2016"
+  '8030': 'DS=4.5;RS=480x854;RT=16:9;SZ=71x138x11;WT=144;RE=2016;'
 
+# Bravis
 bravis:
-  delta:
-    display:
-      size: "5.0"
-      resolution: "540x960"
-      ratio: "16:9"
-    size: "69x138x8.9"
-    weight: "125"
-    release: "2015"
-  crystal:
-    display:
-      size: "5.0"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "71.6x141.9x8.6"
-    weight: "160"
-    release: "2018"
-  discovery:
-    display:
-      size: "5.5"
-      resolution: "720x1280"
-      ratio: "16:9"
-    size: "77x153.8x7.9"
-    weight: "177"
-    release: "2017"
+  delta: 'DS=5.0;RS=540x960;RT=16:9;SZ=69x138x8.9;WT=125;RE=2015;'
+  crystal: 'DS=5.0;RS=720x1280;RT=16:9;SZ=71.6x141.9x8.6;WT=160;RE=2018;'
+  discovery: 'DS=5.5;RS=720x1280;RT=16:9;SZ=77x153.8x7.9;WT=177;RE=2017;'

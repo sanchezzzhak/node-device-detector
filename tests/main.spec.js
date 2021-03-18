@@ -85,11 +85,11 @@ function testsFromFixtureDeviceInfo(fixture) {
 	infoDevice.setSizeConvertObject(true);
 	infoDevice.setResolutionConvertObject(true);
 	let result = null;
-	try {
+	//try {
 		result = infoDevice.info(brand, model);
-	} catch (e) {
+/*	} catch (e) {
 		throw new Error(`error in ${brand}, ${model}`)
-	}
+	}*/
 	
 	if (result === null) {
 		return;
