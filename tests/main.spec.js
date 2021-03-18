@@ -85,11 +85,11 @@ function testsFromFixtureDeviceInfo(fixture) {
 	infoDevice.setSizeConvertObject(true);
 	infoDevice.setResolutionConvertObject(true);
 	let result = null;
-	try {
-		result = infoDevice.info(brand, model);
-	} catch (e) {
-		throw new Error(`error in ${brand}, ${model}`)
-	}
+	//try {
+	result = infoDevice.info(brand, model);
+	/*	} catch (e) {
+			throw new Error(`error in ${brand}, ${model}`)
+		}*/
 	
 	if (result === null) {
 		return;
@@ -533,6 +533,14 @@ describe('check tests exists for devices info', function () {
 	it('generating a report on not found tests', function () {
 		let reports = [];
 		for (let brand in DATA_DEVICE_INFO) {
+			// remove redirect model
+			for (let model in DATA_DEVICE_INFO[brand]) {
+				let dataInfo = DATA_DEVICE_INFO[brand][model];
+				if (dataInfo.indexOf('->') !== -1) {
+					delete DATA_DEVICE_INFO[brand][model];
+				}
+			}
+			
 			let models = Object.keys(DATA_DEVICE_INFO[brand]);
 			if (models.length) {
 				reports.push({brand, models});
@@ -556,9 +564,14 @@ describe('tests devices info', function () {
 		expect(result.display.size).to.equal('5.5');
 		expect(result.display.ratio).to.equal('16:9');
 		expect(result.display.resolution).to.equal('1080x1920');
-		expect(result.size).to.equal('155.4x75.2x7.7');
+		expect(result.size).to.equal('75.2x155.4x7.7');
 		expect(result.weight).to.equal('165');
 		expect(result.release).to.equal('2017');
+	});
+	
+	it('test get redirect result', () => {
+		let result = infoDevice.info('Bravis', 'B501 Easy');
+		expect(result !== null).to.equal(true);
 	});
 	
 	it('test case size', () => {
@@ -567,8 +580,8 @@ describe('tests devices info', function () {
 		let result = infoDevice.info('Asus', 'ZenFone 4');
 		
 		expect(result.display.resolution).to.deep.equal({width: '1080', height: '1920'});
-		expect(result.size.width).to.equal('155.4');
-		expect(result.size.height).to.equal('75.2');
+		expect(result.size.width).to.equal('75.2');
+		expect(result.size.height).to.equal('155.4');
 		expect(result.size.thickness).to.equal('7.7');
 	});
 	
