@@ -49,3 +49,5 @@ bravis:
   b501 easy: '->easy'
   b501: '->easy'
   easy: 'DS=5.0;RS=480x854;RT=16:9;SZ=72.80x144.80x9.80;WT=146;RE=2016;'
+  N1-570: '->space'
+  space: 'DS=5.72;RS=720x1440;RT=16:9;SZ=73x152x9.2;WT=174;RE=2018;'
