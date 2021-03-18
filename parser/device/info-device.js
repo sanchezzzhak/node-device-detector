@@ -146,6 +146,12 @@ class InfoDevice extends ParserAbstract {
 		if (!deviceBrand.length || !deviceModel.length) {
 			return null;
 		}
+		
+		const finStringName = (str) => str.replace(new RegExp('_', 'g'), ' ');
+		
+		deviceBrand = finStringName(deviceBrand);
+		deviceModel = finStringName(deviceModel);
+		
 		let brand = deviceBrand.trim().toLowerCase();
 		let model = deviceModel.trim().toLowerCase();
 		

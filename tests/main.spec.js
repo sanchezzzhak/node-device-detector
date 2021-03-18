@@ -86,10 +86,10 @@ function testsFromFixtureDeviceInfo(fixture) {
 	infoDevice.setResolutionConvertObject(true);
 	let result = null;
 	//try {
-		result = infoDevice.info(brand, model);
-/*	} catch (e) {
-		throw new Error(`error in ${brand}, ${model}`)
-	}*/
+	result = infoDevice.info(brand, model);
+	/*	} catch (e) {
+			throw new Error(`error in ${brand}, ${model}`)
+		}*/
 	
 	if (result === null) {
 		return;
@@ -533,6 +533,14 @@ describe('check tests exists for devices info', function () {
 	it('generating a report on not found tests', function () {
 		let reports = [];
 		for (let brand in DATA_DEVICE_INFO) {
+			// remove redirect model
+			for (let model in DATA_DEVICE_INFO[brand]) {
+				let dataInfo = DATA_DEVICE_INFO[brand][model];
+				if (dataInfo.indexOf('->') !== -1) {
+					delete DATA_DEVICE_INFO[brand][model];
+				}
+			}
+			
 			let models = Object.keys(DATA_DEVICE_INFO[brand]);
 			if (models.length) {
 				reports.push({brand, models});
