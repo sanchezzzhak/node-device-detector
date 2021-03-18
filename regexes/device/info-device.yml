@@ -1,3 +1,12 @@
+
+# Ace
+ace:
+  buzz 1 lite: 'DS=4.97;RS=480x960;RT=18:9;SZ=75.9x159x9.9;WT=155;RE=2019;'
+  buzz 2 lite: 'DS=6.1;RS=720x1440;RT=18:9;SZ=76.6x159.6x9.7;WT=170;RE=2020;'
+  urban 1: 'DS=5.47;RS=720x1440;RT=18:9;SZ=75.9x159x9.9;WT=162;RE=2018;'
+  urban 1 pro: 'DS=5.7;RS=720x1440;RT=18:9;SZ=75.9x159x9.9;WT=162;RE=2019;'
+  clever 1: 'DS=6.19;RS=720x1440;RT=18:9;SZ=75.9x159x9.9;WT=190;RE=2019;'
+
 # Asus
 asus:
   zenfone 2: 'DS=5.5;RS=1080x1920;RT=16:9;SZ=77.2x152.5x10.9;WT=170;RE=2015;'
