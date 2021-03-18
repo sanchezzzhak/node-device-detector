@@ -97,3 +97,13 @@
   user_agent: JUC (Linux; U; 4.0.1; zh-cn; HTC_HD7_T9399+; 480*800) UCWEB7.9.3.103/139/800
   alias:
     name: HD7_T9399+
+
+-
+  user_agent: WhatsApp/2.18.65 Android/6.0 Device/NOA-NOA_H4se
+  alias:
+    name: H4se
+
+-
+  user_agent: WhatsApp/2.17.427 Android/5.0.2 Device/samsung-SM-S906L
+  alias:
+    name: SM-S906L

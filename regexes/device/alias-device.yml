@@ -19,3 +19,9 @@
 
 - regex: '^JUC\s?\(Linux;\s?U;\s?(?:[\d\.]+;)\s?(?:[a-z]{2}(?:[_-][a-z]{2});)\s?([^;]+);\s?\d+\*\d+;?\)\s?UCWEB'
   name: '$1'
+
+# WhatsApp
+- regex: 'WhatsApp/.+ Device/(?:[^-]+)-(.+)$'
+  name: '$1'
+- regex: 'WhatsApp/.+ Device/(.+)$'
+  name: '$1'
