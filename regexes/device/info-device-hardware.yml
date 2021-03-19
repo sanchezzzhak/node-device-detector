@@ -1,0 +1,126 @@
+gpu:
+  1:
+    name: 'ARM Mali-400 MP2'
+    type: 'Utgard'
+    clock_rate: 500
+  2:
+    name: 'ARM Mali-T720 MP'
+    type: 'Midgard'
+    clock_rate: 650
+  3:
+    name: 'ARM Mali-450 MP4'
+    type: 'Utgard'
+    clock_rate: 700
+  4:
+    name: 'PowerVR GE8100'
+    type: 'PowerVR Series8XE'
+    clock_rate: 570
+  5:
+    name: 'ARM Mali-T720 MP2'
+    type: 'Midgard 3rd-gen'
+    clock_rate: 650
+  6:
+    name: 'Qualcomm Adreno 304'
+    type: 'Adreno 300 Series'
+    clock_rate: 400
+  7:
+    name: 'PowerVR SGX544'
+    type: 'PowerVR SGX5'
+    clock_rate: 384
+  8:
+    name: 'PowerVR SGX540'
+    type: 'PowerVR SGX5'
+    clock_rate: 200
+
+cpu:
+  1:
+    name: 'Mediatek MT6582M'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  2:
+    name: 'Mediatek MT6592'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 3
+  3:
+    name: 'HiSilicon Kirin 620'
+    seria: 'Cortex-A53'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1200
+    gpu_id: 3
+  4:
+    name: 'MediaTek MT6580A'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  5:
+    name: 'MediaTek MT6580'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  6:
+    name: 'Spreadtrum SC7731'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  7:
+    name: 'Mediatek MT6582'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  8:
+    name: 'MediaTek MT6739'
+    seria: 'Cortex-A53'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 4
+  9:
+    name: 'MediaTek MT6737'
+    seria: 'Cortex-A53'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 5
+  10:
+    name: 'Qualcomm Snapdragon 210 MSM8909'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1100
+    gpu_id: 6
+  11:
+    name: 'Qualcomm Snapdragon 212 APQ8009'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 6
+  12:
+    name: 'MediaTek MT8125'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 7
+  13:
+    name: 'Samsung Exynos 3110'
+    seria: 'Cortex-A8'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 8

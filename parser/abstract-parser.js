@@ -1,6 +1,6 @@
 const YAML = require('js-yaml');
 const helper = require('./helper');
-const fs   = require('fs');
+const fs = require('fs');
 
 const BASE_REGEXES_DIR = __dirname + '/../regexes/';
 
@@ -25,31 +25,28 @@ function fixStringVersion(result) {
 
 class ParserAbstract {
 
-  /**
-   *
-   */
   constructor() {
     this.fixtureFile = null;
     this.collection = null;
     this.versionTruncation = null;
   }
-
+  
   /**
    * load collection
    */
   loadCollection() {
     this.collection = this.loadYMLFile(this.fixtureFile);
   }
-
+  
   /**
    *
    * @param file
    * @return {*}
    */
   loadYMLFile(file) {
-	return YAML.safeLoad(fs.readFileSync(BASE_REGEXES_DIR + file, 'utf8'));
+    return YAML.safeLoad(fs.readFileSync(BASE_REGEXES_DIR + file, 'utf8'));
   }
-
+  
   /**
    * A special method that overwrites placeholders in a string
    * @param {string} item
@@ -59,7 +56,7 @@ class ParserAbstract {
   buildByMatch(item, matches) {
     item = item || '';
     item = item.toString();
-
+    
     if (item.indexOf('$') !== -1) {
       for (let nb = 1; nb <= 3; nb++) {
         if (item.indexOf('$' + nb) === -1) {
@@ -71,7 +68,7 @@ class ParserAbstract {
     }
     return item;
   }
-
+  
   /**
    * helper prepare base regExp + part regExp
    * @param {string} str
@@ -83,7 +80,7 @@ class ParserAbstract {
     str = '(?:^|[^A-Z0-9\-_]|[^A-Z0-9\-]_|sprd-)(?:' + str + ')';
     return new RegExp(str, 'i');
   }
-
+  
   /**
    * @param {string} model
    * @param matches
@@ -93,7 +90,7 @@ class ParserAbstract {
     model = fixStringName(this.buildByMatch(model, matches));
     return (model === 'Build') ? null : model;
   }
-
+  
   /**
    * Set the number of characters in the version where number is the number of characters +1
    * There is a line string version 1.2.3.4.555
@@ -103,7 +100,7 @@ class ParserAbstract {
   setVersionTruncation(num) {
     this.versionTruncation = num;
   }
-
+  
   /**
    * @param version
    * @param matches

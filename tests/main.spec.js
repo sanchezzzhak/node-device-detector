@@ -420,7 +420,7 @@ function testsRegexStructureDevice(file, brand, regexData) {
 
 describe('tests device fixtures', function () {
 	this.timeout(TIMEOUT);
-	let skipFiles = ['alias-device.yml', 'info-device.yml'];
+	let skipFiles = ['alias-device.yml', 'info-device.yml', 'info-device-hardware.yml'];
 	let pathRegexData = fixtureFolder + '../../regexes/device/';
 	let deviceRegexFiles = fs.readdirSync(pathRegexData);
 	deviceRegexFiles.forEach(function (file) {
