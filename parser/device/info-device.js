@@ -75,6 +75,48 @@ const castSizeToObject = (size) => {
   return {width, height, thickness}
 }
 
+/**
+ * calculate PPI
+ * @param width
+ * @param height
+ * @param size
+ * @returns {number}
+ */
+const castResolutionPPI = (width, height, size) => {
+  return Math.round(
+    Math.sqrt(Math.pow(parseInt(width), 2) + Math.pow(parseInt(height), 2)) / parseFloat(size)
+  );
+}
+
+/**
+ * port gcd function
+ * @param u
+ * @param v
+ * @returns {*}
+ */
+const gcd = (u, v) => {
+  if (u === v) return u;
+  if (u === 0) return v;
+  if (v === 0) return u;
+  if (~u & 1) {
+    return (v & 1) ? gcd(u >> 1, v) : gcd(u >> 1, v >> 1) << 1;
+  }
+  if (~v & 1) return gcd(u, v >> 1);
+  if (u > v) return gcd((u - v) >> 1, v);
+  return gcd((v - u) >> 1, u);
+};
+
+/**
+ * calculate ratio
+ * @param width
+ * @param height
+ * @returns {string}
+ */
+const castResolutionRatio = (width, height) => {
+  let d = gcd(width, height);
+  return `${Math.round(height / d)}:${Math.round(width / d)}`;
+}
+
 // help block
 
 /**
@@ -84,7 +126,7 @@ const castSizeToObject = (size) => {
  * console.log({result});
  * // result if found
  * {
- *   display: {size: "5.5", resolution: "1080x1920", ratio: "16:9"},
+ *   display: {size: "5.5", resolution: "1080x1920", ratio: "16:9", ppi: 401},
  *   size: "155.4x75.2x7.7",
  *   weight: "165",
  *   release: "2017"
@@ -95,11 +137,17 @@ const castSizeToObject = (size) => {
 
 const SHORT_KEYS = {
   DS: 'display.size',
+  // DT: 'display.type',  // string: display type IPS, LCD, OLED, SLED etc.
+  // TS: 'display.touch'  // boolean: touch support
   RS: 'display.resolution',
-  RT: 'display.ratio',
   SZ: 'size',
-  WT: 'weight',
-  RE: 'release'
+  WT: 'weight',       // int: weight
+  RE: 'release',      // string:year release
+  // SM: 'sim',       // int: count SIM
+  // RM: 'ram',       // int: RAM in MB
+  // CP: 'cpu',       // string: MediaTek MT6582M,1300
+  // CU: 'cpu_count', // int: of cpu 4
+  // GP: 'gpu',       // string: Mali-400 MP2
 };
 
 /**
@@ -147,16 +195,15 @@ class InfoDevice extends ParserAbstract {
       return null;
     }
     
-    const finStringName = (str) => str.replace(new RegExp('_', 'g'), ' ');
+    const fixStringName = (str) => str.replace(new RegExp('_', 'g'), ' ');
     
-    deviceBrand = finStringName(deviceBrand);
-    deviceModel = finStringName(deviceModel);
+    deviceBrand = fixStringName(deviceBrand);
+    deviceModel = fixStringName(deviceModel);
     
     let brand = deviceBrand.trim().toLowerCase();
     let model = deviceModel.trim().toLowerCase();
     
     if (this.collection[brand] === void 0 || this.collection[brand][model] === void 0) {
-      console.log("find null");
       return null;
     }
     
@@ -167,15 +214,27 @@ class InfoDevice extends ParserAbstract {
     if (dataRedirect !== null) {
       return this.info(deviceBrand, dataRedirect[1]);
     }
-    // get date
+    
+    // get normalise data
     let result = DataPacker.unpack(data, SHORT_KEYS);
+    
+    // calculate ration & ppi
+    let resolution = result.display.resolution ? castResolutionToObject(result.display.resolution) : "";
+    let ratio = '';
+    let ppi = '';
+    if (typeof resolution !== 'string') {
+      let resolutionWidth = parseInt(resolution.width);
+      let resolutionHeight = parseInt(resolution.height);
+      ppi = castResolutionPPI(resolutionWidth, resolutionHeight, result.display.size);
+      ratio = castResolutionRatio(resolutionWidth, resolutionHeight);
+    }
+    
     return {
       display: {
         size: result.display.size,
-        resolution: this.resolutionConvertObject && result.display.resolution
-          ? castResolutionToObject(result.display.resolution)
-          : result.display.resolution,
-        ratio: result.display.ratio
+        resolution: this.resolutionConvertObject && result.display.resolution ? resolution : result.display.resolution,
+        ratio: ratio,
+        ppi: ppi,
       },
       size: this.sizeConvertObject && result.size
         ? castSizeToObject(result.size)
