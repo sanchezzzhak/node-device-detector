@@ -7,10 +7,8 @@ deviceInfo.setSizeConvertObject(true);
 let brand = process.argv[2];
 let model = process.argv[3];
 
-
-console.log({
+console.log(JSON.stringify({
   "brand": brand,
   "model": model,
   "result": deviceInfo.info(brand, model)
-});
-
+}, null, 2));
