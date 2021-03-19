@@ -11,13 +11,15 @@ ace:
   clever 1: 'DS=6.19;RS=720x1440;SZ=75.9x159x9.9;WT=190;RE=2019;'
 
 sfr:
-  starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013;'
+  starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013.05;RM=1024;CP=14;OS=Android 4.1;'
 
 # Asus
 asus:
-  zenfone 2: 'DS=5.5;RS=1080x1920;SZ=77.2x152.5x10.9;WT=170;RE=2015;'
-  zenfone 2 laser: 'DS=5.0;RS=720x1280;SZ=71.5x143.7x10.5;WT=140;RE=2015;'
-  zenfone 2e: 'DS=5.0;RS=720x1280;SZ=71.4x148.1x10.9;WT=155;RE=2015;'
+  ze551ml: '->zenfone 2'
+  zenfone 2: 'DS=5.5;RS=1080x1920;SZ=77.2x152.5x10.9;WT=170;RE=2015.03;RM=2048;CP=16;OS=Android 5.0;SM=2;'
+  ze500kl: '->zenfone 2 laser'
+  zenfone 2 laser: 'DS=5.0;RS=720x1280;SZ=71.5x143.7x10.5;WT=140;RE=2015;RM=2048;CP=17;OS=Android 5.0;SM=2;'
+  zenfone 2e: 'DS=5.0;RS=720x1280;SZ=71.4x148.1x10.9;WT=155;RE=2015.06;OS=Android 5.0;' # Intel Atom Z2560
   zenfone 4: 'DS=5.5;RS=1080x1920;SZ=75.2x155.4x7.7;WT=165;RE=2017;'
   zenfone 5: 'DS=6.2;RS=11080x2246;SZ=75.7x153x7.7;WT=165;RE=2018;'
   zenfone 5 lte: 'DS=5.0;RS=720x1280;SZ=72.8x148.2x10.3;WT=145;RE=2014;'

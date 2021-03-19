@@ -114,7 +114,7 @@ const gcd = (u, v) => {
  */
 const castResolutionRatio = (width, height) => {
   let d = gcd(width, height);
-  return `${Math.round(width / d)}:${Math.round(height / d)}`;
+  return `${Math.round(height / d)}:${Math.round(width / d)}`;
 }
 
 // help block

@@ -31,6 +31,30 @@ gpu:
     name: 'PowerVR SGX540'
     type: 'PowerVR SGX5'
     clock_rate: 200
+  9:
+    name: 'Qualcomm Adreno 225'
+    type: 'Adreno 200 Series'
+    clock_rate: 400
+  10:
+    name: 'Qualcomm Adreno 320'
+    type: 'Adreno 300 Series'
+    clock_rate: 400
+  11:
+    name: 'Qualcomm Adreno 330'
+    type: 'Adreno 300 Series'
+    clock_rate: 450
+  12:
+    name: 'Qualcomm Adreno 305'
+    type: 'Adreno 300 Series'
+    clock_rate: 450
+  13:
+    name: 'PowerVR G6430'
+    type: 'PowerVR Rogue'
+    clock_rate: 457
+  14:
+    name: 'Qualcomm Adreno 306'
+    type: 'Adreno 300 Series'
+    clock_rate: 450
 
 cpu:
   1:
@@ -124,3 +148,38 @@ cpu:
     cores: '1'
     clock_rate: 1000
     gpu_id: 8
+  14:
+    name: 'Qualcomm Snapdragon S4 Plus MSM8960'
+    seria: 'ARMv7'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1500
+    gpu_id: 9
+  15:
+    name: 'Qualcomm Snapdragon S4 Pro MSM8960T'
+    seria: 'ARMv7'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1700
+    gpu_id: 10
+  16:
+    name: 'Intel Atom Z3560'
+    seria: 'ARMv7'
+    type: 'ARM'
+    cores: '4/4'
+    clock_rate: 1830
+    gpu_id: 13
+  17:
+    name: 'Qualcomm Snapdragon 410 MSM8916'
+    seria: 'Cortex-A53'
+    type: 'ARM'
+    cores: '4/4'
+    clock_rate: 1400
+    gpu_id: 14
+  18:
+    name: 'Intel Atom Z2560'
+    seria: 'Atom Cloverview'
+    type: 'x86'
+    cores: '2'  #  2/4
+    clock_rate: 1600
+    gpu_id: '' # todo add
