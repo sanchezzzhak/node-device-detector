@@ -55,6 +55,18 @@ gpu:
     name: 'Qualcomm Adreno 306'
     type: 'Adreno 300 Series'
     clock_rate: 450
+  15:
+    name: 'PowerVR SGX544MP2'
+    type: 'PowerVR SGX5'
+    clock_rate: 400
+  16:
+    name: 'Qualcomm Adreno 508'
+    type: 'Adreno 500 Series'
+    clock_rate: 65016:
+  17:
+    name: 'Qualcomm Adreno 308'
+    type: 'Adreno 300 Series'
+    clock_rate: 450
 
 cpu:
   1:
@@ -166,14 +178,14 @@ cpu:
     name: 'Intel Atom Z3560'
     seria: 'ARMv7'
     type: 'ARM'
-    cores: '4/4'
+    cores: '4'
     clock_rate: 1830
     gpu_id: 13
   17:
     name: 'Qualcomm Snapdragon 410 MSM8916'
     seria: 'Cortex-A53'
     type: 'ARM'
-    cores: '4/4'
+    cores: '4'
     clock_rate: 1400
     gpu_id: 14
   18:
@@ -182,4 +194,18 @@ cpu:
     type: 'x86'
     cores: '2'  #  2/4
     clock_rate: 1600
-    gpu_id: '' # todo add
+    gpu_id: 15
+  19:
+    name: 'Qualcomm Snapdragon 630'
+    seria: 'Cortex-A53'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 16
+  20:
+    name: 'Qualcomm Snapdragon 425 MSM8917'
+    seria: 'Cortex-A53'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1400
+    gpu_id: 17
