@@ -156,6 +156,7 @@ class InfoDevice extends ParserAbstract {
     let model = deviceModel.trim().toLowerCase();
     
     if (this.collection[brand] === void 0 || this.collection[brand][model] === void 0) {
+      console.log("find null");
       return null;
     }
     
