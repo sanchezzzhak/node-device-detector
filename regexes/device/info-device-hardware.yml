@@ -234,3 +234,10 @@ cpu:
     cores: '2'
     clock_rate: 1400
     gpu_id: 1
+  24:
+    name:  'MediaTek MT6572'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 1

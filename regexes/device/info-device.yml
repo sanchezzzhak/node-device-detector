@@ -113,3 +113,12 @@ strawberry:
 # Engel
 engel:
   en1007q plus: 'SZ=220x170x65;RM=1024;CP=23;OS=Android 4.4;'
+
+# Infinix
+infinix:
+  X260: '->buzz'
+  buzz: 'DS=2.6;RS=320x480;SZ=66.4x113.8x12.1;RM=512;CP=24;OS=Android 4.0;RE=2015;'
+  X502: '->alpha marvel'
+  alpha marvel: 'DS=5.0;RS=720x1280;SZ=72.1x147x6.98;WT=147;CP=7;RM=1024;OS=Android 4.2;RE=2013.10;'
+  X570: '->alpha'
+  alpha: 'DS=5.7;RS=720x1280;SZ=82.5x161x9.3;RM=1024;RE=2013.09;CP=7;RM=1024;OS=Android 4.2;SM=2;'
