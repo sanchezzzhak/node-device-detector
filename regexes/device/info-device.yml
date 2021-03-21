@@ -104,3 +104,12 @@ bravis:
   n1 550 cruiser: '->n1-550 cruiser'
   n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018.11;RM=2048;CP=4;OS=Android 8.1;'
   omega: 'DS=5.0;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;RM=1024;CP=1;OS=Android 4.4;'
+
+# StrawBerry
+strawberry:
+  sx: 'DS=5.0;RS=720x1280;SZ=67.2x130.3x9.5;WT=;RM=1024;CP=21;Android 8.1;SM=2;'
+  qx15: 'DS=5.0;RS=720x1280;SZ=67x134x9.80;WT=136;RM=1024;CP=22;OS=Android 4.4;SM=2;'
+
+# Engel
+engel:
+  en1007q plus: 'SZ=220x170x65;RM=1024;CP=23;OS=Android 4.4;'

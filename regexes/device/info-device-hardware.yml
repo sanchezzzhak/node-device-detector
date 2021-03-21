@@ -62,11 +62,15 @@ gpu:
   16:
     name: 'Qualcomm Adreno 508'
     type: 'Adreno 500 Series'
-    clock_rate: 65016:
+    clock_rate: 650
   17:
     name: 'Qualcomm Adreno 308'
     type: 'Adreno 300 Series'
     clock_rate: 450
+  18:
+    name: 'Qualcomm Adreno 405'
+    type: 'Adreno 400 Series'
+    clock_rate: 550
 
 cpu:
   1:
@@ -209,3 +213,24 @@ cpu:
     cores: '4'
     clock_rate: 1400
     gpu_id: 17
+  21:
+    name: 'Spreadtrum SC9832'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  22:
+    name: 'Qualcomm Snapdragon 615 MSM8939'
+    seria: 'Cortex-A7'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 18
+  23:
+    name: 'Amlogic S805'
+    seria: 'Cortex-A5'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1400
+    gpu_id: 1
