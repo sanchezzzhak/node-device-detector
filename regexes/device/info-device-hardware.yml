@@ -67,6 +67,9 @@ gpu:
   22:
     name: 'Qualcomm Adreno 200'
     clock_rate: 128
+  23:
+    name: 'Qualcomm Adreno 302'
+    clock_rate: 400
 
 cpu:
   1:
@@ -260,3 +263,15 @@ cpu:
     cores: '2'
     clock_rate: 1200
     gpu_id: 12
+  33:
+    name: 'Qualcomm Snapdragon 200 MSM8212'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 23
+  34:
+    name: ' HiSilicon Kirin 910T'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1800
+    gpu_id: 3

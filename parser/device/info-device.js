@@ -117,6 +117,9 @@ const castResolutionRatio = (width, height) => {
   return `${Math.round(height / d)}:${Math.round(width / d)}`;
 }
 
+const sortObject = o => Object.keys(o).sort().reduce((r, k) => (r[k] = o[k], r), {})
+
+
 // help block
 
 /**
@@ -296,13 +299,13 @@ class InfoDevice extends ParserAbstract {
       result.display.ppi = String(ppi);
     }
     
-    return Object.assign({}, result,{
+    return sortObject(Object.assign({}, result,{
       size: this.sizeConvertObject && result.size
         ? castSizeToObject(result.size)
         : result.size,
       weight: result.weight,
       release: result.release
-    })
+    }))
   }
 }
 
