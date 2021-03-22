@@ -69,27 +69,27 @@ console.log('result parse', result);
 
 ```text
 { 
-    os: { 
-        name: 'Android',
-        short_name: 'AND',
-        version: '5.0',
-        platform: '',
-        family: 'Android'
-    },
-    client:  { 
-        type: 'browser',
-        name: 'Chrome Mobile',
-        short_name: 'CM',
-        version: '43.0.2357.78',
-        engine: 'Blink',
-        engine_version: '' 
-    },
-    device: { 
-        id: 'ZT',
-        type: 'smartphone',
-        brand: 'ZTE',
-        model: 'Nubia Z7 max'
-    }
+  os: { 
+    name: 'Android',
+    short_name: 'AND',
+    version: '5.0',
+    platform: '',
+    family: 'Android'
+  },
+  client:  { 
+    type: 'browser',
+    name: 'Chrome Mobile',
+    short_name: 'CM',
+    version: '43.0.2357.78',
+    engine: 'Blink',
+    engine_version: '' 
+  },
+  device: { 
+    id: 'ZT',
+    type: 'smartphone',
+    brand: 'ZTE',
+    model: 'Nubia Z7 max'
+  }
 }
 ```
 Result is not detect
@@ -187,13 +187,20 @@ console.log('Result information', result);
 /*
 result
 {
-  display: { size: '5.5', resolution: '1080x1920', ratio: '16:9' },
-  size: '155.4x75.2x7.7',
+  display: {
+    size: '5.5',
+    resolution: '1080x1920',  // width+height
+    ratio: '16:9',
+    ppi: "401"
+  },
+  size: '155.4x75.2x7.7',    // width+height+thickness
   weight: '165',
-  release: '2017'
   hardware: {
     // ...
   }
+  os: "Android 7.1",
+  release: "2017.08",
+  sim": "2",
 }
 is not found result null
 */
