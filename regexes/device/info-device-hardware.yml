@@ -64,6 +64,9 @@ gpu:
   21:
     name: 'ARM Mali-T628 MP4'
     clock_rate: 600
+  22:
+    name: 'Qualcomm Adreno 200'
+    clock_rate: 128
 
 cpu:
   1:
@@ -245,3 +248,15 @@ cpu:
     cores: '8'
     clock_rate: 1700
     gpu_id: 21
+  31:
+    name: 'Qualcomm Snapdragon S1 MSM7227A'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 22
+  32:
+    name: 'Qualcomm Snapdragon S4 Plus MSM8930'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 12
