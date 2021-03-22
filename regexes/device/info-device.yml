@@ -1,4 +1,3 @@
-
 # Ace
 ace:
   buzz 1 lite: 'DS=4.97;RS=480x960;SZ=75.9x159x9.9;WT=155;RE=2019;'
@@ -10,8 +9,14 @@ ace:
   urban 1 pro: 'DS=5.7;RS=720x1440;SZ=75.9x159x9.9;WT=162;RE=2019;'
   clever 1: 'DS=6.19;RS=720x1440;SZ=75.9x159x9.9;WT=190;RE=2019;'
 
+# SFR
 sfr:
   starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013.05;RM=1024;CP=14;OS=Android 4.1;'
+
+# HTC
+htc:
+  2PZC5: '->u11'
+  u11: 'DS=5.5;RS=1440x2560;SZ=75.9x153.9x7.9;WT=169;RE=2017.05;RM=4096;CP=25;OS=Android 7.1;SM=2;'
 
 # Asus
 asus:
@@ -31,7 +36,7 @@ asus:
   x00kd: '->zenfone 4 max'
   zc554kl: '->zenfone 4 max'
   zenfone 4 max: 'DS=5.2;RS=720x1280;SZ=73.3x150.5x8.73;WT=156;RE=2017.10;RM=2048;CP=20;OS=Android 7.0;SM=2;'
-# todo add hardware info
+  # todo add hardware info
   zenfone 5: 'DS=6.2;RS=1080x2246;SZ=75.7x153x7.7;WT=165;RE=2018;'
   zenfone 5 lte: 'DS=5.0;RS=720x1280;SZ=72.8x148.2x10.3;WT=145;RE=2014;'
   zenfone 5 lite: 'DS=6.0;RS=1080x2160;SZ=76.2x160.6x7.8;WT=168;RE=2018;'
