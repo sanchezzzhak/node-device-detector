@@ -82,12 +82,12 @@ function testsFromFixtureDeviceInfo(brand, model) {
   
   let patternSize = /^[0-9\.]+$/i
   let patternRatio = /^[0-9\.]+:[0-9\.]+$/i
-  let formatMessageSize = `value does not match format ^[0-9]+$ result: ${perryJSON(result)}`;
-  let formatMessageRatio = `value does not match format ^[0-9\\.]+:[0-9\\.]+$ result: ${perryJSON(result)}`;
+  let formatMessageSize = `value does not match format ^[0-9.]+$ result: ${perryJSON(result)}`;
+  let formatMessageRatio = `value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(result)}`;
   
   if (result.display !== void 0) {
     if (result.display.size !== void 0) {
-      expect(patternRatio.test(result.display.size), formatMessageRatio).to.equal(true);
+      expect(patternSize.test(result.display.size), formatMessageSize).to.equal(true);
     }
     if (result.display.resolution !== void 0) {
       expect(patternRatio.test(result.display.ratio), formatMessageRatio).to.equal(true);
