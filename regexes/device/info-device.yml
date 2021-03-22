@@ -119,7 +119,7 @@ strawberry:
 
 # Gresso
 gresso:
-  regal: 'DS=5.0;RS=1080x1920;SZ=70.2х143.2х8.8;WT=205;RM=2048;CP=27;OS=Android 4.1;'
+  regal: 'DS=5.0;RS=1080x1920;SZ=70.2x143.2x8.8;WT=205;RM=2048;CP=27;OS=Android 4.1;'
 
 # Engel
 engel:

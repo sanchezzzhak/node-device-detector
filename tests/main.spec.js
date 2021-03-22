@@ -566,7 +566,7 @@ describe('tests devices info', function () {
 		expect(result.display.resolution).to.equal('1080x1920');
 		expect(result.size).to.equal('75.2x155.4x7.7');
 		expect(result.weight).to.equal('165');
-		expect(result.release).to.equal('2017');
+		expect(result.release).to.equal('2017.08');
 	});
 	
 	it('test get redirect result', () => {
