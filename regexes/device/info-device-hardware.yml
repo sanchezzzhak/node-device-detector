@@ -211,3 +211,14 @@ cpu:
     cores: '8'
     clock_rate: 2450
     gpu_id: 19
+  26:
+    name:  'Qualcomm MSM7600'
+    type: 'x86'
+    cores: '1'
+    clock_rate: 528
+  27:
+    name:  'Mediatek MT6589'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 7

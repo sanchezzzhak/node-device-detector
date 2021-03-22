@@ -15,8 +15,10 @@ sfr:
 
 # HTC
 htc:
-  2PZC5: '->u11'
+  2pzc5: '->u11'
   u11: 'DS=5.5;RS=1440x2560;SZ=75.9x153.9x7.9;WT=169;RE=2017.05;RM=4096;CP=25;OS=Android 7.1;SM=2;'
+  xv6975: '->imagio'
+  imagio: 'DS=3.6;RS=480x800;SZ=62x118x14;WT=150;RE=2009.10;RM=288;CP=26;OS=MS Windows Mobile 6.5;'
 
 # Asus
 asus:
@@ -114,6 +116,10 @@ bravis:
 strawberry:
   sx: 'DS=5.0;RS=720x1280;SZ=67.2x130.3x9.5;WT=;RM=1024;CP=21;Android 8.1;SM=2;'
   qx15: 'DS=5.0;RS=720x1280;SZ=67x134x9.80;WT=136;RM=1024;CP=22;OS=Android 4.4;SM=2;'
+
+# Gresso
+gresso:
+  regal: 'DS=5.0;RS=1080x1920;SZ=70.2х143.2х8.8;WT=205;RM=2048;CP=27;OS=Android 4.1;'
 
 # Engel
 engel:
