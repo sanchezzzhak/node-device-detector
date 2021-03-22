@@ -139,3 +139,7 @@ huawei:
   pot-al00a: '->9s'
   pot-tl00a: '->9s'
   9s: 'DS=6.21;RS=1080x2340;SZ=73.4x155.2x8;WT=160;RE=2019.03;OS=Android 9.0;SM=2;RM=4096;CP=28;'
+  u9500: '->Ascend D1'
+  ascend d1: 'DS=4.5;RS=720x1280;SZ=64x129x8.9;WT=132;RE=2012.07;OS=Android 4.0;RM=1024;CP=29;'
+  z100-ul00: '->ascend d3'
+  ascend d3: 'DS=6.1;RS=1080x1920;OS=Android 4.4;RE=2014;RM=2048;CP=30;'

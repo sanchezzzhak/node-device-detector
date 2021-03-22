@@ -61,6 +61,9 @@ gpu:
   20:
     name: 'ARM Mali-G51 MP4'
     clock_rate: 650
+  21:
+    name: 'ARM Mali-T628 MP4'
+    clock_rate: 600
 
 cpu:
   1:
@@ -230,3 +233,15 @@ cpu:
     cores: '8'
     clock_rate: 2200
     gpu_id: 20
+  29:
+    name: 'Texas Instruments OMAP 4460'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 8
+  30:
+    name: 'HiSilicon Kirin 920'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 21
