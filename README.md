@@ -228,18 +228,18 @@ result
       clock_rate: 2200,                 // value in MHz
       gpu_id: 16                        // id gpu model in collection
 	},
-	gpu: {
+    gpu: {
       name: "Qualcomm Adreno 508",
       clock_rate: 650
-	}
+    }
   },
-  os: "Android 7.1",   // number of cores / threads  
+  os: "Android 7.1",   // initial OS version
   release: "2017.08",  // date release or anonce
-  sim": "2",            // count SIM 
+  sim": "2",           // count SIM 
   size: {           
-	width: "75.2",     // physical width in millimeters
-	height: "155.4",   // physical height in millimeters
-	thickness: "7.7"   // physical thickness in millimeters
+    width: "75.2",     // physical width in millimeters
+    height: "155.4",   // physical height in millimeters
+    thickness: "7.7"   // physical thickness in millimeters
   },
   weight: "165"        // in grams
 };
