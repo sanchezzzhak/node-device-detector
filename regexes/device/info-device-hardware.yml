@@ -58,7 +58,9 @@ gpu:
   19:
     name: 'Qualcomm Adreno 540'
     clock_rate: 710
-
+  20:
+    name: 'ARM Mali-G51 MP4'
+    clock_rate: 650
 
 cpu:
   1:
@@ -222,3 +224,9 @@ cpu:
     cores: '4'
     clock_rate: 1200
     gpu_id: 7
+  28:
+    name: 'HiSilicon Kirin 710'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 20

@@ -133,3 +133,9 @@ infinix:
   alpha marvel: 'DS=5.0;RS=720x1280;SZ=72.1x147x6.98;WT=147;CP=7;RM=1024;OS=Android 4.2;RE=2013.10;'
   X570: '->alpha'
   alpha: 'DS=5.7;RS=720x1280;SZ=82.5x161x9.3;RM=1024;RE=2013.09;CP=7;RM=1024;OS=Android 4.2;SM=2;'
+
+# Huawei
+huawei:
+  pot-al00a: '->9s'
+  pot-tl00a: '->9s'
+  9s: 'DS=6.21;RS=1080x2340;SZ=73.4x155.2x8;WT=160;RE=2019.03;OS=Android 9.0;SM=2;RM=4096;CP=28;'
