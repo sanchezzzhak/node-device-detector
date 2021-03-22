@@ -1,0 +1,277 @@
+gpu:
+  1:
+    name: 'ARM Mali-400 MP2'
+    clock_rate: 500
+  2:
+    name: 'ARM Mali-T720 MP'
+    clock_rate: 650
+  3:
+    name: 'ARM Mali-450 MP4'
+    clock_rate: 700
+  4:
+    name: 'PowerVR GE8100'
+    clock_rate: 570
+  5:
+    name: 'ARM Mali-T720 MP2'
+    clock_rate: 650
+  6:
+    name: 'Qualcomm Adreno 304'
+    clock_rate: 400
+  7:
+    name: 'PowerVR SGX544'
+    clock_rate: 384
+  8:
+    name: 'PowerVR SGX540'
+    clock_rate: 200
+  9:
+    name: 'Qualcomm Adreno 225'
+    clock_rate: 400
+  10:
+    name: 'Qualcomm Adreno 320'
+    clock_rate: 400
+  11:
+    name: 'Qualcomm Adreno 330'
+    clock_rate: 450
+  12:
+    name: 'Qualcomm Adreno 305'
+
+    clock_rate: 450
+  13:
+    name: 'PowerVR G6430'
+    clock_rate: 457
+  14:
+    name: 'Qualcomm Adreno 306'
+    clock_rate: 450
+  15:
+    name: 'PowerVR SGX544MP2'
+    clock_rate: 400
+  16:
+    name: 'Qualcomm Adreno 508'
+    clock_rate: 650
+  17:
+    name: 'Qualcomm Adreno 308'
+    clock_rate: 450
+  18:
+    name: 'Qualcomm Adreno 405'
+
+    clock_rate: 550
+  19:
+    name: 'Qualcomm Adreno 540'
+    clock_rate: 710
+  20:
+    name: 'ARM Mali-G51 MP4'
+    clock_rate: 650
+  21:
+    name: 'ARM Mali-T628 MP4'
+    clock_rate: 600
+  22:
+    name: 'Qualcomm Adreno 200'
+    clock_rate: 128
+  23:
+    name: 'Qualcomm Adreno 302'
+    clock_rate: 400
+
+cpu:
+  1:
+    name: 'Mediatek MT6582M'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  2:
+    name: 'Mediatek MT6592'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 3
+  3:
+    name: 'HiSilicon Kirin 620'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1200
+    gpu_id: 3
+  4:
+    name: 'MediaTek MT6580A'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  5:
+    name: 'MediaTek MT6580'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  6:
+    name: 'Spreadtrum SC7731'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  7:
+    name: 'Mediatek MT6582'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  8:
+    name: 'MediaTek MT6739'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 4
+  9:
+    name: 'MediaTek MT6737'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 5
+  10:
+    name: 'Qualcomm Snapdragon 210 MSM8909'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1100
+    gpu_id: 6
+  11:
+    name: 'Qualcomm Snapdragon 212 APQ8009'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 6
+  12:
+    name: 'MediaTek MT8125'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 7
+  13:
+    name: 'Samsung Exynos 3110'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 8
+  14:
+    name: 'Qualcomm Snapdragon S4 Plus MSM8960'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1500
+    gpu_id: 9
+  15:
+    name: 'Qualcomm Snapdragon S4 Pro MSM8960T'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1700
+    gpu_id: 10
+  16:
+    name: 'Intel Atom Z3560'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1830
+    gpu_id: 13
+  17:
+    name: 'Qualcomm Snapdragon 410 MSM8916'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1400
+    gpu_id: 14
+  18:
+    name: 'Intel Atom Z2560'
+    type: 'x86'
+    cores: '2'  #  2/4
+    clock_rate: 1600
+    gpu_id: 15
+  19:
+    name: 'Qualcomm Snapdragon 630'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 16
+  20:
+    name: 'Qualcomm Snapdragon 425 MSM8917'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1400
+    gpu_id: 17
+  21:
+    name: 'Spreadtrum SC9832'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  22:
+    name: 'Qualcomm Snapdragon 615 MSM8939'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 18
+  23:
+    name: 'Amlogic S805'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1400
+    gpu_id: 1
+  24:
+    name:  'MediaTek MT6572'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 1
+  25:
+    name:  'Qualcomm Snapdragon 835 MSM8998'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2450
+    gpu_id: 19
+  26:
+    name:  'Qualcomm MSM7600'
+    type: 'x86'
+    cores: '1'
+    clock_rate: 528
+  27:
+    name:  'Mediatek MT6589'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 7
+  28:
+    name: 'HiSilicon Kirin 710'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 20
+  29:
+    name: 'Texas Instruments OMAP 4460'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 8
+  30:
+    name: 'HiSilicon Kirin 920'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 21
+  31:
+    name: 'Qualcomm Snapdragon S1 MSM7227A'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 22
+  32:
+    name: 'Qualcomm Snapdragon S4 Plus MSM8930'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 12
+  33:
+    name: 'Qualcomm Snapdragon 200 MSM8212'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 23
+  34:
+    name: ' HiSilicon Kirin 910T'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1800
+    gpu_id: 3

@@ -117,6 +117,9 @@ const castResolutionRatio = (width, height) => {
   return `${Math.round(height / d)}:${Math.round(width / d)}`;
 }
 
+const sortObject = o => Object.keys(o).sort().reduce((r, k) => (r[k] = o[k], r), {})
+
+
 // help block
 
 /**
@@ -137,17 +140,17 @@ const castResolutionRatio = (width, height) => {
 
 const SHORT_KEYS = {
   DS: 'display.size',
-  // DT: 'display.type',  // string: display type IPS, LCD, OLED, SLED etc.
-  // TS: 'display.touch'  // boolean: touch support
-  RS: 'display.resolution',
-  SZ: 'size',
-  WT: 'weight',       // int: weight
-  RE: 'release',      // string:year release
-  // SM: 'sim',       // int: count SIM
-  // RM: 'ram',       // int: RAM in MB
-  // CP: 'cpu',       // string: MediaTek MT6582M,1300
-  // CU: 'cpu_count', // int: of cpu 4
-  // GP: 'gpu',       // string: Mali-400 MP2
+  // DT: 'display.type',        // string: display type IPS, LCD, OLED, SLED etc.
+  // TS: 'display.touch',       // boolean: touch support
+  RS: 'display.resolution',     // string|obj: 1080x1920
+  SZ: 'size',                   // string|obj: 155.4x75.2x7.7
+  WT: 'weight',                 // int: weight
+  RE: 'release',                // string:year release
+  RM: 'hardware.ram',           // int: RAM in MB
+  CP: 'hardware.cpu_id',        // int: <id>
+  GP: 'hardware.gpu_id',        // int: <id>
+  OS: 'os',                     // string: Android 4.4
+  SM: 'sim',                    // int: count SIM
 };
 
 /**
@@ -165,7 +168,14 @@ class InfoDevice extends ParserAbstract {
     /** @type {string} fixture path to file */
     this.fixtureFile = 'device/info-device.yml';
     
+    this.collectionHardware = {};
     this.loadCollection();
+  }
+  
+  loadCollection() {
+    super.loadCollection();
+    // load hardware properties
+    this.collectionHardware = this.loadYMLFile('device/info-device-hardware.yml')
   }
   
   /**
@@ -183,6 +193,32 @@ class InfoDevice extends ParserAbstract {
   setResolutionConvertObject(value) {
     this.resolutionConvertObject = !!value;
   }
+  
+  getGpuById(id) {
+    if (this.collectionHardware['gpu'] === void 0) {
+      return null;
+    }
+    id = parseInt(id);
+    let data = this.collectionHardware['gpu'][id];
+    if (data === void 0) {
+      return null;
+    }
+    return data;
+  }
+  
+  getCpuById(id) {
+    if (this.collectionHardware['cpu'] === void 0) {
+      return null;
+    }
+    
+    id = parseInt(id);
+    let data = this.collectionHardware['cpu'][id];
+    if (data === void 0) {
+      return null;
+    }
+    return data;
+  }
+  
   
   /**
    * The main method for obtaining information on brand and device
@@ -218,32 +254,59 @@ class InfoDevice extends ParserAbstract {
     // get normalise data
     let result = DataPacker.unpack(data, SHORT_KEYS);
     
-    // calculate ration & ppi
-    let resolution = result.display.resolution ? castResolutionToObject(result.display.resolution) : "";
-    let ratio = '';
-    let ppi = '';
-    if (typeof resolution !== 'string') {
-      let resolutionWidth = parseInt(resolution.width);
-      let resolutionHeight = parseInt(resolution.height);
-      ppi = castResolutionPPI(resolutionWidth, resolutionHeight, result.display.size);
-      ratio = castResolutionRatio(resolutionWidth, resolutionHeight);
+    // set hardware data
+    if (result.hardware) {
+      let gpu;
+      let cpu;
+      if (result.hardware.gpu === void 0 && result.hardware.gpu_id !== void 0) {
+        gpu = this.getGpuById(result.hardware.gpu_id)
+        if (gpu !== null) {
+          result.hardware.gpu = gpu;
+        }
+      }
+      if (result.hardware.cpu_id !== void 0) {
+        cpu = this.getCpuById(result.hardware.cpu_id)
+        if (cpu !== null) {
+          result.hardware.cpu = cpu;
+          if (result.hardware.gpu === void 0 && result.hardware.cpu.gpu_id) {
+            result.hardware.gpu = this.getGpuById(result.hardware.cpu.gpu_id);
+          }
+        }
+      }
+    }
+    // set display data
+    if (result.display) {
+      // calculate ration & ppi
+      let resolution = result.display && result.display.resolution
+        ? castResolutionToObject(result.display.resolution)
+        : "";
+      
+      let ratio = '';
+      let ppi = '';
+      if (typeof resolution !== 'string') {
+        let resolutionWidth = parseInt(resolution.width);
+        let resolutionHeight = parseInt(resolution.height);
+        ppi = castResolutionPPI(resolutionWidth, resolutionHeight, result.display.size);
+        ratio = castResolutionRatio(resolutionWidth, resolutionHeight);
+      }
+  
+      result.display.size = result.display.size ? result.display.size : null;
+      result.display.resolution = this.resolutionConvertObject
+        ? resolution
+        : result.display.resolution;
+  
+      result.display.ratio = ratio;
+      result.display.ppi = String(ppi);
     }
     
-    return {
-      display: {
-        size: result.display.size,
-        resolution: this.resolutionConvertObject && result.display.resolution ? resolution : result.display.resolution,
-        ratio: ratio,
-        ppi: ppi,
-      },
+    return sortObject(Object.assign({}, result,{
       size: this.sizeConvertObject && result.size
         ? castSizeToObject(result.size)
         : result.size,
       weight: result.weight,
       release: result.release
-    };
+    }))
   }
-  
 }
 
 module.exports = InfoDevice;

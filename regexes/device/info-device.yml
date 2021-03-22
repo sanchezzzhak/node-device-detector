@@ -1,4 +1,3 @@
-
 # Ace
 ace:
   buzz 1 lite: 'DS=4.97;RS=480x960;SZ=75.9x159x9.9;WT=155;RE=2019;'
@@ -10,16 +9,37 @@ ace:
   urban 1 pro: 'DS=5.7;RS=720x1440;SZ=75.9x159x9.9;WT=162;RE=2019;'
   clever 1: 'DS=6.19;RS=720x1440;SZ=75.9x159x9.9;WT=190;RE=2019;'
 
+# SFR
 sfr:
-  starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013;'
+  starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013.05;RM=1024;CP=14;OS=Android 4.1;'
+
+# HTC
+htc:
+  2pzc5: '->u11'
+  u11: 'DS=5.5;RS=1440x2560;SZ=75.9x153.9x7.9;WT=169;RE=2017.05;RM=4096;CP=25;OS=Android 7.1;SM=2;'
+  xv6975: '->imagio'
+  imagio: 'DS=3.6;RS=480x800;SZ=62x118x14;WT=150;RE=2009.10;RM=288;CP=26;OS=MS Windows Mobile 6.5;'
 
 # Asus
 asus:
-  zenfone 2: 'DS=5.5;RS=1080x1920;SZ=77.2x152.5x10.9;WT=170;RE=2015;'
-  zenfone 2 laser: 'DS=5.0;RS=720x1280;SZ=71.5x143.7x10.5;WT=140;RE=2015;'
-  zenfone 2e: 'DS=5.0;RS=720x1280;SZ=71.4x148.1x10.9;WT=155;RE=2015;'
-  zenfone 4: 'DS=5.5;RS=1080x1920;SZ=75.2x155.4x7.7;WT=165;RE=2017;'
-  zenfone 5: 'DS=6.2;RS=11080x2246;SZ=75.7x153x7.7;WT=165;RE=2018;'
+  ze551ml: '->zenfone 2'
+  zenfone 2: 'DS=5.5;RS=1080x1920;SZ=77.2x152.5x10.9;WT=170;RE=2015.03;RM=2048;CP=16;OS=Android 5.0;SM=2;'
+  ze500kl: '->zenfone 2 laser'
+  zenfone 2 laser: 'DS=5.0;RS=720x1280;SZ=71.5x143.7x10.5;WT=140;RE=2015;RM=2048;CP=17;OS=Android 5.0;SM=2;'
+  zenfone 2e: 'DS=5.0;RS=720x1280;SZ=71.4x148.1x10.9;WT=155;RE=2015.06;RM=1024;CP=18;OS=Android 5.0;'
+  ze554kl: '->zenfone 4'
+  z01kda: '->zenfone 4'
+  z01ks: '->zenfone 4'
+  x00ld: '->zenfone 4'
+  zenfone 4: 'DS=5.5;RS=1080x1920;SZ=75.2x155.4x7.7;WT=165;RE=2017.08;RM=4096;CP=19;OS=Android 7.1;SM=2;'
+  zc520kl: '->zenfone 4 max'
+  x00hd: '->zenfone 4 max'
+  x00id: '->zenfone 4 max'
+  x00kd: '->zenfone 4 max'
+  zc554kl: '->zenfone 4 max'
+  zenfone 4 max: 'DS=5.2;RS=720x1280;SZ=73.3x150.5x8.73;WT=156;RE=2017.10;RM=2048;CP=20;OS=Android 7.0;SM=2;'
+  # todo add hardware info
+  zenfone 5: 'DS=6.2;RS=1080x2246;SZ=75.7x153x7.7;WT=165;RE=2018;'
   zenfone 5 lte: 'DS=5.0;RS=720x1280;SZ=72.8x148.2x10.3;WT=145;RE=2014;'
   zenfone 5 lite: 'DS=6.0;RS=1080x2160;SZ=76.2x160.6x7.8;WT=168;RE=2018;'
   padfone s: 'DS=5.0;RS=1080x1920;SZ=72.5x143.4x10;WT=150;RE=2014;'
@@ -47,39 +67,106 @@ samsung:
   galaxy note 10.1": 'DS=10.1;RS=800x1280;SZ=262x180x8.9;WT=600;RE=2012;'
   galaxy note 10.1" wifi: 'DS=10.1;RS=800x1280;SZ=262x180x8.9;WT=597;RE=2012;'
   galaxy note 10.1" lte: 'DS=10.1;RS=800x1280;SZ=262x180x8.9;WT=600;RE=2012;'
-  galaxy tab: 'DS=7.0;RS=600x1024;SZ=190.1x120.5x12;WT=380;RE=2010;'
+  gt-p1000m: '->galaxy tab'  # Galaxy Tab 7.0
+  sch-i800: '->galaxy tab'
+  galaxy tab: 'DS=7.0;RS=600x1024;SZ=190.1x120.5x12;WT=380;RE=2010.11;RM=512;CP=13;OS=Android 2.2;'
+
+# Acer
+acer:
+  iconia a: 'DS=7.9;RS=1024x768;SZ=209x146x11;WT=410;RE=2013.05;RM=1024;CP=12;OS=Android 4.2;'
+  a1-810: '->iconia a'
+  iconia tab a1-810: '->iconia a'
 
 # Doro
 doro:
-  '8030': 'DS=4.5;RS=480x854;SZ=71x138x11;WT=144;RE=2016;'
+  '8030': 'DS=4.5;RS=480x854;SZ=71x138x11;WT=144;RE=2016;RM=1024;CP=10;OS=Android 5.1;'
 
 # Bravis
 bravis:
-  delta: 'DS=5.0;RS=540x960;SZ=69x138x8.9;WT=125;RE=2015;'
-  crystal: 'DS=5.0;RS=720x1280;SZ=71.6x141.9x8.6;WT=160;RE=2018;'
-  discovery: 'DS=5.5;RS=720x1280;SZ=77x153.8x7.9;WT=177;RE=2017;'
-  tau: 'DS=5.0;RS=720x1280;SZ=70.8x142.5x6.5;WT=169;RE=2014;'
-  trace pro: 'DS=5.0;RS=720x1280;SZ=71.3x141.7x9.65;WT=182;RE=2017;'
-  trend: 'DS=5.0;RS=720x1280;SZ=71.5x145x8.3;WT=146;RE=2015;'
+  delta: 'DS=5.0;RS=540x960;SZ=69x138x8.9;WT=125;RE=2015;RM=512;CP=7;SM=2;OS=Android 5.1;'
+  crystal: 'DS=5.0;RS=720x1280;SZ=71.6x141.9x8.6;WT=160;RE=2018;RM=1024;CP=5;SM=2;'
+  discovery: 'DS=5.5;RS=720x1280;SZ=77x153.8x7.9;WT=177;RE=2017;RM=1024;CP=5;OS=Android 5.1;SM=2;'
+  tau: 'DS=5.0;RS=720x1280;SZ=70.8x142.5x6.5;WT=169;RE=2014;RM=1024;CP=7;OS=Android 4.2;SM=2;'
+  trace pro: 'DS=5.0;RS=720x1280;SZ=71.3x141.7x9.65;WT=182;RE=2017;RM=2048;CP=5;OS=Android 6.0;SM=2;'
+  trend: 'DS=5.0;RS=720x1280;SZ=71.5x145x8.3;WT=146;RE=2015;RM=1024;CP=6;OS=Android 5.1;SM=2;'
   b501 easy: '->easy'
   b501: '->easy'
-  easy: 'DS=5.0;RS=480x854;SZ=72.80x144.80x9.80;WT=146;RE=2016;'
+  easy: 'DS=5.0;RS=480x854;SZ=72.80x144.80x9.80;WT=146;RE=2016;RM=512;CP=6;OS=Android 5.1;SM=2;'
   n1-570: '->space'
-  space: 'DS=5.72;RS=720x1440;SZ=73x152x9.2;WT=174;RE=2018;'
+  space: 'DS=5.72;RS=720x1440;SZ=73x152x9.2;WT=174;RE=2018;RM=2048;CP=8;OS=Android 8.1;SM=2;'
   a554: '->a554 grand'
-  a554 grand: 'DS=5.5;RS=720x1280;SZ=78x156x10.5;WT=198;RE=2017;'
+  a554 grand: 'DS=5.5;RS=720x1280;SZ=78x156x10.5;WT=198;RE=2017;RM=2048;CP=4;OS=Android 7.0;SM=2;'
   s500: '->a500 diamond'
-  s500 diamond: 'DS=5.0;RS=720x1280;SZ=68.3x140x8.5;WT=164;RE=2017;'
-  a505 joy plus: 'DS=5.0;RS=720x1280;SZ=70x142x8.2;WT=152;RE=2017;'
-  a552 joy max: 'DS=5.5;RS=720x1280;SZ=77x153x8.3;WT=184;RE=2017;'
+  s500 diamond: 'DS=5.0;RS=720x1280;SZ=68.3x140x8.5;WT=164;RE=2017;RM=2048;CP=4;OS=Android 6.0;'
+  a505 joy plus: 'DS=5.0;RS=720x1280;SZ=70x142x8.2;WT=152;RE=2017;RM=1024;CP=5;OS=Android 6.0;SM=2;'
+  a552 joy max: 'DS=5.5;RS=720x1280;SZ=77x153x8.3;WT=184;RE=2017;RM=1024;CP=5;OS=Android 6.0;SM=2;'
   atlas a551: '->a551 atlas'
-  a551 atlas: 'DS=5.5;RS=720x1280;SZ=78.3x157.5x8.8;WT=206;RE=2016;'
-  a503 joy: 'DS=5.0;RS=720x1280;SZ=71x141x8.8;WT=155;RE=2016;'
-  a504 trace: 'DS=5.0;RS=720x1280;SZ=71.3x141x8.7;WT=178;RE=2016;'
-  a512 harmony pro: 'DS=5.0;RS=720x1280;SZ=72x146x10;WT=143;RE=2018;'
-  a510 jeans 4g: 'DS=5.0;RS=720x1280;SZ=70x142x8.5;WT=155;RE=2018;'
-  a509 jeans: 'DS=5.0;RS=720x1280;SZ=70x142x8.5;WT=155;RE=2018;'
-  a401 neo: 'DS=4.0;RS=480x800;SZ=63x122.5x9.5;WT=103;RE=2016;'
+  a551 atlas: 'DS=5.5;RS=720x1280;SZ=78.3x157.5x8.8;WT=206;RE=2016;RM=1024;CP=5;OS=Android 5.1;SM=2;'
+  a503 joy: 'DS=5.0;RS=720x1280;SZ=71x141x8.8;WT=155;RE=2016;RM=1024;CP=5;Android 6.0;SM=2;'
+  a504 trace: 'DS=5.0;RS=720x1280;SZ=71.3x141x8.7;WT=178;RE=2016;RM=1024;CP=5;Android 6.0;SM=2;'
+  a512 harmony pro: 'DS=5.0;RS=720x1280;SZ=72x146x10;WT=143;RE=2018.12;RM=2048;CP=4;Android 6.0;SM=2;'
+  a510 jeans 4g: 'DS=5.0;RS=720x1280;SZ=70x142x8.5;WT=155;RE=2018;RM=1024;CP=9;OS=Android 8.1;SM=2;'
+  a509 jeans: 'DS=5.0;RS=720x1280;SZ=70x142x8.5;WT=155;RE=2018;RM=1024;CP=5;OS=Android 8.1;SM=2;'
+  a401 neo: 'DS=4.0;RS=480x800;SZ=63x122.5x9.5;WT=103;RE=2016;RM=512;CP=5;OS=Android 5.1;'
   n1 550 cruiser: '->n1-550 cruiser'
-  n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018;'
-  omega: 'DS=5.0;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;'
+  n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018.11;RM=2048;CP=4;OS=Android 8.1;'
+  omega: 'DS=5.0;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;RM=1024;CP=1;OS=Android 4.4;'
+
+# StrawBerry
+strawberry:
+  sx: 'DS=5.0;RS=720x1280;SZ=67.2x130.3x9.5;WT=;RM=1024;CP=21;Android 8.1;SM=2;'
+  qx15: 'DS=5.0;RS=720x1280;SZ=67x134x9.80;WT=136;RM=1024;CP=22;OS=Android 4.4;SM=2;'
+
+# Gresso
+gresso:
+  regal: 'DS=5.0;RS=1080x1920;SZ=70.2x143.2x8.8;WT=205;RM=2048;CP=27;OS=Android 4.1;'
+
+# Engel
+engel:
+  en1007q plus: 'SZ=220x170x65;RM=1024;CP=23;OS=Android 4.4;'
+
+# Infinix
+infinix:
+  X260: '->buzz'
+  buzz: 'DS=2.6;RS=320x480;SZ=66.4x113.8x12.1;RM=512;CP=24;OS=Android 4.0;RE=2015;'
+  X502: '->alpha marvel'
+  alpha marvel: 'DS=5.0;RS=720x1280;SZ=72.1x147x6.98;WT=147;CP=7;RM=1024;OS=Android 4.2;RE=2013.10;'
+  X570: '->alpha'
+  alpha: 'DS=5.7;RS=720x1280;SZ=82.5x161x9.3;RM=1024;RE=2013.09;CP=7;RM=1024;OS=Android 4.2;SM=2;'
+
+# Huawei
+huawei:
+  pot-al00a: '->9s'
+  pot-tl00a: '->9s'
+  9s: 'DS=6.21;RS=1080x2340;SZ=73.4x155.2x8;WT=160;RE=2019.03;OS=Android 9.0;SM=2;RM=4096;CP=28;'
+  u9500: '->Ascend D1'
+  ascend d1: 'DS=4.5;RS=720x1280;SZ=64x129x8.9;WT=132;RE=2012.07;OS=Android 4.0;RM=1024;CP=29;'
+  z100-ul00: '->ascend d3'
+  ascend d3: 'DS=6.1;RS=1080x1920;OS=Android 4.4;RE=2014;RM=2048;CP=30;'
+  y320-u10: '->ascend y320'
+  y320-t00: '->ascend y320'
+  y320-u05: '->ascend y320'
+  ascend y320: 'DS=4.0;SZ=63.2x123.3x11.1;RS=480x800;OS=Android 4.2;RE=2013.12;WT=123;RM=512;CP=24;'
+  y330-u05: '->ascend y330'
+  ascend y330: 'DS=4.0;SZ=63.5x122.1x11.3;RS=480x800;WT=126;SM=2;OS=Android 4.2;RM=512;CP=24;RE=2014;'
+  541-u02: '->ascend y5c'
+  ascend y5c: 'DS=4.5;RS=480x800;SZ=66.7x134.3x10;WT=141;SM=2;RM=1024;OS=Android 4.4;CP=6;'
+  u8818: '->ascend g300'
+  ascend g300: 'DS=4.0;RS=480x800;SZ=63x122.5x10.5;RE=2012.04;WT=140;OS=Android 2.3;Rm=512;CP=31;'
+  g527-u081: '->ascend g527'
+  ascend g527: 'DS=4.5;RS=540x960;SZ=67.5x134.5x9.9;RE=2013.08;OS=Android 4.1;WT=150;RM=1024;CP=32;'
+  g620s-l01: '->ascend g620s'
+  g620s-l03: '->ascend g620s'
+  c8817d: '->ascend g620s'
+  ascend g620s: 'DS=5.0;RS=720x1280;SZ=72.05x142.95x8.5;RM=1024;WT=160;SM=1;OS=Android 4.4;SP=17;RE=2015.07;'
+  g630-u251: '->ascend g630'
+  ascend g630: 'DS=5.0;RS=720x1280;SZ=71.7x143x7.8;RM=1024;WT=165;OS=Android 4.3;RE=2014.07;CP=33;'
+  g7-l01: '->ascend g7'
+  g7-tl00: '->ascend g7'
+  ascend g7: 'DS=5.5;RS=720x1280;SZ=77.3x153.5x7.6;WT=165;OS=Android 4.4;RE=2014.10;RM=2048;CP=17;SM=1;'
+  p7-l10: '->ascend p7'
+  ascend p7: 'DS=5.0;RS=1080x1920;SZ=68.8x139.8x6.5;WT=124;OS=Android 4.4;RE=2014.05;RM=2048;CP=34;SM=1;'
+  g730-c00: '->ascend g730'
+  ascend g730: 'DS=5.5;RS=540x960;SZ=78.3x151.5x9.6;WT=180;OS=Android 4.3;RE=2014.04;RM=1024;CP=7;SM=2;'
+  u9200: '->ascend p1'
+  ascend p1: 'DS=4.3;RS=540x960;RE=2012.05;WT=110;SZ=64.8x127.4x7.7;SM=1;OS=Android 4.0;RM=1024;CP=14;'
