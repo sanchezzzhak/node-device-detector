@@ -195,3 +195,7 @@ huawei:
   aqm-al00: '->enjoy 10s'
   aqm-tl00: '->enjoy 10s'
   enjoy 10s: 'DS=6.3;RS=1080x2400;SZ=73.2x157.4x7.8;WT=163;RM=6144;CP=37;RE=2019.09;OS=Android 9.0;'
+  tag-al00: '->enjoy 5s'
+  tag-cl00: '->enjoy 5s'
+  tag-tl00: '->enjoy 5s'
+  enjoy 5s: 'DS=5.0;RS=720x1280;SZ=71x143x7.6;WT=135;RM=2048;CP=39;OS=Android 5.1;SM=2;'

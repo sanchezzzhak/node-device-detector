@@ -304,4 +304,10 @@ cpu:
     type: 'ARM'
     cores: '8'
     clock_rate: 2300
-    gpu_id:
+    gpu_id: 25
+  39:
+    name: 'MediaTek MT6753T'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 2
