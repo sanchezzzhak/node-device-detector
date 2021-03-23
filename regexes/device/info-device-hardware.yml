@@ -79,6 +79,9 @@ gpu:
   26:
     name: 'ARM Mali-T860 MP2'
     clock_rate: 650
+  27:
+    name: 'ARM Mali-T830 MP2'
+    clock_rate: 600
 
 cpu:
   1:
@@ -320,3 +323,15 @@ cpu:
     cores: '8'
     clock_rate: 1500
     gpu_id: 26
+  41:
+    name: 'Qualcomm Snapdragon 439'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 24
+  42:
+    name: 'HiSilicon Kirin 659'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2360
+    gpu_id: 25

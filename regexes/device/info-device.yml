@@ -209,3 +209,12 @@ huawei:
   sla-al00: '->enjoy 7'
   sla-tl00: '->enjoy 7'
   enjoy 7: 'DS=5.0;RS=720x1280;SZ=71x143.5x8.05;WT=145;RM=3072;CP=20;OS=Android 7.0;RE=2017.07'
+  fig-al00: '->enjoy 7s'
+  fig-tl00: '->enjoy 7s'
+  fig-tl10: '->enjoy 7s'
+  fig-al10: '->enjoy 7s'
+  enjoy 7s: 'DS=5.65;RS=1080x2160;SZ=72.1x150.1x7.5;WT=143;RE=2017.12;OS=Android 8.0;RM=3072;CP=42;'
+
+# Xiaomi
+xiaomi:
+  redmi 7a: 'DS=5.45;RS=720x1440;SZ=70.41x146.3x9.55;WT=165;CP=41;RM=2048;OS=Android 9.0;RE=2019.05;'
