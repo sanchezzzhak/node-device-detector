@@ -356,3 +356,9 @@ cpu:
     cores: '8'
     clock_rate: 2000
     gpu_id: 28
+  46:
+    name: 'Qualcomm Snapdragon S1 MSM7225A'
+    type: 'ARM'
+      cores: '1'
+      clock_rate: 1000
+      gpu_id: 22
