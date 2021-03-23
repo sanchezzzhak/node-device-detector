@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 
 jobs:
-  phpcs:
+  yaml lint:
     name: YAML Lint
     runs-on: ubuntu-latest
     steps:
