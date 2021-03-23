@@ -6,3 +6,4 @@ tests/
 .idea/
 .prettierrc.json
 .prettierignore
+.gitattributes

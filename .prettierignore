@@ -3,3 +3,4 @@ docs
 *.yml
 *.yaml
 *.md
+.gitattributes
