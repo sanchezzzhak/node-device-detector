@@ -218,6 +218,19 @@ huawei:
   trt-al00a: '->enjoy 7 plus'
   trt-tl10a: '->enjoy 7 plus'
   enjoy 7 plus: 'DS=5.5;RS=720x1280;SZ=76.4x153.6x8.4;WT=165;RM=3072;CP=35;RE=2013.04;OS=Android 7.0;'
+  ldn-al10: '->enjoy 8'
+  ldn-al20: '->enjoy 8'
+  ldn-tl00: '->enjoy 8'
+  ldn-tl20: '->enjoy 8'
+  enjoy 8: 'DS=5.99;RS=720x1440;WT=155;SZ=76.7x158.3x7.8;RM=3072;CP=43;RE=2018.03;OS=Android 8.0;'
+  fla-al10: '->enjoy 8 plus'
+  enjoy 8 plus: 'DS=5.93;RS=1080x2160;SZ=75.3x157.2x7.5;WT=170;RM=4096;CP=42;RE=2018.03;OS=Android 8.0;SM=2;'
+  atu-al10: '->enjoy 8e'
+  atu-tl10: '->enjoy 8e'
+  enjoy 8e: 'DS=5.7;RS=720x1440;SZ=73x152.4x7.8;WT=150;RM=3072;CP=43;RE=2018.03;OS=Android 8.0;SM=1;'
+  mrd-al00: 'enjoy 9e'
+  mrd-tl00: 'enjoy 9e'
+  enjoy 9e: 'DS=6.09;RS=720x1560;SZ=73.5x156.28x8;WT=150;RM=3072;CP=44;RE=2019.03;OS=Android 9.0;SM=2;'
 
 # Xiaomi
 xiaomi:

@@ -334,4 +334,16 @@ cpu:
     type: 'ARM'
     cores: '8'
     clock_rate: 2360
+    gpu_id: 27
+  43:
+    name: 'Qualcomm Snapdragon 430 MSM8937'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1400
+    gpu_id: 24
+  44:
+    name: 'MediaTek Helio A22 MT6761'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2000
     gpu_id: 25
