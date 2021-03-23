@@ -70,6 +70,9 @@ gpu:
   23:
     name: 'Qualcomm Adreno 302'
     clock_rate: 400
+  24:
+    name: 'Qualcomm Adreno 505'
+    clock_rate: 450
 
 cpu:
   1:
@@ -275,3 +278,15 @@ cpu:
     cores: '4'
     clock_rate: 1800
     gpu_id: 3
+  35:
+    name: 'Qualcomm Snapdragon 435 MSM8940'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1400
+    gpu_id: 24
+  36:
+    name: 'Mediatek MT6572M'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 1
