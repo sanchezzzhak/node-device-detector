@@ -4,3 +4,6 @@ tests/
 .github/
 .yamllint
 .idea/
+.prettierrc.json
+.prettierignore
+.gitattributes

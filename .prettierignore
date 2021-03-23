@@ -1,0 +1,6 @@
+.github
+docs
+*.yml
+*.yaml
+*.md
+.gitattributes

@@ -9,8 +9,8 @@ exports.versionCompare = function (ver1, ver2) {
   if (ver1 === ver2) {
     return 0;
   }
-  let left = ver1.split(".");
-  let right = ver2.split(".");
+  let left = ver1.split('.');
+  let right = ver2.split('.');
   let len = Math.min(left.length, right.length);
   for (let i = 0; i < len; i++) {
     if (parseInt(left[i]) > parseInt(right[i])) {
@@ -31,14 +31,20 @@ exports.versionCompare = function (ver1, ver2) {
 
 exports.versionTruncate = function (version, maxMinorParts) {
   let versionParts = String(version).split('.');
-  if (maxMinorParts !== null && maxMinorParts !== '' && versionParts.length > maxMinorParts) {
+  if (
+    maxMinorParts !== null &&
+    maxMinorParts !== '' &&
+    versionParts.length > maxMinorParts
+  ) {
     versionParts = versionParts.slice(0, 1 + maxMinorParts);
   }
   return versionParts.join('.');
-}
+};
 
 exports.hasAndroidTableFragment = function (userAgent) {
-  return this.matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null;
+  return (
+    this.matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null
+  );
 };
 
 exports.hasOperaTableFragment = function (userAgent) {
@@ -75,6 +81,8 @@ exports.hasTVFragment = function (userAgent) {
  */
 exports.getPropertyValue = function (options, propName, defaultValue) {
   return options !== undefined && options[propName] !== undefined
-      ? options[propName]
-      : defaultValue !== undefined ? defaultValue : null;
+    ? options[propName]
+    : defaultValue !== undefined
+    ? defaultValue
+    : null;
 };

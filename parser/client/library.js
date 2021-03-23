@@ -18,13 +18,12 @@ class Library extends ClientAbstractParser {
     let result = super.parse(userAgent);
     if (result) {
       result = Object.assign(result, {
-        type: CLIENT_TYPE.LIBRARY
+        type: CLIENT_TYPE.LIBRARY,
       });
       return result;
     }
     return null;
   }
-
 }
 
 module.exports = Library;

@@ -3,10 +3,10 @@ name: YAML Lint
 on:
   pull_request:
   push:
-    branches: [ $default-branch ]
+    branches: [ master ]
 
 jobs:
-  phpcs:
+  yaml_check:
     name: YAML Lint
     runs-on: ubuntu-latest
     steps:

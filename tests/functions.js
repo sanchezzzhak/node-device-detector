@@ -8,28 +8,28 @@ const YAML = require('js-yaml');
  */
 function perryTable(fixture, result) {
   if (!(process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true')) {
-	return;
+    return;
   }
-  
+
   try {
-	console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
-	const table = new Table({
-	  head: ['Result', 'Fixture'],
-	  colWidths: [50, 50]
-	});
-	table.push([
-	  perryJSON(result),
-	  perryJSON(fixture)
-	]);
-	console.log(table.toString());
-	
+    console.log('UserAgent \x1b[33m%s\x1b[0m', fixture.user_agent);
+    const table = new Table({
+      head: ['Result', 'Fixture'],
+      colWidths: [50, 50],
+    });
+    table.push([perryJSON(result), perryJSON(fixture)]);
+    console.log(table.toString());
   } catch (e) {
-	throw new SyntaxError(e.stack);
+    throw new SyntaxError(e.stack);
   }
 }
 
-function revertKeysForObjects(items){
-  return Object.assign({}, ...Object.entries(items).map(([a, b]) => ({[b]: a})), {});
+function revertKeysForObjects(items) {
+  return Object.assign(
+    {},
+    ...Object.entries(items).map(([a, b]) => ({ [b]: a })),
+    {}
+  );
 }
 
 function YAMLLoad(yamlPath) {
@@ -46,18 +46,18 @@ function isObjNotEmpty(value) {
 
 function normalizeVersion(version, count) {
   if (version === '' || version === null) {
-	return ''
+    return '';
   }
   let versionParts = String(version).split(/\./);
   let versionPartsCount = versionParts.length;
   if (versionPartsCount === 1 && versionParts[0] === '') {
-	return null;
+    return null;
   }
   while (versionPartsCount < count) {
-	versionParts.push('0');
+    versionParts.push('0');
   }
   if (versionPartsCount > 0 && versionPartsCount < count) {
-	version = versionParts.slice(0, count).join('.');
+    version = versionParts.slice(0, count).join('.');
   }
   return version;
 }
@@ -68,5 +68,5 @@ module.exports = {
   normalizeVersion,
   perryTable,
   perryJSON,
-  isObjNotEmpty
+  isObjNotEmpty,
 };

@@ -18,13 +18,12 @@ class ClientAbstractParser extends ParserAbstract {
         return {
           type: '',
           name: this.buildByMatch(item.name, match),
-          version: this.buildVersion(item.version, match)
+          version: this.buildVersion(item.version, match),
         };
       }
     }
     return null;
   }
-
 }
 
 module.exports = ClientAbstractParser;

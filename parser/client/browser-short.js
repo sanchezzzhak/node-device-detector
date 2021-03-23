@@ -1,3 +1,4 @@
+// prettier-ignore
 module.exports = {
   "1B": "115 Browser",
   "2B": "2345 Browser",

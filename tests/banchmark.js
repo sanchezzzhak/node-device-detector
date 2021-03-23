@@ -1,7 +1,7 @@
 const Benchmark = require('benchmark');
 const DeviceDetector = require('../index');
 
-const suite = new Benchmark.Suite;
+const suite = new Benchmark.Suite();
 const detector = new DeviceDetector();
 
 const userAgents = [
@@ -10,17 +10,18 @@ const userAgents = [
 ];
 
 userAgents.forEach((useragent, index) => {
-  suite.add(index + '#test_useragent', function() {
-	let result = detector.detect(useragent)
-  })
+  suite.add(index + '#test_useragent', function () {
+    let result = detector.detect(useragent);
+  });
 });
 
 // add listeners
-suite.on('cycle', function(event) {
-  console.log(String(event.target));
-})
-.on('complete', function() {
-  console.log('Fastest is ' + this.filter('fastest').map('name'));
-})
-// run async
-.run({ 'async': true });
+suite
+  .on('cycle', function (event) {
+    console.log(String(event.target));
+  })
+  .on('complete', function () {
+    console.log('Fastest is ' + this.filter('fastest').map('name'));
+  })
+  // run async
+  .run({ async: true });

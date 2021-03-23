@@ -42,7 +42,7 @@ const DEVICE_PARSER = {
   CONSOLE: 'console',
   CAR_BROWSER: 'CarBrowser',
   CAMERA: 'Camera',
-  PORTABLE_MEDIA_PLAYER: 'PortableMediaPlayer'
+  PORTABLE_MEDIA_PLAYER: 'PortableMediaPlayer',
 };
 const CLIENT_PARSER = {
   FEED_READER: 'FeedReader',
@@ -59,7 +59,6 @@ let clientVersionTruncate;
 let skipBotDetection;
 
 class DeviceDetector {
-  
   /**
    * @param {{skipBotDetection: false, osVersionTruncate: null, clientVersionTruncate: null}} options
    */
@@ -69,72 +68,87 @@ class DeviceDetector {
     this.botParserList = {};
     this.deviceParserList = {};
     this.clientParserList = {};
-    
+
     this.init();
-    
-    this.skipBotDetection = helper.getPropertyValue(options, "skipBotDetection", false);
-    this.osVersionTruncate = helper.getPropertyValue(options, "osVersionTruncate", null);
-    this.clientVersionTruncate = helper.getPropertyValue(options, "clientVersionTruncate", null);
+
+    this.skipBotDetection = helper.getPropertyValue(
+      options,
+      'skipBotDetection',
+      false
+    );
+    this.osVersionTruncate = helper.getPropertyValue(
+      options,
+      'osVersionTruncate',
+      null
+    );
+    this.clientVersionTruncate = helper.getPropertyValue(
+      options,
+      'clientVersionTruncate',
+      null
+    );
   }
-  
+
   init() {
-    this.addParseOs(OS_PARSER, new OsParser);
-    this.addParseClient(CLIENT_PARSER.FEED_READER, new FeedReader);
-    this.addParseClient(CLIENT_PARSER.MOBILE_APP, new MobileApp);
-    this.addParseClient(CLIENT_PARSER.MEDIA_PLAYER, new MediaPlayer);
-    this.addParseClient(CLIENT_PARSER.PIM, new PIM);
-    this.addParseClient(CLIENT_PARSER.BROWSER, new Browser);
-    this.addParseClient(CLIENT_PARSER.LIBRARY, new Library);
-    this.addParseDevice(DEVICE_PARSER.HBBTV, new HbbTvParser);
-    this.addParseDevice(DEVICE_PARSER.NOTEBOOK, new NotebookParser);
-    this.addParseDevice(DEVICE_PARSER.CONSOLE, new Console);
-    this.addParseDevice(DEVICE_PARSER.CAR_BROWSER, new CarBrowser);
+    this.addParseOs(OS_PARSER, new OsParser());
+    this.addParseClient(CLIENT_PARSER.FEED_READER, new FeedReader());
+    this.addParseClient(CLIENT_PARSER.MOBILE_APP, new MobileApp());
+    this.addParseClient(CLIENT_PARSER.MEDIA_PLAYER, new MediaPlayer());
+    this.addParseClient(CLIENT_PARSER.PIM, new PIM());
+    this.addParseClient(CLIENT_PARSER.BROWSER, new Browser());
+    this.addParseClient(CLIENT_PARSER.LIBRARY, new Library());
+    this.addParseDevice(DEVICE_PARSER.HBBTV, new HbbTvParser());
+    this.addParseDevice(DEVICE_PARSER.NOTEBOOK, new NotebookParser());
+    this.addParseDevice(DEVICE_PARSER.CONSOLE, new Console());
+    this.addParseDevice(DEVICE_PARSER.CAR_BROWSER, new CarBrowser());
     this.addParseDevice(DEVICE_PARSER.CAMERA, new Camera());
-    this.addParseDevice(DEVICE_PARSER.PORTABLE_MEDIA_PLAYER, new PortableMediaPlayer);
-    this.addParseDevice(DEVICE_PARSER.MOBILE, new MobileParser);
-    this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser);
-    this.addParseBot(BOT_PARSER, new BotParser);
+    this.addParseDevice(
+      DEVICE_PARSER.PORTABLE_MEDIA_PLAYER,
+      new PortableMediaPlayer()
+    );
+    this.addParseDevice(DEVICE_PARSER.MOBILE, new MobileParser());
+    this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser());
+    this.addParseBot(BOT_PARSER, new BotParser());
   }
-  
+
   get skipBotDetection() {
     return skipBotDetection;
   }
-  
+
   set skipBotDetection(value) {
     skipBotDetection = value;
   }
-  
+
   set clientVersionTruncate(value) {
     clientVersionTruncate = value;
-    
+
     for (let name in this.clientParserList) {
-      this.clientParserList[name].setVersionTruncation(value)
+      this.clientParserList[name].setVersionTruncation(value);
     }
   }
-  
+
   get clientVersionTruncate() {
     return clientVersionTruncate;
   }
-  
+
   set osVersionTruncate(value) {
     osVersionTruncate = value;
     for (let name in this.osParserList) {
-      this.osParserList[name].setVersionTruncation(value)
+      this.osParserList[name].setVersionTruncation(value);
     }
   }
-  
+
   get osVersionTruncate() {
     return osVersionTruncate;
   }
-  
+
   setOsVersionTruncate(value) {
     this.osVersionTruncate = value;
   }
-  
+
   setClientVersionTruncate(value) {
     this.clientVersionTruncate = value;
   }
-  
+
   /**
    * @param {string} name
    * @return {DeviceParserAbstract}
@@ -142,7 +156,7 @@ class DeviceDetector {
   getParseDevice(name) {
     return this.deviceParserList[name] ? this.deviceParserList[name] : null;
   }
-  
+
   /**
    * @param {string} name
    * @return {*}
@@ -150,7 +164,7 @@ class DeviceDetector {
   getParseClient(name) {
     return this.clientParserList[name] ? this.clientParserList[name] : null;
   }
-  
+
   /**
    * @param name
    * @return {*}
@@ -158,7 +172,7 @@ class DeviceDetector {
   getParseOs(name) {
     return this.osParserList[name] ? this.osParserList[name] : null;
   }
-  
+
   /**
    * @param {string} name
    * @return {*}
@@ -166,16 +180,16 @@ class DeviceDetector {
   getParseVendor(name) {
     return this.vendorParserList[name] ? this.vendorParserList[name] : null;
   }
-  
+
   /**
    * @param {string} name
    * @param parser
    */
-  
+
   addParseDevice(name, parser) {
     this.deviceParserList[name] = parser;
   }
-  
+
   /**
    * @param {string} name
    * @param {OsAbstractParser} parser
@@ -183,7 +197,7 @@ class DeviceDetector {
   addParseOs(name, parser) {
     this.osParserList[name] = parser;
   }
-  
+
   /**
    * @param {string} name
    * @param {BotAbstractParser} parser
@@ -191,7 +205,7 @@ class DeviceDetector {
   addParseBot(name, parser) {
     this.botParserList[name] = parser;
   }
-  
+
   /**
    * @param {string} name
    * @param {ClientAbstractParser} parser
@@ -199,7 +213,7 @@ class DeviceDetector {
   addParseClient(name, parser) {
     this.clientParserList[name] = parser;
   }
-  
+
   /**
    * @param {string} name
    * @param {VendorFragmentParser} parser
@@ -207,7 +221,7 @@ class DeviceDetector {
   addParseVendor(name, parser) {
     this.vendorParserList[name] = parser;
   }
-  
+
   /**
    * parse OS
    * @param {string} userAgent
@@ -225,7 +239,7 @@ class DeviceDetector {
     }
     return result;
   }
-  
+
   /**
    *
    * @param {string} userAgent
@@ -238,49 +252,68 @@ class DeviceDetector {
     let osName = osData && osData['name'] ? osData['name'] : '';
     let osFamily = osData && osData['family'] ? osData['family'] : '';
     let osVersion = osData && osData['version'] ? osData['version'] : '';
-    
+
     let clientType = clientData && clientData['type'] ? clientData['type'] : '';
-    let clientShortName = clientData && clientData['short_name'] ? clientData['short_name'] : '';
+    let clientShortName =
+      clientData && clientData['short_name'] ? clientData['short_name'] : '';
     let clientName = clientData && clientData['name'] ? clientData['name'] : '';
-    let clientFamily = clientData && clientData['family'] ? clientData['family'] : '';
+    let clientFamily =
+      clientData && clientData['family'] ? clientData['family'] : '';
     let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
-    
-    if (deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[\.0-9]*', userAgent)) {
-      if (helper.matchUserAgent('Chrome/[\.0-9]* (Mobile|eliboM)', userAgent) !== null) {
-        deviceType = DEVICE_TYPE.SMARTPHONE
-      } else if (helper.matchUserAgent('Chrome/[\.0-9]* (?!Mobile)', userAgent) !== null) {
-        deviceType = DEVICE_TYPE.TABLET
-      }
-    }
-    
-    if (deviceType === '' && (helper.hasAndroidTableFragment(userAgent) || helper.hasOperaTableFragment(userAgent))) {
-      deviceType = DEVICE_TYPE.TABLET;
-    }
-    
-    if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
-      deviceType = DEVICE_TYPE.SMARTPHONE;
-    }
-    
-    if (deviceType === '' && osName === 'Android' && osVersion !== '') {
-      if (helper.versionCompare(osVersion, '2.0') === -1) {
+
+    if (
+      deviceType === '' &&
+      osFamily === 'Android' &&
+      helper.matchUserAgent('Chrome/[.0-9]*', userAgent)
+    ) {
+      if (
+        helper.matchUserAgent('Chrome/[.0-9]* (Mobile|eliboM)', userAgent) !==
+        null
+      ) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
-      } else if (helper.versionCompare(osVersion, '3.0') >= 0 && helper.versionCompare(osVersion, '4.0') === -1) {
+      } else if (
+        helper.matchUserAgent('Chrome/[.0-9]* (?!Mobile)', userAgent) !== null
+      ) {
         deviceType = DEVICE_TYPE.TABLET;
       }
     }
-    
+
+    if (
+      deviceType === '' &&
+      (helper.hasAndroidTableFragment(userAgent) ||
+        helper.hasOperaTableFragment(userAgent))
+    ) {
+      deviceType = DEVICE_TYPE.TABLET;
+    }
+
+    if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
+      deviceType = DEVICE_TYPE.SMARTPHONE;
+    }
+
+    if (deviceType === '' && osName === 'Android' && osVersion !== '') {
+      if (helper.versionCompare(osVersion, '2.0') === -1) {
+        deviceType = DEVICE_TYPE.SMARTPHONE;
+      } else if (
+        helper.versionCompare(osVersion, '3.0') >= 0 &&
+        helper.versionCompare(osVersion, '4.0') === -1
+      ) {
+        deviceType = DEVICE_TYPE.TABLET;
+      }
+    }
+
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-    
-    if (deviceType === ''
-      && (osName === 'Windows RT'
-        || (osName === 'Windows'
-          && helper.versionCompare(osVersion, '8') >= 0))
-      && helper.hasTouchFragment(userAgent)) {
+
+    if (
+      deviceType === '' &&
+      (osName === 'Windows RT' ||
+        (osName === 'Windows' && helper.versionCompare(osVersion, '8') >= 0)) &&
+      helper.hasTouchFragment(userAgent)
+    ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
-    
+
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
@@ -288,20 +321,23 @@ class DeviceDetector {
     } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
-    
+
     if (deviceType === '') {
-      if ((DESKTOP_OS_LIST.indexOf(osName) !== -1 || DESKTOP_OS_LIST.indexOf(osFamily) !== -1)) {
+      if (
+        DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
+        DESKTOP_OS_LIST.indexOf(osFamily) !== -1
+      ) {
         if (MOBILE_BROWSER_LIST.indexOf(clientShortName) === -1) {
           deviceType = DEVICE_TYPE.DESKTOP;
         }
       }
     }
-    
+
     return {
-      type: deviceType
-    }
+      type: deviceType,
+    };
   }
-  
+
   /**
    * parse device
    * @param {string} userAgent
@@ -309,10 +345,10 @@ class DeviceDetector {
    */
   parseDevice(userAgent) {
     let result = {
-      id: "",
-      type: "",
-      brand: "",
-      model: ""
+      id: '',
+      type: '',
+      brand: '',
+      model: '',
     };
     for (let name in this.deviceParserList) {
       let parser = this.deviceParserList[name];
@@ -322,7 +358,7 @@ class DeviceDetector {
         break;
       }
     }
-    
+
     if (result && result.brand === '') {
       let resultVendor = this.parseVendor(userAgent);
       if (resultVendor) {
@@ -330,10 +366,10 @@ class DeviceDetector {
         result.id = resultVendor.id;
       }
     }
-    
+
     return result;
   }
-  
+
   /**
    * parse vendor
    * @param {string} userAgent
@@ -343,7 +379,7 @@ class DeviceDetector {
     let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
     return parser.parse(userAgent);
   }
-  
+
   /**
    * parse bot
    * @param {string} userAgent
@@ -351,11 +387,11 @@ class DeviceDetector {
    */
   parseBot(userAgent) {
     let result = {};
-    
+
     if (this.skipBotDetection) {
       return result;
     }
-    
+
     for (let name in this.botParserList) {
       let parser = this.botParserList[name];
       let resultMerge = parser.parse(userAgent);
@@ -366,7 +402,7 @@ class DeviceDetector {
     }
     return result;
   }
-  
+
   /**
    * parse client
    * @param {string} userAgent
@@ -381,11 +417,10 @@ class DeviceDetector {
         result = Object.assign(result, resultMerge);
         break;
       }
-      
     }
     return result;
   }
-  
+
   /**
    * @param {string} userAgent
    * @return {DetectResult}
@@ -394,21 +429,30 @@ class DeviceDetector {
     let osData = this.parseOs(userAgent);
     let clientData = this.parseClient(userAgent);
     let deviceData = this.parseDevice(userAgent);
-    let deviceDataType = this.parseDeviceType(userAgent, osData, clientData, deviceData);
-    
+    let deviceDataType = this.parseDeviceType(
+      userAgent,
+      osData,
+      clientData,
+      deviceData
+    );
+
     deviceData = Object.assign(deviceData, deviceDataType);
-    
+
     /** Assume all devices running iOS / Mac OS are from Apple */
-    if (deviceData.brand === '' && osData.name !== '' && APPLE_OS_LIST.indexOf(osData.name) !== -1) {
+    if (
+      deviceData.brand === '' &&
+      osData.name !== '' &&
+      APPLE_OS_LIST.indexOf(osData.name) !== -1
+    ) {
       deviceData.id = 'AP';
       deviceData.brand = 'Apple';
     }
-    
+
     return {
       os: osData,
       client: clientData,
-      device: deviceData
-    }
+      device: deviceData,
+    };
   }
 }
 

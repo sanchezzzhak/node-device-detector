@@ -70,6 +70,18 @@ gpu:
   23:
     name: 'Qualcomm Adreno 302'
     clock_rate: 400
+  24:
+    name: 'Qualcomm Adreno 505'
+    clock_rate: 450
+  25:
+    name: 'PowerVR GE8320'
+    clock_rate: 650
+  26:
+    name: 'ARM Mali-T860 MP2'
+    clock_rate: 650
+  27:
+    name: 'ARM Mali-T830 MP2'
+    clock_rate: 600
 
 cpu:
   1:
@@ -275,3 +287,51 @@ cpu:
     cores: '4'
     clock_rate: 1800
     gpu_id: 3
+  35:
+    name: 'Qualcomm Snapdragon 435 MSM8940'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1400
+    gpu_id: 24
+  36:
+    name: 'Mediatek MT6572M'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 1
+  37:
+    name: 'HiSilicon Kirin 710F'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 20
+  38:
+    name: 'MediaTek Helio P35 MT6765'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2300
+    gpu_id: 25
+  39:
+    name: 'MediaTek MT6753T'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 2
+  40:
+    name: 'Mediatek MT6750'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 26
+  41:
+    name: 'Qualcomm Snapdragon 439'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 24
+  42:
+    name: 'HiSilicon Kirin 659'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2360
+    gpu_id: 25

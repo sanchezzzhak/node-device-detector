@@ -1,0 +1,17 @@
+name: Prettier
+
+on:
+  pull_request:
+  push:
+    branches: [ master ]
+
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Prettier
+        uses: creyD/prettier_action@v3.1
+        with:
+          prettier_options: --check .

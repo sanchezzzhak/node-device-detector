@@ -17,13 +17,12 @@ class MediaPlayer extends ClientAbstractParser {
     let result = super.parse(userAgent);
     if (result) {
       result = Object.assign(result, {
-        type: CLIENT_TYPE.MEDIA_PLAYER
+        type: CLIENT_TYPE.MEDIA_PLAYER,
       });
       return result;
     }
     return null;
   }
-
 }
 
 module.exports = MediaPlayer;

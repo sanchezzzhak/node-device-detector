@@ -1,0 +1,10 @@
+tests/ export-ignore
+misc/ export-ignore
+*.md text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+.github/ export-ignore
+.gitignore text eol=lf export-ignore
+.gitattributes text eol=lf export-ignore

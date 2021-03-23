@@ -23,13 +23,12 @@ class BotAbstractParser extends ParserAbstract {
           name: item.name ? item.name : '',
           category: item.category ? item.category : '',
           url: item.url ? item.url : '',
-          producer: item.producer ? item.producer : {}
+          producer: item.producer ? item.producer : {},
         };
       }
     }
     return null;
   }
-
 }
 
 module.exports = BotAbstractParser;

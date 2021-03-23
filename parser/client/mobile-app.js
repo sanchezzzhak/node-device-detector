@@ -18,13 +18,12 @@ class MobileApp extends ClientAbstractParser {
     let result = super.parse(userAgent);
     if (result) {
       result = Object.assign(result, {
-        type: CLIENT_TYPE.MOBILE_APP
+        type: CLIENT_TYPE.MOBILE_APP,
       });
       return result;
     }
     return null;
   }
-
 }
 
 module.exports = MobileApp;

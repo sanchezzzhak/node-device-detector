@@ -3,7 +3,6 @@ const ClientAbstractParser = require('./../client-abstract-parser');
 const CLIENT_TYPE = require('./../const/client-type');
 
 class FeedReader extends ClientAbstractParser {
-
   constructor() {
     super();
     this.fixtureFile = 'client/feed_readers.yml';
@@ -19,7 +18,7 @@ class FeedReader extends ClientAbstractParser {
     let result = super.parse(userAgent);
     if (result) {
       result = Object.assign(result, {
-        type: CLIENT_TYPE.FEED_READER
+        type: CLIENT_TYPE.FEED_READER,
       });
 
       return result;
@@ -27,7 +26,6 @@ class FeedReader extends ClientAbstractParser {
 
     return null;
   }
-
 }
 
 module.exports = FeedReader;

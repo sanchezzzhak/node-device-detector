@@ -4,7 +4,6 @@ const BROWSER_SHORT = require('./browser-short');
 const BROWSER_FAMILIES = require('./browser-families');
 const helper = require('./../helper');
 
-
 class Browser extends ClientAbstractParser {
   constructor() {
     super();
@@ -16,7 +15,7 @@ class Browser extends ClientAbstractParser {
   loadCollection() {
     super.loadCollection();
     this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
-  };
+  }
 
   /**
    * @param {string} userAgent
@@ -33,7 +32,10 @@ class Browser extends ClientAbstractParser {
         let version = this.buildVersion(item.version, match);
 
         let short = this.buildShortName(name);
-        let engine = this.buildEngine(item.engine !== undefined ? item.engine : {}, version);
+        let engine = this.buildEngine(
+          item.engine !== undefined ? item.engine : {},
+          version
+        );
         if (engine === '') {
           engine = this.parseEngine(userAgent);
         }
@@ -48,9 +50,8 @@ class Browser extends ClientAbstractParser {
           version: version,
           engine: engine,
           engine_version: engineVersion,
-          family: family
+          family: family,
         };
-
       }
     }
 
@@ -63,7 +64,11 @@ class Browser extends ClientAbstractParser {
    */
   buildFamily(shortName) {
     for (let browserFamily in BROWSER_FAMILIES) {
-      if (browserFamily && BROWSER_FAMILIES[browserFamily] && BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1) {
+      if (
+        browserFamily &&
+        BROWSER_FAMILIES[browserFamily] &&
+        BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1
+      ) {
         return browserFamily;
       }
     }
@@ -83,7 +88,10 @@ class Browser extends ClientAbstractParser {
     if (engine.hasOwnProperty('versions')) {
       let versions = Object.keys(engine.versions).sort(helper.versionCompare);
       for (let i = 0, l = versions.length; i < l; i++) {
-        if (browserVersion !== '' && helper.versionCompare(browserVersion, versions[i]) >= 0) {
+        if (
+          browserVersion !== '' &&
+          helper.versionCompare(browserVersion, versions[i]) >= 0
+        ) {
           result = engine.versions[versions[i]];
         }
       }
@@ -121,7 +129,7 @@ class Browser extends ClientAbstractParser {
     }
 
     if (engine === 'Gecko') {
-      let pattern = '[ ](?:rv[: ]([0-9\.]+)).*gecko/[0-9]{8,10}';
+      let pattern = '[ ](?:rv[: ]([0-9.]+)).*gecko/[0-9]{8,10}';
       let regexp = new RegExp(pattern, 'i');
       let match = regexp.exec(userAgent);
       if (match !== null) {
@@ -129,7 +137,11 @@ class Browser extends ClientAbstractParser {
       }
     }
 
-    let regexp = new RegExp(engine + '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))', 'i');
+    let regexp = new RegExp(
+      engine +
+        '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
+      'i'
+    );
     let match = regexp.exec(userAgent);
     if (match !== null) {
       return match.pop();
@@ -144,13 +156,14 @@ class Browser extends ClientAbstractParser {
   buildShortName(name) {
     const UNKNOWN = 'UNK';
     for (let key in BROWSER_SHORT) {
-      if (String(name).toLowerCase() === String(BROWSER_SHORT[key]).toLowerCase()) {
+      if (
+        String(name).toLowerCase() === String(BROWSER_SHORT[key]).toLowerCase()
+      ) {
         return key;
       }
     }
     return UNKNOWN;
   }
-
 }
 
 module.exports = Browser;
