@@ -18,13 +18,11 @@ class PIM extends ClientAbstractParser {
     let result = super.parse(userAgent);
     if (result) {
       result = Object.assign(result, {
-        type: CLIENT_TYPE.PIM
+        type: CLIENT_TYPE.PIM,
       });
       return result;
     }
   }
-
 }
-
 
 module.exports = PIM;

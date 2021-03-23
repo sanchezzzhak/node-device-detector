@@ -3,7 +3,6 @@ const DeviceAbstractParser = require('./../device-abstract-parser');
 const DEVICE_TYPE = require('./../const/device-type');
 
 class HbbTv extends DeviceAbstractParser {
-
   /**
    *
    */
@@ -27,10 +26,12 @@ class HbbTv extends DeviceAbstractParser {
       id: '',
       type: DEVICE_TYPE.TV,
       brand: '',
-      model: ''
+      model: '',
     };
 
-    let resultParse = DeviceAbstractParser.prototype.parse.call(this, [userAgent]);
+    let resultParse = DeviceAbstractParser.prototype.parse.call(this, [
+      userAgent,
+    ]);
     if (resultParse) {
       result.id = resultParse.id;
       result.brand = resultParse.brand;
@@ -45,11 +46,10 @@ class HbbTv extends DeviceAbstractParser {
    * @return {Boolean}
    */
   isHubTv(userAgent) {
-    let regex = 'HbbTV/([1-9]{1}(?:\.[0-9]{1}){1,2})';
+    let regex = 'HbbTV/([1-9]{1}(?:.[0-9]{1}){1,2})';
     let match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;
   }
-
 }
 
 module.exports = HbbTv;

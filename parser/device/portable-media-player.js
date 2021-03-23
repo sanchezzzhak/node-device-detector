@@ -6,7 +6,6 @@ class PortableMediaPlayer extends DeviceAbstractParser {
     this.fixtureFile = 'device/portable_media_player.yml';
     this.loadCollection();
   }
-
 }
 
 module.exports = PortableMediaPlayer;

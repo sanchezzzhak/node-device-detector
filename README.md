@@ -1,21 +1,22 @@
+
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
+
+## Description
 
 Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) to NodeJs
 
-### !!! library works only under nodejs v10+
+## Code Status
 
+![Chai](https://github.com/sanchezzzhak/node-device-detector/workflows/Tests/badge.svg?branch=master)
+![YAML Lint](https://github.com/sanchezzzhak/node-device-detector/workflows/YAML%20Lint/badge.svg?branch=master)
+![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg?branch=master)
 
 Install
 -
-
-local install production
-
+> !!! library works only under nodejs v10+
+>
 ```
 npm install node-device-detector --save
-```
-local machine install is developer
-```
-npm install node-device-detector --only=dev
 ```
 
 # Before upgrading to up version, pls read;
@@ -38,7 +39,6 @@ npm install node-device-detector --only=dev
     
 * OLD VERSIONS [CHANGELOG.MD](CHANGELOG.MD)
 * [Online demo](https://iehol.sse.codesandbox.io/)
-
 
 Usage
 -

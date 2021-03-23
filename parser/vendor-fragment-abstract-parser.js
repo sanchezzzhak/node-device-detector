@@ -1,7 +1,12 @@
 const ParserAbstract = require('./abstract-parser');
 
-const COLLECTION_BRAND_LIST = Object.assign({},
-    ...Object.entries(require('./device/brand-short')).map(([a, b]) => ({[b]: a})), {});
+const COLLECTION_BRAND_LIST = Object.assign(
+  {},
+  ...Object.entries(require('./device/brand-short')).map(([a, b]) => ({
+    [b]: a,
+  })),
+  {}
+);
 
 class VendorFragmentAbstractParser extends ParserAbstract {
   constructor() {
@@ -28,7 +33,7 @@ class VendorFragmentAbstractParser extends ParserAbstract {
           let brandId = COLLECTION_BRAND_LIST[name];
           return {
             name: name,
-            id: brandId !== undefined ? brandId : ''
+            id: brandId !== undefined ? brandId : '',
           };
         }
       }
@@ -36,6 +41,5 @@ class VendorFragmentAbstractParser extends ParserAbstract {
     return null;
   }
 }
-
 
 module.exports = VendorFragmentAbstractParser;

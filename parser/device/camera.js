@@ -6,7 +6,6 @@ class Camera extends DeviceAbstractParser {
     this.fixtureFile = 'device/cameras.yml';
     this.loadCollection();
   }
-
 }
 
 module.exports = Camera;

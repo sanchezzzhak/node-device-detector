@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R spec tests/*.spec.js",
-    "test": "mocha -- -R spec tests/*.spec.js"
+    "test": "mocha -- -R spec tests/*.spec.js",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "mocha": "^8.2.1",
     "nock": "^9.6.1",
     "nyc": "^15.1.0",
+    "prettier": "2.2.1",
     "sinon": "^4.5.0"
   }
 }

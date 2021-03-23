@@ -1,7 +1,6 @@
 const DeviceAbstractParser = require('./../device-abstract-parser');
 
 class AliasDevice extends DeviceAbstractParser {
-
   constructor() {
     super();
     this.fixtureFile = 'device/alias-device.yml';
@@ -22,8 +21,8 @@ class AliasDevice extends DeviceAbstractParser {
       let match = this.getBaseRegExp(item['regex']).exec(userAgent);
       if (match) {
         result.name = this.buildByMatch(item['name'], match)
-        .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
-        .trim();
+          .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
+          .trim();
 
         break;
       }
@@ -34,7 +33,7 @@ class AliasDevice extends DeviceAbstractParser {
   getBrandReplaceRegexp() {
     if (!this.__brandReplaceRegexp) {
       let escapeeChars = [/\+/gi, /\./gi];
-      let replaceChars = ['\\\+', '\\\.'];
+      let replaceChars = ['\\+', '\\.'];
       let brands = Object.keys(this.getCollectionBrands()).join('|');
       for (let i = 0, l = escapeeChars.length; i < l; i++) {
         brands = brands.replace(escapeeChars[i], replaceChars[i]);
@@ -43,7 +42,6 @@ class AliasDevice extends DeviceAbstractParser {
     }
     return this.__brandReplaceRegexp;
   }
-
 }
 
 module.exports = AliasDevice;

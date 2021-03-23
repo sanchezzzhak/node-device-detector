@@ -1,3 +1,4 @@
+// prettier-ignore
 module.exports = [
   '36', 'OC', 'PU', 'SK', 'MF', 'OI', 'OM', 'DD', 'DB',
   'ST', 'BL', 'IV', 'FM', 'C1', 'C4', 'SA', 'SB', 'FR',

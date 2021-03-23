@@ -1,3 +1,4 @@
+// prettier-ignore
 module.exports = {
   "5E": "2E",
   "3Q": "3Q",

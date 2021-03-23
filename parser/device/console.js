@@ -6,7 +6,6 @@ class Console extends DeviceAbstractParser {
     this.fixtureFile = 'device/consoles.yml';
     this.loadCollection();
   }
-
 }
 
 module.exports = Console;
