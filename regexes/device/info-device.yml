@@ -192,3 +192,6 @@ huawei:
   med-al00: '->enjoy 10e'
   med-tl00: '->enjoy 10e'
   enjoy 10e: 'DS=6.3;RS=720x1600;SZ=74.1x159.1x9.04;WT=185;RM=4096;CP=38;OS=Android 10;SM=2;RE=2020.03;SM=2;'
+  aqm-al00: '->enjoy 10s'
+  aqm-tl00: '->enjoy 10s'
+  enjoy 10s: 'DS=6.3;RS=1080x2400;SZ=73.2x157.4x7.8;WT=163;RM=6144;CP=37;RE=2019.09;OS=Android 9.0;'
