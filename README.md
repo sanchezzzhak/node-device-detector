@@ -178,7 +178,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (172 devices)
+> This parser is experimental and contains few devices. (195 devices)
 
 ```js
 const InfoDevice = require('node-device-detector/parser/device/info-device');
@@ -269,7 +269,7 @@ Others
 
 </details>
 
-##### Support detect brands list (321):
+##### Support detect browsers list (321):
 
 <details>
 <summary>Show details</summary>
