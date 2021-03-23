@@ -5,6 +5,8 @@
 
 Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) to NodeJs
 
+* [Online demo](https://iehol.sse.codesandbox.io/)
+
 ## Code Status
 
 ![Chai](https://github.com/sanchezzzhak/node-device-detector/workflows/Tests/badge.svg?branch=master)
@@ -38,7 +40,6 @@ npm install node-device-detector --save
     
     
 * OLD VERSIONS [CHANGELOG.MD](CHANGELOG.MD)
-* [Online demo](https://iehol.sse.codesandbox.io/)
 
 Usage
 -
