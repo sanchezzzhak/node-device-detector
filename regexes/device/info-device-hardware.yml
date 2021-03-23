@@ -82,6 +82,9 @@ gpu:
   27:
     name: 'ARM Mali-T830 MP2'
     clock_rate: 600
+  28:
+    name: 'ARM Mali-G57 MP5'
+    clock_rate: 850
 
 cpu:
   1:
@@ -347,3 +350,9 @@ cpu:
     cores: '4'
     clock_rate: 2000
     gpu_id: 25
+  45:
+    name: 'MediaTek Dimensity 800 MT6873'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 28

@@ -231,6 +231,8 @@ huawei:
   mrd-al00: 'enjoy 9e'
   mrd-tl00: 'enjoy 9e'
   enjoy 9e: 'DS=6.09;RS=720x1560;SZ=73.5x156.28x8;WT=150;RM=3072;CP=44;RE=2019.03;OS=Android 9.0;SM=2;'
+  dvc-tn20: '->enjoy 20 pro'
+  enjoy 20 pro: 'DS=6.5;RS=1080x2400;SZ=160x75.3x8.4;WT=192;RM=6144;CP=45;RE=2020.06;OS=Android 10;SM=2;'
 
 # Xiaomi
 xiaomi:
