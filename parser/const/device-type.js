@@ -12,4 +12,5 @@ module.exports = {
   PHABLET: 'phablet',
   SMART_SPEAKER: 'smart speaker',
   WEARABLE: 'wearable',
+  PERIPHERAL: 'peripheral',
 };
