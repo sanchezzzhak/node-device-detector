@@ -76,6 +76,9 @@ gpu:
   25:
     name: 'PowerVR GE8320'
     clock_rate: 650
+  26:
+    name: 'ARM Mali-T860 MP2'
+    clock_rate: 650
 
 cpu:
   1:
@@ -311,3 +314,9 @@ cpu:
     cores: '8'
     clock_rate: 1500
     gpu_id: 2
+  40:
+    name: 'Mediatek MT6750'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 26
