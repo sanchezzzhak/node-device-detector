@@ -214,6 +214,10 @@ huawei:
   fig-tl10: '->enjoy 7s'
   fig-al10: '->enjoy 7s'
   enjoy 7s: 'DS=5.65;RS=1080x2160;SZ=72.1x150.1x7.5;WT=143;RE=2017.12;OS=Android 8.0;RM=3072;CP=42;'
+  trt-al00: '->enjoy 7 plus'
+  trt-al00a: '->enjoy 7 plus'
+  trt-tl10a: '->enjoy 7 plus'
+  enjoy 7 plus: 'DS=5.5;RS=720x1280;SZ=76.4x153.6x8.4;WT=165;RM=3072;CP=35;RE=2013.04;OS=Android 7.0;'
 
 # Xiaomi
 xiaomi:
