@@ -33,7 +33,7 @@ fs.readFile(someFile, 'utf8', function (err, data) {
   let browserLists = Browsers.join(', ');
   data = data.replace(
     /(^#{5} Support detect browsers list(?:.*?)<\/details>)/gims,
-    `##### Support detect brands list (${Browsers.length}):\n\n<details>\n<summary>Show details</summary>\n\n* ${browserLists}\n</details>`
+    `##### Support detect browsers list (${Browsers.length}):\n\n<details>\n<summary>Show details</summary>\n\n* ${browserLists}\n</details>`
   );
 
   data = data.replace(
