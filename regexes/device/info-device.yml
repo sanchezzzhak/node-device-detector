@@ -235,6 +235,11 @@ huawei:
   enjoy 20 pro: 'DS=6.5;RS=1080x2400;SZ=160x75.3x8.4;WT=192;RM=6144;CP=45;RE=2020.06;OS=Android 10;SM=2;'
   u8665: '->fusion 2'
   fusion 2: 'DS=3.5;RS=320x480;SZ=61x115.8x11.7;WT=124.2;RE=2012.10;RM=512;CP=46;OS=Android 2.3;SM=1;'
+  med-lx9: '->y6p'
+  med-lx9n: '->y6p'
+  y6p: 'DS=6,3;RS=720x1600;SZ=74.6x159.07x9.04;WT=185;RE=2020.05;RM=3072;CP=47;OS=Android 10;SM=2;'
+
+  # DS=6,3;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;'
 
 # Xiaomi
 xiaomi:
