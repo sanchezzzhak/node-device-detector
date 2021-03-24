@@ -91,6 +91,15 @@ gpu:
   30:
     name: 'ARM Mali-G72 MP12'
     clock_rate: 850
+  31:
+    name: 'Vivante GC4000'
+    clock_rate: 480
+  32:
+    name: 'ARM Mali-G76 MP10'
+    clock_rate: 720
+  33:
+    name: 'ARM Mali-G77 MP8'
+    clock_rate: 800
 
 cpu:
   1:
@@ -392,3 +401,21 @@ cpu:
     cores: '8'
     clock_rate: 2400
     gpu_id: 30
+  51:
+    name: 'HiSilicon K3V2'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 31
+  52:
+    name: 'HiSilicon Kirin 980'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2600
+    gpu_id: 32
+  53:
+    name: 'HiSilicon Kirin 985 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2850
+    gpu_id: 33
