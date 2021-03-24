@@ -85,6 +85,12 @@ gpu:
   28:
     name: 'ARM Mali-G57 MP5'
     clock_rate: 850
+  29:
+    name: 'Qualcomm Adreno 205'
+    clock_rate: 245
+  30:
+    name: 'ARM Mali-G72 MP12'
+    clock_rate: 850
 
 cpu:
   1:
@@ -365,6 +371,24 @@ cpu:
   47:
     name: 'MediaTek Helio P22 MT6762R'
     type: 'ARM'
-    cores: '1'
+    cores: '8'
     clock_rate: 2000
     gpu_id: 25
+  48:
+    name: 'HiSilicon Kirin 655'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2100
+    gpu_id: 27
+  49:
+    name: 'Qualcomm Snapdragon S2 MSM8255'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1500
+    gpu_id: 29
+  50:
+    name: 'HiSilicon Kirin 970'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2400
+    gpu_id: 30
