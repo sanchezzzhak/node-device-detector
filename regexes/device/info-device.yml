@@ -325,7 +325,7 @@ huawei:
   scl-tl00h: '->honor 4a'
   honor 4a: 'DS=5.0;RS=720x1280;SZ=72.1x143.5x8.5;WT=155;RE=2015.08;RM=2048;CP=10;OS=Android 5.1;SM=1;'
   chm-u01: '->honor 4c'
-  honor 4c: 'DS=5.0;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=;CP=3;OS=Android 4.4;SM=2;'
+  honor 4c: 'DS=5.0;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=2048;CP=3;OS=Android 4.4;SM=2;'
   honor 4c pro: 'DS=5.0;RS=720x1280;SZ=71.8x143.1x9.7;WT=160;RE=2015.04;RM=2048;CP=56;OS=Android 5.1;SM=2;'
   aqm-al10: '->honor 4t pro'
   honor 4t pro: 'DS=6.3;RS=1080x2400;SZ=73.2x157.4x7.8;WT=165;RE=2020.04;RM=6144;CP=57;OS=Android 10;SM=2;'
