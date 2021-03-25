@@ -106,6 +106,9 @@ gpu:
   35:
     name: 'ARM Mali-G57 MP6'
     clock_rate: 700
+  36:
+    name: 'ARM Mali-G52 MP6'
+    clock_rate: 700
 
 cpu:
   1:
@@ -437,3 +440,15 @@ cpu:
     cores: '8'
     clock_rate: 2360
     gpu_id: 35
+  56:
+    name: 'Mediatek MT6735P'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1000
+    gpu_id: 2
+  57:
+    name: 'HiSilicon Kirin 810'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2270
+    gpu_id: 36
