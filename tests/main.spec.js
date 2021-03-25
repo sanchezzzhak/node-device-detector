@@ -107,10 +107,9 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
 
   if (result.display !== void 0) {
     if (result.display.size !== void 0) {
-      expect(
-        patternFloat.test(result.display.size),
-        formatMessageFloat
-      ).to.equal(true);
+      expect(result.display.size, formatMessageFloat).to.match(
+        patternFloat
+      );
     }
     if (result.display.resolution !== void 0) {
       expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);

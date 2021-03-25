@@ -100,6 +100,12 @@ gpu:
   33:
     name: 'ARM Mali-G77 MP8'
     clock_rate: 800
+  34:
+    name: 'ARM Mali-G76 MP16'
+    clock_rate: 700
+  35:
+    name: 'ARM Mali-G57 MP6'
+    clock_rate: 700
 
 cpu:
   1:
@@ -419,3 +425,15 @@ cpu:
     cores: '8'
     clock_rate: 2850
     gpu_id: 33
+  54:
+    name: 'HiSilicon Kirin 990 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2860
+    gpu_id: 34
+  55:
+    name: 'HiSilicon Kirin 820 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2360
+    gpu_id: 35

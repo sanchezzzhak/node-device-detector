@@ -298,6 +298,15 @@ huawei:
   bmh-an20: '->honor 30'
   mxw-an00: '->honor 30'
   honor 30: 'DS=6.53;RS=1080x2400;SZ=160.3x74.2x8.1;WT=185;RE=2020.04;RM=6144;CP=53;OS=Android 10;SM=2;'
+  ebg-an00: '->Honor 30 Pro'
+  honor 30 pro: 'DS=6.57;RS=1080x2340;SZ=73.6x160.3x8.4;WT=186;RE=2020.04;RM=8192;CP=54;OS=Android 10;SM=2;'
+  ebg-an10: '->honor 30 pro plus'
+  honor 30 pro plus: 'DS=6.57;RS=1080x2340;SZ=73.6x160.3x8.4;WT=190;RE=2020.04;RM=8192;CP=54;OS=Android 10;SM=2;'
+  cdy-an90: '->honor 30s'
+  cdy-nx9a: '->honor 30s'
+  honor 30s: 'DS=6.5;RS=1080x2400;SZ=75x162.3x8.6;WT=190;RE=2020.04;RM=6144;CP=55;OS=Android 10;SM=2;'
+  lra-lx1: '->honor 30i'
+  honor 30i: 'DS=6.3;RS=1080x2400;SZ=73.2x157.2x7.7;WT=171.5;RE=2020.09;RM=4096;CP=37;OS=Android 10;SM=2;'
 
   # DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;'
 
