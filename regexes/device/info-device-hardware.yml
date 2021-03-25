@@ -85,6 +85,30 @@ gpu:
   28:
     name: 'ARM Mali-G57 MP5'
     clock_rate: 850
+  29:
+    name: 'Qualcomm Adreno 205'
+    clock_rate: 245
+  30:
+    name: 'ARM Mali-G72 MP12'
+    clock_rate: 850
+  31:
+    name: 'Vivante GC4000'
+    clock_rate: 480
+  32:
+    name: 'ARM Mali-G76 MP10'
+    clock_rate: 720
+  33:
+    name: 'ARM Mali-G77 MP8'
+    clock_rate: 800
+  34:
+    name: 'ARM Mali-G76 MP16'
+    clock_rate: 700
+  35:
+    name: 'ARM Mali-G57 MP6'
+    clock_rate: 700
+  36:
+    name: 'ARM Mali-G52 MP6'
+    clock_rate: 700
 
 cpu:
   1:
@@ -356,3 +380,75 @@ cpu:
     cores: '8'
     clock_rate: 2000
     gpu_id: 28
+  46:
+    name: 'Qualcomm Snapdragon S1 MSM7225A'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 22
+  47:
+    name: 'MediaTek Helio P22 MT6762R'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 25
+  48:
+    name: 'HiSilicon Kirin 655'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2100
+    gpu_id: 27
+  49:
+    name: 'Qualcomm Snapdragon S2 MSM8255'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1500
+    gpu_id: 29
+  50:
+    name: 'HiSilicon Kirin 970'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2400
+    gpu_id: 30
+  51:
+    name: 'HiSilicon K3V2'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 31
+  52:
+    name: 'HiSilicon Kirin 980'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2600
+    gpu_id: 32
+  53:
+    name: 'HiSilicon Kirin 985 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2850
+    gpu_id: 33
+  54:
+    name: 'HiSilicon Kirin 990 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2860
+    gpu_id: 34
+  55:
+    name: 'HiSilicon Kirin 820 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2360
+    gpu_id: 35
+  56:
+    name: 'Mediatek MT6735P'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1000
+    gpu_id: 2
+  57:
+    name: 'HiSilicon Kirin 810'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2270
+    gpu_id: 36

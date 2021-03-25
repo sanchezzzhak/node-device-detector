@@ -78,55 +78,81 @@ function testsFromFixtureAliasDevice(fixture) {
   expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
 }
 
-function testsFromFixtureDeviceInfo(brand, model) {
+function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   infoDevice.setSizeConvertObject(true);
   infoDevice.setResolutionConvertObject(true);
   let result = infoDevice.info(brand, model);
 
   if (result === null) {
+    expect(rawSource === void 0).to.equal(true);
     return;
   }
 
-  let patternSize = /^[0-9\.]+$/i;
+  let patternNumber = /^[0-9\.]+$/i;
+  let patternFloat = /^[0-9\.]+$/i;
   let patternRatio = /^[0-9\.]+:[0-9\.]+$/i;
-  let formatMessageSize = `value does not match format ^[0-9.]+$ result: ${perryJSON(
+  let patternYear = /^([0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$/i;
+  let formatMessageFloat = `value does not match format ^[0-9.]+$ result: ${perryJSON(
     result
   )}`;
   let formatMessageRatio = `value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
     result
   )}`;
+  let formatMessageNumber = `value does not match format ^[0-9]+$  result: ${perryJSON(
+    result
+  )}`;
+  let formatMessageYear = `value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
+    result
+  )}`;
 
   if (result.display !== void 0) {
     if (result.display.size !== void 0) {
-      expect(patternSize.test(result.display.size), formatMessageSize).to.equal(
-        true
+      expect(result.display.size, formatMessageFloat).to.match(
+        patternFloat
       );
     }
     if (result.display.resolution !== void 0) {
-      expect(
-        patternRatio.test(result.display.ratio),
-        formatMessageRatio
-      ).to.equal(true);
-      expect(
-        patternSize.test(result.display.resolution.width),
-        formatMessageSize
-      ).to.equal(true);
-      expect(
-        patternSize.test(result.display.resolution.height),
-        formatMessageSize
-      ).to.equal(true);
+      expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
+      expect(result.display.resolution.width, formatMessageFloat).to.match(
+        patternFloat
+      );
+      expect(result.display.resolution.height, formatMessageFloat).to.match(
+        patternFloat
+      );
+      expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
     }
   }
   if (result.size !== void 0) {
-    expect(patternSize.test(result.size.width), formatMessageSize).to.equal(
-      true
-    );
-    expect(patternSize.test(result.size.height), formatMessageSize).to.equal(
-      true
-    );
-    expect(patternSize.test(result.size.thickness), formatMessageSize).to.equal(
-      true
-    );
+    expect(result.size.width, formatMessageFloat).to.match(patternFloat);
+    expect(result.size.height, formatMessageFloat).to.match(patternFloat);
+    expect(result.size.thickness, formatMessageFloat).to.match(patternFloat);
+  }
+
+  if (result.weight !== void 0 && result.weight !== '') {
+    expect(result.weight, formatMessageFloat).to.match(patternFloat);
+  }
+  if (result.release !== void 0 && result.release !== '') {
+    expect(result.release, formatMessageYear).to.match(patternYear);
+  }
+  if (result.sim !== void 0) {
+    expect(result.sim, formatMessageNumber).to.match(patternNumber);
+  }
+
+  if (result.hardware !== void 0) {
+    expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
+    if (result.cpu_id !== void 0) {
+      expect(result.hardware.cpu_id, formatMessageNumber).to.match(
+        patternNumber
+      );
+      expect(result.hardware.cpu).to.property('name');
+      expect(result.hardware.cpu).to.property('type');
+      expect(result.hardware.cpu).to.property('cores');
+      expect(result.hardware.cpu).to.property('clock_rate');
+    }
+    if (result.hardware.gpu !== void 0) {
+      expect(result.hardware.gpu).to.property('name');
+      expect(result.hardware.gpu).to.property('clock_rate');
+    }
   }
 }
 
@@ -622,8 +648,9 @@ describe('tests devices info', function () {
 
   for (let brand in DATA_DEVICE_INFO) {
     for (let model in DATA_DEVICE_INFO[brand]) {
-      it('test info ' + brand + ' - ' + model, () => {
-        testsFromFixtureDeviceInfo.call(this, brand, model);
+      let rawSource = DATA_DEVICE_INFO[brand][model];
+      it(brand + ' - ' + model, () => {
+        testsFromFixtureDeviceInfo.call(this, brand, model, rawSource);
       });
     }
   }
