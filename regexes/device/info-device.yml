@@ -335,3 +335,12 @@ huawei:
 # Xiaomi
 xiaomi:
   redmi 7a: 'DS=5.45;RS=720x1440;SZ=70.41x146.3x9.55;WT=165;CP=41;RM=2048;OS=Android 9.0;RE=2019.05;'
+
+# SOLE
+#sole:
+#  pop s40: 'DS=4.0;SZ=x86.4x142.22x5.08;WT=181;CP=6;RM=512;SM=2;'
+#  pop s50: 'DS=5.0;SM=2;'
+
+# SOLO
+solo:
+  aspire m: 'DS=5.1;RS=540x960;SZ=73.1x144.3x9.8;RM=1024;CP=58;SM=2;RE=2017.04;OS=Android 5.1;'

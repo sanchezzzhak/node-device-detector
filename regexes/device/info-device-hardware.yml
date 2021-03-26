@@ -452,3 +452,9 @@ cpu:
     cores: '8'
     clock_rate: 2270
     gpu_id: 36
+  58:
+    name: 'Mediatek MT6580M'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
