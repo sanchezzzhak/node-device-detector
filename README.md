@@ -1,6 +1,8 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
+_Last update: 26/03/2021_
+
 ## Description
 
 Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) to NodeJs
@@ -15,31 +17,9 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 
 Install
 -
-> !!! library works only under nodejs v10+
->
 ```
 npm install node-device-detector --save
 ```
-
-# Before upgrading to up version, pls read;
-### (ChangeLog)
-* v1.3.4
-    * Update fixtures from the motamo-org/device-detect `version#4.2.2` (update to 2021/03/17)
-    * Added detect devices 532~ 
-    * Added tests runs nodes [10.x, 15.x] for github actions
-    * Added new experimental parser `InfoDevice`
-
-* v1.3.3
-    * Update fixtures from the motamo-org/device-detect `version#4.1.0` (update to 2021/02/22)
-    
-* v1.3.2
-    * Update fixtures from the motamo-org/device-detect `version#4.1.0` (update to 2021/01/08)
-    
-* v1.3.1
-    * Update fixtures from the motamo-org/device-detect `version#4.0.2` (update to 2020/12/07)
-    
-    
-* OLD VERSIONS [CHANGELOG.MD](CHANGELOG.MD)
 
 Usage
 -

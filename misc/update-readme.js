@@ -40,7 +40,17 @@ fs.readFile(someFile, 'utf8', function (err, data) {
     /few devices\. \([^)]+\)$/gims,
     `few devices. (${deviceInfoCount} devices)`
   );
-
+  
+  let dateObj = new Date();
+  let month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
+  let day = ('0' + dateObj.getDate()).slice(-2);
+  let year = dateObj.getFullYear();
+  let shortDate =  day + '/' + month + '/' + year;
+  data = data.replace(
+    /_Last update: ([^_]+)_/gims,
+    `_Last update: ${shortDate}_`
+  );
+  
   fs.writeFile(someFile, data, 'utf8', function (err) {
     if (err) return console.log(err);
   });
