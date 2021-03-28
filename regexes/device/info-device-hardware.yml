@@ -458,3 +458,8 @@ cpu:
     cores: '4'
     clock_rate: 1300
     gpu_id: 1
+  59:
+    name: 'Apple A13 Bionic APL1W85'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 2650

@@ -9,6 +9,11 @@ ace:
   urban 1 pro: 'DS=5.7;RS=720x1440;SZ=75.9x159x9.9;WT=162;RE=2019;'
   clever 1: 'DS=6.19;RS=720x1440;SZ=75.9x159x9.9;WT=190;RE=2019;'
 
+# Apple
+apple:
+  iphone 11: 'DS=6.1;RS=828x1792;SZ=75.7x150.9x8.3;WT=194;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1;'
+  iphone 11 pro: 'DS=5.8;RS=1125x2436;SZ=71.4x144x8.1;WT=188;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
+
 # SFR
 sfr:
   starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013.05;RM=1024;CP=14;OS=Android 4.1;'
