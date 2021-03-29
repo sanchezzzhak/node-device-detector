@@ -18,7 +18,7 @@ gpu:
     name: 'Qualcomm Adreno 304'
     clock_rate: 400
   7:
-    name: 'PowerVR SGX544'
+    name: 'PowerVR SGX544'  #PowerVR SGX544 MP clock_rate 286
     clock_rate: 384
   8:
     name: 'PowerVR SGX540'
@@ -118,6 +118,9 @@ gpu:
   39:
     name: 'Qualcomm Adreno 616'
     clock_rate: 850
+  40:
+    name: 'ARM Mali-G71 MP2'
+    clock_rate: 770
 
 cpu:
   1:
@@ -490,3 +493,9 @@ cpu:
     cores: '8'
     clock_rate: 2200
     gpu_id: 39
+  63:
+    name: 'Mediatek Helio P23 MT6763'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2500
+    gpu_id: 40
