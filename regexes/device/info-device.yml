@@ -12,6 +12,11 @@ ace:
 360:
   1807-a01: '->n7'
   n7: 'DS=5.99;RS=1080x2160;SZ=75.2x155.9x8.35;WT=190;RM=6144;CP=61;RE=2018.05;OS=Android 8.1;SM=2;'
+  1803-a01: '->n7 lite'
+  n7 lite: 'DS=5.99;RS=1080x2160;SZ=75.2x155.9x8.35;WT=180;RE=2018.08;RM=6144;CP=61;OS=Android 8.1;SM=2;'
+  1809-a01: '->n7 pro'
+  n7 pro: 'DS=5.99;RS=1080x2160;SZ=73.9x153.5x7.7;WT=182;RE=2018.08;RM=6144;CP=62;OS=Android 8.1;SM=2;'
+
 
 # Apple
 apple:

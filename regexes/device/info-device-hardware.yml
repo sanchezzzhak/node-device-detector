@@ -115,6 +115,9 @@ gpu:
   38:
     name: 'Qualcomm Adreno 512'
     clock_rate: 850
+  39:
+    name: 'Qualcomm Adreno 616'
+    clock_rate: 850
 
 cpu:
   1:
@@ -481,3 +484,9 @@ cpu:
     cores: '8'
     clock_rate: 2200
     gpu_id: 38
+  62:
+    name: 'Qualcomm Snapdragon 710'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 39
