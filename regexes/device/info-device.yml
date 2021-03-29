@@ -18,6 +18,10 @@ ace:
   n7 pro: 'DS=5.99;RS=1080x2160;SZ=73.9x153.5x7.7;WT=182;RE=2018.08;RM=6144;CP=62;OS=Android 8.1;SM=2;'
   1713-a01: '->n6 lite'
   n6 lite: 'DS=5.5;RS=1080x1920;SZ=75.94x152.35x8.25;WT=160;RE=2017.12;RM=4096;CP=19;OS=Android 7.1;SM=2;'
+  1707-a01: '->n6'
+  n6: 'DS=5.93;RS=1080x2160;SZ=75.9x157.8x8.7;WT=182;RE=2017.12;RM=4096;CP=19;OS=Android 7.1;SM=2;'
+  1801-a01: '->n6 pro'
+  n6 pro: 'DS=6;RS=1080x2160;SZ=75.64x157.2x8.15;WT=182;RE=2017.11;RM=6144;CP=19;OS=Android 7.1;SM=2;'
 
 # Apple
 apple:
