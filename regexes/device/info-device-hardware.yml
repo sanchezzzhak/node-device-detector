@@ -112,6 +112,9 @@ gpu:
   37:
     name: 'ARM Mali-T760 MP2'
     clock_rate: 700
+  38:
+    name: 'Qualcomm Adreno 512'
+    clock_rate: 850
 
 cpu:
   1:
@@ -472,3 +475,9 @@ cpu:
     cores: '8'
     clock_rate: 1700
     gpu_id: 37
+  61:
+    name: 'Qualcomm Snapdragon 660'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 38
