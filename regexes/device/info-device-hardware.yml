@@ -109,6 +109,9 @@ gpu:
   36:
     name: 'ARM Mali-G52 MP6'
     clock_rate: 700
+  37:
+    name: 'ARM Mali-T760 MP2'
+    clock_rate: 700
 
 cpu:
   1:
@@ -463,3 +466,9 @@ cpu:
     type: 'ARM'
     cores: '6'
     clock_rate: 2650
+  60:
+    name: 'Mediatek MT6752M'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 37

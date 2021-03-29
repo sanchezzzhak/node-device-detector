@@ -13,6 +13,13 @@ ace:
 apple:
   iphone 11: 'DS=6.1;RS=828x1792;SZ=75.7x150.9x8.3;WT=194;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1;'
   iphone 11 pro: 'DS=5.8;RS=1125x2436;SZ=71.4x144x8.1;WT=188;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
+  iphone 11 pro max: 'DS=6.5;RS=1242x2688;SZ=77.8x158x8.1;WT=226;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
+
+# Wiko
+wiko:
+  cink peax 2: 'DS=4.0;RS=480x800;SZ=65.5x127x9;WT=139;RM=512;CP=24;RE=2013.08;OS=Android 4.2;SM=1;'
+  highway pure: 'DS=4.8;RS=720x1280;SZ=68.1x141.9x5.1;WT=98;RM=2048;CP=17;RE=2015.03;OS=Android 4.4;SM=1;'
+  highway star: 'DS=5.0;RS=720x1280;SZ=71.4x141x6.6;WT=123;CP=60;RE=2015.04;OS=Android 4.4;SM=2;'
 
 # SFR
 sfr:
