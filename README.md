@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 26/03/2021_
+_Last update: 29/03/2021_
 
 ## Description
 
@@ -158,7 +158,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (293 devices)
+> This parser is experimental and contains few devices. (319 devices)
 
 ```js
 const InfoDevice = require('node-device-detector/parser/device/info-device');
