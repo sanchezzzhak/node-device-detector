@@ -37,6 +37,12 @@ apple:
   iphone 11 pro: 'DS=5.8;RS=1125x2436;SZ=71.4x144x8.1;WT=188;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
   iphone 11 pro max: 'DS=6.5;RS=1242x2688;SZ=77.8x158x8.1;WT=226;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
 
+# LG
+lg:
+  # LMX525EAW, LMX525BAW ->q60
+  lm-x525: '->q60' # k12 prime ??
+  q60: 'DS=6.26;RS=720x1520;SZ=77x161.3x8.7;WT=172;RM=3072;CP=47;RE=2019.05;OS=Android 9;SM=2;'
+
 # Wiko
 wiko:
   cink peax 2: 'DS=4.0;RS=480x800;SZ=65.5x127x9;WT=139;RM=512;CP=24;RE=2013.08;OS=Android 4.2;SM=1;'
