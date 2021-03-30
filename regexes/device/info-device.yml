@@ -9,6 +9,48 @@ ace:
   urban 1 pro: 'DS=5.7;RS=720x1440;SZ=75.9x159x9.9;WT=162;RE=2019;'
   clever 1: 'DS=6.19;RS=720x1440;SZ=75.9x159x9.9;WT=190;RE=2019;'
 
+# Newman
+newman:
+  p308: 'DS=6.53;RS=720x1520;SZ=77x168x9.8;WT=245;RM=6144;CP=63;RE=2020.05;OS=Android 9;SM=2;'
+  k1: 'DS=5.0;RS=720x1280;SZ=73.9x145x9.87;WT=180;RM=1024;CP=27;RE=2013.08;OS=Android 4.2;SM=1;'
+  k2: 'DS=5.5;RS=1080x1980;SZ=78.9x153x9.87;WT=209;RM=1024;CP=27;RE=2013.02;OS=Android 4.2;SM=1;'
+  k2s: 'DS=5.5;RS=1080x1980;SZ=78x153x10;WT=204;RM=2048;CP=2;RE=2013.08;OS=Android 4.1;SM=1;'
+  k18: 'DS=5.0;RS=1080x1980;SZ=69.6x144x6;WT=132;RM=2048;CP=2;RE=2013.09;OS=Android 4.1;SM=1;'
+
+360:
+  1807-a01: '->n7'
+  n7: 'DS=5.99;RS=1080x2160;SZ=75.2x155.9x8.35;WT=190;RM=6144;CP=61;RE=2018.05;OS=Android 8.1;SM=2;'
+  1803-a01: '->n7 lite'
+  n7 lite: 'DS=5.99;RS=1080x2160;SZ=75.2x155.9x8.35;WT=180;RE=2018.08;RM=6144;CP=61;OS=Android 8.1;SM=2;'
+  1809-a01: '->n7 pro'
+  n7 pro: 'DS=5.99;RS=1080x2160;SZ=73.9x153.5x7.7;WT=182;RE=2018.08;RM=6144;CP=62;OS=Android 8.1;SM=2;'
+  1713-a01: '->n6 lite'
+  n6 lite: 'DS=5.5;RS=1080x1920;SZ=75.94x152.35x8.25;WT=160;RE=2017.12;RM=4096;CP=19;OS=Android 7.1;SM=2;'
+  1707-a01: '->n6'
+  n6: 'DS=5.93;RS=1080x2160;SZ=75.9x157.8x8.7;WT=182;RE=2017.12;RM=4096;CP=19;OS=Android 7.1;SM=2;'
+  1801-a01: '->n6 pro'
+  n6 pro: 'DS=6;RS=1080x2160;SZ=75.64x157.2x8.15;WT=182;RE=2017.11;RM=6144;CP=19;OS=Android 7.1;SM=2;'
+
+# Apple
+apple:
+  iphone 11: 'DS=6.1;RS=828x1792;SZ=75.7x150.9x8.3;WT=194;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1;'
+  iphone 11 pro: 'DS=5.8;RS=1125x2436;SZ=71.4x144x8.1;WT=188;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
+  iphone 11 pro max: 'DS=6.5;RS=1242x2688;SZ=77.8x158x8.1;WT=226;RE=2019.09;RM=4096;CP=59;OS=iOS 13;SM=1'
+
+# LG
+lg:
+  # LMX525EAW, LMX525BAW ->q60
+  lm-x525: '->q60' # k12 prime ??
+  q60: 'DS=6.26;RS=720x1520;SZ=77x161.3x8.7;WT=172;RM=3072;CP=47;RE=2019.05;OS=Android 9;SM=2;'
+
+# Wiko
+wiko:
+  cink peax 2: 'DS=4.0;RS=480x800;SZ=65.5x127x9;WT=139;RM=512;CP=24;RE=2013.08;OS=Android 4.2;SM=1;'
+  highway pure: 'DS=4.8;RS=720x1280;SZ=68.1x141.9x5.1;WT=98;RM=2048;CP=17;RE=2015.03;OS=Android 4.4;SM=1;'
+  highway star: 'DS=5.0;RS=720x1280;SZ=71.4x141x6.6;WT=123;CP=60;RM=2048;RE=2015.04;OS=Android 4.4;SM=2;'
+  highway signs: 'DS=4.7;RS=720x1280;SZ=68x138x7.6;WT=124;CP=2;RM=1024;RE=2014.10;OS=Android 4.2;SM=2;'
+  iggy: 'DS=4.5;RS=478x854;SZ=68x135.5x11.1;WT=154;RE=2015.01;RM=512;CP=24;OS=Android 4.2;SM=1;'
+
 # SFR
 sfr:
   starxtrem: 'DS=5.7;RS=720x1280;SZ=82x158x9.12;WT=150;RE=2013.05;RM=1024;CP=14;OS=Android 4.1;'
@@ -80,6 +122,11 @@ acer:
 # Doro
 doro:
   '8030': 'DS=4.5;RS=480x854;SZ=71x138x11;WT=144;RE=2016;RM=1024;CP=10;OS=Android 5.1;'
+
+# Motorola
+motorola:
+  moto g(7) supra: '->moto g7 supra'
+  moto g7 supra: 'DS=5.7;RS=720x1512;SZ=71.5x148.71x8.09;WT=168;RM=2048;CP=64;RE=2019.02;OS=Android 9;SM=1;'
 
 # Bravis
 bravis:
@@ -335,3 +382,12 @@ huawei:
 # Xiaomi
 xiaomi:
   redmi 7a: 'DS=5.45;RS=720x1440;SZ=70.41x146.3x9.55;WT=165;CP=41;RM=2048;OS=Android 9.0;RE=2019.05;'
+
+# SOLE
+#sole:
+#  pop s40: 'DS=4.0;SZ=x86.4x142.22x5.08;WT=181;CP=6;RM=512;SM=2;'
+#  pop s50: 'DS=5.0;SM=2;'
+
+# SOLO
+solo:
+  aspire m: 'DS=5.1;RS=540x960;SZ=73.1x144.3x9.8;RM=1024;CP=58;SM=2;RE=2017.04;OS=Android 5.1;'

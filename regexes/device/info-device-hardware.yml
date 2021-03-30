@@ -18,7 +18,7 @@ gpu:
     name: 'Qualcomm Adreno 304'
     clock_rate: 400
   7:
-    name: 'PowerVR SGX544'
+    name: 'PowerVR SGX544'  #PowerVR SGX544 MP clock_rate 286
     clock_rate: 384
   8:
     name: 'PowerVR SGX540'
@@ -109,6 +109,21 @@ gpu:
   36:
     name: 'ARM Mali-G52 MP6'
     clock_rate: 700
+  37:
+    name: 'ARM Mali-T760 MP2'
+    clock_rate: 700
+  38:
+    name: 'Qualcomm Adreno 512'
+    clock_rate: 850
+  39:
+    name: 'Qualcomm Adreno 616'
+    clock_rate: 850
+  40:
+    name: 'ARM Mali-G71 MP2'
+    clock_rate: 770
+  41:
+    name: 'Qualcomm Adreno 506'
+    clock_rate: 650
 
 cpu:
   1:
@@ -452,3 +467,44 @@ cpu:
     cores: '8'
     clock_rate: 2270
     gpu_id: 36
+  58:
+    name: 'Mediatek MT6580M'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  59:
+    name: 'Apple A13 Bionic APL1W85'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 2650
+  60:
+    name: 'Mediatek MT6752M'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 37
+  61:
+    name: 'Qualcomm Snapdragon 660'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 38
+  62:
+    name: 'Qualcomm Snapdragon 710'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 39
+  63:
+    name: 'Mediatek Helio P23 MT6763'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2500
+    gpu_id: 40
+  64:
+    name: 'Qualcomm Snapdragon 632'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1800
+    gpu_id: 41
