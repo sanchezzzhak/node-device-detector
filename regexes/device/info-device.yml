@@ -123,6 +123,11 @@ acer:
 doro:
   '8030': 'DS=4.5;RS=480x854;SZ=71x138x11;WT=144;RE=2016;RM=1024;CP=10;OS=Android 5.1;'
 
+# Motorola
+motorola:
+  moto g(7) supra: '->moto g7 supra'
+  moto g7 supra: 'DS=5.7;RS=720x1512;SZ=71.5x148.71x8.09;WT=168;RM=2048;CP=64;RE=2019.02;OS=Android 9;SM=1;'
+
 # Bravis
 bravis:
   delta: 'DS=5.0;RS=540x960;SZ=69x138x8.9;WT=125;RE=2015;RM=512;CP=7;SM=2;OS=Android 5.1;'

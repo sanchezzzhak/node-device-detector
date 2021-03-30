@@ -121,6 +121,9 @@ gpu:
   40:
     name: 'ARM Mali-G71 MP2'
     clock_rate: 770
+  41:
+    name: 'Qualcomm Adreno 506'
+    clock_rate: 650
 
 cpu:
   1:
@@ -499,3 +502,9 @@ cpu:
     cores: '8'
     clock_rate: 2500
     gpu_id: 40
+  64:
+    name: 'Qualcomm Snapdragon 632'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1800
+    gpu_id: 41
