@@ -389,6 +389,18 @@ huawei:
   cun-al00: '->honor 5 play'
   cun-tl00: '->honor 5 play'
   honor 5 play: 'DS=5.0;RS=720x1280;SZ=72x143x8.9;WT=138;RE=;RM=2048;CP=56;OS=Android 5.1;SM=1;'
+  cam-al00: '->honor 5a'
+  cam-tl00h: '->honor 5a'
+  cam-tl00: '->honor 5a'
+  honor 5a: 'DS=5.5;RS=720x1280;SZ=77.1x154.3x8.5;WT=168;RE=2016.07;RM=2048;CP=65;OS=Android 6.0;SM=2;'
+  nem-al10: '->honor 5c'
+  nem-tl00: '->honor 5c'
+  nem-ul10: '->honor 5c'
+  nem-l51: '->honor 5c'
+  honor 5c: 'DS=5.2;RS=1080x1920;SZ=73.8x147.1x8.3;WT=165;RE=2016.05;RM=2048;CP=66;OS=Android 6.0;SM=2;'
+  nem-l22: '->honor 5c'
+  nem-tl00h: '->honor 5c'
+  honor 5c dual sim: '->honor 5c'
 
   # DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;'
 

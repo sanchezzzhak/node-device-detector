@@ -53,7 +53,6 @@ gpu:
     clock_rate: 450
   18:
     name: 'Qualcomm Adreno 405'
-
     clock_rate: 550
   19:
     name: 'Qualcomm Adreno 540'
@@ -508,3 +507,15 @@ cpu:
     cores: '8'
     clock_rate: 1800
     gpu_id: 41
+  65:
+    name: 'Qualcomm Snapdragon 617 MSM8952'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 18
+  66:
+    name: 'HiSilicon Kirin 650'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 27
