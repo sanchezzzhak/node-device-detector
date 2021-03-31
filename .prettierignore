@@ -4,3 +4,5 @@ docs
 *.yaml
 *.md
 .gitattributes
+coverage
+.nyc_output
