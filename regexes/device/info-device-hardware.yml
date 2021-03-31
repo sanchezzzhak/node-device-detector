@@ -123,6 +123,9 @@ gpu:
   41:
     name: 'Qualcomm Adreno 506'
     clock_rate: 650
+  42:
+    name : 'ARM Mali-G76 MP12'
+    clock_rate: 700
 
 cpu:
   1:
@@ -519,3 +522,9 @@ cpu:
     cores: '8'
     clock_rate: 2000
     gpu_id: 27
+  67:
+    name: 'Samsung Exynos 9825'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2730
+    gpu_id: 42

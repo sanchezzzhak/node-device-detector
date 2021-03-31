@@ -112,6 +112,8 @@ samsung:
   gt-p1000m: '->galaxy tab'  # Galaxy Tab 7.0
   sch-i800: '->galaxy tab'
   galaxy tab: 'DS=7.0;RS=600x1024;SZ=190.1x120.5x12;WT=380;RE=2010.11;RM=512;CP=13;OS=Android 2.2;'
+  sm-m625f: '->galaxy m62'
+  galaxy m62: 'DS=6.74;RS=1080x2400;SZ=76.3x163.9x9.5;WT=218;RE=2021.02;RM=8192;CP=67;OS=Android 11;SM=2;'
 
 # Acer
 acer:
