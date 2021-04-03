@@ -528,3 +528,15 @@ cpu:
     cores: '8'
     clock_rate: 2730
     gpu_id: 42
+  68:
+    name: 'Qualcomm Snapdragon 616 MSM8939v2'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1700
+    gpu_id: 18
+  69:
+    name: 'Mediatek MT6737T'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 5
