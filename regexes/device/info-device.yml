@@ -462,3 +462,9 @@ xiaomi:
 # SOLO
 solo:
   aspire m: 'DS=5.1;RS=540x960;SZ=73.1x144.3x9.8;RM=1024;CP=58;SM=2;RE=2017.04;OS=Android 5.1;'
+
+# SuperTab
+supertab:
+  a10: 'DS=10.1;RS=1024x600;RE=2015.11;RM=1024;CP=71;OS=Android 4.4;'
+  k7: 'DS=7.0;RS=1024x600;WT=322;RE=2015.12;RM=1024;CP=72;OS=Android 4.4;'
+  s7g: 'DS=7.0;RS=1024x600;SZ=188x108x10;RE=2014.11;RM=512;CP=73;OS=Android 4.4;'
