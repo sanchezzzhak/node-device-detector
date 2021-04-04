@@ -570,3 +570,9 @@ cpu:
     cores: '2'
     clock_rate: 1500
     gpu_id: 44
+  74:
+    name: 'Mediatek MT8735'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 2

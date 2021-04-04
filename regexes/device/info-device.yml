@@ -468,3 +468,7 @@ supertab:
   a10: 'DS=10.1;RS=1024x600;RE=2015.11;RM=1024;CP=71;OS=Android 4.4;'
   k7: 'DS=7.0;RS=1024x600;WT=322;RE=2015.12;RM=1024;CP=72;OS=Android 4.4;'
   s7g: 'DS=7.0;RS=1024x600;SZ=188x108x10;RE=2014.11;RM=512;CP=73;OS=Android 4.4;'
+
+# Suzuki
+suzuki:
+  sumopad 8010: 'DS=8.0;RS=1280x800;SZ=208.9x120.9x7.9;WT=360;CP=74;RM=1024;OS=Android 4.4;'
