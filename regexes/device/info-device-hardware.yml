@@ -126,6 +126,9 @@ gpu:
   42:
     name : 'ARM Mali-G76 MP12'
     clock_rate: 700
+  43:
+    name : 'ARM Mali-T628 MP6'
+    clock_rate: 600
 
 cpu:
   1:
@@ -540,3 +543,9 @@ cpu:
     cores: '4'
     clock_rate: 1500
     gpu_id: 5
+  70:
+    name: 'HiSilicon Kirin 925'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1800
+    gpu_id: 43

@@ -423,9 +423,32 @@ huawei:
   honor 6: 'DS=5.0;RS=1080x1920;SZ=69.7x139.6x7.5;WT=130;RE=2014.08;RM=3072;CP=30;OS=Android 4.4;SM=2;'
   mya-tl10: '->honor 6 play'
   honor 6 play: 'DS=5.0;RS=720x1280;SZ=72x143.8x8.85;WT=150;RE=2014.08;RM=2048;CP=69;OS=Android 6.0;SM=1;'
+  pe-ul00: '->honor 6 plus'
+  pe-tl10: '->honor 6 plus'
+  pe-tl20: '->honor 6 plus'
+  pe-tl00m: '->honor 6 plus'
+  honor 6 plus: 'DS=5.5;RS=1080x1920;SZ=75.7x150.5x7.5;WT=165;RE=2014.12;RM=3072;CP=70;OS=Android 4.4;SM=2;'
+  dli-al10: '->honor 6a'
+  dli-l22: '->honor 6a'
+  dli-l42: '->honor 6a'
+  dli-tl20: '->honor 6a'
+  honor 6a: 'DS=5.0;RS=720x1280;SZ=70.95x143.7x8.2;WT=143;RE=2017.05;RM=2048;CP=43;OS=Android 7.0;SM=2;'
+  dig-l21hn: '->honor 6c'
+  honor 6c: 'DS=5.0;RS=720x1280;SZ=69.9x143x7.3;WT=138;RE=2017.04;RM=3072;CP=35;OS=Android 6.0;SM=2'
+  jmm-l22: '->honor 6c pro'
+  honor 6c pro: 'DS=5.2;RS=720x1280;SZ=73.2x147.9x7.7;WT=145;RE=2017.09;RM=3072;CP=40;OS=Android 7.0;SM=2;'
+  bln-l21: '->honor 6x'
+  bln-l22: '->honor 6x'
+  bln-l24: '->honor 6x'
+  bln-al10: '->honor 6x'
+  bln-al20: '->honor 6x'
+  bln-al30: '->honor 6x'
+  bln-al40: '->honor 6x'
+  bln-tl00: '->honor 6x'
+  bln-tl10: '->honor 6x'
+  honor 6x: 'DS=5.5;RS=1080x1920;SZ=76.2x150.9x8.2;WT=162;RE=2016.10;RM=3072;CP=48;OS=Android 6.0;SM=2;'
 
-
-  # DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;'
+  # DS=;RS=;SZ=;WT=;RE=2017.04;RM=;CP=;OS=;SM=;;
 
 # Xiaomi
 xiaomi:
