@@ -161,6 +161,17 @@ bravis:
   n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018.11;RM=2048;CP=4;OS=Android 8.1;'
   omega: 'DS=5.0;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;RM=1024;CP=1;OS=Android 4.4;'
 
+# Nabi
+nabi:
+  dmtab-in08a: '->dream tab hd 8.0"'
+  dmtab-nv08b: '->dream tab hd 8.0"'
+  dream tab hd 8.0": 'DS=8.0;RS=1920x1200;SZ=236.4x162.4x21.2;WT=780;RE=2013.12;RM=2048;CP=75;OS=Android 4.3;'
+  dmtab-nv20a: '->big tab hd 20.0"'
+  big tab hd 20.0": 'DS=20.0;RS=1600x900;SZ=508.4x355.6x25.2;WT=3742;RE=2014.12;RM=2048;CP=75;OS=Android 4.4;'
+  dmtab-nv24a: '->big tab hd 24.0"'
+  big tab hd 24.0": 'DS=24.0;RS=1920x1080;SZ=624.84x411.48.6x22.86;WT=4762;RE=2014.12;RM=2048;CP=75;OS=Android 4.4;'
+
+
 # StrawBerry
 strawberry:
   sx: 'DS=5.0;RS=720x1280;SZ=67.2x130.3x9.5;WT=;RM=1024;CP=21;Android 8.1;SM=2;'

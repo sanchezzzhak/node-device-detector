@@ -576,3 +576,8 @@ cpu:
     cores: '4'
     clock_rate: 1300
     gpu_id: 2
+  75:
+    name: 'Nvidia Tegra 4'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1800
