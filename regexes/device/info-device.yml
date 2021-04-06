@@ -114,6 +114,8 @@ samsung:
   galaxy tab: 'DS=7.0;RS=600x1024;SZ=190.1x120.5x12;WT=380;RE=2010.11;RM=512;CP=13;OS=Android 2.2;'
   sm-m625f: '->galaxy m62'
   galaxy m62: 'DS=6.74;RS=1080x2400;SZ=76.3x163.9x9.5;WT=218;RE=2021.02;RM=8192;CP=67;OS=Android 11;SM=2;'
+  sm-a022g: '->galaxy a02'
+  galaxy a02: 'DS=6.5;RS=720x1600;SZ=75.9x164x9.1;WT=206;RE=2021.01;RM=2048;CP=76;OS=Android 10;SM=2;'
 
 # Acer
 acer:
@@ -172,7 +174,6 @@ nabi:
   big tab hd 24.0": 'DS=24.0;RS=1920x1080;SZ=624.84x411.48x22.86;WT=4762;RE=2014.12;RM=2048;CP=75;OS=Android 4.4;'
   nbty07smkg: '->barbie tab 7.0"'
   barbie tab 7.0": 'DS=7.0;RS=1024x600;SZ=205.74x127x22.86;WT=349;RE=2016.10 ;RM=1024;CP=75;OS=Android 6.0;'
-
 
 # StrawBerry
 strawberry:
@@ -485,3 +486,7 @@ supertab:
 # Suzuki
 suzuki:
   sumopad 8010: 'DS=8.0;RS=1280x800;SZ=208.9x120.9x7.9;WT=360;CP=74;RM=1024;OS=Android 4.4;'
+
+# Vertex
+vertex:
+  impress grip: 'DS=5.0;RS=720x1280;SZ=84x157x15.7;WT=226;RE=2017.06;RM=2048;CP=17;OS=Android 7.0;SM=2;'

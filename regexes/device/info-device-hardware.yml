@@ -581,3 +581,9 @@ cpu:
     type: 'ARM'
     cores: '4'
     clock_rate: 1800
+  76:
+    name: 'MediaTek MT6739W'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 4
