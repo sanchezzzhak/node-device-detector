@@ -173,7 +173,7 @@ nabi:
   dmtab-nv24a: '->big tab hd 24.0"'
   big tab hd 24.0": 'DS=24.0;RS=1920x1080;SZ=624.84x411.48x22.86;WT=4762;RE=2014.12;RM=2048;CP=75;OS=Android 4.4;'
   nbty07smkg: '->barbie tab 7.0"'
-  barbie tab 7.0": 'DS=7.0;RS=1024x600;SZ=205.74x127x22.86;WT=349;RE=2016.10 ;RM=1024;CP=75;OS=Android 6.0;'
+  barbie tab 7.0": 'DS=7.0;RS=1024x600;SZ=205.74x127x22.86;WT=349;RE=2016.10;RM=1024;CP=75;OS=Android 6.0;'
 
 # StrawBerry
 strawberry:
