@@ -457,3 +457,9 @@ cpu:
     type: 'ARM'
     cores: '1'
     clock_rate: 624
+  78:
+    name: 'Qualcomm Snapdragon 400 MSM8226'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 12

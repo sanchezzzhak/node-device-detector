@@ -34,7 +34,6 @@ gpu:
     clock_rate: 450
   12:
     name: 'Qualcomm Adreno 305'
-
     clock_rate: 450
   13:
     name: 'PowerVR G6430'

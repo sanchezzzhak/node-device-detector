@@ -29,8 +29,5 @@ describe('test class DataPacker', function () {
     expect(SOURCE_DATA).to.deep.equal(data);
     
   })
-  
-  
-
 
 });
