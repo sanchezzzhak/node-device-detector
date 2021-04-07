@@ -452,3 +452,8 @@ cpu:
     cores: '4'
     clock_rate: 1500
     gpu_id: 4
+  77:
+    name: 'Marvell PXA310'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 624

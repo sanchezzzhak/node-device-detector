@@ -107,25 +107,25 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
 
   if (result.display !== void 0) {
     if (result.display.size !== void 0) {
-      expect(result.display.size, formatMessageFloat).to.match(
+      expect(result.display.size, 'display.size(DS) ' + formatMessageFloat).to.match(
         patternFloat
       );
     }
     if (result.display.resolution !== void 0) {
       expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
-      expect(result.display.resolution.width, formatMessageFloat).to.match(
+      expect(result.display.resolution.width, 'display.width(RS) ' + formatMessageFloat).to.match(
         patternFloat
       );
-      expect(result.display.resolution.height, formatMessageFloat).to.match(
+      expect(result.display.resolution.height, 'display.height(RS) ' + formatMessageFloat).to.match(
         patternFloat
       );
       expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
     }
   }
   if (result.size !== void 0) {
-    expect(result.size.width, formatMessageFloat).to.match(patternFloat);
-    expect(result.size.height, formatMessageFloat).to.match(patternFloat);
-    expect(result.size.thickness, formatMessageFloat).to.match(patternFloat);
+    expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(patternFloat);
+    expect(result.size.height, 'size.height(SZ) ' + formatMessageFloat).to.match(patternFloat);
+    expect(result.size.thickness, 'size.thickness(SZ) ' +  formatMessageFloat).to.match(patternFloat);
   }
 
   if (result.weight !== void 0 && result.weight !== '') {
