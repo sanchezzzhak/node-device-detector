@@ -168,15 +168,19 @@ class InfoDevice extends ParserAbstract {
     /** @type {string} fixture path to file */
     this.fixtureFile = 'device/info-device.yml';
 
-    this.collectionHardware = {};
+    this.collectionHardwareCPU = {};
+    this.collectionHardwareGPU = {};
     this.loadCollection();
   }
 
   loadCollection() {
     super.loadCollection();
     // load hardware properties
-    this.collectionHardware = this.loadYMLFile(
-      'device/info-device-hardware.yml'
+    this.collectionHardwareCPU = this.loadYMLFile(
+      'device/info-device-hardware-cpu.yml'
+    );
+    this.collectionHardwareGPU = this.loadYMLFile(
+      'device/info-device-hardware-gpu.yml'
     );
   }
 
@@ -197,11 +201,11 @@ class InfoDevice extends ParserAbstract {
   }
 
   getGpuById(id) {
-    if (this.collectionHardware['gpu'] === void 0) {
+    if (this.collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
     id = parseInt(id);
-    let data = this.collectionHardware['gpu'][id];
+    let data = this.collectionHardwareGPU['gpu'][id];
     if (data === void 0) {
       return null;
     }
@@ -209,12 +213,12 @@ class InfoDevice extends ParserAbstract {
   }
 
   getCpuById(id) {
-    if (this.collectionHardware['cpu'] === void 0) {
+    if (this.collectionHardwareCPU['cpu'] === void 0) {
       return null;
     }
 
     id = parseInt(id);
-    let data = this.collectionHardware['cpu'][id];
+    let data = this.collectionHardwareCPU['cpu'][id];
     if (data === void 0) {
       return null;
     }
