@@ -463,3 +463,27 @@ cpu:
     cores: '4'
     clock_rate: 1200
     gpu_id: 12
+  79:
+    name: 'Mediatek MT6735'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    cpu_id: 2
+  80:
+    name: 'Rockchip RK3188'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1800
+    cpu_id: 44
+  81:
+    name: 'Qualcomm Snapdragon 625'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    cpu_id: 41
+  82:
+    name: 'Rockchip RK3288'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1800
+    cpu_id: 45

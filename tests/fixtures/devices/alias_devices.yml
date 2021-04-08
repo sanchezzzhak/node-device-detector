@@ -107,3 +107,8 @@
   user_agent: WhatsApp/2.17.427 Android/5.0.2 Device/samsung-SM-S906L
   alias:
     name: SM-S906L
+
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; BQS-4550; Android/4.4.2; Release/12.19.2015) AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30
+  alias:
+    name: BQS-4550

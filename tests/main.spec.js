@@ -15,6 +15,7 @@ const {
 const TIMEOUT = 6000;
 const detector = new (require('../index'))();
 const aliasDevice = new (require('../parser/device/alias-device'))();
+
 const infoDevice = new (require('../parser/device/info-device'))();
 
 const collectionBrand = revertKeysForObjects(

@@ -129,5 +129,8 @@ gpu:
     name : 'ARM Mali-T628 MP6'
     clock_rate: 600
   44:
-    name : 'Mali-400 MP4'
+    name : 'AEM Mali-400 MP4'
     clock_rate: 250
+  45:
+    name : 'ARM Mali-T760 MP4'
+    clock_rate: 600
