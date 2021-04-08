@@ -487,3 +487,9 @@ cpu:
     cores: '4'
     clock_rate: 1800
     cpu_id: 45
+  83:
+    name: 'Unisoc SC9832E'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    cpu_id: 46

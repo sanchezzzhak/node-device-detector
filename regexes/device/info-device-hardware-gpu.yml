@@ -134,3 +134,6 @@ gpu:
   45:
     name : 'ARM Mali-T760 MP4'
     clock_rate: 600
+  46:
+    name : 'ARM Mali-T820 MP1'
+    clock_rate: 600
