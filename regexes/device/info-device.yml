@@ -6568,7 +6568,19 @@ farao pro:
   ftrw100: ''
 
 fareastone:
+  505: '->smart 505'
+  smart 505: ''
+  smart 509: ''
+  smart 550: ''
+  smart 601: ''
+  smart509: '->smart 509'
+  smart550: '->smart 550'
+  smart601: '->smart 601'
+
 fengxiang:
+  vkb004l: ''
+  vkb011b: ''
+
 fero:
   a4001: ''
   a4502: ''
@@ -6821,16 +6833,165 @@ fly:
   сhamp: ''
 
 fnb:
+  conexis a1: ''
+  conexis a2: ''
+  conexis x1: ''
+  conexis x2: ''
+  sp5045v: ''
+
 fondi:
+  d66: ''
+  fondi-d66: '->d66'
+  q008b: ''
+  q010b: ''
+  q718b: ''
+  q902: ''
+  t602b: ''
+  t702: ''
+  t707g: ''
+  t708b: ''
+  t725b1: '->t725b'
+  t725b: ''
+  t907b: ''
+
 fonos:
+  o1: ''
+
 forme:
+  a37: ''
+  a57: ''
+  f520: '->forever'
+  forever: ''
+  p6: ''
+  r7: ''
+  r7s: ''
+
 formuler:
+  z8 pro: ''
+  z8: ''
+
 forstar:
+  amosta 3g5: ''
+
 fortis:
+  apollo 5 neo: ''
+
 foxconn:
+  infocus m2: ''
+  infocus m310: ''
+  infocus m810u: ''
+  m2: '->infocus m2'
+  m310: '->infocus m310'
+  m810u: '->infocus m810u'
+
 freetel:
+  cricket wave: ''
+  ft141b: '->nico'
+  ft142: '->priori 2'
+  ft142a: '->priori 2'
+  ft142d ltexm: '->xm'
+  ft142d: '->xm'
+  ftj152a: '->priori 3'
+  ftj152b: '->priori 3s lte'
+  ftj152c: '->samurai miyabi'
+  ftj152d: '->samurai kiwami'
+  ftj161b: '->samurai rei'
+  ftj162b: '->samurai kiwami 2'
+  ftj162d: '->priori 4'
+  ftj17a00: '->rei 2 dual'
+  ftj17c00: '->priori 5'
+  ftu18a00: '->cricket wave'
+  ice 2 plus: ''
+  ice 2: ''
+  musashi: ''
+  nico: ''
+  priori 2: ''
+  priori 3: ''
+  priori 3s lte: ''
+  priori 4: ''
+  priori 5: ''
+  raijin: ''
+  rei 2 dual: ''
+  samurai kiwami 2: ''
+  samurai kiwami: ''
+  samurai miyabi: ''
+  samurai rei: ''
+  xm: ''
+
 fuego:
+
 fujitsu:
+  801fj: '->arrows u 801fj'
+  901fj: '->arrows j 901fj'
+  arrows 5g f-51a: ''
+  arrows be 3 f-02l: ''
+  arrows be 4 f-41a: ''
+  arrows be f-04k: ''
+  arrows ef fjl21: ''
+  arrows j 901fj: ''
+  arrows k-tai: ''
+  arrows kiss f-03d: ''
+  arrows kiss f-03e: ''
+  arrows m03: ''
+  arrows m04 premium: ''
+  arrows m04: ''
+  arrows m05: ''
+  arrows nx f-01f: ''
+  arrows nx f-06e: ''
+  arrows nx9 f-52a: ''
+  arrows phone f-03l: ''
+  arrows rx: ''
+  arrows tab f-02f: ''
+  arrows tab f-02k: ''
+  arrows tab f-04h: ''
+  arrows tab f-05e: ''
+  arrows tab m504/ha4: ''
+  arrows u 801fj: ''
+  arrows x f-02e: ''
+  arrows x lte f-05d: ''
+  arrows z fjl22: ''
+  arrowsm03: '->arrows m03'
+  arrowsm04-premium: '->arrows m04 premium'
+  arrowsm04: '->arrows m04'
+  arrowsm05: '->arrows m05'
+  arrowsrx: '->arrows rx'
+  disney mobile f-08d: ''
+  easy phone f-01l: ''
+  easy phone f-01m: ''
+  easy phone f-03k: ''
+  easy phone f-06f: ''
+  easy phone f-42a: ''
+  f-01f: '->arrows nx f-01f'
+  f-01l: '->easy phone f-01l'
+  f-01m: '->easy phone f-01m'
+  f-02e: '->arrows x f-02e'
+  f-02f: '->arrows tab f-02f'
+  f-02k: '->arrows tab f-02k'
+  f-02l: '->arrows be 3 f-02l'
+  f-03d: '->arrows kiss f-03d'
+  f-03e: '->arrows kiss f-03e'
+  f-03k: '->easy phone f-03k'
+  f-03l: '->arrows phone f-03l'
+  f-04f: ''
+  f-04h: '->arrows tab f-04h'
+  f-04j: ''
+  f-04k: '->arrows be f-04k'
+  f-05d: '->arrows x lte f-05d'
+  f-05e: '->arrows tab f-05e'
+  f-05g: '->arrows k-tai'
+  f-06e: '->arrows nx f-06e'
+  f-06f: '->easy phone f-06f'
+  f-08d: '->disney mobile f-08d'
+  f-41a: '->arrows be 4 f-41a'
+  f-42a: '->easy phone f-42a'
+  f-51a: '->arrows 5g f-51a'
+  f-52a: '->arrows nx9 f-52a'
+  fartm933kz: '->arrows tab m504/ha4'
+  fjl21: '->arrows ef fjl21'
+  fjl22: '->arrows z fjl22'
+  m532: '->stylistic'
+  stylistic: ''
+
 g-tide:
 g-touch:
 garmin-asus:
@@ -6842,6 +7003,7 @@ garmin-asus:
   nuvifone m20: 'DS=2.8;RS=480x640;SZ=52.5x95.3x12.8;WT=99.0;RE=2009.02;RM=;CP=;OS=;'
 
 gateway:
+
 gemini:
 
 general mobile:
