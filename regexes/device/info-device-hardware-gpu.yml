@@ -137,3 +137,6 @@ gpu:
   46:
     name : 'ARM Mali-T820 MP1'
     clock_rate: 600
+  47:
+    name: 'PowerVR G6200'
+    clock_rate: 700

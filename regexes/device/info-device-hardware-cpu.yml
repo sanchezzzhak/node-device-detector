@@ -493,3 +493,32 @@ cpu:
     cores: '4'
     clock_rate: 1500
     cpu_id: 46
+  84:
+    name: 'Mediatek MT6739WW'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    cpu_id: 4
+  85:
+    name: 'Mediatek Helio X10 MT6795'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2200
+    gpu_id: 47
+  86:
+    name: 'MediaTek MT6737M'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1250
+    gpu_id: 5
+  87:
+    name: 'Nvidia Tegra 2'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1000
+  88:
+    name: 'Spreadtrum SC7731'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
