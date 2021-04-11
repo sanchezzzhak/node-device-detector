@@ -35,3 +35,12 @@
     model: LC7
   os_family: Android
   browser_family: Unknown
+-
+  user_agent: Telit_Mobile_Terminals-G80
+    os:
+    client:
+    device:
+      type: feature phone
+      brand: Telit
+      model: G80
+
