@@ -528,3 +528,9 @@ cpu:
     cores: '4'
     clock_rate: 1300
     gpu_id: 7
+  90:
+    name: 'MediaTek MT6575'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 48

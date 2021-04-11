@@ -140,3 +140,6 @@ gpu:
   47:
     name: 'PowerVR G6200'
     clock_rate: 700
+  48:
+    name: 'PowerVR SGX531'
+    clock_rate: 200
