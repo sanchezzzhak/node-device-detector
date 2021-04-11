@@ -522,3 +522,9 @@ cpu:
     cores: '4'
     clock_rate: 1300
     gpu_id: 1
+  89:
+    name: 'Mediatek MT8121'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 7
