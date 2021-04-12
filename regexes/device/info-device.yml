@@ -1765,7 +1765,7 @@ amazon:
   fire 7" (2019): ''
   fire 7": ''
   fire hd 10 (2017): ''
-  fire hd 10 (2019): ''
+  fire hd 10 (2019): 'DS=10.1;RS=1920x1200;SZ=262x159x9.8;WT=504;RE=2019.09;RM=2048;CP=97;OS=Android 9.0;' # Amazon Fire 7
   fire hd 10: ''
   fire hd 6: ''
   fire hd 7: ''
@@ -1812,7 +1812,7 @@ amazon:
   sd4930ur: '->fire phone'
   tate: '->kindle fire hd 7" wifi'
   # todo check
-  fire hd 10 (2019): 'DS=10.1;RS=1200x1920;SZ=159x262x9.8;WT=504.0;RE=;RM=2048;CP=;OS=;'
+
   fire hd 10: 'DS=10.1;RS=1280x800;SZ=159x262x7.7;WT=432.0;RE=2015.09;RM=1024;CP=MediaTek;OS=Android 5.0;'
   fire hd 6: 'DS=;RS=;SZ=104.1x170.2x10.2;WT=290.0;RE=2014.09;RM=1024;CP=;OS=Android 4.4;'
   fire hd 7: 'DS=;RS=;SZ=127x190.5x10.7;WT=337.0;RE=2014.09;RM=1024;CP=;OS=Android 4.4;'

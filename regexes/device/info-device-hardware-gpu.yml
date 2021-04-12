@@ -149,3 +149,6 @@ gpu:
   50:
     name: 'Qualcomm Adreno 430'
     clock_rate: 650
+  51:
+    name: 'ARM Mali-G72 MP3'
+    clock_rate: 850
