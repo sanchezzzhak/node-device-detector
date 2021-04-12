@@ -143,3 +143,6 @@ gpu:
   48:
     name: 'PowerVR SGX531'
     clock_rate: 200
+  49:
+    name: 'AMD Radeon R5'
+    clock_rate: 850

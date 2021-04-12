@@ -534,3 +534,33 @@ cpu:
     cores: '1'
     clock_rate: 1000
     gpu_id: 48
+  91:
+    name: 'Qualcomm Snapdragon S1 MSM7225'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 22
+  92:
+    name: 'AMD A8-6410'
+    type: 'x86'
+    cores: '4'
+    clock_rate: 2400
+    gpu_id: 49
+  93:
+    name: 'Mediatek MT8321M'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  94:
+    name: 'Qualcomm Snapdragon 800 MSM8074'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2300
+    gpu_id: 11
+  95:
+    name: 'Texas Instruments OMAP 4470'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1500
+    gpu_id: 8
