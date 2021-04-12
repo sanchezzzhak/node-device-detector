@@ -582,3 +582,9 @@ cpu:
     cores: '8'
     clock_rate: 2000
     gpu_id: 51
+  99:
+    name: 'Mediatek MT8173'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2400
+    gpu_id: 52

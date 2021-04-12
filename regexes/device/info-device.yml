@@ -1764,7 +1764,7 @@ amazon:
   echo: ''
   fire 7" (2019): ''
   fire 7": ''
-  fire hd 10 (2017): ''
+  fire hd 10 (2017): 'DS=10.1;RS=1920x1200;SZ=262x159x9.8;WT=500;RE=2017.10;RM=2048;CP=99;OS=Android 5.1;' # Amazon Fire 5.3
   fire hd 10 (2019): 'DS=10.1;RS=1920x1200;SZ=262x159x9.8;WT=504;RE=2019.09;RM=2048;CP=97;OS=Android 9.0;' # Amazon Fire 7
   fire hd 10: ''
   fire hd 6: ''

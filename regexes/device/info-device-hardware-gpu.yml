@@ -152,3 +152,6 @@ gpu:
   51:
     name: 'ARM Mali-G72 MP3'
     clock_rate: 850
+  52:
+    name: '	PowerVR GX6250'
+    clock_rate: 700
