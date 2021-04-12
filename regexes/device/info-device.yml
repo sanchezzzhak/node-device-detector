@@ -15,7 +15,7 @@
 2e:
   e450 (2018): 'DS=4.5;RS=480x854;SZ=74.2x133x8.7;WT=133;RM=1024;CP=58;OS=Android 8.1;'
   e450 2018: '->e450 (2018)'
-  e500a (2019): ''
+  e500a (2019): 'DS=5.0;RS=480x960;SZ=72x142x8.7;WT=149;RM=1024;CP=58;OS=Android 8.1;SM=2;'
   e500a 2019: '->e500a (2019)'
 
 # 360
@@ -29165,7 +29165,7 @@ zte:
   nubia z9 max dual: ''
   nubia z9 max: ''
   nubia z9 mini: ''
-  nubia z9: ''
+  nubia z9: 'DS=5.2;RS=1080x1920;SZ=68.3x147.4x8.9;WT=192.0;RE=2015.06;RM=3072;CP=96;OS=Android 5.0;SM=2;'
   nx402: '->nubia z5 mini'
   nx404h: '->nubia z5s mini'
   nx406e: '->nubia z5s mini'
@@ -29541,7 +29541,6 @@ zte:
   nubia z7: 'DS=5.5;RS=1440x2560;SZ=75.7x153.2x8.9;WT=;RE=2014.07;RM=3072;CP=Qualcomm Snapdragon 801 8974-AC;OS=Android 4.4.2;'
   nubia z9 max: 'DS=5.5;RS=1080x1920;SZ=76.6x154.8x7.9;WT=165.0;RE=;RM=3072;CP=Qualcomm Snapdragon 810 MSM8994;OS=Android 5.0;'
   nubia z9 mini: 'DS=5.0;RS=1080x1920;SZ=69.8x141.3x8.2;WT=147.0;RE=;RM=2048;CP=Qualcomm Snapdragon 615 8939;OS=Android 5.0;'
-  nubia z9: 'DS=;RS=;SZ=68.3x147.4x8.9;WT=192.0;RE=;RM=3072;CP=;OS=Android 5.0;'
 
 zuum:
   akus z: ''

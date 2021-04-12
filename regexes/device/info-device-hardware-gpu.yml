@@ -146,3 +146,6 @@ gpu:
   49:
     name: 'AMD Radeon R5'
     clock_rate: 850
+  50:
+    name: 'Qualcomm Adreno 430'
+    clock_rate: 650
