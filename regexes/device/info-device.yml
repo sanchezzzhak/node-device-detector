@@ -1766,14 +1766,14 @@ amazon:
   fire 7": ''
   fire hd 10 (2017): 'DS=10.1;RS=1920x1200;SZ=262x159x9.8;WT=500;RE=2017.10;RM=2048;CP=99;OS=Android 5.1;' # Amazon Fire 5.3
   fire hd 10 (2019): 'DS=10.1;RS=1920x1200;SZ=262x159x9.8;WT=504;RE=2019.09;RM=2048;CP=97;OS=Android 9.0;' # Amazon Fire 7
-  fire hd 10: ''
-  fire hd 6: ''
-  fire hd 7: ''
+  fire hd 10: 'DS=10.1;RS=1280x800;SZ=159x262x7.7;WT=432.0;RE=2015.09;RM=1024;CP=100;OS=Android 5.0;' # Amazon Fire 5
+  fire hd 6: 'DS=6.3;RS=1280x800;SZ=104.1x170.2x10.2;WT=290.0;RE=2014.09;RM=1024;CP=100;OS=Android 4.4;'
+  fire hd 7: 'DS=7.0;RS=1280x800;SZ=127x190.5x10.7;WT=337.0;RE=2014.09;RM=1024;CP=100;OS=Android 4.4;'
   fire hd 8 (2015): ''
   fire hd 8 (2016): ''
   fire hd 8 (2017): ''
   fire hd 8 (2018): ''
-  fire hd 8 (2020): ''
+  fire hd 8 (2020): 'DS=8.0;RS=800x1280;SZ=137x202x9.7;WT=355.0;RE=;RM=2048;CP=101;OS=Android 9.0;'
   fire hdx 8.9 4g: ''
   fire hdx 8.9: 'DS=8.9;RS=2560x1600;SZ=157.5x231.1x7.6;WT=389.0;RE=2014.09;RM=2048;CP=94;OS=Android 4.4;'
   fire phone: 'DS=4.7;RS=720x1280;SZ=66x140x9;WT=160.0;RE=2014.06;RM=2048;CP=94;OS=Android 4.2.2;' # Amazon Fire 3.5
@@ -1812,14 +1812,8 @@ amazon:
   sd4930ur: '->fire phone'
   tate: '->kindle fire hd 7" wifi'
   # todo check
-
-  fire hd 10: 'DS=10.1;RS=1280x800;SZ=159x262x7.7;WT=432.0;RE=2015.09;RM=1024;CP=MediaTek;OS=Android 5.0;'
-  fire hd 6: 'DS=;RS=;SZ=104.1x170.2x10.2;WT=290.0;RE=2014.09;RM=1024;CP=;OS=Android 4.4;'
-  fire hd 7: 'DS=;RS=;SZ=127x190.5x10.7;WT=337.0;RE=2014.09;RM=1024;CP=;OS=Android 4.4;'
-  fire hd 8 (2020): 'DS=8.0;RS=800x1280;SZ=137x202x9.7;WT=355.0;RE=;RM=2048;CP=MediaTek MT8168;OS=Android 9.0;'
-  fire hd 8 plus (2020): 'DS=8.0;RS=800x1280;SZ=137x202x9.7;WT=355.0;RE=;RM=3072;CP=MediaTek MT8168;OS=Android 9.0;'
+  fire hd 8 plus (2020): 'DS=8.0;RS=800x1280;SZ=137x202x9.7;WT=355.0;RE=;RM=3072;CP=101;OS=Android 9.0;'
   fire hd 8: 'DS=8.0;RS=800x1280;SZ=128x214x7.7;WT=311.0;RE=2015.09;RM=1024;CP=MediaTek;OS=Android 5.0;'
-
   fire: 'DS=7.0;RS=600x1024;SZ=115x191x10.6;WT=313.0;RE=2015.09;RM=1024;CP=;OS=Android 5.0;'
   kindle fire 2: 'DS=7.0;RS=1024x600;SZ=120x189x11.5;WT=400.0;RE=2012.09;RM=1024;CP=TI OMAP4430;OS=Android 4.0;'
   kindle fire hd (2013): 'DS=7.0;RS=1280x800;SZ=128x191x10.6;WT=345.0;RE=2013.09;RM=1024;CP=;OS=Android 4.2.2;'
@@ -2003,7 +1997,6 @@ apple:
   ipad pro 4 12.9": ''
   ipad: ''
   iphone 11 pro: ''
-  iphone 11: ''
   iphone 12 mini: ''
   iphone 12 pro max: ''
   iphone 12 pro: ''
@@ -2129,7 +2122,6 @@ apple:
   ipad: 'DS=9.7;RS=1024x768;SZ=190x243x13;WT=730.0;RE=2010.01;RM=256;CP=Apple A4;OS=;'
 
   iphone 11 pro: 'DS=;RS=;SZ=71.4x144x8.1;WT=188.0;RE=;RM=4096;CP=;OS=;'
-  iphone 11: 'DS=;RS=;SZ=75.7x150.9x8.3;WT=194.0;RE=;RM=4096;CP=;OS=;'
   iphone 12 mini: 'DS=;RS=;SZ=64.2x131.5x7.4;WT=135.0;RE=;RM=4096;CP=;OS=;'
   iphone 12 pro max: 'DS=;RS=;SZ=78.09x160.84x7.39;WT=228.0;RE=;RM=6144;CP=;OS=;'
   iphone 12 pro: 'DS=;RS=;SZ=71.6x146.7x7.4;WT=189.0;RE=;RM=6144;CP=;OS=;'
@@ -2177,7 +2169,7 @@ apple:
 
 archos:
   101 cobalt: ''
-  101 neon: ''
+  101 neon: 'DS=10.1;RS=1024x600;SZ=161x272x12.1;WT=690.0;RE=2014.10;RM=1024;CP=102;OS=Android 4.2;'
   101 platinum: ''
   101 titanium: ''
   101 xenon: ''
@@ -2233,7 +2225,7 @@ archos:
   101 g9: 'DS=10.1;RS=1280x800;SZ=167x276x12.6;WT=675.0;RE=;RM=;CP=;OS=Android 4.0;'
   101 helium 4g: 'DS=10.1;RS=1280x800;SZ=174x250x10;WT=538.0;RE=;RM=1024;CP=MediaTek MT8732;OS=Android 4.4;'
   101 internet tablet: 'DS=10.1;RS=1024x600;SZ=150x270x12;WT=480.0;RE=;RM=;CP=;OS=Android 2.2;'
-  101 neon: 'DS=10.1;RS=1024x600;SZ=161x272x12.1;WT=690.0;RE=;RM=1024;CP=;OS=Android 4.2;'
+
   101 oxygen: 'DS=10.1;RS=1200x1920;SZ=172x240x10;WT=510.0;RE=;RM=2048;CP=Rockchip RK3288;OS=Android 4.4.4;'
   101 saphir: 'DS=10.1;RS=1280x800;SZ=181x265.4x13.4;WT=600.0;RE=;RM=1024;CP=MediaTek MT8163;OS=Android 7.0;'
   101 titanium: 'DS=10.1;RS=1280x800;SZ=174x263x10.5;WT=650.0;RE=2013.01;RM=1024;CP=;OS=Android 4.1;'

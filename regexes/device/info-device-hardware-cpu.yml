@@ -588,3 +588,21 @@ cpu:
     cores: '4'
     clock_rate: 2400
     gpu_id: 52
+  100:
+    name: 'Mediatek MT8135'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1700
+    gpu_id: 47
+  101:
+    name: 'MediaTek MT8168'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2000
+    gpu_id: 53
+  102:
+    name: 'Rockchip RK3188T'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1800
+    cpu_id: 44

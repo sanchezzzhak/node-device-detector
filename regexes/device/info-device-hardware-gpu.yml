@@ -155,3 +155,6 @@ gpu:
   52:
     name: '	PowerVR GX6250'
     clock_rate: 700
+  53:
+    name: '	ARM Mali-G52 MP1'
+    clock_rate: 800
