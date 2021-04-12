@@ -606,3 +606,9 @@ cpu:
     cores: '4'
     clock_rate: 1800
     cpu_id: 44
+  103:
+    name: 'Spreadtrum SC7731'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    cpu_id: 1
