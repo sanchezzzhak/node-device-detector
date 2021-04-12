@@ -605,10 +605,38 @@ cpu:
     type: 'ARM'
     cores: '4'
     clock_rate: 1800
-    cpu_id: 44
+    gpu_id: 44
   103:
     name: 'Spreadtrum SC7731'
     type: 'ARM'
     cores: '4'
     clock_rate: 1300
-    cpu_id: 1
+    gpu_id: 1
+  104:
+    name: 'Apple A6x'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1400
+  105:
+    name: 'Apple A5'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1000
+  106:
+    name: 'Apple A8X'
+    type: 'ARM'
+    cores: '3'
+    clock_rate: 1500
+    gpu_id: 54
+  107:
+    name: 'Mediatek MT8389'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 7
+  108:
+    name: 'Apple A7'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1400
+    gpu_id: 13
