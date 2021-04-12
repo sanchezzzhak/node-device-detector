@@ -1988,7 +1988,7 @@ apple:
   ipad air 3: ''
   ipad air 4: ''
   ipad air: 'DS=9.7;RS=2048x1536;SZ=240x169.5x7.5;WT=469;RE=2013.10;RM=1024;CP=108;OS=iOS 7;'
-  ipad mini 3: ''
+  ipad mini 3: 'DS=7.9;RS=2048x1536;SZ=200x134.7x7.5;WT=341.0;RE=2014.10;RM=1024;CP=108;OS=iOS 8.1;'
   ipad mini 4: ''
   ipad mini 5: ''
   ipad mini: ''
@@ -2104,7 +2104,6 @@ apple:
 
   ipad mini (2019): 'DS=;RS=;SZ=134.6x203.2x6.1;WT=308.2;RE=;RM=3072;CP=;OS=;'
   ipad mini 2: 'DS=;RS=;SZ=134.7x200x7.5;WT=341.0;RE=2013.10;RM=1024;CP=;OS=;'
-  ipad mini 3: 'DS=;RS=;SZ=134.7x200x7.5;WT=341.0;RE=2014.10;RM=1024;CP=;OS=;'
   ipad mini 4: 'DS=;RS=;SZ=134.6x203.2x6.1;WT=304.0;RE=2015.09;RM=2048;CP=;OS=;'
   ipad mini: 'DS=7.9;RS=1024x768;SZ=134.7x200x7.2;WT=312.0;RE=2012.10;RM=512;CP=105;OS=;'
   ipad pro 10.5-inch: 'DS=;RS=;SZ=174.1x250.6x6.1;WT=477.0;RE=2017.06;RM=4096;CP=;OS=;'
