@@ -640,3 +640,27 @@ cpu:
     cores: '2'
     clock_rate: 1400
     gpu_id: 13
+  109:
+    name: 'Unisoc SC9863A'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1600
+    gpu_id: 55
+  110:
+    name: 'Qualcomm Snapdragon S4 Play MSM8225Q'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 56
+  111:
+    name: 'Qualcomm Snapdragon 400 MSM8926'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1200
+    gpu_id: 12
+  112:
+    name: 'Mediatek MT6589T'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 7

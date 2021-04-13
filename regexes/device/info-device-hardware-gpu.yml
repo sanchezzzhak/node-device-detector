@@ -161,3 +161,9 @@ gpu:
   54:
     name: 'PowerVR GX6650'
     clock_rate: 450
+  55:
+    name: 'PowerVR GE8322'
+    clock_rate: ''
+  56:
+    name: 'Qualcomm Adreno 203'
+    clock_rate: 245
