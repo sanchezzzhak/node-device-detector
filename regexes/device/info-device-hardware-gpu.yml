@@ -167,3 +167,9 @@ gpu:
   56:
     name: 'Qualcomm Adreno 203'
     clock_rate: 245
+  57:
+    name: 'Qualcomm Adreno 510'
+    clock_rate: 680
+  58:
+    name: 'ARM Mali-T860 MP4'
+    clock_rate: 700

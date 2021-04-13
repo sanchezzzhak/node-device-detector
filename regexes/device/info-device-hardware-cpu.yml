@@ -664,3 +664,27 @@ cpu:
     cores: '4'
     clock_rate: 1500
     gpu_id: 7
+  113:
+    name: 'MediaTek MT6737VWT'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 5
+  114:
+    name: 'Mediatek Helio P70 MT6771'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2100
+    gpu_id: 51
+  115:
+    name: 'Qualcomm Snapdragon 652 MSM8976'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1800
+    gpu_id: 57
+  116:
+    name: 'Rockchip RK3399'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 2000
+    gpu_id: 58

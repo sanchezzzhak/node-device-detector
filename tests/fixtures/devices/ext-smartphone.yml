@@ -37,10 +37,27 @@
   browser_family: Unknown
 -
   user_agent: Telit_Mobile_Terminals-G80
-    os:
-    client:
-    device:
-      type: feature phone
-      brand: Telit
-      model: G80
-
+  os:
+  client:
+  device:
+    type: feature phone
+    brand: Telit
+    model: G80
+-
+  user_agent: Mozilla/5.0 (Linux; Android 5.1; Archos Diamond Plus Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36
+  os:
+    name: Android
+    version: '5.1'
+    platform: ''
+    family: Android
+  client:
+    type: browser
+    name: Chrome Mobile
+    version: 50.0.2661.89
+    engine: Blink
+    engine_version: ''
+    family: Chrome
+  device:
+    type: smartphone
+    brand: Archos
+    model: Diamond Plus
