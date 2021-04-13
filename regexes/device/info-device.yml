@@ -2180,19 +2180,18 @@ archos:
   50 power: ''
   50 titanium 4g: ''
   50 titanium: 'DS=5;RS=540x960;SZ=73.7x144.5x9.9;WT=160;RE=2013;RM=512;CP=24;OS=Android 4.2.2;'
-
-  53 titanium: ''
-  55 platinum: ''
+  53 titanium: 'DS=5.3;RS=480x854;SZ=76.6x152.7x10.1;WT=200;RE=2013;RM=512;CP=24;OS=Android 4.2.2;'
+  55 platinum: 'DS=5.5;RS=720x1280;SZ=72.6x144x8.7;WT=164;RM=1024;CP=88;OS=Android 5.1;SM=2;'
   5: ''
   70 cobalt: ''
-  70 titanium: ''
+  70 titanium: 'DS=7;RS=1024x600;SZ=198x115x8.6;WT=280;RE=2013;RM=1024;CP=73;OS=Android 4.1;'
   70 xenon: ''
-  70b titanium: ''
+  70b titanium: 'CP=73;'
   70it2: ''
   79 platinum: ''
   80 carbon: ''
   80 childpad: ''
-  80 cobalt: ''
+  80 cobalt: 'DS=8;RS=1024x768;SZ=203x153.5x11.5;WT=470;RE=2012.11;RM=1024;CP=73;OS=Android 4;'
   80 platinum: ''
   80 titanium: ''
   80 xenon: ''
@@ -2216,13 +2215,14 @@ archos:
   a70gp: '->gamepad'
   oxygen 63: 'RE=2019.02;SZ=75.8x159.2x9.3;WT=162;DS=6.26;RS=720x1520;OS=Android 9.0;CP=109;RM=4096;'
   yl-50 power: '->50 power'
+  ###
+  diamond omega: 'DS=5.73;RS=1080x2040;SZ=72.7x147.5x8.5;WT=170;RE=2017.10;RM=8192;CP=25;OS=Android 7.1;'
   # todo check
   diamond: 'RE=2019.02;SZ=74.1x158.7x8.6;WT=166;DS=6.39;RS=1080x2340;OS=Android 9.0;CP=Mediatek MT6771 Helio P70 (12nm);RM=4096;'
   oxygen 68xl: 'RE=2019.02;SZ=81.6x173.5x9;WT=214;DS=6.85;RS=640x1352;OS=Android 9.0;CP=47;RM=3072;'
 
   oxygen 57: 'RE=2019.02;SZ=70.7x147.8x9.3;WT=150;DS=5.71;RS=720x1520;OS=Android 9.0;CP=109;RM=3072;'
   saphir 50x: 'RE=2018.April;SZ=76x146.6x13;WT=210;DS=5.0;RS=720x1280;OS=Android 7.0 ;CP=Mediatek MT6737VWT;RM=2048;'
-  diamond omega: 'RE=2017.October;SZ=72.7x147.5x8.5;WT=170;DS=5.73;RS=1080x2040;OS=Android 7.1 ;CP=Qualcomm MSM8998 Snapdragon 835 (10 nm);RM=8GB;'
   diamond alpha +: 'RE=2017.August;SZ=72.5x146.7x7.5;WT=155;DS=5.2;RS=1080x1920;OS=Android 6.0 ;CP=Qualcomm MSM8976 Pro Snapdragon 653 (28 nm);RM=6GB;'
   diamond tab: 'RE=2017.August;SZ=163x255x8;WT=510;DS=10.1;RS=1600x2560;OS=Android 7.0 ;CP=Rockchip RK3399;RM=4096;'
   diamond alpha: 'RE=2017.June;SZ=72.5x146.7x7.5;WT=155;DS=5.2;RS=1080x1920;OS=Android 6.0 ;CP=Qualcomm MSM8976 Snapdragon 652 (28 nm);RM=4096;'
@@ -2244,7 +2244,7 @@ archos:
   50 diamond: 'RE=2014.October;SZ=70.4x146x8;WT=142;DS=5.0;RS=1080x1920;OS=Android 4.4.4 ;CP=Qualcomm MSM8939 Snapdragon 615 (28 nm);RM=2048;'
   40 cesium: 'RE=2014.September;SZ=;WT=;DS=4.0;RS=480x800;OS=Microsoft Windows Phone 8.1;CP=Qualcomm Snapdragon 200 (28 nm);RM=512MB;'
   45c platinum: 'RE=2014.August;SZ=67.5x133x8.9;WT=138;DS=4.5;RS=480x854;OS=Android 4.4.2 ;CP=Mediatek MT6582 (28 nm);RM=512MB;'
-  40c titanium: 'RE=2014.02;SZ=65x126x10;WT=110;DS=4.0;RS=480x800;OS=Android 4.4 ;CP=Mediatek MT6572 (28 nm);RM=512MB;'
+  40c titanium: 'RE=2014.02;SZ=65x126x10;WT=110;DS=4.0;RS=480x800;OS=Android 4.4 ;CP=24;RM=512MB;'
   50b platinum: 'RE=2014.August;SZ=73x146.8x8.3;WT=160;DS=5.0;RS=540x960;OS=Android 4.4.2 ;CP=Mediatek MT6582 (28 nm);RM=512MB;'
   80 helium 4g: 'RE=2014.02;SZ=;WT=;DS=8.0;RS=768x1024;OS=Android 4.3 ;CP=111;RM=1024;'
   64 xenon: 'RE=2014.02;SZ=90.6x170.7x9.3;WT=232;DS=6.4;RS=720x1280;OS=Android 4.2.2 ;CP=Mediatek MT6582 (28 nm);RM=1024;'
@@ -2256,7 +2256,8 @@ archos:
   53 platinum: 'RE=2013.Released;SZ=78x153.6x9.3;WT=189.9;DS=5.3;RS=540x960;OS=Android 4.1.2 ;CP=110;RM=1024;'
 
 
-  53 titanium: 'RE=2013.Released;SZ=76.6x152.7x10.1;WT=200;DS=5.3;RS=480x854;OS=Android 4.2.2 ;CP=Mediatek MT6572 (28 nm);RM=512MB;'
+
+
   # todo check
   101 g9: 'DS=10.1;RS=1280x800;SZ=167x276x12.6;WT=675;RE=;RM=;CP=;OS=Android 4;'
   101 helium 4g: 'DS=10.1;RS=1280x800;SZ=174x250x10;WT=538;RE=;RM=1024;CP=MediaTek MT8732;OS=Android 4.4;'
@@ -2287,18 +2288,18 @@ archos:
   50c helium 4g: 'DS=5;RS=480x854;SZ=73.5x146x9.1;WT=;RE=;RM=1024;CP=MediaTek MT6732;OS=Android 4.4.4;'
   50c oxygen: 'DS=5;RS=720x1280;SZ=69.8x145x7.64;WT=140;RE=2014.02;RM=1024;CP=MediaTek MT6592;OS=Android 4.2;'
   50e helium 4g: 'DS=5;RS=720x1280;SZ=72.5x147x8.5;WT=150;RE=;RM=1024;CP=Qualcomm Snapdragon 210 MSM8909;OS=Android 5.1;'
-  53 titanium: 'DS=5.3;RS=480x854;SZ=76.6x152.7x10.05;WT=200;RE=;RM=512;CP=24;OS=Android 4.2.2;'
+
   55 graphite: 'DS=5.5;RS=720x1280;SZ=77.2x157.8x7.8;WT=;RE=2017.02;RM=2048;CP=MediaTek MT6737;OS=Android 7;'
   55 helium plus: 'DS=5.5;RS=720x1280;SZ=78x155x8.3;WT=168;RE=2015.06;RM=1024;CP=MediaTek MT6735P;OS=Android 5.1;'
   64 xenon: 'DS=6.4;RS=720x1280;SZ=90.6x170.7x9.3;WT=232;RE=2014.02;RM=1024;CP=MediaTek MT6582;OS=Android 4.2;'
   7 home tablet: 'DS=7;RS=480x800;SZ=107x203x12;WT=388;RE=;RM=;CP=;OS=Android 2.1;'
   70 helium 4g: 'DS=7;RS=600x1024;SZ=108.5x190x9.4;WT=260;RE=;RM=1024;CP=MediaTek MT8732;OS=Android 4.4;'
   70 internet tablet: 'DS=7;RS=800x480;SZ=114x201x14;WT=400;RE=;RM=;CP=;OS=Android 2.2;'
-  70 titanium: 'DS=7;RS=1024x600;SZ=115x198x8.6;WT=280;RE=;RM=1024;CP=;OS=Android 4.1;'
+
   70b internet tablet: 'DS=7;RS=1024x600;SZ=115x201x11.5;WT=330;RE=2011.12;RM=;CP=;OS=Android 3.2;'
   8 home tablet: 'DS=8;RS=800x600;SZ=220x263x12;WT=800;RE=;RM=;CP=;OS=;'
   80 cesium: 'DS=8;RS=800x1280;SZ=123x215x8.6;WT=360;RE=;RM=1024;CP=Intel Atom Z3735G;OS=;'
-  80 cobalt: 'DS=8;RS=1024x768;SZ=203x153.5x11.5;WT=470;RE=;RM=1024;CP=;OS=Android 4;'
+
   80 g9: 'DS=8;RS=1024x768;SZ=155x226x11.7;WT=482;RE=;RM=;CP=;OS=Android 4;'
   80 helium 4g: 'DS=8;RS=1024x768;SZ=155x213x11.3;WT=;RE=2014.02;RM=1024;CP=Qualcomm Snapdragon 400 MSM8926;OS=Android 4.3;'
   80 titanium: 'DS=8;RS=1024x768;SZ=154x200x9.9;WT=440;RE=;RM=1024;CP=;OS=Android 4.1;'
@@ -2312,7 +2313,7 @@ archos:
   childpad: 'DS=7;RS=800x480;SZ=142x223x12.2;WT=380;RE=;RM=1024;CP=;OS=Android 4;'
   diamond 2 note: 'DS=6;RS=1440x2560;SZ=82.7x158.35x8.7;WT=150;RE=2016.02;RM=3072;CP=MediaTek Helio X10 MT6795;OS=Android 6;'
   diamond 2 plus: 'DS=5.5;RS=1080x1920;SZ=73.8x148.3x8.3;WT=193;RE=;RM=4096;CP=MediaTek Helio P10 MT6755;OS=Android 6;'
-  diamond omega: 'DS=5.7;RS=1080x2040;SZ=72.7x147.5x8.5;WT=170;RE=2017.10;RM=8192;CP=Qualcomm Snapdragon 835 MSM8998;OS=Android 7.1;'
+
   diamond plus: 'DS=5.5;RS=1080x1920;SZ=76.4x152.6x8.4;WT=160;RE=;RM=2048;CP=MediaTek MT6753;OS=Android 5.1;'
   diamond s: 'DS=5;RS=720x1280;SZ=71.5x145x6.5;WT=118;RE=;RM=2048;CP=MediaTek MT6753;OS=Android 5.1;'
 
@@ -12864,7 +12865,7 @@ lenovo:
   miix 2 10: 'DS=10.1;RS=1920x1200;SZ=173.2x260.9x9.2;WT=589.7;RE=;RM=2048;CP=;OS=;'
   miix 2 11: 'DS=11.6;RS=1920x1080;SZ=190x302x11;WT=798.3;RE=;RM=;CP=Intel Core i5 4202Y;OS=;'
   miix 510: 'DS=12.2;RS=1920x1200;SZ=205.7x299.7x10.2;WT=900;RE=2016.09;RM=8192;CP=;OS=;'
-  miix 630: 'DS=12.3;RS=1920x1280;SZ=210x293x7.3;WT=770;RE=2018.01;RM=8192;CP=Qualcomm Snapdragon 835 MSM8998;OS=;'
+  miix 630: 'DS=12.3;RS=1920x1280;SZ=210x293x7.3;WT=770;RE=2018.01;RM=8192;CP=25;OS=;'
   miix2: 'DS=8;RS=1280x800;SZ=132x215x8;WT=349.2;RE=2013.10;RM=2048;CP=Intel Atom;OS=;'
   miix: 'DS=10.1;RS=1366x768;SZ=173x265x10;WT=544;RE=;RM=2048;CP=Intel Atom Z2760;OS=;'
   moto tab: 'DS=10.1;RS=1920x1200;SZ=173.2x246.9x7.6;WT=498;RE=2017.11;RM=2048;CP=Qualcomm Snapdragon 625 8953;OS=Android 7.1;'
@@ -13700,7 +13701,7 @@ lg:
   g6+: 'DS=5.7;RS=1440x2880;SZ=71.9x148.9x7.9;WT=163;RE=2017.06;RM=4096;CP=Qualcomm Snapdragon 821 MSM8996 Pro;OS=Android 7;'
   g6: 'DS=;RS=;SZ=71.9x148.9x7.9;WT=163;RE=2017.02;RM=4096;CP=;OS=Android 8;'
   g7 fit: 'DS=6.1;RS=1440x3120;SZ=71.9x153.2x7.99;WT=156;RE=2018.08;RM=4096;CP=Qualcomm Snapdragon 821 MSM8996 Pro-AB;OS=Android 8.1;'
-  g7 one: 'DS=6.1;RS=1440x3120;SZ=71.9x153.2x7.9;WT=156;RE=2018.08;RM=4096;CP=Qualcomm Snapdragon 835 MSM8998;OS=Android 10;'
+  g7 one: 'DS=6.1;RS=1440x3120;SZ=71.9x153.2x7.9;WT=156;RE=2018.08;RM=4096;CP=25;OS=Android 10;'
   g7 thinq: 'DS=;RS=;SZ=71.9x153.2x7.9;WT=162;RE=2018.05;RM=4096;CP=;OS=Android 9;'
   g7200: 'DS=;RS=;SZ=49x93x26.5;WT=116;RE=;RM=;CP=;OS=;'
   g8 thinq: 'DS=;RS=;SZ=71.8x151.9x8.4;WT=167;RE=2019.02;RM=6144;CP=;OS=Android 9;'
@@ -14139,7 +14140,7 @@ lg:
   v10: 'DS=;RS=;SZ=79.3x159.6x8.6;WT=192;RE=2015.10;RM=4096;CP=;OS=Android 7;'
   v20: 'DS=;RS=;SZ=78.1x159.7x7.6;WT=174;RE=2016.09;RM=4096;CP=;OS=Android 8;'
   v30: 'DS=;RS=;SZ=75.4x151.7x7.39;WT=158;RE=2017.08;RM=4096;CP=;OS=Android 9;'
-  v30s thinq: 'DS=6;RS=1440x2880;SZ=75.4x151.7x7.39;WT=158;RE=2018.02;RM=6144;CP=Qualcomm Snapdragon 835 MSM8998;OS=Android 8;'
+  v30s thinq: 'DS=6;RS=1440x2880;SZ=75.4x151.7x7.39;WT=158;RE=2018.02;RM=6144;CP=25;OS=Android 8;'
   v35 thinq: 'DS=;RS=;SZ=75.4x151.7x7.3;WT=158;RE=2018.05;RM=6144;CP=;OS=Android 10;'
   v40 thinq: 'DS=;RS=;SZ=75.7x158.8x7.6;WT=169;RE=2018.10;RM=6144;CP=;OS=Android 9;'
   v50 thinq: 'DS=6.4;RS=1440x3120;SZ=76.1x159.2x8.3;WT=183;RE=2019.02;RM=6144;CP=Qualcomm Snapdragon 855;OS=Android 10;'
