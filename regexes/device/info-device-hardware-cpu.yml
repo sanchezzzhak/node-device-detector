@@ -688,3 +688,43 @@ cpu:
     cores: '6'
     clock_rate: 2000
     gpu_id: 58
+  117:
+    name: 'Mediatek Helio P10 MT6755'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 26
+  118:
+    name: 'Mediatek MT6753'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 59
+  119:
+    name: 'Qualcomm Snapdragon 200 8210'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 23
+  120:
+    name: 'Mediatek MT8732'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 37
+  121:
+    name: 'Mediatek MT8735B'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 2
+  122:
+    name: 'Apple A14 Bionic'
+    type: 'ARM'
+    cores: '3'
+    clock_rate: 3100 # 1800
+  123:
+    name: 'Apple A4'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
