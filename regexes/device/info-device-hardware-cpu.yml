@@ -764,3 +764,15 @@ cpu:
     type: 'ARM'
     cores: '6'
     clock_rate: 2490
+  131:
+    name: 'Intel Atom Z2580'
+    type: 'x86'
+    cores: '2/4'
+    clock_rate: 2000
+    gpu_id: 61
+  132:
+    name: 'Intel Atom Z2420'
+    type: 'x86'
+    cores: '1/2'
+    clock_rate: 1200
+    gpu_id: 8

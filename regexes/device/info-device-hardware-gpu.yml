@@ -179,3 +179,6 @@ gpu:
   60:
     name: 'PowerVR GX6450'
     clock_rate: 450
+  61:
+    name: 'PowerVR SGX544MP2'
+    clock_rate: 400
