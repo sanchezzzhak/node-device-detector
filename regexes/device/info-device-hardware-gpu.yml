@@ -182,3 +182,6 @@ gpu:
   61:
     name: 'PowerVR SGX544MP2'
     clock_rate: 400
+  62:
+    name: 'ARM Mali-400 MP'
+    clock_rate: 416

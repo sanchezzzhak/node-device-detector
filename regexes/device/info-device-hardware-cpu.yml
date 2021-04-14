@@ -776,3 +776,15 @@ cpu:
     cores: '1/2'
     clock_rate: 1200
     gpu_id: 8
+  133:
+    name: 'WonderMedia PRIZM WM8950'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 62
+  134:
+    name: 'Qualcomm Snapdragon S4 Pro APQ8064A'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1700
+    gpu_id: 10
