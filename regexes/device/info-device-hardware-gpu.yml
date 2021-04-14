@@ -185,3 +185,18 @@ gpu:
   62:
     name: 'ARM Mali-400 MP'
     clock_rate: 416
+  63:
+    name: 'Intel HD Graphics (Bay Trail)'
+    clock_rate: 311
+  64:
+    name: 'Qualcomm Adreno 320'
+    clock_rate: 400
+  65:
+    name: 'Qualcomm Adreno 330'
+    clock_rate: 578
+  66:
+    name: 'Qualcomm Adreno 225'
+    clock_rate: 400
+  67:
+    name: 'Qualcomm Adreno 650'
+    clock_rate: 646

@@ -104,7 +104,7 @@ cpu:
   18:
     name: 'Intel Atom Z2560'
     type: 'x86'
-    cores: '2'  #  2/4
+    cores: '2/4'
     clock_rate: 1600
     gpu_id: 15
   19:
@@ -788,3 +788,44 @@ cpu:
     cores: '4'
     clock_rate: 1700
     gpu_id: 10
+  135:
+    name: 'Intel Atom Z3745'
+    type: 'x86'
+    cores: '4'
+    clock_rate: 1860
+    gpu_id: 63
+  136:
+    name: 'Intel Atom Z3580'
+    type: 'x86'
+    cores: '4'
+    clock_rate: 2330
+    gpu_id: 13
+  137:
+    name: 'NVIDIA Tegra 3'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1700
+  138:
+    name: 'Qualcomm Snapdragon 600 APQ8064T'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1700
+    gpu_id: 64
+  139:
+    name: 'Qualcomm Snapdragon 801 MSM8974AB'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2360
+    gpu_id: 65
+  140:
+    name: 'Qualcomm Snapdragon S4 Plus MSM8260A'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1700
+    gpu_id: 66
+  141:
+    name: 'Qualcomm Snapdragon 865+ 5G'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 3100
+    gpu_id: 67
