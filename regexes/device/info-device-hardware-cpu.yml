@@ -754,3 +754,13 @@ cpu:
     type: 'ARM'
     cores: '4'
     clock_rate: 2390
+  129:
+    name: 'Apple A13 Bionic'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 2660
+  130:
+    name: 'Apple A12 Bionic'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 2490
