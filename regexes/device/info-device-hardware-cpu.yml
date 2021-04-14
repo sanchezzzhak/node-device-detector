@@ -728,3 +728,29 @@ cpu:
     type: 'ARM'
     cores: '1'
     clock_rate: 1000
+  124:
+    name: 'Apple A6'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1000
+  125:
+    name: 'Apple A8'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1400
+    gpu_id: 60
+  126:
+    name: 'Apple A9'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1800
+  127:
+    name: 'Apple A10 Fusion'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2340
+  128:
+    name: 'Apple A11 Bionic'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2390
