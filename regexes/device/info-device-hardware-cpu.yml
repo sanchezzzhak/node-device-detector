@@ -880,3 +880,33 @@ cpu:
     cores: '1'
     clock_rate: 1000
     gpu_id: 22
+  151:
+    name: 'MediaTek MT8111'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1300
+    gpu_id: 1
+  152:
+    name: 'Intel Atom Z2760'
+    type: 'x86'
+    cores: '2/4'
+    clock_rate: 1800
+    gpu_id: 68
+  153:
+    name: 'Intel Core i5-3317U'
+    type: 'x86'
+    cores: '2/4'
+    clock_rate: 1700
+    gpu_id: 69
+  154:
+    name: 'Mediatek MT6732'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 37
+  155:
+    name: 'Intel Atom Z3735G'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1830
+    gpu_id: --

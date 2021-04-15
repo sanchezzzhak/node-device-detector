@@ -200,4 +200,9 @@ gpu:
   67:
     name: 'Qualcomm Adreno 650'
     clock_rate: 646
-
+  68:
+    name: 'PowerVR SGX545'
+    clock_rate: 533
+  69:
+    name: 'Intel HD Graphics 4000'
+    clock_rate: 1050
