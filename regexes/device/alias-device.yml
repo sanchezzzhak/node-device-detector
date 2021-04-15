@@ -1,6 +1,7 @@
 
 # Android Applewebkit
-- regex: 'Android (?:[\d.]+;); ?(?:[^;]+;)?; ?(?:[^;]+;); Android/(?:.+); Release/'
+- regex: 'Android\s+(?:[^;]+);\s+(?:[^;]+);\s+([^;]+); Android/'
+  name: '$1'
 
 # AppleWebKit
 - regex: 'Android (?:[\d\.]+;)\s?(?:[^;]+;)?\s?(.+) Build/(?:.+)\) AppleWebKit'

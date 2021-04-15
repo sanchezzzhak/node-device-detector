@@ -846,4 +846,10 @@ cpu:
     type: 'ARM'
     cores: '4'
     clock_rate: 1500
-    gpu_id: 5
+    gpu_id: 51
+  145:
+    name: 'Qualcomm Snapdragon S1 MSM7227'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 600
+    gpu_id: 22

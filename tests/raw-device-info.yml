@@ -137,7 +137,7 @@ asus:
   vivotab rt lte: 'DS=10.1;RS=1366x768;SZ=171x262.5x8.3;WT=535;RE=2012.06;RM=2048;CP=NVIDIA Tegra 3 T30;OS=;'
   vivotab smart: 'DS=10.1;RS=1366x768;SZ=171x265x9.7;WT=580;RE=;RM=2048;CP=Intel Atom Z2760;OS=;'
   vivotab: 'DS=11.6;RS=1366x768;SZ=188.8x294.2x8.7;WT=675;RE=2012.06;RM=2048;CP=Intel Atom Z2760;OS=;'
-  zenfone 2 (ze500cl): 'DS=5;RS=720x1280;SZ=71.5x148.1x10.9;WT=155;RE=;RM=2048;CP=18;OS=Android 5;'
+
   zenfone 2 laser (us): 'DS=;RS=;SZ=77.2x152.5x10.8;WT=170;RE=2015.08;RM=3072;CP=;OS=Android 5;'
   zenfone 2 laser 5.5-inch: 'DS=5.5;RS=720x1280;SZ=77.2x152.5x10.5;WT=170;RE=2015.08;RM=2048;CP=17;OS=Android 5;'
   zenfone 2 laser 6-inch: 'DS=6;RS=1080x1920;SZ=84x164.55x10.55;WT=190;RE=2015.08;RM=3072;CP=Qualcomm Snapdragon 616 8939;OS=Android 5;'

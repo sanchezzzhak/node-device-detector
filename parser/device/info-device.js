@@ -105,6 +105,26 @@ const gcd = (u, v) => {
   return gcd((v - u) >> 1, u);
 };
 
+const mergeDeep = (...objects) => {
+  const isObject = obj => obj && typeof obj === 'object';
+  return objects.reduce((prev, obj) => {
+    Object.keys(obj).forEach(key => {
+      const pVal = prev[key];
+      const oVal = obj[key];
+      
+      if (Array.isArray(pVal) && Array.isArray(oVal)) {
+        prev[key] = pVal.concat(...oVal);
+      }
+      else if (isObject(pVal) && isObject(oVal)) {
+        prev[key] = mergeDeep(pVal, oVal);
+      } else {
+        prev[key] = oVal;
+      }
+    });
+    return prev;
+  }, {});
+}
+
 /**
  * calculate ratio
  * @param width
@@ -251,11 +271,12 @@ class InfoDevice extends ParserAbstract {
 
     this.prepareResultDisplay(result);
     this.prepareResultHardware(result);
-
+  
+    result = mergeDeep(result, mergeData);
+    
     // redirect and overwrite params
     let dataRedirect = /^->([^;]+)/i.exec(data);
     if (dataRedirect !== null) {
-      result = Object.assign(result, mergeData);
       return this.find(deviceBrand, dataRedirect[1], result);
     }
 

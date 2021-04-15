@@ -109,6 +109,6 @@
     name: SM-S906L
 
 -
-  user_agent: Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; BQS-4550; Android/4.4.2; Release/12.19.2015) AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; BQS-4550; Android/4.4.2; Release/12.19.2015) AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30'
   alias:
     name: BQS-4550
