@@ -85,7 +85,7 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   let result = infoDevice.info(brand, model);
 
   if (result === null) {
-    expect(rawSource === void 0).to.equal(true);
+    expect(rawSource !== void 0).to.equal(true);
     return;
   }
 
@@ -106,13 +106,13 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
     result
   )}`;
 
-  if (result.display !== void 0) {
-    if (result.display.size !== void 0) {
+  if (result.display) {
+    if (result.display.size) {
       expect(result.display.size, 'display.size(DS) ' + formatMessageFloat).to.match(
         patternFloat
       );
     }
-    if (result.display.resolution !== void 0) {
+    if (result.display.resolution) {
       expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
       expect(result.display.resolution.width, 'display.width(RS) ' + formatMessageFloat).to.match(
         patternFloat
@@ -123,7 +123,7 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
       expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
     }
   }
-  if (result.size !== void 0) {
+  if (result.size) {
     expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(patternFloat);
     expect(result.size.height, 'size.height(SZ) ' + formatMessageFloat).to.match(patternFloat);
     expect(result.size.thickness, 'size.thickness(SZ) ' +  formatMessageFloat).to.match(patternFloat);
@@ -140,8 +140,12 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   }
 
   if (result.hardware !== void 0) {
-    expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
-    if (result.cpu_id !== void 0) {
+
+    if(result.hardware.ram) {
+      expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
+    }
+
+    if (result.hardware.cpu_id) {
       expect(result.hardware.cpu_id, formatMessageNumber).to.match(
         patternNumber
       );

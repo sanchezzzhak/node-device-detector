@@ -13,7 +13,7 @@ gpu:
     clock_rate: 570
   5:
     name: 'ARM Mali-T720 MP2'
-    clock_rate: 650
+    clock_rate: 650 # 600
   6:
     name: 'Qualcomm Adreno 304'
     clock_rate: 400

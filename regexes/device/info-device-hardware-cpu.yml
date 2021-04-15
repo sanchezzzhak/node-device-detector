@@ -829,3 +829,21 @@ cpu:
     cores: '8'
     clock_rate: 3100
     gpu_id: 67
+  142:
+    name: 'MediaTek MT6739WM'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1100
+    gpu_id: 4
+  143:
+    name: 'MediaTek MT8317'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1200
+    gpu_id: 48
+  144:
+    name: 'MediaTek MT8163'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 5

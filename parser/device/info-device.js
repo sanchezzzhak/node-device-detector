@@ -225,13 +225,7 @@ class InfoDevice extends ParserAbstract {
     return data;
   }
 
-  /**
-   * The main method for obtaining information on brand and device
-   * @param {String} deviceBrand
-   * @param {String} deviceModel
-   * @return {InfoResult|null}
-   */
-  info(deviceBrand, deviceModel) {
+  find(deviceBrand, deviceModel, mergeData = {}) {
     if (!deviceBrand.length || !deviceModel.length) {
       return null;
     }
@@ -252,16 +246,32 @@ class InfoDevice extends ParserAbstract {
     }
 
     let data = this.collection[brand][model];
-
-    // check redirect
-    let dataRedirect = /^->(.+)$/i.exec(data);
-    if (dataRedirect !== null) {
-      return this.info(deviceBrand, dataRedirect[1]);
-    }
-
     // get normalise data
     let result = DataPacker.unpack(data, SHORT_KEYS);
 
+    this.prepareResultDisplay(result);
+    this.prepareResultHardware(result);
+
+    // redirect and overwrite params
+    let dataRedirect = /^->([^;]+)/i.exec(data);
+    if (dataRedirect !== null) {
+      result = Object.assign(result, mergeData);
+      return this.find(deviceBrand, dataRedirect[1], result);
+    }
+
+    return sortObject(
+      Object.assign({}, result, {
+        size:
+          this.sizeConvertObject && result.size
+            ? castSizeToObject(result.size)
+            : result.size,
+        weight: result.weight,
+        release: result.release,
+      })
+    );
+  }
+
+  prepareResultHardware(result) {
     // set hardware data
     if (result.hardware) {
       let gpu;
@@ -282,6 +292,9 @@ class InfoDevice extends ParserAbstract {
         }
       }
     }
+  }
+
+  prepareResultDisplay(result){
     // set display data
     if (result.display) {
       // calculate ration & ppi
@@ -311,18 +324,18 @@ class InfoDevice extends ParserAbstract {
       result.display.ratio = ratio;
       result.display.ppi = String(ppi);
     }
-
-    return sortObject(
-      Object.assign({}, result, {
-        size:
-          this.sizeConvertObject && result.size
-            ? castSizeToObject(result.size)
-            : result.size,
-        weight: result.weight,
-        release: result.release,
-      })
-    );
   }
+
+  /**
+   * The main method for obtaining information on brand and device
+   * @param {String} deviceBrand
+   * @param {String} deviceModel
+   * @return {InfoResult|null}
+   */
+  info(deviceBrand, deviceModel) {
+    return this.find(deviceBrand, deviceModel, {});;
+  }
+
 }
 
 module.exports = InfoDevice;
