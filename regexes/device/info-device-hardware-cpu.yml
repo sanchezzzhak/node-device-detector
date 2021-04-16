@@ -906,7 +906,31 @@ cpu:
     gpu_id: 37
   155:
     name: 'Intel Atom Z3735G'
-    type: 'ARM'
+    type: 'x86'
     cores: '4'
     clock_rate: 1830
-    gpu_id: --
+    gpu_id: 70
+  156:
+    name: 'Intel Atom Z3740'
+    type: 'x86'
+    cores: '4'
+    clock_rate: 1860
+    gpu_id: 70
+  157:
+    name: 'Qualcomm Snapdragon 808 MSM8992'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 2000
+    gpu_id: 71
+  158:
+    name: 'Qualcomm Snapdragon S2 MSM7230'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 800
+    gpu_id: 29
+  159:
+    name: 'MediaTek MT6732M'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 37
