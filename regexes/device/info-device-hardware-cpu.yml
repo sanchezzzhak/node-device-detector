@@ -934,3 +934,61 @@ cpu:
     cores: '4'
     clock_rate: 1300
     gpu_id: 37
+  160:
+    name: 'Intel Atom x7 Z8700'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2400
+    gpu_id: 72
+  161:
+    name: 'NVIDIA Tegra 3 T30L'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+  162:
+    name: 'MediaTek MT6750T'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 1500
+    gpu_id: 26
+  163:
+    name: 'Mediatek MT8321'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  164:
+    name: 'Mediatek Helio P22 MT6762D'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 25
+  165:
+    name: 'Spreadtrum SC7731E'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1300
+    gpu_id: 1
+  166:
+    name: 'Mediatek Helio P23 MT6763T'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2500
+    gpu_id: 40
+  167:
+    name: 'MediaTek MT6516'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 416
+  168:
+    name: 'MediaTek MT8765A'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 2
+  169:
+    name: 'Mediatek Helio P23 MT6763V'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 40
