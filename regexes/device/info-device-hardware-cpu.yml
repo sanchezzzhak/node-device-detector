@@ -992,3 +992,21 @@ cpu:
     cores: '8'
     clock_rate: 2000
     gpu_id: 40
+  170:
+    name: 'MediaTek MT6738'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 26
+  171:
+    name: 'Mediatek Helio P22 MT6762'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 25
+  172:
+    name: 'Qualcomm Snapdragon 429 SDM429'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2000
+    gpu_id: 73
