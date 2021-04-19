@@ -1153,7 +1153,7 @@ alcatel:
   a7 xl: 'DS=6;RS=1080x1920;SZ=81.5x159.6x8.65;WT=175;RE=2017.09;RM=3072;CP=40;OS=Android 7.1;'
   a7: 'DS=5.5;RS=1080x1920;SZ=76.5x152.7x8.95;WT=;RE=2017.09;RM=3072;CP=162;OS=Android 7;'
   apprise: 'DS=5.5;RS=480x960;SZ=71.7x146.2x9.95;WT=168;RE=;RM=2048;CP=84;OS=Android 10;'
-  avalon v: 'DS=5.3;RS=480x960;SZ=69.3x148.1x9.4;WT=156;RE=2019.04;RM=2048;CP=Qualcomm Snapdragon 425 MSM8917;OS=Android 8.1;'
+  avalon v: 'DS=5.3;RS=480x960;SZ=69.3x148.1x9.4;WT=156;RE=2019.04;RM=2048;CP=20;OS=Android 8.1;'
   blaze duo ot-918n: 'DS=3.2;RS=320x480;SZ=58.6x112x12.1;WT=123;RE=;RM=256;CP=;OS=Android 2.3;'
   cameo x: 'DS=5;RS=480x854;SZ=71.9x141.5x9.9;WT=153;RE=;RM=2048;CP=10;OS=Android 7;'
   cinch: 'DS=1.8;RS=;SZ=45x109x13;WT=69;RE=;RM=;CP=;OS=;'
