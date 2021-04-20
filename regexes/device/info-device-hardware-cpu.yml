@@ -1060,3 +1060,15 @@ cpu:
     cores: '2'
     clock_rate: 1000
     gpu_id: 78
+  182:
+    name: 'MediaTek MT6591'
+    type: 'ARM'
+    cores: '6'
+    clock_rate: 1500
+    gpu_id: 0
+  183:
+    name: 'Mediatek MT6573'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 650
+    gpu_id: 48
