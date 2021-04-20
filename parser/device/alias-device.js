@@ -18,8 +18,11 @@ class AliasDevice extends DeviceAbstractParser {
     };
     for (let cursor in this.collection) {
       let item = this.collection[cursor];
-      let match = this.getBaseRegExp(item['regex']).exec(userAgent);
+      let match = this.getBaseRegExp(item['regex']).exec(
+          decodeURIComponent(userAgent)
+      );
       if (match) {
+        
         result.name = this.buildByMatch(item['name'], match)
           .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
           .trim();
@@ -34,11 +37,14 @@ class AliasDevice extends DeviceAbstractParser {
     if (!this.__brandReplaceRegexp) {
       let escapeeChars = [/\+/gi, /\./gi];
       let replaceChars = ['\\+', '\\.'];
-      let brands = Object.keys(this.getCollectionBrands()).join('|');
+      let customBrands = [
+          'HUAWEI HUAWEI'
+      ];
+      let brands = customBrands.concat(Object.keys(this.getCollectionBrands())).join('|');
       for (let i = 0, l = escapeeChars.length; i < l; i++) {
         brands = brands.replace(escapeeChars[i], replaceChars[i]);
       }
-      this.__brandReplaceRegexp = '(' + brands + ')[ _]';
+      this.__brandReplaceRegexp = '(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(' + brands + ')[ _]';
     }
     return this.__brandReplaceRegexp;
   }
