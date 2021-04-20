@@ -218,3 +218,18 @@ gpu:
   73:
     name: 'Qualcomm Adreno 504'
     clock_rate: 450
+  74:
+    name: 'Qualcomm Adreno 530'
+    clock_rate: 624
+  75:
+    name: 'ARM Mali-T880 MP2'
+    clock_rate: 900
+  76:
+    name: 'PowerVR GE8300'
+    clock_rate: 660
+  77:
+    name: 'Vivante GC800'
+    clock_rate: 575
+  78:
+    name: 'PowerVR SGX543MP4'
+    clock_rate: 0

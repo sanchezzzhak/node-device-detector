@@ -1010,3 +1010,53 @@ cpu:
     cores: '4'
     clock_rate: 2000
     gpu_id: 73
+  173:
+    name: 'Qualcomm Snapdragon 820 MSM8996'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2200
+    gpu_id: 74
+  174:
+    name: 'Mediatek Helio P20 MT6757'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2300
+    gpu_id: 75
+  175:
+    name: 'Mediatek MT8766B'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 2000
+    gpu_id: 76
+  176:
+    name: 'Mediatek MT8165A'
+    type: 'ARM'
+    cores: '4'
+    clock_rate: 1500
+    gpu_id: 37
+  177:
+    name: 'Rockchip RK2918'
+    type: 'ARM'
+    cores: '1'
+    clock_rate: 1000
+    gpu_id: 77
+  178:
+    name: 'MediaTek MT6235'
+  179:
+    name: 'MediaTek MT8392'
+    type: 'ARM'
+    cores: '8'
+    clock_rate: 2000
+    gpu_id: 3
+  180:
+    name: 'MediaTek MT6577'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1000
+    gpu_id: 48
+  181:
+    name: 'Apple A5X'
+    type: 'ARM'
+    cores: '2'
+    clock_rate: 1000
+    gpu_id: 78
