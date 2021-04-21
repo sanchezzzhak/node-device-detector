@@ -1042,6 +1042,9 @@ cpu:
     gpu_id: 77
   178:
     name: MediaTek MT6235
+    type: ''
+    cores: 1
+    clock_rate: 208
   179:
     name: MediaTek MT8392
     type: ARM
@@ -1080,6 +1083,40 @@ cpu:
     gpu_id: 3
   185:
     name: Rockchip RK2928
+    type: ARM
     clock_rate: 1000
     cores: 1
     gpu_id: 62
+  186:
+    name: Qualcomm QSC6155
+    type: ''
+    clock_rate: 480
+    cores: 1
+  187:
+    name: Mediatek MT8312
+    type: ARM
+    clock_rate: 1300
+    cores: 2
+    gpu_id: 62
+  188:
+    name: MediaTek MT6268
+    type: ''
+    clock_rate: ''
+    cores: 1
+  189:
+    name: Intel Atom x5 Z8350
+    type: x86
+    clock_rate: 1960
+    cores: 4
+    gpu_id: 72
+  190:
+    name: Texas Instruments OMAP 4430
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+  191:
+    name: Apple A5 S5L8940X
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+    gpu_id: 79
