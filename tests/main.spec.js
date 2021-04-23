@@ -523,6 +523,9 @@ describe('tests device fixtures', function () {
     'alias-device.yml',
     'info-device.yml',
     'info-device-hardware.yml',
+    'info-device-hardware-cpu.yml',
+    'info-device-hardware-gpu.yml',
+    'device-manufacturer-info.yml',
   ];
   let pathRegexData = fixtureFolder + '../../regexes/device/';
   let deviceRegexFiles = fs.readdirSync(pathRegexData);

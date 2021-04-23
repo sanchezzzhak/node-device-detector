@@ -1673,7 +1673,6 @@ apple:
   watch series 6 (40mm): '->watch series 6 40mm'
   watch series 6 (44mm): '->watch series 6 44mm'
 
-
 archos:
   101 cobalt: 'DS=10.1;RS=1024x600;SZ=272.5x161x12.15;WT=690;RM=1024;CP=72;RE=2015.10;OS=Android 4.2;'
   101 neon: 'DS=10.1;RS=1024x600;SZ=161x272x12.1;WT=690;RE=2014.10;RM=1024;CP=102;OS=Android 4.2;'
@@ -2065,7 +2064,6 @@ assistant:
   surf: ''
   target: ''
   unami: ''
-
 
 # Asus
 asus:
