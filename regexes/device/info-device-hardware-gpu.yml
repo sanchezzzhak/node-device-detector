@@ -123,19 +123,19 @@ gpu:
     name: Qualcomm Adreno 506
     clock_rate: 650
   42:
-    name : ARM Mali-G76 MP12
+    name: ARM Mali-G76 MP12
     clock_rate: 700
   43:
-    name : ARM Mali-T628 MP6
+    name: ARM Mali-T628 MP6
     clock_rate: 600
   44:
-    name : AEM Mali-400 MP4
+    name: AEM Mali-400 MP4
     clock_rate: 250
   45:
-    name : ARM Mali-T760 MP4
+    name: ARM Mali-T760 MP4
     clock_rate: 600
   46:
-    name : ARM Mali-T820 MP1
+    name: ARM Mali-T820 MP1
     clock_rate: 600
   47:
     name: PowerVR G6200
@@ -163,7 +163,7 @@ gpu:
     clock_rate: 450
   55:
     name: PowerVR GE8322
-    clock_rate: 
+    clock_rate:
   56:
     name: Qualcomm Adreno 203
     clock_rate: 245

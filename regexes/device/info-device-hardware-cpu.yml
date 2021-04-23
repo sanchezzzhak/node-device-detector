@@ -138,24 +138,24 @@ cpu:
     clock_rate: 1400
     gpu_id: 1
   24:
-    name:  MediaTek MT6572
+    name: MediaTek MT6572
     type: ARM
     cores: 2
     clock_rate: 1200
     gpu_id: 1
   25:
-    name:  Qualcomm Snapdragon 835 MSM8998
+    name: Qualcomm Snapdragon 835 MSM8998
     type: ARM
     cores: 8
     clock_rate: 2450
     gpu_id: 19
   26:
-    name:  Qualcomm MSM7600
+    name: Qualcomm MSM7600
     type: x86
     cores: 1
     clock_rate: 528
   27:
-    name:  Mediatek MT6589
+    name: Mediatek MT6589
     type: ARM
     cores: 4
     clock_rate: 1200
@@ -197,7 +197,7 @@ cpu:
     clock_rate: 1200
     gpu_id: 23
   34:
-    name:  HiSilicon Kirin 910T
+    name: HiSilicon Kirin 910T
     type: ARM
     cores: 4
     clock_rate: 1800
