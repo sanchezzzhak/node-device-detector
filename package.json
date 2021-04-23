@@ -4,8 +4,9 @@
   "description": "Nodejs device detector (port matomo-org/device-detector)",
   "main": "index.js",
   "scripts": {
-    "coverage": "istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R spec tests/*.spec.js",
     "test": "mocha -- -R spec tests/*.spec.js",
+    "test-coverage-text": "nyc --check-coverage --lines 90 --per-file --reporter=text mocha -- -R spec tests/*.spec.js",
+    "test-coverage-html": "nyc --reporter=html mocha -- -R spec tests/*.spec.js",
     "prettier": "prettier --write ."
   },
   "repository": {

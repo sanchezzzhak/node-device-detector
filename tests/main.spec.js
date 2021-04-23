@@ -15,6 +15,7 @@ const {
 const TIMEOUT = 6000;
 const detector = new (require('../index'))();
 const aliasDevice = new (require('../parser/device/alias-device'))();
+
 const infoDevice = new (require('../parser/device/info-device'))();
 
 const collectionBrand = revertKeysForObjects(
@@ -84,7 +85,7 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   let result = infoDevice.info(brand, model);
 
   if (result === null) {
-    expect(rawSource === void 0).to.equal(true);
+    expect(rawSource !== void 0).to.equal(true);
     return;
   }
 
@@ -105,27 +106,27 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
     result
   )}`;
 
-  if (result.display !== void 0) {
-    if (result.display.size !== void 0) {
-      expect(result.display.size, formatMessageFloat).to.match(
+  if (result.display) {
+    if (result.display.size) {
+      expect(result.display.size, 'display.size(DS) ' + formatMessageFloat).to.match(
         patternFloat
       );
     }
-    if (result.display.resolution !== void 0) {
+    if (result.display.resolution) {
       expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
-      expect(result.display.resolution.width, formatMessageFloat).to.match(
+      expect(result.display.resolution.width, 'display.width(RS) ' + formatMessageFloat).to.match(
         patternFloat
       );
-      expect(result.display.resolution.height, formatMessageFloat).to.match(
+      expect(result.display.resolution.height, 'display.height(RS) ' + formatMessageFloat).to.match(
         patternFloat
       );
       expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
     }
   }
-  if (result.size !== void 0) {
-    expect(result.size.width, formatMessageFloat).to.match(patternFloat);
-    expect(result.size.height, formatMessageFloat).to.match(patternFloat);
-    expect(result.size.thickness, formatMessageFloat).to.match(patternFloat);
+  if (result.size) {
+    expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(patternFloat);
+    expect(result.size.height, 'size.height(SZ) ' + formatMessageFloat).to.match(patternFloat);
+    expect(result.size.thickness, 'size.thickness(SZ) ' +  formatMessageFloat).to.match(patternFloat);
   }
 
   if (result.weight !== void 0 && result.weight !== '') {
@@ -139,8 +140,12 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   }
 
   if (result.hardware !== void 0) {
-    expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
-    if (result.cpu_id !== void 0) {
+
+    if(result.hardware.ram) {
+      expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
+    }
+
+    if (result.hardware.cpu_id) {
       expect(result.hardware.cpu_id, formatMessageNumber).to.match(
         patternNumber
       );
@@ -518,6 +523,9 @@ describe('tests device fixtures', function () {
     'alias-device.yml',
     'info-device.yml',
     'info-device-hardware.yml',
+    'info-device-hardware-cpu.yml',
+    'info-device-hardware-gpu.yml',
+    'device-manufacturer-info.yml',
   ];
   let pathRegexData = fixtureFolder + '../../regexes/device/';
   let deviceRegexFiles = fs.readdirSync(pathRegexData);

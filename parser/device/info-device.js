@@ -105,6 +105,26 @@ const gcd = (u, v) => {
   return gcd((v - u) >> 1, u);
 };
 
+const mergeDeep = (...objects) => {
+  const isObject = obj => obj && typeof obj === 'object';
+  return objects.reduce((prev, obj) => {
+    Object.keys(obj).forEach(key => {
+      const pVal = prev[key];
+      const oVal = obj[key];
+      
+      if (Array.isArray(pVal) && Array.isArray(oVal)) {
+        prev[key] = pVal.concat(...oVal);
+      }
+      else if (isObject(pVal) && isObject(oVal)) {
+        prev[key] = mergeDeep(pVal, oVal);
+      } else {
+        prev[key] = oVal;
+      }
+    });
+    return prev;
+  }, {});
+}
+
 /**
  * calculate ratio
  * @param width
@@ -168,15 +188,19 @@ class InfoDevice extends ParserAbstract {
     /** @type {string} fixture path to file */
     this.fixtureFile = 'device/info-device.yml';
 
-    this.collectionHardware = {};
+    this.collectionHardwareCPU = {};
+    this.collectionHardwareGPU = {};
     this.loadCollection();
   }
 
   loadCollection() {
     super.loadCollection();
     // load hardware properties
-    this.collectionHardware = this.loadYMLFile(
-      'device/info-device-hardware.yml'
+    this.collectionHardwareCPU = this.loadYMLFile(
+      'device/info-device-hardware-cpu.yml'
+    );
+    this.collectionHardwareGPU = this.loadYMLFile(
+      'device/info-device-hardware-gpu.yml'
     );
   }
 
@@ -197,11 +221,11 @@ class InfoDevice extends ParserAbstract {
   }
 
   getGpuById(id) {
-    if (this.collectionHardware['gpu'] === void 0) {
+    if (this.collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
     id = parseInt(id);
-    let data = this.collectionHardware['gpu'][id];
+    let data = this.collectionHardwareGPU['gpu'][id];
     if (data === void 0) {
       return null;
     }
@@ -209,25 +233,19 @@ class InfoDevice extends ParserAbstract {
   }
 
   getCpuById(id) {
-    if (this.collectionHardware['cpu'] === void 0) {
+    if (this.collectionHardwareCPU['cpu'] === void 0) {
       return null;
     }
 
     id = parseInt(id);
-    let data = this.collectionHardware['cpu'][id];
+    let data = this.collectionHardwareCPU['cpu'][id];
     if (data === void 0) {
       return null;
     }
     return data;
   }
 
-  /**
-   * The main method for obtaining information on brand and device
-   * @param {String} deviceBrand
-   * @param {String} deviceModel
-   * @return {InfoResult|null}
-   */
-  info(deviceBrand, deviceModel) {
+  find(deviceBrand, deviceModel, mergeData = {}) {
     if (!deviceBrand.length || !deviceModel.length) {
       return null;
     }
@@ -248,16 +266,33 @@ class InfoDevice extends ParserAbstract {
     }
 
     let data = this.collection[brand][model];
-
-    // check redirect
-    let dataRedirect = /^->(.+)$/i.exec(data);
-    if (dataRedirect !== null) {
-      return this.info(deviceBrand, dataRedirect[1]);
-    }
-
     // get normalise data
     let result = DataPacker.unpack(data, SHORT_KEYS);
 
+    this.prepareResultDisplay(result);
+    this.prepareResultHardware(result);
+  
+    result = mergeDeep(result, mergeData);
+    
+    // redirect and overwrite params
+    let dataRedirect = /^->([^;]+)/i.exec(data);
+    if (dataRedirect !== null) {
+      return this.find(deviceBrand, dataRedirect[1], result);
+    }
+
+    return sortObject(
+      Object.assign({}, result, {
+        size:
+          this.sizeConvertObject && result.size
+            ? castSizeToObject(result.size)
+            : result.size,
+        weight: result.weight,
+        release: result.release,
+      })
+    );
+  }
+
+  prepareResultHardware(result) {
     // set hardware data
     if (result.hardware) {
       let gpu;
@@ -278,6 +313,9 @@ class InfoDevice extends ParserAbstract {
         }
       }
     }
+  }
+
+  prepareResultDisplay(result){
     // set display data
     if (result.display) {
       // calculate ration & ppi
@@ -307,18 +345,18 @@ class InfoDevice extends ParserAbstract {
       result.display.ratio = ratio;
       result.display.ppi = String(ppi);
     }
-
-    return sortObject(
-      Object.assign({}, result, {
-        size:
-          this.sizeConvertObject && result.size
-            ? castSizeToObject(result.size)
-            : result.size,
-        weight: result.weight,
-        release: result.release,
-      })
-    );
   }
+
+  /**
+   * The main method for obtaining information on brand and device
+   * @param {String} deviceBrand
+   * @param {String} deviceModel
+   * @return {InfoResult|null}
+   */
+  info(deviceBrand, deviceModel) {
+    return this.find(deviceBrand, deviceModel, {});;
+  }
+
 }
 
 module.exports = InfoDevice;

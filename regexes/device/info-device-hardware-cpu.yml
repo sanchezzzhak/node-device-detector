@@ -1,0 +1,1140 @@
+cpu:
+  1:
+    name: Mediatek MT6582M
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  2:
+    name: Mediatek MT6592
+    type: ARM
+    cores: 8
+    clock_rate: 1700
+    gpu_id: 3
+  3:
+    name: HiSilicon Kirin 620
+    type: ARM
+    cores: 8
+    clock_rate: 1200
+    gpu_id: 3
+  4:
+    name: MediaTek MT6580A
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  5:
+    name: MediaTek MT6580
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  6:
+    name: Spreadtrum SC7731
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  7:
+    name: Mediatek MT6582
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  8:
+    name: MediaTek MT6739
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 4
+  9:
+    name: MediaTek MT6737
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 5
+  10:
+    name: Qualcomm Snapdragon 210 MSM8909
+    type: ARM
+    cores: 4
+    clock_rate: 1100
+    gpu_id: 6
+  11:
+    name: Qualcomm Snapdragon 212 APQ8009
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 6
+  12:
+    name: MediaTek MT8125
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 7
+  13:
+    name: Samsung Exynos 3110
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 8
+  14:
+    name: Qualcomm Snapdragon S4 Plus MSM8960
+    type: ARM
+    cores: 2
+    clock_rate: 1500
+    gpu_id: 9
+  15:
+    name: Qualcomm Snapdragon S4 Pro MSM8960T
+    type: ARM
+    cores: 2
+    clock_rate: 1700
+    gpu_id: 10
+  16:
+    name: Intel Atom Z3560
+    type: ARM
+    cores: 4
+    clock_rate: 1830
+    gpu_id: 13
+  17:
+    name: Qualcomm Snapdragon 410 MSM8916
+    type: ARM
+    cores: 4
+    clock_rate: 1400
+    gpu_id: 14
+  18:
+    name: Intel Atom Z2560
+    type: x86
+    cores: 2/4
+    clock_rate: 1600
+    gpu_id: 15
+  19:
+    name: Qualcomm Snapdragon 630
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    gpu_id: 16
+  20:
+    name: Qualcomm Snapdragon 425 MSM8917
+    type: ARM
+    cores: 4
+    clock_rate: 1400
+    gpu_id: 17
+  21:
+    name: Spreadtrum SC9832
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  22:
+    name: Qualcomm Snapdragon 615 MSM8939
+    type: ARM
+    cores: 8
+    clock_rate: 1700
+    gpu_id: 18
+  23:
+    name: Amlogic S805
+    type: ARM
+    cores: 2
+    clock_rate: 1400
+    gpu_id: 1
+  24:
+    name: MediaTek MT6572
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 1
+  25:
+    name: Qualcomm Snapdragon 835 MSM8998
+    type: ARM
+    cores: 8
+    clock_rate: 2450
+    gpu_id: 19
+  26:
+    name: Qualcomm MSM7600
+    type: x86
+    cores: 1
+    clock_rate: 528
+  27:
+    name: Mediatek MT6589
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 7
+  28:
+    name: HiSilicon Kirin 710
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    gpu_id: 20
+  29:
+    name: Texas Instruments OMAP 4460
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 8
+  30:
+    name: HiSilicon Kirin 920
+    type: ARM
+    cores: 8
+    clock_rate: 1700
+    gpu_id: 21
+  31:
+    name: Qualcomm Snapdragon S1 MSM7227A
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 22
+  32:
+    name: Qualcomm Snapdragon S4 Plus MSM8930
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 12
+  33:
+    name: Qualcomm Snapdragon 200 MSM8212
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 23
+  34:
+    name: HiSilicon Kirin 910T
+    type: ARM
+    cores: 4
+    clock_rate: 1800
+    gpu_id: 3
+  35:
+    name: Qualcomm Snapdragon 435 MSM8940
+    type: ARM
+    cores: 8
+    clock_rate: 1400
+    gpu_id: 24
+  36:
+    name: Mediatek MT6572M
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 1
+  37:
+    name: HiSilicon Kirin 710F
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    gpu_id: 20
+  38:
+    name: MediaTek Helio P35 MT6765
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    gpu_id: 25
+  39:
+    name: MediaTek MT6753T
+    type: ARM
+    cores: 8
+    clock_rate: 1500
+    gpu_id: 2
+  40:
+    name: Mediatek MT6750
+    type: ARM
+    cores: 8
+    clock_rate: 1500
+    gpu_id: 26
+  41:
+    name: Qualcomm Snapdragon 439
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 24
+  42:
+    name: HiSilicon Kirin 659
+    type: ARM
+    cores: 8
+    clock_rate: 2360
+    gpu_id: 27
+  43:
+    name: Qualcomm Snapdragon 430 MSM8937
+    type: ARM
+    cores: 8
+    clock_rate: 1400
+    gpu_id: 24
+  44:
+    name: MediaTek Helio A22 MT6761
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    gpu_id: 25
+  45:
+    name: MediaTek Dimensity 800 MT6873
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 28
+  46:
+    name: Qualcomm Snapdragon S1 MSM7225A
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 22
+  47:
+    name: MediaTek Helio P22 MT6762R
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 25
+  48:
+    name: HiSilicon Kirin 655
+    type: ARM
+    cores: 8
+    clock_rate: 2100
+    gpu_id: 27
+  49:
+    name: Qualcomm Snapdragon S2 MSM8255
+    type: ARM
+    cores: 1
+    clock_rate: 1500
+    gpu_id: 29
+  50:
+    name: HiSilicon Kirin 970
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    gpu_id: 30
+  51:
+    name: HiSilicon K3V2
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 31
+  52:
+    name: HiSilicon Kirin 980
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    gpu_id: 32
+  53:
+    name: HiSilicon Kirin 985 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2850
+    gpu_id: 33
+  54:
+    name: HiSilicon Kirin 990 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2860
+    gpu_id: 34
+  55:
+    name: HiSilicon Kirin 820 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2360
+    gpu_id: 35
+  56:
+    name: Mediatek MT6735P
+    type: ARM
+    cores: 4
+    clock_rate: 1000
+    gpu_id: 2
+  57:
+    name: HiSilicon Kirin 810
+    type: ARM
+    cores: 8
+    clock_rate: 2270
+    gpu_id: 36
+  58:
+    name: Mediatek MT6580M
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  59:
+    name: Apple A13 Bionic APL1W85
+    type: ARM
+    cores: 6
+    clock_rate: 2650
+  60:
+    name: Mediatek MT6752M
+    type: ARM
+    cores: 8
+    clock_rate: 1700
+    gpu_id: 37
+  61:
+    name: Qualcomm Snapdragon 660
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    gpu_id: 38
+  62:
+    name: Qualcomm Snapdragon 710
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    gpu_id: 39
+  63:
+    name: Mediatek Helio P23 MT6763
+    type: ARM
+    cores: 8
+    clock_rate: 2500
+    gpu_id: 40
+  64:
+    name: Qualcomm Snapdragon 632
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 41
+  65:
+    name: Qualcomm Snapdragon 617 MSM8952
+    type: ARM
+    cores: 8
+    clock_rate: 1500
+    gpu_id: 18
+  66:
+    name: HiSilicon Kirin 650
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 27
+  67:
+    name: Samsung Exynos 9825
+    type: ARM
+    cores: 8
+    clock_rate: 2730
+    gpu_id: 42
+  68:
+    name: Qualcomm Snapdragon 616 MSM8939v2
+    type: ARM
+    cores: 8
+    clock_rate: 1700
+    gpu_id: 18
+  69:
+    name: Mediatek MT6737T
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 5
+  70:
+    name: HiSilicon Kirin 925
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 43
+  71:
+    name: Allwinner A33
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 1
+  72:
+    name: Rockchip RK3168
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 8
+  73:
+    name: Rockchip RK3066
+    type: ARM
+    cores: 2
+    clock_rate: 1500
+    gpu_id: 44
+  74:
+    name: Mediatek MT8735
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 2
+  75:
+    name: Nvidia Tegra 4
+    type: ARM
+    cores: 4
+    clock_rate: 1800
+  76:
+    name: MediaTek MT6739W
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 4
+  77:
+    name: Marvell PXA310
+    type: ARM
+    cores: 1
+    clock_rate: 624
+  78:
+    name: Qualcomm Snapdragon 400 MSM8226
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 12
+  79:
+    name: Mediatek MT6735
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    cpu_id: 2
+  80:
+    name: Rockchip RK3188
+    type: ARM
+    cores: 4
+    clock_rate: 1800
+    cpu_id: 44
+  81:
+    name: Qualcomm Snapdragon 625
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    cpu_id: 41
+  82:
+    name: Rockchip RK3288
+    type: ARM
+    cores: 4
+    clock_rate: 1800
+    cpu_id: 45
+  83:
+    name: Unisoc SC9832E
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    cpu_id: 46
+  84:
+    name: Mediatek MT6739WW
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    cpu_id: 4
+  85:
+    name: Mediatek Helio X10 MT6795
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    gpu_id: 47
+  86:
+    name: MediaTek MT6737M
+    type: ARM
+    cores: 4
+    clock_rate: 1250
+    gpu_id: 5
+  87:
+    name: Nvidia Tegra 2
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+  88:
+    name: Spreadtrum SC7731
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  89:
+    name: Mediatek MT8121
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 7
+  90:
+    name: MediaTek MT6575
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 48
+  91:
+    name: Qualcomm Snapdragon S1 MSM7225
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 22
+  92:
+    name: AMD A8-6410
+    type: x86
+    cores: 4
+    clock_rate: 2400
+    gpu_id: 49
+  93:
+    name: Mediatek MT8321M
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  94:
+    name: Qualcomm Snapdragon 800 MSM8074
+    type: ARM
+    cores: 4
+    clock_rate: 2300
+    gpu_id: 11
+  95:
+    name: Texas Instruments OMAP 4470
+    type: ARM
+    cores: 2
+    clock_rate: 1500
+    gpu_id: 8
+  96:
+    name: Qualcomm Snapdragon 810 MSM8994
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 50
+  97:
+    name: Mediatek Helio P60T
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 51
+  98:
+    name: Mediatek MT8183
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 51
+  99:
+    name: Mediatek MT8173
+    type: ARM
+    cores: 4
+    clock_rate: 2400
+    gpu_id: 52
+  100:
+    name: Mediatek MT8135
+    type: ARM
+    cores: 4
+    clock_rate: 1700
+    gpu_id: 47
+  101:
+    name: MediaTek MT8168
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    gpu_id: 53
+  102:
+    name: Rockchip RK3188T
+    type: ARM
+    cores: 4
+    clock_rate: 1800
+    gpu_id: 44
+  103:
+    name: Spreadtrum SC7731
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  104:
+    name: Apple A6x
+    type: ARM
+    cores: 2
+    clock_rate: 1400
+  105:
+    name: Apple A5
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+  106:
+    name: Apple A8X
+    type: ARM
+    cores: 3
+    clock_rate: 1500
+    gpu_id: 54
+  107:
+    name: Mediatek MT8389
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 7
+  108:
+    name: Apple A7
+    type: ARM
+    cores: 2
+    clock_rate: 1400
+    gpu_id: 13
+  109:
+    name: Unisoc SC9863A
+    type: ARM
+    cores: 8
+    clock_rate: 1600
+    gpu_id: 55
+  110:
+    name: Qualcomm Snapdragon S4 Play MSM8225Q
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 56
+  111:
+    name: Qualcomm Snapdragon 400 MSM8926
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    gpu_id: 12
+  112:
+    name: Mediatek MT6589T
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 7
+  113:
+    name: MediaTek MT6737VWT
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 5
+  114:
+    name: Mediatek Helio P70 MT6771
+    type: ARM
+    cores: 8
+    clock_rate: 2100
+    gpu_id: 51
+  115:
+    name: Qualcomm Snapdragon 652 MSM8976
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 57
+  116:
+    name: Rockchip RK3399
+    type: ARM
+    cores: 6
+    clock_rate: 2000
+    gpu_id: 58
+  117:
+    name: Mediatek Helio P10 MT6755
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 26
+  118:
+    name: Mediatek MT6753
+    type: ARM
+    cores: 8
+    clock_rate: 1500
+    gpu_id: 59
+  119:
+    name: Qualcomm Snapdragon 200 8210
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 23
+  120:
+    name: Mediatek MT8732
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 37
+  121:
+    name: Mediatek MT8735B
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 2
+  122:
+    name: Apple A14 Bionic
+    type: ARM
+    cores: 3
+    clock_rate: 3100 # 1800
+  123:
+    name: Apple A4
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+  124:
+    name: Apple A6
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+  125:
+    name: Apple A8
+    type: ARM
+    cores: 2
+    clock_rate: 1400
+    gpu_id: 60
+  126:
+    name: Apple A9
+    type: ARM
+    cores: 2
+    clock_rate: 1800
+  127:
+    name: Apple A10 Fusion
+    type: ARM
+    cores: 4
+    clock_rate: 2340
+  128:
+    name: Apple A11 Bionic
+    type: ARM
+    cores: 4
+    clock_rate: 2390
+  129:
+    name: Apple A13 Bionic
+    type: ARM
+    cores: 6
+    clock_rate: 2660
+  130:
+    name: Apple A12 Bionic
+    type: ARM
+    cores: 6
+    clock_rate: 2490
+  131:
+    name: Intel Atom Z2580
+    type: x86
+    cores: 2/4
+    clock_rate: 2000
+    gpu_id: 61
+  132:
+    name: Intel Atom Z2420
+    type: x86
+    cores: 1/2
+    clock_rate: 1200
+    gpu_id: 8
+  133:
+    name: WonderMedia PRIZM WM8950
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 62
+  134:
+    name: Qualcomm Snapdragon S4 Pro APQ8064A
+    type: ARM
+    cores: 4
+    clock_rate: 1700
+    gpu_id: 10
+  135:
+    name: Intel Atom Z3745
+    type: x86
+    cores: 4
+    clock_rate: 1860
+    gpu_id: 63
+  136:
+    name: Intel Atom Z3580
+    type: x86
+    cores: 4
+    clock_rate: 2330
+    gpu_id: 13
+  137:
+    name: NVIDIA Tegra 3
+    type: ARM
+    cores: 4
+    clock_rate: 1700
+  138:
+    name: Qualcomm Snapdragon 600 APQ8064T
+    type: ARM
+    cores: 4
+    clock_rate: 1700
+    gpu_id: 64
+  139:
+    name: Qualcomm Snapdragon 801 MSM8974AB
+    type: ARM
+    cores: 4
+    clock_rate: 2360
+    gpu_id: 65
+  140:
+    name: Qualcomm Snapdragon S4 Plus MSM8260A
+    type: ARM
+    cores: 2
+    clock_rate: 1700
+    gpu_id: 66
+  141:
+    name: Qualcomm Snapdragon 865+ 5G
+    type: ARM
+    cores: 8
+    clock_rate: 3100
+    gpu_id: 67
+  142:
+    name: MediaTek MT6739WM
+    type: ARM
+    cores: 4
+    clock_rate: 1100
+    gpu_id: 4
+  143:
+    name: MediaTek MT8317
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+    gpu_id: 48
+  144:
+    name: MediaTek MT8163
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 51
+  145:
+    name: Qualcomm Snapdragon S1 MSM7227
+    type: ARM
+    cores: 1
+    clock_rate: 600
+    gpu_id: 22
+  146:
+    name: Apple A12Z Bionic
+    type: ARM
+    cores: 8
+    clock_rate: 2490
+  147:
+    name: Apple A12X Bionic
+    type: ARM
+    cores: 8
+    clock_rate: 2490
+  148:
+    name: Apple A15 Bionic
+    type: ARM
+    cores: 8
+    clock_rate: 0
+  149:
+    name: Qualcomm MSM7227 Turbo
+    type: ARM
+    cores: 1
+    clock_rate: 832
+    gpu_id: 22
+  150:
+    name: Qualcomm Snapdragon S1 QSD8250
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 22
+  151:
+    name: MediaTek MT8111
+    type: ARM
+    cores: 2
+    clock_rate: 1300
+    gpu_id: 1
+  152:
+    name: Intel Atom Z2760
+    type: x86
+    cores: 2/4
+    clock_rate: 1800
+    gpu_id: 68
+  153:
+    name: Intel Core i5-3317U
+    type: x86
+    cores: 2/4
+    clock_rate: 1700
+    gpu_id: 69
+  154:
+    name: Mediatek MT6732
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 37
+  155:
+    name: Intel Atom Z3735G
+    type: x86
+    cores: 4
+    clock_rate: 1830
+    gpu_id: 70
+  156:
+    name: Intel Atom Z3740
+    type: x86
+    cores: 4
+    clock_rate: 1860
+    gpu_id: 70
+  157:
+    name: Qualcomm Snapdragon 808 MSM8992
+    type: ARM
+    cores: 6
+    clock_rate: 2000
+    gpu_id: 71
+  158:
+    name: Qualcomm Snapdragon S2 MSM7230
+    type: ARM
+    cores: 1
+    clock_rate: 800
+    gpu_id: 29
+  159:
+    name: MediaTek MT6732M
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 37
+  160:
+    name: Intel Atom x7 Z8700
+    type: ARM
+    cores: 4
+    clock_rate: 2400
+    gpu_id: 72
+  161:
+    name: NVIDIA Tegra 3 T30L
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+  162:
+    name: MediaTek MT6750T
+    type: ARM
+    cores: 8
+    clock_rate: 1500
+    gpu_id: 26
+  163:
+    name: Mediatek MT8321
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  164:
+    name: Mediatek Helio P22 MT6762D
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 25
+  165:
+    name: Spreadtrum SC7731E
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  166:
+    name: Mediatek Helio P23 MT6763T
+    type: ARM
+    cores: 8
+    clock_rate: 2500
+    gpu_id: 40
+  167:
+    name: MediaTek MT6516
+    type: ARM
+    cores: 1
+    clock_rate: 416
+  168:
+    name: MediaTek MT8765A
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 2
+  169:
+    name: Mediatek Helio P23 MT6763V
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 40
+  170:
+    name: MediaTek MT6738
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 26
+  171:
+    name: Mediatek Helio P22 MT6762
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 25
+  172:
+    name: Qualcomm Snapdragon 429 SDM429
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    gpu_id: 73
+  173:
+    name: Qualcomm Snapdragon 820 MSM8996
+    type: ARM
+    cores: 4
+    clock_rate: 2200
+    gpu_id: 74
+  174:
+    name: Mediatek Helio P20 MT6757
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    gpu_id: 75
+  175:
+    name: Mediatek MT8766B
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    gpu_id: 76
+  176:
+    name: Mediatek MT8165A
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 37
+  177:
+    name: Rockchip RK2918
+    type: ARM
+    cores: 1
+    clock_rate: 1000
+    gpu_id: 77
+  178:
+    name: MediaTek MT6235
+    type: ''
+    cores: 1
+    clock_rate: 208
+  179:
+    name: MediaTek MT8392
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    gpu_id: 3
+  180:
+    name: MediaTek MT6577
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+    gpu_id: 48
+  181:
+    name: Apple A5X
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+    gpu_id: 78
+  182:
+    name: MediaTek MT6591
+    type: ARM
+    cores: 6
+    clock_rate: 1500
+    gpu_id: 0
+  183:
+    name: Mediatek MT6573
+    type: ARM
+    cores: 1
+    clock_rate: 650
+    gpu_id: 48
+  184:
+    name: MediaTek MT8127
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 3
+  185:
+    name: Rockchip RK2928
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+    gpu_id: 62
+  186:
+    name: Qualcomm QSC6155
+    type: ''
+    clock_rate: 480
+    cores: 1
+  187:
+    name: Mediatek MT8312
+    type: ARM
+    clock_rate: 1300
+    cores: 2
+    gpu_id: 62
+  188:
+    name: MediaTek MT6268
+    type: ''
+    clock_rate: ''
+    cores: 1
+  189:
+    name: Intel Atom x5 Z8350
+    type: x86
+    clock_rate: 1960
+    cores: 4
+    gpu_id: 72
+  190:
+    name: Texas Instruments OMAP 4430
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+  191:
+    name: Apple A5 S5L8940X
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+    gpu_id: 79
+  192:
+    name: Apple S6
+    type: ARM
+    clock_rate: 0
+    cores: 0
+    gpu_id: 0
+  193:
+    name: Apple S5
+    type: ARM
+    clock_rate: 0
+    cores: 0
+    gpu_id: 0
+  194:
+    name: MediaTek Helio X20 MT6797M
+    type: ARM
+    clock_rate: 10
+    cores: 2300
+    gpu_id: 80

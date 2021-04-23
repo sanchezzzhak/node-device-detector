@@ -7,3 +7,5 @@ tests/
 .prettierrc.json
 .prettierignore
 .gitattributes
+.nyc_output
+coverage/
