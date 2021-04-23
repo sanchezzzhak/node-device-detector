@@ -1403,7 +1403,8 @@ amigoo:
   x15: ''
 
 amoi:
-  a862w: ''
+  # a862w: add Qualcomm MSM8225Q
+  a862w: 'DS=4.5;RS=540x960;SZ=67.3x134.5x10.6;WT=150;RM=1024;OS=Android 4.1;SM=2;'
   ca6: ''
   clever gem s52: ''
   clever gleam s45: ''
