@@ -1347,7 +1347,7 @@ amazon:
   kindle fire hd: 'DS=7;RS=1280x800;SZ=137x193x10.3;WT=395;RE=2012.09;RM=1024;CP=29;OS=Android 4;'
   kindle fire hdx 7" wifi: ''
   kindle fire hdx 8.9" wifi: ''
-  kindle fire: 'DS=7;RS=1024x600;SZ=120x190x11.4;WT=413;RE=2011.09;RM=512;CP=;OS=Android 2.3;'  # cp = TI OMAP4 
+  kindle fire: 'DS=7;RS=1024x600;SZ=120x190x11.4;WT=413;RE=2011.09;RM=512;CP=;OS=Android 2.3;'
   kindle: ''
   sd4930ur: '->fire phone'
   tate: '->kindle fire hd 7" wifi'

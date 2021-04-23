@@ -1,4 +1,3 @@
-
 # Dalvik
 - regex: '^Dalvik/[\d\.]+ \(Linux; U;\s?Android\s?(?:[\d\.]+;)\s?(.+) (?:Build|MIUI)/(?:.+)\)'
   name: '$1'

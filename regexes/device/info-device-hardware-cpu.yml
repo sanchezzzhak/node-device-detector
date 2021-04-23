@@ -867,7 +867,7 @@ cpu:
     name: Apple A15 Bionic
     type: ARM
     cores: 8
-    clock_rate: 
+    clock_rate: 0
   149:
     name: Qualcomm MSM7227 Turbo
     type: ARM
