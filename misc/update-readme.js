@@ -12,9 +12,24 @@ Browsers.sort(sortABC);
 let brandInfos = YAML.safeLoad(
   fs.readFileSync(__dirname + '/../regexes/device/info-device.yml', 'utf8')
 );
+
+// console.log({brandInfos});
+
+let deviceAliasCount = 0;
 let deviceInfoCount = 0;
 for (let brand in brandInfos) {
-  deviceInfoCount += Object.keys(brandInfos[brand]).length;
+  if(brandInfos[brand] !== null) {
+    if(!brandInfos[brand]) {
+      continue;
+    }
+    for(let model in brandInfos[brand]){
+      if (brandInfos[brand][model] && brandInfos[brand][model].indexOf('->') !== -1) {
+        deviceAliasCount++;
+      } else if(brandInfos[brand][model] && brandInfos[brand][model]) {
+        deviceInfoCount++;
+      }
+    }
+  }
 }
 
 console.log('Update README.md');
@@ -38,7 +53,7 @@ fs.readFile(someFile, 'utf8', function (err, data) {
 
   data = data.replace(
     /few devices\. \([^)]+\)$/gims,
-    `few devices. (${deviceInfoCount} devices)`
+    `few devices. (${deviceInfoCount} devices, alias devices ${deviceAliasCount})`
   );
   
   let dateObj = new Date();
