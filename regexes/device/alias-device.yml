@@ -53,3 +53,11 @@
 # UnityPlayer
 - regex: 'Android OS.+;\s+([^;]+);?\) AppleWebKit/.+UnityPlayer'
   name: '$1'
+
+# Obigo Browser
+- regex: '^(.+)/(?:[\d\.]+).+ObigoInternetBrowser'
+  name: '$1'
+
+# InetTvBrowser
+- regex: 'InettvBrowser/(?:[\d\.]+).+\(.+\) ?(.+); CC/'
+  name: '$1'
