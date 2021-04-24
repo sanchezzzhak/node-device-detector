@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 23/04/2021_
+_Last update: 24/04/2021_
 
 ## Description
 
@@ -158,7 +158,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (292 devices, alias devices 1069)
+> This parser is experimental and contains few devices. (297 devices, alias devices 1069)
 >
 ##### Support detail brands/models list:
 
@@ -167,7 +167,7 @@ is not parse result  {name: ""}
 
 | Brand | Device count | Alias count |
  |----|-------------|-------------|
-| 360 | 7 | 10 | 
+| 360 | 10 | 10 | 
 | 8848 | 0 | 0 | 
 | 2e | 2 | 2 | 
 | 3gnet | 0 | 1 | 
@@ -190,7 +190,7 @@ is not parse result  {name: ""}
 | ais | 0 | 2 | 
 | aiuto | 0 | 0 | 
 | aiwa | 0 | 0 | 
-| akai | 0 | 5 | 
+| akai | 1 | 5 | 
 | alba | 0 | 1 | 
 | alcatel | 0 | 427 | 
 | alcor | 1 | 0 | 
@@ -207,7 +207,7 @@ is not parse result  {name: ""}
 | amazon | 19 | 30 | 
 | amgoo | 0 | 15 | 
 | amigoo | 0 | 0 | 
-| amoi | 61 | 2 | 
+| amoi | 62 | 2 | 
 | andowl | 0 | 0 | 
 | anry | 0 | 0 | 
 | ans | 0 | 0 | 
