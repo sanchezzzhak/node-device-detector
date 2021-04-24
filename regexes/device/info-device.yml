@@ -2182,8 +2182,8 @@ asus:
   padfone t004: ''
   padfone x mini: 'DS=4.5;RS=480x854;SZ=66.3x132.1x12.7;WT=148.8;RE=2014.10;CP=18;RM=1024;'
   padfone: 'DS=4.3;RS=540x960;SZ=65.4x128x9.2;WT=129;RE=2011.06;RM=1024;CP=140;OS=Android 4.0.3;'
-  rog phone 2: ''
-  rog phone: 'DS=;RS=;SZ=76.2x158.8x8.6;WT=200;RE=2018.06;RM=8192;CP=;OS=Android 9;'
+  rog phone 2: 'DS=6.59;RS=1080x2340;SZ=77.6x171x9.5;WT=240;RM=8192;CP=197;RE=2019.07;OS=Android 9;SM=2;'
+  rog phone: 'DS=6.0;RS=1080x2160;SZ=76.2x158.8x8.6;WT=200;RE=2018.06;RM=8192;CP=198;OS=Android 9;SM=2;'
   rog phone 3: 'DS=6.59;RS=1080x2340;SZ=78x171x9.85;WT=240;RE=2020.07;RM=8192;CP=141;OS=Android 10;'
 
   slider sl101: '->eee pad slider sl101'
