@@ -436,7 +436,7 @@ akai:
   leon quadra: ''
   neo: ''
   si2157lg32: ''
-  tab 7800: ''
+  tab 7800: 'DS=7.0;RS=800x480;RE=2013.11;OS=Android 4.2.2;RM=512;CP=195;'
   tab 7830: ''
   tab 9800: ''
   tab 9800q: ''
