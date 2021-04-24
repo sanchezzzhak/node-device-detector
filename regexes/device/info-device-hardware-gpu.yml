@@ -245,3 +245,7 @@ gpu:
   82:
     name: Qualcomm Adreno 630
     clock_rate: 650
+  83:
+    name: ARM Mali-G52 MP2
+    clock_rate: 950
+

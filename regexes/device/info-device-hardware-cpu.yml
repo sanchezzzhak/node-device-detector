@@ -1162,3 +1162,9 @@ cpu:
     clock_rate: 2800
     cores: 8
     gpu_id: 82
+  199:
+    name: Unisoc Tiger T618
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 83
