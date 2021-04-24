@@ -1077,7 +1077,7 @@ allcall:
 
 alldocube:
   iplay 10 pro 10.1": ''
-  iplay 20: ''
+  iplay 20: 'DS=10.1;RS=1920x1200;SZ=245.2x149.4x7.95;WT=450;RM=4096;CP=109;RE=2020.07;OS=Android 10;'
   m5: ''
   m5s: ''
   m5x: ''
