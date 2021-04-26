@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 24/04/2021_
+_Last update: 26/04/2021_
 
 ## Description
 
@@ -158,7 +158,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (298 devices, alias devices 1069)
+> This parser is experimental and contains few devices. (314 devices, alias devices 1069)
 >
 ##### Support detail brands/models list:
 
@@ -171,7 +171,7 @@ is not parse result  {name: ""}
 | 8848 | 0 | 0 | 
 | 2e | 2 | 2 | 
 | 3gnet | 0 | 1 | 
-| 3q | 0 | 62 | 
+| 3q | 13 | 62 | 
 | 4good | 1 | 1 | 
 | 4ife | 0 | 1 | 
 | a1 | 0 | 1 | 
@@ -197,7 +197,7 @@ is not parse result  {name: ""}
 | alfawise | 0 | 0 | 
 | aligator | 0 | 0 | 
 | allcall | 0 | 3 | 
-| alldocube | 0 | 6 | 
+| alldocube | 2 | 6 | 
 | allview | 0 | 46 | 
 | allwinner | 0 | 3 | 
 | altek | 1 | 0 | 
@@ -226,7 +226,7 @@ is not parse result  {name: ""}
 | asanzo | 1 | 0 | 
 | ask | 0 | 0 | 
 | assistant | 1 | 19 | 
-| asus | 26 | 162 | 
+| asus | 27 | 162 | 
 | at&t | 1 | 2 | 
 | atvio | 0 | 0 | 
 | atom | 0 | 3 | 

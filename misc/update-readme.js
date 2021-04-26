@@ -31,16 +31,21 @@ for (let brand in brandInfos) {
       continue;
     }
     for(let model in brandInfos[brand]){
-      if (brandInfos[brand][model] && brandInfos[brand][model].indexOf('->') !== -1) {
-        deviceInfoData[brand].alias++;
-        deviceAliasCount++;
-      } else if(brandInfos[brand][model] && brandInfos[brand][model]) {
-        deviceInfoData[brand].device++;
-        deviceInfoCount++;
+      if(brandInfos[brand][model] && brandInfos[brand][model]) {
+        let row = brandInfos[brand][model];
+        if (row.indexOf('->') !== -1) {
+          deviceInfoData[brand].alias++;
+          deviceAliasCount++;
+        }
+        if(row.indexOf(';') !== -1 && row.indexOf('=') !== -1) {
+          deviceInfoData[brand].device++;
+          deviceInfoCount++;
+        }
       }
     }
   }
 }
+
 let deviceInfoTable = '| Brand | Device count | Alias count |\n |----|-------------|-------------|\n';
 for(let brand in deviceInfoData) {
   deviceInfoTable+= `| ${brand} | ${deviceInfoData[brand].device} | ${deviceInfoData[brand].alias} | \n`;

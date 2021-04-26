@@ -1168,3 +1168,21 @@ cpu:
     clock_rate: 2000
     cores: 8
     gpu_id: 83
+  200:
+    name: Qualcomm MSM8225Q
+    type: ARM
+    clock_rate: 1200
+    cores: 4
+    gpu_id: 56
+  201:
+    name: Action ATM7029
+    type: ARM
+    clock_rate: 1200
+    cores: 4
+    gpu_id: 84
+  202:
+    name: Qualcomm Snapdragon S3 MSM8260
+    type: ARM
+    clock_rate: 1500
+    cores: 2
+    gpu_id: 85
