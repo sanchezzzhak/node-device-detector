@@ -89,7 +89,7 @@
   qs9718c: '->qoo! surf;DS=9.7;RS=1024x768;SZ=242x188x10;WT=670;RM=512;CP=31;OS=Android 4.0;'
   qs9719d: '->qoo! surf;DS=9.7;RS=1024x768;SZ=242x188x10;WT=670;RM=512;CP=49;OS=Android 4.0;'
   rc0709b: '->qoo! q-pad;DS=7.0;SZ=192x119x10;WT=340;RM=1024;CP=177;'
-  rc0710b: '->qoo! q-pad'
+  rc0710b: '->qoo! q-pad;SZ=192x118x11;WT=332;CP=177;'
   rc0718c: '->qoo! q-pad'
   rc0719h: '->qoo! q-pad'
   rc0721b: '->qoo! q-pad'
@@ -2354,6 +2354,18 @@ azumi mobile:
   iro a4 q: ''
   speed 5.5": ''
   speed55: '->speed 5.5"'
+
+#bangolufsen:
+#  beovision: ''
+
+bellphone:
+  bp 100 x-plus: 'DS=5.7;RM=1024;OS=Android 8;SM=2;'
+  bp100 x-plus: '->bp 100 x-plus'
+
+benq:
+  cf61: ''
+  f52 09: '->f52'
+  f52: ''
 
 # Bravis
 bravis:

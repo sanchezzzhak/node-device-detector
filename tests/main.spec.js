@@ -93,16 +93,17 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   let patternFloat = /^[0-9\.]+$/i;
   let patternRatio = /^[0-9\.]+:[0-9\.]+$/i;
   let patternYear = /^([0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$/i;
-  let formatMessageFloat = `value does not match format ^[0-9.]+$ result: ${perryJSON(
+  
+  let formatMessageFloat = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+$ result: ${perryJSON(
     result
   )}`;
-  let formatMessageRatio = `value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
+  let formatMessageRatio = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
     result
   )}`;
-  let formatMessageNumber = `value does not match format ^[0-9]+$  result: ${perryJSON(
+  let formatMessageNumber = `brand (${brand})  model (${model}) value does not match format ^[0-9]+$  result: ${perryJSON(
     result
   )}`;
-  let formatMessageYear = `value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
+  let formatMessageYear = `brand (${brand})  model (${model}) value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
     result
   )}`;
 

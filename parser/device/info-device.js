@@ -268,30 +268,25 @@ class InfoDevice extends ParserAbstract {
     let data = this.collection[brand][model];
     // get normalise data
     let result = DataPacker.unpack(data, SHORT_KEYS);
-
+    
     this.prepareResultDisplay(result);
     this.prepareResultHardware(result);
-  
-    result = mergeDeep(result, mergeData);
-    
+    this.prepareResultSize(result);
+    result = mergeDeep(mergeData, result);
     // redirect and overwrite params
     let dataRedirect = /^->([^;]+)/i.exec(data);
     if (dataRedirect !== null) {
       return this.find(deviceBrand, dataRedirect[1], result);
     }
-
-    return sortObject(
-      Object.assign({}, result, {
-        size:
-          this.sizeConvertObject && result.size
-            ? castSizeToObject(result.size)
-            : result.size,
-        weight: result.weight,
-        release: result.release,
-      })
-    );
+    return sortObject(result);
   }
 
+  prepareResultSize(result) {
+    if (this.sizeConvertObject && result.size) {
+      result.size = castSizeToObject(result.size);
+    }
+  }
+  
   prepareResultHardware(result) {
     // set hardware data
     if (result.hardware) {
@@ -329,21 +324,32 @@ class InfoDevice extends ParserAbstract {
       if (typeof resolution !== 'string') {
         let resolutionWidth = parseInt(resolution.width);
         let resolutionHeight = parseInt(resolution.height);
-        ppi = castResolutionPPI(
-          resolutionWidth,
-          resolutionHeight,
-          result.display.size
-        );
-        ratio = castResolutionRatio(resolutionWidth, resolutionHeight);
+        
+        if(resolutionWidth && resolutionHeight) {
+          if(result.display.size) {
+            ppi = castResolutionPPI(
+                resolutionWidth,
+                resolutionHeight,
+                result.display.size
+            );
+          }
+          ratio = castResolutionRatio(resolutionWidth, resolutionHeight);
+        }
+        
       }
-
+      
       result.display.size = result.display.size ? result.display.size : null;
       result.display.resolution = this.resolutionConvertObject
         ? resolution
         : result.display.resolution;
 
-      result.display.ratio = ratio;
-      result.display.ppi = String(ppi);
+      if(ratio) {
+        result.display.ratio = ratio;
+      }
+      
+      if(ppi) {
+        result.display.ppi = String(ppi);
+      }
     }
   }
 
@@ -354,7 +360,7 @@ class InfoDevice extends ParserAbstract {
    * @return {InfoResult|null}
    */
   info(deviceBrand, deviceModel) {
-    return this.find(deviceBrand, deviceModel, {});;
+    return this.find(deviceBrand, deviceModel, {});
   }
 
 }
