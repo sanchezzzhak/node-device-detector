@@ -1192,3 +1192,9 @@ cpu:
     clock_rate: 2200
     cores: 2/4
     gpu_id: 86
+  204:
+    name: Qualcomm Snapdragon 625 MSM8953
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 41
