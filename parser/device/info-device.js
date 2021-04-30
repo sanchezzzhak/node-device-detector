@@ -185,7 +185,7 @@ class InfoDevice extends ParserAbstract {
     /** @type {boolean} convert display.resolution 1080x1920 to object {width, height} */
     this.resolutionConvertObject = false;
     /** @type {string} fixture path to file */
-    this.fixtureFile = 'device/info-device.yml';
+    this.fixtureFile = 'device-info/device.yml';
 
     this.collectionHardwareCPU = {};
     this.collectionHardwareGPU = {};
@@ -196,10 +196,10 @@ class InfoDevice extends ParserAbstract {
     super.loadCollection();
     // load hardware properties
     this.collectionHardwareCPU = this.loadYMLFile(
-      'device/info-device-hardware-cpu.yml'
+      'device-info/hardware-cpu.yml'
     );
     this.collectionHardwareGPU = this.loadYMLFile(
-      'device/info-device-hardware-gpu.yml'
+      'device-info/hardware-gpu.yml'
     );
   }
 

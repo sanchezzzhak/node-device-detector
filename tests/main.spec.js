@@ -62,7 +62,7 @@ function testsFromFixtureBot(fixture) {
 }
 
 const DATA_DEVICE_INFO = YAMLLoad(
-  __dirname + '/../regexes/device/info-device.yml'
+  __dirname + '/../regexes/device-info/device.yml'
 );
 const DATA_DEVICE_MOBILES = YAMLLoad(
   __dirname + '/../regexes/device/mobiles.yml'

@@ -11,7 +11,7 @@ Brands.sort(sortABC);
 Browsers.sort(sortABC);
 
 let brandInfos = YAML.safeLoad(
-  fs.readFileSync(__dirname + '/../regexes/device/info-device.yml', 'utf8')
+  fs.readFileSync(__dirname + '/../regexes/device-info/device.yml', 'utf8')
 );
 
 // console.log({brandInfos});
