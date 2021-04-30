@@ -239,3 +239,19 @@ gpu:
   80:
     name: ARM Mali-T880 MP4
     clock_rate: 780
+  81:
+    name: Qualcomm Adreno 640
+    clock_rate: 700
+  82:
+    name: Qualcomm Adreno 630
+    clock_rate: 650
+  83:
+    name: ARM Mali-G52 MP2
+    clock_rate: 950
+  84:
+    name: Vivante GC1000
+    clock_rate: 600
+  85:
+    name: Qualcomm Adreno 220
+    clock_rate: 266
+

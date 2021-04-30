@@ -42,6 +42,8 @@ module.exports = {
     'FEN',
     'CAI',
     'PCL',
+    'HAS',
+    'LOS',
   ],
   Mac: ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],

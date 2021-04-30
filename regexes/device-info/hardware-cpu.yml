@@ -1135,6 +1135,54 @@ cpu:
   194:
     name: MediaTek Helio X20 MT6797M
     type: ARM
-    clock_rate: 10
-    cores: 2300
+    clock_rate: 2300
+    cores: 10
     gpu_id: 80
+  195:
+    name: AllWinner A13
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+    gpu_id: 62
+  196:
+    name: Qualcomm Snapdragon 653 MSM8976 Pro
+    type: ARM
+    clock_rate: 1950
+    cores: 8
+    gpu_id: 57
+  197:
+    name: Qualcomm Snapdragon 855 Plus
+    type: ARM
+    clock_rate: 2960
+    cores: 8
+    gpu_id: 81
+  198:
+    name: Qualcomm Snapdragon 845
+    type: ARM
+    clock_rate: 2800
+    cores: 8
+    gpu_id: 82
+  199:
+    name: Unisoc Tiger T618
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 83
+  200:
+    name: Qualcomm MSM8225Q
+    type: ARM
+    clock_rate: 1200
+    cores: 4
+    gpu_id: 56
+  201:
+    name: Action ATM7029
+    type: ARM
+    clock_rate: 1200
+    cores: 4
+    gpu_id: 84
+  202:
+    name: Qualcomm Snapdragon S3 MSM8260
+    type: ARM
+    clock_rate: 1500
+    cores: 2
+    gpu_id: 85

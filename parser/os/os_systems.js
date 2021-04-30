@@ -37,6 +37,7 @@ module.exports = {
   KBT: 'Kubuntu',
   LIN: 'GNU/Linux',
   LBT: 'Lubuntu',
+  LOS: 'Lumin OS',
   VLN: 'VectorLinux',
   MAC: 'Mac',
   MAE: 'Maemo',

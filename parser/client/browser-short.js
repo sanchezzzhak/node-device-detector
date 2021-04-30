@@ -122,6 +122,7 @@ module.exports = {
   "GO": "GOG Galaxy",
   "HS": "HasBrowser",
   "HA": "Hawk Turbo Browser",
+  "HE": "Helio",
   "HO": "hola! Browser",
   "HJ": "HotJava",
   "HU": "Huawei Browser",

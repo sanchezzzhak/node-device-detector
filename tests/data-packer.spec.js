@@ -8,26 +8,22 @@ describe('test class DataPacker', function () {
     prop3: {
       desc: 'test-desc',
       name: 'value-name',
-
-    }
+    },
   };
   let SOURCE_MAP = {
     PP: 'prop1',
     PB: 'prop2',
     PM: 'prop3.desc',
     PN: 'prop3.name',
-
   };
 
-  it('methods pack/unpack', function() {
+  it('methods pack/unpack', function () {
     let result = DataPacker.pack(SOURCE_DATA, SOURCE_MAP);
-    
+
     expect(result).to.equal(
       `PP=value_prop1;PB=value_prop2;PM=test-desc;PN=value-name;`
     );
     let data = DataPacker.unpack(result, SOURCE_MAP);
     expect(SOURCE_DATA).to.deep.equal(data);
-    
-  })
-
+  });
 });
