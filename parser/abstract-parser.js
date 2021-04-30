@@ -18,7 +18,7 @@ function fixStringName(result) {
  */
 function fixStringVersion(result) {
   result = result.replace(new RegExp('_', 'g'), '.');
-  result = result.replace(new RegExp('[\.]$', 'g'), '');
+  result = result.replace(new RegExp('[.]$', 'g'), '');
   return result.trim();
 }
 

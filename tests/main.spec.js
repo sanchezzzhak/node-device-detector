@@ -93,7 +93,7 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   let patternFloat = /^[0-9\.]+$/i;
   let patternRatio = /^[0-9\.]+:[0-9\.]+$/i;
   let patternYear = /^([0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$/i;
-  
+
   let formatMessageFloat = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+$ result: ${perryJSON(
     result
   )}`;
@@ -109,25 +109,36 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
 
   if (result.display) {
     if (result.display.size) {
-      expect(result.display.size, 'display.size(DS) ' + formatMessageFloat).to.match(
-        patternFloat
-      );
+      expect(
+        result.display.size,
+        'display.size(DS) ' + formatMessageFloat
+      ).to.match(patternFloat);
     }
     if (result.display.resolution) {
       expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
-      expect(result.display.resolution.width, 'display.width(RS) ' + formatMessageFloat).to.match(
-        patternFloat
-      );
-      expect(result.display.resolution.height, 'display.height(RS) ' + formatMessageFloat).to.match(
-        patternFloat
-      );
+      expect(
+        result.display.resolution.width,
+        'display.width(RS) ' + formatMessageFloat
+      ).to.match(patternFloat);
+      expect(
+        result.display.resolution.height,
+        'display.height(RS) ' + formatMessageFloat
+      ).to.match(patternFloat);
       expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
     }
   }
   if (result.size) {
-    expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(patternFloat);
-    expect(result.size.height, 'size.height(SZ) ' + formatMessageFloat).to.match(patternFloat);
-    expect(result.size.thickness, 'size.thickness(SZ) ' +  formatMessageFloat).to.match(patternFloat);
+    expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(
+      patternFloat
+    );
+    expect(
+      result.size.height,
+      'size.height(SZ) ' + formatMessageFloat
+    ).to.match(patternFloat);
+    expect(
+      result.size.thickness,
+      'size.thickness(SZ) ' + formatMessageFloat
+    ).to.match(patternFloat);
   }
 
   if (result.weight !== void 0 && result.weight !== '') {
@@ -141,8 +152,7 @@ function testsFromFixtureDeviceInfo(brand, model, rawSource) {
   }
 
   if (result.hardware !== void 0) {
-
-    if(result.hardware.ram) {
+    if (result.hardware.ram) {
       expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
     }
 
