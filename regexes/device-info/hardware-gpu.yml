@@ -254,4 +254,6 @@ gpu:
   85:
     name: Qualcomm Adreno 220
     clock_rate: 266
-
+  86:
+    name: Intel HD Graphics 515
+    clock_rate: 850

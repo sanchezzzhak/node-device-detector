@@ -1186,3 +1186,9 @@ cpu:
     clock_rate: 1500
     cores: 2
     gpu_id: 85
+  203:
+    name: Intel Core M3-6Y30
+    type: x86
+    clock_rate: 2200
+    cores: 2/4
+    gpu_id: 86

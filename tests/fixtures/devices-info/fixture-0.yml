@@ -1,0 +1,58 @@
+- brand: asus
+  model: zc553kl
+  result:
+    display:
+      size: '5.5'
+      resolution:
+        width: '1080'
+        height: '1920'
+      ratio: '16:9'
+      ppi: '401'
+    hardware:
+      ram: '2048'
+      cpu_id: '43'
+      cpu:
+        name: Qualcomm Snapdragon 430 MSM8937
+        type: ARM
+        cores: 8
+        clock_rate: 1400
+        gpu_id: 24
+      gpu:
+        name: Qualcomm Adreno 505
+        clock_rate: 450
+    os: Android 6.0
+    release: '2016'
+    size:
+      width: '76.24'
+      height: '151.4'
+      thickness: '8.3'
+    weight: '175'
+
+- brand: 3q
+  model: qs0717d
+  result:
+    display:
+      size: '7.0'
+      resolution:
+        width: '1024'
+        height: '600'
+      ratio: '75:128'
+      ppi: '133'
+    hardware:
+      ram: '512'
+      cpu_id: '49'
+      cpu:
+        name: Qualcomm Snapdragon S2 MSM8255
+        type: ARM
+        cores: 1
+        clock_rate: 1500
+        gpu_id: 29
+      gpu:
+        name: Qualcomm Adreno 205
+        clock_rate: 245
+    os: Android 4.0
+    size:
+      width: '195'
+      height: '122'
+      thickness: '10'
+    weight: '406'
