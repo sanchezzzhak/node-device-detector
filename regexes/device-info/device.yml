@@ -2071,6 +2071,12 @@ assistant:
 # Asus
 asus:
   # todo check ZC550TL
+
+  zenfone 4 selfie pro: 'RE=2017.August;SZ=74.8x154x6.9;WT=147;DS=5.5;RS=1080x1920;OS=Android 7 ;CP=204;RM=4096;'
+  zd552kl: '->zenfone 4 selfie pro'
+  z01md: '->zenfone 4 selfie pro'
+  z01mda: '->zenfone 4 selfie pro'
+
   zenfone 4 pro: 'RE=2017.08;SZ=75.6x156.9x7.6;WT=175;DS=5.5;RS=1080x1920;OS=Android 7.1.1;CP=25;RM=6144;'
   zs551kl: '->zenfone 4 pro'
   z01gd: '->zenfone 4 pro'
@@ -2298,7 +2304,6 @@ asus:
   z01bd: '->zenfone 3 laser'
   z01bs: '->zenfone 3 laser'
   z01fd: '->zenfone 3 deluxe'
-  z01md: '->zenfone 4 selfie'
   z01qd: '->rog phone'
   z01rd: '->zenfone 5z'
   z101: ''
@@ -2314,7 +2319,7 @@ asus:
   zb633kl: '->zenfone max m2'
   zc551kl: '->zenfone 3 laser'
   zc600kl: '->zenfone 5 lite'
-  zd552kl: '->zenfone 4 selfie pro'
+
   zd553kl: '->zenfone 4 selfie'
   zenfone 4 selfie: 'DS=5.5;RS=720x1280;SZ=76.2x155.7x7.9;WT=144;RE=2017.08;RM=4096;CP=43;OS=Android 8.1;'
 
