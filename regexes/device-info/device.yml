@@ -2071,8 +2071,10 @@ assistant:
 # Asus
 asus:
   # todo check ZC550TL
-
-
+  zenfone 4 pro: 'RE=2017.08;SZ=75.6x156.9x7.6;WT=175;DS=5.5;RS=1080x1920;OS=Android 7.1.1;CP=25;RM=6144;'
+  zs551kl: '->zenfone 4 pro'
+  z01gd: '->zenfone 4 pro'
+  z01gs: '->zenfone 4 pro'
   zc554kl: '->zenfone 4 max'
   x015d: '->zenfone 4 max plus'
   zenfone 4 max plus: 'DS=5.5;RS=720x1280;SZ=76.9x154x8.9;WT=181;RE=2017.07;OS=Android 7;CP=20;RM=3072;'
@@ -2296,8 +2298,6 @@ asus:
   z01bd: '->zenfone 3 laser'
   z01bs: '->zenfone 3 laser'
   z01fd: '->zenfone 3 deluxe'
-  z01gd: '->zenfone 4 pro'
-  z01gs: '->zenfone 4 pro'
   z01md: '->zenfone 4 selfie'
   z01qd: '->rog phone'
   z01rd: '->zenfone 5z'
