@@ -2072,6 +2072,16 @@ assistant:
 asus:
   # todo check ZC550TL
 
+  zenfone 5 lite: 'RE=2018.09;SZ=76.2x160.6x7.8;WT=168;DS=6.0;RS=1080x2160;OS=Android 7.1.1;CP=19;RM=3072;'
+  zc600kl: '->zenfone 5 lite'
+  x017d: '->zenfone 5 lite'
+  x017da: '->zenfone 5 lite'
+  t00k: '->zenfone 5 lite'
+
+  x00lda: '->zenfone 4 selfie'
+  zd553kl: '->zenfone 4 selfie'
+  zenfone 4 selfie: 'DS=5.5;RS=720x1280;SZ=76.2x155.7x7.9;WT=144;RE=2017.08;RM=4096;CP=43;OS=Android 8.1;'
+
   zenfone 4 selfie pro: 'RE=2017.August;SZ=74.8x154x6.9;WT=147;DS=5.5;RS=1080x1920;OS=Android 7 ;CP=204;RM=4096;'
   zd552kl: '->zenfone 4 selfie pro'
   z01md: '->zenfone 4 selfie pro'
@@ -2228,7 +2238,6 @@ asus:
   t00g: '->zenfone 6'
   t00i: '->zenfone 4'
   t00j: '->zenfone 5'
-  t00k: '->zenfone 5 lite'
   t00n: '->padfone s'
   t00p: '->zenfone 5 lte'
   t00q: '->zenfone 4'
@@ -2259,7 +2268,7 @@ asus:
   x00bd: '->zenfone go'
   x00gd: '->zenfone pegasus 3s max'
   x00is: '->zenfone 4 max'
-  x00lda: '->zenfone 4 selfie'
+
   x00pd: '->zenfone max m1'
   x00ps: '->zenfone max m1'
   x00qd: '->zenfone 5'
@@ -2268,8 +2277,6 @@ asus:
   x00t: '->zenfone max pro m1'
   x00td: '->zenfone max pro m1'
   x014d: '->zenfone go plus'
-  x017d: '->zenfone 5 lite'
-  x017da: '->zenfone 5 lite'
   x018d: '->zenfone max plus m1'
   x01ad: '->zenfone max m2'
   x01bd: '->zenfone max m2'
@@ -2318,10 +2325,8 @@ asus:
   zb631kl: '->zenfone max pro m2'
   zb633kl: '->zenfone max m2'
   zc551kl: '->zenfone 3 laser'
-  zc600kl: '->zenfone 5 lite'
 
-  zd553kl: '->zenfone 4 selfie'
-  zenfone 4 selfie: 'DS=5.5;RS=720x1280;SZ=76.2x155.7x7.9;WT=144;RE=2017.08;RM=4096;CP=43;OS=Android 8.1;'
+
 
 'at&t':
   axia: 'DS=5.5;RS=480x854;SZ=78.5x154.9x8.9;WT=178;RE=2019.01;OS=Android 8.1.0;RM=1024;CP=10;'
