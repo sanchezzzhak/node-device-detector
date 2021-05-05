@@ -56,3 +56,33 @@
       height: '122'
       thickness: '10'
     weight: '406'
+
+- brand: asus
+  model: zs630kl
+  result:
+    display:
+      size: '6.4'
+      resolution:
+        width: '1080'
+        height: '2340'
+      ratio: '13:6'
+      ppi: '403'
+    hardware:
+      cpu_id: '197'
+      ram: '6144'
+      cpu:
+        name: Qualcomm Snapdragon 855 Plus
+        type: ARM
+        cores: 8
+        clock_rate: 2960
+        gpu_id: 81
+      gpu:
+        name: Qualcomm Adreno 640
+        clock_rate: 700
+    os: Android 9.0
+    release: '2019.05'
+    size:
+      width: '75.4'
+      height: '159.1'
+      thickness: '9.2'
+    weight: '190'
