@@ -2072,6 +2072,32 @@ assistant:
 asus:
   # todo check ZC550TL
 
+  zenfone 6: 'RE=2014.01;SZ=84.3x166.9x9.9;WT=196;DS=6.0;RS=720x1280;OS=Android 4.3 ;CP=131;RM=2048;'
+  t00g: '->zenfone 6'
+  z002: '->zenfone 6'
+  i01wd: '->zs630kl'
+  i01wdx: '->zs630kl'
+  zs630kl: '->zenfone 6;RE=2019.05;SZ=75.4x159.1x9.2;WT=190;DS=6.4;RS=1080x2340;OS=Android 9.0;CP=197;RM=6144;'
+
+  zenfone 5z: 'RE=2018.02;SZ=75.7x153x7.9;WT=165;DS=6.2;RS=1080x2246;OS=Android 8.0 ;CP=198;RM=4096;'
+  z01rd: '->zenfone 5z'
+  zs620kl: '->zenfone 5z'
+
+  zenfone 5: 'DS=5;RS=720x1280;SZ=72.8x148.2x10.3;WT=145;RE=2014.01;RM=2048;CP=131;OS=Android 4.3;'
+  t00j: '->zenfone 5'
+  t00f: '->a501cg'
+  a502cg: '->zenfone 5'
+  a500cg: '->zenfone 5'
+  a501cg: '->zenfone 5;RE=2015.01;CP=206;OS=Android 4.3;'
+
+  x00qd: '->ze620kl'
+  x00qsa: '->ze620kl'
+  zf620kl: '->ze620kl'
+  ze620kl: '->>zenfone 5;DS=6.2;RS=1080x2246;SZ=75.65x153x7.7;WT=165;RE=2018.02;RM=6144;CP=205;OS=Android 9;'
+  a500kl: '->zenfone 5 lte'
+  zenfone 5 lte: 'RE=2014.06;SZ=72.8x148.2x10.3;WT=145;DS=5.0;RS=720x1280;OS=Android 4.4.2;CP=111;RM=1024;'
+  t00p: '->zenfone 5 lte'
+
   zenfone 5 lite: 'RE=2018.09;SZ=76.2x160.6x7.8;WT=168;DS=6.0;RS=1080x2160;OS=Android 7.1.1;CP=19;RM=3072;'
   zc600kl: '->zenfone 5 lite'
   x017d: '->zenfone 5 lite'
@@ -2081,12 +2107,10 @@ asus:
   x00lda: '->zenfone 4 selfie'
   zd553kl: '->zenfone 4 selfie'
   zenfone 4 selfie: 'DS=5.5;RS=720x1280;SZ=76.2x155.7x7.9;WT=144;RE=2017.08;RM=4096;CP=43;OS=Android 8.1;'
-
-  zenfone 4 selfie pro: 'RE=2017.August;SZ=74.8x154x6.9;WT=147;DS=5.5;RS=1080x1920;OS=Android 7 ;CP=204;RM=4096;'
+  zenfone 4 selfie pro: 'RE=2017.08;SZ=74.8x154x6.9;WT=147;DS=5.5;RS=1080x1920;OS=Android 7 ;CP=204;RM=4096;'
   zd552kl: '->zenfone 4 selfie pro'
   z01md: '->zenfone 4 selfie pro'
   z01mda: '->zenfone 4 selfie pro'
-
   zenfone 4 pro: 'RE=2017.08;SZ=75.6x156.9x7.6;WT=175;DS=5.5;RS=1080x1920;OS=Android 7.1.1;CP=25;RM=6144;'
   zs551kl: '->zenfone 4 pro'
   z01gd: '->zenfone 4 pro'
@@ -2158,8 +2182,7 @@ asus:
   i002d: '->zenfone 7 pro'
   i003d: '->rog phone 3'
   i003dd: '->rog phone 3'
-  i01wd: '->zenfone 6'
-  i01wdx: '->zenfone 6'
+
   k007: '->memo pad 7'
   k00c: '->transformer pad tf701t'
   k00e: '->fonepad 7'
@@ -2234,12 +2257,8 @@ asus:
 
   slider sl101: '->eee pad slider sl101'
   t00e: '->padfone mini'
-  t00f: '->zenfone 5'
-  t00g: '->zenfone 6'
   t00i: '->zenfone 4'
-  t00j: '->zenfone 5'
   t00n: '->padfone s'
-  t00p: '->zenfone 5 lte'
   t00q: '->zenfone 4'
   t00t: '->padfone x mini'
   tab a8: ''
@@ -2271,8 +2290,6 @@ asus:
 
   x00pd: '->zenfone max m1'
   x00ps: '->zenfone max m1'
-  x00qd: '->zenfone 5'
-  x00qsa: '->zenfone 5'
   x00rd: '->zenfone live l1'
   x00t: '->zenfone max pro m1'
   x00td: '->zenfone max pro m1'
@@ -2286,7 +2303,6 @@ asus:
   x553ma: ''
   x555ln: ''
   x556uqk: ''
-  z002: '->zenfone 6'
   z007: '->zenfone c'
   z008: '->zenfone 2'
   z008d: '->zenfone 2'
@@ -2312,7 +2328,6 @@ asus:
   z01bs: '->zenfone 3 laser'
   z01fd: '->zenfone 3 deluxe'
   z01qd: '->rog phone'
-  z01rd: '->zenfone 5z'
   z101: ''
   z906 10.1": ''
   z906: '->z906 10.1"'

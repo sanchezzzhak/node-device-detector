@@ -1157,6 +1157,7 @@ cpu:
     cores: 8
     gpu_id: 81
   198:
+    # SDM845
     name: Qualcomm Snapdragon 845
     type: ARM
     clock_rate: 2800
@@ -1198,3 +1199,16 @@ cpu:
     clock_rate: 2000
     cores: 8
     gpu_id: 41
+  205:
+    # SDM636
+    name: Qualcomm Snapdragon 636
+    type: ARM
+    clock_rate: 1800
+    cores: 8
+    gpu_id: 87
+  206:
+    name: Intel Atom Z2520
+    type: ARM
+    clock_rate: 1200
+    cores: 2/4
+    gpu_id: 88
