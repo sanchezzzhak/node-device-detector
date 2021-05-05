@@ -2020,7 +2020,7 @@ ask:
   sp618: ''
 
 assistant:
-  agio: ''
+  agio: 'OS=Android 6.0;SM=2;WT=136;SZ=71x142x8.7;RS=720x1280;DS=5;CP=5;RM=1024;RE=2017;'
   ap-106 force: ''
   ap-106: '->ap-106 force'
   ap-107g: ''
