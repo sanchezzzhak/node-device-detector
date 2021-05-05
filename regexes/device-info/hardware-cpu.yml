@@ -358,6 +358,7 @@ cpu:
     clock_rate: 1700
     gpu_id: 37
   61:
+    # SDM660
     name: Qualcomm Snapdragon 660
     type: ARM
     cores: 8

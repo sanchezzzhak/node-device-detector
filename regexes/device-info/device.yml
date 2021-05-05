@@ -2072,6 +2072,30 @@ assistant:
 asus:
   # todo check ZC550TL
 
+  zenfone max: 'RE=2016.05;SZ=77.5x156x10.6;WT=202;DS=5.5;RS=720x1280;OS=Android 6.0.1;CP=22;RM=2048;'
+  zc550kl: '->zenfone max'
+  z010d: '->zenfone max'
+
+  # todo rename model
+  zenfone max pro: '->zenfone max pro m1'
+  zb602kl: '->zenfone max pro'
+
+  zenfone max pro m2: 'RE=2018.12;SZ=75.5x157.9x8.5;WT=175;DS=6.26;RS=1080x2280;OS=Android 8.1;CP=61;RM=3072;'
+  zb631kl: '->zenfone max pro m2'
+  x01bda: '->zenfone max pro m2'
+
+  zenfone max pro m1: 'RE=2018.04;SZ=76x159x8.5;WT=180;DS=5.99;RS=1080x2160;OS=Android 8.1;CP=205;RM=3072;'
+  zb601kl: '->zenfone max pro m1'
+  x00t: '->zenfone max pro m1'
+  x00td: '->zenfone max pro m1'
+  x00tdb: '->zenfone max pro m1'
+  x00tda: '->zenfone max pro m1'
+  x00tde: '->zenfone max pro m1'
+
+  zenfone max plus m1: 'RE=2017.11;SZ=73x152.6x8.8;WT=160;DS=5.7;RS=1080x2160;OS=Android 7;CP=162;RM=2048;'
+  x018d: '->zenfone max plus m1'
+  zb570tl: '->zenfone max plus m1'
+
   zenfone max m2: 'RE=2018.12;SZ=76.3x158.4x7.7;WT=160;DS=6.26;RS=720x1520;OS=Android 8.1;CP=64;RM=3072;'
   zb633kl: '->zenfone max m2'
   x01ad: '->zenfone max m2'
@@ -2349,11 +2373,6 @@ asus:
   x005: '->zenfone pegasus 5000'
   x00gd: '->zenfone pegasus 3s max'
   x00is: '->zenfone 4 max'
-  x00t: '->zenfone max pro m1'
-  x00td: '->zenfone max pro m1'
-  x018d: '->zenfone max plus m1'
-
-  x01bda: '->zenfone max pro m2'
   x550: '->zenfone pegasus 2 plus'
   x550lb: ''
   x553ma: ''
@@ -2374,7 +2393,6 @@ asus:
   z00ud: '->zenfone selfie'
   z00wd: '->zenfone 2 laser'
   z00xs: '->zenfone zoom'
-  z010d: '->zenfone max'
   z011d: '->zenfone 2 laser'
   z016d: '->zenfone 3 deluxe'
   z01bd: '->zenfone 3 laser'
@@ -2384,8 +2402,6 @@ asus:
   z101: ''
   z906 10.1": ''
   z906: '->z906 10.1"'
-  zb601kl: '->zenfone max pro m1'
-  zb631kl: '->zenfone max pro m2'
   zc551kl: '->zenfone 3 laser'
 
 
