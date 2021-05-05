@@ -376,6 +376,7 @@ cpu:
     clock_rate: 2500
     gpu_id: 40
   64:
+    # SDM632
     name: Qualcomm Snapdragon 632
     type: ARM
     cores: 8
@@ -1219,3 +1220,9 @@ cpu:
     clock_rate: 2840
     cores: 8
     gpu_id: 67
+  208:
+    name: Qualcomm Snapdragon 821 MSM8996 Pro
+    type: ARM
+    clock_rate: 2400
+    cores: 4
+    gpu_id: 74

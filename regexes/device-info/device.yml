@@ -2072,6 +2072,67 @@ assistant:
 asus:
   # todo check ZC550TL
 
+  zenfone max m2: 'RE=2018.12;SZ=76.3x158.4x7.7;WT=160;DS=6.26;RS=720x1520;OS=Android 8.1;CP=64;RM=3072;'
+  zb633kl: '->zenfone max m2'
+  x01ad: '->zenfone max m2'
+  x01bd: '->zenfone max m2'
+
+  zenfone max m1: 'RE=2018.02;SZ=70.9x147.3x8.7;WT=150;DS=5.5;RS=720x1440;OS=Android 8;CP=20;RM=2048'
+  zb555kl: '->zenfone max m1'
+  x00pd: '->zenfone max m1'
+  x00ps: '->zenfone max m1'
+
+  zenfone live: 'RE=2017.02;SZ=71.7x141.2x8;WT=120;DS=5.0;RS=720x1280;OS=Android 6.0;CP=17;RM=2048;'
+  a007: '->zenfone live'
+  z00yd: '->zenfone live'
+  zb501kl: '->zenfone live'
+  #todo rename model zb553kl zenfone live plus and check x00lda
+  zb553kl: '->zenfone live;RE=2017.10;SZ=75.9x155.7x7.9;WT=144;DS=5.5;RS=720x1280;OS=Android 7;CP=20;RM=2048;'
+
+  zenfone live l1: 'RE=2018.05;SZ=71.8x147.3x8.2;WT=140;DS=5.5;RS=720x1440;OS=Android 8.0;CP=20;SM=2;RM=2048;'
+  x00rd: '->zenfone live l1;RM=1024;'
+  g552kl: '->zenfone live l1;RM=1024;OS=Android 7.0;'
+  za550kl: '->zenfone live l1'
+
+  zenfone lite l1: 'RE=2018.10;SZ=71.8x147.3x8.2;WT=140;DS=5.45;RS=720x1440;OS=Android 8.0;CP=43;RM=2048;'
+  za551kl: '->zenfone lite l1'
+  g553kl: '->zenfone lite l1'
+
+  zenfone go: 'RE=2015.12;SZ=67x135x10.1;WT=133.5;DS=4.5;RS=480x854;OS=Android 5.1;CP=58;RM=1024;'
+  zc451tg: '->zenfone go'
+  x009da: '->zb450kl'
+  zb450kl: '->zenfone go;RE=2016.07;CP=17;OS=Android 6;DS=4.5;WT=135;SZ=66.7x136.5x11.2;'
+  x007d: '->zenfone go'
+  l001: '->zenfone go'
+  x013d: '->zb551kl'
+  x013dc: '->zb551kl'
+  x013da: '->zb551kl'
+  x013db: '->zb551kl'
+  zb551kl: '->zenfone go;RE=2016.04;SZ=76.9x151x10.7;WT=160;DS=5.5;RS=720x1280;OS=Android 5.1;CP=78;RM=2048;'
+  x00bd: '->zb500kg'
+  zb500kg: '->zenfone go'
+  zb500kl: '->zenfone go'
+  z00vd: '->zenfone go'
+  z00sd: '->zc451tg'
+
+  zenfone go tv: 'DS=5.5;RS=720x1280;SZ=76.9x151x10.7;WT=160;CP=111;RM=2048;SM=2;OS=Android 5.1;RE=2016.05;'
+  g550kl: '->zenfone go tv'
+
+  # todo check maybe name is here zenfone go
+  zenfone go plus: 'RE=2016.04;SZ=66.7x136.5x11.2;WT=125;DS=4.5;RS=480x854;OS=Android 5.1;CP=33;RM=1024;'
+  zb452kg: '->zenfone go plus'
+  x014d: '->zenfone go plus'
+
+  zenfone c: 'DS=4.5;RS=480x854;SZ=67x136.5x10.9;WT=150;RE=2015.01;RM=1024;CP=206;OS=Android 4.4.2;'
+  z007: '->zenfone c'
+  zc451cg: '->zenfone c'
+
+  a002: '->zenfone ar'
+  a002a: '->zenfone ar'
+  v570kl: '->zenfone ar'
+  zs571kl: '->zenfone ar'
+  zenfone ar: 'DS=5.7;RS=1440x2560;SZ=77.7x158.67x8.95;WT=170;RE=2017.01;RM=6144;CP=208;OS=Android 7;'
+
   zs671ks: '->zenfone 7 pro'
   i002dd: '->zenfone 7 pro'
   zenfone 7 pro: 'DS=6.7;RS=1080x2400;SZ=77.28x165.08x9.6;WT=230;RE=2020.08;RM=8192;CP=207;OS=Android 11;'
@@ -2163,10 +2224,8 @@ asus:
   x00kd: '->zenfone 4 max'
 
   zenfone 4 max: 'DS=5.2;RS=720x1280;SZ=73.3x150.5x8.73;WT=156;RE=2017.10;RM=2048;CP=20;OS=Android 7;SM=2;'
-  a002: '->zenfone ar'
-  a002a: '->zenfone ar'
   a006: '->zenfone v'
-  a007: '->zenfone live'
+
   a009: '->zenfone v live'
   chromebook flip c100pa: ''
   chromebook flip c101pa: ''
@@ -2178,9 +2237,7 @@ asus:
   fonepad 8: 'DS=8;RS=800x1280;SZ=120x214x8.9;WT=328;RE=2014.06;RM=2048;CP=16;OS=Android 4.4;'
   fonepad note 6: 'DS=6;RS=1080x1920;SZ=88.8x164.8x10.3;WT=210;RE=2013.10;RM=2048;CP=131;OS=Android 4.4;'
   fonepad: 'DS=7;RS=1280x800;SZ=120.1x196.4x10.4;WT=340;RE=2013.02;RM=1024;CP=132;OS=Android 4.1;'
-  g550kl: '->zenfone go tv'
-  g552kl: '->zenfone live l1'
-  g553kl: '->zenfone lite l1'
+
   galaxy6: ''
   i001d: '->rog phone 2'
   i001da: '->rog phone 2'
@@ -2212,7 +2269,7 @@ asus:
   k01e: '->memo pad 10 me103k'
   k50in: ''
   k54l: ''
-  l001: '->zenfone go'
+
   me171: '->eee pad memo 171'
   me172v: '->memo pad'
   me173x: '->memo pad hd 7'
@@ -2290,27 +2347,19 @@ asus:
   x002: '->zenfone pegasus'
   x003: '->zenfone pegasus'
   x005: '->zenfone pegasus 5000'
-  x007d: '->zenfone go'
-  x00bd: '->zenfone go'
   x00gd: '->zenfone pegasus 3s max'
   x00is: '->zenfone 4 max'
-
-  x00pd: '->zenfone max m1'
-  x00ps: '->zenfone max m1'
-  x00rd: '->zenfone live l1'
   x00t: '->zenfone max pro m1'
   x00td: '->zenfone max pro m1'
-  x014d: '->zenfone go plus'
   x018d: '->zenfone max plus m1'
-  x01ad: '->zenfone max m2'
-  x01bd: '->zenfone max m2'
+
   x01bda: '->zenfone max pro m2'
   x550: '->zenfone pegasus 2 plus'
   x550lb: ''
   x553ma: ''
   x555ln: ''
   x556uqk: ''
-  z007: '->zenfone c'
+
   z008: '->zenfone 2'
   z008d: '->zenfone 2'
   z00a: '->zenfone 2'
@@ -2321,13 +2370,10 @@ asus:
   z00ed: '->zenfone 2 laser'
   z00md: '->zenfone 2 laser'
   z00rd: '->zenfone 2 laser'
-  z00sd: '->zenfone go'
   z00td: '->zenfone 2 laser'
   z00ud: '->zenfone selfie'
-  z00vd: '->zenfone go'
   z00wd: '->zenfone 2 laser'
   z00xs: '->zenfone zoom'
-  z00yd: '->zenfone live'
   z010d: '->zenfone max'
   z011d: '->zenfone 2 laser'
   z016d: '->zenfone 3 deluxe'
@@ -2338,14 +2384,8 @@ asus:
   z101: ''
   z906 10.1": ''
   z906: '->z906 10.1"'
-  zb500kg: '->zenfone go'
-  zb500kl: '->zenfone go'
-  zb501kl: '->zenfone live'
-  zb551kl: '->zenfone go'
-  zb553kl: '->zenfone live'
   zb601kl: '->zenfone max pro m1'
   zb631kl: '->zenfone max pro m2'
-  zb633kl: '->zenfone max m2'
   zc551kl: '->zenfone 3 laser'
 
 

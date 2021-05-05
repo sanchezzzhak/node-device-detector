@@ -86,3 +86,33 @@
       height: '159.1'
       thickness: '9.2'
     weight: '190'
+
+- brand: asus
+  model: zb450kl
+  result:
+    display:
+      size: '4.5'
+      resolution:
+        width: '480'
+        height: '854'
+      ratio: '427:240'
+      ppi: '218'
+    hardware:
+      cpu_id: '17'
+      ram: '1024'
+      cpu:
+        name: Qualcomm Snapdragon 410 MSM8916
+        type: ARM
+        cores: 4
+        clock_rate: 1400
+        gpu_id: 14
+      gpu:
+        name: Qualcomm Adreno 306
+        clock_rate: 450
+    os: Android 6
+    release: '2016.07'
+    size:
+      width: '66.7'
+      height: '136.5'
+      thickness: '11.2'
+    weight: '135'
