@@ -79,3 +79,23 @@
     model: Aqua V3G
   os_family: Android
   browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 8.0.0; ASUS_Z012DE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36
+  os:
+    name: Android
+    version: 8.0.0
+    platform: ''
+    family: Android
+  client:
+    type: browser
+    name: Chrome Mobile
+    version: 76.0.3809.132
+    engine: Blink
+    engine_version: ''
+    family: Chrome
+  device:
+    type: smartphone
+    brand: Asus
+    model: ZenFone 3
+  os_family: Android
+  browser_family: Chrome

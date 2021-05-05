@@ -358,6 +358,7 @@ cpu:
     clock_rate: 1700
     gpu_id: 37
   61:
+    # SDM660
     name: Qualcomm Snapdragon 660
     type: ARM
     cores: 8
@@ -376,6 +377,7 @@ cpu:
     clock_rate: 2500
     gpu_id: 40
   64:
+    # SDM632
     name: Qualcomm Snapdragon 632
     type: ARM
     cores: 8
@@ -1157,6 +1159,7 @@ cpu:
     cores: 8
     gpu_id: 81
   198:
+    # SDM845
     name: Qualcomm Snapdragon 845
     type: ARM
     clock_rate: 2800
@@ -1186,3 +1189,47 @@ cpu:
     clock_rate: 1500
     cores: 2
     gpu_id: 85
+  203:
+    name: Intel Core M3-6Y30
+    type: x86
+    clock_rate: 2200
+    cores: 2/4
+    gpu_id: 86
+  204:
+    name: Qualcomm Snapdragon 625 MSM8953
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 41
+  205:
+    # SDM636
+    name: Qualcomm Snapdragon 636
+    type: ARM
+    clock_rate: 1800
+    cores: 8
+    gpu_id: 87
+  206:
+    name: Intel Atom Z2520
+    type: ARM
+    clock_rate: 1200
+    cores: 2/4
+    gpu_id: 88
+  207:
+    # SM8250
+    name: Qualcomm Snapdragon 865
+    type: ARM
+    clock_rate: 2840
+    cores: 8
+    gpu_id: 67
+  208:
+    name: Qualcomm Snapdragon 821 MSM8996 Pro
+    type: ARM
+    clock_rate: 2400
+    cores: 4
+    gpu_id: 74
+  209:
+    name: Intel Atom Z3590
+    type: ARM
+    clock_rate: 2500
+    cores: 4
+    gpu_id: 13

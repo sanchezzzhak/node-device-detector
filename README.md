@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 30/04/2021_
+_Last update: 05/05/2021_
 
 ## Description
 
@@ -185,7 +185,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (316 devices, alias devices 1071)
+> This parser is experimental and contains few devices. (365 devices, alias devices 1124)
 >
 ##### Support detail brands/models list:
 
@@ -252,8 +252,8 @@ is not parse result  {name: ""}
 | asano | 0 | 1 | 
 | asanzo | 1 | 0 | 
 | ask | 0 | 0 | 
-| assistant | 1 | 19 | 
-| asus | 27 | 162 | 
+| assistant | 2 | 19 | 
+| asus | 75 | 215 | 
 | at&t | 1 | 2 | 
 | atvio | 0 | 0 | 
 | atom | 0 | 3 | 

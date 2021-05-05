@@ -254,4 +254,12 @@ gpu:
   85:
     name: Qualcomm Adreno 220
     clock_rate: 266
-
+  86:
+    name: Intel HD Graphics 515
+    clock_rate: 850
+  87:
+    name: Qualcomm Adreno 509
+    clock_rate: 0
+  88:
+    name: PowerVR SGX544MP2
+    clock_rate: 533

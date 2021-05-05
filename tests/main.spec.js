@@ -32,10 +32,12 @@ detector.getParseDevice('Mobile').resultModelRegex = true;
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let ymlDeviceFiles = [];
 let ymlClientFiles = [];
+let ymlDeviceInfoFiles = [];
 let fixtureFolder = __dirname + '/fixtures/';
 
 ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
 ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
+ymlDeviceInfoFiles = fs.readdirSync(fixtureFolder + 'devices-info/');
 
 function testsFromFixtureBot(fixture) {
   detector.skipBotDetection = false;
@@ -629,6 +631,8 @@ describe('tests devices fixtures', function () {
 });
 
 describe('tests devices info', function () {
+  this.timeout(TIMEOUT);
+  
   it('test get unknown result', () => {
     let result = infoDevice.info('unknown', 'unknown');
     expect(result).to.equal(null);
@@ -673,6 +677,28 @@ describe('tests devices info', function () {
       });
     }
   }
+  
+  ymlDeviceInfoFiles.forEach(function (file) {
+    describe('file fixture ' + file, function () {
+  
+      let fixtureData = YAMLLoad(fixtureFolder + 'devices-info/' + file);
+      let total = fixtureData.length;
+      
+      fixtureData.forEach((fixture, pos) => {
+        let itName =  fixture.brand
+            + ' - '
+            + fixture.model;
+        
+        it(itName, function () {
+          infoDevice.setResolutionConvertObject(true);
+          infoDevice.setSizeConvertObject(true);
+          let result = infoDevice.info(fixture.brand, fixture.model);
+          expect(fixture.result, 'Error in ' + itName).to.deep.equal(result);
+        });
+      });
+    })
+  });
+  
 });
 
 describe('tests vendor fragment', function () {
