@@ -2072,6 +2072,46 @@ assistant:
 asus:
   # todo check ZC550TL
 
+  zenpad 10: 'DS=10.1;RS=1920x1200;SZ=172.17x251.77x8.95;WT=490;RE=2017.05;RM=2048;CP=74;OS=Android 7;'
+  p00c: '->zenpad 10'
+  z300m: '->zenpad 10'
+  p021: '->zenpad 10'
+  p023: '->zenpad 10'
+  p028: '->zenpad 10'
+  p01t 1: '->zenpad 10'
+  p00l: '->zenpad 10'
+
+  zenfone zoom: 'RE=2015.09;SZ=78.8x158.9x12;WT=185;DS=5.5;RS=1080x1920;OS=Android 5.0;CP=209;RM=4096;'
+  zx551ml: '->zenfone zoom'
+  z00xs: '->zenfone zoom'
+
+  zenfone v live: 'RE=2017.09;SZ=72.6x146.6x7.6;WT=147.1;DS=5.2;RS=1080x1920;OS=Android 7;CP=173;RM=4096;'
+  a009: '->zenfone v live'
+  v520kl: '->zenfone v live'
+  zenfone v: '->zenfone v live'
+  a006: '->zenfone v live'
+
+  zenfone selfie: 'RE=2015.06;SZ=77.2x156.5x10.8;WT=170;DS=5.5;RS=1080x1920;OS=Android 5.0;CP=22;RM=2048;'
+  z00ud: '->zenfone selfie'
+  z00udh: '->zenfone selfie'
+  z00udc: '->zenfone selfie'
+  z00udb: '->zenfone selfie'
+  zd551kl: '->zenfone selfie'
+
+  zenfone pegasus: 'RE=2014.12;SZ=73x146x9.9;WT=140;DS=5.0;RS=720x1280;OS=Android 4.4;CP=154;RM=2048;'
+  x002: '->zenfone pegasus'
+  x003: '->zenfone pegasus'
+
+  zenfone pegasus 5000: 'CP=118;RE=2016;RM=2048;OS=Android 5.1;SZ=76.4x155x9;RS=1080x1920;DS=5.5;SM=2;'
+  x005: '->zenfone pegasus 5000'
+
+  zenfone pegasus 3s max: 'RE=2017.01;SZ=73.7x149.5x8.9;WT=175;DS=5.2;RS=720x1280;OS=Android 7;CP=40;RM=3072;'
+  zc521tl: '->zenfone pegasus 3s max'
+  x00gd: '->zenfone pegasus 3s max'
+
+  zenfone pegasus 2 plus: 'RE=2015.07;SZ=75.5x151.8x8.1;WT=156;DS=5.5;RS=1080x1920;OS=Android 5.1.1;CP=22;RM=3072;'
+  x550: '->zenfone pegasus 2 plus'
+
   zenfone max: 'RE=2016.05;SZ=77.5x156x10.6;WT=202;DS=5.5;RS=720x1280;OS=Android 6.0.1;CP=22;RM=2048;'
   zc550kl: '->zenfone max'
   z010d: '->zenfone max'
@@ -2172,7 +2212,7 @@ asus:
   i01wdx: '->zs630kl'
   zs630kl: '->zenfone 6;RE=2019.05;SZ=75.4x159.1x9.2;WT=190;DS=6.4;RS=1080x2340;OS=Android 9.0;CP=197;RM=6144;'
 
-  zenfone 5z: 'RE=2018.02;SZ=75.7x153x7.9;WT=165;DS=6.2;RS=1080x2246;OS=Android 8.0 ;CP=198;RM=4096;'
+  zenfone 5z: 'RE=2018.02;SZ=75.7x153x7.9;WT=165;DS=6.2;RS=1080x2246;OS=Android 8.0;CP=198;RM=4096;'
   z01rd: '->zenfone 5z'
   zs620kl: '->zenfone 5z'
 
@@ -2248,9 +2288,6 @@ asus:
   x00kd: '->zenfone 4 max'
 
   zenfone 4 max: 'DS=5.2;RS=720x1280;SZ=73.3x150.5x8.73;WT=156;RE=2017.10;RM=2048;CP=20;OS=Android 7;SM=2;'
-  a006: '->zenfone v'
-
-  a009: '->zenfone v live'
   chromebook flip c100pa: ''
   chromebook flip c101pa: ''
   chromebook flip c302: ''
@@ -2315,22 +2352,17 @@ asus:
   p001: '->zenpad z10'
   p008: '->zenpad z8'
   p00a: '->zenpad 8.0'
-  p00c: '->zenpad 10'
   p00i: '->zenpad 3s 10 lte'
   p00j: '->zenpad z8s'
-  p00l: '->zenpad 10'
   p01m: '->zenpad s 8.0'
   p01ma: '->zenpad s 8.0'
-  p01t 1: '->zenpad 10'
   p01v: '->zenpad 7.0'
   p01w: '->zenpad 7.0'
   p01y: '->zenpad c 7.0'
   p01z: '->zenpad c 7.0'
-  p021: '->zenpad 10'
-  p023: '->zenpad 10'
   p024: '->zenpad 8.0'
   p027: '->zenpad 3s 10'
-  p028: '->zenpad 10'
+
   pad tf300t: '->transformer pad tf300t'
   padfone 2: 'DS=4.7;RS=720x1280;SZ=68.9x137.9x9;WT=135;RE=2012.10;RM=2048;CP=134;OS=Android 4.4;'
   padfone infinity: 'DS=5;RS=1080x1920;SZ=72.8x143.5x8.9;WT=145;RE=2013.02;RM=2048;CP=138;OS=Android 4.4;'
@@ -2368,12 +2400,8 @@ asus:
   transformer tf101: ''
   transformer tf101g: ''
   x pad 10 lte: ''
-  x002: '->zenfone pegasus'
-  x003: '->zenfone pegasus'
-  x005: '->zenfone pegasus 5000'
-  x00gd: '->zenfone pegasus 3s max'
+
   x00is: '->zenfone 4 max'
-  x550: '->zenfone pegasus 2 plus'
   x550lb: ''
   x553ma: ''
   x555ln: ''
@@ -2390,9 +2418,8 @@ asus:
   z00md: '->zenfone 2 laser'
   z00rd: '->zenfone 2 laser'
   z00td: '->zenfone 2 laser'
-  z00ud: '->zenfone selfie'
+
   z00wd: '->zenfone 2 laser'
-  z00xs: '->zenfone zoom'
   z011d: '->zenfone 2 laser'
   z016d: '->zenfone 3 deluxe'
   z01bd: '->zenfone 3 laser'

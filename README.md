@@ -185,7 +185,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (352 devices, alias devices 1108)
+> This parser is experimental and contains few devices. (364 devices, alias devices 1124)
 >
 ##### Support detail brands/models list:
 
@@ -253,7 +253,7 @@ is not parse result  {name: ""}
 | asanzo | 1 | 0 | 
 | ask | 0 | 0 | 
 | assistant | 1 | 19 | 
-| asus | 63 | 199 | 
+| asus | 75 | 215 | 
 | at&t | 1 | 2 | 
 | atvio | 0 | 0 | 
 | atom | 0 | 3 | 
