@@ -632,7 +632,7 @@ describe('tests devices fixtures', function () {
 
 describe('tests devices info', function () {
   this.timeout(TIMEOUT);
-  
+
   it('test get unknown result', () => {
     let result = infoDevice.info('unknown', 'unknown');
     expect(result).to.equal(null);
@@ -677,18 +677,15 @@ describe('tests devices info', function () {
       });
     }
   }
-  
+
   ymlDeviceInfoFiles.forEach(function (file) {
     describe('file fixture ' + file, function () {
-  
       let fixtureData = YAMLLoad(fixtureFolder + 'devices-info/' + file);
       let total = fixtureData.length;
-      
+
       fixtureData.forEach((fixture, pos) => {
-        let itName =  fixture.brand
-            + ' - '
-            + fixture.model;
-        
+        let itName = fixture.brand + ' - ' + fixture.model;
+
         it(itName, function () {
           infoDevice.setResolutionConvertObject(true);
           infoDevice.setSizeConvertObject(true);
@@ -696,9 +693,8 @@ describe('tests devices info', function () {
           expect(fixture.result, 'Error in ' + itName).to.deep.equal(result);
         });
       });
-    })
+    });
   });
-  
 });
 
 describe('tests vendor fragment', function () {

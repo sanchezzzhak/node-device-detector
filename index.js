@@ -333,6 +333,15 @@ class DeviceDetector {
       }
     }
 
+    if (
+      DEVICE_TYPE.DESKTOP !== deviceType &&
+      userAgent.indexOf('Desktop') !== -1
+    ) {
+      if (helper.hasDesktopFragment(userAgent)) {
+        deviceType = DEVICE_TYPE.DESKTOP;
+      }
+    }
+
     return {
       type: deviceType,
     };

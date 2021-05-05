@@ -106,24 +106,28 @@ const gcd = (u, v) => {
 };
 
 const mergeDeep = (target, source) => {
-  
-  const isObject = (obj) => obj
-      && typeof obj === 'object'
-      && !Array.isArray(obj);
-  
-    const isDeep = prop =>
-        isObject(source[prop]) && target.hasOwnProperty(prop) && isObject(target[prop]);
-    
-    const replaced = Object.getOwnPropertyNames(source)
-    .map(prop => ({ [prop]: isDeep(prop)
-          ? mergeDeep(target[prop], source[prop])
-          : source[prop]  ? source[prop] : target[prop] }))
+  const isObject = (obj) =>
+    obj && typeof obj === 'object' && !Array.isArray(obj);
+
+  const isDeep = (prop) =>
+    isObject(source[prop]) &&
+    target.hasOwnProperty(prop) &&
+    isObject(target[prop]);
+
+  const replaced = Object.getOwnPropertyNames(source)
+    .map((prop) => ({
+      [prop]: isDeep(prop)
+        ? mergeDeep(target[prop], source[prop])
+        : source[prop]
+        ? source[prop]
+        : target[prop],
+    }))
     .reduce((a, b) => ({ ...a, ...b }), {});
-  
-    return {
-      ...target,
-      ...replaced
-    };
+
+  return {
+    ...target,
+    ...replaced,
+  };
 };
 
 /**
@@ -274,7 +278,7 @@ class InfoDevice extends ParserAbstract {
     this.prepareResultHardware(result);
     this.prepareResultSize(result);
     result = mergeDeep(result, mergeData);
-    
+
     // redirect and overwrite params
     let dataRedirect = /^->([^;]+)/i.exec(data);
     if (dataRedirect !== null) {

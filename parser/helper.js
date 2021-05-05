@@ -61,6 +61,8 @@ exports.hasAndroidMobileFragment = function (userAgent) {
 
 /**
  * All devices running Opera TV Store are assumed to be a tv
+ * @param userAgent
+ * @returns {boolean}
  */
 exports.hasOperaTVStoreFragment = function (userAgent) {
   return this.matchUserAgent('Opera TV Store', userAgent) !== null;
@@ -68,9 +70,19 @@ exports.hasOperaTVStoreFragment = function (userAgent) {
 
 /**
  * All devices running Tizen TV or SmartTV are assumed to be a tv
+ * @param userAgent
+ * @returns {boolean}
  */
 exports.hasTVFragment = function (userAgent) {
   return this.matchUserAgent('SmartTV|Tizen.+ TV .+$', userAgent) !== null;
+};
+
+/**
+ * @param userAgent
+ * @returns {boolean}
+ */
+exports.hasDesktopFragment = function (userAgent) {
+  return this.matchUserAgent('Desktop (x(?:32|64)|WOW64);', userAgent) !== null;
 };
 
 /**
