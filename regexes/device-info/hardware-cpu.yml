@@ -1212,3 +1212,10 @@ cpu:
     clock_rate: 1200
     cores: 2/4
     gpu_id: 88
+  207:
+    # SM8250
+    name: Qualcomm Snapdragon 865
+    type: ARM
+    clock_rate: 2840
+    cores: 8
+    gpu_id: 67

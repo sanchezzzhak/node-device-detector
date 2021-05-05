@@ -2072,6 +2072,14 @@ assistant:
 asus:
   # todo check ZC550TL
 
+  zs671ks: '->zenfone 7 pro'
+  i002dd: '->zenfone 7 pro'
+  zenfone 7 pro: 'DS=6.7;RS=1080x2400;SZ=77.28x165.08x9.6;WT=230;RE=2020.08;RM=8192;CP=207;OS=Android 11;'
+
+  i002d: '->zenfone 7'
+  zs670ks: '->zenfone 7'
+  zenfone 7: 'RE=2020.08;SZ=77.3x165.1x9.6;WT=230;DS=6.67;RS=1080x2400;OS=Android 10;CP=207;RM=6144;'
+
   zenfone 6: 'RE=2014.01;SZ=84.3x166.9x9.9;WT=196;DS=6.0;RS=720x1280;OS=Android 4.3 ;CP=131;RM=2048;'
   t00g: '->zenfone 6'
   z002: '->zenfone 6'
@@ -2179,7 +2187,6 @@ asus:
   i001db: '->rog phone 2'
   i001dc: '->rog phone 2'
   i001de: '->rog phone 2'
-  i002d: '->zenfone 7 pro'
   i003d: '->rog phone 3'
   i003dd: '->rog phone 3'
 
