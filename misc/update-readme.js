@@ -47,10 +47,19 @@ for (let brand in brandInfos) {
   }
 }
 
-let deviceInfoTable =
-  '| Brand | Device count | Alias count |\n |----|-------------|-------------|\n';
+let tableRows = [];
+  tableRows.push('| Brand | Device count | Alias count | | Brand | Device count | Alias count |')
+  tableRows.push('|----|----|----|----|----|----|----|')
+  let row = '', left = 0;
 for (let brand in deviceInfoData) {
-  deviceInfoTable += `| ${brand} | ${deviceInfoData[brand].device} | ${deviceInfoData[brand].alias} | \n`;
+  if(left % 2 === 0) {
+    row = `| ${brand} | ${deviceInfoData[brand].device} | ${deviceInfoData[brand].alias} | `;
+  }
+  if(left % 2 === 1) {
+    row += `| ${brand} | ${deviceInfoData[brand].device} | ${deviceInfoData[brand].alias} |`;
+    tableRows.push(row);
+  }
+  left++;
 }
 
 console.log('Update README.md');
@@ -64,7 +73,7 @@ fs.readFile(someFile, 'utf8', function (err, data) {
 
   data = data.replace(
     /(^#{5} Support detail brands\/models list(?:.*?)<\/details>)/gims,
-    `##### Support detail brands/models list:\n\n<details>\n<summary>Show details</summary>\n\n${deviceInfoTable}\n\n</details>`
+    `##### Support detail brands/models list:\n\n<details>\n<summary>Show details</summary>\n\n${tableRows.join('\n')}\n\n</details>`
   );
 
   data = data.replace(

@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 06/05/2021_
+_Last update: 07/05/2021_
 
 ## Description
 
@@ -192,80 +192,43 @@ is not parse result  {name: ""}
 <details>
 <summary>Show details</summary>
 
-| Brand | Device count | Alias count |
- |----|-------------|-------------|
-| 360 | 10 | 10 | 
-| 8848 | 0 | 0 | 
-| 2e | 2 | 2 | 
-| 3gnet | 0 | 1 | 
-| 3q | 14 | 62 | 
-| 4good | 1 | 1 | 
-| 4ife | 0 | 1 | 
-| a1 | 0 | 1 | 
-| ace | 8 | 0 | 
-| acer | 5 | 68 | 
-| airo wireless | 1 | 0 | 
-| accent | 0 | 5 | 
-| acteck | 0 | 0 | 
-| advan | 0 | 1 | 
-| advance | 0 | 14 | 
-| afrione | 0 | 2 | 
-| agm | 0 | 0 | 
-| ainol | 0 | 16 | 
-| airness | 0 | 0 | 
-| airties | 0 | 0 | 
-| ais | 0 | 2 | 
-| aiuto | 0 | 0 | 
-| aiwa | 0 | 0 | 
-| akai | 1 | 5 | 
-| alba | 0 | 1 | 
-| alcatel | 0 | 427 | 
-| alcor | 1 | 0 | 
-| alfawise | 0 | 0 | 
-| aligator | 0 | 0 | 
-| allcall | 0 | 3 | 
-| alldocube | 2 | 6 | 
-| allview | 0 | 46 | 
-| allwinner | 0 | 3 | 
-| altek | 1 | 0 | 
-| altech uec | 0 | 0 | 
-| altice | 0 | 0 | 
-| altron | 0 | 1 | 
-| amazon | 19 | 30 | 
-| amgoo | 0 | 15 | 
-| amigoo | 0 | 0 | 
-| amoi | 62 | 2 | 
-| andowl | 0 | 0 | 
-| anry | 0 | 0 | 
-| ans | 0 | 0 | 
-| aoc | 0 | 0 | 
-| aoson | 0 | 6 | 
-| apple | 46 | 44 | 
-| archos | 89 | 7 | 
-| arian space | 0 | 2 | 
-| ark | 0 | 36 | 
-| armphone | 0 | 0 | 
-| arnova | 0 | 36 | 
-| arris | 0 | 0 | 
-| artel | 0 | 2 | 
-| artizlee | 0 | 1 | 
-| asano | 0 | 1 | 
-| asanzo | 1 | 0 | 
-| ask | 0 | 0 | 
-| assistant | 2 | 19 | 
-| asus | 75 | 215 | 
-| at&t | 1 | 2 | 
-| atvio | 0 | 0 | 
-| atom | 0 | 3 | 
-| avenzo | 1 | 3 | 
-| avh | 1 | 0 | 
-| avvio | 0 | 2 | 
-| axxion | 0 | 0 | 
-| azumi mobile | 0 | 1 | 
-| bellphone | 1 | 1 | 
-| benq | 0 | 1 | 
-| bravis | 21 | 17 | 
-
+| Brand | Device count | Alias count | | Brand | Device count | Alias count |
+|----|----|----|----|----|----|----|
+| 360 | 10 | 10 | | 8848 | 0 | 0 |
+| 2e | 2 | 2 | | 3gnet | 0 | 1 |
+| 3q | 14 | 62 | | 4good | 1 | 1 |
+| 4ife | 0 | 1 | | a1 | 0 | 1 |
+| ace | 8 | 0 | | acer | 5 | 68 |
+| airo wireless | 1 | 0 | | accent | 0 | 5 |
+| acteck | 0 | 0 | | advan | 0 | 1 |
+| advance | 0 | 14 | | afrione | 0 | 2 |
+| agm | 0 | 0 | | ainol | 0 | 16 |
+| airness | 0 | 0 | | airties | 0 | 0 |
+| ais | 0 | 2 | | aiuto | 0 | 0 |
+| aiwa | 0 | 0 | | akai | 1 | 5 |
+| alba | 0 | 1 | | alcatel | 0 | 427 |
+| alcor | 1 | 0 | | alfawise | 0 | 0 |
+| aligator | 0 | 0 | | allcall | 0 | 3 |
+| alldocube | 2 | 6 | | allview | 0 | 46 |
+| allwinner | 0 | 3 | | altek | 1 | 0 |
+| altech uec | 0 | 0 | | altice | 0 | 0 |
+| altron | 0 | 1 | | amazon | 19 | 30 |
+| amgoo | 0 | 15 | | amigoo | 0 | 0 |
+| amoi | 62 | 2 | | andowl | 0 | 0 |
+| anry | 0 | 0 | | ans | 0 | 0 |
+| aoc | 0 | 0 | | aoson | 0 | 6 |
+| apple | 46 | 44 | | archos | 89 | 7 |
+| arian space | 0 | 2 | | ark | 0 | 36 |
+| armphone | 0 | 0 | | arnova | 0 | 36 |
+| arris | 0 | 0 | | artel | 0 | 2 |
+| artizlee | 0 | 1 | | asano | 0 | 1 |
+| asanzo | 1 | 0 | | ask | 0 | 0 |
+| assistant | 2 | 19 | | asus | 75 | 215 |
+| at&t | 1 | 2 | | atvio | 0 | 0 |
+| atom | 0 | 3 | | avenzo | 1 | 3 |
+| avh | 1 | 0 | | avvio | 0 | 2 |
+| axxion | 0 | 0 | | azumi mobile | 0 | 1 |
+| bellphone | 1 | 1 | | benq | 0 | 1 |
 
 </details>
 
