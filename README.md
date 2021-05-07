@@ -185,7 +185,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (365 devices, alias devices 1124)
+> This parser is experimental and contains few devices. (381 devices, alias devices 1139)
 >
 ##### Support detail brands/models list:
 
@@ -229,6 +229,10 @@ is not parse result  {name: ""}
 | avh | 1 | 0 | | avvio | 0 | 2 |
 | axxion | 0 | 0 | | azumi mobile | 0 | 1 |
 | bellphone | 1 | 1 | | benq | 0 | 1 |
+| bravis | 21 | 17 | | beyond | 0 | 7 |
+| bangolufsen | 0 | 0 | | barnes & noble | 1 | 6 |
+| beeline | 11 | 1 | | bezkam | 1 | 0 |
+| bigben | 1 | 0 | | bihee | 2 | 1 |
 
 </details>
 

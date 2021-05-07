@@ -2614,3 +2614,18 @@ beeline:
   tab fast: ''
   tab pro: ''
   tab: ''
+
+bezkam:
+  bk-ram2: 'DS=5.5;RS=720x1280;SZ=72.2х146.4х9.2;WT=170;RM=2048;CP=79;RE=2017.07;SM=2;OS=Android 5.1;'
+
+bigben:
+  gametab-one: 'DS=7;RS=1024x600;SZ=187x110x12;WT=346;CP=80;RM=2048;OS=Android 4.2;'
+
+bihee:
+  a11: 'WT=174.4;SZ=72x144.2x9.2;RS=480x854;DS=5;CP=10;RM=2048;RE=2017.09;OS=Android 7.1.2;'
+  a12: 'DS=5.5;RS=720x1280;SZ=70x148x8.2;WT=142.5;RE=2017.09;OS=Android 6;RM=2048;CP=9;'
+  a5: ''
+  a6: ''
+  a7+: ''
+  a8+: ''
+  zbh-a5: '->a5'
