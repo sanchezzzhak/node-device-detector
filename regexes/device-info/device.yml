@@ -2563,9 +2563,8 @@ bravis:
   n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018.11;RM=2048;CP=4;OS=Android 8.1;'
   omega: 'DS=5;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;RM=1024;CP=1;OS=Android 4.4;'
 
-
 beyond:
-  surve 1 pro: 'DS=6.6;SM=2;OS=Android 8.0;'
+  surve 1 pro: ''
   surve 10: ''
   surve 2 pro: ''
   surve 2: ''
@@ -2579,3 +2578,39 @@ beyond:
   surve6: '->surve 6'
   surve7: '->surve 7'
   surve8: '->surve 8'
+
+bangolufsen:
+  beovision: ''
+
+barnes & noble:
+  bntv400: '->nook bntv400'
+  bntv600: '->nook bntv600'
+  nobntv250: '->nook bntv250'
+  nobntv250a: '->nook bntv250a'
+  nook bnrv200: 'DS=7.0;RS=1024x600;'
+  nook bntv250: ''
+  nook bntv250a: ''
+  nook bntv400: ''
+  nook bntv600: ''
+  nook color: ''
+  nook tablet: ''
+  nookcolor: '->nook color'
+  notablet: '->nook tablet'
+
+beeline:
+  e700: 'SM=2;OS=Android 4.1;WT=120;SZ=61.7x116x12.6;RS=480x800;DS=4;'
+  fast 2: 'SM=1;OS=Android 5.1;WT=160;SZ=71.5x143.7x9.4;RS=480x854;DS=5;RM=1024;CP=56;RE=2015.12;'
+  fast: 'SM=1;OS=Android 5.1;WT=125;SZ=72.6x145.5x8.8;RS=480x854;DS=5;RM=1024;CP=56;RE=2015.09;'
+  pro 2: 'SM=1;OS=Android 5.0;WT=154;SZ=67.4х134.5х10.3;RS=480x854;DS=4.5;RM=1024;CP=1;RE=2015.12;'
+  pro 3: 'SM=1;OS=Android 5.1;WSZ=72.6x144x8.7;WT=152;DS=5;RS=480x854;RM=1024;CP=6;'
+  pro 4: 'SM=2;RE=2015;WT=130;OS=Android 5.1;SZ=66.0x136.0x9.3;DS=4.5;RS=480x854;RM=1024;CP=1;'
+  pro 6: 'RE=2017.04;SZ=67x133x9.8;RM=1024;WT=130;DS=4.5;RS=480x854;CP=86;OS=Android 7.0;'
+  smart 2: 'SM=1;OS=Android 4.4;WT=124;SZ=64.7x126x10.7;DS=4;RS=480x800;CP=119;RM=512;'
+  smart 3: 'SM=1;OS=Android 4.4;WT=122;SZ=64x125.5x9.7;DS=4;RS=480x800;CP=210;RM=512;'
+  smart 4: 'SM=1;OS=Android 5.0;WT=237;SZ=66x136x9.3;DS=4.5;RS=480x854;CP=1;RM=1024;'
+  smart dual: 'SM=2;OS=Android 4.4.2;RE=2015.07;CP=24;RM=512;DS=4;RS=480x800;'
+  smart2: '->smart 2'
+  tab 2: ''
+  tab fast: ''
+  tab pro: ''
+  tab: ''

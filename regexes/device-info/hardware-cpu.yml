@@ -703,6 +703,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 59
   119:
+    # MSM8210
     name: Qualcomm Snapdragon 200 8210
     type: ARM
     cores: 2
@@ -1233,3 +1234,9 @@ cpu:
     clock_rate: 2500
     cores: 4
     gpu_id: 13
+  210:
+    name: MediaTek MT6572А
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 62
