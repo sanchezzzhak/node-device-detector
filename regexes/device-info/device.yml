@@ -2562,3 +2562,20 @@ bravis:
   n1 550 cruiser: '->n1-550 cruiser'
   n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018.11;RM=2048;CP=4;OS=Android 8.1;'
   omega: 'DS=5;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;RM=1024;CP=1;OS=Android 4.4;'
+
+
+beyond:
+  surve 1 pro: 'DS=6.6;SM=2;OS=Android 8.0;'
+  surve 10: ''
+  surve 2 pro: ''
+  surve 2: ''
+  surve 6: ''
+  surve 7: ''
+  surve 8: ''
+  surve1 pro: '->surve 1 pro'
+  surve10: '->surve 10'
+  surve2 pro: '->surve 2 pro'
+  surve2: '->surve 2'
+  surve6: '->surve 6'
+  surve7: '->surve 7'
+  surve8: '->surve 8'
