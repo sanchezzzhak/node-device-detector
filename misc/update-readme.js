@@ -16,9 +16,11 @@ let brandInfos = YAML.safeLoad(
 
 // console.log({brandInfos});
 
+
 let deviceInfoData = {};
 let deviceAliasCount = 0;
 let deviceInfoCount = 0;
+
 for (let brand in brandInfos) {
   if (brandInfos[brand] !== null) {
     if (deviceInfoData[brand] === undefined) {
@@ -48,18 +50,24 @@ for (let brand in brandInfos) {
 }
 
 let tableRows = [];
-  tableRows.push('| Brand | Device count | Alias count | | Brand | Device count | Alias count |')
+  tableRows.push('| Brand | Device count | Alias count | - | Brand | Device count | Alias count |')
   tableRows.push('|----|----|----|----|----|----|----|')
-  let row = '', left = 0;
+const tableColumnStr = (brand, device, alias) => {
+  return `| ${brand} | ${device} | ${alias} |`;
+};
+let row = [];
 for (let brand in deviceInfoData) {
-  if(left % 2 === 0) {
-    row = `| ${brand} | ${deviceInfoData[brand].device} | ${deviceInfoData[brand].alias} | `;
+  if(row.length < 3 ) {
+    row.push(tableColumnStr(brand, deviceInfoData[brand].device, deviceInfoData[brand].alias));
   }
-  if(left % 2 === 1) {
-    row += `| ${brand} | ${deviceInfoData[brand].device} | ${deviceInfoData[brand].alias} |`;
-    tableRows.push(row);
+  if(row.length === 2) {
+    tableRows.push(row.join(' - '));
+    row = [];
   }
-  left++;
+}
+if(row.length === 1) {
+  row.push(tableColumnStr('', '' , ''));
+  tableRows.push(row.join(' - '));
 }
 
 console.log('Update README.md');
