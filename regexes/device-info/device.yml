@@ -2693,6 +2693,24 @@ black fox:
   s4035 3g: ''
   s4035 4g: ''
 
+zync:
+  cloud 605: 'RE=2013.11;OS=Android 4.2;DS=6.5;RS=800x480;RM=512;'
+  cloud z5: 'RE=2013.07;RM=512;SZ=140.4x80.9x10.2;WT=192;DS=5;RS=800x480;OS=Android 4.0;'
+  dual 7+: ''
+  dual 7i: ''
+  z1000 3d: ''
+  z1000: ''
+  z18: ''
+  z7i 3g: ''
+  z81: ''
+  z900 plus: ''
+  z909: ''
+  z930+: ''
+  z930: ''
+#  z99 3g: '->z99'
+#  z99 dual core: '->z99'
+#  z99: 'DS=7.0;RM=512;OS=Android 4.0;RE=1012.12;'
+
 zyq:
   braw 3g: 'RE=2016.03;SZ=83x160x14.5;WT=219;'
   care 3g: ''
