@@ -438,6 +438,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 44
   74:
+    # MT8735M
     name: Mediatek MT8735
     type: ARM
     cores: 4
@@ -1240,3 +1241,9 @@ cpu:
     clock_rate: 1200
     cores: 2
     gpu_id: 62
+  211:
+    name: Intel Atom x3 C3230
+    type: ARM
+    clock_rate: 1200
+    cores: 4
+    gpu_id: 3

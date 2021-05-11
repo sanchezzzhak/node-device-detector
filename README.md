@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 10/05/2021_
+_Last update: 11/05/2021_
 
 ## Description
 
@@ -185,7 +185,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (403 devices, alias devices 1167)
+> This parser is experimental and contains few devices. (410 devices, alias devices 1177)
 >
 ##### Support detail brands/models list:
 
@@ -226,15 +226,16 @@ is not parse result  {name: ""}
 | assistant | 2 | 19 | - | asus | 75 | 215 |
 | at&t | 1 | 2 | - | atvio | 0 | 0 |
 | atom | 0 | 3 | - | avenzo | 1 | 3 |
-| avh | 1 | 0 | - | avvio | 0 | 2 |
+| avh | 1 | 0 | - | avvio | 3 | 2 |
 | axxion | 0 | 0 | - | azumi mobile | 0 | 1 |
 | bellphone | 1 | 1 | - | benq | 0 | 1 |
-| bravis | 21 | 17 | - | beyond | 0 | 7 |
-| bangolufsen | 0 | 0 | - | barnes & noble | 1 | 6 |
-| beeline | 11 | 1 | - | bird | 1 | 0 |
-| billion | 1 | 1 | - | bezkam | 1 | 0 |
-| bigben | 1 | 0 | - | bihee | 2 | 1 |
-| black fox | 18 | 12 | - | öwn | 1 | 2 |
+| bravis | 21 | 17 | - | bb mobile | 2 | 10 |
+| beyond | 0 | 7 | - | bangolufsen | 0 | 0 |
+| barnes & noble | 1 | 6 | - | beeline | 11 | 1 |
+| bird | 1 | 0 | - | billion | 1 | 1 |
+| bezkam | 1 | 0 | - | bigben | 1 | 0 |
+| bihee | 2 | 1 | - | black fox | 18 | 12 |
+| öwn | 1 | 2 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 
 </details>

@@ -2468,7 +2468,7 @@ avh:
 avvio:
   765 765: '->765'
   765: 'RE=2013.12;WT=110;DS=3.5;RS=320x480;SZ=63x113x13.3;RM=512;OS=Android 4.2;'
-  774: ''
+  774: 'DS=4;RS=480x800;SZ=65.6x124.55x9.6;WT=180;RE=2016;OS=Android 4.4.2;RM=512;CP=36;'
   775: ''
   786: ''
   chivas 55: ''
@@ -2562,6 +2562,29 @@ bravis:
   n1 550 cruiser: '->n1-550 cruiser'
   n1-550 cruiser: 'DS=5.5;RS=640x1280;SZ=70x146.5x9.5;WT=212;RE=2018.11;RM=2048;CP=4;OS=Android 8.1;'
   omega: 'DS=5;RS=720x1280;SZ=76.6x145.3x8.4;WT=146;RE=2015;RM=1024;CP=1;OS=Android 4.4;'
+
+bb mobile:
+  # todo fix name techno 10.0" lte tq060x;
+  techno 10.0" lte tq060x: 'DS=10.1;RS=1024x600;SZ=243x165.8x10.5;WT=550;RM=1024;CP=74;OS=Android 5.1;SM=2;'
+  techno 10.1 lte tq060x: '->techno 10.0" lte tq060x'
+  techno 10.1" mozg i101bi: 'DS=10.1;RS=1024x600;SZ=243x166x10;WT=535;OS=Android 5.1;RM=1024;CP=211;SM=2;'
+  techno 7.0 lte tq763i: '->techno 7.0" kalash lte tq763i'
+  techno 7.0" kalash lte tq763i: ''
+  techno 7.0" mozg lte i700aj: ''
+  techno 7.0" pioneer lte s700bf: ''
+  techno 7.85" mozg i785ap: ''
+  techno 8.0 3g: '->techno 8.0" 3g'
+  techno 8.0" 3g: ''
+  techno 8.0" poplar lte tq863q: ''
+  techno 9.7 3g: '->techno 9.7" 3g'
+  techno 9.7" 3g: ''
+  techno i101bi: '->techno 10.1" mozg i101bi'
+  techno i700aj: '->techno 7.0" mozg lte i700aj'
+  techno s700bf: '->techno 7.0" pioneer lte s700bf'
+  techno spark 3g x595bt: ''
+  techno tq863q: '->techno 8.0" poplar lte tq863q'
+  techno x595bt: '->techno spark 3g x595bt'
+  techno-i785ap: '->techno 7.85" mozg i785ap'
 
 beyond:
   surve 1 pro: ''
