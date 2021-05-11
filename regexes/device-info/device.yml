@@ -2467,12 +2467,12 @@ avh:
 
 avvio:
   765 765: '->765'
-  765: ''
+  765: 'RE=2013.12;WT=110;DS=3.5;RS=320x480;SZ=63x113x13.3;RM=512;OS=Android 4.2;'
   774: ''
   775: ''
   786: ''
   chivas 55: ''
-  colombia (2018): ''
+  colombia (2018): 'DS=5.0;RS=720x1280;SZ=73.1x144x9.5;WT=150;RM=1024;CP=5;OS=Android 7;'
   colombia 2018: '->colombia (2018)'
   mint m353: ''
   pad: ''
