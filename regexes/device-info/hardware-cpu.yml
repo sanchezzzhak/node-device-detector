@@ -438,6 +438,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 44
   74:
+    # MT8735M
     name: Mediatek MT8735
     type: ARM
     cores: 4
@@ -703,6 +704,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 59
   119:
+    # MSM8210
     name: Qualcomm Snapdragon 200 8210
     type: ARM
     cores: 2
@@ -1233,3 +1235,15 @@ cpu:
     clock_rate: 2500
     cores: 4
     gpu_id: 13
+  210:
+    name: MediaTek MT6572А
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 62
+  211:
+    name: Intel Atom x3 C3230
+    type: ARM
+    clock_rate: 1200
+    cores: 4
+    gpu_id: 3
