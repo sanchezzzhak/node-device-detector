@@ -1,5 +1,7 @@
 CHANGELOG
 -
+* v1.3.5
+    * Update fixtures from the motamo-org/device-detect `version#4.2.3` (update to 2021/05/12)
 * v1.3.4
     * Update fixtures from the motamo-org/device-detect `version#4.2.2` (update to 2021/03/17)
     * Added detect devices 532~ 
