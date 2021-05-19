@@ -1,22 +1,26 @@
 const DEVICE_TYPES = require('./parser/const/device-type');
 
-const isTabled = (result) => {
-  return result.device && result.device === DEVICE_TYPES.TABLET;
+const getDeviceType = (result) => {
+  return result.device && result.device.type ? result.device.type : null;
+};
+
+const isTablet = (result) => {
+  return getDeviceType(result) === DEVICE_TYPES.TABLET;
 };
 
 const isPhablet = (result) => {
-  return result.device && result.device === DEVICE_TYPES.PHABLET;
+  return getDeviceType(result) === DEVICE_TYPES.PHABLET;
 };
 const isFeaturePhone = (result) => {
-  return result.device && result.device === DEVICE_TYPES.FEATURE_PHONE;
+  return getDeviceType(result) === DEVICE_TYPES.FEATURE_PHONE;
 };
 
 const isSmartphone = (result) => {
-  return result.device && result.device === DEVICE_TYPES.SMARTPHONE;
+  return getDeviceType(result) === DEVICE_TYPES.SMARTPHONE;
 };
 
 const isCar = (result) => {
-  return result.device && result.device === DEVICE_TYPES.CAR_BROWSER;
+  return getDeviceType(result) === DEVICE_TYPES.CAR_BROWSER;
 };
 
 const isMobile = (result) => {
@@ -24,7 +28,7 @@ const isMobile = (result) => {
 };
 
 const isDesktop = (result) => {
-  return result.device === DEVICE_TYPES.DESKTOP;
+  return getDeviceType(result) === DEVICE_TYPES.DESKTOP;
 };
 
 const isAndroid = (result) => {
@@ -36,35 +40,35 @@ const isIOS = (result) => {
 };
 
 const isTv = (result) => {
-  return result.device && result.device === DEVICE_TYPES.TV;
+  return getDeviceType(result) === DEVICE_TYPES.TV;
 };
 
 const isConsole = (result) => {
-  return result.device && result.device === DEVICE_TYPES.CONSOLE;
+  return getDeviceType(result) === DEVICE_TYPES.CONSOLE;
 };
 
 const isCamera = (result) => {
-  return result.device && result.device === DEVICE_TYPES.CAMERA;
+  return getDeviceType(result) === DEVICE_TYPES.CAMERA;
 };
 
 const isPortableMediaPlayer = (result) => {
-  return result.device && result.device === DEVICE_TYPES.PORTABLE_MEDIA_PLAYER;
+  return getDeviceType(result) === DEVICE_TYPES.PORTABLE_MEDIA_PLAYER;
 };
 
 const isSmartSpeaker = (result) => {
-  return result.device && result.device === DEVICE_TYPES.SMART_SPEAKER;
+  return getDeviceType(result) === DEVICE_TYPES.SMART_SPEAKER;
 };
 
 const isPeripheral = (result) => {
-  return result.device && result.device === DEVICE_TYPES.PERIPHERAL;
+  return getDeviceType(result) === DEVICE_TYPES.PERIPHERAL;
 };
 
 const isSmartDisplay = (result) => {
-  return result.device && result.device === DEVICE_TYPES.SMART_DISPLAY;
+  return getDeviceType(result) === DEVICE_TYPES.SMART_DISPLAY;
 };
 
 const isWearable = (result) => {
-  return result.device && result.device === DEVICE_TYPES.WEARABLE;
+  return getDeviceType(result) === DEVICE_TYPES.WEARABLE;
 };
 
 /*
@@ -72,7 +76,7 @@ const isOS = (name) => {};
 const isBrowser = (name) => {};
 */
 
-exports = {
+module.exports = {
   isCamera,
   isCar,
   isConsole,
@@ -85,10 +89,9 @@ exports = {
   isSmartDisplay,
   isSmartSpeaker,
   isSmartphone,
-  isTabled,
+  isTablet,
   isTv,
   isWearable,
-
   isAndroid,
   isIOS,
 };

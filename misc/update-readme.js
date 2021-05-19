@@ -16,7 +16,6 @@ let brandInfos = YAML.safeLoad(
 
 // console.log({brandInfos});
 
-
 let deviceInfoData = {};
 let deviceAliasCount = 0;
 let deviceInfoCount = 0;
@@ -50,23 +49,31 @@ for (let brand in brandInfos) {
 }
 
 let tableRows = [];
-  tableRows.push('| Brand | Device count | Alias count | - | Brand | Device count | Alias count |')
-  tableRows.push('|----|----|----|----|----|----|----|')
+tableRows.push(
+  '| Brand | Device count | Alias count | - | Brand | Device count | Alias count |'
+);
+tableRows.push('|----|----|----|----|----|----|----|');
 const tableColumnStr = (brand, device, alias) => {
   return `| ${brand} | ${device} | ${alias} |`;
 };
 let row = [];
 for (let brand in deviceInfoData) {
-  if(row.length < 3 ) {
-    row.push(tableColumnStr(brand, deviceInfoData[brand].device, deviceInfoData[brand].alias));
+  if (row.length < 3) {
+    row.push(
+      tableColumnStr(
+        brand,
+        deviceInfoData[brand].device,
+        deviceInfoData[brand].alias
+      )
+    );
   }
-  if(row.length === 2) {
+  if (row.length === 2) {
     tableRows.push(row.join(' - '));
     row = [];
   }
 }
-if(row.length === 1) {
-  row.push(tableColumnStr('', '' , ''));
+if (row.length === 1) {
+  row.push(tableColumnStr('', '', ''));
   tableRows.push(row.join(' - '));
 }
 
@@ -81,7 +88,9 @@ fs.readFile(someFile, 'utf8', function (err, data) {
 
   data = data.replace(
     /(^#{5} Support detail brands\/models list(?:.*?)<\/details>)/gims,
-    `##### Support detail brands/models list:\n\n<details>\n<summary>Show details</summary>\n\n${tableRows.join('\n')}\n\n</details>`
+    `##### Support detail brands/models list:\n\n<details>\n<summary>Show details</summary>\n\n${tableRows.join(
+      '\n'
+    )}\n\n</details>`
   );
 
   data = data.replace(

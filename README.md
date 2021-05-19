@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 12/05/2021_
+_Last update: 19/05/2021_
 
 ## Description
 
@@ -76,7 +76,7 @@ Result is not detect
 Helper methods
 ```js
 const DeviceDetector = require('node-device-detector');
-const DeviceHelper = require('node-device-detector/helpers');
+const DeviceHelper = require('node-device-detector/helper');
 
 const detector = new DeviceDetector;
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
@@ -87,7 +87,7 @@ DeviceHelper.isMobile(result);
 /* check device type is desktop */
 DeviceHelper.isDesktop(result);
 /* check device type is tablet  */
-DeviceHelper.isTabled(result);
+DeviceHelper.isTablet(result);
 /* check device type car (side panel in car)  */
 DeviceHelper.isCar(result);
 /* check device type feature phone (push-button telephones)  */
