@@ -2300,13 +2300,7 @@ asus:
   fonepad: 'DS=7;RS=1280x800;SZ=120.1x196.4x10.4;WT=340;RE=2013.02;RM=1024;CP=132;OS=Android 4.1;'
 
   galaxy6: ''
-  i001d: '->rog phone 2'
-  i001da: '->rog phone 2'
-  i001db: '->rog phone 2'
-  i001dc: '->rog phone 2'
-  i001de: '->rog phone 2'
-  i003d: '->rog phone 3'
-  i003dd: '->rog phone 3'
+
 
   k007: '->memo pad 7'
   k00c: '->transformer pad tf701t'
@@ -2372,8 +2366,15 @@ asus:
   padfone x mini: 'DS=4.5;RS=854x480;SZ=66.3x132.1x12.7;WT=148.8;RE=2014.10;CP=18;RM=1024;'
   padfone: 'DS=4.3;RS=540x960;SZ=65.4x128x9.2;WT=129;RE=2011.06;RM=1024;CP=140;OS=Android 4.0.3;'
   rog phone 2: 'DS=6.59;RS=1080x2340;SZ=77.6x171x9.5;WT=240;RM=8192;CP=197;RE=2019.07;OS=Android 9;SM=2;'
+  i001d: '->rog phone 2'
+  i001da: '->rog phone 2'
+  i001db: '->rog phone 2'
+  i001dc: '->rog phone 2'
+  i001de: '->rog phone 2'
   rog phone: 'DS=6.0;RS=1080x2160;SZ=76.2x158.8x8.6;WT=200;RE=2018.06;RM=8192;CP=198;OS=Android 9;SM=2;'
   rog phone 3: 'DS=6.59;RS=1080x2340;SZ=78x171x9.85;WT=240;RE=2020.07;RM=8192;CP=141;OS=Android 10;'
+  i003d: '->rog phone 3'
+  i003dd: '->rog phone 3'
 
   slider sl101: '->eee pad slider sl101'
   t00e: '->padfone mini'
@@ -2715,6 +2716,25 @@ black fox:
   s4025: ''
   s4035 3g: ''
   s4035 4g: ''
+
+ipro:
+  amber 5s pro: ''
+  amber 6: ''
+  amber 7s: ''
+  amber5s pro: '->amber 5s pro'
+  amber6: '->amber 6'
+  amber7s: '->amber 7s'
+  jade 7s: 'DS=5.72;RS=480x960;SZ=73.5x153.8x9.5;RM=1024;CP=58;SM=2;'
+  jade 8s: ''
+  jade7s: '->jade 7s'
+  jade8s: '->jade 8s'
+  kylin 5.0: ''
+  kylin 5.0s: ''
+  kylin 5.5: ''
+  phoenix 5.0s: '->phonenix 50s'
+  phonenix 50s: 'DS=5;RS=640x960;OS=Android 7.0;RM=1024;CP=5;'
+  phonenix50s: '->phonenix 50s'
+  zafiro: 'DS=5.45;RS=480x960;SZ=73.5x153.8x9.5;RM=1024;CP=5;OS=Android 8.1;SM=2;'
 
 zync:
   cloud 605: 'RE=2013.11;OS=Android 4.2;DS=6.5;RS=800x480;RM=512;'
