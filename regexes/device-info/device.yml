@@ -2805,13 +2805,16 @@ huawei:
   are-l22hn: '->honor 8x max'
   are-tl00: '->honor 8x max'
   honor 8x max: 'RE=2018.09;SZ=86.3x177.6x8.1;WT=210;DS=7.12;RS=1080x2244;OS=Android 8.1;CP=61;RM=4096;'
-
-  # todo check year 2015?
-  hi6210sft: '->p8 lite (2017)'
   aqm-lx1: '->y8p'
+  y8p: 'RE=2020.05;SZ=73.2x157.4x7.8;WT=163;DS=6.3;RS=1080x2400;OS=Android 10;CP=37;RM=4096;'
   ars-al00: '->y max'
   ars-l22: '->y max'
   ars-tl00: '->y max'
+  y max: 'RE=2018.11;SZ=86.2x177.6x8.5;WT=210;DS=7.12;RS=1080x2244;OS=Android 8.1;CP=61;RM=4096;'
+
+  # todo check year 2015?
+  hi6210sft: '->p8 lite (2017)'
+
   art-al00m: '->enjoy 10'
   art-al00x: '->enjoy 10'
   art-l28: '->y7p'
@@ -3725,7 +3728,7 @@ huawei:
   was-tl10: '->p10 lite'
   wlz-al10: '->nova 6'
   wlz-an00: '->nova 6 5g'
-  y max: ''
+
   y210-0100: ''
   y221-u03: '->ascend y221'
   y221-u12: '->ascend y221'
@@ -3776,7 +3779,6 @@ huawei:
   y7 pro (2019): ''
   y7a: ''
   y7p: ''
-  y8p: ''
   y9 (2018): ''
   y9 (2019): ''
   y9 prime (2019): ''
