@@ -1247,3 +1247,9 @@ cpu:
     clock_rate: 1200
     cores: 4
     gpu_id: 3
+  212:
+    name: Qualcomm Snapdragon S4 Plus MSM8230
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 12
