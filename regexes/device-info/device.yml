@@ -2737,26 +2737,41 @@ huawei:
   cpn-l09: '->mediapad m3 lite'
   cpn-w09: '->mediapad m3 lite'
   mediapad m3 lite: 'RE=2017.06;SZ=213.3x123.3x7.5;WT=310;DS=8.0;RS=1920x1200;OS=Android 7.0;CP=35;RM=4096;'
-
-
-  # todo check year 2015?
-  hi6210sft: '->p8 lite (2017)'
-  9s: ''
+  pot-tl00a: '->9s'
+  pot-al00a: '->9s'
+  enjoy 9s: '->9s'
+  # todo rename pot-al00a, pot-tl00a to enjoy 9s?
+  9s: 'DS=6.21;RS=1080x2340;SZ=73.4x155.2x8;WT=160;RE=2019.03;OS=Android 9;SM=2;RM=4096;CP=28;'
   704hw: '->nova 2 lite'
-
+  nova 2 lite: 'DS=5.99;RS=720x1440;SZ=76.7x158.3x7.8;WT=155;RE=2018.03;OS=Android 8.0;RM=3072;CP=43;'
   ags-l03: '->mediapad t3 10'
   ags-l09: '->mediapad t3 10'
   ags-w09: '->mediapad t3 10'
+  mediapad t3 10: 'RE=2017.05;SZ=229.8x159.8x8;WT=460;DS=9.6;RS=1280x800;OS=Android 7.0;CP=20;RM=2048;'
   ags2-al00: '->enjoy tablet 10.1'
+  enjoy tablet 10.1: 'DS=10.1;RS=1920x1200;WT=460;SZ=243x164x8;RM=4096;CP=42;OS=Android 8.0;SM=1;RE=2018.11;'
   ags2-al00hn: '->honor tab 5'
+  jdn2-w09hn: '->honor tab 5'
+  honor tab 5: 'RE=2019.05;SZ=204.2x122.2x8.2;WT=310;DS=8.0;RS=1920x1200;OS=Android 9.0;CP=28;RM=3072;'
   ags2-l03: '->mediapad t5 10'
   ags2-l09: '->mediapad t5 10'
   ags2-w09: '->mediapad t5 10'
   ags2-w19: '->mediapad t5 10'
+  mediapad t5 10: 'RE=2018.08;SZ=243x164x7.8;WT=460;DS=10.1;RS=1920x1200;OS=Android 8.0;CP=42;RM=2048;'
   ags3-l09: '->matepad t10s'
+  ags3-w09: '->matepad t10s'
+  matepad t 10s: '->matepad t10s'
+  matepad t10s: 'RE=2020.09;SZ=240.2x159x7.9;WT=450;DS=10.1;RS=1920x1200;OS=Android 10;CP=213;RM=2048;'
   aka-al10: '->honor play 4t'
-  aka-l29: '->honor 9c'
+  aka-tl10: '->honor play 4t'
+  honor play 4t: 'RE=2020.04;SZ=76.1x159.8x8.1;WT=176;DS=6.39;RS=720x1560;OS=Android 10;CP=213;RM=6144;'
 
+
+
+  # todo check year 2015?
+  hi6210sft: '->p8 lite (2017)'
+
+  aka-l29: '->honor 9c'
   alp-al00: '->mate 10'
   alp-tl00: '->mate 10'
   amn-lx1: '->y5 (2019)'
@@ -3029,7 +3044,6 @@ huawei:
   enjoy 8: ''
   enjoy 8e: ''
   enjoy 9e: ''
-  enjoy tablet 10.1: ''
   eva-al00: '->p9'
   eva-cl00: '->p9'
   eva-dl00: '->p9'
@@ -3194,12 +3208,11 @@ huawei:
   honor play 3e: ''
   honor play 4: ''
   honor play 4c: ''
-  honor play 4t: ''
   honor play 7: ''
   honor play 8a: ''
   honor play 9a: ''
   honor play: ''
-  honor tab 5: ''
+
   honor v10: ''
   honor v20: ''
   honor v8: ''
@@ -3266,7 +3279,7 @@ huawei:
   jdn2-al50: '->mediapad m5 lite'
   jdn2-l09: '->mediapad m5 lite'
   jdn2-w09: '->mediapad m5 lite'
-  jdn2-w09hn: '->honor tab 5'
+
   jef-an00: '->nova 7 5g'
   jef-an20: '->nova 7 5g'
   jef-nx9: '->nova 7 5g'
@@ -3394,7 +3407,7 @@ huawei:
   matepad 10.4": ''
   matepad c5 8: ''
   matepad pro: ''
-  matepad t10s: ''
+
   med-al00: '->enjoy 10e'
   med-lx9: '->y6p'
   med-lx9n: '->y6p'
@@ -3427,10 +3440,10 @@ huawei:
   mediapad t2 7.0 pro: ''
   mediapad t2 7.0: ''
   mediapad t2 8.0 pro: ''
-  mediapad t3 10: ''
+
   mediapad t3 7: ''
   mediapad t3 8: ''
-  mediapad t5 10: ''
+
   mediapad x2: ''
   mediapad: ''
   mha-al00: '->mate 9'
@@ -3477,7 +3490,7 @@ huawei:
   neo-l29: '->mate rs porsche design'
   ney-nx9: '->p40 pro'
   nic-lx1a: '->p30 lite'
-  nova 2 lite: ''
+
   nova 2 plus dual sim: ''
   nova 2 plus: ''
   nova 2: ''
@@ -3558,7 +3571,7 @@ huawei:
   plk-ul00: '->honor 7'
   plk: '->honor 7'
   pot-al00: '->p smart (2019)'
-  pot-al00a: '->9s'
+
   pot-al10: '->maimang 8'
   pot-lx1: '->p smart (2019)'
   pot-lx1a: '->p smart (2020)'
@@ -3566,7 +3579,7 @@ huawei:
   pot-lx1t: '->p smart (2019)'
   pot-lx2j: '->p smart (2019)'
   pot-lx3: '->p smart (2019)'
-  pot-tl00a: '->9s'
+
   ppa-lx2: '->p smart (2021)'
   ppa-lx3: '->y7a'
   pra-al00: '->honor 8 lite'
@@ -3764,9 +3777,9 @@ huawei:
   yal-l41: '->honor 20 pro'
   yal-tl00: '->honor 20'
   z100-ul00: '->ascend d3'
-  pot-al00a: '->9s'
-  pot-tl00a: '->9s'
-  9s: 'DS=6.21;RS=1080x2340;SZ=73.4x155.2x8;WT=160;RE=2019.03;OS=Android 9;SM=2;RM=4096;CP=28;'
+
+
+
   u9500: '->Ascend D1'
   ascend d1: 'DS=4.5;RS=720x1280;SZ=64x129x8.9;WT=132;RE=2012.07;OS=Android 4;RM=1024;CP=29;'
   # ascend d1: 'DS=4.5;RS=720x1280;SZ=64x129x8.9;WT=;RE=2012.02;RM=1024;CP=29;OS=Android 4;'

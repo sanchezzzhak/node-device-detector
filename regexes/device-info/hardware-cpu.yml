@@ -1253,3 +1253,9 @@ cpu:
     clock_rate: 1200
     cores: 2
     gpu_id: 12
+  213:
+    name: HiSilicon Kirin 710A
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 20
