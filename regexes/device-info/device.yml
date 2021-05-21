@@ -2845,29 +2845,55 @@ huawei:
   ascend mate 2: 'RS=1080x1920;DS=6.1;CP=78;RM=2048;OS=Android 4.2.2;SZ=84.9x161x9.54;WT=202;RE=2014.02;'
   mt2l03: '->ascend mate 2'
   mt2-l03: '->ascend mate 2'
-
+  u9200: '->ascend p1'
+  ascend p1: 'DS=4.3;RS=540x960;RE=2012.05;WT=110;SZ=64.8x127.4x7.7;SM=1;OS=Android 4;RM=1024;CP=14;'
+  p7-l10: '->ascend p7'
+  ascend p7: 'DS=5;RS=1080x1920;SZ=68.8x139.8x6.5;WT=124;OS=Android 4.4;RE=2014.05;RM=2048;CP=34;SM=1;'
+  h1711: '->ascend xt2'
+  ascend xt2: 'DS=5.5;RS=720x1280;SZ=76.2x153.4x8.4;WT=165.00;RM=2048;CP=35;OS=Android 7;SM=1;RE=2017.10;'
+  y221-u12: '->ascend y221'
+  y221-u22: '->ascend y221'
+  y221-u03: '->ascend y221'
+  y221-u33: '->ascend y221'
+  y221-u43: '->ascend y221'
+  y221-u53: '->ascend y221'
+  ascend y221: 'DS=3.5;RS=320x480;RE=2014.12;WT=130;SZ=60.6x116.5x12.3;OS=Android 4.4;CP=36;RM=512;'
+  y320-u10: '->ascend y320'
+  y320-t00: '->ascend y320'
+  y320-u05: '->ascend y320'
+  ascend y320: 'DS=4;SZ=63.2x123.3x11.1;RS=480x800;OS=Android 4.2;RE=2013.12;WT=123;RM=512;CP=24;'
+  mt7-l09: '->ascend mate 7'
+  mt7-tl00: '->ascend mate 7'
+  mt7-tl10: '->ascend mate 7'
+  mt7-cl00: '->ascend mate 7'
+  ascend mate 7: 'RE=2014.09;SZ=81x157x7.9;WT=185;DS=6.0;RS=1080x1920;OS=Android 4.4.2;CP=70;RM=2048;'
+  bucare y330-u05: '->ascend y330'
+  y330-u05: '->ascend y330'
+  ascend y330: 'DS=4;SZ=63.5x122.1x11.3;RS=480x800;WT=126;SM=2;OS=Android 4.2;RM=512;CP=24;RE=2014.03;'
+  541-u02: '->ascend y5c'
+  ascend y5c: 'DS=4.5;RS=480x800;SZ=66.7x134.3x10;WT=141;SM=2;RM=1024;OS=Android 4.4;CP=6;RE=2017.08;'
+  ask-al00x: '->honor play 3'
+  honor play 3: 'RE=2019.09;SZ=76.1x159.8x8.1;WT=176;DS=6.39;RS=720x1560;OS=Android 9;CP=37;RM=4096;'
+  ath-al00: '->honor 7i'
+  ath-cl00: '->honor 7i'
+  ath-tl00: '->honor 7i'
+  ath-tl00h: '->honor 7i'
+  ath-ul00: '->honor 7i'
+  honor 7i: 'DS=5.2;RS=1080x1920;SZ=71.2x141.6x7.8;WT=160;RE=2015.08;RM=3072;CP=22;OS=Android 5.1;'
+  ath-ul01: '->shotx'
+  ath-ul06: '->shotx'
+  shotx: 'DS=5.2;RS=1080x1920;SZ=71.2x141.6x7.8;WT=160;RE=2015.08;RM=2048;CP=22;OS=Android 5.1;'
+  atu-al10: '->enjoy 8e'
+  atu-tl10: '->enjoy 8e'
+  enjoy 8e: 'DS=5.7;RS=720x1440;SZ=73x152.4x7.8;WT=150;RM=3072;CP=43;RE=2018.03;OS=Android 8;SM=1;'
 
   # todo check year 2015?
   hi6210sft: '->p8 lite (2017)'
 
 
-  ascend mate 7: ''
-  ascend p1: ''
-  ascend p7: ''
-  ascend xt2: ''
-  ascend y221: ''
-  ascend y320: ''
-  ascend y330: ''
-  ascend y5c: ''
-  ask-al00x: '->honor play 3'
-  ath-al00: '->honor 7i'
-  ath-ul01: '->shotx'
-  ath-ul06: '->shotx'
-  atu-al10: '->enjoy 8e'
   atu-l21: '->y6 (2018)'
   atu-l22: '->y6 (2018)'
   atu-l31: '->y6 prime (2018)'
-  atu-tl10: '->enjoy 8e'
   aum-al00: '->honor 7a'
   aum-al20: '->honor 7a'
   aum-l33: '->honor 7a'
@@ -2925,7 +2951,7 @@ huawei:
   bnd-tl10: '->honor 7x'
   btv-dl09: '->mediapad m3'
   btv-w09: '->mediapad m3 8'
-  bucare y330-u05: '->ascend y330'
+
   bza-w00: '->c3 9.6'
   bzk-l00: '->mediapad t3 8'
   bzk-w00: '->mediapad t3 8'
@@ -3077,7 +3103,6 @@ huawei:
   enjoy 7: ''
   enjoy 7s: ''
   enjoy 8: ''
-  enjoy 8e: ''
   enjoy 9e: ''
   eva-al00: '->p9'
   eva-cl00: '->p9'
@@ -3144,7 +3169,7 @@ huawei:
   gra-l09: '->p8'
   gra-ul00: '->p8'
   gx8: ''
-  h1711: '->ascend xt2'
+
   h30-t00: '->honor 3c'
   h30-t10: '->honor 3c'
   h30-u10: '->honor 3c'
@@ -3205,7 +3230,6 @@ huawei:
   honor 7: ''
   honor 7a: ''
   honor 7c: ''
-  honor 7i: ''
   honor 7s: ''
   honor 7x: ''
   honor 8 lite: ''
@@ -3237,7 +3261,7 @@ huawei:
 
   honor pad 2: ''
   honor pad v6: ''
-  honor play 3: ''
+
   honor play 3e: ''
   honor play 4: ''
   honor play 4c: ''
@@ -3498,7 +3522,7 @@ huawei:
   mrx-al09: '->matepad pro'
   mrx-w09: '->matepad pro'
 
-  mt7-l09: '->ascend mate 7'
+
   mxw-an00: '->honor 30'
   mya-al10: '->y6 (2017)'
   mya-l02: '->y5 (2017)'
@@ -3573,7 +3597,6 @@ huawei:
   p40 pro: ''
 
   p6-u06: ''
-  p7-l10: '->ascend p7'
 
   p8 lite (2017): ''
   p8: ''
@@ -3636,7 +3659,7 @@ huawei:
   scm-w09: '->mediapad m6 10'
   sea-al00: '->nova 5'
   sea-al10: '->nova 5 pro'
-  shotx: ''
+
   sht-al09: '->mediapad m5 8.4'
   sht-w09: '->mediapad m5 8.4'
   sla-al00: '->enjoy 7'
@@ -3705,7 +3728,7 @@ huawei:
   u8825-1: ''
   u8860: '->honor'
   u8950-1: ''
-  u9200: '->ascend p1'
+
   u9202l-1: '->u9202l'
   u9202l: ''
   u9500: '->ascend d1'
@@ -3745,18 +3768,12 @@ huawei:
   wlz-an00: '->nova 6 5g'
 
   y210-0100: ''
-  y221-u03: '->ascend y221'
-  y221-u12: '->ascend y221'
-  y221-u22: '->ascend y221'
-  y221-u33: '->ascend y221'
-  y221-u43: '->ascend y221'
-  y221-u53: '->ascend y221'
+
   y3 (2017): ''
   y3 (2018): ''
   y300-0100: ''
   y300c: ''
-  y320-t00: '->ascend y320'
-  y320-u10: '->ascend y320'
+
   y3ii: ''
   y5 (2017): ''
   y5 (2018): ''
@@ -3767,7 +3784,7 @@ huawei:
   y5 prime (2018): ''
   y5 pro (2017): ''
   y511-t00: ''
-  y541-u02: '->ascend y5c'
+
   y5ii: ''
   y5p: ''
   y6 (2016): ''
@@ -3809,33 +3826,18 @@ huawei:
 
   u9500: '->Ascend D1'
 
-  y320-u10: '->ascend y320'
-  y320-t00: '->ascend y320'
-  y320-u05: '->ascend y320'
-  ascend y320: 'DS=4;SZ=63.2x123.3x11.1;RS=480x800;OS=Android 4.2;RE=2013.12;WT=123;RM=512;CP=24;'
-  y330-u05: '->ascend y330'
-  ascend y330: 'DS=4;SZ=63.5x122.1x11.3;RS=480x800;WT=126;SM=2;OS=Android 4.2;RM=512;CP=24;RE=2014;'
-  541-u02: '->ascend y5c'
-  ascend y5c: 'DS=4.5;RS=480x800;SZ=66.7x134.3x10;WT=141;SM=2;RM=1024;OS=Android 4.4;CP=6;'
+
 
 
   g630-u251: '->ascend g630'
 
 
-  p7-l10: '->ascend p7'
-  ascend p7: 'DS=5;RS=1080x1920;SZ=68.8x139.8x6.5;WT=124;OS=Android 4.4;RE=2014.05;RM=2048;CP=34;SM=1;'
 
-  u9200: '->ascend p1'
-  ascend p1: 'DS=4.3;RS=540x960;RE=2012.05;WT=110;SZ=64.8x127.4x7.7;SM=1;OS=Android 4;RM=1024;CP=14;'
-  h1711: '->ascend xt2'
-  ascend xt2: 'DS=5.5;RS=720x1280;SZ=76.2x153.4x8.4;WT=165.00;RM=2048;CP=35;OS=Android 7;SM=1;RE=2017;'
-  y221-u12: '->ascend y221'
-  y221-u22: '->ascend y221'
-  y221-u03: '->ascend y221'
-  y221-u33: '->ascend y221'
-  y221-u43: '->ascend y221'
-  y221-u53: '->ascend y221'
-  ascend y221: 'DS=3.5;RS=320x480;RE=2014.12;WT=130;SZ=60.6x116.5x12.3;OS=Android 4.4;CP=36;RM=512;'
+
+
+
+
+
   y550-l03: '->ascend y550'
   ascend y550: 'DS=4.5;RS=720x1280;SZ=68x133x9.5;WT=153;OS=Android 4.4;SM=1;CP=17;RM=1024;RE=2014.09;'
 
@@ -3876,9 +3878,7 @@ huawei:
   enjoy 8: 'DS=5.99;RS=720x1440;WT=155;SZ=76.7x158.3x7.8;RM=3072;CP=43;RE=2018.03;OS=Android 8;'
   fla-al10: '->enjoy 8 plus'
   enjoy 8 plus: 'DS=5.93;RS=1080x2160;SZ=75.3x157.2x7.5;WT=170;RM=4096;CP=42;RE=2018.03;OS=Android 8;SM=2;'
-  atu-al10: '->enjoy 8e'
-  atu-tl10: '->enjoy 8e'
-  enjoy 8e: 'DS=5.7;RS=720x1440;SZ=73x152.4x7.8;WT=150;RM=3072;CP=43;RE=2018.03;OS=Android 8;SM=1;'
+
   mrd-al00: 'enjoy 9e'
   mrd-tl00: 'enjoy 9e'
   enjoy 9e: 'DS=6.09;RS=720x1560;SZ=73.5x156.28x8;WT=150;RM=3072;CP=44;RE=2019.03;OS=Android 9;SM=2;'
@@ -4066,7 +4066,7 @@ huawei:
   honor 7: 'DS=;RS=;SZ=;WT=157;RE=2015.06;RM=3072;CP=;OS=Android 6;'
   honor 7a: 'DS=5.7;RS=720x1440;SZ=73x152.4x7.8;WT=150;RE=2018.04;RM=2048;CP=Qualcomm Snapdragon 430 MSM8937;OS=Android 8;'
   honor 7c: 'DS=6;RS=720x1440;SZ=76.7x158.3x7.8;WT=164;RE=2018.04;RM=3072;CP=Qualcomm Snapdragon 450 SDM450;OS=Android 8;'
-  honor 7i: 'DS=5.2;RS=1080x1920;SZ=71.2x141.6x7.8;WT=160;RE=2015.08;RM=3072;CP=Qualcomm Snapdragon 616 MSM8939;OS=;'
+
   honor 7s: 'DS=5.5;RS=720x1440;SZ=70.9x146.5x8.3;WT=142;RE=;RM=2048;CP=MediaTek MT6739;OS=Android 8.1;'
   honor 7x: 'DS=;RS=;SZ=75.3x156.5x7.6;WT=165;RE=2017.12;RM=3072;CP=;OS=Android 8;'
   honor 8 lite: 'DS=5.2;RS=1080x1920;SZ=72.94x147.2x7.6;WT=147;RE=2017.02;RM=3072;CP=HiSilicon Kirin 655;OS=Android 7;'
