@@ -1259,3 +1259,10 @@ cpu:
     clock_rate: 2000
     cores: 8
     gpu_id: 20
+  214:
+    name: Qualcomm Snapdragon 450
+    # SD450
+    type: ARM
+    clock_rate: 1800
+    cores: 8
+    gpu_id: 41
