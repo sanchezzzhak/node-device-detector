@@ -2925,24 +2925,30 @@ huawei:
   bah2-w19: '->mediapad m5 lite'
   bah2-w09: '->mediapad m5 lite'
   # todo rename mediapad m5 lite 8.0"?
-  jdn2-w09: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;'
-  jdn2-al00: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;'
-  jdn2-al50: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;'
-  jdn2-l09: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;'
+  jdn2-w09: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;SM=1;'
+  jdn2-al00: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;SM=1;'
+  jdn2-al50: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;SM=1;'
+  jdn2-l09: '->mediapad m5 lite;DS=8;RE=2019.03;OS=Android 9.0;SM=1;WT=310;SZ=204.2x122.2x8.2;RM=3072;CP=28;SM=1;'
   mediapad m5 lite: 'RE=2018.09;SZ=243.4x162.2x7.7;WT=475;DS=10.1;RS=1920x1200;OS=Android 8.0;CP=42;RM=4096;'
-
-  # todo check year 2015?
-  hi6210sft: '->p8 lite (2017)'
-
-
   bah3-al00: '->matepad 10.4"'
   bah3-l09: '->matepad 10.4"'
   bah3-w09: '->matepad 10.4"'
+  matepad 10.4": 'RE=2020.04;SZ=245.2x155x7.4;WT=450;DS=10.4;RS=2000x1200;OS=Android 10;CP=57;RM=3072;'
   bg2-u01: '->mediapad t3 7'
   bg2-u03: '->mediapad t3 7'
   bg2-w09: '->mediapad t3 7'
+  mediapad t3 7: 'RE=2017.04;SZ=179x103.7x8.6;WT=250;DS=7.0;RS=1024x600;OS=Android 6.0;CP=184;RM=1024;'
+  mediapad t2 7.0 pro: 'RE=2016.08;SZ=187.4x105.8x8.2;WT=250;DS=7.0;RS=1920x1080;OS=Android 5.1 ;CP=22;RM=2048;'
+  ple-701l: '->mediapad t2 7.0 pro'
+  ple-703l: '->mediapad t2 7.0 pro'
+  # todo rename mediapad t2 7.0?
   bgo-dl09: '->mediapad t2 7.0 pro'
   bgo-l03: '->mediapad t2 7.0'
+  mediapad t2 7.0: 'RE=2016.08;SZ=191.8x107x8.5;WT=278;DS=7.0;RS=1024x600;OS=Android 6;CP=215;RM=1024;'
+
+
+  # todo check year 2015?
+  hi6210sft: '->p8 lite (2017)'
   bkk-al00: '->honor 8c'
   bkk-al10: '->honor 8c'
   bkk-l21: '->honor 8c'
@@ -3481,7 +3487,7 @@ huawei:
   mate s: ''
   mate se: ''
   mate xs: ''
-  matepad 10.4": ''
+
   matepad c5 8: ''
   matepad pro: ''
 
@@ -3514,11 +3520,11 @@ huawei:
   mediapad t1 8.0: '->mediapad t1 8'
   mediapad t1 8: ''
   mediapad t2 10.0" pro: ''
-  mediapad t2 7.0 pro: ''
-  mediapad t2 7.0: ''
+
+
   mediapad t2 8.0 pro: ''
 
-  mediapad t3 7: ''
+
   mediapad t3 8: ''
 
   mediapad x2: ''
@@ -3635,8 +3641,7 @@ huawei:
   pe-ul00: '->honor 6 plus'
   pic-al00: '->nova 2'
   pic-tl00: '->nova 2'
-  ple-701l: '->mediapad t2 7.0 pro'
-  ple-703l: '->mediapad t2 7.0 pro'
+
   plk-al10: '->honor 7'
   plk-l01: '->honor 7'
   plk-tl00: '->honor 7'
