@@ -263,3 +263,6 @@ gpu:
   88:
     name: PowerVR SGX544MP2
     clock_rate: 533
+  89:
+    name: ARM Mali-G71 MP8
+    clock_rate: 900
