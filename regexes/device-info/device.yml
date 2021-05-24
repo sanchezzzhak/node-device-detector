@@ -3124,26 +3124,38 @@ huawei:
   cun-l33: '->y5ii'
   cun-u29: '->y5ii'
   y5ii: 'RE=2016.04;SZ=72x143.8x8.9;WT=135;DS=5.0;RS=720x1280;OS=Android 5.1;CP=56;RM=1024;'
+  d-02h: '->d tab compact'
+  d-02k: '->d tab compact'
+  d-01j: '->d tab compact'
+  d tab compact: 'DS=8.4;RS=2560x1600;SZ=215.5x124.2x7.3;WT=326;SM=1;RM=3072;CP=216;RE=2016.10;OS=Android 6.0;'
+  d-01k: '->dtab d-01k'
+  dtab d-01k: 'DS=10.1;RS=1920x1200;SZ=248x173 x7.8;WT=475;RM=3072;CP=42;OS=Android 7.0;RE=2017.10;SM=1;'
+  dig-tl10: '->enjoy 6s'
+  dig-al00: '->enjoy 6s'
+  enjoy 6s: 'DS=5;RS=720x1280;SZ=69.9x143.5x7.6;WT=138;RM=3072;CP=35;RE=2017.01;OS=Android 6;SM=2;'
+  dig-l01: '->nova smart'
+  nova smart: 'RE=2016.12;SZ=69.9x143.5x7.6;WT=138;DS=5.0;RS=720x1280;OS=Android 6;CP=35;'
+  dig-l21: '->gr3 (2017)'
+  dig-l22: 'gr3 (2017)'
+  gr3 (2017): 'DS=5.2;RS=1080x1920;SZ=72.94x147.2x7.6;WT=147;RE=2017;RM=3072;CP=48;OS=Android 7;SM=2;'
+  dig-l21hn: '->honor 6c'
+  honor 6c: 'DS=5;RS=720x1280;SZ=69.9x143x7.3;WT=138;RE=2017.04;RM=3072;CP=35;OS=Android 6;SM=2'
+  dig-l23: '->p9 lite smart'
+  p9 lite smart: 'DS=5;RS=720x1280;SZ=69.9x143.5x7.6;WT=138;RM=3072;CP=35;RE=2017.01;OS=Android 6;SM=2;'
+  dli-al10: '->honor 6a'
+  dli-tl20: '->honor 6a'
+  dli-l22: '->honor 6a'
+  dli-l42: '->honor 6a'
+  honor 6a: 'DS=5;RS=720x1280;SZ=70.95x143.7x8.2;WT=143;RE=2017.07;RM=2048;CP=43;OS=Android 7;SM=2;'
+  dnn-lx9: '->honor x10 lite'
+  honor x10 lite: 'DS=6.67;RS=1080x2400;SZ=76.88x165.65x9.26;WT=206;RM=4096;CP=213;OS=Android 10;SM=2;RE=2020.11;'
 
   # todo check year 2015?
   hi6210sft: '->p8 lite (2017)'
 
-  d tab compact: ''
-  d-01j: '->d tab compact'
-  d-01k: '->dtab d-01k'
-  d-02h: '->d tab compact'
-  d-02k: '->d tab compact'
-  dig-al00: '->enjoy 6s'
-  dig-l01: '->nova smart'
-  dig-l21: '->gr3 (2017)'
-  dig-l21hn: '->honor 6c'
-  dig-l22: '->gr3 (2017)'
-  dig-l23: '->p9 lite smart'
-  dig-tl10: '->enjoy 6s'
-  dli-al10: '->honor 6a'
-  dli-l22: '->honor 6a'
-  dli-tl20: '->honor 6a'
-  dnn-lx9: '->honor x10 lite'
+
+
+
   dra-al00: '->y5 prime (2018)'
   dra-l01: '->y5 (2018)'
   dra-l21: '->y5 (2018)'
@@ -3152,7 +3164,7 @@ huawei:
   dra-lx5: '->y5 lite'
   dra-lx9: '->y5p'
   dra-tl00: '->y5 prime (2018)'
-  dtab d-01k: ''
+
   dua-al00: '->honor play 7'
   dua-l22: '->honor 7s'
   dua-lx3: '->honor 7s'
@@ -3188,7 +3200,6 @@ huawei:
   enjoy 20 pro: ''
   enjoy 5s: ''
   enjoy 6: ''
-  enjoy 6s: ''
   enjoy 7 plus: ''
   enjoy 7: ''
   enjoy 7s: ''
@@ -3253,7 +3264,6 @@ huawei:
   gem-703l: '->mediapad x2'
   glk-al00: '->nova 5i'
   glk-lx1u: '->nova 5i'
-  gr3 (2017): ''
 
   gr5: ''
   gra-l09: '->p8'
@@ -3311,9 +3321,9 @@ huawei:
   honor 5x: ''
   honor 6 play: ''
   honor 6: ''
-  honor 6a: ''
+
   honor 6c pro: ''
-  honor 6c: ''
+
 
   honor 7 lite: ''
   honor 7: ''
@@ -3369,7 +3379,7 @@ huawei:
   honor view 30: ''
   honor water play 10.1: ''
   honor water play 8.0: ''
-  honor x10 lite: ''
+
   honor x10 max: ''
   honor x10: ''
   honor y6 ii compact: ''
@@ -3642,7 +3652,7 @@ huawei:
   nova 7 pro 5g: ''
 
   nova 7i: ''
-  nova smart: ''
+
   nova youth: ''
 
   nts-al00: '->honor magic'
@@ -3674,7 +3684,7 @@ huawei:
   p8 lite (2017): ''
   p8: ''
   p9 lite mini: ''
-  p9 lite smart: ''
+
   p9 lite: ''
   p9 plus: ''
   p9: ''
@@ -3925,9 +3935,7 @@ huawei:
   nce-al00: '->enjoy 6'
   nce-tl10: '->enjoy 6'
   enjoy 6: 'DS=5;RS=720x1280;SZ=70.4x143.2x7.9;WT=145;RM=3072;CP=40;RE=2016.11;OS=Android 6;SM=2;'
-  dig-tl10: '->enjoy 6s'
-  dig-al00: '->enjoy 6s'
-  enjoy 6s: 'DS=5;RS=720x1280;SZ=69.9x143.5x7.6;WT=138;RM=3072;CP=35;RE=2017.01;OS=Android 6;SM=2;'
+
   sla-al00: '->enjoy 7'
   sla-tl00: '->enjoy 7'
   enjoy 7: 'DS=5;RS=720x1280;SZ=71x143.5x8.05;WT=145;RM=3072;CP=20;OS=Android 7;RE=2017.07'
@@ -3967,9 +3975,7 @@ huawei:
   g621-tl00m: '->g621'
   g621-tl00: '->g621'
   g621: 'DS=5;RS=720x1280;SZ=72.05x142.95x8.5;WT=160;RE=2014.09;RM=1024;CP=17;OS=Android 4.4;SM=2;'
-  dig-l21: '->gr3 (2017)'
-  dig-l22: 'gr3 (2017)'
-  gr3 (2017): 'DS=5.2;RS=1080x1920;SZ=72.94x147.2x7.6;WT=147;RE=2017;RM=3072;CP=48;OS=Android 7;SM=2;'
+
   kii-l21: '->gr5'
   gr5: 'DS=5.5;RS=1080x1920;SZ=76.3x151.3x8.15;WT=158;RE=2016.02;RM=2048;CP=22;OS=Android 5.1;SM=2;'
 
@@ -4071,13 +4077,8 @@ huawei:
   pe-tl20: '->honor 6 plus'
   pe-tl00m: '->honor 6 plus'
   honor 6 plus: 'DS=5.5;RS=1080x1920;SZ=75.7x150.5x7.5;WT=165;RE=2014.12;RM=3072;CP=70;OS=Android 4.4;SM=2;'
-  dli-al10: '->honor 6a'
-  dli-l22: '->honor 6a'
-  dli-l42: '->honor 6a'
-  dli-tl20: '->honor 6a'
-  honor 6a: 'DS=5;RS=720x1280;SZ=70.95x143.7x8.2;WT=143;RE=2017.05;RM=2048;CP=43;OS=Android 7;SM=2;'
-  dig-l21hn: '->honor 6c'
-  honor 6c: 'DS=5;RS=720x1280;SZ=69.9x143x7.3;WT=138;RE=2017.04;RM=3072;CP=35;OS=Android 6;SM=2'
+
+
   jmm-l22: '->honor 6c pro'
   honor 6c pro: 'DS=5.2;RS=720x1280;SZ=73.2x147.9x7.7;WT=145;RE=2017.09;RM=3072;CP=40;OS=Android 7;SM=2;'
 
@@ -4092,8 +4093,8 @@ huawei:
   honor 5x: 'DS=;RS=;SZ=76.3x151.3x8.15;WT=158;RE=2015.10;RM=2048;CP=;OS=Android 6;'
   honor 6 plus: 'DS=5.5;RS=1080x1920;SZ=75.68x150.46x7.5;WT=165;RE=;RM=3072;CP=HiSilicon Kirin 925;OS=Android 5.1;'
   honor 6: 'DS=5;RS=1080x1920;SZ=69.7x139.6x7.5;WT=130;RE=;RM=3072;CP=HiSilicon Kirin 920;OS=Android 5.1;'
-  honor 6a: 'DS=5;RS=720x1280;SZ=71x143.7x8.2;WT=142;RE=2017.07;RM=2048;CP=Qualcomm Snapdragon 430 MSM8937;OS=Android 7;'
-  honor 6c: 'DS=5;RS=720x1280;SZ=69.9x143.5x7.6;WT=138;RE=2017.04;RM=3072;CP=Qualcomm Snapdragon 435 8940;OS=Android 6;'
+
+
   honor 7 lite: 'DS=5.2;RS=1080x1920;SZ=73.8x147.1x8.3;WT=156;RE=2016.06;RM=2048;CP=HiSilicon Kirin 650;OS=Android 6;'
   honor 7: 'DS=;RS=;SZ=;WT=157;RE=2015.06;RM=3072;CP=;OS=Android 6;'
 
