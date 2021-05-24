@@ -2979,41 +2979,52 @@ huawei:
   bln-tl00: '->honor 6x'
   bln-tl10: '->honor 6x'
   honor 6x: 'DS=5.5;RS=1080x1920;SZ=76.2x150.9x8.2;WT=162;RE=2016.10;RM=3072;CP=48;OS=Android 6;SM=2;'
-
-  # todo check year 2015?
-  hi6210sft: '->p8 lite (2017)'
   bnd-al00: '->honor 7x'
   bnd-al10: '->honor 7x'
   bnd-l21: '->honor 7x'
   bnd-l24: '->honor 7x'
   bnd-l31: '->honor 7x'
-  bnd-l34: '->mate se'
   bnd-tl10: '->honor 7x'
+  bnd-l22: '->honor 7x'
+  bnd-l2: '->honor 7x'
+  honor 7x: 'RE=2017.12;SZ=75.3x156.5x7.6;WT=165;DS=5.93;RS=1080x2160;OS=Android 7.0;CP=42;RM=3072;'
+  bnd-l34: '->mate se'
+  mate se: 'RS=1080x2160;DS=5.93;CP=42;RN=4096;OS=Android 7.0;SZ=75.3x156.5x7.6;WT=165;RE=2018.03;'
+  # todo rename mediapad m3 to mediapad m3 8.4
   btv-dl09: '->mediapad m3'
   btv-w09: '->mediapad m3 8'
-
-  bza-w00: '->c3 9.6'
+  mediapad m3 8: 'RE=2016.09;SZ=124.2x215.5x7.3;WT=326;DS=8.4;RS=1600x2560;OS=Android 6.0;216;RM=4096;'
+  mediapad m3: '->mediapad m3 8'
   bzk-l00: '->mediapad t3 8'
   bzk-w00: '->mediapad t3 8'
+  kob-l09: '->mediapad t3 8'
+  kob-w09: '->mediapad t3 8'
+  mediapad t3 8: 'RS=1280x800;DS=8;CP=20;RM=2048;OS=Android 7.0;SZ=211.1x124.7x8;WT=350;RE=2017.04;'
+  bza-w00: '->c3 9.6'
+  c3 9.6: ''
   bzt-al00: '->mediapad c5 10.1'
   bzt-al10: '->mediapad c5 10.1'
-  c3 9.6: ''
-  c8500s: ''
-  c8812: ''
-  c8813: ''
-  c8813q: ''
-  c8815: ''
-
-  cag-l02: '->y3 (2018)'
-  cag-l03: '->y5 lite (2018)'
-  cag-l22: '->y3 (2018)'
-  cag-l23: '->y5 lite (2018)'
+  c5 10 (2020): '->mediapad c5 10.1'
+  mediapad c5 10.1: 'RM=4096;RE=2020.07;DS=10.4;SZ=245.2x154.96x7.35;WT=450;RS=2000x1200;CP=57;SM=1;OS=Android 10;'
+  c8500s: 'RS=240x320;DS=2.8;CP=217;RM=256;OS=Android 2.2;SZ=56x104x13.8;WT=110;RE=2011.07;'
+  c8812: 'RS=480x800;DS=4;CP=218;RM=1024;OS=Android 4.0;SZ=62.66x122.3x11.39;WT=135;RE=2012.05;'
+  c8813: 'RS=480x854;DS=4.5;CP=219;RM=512;OS=Android 4.1;SZ=67x132.5x9.3;WT=130;RE=2012.05;'
+  c8813q: 'RS=480x854;DS=4.5;CP=220;RM=512;OS=Android 4.1;SZ=67x132.5x9.3;WT=156;RE=2012.05;'
+  c8815: 'RS=540x960;DS=5;CP=220;RM=1024;OS=Android 4.1;SZ=73.6x142x9.7;WT=170;RE=2013.08;'
   cam-al00: '->honor 5a'
+  cam-tl00: '->honor 5a'
+  cam-tl00h: '->honor 5a'
+  honor 5a: 'DS=5.5;RS=720x1280;SZ=77.1x154.3x8.5;WT=168;RE=2016.07;RM=2048;CP=65;OS=Android 6;SM=2;'
+  cag-l22: '->y3 (2018)'
+  cag-l02: '->y3 (2018)'
+  y3 (2018): 'RE=2018.05;SZ=73.7x145.1x9.5;WT=175;DS=5.0;RS=480x854;OS=Android 8.0;CP=86;RM=1024;'
+  cag-l03: '->y5 lite (2018)'
+  cag-l23: '->y5 lite (2018)'
+  y5 lite (2018): 'RE=2018.12;SZ=70.9x146.5x8.3;WT=142;DS=5.45;RS=720x1440;OS=Android 8.1;CP=8;RM=1024;'
   cam-l03: '->y6ii'
   cam-l21: '->y6ii'
   cam-l32: '->y6ii'
-  cam-tl00: '->honor 5a'
-  cam-tl00h: '->honor 5a'
+  y6ii: 'RE=2016.09;SZ=72x143.8x8.9;WT=140;DS=5.0;RS=720x1280;OS=Android 5.1;CP=79;RM=1024;'
   can-l01: '->nova'
   can-l02: '->nova'
   can-l03: '->nova'
@@ -3024,13 +3035,18 @@ huawei:
   caz-al10: '->nova'
   caz-tl10: '->nova'
   caz-tl20: '->nova'
+  nova: 'RE=2016.09;SZ=69.1x141.2x7.1;WT=146;DS=5.0;RS=1080x1920;OS=Android 6.0.1;CP=204;RM=3072;'
   cdy-an00: '->nova 7 se 5g'
+  cdy-nx9b: '->nova 7 se 5g'
+  cdy-tn00: '->nova 7 se 5g'
+  nova 7 se: 'RE=2020.04;SZ=75x162.3x8.6;WT=189;DS=6.5;RS=1080x2400;OS=Android 10;CP=55;RM=6144;'
   cdy-an90: '->honor 30s'
   cdy-nx9a: '->honor 30s'
-  cdy-tn00: '->nova 7 se 5g'
+  honor 30s: 'DS=6.5;RS=1080x2400;SZ=75x162.3x8.6;WT=190;RE=2020.05;RM=6144;CP=55;OS=Android 10;SM=2;'
   chc-u01: '->g play mini'
   chc-u03: '->g play mini'
   chc-u23: '->g play mini'
+  g play mini: 'DS=5;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=2048;CP=3;OS=Android 4.4;SM=2;'
   che-tl00h: '->honor 4x'
   che1-cl10: '->honor 4x'
   che1-cl20: '->honor 4x'
@@ -3042,10 +3058,19 @@ huawei:
   che2-tl00h: '->honor 4x'
   che2-tl00m: '->honor 4x'
   che2-ul00: '->honor 4x'
+  che-tl00: '->honor 4x'
+  honor 4x: 'DS=5.5;RS=720x1280;SZ=77.2x152.9x8.7;WT=170;RE=2014.10;RM=2048;CP=17;OS=Android 4.4;SM=2;'
   chm-tl00: '->honor play 4c'
   chm-tl00h: '->honor play 4c'
-  chm-u01: '->honor 4c'
   chm-ul00: '->honor play 4c'
+  honor play 4c: 'RS=720x1280;DS=5;CP=3;RM=2048;OS=Android 4.4.2;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;'
+  chm-u01: '->honor 4c'
+  honor 4c: 'DS=5;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=2048;CP=3;OS=Android 4.4;SM=2;'
+
+  # todo check year 2015?
+  hi6210sft: '->p8 lite (2017)'
+
+
   clt-al00: '->p20 pro'
   clt-al01: '->p20 pro'
   clt-l09: '->p20 pro'
@@ -3175,7 +3200,7 @@ huawei:
   frl-l22: '->y9a'
   frl-l23: '->y9a'
   fusion 2: ''
-  g play mini: ''
+
   g play: ''
   g2800: ''
   g510-0010: ''
@@ -3246,17 +3271,16 @@ huawei:
   honor 30 pro: ''
   honor 30: ''
   honor 30i: ''
-  honor 30s: ''
+
   honor 3c lite: ''
   honor 3c: ''
   honor 3x: ''
   honor 4a: ''
   honor 4c pro: ''
-  honor 4c: ''
 
-  honor 4x: ''
+
   honor 5 play: ''
-  honor 5a: ''
+
   honor 5c dual sim: ''
   honor 5c: ''
   honor 5x: ''
@@ -3271,7 +3295,7 @@ huawei:
 
 
   honor 7s: ''
-  honor 7x: ''
+
   honor 8 lite: ''
   honor 8 pro: ''
   honor 8 smart: ''
@@ -3304,7 +3328,7 @@ huawei:
 
   honor play 3e: ''
   honor play 4: ''
-  honor play 4c: ''
+
   honor play 7: ''
   honor play 8a: ''
   honor play 9a: ''
@@ -3343,8 +3367,7 @@ huawei:
   hw-c8500s: '->c8500s'
   hw-c8813: '->c8813'
   hw-c8815: '->c8815'
-  hw-che1-cl10: '->honor 4x'
-  hw-chm-cl00: '->honor play 4c'
+
   hw-h30-c00: '->honor 3c'
   hw-h60-j1: '->honor 6'
   hw-plk-cl00: '->honor 7'
@@ -3414,8 +3437,6 @@ huawei:
   knt-al20: '->honor v8'
   knt-tl10: '->honor v8'
   knt-ul10: '->honor v8'
-  kob-l09: '->mediapad t3 8'
-  kob-w09: '->mediapad t3 8'
   kob2-l09: '->mediapad t 8.0"'
   kob2-w09: '->mediapad t 8.0"'
   krj-w09: '->honor pad v6'
@@ -3493,7 +3514,6 @@ huawei:
   mate rs porsche design: ''
   mate rs: ''
   mate s: ''
-  mate se: ''
   mate xs: ''
 
   matepad c5 8: ''
@@ -3508,12 +3528,8 @@ huawei:
   mediapad 7 lite: ''
   mediapad 7 vogue: ''
   mediapad 7 youth: ''
-  mediapad c5 10.1: ''
+
   mediapad m2 8.0": ''
-  mediapad m3 8: ''
-
-
-  mediapad m3: ''
   mediapad m5 10.8: ''
   mediapad m5 8.4: ''
 
@@ -3533,7 +3549,6 @@ huawei:
   mediapad t2 8.0 pro: ''
 
 
-  mediapad t3 8: ''
 
   mediapad x2: ''
   mediapad: ''
@@ -3600,11 +3615,11 @@ huawei:
   nova 6: ''
   nova 7 5g: ''
   nova 7 pro 5g: ''
-  nova 7 se 5g: ''
+
   nova 7i: ''
   nova smart: ''
   nova youth: ''
-  nova: ''
+
   nts-al00: '->honor magic'
   nxt-al10: '->mate 8'
   nxt-l29: '->mate 8'
@@ -3803,7 +3818,7 @@ huawei:
   y210-0100: ''
 
   y3 (2017): ''
-  y3 (2018): ''
+
   y300-0100: ''
   y300c: ''
 
@@ -3812,7 +3827,6 @@ huawei:
   y5 (2018): ''
 
   y5 lite (2017): ''
-  y5 lite (2018): ''
   y5 lite: ''
   y5 prime (2018): ''
   y5 pro (2017): ''
@@ -3835,7 +3849,6 @@ huawei:
   y635-l21: '->y635 dual sim'
   y635: ''
   y6: ''
-  y6ii: ''
   y6p: ''
   y7 (2017): ''
   y7 (2019): ''
@@ -3926,10 +3939,8 @@ huawei:
   g735-l12: '->g play'
   g735-l23: '->g play'
   g play: 'DS=5.5;RS=720x1280;SZ=77.2x152.9x8.65;WT=170;RE=2015.01;RM=2048;CP=3;OS=Android 4.4;SM=2;'
-  chc-u01: '->g play mini'
-  chc-u03: '->g play mini'
-  chc-u23: '->g play mini'
-  g play mini: 'DS=5;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=2048;CP=3;OS=Android 4.4;SM=2;'
+
+
   g621-tl00m: '->g621'
   g621-tl00: '->g621'
   g621: 'DS=5;RS=720x1280;SZ=72.05x142.95x8.5;WT=160;RE=2014.09;RM=1024;CP=17;OS=Android 4.4;SM=2;'
@@ -3984,9 +3995,7 @@ huawei:
   honor 30 pro: 'DS=6.57;RS=1080x2340;SZ=73.6x160.3x8.4;WT=186;RE=2020.04;RM=8192;CP=54;OS=Android 10;SM=2;'
   ebg-an10: '->honor 30 pro plus'
   honor 30 pro plus: 'DS=6.57;RS=1080x2340;SZ=73.6x160.3x8.4;WT=190;RE=2020.04;RM=8192;CP=54;OS=Android 10;SM=2;'
-  cdy-an90: '->honor 30s'
-  cdy-nx9a: '->honor 30s'
-  honor 30s: 'DS=6.5;RS=1080x2400;SZ=75x162.3x8.6;WT=190;RE=2020.04;RM=6144;CP=55;OS=Android 10;SM=2;'
+
   lra-lx1: '->honor 30i'
   honor 30i: 'DS=6.3;RS=1080x2400;SZ=73.2x157.2x7.7;WT=171.5;RE=2020.09;RM=4096;CP=37;OS=Android 10;SM=2;'
   h30-c00: '->honor 3c'
@@ -4006,28 +4015,14 @@ huawei:
   scl-tl00: '->honor 4a'
   scl-tl00h: '->honor 4a'
   honor 4a: 'DS=5;RS=720x1280;SZ=72.1x143.5x8.5;WT=155;RE=2015.08;RM=2048;CP=10;OS=Android 5.1;SM=1;'
-  chm-u01: '->honor 4c'
-  honor 4c: 'DS=5;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=2048;CP=3;OS=Android 4.4;SM=2;'
+
   honor 4c pro: 'DS=5;RS=720x1280;SZ=71.8x143.1x9.7;WT=160;RE=2015.04;RM=2048;CP=56;OS=Android 5.1;SM=2;'
 
 
-  che2-ul00: '->honor 4x'
-  che2-tl00: '->honor 4x'
-  che1-cl10: '->honor 4x'
-  che1-cl20: '->honor 4x'
-  che2-l11: '->honor 4x'
-  che2-l12: '->honor 4x'
-  che2-l23: '->honor 4x'
-  che1-l04: '->honor 4x'
-  che-tl00: '->honor 4x'
-  honor 4x: 'DS=5.5;RS=720x1280;SZ=77.2x152.9x8.7;WT=165;RE=2014.10;RM=2048;CP=17;OS=Android 4.4;SM=2;'
   cun-al00: '->honor 5 play'
   cun-tl00: '->honor 5 play'
   honor 5 play: 'DS=5;RS=720x1280;SZ=72x143x8.9;WT=138;RE=;RM=2048;CP=56;OS=Android 5.1;SM=1;'
-  cam-al00: '->honor 5a'
-  cam-tl00h: '->honor 5a'
-  cam-tl00: '->honor 5a'
-  honor 5a: 'DS=5.5;RS=720x1280;SZ=77.1x154.3x8.5;WT=168;RE=2016.07;RM=2048;CP=65;OS=Android 6;SM=2;'
+
   nem-al10: '->honor 5c'
   nem-tl00: '->honor 5c'
   nem-ul10: '->honor 5c'
@@ -4076,8 +4071,8 @@ huawei:
   honor 20 pro: 'DS=;RS=;SZ=73.97x154.6x8.44;WT=182;RE=2019.05;RM=8192;CP=;OS=Android 9;'
   honor 20: 'DS=6.3;RS=1080x2340;SZ=73.97x154.25x7.87;WT=174;RE=2019.05;RM=6144;CP=HiSilicon Kirin 980;OS=Android 9;'
   honor 3c: 'DS=5;RS=720x1280;SZ=71.4x138.5x9.2;WT=140;RE=;RM=2048;CP=7;OS=Android 4.2;'
-  honor 4c: 'DS=5;RS=720x1280;SZ=71.9x143.3x8.8;WT=162;RE=2015.04;RM=2048;CP=HiSilicon Kirin 620;OS=Android 4.4;'
-  honor 4x: 'DS=5.5;RS=720x1280;SZ=77x153x8.6;WT=170;RE=2015.04;RM=2048;CP=HiSilicon Kirin 620;OS=Android 4.4;'
+
+
   honor 5c: 'DS=5.2;RS=1080x1920;SZ=73.8x147.1x8.3;WT=156;RE=2016.06;RM=2048;CP=HiSilicon Kirin 650;OS=Android 6;'
   honor 5x: 'DS=;RS=;SZ=76.3x151.3x8.15;WT=158;RE=2015.10;RM=2048;CP=;OS=Android 6;'
   honor 6 plus: 'DS=5.5;RS=1080x1920;SZ=75.68x150.46x7.5;WT=165;RE=;RM=3072;CP=HiSilicon Kirin 925;OS=Android 5.1;'
@@ -4089,7 +4084,7 @@ huawei:
 
 
   honor 7s: 'DS=5.5;RS=720x1440;SZ=70.9x146.5x8.3;WT=142;RE=;RM=2048;CP=MediaTek MT6739;OS=Android 8.1;'
-  honor 7x: 'DS=;RS=;SZ=75.3x156.5x7.6;WT=165;RE=2017.12;RM=3072;CP=;OS=Android 8;'
+
   honor 8 lite: 'DS=5.2;RS=1080x1920;SZ=72.94x147.2x7.6;WT=147;RE=2017.02;RM=3072;CP=HiSilicon Kirin 655;OS=Android 7;'
   honor 8 pro: 'DS=;RS=;SZ=77.5x157x6.97;WT=184;RE=2017.04;RM=6144;CP=;OS=Android 9;'
   honor 8: 'DS=;RS=;SZ=71x145.5x7.45;WT=153;RE=2016.07;RM=4096;CP=;OS=Android 8;'

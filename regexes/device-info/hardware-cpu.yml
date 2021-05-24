@@ -1272,3 +1272,33 @@ cpu:
     clock_rate: 1500
     cores: 4
     gpu_id: 1
+  216:
+    name: HiSilicon Kirin 950
+    type: ARM
+    clock_rate: 2300
+    cores: 8
+    gpu_id: 80
+  217:
+    name: Qualcomm Snapdragon S1 MSM7625
+    type: ARM
+    clock_rate: 600
+    cores: 1
+    gpu_id: 22
+  218:
+    name: Qualcomm Snapdragon S1 MSM7627A
+    type: ARM
+    clock_rate: 600
+    cores: 1
+    gpu_id: 22
+  219:
+    name: Qualcomm Snapdragon S4 Play MSM8225
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 56
+  220:
+    name: Qualcomm Snapdragon S4 Play MSM8625Q
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 56

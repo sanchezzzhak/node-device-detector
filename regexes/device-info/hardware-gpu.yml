@@ -238,7 +238,7 @@ gpu:
     clock_rate: 0
   80:
     name: ARM Mali-T880 MP4
-    clock_rate: 780
+    clock_rate: 600
   81:
     name: Qualcomm Adreno 640
     clock_rate: 700
