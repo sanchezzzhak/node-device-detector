@@ -1320,3 +1320,27 @@ cpu:
     clock_rate: 2200
     cores: 8
     gpu_id: 21
+  224:
+    name: Qualcomm Snapdragon 450
+    type: ARM
+    clock_rate: 1800
+    cores: 8
+    gpu_id: 41
+  225:
+    name: HiSilicon Kirin 955
+    type: ARM
+    clock_rate: 2500
+    cores: 8
+    gpu_id: 80
+  226:
+    name: Mediatek Helio G80
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 83
+  227:
+    name: HiSilicon Kirin 930
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 21
