@@ -1,8 +1,9 @@
 const ClientAbstractParser = require('./../client-abstract-parser');
 const CLIENT_TYPE = require('./../const/client-type');
-const BROWSER_SHORT = require('./browser-short');
 const BROWSER_FAMILIES = require('./browser-families');
 const helper = require('./../helper');
+
+const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 
 class Browser extends ClientAbstractParser {
   constructor() {
@@ -11,7 +12,15 @@ class Browser extends ClientAbstractParser {
     this.fixtureFile = 'client/browsers.yml';
     this.loadCollection();
   }
-
+  
+  getCollectionBrowsers() {
+    return BROWSER_SHORT;
+  }
+  
+  getAvailableBrowsers(){
+    return Object.keys(this.getCollectionBrowsers())
+  }
+  
   loadCollection() {
     super.loadCollection();
     this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
@@ -155,12 +164,9 @@ class Browser extends ClientAbstractParser {
    */
   buildShortName(name) {
     const UNKNOWN = 'UNK';
-    for (let key in BROWSER_SHORT) {
-      if (
-        String(name).toLowerCase() === String(BROWSER_SHORT[key]).toLowerCase()
-      ) {
-        return key;
-      }
+    let result = this.getCollectionBrowsers()[name];
+    if(result !== void 0) {
+      return result;
     }
     return UNKNOWN;
   }

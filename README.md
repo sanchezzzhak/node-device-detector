@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 19/05/2021_
+_Last update: 26/05/2021_
 
 ## Description
 
@@ -38,38 +38,38 @@ console.log('result parse', result);
 ```text
 { 
   os: { 
-    name: 'Android',
-    short_name: 'AND',
-    version: '5.0',
-    platform: '',
-    family: 'Android'
+    name: 'Android',            // os name       
+    short_name: 'AND',          // os short code name (format A-Z0-9{3})
+    version: '5.0',             // os version
+    platform: '',               // os platform (x64, x32, amd etc.)
+    family: 'Android'           // os family
   },
   client:  { 
-    type: 'browser',
-    name: 'Chrome Mobile',
-    short_name: 'CM',
-    version: '43.0.2357.78',
-    engine: 'Blink',
-    engine_version: '' 
+    type: 'browser',            // client type 
+    name: 'Chrome Mobile',      // client name name
+    short_name: 'CM',           // client short code name (only browser, format A-Z0-9{2})
+    version: '43.0.2357.78',    // client version
+    engine: 'Blink',            // client engine name (only browser)
+    engine_version: ''          // client engine version (only browser)
+    family: 'Chrome'            // client family (only browser)
   },
   device: { 
-    id: 'ZT',
-    type: 'smartphone',
-    brand: 'ZTE',
-    model: 'Nubia Z7 max'
+    id: 'ZT',                   // short code device brand name (format A-Z0-9{2,3})
+    type: 'smartphone',         // device type
+    brand: 'ZTE',               // device brand name
+    model: 'Nubia Z7 max'       // device model name
   }
 }
 ```
-Result is not detect
-```text
+Result parse empty
 { 
-  os: {},
-  client: {},
-  device: {
-    id: '',
-    type : 'device type',
-    brand: '',
-    model: ''
+  os: {},                      // empty objects its os not found
+  client: {},                  // empty objects its client not found
+  device: {      
+    id: '',                    // empty string its device brand not found
+    type : 'device type',      // device type or empty string
+    brand: '',                 // empty string its device brand not found
+    model: ''                  // empty string its device model not found
   }
 }
 ```
@@ -164,6 +164,14 @@ const detector = new DeviceDetector({
 // You can override these settings at any time using special methods, example
 detector.setOsVersionTruncate(0);
 detector.setClientVersionTruncate(2);
+
+// Array available device types
+detector.getAvailableDeviceTypes();
+// Array available devices brands
+detector.getAvailableBrands();
+// Array available browsers
+detector.getAvailableBrowsers();
+
 ```
 
 ### Getting device code as it is from the useragent (experimental)
@@ -185,7 +193,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (410 devices, alias devices 1177)
+> This parser is experimental and contains few devices. (593 devices, alias devices 1664)
 >
 ##### Support detail brands/models list:
 
@@ -235,7 +243,8 @@ is not parse result  {name: ""}
 | bird | 1 | 0 | - | billion | 1 | 1 |
 | bezkam | 1 | 0 | - | bigben | 1 | 0 |
 | bihee | 2 | 1 | - | black fox | 18 | 12 |
-| öwn | 1 | 2 | - | zync | 2 | 0 |
+| öwn | 1 | 2 | - | huawei | 180 | 480 |
+| ipro | 3 | 7 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 
 </details>

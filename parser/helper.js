@@ -1,7 +1,7 @@
 exports.matchUserAgent = function (str, userAgent) {
   str = str.replace(new RegExp('/', 'g'), '\\/');
   let regex = '(?:^|[^A-Z_-])(?:' + str + ')';
-  let match = new RegExp(str, 'i');
+  let match = new RegExp(regex, 'i');
   return match.exec(userAgent);
 };
 
@@ -98,3 +98,13 @@ exports.getPropertyValue = function (options, propName, defaultValue) {
     ? defaultValue
     : null;
 };
+
+exports.revertObject = function(obj) {
+  return Object.assign(
+    {},
+    ...Object.entries(obj).map(([a, b]) => ({
+      [b]: a,
+    })),
+    {}
+  )
+}
