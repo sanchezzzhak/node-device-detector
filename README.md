@@ -193,7 +193,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (593 devices, alias devices 1664)
+> This parser is experimental and contains few devices. (606 devices, alias devices 1705)
 >
 ##### Support detail brands/models list:
 
@@ -243,7 +243,7 @@ is not parse result  {name: ""}
 | bird | 1 | 0 | - | billion | 1 | 1 |
 | bezkam | 1 | 0 | - | bigben | 1 | 0 |
 | bihee | 2 | 1 | - | black fox | 18 | 12 |
-| öwn | 1 | 2 | - | huawei | 180 | 480 |
+| öwn | 1 | 2 | - | huawei | 193 | 521 |
 | ipro | 3 | 7 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 
