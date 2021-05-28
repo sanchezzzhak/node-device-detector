@@ -238,7 +238,7 @@ gpu:
     clock_rate: 0
   80:
     name: ARM Mali-T880 MP4
-    clock_rate: 780
+    clock_rate: 600
   81:
     name: Qualcomm Adreno 640
     clock_rate: 700
@@ -263,3 +263,6 @@ gpu:
   88:
     name: PowerVR SGX544MP2
     clock_rate: 533
+  89:
+    name: ARM Mali-G71 MP8
+    clock_rate: 900

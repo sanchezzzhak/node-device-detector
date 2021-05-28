@@ -1,11 +1,8 @@
 const ParserAbstract = require('./abstract-parser');
+const helper = require('./helper');
 
-const COLLECTION_BRAND_LIST = Object.assign(
-  {},
-  ...Object.entries(require('./device/brand-short')).map(([a, b]) => ({
-    [b]: a,
-  })),
-  {}
+const COLLECTION_BRAND_LIST = helper.revertObject(
+  require('./device/brand-short')
 );
 
 class DeviceParserAbstract extends ParserAbstract {
@@ -13,7 +10,11 @@ class DeviceParserAbstract extends ParserAbstract {
     super();
     this.resultModelRegex = false; // used in tests
   }
-
+  
+  getAvailableBrands(){
+    return Object.keys(this.getCollectionBrands())
+  }
+  
   getCollectionBrands() {
     return COLLECTION_BRAND_LIST;
   }

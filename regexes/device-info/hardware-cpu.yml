@@ -1247,3 +1247,100 @@ cpu:
     clock_rate: 1200
     cores: 4
     gpu_id: 3
+  212:
+    name: Qualcomm Snapdragon S4 Plus MSM8230
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 12
+  213:
+    name: HiSilicon Kirin 710A
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 20
+  214:
+    name: Qualcomm Snapdragon 450
+    # SD450
+    type: ARM
+    clock_rate: 1800
+    cores: 8
+    gpu_id: 41
+  215:
+    name: Spreadtrum SC9830
+    type: ARM
+    clock_rate: 1500
+    cores: 4
+    gpu_id: 1
+  216:
+    name: HiSilicon Kirin 950
+    type: ARM
+    clock_rate: 2300
+    cores: 8
+    gpu_id: 80
+  217:
+    name: Qualcomm Snapdragon S1 MSM7625
+    type: ARM
+    clock_rate: 600
+    cores: 1
+    gpu_id: 22
+  218:
+    name: Qualcomm Snapdragon S1 MSM7627A
+    type: ARM
+    clock_rate: 600
+    cores: 1
+    gpu_id: 22
+  219:
+    name: Qualcomm Snapdragon S4 Play MSM8225
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 56
+  220:
+    name: Qualcomm Snapdragon S4 Play MSM8625Q
+    type: ARM
+    clock_rate: 1200
+    cores: 2
+    gpu_id: 56
+  221:
+    name: HiSilicon Kirin 960
+    type: ARM
+    clock_rate: 2400
+    cores: 8
+    gpu_id: 89
+  222:
+    name: HiSilicon Kirin 960s
+    type: ARM
+    clock_rate: 2100
+    cores: 8
+    gpu_id: 89
+  223:
+    name: HiSilicon Kirin 935
+    type: ARM
+    clock_rate: 2200
+    cores: 8
+    gpu_id: 21
+  224:
+    name: Qualcomm Snapdragon 450
+    type: ARM
+    clock_rate: 1800
+    cores: 8
+    gpu_id: 41
+  225:
+    name: HiSilicon Kirin 955
+    type: ARM
+    clock_rate: 2500
+    cores: 8
+    gpu_id: 80
+  226:
+    name: Mediatek Helio G80
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 83
+  227:
+    name: HiSilicon Kirin 930
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 21
