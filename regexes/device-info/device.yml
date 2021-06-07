@@ -3619,3 +3619,10 @@ zyq:
   tv next: ''
   win 3g: ''
   zone 3g: ''
+
+engel:
+  en1007q plus: 'RE=2014.10;SZ=225x174x70;RM=1024;WT=700;'
+  en1007qplus: '->en1007q plus'
+
+tiphone:
+  t67: 'DS=2.2;RS=240x320;WT=105;SZ=58x106x13.4;RE=2009;SM=2;'
