@@ -1344,3 +1344,9 @@ cpu:
     clock_rate: 2000
     cores: 8
     gpu_id: 21
+  228:
+    name: Hisilicon Hi3798MV200
+    type: ARM
+    clock_rate: 2000
+    cores: 4
+    gpu_id: 3

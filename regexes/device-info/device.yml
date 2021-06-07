@@ -3626,3 +3626,11 @@ engel:
 
 tiphone:
   t67: 'DS=2.2;RS=240x320;WT=105;SZ=58x106x13.4;RE=2009;SM=2;'
+
+formuler:
+  z8 pro: 'RE=2019;OS=Android 7.1;SZ=105x105x22;RM=2048;CP=228;'
+  z8: 'RE=2019;OS=Android 7.0;SZ=105x105x22;RM=2048;CP=228;'
+
+# todo add
+geotel:
+  amigo: 'CP=118;RM=3072;WT=160'
