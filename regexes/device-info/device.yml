@@ -3538,7 +3538,7 @@ huawei:
 
 # IRPO
 ipro:
-  amber 5s pro: ''
+  amber 5s pro: 'DS=5.0;RS=540x960;RM=1024;CP=58;SM=2;OS=Android 8.1;'
   amber 6: ''
   amber 7s: ''
   amber5s pro: '->amber 5s pro'
@@ -3631,9 +3631,10 @@ formuler:
   z8 pro: 'RE=2019;OS=Android 7.1;SZ=105x105x22;RM=2048;CP=228;'
   z8: 'RE=2019;OS=Android 7.0;SZ=105x105x22;RM=2048;CP=228;'
 
-
 geotel:
   amigo: 'DS=5.2;RS=720x1280;SZ=75x150.55x9.8;WT=160;RE=2017;OS=Android 7.0;RM=3072;CP=118;'
+  g1: 'DS=5;RS=720x1280;SZ=80.3x156.6x19.3;WT=280;RE=2017;OS=Android 7.0;RM=2048;CP=4;'
+  note: 'DS=5.5;RS=720x1280;SZ=76.8x152.9x8.2;WT=147;RE=2017;OS=Android 6.0;RM=3072;CP=86;'
 
 firefly mobile:
   intense power: 'DS=5.5;RS=720x1280;CP=6;RM=2048;RE=2016.05;OS=Android 5.1;'
