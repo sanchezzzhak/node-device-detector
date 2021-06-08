@@ -1350,3 +1350,9 @@ cpu:
     clock_rate: 2000
     cores: 4
     gpu_id: 3
+  229:
+    name: Qualcomm Snapdragon 215
+    type: ARM
+    clock_rate: 1300
+    cores: 4
+    gpu_id: 17

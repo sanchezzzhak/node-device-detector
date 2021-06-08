@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 07/06/2021_
+_Last update: 08/06/2021_
 
 ## Description
 
@@ -196,7 +196,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (636 devices, alias devices 1761)
+> This parser is experimental and contains few devices. (647 devices, alias devices 1762)
 >
 ##### Support detail brands/models list:
 
@@ -217,7 +217,7 @@ is not parse result  {name: ""}
 | airness | 0 | 0 | - | airties | 0 | 0 |
 | ais | 0 | 2 | - | aiuto | 0 | 0 |
 | aiwa | 0 | 0 | - | akai | 1 | 5 |
-| alba | 0 | 1 | - | alcatel | 0 | 427 |
+| alba | 0 | 1 | - | alcatel | 1 | 427 |
 | alcor | 1 | 0 | - | alfawise | 0 | 0 |
 | aligator | 0 | 0 | - | allcall | 0 | 3 |
 | alldocube | 2 | 6 | - | allview | 0 | 46 |
@@ -247,9 +247,10 @@ is not parse result  {name: ""}
 | bezkam | 1 | 0 | - | bigben | 1 | 0 |
 | bihee | 2 | 1 | - | black fox | 18 | 12 |
 | öwn | 1 | 2 | - | huawei | 221 | 576 |
-| ipro | 3 | 7 | - | zync | 2 | 0 |
+| ipro | 4 | 7 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - | engel | 1 | 1 |
-| tiphone | 1 | 0 | - |  |  |  |
+| tiphone | 1 | 0 | - | formuler | 2 | 0 |
+| geotel | 3 | 0 | - | firefly mobile | 4 | 1 |
 
 </details>
 

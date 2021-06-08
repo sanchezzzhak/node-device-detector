@@ -453,7 +453,8 @@ alba:
   57: '->5.7'
 
 alcatel:
-  1a (2020): ''
+  5002f: '->1a (2020)'
+  1a (2020): 'RE=2020;SZ=71.6x146.1x9.9;WT=168;DS=5.5;RS=720x1440;OS=Android 10;CP=229;RM=1024;'
   1b (2020): ''
   1c: ''
   1e: ''
@@ -551,7 +552,6 @@ alcatel:
   5001a: '->1v'
   5002a: '->1b (2020)'
   5002d: '->1b (2020)'
-  5002f: '->1a (2020)'
   5002h: '->1b (2020)'
   5003a: '->1c (2019)'
   5003d: '->1c (2019)'
@@ -3639,7 +3639,7 @@ geotel:
 firefly mobile:
   intense power: 'DS=5.5;RS=720x1280;CP=6;RM=2048;RE=2016.05;OS=Android 5.1;'
   intense metal 2: 'DS=5.5;RS=720x1280;OS=Android 6.0;'
-  intense xt: ''
+  intense xt: 'DS=5.7;RS=480x960;RM=1024;OS=Android 8.1;RE=2018.10;SM=2;'
   aurii amuse 3g: ''
   aurii ultra: ''
   aurii secret xr: ''
