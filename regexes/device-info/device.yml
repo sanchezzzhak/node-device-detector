@@ -3631,6 +3631,27 @@ formuler:
   z8 pro: 'RE=2019;OS=Android 7.1;SZ=105x105x22;RM=2048;CP=228;'
   z8: 'RE=2019;OS=Android 7.0;SZ=105x105x22;RM=2048;CP=228;'
 
-# todo add
+
 geotel:
-  amigo: 'CP=118;RM=3072;WT=160'
+  amigo: 'DS=5.2;RS=720x1280;SZ=75x150.55x9.8;WT=160;RE=2017;OS=Android 7.0;RM=3072;CP=118;'
+
+firefly mobile:
+  intense power: 'DS=5.5;RS=720x1280;CP=6;RM=2048;RE=2016.05;OS=Android 5.1;'
+  intense metal 2: 'DS=5.5;RS=720x1280;OS=Android 6.0;'
+  intense xt: ''
+  aurii amuse 3g: ''
+  aurii ultra: ''
+  aurii secret xr: ''
+  secret xr: '->aurii secret xr'
+  aurii delight: ''
+  aurii dream mini: ''
+  aurii dream one: ''
+  super sweet: ''
+  sweet mini: ''
+  aurii f8 premium: ''
+  aurii force: ''
+  aurii fusion: ''
+  aurii passion: ''
+  aurii secret lite: ''
+  aurii virtuoso: ''
+  aurii xcite: 'DS=5.34;RS=480x960;OS=Android 8.1;RM=1024;RE=2018.11;SM=2;'
