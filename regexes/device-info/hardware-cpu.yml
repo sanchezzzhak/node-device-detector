@@ -1368,3 +1368,9 @@ cpu:
     cores: 4
     clock_rate: 1280
     gpu_id: 2
+  232:
+    name: Mediatek Helio P25
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    gpu_id: 75
