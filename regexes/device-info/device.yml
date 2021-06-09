@@ -2567,6 +2567,11 @@ bitel:
   s8501: ''
   s8501l: ''
 
+bitmore:
+  mobitab 10c 3g: 'DS=10.1;RS=1024x720;SZ=241.6x170.5x10.6;WT=500;RE=2016.09;CP=163;RM=1024;OS=Android 5.1;'
+  mobitab10c-3g: '->mobitab 10c 3g'
+  tab1011q ii: 'DS=10.1;RS=1024x600;SZ=;WT=509;RE=2015.06;CP=163;RM=1024;OS=Android 4.4.2;'
+
 # Bravis
 bravis:
   a501 bright: ''

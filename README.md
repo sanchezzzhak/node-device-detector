@@ -196,7 +196,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (672 devices, alias devices 1767)
+> This parser is experimental and contains few devices. (682 devices, alias devices 1770)
 >
 ##### Support detail brands/models list:
 
@@ -216,8 +216,8 @@ is not parse result  {name: ""}
 | agm | 0 | 0 | - | ainol | 0 | 16 |
 | airness | 0 | 0 | - | airties | 0 | 0 |
 | ais | 0 | 2 | - | aiuto | 0 | 0 |
-| aiwa | 0 | 0 | - | akai | 1 | 5 |
-| alba | 0 | 1 | - | alcatel | 26 | 432 |
+| aiwa | 0 | 0 | - | akai | 2 | 5 |
+| alba | 0 | 1 | - | alcatel | 29 | 433 |
 | alcor | 1 | 0 | - | alfawise | 0 | 0 |
 | aligator | 0 | 0 | - | allcall | 0 | 3 |
 | alldocube | 2 | 6 | - | allview | 0 | 46 |
@@ -240,6 +240,7 @@ is not parse result  {name: ""}
 | avh | 1 | 0 | - | avvio | 3 | 2 |
 | axxion | 0 | 0 | - | azumi mobile | 0 | 1 |
 | bellphone | 1 | 1 | - | benq | 0 | 1 |
+| bitel | 4 | 1 | - | bitmore | 2 | 1 |
 | bravis | 21 | 17 | - | bb mobile | 2 | 10 |
 | beyond | 0 | 7 | - | bangolufsen | 0 | 0 |
 | barnes & noble | 1 | 6 | - | beeline | 11 | 1 |
