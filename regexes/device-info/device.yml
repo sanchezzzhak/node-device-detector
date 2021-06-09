@@ -2572,6 +2572,11 @@ bitmore:
   mobitab10c-3g: '->mobitab 10c 3g'
   tab1011q ii: 'DS=10.1;RS=1024x600;SZ=;WT=509;RE=2015.06;CP=163;RM=1024;OS=Android 4.4.2;'
 
+bkav:
+  bphone b1114: ''
+  bphone b1115: 'DS=5;RS=1080x1920;RE=2015.07;RM=3072'
+  bphone b2017: ''
+
 # Bravis
 bravis:
   a501 bright: ''
