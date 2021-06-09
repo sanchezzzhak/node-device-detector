@@ -196,7 +196,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (665 devices, alias devices 1766)
+> This parser is experimental and contains few devices. (672 devices, alias devices 1767)
 >
 ##### Support detail brands/models list:
 
@@ -217,7 +217,7 @@ is not parse result  {name: ""}
 | airness | 0 | 0 | - | airties | 0 | 0 |
 | ais | 0 | 2 | - | aiuto | 0 | 0 |
 | aiwa | 0 | 0 | - | akai | 1 | 5 |
-| alba | 0 | 1 | - | alcatel | 19 | 431 |
+| alba | 0 | 1 | - | alcatel | 26 | 432 |
 | alcor | 1 | 0 | - | alfawise | 0 | 0 |
 | aligator | 0 | 0 | - | allcall | 0 | 3 |
 | alldocube | 2 | 6 | - | allview | 0 | 46 |

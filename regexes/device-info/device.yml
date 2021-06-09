@@ -544,10 +544,10 @@ alcatel:
   4018m: '->one touch pop d1'
   4018x: '->one touch pop d1'
   one touch pop d1: 'RE=2014.08;SZ=62x112.2x12;WT=101;DS=3.5;RS=320x480;OS=Android 4.4;CP=36;RM=512;SM=2;'
-
   4024d: '->one touch pixi first'
   4024e: '->one touch pixi first'
   4024x: '->one touch pixi first'
+  one touch pixi first: 'RE=2015.09;SZ=64.4x122.1x9.7;WT=125;DS=4.0;RS=480x800;OS=Android 4.4;CP=88;RM=512;'
   4027a: '->one touch pixi 3 4.5"'
   4027d: '->one touch pixi 3 4.5"'
   4027n: '->one touch pixi 3 4.5"'
@@ -556,17 +556,22 @@ alcatel:
   4028e: '->one touch pixi 3 4.5"'
   4028j: '->one touch pixi 3 4.5"'
   4028s: '->one touch pixi 3 4.5"'
+  5019d: '->one touch pixi 3 4.5"'
+  one touch pixi 3 4.5": 'RE=2015.01;SZ=65.1x132.2x10;WT=125;DS=4.5;RS=480x854;OS=Android 4.4;CP=36;RM=512;'
   4032a: '->one touch pop c2'
+  4032x: '->one touch pop c2'
+  one touch pop c2: 'RE=2014.07;SZ=64.4x122x12;WT=116;DS=4.0;RS=480x800;CP=36;OS=Android 4.2;RM=512;'
   4032d: '->one touch pop c2 dual sim'
   4032e: '->one touch pop c2 dual sim'
-  4032x: '->one touch pop c2'
+  one touch pop c2 dual sim: '->one touch pop c2;SM=2;'
   4034a: '->one touch pixi 4 4"'
   4034d: '->one touch pixi 4 4"'
   4034e: '->one touch pixi 4 4"'
   4034g: '->one touch pixi 4 4"'
   4034l: '->one touch pixi 4 4"'
-
   4034x: '->one touch pixi 4 4"'
+  one touch pixi 4 4": 'RE=2016.01;SZ=64.4x121.3x9.7;WT=;DS=4.0;RS=480x800;OS=Android 6;CP=58;RM=512;'
+
   4035a: '->one touch pop d3'
   4035d: '->one touch pop d3'
   4035x: '->one touch pop d3'
@@ -624,7 +629,9 @@ alcatel:
   5017e: '->one touch pixi 3 4.5" 4g'
   5017o: '->one touch pixi 3 4.5" 4g'
   5017x: '->one touch pixi 3 4.5" 4g'
-  5019d: '->one touch pixi 3 4.5"'
+
+
+
   5022d: '->one touch pop star'
   5022e: '->one touch pop star'
   5023e: '->one touch pixi 4 plus power'
@@ -977,12 +984,12 @@ alcatel:
 
 
   one touch pixi 3 4.5" 4g: ''
-  one touch pixi 3 4.5": ''
+
   one touch pixi 3 7" 4g: ''
   one touch pixi 3 7": ''
   one touch pixi 3 8": ''
 
-  one touch pixi 4 4": ''
+
   one touch pixi 4 4.5": ''
   one touch pixi 4 5" 3g: ''
   one touch pixi 4 5" 4g: ''
@@ -999,7 +1006,7 @@ alcatel:
   one touch pixi 8: ''
   one touch pixi avion 4g lte: ''
   one touch pixi avion lte: ''
-  one touch pixi first: ''
+
   one touch pixi glitz: ''
   one touch pixi glory: ''
   one touch pixi theatre: ''
@@ -1023,8 +1030,6 @@ alcatel:
   one touch pop 8: ''
 
 
-  one touch pop c2 dual sim: ''
-  one touch pop c2: ''
   one touch pop c5 dual sim: ''
   one touch pop c7 dual sim: ''
   one touch pop c7: ''
