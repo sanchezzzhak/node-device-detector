@@ -2531,10 +2531,41 @@ bellphone:
   bp 100 x-plus: 'DS=5.7;RM=1024;OS=Android 8;SM=2;'
   bp100 x-plus: '->bp 100 x-plus'
 
+# benq
 benq:
   cf61: ''
   f52 09: '->f52'
   f52: ''
+
+# bitel
+bitel:
+  b8407: 'RE=2014.11;DS=4;RS=480x800;SZ=63.6x125x10.3;WT=;CP=36;RM=512;SM=2;OS=Android 4.4;'
+  b8408: 'RE=2015.06;DS=4;RS=480x800;SZ=;WT=;CP=36;RM=512;SM=1;OS=Android 4.4;'
+  b8409: 'RE=2015.09;DS=4;RS=480x800;SZ=;WT=;CP=24;RM=512;SM=1;OS=Android 4.4;'
+  b8410: ''
+  b8411: ''
+  b8413: ''
+  b8414: ''
+  b8415: ''
+  b8416: ''
+  b8502: ''
+  b8503: ''
+  b8504: ''
+  b8506: ''
+  b8601: ''
+  b8604: ''
+  b8606: ''
+  b9401: ''
+  b9501: ''
+  b9502: ''
+  b9503: ''
+  b9504: ''
+  b9505: 'DS=5;RS=480x854;SZ=72x140.1x8.7;WT=;RE=2016.08;OS=Android 7;RM=1024;CP=86;SM=2;'
+  bitel-b8413: '->b8413'
+  s8402: ''
+  s8402l: ''
+  s8501: ''
+  s8501l: ''
 
 # Bravis
 bravis:
