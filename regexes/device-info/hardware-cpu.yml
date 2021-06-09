@@ -1356,3 +1356,15 @@ cpu:
     clock_rate: 1300
     cores: 4
     gpu_id: 17
+  230:
+    name: MediaTek MT8765B
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 2
+  231:
+    name: MediaTek MT8765
+    type: ARM
+    cores: 4
+    clock_rate: 1280
+    gpu_id: 2
