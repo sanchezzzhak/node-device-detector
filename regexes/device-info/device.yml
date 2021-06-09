@@ -2577,6 +2577,10 @@ bkav:
   bphone b1115: 'DS=5;RS=1080x1920;RE=2015.07;RM=3072'
   bphone b2017: ''
 
+black bear:
+  b6 master: 'DS=5;RS=480x960;SZ=66.2x137.7x9.6;WT=144;CP=109;RM=1024;RE=2018.12;OS=Android 8.1;SM=2;'
+  b6 note x: 'DS=5.5;RS=720x1280;SZ=‎70.6x147.9x9.4;WT=147.9;CP=109;RM=2048;RE=2018.11;OS=Android 8.1;SM=2;'
+
 # Bravis
 bravis:
   a501 bright: ''
