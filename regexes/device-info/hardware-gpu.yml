@@ -266,3 +266,6 @@ gpu:
   89:
     name: ARM Mali-G71 MP8
     clock_rate: 900
+  90:
+    name: ARM Mali-G72 MP18
+    clock_rate: 850

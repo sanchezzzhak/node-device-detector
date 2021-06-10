@@ -1415,3 +1415,15 @@ cpu:
     cores: 4
     clock_rate: 1500
     gpu_id: 1
+  240:
+    name: Samsung Exynos 4210
+    type: ARM
+    cores: 1
+    clock_rate: 1400
+    gpu_id: 62
+  241:
+    name: Samsung Exynos 9810
+    type: ARM
+    cores: 8
+    clock_rate: 2900
+    gpu_id: 90
