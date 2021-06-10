@@ -1,3 +1,10 @@
+const nodeVersion = process.version.match(/(\d+)\.(\d+)\.(\d+)/);
+const [major, minor, patch] = nodeVersion.slice(1).map(_ => parseInt(_));
+if( major < 12) {
+  console.error('run script is available only from version Node 12 or later');
+  return;
+}
+
 const Brands = Object.values(require('./../parser/device/brand-short'));
 const Browsers = Object.values(require('./../parser/client/browser-short'));
 const fs = require('fs');
@@ -47,6 +54,12 @@ for (let brand in brandInfos) {
     }
   }
 }
+
+// sort device brand by key
+
+deviceInfoData = Object.fromEntries(
+  Object.entries(deviceInfoData).sort(sortABC)
+)
 
 let tableRows = [];
 tableRows.push(
