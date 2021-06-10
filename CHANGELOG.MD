@@ -1,5 +1,7 @@
 CHANGELOG
 -
+* v1.3.7
+    * Update fixtures from the motamo-org/device-detect `version#4.2.3` (update to 2021/06/10)
 * v1.3.6
     * Update fixtures from the motamo-org/device-detect `version#4.2.3` (update to 2021/05/19)
     * fix import helper and set correct name and create test;
