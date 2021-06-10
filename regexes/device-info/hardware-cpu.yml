@@ -1387,3 +1387,8 @@ cpu:
     cores: 8
     clock_rate: 2840
     gpu_id: 81
+  235:
+    name: Broadcom BCM28155
+    type: ARM
+    cores: 2
+    clock_rate: 1200
