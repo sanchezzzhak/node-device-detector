@@ -3845,6 +3845,10 @@ oneplus:
   3t: 'RE=2016.10;SZ=74.7x152.7x7.4;WT=158;DS=5.5;RS=1080x1920;OS=Android 6.0.1;CP=173;RM=6144;'
   a3010: '->3t'
 
+utok:
+  450d: 'DS=4.5;RS=480x854;SZ=66.8x132x9.5;WT=140;RM=512;OS=Android 4.2.2;CP=24;'
+  451d: ''
+
 samsung:
   galaxy camera: 'RE=2012.08;SZ=70.8x128.7x19.1;WT=300;DS=4.8;RS=720x1280;OS=Android 4.1;CP=233;RM=1024;'
   ek-gc100: '->galaxy camera'
