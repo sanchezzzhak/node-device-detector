@@ -1380,3 +1380,10 @@ cpu:
     cores: 4
     clock_rate: 1400
     gpu_id: 44
+  234:
+    name: Qualcomm Snapdragon 855
+    # SDM855
+    type: ARM
+    cores: 8
+    clock_rate: 2840
+    gpu_id: 81
