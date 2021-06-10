@@ -1397,3 +1397,9 @@ cpu:
     type: ARM
     cores: 2
     clock_rate: 1200
+  237:
+    name: Samsung Exynos 7904
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 40
