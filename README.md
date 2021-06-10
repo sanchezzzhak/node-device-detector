@@ -196,7 +196,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (720 devices, alias devices 1827)
+> This parser is experimental and contains few devices. (740 devices, alias devices 1890)
 >
 ##### Support detail brands/models list:
 
@@ -205,7 +205,7 @@ is not parse result  {name: ""}
 
 | Brand | Device count | Alias count | - | Brand | Device count | Alias count |
 |----|----|----|----|----|----|----|
-| 360 | 10 | 10 | - | 8848 | 0 | 0 |
+| 360 | 10 | 10 | - | 8848 | 1 | 0 |
 | 2e | 2 | 2 | - | 3gnet | 0 | 1 |
 | 3q | 14 | 62 | - | 4good | 1 | 1 |
 | 4ife | 0 | 1 | - | a1 | 0 | 1 |
@@ -252,7 +252,7 @@ is not parse result  {name: ""}
 | firefly mobile | 4 | 1 | - | formuler | 2 | 0 |
 | geotel | 3 | 0 | - | huawei | 221 | 576 |
 | ipro | 4 | 7 | - | öwn | 1 | 2 |
-| panasonic | 3 | 8 | - | samsung | 14 | 40 |
+| panasonic | 4 | 8 | - | samsung | 32 | 103 |
 | tiphone | 1 | 0 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 
