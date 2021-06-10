@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 28/05/2021_
+_Last update: 10/06/2021_
 
 ## Description
 
@@ -196,7 +196,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (606 devices, alias devices 1705)
+> This parser is experimental and contains few devices. (700 devices, alias devices 1779)
 >
 ##### Support detail brands/models list:
 
@@ -216,8 +216,8 @@ is not parse result  {name: ""}
 | agm | 0 | 0 | - | ainol | 0 | 16 |
 | airness | 0 | 0 | - | airties | 0 | 0 |
 | ais | 0 | 2 | - | aiuto | 0 | 0 |
-| aiwa | 0 | 0 | - | akai | 1 | 5 |
-| alba | 0 | 1 | - | alcatel | 0 | 427 |
+| aiwa | 0 | 0 | - | akai | 2 | 5 |
+| alba | 0 | 1 | - | alcatel | 29 | 433 |
 | alcor | 1 | 0 | - | alfawise | 0 | 0 |
 | aligator | 0 | 0 | - | allcall | 0 | 3 |
 | alldocube | 2 | 6 | - | allview | 0 | 46 |
@@ -240,15 +240,20 @@ is not parse result  {name: ""}
 | avh | 1 | 0 | - | avvio | 3 | 2 |
 | axxion | 0 | 0 | - | azumi mobile | 0 | 1 |
 | bellphone | 1 | 1 | - | benq | 0 | 1 |
-| bravis | 21 | 17 | - | bb mobile | 2 | 10 |
-| beyond | 0 | 7 | - | bangolufsen | 0 | 0 |
-| barnes & noble | 1 | 6 | - | beeline | 11 | 1 |
-| bird | 1 | 0 | - | billion | 1 | 1 |
-| bezkam | 1 | 0 | - | bigben | 1 | 0 |
-| bihee | 2 | 1 | - | black fox | 18 | 12 |
-| öwn | 1 | 2 | - | huawei | 193 | 521 |
-| ipro | 3 | 7 | - | zync | 2 | 0 |
-| zyq | 1 | 13 | - |  |  |  |
+| bitel | 4 | 1 | - | bitmore | 2 | 1 |
+| bkav | 1 | 0 | - | black bear | 2 | 0 |
+| blackview | 15 | 9 | - | bravis | 21 | 17 |
+| bb mobile | 2 | 10 | - | beyond | 0 | 7 |
+| bangolufsen | 0 | 0 | - | barnes & noble | 1 | 6 |
+| beeline | 11 | 1 | - | bird | 1 | 0 |
+| billion | 1 | 1 | - | bezkam | 1 | 0 |
+| bigben | 1 | 0 | - | bihee | 2 | 1 |
+| black fox | 18 | 12 | - | öwn | 1 | 2 |
+| huawei | 221 | 576 | - | ipro | 4 | 7 |
+| zync | 2 | 0 | - | zyq | 1 | 13 |
+| engel | 1 | 1 | - | tiphone | 1 | 0 |
+| formuler | 2 | 0 | - | geotel | 3 | 0 |
+| firefly mobile | 4 | 1 | - |  |  |  |
 
 </details>
 

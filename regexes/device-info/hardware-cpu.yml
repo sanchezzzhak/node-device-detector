@@ -1344,3 +1344,33 @@ cpu:
     clock_rate: 2000
     cores: 8
     gpu_id: 21
+  228:
+    name: Hisilicon Hi3798MV200
+    type: ARM
+    clock_rate: 2000
+    cores: 4
+    gpu_id: 3
+  229:
+    name: Qualcomm Snapdragon 215
+    type: ARM
+    clock_rate: 1300
+    cores: 4
+    gpu_id: 17
+  230:
+    name: MediaTek MT8765B
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 2
+  231:
+    name: MediaTek MT8765
+    type: ARM
+    cores: 4
+    clock_rate: 1280
+    gpu_id: 2
+  232:
+    name: Mediatek Helio P25
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    gpu_id: 75
