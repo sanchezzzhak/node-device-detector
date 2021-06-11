@@ -1427,3 +1427,9 @@ cpu:
     cores: 8
     clock_rate: 2900
     gpu_id: 90
+  242:
+    name: Qualcomm Snapdragon 765G
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    gpu_id: 91

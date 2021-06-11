@@ -269,3 +269,6 @@ gpu:
   90:
     name: ARM Mali-G72 MP18
     clock_rate: 850
+  91:
+    name: Qualcomm Adreno 620
+    clock_rate: 670
