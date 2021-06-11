@@ -272,3 +272,6 @@ gpu:
   91:
     name: Qualcomm Adreno 620
     clock_rate: 670
+  92:
+    name: Qualcomm Adreno 610
+    clock_rate: 670

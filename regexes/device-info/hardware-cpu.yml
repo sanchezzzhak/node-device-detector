@@ -1433,3 +1433,15 @@ cpu:
     cores: 8
     clock_rate: 2400
     gpu_id: 91
+  243:
+    name: Qualcomm Snapdragon 801 MSM8974AC
+    type: ARM
+    cores: 4
+    clock_rate: 2450
+    gpu_id: 65
+  244:
+    name: Qualcomm Snapdragon 460
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 92
