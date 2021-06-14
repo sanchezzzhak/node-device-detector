@@ -1,3 +1,6 @@
+const YAML = require('js-yaml');
+const fs = require('fs');
+
 exports.matchUserAgent = function (str, userAgent) {
   str = str.replace(new RegExp('/', 'g'), '\\/');
   let regex = '(?:^|[^A-Z_-])(?:' + str + ')';
@@ -107,4 +110,11 @@ exports.revertObject = function(obj) {
     })),
     {}
   )
+}
+/**
+ * @param file
+ * @returns {*}
+ */
+exports.loadYMLFile = function(file) {
+  return YAML.safeLoad(fs.readFileSync(file));
 }

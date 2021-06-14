@@ -1,13 +1,29 @@
-const DeviceAbstractParser = require('./../device-abstract-parser');
+const AbstractParser = require('./../abstract-parser');
+const helper = require('./../helper');
 
-class AliasDevice extends DeviceAbstractParser {
+const COLLECTION_BRAND_LIST = helper.revertObject(
+  require('./brand-short')
+);
+
+class AliasDevice extends AbstractParser {
+  
   constructor() {
     super();
     this.fixtureFile = 'device/alias-device.yml';
     this.__brandReplaceRegexp = '';
+    this.__replaceBrand = true;
     this.loadCollection();
+    
   }
-
+  
+  hasReplaceBrand() {
+    return Boolean(this.__replaceBrand);
+  }
+  
+  setReplaceBrand(replace){
+    this.__replaceBrand = replace;
+  }
+  
   /**
    * @param {string} userAgent
    * @returns {{name: string}}
@@ -21,11 +37,14 @@ class AliasDevice extends DeviceAbstractParser {
       let match = this.getBaseRegExp(item['regex']).exec(
         decodeURIComponent(userAgent)
       );
+      
       if (match) {
-        result.name = this.buildByMatch(item['name'], match)
-          .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
+        result.name = this.buildByMatch(item['name'], match);
+        if(this.hasReplaceBrand()) {
+          result.name = result.name.replace(
+            new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
           .trim();
-
+        }
         break;
       }
     }
@@ -38,7 +57,7 @@ class AliasDevice extends DeviceAbstractParser {
       let replaceChars = ['\\+', '\\.'];
       let customBrands = ['HUAWEI HUAWEI'];
       let brands = customBrands
-        .concat(Object.keys(this.getCollectionBrands()))
+        .concat(Object.keys(COLLECTION_BRAND_LIST))
         .join('|');
       for (let i = 0, l = escapeeChars.length; i < l; i++) {
         brands = brands.replace(escapeeChars[i], replaceChars[i]);

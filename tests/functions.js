@@ -36,6 +36,10 @@ function YAMLLoad(yamlPath) {
   return YAML.safeLoad(fs.readFileSync(yamlPath, 'utf8'));
 }
 
+function YAMLDump(objects) {
+  return YAML.dump(objects);
+}
+
 function perryJSON(obj) {
   return JSON.stringify(obj, null, 2);
 }
@@ -63,6 +67,7 @@ function normalizeVersion(version, count) {
 }
 
 module.exports = {
+  YAMLDump,
   YAMLLoad,
   revertKeysForObjects,
   normalizeVersion,

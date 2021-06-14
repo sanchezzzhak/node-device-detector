@@ -33,6 +33,9 @@
 - regex: 'CFNetwork/.+Darwin/.+(?:\(x86_64\))?\s+\(([^)]+)\)$'
   name: '$1'
 
+- regex: 'IEMobile/[0-9].+;(?:[^;]+); (.+)\) like'
+  name: '$1'
+
 # Android AppleWebKit
 - regex: 'Android\s+(?:[^;]+);\s+(?:[a-z]{2}(?:[_-][a-z]{2})?;)\s+([^;]+); Android/'
   name: '$1'
@@ -42,7 +45,7 @@
   name: '$1'
 - regex: 'Android (?:[\d\.]+;)\s?(?:[a-z]{2}(?:[_-][a-z]{2})?;)?\s?([^;]+);? Build/'
   name: '$1'
-- regex: 'Android (?:[\d.]+;)\s?(?:[^;]+;)?\s?(.+)\) AppleWebKit'
+- regex: 'Android (?:[\d.]+;)\s?(?:[^;]+;)?\s?(.+)\) (?:AppleWebKit|ShieldExperience)'
   name: '$1'
 - regex: 'Android (?:[\d.]+;)\s?(?:[^;]+;)?\s?(.+) AppleWebKit'
   name: '$1'
