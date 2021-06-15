@@ -11,15 +11,15 @@ class DeviceParserAbstract extends ParserAbstract {
     super();
     this.resultModelRegex = false; // used in tests
   }
-  
-  getAvailableBrands(){
-    return Object.keys(this.getCollectionBrands())
+
+  getAvailableBrands() {
+    return Object.keys(this.getCollectionBrands());
   }
-  
+
   getCollectionBrands() {
     return COLLECTION_BRAND_LIST;
   }
-  
+
   /**
    * Result all brands and models
    * @param userAgent
@@ -27,9 +27,9 @@ class DeviceParserAbstract extends ParserAbstract {
    * @returns {[]}
    */
   parseAllMatch(userAgent, brandIndexes = []) {
-    return this.__parse(userAgent, false, brandIndexes)
+    return this.__parse(userAgent, false, brandIndexes);
   }
-  
+
   /**
    * iteration item parse, see __parse
    * @param {string} cursor
@@ -37,7 +37,7 @@ class DeviceParserAbstract extends ParserAbstract {
    * @returns {{model: *, id: *, type, brand}|null}
    * @private
    */
-  parseForBrand(cursor, userAgent ){
+  parseForBrand(cursor, userAgent) {
     let model = '';
     let deviceType = '';
     let brandName = '';
@@ -45,9 +45,7 @@ class DeviceParserAbstract extends ParserAbstract {
     if (item === void 0) {
       return null;
     }
-    
 
-    
     let regex = item['regex'];
     let match = this.getBaseRegExp(regex).exec(userAgent);
 
@@ -79,11 +77,11 @@ class DeviceParserAbstract extends ParserAbstract {
       } else if (item['model'] !== void 0) {
         model = this.buildModel(item['model'], match);
       }
-      let brandId = this.getBrandIdByName(brandName)
+      let brandId = this.getBrandIdByName(brandName);
       let result = {
         id: brandId !== void 0 ? brandId : '',
         brand: brandName,
-        model: model !== null ? String(model).trim(): '',
+        model: model !== null ? String(model).trim() : '',
         type: deviceType,
       };
       if (this.resultModelRegex) {
@@ -91,10 +89,10 @@ class DeviceParserAbstract extends ParserAbstract {
       }
       return result;
     }
-    
+
     return null;
   }
-  
+
   /**
    * iterations parse for collection
    * @param {string} userAgent
@@ -105,32 +103,31 @@ class DeviceParserAbstract extends ParserAbstract {
    */
   __parse(userAgent, canBreak = true, brandIndexes = []) {
     let output = [];
-    if(brandIndexes.length) {
+    if (brandIndexes.length) {
       for (let cursor of brandIndexes) {
-        let result = this.parseForBrand(cursor, userAgent)
-        if(result === null) {
+        let result = this.parseForBrand(cursor, userAgent);
+        if (result === null) {
           continue;
         }
         output.push(result);
-        if(canBreak) break;
+        if (canBreak) break;
       }
     }
-    
-    if(!output.length){
+
+    if (!output.length) {
       for (let cursor in this.collection) {
-        let result = this.parseForBrand(cursor, userAgent)
-        if(result === null) {
+        let result = this.parseForBrand(cursor, userAgent);
+        if (result === null) {
           continue;
         }
         output.push(result);
-        if(canBreak) break;
-        
+        if (canBreak) break;
       }
     }
-    
+
     return output;
   }
-  
+
   /**
    * Result brand and model
    * @param {string} userAgent
@@ -138,17 +135,16 @@ class DeviceParserAbstract extends ParserAbstract {
    */
   parse(userAgent, brandIndexes = []) {
     let result = this.__parse(userAgent, true, brandIndexes);
-    if(result.length) {
+    if (result.length) {
       return result[0];
     }
     return null;
   }
-  
+
   getBrandIdByName(brandName) {
     return COLLECTION_BRAND_LIST[brandName];
   }
 }
-
 
 /*
   

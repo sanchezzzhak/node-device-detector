@@ -1,6 +1,6 @@
 const nodeVersion = process.version.match(/(\d+)\.(\d+)\.(\d+)/);
-const [major, minor, patch] = nodeVersion.slice(1).map(_ => parseInt(_));
-if( major < 12) {
+const [major, minor, patch] = nodeVersion.slice(1).map((_) => parseInt(_));
+if (major < 12) {
   console.error('run script is available only from version Node 12 or later');
   return;
 }
@@ -59,7 +59,7 @@ for (let brand in brandInfos) {
 
 deviceInfoData = Object.fromEntries(
   Object.entries(deviceInfoData).sort(sortABC)
-)
+);
 
 let tableRows = [];
 tableRows.push(

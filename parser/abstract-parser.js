@@ -1,4 +1,3 @@
-
 const helper = require('./helper');
 const BASE_REGEXES_DIR = __dirname + '/../regexes/';
 
@@ -33,7 +32,7 @@ class ParserAbstract {
   loadCollection() {
     this.collection = this.loadYMLFile(this.fixtureFile);
   }
-  
+
   /**
    * @param {string} file
    * @returns {*}

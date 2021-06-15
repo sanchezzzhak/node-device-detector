@@ -1,12 +1,9 @@
 const AbstractParser = require('./../abstract-parser');
 const helper = require('./../helper');
 
-const COLLECTION_BRAND_LIST = helper.revertObject(
-  require('./brand-short')
-);
+const COLLECTION_BRAND_LIST = helper.revertObject(require('./brand-short'));
 
 class AliasDevice extends AbstractParser {
-  
   constructor() {
     super();
     this.fixtureFile = 'device/alias-device.yml';
@@ -14,15 +11,15 @@ class AliasDevice extends AbstractParser {
     this.__replaceBrand = true;
     this.loadCollection();
   }
-  
+
   hasReplaceBrand() {
     return Boolean(this.__replaceBrand);
   }
-  
-  setReplaceBrand(replace){
+
+  setReplaceBrand(replace) {
     this.__replaceBrand = replace;
   }
-  
+
   /**
    * @param {string} userAgent
    * @returns {{name: string}}
@@ -36,13 +33,13 @@ class AliasDevice extends AbstractParser {
       let match = this.getBaseRegExp(item['regex']).exec(
         decodeURIComponent(userAgent)
       );
-      
+
       if (match) {
         result.name = this.buildByMatch(item['name'], match);
-        if(this.hasReplaceBrand()) {
-          result.name = result.name.replace(
-            new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
-          .trim();
+        if (this.hasReplaceBrand()) {
+          result.name = result.name
+            .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
+            .trim();
         }
         break;
       }

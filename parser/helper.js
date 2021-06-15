@@ -102,23 +102,23 @@ exports.getPropertyValue = function (options, propName, defaultValue) {
     : null;
 };
 
-exports.revertObject = function(obj) {
+exports.revertObject = function (obj) {
   return Object.assign(
     {},
     ...Object.entries(obj).map(([a, b]) => ({
       [b]: a,
     })),
     {}
-  )
-}
+  );
+};
 /**
  * @param file
  * @returns {*}
  */
-exports.loadYMLFile = function(file) {
+exports.loadYMLFile = function (file) {
   return YAML.safeLoad(fs.readFileSync(file));
-}
+};
 
-exports.hasFile = function(file) {
+exports.hasFile = function (file) {
   return fs.existsSync(file);
-}
+};
