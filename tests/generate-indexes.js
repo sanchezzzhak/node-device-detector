@@ -10,11 +10,11 @@ const fs = require('fs');
 const aliasDevice = new (require('../parser/device/alias-device'))();
 aliasDevice.setReplaceBrand(false);
 
-const detector = new (require('../index'))();
+const detector = new (require('../index'))({
+  discardDeviceIndexes: true
+});
+
 let parserDevice = detector.getParseDevice('Mobile');
-
-
-//   let match = this.getBaseRegExp(regex).exec(userAgent);
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let fixtureFolder = __dirname + '/fixtures/';

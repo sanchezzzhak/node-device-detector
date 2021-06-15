@@ -118,3 +118,7 @@ exports.revertObject = function(obj) {
 exports.loadYMLFile = function(file) {
   return YAML.safeLoad(fs.readFileSync(file));
 }
+
+exports.hasFile = function(file) {
+  return fs.existsSync(file);
+}

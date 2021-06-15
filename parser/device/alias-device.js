@@ -13,7 +13,6 @@ class AliasDevice extends AbstractParser {
     this.__brandReplaceRegexp = '';
     this.__replaceBrand = true;
     this.loadCollection();
-    
   }
   
   hasReplaceBrand() {

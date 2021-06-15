@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 10/06/2021_
+_Last update: 15/06/2021_
 
 ## Description
 
@@ -32,7 +32,7 @@ const result = detector.detect(userAgent);
 console.log('result parse', result);
 ```
 > PS: When creating an object`detector = new DeviceDetector;` data for parsing is reloaded from files, consider this, the best option is initialization at application start
-> I recommend seeing [examples](#-others)
+> I recommend seeing [examples](#Others)
 
 ### Result parse
 
@@ -167,6 +167,23 @@ const detector = new DeviceDetector({
 // You can override these settings at any time using special methods, example
 detector.setOsVersionTruncate(0);
 detector.setClientVersionTruncate(2);
+// to enable quick device definitions via indexing, enable this option (default value true, that is, disabled)
+detector.discardDeviceIndexes = false;
+/**
+banchmark.js test result:
+----
+Test: Mozilla/5.0 (Linux; Android 7.1.2; E6810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36
+EnableDeviceIndexes  x 1,184 ops/sec ±0.52% (92 runs sampled)
+DiscardDeviceIndexes x 636 ops/sec ±0.44% (94 runs sampled)
+----
+Test: Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36
+EnableDeviceIndexes  x 1,148 ops/sec ±0.49% (93 runs sampled)
+DiscardDeviceIndexes x 404 ops/sec ±0.38% (92 runs sampled)
+----
+Test: Mozilla/5.0 (Linux; Android 4.4.4; Qin 1s+ Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
+EnableDeviceIndexes  x 1,022 ops/sec ±0.43% (92 runs sampled)
+DiscardDeviceIndexes x 395 ops/sec ±0.31% (90 runs sampled)
+*/
 
 // Array available device types
 detector.getAvailableDeviceTypes();
@@ -196,7 +213,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (746 devices, alias devices 1905)
+> This parser is experimental and contains few devices. (759 devices, alias devices 1938)
 >
 ##### Support detail brands/models list:
 
@@ -251,10 +268,11 @@ is not parse result  {name: ""}
 | bravis | 24 | 17 | - | engel | 1 | 1 |
 | firefly mobile | 4 | 1 | - | formuler | 2 | 0 |
 | geotel | 3 | 0 | - | huawei | 221 | 576 |
-| ipro | 4 | 7 | - | oneplus | 6 | 15 |
+| ipro | 4 | 7 | - | oneplus | 18 | 48 |
 | öwn | 1 | 2 | - | panasonic | 4 | 8 |
 | samsung | 32 | 103 | - | tiphone | 1 | 0 |
-| zync | 2 | 0 | - | zyq | 1 | 13 |
+| utok | 1 | 0 | - | zync | 2 | 0 |
+| zyq | 1 | 13 | - |  |  |  |
 
 </details>
 
@@ -354,4 +372,3 @@ Others
 
 * 115 Browser, 2345 Browser, 360 Browser, 360 Phone Browser, 7654 Browser, 7Star, ABrowse, Aloha Browser, Aloha Browser Lite, Amaya, Amiga Aweb, Amiga Voyager, Amigo, Android Browser, ANT Fresco, ANTGalio, AOL Desktop, AOL Shield, Arctic Fox, Arora, Atom, Atomic Web Browser, Avant Browser, Avast Secure Browser, AVG Secure Browser, Avira Scout, AwoX, B-Line, Baidu Browser, Baidu Spark, Basilisk, Beaker Browser, Beamrise, Beonex, Biyubi, BlackBerry Browser, BlackHawk, Blue Browser, Borealis Navigator, Brave, BriskBard, BrowseX, Browzar, Bunjalloo, Byffox, Camino, CCleaner, Centaury, Charon, Chedot, Cheetah Browser, Cheshire, Chim Lac, Chrome, Chrome Frame, Chrome Mobile, Chrome Mobile iOS, Chrome Webview, ChromePlus, Chromium, Chromium GOST, CM Browser, Coast, Coc Coc, Colibri, CometBird, Comodo Dragon, Conkeror, CoolBrowser, CoolNovo, Cornowser, COS Browser, Craving Explorer, Crazy Browser, Crusta, Cunaguaro, Cyberfox, dbrowser, Deepnet Explorer, deg-degan, Deledao, Delta Browser, DeskBrowse, Dillo, Dolphin, Dooble, Dorado, Dot Browser, DuckDuckGo Privacy Browser, Ecosia, Element Browser, Elements Browser, Elinks, Epic, Espial TV Browser, EUI Browser, eZ Browser, Falkon, Faux Browser, Fennec, Firebird, Firefox, Firefox Focus, Firefox Mobile, Firefox Mobile iOS, Firefox Reality, Firefox Rocket, Fireweb, Fireweb Navigator, Flast, Flock, Flow, Fluid, FreeU, Galeon, Ghostery Privacy Browser, GinxDroid Browser, Glass Browser, GNOME Web, GOG Galaxy, Google Earth, HasBrowser, Hawk Turbo Browser, Headless Chrome, Helio, hola! Browser, HotJava, Huawei Browser, IBrowse, iCab, iCab Mobile, IceCat, IceDragon, Iceweasel, IE Mobile, Internet Explorer, Iridium, Iron, Iron Mobile, Isivioo, Japan Browser, Jasmine, JavaFX, Jig Browser, Jig Browser Plus, Jio Browser, K-meleon, K.Browser, Kapiko, Kazehakase, Kindle Browser, Kinza, Kiwi, Kode Browser, Konqueror, Kylo, LG Browser, LieBaoFast, Light, Links, Lolifox, Lovense Browser, LuaKit, Lulumi, Lunascape, Lunascape Lite, Lynx, Maelstrom, Mandarin, MAUI WAP Browser, Maxthon, mCent, Meizu Browser, Mercury, MicroB, Microsoft Edge, Midori, Minimo, Mint Browser, MIUI Browser, Mobicip, Mobile Safari, Mobile Silk, Monument Browser, MxNitro, Mypal, Navigateur Web, NCSA Mosaic, NetFront, NetFront Life, NetPositive, Netscape, NetSurf, NFS Browser, Nokia Browser, Nokia OSS Browser, Nokia Ovi Browser, Nox Browser, NTENT Browser, Obigo, OceanHero, Oculus Browser, Odin, Odyssey Web Browser, Off By One, OhHai Browser, OmniWeb, ONE Browser, Openwave Mobile Browser, Opera, Opera Devices, Opera GX, Opera Mini, Opera Mini iOS, Opera Mobile, Opera Neon, Opera Next, Opera Touch, Oppo Browser, Orca, Ordissimo, Oregano, Origin In-Game Overlay, Origyn Web Browser, Otter Browser, Pale Moon, Palm Blazer, Palm Pre, Palm WebPro, Palmscape, Perfect Browser, Phantom Browser, Phoenix, Phoenix Browser, PlayFree Browser, Polaris, Polarity, PolyBrowser, Polypane, PrivacyWall, Puffin, Qazweb, QQ Browser, QQ Browser Lite, QQ Browser Mini, QtWebEngine, Quark, QupZilla, Qutebrowser, Qwant Mobile, Realme Browser, Rekonq, RockMelt, Safari, Safe Exam Browser, Sailfish Browser, SalamWeb, Samsung Browser, Seewo Browser, SEMC-Browser, Seraphic Sraf, Seznam Browser, SFive, Shiira, SimpleBrowser, Sizzy, Skyfire, Sleipnir, Slimjet, Smart Lenovo Browser, Smooz, Snowshoe, Sogou Explorer, Sogou Mobile Browser, SP Browser, Splash, Sputnik Browser, Stargon, START Internet Browser, Steam In-Game Overlay, Streamy, Sunrise, Super Fast Browser, SuperBird, surf, Swiftfox, T-Browser, t-online.de Browser, Tao Browser, TenFourFox, Tenta Browser, Tizen Browser, ToGate, Tungsten, TV Bro, TweakStyle, UBrowser, UC Browser, UC Browser HD, UC Browser Mini, UC Browser Turbo, UR Browser, Uzbl, Venus Browser, Vision Mobile Browser, Vivaldi, vivo Browser, VMware AirWatch, Waterfox, Wear Internet Browser, Web Explorer, WebPositive, WeTab Browser, Whale Browser, wOSBrowser, Xiino, xStand, Xvast, Yaani Browser, Yahoo! Japan Browser, Yandex Browser, Yandex Browser Lite, Yolo Browser, Zetakey, Zvu
 </details>
-

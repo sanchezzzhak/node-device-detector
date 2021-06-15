@@ -22,6 +22,8 @@ const BotParser = require('./parser/bot-abstract-parser');
 const VendorFragmentParser = require(
   './parser/vendor-fragment-abstract-parser');
 
+const AliasDevice = require('./parser/device/alias-device');
+
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
@@ -54,10 +56,8 @@ const CLIENT_PARSER = {
   BROWSER: 'Browser',
 };
 
-// private vars (later move to private properties of the class)
-let osVersionTruncate;
-let clientVersionTruncate;
-let skipBotDetection;
+const aliasDevice = new AliasDevice;
+aliasDevice.setReplaceBrand(false);
 
 class DeviceDetector {
   
@@ -70,6 +70,12 @@ class DeviceDetector {
     this.botParserList = {};
     this.deviceParserList = {};
     this.clientParserList = {};
+    
+    this.__discardBotDetection = false;
+    this.__discardDeviceIndexes = false;
+    this.__clientVersionTruncate = null;
+    this.__osVersionTruncate = null;
+    this.__osVersionTruncate = null;
     
     this.init();
     
@@ -88,10 +94,23 @@ class DeviceDetector {
       'clientVersionTruncate',
       null,
     );
+    this.discardDeviceIndexes = helper.getPropertyValue(
+      options,
+      'discardDeviceIndexes',
+      true,
+    );
+  
+    this.fileIndexesDevice = this.skipBotDetection = helper.getPropertyValue(
+      options,
+      'fileIndexesDevice',
+      null,
+    );
+    
   }
   
   
   init() {
+    
     this.addParseOs(OS_PARSER, new OsParser());
     this.addParseClient(CLIENT_PARSER.FEED_READER, new FeedReader());
     this.addParseClient(CLIENT_PARSER.MOBILE_APP, new MobileApp());
@@ -114,34 +133,41 @@ class DeviceDetector {
   }
   
   get skipBotDetection() {
-    return skipBotDetection;
+    return this.__discardBotDetection;
   }
   
   set skipBotDetection(value) {
-    skipBotDetection = value;
+    this.__discardBotDetection = value;
+  }
+  
+  get discardDeviceIndexes() {
+    return this.__discardDeviceIndexes;
+  }
+  
+  set discardDeviceIndexes(discard) {
+    this.__discardDeviceIndexes = discard;
   }
   
   set clientVersionTruncate(value) {
-    clientVersionTruncate = value;
-    
+    this.__clientVersionTruncate = value;
     for (let name in this.clientParserList) {
       this.clientParserList[name].setVersionTruncation(value);
     }
   }
   
   get clientVersionTruncate() {
-    return clientVersionTruncate;
+    return this.__clientVersionTruncate;
   }
   
   set osVersionTruncate(value) {
-    osVersionTruncate = value;
+    this.__osVersionTruncate = value;
     for (let name in this.osParserList) {
       this.osParserList[name].setVersionTruncation(value);
     }
   }
   
   get osVersionTruncate() {
-    return osVersionTruncate;
+    return this.__osVersionTruncate;
   }
   
   setOsVersionTruncate(value) {
@@ -200,6 +226,10 @@ class DeviceDetector {
    */
   getParseVendor(name) {
     return this.vendorParserList[name] ? this.vendorParserList[name] : null;
+  }
+  
+  getParseAliasDevice() {
+    return aliasDevice;
   }
   
   /**
@@ -368,21 +398,52 @@ class DeviceDetector {
     };
   }
   
+  getBrandsByDeviceCode(deviceCode) {
+    if ('' === deviceCode) {
+      return [];
+    }
+    if(this.__deviceIndexexHash === void 0) {
+      this.__deviceIndexexHash = {};
+      let path = __dirname + '/regexes/device-index-hash.yml';
+      if(this.fileIndexesDevice) {
+        path = this.fileIndexesDevice;
+      }
+      if(helper.hasFile(path)) {
+        this.__deviceIndexexHash = helper.loadYMLFile(path);
+      }
+    }
+    let brands = this.__deviceIndexexHash[deviceCode];
+    if(brands !== void 0) {
+      return brands;
+    }
+    return [];
+  }
+  
   /**
    * parse device
    * @param {string} userAgent
    * @return {ResultDevice}
    */
   parseDevice(userAgent) {
+  
+    let brandIndexes = [];
+    if(!this.discardDeviceIndexes) {
+      let alias = this.getParseAliasDevice().parse(userAgent);
+      brandIndexes = this.getBrandsByDeviceCode(
+        alias.name ? alias.name : ''
+      )
+    }
+    
     let result = {
       id: '',
       type: '',
       brand: '',
       model: '',
     };
+    
     for (let name in this.deviceParserList) {
       let parser = this.deviceParserList[name];
-      let resultMerge = parser.parse(userAgent);
+      let resultMerge = parser.parse(userAgent, brandIndexes);
       if (resultMerge) {
         result = Object.assign({}, result, resultMerge);
         break;

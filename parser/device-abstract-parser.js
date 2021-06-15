@@ -1,13 +1,7 @@
 const ParserAbstract = require('./abstract-parser');
-const AliasDevice = require('./device/alias-device');
+
 const helper = require('./helper');
 
-const aliasDevice = new AliasDevice();
-aliasDevice.setReplaceBrand(false);
-
-const DEVICE_INDEX_HASH = helper.loadYMLFile(
-  __dirname + '/../regexes/device-index-hash.yml'
-);
 const COLLECTION_BRAND_LIST = helper.revertObject(
   require('./device/brand-short')
 );
@@ -29,10 +23,11 @@ class DeviceParserAbstract extends ParserAbstract {
   /**
    * Result all brands and models
    * @param userAgent
+   * @param brandIndexes
    * @returns {[]}
    */
-  parseAllMatch(userAgent) {
-    return this.__parse(userAgent, false)
+  parseAllMatch(userAgent, brandIndexes = []) {
+    return this.__parse(userAgent, false, brandIndexes)
   }
   
   /**
@@ -42,7 +37,7 @@ class DeviceParserAbstract extends ParserAbstract {
    * @returns {{model: *, id: *, type, brand}|null}
    * @private
    */
-  __parseByCursor(cursor, userAgent ){
+  parseForBrand(cursor, userAgent ){
     let model = '';
     let deviceType = '';
     let brandName = '';
@@ -51,18 +46,20 @@ class DeviceParserAbstract extends ParserAbstract {
       return null;
     }
     
+
+    
     let regex = item['regex'];
     let match = this.getBaseRegExp(regex).exec(userAgent);
-    
+
     if (match) {
       brandName = String(cursor).trim();
       if (brandName === 'Unknown') {
         brandName = '';
       }
-      if (item['device'] !== undefined) {
+      if (item['device'] !== void 0) {
         deviceType = item['device'];
       }
-      if (item['models'] !== undefined) {
+      if (item['models'] !== void 0) {
         let models = item['models'];
         for (let i = 0, l = models.length; i < l; i++) {
           let data = models[i];
@@ -70,23 +67,23 @@ class DeviceParserAbstract extends ParserAbstract {
           let modelMatch = this.getBaseRegExp(regex).exec(userAgent);
           if (modelMatch) {
             model = this.buildModel(data.model, modelMatch);
-            if (data.device !== undefined) {
+            if (data.device !== void 0) {
               deviceType = data.device;
             }
-            if (data.brand !== undefined) {
+            if (data.brand !== void 0) {
               brandName = data.brand;
             }
             break;
           }
         }
-      } else if (item['model'] !== undefined) {
+      } else if (item['model'] !== void 0) {
         model = this.buildModel(item['model'], match);
       }
       let brandId = this.getBrandIdByName(brandName)
       let result = {
         id: brandId !== void 0 ? brandId : '',
         brand: brandName,
-        model: model !== null ? String(model).trim() : '',
+        model: model !== null ? String(model).trim(): '',
         type: deviceType,
       };
       if (this.resultModelRegex) {
@@ -94,41 +91,40 @@ class DeviceParserAbstract extends ParserAbstract {
       }
       return result;
     }
+    
     return null;
   }
   
   /**
    * iterations parse for collection
-   * @param userAgent
-   * @param canBreak
+   * @param {string} userAgent
+   * @param {boolean} canBreak
+   * @param {array} brandIndexes
    * @returns {[]}
    * @private
    */
-  __parse(userAgent, canBreak = true) {
+  __parse(userAgent, canBreak = true, brandIndexes = []) {
     let output = [];
-    
-    let deviceCode = aliasDevice.parse(userAgent);
-    if(deviceCode.name) {
-      let hashBrands = DEVICE_INDEX_HASH[deviceCode.name];
-      if(hashBrands !== void 0) {
-        hashBrands.forEach(cursor => {
-          let result = this.__parseByCursor(cursor, userAgent)
-          if(result !== null) {
-            output.push(result);
-          }
-        })
+    if(brandIndexes.length) {
+      for (let cursor of brandIndexes) {
+        let result = this.parseForBrand(cursor, userAgent)
+        if(result === null) {
+          continue;
+        }
+        output.push(result);
+        if(canBreak) break;
       }
     }
     
     if(!output.length){
       for (let cursor in this.collection) {
-        let result = this.__parseByCursor(cursor, userAgent)
-        if(result !== null) {
-          output.push(result);
-          if(canBreak) {
-            break;
-          }
+        let result = this.parseForBrand(cursor, userAgent)
+        if(result === null) {
+          continue;
         }
+        output.push(result);
+        if(canBreak) break;
+        
       }
     }
     
@@ -140,14 +136,27 @@ class DeviceParserAbstract extends ParserAbstract {
    * @param {string} userAgent
    * @returns {{model: (string|string), id: (*|string), type: string, brand: string}|null}
    */
-  parse(userAgent) {
-    let result = this.__parse(userAgent);
-    return result.length ? result[0]: null;
+  parse(userAgent, brandIndexes = []) {
+    let result = this.__parse(userAgent, true, brandIndexes);
+    if(result.length) {
+      return result[0];
+    }
+    return null;
   }
   
   getBrandIdByName(brandName) {
     return COLLECTION_BRAND_LIST[brandName];
   }
 }
+
+
+/*
+  
+    let deviceCode = aliasDevice.parse(userAgent);
+    if(deviceCode.name) {
+      let hashBrands = DEVICE_INDEX_HASH[deviceCode.name];
+ 
+    }
+ */
 
 module.exports = DeviceParserAbstract;
