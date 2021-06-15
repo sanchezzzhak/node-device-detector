@@ -8,8 +8,7 @@ const { should, assert, expect } = require('chai');
 
 const fixtures = [
   {
-    ua:
-      'Mozilla/5.0 (Linux; Android 5.0.2; DMC-CM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36',
+    ua: 'Mozilla/5.0 (Linux; Android 5.0.2; DMC-CM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36',
     checks: {
       isCamera: true,
       isCar: false,
@@ -31,8 +30,7 @@ const fixtures = [
     },
   },
   {
-    ua:
-      'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 700; 10.20.0; 11PROMAX)',
+    ua: 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 700; 10.20.0; 11PROMAX)',
     checks: {
       isCamera: false,
       isCar: false,
@@ -54,8 +52,7 @@ const fixtures = [
     },
   },
   {
-    ua:
-      'Mozilla/5.0 (Linux; Android 4.2.2; RCT6077W2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
+    ua: 'Mozilla/5.0 (Linux; Android 4.2.2; RCT6077W2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
     checks: {
       isCamera: false,
       isCar: false,
@@ -99,8 +96,7 @@ const fixtures = [
     },
   },
   {
-    ua:
-      'Mozilla/5.0 Linux; Android 7.1.1; LG Watch Urbane Build/NWD1.180306.004 AppleWebKit/537.36 KHTML, like Gecko Chrome/19.77.34.5 Mobile Safari/537.36',
+    ua: 'Mozilla/5.0 Linux; Android 7.1.1; LG Watch Urbane Build/NWD1.180306.004 AppleWebKit/537.36 KHTML, like Gecko Chrome/19.77.34.5 Mobile Safari/537.36',
     checks: {
       isCamera: false,
       isCar: false,

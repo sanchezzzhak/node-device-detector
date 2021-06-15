@@ -16,12 +16,12 @@ const userAgents = [
 
 const useragent = random(userAgents);
 
-suite.add('EnableDeviceIndexes ', function() {
+suite.add('EnableDeviceIndexes ', function () {
   detector.discardDeviceIndexes = false;
   let result = detector.detect(useragent);
 });
 
-suite.add('DiscardDeviceIndexes', function() {
+suite.add('DiscardDeviceIndexes', function () {
   detector.discardDeviceIndexes = true;
   let result = detector.detect(useragent);
 });
@@ -29,11 +29,12 @@ suite.add('DiscardDeviceIndexes', function() {
 console.log('Test by', useragent);
 
 // add listeners
-suite.on('cycle', function(event) {
-  console.log(String(event.target));
-}).on('complete', function() {
-
-  console.log('Fastest is ' + this.filter('fastest').map('name'));
-})
-// run async
-.run({async: false});
+suite
+  .on('cycle', function (event) {
+    console.log(String(event.target));
+  })
+  .on('complete', function () {
+    console.log('Fastest is ' + this.filter('fastest').map('name'));
+  })
+  // run async
+  .run({ async: false });
