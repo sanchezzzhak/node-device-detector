@@ -100,7 +100,7 @@ class DeviceDetector {
       true,
     );
   
-    this.fileIndexesDevice = this.skipBotDetection = helper.getPropertyValue(
+    this.fileIndexesDevice = helper.getPropertyValue(
       options,
       'fileIndexesDevice',
       null,
