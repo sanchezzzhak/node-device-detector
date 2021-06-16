@@ -339,9 +339,47 @@ function normalizationFixture(fixture) {
   }
 }
 
-
 describe('tests devices fixtures', function () {
   this.timeout(TIMEOUT);
+  
+  const runTest = (result, fixture) => {
+    let messageError = 'fixture data\n' + perryJSON(fixture);
+    if(result.client) {
+      delete result.client.short_name;
+      if(fixture.browser_family !== void 0) {
+        result.browser_family = result.client.family;
+      }
+      delete result.client.family;
+      if(fixture.browser_family === 'Unknown' && result.browser_family === '') {
+        result.browser_family = 'Unknown';
+      }
+      if(fixture.browser_family === 'Unknown') {
+        result.browser_family = fixture.browser_family;
+      }
+      
+    }
+    let regex;
+    if(result.device) {
+      delete result.device.id;
+      regex = result.device.regex;
+      delete result.device.regex;
+    }
+    
+    if(result.os.family !== void 0) {
+      result.os_family = result.os.family;
+      delete result.os.family;
+      delete result.os.short_name;
+    }
+    if(fixture.os_family === 'Unknown' && result.os_family === void 0) {
+      result.os_family = fixture.os_family;
+    }
+    
+    expect(fixture, `${messageError} device regex: ${regex}`).to.deep.equal(result);
+    if(result.device) {
+      result.device.regex = regex;
+    }
+  }
+  
   ymlDeviceFiles.forEach(function (file) {
     if (excludeFilesNames.indexOf(file) !== -1) {
       return;
@@ -349,50 +387,35 @@ describe('tests devices fixtures', function () {
     describe('file fixture ' + file, function () {
       let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
       let total = fixtureData.length;
-      //fixtureData= [  fixtureData[208] ];
-      fixtureData.forEach((fixture, pos) => {
-        it(pos + '/' + total, function () {
+      
+      describe('not used indexes', () => {
+        fixtureData.forEach((fixture, pos) => {
           normalizationFixture(fixture);
-
-          let result = detector.detect(fixture.user_agent);
-          result.user_agent = fixture.user_agent;
-          let messageError = 'fixture data\n' + perryJSON(fixture);
-          perryTable(fixture, result);
-
-
-          if(result.client) {
-            delete result.client.short_name;
-            if(fixture.browser_family !== void 0) {
-              result.browser_family = result.client.family;
-            }
-            delete result.client.family;
-            if(fixture.browser_family === 'Unknown' && result.browser_family === '') {
-              result.browser_family = 'Unknown';
-            }
-            if(fixture.browser_family === 'Unknown') {
-              result.browser_family = fixture.browser_family;
-            }
-
-          }
-          if(result.device) {
-              delete result.device.id;
-              delete result.device.regex;
-          }
-
-          if(result.os.family !== void 0) {
-            result.os_family = result.os.family;
-            delete result.os.family;
-            delete result.os.short_name;
-          }
-          if(fixture.os_family === 'Unknown' && result.os_family === void 0) {
-            result.os_family = fixture.os_family;
-          }
-
-          expect(fixture, `${messageError}`).to.deep.equal(result);
-
-          testsFromFixtureDeviceMobile(result);
+          it(pos + '/' + total, function () {
+            detector.discardDeviceIndexes = true;
+            let result = detector.detect(fixture.user_agent);
+            result.user_agent = fixture.user_agent;
+            perryTable(fixture, result);
+            runTest(result, fixture);
+      
+            testsFromFixtureDeviceMobile(result);
+          });
         });
       });
+      // =====
+      describe('used indexes', () => {
+        fixtureData.forEach((fixture, pos) => {
+          normalizationFixture(fixture);
+          it(pos + '/' + total, function () {
+            detector.discardDeviceIndexes = false;
+            let result = detector.detect(fixture.user_agent);
+            result.user_agent = fixture.user_agent;
+            perryTable(fixture, result);
+            runTest(result, fixture);
+          });
+        });
+      });
+      // =====
     });
   });
 });
