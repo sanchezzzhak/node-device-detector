@@ -39,30 +39,6 @@ ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
 ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 ymlDeviceInfoFiles = fs.readdirSync(fixtureFolder + 'devices-info/');
 
-function testsFromFixtureBot(fixture) {
-  detector.skipBotDetection = false;
-  let result = detector.parseBot(fixture.user_agent);
-  perryTable(fixture, result);
-
-  let messageError = 'fixture data\n' + perryJSON(fixture);
-
-  if (isObjNotEmpty(fixture.bot.name)) {
-    expect(fixture.bot.name, messageError).to.equal(result.name);
-  }
-
-  if (isObjNotEmpty(fixture.bot.category)) {
-    expect(fixture.bot.category, messageError).to.equal(result.category);
-  }
-  if (isObjNotEmpty(fixture.bot.url)) {
-    expect(fixture.bot.url, messageError).to.equal(result.url);
-  }
-  if (isObjNotEmpty(fixture.bot.producer)) {
-    expect(fixture.bot.producer, messageError).to.have.deep.equal(
-      result.producer
-    );
-  }
-}
-
 const DATA_DEVICE_INFO = YAMLLoad(
   __dirname + '/../regexes/device-info/device.yml'
 );
@@ -70,109 +46,6 @@ const DATA_DEVICE_MOBILES = YAMLLoad(
   __dirname + '/../regexes/device/mobiles.yml'
 );
 
-/**
- * @param fixture
- */
-function testsFromFixtureAliasDevice(fixture) {
-  let result;
-  result = aliasDevice.parse(fixture.user_agent);
-  perryTable(fixture, result);
-  let messageError = 'fixture data\n' + perryJSON(fixture);
-  expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
-}
-
-function testsFromFixtureDeviceInfo(brand, model, rawSource) {
-  infoDevice.setSizeConvertObject(true);
-  infoDevice.setResolutionConvertObject(true);
-  let result = infoDevice.info(brand, model);
-
-  if (result === null) {
-    expect(rawSource !== void 0).to.equal(true);
-    return;
-  }
-
-  let patternNumber = /^[0-9\.]+$/i;
-  let patternFloat = /^[0-9\.]+$/i;
-  let patternRatio = /^[0-9\.]+:[0-9\.]+$/i;
-  let patternYear = /^([0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$/i;
-
-  let formatMessageFloat = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+$ result: ${perryJSON(
-    result
-  )}`;
-  let formatMessageRatio = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
-    result
-  )}`;
-  let formatMessageNumber = `brand (${brand})  model (${model}) value does not match format ^[0-9]+$  result: ${perryJSON(
-    result
-  )}`;
-  let formatMessageYear = `brand (${brand})  model (${model}) value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
-    result
-  )}`;
-
-  if (result.display) {
-    if (result.display.size) {
-      expect(
-        result.display.size,
-        'display.size(DS) ' + formatMessageFloat
-      ).to.match(patternFloat);
-    }
-    if (result.display.resolution) {
-      expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
-      expect(
-        result.display.resolution.width,
-        'display.width(RS) ' + formatMessageFloat
-      ).to.match(patternFloat);
-      expect(
-        result.display.resolution.height,
-        'display.height(RS) ' + formatMessageFloat
-      ).to.match(patternFloat);
-      expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
-    }
-  }
-  if (result.size) {
-    expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(
-      patternFloat
-    );
-    expect(
-      result.size.height,
-      'size.height(SZ) ' + formatMessageFloat
-    ).to.match(patternFloat);
-    expect(
-      result.size.thickness,
-      'size.thickness(SZ) ' + formatMessageFloat
-    ).to.match(patternFloat);
-  }
-
-  if (result.weight !== void 0 && result.weight !== '') {
-    expect(result.weight, formatMessageFloat).to.match(patternFloat);
-  }
-  if (result.release !== void 0 && result.release !== '') {
-    expect(result.release, formatMessageYear).to.match(patternYear);
-  }
-  if (result.sim !== void 0) {
-    expect(result.sim, formatMessageNumber).to.match(patternNumber);
-  }
-
-  if (result.hardware !== void 0) {
-    if (result.hardware.ram) {
-      expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
-    }
-
-    if (result.hardware.cpu_id) {
-      expect(result.hardware.cpu_id, formatMessageNumber).to.match(
-        patternNumber
-      );
-      expect(result.hardware.cpu).to.property('name');
-      expect(result.hardware.cpu).to.property('type');
-      expect(result.hardware.cpu).to.property('cores');
-      expect(result.hardware.cpu).to.property('clock_rate');
-    }
-    if (result.hardware.gpu !== void 0) {
-      expect(result.hardware.gpu).to.property('name');
-      expect(result.hardware.gpu).to.property('clock_rate');
-    }
-  }
-}
 
 function testsFromFixtureDeviceMobile(fixture) {
   // test device data
@@ -205,138 +78,6 @@ function testsFromFixtureDeviceMobile(fixture) {
   }
 }
 
-/**
- * @param result
- * @param fixture
- */
-function testsFromFixtureDevice(result, fixture) {
-  perryTable(fixture, result);
-
-  let messageError = 'fixture data\n' + perryJSON(fixture);
-  // test device data
-  if (isObjNotEmpty(fixture.device)) {
-    if (isObjNotEmpty(fixture.device.model)) {
-      expect(
-        null,
-        `wrong type for result, must be object {}, ${messageError}`
-      ).to.not.equal(result.device);
-      expect(
-        String(fixture.device.model),
-        `Device model name is detect incorrectly, ${messageError}`
-      ).to.equal(result.device.model);
-    }
-
-    if (isObjNotEmpty(fixture.device.type)) {
-      expect(
-        String(fixture.device.type),
-        `Device type name is detect incorrectly, ${messageError}`
-      ).to.equal(result.device.type);
-    }
-
-    if (isObjNotEmpty(fixture.device.brand)) {
-      expect(
-        String(fixture.device.brand),
-        `Device brand name is detect incorrectly, ${messageError}`
-      ).to.equal(result.device.brand);
-
-      if (fixture.device.brand !== '') {
-        expect(
-          collectionBrand[result.device.brand] !== void 0,
-          `Device brand name not added to brands list, ${messageError}`
-        ).to.equal(true);
-      }
-    }
-  }
-
-  // test os data
-  if (isObjNotEmpty(fixture.os)) {
-    if (isObjNotEmpty(fixture.os.name)) {
-      expect(
-        fixture.os.name,
-        `Device os name is detect incorrectly, ${messageError}`
-      ).to.equal(result.os.name);
-    }
-
-    if (isObjNotEmpty(fixture.os.short_name)) {
-      expect(
-        fixture.os.short_name,
-        `Device os short name is detect incorrectly, ${messageError}`
-      ).to.equal(result.os.short_name);
-
-      expect(
-        fixture.os.family,
-        `Device os family name is detect incorrectly, ${messageError}`
-      ).to.equal(result.os.family);
-
-      expect(
-        collectionOs[result.os.name] !== void 0,
-        `Device os family not added to OsFamily list, ${messageError}`
-      ).to.equal(true);
-    }
-
-    if (isObjNotEmpty(fixture.os.version)) {
-      expect(
-        String(fixture.os.version),
-        `Device os version is detect incorrectly, ${messageError}`
-      ).to.equal(String(result.os.version));
-    }
-
-    if (isObjNotEmpty(fixture.os.platform)) {
-      expect(
-        fixture.os.platform,
-        `Device os platform is detect incorrectly, ${messageError}`
-      ).to.equal(result.os.platform);
-    }
-  }
-
-  // test client data
-  if (isObjNotEmpty(fixture.client)) {
-    if (fixture.client.version === null) {
-      fixture.client.version = '';
-    }
-    expect(fixture.client.name, messageError).to.equal(result.client.name);
-    expect(fixture.client.type, messageError).to.equal(result.client.type);
-
-    if (
-      result.client.short_name !== void 0 &&
-      fixture.client.type === 'browser'
-    ) {
-      expect(
-        collectionBrowser[result.client.name] !== void 0,
-        `Device client short name not added to client list, ${messageError}`
-      ).to.equal(true);
-      // is Unknown browser_family then string empty
-      if (fixture.browser_family === 'Unknown') {
-        fixture.browser_family = '';
-      }
-      expect(
-        fixture.browser_family,
-        `Device os family name is detect incorrectly, ${messageError}`
-      ).to.equal(result.client.family);
-    }
-
-    if (isObjNotEmpty(fixture.client.engine)) {
-      expect(
-        String(fixture.client.engine),
-        `Device client engine is detect incorrectly, ${messageError}`
-      ).to.equal(result.client.engine);
-    }
-
-    if (isObjNotEmpty(fixture.client.engine_version)) {
-      expect(
-        String(fixture.client.engine_version),
-        `Device client engine version is detect incorrectly, ${messageError}`
-      ).to.equal(result.client.engine_version);
-    }
-
-    testVersionAndSkip.call(
-      this,
-      result.client.version,
-      fixture.client.version,
-      messageError
-    );
-  }
-}
 
 function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
   try {
@@ -357,93 +98,6 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
       throw new SyntaxError(e.stack);
     }
   }
-}
-
-function testsFromFixtureVersionTruncate(fixture) {
-  let result = detector.detect(fixture.user_agent);
-  let osVersion = helper.versionTruncate(result.os.version, fixture.set);
-  let clientVersion = helper.versionTruncate(
-    result.client.version,
-    fixture.set
-  );
-  let messageError = 'fixture data\n' + perryJSON(fixture);
-  expect(String(osVersion), messageError).to.equal(fixture.os_version);
-  expect(String(clientVersion), messageError).to.equal(fixture.client_version);
-}
-
-function testsFromFixtureVendorFragment(fixture) {
-  let result = detector.detect(fixture.useragent);
-  let messageError = 'fixture data\n' + perryJSON(fixture);
-  expect(result.device.brand, messageError).to.equal(fixture.vendor);
-  expect(result.device.id !== '', messageError).to.equal(true);
-}
-
-function testsFromFixtureOss(fixture) {
-  let result = detector.detect(fixture.user_agent);
-  let messageError = 'fixture data\n' + perryJSON(fixture);
-  // test os data
-  if (isObjNotEmpty(fixture.os.name)) {
-    expect(fixture.os.name, messageError).to.equal(result.os.name);
-  }
-  if (isObjNotEmpty(fixture.os.short_name)) {
-    expect(fixture.os.short_name, messageError).to.equal(result.os.short_name);
-  }
-  if (isObjNotEmpty(fixture.os.platform)) {
-    expect(fixture.os.platform, messageError).to.equal(result.os.platform);
-  }
-  if (isObjNotEmpty(fixture.os.version)) {
-    testVersionAndSkip.call(
-      this,
-      result.os.version,
-      fixture.os.version,
-      messageError
-    );
-  }
-}
-
-function testsFromFixtureClient(fixture) {
-  let result = detector.detect(fixture.user_agent);
-  perryTable(fixture, result);
-
-  // fix values fixture null
-  if (!result.client.version && fixture.client.version === null) {
-    result.client.version = fixture.client.version;
-  }
-
-  if (!result.client.engine_version && fixture.client.engine_version === null) {
-    result.client.engine_version = fixture.client.engine_version;
-  }
-
-  if (!result.client.engine && fixture.client.engine === null) {
-    result.client.engine = fixture.client.engine;
-  }
-
-  // fix version fixture
-  if (
-    fixture.client.version !== null &&
-    typeof fixture.client.version === 'number'
-  ) {
-    fixture.client.version = normalizeVersion(
-      String(fixture.client.version),
-      2
-    );
-  }
-
-  // fix fixture is short_name numeric
-  if (fixture.client.short_name && isFinite(fixture.client.short_name)) {
-    fixture.client.short_name = String(fixture.client.short_name);
-  }
-
-  // copy family to fixture check
-  // fixture.client.family = result.client.family;
-
-  expect(result.client.short_name).to.not.equal('UNK');
-  if (fixture.client.family) {
-    expect(result.client.family).to.equal(fixture.client.family);
-  }
-  expect(result.client.type).to.equal(fixture.client.type);
-  expect(result.client.name).to.equal(fixture.client.name);
-  expect(result.client.version).to.equal(fixture.client.version);
 }
 
 function checkRegexRuleForDoubleOr(regex) {
@@ -575,7 +229,47 @@ describe('tests clients fixtures', function () {
       //fixtureData= [  fixtureData[208] ];
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function () {
-          testsFromFixtureClient.call(this, fixture);
+          let result = detector.detect(fixture.user_agent);
+          perryTable(fixture, result);
+
+          // fix values fixture null
+          if (!result.client.version && fixture.client.version === null) {
+            result.client.version = fixture.client.version;
+          }
+
+          if (!result.client.engine_version && fixture.client.engine_version === null) {
+            result.client.engine_version = fixture.client.engine_version;
+          }
+
+          if (!result.client.engine && fixture.client.engine === null) {
+            result.client.engine = fixture.client.engine;
+          }
+
+          // fix version fixture
+          if (
+            fixture.client.version !== null &&
+            typeof fixture.client.version === 'number'
+          ) {
+            fixture.client.version = normalizeVersion(
+              String(fixture.client.version),
+              2
+            );
+          }
+
+          // fix fixture is short_name numeric
+          if (fixture.client.short_name && isFinite(fixture.client.short_name)) {
+            fixture.client.short_name = String(fixture.client.short_name);
+          }
+
+          // copy family to fixture check
+          // fixture.client.family = result.client.family;
+          expect(result.client.short_name).to.not.equal('UNK');
+          if (fixture.client.family) {
+            expect(result.client.family).to.equal(fixture.client.family);
+          }
+          expect(result.client.type).to.equal(fixture.client.type);
+          expect(result.client.name).to.equal(fixture.client.name);
+          expect(result.client.version).to.equal(fixture.client.version);
         });
       });
     });
@@ -587,11 +281,30 @@ describe('tests bots', function () {
   describe('file fixture ' + file, function () {
     let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
     let total = fixtureData.length;
-    fixtureData = [fixtureData[85]];
 
     fixtureData.forEach((fixture, pos) => {
       it(pos + '/' + total, function () {
-        testsFromFixtureBot.call(this, fixture);
+        detector.skipBotDetection = false;
+        let result = detector.parseBot(fixture.user_agent);
+
+        perryTable(fixture, result);
+        let messageError = 'fixture data\n' + perryJSON(fixture);
+
+        if (isObjNotEmpty(fixture.bot.name)) {
+          expect(fixture.bot.name, messageError).to.equal(result.name);
+        }
+
+        if (isObjNotEmpty(fixture.bot.category)) {
+          expect(fixture.bot.category, messageError).to.equal(result.category);
+        }
+        if (isObjNotEmpty(fixture.bot.url)) {
+          expect(fixture.bot.url, messageError).to.equal(result.url);
+        }
+        if (isObjNotEmpty(fixture.bot.producer)) {
+          expect(fixture.bot.producer, messageError).to.have.deep.equal(
+            result.producer
+          );
+        }
       });
     });
   });
@@ -604,10 +317,28 @@ describe('tests alias devices fixtures', function () {
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      testsFromFixtureAliasDevice.call(this, fixture);
+
+      let result = aliasDevice.parse(fixture.user_agent);
+      perryTable(fixture, result);
+      let messageError = 'fixture data\n' + perryJSON(fixture);
+      expect(fixture.alias.name, messageError).to.have.deep.equal(result.name);
+
     });
   });
 });
+
+function normalizationFixture(fixture) {
+  if(fixture.client === null) {
+    fixture.client = {};
+  }
+  if(fixture.os === null || Array.isArray(fixture.os)) {
+    fixture.os = {};
+  }
+  if(fixture.os !== void 0 && fixture.os.platform === null) {
+    fixture.os.platform = "";
+  }
+}
+
 
 describe('tests devices fixtures', function () {
   this.timeout(TIMEOUT);
@@ -621,14 +352,51 @@ describe('tests devices fixtures', function () {
       //fixtureData= [  fixtureData[208] ];
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function () {
+          normalizationFixture(fixture);
+
           let result = detector.detect(fixture.user_agent);
-          testsFromFixtureDevice.call(this, result, fixture);
-          testsFromFixtureDeviceMobile.call(this, result);
+          result.user_agent = fixture.user_agent;
+          let messageError = 'fixture data\n' + perryJSON(fixture);
+          perryTable(fixture, result);
+
+
+          if(result.client) {
+            delete result.client.short_name;
+            if(fixture.browser_family !== void 0) {
+              result.browser_family = result.client.family;
+            }
+            delete result.client.family;
+            if(fixture.browser_family === 'Unknown' && result.browser_family === '') {
+              result.browser_family = 'Unknown';
+            }
+            if(fixture.browser_family === 'Unknown') {
+              result.browser_family = fixture.browser_family;
+            }
+
+          }
+          if(result.device) {
+              delete result.device.id;
+              delete result.device.regex;
+          }
+
+          if(result.os.family !== void 0) {
+            result.os_family = result.os.family;
+            delete result.os.family;
+            delete result.os.short_name;
+          }
+          if(fixture.os_family === 'Unknown' && result.os_family === void 0) {
+            result.os_family = fixture.os_family;
+          }
+
+          expect(fixture, `${messageError}`).to.deep.equal(result);
+
+          testsFromFixtureDeviceMobile(result);
         });
       });
     });
   });
 });
+
 
 describe('tests devices info', function () {
   this.timeout(TIMEOUT);
@@ -673,7 +441,98 @@ describe('tests devices info', function () {
     for (let model in DATA_DEVICE_INFO[brand]) {
       let rawSource = DATA_DEVICE_INFO[brand][model];
       it(brand + ' - ' + model, () => {
-        testsFromFixtureDeviceInfo.call(this, brand, model, rawSource);
+
+
+        infoDevice.setSizeConvertObject(true);
+        infoDevice.setResolutionConvertObject(true);
+        let result = infoDevice.info(brand, model);
+
+        if (result === null) {
+          expect(rawSource !== void 0).to.equal(true);
+          return;
+        }
+
+        let patternNumber = /^[0-9\.]+$/i;
+        let patternFloat = /^[0-9\.]+$/i;
+        let patternRatio = /^[0-9\.]+:[0-9\.]+$/i;
+        let patternYear = /^([0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$/i;
+
+        let formatMessageFloat = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+$ result: ${perryJSON(
+          result
+        )}`;
+        let formatMessageRatio = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
+          result
+        )}`;
+        let formatMessageNumber = `brand (${brand})  model (${model}) value does not match format ^[0-9]+$  result: ${perryJSON(
+          result
+        )}`;
+        let formatMessageYear = `brand (${brand})  model (${model}) value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
+          result
+        )}`;
+
+        if (result.display) {
+          if (result.display.size) {
+            expect(
+              result.display.size,
+              'display.size(DS) ' + formatMessageFloat
+            ).to.match(patternFloat);
+          }
+          if (result.display.resolution) {
+            expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
+            expect(
+              result.display.resolution.width,
+              'display.width(RS) ' + formatMessageFloat
+            ).to.match(patternFloat);
+            expect(
+              result.display.resolution.height,
+              'display.height(RS) ' + formatMessageFloat
+            ).to.match(patternFloat);
+            expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
+          }
+        }
+        if (result.size) {
+          expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(
+            patternFloat
+          );
+          expect(
+            result.size.height,
+            'size.height(SZ) ' + formatMessageFloat
+          ).to.match(patternFloat);
+          expect(
+            result.size.thickness,
+            'size.thickness(SZ) ' + formatMessageFloat
+          ).to.match(patternFloat);
+        }
+
+        if (result.weight !== void 0 && result.weight !== '') {
+          expect(result.weight, formatMessageFloat).to.match(patternFloat);
+        }
+        if (result.release !== void 0 && result.release !== '') {
+          expect(result.release, formatMessageYear).to.match(patternYear);
+        }
+        if (result.sim !== void 0) {
+          expect(result.sim, formatMessageNumber).to.match(patternNumber);
+        }
+
+        if (result.hardware !== void 0) {
+          if (result.hardware.ram) {
+            expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
+          }
+
+          if (result.hardware.cpu_id) {
+            expect(result.hardware.cpu_id, formatMessageNumber).to.match(
+              patternNumber
+            );
+            expect(result.hardware.cpu).to.property('name');
+            expect(result.hardware.cpu).to.property('type');
+            expect(result.hardware.cpu).to.property('cores');
+            expect(result.hardware.cpu).to.property('clock_rate');
+          }
+          if (result.hardware.gpu !== void 0) {
+            expect(result.hardware.gpu).to.property('name');
+            expect(result.hardware.gpu).to.property('clock_rate');
+          }
+        }
       });
     }
   }
@@ -702,7 +561,10 @@ describe('tests vendor fragment', function () {
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      testsFromFixtureVendorFragment.call(this, fixture);
+      let result = detector.detect(fixture.useragent);
+      let messageError = 'fixture data\n' + perryJSON(fixture);
+      expect(result.device.brand, messageError).to.equal(fixture.vendor);
+      expect(result.device.id !== '', messageError).to.equal(true);
     });
   });
 });
@@ -712,8 +574,29 @@ describe('tests oss', function () {
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      testsFromFixtureOss.call(this, fixture);
+
+      let result = detector.detect(fixture.user_agent);
+      let messageError = 'fixture data\n' + perryJSON(fixture);
+      // test os data
+      if (isObjNotEmpty(fixture.os.name)) {
+        expect(fixture.os.name, messageError).to.equal(result.os.name);
+      }
+      if (isObjNotEmpty(fixture.os.short_name)) {
+        expect(fixture.os.short_name, messageError).to.equal(result.os.short_name);
+      }
+      if (isObjNotEmpty(fixture.os.platform)) {
+        expect(fixture.os.platform, messageError).to.equal(result.os.platform);
+      }
+      if (isObjNotEmpty(fixture.os.version)) {
+        testVersionAndSkip.call(
+          this,
+          result.os.version,
+          fixture.os.version,
+          messageError
+        );
+      }
     });
+
   });
 });
 
@@ -722,7 +605,15 @@ describe('tests version truncate', function () {
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      testsFromFixtureVersionTruncate.call(this, fixture);
+      let result = detector.detect(fixture.user_agent);
+      let osVersion = helper.versionTruncate(result.os.version, fixture.set);
+      let clientVersion = helper.versionTruncate(
+        result.client.version,
+        fixture.set
+      );
+      let messageError = 'fixture data\n' + perryJSON(fixture);
+      expect(String(osVersion), messageError).to.equal(fixture.os_version);
+      expect(String(clientVersion), messageError).to.equal(fixture.client_version);
     });
   });
 });

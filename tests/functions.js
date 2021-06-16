@@ -2,12 +2,15 @@ const fs = require('fs');
 const Table = require('cli-table');
 const YAML = require('js-yaml');
 
+function hasEnvDebug() {
+  return (process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true');
+}
 /**
  * @param fixture
  * @param result
  */
 function perryTable(fixture, result) {
-  if (!(process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true')) {
+  if (!hasEnvDebug()) {
     return;
   }
 

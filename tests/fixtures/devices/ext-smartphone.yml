@@ -85,14 +85,12 @@
     name: Android
     version: 8.0.0
     platform: ''
-    family: Android
   client:
     type: browser
     name: Chrome Mobile
     version: 76.0.3809.132
     engine: Blink
     engine_version: ''
-    family: Chrome
   device:
     type: smartphone
     brand: Asus
