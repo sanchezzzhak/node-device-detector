@@ -28,7 +28,7 @@ ymlDeviceFiles.forEach((file) => {
     let result = aliasDevice.parse(fixture.user_agent);
     let deviceCode = result.name ? result.name : void 0;
     if (deviceCode !== void 0) {
-      let infos = parserDevice.parseAllMatch(fixture.user_agent);
+      let infos = parserDevice.parseAll(fixture.user_agent);
       if (infos.length) {
         let result = [];
         for (let info of infos) {

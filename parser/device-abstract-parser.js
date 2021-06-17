@@ -21,12 +21,11 @@ class DeviceParserAbstract extends ParserAbstract {
   }
 
   /**
-   * Result all brands and models
-   * @param userAgent
-   * @param brandIndexes
+   * @param {string} userAgent
+   * @param {array} brandIndexes
    * @returns {[]}
    */
-  parseAllMatch(userAgent, brandIndexes = []) {
+  parseAll(userAgent, brandIndexes = []) {
     return this.__parse(userAgent, false, brandIndexes);
   }
 
@@ -37,7 +36,7 @@ class DeviceParserAbstract extends ParserAbstract {
    * @returns {{model: *, id: *, type, brand}|null}
    * @private
    */
-  parseForBrand(cursor, userAgent) {
+  __parseForBrand(cursor, userAgent) {
     let model = '';
     let deviceType = '';
     let brandName = '';
@@ -105,7 +104,7 @@ class DeviceParserAbstract extends ParserAbstract {
     let output = [];
     if (brandIndexes.length) {
       for (let cursor of brandIndexes) {
-        let result = this.parseForBrand(cursor, userAgent);
+        let result = this.__parseForBrand(cursor, userAgent);
         if (result === null) {
           continue;
         }
@@ -116,7 +115,7 @@ class DeviceParserAbstract extends ParserAbstract {
 
     if (!output.length) {
       for (let cursor in this.collection) {
-        let result = this.parseForBrand(cursor, userAgent);
+        let result = this.__parseForBrand(cursor, userAgent);
         if (result === null) {
           continue;
         }
@@ -130,7 +129,8 @@ class DeviceParserAbstract extends ParserAbstract {
 
   /**
    * Result brand and model
-   * @param {string} userAgent
+   * @param {string} userAgent    - useragent string
+   * @param {array} brandIndexes  - check the devices in this list
    * @returns {{model: (string|string), id: (*|string), type: string, brand: string}|null}
    */
   parse(userAgent, brandIndexes = []) {
@@ -141,18 +141,14 @@ class DeviceParserAbstract extends ParserAbstract {
     return null;
   }
 
+  /**
+   * get brand short id by name
+   * @param {string} brandName
+   * @returns {string|void}
+   */
   getBrandIdByName(brandName) {
     return COLLECTION_BRAND_LIST[brandName];
   }
 }
-
-/*
-  
-    let deviceCode = aliasDevice.parse(userAgent);
-    if(deviceCode.name) {
-      let hashBrands = DEVICE_INDEX_HASH[deviceCode.name];
- 
-    }
- */
 
 module.exports = DeviceParserAbstract;
