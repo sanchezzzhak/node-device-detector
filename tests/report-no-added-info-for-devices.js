@@ -16,7 +16,7 @@ let ymlDeviceInfo = YAMLLoad(__dirname + '/../regexes/device-info/device.yml');
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let fixtureFolder = __dirname + '/fixtures/';
-ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
+let ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 const report = {};
 const appendReport = (brand, name, code) => {
