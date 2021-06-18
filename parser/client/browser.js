@@ -12,15 +12,15 @@ class Browser extends ClientAbstractParser {
     this.fixtureFile = 'client/browsers.yml';
     this.loadCollection();
   }
-  
+
   getCollectionBrowsers() {
     return BROWSER_SHORT;
   }
-  
-  getAvailableBrowsers(){
-    return Object.keys(this.getCollectionBrowsers())
+
+  getAvailableBrowsers() {
+    return Object.keys(this.getCollectionBrowsers());
   }
-  
+
   loadCollection() {
     super.loadCollection();
     this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
@@ -165,7 +165,7 @@ class Browser extends ClientAbstractParser {
   buildShortName(name) {
     const UNKNOWN = 'UNK';
     let result = this.getCollectionBrowsers()[name];
-    if(result !== void 0) {
+    if (result !== void 0) {
       return result;
     }
     return UNKNOWN;

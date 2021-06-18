@@ -1261,7 +1261,7 @@ cpu:
     gpu_id: 20
   214:
     name: Qualcomm Snapdragon 450
-    # SD450
+    # SD450, SMD450
     type: ARM
     clock_rate: 1800
     cores: 8
@@ -1374,3 +1374,92 @@ cpu:
     cores: 8
     clock_rate: 2600
     gpu_id: 75
+  233:
+    name: Samsung Exynos 4412 Quad
+    type: ARM
+    cores: 4
+    clock_rate: 1400
+    gpu_id: 44
+  234:
+    name: Qualcomm Snapdragon 855
+    # SDM855
+    type: ARM
+    cores: 8
+    clock_rate: 2840
+    gpu_id: 81
+  235:
+    name: Broadcom BCM28155
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+  236:
+    name: Broadcom BCM23550
+    type: ARM
+    cores: 2
+    clock_rate: 1200
+  237:
+    name: Samsung Exynos 7904
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 40
+  238:
+    name: Spreadtrum SC7730
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
+  239:
+    name: Samsung Exynos 4415
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    gpu_id: 1
+  240:
+    name: Samsung Exynos 4210
+    type: ARM
+    cores: 1
+    clock_rate: 1400
+    gpu_id: 62
+  241:
+    name: Samsung Exynos 9810
+    type: ARM
+    cores: 8
+    clock_rate: 2900
+    gpu_id: 90
+  242:
+    name: Qualcomm Snapdragon 765G
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    gpu_id: 91
+  243:
+    name: Qualcomm Snapdragon 801 MSM8974AC
+    type: ARM
+    cores: 4
+    clock_rate: 2450
+    gpu_id: 65
+  244:
+    name: Qualcomm Snapdragon 460
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    gpu_id: 92
+  245:
+    name: AllWinner A10
+    type: ARM
+    clock_rate: 1200
+    cores: 1
+    gpu_id: 62
+  246:
+    name: MediaTek MT6515
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+    gpu_id: 48
+  247:
+    name: MediaTek MT6737W
+    type: ARM
+    clock_rate: 1300
+    cores: 4
+    gpu_id: 2

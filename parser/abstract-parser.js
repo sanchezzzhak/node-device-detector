@@ -1,7 +1,4 @@
-const YAML = require('js-yaml');
 const helper = require('./helper');
-const fs = require('fs');
-
 const BASE_REGEXES_DIR = __dirname + '/../regexes/';
 
 /**
@@ -37,12 +34,11 @@ class ParserAbstract {
   }
 
   /**
-   *
-   * @param file
-   * @return {*}
+   * @param {string} file
+   * @returns {*}
    */
   loadYMLFile(file) {
-    return YAML.safeLoad(fs.readFileSync(BASE_REGEXES_DIR + file, 'utf8'));
+    return helper.loadYMLFile(BASE_REGEXES_DIR + file);
   }
 
   /**
