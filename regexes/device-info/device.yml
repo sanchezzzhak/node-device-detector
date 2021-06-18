@@ -2838,6 +2838,24 @@ black fox:
   s4035 3g: ''
   s4035 4g: ''
 
+# colors
+colors:
+  pride 5c: 'DS=5;RS=480x960;RM=1024;SM=2;OS=Android 8;RE=2018.08;'
+  p52 pride5c: '->pride 5c'
+  pride 5x: 'DS=5.5;'
+  p90 pride5x: '->pride 5x'
+  s9: 'DS=5.2;RS=720x1280;SM=2;OS=Android 7.0;CP=9;RM=2048;'
+  s11: 'DS=5.2;RS=720x1280;SZ=72.9x148.4x7.85;SM=2;OS=Android 7.0;CP=9;RM=3072;'
+  s1: 'DS=5.5;RS=720x1280;OS=Android 7.0;CP=4;RM=1024;SM=2;'
+  p70: 'DS=5;RS=720x1280;OS=Android 7.0;RM=2048;CP=9;'
+  p65: ''
+  p50 plus: ''
+  p45: ''
+  pride 1a: 'DS=4;WT=183;RM=512;'
+  e15: ''
+  p55: ''
+  p32: ''
+
 # Huawei
 huawei:
   4afrika: 'DS=4;RS=480x800;SZ=63.7x124.5x10.5;WT=130;RE=2013.02;RM=512;CP=212;OS=Windows Phone 8;'

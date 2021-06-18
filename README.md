@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 15/06/2021_
+_Last update: 18/06/2021_
 
 ## Description
 
@@ -213,7 +213,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (759 devices, alias devices 1938)
+> This parser is experimental and contains few devices. (771 devices, alias devices 1940)
 >
 ##### Support detail brands/models list:
 
@@ -265,9 +265,10 @@ is not parse result  {name: ""}
 | bitel | 4 | 1 | - | bitmore | 2 | 1 |
 | bkav | 1 | 0 | - | black bear | 2 | 0 |
 | black fox | 18 | 12 | - | blackview | 15 | 9 |
-| bravis | 24 | 17 | - | engel | 1 | 1 |
-| firefly mobile | 4 | 1 | - | formuler | 2 | 0 |
-| geotel | 3 | 0 | - | huawei | 221 | 576 |
+| bravis | 24 | 17 | - | colors | 7 | 2 |
+| engel | 1 | 1 | - | firefly mobile | 4 | 1 |
+| formuler | 2 | 0 | - | geotel | 3 | 0 |
+| huawei | 221 | 576 | - | imo mobile | 5 | 0 |
 | ipro | 4 | 7 | - | oneplus | 18 | 48 |
 | öwn | 1 | 2 | - | panasonic | 4 | 8 |
 | samsung | 32 | 103 | - | tiphone | 1 | 0 |

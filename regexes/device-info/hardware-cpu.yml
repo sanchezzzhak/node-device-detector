@@ -1457,3 +1457,9 @@ cpu:
     clock_rate: 1000
     cores: 1
     gpu_id: 48
+  247:
+    name: MediaTek MT6737W
+    type: ARM
+    clock_rate: 1300
+    cores: 4
+    gpu_id: 2
