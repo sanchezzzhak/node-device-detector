@@ -19,7 +19,8 @@ const OsParser = require('./parser/os-abstract-parser');
 // bot parsers
 const BotParser = require('./parser/bot-abstract-parser');
 // vendor fragment parsers
-const VendorFragmentParser = require('./parser/vendor-fragment-abstract-parser');
+const VendorFragmentParser = require(
+  './parser/vendor-fragment-abstract-parser');
 
 const AliasDevice = require('./parser/device/alias-device');
 
@@ -97,14 +98,14 @@ class DeviceDetector {
       'discardDeviceIndexes',
       true
     );
-
+    
     this.filePathDeviceIndexes = helper.getPropertyValue(
       options,
       'filePathDeviceIndexes',
       null
     );
   }
-
+  
   init() {
     this.addParseOs(OS_PARSER, new OsParser());
     this.addParseClient(CLIENT_PARSER.FEED_READER, new FeedReader());
@@ -120,154 +121,182 @@ class DeviceDetector {
     this.addParseDevice(DEVICE_PARSER.CAMERA, new Camera());
     this.addParseDevice(
       DEVICE_PARSER.PORTABLE_MEDIA_PLAYER,
-      new PortableMediaPlayer()
+      new PortableMediaPlayer(),
     );
     this.addParseDevice(DEVICE_PARSER.MOBILE, new MobileParser());
     this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser());
     this.addParseBot(BOT_PARSER, new BotParser());
   }
-
+  
   get skipBotDetection() {
     return this.__discardBotDetection;
   }
-
+  
   set skipBotDetection(value) {
     this.__discardBotDetection = value;
   }
-
+  
   get discardDeviceIndexes() {
     return this.__discardDeviceIndexes;
   }
-
+  
   set discardDeviceIndexes(discard) {
     this.__discardDeviceIndexes = discard;
   }
-
+  
   set clientVersionTruncate(value) {
     this.__clientVersionTruncate = value;
     for (let name in this.clientParserList) {
       this.clientParserList[name].setVersionTruncation(value);
     }
   }
-
+  
   get clientVersionTruncate() {
     return this.__clientVersionTruncate;
   }
-
+  
   set osVersionTruncate(value) {
     this.__osVersionTruncate = value;
     for (let name in this.osParserList) {
       this.osParserList[name].setVersionTruncation(value);
     }
   }
-
+  
   get osVersionTruncate() {
     return this.__osVersionTruncate;
   }
-
+  
   setOsVersionTruncate(value) {
     this.osVersionTruncate = value;
   }
-
+  
   setClientVersionTruncate(value) {
     this.clientVersionTruncate = value;
   }
-
+  
   /**
    * @returns {string[]}
    */
   getAvailableDeviceTypes() {
     return Object.values(DEVICE_TYPE);
   }
-
+  
   /**
-   * @returns {*}
+   * get all brands
+   * @returns {string[]}
    */
   getAvailableBrands() {
     return this.getParseDevice(DEVICE_PARSER.MOBILE).getAvailableBrands();
   }
-
+  
+  /**
+   * has brand
+   * @param brand
+   * @returns {boolean}
+   */
+  hasBrand(brand) {
+    return this.getParseDevice(DEVICE_PARSER.MOBILE).
+    getCollectionBrands()[brand] !== void 0;
+  }
+  
+  /**
+   * get all browsers
+   * @returns {string[]}
+   */
   getAvailableBrowsers() {
     return this.getParseClient(CLIENT_PARSER.BROWSER).getAvailableBrowsers();
   }
-
+  
   /**
+   * get device parser by name
    * @param {string} name
    * @return {DeviceParserAbstract}
    */
   getParseDevice(name) {
     return this.deviceParserList[name] ? this.deviceParserList[name] : null;
   }
-
+  
   /**
+   * get client parser by name
    * @param {string} name
    * @return {*}
    */
   getParseClient(name) {
     return this.clientParserList[name] ? this.clientParserList[name] : null;
   }
-
+  
   /**
+   * get os parser by name
    * @param name
    * @return {*}
    */
   getParseOs(name) {
     return this.osParserList[name] ? this.osParserList[name] : null;
   }
-
+  
   /**
+   * get vendor parser by name (specific parsers)
    * @param {string} name
    * @return {*}
    */
   getParseVendor(name) {
     return this.vendorParserList[name] ? this.vendorParserList[name] : null;
   }
-
+  
+  /**
+   * get alias device parser
+   * @returns {AliasDevice}
+   */
   getParseAliasDevice() {
     return aliasDevice;
   }
-
+  
   /**
+   * add device type parser
    * @param {string} name
    * @param parser
    */
-
+  
   addParseDevice(name, parser) {
     this.deviceParserList[name] = parser;
   }
-
+  
   /**
+   * add os type parser
    * @param {string} name
    * @param {OsAbstractParser} parser
    */
   addParseOs(name, parser) {
     this.osParserList[name] = parser;
   }
-
+  
   /**
+   * add bot type parser
    * @param {string} name
    * @param {BotAbstractParser} parser
    */
   addParseBot(name, parser) {
     this.botParserList[name] = parser;
   }
-
+  
   /**
+   * add client type parser
    * @param {string} name
    * @param {ClientAbstractParser} parser
    */
   addParseClient(name, parser) {
     this.clientParserList[name] = parser;
   }
-
+  
   /**
+   * add vendor type parser
    * @param {string} name
    * @param {VendorFragmentParser} parser
    */
   addParseVendor(name, parser) {
     this.vendorParserList[name] = parser;
   }
-
+  
   /**
    * parse OS
    * @param {string} userAgent
@@ -285,9 +314,9 @@ class DeviceDetector {
     }
     return result;
   }
-
+  
   /**
-   *
+   * parse device type
    * @param {string} userAgent
    * @param {ResultOs} osData
    * @param {ResultClient} clientData
@@ -298,7 +327,7 @@ class DeviceDetector {
     let osName = osData && osData['name'] ? osData['name'] : '';
     let osFamily = osData && osData['family'] ? osData['family'] : '';
     let osVersion = osData && osData['version'] ? osData['version'] : '';
-
+    
     let clientType = clientData && clientData['type'] ? clientData['type'] : '';
     let clientShortName =
       clientData && clientData['short_name'] ? clientData['short_name'] : '';
@@ -306,7 +335,7 @@ class DeviceDetector {
     let clientFamily =
       clientData && clientData['family'] ? clientData['family'] : '';
     let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
-
+    
     if (
       deviceType === '' &&
       osFamily === 'Android' &&
@@ -323,7 +352,7 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.TABLET;
       }
     }
-
+    
     if (
       deviceType === '' &&
       (helper.hasAndroidTableFragment(userAgent) ||
@@ -331,11 +360,11 @@ class DeviceDetector {
     ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
-
+    
     if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-
+    
     if (deviceType === '' && osName === 'Android' && osVersion !== '') {
       if (helper.versionCompare(osVersion, '2.0') === -1) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
@@ -346,11 +375,11 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.TABLET;
       }
     }
-
+    
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-
+    
     if (
       deviceType === '' &&
       (osName === 'Windows RT' ||
@@ -359,7 +388,7 @@ class DeviceDetector {
     ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
-
+    
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
@@ -367,7 +396,7 @@ class DeviceDetector {
     } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
-
+    
     if (deviceType === '') {
       if (
         DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
@@ -378,7 +407,7 @@ class DeviceDetector {
         }
       }
     }
-
+    
     if (
       DEVICE_TYPE.DESKTOP !== deviceType &&
       userAgent.indexOf('Desktop') !== -1
@@ -387,14 +416,14 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
-
+    
     return {
       type: deviceType,
     };
   }
-
+  
   /**
-   *
+   * get brand by device code (used in indexing)
    * @param {string} deviceCode
    * @returns {*[]}
    */
@@ -404,9 +433,9 @@ class DeviceDetector {
     }
     if (this.__deviceIndexexHash === void 0) {
       this.__deviceIndexexHash = {};
-
+      
       let path = __dirname + '/regexes/device-index-hash.yml';
-
+      
       if (this.filePathDeviceIndexes) {
         path = this.filePathDeviceIndexes;
       }
@@ -420,7 +449,7 @@ class DeviceDetector {
     }
     return [];
   }
-
+  
   /**
    * parse device
    * @param {string} userAgent
@@ -432,14 +461,14 @@ class DeviceDetector {
       let alias = this.getParseAliasDevice().parse(userAgent);
       brandIndexes = this.getBrandsByDeviceCode(alias.name ? alias.name : '');
     }
-
+    
     let result = {
       id: '',
       type: '',
       brand: '',
       model: '',
     };
-
+    
     for (let name in this.deviceParserList) {
       let parser = this.deviceParserList[name];
       let resultMerge = parser.parse(userAgent, brandIndexes);
@@ -448,7 +477,7 @@ class DeviceDetector {
         break;
       }
     }
-
+    
     if (result && result.brand === '') {
       let resultVendor = this.parseVendor(userAgent);
       if (resultVendor) {
@@ -456,10 +485,10 @@ class DeviceDetector {
         result.id = resultVendor.id;
       }
     }
-
+    
     return result;
   }
-
+  
   /**
    * parse vendor
    * @param {string} userAgent
@@ -469,7 +498,7 @@ class DeviceDetector {
     let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
     return parser.parse(userAgent);
   }
-
+  
   /**
    * parse bot
    * @param {string} userAgent
@@ -477,11 +506,11 @@ class DeviceDetector {
    */
   parseBot(userAgent) {
     let result = {};
-
+    
     if (this.skipBotDetection) {
       return result;
     }
-
+    
     for (let name in this.botParserList) {
       let parser = this.botParserList[name];
       let resultMerge = parser.parse(userAgent);
@@ -492,7 +521,7 @@ class DeviceDetector {
     }
     return result;
   }
-
+  
   /**
    * parse client
    * @param {string} userAgent
@@ -510,8 +539,9 @@ class DeviceDetector {
     }
     return result;
   }
-
+  
   /**
+   * detect os, client and device
    * @param {string} userAgent
    * @return {DetectResult}
    */
@@ -523,11 +553,11 @@ class DeviceDetector {
       userAgent,
       osData,
       clientData,
-      deviceData
+      deviceData,
     );
-
+    
     deviceData = Object.assign(deviceData, deviceDataType);
-
+    
     /** Assume all devices running iOS / Mac OS are from Apple */
     if (
       deviceData.brand === '' &&
@@ -537,7 +567,7 @@ class DeviceDetector {
       deviceData.id = 'AP';
       deviceData.brand = 'Apple';
     }
-
+    
     return {
       os: osData,
       client: clientData,

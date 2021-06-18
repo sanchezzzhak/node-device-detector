@@ -378,6 +378,11 @@ describe('tests devices fixtures', function () {
     if(result.device) {
       result.device.regex = regex;
     }
+    
+    if(result.device && result.device.brand) {
+      expect(detector.hasBrand(result.device.brand))
+      .to.equal(true, `brand not found from short list, ${messageError} `);
+    }
   }
   
   ymlDeviceFiles.forEach(function (file) {
