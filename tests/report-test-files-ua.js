@@ -4,20 +4,10 @@ const AliasDevice = require('../parser/device/alias-device')
 const DeviceDetect = require('../index')
 const { YAMLLoad } = require('./functions');
 
-const similar = (a, b) => {
-  let equivalency = 0;
-  let minLength = (a.length > b.length) ? b.length : a.length;
-  let maxLength = (a.length < b.length) ? b.length : a.length;
-  for(let i = 0; i < minLength; i++) {
-    if(a[i] === b[i]) {
-      equivalency++;
-    }
-  }
-  let weight = equivalency / maxLength;
-  return (weight * 100);
-}
-
 const aliasDevice = new AliasDevice()
+const detector = new DeviceDetect({
+  discardDeviceIndexes: false
+})
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let fixtureFolder = __dirname + '/fixtures/';
@@ -31,10 +21,11 @@ ymlDeviceFiles.forEach((file) => {
   }
   let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
   fixtureData.forEach((fixture, pos) => {
-    let result = aliasDevice.parse(fixture.user_agent);
+    let aliasResult = aliasDevice.parse(fixture.user_agent);
+
     let brand = String(fixture.device.brand);
     let model = String(fixture.device.model);
-    let deviceCode = result.name ? result.name : void 0;
+    let deviceCode = aliasResult.name ? aliasResult.name : void 0;
     fixtures[deviceCode] = {brand, model};
   });
 })
@@ -47,23 +38,32 @@ const parse = (folderPath) => {
     console.log('empty dir files not found')
     return;
   }
-  files.forEach(file => {
+  files.forEach(async file => {
     let absolutePath = folderPath + file;
-  
+    if(!fs.lstatSync(absolutePath).isFile()){
+      return;
+    }
     const lineReader = readline.createInterface({
-      input: fs.createReadStream(filePath),
+      input: fs.createReadStream(absolutePath),
       terminal: false,
     });
-    lineReader.on('line', (useragent) => {
-      let aliasResult = aliasDevice.parse(fixture.user_agent);
+    for await (const useragent of lineReader) {
+      let aliasResult = aliasDevice.parse(useragent);
       let deviceCode = aliasResult.name ? aliasResult.name : void 0;
-      
-      let result = detector.detect(useragent)
-    });
-    
-    console.log(file)
+
+      let result = detector.detect(useragent);
+      let isFoundModel = result.device && result.device.model !== void 0;
+      let isFoundBrand = result.device && result.device.brand !== void 0;
+
+      if(fixtures[deviceCode] === void 0 && isFoundModel) {
+        console.log('#not_tests#   ', useragent)
+      } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
+        console.log('#new_device#   ', useragent)
+      } else if(deviceCode && !isFoundBrand) {
+        console.log('#new_brand#   ', useragent)
+      }
+    }
   });
-  
 };
 
 if (process.argv.length > 2) {

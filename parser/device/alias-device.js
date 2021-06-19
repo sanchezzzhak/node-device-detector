@@ -20,6 +20,7 @@ class AliasDevice extends AbstractParser {
     this.__replaceBrand = replace;
   }
 
+
   /**
    * @param {string} userAgent
    * @returns {{name: string}}
@@ -28,12 +29,15 @@ class AliasDevice extends AbstractParser {
     let result = {
       name: '',
     };
+    let decodeUserAgent = '';
+    let isDecodeUA = /%[2-4][0-6A-F]/i.test(userAgent);
+    try {
+      decodeUserAgent = isDecodeUA ? decodeURIComponent(userAgent) : userAgent
+    } catch (err) {}
+
     for (let cursor in this.collection) {
       let item = this.collection[cursor];
-      let match = this.getBaseRegExp(item['regex']).exec(
-        decodeURIComponent(userAgent)
-      );
-
+      let match = this.getBaseRegExp(item['regex']).exec(decodeUserAgent);
       if (match) {
         result.name = this.buildByMatch(item['name'], match);
         if (this.hasReplaceBrand()) {
