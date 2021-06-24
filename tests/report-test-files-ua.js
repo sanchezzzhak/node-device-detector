@@ -56,11 +56,11 @@ const parse = (folderPath) => {
       let isFoundBrand = result.device && result.device.brand !== void 0;
 
       if(fixtures[deviceCode] === void 0 && isFoundModel) {
-        console.log('#not_tests#   ', useragent)
+        console.log(useragent)
       } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
-        console.log('#new_device#   ', useragent)
+        console.log(useragent)
       } else if(deviceCode && !isFoundBrand) {
-        console.log('#new_brand#   ', useragent)
+        console.log(useragent)
       }
     }
   });
