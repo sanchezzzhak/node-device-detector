@@ -9,12 +9,15 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 
 * [Online demo](https://iehol.sse.codesandbox.io/)
 
-## Code Status
+## Code Status <a name="top"></a>
 
 ![Chai](https://github.com/sanchezzzhak/node-device-detector/workflows/Tests/badge.svg?branch=master)
 ![YAML Lint](https://github.com/sanchezzzhak/node-device-detector/workflows/YAML%20Lint/badge.svg?branch=master)
 ![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg?branch=master)
 ![CodeQL](https://github.com/sanchezzzhak/node-device-detector/workflows/CodeQL/badge.svg?branch=master)
+
++ [List Settings](#options)
++ [Examples](#others)
 
 Install
 -
@@ -32,7 +35,7 @@ const result = detector.detect(userAgent);
 console.log('result parse', result);
 ```
 > PS: When creating an object`detector = new DeviceDetector;` data for parsing is reloaded from files, consider this, the best option is initialization at application start
-> I recommend seeing [examples](#Others)
+> I recommend seeing [examples](#others)
 
 ### Result parse
 
@@ -76,7 +79,10 @@ Result parse empty
   }
 }
 ```
-Helper methods
+
+### Helpers <a name="helpers"></a> ###
+[[top]](#top)
+
 ```js
 const DeviceDetector = require('node-device-detector');
 const DeviceHelper = require('node-device-detector/helper');
@@ -116,9 +122,9 @@ DeviceHelper.isPortableMediaPlayer(result);
 /* check device type watches, headsets */
 DeviceHelper.isWearable(result);
 ```
-
-Using parsers singly
+Using parsers singly <a name="single-parsers"></a>
 -
+[[top]](#top)
 
 #### Detect Bot
 ```js
@@ -158,16 +164,21 @@ const result = Object.assign({os:resultOs}, {client:resultClient}, {device: resu
 console.log('Result parse lite', result);
 ```
 
-### Getter/Setter/Options
+### Getter/Setter/Options <a name="options"></a> ###
+[[top]](#top)
 ```js
 const detector = new DeviceDetector({
   osVersionTruncate: 0, // Truncate Os version from 5.0 to 5 (default '' or null)
-  clientVersionTruncate: 2  // Truncate Client version Chrome from 43.0.2357 .78 to 43.0.2357 (default '' or null)
+  clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357 .78 to 43.0.2357 (default '' or null)
+  discardDeviceIndexes: false, // quick device definitions using indexing (disabled by default, set value false to enable),
+  filePathDeviceIndexes: null  // custom index file path
 });
+// format file filePathDeviceIndexes 
+
 // You can override these settings at any time using special methods, example
 detector.setOsVersionTruncate(0);
 detector.setClientVersionTruncate(2);
-// to enable quick device definitions via indexing, enable this option (default value true, that is, disabled)
+
 detector.discardDeviceIndexes = false;
 /**
 banchmark.js test result:
@@ -191,12 +202,10 @@ detector.getAvailableDeviceTypes();
 detector.getAvailableBrands();
 // Array available browsers
 detector.getAvailableBrowsers();
-
 ```
 
-### Getting device code as it is from the useragent (experimental)
-> Get device code as is
-
+### Getting device code as it (experimental) <a name="device-code"></a>
+[[top]](#top)
 ```js
 const AliasDevice = require('node-device-detector/parser/device/alias-device');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
@@ -351,8 +360,10 @@ result
 */
 ```
 
-Others
+Others <a name="others></a>
 -
+[[top]](#top)
+
 * [Micro service detect device](docs/MICROSERVICE.MD) from framework [moleculer js](http://moleculer.services)
 * [Example1 detect device in native server](docs/NATIVE_SERVER.MD)
 * [Example2 detect device in express.js](docs/EXPRESS_SERVER.MD)
