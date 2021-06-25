@@ -1,19 +1,20 @@
 const helper = require('./parser/helper');
 // device parsers
 const MobileParser = require('./parser/device/mobile');
-const HbbTvParser = require('./parser/device/hbb-tv');
 const NotebookParser = require('./parser/device/notebook');
-const Console = require('./parser/device/console');
-const CarBrowser = require('./parser/device/car-browser');
-const Camera = require('./parser/device/camera');
-const PortableMediaPlayer = require('./parser/device/portable-media-player');
+const HbbTvParser = require('./parser/device/hbb-tv');
+const ShellTvParser = require('./parser/device/shell-tv');
+const ConsoleParser = require('./parser/device/console');
+const CarBrowserParser = require('./parser/device/car-browser');
+const CameraParser = require('./parser/device/camera');
+const PortableMediaPlayerParser = require('./parser/device/portable-media-player');
 // client parsers
-const MobileApp = require('./parser/client/mobile-app');
-const MediaPlayer = require('./parser/client/media-player');
-const Browser = require('./parser/client/browser');
-const Library = require('./parser/client/library');
-const FeedReader = require('./parser/client/feed-reader');
-const PIM = require('./parser/client/pim');
+const MobileAppParser = require('./parser/client/mobile-app');
+const MediaPlayerParser = require('./parser/client/media-player');
+const BrowserParser = require('./parser/client/browser');
+const LibraryParser = require('./parser/client/library');
+const FeedReaderParser = require('./parser/client/feed-reader');
+const PIMParser = require('./parser/client/pim');
 // os parsers
 const OsParser = require('./parser/os-abstract-parser');
 // bot parsers
@@ -28,7 +29,8 @@ const AliasDevice = require('./parser/device/alias-device');
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
 const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
-
+const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
+const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
 const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile', 'Chrome Webview'];
 const APPLE_OS_LIST = ['Apple TV', 'iOS', 'Mac'];
@@ -38,31 +40,23 @@ const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
 
-const DEVICE_PARSER = {
-  MOBILE: 'Mobile',
-  HBBTV: 'hbbtv',
-  NOTEBOOK: 'Notebook',
-  CONSOLE: 'console',
-  CAR_BROWSER: 'CarBrowser',
-  CAMERA: 'Camera',
-  PORTABLE_MEDIA_PLAYER: 'PortableMediaPlayer',
-};
-const CLIENT_PARSER = {
-  FEED_READER: 'FeedReader',
-  MEDIA_PLAYER: 'MediaPlayer',
-  PIM: 'PIM',
-  MOBILE_APP: 'MobileApp',
-  LIBRARY: 'Library',
-  BROWSER: 'Browser',
-};
-
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
 
 class DeviceDetector {
+  
   /**
-   * @param {{skipBotDetection: false, osVersionTruncate: null, clientVersionTruncate: null}} options
+   * @typedef DeviceDetectorOptions
+   * @param {boolean} skipBotDetection
+   * @param {number|null} osVersionTruncate
+   * @param {number|null} clientVersionTruncate
+   * @param {boolean} discardDeviceIndexes
+   * @param {string|null} filePathDeviceIndexes
    */
+  
+  /**
+   * @param {DeviceDetectorOptions} options
+   **/
   constructor(options) {
     this.vendorParserList = {};
     this.osParserList = {};
@@ -108,23 +102,27 @@ class DeviceDetector {
   
   init() {
     this.addParseOs(OS_PARSER, new OsParser());
-    this.addParseClient(CLIENT_PARSER.FEED_READER, new FeedReader());
-    this.addParseClient(CLIENT_PARSER.MOBILE_APP, new MobileApp());
-    this.addParseClient(CLIENT_PARSER.MEDIA_PLAYER, new MediaPlayer());
-    this.addParseClient(CLIENT_PARSER.PIM, new PIM());
-    this.addParseClient(CLIENT_PARSER.BROWSER, new Browser());
-    this.addParseClient(CLIENT_PARSER.LIBRARY, new Library());
-    this.addParseDevice(DEVICE_PARSER.HBBTV, new HbbTvParser());
-    this.addParseDevice(DEVICE_PARSER.NOTEBOOK, new NotebookParser());
-    this.addParseDevice(DEVICE_PARSER.CONSOLE, new Console());
-    this.addParseDevice(DEVICE_PARSER.CAR_BROWSER, new CarBrowser());
-    this.addParseDevice(DEVICE_PARSER.CAMERA, new Camera());
+    this.addParseClient(CLIENT_PARSER_LIST.FEED_READER, new FeedReaderParser());
+    this.addParseClient(CLIENT_PARSER_LIST.MOBILE_APP, new MobileAppParser());
+    this.addParseClient(CLIENT_PARSER_LIST.MEDIA_PLAYER, new MediaPlayerParser());
+    this.addParseClient(CLIENT_PARSER_LIST.PIM, new PIMParser());
+    this.addParseClient(CLIENT_PARSER_LIST.BROWSER, new BrowserParser());
+    this.addParseClient(CLIENT_PARSER_LIST.LIBRARY, new LibraryParser());
+    
+    this.addParseDevice(DEVICE_PARSER_LIST.HBBTV, new HbbTvParser());
+    this.addParseDevice(DEVICE_PARSER_LIST.SHELLTV, new ShellTvParser());
+    this.addParseDevice(DEVICE_PARSER_LIST.NOTEBOOK, new NotebookParser());
+    this.addParseDevice(DEVICE_PARSER_LIST.CONSOLE, new ConsoleParser());
+    this.addParseDevice(DEVICE_PARSER_LIST.CAR_BROWSER, new CarBrowserParser());
+    this.addParseDevice(DEVICE_PARSER_LIST.CAMERA, new CameraParser());
     this.addParseDevice(
-      DEVICE_PARSER.PORTABLE_MEDIA_PLAYER,
-      new PortableMediaPlayer(),
+      DEVICE_PARSER_LIST.PORTABLE_MEDIA_PLAYER,
+      new PortableMediaPlayerParser(),
     );
-    this.addParseDevice(DEVICE_PARSER.MOBILE, new MobileParser());
+    this.addParseDevice(DEVICE_PARSER_LIST.MOBILE, new MobileParser());
+
     this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser());
+
     this.addParseBot(BOT_PARSER, new BotParser());
   }
   
@@ -186,7 +184,7 @@ class DeviceDetector {
    * @returns {string[]}
    */
   getAvailableBrands() {
-    return this.getParseDevice(DEVICE_PARSER.MOBILE).getAvailableBrands();
+    return this.getParseDevice(DEVICE_PARSER_LIST.MOBILE).getAvailableBrands();
   }
   
   /**
@@ -195,7 +193,7 @@ class DeviceDetector {
    * @returns {boolean}
    */
   hasBrand(brand) {
-    return this.getParseDevice(DEVICE_PARSER.MOBILE).
+    return this.getParseDevice(DEVICE_PARSER_LIST.MOBILE).
     getCollectionBrands()[brand] !== void 0;
   }
   
@@ -204,7 +202,7 @@ class DeviceDetector {
    * @returns {string[]}
    */
   getAvailableBrowsers() {
-    return this.getParseClient(CLIENT_PARSER.BROWSER).getAvailableBrowsers();
+    return this.getParseClient(CLIENT_PARSER_LIST.BROWSER).getAvailableBrowsers();
   }
   
   /**
@@ -291,7 +289,7 @@ class DeviceDetector {
   /**
    * add vendor type parser
    * @param {string} name
-   * @param {VendorFragmentParser} parser
+   * @param {VendorFragmentAbstractParser} parser
    */
   addParseVendor(name, parser) {
     this.vendorParserList[name] = parser;

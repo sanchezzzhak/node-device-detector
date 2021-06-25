@@ -18,24 +18,6 @@
   os_family: Android
   browser_family: Chrome
 -
-  user_agent: Mozilla/5.0 (Linux; arm; Android 10; TECNO LC7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 YaApp_Android/20.124.0 YaSearchBrowser/20.124.0 BroPP/1.0 SA/3 Mobile Safari/537.36
-  os:
-    name: Android
-    version: "10"
-    platform: ARM
-  client:
-    type: browser
-    name: Yandex Browser
-    version: 20.124.0
-    engine: Blink
-    engine_version: ""
-  device:
-    type: smartphone
-    brand: Tecno Mobile
-    model: LC7
-  os_family: Android
-  browser_family: Unknown
--
   user_agent: Telit_Mobile_Terminals-G80
   os:
   client:

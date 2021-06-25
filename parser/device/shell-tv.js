@@ -2,34 +2,33 @@ const DeviceAbstractParser = require('./../device-abstract-parser');
 
 const DEVICE_TYPE = require('./../const/device-type');
 
-class HbbTv extends DeviceAbstractParser {
+class ShellTv extends DeviceAbstractParser {
   /**
    *
    */
   constructor() {
     super();
-    this.fixtureFile = 'device/televisions.yml';
+    this.fixtureFile = 'device/shell_tv.yml';
     this.loadCollection();
   }
-
+  
   /**
-   *
    * @param {string} userAgent
    * @returns {null|{model: string, id: string, type: string, brand: string}}
    */
   parse(userAgent) {
-    if (!this.isHubTv(userAgent)) {
+    if (!this.isShellTv(userAgent)) {
       return null;
     }
-
+    
     let result = {
       id: '',
       type: DEVICE_TYPE.TV,
       brand: '',
       model: '',
     };
-
-    let resultParse = super.parse(userAgent)
+    
+    let resultParse = super.parse(userAgent);
     if (resultParse) {
       result.id = resultParse.id;
       result.brand = resultParse.brand;
@@ -37,17 +36,17 @@ class HbbTv extends DeviceAbstractParser {
     }
     return result;
   }
-
+  
   /**
-   * has check userAgent fragment is hub tv
+   * has check userAgent fragment is shell tv
    * @param {String} userAgent
    * @return {Boolean}
    */
-  isHubTv(userAgent) {
-    let regex = 'HbbTV/([1-9]{1}(?:.[0-9]{1}){1,2})';
+  isShellTv(userAgent) {
+    let regex = '[a-z]+[ _]Shell[ _]\\w{6}';
     let match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;
   }
 }
 
-module.exports = HbbTv;
+module.exports = ShellTv;
