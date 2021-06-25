@@ -69,6 +69,11 @@ function normalizeVersion(version, count) {
   return version;
 }
 
+function getFixtureFolder() {
+  return __dirname + '/fixtures/';
+}
+
+
 module.exports = {
   YAMLDump,
   YAMLLoad,
@@ -76,5 +81,6 @@ module.exports = {
   normalizeVersion,
   perryTable,
   perryJSON,
+  getFixtureFolder,
   isObjNotEmpty,
 };
