@@ -1,8 +1,8 @@
 const readline = require('readline');
 const fs = require('fs');
-const AliasDevice = require('../parser/device/alias-device')
-const DeviceDetect = require('../index')
-const { YAMLLoad } = require('./functions');
+const AliasDevice = require('../../parser/device/alias-device')
+const DeviceDetect = require('../../index')
+const { YAMLLoad } = require('./../functions');
 
 const aliasDevice = new AliasDevice()
 const detector = new DeviceDetect({
