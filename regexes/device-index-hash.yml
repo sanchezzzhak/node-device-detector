@@ -144,8 +144,6 @@ HP EliteBook 820 G2:
   - HP
 Impress_Grip:
   - Vertex
-TECNO LC7:
-  - Tecno Mobile
 Archos Diamond Plus:
   - Archos
 Aqua V3G:
@@ -190,6 +188,8 @@ MediaPad 7 Lite II:
   - Huawei
 JNY-LX1:
   - Huawei
+NEOSR620:
+  - Lumus
 SHTRIH-SMARTPOS-F2:
   - Shtrikh-M
 WISENET5:
@@ -839,6 +839,16 @@ A001XM:
   - Xiaomi
 Astro6:
   - Maxwest
+M2101K6P:
+  - Xiaomi
+M2101K7BG:
+  - Xiaomi
+M2101K7BNY:
+  - Xiaomi
+MD-03P:
+  - P-UP
+Note 11P:
+  - Ulefone
 'iPod5,1':
   - Apple
 HMT390Q:
@@ -919,6 +929,8 @@ AllCall_S1:
   - AllCall
 AllCall_S1_X:
   - AllCall
+Allegro:
+  - Acer
 V360:
   - Acer
 V370:
@@ -2120,18 +2132,24 @@ Nokia 7 plus:
   - Nokia
 Nokia 8 Sirocco:
   - Nokia
+NOKIA:
+  - Samsung
 Lumia 1520:
   - Nokia
 '1520.1':
   - Nokia
-Vodafone ES:
+RM-915:
   - Nokia
   - Vodafone
 RM-997:
   - Nokia
+Lumia 610:
+  - Nokia
 NOKIA; RM-1027:
   - Nokia
-CMCC:
+Nokia 720T:
+  - Nokia
+800C:
   - Nokia
 Nokia 925:
   - Nokia
@@ -5281,6 +5299,8 @@ GT-I5500:
   - Samsung
 GT-I5500L:
   - Samsung
+SAMSUNG:
+  - Samsung
 GT-I8750:
   - Samsung
 SAMSUNG-GT-I9508_TD/1.0 Android/4.2.2:
@@ -5310,6 +5330,8 @@ GT-S7262:
 SAMSUNG-GT-S7568_TD/1.0 Android/4.0.4:
   - Samsung
 GT-S7568:
+  - Samsung
+Omnia W:
   - Samsung
 SCH-I519:
   - Samsung
@@ -10750,8 +10772,6 @@ Lenovo TAB 2 A7-30GC:
   - Meizu
 Smart Box v009:
   - Rombica
-Leff Shell HV320WHB-N55:
-  - Leff
 KRJ-W09:
   - Huawei
 Lenovo TB-7703X:
@@ -10764,8 +10784,6 @@ Hi9Air:
   - Chuwi
 Lenovo TAB 2 A7-30DC:
   - Lenovo
-Leff Shell LC390TA2A:
-  - Leff
 Lenovo YT-X703L:
   - Lenovo
 VIVAX_Fly_V1:
@@ -13402,8 +13420,6 @@ L-ITE 552 HD:
   - Logicom
 L-EGANTONE:
   - Logicom
-JVC Shell 536D5005CF5B_FHD:
-  - JVC
 LaVieTab PC-TE510S1:
   - NEC
 ILIUM L900:
@@ -13826,10 +13842,6 @@ GP10X2019:
   - iTel
 Hi9Pro:
   - Chuwi
-LUMUS Shell PT430CT02-1:
-  - Lumus
-LUMUS Shell LSC320AN10:
-  - Lumus
 PH544:
   - Mpman
 PH604:
@@ -16312,6 +16324,274 @@ TA-55_Power:
   - Tambo
 MAR-LX2B:
   - Huawei
+RX7 Mini:
+  - Walton
+Netra:
+  - YUHO
+Netra_Plus:
+  - YUHO
+Netra_Lite:
+  - YUHO
+Nitro 5P:
+  - Maxwest
+NOTE 4CAM:
+  - TechPad
+XQ Dual:
+  - Mobiistar
+KINGKONG 5 Pro:
+  - CUBOT
+SHARK PRS-H0:
+  - Xiaomi
+LE2110:
+  - OnePlus
+V2046:
+  - Vivo
+MD-01P:
+  - P-UP
+M2012K11G:
+  - Xiaomi
+M2102K1C:
+  - Xiaomi
+RMX3231:
+  - Realme
+RMX3191:
+  - Realme
+W-V745-TVM:
+  - Wiko
+V2038:
+  - Vivo
+M2101K9G:
+  - Xiaomi
+V2006:
+  - Vivo
+SH-H01:
+  - Sharp
+GIONEE F205:
+  - Gionee
+S5501L:
+  - NUU Mobile
+Mega2:
+  - Sico
+P55 Max:
+  - Panasonic
+Panasonic P6:
+  - Panasonic
+1826-I01:
+  - Coolpad
+K9_Smart_Plus:
+  - Karbonn
+Infinity e4:
+  - Telenor
+Infinity_e3:
+  - Telenor
+Infinity_e2:
+  - Telenor
+Infinity_a2:
+  - Telenor
+Infinity_I1:
+  - Singtech
+Infinity_I_Mix:
+  - Singtech
+Infinity_k2:
+  - Telenor
+Infinit_X_CAM:
+  - Timovi
+Infinit MX:
+  - Timovi
+Infinit MX Pro:
+  - Timovi
+Infinit Lite 2:
+  - Timovi
+IKU K3:
+  - IKU Mobile
+IKU i4:
+  - IKU Mobile
+IKU i3:
+  - IKU Mobile
+Tornado:
+  - Explay
+Tornado3G:
+  - Explay
+UZTE GRAND V7:
+  - ZTE
+Valencia2_Y100:
+  - Doogee
+Venus X1:
+  - Hotwav
+Venus X17:
+  - Hotwav
+Venus R8 PLUS:
+  - Hotwav
+Venus_R10:
+  - Hotwav
+Venus_R12:
+  - Hotwav
+Venus_R18:
+  - Hotwav
+Venus_R2:
+  - Hotwav
+Venus_R3:
+  - Hotwav
+Venus_R6:
+  - Hotwav
+Venus_R7:
+  - Hotwav
+Venus_R8:
+  - Hotwav
+Venus_R9:
+  - Hotwav
+Vertis 4004 You:
+  - Overmax
+verykool Luna II S4513:
+  - Verykool
+verykoolSL5560:
+  - Verykool
+verykools5527:
+  - Verykool
+verykools5526:
+  - Verykool
+verykoolS5525:
+  - Verykool
+verykoolS5524:
+  - Verykool
+verykools5035:
+  - Verykool
+verykools5034:
+  - Verykool
+verykool Atlas s5014:
+  - Verykool
+verykool_Giant_s5020:
+  - Verykool
+verykool Lotus s5001:
+  - Verykool
+verykool s5017:
+  - Verykool
+verykoolS5007:
+  - Verykool
+verykools5037:
+  - Verykool
+verykool s5015:
+  - Verykool
+verykool Helix s5025:
+  - Verykool
+verykool S400:
+  - Verykool
+verykool Leo s4002:
+  - Verykool
+verykool S401:
+  - Verykool
+verykool Cyprus s6001:
+  - Verykool
+verykool S354:
+  - Verykool
+verykool s4006:
+  - Verykool
+verykool s4510:
+  - Verykool
+verykool Sol Quatro Jr 5003:
+  - Verykool
+verykool Sol s5013:
+  - Verykool
+verykool Sol Quatro s5016:
+  - Verykool
+VerykoolS4006Q:
+  - Verykool
+verykools4006T:
+  - Verykool
+verykoolS4007:
+  - Verykool
+verykools5001:
+  - Verykool
+verykool_s5516:
+  - Verykool
+verykool Dorado s5017Q:
+  - Verykool
+verykools5036:
+  - Verykool
+verykools5204:
+  - Verykool
+verykools5528Jr:
+  - Verykool
+verykools5702:
+  - Verykool
+verykoolSL5029:
+  - Verykool
+verykoolSL5565:
+  - Verykool
+VGOTEL OCEAN 6:
+  - VGO TEL
+VerykoolSL5550:
+  - Verykool
+verykoolS5530:
+  - Verykool
+VerykoolS5030:
+  - Verykool
+verykool Giant s5020:
+  - Verykool
+verykool SL5009:
+  - Verykool
+verykool SL5011:
+  - Verykool
+verykoolS4008:
+  - Verykool
+verykool_Fusion_II_SL4502:
+  - Verykool
+verykoolSL6010:
+  - Verykool
+VIVAX_Fly_V550:
+  - Vivax
+VIVAX FLY 2:
+  - Vivax
+  - Fly
+Vowney:
+  - Elephone
+Vowney Lite:
+  - Elephone
+VOX_FORTIS:
+  - Iris
+VOX_VERO:
+  - Iris
+Vphone-X3:
+  - Land Rover
+Vphone X3:
+  - Land Rover
+Quantum UP:
+  - Quantum
+Life Zen:
+  - Fly
+Life Play:
+  - Fly
+Pure Micro:
+  - Navon
+A003ZT:
+  - ZTE
+KOMU_X1:
+  - Komu
+KOMU_K55:
+  - Komu
+KOMU_K30:
+  - Komu
+K60:
+  - Komu
+Kruger&Matz MOVE 6:
+  - Krüger&Matz
+Shark 5000:
+  - Leagoo
+S550 Pro:
+  - CUBOT
+  - Obi
+S5140:
+  - Ginzzu
+S7:
+  - Smartfren
+NX529Jq:
+  - ZTE
+V210101:
+  - Vargo
+ARK UKOZI U5:
+  - Ark
+LEAGOO Z5c:
+  - Leagoo
 bravis_A506:
   - Bravis
 BRAVIS DELTA:
@@ -17348,6 +17628,66 @@ U325AC:
   - Cricket
 Armor 10 5G:
   - Ulefone
+TECNO LC6:
+  - Tecno Mobile
+TECNO CF8:
+  - Tecno Mobile
+TECNO WX3P:
+  - Tecno Mobile
+TECNO F3:
+  - Tecno Mobile
+TECNO CA7:
+  - Tecno Mobile
+TECNO BB2:
+  - Tecno Mobile
+TECNO BA2:
+  - Tecno Mobile
+TECNO B1f:
+  - Tecno Mobile
+TECNO W3 Pro:
+  - Tecno Mobile
+TECNO CA6:
+  - Tecno Mobile
+TECNO BC1:
+  - Tecno Mobile
+TECNO KF7j:
+  - Tecno Mobile
+TECNO RB8S:
+  - Tecno Mobile
+TECNO KC1h:
+  - Tecno Mobile
+TECNO KB7j:
+  - Tecno Mobile
+TECNO B1p:
+  - Tecno Mobile
+TECNO CF7k:
+  - Tecno Mobile
+TECNO ID5b:
+  - Tecno Mobile
+TECNO CD6:
+  - Tecno Mobile
+TECNO BC2:
+  - Tecno Mobile
+TECNO B1g:
+  - Tecno Mobile
+TECNO CD8j:
+  - Tecno Mobile
+TECNO LC7:
+  - Tecno Mobile
+TECNO LC8:
+  - Tecno Mobile
+TECNO KF8:
+  - Tecno Mobile
+TECNO KB7:
+  - Tecno Mobile
+TECNO LA7:
+  - Tecno Mobile
+TECNO LB7:
+  - Tecno Mobile
+TECNO RA7:
+  - Tecno Mobile
+LE2113:
+  - OnePlus
 Y9Plus:
   - Doogee
 Doro 8030/8031/8028:
@@ -18607,6 +18947,8 @@ HTC 608:
   - HTC
 HTC6500LVW 4G:
   - HTC
+7 Mozart:
+  - HTC
 HTC_802w:
   - HTC
 HTC-A9192/1.0:
@@ -18640,6 +18982,8 @@ HTC_Butterfly:
 butterfly2:
   - HTC
 HTC_C525u-orange-LS/1.17.73.10:
+  - HTC
+HTC:
   - HTC
 HTC_C715c:
   - HTC
@@ -19119,6 +19463,8 @@ RIO-L03:
 Huawei-H867G:
   - Huawei
 HUAWEI H881C:
+  - Huawei
+H883G:
   - Huawei
 U8860:
   - Huawei
@@ -21275,6 +21621,8 @@ LG-E617G:
   - LG
 LG-E730/V10b:
   - LG
+LG-E900:
+  - LG
 LG-E970:
   - LG
 LG-E973:
@@ -21775,8 +22123,6 @@ LESPH5014:
 Lumus_Ion:
   - Lumus
 NEOSC600:
-  - Lumus
-NEOSR620:
   - Lumus
 LAVA_A3:
   - Lava
@@ -22644,6 +22990,8 @@ RM-994_eu_poland_1155:
 Lumia 430 Dual SIM:
   - Microsoft
   - Nokia
+Microsoft:
+  - Microsoft
 RM-1089_1087:
   - Microsoft
 RM-1090:
@@ -26641,6 +26989,10 @@ Readboy_G100:
   - Readboy
 Readboy_G20:
   - Readboy
+TECNO P703:
+  - Tecno Mobile
+Magnet_G30:
+  - Vonino
 Readboy_G30:
   - Readboy
 Readboy_G35:
@@ -27069,8 +27421,6 @@ GT-P7501:
   - Samsung
 GT-P7511:
   - Samsung
-S7:
-  - Smartfren
 Androtab 7:
   - Smartfren
 SH-08E:
@@ -28306,6 +28656,44 @@ KingPad_K10Pro:
   - Vastking
 Magnet_G50:
   - Vonino
+Slate2:
+  - Swipe
+9027Q:
+  - Alcatel
+MeMOPad 10FHD LTE:
+  - Asus
+AGS2-W09HN:
+  - Huawei
+IKU T2:
+  - IKU Mobile
+iKU T1:
+  - IKU Mobile
+IKU_T3:
+  - IKU Mobile
+IKU_T_max:
+  - IKU Mobile
+Venue 7 HSPA+:
+  - Dell
+Venue 10 5050:
+  - Dell
+Ursus_9X3G:
+  - DEXP
+Ursus_Z380:
+  - DEXP
+VB_10Q_Plus:
+  - Umax
+VerykoolTL8010:
+  - Verykool
+verykool T7440:
+  - Verykool
+verykoolT7445:
+  - Verykool
+Vi8 plus:
+  - Chuwi
+I216A:
+  - Alcatel
+Techno X800BJ:
+  - BB Mobile
 Senkatel_T1009:
   - Senkatel
 Senkatel_T7011:
@@ -29208,6 +29596,74 @@ WIWA DREAM PLAYER:
   - WIWA
 WIWA DREAM PLAYER TV:
   - WIWA
+Rombica Smart Box v006:
+  - Rombica
+Smotreshka Box 115NA:
+  - Smotreshka
+Smotreshka Box 413NA:
+  - Smotreshka
+Smotreshka Box 213a:
+  - Smotreshka
+Smotreshka Box 213:
+  - Smotreshka
+TOUCAN NANO 4K:
+  - IconBIT
+TOUCAN Stick 4K:
+  - IconBIT
+VMP023.p.02.d4:
+  - Vinga
+Mystery Shell 536D420CF12_FHD:
+  - Mystery
+Mystery Shell 536D315PH21_HD:
+  - Mystery
+Telefunken Shell 536D480XF64_FHD:
+  - Telefunken
+ELED-43SAMRT:
+  - Elekta
+ELED-43SMART:
+  - Elekta
+ELED-50SMART_UHD:
+  - Elekta
+ELED-55CV_SMART_UHD:
+  - Elekta
+ELED-42SMART:
+  - Elekta
+ELED-48SMART:
+  - Elekta
+ELED-32SMART:
+  - Elekta
+Telefunken Shell 536D315PH41_HD:
+  - Telefunken
+Telefunken Shell 536D315CH37_HD:
+  - Telefunken
+Telefunken Shell 536D315XH31_HD:
+  - Telefunken
+Telefunken Shell 536D420CF11_FHD:
+  - Telefunken
+Telefunken Shell 536D480XF52_FHD:
+  - Telefunken
+Telefunken Shell 536D315XH28_HD:
+  - Telefunken
+Mystery Shell 536D315XH33_HD:
+  - Mystery
+Mystery Shell 536D315CH23_HD:
+  - Mystery
+Mystery Shell T430HVN01_FHD:
+  - Mystery
+Mystery Shell 536S236CH51_HD:
+  - Mystery
+Mystery Shell 536D500CF51_FHD:
+  - Mystery
+Mystery Shell 536D480XF31_FHD:
+  - Mystery
+Mystery Shell 536D430LF12_FHD:
+  - Mystery
+Mystery Shell 536D400XF54_FHD:
+  - Mystery
+Mystery Shell 536D400XF31_FHD:
+  - Mystery
+YASIN Android TV:
+  - YASIN
 BB2 PRO:
   - Mecool
 KII PRO:
