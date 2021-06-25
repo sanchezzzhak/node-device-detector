@@ -6,7 +6,7 @@ cd tests/tools
 node report-no-added-info-for-devices.js > ../output/report.log
  */
 
-const { YAMLLoad } = require('./../functions');
+const { YAMLLoad, getFixtureFolder} = require('./../functions');
 
 const fs = require('fs');
 const aliasDevice = new (require('../../parser/device/alias-device'))();
@@ -15,7 +15,7 @@ const infoDevice = new (require('../../parser/device/info-device'))();
 let ymlDeviceInfo = YAMLLoad(__dirname + '/../../regexes/device-info/device.yml');
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
-let fixtureFolder = __dirname + '/fixtures/';
+let fixtureFolder = getFixtureFolder();
 let ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 const report = {};

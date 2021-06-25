@@ -2,7 +2,7 @@ const readline = require('readline');
 const fs = require('fs');
 const AliasDevice = require('../../parser/device/alias-device')
 const DeviceDetect = require('../../index')
-const { YAMLLoad } = require('./../functions');
+const { YAMLLoad, getFixtureFolder} = require('./../functions');
 
 const aliasDevice = new AliasDevice()
 const detector = new DeviceDetect({
@@ -10,7 +10,7 @@ const detector = new DeviceDetect({
 })
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
-let fixtureFolder = __dirname + '/fixtures/';
+let fixtureFolder = getFixtureFolder();
 let ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 let fixtures = {}

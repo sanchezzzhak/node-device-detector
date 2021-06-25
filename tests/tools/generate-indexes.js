@@ -3,7 +3,7 @@
  */
 
 const fs = require('fs');
-const { YAMLLoad, YAMLDump } = require('./../functions');
+const { YAMLLoad, YAMLDump, getFixtureFolder} = require('./../functions');
 const aliasDevice = new (require('../../parser/device/alias-device'))();
 aliasDevice.setReplaceBrand(false);
 
@@ -14,7 +14,7 @@ const detector = new (require('../../index'))({
 let parserDevice = detector.getParseDevice('Mobile');
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
-let fixtureFolder = __dirname + '/fixtures/';
+let fixtureFolder = getFixtureFolder();
 ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 let output = {};
