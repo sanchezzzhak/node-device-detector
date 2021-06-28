@@ -1487,3 +1487,15 @@ cpu:
     clock_rate: 1500
     cores: 4
     gpu_id: 5
+  252:
+    name: Samsung Exynos 7870 Octa
+    type: ARM
+    clock_rate: 1600
+    cores: 8
+    gpu_id: 27
+  253:
+    name: Mediatek Helio P65 MT6768
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 83
