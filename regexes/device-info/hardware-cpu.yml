@@ -1463,3 +1463,15 @@ cpu:
     clock_rate: 1300
     cores: 4
     gpu_id: 2
+  248:
+    name: Samsung Exynos 7884
+    type: ARM
+    clock_rate: 1560
+    cores: 8
+    gpu_id: 40
+  249:
+    name: Samsung Exynos 990
+    type: ARM
+    clock_rate: 2000 # 2730 max
+    cores: 8
+    gpu_id: 93
