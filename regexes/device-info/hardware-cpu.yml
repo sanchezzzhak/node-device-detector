@@ -1511,3 +1511,15 @@ cpu:
     clock_rate: 1900
     cores: 8
     gpu_id: 94
+  256:
+    name: Samsung Exynos 9610
+    type: ARM
+    clock_rate: 2300
+    cores: 8
+    gpu_id: 51
+  257:
+    name: Samsung Exynos 9611
+    type: ARM
+    clock_rate: 2300
+    cores: 8
+    gpu_id: 51
