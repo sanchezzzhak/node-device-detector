@@ -1499,3 +1499,15 @@ cpu:
     clock_rate: 2000
     cores: 8
     gpu_id: 83
+  254:
+    name: Samsung Exynos 7580 Octa
+    type: ARM
+    clock_rate: 1600
+    cores: 8
+    gpu_id: 5
+  255:
+    name: Samsung Exynos 7880
+    type: ARM
+    clock_rate: 1900
+    cores: 8
+    gpu_id: 94

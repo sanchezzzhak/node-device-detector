@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 25/06/2021_
+_Last update: 28/06/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (771 devices, alias devices 1940)
+> This parser is experimental and contains few devices. (792 devices, alias devices 2011)
 >
 ##### Support detail brands/models list:
 
@@ -280,7 +280,7 @@ is not parse result  {name: ""}
 | huawei | 221 | 576 | - | imo mobile | 5 | 0 |
 | ipro | 4 | 7 | - | oneplus | 18 | 48 |
 | öwn | 1 | 2 | - | panasonic | 4 | 8 |
-| samsung | 32 | 103 | - | tiphone | 1 | 0 |
+| samsung | 53 | 174 | - | tiphone | 1 | 0 |
 | utok | 1 | 0 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 

@@ -278,3 +278,6 @@ gpu:
   93:
     name: ARM Mali-G77 MP11
     clock_rate: 0
+  94:
+    name: ARM Mali-T830 MP3
+    clock_rate: 600
