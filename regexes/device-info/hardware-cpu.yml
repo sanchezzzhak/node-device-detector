@@ -1523,3 +1523,9 @@ cpu:
     clock_rate: 2300
     cores: 8
     gpu_id: 51
+  258:
+    name: Qualcomm Snapdragon 675
+    type: ARM
+    clock_rate: 200
+    cores: 8
+    gpu_id: 95
