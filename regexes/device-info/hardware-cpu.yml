@@ -1526,6 +1526,12 @@ cpu:
   258:
     name: Qualcomm Snapdragon 675
     type: ARM
-    clock_rate: 200
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 95
+  259:
+    name: Samsung Exynos 7885
+    type: ARM
+    clock_rate: 2200
     cores: 8
     gpu_id: 95
