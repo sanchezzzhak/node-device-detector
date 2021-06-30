@@ -1535,3 +1535,15 @@ cpu:
     clock_rate: 2200
     cores: 8
     gpu_id: 95
+  260:
+    name: Qualcomm Snapdragon 730G
+    type: ARM
+    clock_rate: 2200
+    cores: 8
+    gpu_id: 96
+  261:
+    name: Qualcomm Snapdragon 730
+    type: ARM
+    clock_rate: 2200
+    cores: 8
+    gpu_id: 96
