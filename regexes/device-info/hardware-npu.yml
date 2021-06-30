@@ -1,0 +1,10 @@
+# Neural processors list
+npu:
+  0:
+    name: Integrated NPU
+
+
+# Machine vision processors list
+vpu:
+  0:
+    name: Integrated VPU
