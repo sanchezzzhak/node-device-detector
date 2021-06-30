@@ -1547,3 +1547,21 @@ cpu:
     clock_rate: 2200
     cores: 8
     gpu_id: 96
+  262:
+    name: Samsung Exynos 980
+    type: ARM
+    clock_rate: 2200
+    cores: 8
+    gpu_id: 97
+  263:
+    name: Samsung Exynos 5430
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    gpu_id: 43
+  264:
+    name: Samsung Exynos 7420
+    type: ARM
+    clock_rate: 2100
+    cores: 8
+    gpu_id: 98
