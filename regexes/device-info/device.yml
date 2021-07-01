@@ -3797,6 +3797,7 @@ firefly mobile:
   aurii xcite: 'DS=5.34;RS=480x960;OS=Android 8.1;RM=1024;RE=2018.11;SM=2;'
 
 panasonic:
+  eluga ray 700: 'RE=2017.09;SZ=75.4x153.8x8.9;WT=182;DS=5.5;RS=1080x1920;OS=Android 7.0;CP=118;RM=3072;'
   lumix dmc-cm1: 'DS=4.7;RS=1920x1080;SZ=135.4x68x21.1;WT=204;RE=2014.12;RM=2048;CP=139;OS=Android 4.4.2;'
   dmc-cm1: '->lumix dmc-cm1'
   p902i: ''
