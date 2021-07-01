@@ -219,48 +219,49 @@ cpu:
     type: ARM
     cores: 2
     clock_rate: 1200
-    rocess: 28nm
+    process: 28nm
     gpu_id: 12
   33:
     name: Qualcomm Snapdragon 200 MSM8212
     type: ARM
     cores: 4
     clock_rate: 1200
-    rocess: 28nm
+    process: 28nm
     gpu_id: 23
   34:
     name: HiSilicon Kirin 910T
     type: ARM
     cores: 4
     clock_rate: 1800
-    rocess: 28nm
+    process: 28nm
     gpu_id: 3
   35:
     name: Qualcomm Snapdragon 435 MSM8940
     type: ARM
     cores: 8
     clock_rate: 1400
-    rocess: 28nm
+    process: 28nm
     gpu_id: 24
   36:
     name: Mediatek MT6572M
     type: ARM
     cores: 2
     clock_rate: 1200
-    rocess: 28nm
+    process: 28nm
     gpu_id: 1
   37:
     name: HiSilicon Kirin 710F
     type: ARM
     cores: 8
     clock_rate: 2200
-    rocess: 12nm
+    process: 12nm
     gpu_id: 20
   38:
     name: MediaTek Helio P35 MT6765
     type: ARM
     cores: 8
     clock_rate: 2300
+    process: 12nm
     gpu_id: 25
   39:
     name: MediaTek MT6753T
@@ -400,17 +401,20 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   59:
     name: Apple A13 Bionic APL1W85
     type: ARM
     cores: 6
+    process: 7nm
     clock_rate: 2650
   60:
     name: Mediatek MT6752M
     type: ARM
     cores: 8
     clock_rate: 1700
+    process: 28nm
     gpu_id: 37
   61:
     # SDM660
@@ -418,18 +422,21 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2200
+    process: 14nm
     gpu_id: 38
   62:
     name: Qualcomm Snapdragon 710
     type: ARM
     cores: 8
     clock_rate: 2200
+    process: 10nm
     gpu_id: 39
   63:
     name: Mediatek Helio P23 MT6763
     type: ARM
     cores: 8
     clock_rate: 2500
+    process: 16nm
     gpu_id: 40
   64:
     # SDM632
@@ -437,60 +444,70 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1800
+    process: 14nm
     gpu_id: 41
   65:
     name: Qualcomm Snapdragon 617 MSM8952
     type: ARM
     cores: 8
     clock_rate: 1500
+    process: 28nm
     gpu_id: 18
   66:
     name: HiSilicon Kirin 650
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 16nm
     gpu_id: 27
   67:
     name: Samsung Exynos 9825
     type: ARM
     cores: 8
     clock_rate: 2730
+    process: 7nm
     gpu_id: 42
   68:
     name: Qualcomm Snapdragon 616 MSM8939v2
     type: ARM
     cores: 8
     clock_rate: 1700
+    process: 28nm
     gpu_id: 18
   69:
     name: Mediatek MT6737T
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     gpu_id: 5
   70:
     name: HiSilicon Kirin 925
     type: ARM
     cores: 8
     clock_rate: 1800
+    process: 28nm
     gpu_id: 43
   71:
     name: Allwinner A33
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 40nm
     gpu_id: 1
   72:
     name: Rockchip RK3168
     type: ARM
     cores: 2
     clock_rate: 1200
+    process: 28nm
     gpu_id: 8
   73:
     name: Rockchip RK3066
     type: ARM
     cores: 2
     clock_rate: 1500
+    process: 40nm
     gpu_id: 44
   74:
     # MT8735M
@@ -498,17 +515,20 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 2
   75:
     name: Nvidia Tegra 4
     type: ARM
     cores: 4
+    process: 28nm
     clock_rate: 1800
   76:
     name: MediaTek MT6739W
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     gpu_id: 4
   77:
     name: Marvell PXA310
@@ -520,143 +540,167 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1200
+    process: 28nm
     gpu_id: 12
   79:
     name: Mediatek MT6735
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     cpu_id: 2
   80:
     name: Rockchip RK3188
     type: ARM
     cores: 4
     clock_rate: 1800
+    process: 28nm
     cpu_id: 44
   81:
     name: Qualcomm Snapdragon 625
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 14nm
     cpu_id: 41
   82:
     name: Rockchip RK3288
     type: ARM
     cores: 4
     clock_rate: 1800
+    process: 28nm
     cpu_id: 45
   83:
     name: Unisoc SC9832E
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     cpu_id: 46
   84:
     name: Mediatek MT6739WW
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     cpu_id: 4
   85:
     name: Mediatek Helio X10 MT6795
     type: ARM
     cores: 8
     clock_rate: 2200
+    process: 28nm
     gpu_id: 47
   86:
     name: MediaTek MT6737M
     type: ARM
     cores: 4
     clock_rate: 1250
+    process: 28nm
     gpu_id: 5
   87:
     name: Nvidia Tegra 2
     type: ARM
     cores: 2
     clock_rate: 1000
+    process: 40nm
   88:
     name: Spreadtrum SC7731
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   89:
     name: Mediatek MT8121
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 7
   90:
     name: MediaTek MT6575
     type: ARM
     cores: 1
     clock_rate: 1000
+    process: 40nm
     gpu_id: 48
   91:
     name: Qualcomm Snapdragon S1 MSM7225
     type: ARM
     cores: 1
     clock_rate: 1000
+    process: 45nm
     gpu_id: 22
   92:
     name: AMD A8-6410
     type: x86
     cores: 4
     clock_rate: 2400
+    process: 28nm
     gpu_id: 49
   93:
     name: Mediatek MT8321M
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   94:
     name: Qualcomm Snapdragon 800 MSM8074
     type: ARM
     cores: 4
     clock_rate: 2300
+    process: 28nm
     gpu_id: 11
   95:
     name: Texas Instruments OMAP 4470
     type: ARM
     cores: 2
     clock_rate: 1500
+    process: 45nm
     gpu_id: 8
   96:
     name: Qualcomm Snapdragon 810 MSM8994
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 20nm
     gpu_id: 50
   97:
     name: Mediatek Helio P60T
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 12nm
     gpu_id: 51
   98:
     name: Mediatek MT8183
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 12nm
     gpu_id: 51
   99:
     name: Mediatek MT8173
     type: ARM
     cores: 4
     clock_rate: 2400
+    process: 28nm
     gpu_id: 52
   100:
     name: Mediatek MT8135
     type: ARM
     cores: 4
     clock_rate: 1700
+    process: 28nm
     gpu_id: 47
   101:
     name: MediaTek MT8168
     type: ARM
     cores: 4
     clock_rate: 2000
+    process: 12nm
     gpu_id: 53
   102:
     name: Rockchip RK3188T
@@ -932,18 +976,21 @@ cpu:
     type: ARM
     cores: 1
     clock_rate: 832
+    process: 65nm
     gpu_id: 22
   150:
     name: Qualcomm Snapdragon S1 QSD8250
     type: ARM
     cores: 1
     clock_rate: 1000
+    process: 65nm
     gpu_id: 22
   151:
     name: MediaTek MT8111
     type: ARM
     cores: 2
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   152:
     name: Intel Atom Z2760
@@ -1523,100 +1570,117 @@ cpu:
     type: ARM
     clock_rate: 1560
     cores: 8
+    process: 14nm
     gpu_id: 40
   249:
     name: Samsung Exynos 990
     type: ARM
     clock_rate: 2730
     cores: 8
+    process: 7nm
     gpu_id: 93
   250:
     name: Samsung Exynos 850
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 8nm
     gpu_id: 53
   251:
     name: Samsung Exynos 7578
     type: ARM
     clock_rate: 1500
     cores: 4
+    process: 28nm
     gpu_id: 5
   252:
     name: Samsung Exynos 7870 Octa
     type: ARM
     clock_rate: 1600
     cores: 8
+    process: 14nm
     gpu_id: 27
   253:
     name: Mediatek Helio P65 MT6768
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 12nm
     gpu_id: 83
   254:
     name: Samsung Exynos 7580 Octa
     type: ARM
     clock_rate: 1600
     cores: 8
+    process: 28nm
     gpu_id: 5
   255:
     name: Samsung Exynos 7880
     type: ARM
     clock_rate: 1900
     cores: 8
+    process: 14nm
     gpu_id: 94
   256:
     name: Samsung Exynos 9610
     type: ARM
     clock_rate: 2300
     cores: 8
+    process: 10nm
     gpu_id: 51
   257:
     name: Samsung Exynos 9611
     type: ARM
     clock_rate: 2300
     cores: 8
+    process: 10nm
     gpu_id: 51
   258:
     name: Qualcomm Snapdragon 675
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 11nm
     gpu_id: 95
   259:
     name: Samsung Exynos 7885
     type: ARM
     clock_rate: 2200
     cores: 8
+    process: 14nm
     gpu_id: 95
   260:
     name: Qualcomm Snapdragon 730G
     type: ARM
     clock_rate: 2200
     cores: 8
+    process: 8nm
     gpu_id: 96
   261:
     name: Qualcomm Snapdragon 730
     type: ARM
     clock_rate: 2200
     cores: 8
+    process: 8nm
     gpu_id: 96
   262:
     name: Samsung Exynos 980
     type: ARM
     clock_rate: 2200
     cores: 8
+    process: 8nm
     gpu_id: 97
   263:
     name: Samsung Exynos 5430
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 20nm
     gpu_id: 43
   264:
     name: Samsung Exynos 7420
     type: ARM
     clock_rate: 2100
     cores: 8
+    process: 14nm
     gpu_id: 98

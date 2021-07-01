@@ -1,5 +1,7 @@
 # Compact format in line
 # DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;
+
+# This file has a specific structure
 # what does each shortcode mean?
 # DS - Display size
 # RS - Resolution screen (W x H)
@@ -7,8 +9,10 @@
 # RE - Release date
 # OS - OS name + version
 # RM - RAM in MB
-# CP - CPU id
-# GP - GPU id
+# CP - CPU id (Central processor)
+# NP - NPU id (Neural processor)
+# VP - VPU id (Machine vision processor)
+# GP - GPU id (Graphic processor)
 # SM - count SIM slots
 
 # 2E
