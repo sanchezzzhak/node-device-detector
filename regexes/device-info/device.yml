@@ -10,8 +10,6 @@
 # OS - OS name + version
 # RM - RAM in MB
 # CP - CPU id (Central processor)
-# NP - NPU id (Neural processor)
-# VP - VPU id (Machine vision processor)
 # GP - GPU id (Graphic processor)
 # SM - count SIM slots
 
@@ -4269,7 +4267,7 @@ samsung:
   sm-g885f: '->galaxy a8 star'
   sm-g885y: '->galaxy a8 star'
   sm-g885s: '->galaxy a8 star'
-  galaxy a8+ (2018): 'RE=2017.12;SZ=75.7x159.9x8.3;WT=191;DS=6.0;RS=1080x2220;OS=Android 7.1.1;CP=259;RM=4096'
+  galaxy a8+ (2018): 'RE=2017.12;SZ=75.7x159.9x8.3;WT=191;DS=6.0;RS=1080x2220;OS=Android 7.1.1;CP=259;RM=4096;'
   sm-a730f: '->galaxy a8+ (2018)'
   galaxy a80: 'RE=2019.04;SZ=76.5x165.2x9.3;WT=220;DS=6.7;RS=1080x2400;OS=Android 9.0;CP=261;RM=8192;'
   sm-a8050: '->galaxy a80'
@@ -4292,3 +4290,23 @@ samsung:
   sm-a9100: '->galaxy a9 pro'
   sm-a910f: '->galaxy a9 pro'
   sm-g887n: '->galaxy a9 pro'
+  galaxy a9 star: 'RE=2018.06;SZ=77x162.4x7.6;WT=191;DS=6.3;RS=1080x2220;OS=Android 8.0;CP=61;RM=4096;'
+  sm-g8858: '->galaxy a9 star'
+  sm-g8850: '->galaxy a9 star'
+  galaxy a90: 'RE=2019.09;SZ=76.4x164.8x8.4;WT=206;DS=6.7;RS=1080x2400;OS=Android 9.0;CP=234;RM=6144;'
+  sm-a908n: '->galaxy a90'
+  sm-a908b: '->galaxy a90'
+  galaxy ace: 'RE=2011.01;SZ=59.9x112.4x11.5;WT=113;DS=3.5;RS=320x480;OS=Android 2.3;CP=145;RM=278;'
+  gt-s5830l: '->galaxy ace'
+  gt-s5830i: '->galaxy ace;CP=265;'
+  gt-s5830: '->galaxy ace'
+  galaxy ace 2: 'RE=2012.02;SZ=62.2x118.3x10.5;WT=122;DS=3.8;RS=480x800;OS=Android 2.3;CP=266;RM=768;'
+  gt-i8160p-orange: '->galaxy ace 2'
+  gt-i8160: '->galaxy ace 2'
+  gt-i8160p: '->galaxy ace 2'
+  galaxy s21+ 5g: 'RE=2021.01;SZ=75.6x161.5x7.8;WT=200;DS=6.7;RS=1080x2400;OS=Android 11;CP=267;RM=8192;'
+  sm-g9960: '->galaxy s21+ 5g'
+  sm-g996u1: '->galaxy s21+ 5g'
+  sm-g996w: '->galaxy s21+ 5g'
+  sm-g996b: '->galaxy s21+ 5g'
+  sm-g996n: '->galaxy s21+ 5g'

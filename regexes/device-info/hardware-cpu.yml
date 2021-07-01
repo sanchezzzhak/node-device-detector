@@ -956,6 +956,7 @@ cpu:
     type: ARM
     cores: 1
     clock_rate: 600
+    process: 65nm
     gpu_id: 22
   146:
     name: Apple A12Z Bionic
@@ -1489,6 +1490,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2840
+    process: 7nm
     gpu_id: 81
   235:
     name: Broadcom BCM28155
@@ -1685,3 +1687,23 @@ cpu:
     cores: 8
     process: 14nm
     gpu_id: 98
+  265:
+    name: Broadcom BCM21553
+    type: ARM
+    clock_rate: 832
+    cores: 1
+    process: 65nm
+  266:
+    name: ST-Ericsson NovaThor U8500
+    type: ARM
+    clock_rate: 1000
+    cores: 2
+    process: 45nm
+    gpu_id: 62
+  267:
+    name: Samsung Exynos 2100 5G
+    type: ARM
+    clock_rate: 2900
+    cores: 8
+    process: 5nm
+    gpu_id: 99

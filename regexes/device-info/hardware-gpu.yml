@@ -293,3 +293,6 @@ gpu:
   98:
     name: ARM Mali-T760 MP8
     clock_rate: 772
+  99:
+    name: ARM Mali-G78 MP14
+    clock_rate: 759
