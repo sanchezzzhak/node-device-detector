@@ -475,7 +475,7 @@ class DeviceDetector {
       let alias = this.getParseAliasDevice().parse(userAgent);
       deviceCode = alias.name ? alias.name : '';
       brandIndexes = this.getBrandsByDeviceCode(deviceCode);
-    } else if (!this.discardDeviceAliasCode()) {
+    } else if (!this.discardDeviceAliasCode) {
       let alias = this.getParseAliasDevice().parse(userAgent);
       deviceCode = alias.name ? alias.name : '';
     }

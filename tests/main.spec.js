@@ -196,6 +196,22 @@ describe('tests alias devices', function () {
   });
 });
 
+describe('test discard options', function() {
+  this.timeout(TIMEOUT);
+  let UA = 'Mozilla/5.0 (Linux; Android 5.1; Primo ZX2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36';
+  it('test discardDeviceAliasCode enable', () => {
+    detector.discardDeviceAliasCode = false;
+    let result = detector.detect(UA);
+    expect(result.device.code).to.equal('Primo ZX2 Lite');
+  })
+  it('test discardDeviceAliasCode disable', () => {
+    detector.discardDeviceAliasCode = true;
+    let result = detector.detect(UA);
+    expect(result.device.code).to.equal(void 0);
+  })
+  
+})
+
 describe('tests devices', function () {
   this.timeout(TIMEOUT);
   const runTest = (result, fixture) => {
@@ -240,6 +256,8 @@ describe('tests devices', function () {
       .to.equal(true, `brand not found from short list, ${messageError} `);
     }
   }
+  
+  detector.discardDeviceAliasCode = true;
   
   ymlDeviceFiles.forEach(function (file) {
     if (excludeFilesNames.indexOf(file) !== -1) {
