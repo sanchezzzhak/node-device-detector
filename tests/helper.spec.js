@@ -49,6 +49,10 @@ const fixtures = [
       isWearable: false,
       isAndroid: false,
       isIOS: true,
+      isBrowser: true,
+      isApp: false,
+      isDesktopApp: false,
+      isMobileApp: false,
     },
   },
   {
@@ -71,6 +75,10 @@ const fixtures = [
       isWearable: false,
       isAndroid: true,
       isIOS: false,
+      isBrowser: true,
+      isApp: false,
+      isDesktopApp: false,
+      isMobileApp: false,
     },
   },
   {
@@ -93,6 +101,10 @@ const fixtures = [
       isWearable: false,
       isAndroid: false,
       isIOS: false,
+      isBrowser: false,
+      isApp: false,
+      isDesktopApp: false,
+      isMobileApp: false,
     },
   },
   {
@@ -115,6 +127,10 @@ const fixtures = [
       isWearable: true,
       isAndroid: true,
       isIOS: false,
+      isBrowser: true,
+      isApp: false,
+      isDesktopApp: false,
+      isMobileApp: false,
     },
   },
 ];
@@ -127,7 +143,7 @@ describe('test helpers', function () {
         it('test ' + key, () => {
           expect(
             DeviceHelper[key](result),
-            `fixture ${i} method ${key}`
+            `fixture ${i} method ${key} for UA ${fixture.ua}`
           ).to.equal(fixture.checks[key]);
         });
       }

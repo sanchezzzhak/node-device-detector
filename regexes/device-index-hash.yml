@@ -849,6 +849,10 @@ MD-03P:
   - P-UP
 Note 11P:
   - Ulefone
+SM-N950U:
+  - Samsung
+'iPhone10,5':
+  - Apple
 'iPod5,1':
   - Apple
 HMT390Q:
@@ -2028,6 +2032,8 @@ NBX-NB1012:
   - Noblex
 NBX-T8A1IE:
   - Noblex
+Neffos C5/S100:
+  - Neffos
 Neffos C5 Max:
   - Neffos
 TP601A:
@@ -10562,11 +10568,13 @@ Allure_Admire:
   - Reach
 Allure_Rise:
   - Reach
-HMSCore 5.0.4.301:
+NOH-NX9:
   - Huawei
 ART-L28:
   - Huawei
-HMSCore 5.0.4.301; GMSCore 20.36.15:
+NOH-AN00:
+  - Huawei
+HLK-L41:
   - Huawei
 Kiona:
   - MobiWire
@@ -10744,6 +10752,8 @@ LH9910:
   - Lava
 LH9920:
   - Lava
+AGR-L09:
+  - Huawei
 Lenovo TB-X606F:
   - Lenovo
 Lenovo TB-8504X:
@@ -15041,8 +15051,6 @@ SM-M205FN:
   - Samsung
 SAMSUNG SM-G996U:
   - Samsung
-HMSCore 5.0.0.329:
-  - Huawei
 PPA-LX1:
   - Huawei
 A80Plus:
@@ -15339,7 +15347,7 @@ POCO X3:
   - POCO
 V2028:
   - Vivo
-HMSCore 5.2.0.324:
+AGS3-W09:
   - Huawei
 ANG-AN00:
   - Huawei
@@ -15388,7 +15396,7 @@ M2007J20CT:
   - T-Mobile
 5007W:
   - T-Mobile
-HMSCore 5.0.5.300:
+CDY-NX9B:
   - Huawei
 I1927:
   - Vivo
@@ -16592,6 +16600,110 @@ ARK UKOZI U5:
   - Ark
 LEAGOO Z5c:
   - Leagoo
+Ulefone_S1:
+  - Ulefone
+MI 9T:
+  - Xiaomi
+LGLS990:
+  - LG
+'iPhone9,3':
+  - Apple
+LT C3100:
+  - LT Mobile
+LG-F320L:
+  - LG
+LGM-K121S:
+  - LG
+vivo Y51L:
+  - Vivo
+HUAWEI ALE-CL00:
+  - Huawei
+HT50:
+  - Homtom
+SAMSUNG SM-A500FU:
+  - Samsung
+SM-G900FD:
+  - Samsung
+Lenovo A2010-a:
+  - Lenovo
+TECNO-C9:
+  - Tecno Mobile
+PSP3552DUO:
+  - Prestigio
+PSP3511DUO:
+  - Prestigio
+Philips S327:
+  - Philips
+ASUS_Z017DB:
+  - Asus
+TECNO W5 Lite:
+  - Tecno Mobile
+SM-J105H:
+  - Samsung
+INE-LX1:
+  - Huawei
+INE-LX2:
+  - Huawei
+ATU-L11:
+  - Huawei
+BV5500Plus:
+  - Blackview
+VOG-L29:
+  - Huawei
+CPH2065:
+  - OPPO
+PSP7510DUO:
+  - Prestigio
+SAMSUNG SM-A105FN:
+  - Samsung
+TRT-LX3:
+  - Huawei
+BV9800Pro:
+  - Blackview
+TONE_e21:
+  - Tone
+vivo X21i A:
+  - Vivo
+ASUS_Z017D:
+  - Asus
+STARNAUTE4:
+  - SFR
+LGMS345:
+  - LG
+LG-M160:
+  - LG
+Archos 55 Cobalt Plus:
+  - Archos
+LAVA_RI:
+  - Lava
+FIG-LA1:
+  - Huawei
+BV9500Pro:
+  - Blackview
+SLA-L02:
+  - Huawei
+LEX727:
+  - LeEco
+HRY-LX1:
+  - Huawei
+Lenovo A1000:
+  - Lenovo
+vivo X5Pro:
+  - Vivo
+Hisense C30:
+  - Hisense
+Archos 50e Neon:
+  - Archos
+Mi A3:
+  - Xiaomi
+Moto C:
+  - Motorola
+NX575J:
+  - ZTE
+LGL58VL:
+  - LG
+Impress_Tor:
+  - Vertex
 bravis_A506:
   - Bravis
 BRAVIS DELTA:
@@ -20409,8 +20521,6 @@ HUAWEI CAM-L03:
 CAM-L32:
   - Huawei
 MED-LX9N:
-  - Huawei
-HMSCore 5.0.2.301:
   - Huawei
 TRT-LX1:
   - Huawei
@@ -28321,8 +28431,6 @@ VIA_S18:
   - Casper
 VIA_S17:
   - Casper
-AGR-L09:
-  - Huawei
 e-tab 20:
   - General Mobile
 AGR-W09:
@@ -28694,6 +28802,24 @@ I216A:
   - Alcatel
 Techno X800BJ:
   - BB Mobile
+SUPRA M94BG:
+  - Supra
+ActiveD 8.2 3G:
+  - Explay
+LG-V533:
+  - LG
+'iPad7,11':
+  - Apple
+'iPad7,3':
+  - Apple
+P1060X:
+  - Medion
+CW-Hi10 plus:
+  - Chuwi
+Lenovo B6000-HV:
+  - Lenovo
+S410J:
+  - Philips
 Senkatel_T1009:
   - Senkatel
 Senkatel_T7011:
@@ -29211,8 +29337,6 @@ A200:
 A101:
   - Acer
 IntroTr3544:
-  - Advance
-Tr3845:
   - Advance
 Excer_10_PRO:
   - AVH

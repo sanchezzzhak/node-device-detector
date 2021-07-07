@@ -9,37 +9,37 @@ const detector = new DeviceDetect({
   discardDeviceIndexes: false
 })
 
-let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
-let fixtureFolder = getFixtureFolder();
-let ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 let fixtures = {}
 
-ymlDeviceFiles.forEach((file) => {
-  if (excludeFilesNames.indexOf(file) !== -1) {
-    return;
+const run = (folderTestPath, folderFixturePath) => {
+  let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
+  if( folderFixturePath === '') {
+    folderFixturePath = getFixtureFolder() + 'devices/';
   }
-  let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
-  fixtureData.forEach((fixture, pos) => {
-    let aliasResult = aliasDevice.parse(fixture.user_agent);
 
-    let brand = String(fixture.device.brand);
-    let model = String(fixture.device.model);
-    let deviceCode = aliasResult.name ? aliasResult.name : void 0;
-    fixtures[deviceCode] = {brand, model};
-  });
-})
+  let ymlDeviceFiles = fs.readdirSync(folderFixturePath);
+  ymlDeviceFiles.forEach((file) => {
+    if (excludeFilesNames.indexOf(file) !== -1) {
+      return;
+    }
+    let fixtureData = YAMLLoad(folderFixturePath + file);
+    fixtureData.forEach((fixture, pos) => {
+      let aliasResult = aliasDevice.parse(fixture.user_agent);
+      let brand = String(fixture.device.brand);
+      let model = String(fixture.device.model);
+      let deviceCode = aliasResult.name ? aliasResult.name : void 0;
+      fixtures[deviceCode] = {brand, model};
+    });
+  })
 
-console.log('generate fixtures done');
-
-const parse = (folderPath) => {
-  const files = fs.readdirSync(folderPath);
+  const files = fs.readdirSync(folderTestPath);
   if (!files.length) {
     console.log('empty dir files not found')
     return;
   }
   files.forEach(async file => {
-    let absolutePath = folderPath + file;
+    let absolutePath = folderTestPath + file;
     if(!fs.lstatSync(absolutePath).isFile()){
       return;
     }
@@ -55,26 +55,19 @@ const parse = (folderPath) => {
       let isFoundModel = result.device && result.device.model !== void 0;
       let isFoundBrand = result.device && result.device.brand !== void 0;
 
-      if(fixtures[deviceCode] === void 0 && isFoundModel) {
-        console.log(useragent)
-      } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
-        console.log(useragent)
-      } else if(deviceCode && !isFoundBrand) {
+      if(fixtures[deviceCode] === void 0) {
         console.log(useragent)
       }
+      // } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
+      //   console.log(useragent)
+      // } else if(deviceCode && !isFoundBrand) {
+      //   console.log(useragent)
+      // }
     }
   });
 };
 
-if (process.argv.length > 2) {
-  parse(process.argv[2]);
-} else {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-  rl.question('set folder path: ', (folderPath) => {
-    parse(folderPath)
-    rl.close();
-  });
-}
+let parsePath = process.argv[2];
+let testsPath = process.argv[3] || "";
+
+run(parsePath, testsPath);

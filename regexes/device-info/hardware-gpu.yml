@@ -275,3 +275,24 @@ gpu:
   92:
     name: Qualcomm Adreno 610
     clock_rate: 670
+  93:
+    name: ARM Mali-G77 MP11
+    clock_rate: 0
+  94:
+    name: ARM Mali-T830 MP3
+    clock_rate: 600
+  95:
+    name: Qualcomm Adreno 612
+    clock_rate: 0
+  96:
+    name: Qualcomm Adreno 618
+    clock_rate: 0
+  97:
+    name: ARM Mali-G76 MP5
+    clock_rate: 720
+  98:
+    name: ARM Mali-T760 MP8
+    clock_rate: 772
+  99:
+    name: ARM Mali-G78 MP14
+    clock_rate: 759

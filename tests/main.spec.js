@@ -93,6 +93,58 @@ function testsFromFixtureDeviceMobile(fixture) {
   }
 }
 
+describe('tests single parse camera', function () {
+  let parser =  new (require('../parser/device/camera'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/camera.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+      it(i + '/' + total, function () {
+        let fixture = fixtureData[i];
+        let result = parser.parse(fixture.user_agent);
+        delete result.id;
+        expect(fixture.device).to.deep.equal(result);
+      });
+  }
+});
+
+describe('tests single parse console', function () {
+  let parser =  new (require('../parser/device/console'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/console.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+    it(i + '/' + total, function () {
+      let fixture = fixtureData[i];
+      let result = parser.parse(fixture.user_agent);
+      delete result.id;
+      expect(fixture.device).to.deep.equal(result);
+    });
+  }
+});
+
+describe('tests single parse car', function () {
+  let parser =  new (require('../parser/device/car-browser'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/car_browser.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+    it(i + '/' + total, function () {
+      let fixture = fixtureData[i];
+      let result = parser.parse(fixture.user_agent);
+      delete result.id;
+      expect(fixture.device).to.deep.equal(result);
+    });
+  }
+});
+
+describe('tests single parse nootebook', function () {
+  let parser =  new (require('../parser/device/notebook'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/notebook.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+    it(i + '/' + total, function () {
+      let fixture = fixtureData[i];
+      let result = parser.parse(fixture.user_agent);
+      delete result.id;
+      expect(fixture.device).to.deep.equal(result);
+    });
+  }
+});
+
 describe('tests clients', function () {
   this.timeout(TIMEOUT);
   let skipFiles = ['version_truncate.yml'];
@@ -196,6 +248,22 @@ describe('tests alias devices', function () {
   });
 });
 
+describe('test discard options', function() {
+  this.timeout(TIMEOUT);
+  let UA = 'Mozilla/5.0 (Linux; Android 5.1; Primo ZX2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36';
+  it('test discardDeviceAliasCode enable', () => {
+    detector.discardDeviceAliasCode = false;
+    let result = detector.detect(UA);
+    expect(result.device.code).to.equal('Primo ZX2 Lite');
+  })
+  it('test discardDeviceAliasCode disable', () => {
+    detector.discardDeviceAliasCode = true;
+    let result = detector.detect(UA);
+    expect(result.device.code).to.equal(void 0);
+  })
+  
+})
+
 describe('tests devices', function () {
   this.timeout(TIMEOUT);
   const runTest = (result, fixture) => {
@@ -240,6 +308,8 @@ describe('tests devices', function () {
       .to.equal(true, `brand not found from short list, ${messageError} `);
     }
   }
+  
+  detector.discardDeviceAliasCode = true;
   
   ymlDeviceFiles.forEach(function (file) {
     if (excludeFilesNames.indexOf(file) !== -1) {

@@ -66,9 +66,11 @@ class DeviceDetector {
 
     this.__discardBotDetection = false;
     this.__discardDeviceIndexes = false;
+    this.__discardDeviceAliasCode = false;
     this.__clientVersionTruncate = null;
     this.__osVersionTruncate = null;
     this.__osVersionTruncate = null;
+
 
     this.init();
 
@@ -92,7 +94,11 @@ class DeviceDetector {
       'discardDeviceIndexes',
       true
     );
-    
+    this.discardDeviceAliasCode = helper.getPropertyValue(
+      options,
+      'discardDeviceAliasCode',
+      true
+    );
     this.filePathDeviceIndexes = helper.getPropertyValue(
       options,
       'filePathDeviceIndexes',
@@ -130,8 +136,8 @@ class DeviceDetector {
     return this.__discardBotDetection;
   }
   
-  set skipBotDetection(value) {
-    this.__discardBotDetection = value;
+  set skipBotDetection(discard) {
+    this.__discardBotDetection = discard;
   }
   
   get discardDeviceIndexes() {
@@ -140,6 +146,14 @@ class DeviceDetector {
   
   set discardDeviceIndexes(discard) {
     this.__discardDeviceIndexes = discard;
+  }
+  
+  get discardDeviceAliasCode() {
+    return this.__discardDeviceAliasCode;
+  }
+  
+  set discardDeviceAliasCode(discard) {
+    return this.__discardDeviceAliasCode = discard;
   }
   
   set clientVersionTruncate(value) {
@@ -455,9 +469,15 @@ class DeviceDetector {
    */
   parseDevice(userAgent) {
     let brandIndexes = [];
+    let deviceCode = '';
+    
     if (!this.discardDeviceIndexes) {
       let alias = this.getParseAliasDevice().parse(userAgent);
-      brandIndexes = this.getBrandsByDeviceCode(alias.name ? alias.name : '');
+      deviceCode = alias.name ? alias.name : '';
+      brandIndexes = this.getBrandsByDeviceCode(deviceCode);
+    } else if (!this.discardDeviceAliasCode) {
+      let alias = this.getParseAliasDevice().parse(userAgent);
+      deviceCode = alias.name ? alias.name : '';
     }
     
     let result = {
@@ -482,6 +502,10 @@ class DeviceDetector {
         result.brand = resultVendor.name;
         result.id = resultVendor.id;
       }
+    }
+  
+    if (!this.discardDeviceAliasCode) {
+      result.code = deviceCode;
     }
     
     return result;

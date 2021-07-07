@@ -38,11 +38,12 @@ class Browser extends ClientAbstractParser {
 
       if (match !== null) {
         let name = this.buildByMatch(item.name, match);
+        name = this.buildName(name);
         let version = this.buildVersion(item.version, match);
 
         let short = this.buildShortName(name);
         let engine = this.buildEngine(
-          item.engine !== undefined ? item.engine : {},
+          item.engine !== void 0 ? item.engine : {},
           version
         );
         if (engine === '') {
@@ -66,7 +67,29 @@ class Browser extends ClientAbstractParser {
 
     return null;
   }
-
+  
+  /**
+   *  normalisation browser name from any case
+   *
+   * @param {string} name
+   * @returns {string}
+   */
+  buildName(name) {
+    let result = name;
+    let normalName = this.getCollectionBrowsers()[name];
+    if(normalName === void 0) {
+      let lname = name.toLowerCase();
+      let browsers = this.getAvailableBrowsers();
+      for(let i=0, l = browsers.length; i < l; i++){
+        if (lname === browsers[i].toLowerCase()) {
+          result = browsers[i];
+          break
+        }
+      }
+    }
+    return result;
+  }
+  
   /**
    * @param {string} shortName
    * @returns {string}
