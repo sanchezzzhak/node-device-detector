@@ -35,10 +35,11 @@ class OsAbstractParser extends ParserAbstract {
       let match = regex.exec(userAgent);
       if (match !== null) {
         let name = this.buildByMatch(item.name, match);
+        let lname = String(name).toLowerCase();
         let short = 'UNK';
         for (let key in OS_SYSTEMS) {
           if (
-            String(name).toLowerCase() === String(OS_SYSTEMS[key]).toLowerCase()
+            lname === String(OS_SYSTEMS[key]).toLowerCase()
           ) {
             name = OS_SYSTEMS[key];
             short = key;
