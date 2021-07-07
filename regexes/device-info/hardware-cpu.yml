@@ -1739,3 +1739,17 @@ cpu:
     cores: 8
     process: 14nm
     gpu_id: 100
+  271:
+    name: Samsung Exynos 8895
+    type: ARM
+    clock_rate: 2300
+    cores: 8
+    process: 10nm
+    gpu_id: 101
+  272:
+    name: Qualcomm Snapdragon 626 MSM8953 Pro
+    type: ARM
+    clock_rate: 2200
+    cores: 8
+    process: 14nm
+    gpu_id: 41
