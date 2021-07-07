@@ -3920,9 +3920,9 @@ utok:
   451d: ''
 
 google:
-  nexus 5: ''
-  nexus 5x: ''
-  nexus 7: ''
+  nexus 5: 'RE=2013.10;SZ=69.2x137.9x8.6;WT=130;DS=4.95;RS=1080x1920;OS=Android 4.4;CP=94;RM=2048;'
+  nexus 5x: 'RE=2015.09;SZ=72.6x147x7.9;WT=136;DS=5.2;RS=1080x1920;OS=Android 6.0;CP=157;RM=2048;'
+  nexus 7: 'RE=2012.06;SZ=120x198.5x10.5;WT=340;DS=7.0;RS=800x1280;OS=Android 4.1.2;CP=137;RM=1024;'
   nexus 6: ''
   nexus 6p: ''
   pixel 5: ''
@@ -3952,7 +3952,6 @@ google:
   nexus 9: ''
   pixel c: ''
   chromecast: ''
-  build/lmy47v: '->chromecast'
   googletv: ''
 
 imo mobile:

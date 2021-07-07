@@ -647,7 +647,7 @@ cpu:
     process: 28nm
     gpu_id: 1
   94:
-    name: Qualcomm Snapdragon 800 MSM8074
+    name: Qualcomm Snapdragon 800 MSM8974
     type: ARM
     cores: 4
     clock_rate: 2300
@@ -879,6 +879,7 @@ cpu:
     type: x86
     cores: 1/2
     clock_rate: 1200
+    process: 32nm
     gpu_id: 8
   133:
     name: WonderMedia PRIZM WM8950
@@ -891,12 +892,14 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1700
+    process: 28nm
     gpu_id: 10
   135:
     name: Intel Atom Z3745
     type: x86
     cores: 4
     clock_rate: 1860
+    process: 22nm
     gpu_id: 63
   136:
     name: Intel Atom Z3580
@@ -908,18 +911,21 @@ cpu:
     name: NVIDIA Tegra 3
     type: ARM
     cores: 4
+    process: 28nm
     clock_rate: 1700
   138:
     name: Qualcomm Snapdragon 600 APQ8064T
     type: ARM
     cores: 4
     clock_rate: 1700
+    process: 28nm
     gpu_id: 64
   139:
     name: Qualcomm Snapdragon 801 MSM8974AB
     type: ARM
     cores: 4
     clock_rate: 2360
+    process: 28nm
     gpu_id: 65
   140:
     name: Qualcomm Snapdragon S4 Plus MSM8260A
@@ -1029,6 +1035,7 @@ cpu:
     type: ARM
     cores: 6
     clock_rate: 2000
+    process: 20nm
     gpu_id: 71
   158:
     name: Qualcomm Snapdragon S2 MSM7230
