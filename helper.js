@@ -1,7 +1,12 @@
 const DEVICE_TYPES = require('./parser/const/device-type');
+const CLIENT_TYPES = require('./parser/const/client-type');
 
 const getDeviceType = (result) => {
   return result.device && result.device.type ? result.device.type : null;
+};
+
+const getClientType = (result) => {
+  return result.client && result.client.type ? result.client.type : null;
 };
 
 const isTablet = (result) => {
@@ -71,10 +76,22 @@ const isWearable = (result) => {
   return getDeviceType(result) === DEVICE_TYPES.WEARABLE;
 };
 
-/*
-const isOS = (name) => {};
-const isBrowser = (name) => {};
-*/
+const isBrowser = (result) => {
+  return getClientType(result) === CLIENT_TYPES.BROWSER;
+};
+
+const isApp = (result) => {
+  return getClientType(result) !== null && !isBrowser(result);
+};
+
+const isDesktopApp = (result) => {
+  return isApp(result) && isDesktop(result);
+};
+
+const isMobileApp = (result) => {
+  return isApp(result) && isMobile(result);
+};
+
 
 module.exports = {
   isCamera,
@@ -93,5 +110,9 @@ module.exports = {
   isTv,
   isWearable,
   isAndroid,
+  isBrowser,
+  isApp,
+  isDesktopApp,
+  isMobileApp,
   isIOS,
 };
