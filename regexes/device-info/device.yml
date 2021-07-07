@@ -140,7 +140,7 @@
 
 8848:
   m3: 'RE=2016.08;CP=115;RM=4096;WT=220;DS=5;RS=1080x1920;SM=1;'
-  m4: 'RE=2017.08;CP=173;RM=6144DS=5.15;RS=1080x1920;OS=Android 7.0;;SM=2;'
+  m4: 'RE=2017.08;CP=173;RM=6144;DS=5.15;RS=1080x1920;OS=Android 7.0;SM=2;'
   m5: ''
   m6: ''
 
@@ -4152,7 +4152,7 @@ samsung:
   sm-a300xu: '->galaxy a3 (2015)'
   sm-a300h: '->galaxy a3 (2015)'
   sm-a300y: '->galaxy a3 (2015)'
-  galaxy a3 (2016): 'RE=2015.12;SZ=65.2x134.5x7.3;WT=132;DS=4.7;RS=720x1280;OS=Android 5.1.1;CP=251RM=1536;'
+  galaxy a3 (2016): 'RE=2015.12;SZ=65.2x134.5x7.3;WT=132;DS=4.7;RS=720x1280;OS=Android 5.1.1;CP=251;RM=1536;'
   sm-a310x: '->galaxy a3 (2016)'
   sm-a310m: '->galaxy a3 (2016)'
   sm-a310f: '->galaxy a3 (2016)'
@@ -4174,7 +4174,7 @@ samsung:
   galaxy a40: 'RE=2019.05;SZ=69.2x144.4x7.9;WT=140;DS=5.9;RS=1080x2340;OS=Android 9.0;CP=237;RM=4096;'
   sm-a405fm: '->galaxy a40'
   sm-a405s: '->galaxy a40'
-  galaxy a40s: 'RE=2019.04;SZ=75.1x159.1x8.5WT=174;DS=64;RS=720x1560;OS=Android 9.0;CP=237;RM=4096;'
+  galaxy a40s: 'RE=2019.04;SZ=75.1x159.1x8.5;WT=174;DS=64;RS=720x1560;OS=Android 9.0;CP=237;RM=4096;'
   sm-a3051: '->galaxy a40s'
   sm-a3050: '->galaxy a40s'
   galaxy a41: 'RE=2020.05;SZ=69.8x149.9x7.9;WT=152;DS=6.1;RS=1080x2400;OS=Android 10;CP=253;RM=4096;'

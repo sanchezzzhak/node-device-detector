@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 01/07/2021_
+_Last update: 07/07/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (821 devices, alias devices 2109)
+> This parser is experimental and contains few devices. (833 devices, alias devices 2131)
 >
 ##### Support detail brands/models list:
 
@@ -231,7 +231,7 @@ is not parse result  {name: ""}
 
 | Brand | Device count | Alias count | - | Brand | Device count | Alias count |
 |----|----|----|----|----|----|----|
-| 360 | 10 | 10 | - | 8848 | 1 | 0 |
+| 360 | 10 | 10 | - | 8848 | 2 | 0 |
 | 2e | 2 | 2 | - | 3gnet | 0 | 1 |
 | 3q | 14 | 62 | - | 4good | 1 | 1 |
 | 4ife | 0 | 1 | - | a1 | 0 | 1 |
@@ -277,12 +277,12 @@ is not parse result  {name: ""}
 | bravis | 24 | 17 | - | colors | 7 | 2 |
 | engel | 1 | 1 | - | firefly mobile | 4 | 1 |
 | formuler | 2 | 0 | - | geotel | 3 | 0 |
-| huawei | 221 | 576 | - | imo mobile | 5 | 0 |
-| ipro | 4 | 7 | - | oneplus | 18 | 48 |
-| öwn | 1 | 2 | - | panasonic | 5 | 8 |
-| samsung | 81 | 272 | - | tiphone | 1 | 0 |
-| utok | 1 | 0 | - | zync | 2 | 0 |
-| zyq | 1 | 13 | - |  |  |  |
+| google | 3 | 5 | - | huawei | 223 | 578 |
+| imo mobile | 5 | 0 | - | ipro | 4 | 7 |
+| oneplus | 18 | 48 | - | öwn | 1 | 2 |
+| panasonic | 5 | 8 | - | samsung | 87 | 287 |
+| tiphone | 1 | 0 | - | utok | 1 | 0 |
+| zync | 2 | 0 | - | zyq | 1 | 13 |
 
 </details>
 

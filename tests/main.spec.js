@@ -93,6 +93,58 @@ function testsFromFixtureDeviceMobile(fixture) {
   }
 }
 
+describe('tests single parse camera', function () {
+  let parser =  new (require('../parser/device/camera'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/camera.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+      it(i + '/' + total, function () {
+        let fixture = fixtureData[i];
+        let result = parser.parse(fixture.user_agent);
+        delete result.id;
+        expect(fixture.device).to.deep.equal(result);
+      });
+  }
+});
+
+describe('tests single parse console', function () {
+  let parser =  new (require('../parser/device/console'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/console.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+    it(i + '/' + total, function () {
+      let fixture = fixtureData[i];
+      let result = parser.parse(fixture.user_agent);
+      delete result.id;
+      expect(fixture.device).to.deep.equal(result);
+    });
+  }
+});
+
+describe('tests single parse car', function () {
+  let parser =  new (require('../parser/device/car-browser'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/car_browser.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+    it(i + '/' + total, function () {
+      let fixture = fixtureData[i];
+      let result = parser.parse(fixture.user_agent);
+      delete result.id;
+      expect(fixture.device).to.deep.equal(result);
+    });
+  }
+});
+
+describe('tests single parse nootebook', function () {
+  let parser =  new (require('../parser/device/notebook'))();
+  let fixtureData = YAMLLoad(fixtureFolder + 'device-parsers/notebook.yml');
+  for(let i = 0, total = fixtureData.length; i < total; i++){
+    it(i + '/' + total, function () {
+      let fixture = fixtureData[i];
+      let result = parser.parse(fixture.user_agent);
+      delete result.id;
+      expect(fixture.device).to.deep.equal(result);
+    });
+  }
+});
+
 describe('tests clients', function () {
   this.timeout(TIMEOUT);
   let skipFiles = ['version_truncate.yml'];
