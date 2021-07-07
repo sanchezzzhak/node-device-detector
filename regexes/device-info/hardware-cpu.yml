@@ -938,6 +938,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 3100
+    process: 7nm
     gpu_id: 67
   142:
     name: MediaTek MT6739WM
@@ -1376,6 +1377,7 @@ cpu:
     type: ARM
     clock_rate: 1800
     cores: 8
+    process: 14nm
     gpu_id: 41
   215:
     name: Spreadtrum SC9830
