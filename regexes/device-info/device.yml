@@ -139,8 +139,8 @@
   4k tv box: '->4k smart tv box'
 
 8848:
-  m3: '2016.08;CP=115;RM=4096;WT=220;DS=5;RS=1080x1920;SM=1;'
-  m4: ''
+  m3: 'RE=2016.08;CP=115;RM=4096;WT=220;DS=5;RS=1080x1920;SM=1;'
+  m4: 'RE=2017.08;CP=173;RM=6144DS=5.15;RS=1080x1920;OS=Android 7.0;;SM=2;'
   m5: ''
   m6: ''
 
@@ -2860,6 +2860,10 @@ colors:
 
 # Huawei
 huawei:
+  y6 pro: 'RE=2015.10;SZ=71.8x143.1x9.7;WT=160;DS=5.0;RS=720x1280;OS=Android 5.1.1;CP=56;RM=2048;'
+  tit-u02: '->y6 pro'
+  y5 pro (2017): 'RE=2017.04;SZ=72x143.8x8.4;WT=150;DS=5.0;RS=720x1280;OS=Android 6.0;CP=69;RM=2048;'
+  mya-l13: '->y5 pro (2017)'
   4afrika: 'DS=4;RS=480x800;SZ=63.7x124.5x10.5;WT=130;RE=2013.02;RM=512;CP=212;OS=Windows Phone 8;'
   ale-l21: '->p8 lite (2015)'
   ale-tl00: '->p8 lite (2015)'
@@ -3914,6 +3918,42 @@ oneplus:
 utok:
   450d: 'DS=4.5;RS=480x854;SZ=66.8x132x9.5;WT=140;RM=512;OS=Android 4.2.2;CP=24;'
   451d: ''
+
+google:
+  nexus 5: ''
+  nexus 5x: ''
+  nexus 7: ''
+  nexus 6: ''
+  nexus 6p: ''
+  pixel 5: ''
+  pixel 4a (5g): ''
+  galaxy nexus: ''
+  glass: ''
+  glass 1: '->glass'
+  nexus 4: ''
+  nexus one: ''
+  nexus s: ''
+  nexus s 4g: '->nexus s'
+  pixel: ''
+  pixel 2: ''
+  g011a: '->pixel 2'
+  pixel 2 xl: ''
+  2xl: '->pixel 2 xl'
+  pixel 3: ''
+  pixel 3 xl: ''
+  pixel 3a: ''
+  pixel 3a xl: ''
+  pixel 4: ''
+  pixel 4 xl: ''
+  pixel 4a: ''
+  pixel xl: ''
+  nexus 10: ''
+  nexus 7 2013: '->nexus 7'
+  nexus 9: ''
+  pixel c: ''
+  chromecast: ''
+  build/lmy47v: '->chromecast'
+  googletv: ''
 
 imo mobile:
   q3 plus: 'DS=5;RS=480x960;SZ=65.8x141x9.1;WT=132;OS=Android 8.1;RM=1024;CP=83;RE=2018.09;'
