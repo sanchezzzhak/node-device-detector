@@ -1714,3 +1714,17 @@ cpu:
     cores: 8
     process: 5nm
     gpu_id: 99
+  268:
+    name: Qualcomm Snapdragon 653 MSM8976 Pro
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    process: 28nm
+    gpu_id: 57
+  269:
+    name: Samsung Exynos 9820
+    type: ARM
+    clock_rate: 2700
+    cores: 8
+    process: 8nm
+    gpu_id: 42
