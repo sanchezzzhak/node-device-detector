@@ -1131,6 +1131,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 2200
+    process: 14nm
     gpu_id: 74
   174:
     name: Mediatek Helio P20 MT6757
@@ -1552,6 +1553,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 2450
+    process: 28nm
     gpu_id: 65
   244:
     name: Qualcomm Snapdragon 460
@@ -1730,3 +1732,10 @@ cpu:
     cores: 8
     process: 8nm
     gpu_id: 42
+  270:
+    name: Samsung Exynos 8890
+    type: ARM
+    clock_rate: 2600
+    cores: 8
+    process: 14nm
+    gpu_id: 100
