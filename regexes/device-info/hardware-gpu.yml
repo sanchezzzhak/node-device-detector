@@ -305,3 +305,6 @@ gpu:
   102:
     name: ARM Mali-G57 MP3
     clock_rate: 0
+  103:
+    name: Qualcomm Adreno 619
+    clock_rate: 0
