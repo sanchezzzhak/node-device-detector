@@ -1,13 +1,13 @@
 cpu:
   1:
-    name: Mediatek MT6582M
+    name: MediaTek MT6582M
     type: ARM
     cores: 4
     clock_rate: 1300
     process: 28nm
     gpu_id: 1
   2:
-    name: Mediatek MT6592
+    name: MediaTek MT6592
     type: ARM
     cores: 8
     clock_rate: 1700
@@ -41,7 +41,7 @@ cpu:
     process: 28nm
     gpu_id: 1
   7:
-    name: Mediatek MT6582
+    name: MediaTek MT6582
     type: ARM
     cores: 4
     clock_rate: 1300
@@ -180,7 +180,7 @@ cpu:
     process: 65nm
     clock_rate: 528
   27:
-    name: Mediatek MT6589
+    name: MediaTek MT6589
     type: ARM
     cores: 4
     clock_rate: 1200
@@ -243,7 +243,7 @@ cpu:
     process: 28nm
     gpu_id: 24
   36:
-    name: Mediatek MT6572M
+    name: MediaTek MT6572M
     type: ARM
     cores: 2
     clock_rate: 1200
@@ -271,7 +271,7 @@ cpu:
     process: 28nm
     gpu_id: 2
   40:
-    name: Mediatek MT6750
+    name: MediaTek MT6750
     type: ARM
     cores: 8
     clock_rate: 1500
@@ -383,7 +383,7 @@ cpu:
     process: 7nm
     gpu_id: 35
   56:
-    name: Mediatek MT6735P
+    name: MediaTek MT6735P
     type: ARM
     cores: 4
     clock_rate: 1000
@@ -397,7 +397,7 @@ cpu:
     process: 7nm
     gpu_id: 36
   58:
-    name: Mediatek MT6580M
+    name: MediaTek MT6580M
     type: ARM
     cores: 4
     clock_rate: 1300
@@ -410,7 +410,7 @@ cpu:
     process: 7nm
     clock_rate: 2650
   60:
-    name: Mediatek MT6752M
+    name: MediaTek MT6752M
     type: ARM
     cores: 8
     clock_rate: 1700
@@ -432,7 +432,7 @@ cpu:
     process: 10nm
     gpu_id: 39
   63:
-    name: Mediatek Helio P23 MT6763
+    name: MediaTek Helio P23 MT6763
     type: ARM
     cores: 8
     clock_rate: 2500
@@ -475,7 +475,7 @@ cpu:
     process: 28nm
     gpu_id: 18
   69:
-    name: Mediatek MT6737T
+    name: MediaTek MT6737T
     type: ARM
     cores: 4
     clock_rate: 1500
@@ -511,7 +511,7 @@ cpu:
     gpu_id: 44
   74:
     # MT8735M
-    name: Mediatek MT8735
+    name: MediaTek MT8735
     type: ARM
     cores: 4
     clock_rate: 1300
@@ -543,7 +543,7 @@ cpu:
     process: 28nm
     gpu_id: 12
   79:
-    name: Mediatek MT6735
+    name: MediaTek MT6735
     type: ARM
     cores: 4
     clock_rate: 1500
@@ -578,14 +578,14 @@ cpu:
     process: 28nm
     cpu_id: 46
   84:
-    name: Mediatek MT6739WW
+    name: MediaTek MT6739WW
     type: ARM
     cores: 4
     clock_rate: 1500
     process: 28nm
     cpu_id: 4
   85:
-    name: Mediatek Helio X10 MT6795
+    name: MediaTek Helio X10 MT6795
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -612,7 +612,7 @@ cpu:
     process: 28nm
     gpu_id: 1
   89:
-    name: Mediatek MT8121
+    name: MediaTek MT8121
     type: ARM
     cores: 4
     clock_rate: 1300
@@ -640,7 +640,7 @@ cpu:
     process: 28nm
     gpu_id: 49
   93:
-    name: Mediatek MT8321M
+    name: MediaTek MT8321M
     type: ARM
     cores: 4
     clock_rate: 1300
@@ -668,28 +668,28 @@ cpu:
     process: 20nm
     gpu_id: 50
   97:
-    name: Mediatek Helio P60T
+    name: MediaTek Helio P60T
     type: ARM
     cores: 8
     clock_rate: 2000
     process: 12nm
     gpu_id: 51
   98:
-    name: Mediatek MT8183
+    name: MediaTek MT8183
     type: ARM
     cores: 8
     clock_rate: 2000
     process: 12nm
     gpu_id: 51
   99:
-    name: Mediatek MT8173
+    name: MediaTek MT8173
     type: ARM
     cores: 4
     clock_rate: 2400
     process: 28nm
     gpu_id: 52
   100:
-    name: Mediatek MT8135
+    name: MediaTek MT8135
     type: ARM
     cores: 4
     clock_rate: 1700
@@ -731,7 +731,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 54
   107:
-    name: Mediatek MT8389
+    name: MediaTek MT8389
     type: ARM
     cores: 4
     clock_rate: 1200
@@ -761,7 +761,7 @@ cpu:
     clock_rate: 1200
     gpu_id: 12
   112:
-    name: Mediatek MT6589T
+    name: MediaTek MT6589T
     type: ARM
     cores: 4
     clock_rate: 1500
@@ -773,7 +773,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 5
   114:
-    name: Mediatek Helio P70 MT6771
+    name: MediaTek Helio P70 MT6771
     type: ARM
     cores: 8
     clock_rate: 2100
@@ -792,13 +792,13 @@ cpu:
     clock_rate: 2000
     gpu_id: 58
   117:
-    name: Mediatek Helio P10 MT6755
+    name: MediaTek Helio P10 MT6755
     type: ARM
     cores: 8
     clock_rate: 2000
     gpu_id: 26
   118:
-    name: Mediatek MT6753
+    name: MediaTek MT6753
     type: ARM
     cores: 8
     clock_rate: 1300
@@ -811,13 +811,13 @@ cpu:
     clock_rate: 1200
     gpu_id: 23
   120:
-    name: Mediatek MT8732
+    name: MediaTek MT8732
     type: ARM
     cores: 4
     clock_rate: 1500
     gpu_id: 37
   121:
-    name: Mediatek MT8735B
+    name: MediaTek MT8735B
     type: ARM
     cores: 4
     clock_rate: 1300
@@ -1014,7 +1014,7 @@ cpu:
     clock_rate: 1700
     gpu_id: 69
   154:
-    name: Mediatek MT6732
+    name: MediaTek MT6732
     type: ARM
     cores: 4
     clock_rate: 1500
@@ -1068,13 +1068,13 @@ cpu:
     clock_rate: 1500
     gpu_id: 26
   163:
-    name: Mediatek MT8321
+    name: MediaTek MT8321
     type: ARM
     cores: 4
     clock_rate: 1300
     gpu_id: 1
   164:
-    name: Mediatek Helio P22 MT6762D
+    name: MediaTek Helio P22 MT6762D
     type: ARM
     cores: 8
     clock_rate: 2000
@@ -1086,7 +1086,7 @@ cpu:
     clock_rate: 1300
     gpu_id: 1
   166:
-    name: Mediatek Helio P23 MT6763T
+    name: MediaTek Helio P23 MT6763T
     type: ARM
     cores: 8
     clock_rate: 2500
@@ -1103,7 +1103,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 2
   169:
-    name: Mediatek Helio P23 MT6763V
+    name: MediaTek Helio P23 MT6763V
     type: ARM
     cores: 8
     clock_rate: 2000
@@ -1115,7 +1115,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 26
   171:
-    name: Mediatek Helio P22 MT6762
+    name: MediaTek Helio P22 MT6762
     type: ARM
     cores: 8
     clock_rate: 2000
@@ -1134,19 +1134,20 @@ cpu:
     process: 14nm
     gpu_id: 74
   174:
-    name: Mediatek Helio P20 MT6757
+    name: MediaTek Helio P20 MT6757
     type: ARM
     cores: 8
     clock_rate: 2300
+    process: 16nm
     gpu_id: 75
   175:
-    name: Mediatek MT8766B
+    name: MediaTek MT8766B
     type: ARM
     cores: 4
     clock_rate: 2000
     gpu_id: 76
   176:
-    name: Mediatek MT8165A
+    name: MediaTek MT8165A
     type: ARM
     cores: 4
     clock_rate: 1500
@@ -1187,7 +1188,7 @@ cpu:
     clock_rate: 1500
     gpu_id: 0
   183:
-    name: Mediatek MT6573
+    name: MediaTek MT6573
     type: ARM
     cores: 1
     clock_rate: 650
@@ -1210,7 +1211,7 @@ cpu:
     clock_rate: 480
     cores: 1
   187:
-    name: Mediatek MT8312
+    name: MediaTek MT8312
     type: ARM
     clock_rate: 1300
     cores: 2
@@ -1447,10 +1448,11 @@ cpu:
     cores: 8
     gpu_id: 80
   226:
-    name: Mediatek Helio G80
+    name: MediaTek Helio G80
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 12nm
     gpu_id: 83
   227:
     name: HiSilicon Kirin 930
@@ -1483,7 +1485,7 @@ cpu:
     clock_rate: 1280
     gpu_id: 2
   232:
-    name: Mediatek Helio P25
+    name: MediaTek Helio P25
     type: ARM
     cores: 8
     clock_rate: 2600
@@ -1615,7 +1617,7 @@ cpu:
     process: 14nm
     gpu_id: 27
   253:
-    name: Mediatek Helio P65 MT6768
+    name: MediaTek Helio P65 MT6768
     type: ARM
     clock_rate: 2000
     cores: 8
@@ -1753,3 +1755,19 @@ cpu:
     cores: 8
     process: 14nm
     gpu_id: 41
+  273:
+    name: Qualcomm Snapdragon 720G
+    # SM7125
+    type: ARM
+    clock_rate: 2300
+    cores: 8
+    process: 8nm
+    gpu_id: 96
+  274:
+    name: MediaTek Dimensity 720
+    # MT6853 5G
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    process: 7nm
+    gpu_id: 102
