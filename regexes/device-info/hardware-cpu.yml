@@ -1546,9 +1546,11 @@ cpu:
     gpu_id: 90
   242:
     name: Qualcomm Snapdragon 765G
+    # SM7250
     type: ARM
     cores: 8
     clock_rate: 2400
+    process: 7nm
     gpu_id: 91
   243:
     name: Qualcomm Snapdragon 801 MSM8974AC
