@@ -363,9 +363,10 @@ afrione:
   gravity z2: ''
 
 agm:
-  a8 se: ''
-  a8: ''
-  x1: ''
+  a8 se: 'RE=2017.05;DS=5;RS=720x1280;RM=2048;CP=17;SM=2;SZ=83x159x16;WT=247;OS=Android 7.0;'
+  a9: 'RE=2018.10;DS=5.99;RS=1080x2160;RM=4096;CP=214;WT=251;SZ=81.4x168.0x12.6;OS=Android 8.1;'
+  a8: 'RE=2017.02;DS=5;RS=720x1280;RM=3072;CP=17;SZ=83x159x16;WT=247;OS=Android 7.0;'
+  x1: 'RE=2016.10;DS=5.5;RS=1080x1920;RM=4096;CP=65;SZ=79.1x163x11.6;WT=205;OS=Android 5.0;'
   x2: ''
 
 ainol:

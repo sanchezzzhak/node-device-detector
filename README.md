@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (887 devices, alias devices 2423)
+> This parser is experimental and contains few devices. (891 devices, alias devices 2423)
 >
 ##### Support detail brands/models list:
 
@@ -238,7 +238,7 @@ is not parse result  {name: ""}
 | accent | 0 | 5 | - | ace | 8 | 0 |
 | acer | 5 | 68 | - | acteck | 0 | 0 |
 | advan | 0 | 1 | - | advance | 0 | 14 |
-| afrione | 0 | 2 | - | agm | 0 | 0 |
+| afrione | 0 | 2 | - | agm | 4 | 0 |
 | ainol | 0 | 16 | - | airness | 0 | 0 |
 | airo wireless | 1 | 0 | - | airties | 0 | 0 |
 | ais | 0 | 2 | - | aiuto | 0 | 0 |
