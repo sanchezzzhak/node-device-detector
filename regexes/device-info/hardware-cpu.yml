@@ -1519,6 +1519,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1800
+    process: 14nm
     gpu_id: 40
   238:
     name: Spreadtrum SC7730
