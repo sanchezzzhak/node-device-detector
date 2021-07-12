@@ -1544,6 +1544,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2900
+    process: 10nm
     gpu_id: 90
   242:
     name: Qualcomm Snapdragon 765G
@@ -1782,3 +1783,24 @@ cpu:
     cores: 8
     process: 8nm
     gpu_id: 103
+  276:
+    name: Qualcomm Snapdragon 805 APQ8084
+    type: ARM
+    clock_rate: 2700
+    cores: 4
+    process: 28nm
+    gpu_id: 104
+  277:
+    name: Spreadtrum SC7715
+    type: ARM
+    clock_rate: 1200
+    cores: 1
+    process: 40nm
+    gpu_id: 62
+  278:
+    name: Exynos 3475
+    type: ARM
+    clock_rate: 1300
+    cores: 4
+    process: 28nm
+    gpu_id: 2
