@@ -1798,9 +1798,23 @@ cpu:
     process: 40nm
     gpu_id: 62
   278:
-    name: Exynos 3475
+    name: Samsung Exynos 3475
     type: ARM
     clock_rate: 1300
     cores: 4
     process: 28nm
     gpu_id: 2
+  279:
+    name: Samsung Exynos 7570
+    type: ARM
+    clock_rate: 1400
+    cores: 4
+    process: 14nm
+    gpu_id: 5
+  280:
+    name: Spreadtrum SC6815A
+    type: ARM
+    clock_rate: 1000
+    cores: 1
+    process: 40nm
+    gpu_id: 62
