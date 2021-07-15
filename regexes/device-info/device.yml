@@ -3983,6 +3983,16 @@ motorola:
   mb886: 'RE=2012.07;SZ=69.9x133.5x8.4;WT=140;DS=4.5;RS=720x1280;OS=Android 4.0.4;CP=14;RM=1024;'
   moto g7: 'RE=2019.02;SZ=75.3x157x8;WT=172;DS=6.2;RS=1080x2270;OS=Android 9.0;CP=64;RM=4096;'
   moto g(7): '->moto g7'
+  moto g6 play: 'RE=2018.04;SZ=72.2x154.4x9;WT=175;DS=5.7;RS=720x1440;OS=Android 8.0;CP=43;RM=2048;'
+  moto g(6) play: '->moto g6 play'
+  moto g7 supra: 'DRE=2018.02;S=6.2;SZ=76x159x9.3;WT=198;RS=720x1520;OS=Android 9.0;CP=64;RM=3072;'
+  moto g(7) supra: '->moto g7 supra'
+  moto g7 plus: 'RE=2019.02;SZ=75.3x157x8.3;WT=176;DS=6.2;RS=1080x2270;OS=Android 9.0;CP=205;RM=4096;'
+  xt1965-6: '->moto g7 plus'
+  moto e5 play: 'RE=2018.04;SZ=74x151x9;WT=150;DS=5.2;RS=720x1280;OS=Android 8.0;CP=281;RM=2048;'
+  razr 5g: 'RE=2020.09;SZ=72.6x169.2x7.9;WT=192;DS=6.2;RS=876x2142;OS=Android 10;CP=242;RM=8192;'
+  razr: 'RE=2019.11;SZ=72x172x6.9;WT=205;DS=6.2;RS=876x2142;OS=Android 9.0;CP=62;RM=6144;'
+  one macro: 'RE=2019.10;SZ=75.4x157.6x9;WT=186;DS=6.2;RS=720x1520;OS=Android 9.0;CP=114;RM=4096;'
 
 samsung:
   galaxy camera: 'RE=2012.08;SZ=70.8x128.7x19.1;WT=300;DS=4.8;RS=720x1280;OS=Android 4.1;CP=233;RM=1024;'

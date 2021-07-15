@@ -777,6 +777,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2100
+    process: 12nm
     gpu_id: 51
   115:
     name: Qualcomm Snapdragon 652 MSM8976
@@ -1324,6 +1325,7 @@ cpu:
     type: ARM
     clock_rate: 1800
     cores: 8
+    process: 14nm
     gpu_id: 87
   206:
     name: Intel Atom Z2520
@@ -1820,3 +1822,11 @@ cpu:
     cores: 1
     process: 40nm
     gpu_id: 62
+  281:
+    name: Qualcomm Snapdragon 427
+    # MSM8920
+    type: ARM
+    clock_rate: 1400
+    cores: 4
+    process: 28nm
+    gpu_id: 17
