@@ -3978,6 +3978,12 @@ imo mobile:
   tab z6: 'DS=7;RS=480x800;SZ=200x118x13.5;WT=390;RE=2012.09;SM=1;CP=245;RM=512;Android 4.0.3;'
   tab z7: 'DS=7;RS=600x1024;SZ=198x124x11;WT=399;RE=2012.10;OS=Android 4.0.3;CP=180;RM=512;'
 
+motorola:
+  v360: 'RE=2005.01;SZ=47x90x24;WT=104;DS=1.9;RS=176x220;'
+  mb886: 'RE=2012.07;SZ=69.9x133.5x8.4;WT=140;DS=4.5;RS=720x1280;OS=Android 4.0.4;CP=14;RM=1024;'
+  moto g7: 'RE=2019.02;SZ=75.3x157x8;WT=172;DS=6.2;RS=1080x2270;OS=Android 9.0;CP=64;RM=4096;'
+  moto g(7): '->moto g7'
+
 samsung:
   galaxy camera: 'RE=2012.08;SZ=70.8x128.7x19.1;WT=300;DS=4.8;RS=720x1280;OS=Android 4.1;CP=233;RM=1024;'
   ek-gc100: '->galaxy camera'
