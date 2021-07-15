@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 07/07/2021_
+_Last update: 15/07/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (833 devices, alias devices 2131)
+> This parser is experimental and contains few devices. (916 devices, alias devices 2548)
 >
 ##### Support detail brands/models list:
 
@@ -238,7 +238,7 @@ is not parse result  {name: ""}
 | accent | 0 | 5 | - | ace | 8 | 0 |
 | acer | 5 | 68 | - | acteck | 0 | 0 |
 | advan | 0 | 1 | - | advance | 0 | 14 |
-| afrione | 0 | 2 | - | agm | 0 | 0 |
+| afrione | 0 | 2 | - | agm | 4 | 0 |
 | ainol | 0 | 16 | - | airness | 0 | 0 |
 | airo wireless | 1 | 0 | - | airties | 0 | 0 |
 | ais | 0 | 2 | - | aiuto | 0 | 0 |
@@ -280,7 +280,7 @@ is not parse result  {name: ""}
 | google | 3 | 5 | - | huawei | 223 | 578 |
 | imo mobile | 5 | 0 | - | ipro | 4 | 7 |
 | oneplus | 18 | 48 | - | öwn | 1 | 2 |
-| panasonic | 5 | 8 | - | samsung | 87 | 287 |
+| panasonic | 5 | 8 | - | samsung | 166 | 704 |
 | tiphone | 1 | 0 | - | utok | 1 | 0 |
 | zync | 2 | 0 | - | zyq | 1 | 13 |
 

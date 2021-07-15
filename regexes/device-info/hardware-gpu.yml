@@ -286,7 +286,7 @@ gpu:
     clock_rate: 0
   96:
     name: Qualcomm Adreno 618
-    clock_rate: 0
+    clock_rate: 500
   97:
     name: ARM Mali-G76 MP5
     clock_rate: 720
@@ -296,3 +296,18 @@ gpu:
   99:
     name: ARM Mali-G78 MP14
     clock_rate: 759
+  100:
+    name: ARM Mali-T880 MP12
+    clock_rate: 650
+  101:
+    name: ARM Mali-G71 MP20
+    clock_rate: 900
+  102:
+    name: ARM Mali-G57 MP3
+    clock_rate: 0
+  103:
+    name: Qualcomm Adreno 619
+    clock_rate: 0
+  104:
+    name: Qualcomm Adreno 420
+    clock_rate: 600
