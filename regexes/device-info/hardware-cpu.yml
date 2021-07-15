@@ -1570,6 +1570,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1800
+    process: 11nm
     gpu_id: 92
   245:
     name: AllWinner A10
@@ -1830,3 +1831,32 @@ cpu:
     cores: 4
     process: 28nm
     gpu_id: 17
+  282:
+    name: Qualcomm Snapdragon 435 SDM435
+    type: ARM
+    clock_rate: 1400
+    cores: 8
+    process: 28nm
+    gpu_id: 24
+  283:
+    name: Qualcomm Snapdragon 665
+    type: ARM
+    clock_rate: 2200
+    cores: 8
+    process: 11nm
+    gpu_id: 92
+  284:
+    name: MediaTek Helio G25
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    process: 12nm
+    gpu_id: 25
+  285:
+    name: Qualcomm Snapdragon 662
+    # SM6115
+    type: ARM
+    clock_rate: 2000
+    cores: 8
+    process: 11nm
+    gpu_id: 92
