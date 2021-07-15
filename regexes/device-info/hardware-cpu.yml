@@ -1867,3 +1867,9 @@ cpu:
     cores: 1
     process: 45nm
     gpu_id: 29
+  287:
+    name: Spreadtrum SC7731G
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    gpu_id: 1
