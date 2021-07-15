@@ -1316,6 +1316,7 @@ cpu:
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 14nm
     gpu_id: 41
   205:
     # SDM636
@@ -1495,6 +1496,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1400
+    process: 32nm
     gpu_id: 44
   234:
     name: Qualcomm Snapdragon 855
