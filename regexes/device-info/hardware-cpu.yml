@@ -1860,3 +1860,10 @@ cpu:
     cores: 8
     process: 11nm
     gpu_id: 92
+  286:
+    name: Qualcomm Snapdragon S2 MSM8255
+    type: ARM
+    clock_rate: 1500
+    cores: 1
+    process: 45nm
+    gpu_id: 29
