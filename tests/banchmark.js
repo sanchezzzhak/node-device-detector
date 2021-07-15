@@ -15,13 +15,16 @@ const userAgents = [
 ];
 
 const useragent = random(userAgents);
+const experiment = (name, fn) => {
+  suite.add(name, {minSamples: 100, fn });
+};
 
-suite.add('EnableDeviceIndexes ', function () {
+experiment('EnableDeviceIndexes ', function () {
   detector.discardDeviceIndexes = false;
   let result = detector.detect(useragent);
 });
 
-suite.add('DiscardDeviceIndexes', function () {
+experiment('DiscardDeviceIndexes', function () {
   detector.discardDeviceIndexes = true;
   let result = detector.detect(useragent);
 });
