@@ -4033,6 +4033,13 @@ motorola:
   moto g4: 'RE=2016.05;SZ=76.6x153x9.8;WT=155;DS=5.5;RS=1080x1920;OS=Android 6.0.1;CP=65;RM=2048;'
   moto g (4): '->moto g4'
 
+nuvo:
+  nd40: 'RE=2014.12;RS=480x800;WT=130;SZ=63x128x9.6;DS=4;SM=2;OS=Android 4.4;'
+  blue nd40: '->nd40'
+  nd45: 'RE=2015.05;WT=135;SZ=68x135x9.2;RS=480x854;DS=4.5;SM=2;OS=Android 4.4;'
+  green nd 45: '->nd45'
+  ns35: 'RE=2015.05;WT=120;SZ=61.5x114.5x10.6;RS=320x480;DS=3.5;SM=2;OS=Android 4.4;'
+
 samsung:
   galaxy camera: 'RE=2012.08;SZ=70.8x128.7x19.1;WT=300;DS=4.8;RS=720x1280;OS=Android 4.1;CP=233;RM=1024;'
   ek-gc100: '->galaxy camera'
