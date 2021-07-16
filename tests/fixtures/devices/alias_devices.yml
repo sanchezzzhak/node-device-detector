@@ -189,3 +189,11 @@
 - user_agent: Mozilla/5.0 (Linux; Android 10; JEF-NX9; HMSCore 5.3.0.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 HuaweiBrowser/11.0.8.303 Mobile Safari/537.36
   alias:
     name: JEF-NX9
+
+- user_agent: Mozilla/5.0 (Windows Mobile 10; Android 10.0; Microsoft; Lumia 950XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Mobile Safari/537.36 Edge/40.15254.603
+  alias:
+    name: Lumia 950XL
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36
+  alias:
+    name: ""

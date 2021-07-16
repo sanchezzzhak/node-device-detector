@@ -395,6 +395,19 @@ describe('tests oss', function () {
   });
 });
 
+describe('tests buildByMatch replaces', function () {
+  it('replace count', () => {
+    let test = 'Device.set.0.1';
+    let item = '$1-$2-$3-$4';
+    let regex = /([a-z]+)\.([a-z]+)\.(\d+)\.(\d+)/i
+    let matches = regex.exec(test);
+    let parser = detector.getParseClient('Browser');
+    let result = parser.buildByMatch(item, matches);
+    expect(result).to.equal('Device-set-0-1');
+  })
+
+});
+
 describe('tests version truncate', function () {
   let fixtureData = YAMLLoad(fixtureFolder + 'clients/version_truncate.yml');
   let total = fixtureData.length;

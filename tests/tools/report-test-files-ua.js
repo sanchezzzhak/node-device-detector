@@ -9,10 +9,10 @@ const detector = new DeviceDetect({
   discardDeviceIndexes: false
 })
 
-
+let outputExist = {};
 let fixtures = {}
 
-const run = (folderTestPath, folderFixturePath) => {
+const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
   let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
   if( folderFixturePath === '') {
     folderFixturePath = getFixtureFolder() + 'devices/';
@@ -55,9 +55,13 @@ const run = (folderTestPath, folderFixturePath) => {
       let isFoundModel = result.device && result.device.model !== void 0;
       let isFoundBrand = result.device && result.device.brand !== void 0;
 
-      if(fixtures[deviceCode] === void 0) {
+      if(uniqueOutput && fixtures[deviceCode] === void 0 && outputExist[deviceCode] === void 0) {
+        console.log(useragent)
+        outputExist[deviceCode] = 1;
+      } else if(!uniqueOutput && fixtures[deviceCode] === void 0) {
         console.log(useragent)
       }
+      
       // } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
       //   console.log(useragent)
       // } else if(deviceCode && !isFoundBrand) {
@@ -69,5 +73,6 @@ const run = (folderTestPath, folderFixturePath) => {
 
 let parsePath = process.argv[2];
 let testsPath = process.argv[3] || "";
+let uniqueOutput = process.argv[4] || 0;
 
-run(parsePath, testsPath);
+run(parsePath, testsPath, uniqueOutput);
