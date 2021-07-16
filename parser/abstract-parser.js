@@ -50,14 +50,14 @@ class ParserAbstract {
   buildByMatch(item, matches) {
     item = item || '';
     item = item.toString();
-
+    let max = matches.length-1 || 1;
     if (item.indexOf('$') !== -1) {
-      for (let nb = 1; nb <= 3; nb++) {
+      for (let nb = 1; nb <= max; nb++) {
         if (item.indexOf('$' + nb) === -1) {
           continue;
         }
-        let replace = matches[nb] !== undefined ? matches[nb] : '';
-        item = item.replace('$' + nb, replace);
+        let replace = matches[nb] !== void 0 ? matches[nb] : '';
+        item = item.replace(new RegExp('\\$' + nb, 'g'), replace);
       }
     }
     return item;
