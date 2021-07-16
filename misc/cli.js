@@ -18,11 +18,13 @@ function parse(useragent) {
   if (print === 'fixture') {
     let osFamily = result.os.family;
     let clientFamily = result.client.family;
-    result.client &&
-      result.client.short_name &&
-      delete result.client.short_name;
+    
+    result.client && result.client.short_name && delete result.client.short_name;
+    result.client && result.client.family && delete result.client.family;
     result.os && result.os.short_name && delete result.os.short_name;
+    result.os && result.os.family && delete result.os.family;
     result.device && result.device.id && delete result.device.id;
+    
     result['os_family'] = osFamily;
     result['browser_family'] = clientFamily;
   }
