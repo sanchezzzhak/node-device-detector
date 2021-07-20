@@ -22,7 +22,26 @@ class OsAbstractParser extends ParserAbstract {
     }
     return '';
   }
-
+  
+  /**
+   * Normalisation os name and get short code os
+   *
+   * @param name
+   * @returns {{name: string, short: string}}
+   */
+  getOsDataByName(name) {
+    let short = 'UNK';
+    let lname = String(name).toLowerCase();
+    for (let key in OS_SYSTEMS) {
+      if (lname === String(OS_SYSTEMS[key]).toLowerCase()) {
+        name = OS_SYSTEMS[key];
+        short = key;
+        break;
+      }
+    }
+    return {name, short}
+  }
+  
   /**
    *
    * @param {string} userAgent
@@ -34,18 +53,10 @@ class OsAbstractParser extends ParserAbstract {
       let regex = this.getBaseRegExp(item.regex);
       let match = regex.exec(userAgent);
       if (match !== null) {
-        let name = this.buildByMatch(item.name, match);
-        let lname = String(name).toLowerCase();
-        let short = 'UNK';
-        for (let key in OS_SYSTEMS) {
-          if (
-            lname === String(OS_SYSTEMS[key]).toLowerCase()
-          ) {
-            name = OS_SYSTEMS[key];
-            short = key;
-            break;
-          }
-        }
+        let {
+          name,
+          short
+        } = this.getOsDataByName(this.buildByMatch(item.name, match))
         return {
           name: name,
           short_name: short,
