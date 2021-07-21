@@ -43,7 +43,7 @@
   name: '$1'
 - regex: 'Android (?:[\d\.]+;)\s?(?:[^;]+;)?\s?(.+) Release/.+AppleWebKit.+Build/'
   name: '$1'
-- regex: 'Android (?:[\d\.]+;)\s?(?:[^;]+;)?\s?(.+)( Build/.+AppleWebKit|; HMSCore)'
+- regex: 'Android (?:[\d\.]+;)\s?(?:[^;]+;)?\s?([^;/]+)( Build/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit)'
   name: '$1'
 - regex: 'Android (?:[\d\.]+;)\s?(?:[a-z]{2}(?:[_-][a-z]{2})?;)?\s?([^;]+);? Build/'
   name: '$1'
