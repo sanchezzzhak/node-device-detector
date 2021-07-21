@@ -12,9 +12,12 @@ const {
   YAMLLoad,
 } = require('./functions');
 
+const DeviceDetector = require('../index');
+const AliasDevice = require('../parser/device/alias-device');
+
 const TIMEOUT = 6000;
-const detector = new (require('../index'))();
-const aliasDevice = new (require('../parser/device/alias-device'))();
+const detector = new DeviceDetector();
+const aliasDevice = new AliasDevice();
 
 // set result regex in detect model
 detector.getParseDevice('Mobile').resultModelRegex = true;
@@ -240,6 +243,7 @@ describe('tests alias devices', function () {
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
 
+      
       let result = aliasDevice.parse(fixture.user_agent);
       perryTable(fixture, result);
       let messageError = 'fixture data\n' + perryJSON(fixture);

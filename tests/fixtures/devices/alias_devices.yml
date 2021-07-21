@@ -201,3 +201,19 @@
   user_agent: Mozilla/5.0 (Linux; Android 10; V1824BA; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/7.5.12.0
   alias:
     name: V1824BA
+
+- user_agent: Mozilla/5.0 (Linux; U; Android 2.3.4; zh-cn; GIO-GiONEE_C600/CBD75B04_01_T9151 ; 320*480; CTC/2.0) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+  alias:
+    name: GIO-GiONEE_C600
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 2.3.5; zh-cn; Coolpad-8076_TD/1.0 Android/2.3.5 Release/03.11.2012 Browser/AppleWebKit533.1 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+  alias:
+    name: Coolpad-8076_TD
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 1.6; fr-fr; LG-GT540 ; Build/Donut) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 Java/Jbed/7.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 MMS/LG-Android-MMS-V1.0/1.2
+  alias:
+    name: LG-GT540
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.1.2;; xx-xx; Fly IQ436 Build/JZO57K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  alias:
+    name: IQ436
