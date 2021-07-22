@@ -39,18 +39,15 @@ class AliasDevice extends AbstractParser {
       let item = this.collection[cursor];
       let match = this.getBaseRegExp(item['regex']).exec(decodeUserAgent);
       if (match) {
-        
         result.name = this.buildByMatch(item['name'], match);
         if (this.hasReplaceBrand()) {
           result.name = result.name
             .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
-            .trim();
         }
         break;
       }
     }
     result.name = result.name.trim();
-    
     return result;
   }
 

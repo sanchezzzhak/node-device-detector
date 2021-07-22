@@ -1,3 +1,9 @@
+'710':
+  - Nokia
+'800':
+  - Nokia
+'900':
+  - Nokia
 '909':
   - Nokia
 '1819':
@@ -156,6 +162,8 @@ Aqua V3G:
   - Intex
 ASUS_Z012DE:
   - Asus
+Intex Aqua 4.5E:
+  - Intex
 E260T+:
   - Hisense
 iPhone_4:
@@ -185,6 +193,8 @@ PDEM10:
 INOI_5i_Lite:
   - Inoi
 iPhone:
+  - Apple
+x86_64:
   - Apple
 LGT01:
   - LG
@@ -873,6 +883,32 @@ Redmi Note 8T:
   - Xiaomi
 SM-N910C:
   - Samsung
+Mi Note 10 Lite:
+  - Xiaomi
+Symbol R60:
+  - Hotwav
+K01N:
+  - Asus
+K019:
+  - Asus
+Infinix X604:
+  - Infinix
+SM-N960N:
+  - Samsung
+M1908C3JGG:
+  - Xiaomi
+M2101K7BI:
+  - Xiaomi
+M2103K19Y:
+  - Xiaomi
+Mi Note 10:
+  - Xiaomi
+TECNO LD7j:
+  - Tecno Mobile
+TECNO LE7n:
+  - Tecno Mobile
+TECNO LD7:
+  - Tecno Mobile
 'iPod5,1':
   - Apple
 HMT390Q:
@@ -1647,7 +1683,7 @@ A621BL:
   - Alcatel
 5025E:
   - Alcatel
-' 5025D':
+5025D:
   - Alcatel
 5054T:
   - Alcatel
@@ -2161,11 +2197,19 @@ RM-997:
   - Nokia
 Lumia 610:
   - Nokia
-NOKIA; RM-1027:
+WebView/3.0; NOKIA; RM-1027:
   - Nokia
 Nokia 720T:
   - Nokia
 800C:
+  - Nokia
+Lumia 900:
+  - Nokia
+Nokia 900:
+  - Nokia
+RM-910apacprc200:
+  - Nokia
+RM-892apachongko:
   - Nokia
 Nokia 925:
   - Nokia
@@ -2251,7 +2295,7 @@ Snexian Mi430:
   - Nexian
 NYX_A1:
   - NYX Mobile
-' NYX_Blink':
+NYX_Blink:
   - NYX Mobile
 NYX_EGO:
   - NYX Mobile
@@ -2516,7 +2560,7 @@ PCHM00:
   - OPPO
 CPH2077:
   - OPPO
-CPH2083:
+arm; CPH2083:
   - OPPO
 CPH1923:
   - OPPO
@@ -2526,7 +2570,7 @@ CPH1837:
   - OPPO
 PADT00:
   - OPPO
-CPH2015:
+arm_64; CPH2015:
   - OPPO
 CPH2031:
   - OPPO
@@ -2598,7 +2642,7 @@ PDYT20:
   - OPPO
 PDYM20:
   - OPPO
-CPH2067:
+arm_64; CPH2067:
   - OPPO
 CPH1715:
   - OPPO
@@ -2882,7 +2926,7 @@ CPH1945:
   - OPPO
 PCKM80:
   - OPPO
-CPH1951:
+arm_64; CPH1951:
   - OPPO
 CPH2043:
   - OPPO
@@ -3516,7 +3560,7 @@ RMX2032:
   - Realme
 RMX1925:
   - Realme
-'RMX2001) ':
+RMX2001):
   - Realme
 RMX2063:
   - Realme
@@ -5256,7 +5300,7 @@ GT-I8552:
   - Samsung
 GT-I8552B:
   - Samsung
-SAMSUNG-GT-I8558_TD/1.0 Android/4.2.2:
+SAMSUNG-GT-I8558_TD:
   - Samsung
 SM-G3818:
   - Samsung
@@ -5320,7 +5364,7 @@ SAMSUNG:
   - Samsung
 GT-I8750:
   - Samsung
-SAMSUNG-GT-I9508_TD/1.0 Android/4.2.2:
+SAMSUNG-GT-I9508_TD:
   - Samsung
 GT-S5282:
   - Samsung
@@ -5344,7 +5388,7 @@ GT-S6802:
   - Samsung
 GT-S7262:
   - Samsung
-SAMSUNG-GT-S7568_TD/1.0 Android/4.0.4:
+SAMSUNG-GT-S7568_TD:
   - Samsung
 GT-S7568:
   - Samsung
@@ -6689,7 +6733,7 @@ TCL A916:
   - TCL
 5199I:
   - TCL
-TCL-D662/EG27_YMYM_V0.6; 480*800; CTC/2.0:
+TCL-D662:
   - TCL
 TCLGalaG60(9108A):
   - TCL
@@ -6925,7 +6969,7 @@ TM-5503:
   - teXet
 TM-5016:
   - teXet
-TM-3500:
+zh-cn; TM-3500; Android/4.4.2; Release/09.25.2015:
   - teXet
 TM_5011:
   - teXet
@@ -7099,7 +7143,7 @@ VOTO-T8100:
   - Voto
 VOTO VT808:
   - Voto
-VOTO_VT818_TD/1.0 Android/4.0.3:
+VOTO_VT818_TD:
   - Voto
 VOTO VT818+:
   - Voto
@@ -7316,7 +7360,7 @@ V1824BA:
   - Vivo
 V1955A:
   - Vivo
-wv:
+V2024A:
   - Vivo
 V2025A:
   - Vivo
@@ -7345,6 +7389,8 @@ vivo 1805:
 V1923A:
   - Vivo
 V1924A:
+  - Vivo
+V1950A:
   - Vivo
 V1821T:
   - Vivo
@@ -7440,14 +7486,18 @@ V1938CT:
   - Vivo
 V1938T:
   - Vivo
-BBG-vivo X3V/PD1227V_A_1.12.8; 720*1280; CTC/2.0:
+BBG-vivo X3V:
+  - Vivo
+V2001A:
   - Vivo
 V2005A:
   - Vivo
-VIV-vivo X5Max V/PD1408V_A_1.18.1; 1080*1920; CTC/2.0:
+V2011A:
+  - Vivo
+VIV-vivo X5Max V:
   - Vivo
   - Doogee
-VIV-vivo X5Pro V/PD1421V_A_1.13.5; 1080*1920; CTC/2.0:
+VIV-vivo X5Pro V:
   - Vivo
 vivo X9Plus:
   - Vivo
@@ -7491,10 +7541,6 @@ TECNO KE5k:
   - Tecno Mobile
 TECNO KE7:
   - Tecno Mobile
-TECNO LD7j:
-  - Tecno Mobile
-TECNO LD7:
-  - Tecno Mobile
 TECNO CE7j:
   - Tecno Mobile
 TECNO CD8:
@@ -7522,6 +7568,8 @@ V1934A:
 vivo 1719:
   - Vivo
 vivo 1714:
+  - Vivo
+V2002A:
   - Vivo
 vivo 1724:
   - Vivo
@@ -7553,7 +7601,7 @@ vivo 1811:
   - Vivo
 vivo 1817:
   - Vivo
-VIV-vivo Y913/PD1304CV_A_1.18.2; 854*480; CTC/2.0:
+VIV-vivo Y913:
   - Vivo
 vivo 1820:
   - Vivo
@@ -7598,6 +7646,8 @@ V1921A:
 V1911A:
   - Vivo
 V1990A:
+  - Vivo
+V1963A:
   - Vivo
 Baccara:
   - Vertex
@@ -8191,7 +8241,7 @@ YUSUN W306:
   - Yusun
 yusun W702:
   - Yusun
-YTONE_L919_TD/1.0 Android/4.0.3:
+YTONE_L919_TD:
   - Ytone
 YTONE L985S:
   - Ytone
@@ -8201,7 +8251,7 @@ YTONE M7X:
   - Ytone
 YXTEL_H1:
   - Yxtel
-YXTEL_U1:
+zh-cn; YXTEL_U1; Android/4.4.2; Release/08.28.2015):
   - Yxtel
 YXTEL_U3:
   - Yxtel
@@ -8835,19 +8885,19 @@ RMX2076:
   - Realme
 ANA-NX9:
   - Huawei
-Xenium S566:
+arm_64; Xenium S566:
   - Philips
-Xenium S266:
+arm_64; Xenium S266:
   - Philips
 KOB2-L09:
   - Huawei
-ART-L29:
+arm_64; ART-L29:
   - Huawei
-ART-L29N:
+arm_64; ART-L29N:
   - Huawei
-M2002J9G:
+arm_64; M2002J9G:
   - Xiaomi
-S5 Silk:
+arm; S5 Silk:
   - Haier
 BV6300Pro:
   - Blackview
@@ -8892,7 +8942,7 @@ Artel Choice:
   - Artel
 ARTEL Style:
   - Artel
-5002F_RU:
+arm; 5002F_RU:
   - Alcatel
 5002D_RU:
   - Alcatel
@@ -8914,7 +8964,7 @@ QUEST:
   - CUBOT
 ELEGANCE 6:
   - Kiano
-5007U:
+arm; 5007U:
   - Alcatel
 W-V830-EEA:
   - Wiko
@@ -9189,9 +9239,9 @@ A140:
   - DEXP
 A150:
   - DEXP
-BQ-5000G:
+arm; BQ-5000G:
   - bq
-BQ-5521L:
+arm; BQ-5521L:
   - bq
 Expanse:
   - Highscreen
@@ -9211,11 +9261,11 @@ L-01F:
   - LG
 TZ13:
   - Irbis
-BQ-5016G:
+arm; BQ-5016G:
   - bq
-BQ-5540L:
+arm; BQ-5540L:
   - bq
-BQ-6022G:
+arm; BQ-6022G:
   - bq
 AMN-LX3:
   - Huawei
@@ -11011,6 +11061,7 @@ Stellar 3G:
   - Zuum
 SANTIN Life Shine:
   - Santin
+  - AG Mobile
 2PS64:
   - HTC
 AGS2-W19:
@@ -12784,7 +12835,7 @@ SM-M30s:
   - Samsung
 SM-G3518:
   - Samsung
-SAMSUNG-SM-G3518_TD Android/4.3:
+SAMSUNG-SM-G3518_TD Android/4.3 Release/11.15.2013 Browser/:
   - Samsung
 SAMSUNG SM-A720M:
   - Samsung
@@ -13611,6 +13662,8 @@ MFC_8:
   - Clementoni
 CITI_7543_3G_CS7153MG:
   - Digma
+CITI POWER 4G CS5026PL:
+  - Digma
 CITI 7529 3G CS7141MG:
   - Digma
 CITI 7528 4G CS7140ML:
@@ -13955,6 +14008,7 @@ GLX Taban:
   - GLX
 GLX Shine:
   - GLX
+  - AG Mobile
 GLX Spark:
   - GLX
 GLX ASA:
@@ -15062,6 +15116,8 @@ PPA-LX1:
   - Huawei
 A80Plus:
   - Blackview
+V2036:
+  - Vivo
 M2101K7AG:
   - Xiaomi
 Bison2021:
@@ -15431,6 +15487,7 @@ mobiistar C1:
   - Mobiistar
 mobiistar C1 Shine:
   - Mobiistar
+  - AG Mobile
 mobiistar E1:
   - Mobiistar
 LG-H873:
@@ -15977,6 +16034,12 @@ FMT-NM7058-02:
   - FMT
 175FT1050241:
   - FMT
+TECNO KF6n:
+  - Tecno Mobile
+TECNO CG8:
+  - Tecno Mobile
+TECNO CG7n:
+  - Tecno Mobile
 Qin 1s+:
   - Xiaomi
 SC51Aa:
@@ -16241,7 +16304,7 @@ UTIME X1:
   - UTime
 Utime FX:
   - UTime
-'UTime_T1 ':
+UTime_T1:
   - UTime
 Ice2:
   - Highscreen
@@ -17080,7 +17143,7 @@ EVR-L29:
   - Huawei
 LGMS631:
   - LG
-LG-K130:
+arm; LG-K130:
   - LG
 vivo 1910:
   - Vivo
@@ -17268,6 +17331,660 @@ AEONSR570:
   - Odys
 ZTE Blade A7 2019:
   - ZTE
+LEX820:
+  - LeEco
+LG-H812:
+  - LG
+Symbol X:
+  - Hotwav
+Symbol Max:
+  - Hotwav
+ELUGA_I7_EE:
+  - Panasonic
+S2 LITE:
+  - UMIDIGI
+Picasso:
+  - Bluboo
+PRO 5:
+  - Meizu
+Prime L:
+  - Highscreen
+M500-1:
+  - Jinga
+M5 Pro:
+  - Gooweel
+Hashtag:
+  - AG Mobile
+Shine:
+  - AG Mobile
+Chacer:
+  - AG Mobile
+F5_15:
+  - BenQ
+Iron-bone DG750:
+  - Doogee
+Onyx:
+  - Explay
+Spade:
+  - Highscreen
+Spark 2:
+  - Highscreen
+LG-US996:
+  - LG
+LG-K520:
+  - LG
+Moto E (4):
+  - Motorola
+LM-K510:
+  - LG
+LGL423DL:
+  - LG
+LG-TP450:
+  - LG
+LG-X150:
+  - LG
+LG-X145:
+  - LG
+LG-H410:
+  - LG
+LG-D335:
+  - LG
+LGL322DL:
+  - LG
+LG-Q710AL:
+  - LG
+LG-M400:
+  - LG
+LM-V500N:
+  - LG
+LGM-G600S:
+  - LG
+LGL555DL:
+  - LG
+LG-H870:
+  - LG
+LG-H900:
+  - LG
+LG-D415:
+  - LG
+LM-Q620:
+  - LG
+LG-H500:
+  - LG
+LM-G900TM:
+  - LG
+LG-H440AR:
+  - LG
+LG-H440:
+  - LG
+LG-H420:
+  - LG
+LG-F700S:
+  - LG
+LG-M327:
+  - LG
+LG-M430:
+  - LG
+LG-X210:
+  - LG
+LG-K200:
+  - LG
+LG-H990:
+  - LG
+LG-H930RE:
+  - LG
+LG-H930DS:
+  - LG
+LG-US997:
+  - LG
+LG-X155:
+  - LG
+LG-X165g:
+  - LG
+LG-H522:
+  - LG
+LG-F800K:
+  - LG
+LG-F700K:
+  - LG
+LG-F460:
+  - LG
+LG-H819:
+  - LG
+LGLS992:
+  - LG
+LG-K500:
+  - LG
+LG-X190:
+  - LG
+LGLS991:
+  - LG
+LGUS991:
+  - LG
+LGV32:
+  - LG
+LG-AS110:
+  - LG
+LG-D680:
+  - LG
+LM-X210:
+  - LG
+LGM-K120L:
+  - LG
+LGM-K120S:
+  - LG
+LGM-K120K:
+  - LG
+LGM-X600S:
+  - LG
+LGV36:
+  - LG
+LGM-X600L:
+  - LG
+LGM-X600K:
+  - LG
+LG-US700:
+  - LG
+LG-Q710PL:
+  - LG
+LM-Q925K:
+  - LG
+LG-H871:
+  - LG
+LG-H870S:
+  - LG
+LG-H845:
+  - LG
+LGLS676:
+  - LG
+LG-F670S:
+  - LG
+LG-K410:
+  - LG
+LG-M710:
+  - LG
+LGMS550:
+  - LG
+LG-D410:
+  - LG
+LG-D290:
+  - LG
+LG-D295:
+  - LG
+LG-D320:
+  - LG
+LG-D315:
+  - LG
+LGM-G600L:
+  - LG
+LG-G710:
+  - LG
+LM-X410.FG:
+  - LG
+LM-X220QMA:
+  - LG
+LM-X210CMR:
+  - LG
+LM-Q925S:
+  - LG
+LG-F500L:
+  - LG
+LG-H810:
+  - LG
+LG-F500S:
+  - LG
+LG-F500K:
+  - LG
+LG-AS993:
+  - LG
+LG-F700L:
+  - LG
+LG-F800L:
+  - LG
+LG-H830:
+  - LG
+LG-H870AR:
+  - LG
+LG-H870I:
+  - LG
+LG-D373:
+  - LG
+LGLS755:
+  - LG
+LGLS450:
+  - LG
+LGL57BL:
+  - LG
+LGMP450:
+  - LG
+LGLS775:
+  - LG
+LGM-X800K:
+  - LG
+LGM-X401S:
+  - LG
+LGM-X320S:
+  - LG
+LGM-X320L:
+  - LG
+LGM-X320K:
+  - LG
+LGMS428:
+  - LG
+LGUS215:
+  - LG
+LGUS992:
+  - LG
+LGV34:
+  - LG
+LG-LS997:
+  - LG
+LG-H962:
+  - LG
+LG-H910:
+  - LG
+LG-H961S:
+  - LG
+LG-E440:
+  - LG
+LG-D693n:
+  - LG
+LG-D693:
+  - LG
+LG-D693TR:
+  - LG
+LG-D690n:
+  - LG
+LG-D690:
+  - LG
+LG-D686:
+  - LG
+LGMS395:
+  - LG
+LG-H788:
+  - LG
+LG-F460S:
+  - LG
+LG-F460L:
+  - LG
+LG-F460K:
+  - LG
+LG-F600L:
+  - LG
+LG-F690L:
+  - LG
+LG-F600K:
+  - LG
+LG-D856:
+  - LG
+LG-D335E:
+  - LG
+LG-D331:
+  - LG
+LG-LS993:
+  - LG
+LG-M322:
+  - LG
+LG-F620K:
+  - LG
+LG-D851:
+  - LG
+LG-H635:
+  - LG
+LG-F740L:
+  - LG
+LG-F720S:
+  - LG
+LG-H700:
+  - LG
+LG-H915:
+  - LG
+LG-H970:
+  - LG
+LG-H960:
+  - LG
+LG-K428:
+  - LG
+LG-K530:
+  - LG
+LG-K535:
+  - LG
+LG-K550:
+  - LG
+LG-M210:
+  - LG
+LG-M257:
+  - LG
+LGL24:
+  - LG
+LG-P710:
+  - LG
+LG-P715:
+  - LG
+LG-P875:
+  - LG
+LG-P875h:
+  - LG
+LGMS500:
+  - LG
+LGLS740:
+  - LG
+LGLS660:
+  - LG
+LGL31L:
+  - LG
+LGL41C:
+  - LG
+LG-X135:
+  - LG
+LG-E460:
+  - LG
+LG-E475f:
+  - LG
+LG-E470f:
+  - LG
+LG-E467f:
+  - LG
+LG-E465f:
+  - LG
+LG-E975:
+  - LG
+LG-E435f:
+  - LG
+LG-E415f:
+  - LG
+LG-D125:
+  - LG
+LG-D722:
+  - LG
+LG-D800:
+  - LG
+LGL83BL:
+  - LG
+LM-K315IM:
+  - LG
+LM-K400:
+  - LG
+LM-K920:
+  - LG
+LM-V405EBW:
+  - LG
+S-TELL M556:
+  - S-TELL
+5029D_EEA:
+  - Alcatel
+PSP5530DUO:
+  - Prestigio
+PSP3495DUO:
+  - Prestigio
+PSP3510DUO:
+  - Prestigio
+Haier T54P:
+  - Haier
+HTC_2Q4D100:
+  - HTC
+PSP5513DUO:
+  - Prestigio
+HTC_E9x:
+  - HTC
+HTC_M9pw:
+  - HTC
+HTC One M9:
+  - HTC
+HTC 2PQ910:
+  - HTC
+INOI_5X_Lite:
+  - Inoi
+HTC_U-2u:
+  - HTC
+Nomi_i5001:
+  - Nomi
+Infinix X627V:
+  - Infinix
+Infinix X655D:
+  - Infinix
+Infinix X655C:
+  - Infinix
+TECNO KA7:
+  - Tecno Mobile
+Infinix X626:
+  - Infinix
+Infinix X655:
+  - Infinix
+Haier A42P:
+  - Haier
+INOI_3_LITE:
+  - Inoi
+TECNO WX3:
+  - Tecno Mobile
+UMI_SUPER:
+  - UMIDIGI
+BlackBerry 9790:
+  - RIM
+TECNO RA8:
+  - Tecno Mobile
+ioutdoor X:
+  - iOutdoor
+ASUS_X00TDB:
+  - Asus
+Nomi_i4500:
+  - Nomi
+THL5000:
+  - ThL
+INOI_1_Lite:
+  - Inoi
+TECNO RA6:
+  - Tecno Mobile
+JAT-L29:
+  - Huawei
+LGH810:
+  - LG
+LG-M153:
+  - LG
+Azumi_V5:
+  - Azumi Mobile
+PSP5502DUO:
+  - Prestigio
+TECNO KC1:
+  - Tecno Mobile
+TECNO_W4:
+  - Tecno Mobile
+TECNO KB8:
+  - Tecno Mobile
+TECNO B1:
+  - Tecno Mobile
+TECNO KA6:
+  - Tecno Mobile
+TECNO KA9:
+  - Tecno Mobile
+TECNO KB2j:
+  - Tecno Mobile
+Infinix X606:
+  - Infinix
+FLYCAT OPTIMUM 5003:
+  - FLYCAT
+  - Fly
+FLYCAT OPTIMUM 5004:
+  - FLYCAT
+  - Fly
+FLYCAT OPTIMUM 5001:
+  - FLYCAT
+  - Fly
+FLYCAT OPTIMUM 5002:
+  - FLYCAT
+  - Fly
+FLYCAT OPTIMUM 5501:
+  - FLYCAT
+  - Fly
+Bluboo Maya Max:
+  - Bluboo
+Moto G 5S Plus:
+  - Motorola
+PSP3423DUO:
+  - Prestigio
+Hit4G:
+  - Jinga
+Hisense L675:
+  - Hisense
+UNIWA F40:
+  - UNIWA
+Impress_Game:
+  - Vertex
+INOI_5i:
+  - Inoi
+Hisense Infinity H12:
+  - Hisense
+Impress_Luck:
+  - Vertex
+BV9000Pro:
+  - Blackview
+BQ Sorbonne:
+  - bq
+BV5800Pro_RU:
+  - Blackview
+SM-G930F:
+  - Samsung
+Easy_XL_Pro:
+  - Highscreen
+Neffos C7 Lite:
+  - Neffos
+ASUS_X018DC:
+  - Asus
+CPH2091:
+  - OPPO
+CPH2089:
+  - OPPO
+CPH2121:
+  - OPPO
+CPH2145:
+  - OPPO
+CPH2159:
+  - OPPO
+CPH2285:
+  - OPPO
+CPH2219:
+  - OPPO
+CPH2217:
+  - OPPO
+CPH2213:
+  - OPPO
+CPH2211:
+  - OPPO
+CPH2209:
+  - OPPO
+CPH2207:
+  - OPPO
+CPH2205:
+  - OPPO
+CPH2203:
+  - OPPO
+CPH2201:
+  - OPPO
+CPH2197:
+  - OPPO
+CPH2195:
+  - OPPO
+CPH2173:
+  - OPPO
+HD1907:
+  - OnePlus
+HD1905:
+  - OnePlus
+Mi 10T Pro:
+  - Xiaomi
+Mi 10T Lite:
+  - Xiaomi
+M2101K9C:
+  - Xiaomi
+M2102J20SI:
+  - POCO
+M2103K19PG:
+  - POCO
+M2103K19PY:
+  - POCO
+meizu 17 Pro:
+  - Meizu
+Nokia 2.2:
+  - Nokia
+Nokia 2.3:
+  - Nokia
+Nokia 2.4:
+  - Nokia
+Nokia 3.2:
+  - Nokia
+Nokia 8.3 5G:
+  - Nokia
+Nokia C01 Plus:
+  - Nokia
+Nokia C10:
+  - Nokia
+Nokia C20:
+  - Nokia
+Nokia G10:
+  - Nokia
+Nokia X20:
+  - Nokia
+POCO X3 Pro:
+  - POCO
+POCO M3 Pro:
+  - POCO
+POCO M3 Pro 5G:
+  - POCO
+POCO F3:
+  - POCO
+SM-G981W:
+  - Samsung
+SM-G9810:
+  - Samsung
+vivo 1901:
+  - Vivo
+vivo 1918:
+  - Vivo
+vivo 1904:
+  - Vivo
+vivo 1933:
+  - Vivo
+ASUS_I006D:
+  - Asus
+ASUS_I004D:
+  - Asus
+ASUS_X00TDA:
+  - Asus
+Artel Q21_PRO:
+  - Artel
+ZTE Blade A31 Lite RU:
+  - ZTE
+ZTE A7030RU:
+  - ZTE
+vivo 2006:
+  - Vivo
+vivo 2004:
+  - Vivo
+V2066:
+  - Vivo
+V2061:
+  - Vivo
+ZS673KS:
+  - Asus
+FIG-AL10:
+  - Huawei
+SM-G975F:
+  - Samsung
+SM-G973W:
+  - Samsung
+Nord N10 5G:
+  - OnePlus
+LE2100:
+  - OnePlus
+LE2101:
+  - OnePlus
+LE2125:
+  - OnePlus
+Lenovo A6000:
+  - Lenovo
+  - OnePlus
+SM-N986U1:
+  - Samsung
 bravis_A506:
   - Bravis
 BRAVIS DELTA:
@@ -17425,7 +18142,7 @@ BQru-5054:
   - bq
 BQS-4570:
   - bq
-BQS-4503:
+zh-cn; BQS-4503; Android/4.4.2; Release/07.22.2015:
   - bq
 BQS-4004:
   - bq
@@ -17535,7 +18252,7 @@ BQS-5010:
   - bq
 BQ-5012L:
   - bq
-BQS-4550:
+zh-cn; BQS-4550; Android/4.4.2; Release/12.19.2015:
   - bq
 BQS-4505:
   - bq
@@ -17962,7 +18679,7 @@ Celkon A125:
   - Celkon
 Celkon A15:
   - Celkon
-'Celkon A66) Linux/3.0.8 Release/09.23.2013 ':
+Celkon A66:
   - Celkon
 Celkon*A86:
   - Celkon
@@ -18043,7 +18760,7 @@ Cherry Razor:
   - Cherry Mobile
 CHERRY SNAP:
   - Cherry Mobile
-'Cherry Sonic ':
+Cherry Sonic:
   - Cherry Mobile
 YL-Coolpad_5210S:
   - Coolpad
@@ -18055,13 +18772,15 @@ Coolpad 5950:
   - Coolpad
 YL-Coolpad_7230-B:
   - Coolpad
+YL-Coolpad_7260:
+  - Coolpad
 Coolpad 7295+:
   - Coolpad
 Coolpad 7295A:
   - Coolpad
 Coolpad 7296:
   - Coolpad
-Coolpad-8076_TD/1.0 Android/2.3.5:
+Coolpad-8076_TD:
   - Coolpad
 8190Q:
   - Coolpad
@@ -18208,6 +18927,8 @@ Dialog K35:
   - Dialog
 Dell Venue:
   - Dell
+Venue Pro:
+  - Dell
 DNS_S4003:
   - DNS
 DNS S4502:
@@ -18216,7 +18937,7 @@ S4505M:
   - DNS
 SD01M:
   - DNS
-'DOOGEE-BIGBOY-DG600   ':
+DOOGEE-BIGBOY-DG600:
   - Doogee
 BL12000:
   - Doogee
@@ -18242,7 +18963,7 @@ LEO_DG280:
   - Doogee
 MINT-DG330:
   - Doogee
-'DOOGEE-TITANS-DG150   ':
+DOOGEE-TITANS-DG150:
   - Doogee
 Titans2_DG700:
   - Doogee
@@ -18282,7 +19003,7 @@ Lumia 640 LTE Dual SIM:
 Lumia 640 LTE:
   - Microsoft
   - Nokia
-Lumia 640 Dual SIM; Cortana 1.8.12.15063; 10.0.0.0.15063.1868:
+Microsoft; Lumia 640 Dual SIM; Cortana 1.8.12.15063; 10.0.0.0.15063.1868:
   - Microsoft
   - Nokia
 Lumia 640 XL LTE:
@@ -18378,13 +19099,13 @@ DATANG S11:
   - Datang
 DATANG S18:
   - Datang
-Datang-DATANG-S18i/1.0 Android/2.3.5:
+Datang-DATANG-S18i:
   - Datang
 DATANG S62L:
   - Datang
 DOOV_D2:
   - Doov
-DOOV D350:
+zh-cn; DOOV D350; Android/4.1.2; Release/01.20.2014):
   - Doov
 DOOV D8:
   - Doov
@@ -18638,7 +19359,7 @@ ETON P1:
   - Eton
 ETON P3:
   - Eton
-'ETON T860) Linux/3.0.8-svn5727 Release/10.31.2013 ':
+ETON T860:
   - Eton
 ETON T890:
   - Eton
@@ -18656,8 +19377,10 @@ EasyPhone EP5:
   - Easypix
 Onyx-1S:
   - Eurostar
+  - Explay
 Onyx-3S:
   - Eurostar
+  - Explay
 EverClassic:
   - Evertek
 EverGlory:
@@ -18826,7 +19549,7 @@ IQ4409 Quad:
   - Fly
 IQ432:
   - Fly
-; xx-xx; Fly IQ436:
+Fly IQ436:
   - Fly
 IQ4490:
   - Fly
@@ -18924,7 +19647,7 @@ IQ255:
   - Fly
 IQ449:
   - Fly
-Fly IQ441;:
+Fly IQ441:
   - Fly
 FS520:
   - Fly
@@ -19061,6 +19784,7 @@ MNRM2CH/A:
   - Goophone
 GO Onyx:
   - GoMobile
+  - Explay
 GO1402:
   - GoMobile
 GO503:
@@ -19625,6 +20349,12 @@ HTC6500LVW 4G:
   - HTC
 7 Mozart:
   - HTC
+7 Mozart T8698:
+  - HTC
+7 Trophy:
+  - HTC
+7 Trophy T8686:
+  - HTC
 HTC_802w:
   - HTC
 HTC-A9192/1.0:
@@ -19788,6 +20518,8 @@ NexusHD2:
   - Google
 HTC HD2:
   - HTC
+HD7:
+  - HTC
 HTC HD7 LTE 4G+ For AT&amp;T:
   - HTC
 HTC Hero:
@@ -19886,6 +20618,10 @@ HTC_PH06130/1.23.502.1:
   - HTC
 HTC_PN071-orange-LS/1.28.73.10:
   - HTC
+Radar 4G:
+  - HTC
+Radar C110e:
+  - HTC
 HTC_Rhyme_S510b:
   - HTC
 HTC Rhyme S510b:
@@ -19893,6 +20629,8 @@ HTC Rhyme S510b:
 HTC_Ruby:
   - HTC
 HTC_Salsa_C510e:
+  - HTC
+Schubert:
   - HTC
 HTC/Sensation/3.32.161.52:
   - HTC
@@ -19921,6 +20659,8 @@ HTC_Sensation-orange-LS:
 HTC_SensationXE_Beats_Z715e:
   - HTC
 HTC_SensationXL_Beats-orange-LS:
+  - HTC
+Spark:
   - HTC
 HTC_T120C:
   - HTC
@@ -20021,6 +20761,16 @@ Y320-U10:
 Bucare Y330-U05:
   - Huawei
 Y541-U02:
+  - Huawei
+HW-HUAWEI_C8500S:
+  - Huawei
+HUAWEI C8812:
+  - Huawei
+HW-HUAWEI_C8813:
+  - Huawei
+HUAWEI C8813Q:
+  - Huawei
+HW-HUAWEI_C8815:
   - Huawei
 ART-AL00x:
   - Huawei
@@ -20186,7 +20936,9 @@ H30-T00:
   - Huawei
 H30-T10:
   - Huawei
-HW-H30-C00/H30-C00V100R001C92B180; 1280*720; CTC/2.0:
+HW-H30-C00:
+  - Huawei
+zh-cn) Release/07.10.2014 Browser/WAP2.0 (:
   - Huawei
 HONOR H30-L01M:
   - Huawei
@@ -20950,6 +21702,8 @@ U9202L-1:
   - Huawei
 HUAWEI U9510E:
   - Huawei
+W1-U00:
+  - Huawei
 ARS-AL00:
   - Huawei
 ARS-L22:
@@ -20970,7 +21724,7 @@ CAG-L22:
   - Huawei
 HUAWEI Y300-0100:
   - Huawei
-HW-HUAWEI_Y300C/Y300CV100R001C92B168; 480*800; CTC/2.0:
+HW-HUAWEI_Y300C:
   - Huawei
 HUAWEI LUA-U22:
   - Huawei
@@ -21634,7 +22388,7 @@ Karbonn A26:
   - Karbonn
 Karbonn A27+:
   - Karbonn
-'Karbonn A4 ':
+Karbonn A4:
   - Karbonn
 Karbonn A50:
   - Karbonn
@@ -21778,11 +22532,11 @@ K-Touch E780:
   - K-Touch
 K-Touch E806:
   - K-Touch
-K-Touch S757/K-TOUCH_S757_V2.0; 480*854;  CTC/2.0:
+K-Touch S757:
   - K-Touch
 K-Touch T621:
   - K-Touch
-'K-Touch T780/TBT960313_8660_V0101) Linux/3.0.8 Release/12.26.2012 ':
+K-Touch T780:
   - K-Touch
 K-Touch Tou ch3:
   - K-Touch
@@ -21792,7 +22546,7 @@ K-Touch_W619:
   - K-Touch
 Kumai 260:
   - Kumai
-KM-Kumai 290/Kumai_290_V1.4; 320*480;  CTC/2.0:
+KM-Kumai 290:
   - Kumai
   - KT-Tech
 Kumai 290S-A:
@@ -22375,7 +23129,7 @@ LM-G810:
   - LG
 901LG:
   - LG
-LG-GT540 ;:
+LG-GT540:
   - LG
 LG-K420:
   - LG
@@ -23604,13 +24358,13 @@ XT1635-02:
   - Motorola
 XT1635-03:
   - Motorola
-XT1789-05;:
+XT1789-05:
   - Motorola
 XT1710-02:
   - Motorola
 Moto Z2 Play:
   - Motorola
-XT1710-08;:
+XT1710-08:
   - Motorola
 XT1929-15:
   - Motorola
@@ -23658,6 +24412,9 @@ RM-994_eu_poland_1155:
 Lumia 430 Dual SIM:
   - Microsoft
   - Nokia
+Lumia 435 Dual SIM:
+  - Microsoft
+  - Nokia
 Microsoft:
   - Microsoft
 RM-1089_1087:
@@ -23691,6 +24448,9 @@ RM-1154:
   - Microsoft
 RM-1152:
   - Microsoft
+Lumia 850:
+  - Microsoft
+  - Nokia
 MOVIC W2:
   - Movic
 MOVIC-W3:
@@ -23818,7 +24578,7 @@ Alba 57:
   - Alba
 Capture+:
   - Billion
-'ETL-S3520   ':
+ETL-S3520:
   - Etuline
 ETL-S4521:
   - Etuline
@@ -24051,6 +24811,8 @@ iCherry C252:
 iCherry C255:
   - i-Cherry
 Meitu2:
+  - Meitu
+Build/JOP40D;Meitu Kiss:
   - Meitu
 Meitu M4:
   - Meitu
@@ -24293,7 +25055,7 @@ SUGAR C21:
   - Sugar
 SUGAR C6:
   - Sugar
-SUGAR F11;:
+SUGAR F11:
   - Sugar
 SUGAR F7 mini:
   - Sugar
@@ -24305,7 +25067,7 @@ SUGAR Y11:
   - Sugar
 SUGAR Y12:
   - Sugar
-SUGAR Y15;:
+SUGAR Y15:
   - Sugar
 SUGAR Y7:
   - Sugar
@@ -27468,7 +28230,7 @@ PMID71C:
   - Polaroid
 T-i708D:
   - Panacom
-tr-tr;:
+Build/ICS.polypad.7208HD.Dualcore.20121101:
   - PolyPad
 POLY PAD_8208HD:
   - PolyPad
@@ -28269,7 +29031,7 @@ ST10216-2A:
   - TrekStor
 VT10416-1:
   - TrekStor
-engb;:
+engb:
   - TrekStor
 SurfTab breeze 10.1 quad 3G:
   - TrekStor
@@ -28502,7 +29264,7 @@ TM-9751HD:
   - teXet
 TM-9757:
   - teXet
-Android 4.2.2; TM-1058:
+TM-1058:
   - teXet
 X-pad AIR 8 3G (revision 1):
   - teXet
@@ -28546,6 +29308,7 @@ TM-8066 (revision1):
   - teXet
 X-pad SHINE 8.1 3G:
   - teXet
+  - AG Mobile
 X-pad SKY 8.1 3G  (revision 1):
   - teXet
 TM-9758:
@@ -29033,6 +29796,8 @@ iPlay_40:
   - AllDocube
 RC7804F:
   - 3Q
+zh-cn; SUPRA M74AG; Android/4.4.2; Release/11.05.2015):
+  - Supra
 Hi8SE:
   - Chuwi
 Maxtron T1:
@@ -29483,6 +30248,65 @@ iFive Air:
 PULSAR QI3G:
   - Leotec
   - Explay
+RMD_550:
+  - Ross&Moor
+Nomi_C101040:
+  - Nomi
+Lenovo YT-X705L:
+  - Lenovo
+Lenovo YT-X705F:
+  - Lenovo
+Lenovo TB-7305I:
+  - Lenovo
+K017:
+  - Asus
+K015:
+  - Asus
+Onliner4:
+  - Explay
+LM-T605:
+  - LG
+LG-V400:
+  - LG
+LG-V410:
+  - LG
+LG-V480:
+  - LG
+LG-V495:
+  - LG
+LG-V496:
+  - LG
+LG-V497:
+  - LG
+TEO104G:
+  - Thomson
+Nomi_C080034:
+  - Nomi
+Nomi_C070034:
+  - Nomi
+Nomi_C070010:
+  - Nomi
+PMT1177_4G:
+  - Prestigio
+Nomi_C070014:
+  - Nomi
+SUPRA M14A 3G:
+  - Supra
+FLYCAT UNICUM 8S:
+  - FLYCAT
+  - Fly
+FLYCAT UNICUM 1002:
+  - FLYCAT
+  - Fly
+FLYCAT UNICUM 8003:
+  - FLYCAT
+  - Fly
+Nomi_C080012:
+  - Nomi
+PMT3157_4G:
+  - Prestigio
+Ursus NS310:
+  - DEXP
 Senkatel_T1009:
   - Senkatel
 Senkatel_T7011:
@@ -29773,7 +30597,7 @@ PNT-7045:
 MyTAB 8 MINI Dual Core:
   - MyTab
   - MyPhone
-Mytab-U55GT Build / JDQ39:
+Mytab-U55GT:
   - MyTab
 People GT300:
   - 4Good
@@ -30000,6 +30824,8 @@ A200:
 A101:
   - Acer
 IntroTr3544:
+  - Advance
+Tr3845:
   - Advance
 Excer_10_PRO:
   - AVH
@@ -30462,6 +31288,8 @@ AFTSSS:
   - Amazon
 AFTBAMR311:
   - Toshiba
+DIGIFORS 400:
+  - DIGIFORS
 BB2 PRO:
   - Mecool
 KII PRO:
@@ -30877,10 +31705,10 @@ PortalTV:
   - Facebook
 HK1 PLUS:
   - Vontar
-smart-tv:
+NVIDIA Shield; smart-tv:
   - Nvidia
   - Samsung
-smart-tv) ShieldExperience/8.0.0 (32.5.205.42; mdarcy:
+NVIDIA_SHIELD_PRO_2019:
   - Nvidia
   - Samsung
 Ozone HD:
