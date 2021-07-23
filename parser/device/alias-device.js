@@ -43,11 +43,11 @@ class AliasDevice extends AbstractParser {
         if (this.hasReplaceBrand()) {
           result.name = result.name
             .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
-            .trim();
         }
         break;
       }
     }
+    result.name = result.name.trim();
     return result;
   }
 

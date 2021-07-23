@@ -1874,3 +1874,10 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 1
+  288:
+    name: MediaTek MT6571
+    type: ARM
+    cores: 2
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 0
