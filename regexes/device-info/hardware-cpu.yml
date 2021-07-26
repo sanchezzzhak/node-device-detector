@@ -1881,3 +1881,10 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 0
+  289:
+    name: Qualcomm Snapdragon 712
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 10nm
+    gpu_id: 39
