@@ -100,6 +100,18 @@ H135:
   - Apple
 'MacBookAir6,1':
   - Apple
+'MacBookAir7,1':
+  - Apple
+'MacBookAir7,2':
+  - Apple
+'MacBookAir8,1':
+  - Apple
+'MacBookAir8,2':
+  - Apple
+'MacBookAir9,1':
+  - Apple
+'MacBookAir10,1':
+  - Apple
 'MacBookPro4,1':
   - Apple
 'MacBookPro5,1':
@@ -134,6 +146,46 @@ H135:
   - Apple
 'MacBookPro11,1':
   - Apple
+'MacBookPro11,2':
+  - Apple
+'MacBookPro11,3':
+  - Apple
+'MacBookPro11,4':
+  - Apple
+'MacBookPro11,5':
+  - Apple
+'MacBookPro12,1':
+  - Apple
+'MacBookPro13,1':
+  - Apple
+'MacBookPro13,2':
+  - Apple
+'MacBookPro13,3':
+  - Apple
+'MacBookPro14,1':
+  - Apple
+'MacBookPro14,2':
+  - Apple
+'MacBookPro14,3':
+  - Apple
+'MacBookPro15,1':
+  - Apple
+'MacBookPro15,3':
+  - Apple
+'MacBookPro15,2':
+  - Apple
+'MacBookPro15,4':
+  - Apple
+'MacBookPro16,1':
+  - Apple
+'MacBookPro16,4':
+  - Apple
+'MacBookPro16,2':
+  - Apple
+'MacBookPro16,3':
+  - Apple
+'MacBookPro17,1':
+  - Apple
 'MacBookPro1,1':
   - Apple
 'MacBookPro1,2':
@@ -143,6 +195,40 @@ H135:
 'MacBookPro2,2':
   - Apple
 'MacBookPro3,1':
+  - Apple
+'Macmini7,1':
+  - Apple
+'MacBook7,1':
+  - Apple
+'MacPro5,1':
+  - Apple
+'iMac12,1':
+  - Apple
+'iMac19,2':
+  - Apple
+'iMac14,2':
+  - Apple
+'iMac14,4':
+  - Apple
+'iMac14,1':
+  - Apple
+'MacBook8,1':
+  - Apple
+'iMac10,1':
+  - Apple
+'iMac20,1':
+  - Apple
+'Macmini9,1':
+  - Apple
+'iMac17,1':
+  - Apple
+'MacBook9,1':
+  - Apple
+'MacBook6,1':
+  - Apple
+'iMac19,1':
+  - Apple
+'iMac20,2':
   - Apple
 BilimBook mini:
   - BilimLand
@@ -154,6 +240,8 @@ HP Chromebook x360 11 G1 EE:
   - HP
 HP Chromebook 13 G1:
   - HP
+Aspire 4349:
+  - Acer
 Impress_Grip:
   - Vertex
 Archos Diamond Plus:
@@ -917,6 +1005,28 @@ HMT400:
   - Xoro
 NW-Z1000Series:
   - Sony
+DA220HQL:
+  - Acer
+DA241HL:
+  - Acer
+VSD220:
+  - ViewSonic
+IFP7550-3:
+  - ViewSonic
+IFP9850-3:
+  - ViewSonic
+IFP8650-3:
+  - ViewSonic
+IFP6550-3:
+  - ViewSonic
+WT22M-FI:
+  - AOpen
+WT19M-FI:
+  - AOpen
+AEOBC:
+  - Amazon
+AEOKN:
+  - Amazon
 i7U:
   - Advan
 i4U:
@@ -2197,7 +2307,7 @@ RM-997:
   - Nokia
 Lumia 610:
   - Nokia
-WebView/3.0; NOKIA; RM-1027:
+RM-1027:
   - Nokia
 Nokia 720T:
   - Nokia
@@ -2560,7 +2670,7 @@ PCHM00:
   - OPPO
 CPH2077:
   - OPPO
-arm; CPH2083:
+CPH2083:
   - OPPO
 CPH1923:
   - OPPO
@@ -2570,7 +2680,7 @@ CPH1837:
   - OPPO
 PADT00:
   - OPPO
-arm_64; CPH2015:
+CPH2015:
   - OPPO
 CPH2031:
   - OPPO
@@ -2642,7 +2752,7 @@ PDYT20:
   - OPPO
 PDYM20:
   - OPPO
-arm_64; CPH2067:
+CPH2067:
   - OPPO
 CPH1715:
   - OPPO
@@ -2926,7 +3036,7 @@ CPH1945:
   - OPPO
 PCKM80:
   - OPPO
-arm_64; CPH1951:
+CPH1951:
   - OPPO
 CPH2043:
   - OPPO
@@ -6969,7 +7079,7 @@ TM-5503:
   - teXet
 TM-5016:
   - teXet
-zh-cn; TM-3500; Android/4.4.2; Release/09.25.2015:
+TM-3500:
   - teXet
 TM_5011:
   - teXet
@@ -8251,7 +8361,7 @@ YTONE M7X:
   - Ytone
 YXTEL_H1:
   - Yxtel
-zh-cn; YXTEL_U1; Android/4.4.2; Release/08.28.2015):
+YXTEL_U1:
   - Yxtel
 YXTEL_U3:
   - Yxtel
@@ -8727,6 +8837,7 @@ Z5031O:
   - ZTE
 Optus X Start:
   - ZTE
+  - Jinga
 Z6621O:
   - ZTE
 P609:
@@ -8885,19 +8996,19 @@ RMX2076:
   - Realme
 ANA-NX9:
   - Huawei
-arm_64; Xenium S566:
+Xenium S566:
   - Philips
-arm_64; Xenium S266:
+Xenium S266:
   - Philips
 KOB2-L09:
   - Huawei
-arm_64; ART-L29:
+ART-L29:
   - Huawei
-arm_64; ART-L29N:
+ART-L29N:
   - Huawei
-arm_64; M2002J9G:
+M2002J9G:
   - Xiaomi
-arm; S5 Silk:
+S5 Silk:
   - Haier
 BV6300Pro:
   - Blackview
@@ -8942,7 +9053,7 @@ Artel Choice:
   - Artel
 ARTEL Style:
   - Artel
-arm; 5002F_RU:
+5002F_RU:
   - Alcatel
 5002D_RU:
   - Alcatel
@@ -8964,7 +9075,7 @@ QUEST:
   - CUBOT
 ELEGANCE 6:
   - Kiano
-arm; 5007U:
+5007U:
   - Alcatel
 W-V830-EEA:
   - Wiko
@@ -9239,9 +9350,9 @@ A140:
   - DEXP
 A150:
   - DEXP
-arm; BQ-5000G:
+BQ-5000G:
   - bq
-arm; BQ-5521L:
+BQ-5521L:
   - bq
 Expanse:
   - Highscreen
@@ -9261,11 +9372,11 @@ L-01F:
   - LG
 TZ13:
   - Irbis
-arm; BQ-5016G:
+BQ-5016G:
   - bq
-arm; BQ-5540L:
+BQ-5540L:
   - bq
-arm; BQ-6022G:
+BQ-6022G:
   - bq
 AMN-LX3:
   - Huawei
@@ -16764,6 +16875,7 @@ Hisense C30:
   - Hisense
 Archos 50e Neon:
   - Archos
+  - Jinga
 Mi A3:
   - Xiaomi
 Moto C:
@@ -17143,7 +17255,7 @@ EVR-L29:
   - Huawei
 LGMS631:
   - LG
-arm; LG-K130:
+LG-K130:
   - LG
 vivo 1910:
   - Vivo
@@ -17816,6 +17928,102 @@ FLYCAT OPTIMUM 5002:
 FLYCAT OPTIMUM 5501:
   - FLYCAT
   - Fly
+Power 2:
+  - Leagoo
+Power 2 Pro:
+  - Leagoo
+LIGHT MINI:
+  - VIWA
+VIWA A5+:
+  - VIWA
+LIGHT PLUS:
+  - VIWA
+Light A104:
+  - 4Good
+Alpha GTR:
+  - Highscreen
+CyrusApel:
+  - Cyrus
+T3 Pro:
+  - Vernee
+M9 Pro:
+  - Leagoo
+Neon:
+  - Jinga
+Power 5:
+  - Leagoo
+VITA S:
+  - QMobile
+S70Lite:
+  - Doogee
+S80Lite:
+  - Doogee
+S9_Pro:
+  - Ulefone
+Start:
+  - Jinga
+StartLTE:
+  - Jinga
+Wallet:
+  - Highscreen
+X10S:
+  - Doogee
+DROXIO KENTIA:
+  - Droxio
+Droxio A47:
+  - Droxio
+Joy_TV:
+  - Explay
+G255:
+  - DEXP
+T200:
+  - ThL
+W867:
+  - Haier
+Prime S:
+  - Highscreen
+JoyPRO:
+  - Jinga
+GT6000:
+  - Gretel
+A6:
+  - Gretel
+A7:
+  - Gretel
+Fresh:
+  - Jinga
+London:
+  - UMIDIGI
+M3 Max:
+  - Meizu
+M445:
+  - DEXP
+A450:
+  - Jinga
+A239s:
+  - Beeline
+X60L:
+  - Doogee
+Z155:
+  - DEXP
+Z255:
+  - DEXP
+MIX2:
+  - Doogee
+MX6:
+  - Meizu
+Pure 3:
+  - M-Horse
+Pure1:
+  - M-Horse
+Pure 2A:
+  - M-Horse
+R6 Lite:
+  - Blackview
+S10 PRO:
+  - Nomu
+U15 Pro:
+  - Oukitel
 Bluboo Maya Max:
   - Bluboo
 Moto G 5S Plus:
@@ -18142,7 +18350,7 @@ BQru-5054:
   - bq
 BQS-4570:
   - bq
-zh-cn; BQS-4503; Android/4.4.2; Release/07.22.2015:
+BQS-4503:
   - bq
 BQS-4004:
   - bq
@@ -18252,7 +18460,7 @@ BQS-5010:
   - bq
 BQ-5012L:
   - bq
-zh-cn; BQS-4550; Android/4.4.2; Release/12.19.2015:
+BQS-4550:
   - bq
 BQS-4505:
   - bq
@@ -18856,6 +19064,7 @@ LINX A420 3G LS4019PG:
 LINX A450 3G LT4028PG:
   - Digma
   - Sony
+  - Jinga
 LINX A452 3G LT4030PG:
   - Digma
   - Sony
@@ -19105,7 +19314,7 @@ DATANG S62L:
   - Datang
 DOOV_D2:
   - Doov
-zh-cn; DOOV D350; Android/4.1.2; Release/01.20.2014):
+DOOV D350:
   - Doov
 DOOV D8:
   - Doov
@@ -22743,6 +22952,7 @@ S4A5:
   - Lexand
 LEXAND S4A4 NEON:
   - Lexand
+  - Jinga
 SC7 PRO HD:
   - Lexand
 S4A1:
@@ -25453,28 +25663,6 @@ AS-4411:
   - Assistant
 AS-4421:
   - Assistant
-DA220HQL:
-  - Acer
-DA241HL:
-  - Acer
-VSD220:
-  - ViewSonic
-IFP7550-3:
-  - ViewSonic
-IFP9850-3:
-  - ViewSonic
-IFP8650-3:
-  - ViewSonic
-IFP6550-3:
-  - ViewSonic
-WT22M-FI:
-  - AOpen
-WT19M-FI:
-  - AOpen
-AEOBC:
-  - Amazon
-AEOKN:
-  - Amazon
 Bush 10.0 MyTablet:
   - Bush
 BUSH 7.85 TABLET:
@@ -26451,9 +26639,27 @@ EK-T7020:
   - EKT
 EK-MII:
   - EKT
+'iPad8,9':
+  - Apple
+'iPad8,10':
+  - Apple
+'iPad8,11':
+  - Apple
 'iPad8,12':
   - Apple
+'iPad11,1':
+  - Apple
+'iPad11,2':
+  - Apple
+'iPad11,3':
+  - Apple
 'iPad11,4':
+  - Apple
+'iPad11,6':
+  - Apple
+'iPad11,7':
+  - Apple
+'iPad13,1':
   - Apple
 'iPad13,2':
   - Apple
@@ -29796,8 +30002,6 @@ iPlay_40:
   - AllDocube
 RC7804F:
   - 3Q
-zh-cn; SUPRA M74AG; Android/4.4.2; Release/11.05.2015):
-  - Supra
 Hi8SE:
   - Chuwi
 Maxtron T1:
@@ -30307,6 +30511,20 @@ PMT3157_4G:
   - Prestigio
 Ursus NS310:
   - DEXP
+M74C 3G:
+  - Supra
+S290:
+  - DEXP
+S370:
+  - DEXP
+S380:
+  - DEXP
+Aplay 3:
+  - 3GO
+APLAY4:
+  - 3GO
+P330X:
+  - Alcatel
 Senkatel_T1009:
   - Senkatel
 Senkatel_T7011:
@@ -30973,6 +31191,7 @@ Archos 101 Cobalt:
   - Archos
 Archos 101 Neon:
   - Archos
+  - Jinga
 ARCHOS 101 PLATINUM:
   - Archos
 ARCHOS 101 Titanium:

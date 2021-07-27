@@ -1120,6 +1120,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 12nm
     gpu_id: 25
   172:
     name: Qualcomm Snapdragon 429 SDM429
@@ -1281,6 +1282,7 @@ cpu:
     type: ARM
     clock_rate: 2800
     cores: 8
+    process: 10nm
     gpu_id: 82
   199:
     name: Unisoc Tiger T618
@@ -1339,6 +1341,7 @@ cpu:
     type: ARM
     clock_rate: 2840
     cores: 8
+    process: 7nm
     gpu_id: 67
   208:
     name: Qualcomm Snapdragon 821 MSM8996 Pro
@@ -1443,6 +1446,7 @@ cpu:
     type: ARM
     clock_rate: 1800
     cores: 8
+    process: 14nm
     gpu_id: 41
   225:
     name: HiSilicon Kirin 955
@@ -1502,7 +1506,7 @@ cpu:
     gpu_id: 44
   234:
     name: Qualcomm Snapdragon 855
-    # SDM855
+    # SDM855, SM8150
     type: ARM
     cores: 8
     clock_rate: 2840
@@ -1881,3 +1885,17 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 0
+  289:
+    name: Qualcomm Snapdragon 712
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 10nm
+    gpu_id: 39
+  290:
+    name: Mediatek Helio P60
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 51

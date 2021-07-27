@@ -1,3 +1,7 @@
+// this is a working file for filtering user agents that have not yet been processed and added to tests
+// Usage
+// node report-test-files-ua.js "/src/www/scan-logs/" "/src/www/node-device-detector/tests/fixtures/" > ua_not_exist_tests.log
+
 const readline = require('readline');
 const fs = require('fs');
 const AliasDevice = require('../../parser/device/alias-device')
@@ -11,6 +15,14 @@ const detector = new DeviceDetect({
 
 let outputExist = {};
 let fixtures = {}
+
+const isFile = (path) => {
+  return fs.lstatSync(path).isFile();
+}
+
+const isDir = (path) => {
+  return fs.lstatSync(path).isDirectory();
+}
 
 const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
   let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
@@ -33,16 +45,25 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
     });
   })
 
-  const files = fs.readdirSync(folderTestPath);
+  let files = [];
+  if(isDir(folderTestPath)) {
+    fs.readdirSync(folderTestPath).forEach(file => {
+      let absolutePath = folderTestPath + file;
+      if (!isFile(absolutePath)) {
+        return;
+      }
+      files.push(absolutePath);
+    });
+  } else if(isFile(folderTestPath)) {
+    files.push(folderTestPath);
+  }
+
   if (!files.length) {
-    console.log('empty dir files not found')
+    console.log('empty files')
     return;
   }
-  files.forEach(async file => {
-    let absolutePath = folderTestPath + file;
-    if(!fs.lstatSync(absolutePath).isFile()){
-      return;
-    }
+
+  files.forEach(async (absolutePath) => {
     const lineReader = readline.createInterface({
       input: fs.createReadStream(absolutePath),
       terminal: false,
