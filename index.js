@@ -455,7 +455,8 @@ class DeviceDetector {
         this.__deviceIndexexHash = helper.loadYMLFile(path);
       }
     }
-    let brands = this.__deviceIndexexHash[deviceCode];
+    let lDeviceCode = deviceCode.toLowerCase();
+    let brands = this.__deviceIndexexHash[lDeviceCode];
     if (brands !== void 0) {
       return brands;
     }
