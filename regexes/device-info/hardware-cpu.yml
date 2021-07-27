@@ -1281,6 +1281,7 @@ cpu:
     type: ARM
     clock_rate: 2800
     cores: 8
+    process: 10nm
     gpu_id: 82
   199:
     name: Unisoc Tiger T618
@@ -1339,6 +1340,7 @@ cpu:
     type: ARM
     clock_rate: 2840
     cores: 8
+    process: 7nm
     gpu_id: 67
   208:
     name: Qualcomm Snapdragon 821 MSM8996 Pro
@@ -1502,7 +1504,7 @@ cpu:
     gpu_id: 44
   234:
     name: Qualcomm Snapdragon 855
-    # SDM855
+    # SDM855, SM8150
     type: ARM
     cores: 8
     clock_rate: 2840
