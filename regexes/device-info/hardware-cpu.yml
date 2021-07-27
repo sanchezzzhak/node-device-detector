@@ -1120,6 +1120,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 12nm
     gpu_id: 25
   172:
     name: Qualcomm Snapdragon 429 SDM429
@@ -1445,6 +1446,7 @@ cpu:
     type: ARM
     clock_rate: 1800
     cores: 8
+    process: 14nm
     gpu_id: 41
   225:
     name: HiSilicon Kirin 955
@@ -1890,3 +1892,10 @@ cpu:
     clock_rate: 2300
     process: 10nm
     gpu_id: 39
+  290:
+    name: Mediatek Helio P60
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 51
