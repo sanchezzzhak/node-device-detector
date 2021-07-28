@@ -1893,9 +1893,16 @@ cpu:
     process: 10nm
     gpu_id: 39
   290:
-    name: Mediatek Helio P60
+    name: MediaTek Helio P60
     type: ARM
     cores: 8
     clock_rate: 2000
     process: 12nm
     gpu_id: 51
+  291:
+    name: MediaTek Helio X20 MT6797
+    type: ARM
+    cores: 10
+    clock_rate: 2300
+    process: 20nm
+    gpu_id: 80
