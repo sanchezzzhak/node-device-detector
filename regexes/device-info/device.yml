@@ -5074,8 +5074,8 @@ vivo:
 vernee:
   apollo lite: 'DS=5.5;RS=1080x1920;SZ=76.2x152x9.2;WT=175;RE=2016.04;OS=Android 6.0.1;RM=4096;CP=291;'
   apollo x: 'DS=5.5;RS=1080x1920;SZ=76.2x152x9.2;WT=175;RE=2017.12;OS=Android 7.0;RM=4096;CP=291;'
-  m5: ''
-  mars pro: ''
+  m5: 'DS=5.2;RS=720x1280;SZ=72.6x147.3x6.9;WT=145;RE=2017.08;OSAndroid 7.0;RM=4096;CP=40;'
+  mars pro: 'DS=5.5;RS=1080x1920;SZ=74x151x7.6;WT=161;RE=2017;OS=Android 7.1;RM=6144;CP=292;'
   thor e: ''
   thor plus: ''
   x2: ''
