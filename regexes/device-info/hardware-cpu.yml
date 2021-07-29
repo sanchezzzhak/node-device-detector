@@ -803,6 +803,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1300
+    process: 28nm
     gpu_id: 59
   119:
     # MSM8210
@@ -946,6 +947,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1100
+    process: 28nm
     gpu_id: 4
   143:
     name: MediaTek MT8317
@@ -1913,3 +1915,10 @@ cpu:
     clock_rate: 2600
     process: 16nm
     gpu_id: 75
+  293:
+    name: MediaTek MT6739WA
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 4
