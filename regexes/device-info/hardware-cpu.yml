@@ -937,6 +937,7 @@ cpu:
     type: ARM
     cores: 2
     clock_rate: 1700
+    process: 28nm
     gpu_id: 66
   141:
     name: Qualcomm Snapdragon 865+ 5G
@@ -1312,6 +1313,7 @@ cpu:
     type: ARM
     clock_rate: 1500
     cores: 2
+    process: 45nm
     gpu_id: 85
   203:
     name: Intel Core M3-6Y30
@@ -1931,5 +1933,12 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1600
+    process: 28nm
+    gpu_id: 12
+  295:
+    name: Qualcomm Snapdragon S4 Plus MSM8227
+    type: ARM
+    cores: 2
+    clock_rate: 1000
     process: 28nm
     gpu_id: 12
