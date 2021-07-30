@@ -126,6 +126,7 @@ cpu:
     gpu_id: 15
   19:
     name: Qualcomm Snapdragon 630
+    # SDM630
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -759,6 +760,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1200
+    process: 28nm
     gpu_id: 12
   112:
     name: MediaTek MT6589T
@@ -797,6 +799,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 28nm
     gpu_id: 26
   118:
     name: MediaTek MT6753
@@ -1846,6 +1849,7 @@ cpu:
     gpu_id: 24
   283:
     name: Qualcomm Snapdragon 665
+    # SDM665
     type: ARM
     clock_rate: 2200
     cores: 8
@@ -1922,3 +1926,10 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 4
+  294:
+    name: Qualcomm Snapdragon 400 MSM8928
+    type: ARM
+    cores: 4
+    clock_rate: 1600
+    process: 28nm
+    gpu_id: 12
