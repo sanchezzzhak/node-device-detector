@@ -1972,3 +1972,10 @@ cpu:
     clock_rate: 2000
     process: 8nm
     gpu_id: 97
+  300:
+    name: MediaTek Dimensity 800U
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 7nm
+    gpu_id: 102
