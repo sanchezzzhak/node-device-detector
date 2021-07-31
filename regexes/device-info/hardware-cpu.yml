@@ -1949,3 +1949,26 @@ cpu:
     clock_rate: 2600
     process: 7nm
     gpu_id: 105
+  297:
+    name: MediaTek Dimensity 820 5G
+    # MT6875
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 7nm
+    gpu_id: 106
+  298:
+    name: Qualcomm Snapdragon 670
+    # SDM670
+    type: ARM
+    cores: 8
+    clock_rate: 2016
+    process: 10nm
+    gpu_id: 39
+  299:
+    name: Samsung Exynos 880
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 8nm
+    gpu_id: 97
