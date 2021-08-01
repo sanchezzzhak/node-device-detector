@@ -748,6 +748,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1600
+    process: 28nm
     gpu_id: 55
   110:
     name: Qualcomm Snapdragon S4 Play MSM8225Q

@@ -5240,6 +5240,8 @@ vivo:
 mobicel:
   r7: 'DS=5.7;RS=480x101;SZ=71x146x9.6;WT=167;RE=2020.04;RM=1024;CP=4;OS=Android 8.1;SM=2'
   r7 1: '->r7'
+  hype: 'OS=Android 8.1;SZ=74.3x153.7x8;WT=164;RE=2019.03;CP=76;DS=5.99;RM=1024;'
+  trendy plus: 'DS=5;SZ=73.7x146.3x9.8;RS=480x854;RM=1024;OS=Android 7;SM=1;'
 
 vernee:
   apollo lite: 'DS=5.5;RS=1080x1920;SZ=76.2x152x9.2;WT=175;RE=2016.04;OS=Android 6.0.1;RM=4096;CP=291;'
@@ -5418,3 +5420,9 @@ sony:
   so-01l: '->xperia xz3'
   801so: '->xperia xz3'
   sov39: '->xperia xz3'
+
+gionee:
+  f103 pro: 'RE=2016.09;SZ=70.5x145.3x8.5;WT=143;DS=5;RS=720x1280;OS=Android 6.0;RM=3072;'
+  s11 lite: 'RE=2017.11;SZ=72.6x153.8x7.9;WT=141;DS=5.7;RS=720x1440;OS=Android 7.1;CP=43;RM=4096;'
+  f205: 'RE=2018.01;SZ=70.7x148.4x8;WT=135.6;DS=5.45;RS=720x1440;OS=Android 7.1;CP=8;RM=2048;'
+  f9: 'DS=5.71;RS=720x1520;SZ=70.9x147.3x8.9;WT=158;RE=2019.09;OS=Android 9.0;RM=3072;CP=109;'
