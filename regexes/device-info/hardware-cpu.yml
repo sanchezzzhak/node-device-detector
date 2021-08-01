@@ -1979,3 +1979,18 @@ cpu:
     clock_rate: 2400
     process: 7nm
     gpu_id: 102
+  301:
+    name: Samsung Exynos 1080
+    type: ARM
+    cores: 8
+    clock_rate: 2800
+    process: 5nm
+    gpu_id: 107
+  302:
+    name: MediaTek Dimensity 700
+    # MT6833
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 7nm
+    gpu_id: 108
