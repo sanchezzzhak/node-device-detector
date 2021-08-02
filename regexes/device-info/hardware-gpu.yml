@@ -311,3 +311,15 @@ gpu:
   104:
     name: Qualcomm Adreno 420
     clock_rate: 600
+  105:
+    name: ARM Mali-G77 MP9
+    clock_rate: 0
+  106:
+    name: ARM Mali-G57 MC5
+    clock_rate: 900
+  107:
+    name: ARM Mali-G78 MP10
+    clock_rate: 0
+  108:
+    name: ARM Mali-G57 MP2
+    clock_rate: 0

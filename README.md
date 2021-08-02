@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 27/07/2021_
+_Last update: 02/08/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1026 devices, alias devices 2640)
+> This parser is experimental and contains few devices. (1144 devices, alias devices 2873)
 >
 ##### Support detail brands/models list:
 
@@ -277,14 +277,16 @@ is not parse result  {name: ""}
 | bravis | 24 | 17 | - | colors | 7 | 2 |
 | engel | 1 | 1 | - | firefly mobile | 4 | 1 |
 | formuler | 2 | 0 | - | geotel | 3 | 0 |
-| google | 3 | 5 | - | huawei | 223 | 578 |
-| imo mobile | 5 | 0 | - | intex | 9 | 3 |
-| ipro | 4 | 7 | - | irbis | 15 | 0 |
+| gionee | 4 | 0 | - | google | 3 | 5 |
+| huawei | 223 | 578 | - | imo mobile | 5 | 0 |
+| intex | 9 | 3 | - | ipro | 4 | 7 |
+| irbis | 15 | 0 | - | mobicel | 3 | 1 |
 | motorola | 27 | 24 | - | nuvo | 3 | 2 |
 | oneplus | 18 | 48 | - | öwn | 1 | 2 |
 | panasonic | 5 | 8 | - | samsung | 166 | 704 |
-| tiphone | 1 | 0 | - | utok | 1 | 0 |
-| vivo | 56 | 63 | - | zync | 2 | 0 |
+| sony | 37 | 131 | - | tiphone | 1 | 0 |
+| utok | 1 | 0 | - | vernee | 9 | 2 |
+| vivo | 121 | 162 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 
 </details>

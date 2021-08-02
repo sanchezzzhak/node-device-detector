@@ -126,6 +126,7 @@ cpu:
     gpu_id: 15
   19:
     name: Qualcomm Snapdragon 630
+    # SDM630
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -747,6 +748,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1600
+    process: 28nm
     gpu_id: 55
   110:
     name: Qualcomm Snapdragon S4 Play MSM8225Q
@@ -759,6 +761,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1200
+    process: 28nm
     gpu_id: 12
   112:
     name: MediaTek MT6589T
@@ -797,12 +800,14 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 28nm
     gpu_id: 26
   118:
     name: MediaTek MT6753
     type: ARM
     cores: 8
     clock_rate: 1300
+    process: 28nm
     gpu_id: 59
   119:
     # MSM8210
@@ -933,6 +938,7 @@ cpu:
     type: ARM
     cores: 2
     clock_rate: 1700
+    process: 28nm
     gpu_id: 66
   141:
     name: Qualcomm Snapdragon 865+ 5G
@@ -946,6 +952,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1100
+    process: 28nm
     gpu_id: 4
   143:
     name: MediaTek MT8317
@@ -1307,6 +1314,7 @@ cpu:
     type: ARM
     clock_rate: 1500
     cores: 2
+    process: 45nm
     gpu_id: 85
   203:
     name: Intel Core M3-6Y30
@@ -1844,6 +1852,7 @@ cpu:
     gpu_id: 24
   283:
     name: Qualcomm Snapdragon 665
+    # SDM665
     type: ARM
     clock_rate: 2200
     cores: 8
@@ -1893,9 +1902,96 @@ cpu:
     process: 10nm
     gpu_id: 39
   290:
-    name: Mediatek Helio P60
+    name: MediaTek Helio P60
     type: ARM
     cores: 8
     clock_rate: 2000
     process: 12nm
     gpu_id: 51
+  291:
+    name: MediaTek Helio X20 MT6797
+    type: ARM
+    cores: 10
+    clock_rate: 2300
+    process: 20nm
+    gpu_id: 80
+  292:
+    name: MediaTek Helio P20 MT6757CD
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 16nm
+    gpu_id: 75
+  293:
+    name: MediaTek MT6739WA
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 4
+  294:
+    name: Qualcomm Snapdragon 400 MSM8928
+    type: ARM
+    cores: 4
+    clock_rate: 1600
+    process: 28nm
+    gpu_id: 12
+  295:
+    name: Qualcomm Snapdragon S4 Plus MSM8227
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+    process: 28nm
+    gpu_id: 12
+  296:
+    name: MediaTek Dimensity 1000+
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 7nm
+    gpu_id: 105
+  297:
+    name: MediaTek Dimensity 820 5G
+    # MT6875
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 7nm
+    gpu_id: 106
+  298:
+    name: Qualcomm Snapdragon 670
+    # SDM670
+    type: ARM
+    cores: 8
+    clock_rate: 2016
+    process: 10nm
+    gpu_id: 39
+  299:
+    name: Samsung Exynos 880
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 8nm
+    gpu_id: 97
+  300:
+    name: MediaTek Dimensity 800U
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 7nm
+    gpu_id: 102
+  301:
+    name: Samsung Exynos 1080
+    type: ARM
+    cores: 8
+    clock_rate: 2800
+    process: 5nm
+    gpu_id: 107
+  302:
+    name: MediaTek Dimensity 700
+    # MT6833
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 7nm
+    gpu_id: 108
