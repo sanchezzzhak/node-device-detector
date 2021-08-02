@@ -55,7 +55,7 @@ class AliasDevice extends AbstractParser {
     if (!this.__brandReplaceRegexp) {
       let escapeeChars = [/\+/gi, /\./gi];
       let replaceChars = ['\\+', '\\.'];
-      let customBrands = ['HUAWEI HUAWEI'];
+      let customBrands = ['HUAWEI HUAWEI', 'viv-vivo'];
       let brands = customBrands
         .concat(Object.keys(COLLECTION_BRAND_LIST))
         .join('|');
