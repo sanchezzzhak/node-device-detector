@@ -4,29 +4,29 @@
 
 const readline = require('readline');
 const fs = require('fs');
-const AliasDevice = require('../../parser/device/alias-device')
-const DeviceDetect = require('../../index')
-const { YAMLLoad, getFixtureFolder} = require('./../functions');
+const AliasDevice = require('../../parser/device/alias-device');
+const DeviceDetect = require('../../index');
+const { YAMLLoad, getFixtureFolder } = require('./../functions');
 
-const aliasDevice = new AliasDevice()
+const aliasDevice = new AliasDevice();
 const detector = new DeviceDetect({
-  discardDeviceIndexes: false
-})
+  discardDeviceIndexes: false,
+});
 
 let outputExist = {};
-let fixtures = {}
+let fixtures = {};
 
 const isFile = (path) => {
   return fs.lstatSync(path).isFile();
-}
+};
 
 const isDir = (path) => {
   return fs.lstatSync(path).isDirectory();
-}
+};
 
 const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
   let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
-  if( folderFixturePath === '') {
+  if (folderFixturePath === '') {
     folderFixturePath = getFixtureFolder() + 'devices/';
   }
 
@@ -41,25 +41,25 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
       let brand = String(fixture.device.brand);
       let model = String(fixture.device.model);
       let deviceCode = aliasResult.name ? aliasResult.name : void 0;
-      fixtures[deviceCode] = {brand, model};
+      fixtures[deviceCode] = { brand, model };
     });
-  })
+  });
 
   let files = [];
-  if(isDir(folderTestPath)) {
-    fs.readdirSync(folderTestPath).forEach(file => {
+  if (isDir(folderTestPath)) {
+    fs.readdirSync(folderTestPath).forEach((file) => {
       let absolutePath = folderTestPath + file;
       if (!isFile(absolutePath)) {
         return;
       }
       files.push(absolutePath);
     });
-  } else if(isFile(folderTestPath)) {
+  } else if (isFile(folderTestPath)) {
     files.push(folderTestPath);
   }
 
   if (!files.length) {
-    console.log('empty files')
+    console.log('empty files');
     return;
   }
 
@@ -76,13 +76,17 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
       let isFoundModel = result.device && result.device.model !== void 0;
       let isFoundBrand = result.device && result.device.brand !== void 0;
 
-      if(uniqueOutput && fixtures[deviceCode] === void 0 && outputExist[deviceCode] === void 0) {
-        console.log(useragent)
+      if (
+        uniqueOutput &&
+        fixtures[deviceCode] === void 0 &&
+        outputExist[deviceCode] === void 0
+      ) {
+        console.log(useragent);
         outputExist[deviceCode] = 1;
-      } else if(!uniqueOutput && fixtures[deviceCode] === void 0) {
-        console.log(useragent)
+      } else if (!uniqueOutput && fixtures[deviceCode] === void 0) {
+        console.log(useragent);
       }
-      
+
       // } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
       //   console.log(useragent)
       // } else if(deviceCode && !isFoundBrand) {
@@ -93,7 +97,7 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
 };
 
 let parsePath = process.argv[2];
-let testsPath = process.argv[3] || "";
+let testsPath = process.argv[3] || '';
 let uniqueOutput = process.argv[4] || 0;
 
 run(parsePath, testsPath, uniqueOutput);
