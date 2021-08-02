@@ -995,6 +995,16 @@ tecno le7n:
   - Tecno Mobile
 tecno ld7:
   - Tecno Mobile
+zte a2121l:
+  - ZTE
+zte 8010:
+  - ZTE
+redmi note 9s:
+  - Xiaomi
+as360:
+  - DEXP
+redmi note 5:
+  - Xiaomi
 'ipod5,1':
   - Apple
 hmt390q:
@@ -3668,7 +3678,7 @@ rmx2032:
   - Realme
 rmx1925:
   - Realme
-rmx2001):
+rmx2001:
   - Realme
 rmx2063:
   - Realme
@@ -16143,6 +16153,8 @@ tecno cg8:
   - Tecno Mobile
 tecno cg7n:
   - Tecno Mobile
+hisense infinity h40 lite:
+  - Hisense
 qin 1s+:
   - Xiaomi
 sc51aa:
@@ -18016,6 +18028,232 @@ s10 pro:
   - Nomu
 u15 pro:
   - Oukitel
+sm-g9750:
+  - Samsung
+lancelot:
+  - Xiaomi
+lineage_j5y17lte:
+  - Samsung
+zs590ks:
+  - Asus
+zte a2021:
+  - ZTE
+vivo 2018:
+  - Vivo
+v2037:
+  - Vivo
+sm-g975u:
+  - Samsung
+sm-g986u:
+  - Samsung
+vivo 1919:
+  - Vivo
+v2031:
+  - Vivo
+v2033:
+  - Vivo
+v2035:
+  - Vivo
+vivo 1935:
+  - Vivo
+vivo 1951:
+  - Vivo
+stk-lx3:
+  - Huawei
+hyundai_eternity_g60:
+  - Hyundai
+zte a2021l:
+  - ZTE
+moto g(7) plus:
+  - Motorola
+moto e6s:
+  - Motorola
+ldn-lx3:
+  - Huawei
+ta-1027:
+  - Nokia
+ele-l04:
+  - Huawei
+huawei vns-l53:
+  - Huawei
+trt-l53:
+  - Huawei
+fig-lx3:
+  - Huawei
+huawei vns-l23:
+  - Huawei
+glam:
+  - NYX Mobile
+blade v8 se:
+  - ZTE
+sm-a205fn:
+  - Samsung
+rmx3241:
+  - Realme
+rmx3242:
+  - Realme
+sh-41a:
+  - Sharp
+cph2123:
+  - OPPO
+zte 9000:
+  - ZTE
+hyundai_eternity_g57:
+  - Hyundai
+lm-k525:
+  - LG
+lm-k526:
+  - LG
+ta-1039:
+  - Nokia
+moto x play:
+  - Motorola
+moto z3 play:
+  - Motorola
+moto z3:
+  - Motorola
+motorola one vision plus:
+  - Motorola
+moto g play:
+  - Motorola
+moto g(8) power:
+  - Motorola
+sne-lx3:
+  - Huawei
+moto g(9) plus:
+  - Motorola
+lenovo k13 note:
+  - Lenovo
+lenovo k10 note:
+  - Lenovo
+mi 10:
+  - Xiaomi
+mi 10 pro:
+  - Xiaomi
+mi 10t:
+  - Xiaomi
+mi 5:
+  - Xiaomi
+mi 5s:
+  - Xiaomi
+moto g(8) play:
+  - Motorola
+philips x818:
+  - Philips
+philips x588:
+  - Philips
+philips s395:
+  - Philips
+pic-lx9:
+  - Huawei
+pra-lx2:
+  - Huawei
+r2 plus:
+  - Blu
+r2 lte:
+  - Blu
+pure view:
+  - Blu
+rocky 2:
+  - Phonemax
+was-lx2j:
+  - Huawei
+x-treme pq52:
+  - Sigma
+x-treme_pq51:
+  - Sigma
+xt1575:
+  - Motorola
+xt1580:
+  - Motorola
+xt1581:
+  - Motorola
+xt1585:
+  - Motorola
+xt1650:
+  - Motorola
+ulefone_note 7:
+  - Ulefone
+zte a2017x:
+  - ZTE
+zte blade l0510:
+  - ZTE
+armor 11 5g:
+  - Ulefone
+armor 7:
+  - Ulefone
+b2021:
+  - F150
+bison gt:
+  - UMIDIGI
+cph2095:
+  - OPPO
+cph2135:
+  - OPPO
+cph2179:
+  - OPPO
+cph2185:
+  - OPPO
+cph2239:
+  - OPPO
+drive9:
+  - Krüger&Matz
+iron_2:
+  - MyPhone
+archos 50 power:
+  - Archos
+sm-a205f:
+  - Samsung
+sm-a305f:
+  - Samsung
+zte blade l4 pro:
+  - ZTE
+zte bv0720:
+  - ZTE
+zte c880a:
+  - ZTE
+neffos c5 plus:
+  - Neffos
+nomi i5071:
+  - Nomi
+noa_n8:
+  - NOA
+inoi_6_lite:
+  - Inoi
+infinix x603:
+  - Infinix
+s50_pro:
+  - Nomu
+s55_lite:
+  - Doogee
+senseit_j2:
+  - Senseit
+sm-j260fu:
+  - Samsung
+tecno la7 pro:
+  - Tecno Mobile
+zte blade a5 pro:
+  - ZTE
+zte blade v1000ru:
+  - ZTE
+zte blade l210ru:
+  - ZTE
+vivo 1940:
+  - Vivo
+vce-l22:
+  - Huawei
+v350u:
+  - AT&T
+tecno bc2c:
+  - Tecno Mobile
+tecno bc3:
+  - Tecno Mobile
+ultramintt a5:
+  - Mintt
+r1plus_1:
+  - Mobicel
+zte a7000:
+  - ZTE
 bluboo maya max:
   - Bluboo
 moto g 5s plus:
@@ -18185,6 +18423,18 @@ lenovo a6000:
   - OnePlus
 sm-n986u1:
   - Samsung
+oneplus a6003:
+  - OnePlus
+zte blade a5 2020ru:
+  - ZTE
+zte blade a7 2019ru:
+  - ZTE
+zte blade v10 vita ru:
+  - ZTE
+zte blade a3 2020ru:
+  - ZTE
+zte blade a3 2019ru:
+  - ZTE
 bravis_a506:
   - Bravis
 bravis delta:
@@ -23651,6 +23901,7 @@ le smooth fr:
   - Logicom
 laiq glam:
   - LAIQ
+  - NYX Mobile
 laiq new york:
   - LAIQ
 iqw553:
@@ -30512,6 +30763,18 @@ aplay4:
   - 3GO
 p330x:
   - Alcatel
+lenovo tb-x306f:
+  - Lenovo
+lenovo tb-7104f:
+  - Lenovo
+av-10nt310:
+  - JVC
+touch_7_3g:
+  - Pixus
+tecno p704a:
+  - Tecno Mobile
+pixus_touch_7_3g:
+  - Pixus
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
