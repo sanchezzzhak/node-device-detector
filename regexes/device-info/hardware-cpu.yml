@@ -2032,3 +2032,10 @@ cpu:
     clock_rate: 2000
     process: 8nm
     gpu_id: 103
+  308:
+    name: MediaTek MT6735A
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    process: 28nm
+    cpu_id: 2
