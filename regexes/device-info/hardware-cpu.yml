@@ -1276,6 +1276,7 @@ cpu:
     type: ARM
     clock_rate: 1950
     cores: 8
+    process: 28nm
     gpu_id: 57
   197:
     name: Qualcomm Snapdragon 855 Plus
@@ -1995,3 +1996,46 @@ cpu:
     clock_rate: 2200
     process: 7nm
     gpu_id: 108
+  303:
+    name: Qualcomm Snapdragon 768G
+    # SDM768
+    type: ARM
+    cores: 8
+    clock_rate: 2800
+    process: 7nm
+    gpu_id: 91
+  304:
+    name: Qualcomm Snapdragon 870 5G
+    type: ARM
+    cores: 8
+    clock_rate: 3200
+    process: 7nm
+    gpu_id: 67
+  305:
+    name: Qualcomm Snapdragon 888 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2840
+    process: 5nm
+    gpu_id: 109
+  306:
+    name: MediaTek Dimensity 1100
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 6nm
+    gpu_id: 110
+  307:
+    name: Qualcomm Snapdragon 480 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 8nm
+    gpu_id: 103
+  308:
+    name: MediaTek MT6735A
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    process: 28nm
+    cpu_id: 2

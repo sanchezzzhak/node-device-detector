@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 02/08/2021_
+_Last update: 09/08/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1144 devices, alias devices 2873)
+> This parser is experimental and contains few devices. (1177 devices, alias devices 2899)
 >
 ##### Support detail brands/models list:
 
@@ -286,7 +286,8 @@ is not parse result  {name: ""}
 | panasonic | 5 | 8 | - | samsung | 166 | 704 |
 | sony | 37 | 131 | - | tiphone | 1 | 0 |
 | utok | 1 | 0 | - | vernee | 9 | 2 |
-| vivo | 121 | 162 | - | zync | 2 | 0 |
+| vivo | 143 | 188 | - | walton | 2 | 0 |
+| wileyfox | 9 | 0 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
 
 </details>

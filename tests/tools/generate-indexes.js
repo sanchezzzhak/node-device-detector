@@ -3,7 +3,7 @@
  */
 
 const fs = require('fs');
-const { YAMLLoad, YAMLDump, getFixtureFolder} = require('./../functions');
+const { YAMLLoad, YAMLDump, getFixtureFolder } = require('./../functions');
 const aliasDevice = new (require('../../parser/device/alias-device'))();
 aliasDevice.setReplaceBrand(false);
 

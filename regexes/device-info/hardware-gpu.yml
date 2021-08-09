@@ -199,7 +199,7 @@ gpu:
     clock_rate: 400
   67:
     name: Qualcomm Adreno 650
-    clock_rate: 646
+    clock_rate: 650
   68:
     name: PowerVR SGX545
     clock_rate: 533
@@ -322,4 +322,10 @@ gpu:
     clock_rate: 0
   108:
     name: ARM Mali-G57 MP2
+    clock_rate: 0
+  109:
+    name: Qualcomm Adreno 660
+    clock_rate: 0
+  110:
+    name: ARM Mali-G77 MC9
     clock_rate: 0
