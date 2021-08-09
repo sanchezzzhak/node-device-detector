@@ -242,6 +242,8 @@ hp chromebook 13 g1:
   - HP
 aspire 4349:
   - Acer
+goclever netbook r103:
+  - GOCLEVER
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -18254,6 +18256,41 @@ r1plus_1:
   - Mobicel
 zte a7000:
   - ZTE
+zte blade a0605:
+  - ZTE
+zte blade v0840:
+  - ZTE
+htc 2pzf1:
+  - HTC
+psp7511duo:
+  - Prestigio
+psp7501duo:
+  - Prestigio
+psp3537duo:
+  - Prestigio
+psp3533duo:
+  - Prestigio
+y8 plus:
+  - Doogee
+impress_astra4g:
+  - Vertex
+impress_eagle4g:
+  - Vertex
+impress_rosso:
+  - Vertex
+impress_city:
+  - Vertex
+impress_flash:
+  - Vertex
+impress_zeon4g:
+  - Vertex
+impress_zeon3g:
+  - Vertex
+impress_luck4g_nfc:
+  - Vertex
+vivo xl2:
+  - Blu
+  - Vivo
 bluboo maya max:
   - Bluboo
 moto g 5s plus:
@@ -18435,6 +18472,146 @@ zte blade a3 2020ru:
   - ZTE
 zte blade a3 2019ru:
   - ZTE
+asus_z01kd:
+  - Asus
+asus_z016s:
+  - Asus
+asus_z012db:
+  - Asus
+asus_z012da:
+  - Asus
+asus_x00qda:
+  - Asus
+sm-j330f:
+  - Samsung
+sm-j530fm:
+  - Samsung
+sm-j730f:
+  - Samsung
+sm-j730fm:
+  - Samsung
+senseit e510:
+  - Senseit
+senseit r450:
+  - Senseit
+redmi 8a:
+  - Xiaomi
+redmi 8:
+  - Xiaomi
+impress_cube:
+  - Vertex
+impress_pluto:
+  - Vertex
+impress_fire:
+  - Vertex
+impress click nfc:
+  - Vertex
+impress_aero:
+  - Vertex
+impress_blade:
+  - Vertex
+impress_aqua:
+  - Vertex
+impress_life:
+  - Vertex
+impress_phonic:
+  - Vertex
+impress_win:
+  - Vertex
+impress_vira:
+  - Vertex
+impress_indigo:
+  - Vertex
+redmi 7a:
+  - Xiaomi
+redmi 3:
+  - Xiaomi
+redmi 3x:
+  - Xiaomi
+redmi 4x:
+  - Xiaomi
+vivo 1720:
+  - Vivo
+vivo one plus:
+  - Blu
+  - Vivo
+powermaxp600s:
+  - Energizer
+impress eclipse:
+  - Vertex
+impress_action:
+  - Vertex
+venus_v4:
+  - Vestel
+vivo 5r:
+  - Blu
+  - Vivo
+sm-a405fn:
+  - Samsung
+nokia 9:
+  - Nokia
+htc one x9 dual sim:
+  - HTC
+htc one_m8 dual sim:
+  - HTC
+htc one m9_prime camera edition:
+  - HTC
+htc one m9plus:
+  - HTC
+htc one m9 plus:
+  - HTC
+htc u play:
+  - HTC
+htc desire 10 pro:
+  - HTC
+htc 2pzm3:
+  - HTC
+htc desire 816 dual sim:
+  - HTC
+htc desire 650 dual sim:
+  - HTC
+htc desire 816:
+  - HTC
+htc6535lvw:
+  - HTC
+htc_s9u:
+  - HTC
+htc_m8x:
+  - HTC
+htc_d816x:
+  - HTC
+htc_d10i:
+  - HTC
+htc_0p6b:
+  - HTC
+htc one x10:
+  - HTC
+htc one a9s:
+  - HTC
+htc one a9:
+  - HTC
+htc one s9:
+  - HTC
+htc one_e8 dual sim:
+  - HTC
+htc one_e8:
+  - HTC
+htc m8d:
+  - HTC
+htc one m8s:
+  - HTC
+htc6545lvw:
+  - HTC
+htc desire 825 dual sim:
+  - HTC
+impress tor:
+  - Vertex
+bv9000:
+  - Blackview
+htc desire 12:
+  - HTC
+htc 2pxh3:
+  - HTC
 bravis_a506:
   - Bravis
 bravis delta:
@@ -30775,6 +30952,22 @@ tecno p704a:
   - Tecno Mobile
 pixus_touch_7_3g:
   - Pixus
+wtab_714:
+  - iLife
+wtab 805:
+  - iLife
+winner8:
+  - Explay
+winner7:
+  - Explay
+livecore7032:
+  - Overmax
+lenovo tb-x306x:
+  - Lenovo
+lenovo tb-j606l:
+  - Lenovo
+lenovo tb-8505x:
+  - Lenovo
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
