@@ -21566,6 +21566,8 @@ h30-t10:
   - Huawei
 hw-h30-c00:
   - Huawei
+zh-cn) release/07.10.2014 browser/wap2.0 (:
+  - Huawei
 honor h30-l01m:
   - Huawei
 honor h30-l02:
@@ -28849,6 +28851,8 @@ pmid71c:
   - Polaroid
 t-i708d:
   - Panacom
+build/ics.polypad.7208hd.dualcore.20121101:
+  - PolyPad
 poly pad_8208hd:
   - PolyPad
 pgps7797:
