@@ -1007,6 +1007,22 @@ as360:
   - DEXP
 redmi note 5:
   - Xiaomi
+m6 note:
+  - Meizu
+infinix x692:
+  - Infinix
+infinix x690b:
+  - Infinix
+infinix x687b:
+  - Infinix
+infinix x687:
+  - Infinix
+infinix x683:
+  - Infinix
+infinix x695c:
+  - Infinix
+redmi note 5a:
+  - Xiaomi
 'ipod5,1':
   - Apple
 hmt390q:
@@ -18313,8 +18329,6 @@ impress_luck:
   - Vertex
 bv9000pro:
   - Blackview
-bq sorbonne:
-  - bq
 bv5800pro_ru:
   - Blackview
 sm-g930f:
@@ -18612,6 +18626,549 @@ htc desire 12:
   - HTC
 htc 2pxh3:
   - HTC
+pro:
+  - Wileyfox
+x1 mini:
+  - Iris
+vivo 1912:
+  - Vivo
+vivo nex s:
+  - Vivo
+vivo z3x:
+  - Vivo
+huawei nmo-l31:
+  - Huawei
+zte a0622:
+  - ZTE
+vivo 8l:
+  - Blu
+  - Vivo
+zte blade v0920:
+  - ZTE
+hisense rock 5:
+  - Hisense
+myphone_pocket_pro:
+  - MyPhone
+meizu c9 pro:
+  - Meizu
+meizu m8 lite:
+  - Meizu
+huawei mla-tl10:
+  - Huawei
+huawei mla-tl00:
+  - Huawei
+huawei nxt-l09:
+  - Huawei
+eva-l19:
+  - Huawei
+jsn-l22:
+  - Huawei
+inoi 5 lite 2021:
+  - Inoi
+inoi 2 lite 2021:
+  - Inoi
+inoi 2 2021:
+  - Inoi
+k15_plus:
+  - Oukitel
+infinix x612b:
+  - Infinix
+infinix x657:
+  - Infinix
+infinix x657b:
+  - Infinix
+infinix x657c:
+  - Infinix
+infinix x680f:
+  - Infinix
+infinix x680:
+  - Infinix
+infinix x688c:
+  - Infinix
+infinix x688b:
+  - Infinix
+infinix x682b:
+  - Infinix
+infinix x682c:
+  - Infinix
+infinix x660c:
+  - Infinix
+infinix x650:
+  - Infinix
+infinix x609:
+  - Infinix
+infinix x653c:
+  - Infinix
+infinix x627:
+  - Infinix
+infinix x625c:
+  - Infinix
+infinix x650b:
+  - Infinix
+infinix x650d:
+  - Infinix
+infinix x652b:
+  - Infinix
+ine-tl00:
+  - Huawei
+infinix x559:
+  - Infinix
+huawei tit-l01:
+  - Huawei
+htcd200lvwpp:
+  - HTC
+myphone fun4:
+  - MyPhone
+alp-l29:
+  - Huawei
+evolveo strongphone g7:
+  - Evolveo
+flow 7s:
+  - Krüger&Matz
+htc u12+:
+  - HTC
+htc 2pzc100:
+  - HTC
+htc 2q55100:
+  - HTC
+htc_u-3u:
+  - HTC
+sm-g9980u1:
+  - Samsung
+5045d:
+  - Alcatel
+gt-s7560:
+  - Samsung
+gt-s7560m:
+  - Samsung
+gt-i9305t:
+  - Samsung
+samsung gt-n7105/n7105xxdmc3:
+  - Samsung
+gt-i8160l:
+  - Samsung
+gt-i8190:
+  - Samsung
+gt-i8190n:
+  - Samsung
+samsung gt-i8190n/i8190nxxamg3:
+  - Samsung
+gt-i9070p:
+  - Samsung
+gt-i9300:
+  - Samsung
+samsung gt-i9300/i9300xxugml2:
+  - Samsung
+gt-i9300t:
+  - Samsung
+gt-i9305:
+  - Samsung
+samsung gt-i9505-orange:
+  - Samsung
+samsung gt-i9505/i9505xxubmea:
+  - Samsung
+gt-i9505:
+  - Samsung
+gt-i9505g:
+  - Samsung
+cor-l29:
+  - Huawei
+alp-l09:
+  - Huawei
+ine-lx1r:
+  - Huawei
+lon-l29:
+  - Huawei
+ldn-lx2:
+  - Huawei
+blu studio g:
+  - Blu
+blu studio c 8+8:
+  - Blu
+cam-l23:
+  - Huawei
+dig-l03:
+  - Huawei
+cam-ul00:
+  - Huawei
+sla-l23:
+  - Huawei
+trt-l21a:
+  - Huawei
+atu-lx3:
+  - Huawei
+aum-l29:
+  - Huawei
+fla-lx2:
+  - Huawei
+fla-lx3:
+  - Huawei
+rne-l23:
+  - Huawei
+par-lx9:
+  - Huawei
+bac-l21:
+  - Huawei
+bla-a09:
+  - Huawei
+clt-l04:
+  - Huawei
+bac-l22:
+  - Huawei
+5033a:
+  - Alcatel
+5052a:
+  - Alcatel
+5059z:
+  - Alcatel
+blu studio touch:
+  - Blu
+blu advance 5.0:
+  - Blu
+y550-l03:
+  - Huawei
+bll-l21:
+  - Huawei
+mya-l23:
+  - Huawei
+mya-l03:
+  - Huawei
+ultra dream:
+  - Hyundai
+ultra link:
+  - Hyundai
+ultra shine:
+  - Hyundai
+  - AG Mobile
+ultra shadow:
+  - Hyundai
+ultra style:
+  - Hyundai
+ultra latitude:
+  - Hyundai
+ultra charm:
+  - Hyundai
+ultra active:
+  - Hyundai
+b8405:
+  - Bitel
+samsung sm-j610g:
+  - Samsung
+sm-j400m:
+  - Samsung
+sm-j250m:
+  - Samsung
+sm-j106m:
+  - Samsung
+sm-a305gt:
+  - Samsung
+sm-a505f:
+  - Samsung
+sm-a505g:
+  - Samsung
+samsung sm-a305g:
+  - Samsung
+sm-g975w:
+  - Samsung
+sm-g970u:
+  - Samsung
+atu-l42:
+  - Huawei
+che-tl00:
+  - Huawei
+ele-l09:
+  - Huawei
+eva-al10:
+  - Huawei
+fla-al10:
+  - Huawei
+hma-tl00:
+  - Huawei
+hry-al00:
+  - Huawei
+lon-al00:
+  - Huawei
+lya-al10:
+  - Huawei
+sne-al00:
+  - Huawei
+vog-l09:
+  - Huawei
+blade a475:
+  - ZTE
+blade a520:
+  - ZTE
+blade a530:
+  - ZTE
+blade a602:
+  - ZTE
+zte blade apex:
+  - ZTE
+blade apex2:
+  - ZTE
+blade g lte:
+  - ZTE
+blade g lux:
+  - ZTE
+zte blade iii:
+  - ZTE
+blade l110:
+  - ZTE
+blade l2:
+  - ZTE
+blade v9:
+  - ZTE
+blade l2 plus:
+  - ZTE
+z971:
+  - ZTE
+blade v580:
+  - ZTE
+z978:
+  - ZTE
+z839:
+  - ZTE
+blade vec:
+  - ZTE
+z965:
+  - ZTE
+z983:
+  - ZTE
+z982:
+  - ZTE
+z981:
+  - ZTE
+n9520:
+  - ZTE
+zte-c_n780:
+  - ZTE
+z717bl:
+  - ZTE
+z717vl:
+  - ZTE
+z233v:
+  - ZTE
+z232tl:
+  - ZTE
+z353vl:
+  - ZTE
+z852:
+  - ZTE
+zte grand memo lte:
+  - ZTE
+zte grand x:
+  - ZTE
+z957:
+  - ZTE
+z987:
+  - ZTE
+n9101:
+  - ZTE
+z718tl:
+  - ZTE
+kis ii max:
+  - ZTE
+zte kis lite:
+  - ZTE
+z835:
+  - ZTE
+z963vl:
+  - ZTE
+z768g:
+  - ZTE
+zte-mimosa x:
+  - ZTE
+n8000_usa_cricket:
+  - ZTE
+zte n900d:
+  - ZTE
+zte_n9511:
+  - ZTE
+nx573j:
+  - ZTE
+nx907j:
+  - ZTE
+nx541j:
+  - ZTE
+nx597j:
+  - ZTE
+nx529j:
+  - ZTE
+nx403a:
+  - ZTE
+nx510j:
+  - ZTE
+nx521j:
+  - ZTE
+nx511j:
+  - ZTE
+z820:
+  - ZTE
+z851m:
+  - ZTE
+z851:
+  - ZTE
+n9136:
+  - ZTE
+z832:
+  - ZTE
+n9137:
+  - ZTE
+zte-u v880:
+  - ZTE
+zte u790 build grk39f) uc:
+  - ZTE
+zte u793 build mocordroid2.3.5) uc:
+  - ZTE
+zte_u807:
+  - ZTE
+zte u817:
+  - ZTE
+zte u930hd:
+  - ZTE
+zte u960s3:
+  - ZTE
+n9180:
+  - ZTE
+n958st:
+  - ZTE
+v9180:
+  - ZTE
+u9180:
+  - ZTE
+n918st:
+  - ZTE
+zte v795:
+  - ZTE
+zte v889m:
+  - ZTE
+n9519:
+  - ZTE
+z836bl:
+  - ZTE
+z837vl:
+  - ZTE
+z557bl:
+  - ZTE
+z861bl:
+  - ZTE
+z862vl:
+  - ZTE
+z955a:
+  - ZTE
+z958:
+  - ZTE
+z917vl:
+  - ZTE
+z916bl:
+  - ZTE
+zuum blaze:
+  - Zuum
+zuum_zen_i:
+  - Zuum
+lenovo l18081:
+  - Lenovo
+lava lh9950:
+  - Lava
+lava le9930:
+  - Lava
+lenovo l19041:
+  - Lenovo
+lenovo l19111:
+  - Lenovo
+lenovo l38041:
+  - Lenovo
+lenovo l38043:
+  - Lenovo
+lenovo l58091:
+  - Lenovo
+lenovo l10041:
+  - Lenovo
+lenovo l38111:
+  - Lenovo
+lenovo l78032:
+  - Lenovo
+lenovo l79031:
+  - Lenovo
+lio-an00p:
+  - Huawei
+lenovo z6 pro:
+  - Lenovo
+lenovo a2020a40:
+  - Lenovo
+lenovo a6010pro:
+  - Lenovo
+mercury:
+  - Turbo-X
+nomi i5011:
+  - Nomi
+nomi i5010:
+  - Nomi
+nomi i506:
+  - Nomi
+nomi_i4070:
+  - Nomi
+crono 54:
+  - Majestic
+psp3515duo_ru:
+  - Prestigio
+psp3515duo:
+  - Prestigio
+power_5s:
+  - Ulefone
+power_3s:
+  - Ulefone
+power_3l:
+  - Ulefone
+powermaxp490s_eu:
+  - Energizer
+psp3528duo:
+  - Prestigio
+psp3527duo:
+  - Prestigio
+psp3512duo:
+  - Prestigio
+psp3468duo:
+  - Prestigio
+smart5plus32gb:
+  - NGM
+lenovo pb1-770m:
+  - Lenovo
+lenovo x3a40:
+  - Lenovo
+lenovo s1la40:
+  - Lenovo
+paris_x:
+  - Ulefone
+lenovo l78051:
+  - Lenovo
+lenovo l39051:
+  - Lenovo
+vivo xl3 plus:
+  - Blu
+  - Vivo
+lenovo a7010:
+  - Lenovo
+htc 2q4r100:
+  - HTC
+htc u11 eyes:
+  - HTC
+doro 8035:
+  - Doro
+xt1609:
+  - Motorola
+xt1565:
+  - Motorola
+xt1564:
+  - Motorola
+xt1635-01:
+  - Motorola
+z558vl:
+  - ZTE
+n9517:
+  - ZTE
+z986u:
+  - ZTE
 bravis_a506:
   - Bravis
 bravis delta:
@@ -30968,6 +31525,46 @@ lenovo tb-j606l:
   - Lenovo
 lenovo tb-8505x:
   - Lenovo
+x10 (m1d3):
+  - Teclast
+10a_lte_eea:
+  - Umax
+10_1q205:
+  - Sencor
+samsung gt-n8000/n8000xxcma1:
+  - Samsung
+gt-n8020-orange/n8020xdbma2:
+  - Samsung
+samsung gt-n8020/n8020xdbma4:
+  - Samsung
+ezee' tab 804:
+  - Storex
+  - Ezze
+htc flyer p510e:
+  - HTC
+  - Fly
+pmp7380d3g:
+  - Prestigio
+bq sorbonne:
+  - bq
+nomi_c070020:
+  - Nomi
+pmt3618_4ge:
+  - Prestigio
+pmt3118_3g:
+  - Prestigio
+pmt3118_3ge:
+  - Prestigio
+pmt3131_3g:
+  - Prestigio
+pmt3618_4g:
+  - Prestigio
+lenovo a7600:
+  - Lenovo
+lenovo pb-6505mc:
+  - Lenovo
+plane 8.6 3g ps8086mg:
+  - Digma
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -31950,6 +32547,8 @@ aftbamr311:
   - Toshiba
 digifors 400:
   - DIGIFORS
+mitv-aesp0:
+  - Xiaomi
 bb2 pro:
   - Mecool
 kii pro:
