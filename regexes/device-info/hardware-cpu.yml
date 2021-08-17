@@ -25,6 +25,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   5:
     name: MediaTek MT6580
@@ -714,6 +715,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   104:
     name: Apple A6x
@@ -1092,6 +1094,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   166:
     name: MediaTek Helio P23 MT6763T
