@@ -1491,6 +1491,7 @@ cpu:
     type: ARM
     clock_rate: 1300
     cores: 4
+    process: 28nm
     gpu_id: 17
   230:
     name: MediaTek MT8765B
