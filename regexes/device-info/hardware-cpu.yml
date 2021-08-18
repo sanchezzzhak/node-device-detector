@@ -1360,6 +1360,7 @@ cpu:
     type: ARM
     clock_rate: 2400
     cores: 4
+    process: 14nm
     gpu_id: 74
   209:
     name: Intel Atom Z3590

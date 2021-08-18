@@ -8,6 +8,9 @@
 # SZ - Device Size (W x H x T)
 # RE - Release date
 # OS - OS name + version
+# OI - OS ID (next version)
+# OV - OS version (next version)
+# UI - UI ID (next version)
 # RM - RAM in MB
 # CP - CPU id (Central processor)
 # GP - GPU id (Graphic processor)
@@ -5560,3 +5563,33 @@ wink:
   city se: 'DS=4.5;RS=480x854;SZ=67.0x136.0x9.5;WT=130;RM=1024;CP=4;OS=Android 6;'
   glory: 'DS=5;CP=36;RM=1024;RS=480x854;WT=135;SZ=72x144x8;SM=2;OS=Android 4.4.3;'
   world se: 'SZ=64x124x10.9;DS=4;RS=480x800;WT=129;OS=Android 5;RM=512;CP=7;SM=2;'
+
+lg:
+  v30: 'RE=2017.08;SZ=75.4x151.7x7.3;WT=158;DS=6.0;RS=1440x2880;OS=Android 7.1.2;CP=25;RM=4096;'
+  lg-h933: '->v30'
+  lg-h932pr: '->v30'
+  lg-ls998: '->v30'
+  lg-us998: '->v30'
+  lg-as998: '->v30'
+  lg-h930: '->v30'
+  lg-h931: '->v30'
+  lg-h932: '->v30'
+  lgm-v300k: '->v30'
+  lgm-v300l: '->v30'
+  lgm-v300s: '->v30'
+  v30 plus: 'RE=2018.05;SZ=75.4x151.7x7.3;WT=157;DS=6.0;RS=1440x2880;OS=Android 8.0;CP=198;RM=6144;'
+  # todo rename name to V35 ThinQ
+  lgv35: '->v30 plus'
+  g6: 'RE=2017.02;SZ=71.9x148.9x7.9;WT=163;DS=5.7;RS=1440x2880;OS=Android 7.0;CP=208;RM=4096;'
+  lg-h873: '->g6'
+  k52: 'RE=2020.09;SZ=76.7x165x8.4;WT=188;DS=6.6;RS=720x1600;OS=Android 10;CP=38;RM=4096;'
+  lm-k520: '->k52'
+  w10: 'RE=2019.06;SZ=76.2x156x8.5;WT=164;DS=6.19;RS=720x1512;OS=Android 9.0;CP=171;RM=3072;'
+  lmx130im: '->w10'
+  k40s: 'RE=2019.08;SZ=73.9x156.3x8.6;WT=186;DS=6.1;RS=720x1520;OS=Android 9.0;CP=171;RM=2048;'
+  lm-x430: '->k40s'
+  v50 thinq: 'RE=2019.02;SZ=76.1x159.2x8.3;WT=183;DS=6.4;RS=1440x3120;OS=Android 9.0;CP=234;RM=6144;'
+  lm-v450: '->v50 thinq'
+  v60 thinq 5g: 'RE=2020.02;SZ=77.6x169.3x8.9;WT=213;DS=6.8;RS=1080x2460;OS=Android 10;CP=207;RM=8192;'
+  a001lg: '->v60 thinq 5g'
+  lm-v600: '->v60 thinq 5g'
