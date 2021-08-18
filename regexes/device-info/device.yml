@@ -1464,7 +1464,7 @@ amgoo:
   am527: '->geo'
   am530: '->a1'
   am535: '->p1'
-  c1: ''
+  c1: 'RM=1024;DS=5;RS=480x854;OS=Android 7;'
   d1: ''
   fuego: ''
   geo: ''
@@ -1475,7 +1475,7 @@ amgoo:
   pronto: ''
   swift: ''
   tigo: ''
-  unico: ''
+  unico: 'DS=4.5;RS=480x800;RM=1024;OS=Android 7;'
   uno: ''
 
 amigoo:
@@ -5139,6 +5139,7 @@ vivo:
   v1919a: '->iqoo z5x'
   nex 3: 'RE=2019.09;SZ=76.1x167.4x9.4;WT=217.3;DS=6.89;RS=1080x2256;OS=Android 9.0;CP=234;RM=8192;'
   v1923a: '->nex 3'
+  1912: '->nex 3'
   nex 3 5g: '->nex 3;WT=218.5;'
   v1924a: '->nex 3 5g'
   nex 3s: 'RE=2020.05;SZ=76.1x167.4x9.4;WT=219.5;DS=6.89;RS=1080x2256;OS=Android 10;CP=207;RM=8192;'
@@ -5167,6 +5168,7 @@ vivo:
   x1: ''
   x20 plus: 'RE=2017.09;SZ=80.1x165.3x7.5;WT=181.5;DS=6.43;RS=1080x2160;OS=Android 7.1.1;CP=61;RM=4096;'
   x20plus: '->x20 plus'
+  1720: '->x20 plus'
   x21s: 'RE=2018.09;SZ=75x157.9x7.9;WT=156;DS=6.41;RS=1080x2340;OS=Android 8.1;CP=61;RM=6144;'
   v1814a: '->x21s'
   v1814t: '->x21s'
@@ -5329,6 +5331,7 @@ vivo:
   x5pro v: 'RE=2015.07;SZ=73.45x147.9x6.44;WT=147;DS=5.2;RS=1080x1920;OS=Android 5.0;CP=22;RM=2048;'
   y913: 'RE=2014.11;RS=480x854;DS=4.5;CP=17;RM=1024;OS=Android 4.4.4;SZ=65.85x130.4x8.6;WT=142;SM=2;'
   y51l: 'DS=5;RS=540x960;SZ=71.7x143.8x7.52;WT=157;RE=2016.01;OS=Android 5.0.2;RM=1024;CP=17;SM=2;'
+
 
 mobicel:
   r7: 'DS=5.7;RS=480x101;SZ=71x146x9.6;WT=167;RE=2020.04;RM=1024;CP=4;OS=Android 8.1;SM=2'
@@ -5548,3 +5551,6 @@ wileyfox:
   swift 2 plus: 'DS=5;RS=720x1280;SZ=71.9x143.7x8.64;WT=158;RE=2016;OS=Android 6.0.1;RM=3072;CP=43;'
   swift 2 x: 'DS=5.2;RS=1080x1920;SZ=72.2x144x8.8;WT=155;RE=2017;OS=Android 6.0.1;RM=3072;CP=43;'
   pro: 'DS=5;RS=720x1280;SZ=72.5x147x8.2;WT=;RE=2017;OS=Windows 10 Mobile;RM=2048;CP=10;'
+
+weimei:
+  weplus 3: 'DS=6;RS=720x1440;SZ=76.6x160x8.2;WT=188;RE=2018.01;CP=292;RM=4096;OS=Android 7;'
