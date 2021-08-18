@@ -5554,3 +5554,9 @@ wileyfox:
 
 weimei:
   weplus 3: 'DS=6;RS=720x1440;SZ=76.6x160x8.2;WT=188;RE=2018.01;CP=292;RM=4096;OS=Android 7;'
+
+wink:
+  city s: 'DS=5;RS=540x960;SZ=74x144x8.5;WT=139;RE=2015.05;RM=1024;CP=5;OS=Android 5.1;'
+  city se: 'DS=4.5;RS=480x854;SZ=67.0x136.0x9.5;WT=130;RM=1024;CP=4;OS=Android 6;'
+  glory: 'DS=5;CP=36;RM=1024;RS=480x854;WT=135;SZ=72x144x8;SM=2;OS=Android 4.4.3;'
+  world se: 'SZ=64x124x10.9;DS=4;RS=480x800;WT=129;OS=Android 5;RM=512;CP=7;SM=2;'
