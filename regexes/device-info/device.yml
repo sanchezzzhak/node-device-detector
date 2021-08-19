@@ -5688,3 +5688,7 @@ lg:
   lm-k500: '->k51'
   velvet 4g: 'RE=2020.07;SZ=74.1x167.1x7.9;WT=180;DS=6.8;RS=1080x2460;OS=Android 10;CP=198;RM=6144;'
   lm-g910: '->velvet 4g'
+  k8 (2017): 'RE=2016.12;SZ=72.1x144.5x8;WT=144;DS=5.0;RS=720x1280;OS=Android 7.0;CP=209;RM=1536;'
+  lg-m200: '->k8 (2017)'
+  x charge: 'DS=5.5;RS=720x1280;WR=164.1;CP=40;RM=2048;RE=2017.11;SZ=78.1x154.7x8.4;'
+  lg-sp320: '->x charge'
