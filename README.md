@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1265 devices, alias devices 2990)
+> This parser is experimental and contains few devices. (1283 devices, alias devices 3040)
 >
 ##### Support detail brands/models list:
 
@@ -281,7 +281,7 @@ is not parse result  {name: ""}
 | hotwav | 18 | 1 | - | huawei | 223 | 578 |
 | imo mobile | 5 | 0 | - | intex | 9 | 3 |
 | ipro | 4 | 7 | - | irbis | 15 | 0 |
-| lg | 43 | 85 | - | mobicel | 3 | 1 |
+| lg | 61 | 135 | - | mobicel | 3 | 1 |
 | motorola | 27 | 24 | - | nuu mobile | 9 | 3 |
 | nuvo | 3 | 2 | - | oneplus | 18 | 48 |
 | öwn | 1 | 2 | - | panasonic | 5 | 8 |
