@@ -65,6 +65,21 @@ const castSizeToObject = (size) => {
 };
 
 /**
+ *
+ * @param {*} collection
+ * @param {number|string} id
+ * @returns {null|*}
+ * @private
+ */
+const getDataByIdInCollection = (collection, id) => {
+  let data = collection[parseInt(id)];
+  if (data === void 0) {
+    return null;
+  }
+  return data;
+};
+
+/**
  * calculate PPI
  * @param width
  * @param height
@@ -223,22 +238,6 @@ class InfoDevice extends ParserAbstract {
   }
 
   /**
-   *
-   * @param {*} collection
-   * @param {number} id
-   * @returns {null|*}
-   * @private
-   */
-  __getDataByIdInCollection(collection, id) {
-    id = parseInt(id);
-    let data = collection[id];
-    if (data === void 0) {
-      return null;
-    }
-    return data;
-  }
-
-  /**
    * @param id
    * @returns {null|*}
    */
@@ -246,21 +245,21 @@ class InfoDevice extends ParserAbstract {
     if (this.collectionSoftware['os'] === void 0) {
       return null;
     }
-    return this.__getDataByIdInCollection(this.collectionSoftware['os'], id);
+    return getDataByIdInCollection(this.collectionSoftware['os'], id);
   }
 
   getGpuById(id) {
     if (this.collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
-    return this.__getDataByIdInCollection(this.collectionHardwareGPU['gpu'], id);
+    return getDataByIdInCollection(this.collectionHardwareGPU['gpu'], id);
   }
 
   getCpuById(id) {
     if (this.collectionHardwareCPU['cpu'] === void 0) {
       return null;
     }
-    return this.__getDataByIdInCollection(this.collectionHardwareCPU['cpu'], id);
+    return getDataByIdInCollection(this.collectionHardwareCPU['cpu'], id);
   }
 
   find(deviceBrand, deviceModel, mergeData = {}) {
