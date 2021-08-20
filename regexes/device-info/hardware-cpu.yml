@@ -1395,7 +1395,7 @@ cpu:
     gpu_id: 20
   214:
     name: Qualcomm Snapdragon 450
-    # SD450, SMD450
+    # SD450, SMD450, SDM450
     type: ARM
     clock_rate: 1800
     cores: 8
@@ -2066,3 +2066,10 @@ cpu:
     clock_rate: 1000
     process: 28nm
     gpu_id: 1
+  312:
+    name: MediaTek MT6750S
+    type: ARM
+    cores: 8
+    clock_rate: 1500
+    process: 28nm
+    gpu_id: 26
