@@ -1,15 +1,6 @@
 const ParserAbstract = require('./../abstract-parser');
 const DataPacker = require('./../../lib/data-packer');
 
-// this is a test functionality do not try to use this class in production
-// this is a test functionality do not try to use this class in production
-// this is a test functionality do not try to use this class in production
-// this is a test functionality do not try to use this class in production
-// this is a test functionality do not try to use this class in production
-// this is a test functionality do not try to use this class in production
-// this is a test functionality do not try to use this class in production
-
-// declaration doc object
 
 /*
 
@@ -71,6 +62,21 @@ const castResolutionToObject = (size) => {
 const castSizeToObject = (size) => {
   let [width, height, thickness] = size.split('x');
   return { width, height, thickness };
+};
+
+/**
+ *
+ * @param {*} collection
+ * @param {number|string} id
+ * @returns {null|*}
+ * @private
+ */
+const getDataByIdInCollection = (collection, id) => {
+  let data = collection[parseInt(id)];
+  if (data === void 0) {
+    return null;
+  }
+  return data;
 };
 
 /**
@@ -176,6 +182,8 @@ const SHORT_KEYS = {
   CP: 'hardware.cpu_id', // int: <id>
   GP: 'hardware.gpu_id', // int: <id>
   OS: 'os', // string: Android 4.4
+  OI: 'os_id', // int: OS ID
+  OV: 'os_version', // int: OS ID
   SM: 'sim', // int: count SIM
 };
 
@@ -207,6 +215,10 @@ class InfoDevice extends ParserAbstract {
     this.collectionHardwareGPU = this.loadYMLFile(
       'device-info/hardware-gpu.yml'
     );
+    // load software properties
+    this.collectionSoftware = this.loadYMLFile(
+      'device-info/software.yml'
+    );
   }
 
   /**
@@ -225,29 +237,29 @@ class InfoDevice extends ParserAbstract {
     this.resolutionConvertObject = !!value;
   }
 
+  /**
+   * @param id
+   * @returns {null|*}
+   */
+  getOsById(id) {
+    if (this.collectionSoftware['os'] === void 0) {
+      return null;
+    }
+    return getDataByIdInCollection(this.collectionSoftware['os'], id);
+  }
+
   getGpuById(id) {
     if (this.collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
-    id = parseInt(id);
-    let data = this.collectionHardwareGPU['gpu'][id];
-    if (data === void 0) {
-      return null;
-    }
-    return data;
+    return getDataByIdInCollection(this.collectionHardwareGPU['gpu'], id);
   }
 
   getCpuById(id) {
     if (this.collectionHardwareCPU['cpu'] === void 0) {
       return null;
     }
-
-    id = parseInt(id);
-    let data = this.collectionHardwareCPU['cpu'][id];
-    if (data === void 0) {
-      return null;
-    }
-    return data;
+    return getDataByIdInCollection(this.collectionHardwareCPU['cpu'], id);
   }
 
   find(deviceBrand, deviceModel, mergeData = {}) {
@@ -276,6 +288,7 @@ class InfoDevice extends ParserAbstract {
 
     this.prepareResultDisplay(result);
     this.prepareResultHardware(result);
+    this.prepareResultSoftware(result);
     this.prepareResultSize(result);
     result = mergeDeep(result, mergeData);
 
@@ -290,6 +303,24 @@ class InfoDevice extends ParserAbstract {
   prepareResultSize(result) {
     if (this.sizeConvertObject && result.size) {
       result.size = castSizeToObject(result.size);
+    }
+  }
+
+  prepareResultSoftware(result) {
+    if (result.os_id) {
+      let output = [];
+      let os = this.getOsById(result.os_id);
+      delete result.os_id;
+      if (os !== null) {
+        output.push(os.name);
+      }
+      if(result.os_version) {
+        output.push(result.os_version);
+        delete result.os_version;
+      }
+      if(output.length === 2) {
+        result.os = output.join(' ');
+      }
     }
   }
 

@@ -32,6 +32,11 @@ exports.versionCompare = function (ver1, ver2) {
   return 0;
 };
 
+/**
+ * @param {string} version
+ * @param {number} maxMinorParts - how many version chars trim
+ * @returns {string}
+ */
 exports.versionTruncate = function (version, maxMinorParts) {
   let versionParts = String(version).split('.');
   if (
@@ -44,27 +49,43 @@ exports.versionTruncate = function (version, maxMinorParts) {
   return versionParts.join('.');
 };
 
+/**
+ * @param {string} userAgent
+ * @returns {boolean}
+ */
 exports.hasAndroidTableFragment = function (userAgent) {
   return (
     this.matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null
   );
 };
 
+/**
+ * @param {string} userAgent
+ * @returns {boolean}
+ */
 exports.hasOperaTableFragment = function (userAgent) {
   return this.matchUserAgent('Opera Tablet', userAgent) !== null;
 };
 
+/**
+ * @param {string} userAgent
+ * @returns {boolean}
+ */
 exports.hasTouchFragment = function (userAgent) {
   return this.matchUserAgent('Touch', userAgent) !== null;
 };
 
+/**
+ * @param {string} userAgent
+ * @returns {boolean}
+ */
 exports.hasAndroidMobileFragment = function (userAgent) {
   return this.matchUserAgent('Android( [.0-9]+)?; Mobile;', userAgent) !== null;
 };
 
 /**
  * All devices running Opera TV Store are assumed to be a tv
- * @param userAgent
+ * @param {string} userAgent
  * @returns {boolean}
  */
 exports.hasOperaTVStoreFragment = function (userAgent) {
@@ -73,7 +94,7 @@ exports.hasOperaTVStoreFragment = function (userAgent) {
 
 /**
  * All devices running Tizen TV or SmartTV are assumed to be a tv
- * @param userAgent
+ * @param {string} userAgent
  * @returns {boolean}
  */
 exports.hasTVFragment = function (userAgent) {
@@ -81,7 +102,8 @@ exports.hasTVFragment = function (userAgent) {
 };
 
 /**
- * @param userAgent
+ * Check combinations in string that relate only to desktop UA
+ * @param {string} userAgent
  * @returns {boolean}
  */
 exports.hasDesktopFragment = function (userAgent) {
@@ -95,13 +117,18 @@ exports.hasDesktopFragment = function (userAgent) {
  * @return {*|null}
  */
 exports.getPropertyValue = function (options, propName, defaultValue) {
-  return options !== undefined && options[propName] !== undefined
+  return options !== void 0 && options[propName] !== void 0
     ? options[propName]
-    : defaultValue !== undefined
+    : defaultValue !== void 0
     ? defaultValue
     : null;
 };
 
+/**
+ *
+ * @param {*} obj -
+ * @returns {*}
+ */
 exports.revertObject = function (obj) {
   return Object.assign(
     {},
@@ -111,8 +138,10 @@ exports.revertObject = function (obj) {
     {}
   );
 };
+
 /**
- * @param file
+ * Load yaml file (sync read)
+ * @param {string} file - absolute file path
  * @returns {*}
  */
 exports.loadYMLFile = function (file) {

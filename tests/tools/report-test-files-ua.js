@@ -40,7 +40,7 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
       let aliasResult = aliasDevice.parse(fixture.user_agent);
       let brand = String(fixture.device.brand);
       let model = String(fixture.device.model);
-      let deviceCode = aliasResult.name ? aliasResult.name : void 0;
+      let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0;
       fixtures[deviceCode] = { brand, model };
     });
   });
@@ -70,7 +70,7 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
     });
     for await (const useragent of lineReader) {
       let aliasResult = aliasDevice.parse(useragent);
-      let deviceCode = aliasResult.name ? aliasResult.name : void 0;
+      let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0;
 
       let result = detector.detect(useragent);
       let isFoundModel = result.device && result.device.model !== void 0;
