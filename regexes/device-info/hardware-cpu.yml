@@ -1076,6 +1076,7 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 1500
+    process: 28nm
     gpu_id: 26
   163:
     name: MediaTek MT8321
@@ -2044,3 +2045,10 @@ cpu:
     clock_rate: 1500
     process: 28nm
     cpu_id: 2
+  309:
+    name: MediaTek Helio P25 MT6757CH
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 16nm
+    gpu_id: 75

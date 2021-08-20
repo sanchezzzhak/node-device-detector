@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 18/08/2021_
+_Last update: 20/08/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1236 devices, alias devices 2957)
+> This parser is experimental and contains few devices. (1265 devices, alias devices 2990)
 >
 ##### Support detail brands/models list:
 
@@ -281,16 +281,16 @@ is not parse result  {name: ""}
 | hotwav | 18 | 1 | - | huawei | 223 | 578 |
 | imo mobile | 5 | 0 | - | intex | 9 | 3 |
 | ipro | 4 | 7 | - | irbis | 15 | 0 |
-| lg | 23 | 55 | - | mobicel | 3 | 1 |
-| motorola | 27 | 24 | - | nuvo | 3 | 2 |
-| oneplus | 18 | 48 | - | öwn | 1 | 2 |
-| panasonic | 5 | 8 | - | samsung | 166 | 704 |
-| sony | 37 | 131 | - | tiphone | 1 | 0 |
-| utok | 1 | 0 | - | vernee | 9 | 2 |
-| vivo | 143 | 190 | - | walton | 13 | 0 |
-| weimei | 1 | 0 | - | wileyfox | 9 | 0 |
-| wink | 4 | 0 | - | zync | 2 | 0 |
-| zyq | 1 | 13 | - |  |  |  |
+| lg | 43 | 85 | - | mobicel | 3 | 1 |
+| motorola | 27 | 24 | - | nuu mobile | 9 | 3 |
+| nuvo | 3 | 2 | - | oneplus | 18 | 48 |
+| öwn | 1 | 2 | - | panasonic | 5 | 8 |
+| samsung | 166 | 704 | - | sony | 37 | 131 |
+| tiphone | 1 | 0 | - | utok | 1 | 0 |
+| vernee | 9 | 2 | - | vivo | 143 | 190 |
+| walton | 13 | 0 | - | weimei | 1 | 0 |
+| wileyfox | 9 | 0 | - | wink | 4 | 0 |
+| zync | 2 | 0 | - | zyq | 1 | 13 |
 
 </details>
 

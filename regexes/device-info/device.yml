@@ -5564,6 +5564,23 @@ wink:
   glory: 'DS=5;CP=36;RM=1024;RS=480x854;WT=135;SZ=72x144x8;SM=2;OS=Android 4.4.3;'
   world se: 'SZ=64x124x10.9;DS=4;RS=480x800;WT=129;OS=Android 5;RM=512;CP=7;SM=2;'
 
+nuu mobile:
+  a1: 'DS=4;RS=480x800;SZ=63x121.4x9.9;WT=;RE=2016;OS=Android 5.1;RM=512;CP=5;'
+  a3: 'DS=5;RS=480x854;SZ=71.6x143.76x9.9;WT=;RE=2016;OS=Android 6.0;RM=1024;CP=5;'
+  a6l-c: ''
+  a6l-g: ''
+  g2: 'DS=5.99;RS=1080x2160;SZ=73.6x158.5x8.55;WT=;RE=2018;OS=Android 8.0;RM=4096;CP=40;'
+  s6001l: '->g2'
+  g3: 'DS=5.7;RS=720x1440;SZ=70x153x9;WT=;RE=2018;OS=Android 7.1;RM=4096;CP=309;'
+  n5702l: '->g3'
+  m3: 'DS=5.5;RS=720x1280;SZ=77.5x151.6x7.9;WT=;RE=2017;OS=Android 7.0;RM=2048;CP=86;'
+  # todo rename n5001l to N4L
+  n5001l: 'DS=5;RS=720x1280;SZ=71.1x142.2x7.9;WT=152;RE=2016;OS=Android 5.1 Lollipop;RM=1024;CP=56;'
+  x5: 'DS=5.5;RS=1080x1920;SZ=76.45x152.9x7.87;WT=;RE=2017;OS=Android 7.0;RM=3072;CP=162;'
+  m2: 'DS=5;RS=720x1280;SZ=71.88x143.76x7.37;WT=;RE=2017;OS=Android 7.0;RM=2048;CP=86;'
+  m19: 'DS=5.5;RS=720x1440;SZ=72x150.3x9.2;WT=165;RE=2020.09;SM=2;OS=Android 9.0;RM=3072;CP=8;'
+  s5501l: '->m19'
+
 lg:
   v30: 'RE=2017.08;SZ=75.4x151.7x7.3;WT=158;DS=6.0;RS=1440x2880;OS=Android 7.1.2;CP=25;RM=4096;'
   lg-h933: '->v30'
