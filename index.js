@@ -28,12 +28,11 @@ const AliasDevice = require('./parser/device/alias-device');
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
+const APPLE_OS_LIST = require('./parser/const/apple-os');
 const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
 const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
-const CHROME_CLIENT_LIST = ['Chrome', 'Chrome Mobile', 'Chrome Webview'];
-const APPLE_OS_LIST = ['Apple TV', 'iOS', 'Mac'];
 
 // parser names
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
@@ -590,7 +589,7 @@ class DeviceDetector {
       deviceData.id = 'AP';
       deviceData.brand = 'Apple';
     }
-    
+
     return {
       os: osData,
       client: clientData,
