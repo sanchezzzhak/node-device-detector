@@ -127,15 +127,17 @@
 
 4good:
   light a103: 'DS=4.5;RS=540x960;SZ=74.2x133x8.7;WT=133;RM=1024;CP=9;RE=2017.02;OI=1;OV=6;SM=2;'
-  light b100: ''
-  people g410: ''
-  people g503: ''
-  people gt300: ''
-  people: ''
-  s450m 4g: ''
-  s501m 3g: ''
+  light b100: 'DS=4.5;RS=540x960;SZ=67x134x8.8;WT=121;RE=2017;OS=Android 7.0;RM=1024;CP=86;'
+  people g410: 'DS=5;RS=1080x1920;SZ=72x146x8;WT=131;RE=2016.10;OS=Android 6.0;RM=1024;CP=5;'
+  people g503: 'DS=5.5;RS=720x1280;SZ=77.5x154x10.5;WT=171;RE=2016;OS=Android 6.0;RM=1024;CP=5;'
+  people gt300: 'DS=10.1;RS=1280x800;SM=2;SZ=241x170x10;WT=530;RE=;OS=Android 7.0;RM=1024;CP=93;'
+  # todo rename people s555m 4g
+  people: 'DS=5.5;RS=720x1280;SZ=77x156x8.9;WT=162;RE=2016;OS=Android 5.1;RM=1024;CP=56;'
+  s450m 4g: 'DS=4.5;RS=480x854;SZ=65x130x9;WT=153;SM=2;RE=2016.02;OS=Android 5.1;RM=1024;CP=310;'
+  s501m 3g: 'DS=5;RS=480x854;SZ=72x145x8;WT=167;SM=2;OS=Android 4.4;RM=512;CP=24;'
   s555m 4g: '->people'
-  t700i 3g: ''
+  light a104: 'DS=5;RM=1024;RS=720x1280;OS=Android 7;CP=56;SM=2;WT=149;SZ=72x143x9.4;RE=2017.05;'
+  t700i 3g: 'DS=7;RS=1024x600;OS=Android 4.4;RM=512;WT=269;SZ=188x108x10;CP=311;'
 
 4ife:
   4k smart tv box: ''
@@ -5581,6 +5583,8 @@ nuu mobile:
   m19: 'DS=5.5;RS=720x1440;SZ=72x150.3x9.2;WT=165;RE=2020.09;SM=2;OI=1;OV=9.0;RM=3072;CP=8;'
   s5501l: '->m19'
 
+
+
 lg:
   v30: 'RE=2017.08;SZ=75.4x151.7x7.3;WT=158;DS=6.0;RS=1440x2880;OI=1;OV=7.1.2;CP=25;RM=4096;'
   lg-h933: '->v30'
@@ -5628,7 +5632,7 @@ lg:
   lm-v40: '->v40 thinq'
   fortune: 'DS=5;RS=480x854;SZ=72.4x144.78x7.9;WT=;RE=2017.02;OI=1;OV=6.0.1;RM=1536;CP=10;'
   lg-m153: '->fortune'
-  g4: 'RE=2015.04;SZ=;WT=155;DS=5.5;RS=1440x2560;OI=1;OV=5.1.1;CP=157;RM=3072;'
+  g4: 'RE=2015.04;SZ=76.1x148.9x6.3;WT=155;DS=5.5;RS=1440x2560;OI=1;OV=5.1.1;CP=157;RM=3072;'
   lg-h812: '->g4'
   lgh810: '->g4'
   lgls991: '->g4'

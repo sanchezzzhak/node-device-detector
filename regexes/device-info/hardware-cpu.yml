@@ -2052,3 +2052,17 @@ cpu:
     clock_rate: 2600
     process: 16nm
     gpu_id: 75
+  310:
+    name: MediaTek MT6735M
+    type: ARM
+    cores: 4
+    clock_rate: 1000
+    process: 28nm
+    gpu_id: 2
+  311:
+    name: Intel Atom x3-C3130
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+    process: 28nm
+    gpu_id: 1
