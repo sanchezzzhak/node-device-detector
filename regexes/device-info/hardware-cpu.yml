@@ -2073,3 +2073,10 @@ cpu:
     clock_rate: 1500
     process: 28nm
     gpu_id: 26
+  313:
+    name: MediaTek MT6592M
+    type: ARM
+    cores: 8
+    clock_rate: 1400
+    process: 28nm
+    gpu_id: 3
