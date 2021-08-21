@@ -16,6 +16,7 @@
 # GP - GPU id (Graphic processor)
 # SM - count SIM slots
 
+
 # 2E
 2e:
   e450 (2018): 'DS=4.5;RS=480x854;SZ=74.2x133x8.7;WT=133;RM=1024;CP=58;OI=1;OV=8.1;'
@@ -3734,8 +3735,8 @@ huawei:
 # IRPO
 ipro:
   amber 5s pro: 'DS=5.0;RS=540x960;RM=1024;CP=58;SM=2;OI=1;OV=8.1;'
-  amber 6: ''
-  amber 7s: ''
+  amber 6: 'DS=5.5;RS=480x960;RM=1024;SZ=70.5x147.5x9.4;WT=160;OS=Android 8.1;CP=8;SM=2;'
+  amber 7s: 'DS=5.5;RS=480x800;SZ=70.5x147.5x9.4;WT=160;RM=1024;OS=Android 8.1;CP=58;SM=2;'
   amber5s pro: '->amber 5s pro'
   amber6: '->amber 6'
   amber7s: '->amber 7s'
@@ -3750,6 +3751,11 @@ ipro:
   phonenix 50s: 'DS=5;RS=640x960;OI=1;OV=7.0;RM=1024;CP=5;'
   phonenix50s: '->phonenix 50s'
   zafiro: 'DS=5.45;RS=480x960;SZ=73.5x153.8x9.5;RM=1024;CP=5;OI=1;OV=8.1;SM=2;'
+
+clarmin:
+  c1: 'RE=2018.07;RM=3072;RS=720x1440;SM=2;CP=8;'
+  b5: 'DS=5.5;RM=2048;RS=720x1280;OS=Android 7.0;CP=5;SZ=78.4x157.6x9.15;SM=2;'
+  b6: 'OS=Android 6.0;RM=3072;DS=5.5;RS=1080x1920;SZ=76.7x154.3x9.8;WT=213;CP=118;'
 
 zync:
   cloud 605: 'RE=2013.11;OI=1;OV=4.2;DS=6.5;RS=800x480;RM=512;'
