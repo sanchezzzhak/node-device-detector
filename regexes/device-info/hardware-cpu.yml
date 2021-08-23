@@ -732,18 +732,21 @@ cpu:
     type: ARM
     cores: 3
     clock_rate: 1500
+    process: 20nm
     gpu_id: 54
   107:
     name: MediaTek MT8389
     type: ARM
     cores: 4
     clock_rate: 1200
+    process: 28nm
     gpu_id: 7
   108:
     name: Apple A7
     type: ARM
     cores: 2
     clock_rate: 1400
+    process: 28nm
     gpu_id: 13
   109:
     name: Unisoc SC9863A
@@ -757,6 +760,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1200
+    process: 45nm
     gpu_id: 56
   111:
     name: Qualcomm Snapdragon 400 MSM8926
