@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 20/08/2021_
+_Last update: 23/08/2021_
 
 ## Description
 
@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1283 devices, alias devices 3040)
+> This parser is experimental and contains few devices. (1363 devices, alias devices 3191)
 >
 ##### Support detail brands/models list:
 
@@ -233,7 +233,7 @@ is not parse result  {name: ""}
 |----|----|----|----|----|----|----|
 | 360 | 10 | 10 | - | 8848 | 2 | 0 |
 | 2e | 2 | 2 | - | 3gnet | 0 | 1 |
-| 3q | 14 | 62 | - | 4good | 1 | 1 |
+| 3q | 14 | 62 | - | 4good | 10 | 1 |
 | 4ife | 0 | 1 | - | a1 | 0 | 1 |
 | accent | 0 | 5 | - | ace | 8 | 0 |
 | acer | 5 | 68 | - | acteck | 0 | 0 |
@@ -274,23 +274,24 @@ is not parse result  {name: ""}
 | bitel | 4 | 1 | - | bitmore | 2 | 1 |
 | bkav | 1 | 0 | - | black bear | 2 | 0 |
 | black fox | 18 | 12 | - | blackview | 15 | 9 |
-| bravis | 24 | 17 | - | colors | 7 | 2 |
-| engel | 1 | 1 | - | firefly mobile | 4 | 1 |
-| formuler | 2 | 0 | - | geotel | 3 | 0 |
-| gionee | 4 | 0 | - | google | 3 | 5 |
-| hotwav | 18 | 1 | - | huawei | 223 | 578 |
-| imo mobile | 5 | 0 | - | intex | 9 | 3 |
-| ipro | 4 | 7 | - | irbis | 15 | 0 |
-| lg | 61 | 135 | - | mobicel | 3 | 1 |
-| motorola | 27 | 24 | - | nuu mobile | 9 | 3 |
-| nuvo | 3 | 2 | - | oneplus | 18 | 48 |
-| öwn | 1 | 2 | - | panasonic | 5 | 8 |
-| samsung | 166 | 704 | - | sony | 37 | 131 |
-| tiphone | 1 | 0 | - | utok | 1 | 0 |
-| vernee | 9 | 2 | - | vivo | 143 | 190 |
-| walton | 13 | 0 | - | weimei | 1 | 0 |
-| wileyfox | 9 | 0 | - | wink | 4 | 0 |
-| zync | 2 | 0 | - | zyq | 1 | 13 |
+| bravis | 24 | 17 | - | clarmin | 3 | 0 |
+| colors | 7 | 2 | - | engel | 1 | 1 |
+| firefly mobile | 4 | 1 | - | formuler | 2 | 0 |
+| geotel | 3 | 0 | - | gionee | 4 | 0 |
+| google | 3 | 5 | - | hotwav | 18 | 1 |
+| huawei | 223 | 578 | - | imo mobile | 5 | 0 |
+| intex | 9 | 3 | - | ipro | 6 | 7 |
+| irbis | 15 | 0 | - | lg | 127 | 286 |
+| mobicel | 3 | 1 | - | motorola | 27 | 24 |
+| nuu mobile | 9 | 3 | - | nuvo | 3 | 2 |
+| oneplus | 18 | 48 | - | öwn | 1 | 2 |
+| panasonic | 5 | 8 | - | samsung | 166 | 704 |
+| sony | 37 | 131 | - | tiphone | 1 | 0 |
+| utok | 1 | 0 | - | vernee | 9 | 2 |
+| vivo | 143 | 190 | - | walton | 13 | 0 |
+| weimei | 1 | 0 | - | wileyfox | 9 | 0 |
+| wink | 4 | 0 | - | zync | 2 | 0 |
+| zyq | 1 | 13 | - |  |  |  |
 
 </details>
 
