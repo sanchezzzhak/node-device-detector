@@ -2084,3 +2084,17 @@ cpu:
     clock_rate: 1400
     process: 28nm
     gpu_id: 3
+  314:
+    name: Amlogic S905W
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    process: 28nm
+    gpu_id: 111
+  315:
+    name: Intel Atom x5 Z8300
+    type: x86
+    cores: 4
+    clock_rate: 1840
+    process: 14nm
+    gpu_id: 72
