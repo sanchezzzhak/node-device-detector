@@ -2099,3 +2099,16 @@ cpu:
     clock_rate: 1840
     process: 14nm
     gpu_id: 72
+  316:
+    name: Allwinner A31S
+    type: ARM
+    cores: 4
+    clock_rate: 0
+    process: 40nm
+    gpu_id: 61
+  317:
+    name: Allwinner A20
+    type: ARM
+    cores: 2
+    clock_rate: 1000
+    process: 40nm

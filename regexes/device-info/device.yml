@@ -2634,6 +2634,17 @@ black bear:
   b6 master: 'DS=5;RS=480x960;SZ=66.2x137.7x9.6;WT=144;CP=109;RM=1024;RE=2018.12;OI=1;OV=8.1;SM=2;'
   b6 note x: 'DS=5.5;RS=720x1280;SZ=70.6x147.9x9.4;WT=147.9;CP=109;RM=2048;RE=2018.11;OI=1;OV=8.1;SM=2;'
 
+uz mobile:
+  uzbekistan: 'DS=5.9;RS=720x1520;RM=4096;OS=Android 9;CP=40;'
+
+kurio:
+  phone c14500: 'OS=Android 4.2;RM=1024;DS=4.0;RS=480x800;SZ=63.5x121x10.5;WT=400;SM=1;RE=2015.04;CP=210;'
+  kuriophone: '->phone c14500'
+  10s: 'OS=Android 4.2;RM=1024;DS=10.1;RS=1280x800;WT=725;SZ=275.1x183.9x13;CP=316;'
+  kurio10s: '->10s'
+  7s: 'DS=7;RS=1024x600;WT=400;SZ=200x127x12;CP=317;OS=Android 4.2;'
+  kurio7s: '->7s'
+
 blackview:
   a60 pro: 'DS=6.1;RS=600x1280;SZ=74x156.8x9.8;WT=170;RE=2019.05;OI=1;OV=9.0;RM=3072;CP=44;'
   a60: 'DS=6.1;SZ=74x156.8x9.8;WT=171;RS=600x1280;RE=2019.05;CP=4;RM=1024;OI=1;OV=8.1;SM=2;'
@@ -6024,3 +6035,4 @@ lg:
   lgls675: '->tribute 5'
   tribute empire: 'DS=5;RS=720x1280;SZ=71.9x144.8x8.1;WT=140;RE=2019;OI=1;OV=8.1;RM=2048;CP=40;'
   lm-x220pm: '->tribute empire'
+
