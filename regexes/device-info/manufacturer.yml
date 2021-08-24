@@ -25,10 +25,14 @@ Clarmin:
   url: https://www.clarmin.com
 
 PiPO:
-  url: https://www.pipo-store.com
+#  url: https://www.pipo-store.com
+  url: https://www.pipo.com
 
 DIGIFORS:
   url: https://digifors.ru
 
 LG:
   url: https://lg.com
+
+MIVO:
+  url: https:www.mivo.com.my

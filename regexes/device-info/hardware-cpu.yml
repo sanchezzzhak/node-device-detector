@@ -1243,6 +1243,7 @@ cpu:
     type: x86
     clock_rate: 1960
     cores: 4
+    process: 14nm
     gpu_id: 72
   190:
     name: Texas Instruments OMAP 4430
