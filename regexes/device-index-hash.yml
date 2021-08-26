@@ -254,6 +254,8 @@ asus_z012de:
   - Asus
 intex aqua 4.5e:
   - Intex
+primo e10 plus:
+  - Walton
 e260t+:
   - Hisense
 iphone_4:
@@ -1031,28 +1033,6 @@ hmt400:
   - Xoro
 nw-z1000series:
   - Sony
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -8139,7 +8119,7 @@ mi 3w:
   - Xiaomi
 mi-4c:
   - Xiaomi
-mi 4lte:
+mi 4 lte:
   - Xiaomi
 mi 5s plus:
   - Xiaomi
@@ -19169,6 +19149,89 @@ n9517:
   - ZTE
 z986u:
   - ZTE
+santin ovvi:
+  - Santin
+p6000_plus:
+  - Ulefone
+asus_x00tde:
+  - Asus
+neffos c9s:
+  - Neffos
+neffos c7s:
+  - Neffos
+neffos c9 max:
+  - Neffos
+nobby x800 pro:
+  - Nobby
+mi mix 3 5g:
+  - Xiaomi
+mi 8:
+  - Xiaomi
+mi 8 explorer edition:
+  - Xiaomi
+mi 3c:
+  - Xiaomi
+mi max:
+  - Xiaomi
+axon mini:
+  - ZTE
+mi 9:
+  - Xiaomi
+mi a2:
+  - Xiaomi
+myphone_fun6lite:
+  - MyPhone
+myphone_fun_7_lte:
+  - MyPhone
+myphone_fun_18x9_eea:
+  - MyPhone
+oppo r9sk:
+  - OPPO
+robby2:
+  - Wiko
+luck_l120_4g:
+  - Vertex
+luck_l100_3g:
+  - Vertex
+lt_s10_lite:
+  - LT Mobile
+iqa27x_e:
+  - MLS
+iris90:
+  - Lava
+htc u12 life:
+  - HTC
+goalplus:
+  - Jinga
+redmi go:
+  - Xiaomi
+redmi 4 prime:
+  - Xiaomi
+pvg100e_ru:
+  - Palm
+pvg100:
+  - Palm
+archos core 57s ultra:
+  - Archos
+archos core 55s ultra:
+  - Archos
+archos access 50s 4g:
+  - Archos
+a511 harmony:
+  - Bravis
+  - Acer
+soldier:
+  - Elephone
+hammer_iron_3:
+  - MyPhone
+nomi_i5710:
+  - Nomi
+oppo r11s:
+  - OPPO
+oppo r11st:
+  - OPPO
+oppo r11 pluskt:
+  - OPPO
 bravis_a506:
   - Bravis
 bravis delta:
@@ -26638,6 +26701,28 @@ as-4411:
   - Assistant
 as-4421:
   - Assistant
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -31565,6 +31650,36 @@ lenovo pb-6505mc:
   - Lenovo
 plane 8.6 3g ps8086mg:
   - Digma
+s670:
+  - DEXP
+peaq pet 100:
+  - TrekStor
+p10s_eea:
+  - Teclast
+mi pad 4:
+  - Xiaomi
+r180:
+  - DEXP
+q110:
+  - DEXP
+lenovo tb-x705l:
+  - Lenovo
+lenovo tb-x605l:
+  - Lenovo
+lenovo tb-x505l:
+  - Lenovo
+nomi_c070044:
+  - Nomi
+nomi_c101014:
+  - Nomi
+nomi_c101034:
+  - Nomi
+nomi_c101044:
+  - Nomi
+nomi_c070014l:
+  - Nomi
+nomi_c080014:
+  - Nomi
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
