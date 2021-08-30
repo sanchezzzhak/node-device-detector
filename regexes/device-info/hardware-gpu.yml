@@ -247,7 +247,7 @@ gpu:
     clock_rate: 650
   83:
     name: ARM Mali-G52 MP2
-    clock_rate: 950
+    clock_rate: 850
   84:
     name: Vivante GC1000
     clock_rate: 600

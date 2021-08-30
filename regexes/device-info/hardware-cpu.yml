@@ -2112,3 +2112,17 @@ cpu:
     cores: 2
     clock_rate: 1000
     process: 40nm
+  318:
+    name: Unisoc T610
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 83
+  319:
+    name: MediaTek Helio G70
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 83
