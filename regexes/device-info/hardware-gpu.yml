@@ -332,3 +332,6 @@ gpu:
   111:
     name: ARM Mali-450 MP
     clock_rate: 0
+  112:
+    name: ARM Mali-G76 MP4
+    clock_rate: 900

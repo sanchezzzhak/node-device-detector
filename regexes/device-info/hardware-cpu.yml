@@ -1907,6 +1907,7 @@ cpu:
     process: 28nm
     gpu_id: 0
   289:
+    # SDM712
     name: Qualcomm Snapdragon 712
     type: ARM
     cores: 8
@@ -2023,6 +2024,7 @@ cpu:
     process: 7nm
     gpu_id: 67
   305:
+    # SM8350
     name: Qualcomm Snapdragon 888 5G
     type: ARM
     cores: 8
@@ -2126,3 +2128,17 @@ cpu:
     clock_rate: 2000
     process: 12nm
     gpu_id: 83
+  320:
+    name: MediaTek Dimensity 800U
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 7nm
+    gpu_id: 102
+  321:
+    name: MediaTek Helio G95
+    type: ARM
+    cores: 8
+    clock_rate: 2050
+    process: 12nm
+    gpu_id: 112
