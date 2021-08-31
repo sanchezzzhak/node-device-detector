@@ -428,6 +428,7 @@ cpu:
     gpu_id: 38
   62:
     name: Qualcomm Snapdragon 710
+    # SDM710
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -2137,6 +2138,34 @@ cpu:
     gpu_id: 102
   321:
     name: MediaTek Helio G95
+    type: ARM
+    cores: 8
+    clock_rate: 2050
+    process: 12nm
+    gpu_id: 112
+  322:
+    name: MediaTek Helio G85
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 83
+  323:
+    name: MediaTek Helio G35
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25
+  324:
+    name: MediaTek Dimensity 1200 5G
+    type: ARM
+    cores: 8
+    clock_rate: 3000
+    process: 6nm
+    gpu_id: 110
+  325:
+    name: MediaTek Helio G90T
     type: ARM
     cores: 8
     clock_rate: 2050
