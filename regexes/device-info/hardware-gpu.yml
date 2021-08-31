@@ -247,7 +247,7 @@ gpu:
     clock_rate: 650
   83:
     name: ARM Mali-G52 MP2
-    clock_rate: 950
+    clock_rate: 850
   84:
     name: Vivante GC1000
     clock_rate: 600
@@ -328,7 +328,10 @@ gpu:
     clock_rate: 0
   110:
     name: ARM Mali-G77 MC9
-    clock_rate: 0
+    clock_rate: 850
   111:
     name: ARM Mali-450 MP
     clock_rate: 0
+  112:
+    name: ARM Mali-G76 MP4
+    clock_rate: 900

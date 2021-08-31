@@ -77,6 +77,7 @@
         type: ARM
         cores: 8
         clock_rate: 2960
+        process: 7nm
         gpu_id: 81
       gpu:
         name: Qualcomm Adreno 640
@@ -119,3 +120,34 @@
       height: '136.5'
       thickness: '11.2'
     weight: '135'
+
+- brand: realme
+  model: x3
+  result:
+    display:
+      size: '6.6'
+      resolution:
+        width: '1080'
+        height: '2400'
+      ratio: '20:9'
+      ppi: '399'
+    hardware:
+      cpu_id: '197'
+      ram: '6144'
+      cpu:
+        name: Qualcomm Snapdragon 855 Plus
+        type: ARM
+        clock_rate: 2960
+        cores: 8
+        process: 7nm
+        gpu_id: 81
+      gpu:
+        name: Qualcomm Adreno 640
+        clock_rate: 700
+    os: Android 10
+    release: '2020.06'
+    size:
+      width: '75.8'
+      height: '163.8'
+      thickness: '8.9'
+    weight: '202'

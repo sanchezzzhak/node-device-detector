@@ -428,6 +428,7 @@ cpu:
     gpu_id: 38
   62:
     name: Qualcomm Snapdragon 710
+    # SDM710
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -1292,6 +1293,7 @@ cpu:
     type: ARM
     clock_rate: 2960
     cores: 8
+    process: 7nm
     gpu_id: 81
   198:
     # SDM845
@@ -1907,6 +1909,7 @@ cpu:
     process: 28nm
     gpu_id: 0
   289:
+    # SDM712
     name: Qualcomm Snapdragon 712
     type: ARM
     cores: 8
@@ -1957,6 +1960,7 @@ cpu:
     gpu_id: 12
   296:
     name: MediaTek Dimensity 1000+
+    # MT6889Z
     type: ARM
     cores: 8
     clock_rate: 2600
@@ -2023,6 +2027,7 @@ cpu:
     process: 7nm
     gpu_id: 67
   305:
+    # SM8350
     name: Qualcomm Snapdragon 888 5G
     type: ARM
     cores: 8
@@ -2112,3 +2117,66 @@ cpu:
     cores: 2
     clock_rate: 1000
     process: 40nm
+  318:
+    name: Unisoc T610
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 83
+  319:
+    name: MediaTek Helio G70
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 83
+  320:
+    name: MediaTek Dimensity 800U
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 7nm
+    gpu_id: 102
+  321:
+    name: MediaTek Helio G95
+    type: ARM
+    cores: 8
+    clock_rate: 2050
+    process: 12nm
+    gpu_id: 112
+  322:
+    name: MediaTek Helio G85
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 83
+  323:
+    name: MediaTek Helio G35
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25
+  324:
+    name: MediaTek Dimensity 1200 5G
+    type: ARM
+    cores: 8
+    clock_rate: 3000
+    process: 6nm
+    gpu_id: 110
+  325:
+    name: MediaTek Helio G90T
+    type: ARM
+    cores: 8
+    clock_rate: 2050
+    process: 12nm
+    gpu_id: 112
+  326:
+    name: MediaTek Dimensity 1100 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 6nm
+    gpu_id: 110
