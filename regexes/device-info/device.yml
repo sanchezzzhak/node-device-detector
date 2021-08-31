@@ -5773,6 +5773,12 @@ realme:
   rmx3241: '->8 5g'
   narzo 30 5g: 'RE=2021.05;SZ=74.8x162.5x8.5;WT=185;DS=6.5;RS=1080x2400;OI=1;OV=11;CP=302;RM=4096;'
   rmx3242: '->narzo 30 5g'
+  gt neo flash: 'RE=2021.May;SZ=73.3x158.5x8.4;WT=179;DS=6.43;RS=1080x2400;OI=1;OV=11;CP=324;RM=8192;'
+  rmx3350: '->gt neo flash'
+  x7 pro extreme edition: 'DS=6.55;RS=1080x2400;SZ=73.4x159.9x7.8;WT=170;RE=2021;OI=1;OV=11;RM=8192;CP=296;'
+  rmx3115: '->x7 pro extreme edition'
+  q3 pro 5g: 'RE=2021.04;SZ=73.3x158.5x8.4;WT=179;DS=6.43;RS=1080x2400;OI=1;OV=11;CP=326;RM=6144;'
+  rmx2205: '->q3 pro 5g'
 
 lg:
   v30: 'RE=2017.08;SZ=75.4x151.7x7.3;WT=158;DS=6.0;RS=1440x2880;OI=1;OV=7.1.2;CP=25;RM=4096;'

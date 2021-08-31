@@ -2173,3 +2173,10 @@ cpu:
     clock_rate: 2050
     process: 12nm
     gpu_id: 112
+  326:
+    name: MediaTek Dimensity 1100 5G
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 6nm
+    gpu_id: 110
