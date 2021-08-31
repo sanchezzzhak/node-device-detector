@@ -1293,6 +1293,7 @@ cpu:
     type: ARM
     clock_rate: 2960
     cores: 8
+    process: 7nm
     gpu_id: 81
   198:
     # SDM845
@@ -1959,6 +1960,7 @@ cpu:
     gpu_id: 12
   296:
     name: MediaTek Dimensity 1000+
+    # MT6889Z
     type: ARM
     cores: 8
     clock_rate: 2600
