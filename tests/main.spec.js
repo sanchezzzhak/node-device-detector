@@ -162,6 +162,7 @@ describe('tests clients', function () {
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function () {
           let result = detector.detect(fixture.user_agent);
+          let messageError = 'fixture data\n' + perryJSON(fixture);
           perryTable(fixture, result);
           
           // fix values fixture null
@@ -189,12 +190,12 @@ describe('tests clients', function () {
           }
           
           if(result.client.short_name) {
-            expect(result.client.short_name).to.not.equal('UNK');
+            expect(result.client.short_name, messageError).to.not.equal('UNK');
             delete result.client.short_name;
             delete result.client.family;
           }
           
-          expect(fixture.client).to.deep.equal(result.client);
+          expect(fixture.client, messageError).to.deep.equal(result.client);
         });
       });
     });
