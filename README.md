@@ -222,7 +222,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1439 devices, alias devices 3288)
+> This parser is experimental and contains few devices. (1445 devices, alias devices 3294)
 >
 ##### Support detail brands/models list:
 
@@ -287,11 +287,11 @@ is not parse result  {name: ""}
 | motorola | 27 | 24 | - | nuu mobile | 9 | 3 |
 | nuvo | 3 | 2 | - | oneplus | 18 | 48 |
 | öwn | 1 | 2 | - | panasonic | 5 | 8 |
-| pipo | 5 | 0 | - | realme | 63 | 91 |
+| pipo | 5 | 0 | - | realme | 65 | 94 |
 | samsung | 166 | 704 | - | sony | 37 | 131 |
 | tiphone | 1 | 0 | - | utok | 1 | 0 |
 | uz mobile | 1 | 0 | - | vernee | 9 | 2 |
-| vivo | 143 | 190 | - | walton | 13 | 0 |
+| vivo | 147 | 193 | - | walton | 13 | 0 |
 | weimei | 1 | 0 | - | wileyfox | 9 | 0 |
 | wink | 4 | 0 | - | zync | 2 | 0 |
 | zyq | 1 | 13 | - |  |  |  |
