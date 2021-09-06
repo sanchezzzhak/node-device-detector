@@ -263,6 +263,7 @@ module.exports = {
   'SF': 'Safari',
   'S5': 'Safe Exam Browser',
   'SW': 'SalamWeb',
+  'S9': 'Secure Browser',
   'SV': 'SFive',
   'SH': 'Shiira',
   'S1': 'SimpleBrowser',
@@ -330,6 +331,6 @@ module.exports = {
   'ZV': 'Zvu',
 
 // detected browsers in older versions
-// 'IA' : 'Iceape',  : pim
-// 'SM' : 'SeaMonkey',  : pim
+// 'IA': 'Iceape',  =>  pim
+// 'SM': 'SeaMonkey',  =>  pim
 };

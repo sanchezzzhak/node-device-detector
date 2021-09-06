@@ -16,7 +16,7 @@ module.exports = {
     'S6', '7S', 'NM', 'PB', 'UR', 'NR', 'SG', 'S8', 'C3',
     'SS', 'O2', 'SV', 'TR', 'CW', 'GI', 'VE', 'AC', 'FS',
     'CG', 'DR', 'C4', 'HS', 'DA', 'C5', 'C6', 'DG', 'HE',
-    'H2', 'MA', 'MD', 'O3', 'EW', 'AI',
+    'H2', 'MA', 'MD', 'O3', 'EW', 'AI', 'S9',
   ],
   'Firefox': [
     'FF', 'FE', 'FM', 'SX', 'FB', 'PX', 'MB', 'EI', 'WF',
