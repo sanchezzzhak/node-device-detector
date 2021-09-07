@@ -74,6 +74,8 @@ octopus-core t8:
   - Allwinner
 quadcore-r16:
   - Allwinner
+quad-core t3 k2001o nwd:
+  - Allwinner
 archos gamepad:
   - Archos
 archos gamepad2:
@@ -1036,6 +1038,10 @@ redmi note 5a:
 m10 ultra: []
 sm-n950n:
   - Samsung
+sm-n971n:
+  - Samsung
+sm-n986w:
+  - Samsung
 'ipod5,1':
   - Apple
 hmt390q:
@@ -1044,6 +1050,8 @@ hmt400:
   - Xoro
 nw-z1000series:
   - Sony
+lenco diverso-700:
+  - Lenco
 da220hql:
   - Acer
 da241hl:
@@ -19548,6 +19556,18 @@ htcd160lvw:
   - HTC
 meizu m6s:
   - Meizu
+vivo nex a:
+  - Vivo
+mz-u20:
+  - Meizu
+mz-u10:
+  - Meizu
+psp7590duo:
+  - Prestigio
+psp5553duo:
+  - Prestigio
+psp5545duo:
+  - Prestigio
 bravis_a506:
   - Bravis
 bravis delta:
@@ -24289,8 +24309,8 @@ letv x910:
 s6:
   - Landvo
 iva s6:
-  - Landvo
   - iVA
+  - Landvo
 xm100:
   - Landvo
 xm100 plus:
@@ -25172,6 +25192,80 @@ htc one_m8 eye:
   - HTC
 asus_z012dc:
   - Asus
+pure 1:
+  - M-Horse
+pure 2:
+  - M-Horse
+q-smart_iii_plus:
+  - MyPhone
+  - QMobile
+y6_piano:
+  - Doogee
+y6_piano_black:
+  - Doogee
+y6 max:
+  - Doogee
+y6 max 3d:
+  - Doogee
+citi motion 4g cs5025pl:
+  - Digma
+  - Motorola
+bv8000pro_ru:
+  - Blackview
+eluga a4:
+  - Panasonic
+hardcaseh550s:
+  - Energizer
+cubot j3 pro:
+  - CUBOT
+finney u1:
+  - Sirin labs
+gaamii g1:
+  - Santin
+santin gaamii:
+  - Santin
+m630:
+  - S-TELL
+m558:
+  - S-TELL
+m300 4g:
+  - MDC Store
+mdc m5:
+  - MDC Store
+rs635h:
+  - Santin
+philips_s260:
+  - Philips
+5010d:
+  - Alcatel
+4good style r407:
+  - 4Good
+cumulus_6_hd:
+  - Lark
+philips_s326:
+  - Philips
+pixel 5a:
+  - Google
+21061110ag:
+  - POCO
+opg03:
+  - OPPO
+xq-at72:
+  - Sony
+lp-01:
+  - Sharp
+c21 pro:
+  - Oukitel
+c19 pro:
+  - Oukitel
+asus_z01bda:
+  - Asus
+f-03h:
+  - Fujitsu
+bv5000:
+  - Blackview
+bv7000:
+  - Blackview
 ls-4005:
   - LYF
 lyf_ls-4006:
@@ -32019,6 +32113,28 @@ nb753:
   - Bravis
 nb754:
   - Bravis
+dialogtabpro:
+  - Dialog
+dialog q178:
+  - Dialog
+plane 8550s 4g ps8163pl:
+  - Digma
+plane 1584s 3g ps1201pg:
+  - Digma
+plane 1585s 4g ps1202pl:
+  - Digma
+plane 7580s 4g ps7192pl:
+  - Digma
+818 3g:
+  - Matrix
+pmt1157_4g_ru:
+  - Prestigio
+pmt1196_3g:
+  - Prestigio
+pmt3096_3g:
+  - Prestigio
+pmt3196_3g:
+  - Prestigio
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -33009,6 +33125,14 @@ as_4k_ci_pro:
   - Openbox
 provision s1:
   - ProVision
+kdl48w605b:
+  - Sony
+kdl40w705c:
+  - Sony
+kd49x8505b:
+  - Sony
+kdl32w603a:
+  - Sony
 bb2 pro:
   - Mecool
 kii pro:
