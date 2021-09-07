@@ -16,8 +16,15 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 ![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg?branch=master)
 ![CodeQL](https://github.com/sanchezzzhak/node-device-detector/workflows/CodeQL/badge.svg?branch=master)
 
-+ [List Settings](#options)
++ [Helpers](#helpers)
++ [Single parsers](#single-parsers)
++ [Settings](#options)
 + [Examples](#others)
++ [Support brands](#brands-list)
++ [Support device types](#device-types)
++ [Support browsers](#browsers-list)
+
+
 
 Install
 -
@@ -80,7 +87,8 @@ Result parse empty
 }
 ```
 
-### Helpers <a name="helpers"></a> ###
+
+### Helpers<a name="helpers"></a> ###
 [[top]](#top)
 
 ```js
@@ -115,13 +123,20 @@ DeviceHelper.isTv(result);
 DeviceHelper.isCamera(result);
 /* portable terminal, portable projector */
 DeviceHelper.isPeripheral(result);
-/*  */
+/* LCD panel or interactive panel  */
 DeviceHelper.isSmartDisplay(result);
 /* check device type boxes, blu-ray players */
 DeviceHelper.isPortableMediaPlayer(result);
 /* check device type watches, headsets */
 DeviceHelper.isWearable(result);
+/* result device type number id */
+DeviceHelper.getDeviceTypeId(result);
+/* result device type string */
+DeviceHelper.getDeviceType(result);
+/* result client type string */
+DeviceHelper.getClientType(result);
 ```
+
 Using parsers singly <a name="single-parsers"></a>
 -
 [[top]](#top)
@@ -381,6 +396,7 @@ Others <a name="others"></a>
 * [Example2 detect device in express.js](docs/EXPRESS_SERVER.MD)
 
 ##### Support detect brands list (1066):
+<a name="brands-list"></a>
 
 <details>
 <summary>Show details</summary>
@@ -389,10 +405,39 @@ Others <a name="others"></a>
 
 </details>
 
+[[top]](#top)
+
+<a name="device-types"></a>
+<details>
+<summary>Support device types:</summary>
+
+| type | id |
+| ----  | ---- |
+| desktop | 0 |
+| smartphone | 1 |
+| tablet | 1 |
+| feature phone | 3 |
+| console | 4 |
+| tv | 5 |
+| car browser |  6   |
+| smart display    |  7    | 
+| camera | 8 |
+| portable media player | 9 |
+| phablet | 10 |
+| smart speaker    | 11 |
+| wearable | 12 |
+| peripheral | 13 |
+
+</details>
+
+
 ##### Support detect browsers list (329):
+<a name="browsers-list"></a>
 
 <details>
 <summary>Show details</summary>
 
 * 115 Browser, 2345 Browser, 360 Browser, 360 Phone Browser, 7654 Browser, 7Star, ABrowse, Aloha Browser, Aloha Browser Lite, Amaya, Amiga Aweb, Amiga Voyager, Amigo, Android Browser, ANT Fresco, ANTGalio, AOL Desktop, AOL Shield, Arctic Fox, Arora, Arvin, Atom, Atomic Web Browser, Avant Browser, Avast Secure Browser, AVG Secure Browser, Avira Scout, AwoX, B-Line, Baidu Browser, Baidu Spark, Basilisk, Beaker Browser, Beamrise, Beonex, Biyubi, BlackBerry Browser, BlackHawk, Blue Browser, Borealis Navigator, Brave, BriskBard, BrowseX, Browzar, Bunjalloo, Byffox, Camino, CCleaner, Centaury, Charon, Chedot, Cheetah Browser, Cheshire, Chim Lac, Chrome, Chrome Frame, Chrome Mobile, Chrome Mobile iOS, Chrome Webview, ChromePlus, Chromium, Chromium GOST, CM Browser, Coast, Coc Coc, Colibri, CometBird, Comodo Dragon, Conkeror, CoolBrowser, CoolNovo, Cornowser, COS Browser, Craving Explorer, Crazy Browser, Crusta, Cunaguaro, Cyberfox, dbrowser, Deepnet Explorer, deg-degan, Deledao, Delta Browser, DeskBrowse, Dillo, Dolphin, Dooble, Dorado, Dot Browser, DuckDuckGo Privacy Browser, Ecosia, Edge WebView, Element Browser, Elements Browser, Elinks, Epic, Espial TV Browser, EUI Browser, eZ Browser, Falkon, Faux Browser, Fennec, Firebird, Firefox, Firefox Focus, Firefox Mobile, Firefox Mobile iOS, Firefox Reality, Firefox Rocket, Fireweb, Fireweb Navigator, Flast, Flock, Flow, Fluid, FreeU, Galeon, Ghostery Privacy Browser, GinxDroid Browser, Glass Browser, GNOME Web, GOG Galaxy, Google Earth, HasBrowser, Hawk Turbo Browser, Headless Chrome, Helio, hola! Browser, HotJava, Huawei Browser, IBrowse, iCab, iCab Mobile, IceCat, IceDragon, Iceweasel, IE Mobile, Internet Explorer, Iridium, Iron, Iron Mobile, Isivioo, Japan Browser, Jasmine, JavaFX, Jig Browser, Jig Browser Plus, Jio Browser, K-meleon, K.Browser, Kapiko, Kazehakase, Kindle Browser, Kinza, Kiwi, Kode Browser, Konqueror, Kylo, LG Browser, LieBaoFast, Light, Links, Lolifox, Lovense Browser, LuaKit, Lulumi, Lunascape, Lunascape Lite, Lynx, Maelstrom, Mandarin, MAUI WAP Browser, Maxthon, mCent, Meizu Browser, Mercury, MicroB, Microsoft Edge, Midori, Minimo, Mint Browser, MIUI Browser, Mobicip, Mobile Safari, Mobile Silk, Monument Browser, MxNitro, Mypal, Navigateur Web, NCSA Mosaic, NetFront, NetFront Life, NetPositive, Netscape, NetSurf, NFS Browser, Nokia Browser, Nokia OSS Browser, Nokia Ovi Browser, Nox Browser, NTENT Browser, Obigo, OceanHero, Oculus Browser, Odin, Odyssey Web Browser, Off By One, OhHai Browser, OmniWeb, ONE Browser, OpenFin, Openwave Mobile Browser, Opera, Opera Devices, Opera GX, Opera Mini, Opera Mini iOS, Opera Mobile, Opera Neon, Opera Next, Opera Touch, Oppo Browser, Orca, Ordissimo, Oregano, Origin In-Game Overlay, Origyn Web Browser, Otter Browser, Pale Moon, Palm Blazer, Palm Pre, Palm WebPro, Palmscape, Perfect Browser, Phantom Browser, Phoenix, Phoenix Browser, PlayFree Browser, Polaris, Polarity, PolyBrowser, Polypane, PrivacyWall, Puffin, Qazweb, QQ Browser, QQ Browser Lite, QQ Browser Mini, QtWebEngine, Quark, QupZilla, Qutebrowser, Qwant Mobile, Realme Browser, Rekonq, RockMelt, Safari, Safe Exam Browser, Sailfish Browser, SalamWeb, Samsung Browser, Secure Browser, Seewo Browser, SEMC-Browser, Seraphic Sraf, Seznam Browser, SFive, Shiira, SimpleBrowser, Sizzy, Skyfire, Sleipnir, Slimjet, Smart Lenovo Browser, Smooz, Snowshoe, Sogou Explorer, Sogou Mobile Browser, SP Browser, Splash, Sputnik Browser, Stargon, START Internet Browser, Steam In-Game Overlay, Streamy, Sunrise, Super Fast Browser, SuperBird, surf, Swiftfox, T-Browser, t-online.de Browser, Tao Browser, TenFourFox, Tenta Browser, Tizen Browser, ToGate, Tungsten, TV Bro, TweakStyle, UBrowser, UC Browser, UC Browser HD, UC Browser Mini, UC Browser Turbo, UR Browser, Uzbl, Venus Browser, Vision Mobile Browser, Vivaldi, vivo Browser, VMware AirWatch, Waterfox, Wear Internet Browser, Web Explorer, WebPositive, WeTab Browser, Whale Browser, wOSBrowser, Xiino, xStand, Xvast, Yaani Browser, Yahoo! Japan Browser, Yandex Browser, Yandex Browser Lite, Yolo Browser, Zetakey, Zvu
 </details>
+
+[[top]](#top)

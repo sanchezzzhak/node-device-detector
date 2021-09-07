@@ -1387,6 +1387,7 @@ cpu:
     type: ARM
     clock_rate: 1200
     cores: 4
+    process: 28nm
     gpu_id: 3
   212:
     name: Qualcomm Snapdragon S4 Plus MSM8230
@@ -2187,3 +2188,17 @@ cpu:
     clock_rate: 2860
     process: 7nm
     gpu_id: 34
+  328:
+    name: Qualcomm Snapdragon 650 MSM8956
+    type: ARM
+    cores: 6
+    clock_rate: 1800
+    process: 28nm
+    gpu_id: 57
+  329:
+    name: Intel Atom x3 C3200
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    process: 28nm
+    gpu_id: 3

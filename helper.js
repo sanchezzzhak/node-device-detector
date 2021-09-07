@@ -1,8 +1,22 @@
 const DEVICE_TYPES = require('./parser/const/device-type');
+const DEVICE_TYPE_IDS = require('./parser/const/device-type-id');
 const CLIENT_TYPES = require('./parser/const/client-type');
+
 
 const getDeviceType = (result) => {
   return result.device && result.device.type ? result.device.type : null;
+};
+
+/**
+ * @param {string} name
+ * @returns {number|null}
+ */
+const getDeviceTypeIdForName = (name) => {
+  return name && DEVICE_TYPE_IDS[name] ? DEVICE_TYPE_IDS[name]: null;
+};
+
+const getDeviceTypeId = (result) => {
+  return getDeviceTypeIdForName(getDeviceType(result))
 };
 
 const getClientType = (result) => {
@@ -94,6 +108,10 @@ const isMobileApp = (result) => {
 
 
 module.exports = {
+  getDeviceType,
+  getDeviceTypeId,
+  getDeviceTypeIdForName,
+  getClientType,
   isCamera,
   isCar,
   isConsole,

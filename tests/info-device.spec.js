@@ -1,18 +1,20 @@
 const fs = require('fs');
 const InfoDevice = require('../parser/device/info-device');
+const DeviceDetector = require('../index');
+const DeviceHelper = require('../helper');
 const {YAMLLoad, getFixtureFolder, perryJSON} = require('./functions');
-const { should, assert, expect } = require('chai');
+const {should, assert, expect} = require('chai');
 
 const DATA_DEVICE_INFO = YAMLLoad(
-  __dirname + '/../regexes/device-info/device.yml'
+  __dirname + '/../regexes/device-info/device.yml',
 );
 
-let ymlDeviceInfoFiles = fs.readdirSync(getFixtureFolder() + 'devices-info/')
-
+let ymlDeviceInfoFiles = fs.readdirSync(getFixtureFolder() + 'devices-info/');
+const detector = new DeviceDetector({discardDeviceIndexes: false});
 const infoDevice = new InfoDevice();
 const TIMEOUT = 6000;
 
-describe('tests info-device', function () {
+describe('tests info-device', function() {
   this.timeout(TIMEOUT);
   
   it('test get unknown result', () => {
@@ -70,50 +72,79 @@ describe('tests info-device', function () {
         }
         
         let formatMessageFloat = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+$ result: ${perryJSON(
-          result
+          result,
         )}`;
         let formatMessageRatio = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
-          result
+          result,
         )}`;
         let formatMessageNumber = `brand (${brand})  model (${model}) value does not match format ^[0-9]+$  result: ${perryJSON(
-          result
+          result,
         )}`;
         let formatMessageYear = `brand (${brand})  model (${model}) value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
-          result
+          result,
         )}`;
         
         if (result.display) {
           if (result.display.size) {
             expect(
               result.display.size,
-              'display.size(DS) ' + formatMessageFloat
+              'display.size(DS) ' + formatMessageFloat,
             ).to.match(patternFloat);
+            
           }
           if (result.display.resolution) {
-            expect(result.display.ratio, formatMessageRatio).to.match(patternRatio);
+            expect(result.display.ratio, formatMessageRatio).
+            to.
+            match(patternRatio);
             expect(
               result.display.resolution.width,
-              'display.width(RS) ' + formatMessageFloat
+              'display.width(RS) ' + formatMessageFloat,
             ).to.match(patternFloat);
             expect(
               result.display.resolution.height,
-              'display.height(RS) ' + formatMessageFloat
+              'display.height(RS) ' + formatMessageFloat,
             ).to.match(patternFloat);
-            expect(result.display.ppi, formatMessageFloat).to.match(patternFloat);
+            expect(result.display.ppi, formatMessageFloat).
+            to.
+            match(patternFloat);
           }
         }
+        
         if (result.size) {
-          expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).to.match(
-            patternFloat
+          expect(result.size.width, 'size.width(SZ) ' + formatMessageFloat).
+          to.
+          match(
+            patternFloat,
           );
           expect(
             result.size.height,
-            'size.height(SZ) ' + formatMessageFloat
+            'size.height(SZ) ' + formatMessageFloat,
           ).to.match(patternFloat);
           expect(
             result.size.thickness,
-            'size.thickness(SZ) ' + formatMessageFloat
+            'size.thickness(SZ) ' + formatMessageFloat,
           ).to.match(patternFloat);
+          
+          // check correct width height for tablet
+          if (result.display && parseFloat(result.display.size) >= 7) {
+            let ua = `(${brand} ${model} build/xxxxx)`;
+            if (result.size && parseFloat(result.size.width) <
+              parseFloat(result.size.height)) {
+              let detectResult = detector.detect(ua);
+              if (DeviceHelper.isTablet(detectResult)) {
+                console.log(result)
+                throw new Error(`${brand} ${model} - physical size: width < height for table`)
+              }
+            }
+            if (result.display.resolution &&
+              parseFloat(result.display.resolution.width) <
+              parseFloat(result.display.resolution.height)) {
+              let detectResult = detector.detect(ua);
+              if (DeviceHelper.isTablet(detectResult)) {
+                throw new Error(`${brand} ${model} - display resolution: width < height for table`)
+              }
+            }
+          }
         }
         
         if (result.weight !== void 0 && result.weight !== '') {
@@ -128,12 +159,14 @@ describe('tests info-device', function () {
         
         if (result.hardware !== void 0) {
           if (result.hardware.ram) {
-            expect(result.hardware.ram, formatMessageNumber).to.match(patternNumber);
+            expect(result.hardware.ram, formatMessageNumber).
+            to.
+            match(patternNumber);
           }
           
           if (result.hardware.cpu_id) {
             expect(result.hardware.cpu_id, formatMessageNumber).to.match(
-              patternNumber
+              patternNumber,
             );
             expect(result.hardware.cpu).to.property('name');
             expect(result.hardware.cpu).to.property('type');
@@ -149,15 +182,15 @@ describe('tests info-device', function () {
     }
   }
   
-  ymlDeviceInfoFiles.forEach(function (file) {
-    describe('file fixture ' + file, function () {
+  ymlDeviceInfoFiles.forEach(function(file) {
+    describe('file fixture ' + file, function() {
       let fixtureData = YAMLLoad(getFixtureFolder() + 'devices-info/' + file);
       let total = fixtureData.length;
       
       fixtureData.forEach((fixture, pos) => {
         let itName = fixture.brand + ' - ' + fixture.model;
         
-        it(itName, function () {
+        it(itName, function() {
           infoDevice.setResolutionConvertObject(true);
           infoDevice.setSizeConvertObject(true);
           let result = infoDevice.info(fixture.brand, fixture.model);
