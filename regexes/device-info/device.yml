@@ -2307,6 +2307,7 @@ asus:
   a502cg: '->zenfone 5'
   a500cg: '->zenfone 5'
   a501cg: '->zenfone 5;RE=2015.01;CP=206;OI=1;OV=4.3;'
+  x00qda: '->zenfone 5'
 
   x00qd: '->ze620kl'
   x00qsa: '->ze620kl'
@@ -2342,6 +2343,10 @@ asus:
   z012da: '->zenfone 3'
   z012dc: '->zenfone 3'
   z012de: '->zenfone 3'
+  z017db: '->zenfone 3'
+  z017d: '->zenfone 3'
+  z017da: '->zenfone 3'
+  ze552kl: '->zenfone 3'
   zenfone 3: 'DS=5.5;RS=1080x1920;SZ=77.38x152.59x7.69;WT=155;RE=2016.05;RM=4096;CP=204;OI=1;OV=6.0.1;'
   z01hd: '->zenfone 3 zoom'
   z01hda: '->zenfone 3 zoom'
@@ -2352,8 +2357,14 @@ asus:
   x00dd: '->zc553kl'
   zc553kl: '->zenfone 3 max;DS=5.5;RS=1080x1920;SZ=76.24x151.4x8.3;WT=175;RE=2016;OI=1;OV=6.0;RM=2048;CP=43;'
   x00ds: '->zenfone 3 max'
+  x008dc: '->zenfone 3 max'
+  x008db: '->zenfone 3 max'
   zenfone 3 max: 'DS=5.2;RS=720x1280;SZ=73.7x149.5x8.55;WT=148;RE=2016;RM=3072;CP=86;OI=1;OV=7;'
   zenfone 3 laser: 'DS=5.5;RS=1080x1920;SZ=76x149x7.9;WT=150;RE=2016.07;RM=4096;CP=43;OI=1;OV=7.1;'
+  zc551kl: '->zenfone 3 laser'
+  z01bd: '->zenfone 3 laser'
+  z01bs: '->zenfone 3 laser'
+  z01bda: '->zenfone 3 laser'
   ze551ml: '->zenfone 2;WT=170;OI=1;OV=5.0.1;'
   ux360cak: '->zenbook flip'
   zenbook flip: 'DS=13.3;RS=1920x1080;SZ=322.8x219.9x13.7;WT=1290;RM=8192;CP=203;RE=2019.04;OS=Windows 10;'
@@ -2366,6 +2377,7 @@ asus:
   z01kda: '->zenfone 4'
   z01ks: '->zenfone 4'
   x00ld: '->zenfone 4'
+  z01kd: '->zenfone 4'
   zenfone 4: 'DS=5.5;RS=1080x1920;SZ=75.2x155.4x7.7;WT=165;RE=2017.08;RM=4096;CP=19;OI=1;OV=7.1;SM=2;'
   zc520kl: '->zenfone 4 max'
   x00hd: '->zenfone 4 max'
@@ -2442,6 +2454,8 @@ asus:
   p024: '->zenpad 8.0'
   p027: '->zenpad 3s 10'
 
+
+
   pad tf300t: '->transformer pad tf300t'
   padfone 2: 'DS=4.7;RS=720x1280;SZ=68.9x137.9x9;WT=135;RE=2012.10;RM=2048;CP=134;OI=1;OV=4.4;'
   padfone infinity: 'DS=5;RS=1080x1920;SZ=72.8x143.5x8.9;WT=145;RE=2013.02;RM=2048;CP=138;OI=1;OV=4.4;'
@@ -2460,7 +2474,13 @@ asus:
   rog phone 3: 'DS=6.59;RS=1080x2340;SZ=78x171x9.85;WT=240;RE=2020.07;RM=8192;CP=141;OI=1;OV=10;'
   i003d: '->rog phone 3'
   i003dd: '->rog phone 3'
-
+  i005dc: '->rog phone 5'
+  i005da: '->rog phone 5'
+  zs673ks: '->rog phone 5'
+  rog phone 5: 'RE=2021.05;SZ=77.3x172.8x10.3;WT=238;DS=6.78;RS=1080x2448;OI=1;OV=11;CP=305;RM=8192;'
+  zenfone 8: 'RE=2021.05;SZ=68.5x148x8.9;WT=169;DS=5.9;RS=1080x2400;OS=Android 11;CP=305;RM=6144;'
+  zs590ks: '->zenfone 8'
+  i006d: '->zenfone 8'
   slider sl101: '->eee pad slider sl101'
   t00e: '->padfone mini'
   t00i: '->zenfone 4'
@@ -2508,15 +2528,11 @@ asus:
   z00wd: '->zenfone 2 laser'
   z011d: '->zenfone 2 laser'
   z016d: '->zenfone 3 deluxe'
-  z01bd: '->zenfone 3 laser'
-  z01bs: '->zenfone 3 laser'
   z01fd: '->zenfone 3 deluxe'
   z01qd: '->rog phone'
   z101: ''
   z906 10.1": ''
   z906: '->z906 10.1"'
-  zc551kl: '->zenfone 3 laser'
-
 
 
 'at&t':
@@ -3742,6 +3758,14 @@ huawei:
   honor view 30 pro: 'RE=2019.11;SZ=75.8x162.7x8.8;WT=206;DS=6.57;RS=1080x2400;OI=1;OV=10;CP=54;RM=8192;'
   oxf-an00: '->honor view 30'
   honor view 30: 'RE=2020.02;SZ=75.8x162.7x8.9;WT=213;DS=6.57;RS=1080x2400;OI=1;OV=10;CP=54;RM=6144;'
+  y6 (2019): 'RE=2019.03;SZ=73.5x156.3x8;WT=150;DS=6.09;RS=720x1560;OI=1;OV=9.0;CP=44;RM=2048;'
+  mrd-lx3: '->y6 (2019)'
+  mrd-lx1: '->y6 (2019)'
+  mrd-lx1n: '->y6 (2019)'
+  mrd-lx1f: '->y6 (2019)'
+  matepad pro: 'RE=2019.11;SZ=246x159x7.2;WT=460;DS=10.8;RS=2560x1600;OS=Android 10;CP=327;RM=6144;'
+  mrx-al09: '->matepad pro'
+  mrx-w09: '->matepad pro'
 
 # IRPO
 ipro:
@@ -5018,6 +5042,7 @@ irbis:
   tz722: 'DS=7;RS=1024x600;SZ=188x108.3x10.2;WT=263;OI=1;OV=8.1;CP=74;RM=1024;SM=2;RE=2018;'
 
 vivo:
+  nex a: 'RE=2018.06;SZ=77x162x8;WT=199;DS=6.59;RS=1080x2316;OI=1;OV=9.0;CP=62;RM=6144;'
   nex s: 'RE=2018.06;SZ=77x162x8;WT=199;DS=6.59;RS=1080x2316;OI=1;OV=8.1;CP=198;RM=8192;'
   y53: 'RE=2017.03;SZ=71.4x144.2x7.6;WT=137;DS=5.0;RS=540x960;OI=1;OV=6;CP=20;RM=2048;'
   1606a: '->y53'

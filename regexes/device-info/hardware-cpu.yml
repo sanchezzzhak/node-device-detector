@@ -2180,3 +2180,10 @@ cpu:
     clock_rate: 2600
     process: 6nm
     gpu_id: 110
+  327:
+    name: HiSilicon Kirin 990
+    type: ARM
+    cores: 8
+    clock_rate: 2860
+    process: 7nm
+    gpu_id: 34
