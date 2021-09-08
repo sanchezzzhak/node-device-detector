@@ -273,6 +273,7 @@ module.exports = {
   'SL': 'Sleipnir',
   'S6': 'Slimjet',
   'S7': 'SP Browser',
+  'T1': 'Stampy Browser',
   '7S': '7Star',
   'LE': 'Smart Lenovo Browser',
   'OZ': 'Smooz',

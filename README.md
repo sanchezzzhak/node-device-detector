@@ -421,16 +421,16 @@ Others <a name="others"></a>
 | ----  | ---- |
 | desktop | 0 |
 | smartphone | 1 |
-| tablet | 1 |
+| tablet | 2 |
 | feature phone | 3 |
 | console | 4 |
 | tv | 5 |
-| car browser |  6   |
-| smart display    |  7    | 
+| car browser | 6 |
+| smart display | 7 | 
 | camera | 8 |
 | portable media player | 9 |
 | phablet | 10 |
-| smart speaker    | 11 |
+| smart speaker | 11 |
 | wearable | 12 |
 | peripheral | 13 |
 
