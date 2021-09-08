@@ -1042,6 +1042,12 @@ sm-n971n:
   - Samsung
 sm-n986w:
   - Samsung
+zte 8010ru:
+  - ZTE
+redmi note 4x:
+  - Xiaomi
+mi note 2:
+  - Xiaomi
 'ipod5,1':
   - Apple
 hmt390q:
@@ -13109,33 +13115,6 @@ basco s2:
   - Jinga
 basco xs1:
   - Jinga
-8082_ru:
-  - Alcatel
-8068_eea:
-  - Alcatel
-tla002:
-  - Teclast
-tla016:
-  - Teclast
-vr-1541f:
-  - Lenovo
-t1006s:
-  - AllDocube
-t1006:
-  - AllDocube
-c-723ultra:
-  - Zentality
-qc-703gn:
-  - Diva
-qc-704ga:
-  - Diva
-qc-803gn:
-  - Diva
-qc-1013g:
-  - Diva
-  - Kyocera
-qc-7bhd:
-  - Diva
 aquaris_m4.5:
   - bq
   - Intex
@@ -14090,6 +14069,8 @@ pr6020:
   - Advance
 pr5950:
   - Advance
+zte 9000ru:
+  - ZTE
 pr5650:
   - Advance
 prime3lite:
@@ -17213,6 +17194,24 @@ motorola one fusion:
 motorola one fusion+:
   - Motorola
   - Odys
+hisense a2t:
+  - Hisense
+hisense infinity h11:
+  - Hisense
+kyocera-e6820:
+  - Kyocera
+hisense f16:
+  - Hisense
+hisense f27:
+  - Hisense
+hisense h12:
+  - Hisense
+hisense f35:
+  - Hisense
+hisense infinity e8:
+  - Hisense
+gionee f205 lite:
+  - Gionee
 pluto__26:
   - Majestic
 pluto_26n:
@@ -19568,6 +19567,108 @@ psp5553duo:
   - Prestigio
 psp5545duo:
   - Prestigio
+x-play:
+  - Hoffmann
+x-go:
+  - Hoffmann
+x-pro:
+  - Hoffmann
+x_ultra:
+  - Hoffmann
+philips_x586:
+  - Philips
+sm-a320f:
+  - Samsung
+coolpad r116:
+  - Coolpad
+vox s504 3g vs5016pg:
+  - Digma
+  - LG
+vox s502f 3g vs5004mg:
+  - Digma
+  - LG
+vox s502 3g vs5003mg:
+  - Digma
+  - LG
+  - Obi
+vox s501 3g vs5002pg:
+  - Digma
+  - LG
+  - Obi
+vox g450 3g vs4001pg:
+  - Digma
+p13_blue_max:
+  - Reeder
+pcam10:
+  - OPPO
+m2002j9s:
+  - Xiaomi
+c11_f:
+  - Oukitel
+c10 pro:
+  - Oukitel
+c11_pro:
+  - Oukitel
+c12 plus:
+  - Oukitel
+c12 pro:
+  - Oukitel
+cc1 pro:
+  - Oale
+tecno ax8:
+  - Tecno Mobile
+tecno la6:
+  - Tecno Mobile
+tecno k7:
+  - Tecno Mobile
+tecno wx4:
+  - Tecno Mobile
+tecno camon cx:
+  - Tecno Mobile
+tecno l9 plus:
+  - Tecno Mobile
+bv9000pro-ru:
+  - Blackview
+bv9000-ru:
+  - Blackview
+bv9000-f:
+  - Blackview
+cgv_ultimate t8:
+  - CGV
+rmx2194:
+  - Realme
+c23 pro:
+  - Oukitel
+c107-9:
+  - Coolpad
+hisense c20s:
+  - Hisense
+huawei rio-l01:
+  - Huawei
+asus_z010dd:
+  - Asus
+asus_x00ad:
+  - Asus
+mi 5c:
+  - Xiaomi
+lenovo pb2-650m:
+  - Lenovo
+lenovo k52e78:
+  - Lenovo
+asus_x008da:
+  - Asus
+ht20pro:
+  - Homtom
+meizu 6t:
+  - Meizu
+mi 4s:
+  - Xiaomi
+psp7551duo:
+  - Prestigio
+bv6800pro_ru:
+  - Blackview
+lgm-x800l:
+  - LG
 bravis_a506:
   - Bravis
 bravis delta:
@@ -31998,6 +32099,31 @@ lenovo tb-j606l:
   - Lenovo
 lenovo tb-8505x:
   - Lenovo
+8082_ru:
+  - Alcatel
+8068_eea:
+  - Alcatel
+tla002:
+  - Teclast
+tla016:
+  - Teclast
+t1006s:
+  - AllDocube
+t1006:
+  - AllDocube
+c-723ultra:
+  - Zentality
+qc-703gn:
+  - Diva
+qc-704ga:
+  - Diva
+qc-803gn:
+  - Diva
+qc-1013g:
+  - Diva
+  - Kyocera
+qc-7bhd:
+  - Diva
 x10 (m1d3):
   - Teclast
 10a_lte_eea:
@@ -32135,6 +32261,38 @@ pmt3096_3g:
   - Prestigio
 pmt3196_3g:
   - Prestigio
+bq-7082g:
+  - bq
+dl721-rb:
+  - Digiland
+pmt3761_3g:
+  - Prestigio
+t10(e3c5):
+  - Teclast
+m89 pro:
+  - Teclast
+sm-t555:
+  - Samsung
+sm-t550:
+  - Samsung
+lifetab e1071x:
+  - Medion
+9013x:
+  - Alcatel
+9013x_ru:
+  - Alcatel
+9032x:
+  - Alcatel
+9032x_ru:
+  - Alcatel
+h310:
+  - DEXP
+tz200:
+  - Irbis
+lenovo tb-7304i:
+  - Lenovo
+lenovo tb-7304n:
+  - Lenovo
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -33133,6 +33291,13 @@ kd49x8505b:
   - Sony
 kdl32w603a:
   - Sony
+aftmm:
+  - Anker
+  - Amazon
+mts tv box 317:
+  - MTC
+perfeo_pf_a4551:
+  - Perfeo
 bb2 pro:
   - Mecool
 kii pro:
@@ -33614,3 +33779,5 @@ vrl42:
   - Digma
 nb runiq:
   - New Balance
+vr-1541f:
+  - Lenovo
