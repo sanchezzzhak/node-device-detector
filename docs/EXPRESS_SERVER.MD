@@ -1,8 +1,9 @@
 Use in the express.js server
 -
 ```js
-import express from "express";
-import DeviceDetector from "node-device-detector";
+const express = require('express');
+const DeviceDetector = require('node-device-detector');
+
 
 // init app
 const deviceDetector = new DeviceDetector;
@@ -29,9 +30,9 @@ app.use(middlewareDetect);
 // create test route
 app.get('/detect', (req, res) => {
    let useragent = req.useragent;
-   let deviceResult = req.device;
+   let detectResult = req.device;
    let botResult = req.bot;
-   res.send(JSON.stringify({useragent, deviceResult, botResult, isBot: hasBotResult(botResult)}));
+   res.send(JSON.stringify({useragent, detectResult, botResult, isBot: hasBotResult(botResult)}));
 })
 
 app.listen(port, () => {

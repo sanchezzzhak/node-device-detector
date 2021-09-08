@@ -31,7 +31,10 @@ Install
 ```
 npm install node-device-detector --save
 ```
-
+or 
+```
+yarn add node-device-detector
+```
 Usage
 -
 ```js
@@ -391,9 +394,13 @@ Others <a name="others"></a>
 -
 [[top]](#top)
 
-* [Micro service detect device](docs/MICROSERVICE.MD) from framework [moleculer js](http://moleculer.services)
-* [Example1 detect device in native server](docs/NATIVE_SERVER.MD)
-* [Example2 detect device in express.js](docs/EXPRESS_SERVER.MD)
+##### Examples
+* [detect device in native server](docs/NATIVE_SERVER.MD)
+* [detect device in express.js](docs/EXPRESS_SERVER.MD)
+* [detect device in moleculer.js](docs/MICROSERVICE.MD)
+* [detect device in uws.js](docs/UWS_SERVER.MD)
+
+<a name="brands-list"></a>
 
 ##### Support detect brands list (1070):
 

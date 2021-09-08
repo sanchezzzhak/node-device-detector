@@ -1,7 +1,6 @@
-Micro service  from framework [moleculer js](http://moleculer.services)
+Use in the moleculer.js server
 -
-
-## uses
+framework [moleculer.js](http://moleculer.services)
 
 ```
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
@@ -14,14 +13,11 @@ const deviceData = await this.broker.call("device-detector.device", {
 
 this.broker.call("device-detector.device", {
   userAgent: userAgent
-}).then( deviceData => {
+}).then(deviceData => {
 
 })
 
-
 ```
-
-
 ## source: service & mixin
 
 * create service, file `services/device-detectror.service.js`
@@ -85,9 +81,9 @@ class DeviceDetectorService extends Service {
 	
 	if (!detectData) {
 	  if(this.#detectFull){
-		detectData= this.detectFull(userAgent);
+		detectData = this.detectFull(userAgent);
 	  } else {
-		detectData= this.detectLite(userAgent);
+		detectData = this.detectLite(userAgent);
 	  }
 	}
 	
