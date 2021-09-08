@@ -1885,11 +1885,11 @@ archos:
 
 arian space:
   100 st1004pg: '->100'
-  100: ''
-  70: ''
+  100: 'DS=10.1;RS=1024x600;RM=512;OS=Android 7.0;SM=2;SZ=250x159x10;WT=508;CP=330;'
+  70: 'DS=7.0;RS=1024x600;RM=512;OS=Android 5.1;SZ=191x110x10;WT=260;CP=331;'
   71 st7002pg: '->71'
-  71: ''
-  80: ''
+  71: 'DS=7.1;RS=1024x600;RM=512;OS=Android 7.0;SM=2;SZ=191x110x10;WT=260;CP=330;'
+  80: 'DS=8;RS=1024x600;RM=512;OS=Android 7.0;SM=2;SZ=208x123x10;WT=312;CP=287;'
 
 ark:
   benefit-i1: '->benefit i1'

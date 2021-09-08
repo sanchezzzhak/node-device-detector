@@ -2202,3 +2202,17 @@ cpu:
     clock_rate: 1200
     process: 28nm
     gpu_id: 3
+  330:
+    name: Spreadtrum SC7731C
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
+  331:
+    name: Rockchip RK3128
+    type: ARM
+    cores: 4
+    clock_rate: 1200
+    process: 40nm
+    gpu_id: 1
