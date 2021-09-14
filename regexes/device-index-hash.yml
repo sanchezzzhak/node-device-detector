@@ -8462,6 +8462,7 @@ za409:
   - Zonda
 zopo zp998:
   - Zopo
+  - Xiaomi
 zp998:
   - Zopo
 zopo_c2_mod:
@@ -19669,6 +19670,70 @@ bv6800pro_ru:
   - Blackview
 lgm-x800l:
   - LG
+cph2269:
+  - OPPO
+tecno ka7o:
+  - Tecno Mobile
+tecno rb6s:
+  - Tecno Mobile
+tecno sa2s:
+  - Tecno Mobile
+vivo one plus 2019:
+  - Blu
+  - Vivo
+vivo xl4:
+  - Blu
+  - Vivo
+vivo xi:
+  - Blu
+  - Vivo
+vivo xi plus:
+  - Blu
+  - Vivo
+xrover c:
+  - Leagoo
+xrover:
+  - Leagoo
+xt1676:
+  - Motorola
+xt1039:
+  - Motorola
+bluboo_s8_plus:
+  - Bluboo
+sailfish:
+  - Google
+aosp on taimen:
+  - Google
+aosp on blueline:
+  - Google
+a33w:
+  - OPPO
+so-02d:
+  - Sony
+y19(eu):
+  - Xgody
+amoi_n89:
+  - Amoi
+cheetah:
+  - CUBOT
+harrier from ee:
+  - EE
+z2_pro:
+  - UMIDIGI
+ginzzu rs7d:
+  - Ginzzu
+ginzzu rs91d:
+  - Ginzzu
+ginzzu r8 dual:
+  - Ginzzu
+qumo quest 574:
+  - Qumo
+qumo quest 530:
+  - Qumo
+z250:
+  - DEXP
+ac50bhe:
+  - Archos
 bravis_a506:
   - Bravis
 bravis delta:
@@ -32293,6 +32358,28 @@ lenovo tb-7304i:
   - Lenovo
 lenovo tb-7304n:
   - Lenovo
+pmt3151_3g_d_cis:
+  - Prestigio
+pmt3231_4g_d_ru:
+  - Prestigio
+pmt4231_4g_d_eea:
+  - Prestigio
+pmt4231_4g_d_ru:
+  - Prestigio
+pmt4238_4g_ru:
+  - Prestigio
+x_style_tab_a104:
+  - Sigma
+x_style_tab_a83:
+  - Sigma
+a1-840:
+  - Acer
+zt-97003g:
+  - ZIFRO
+nettab_space_3g:
+  - IconBIT
+megafon v9+:
+  - MegaFon
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -33298,6 +33385,12 @@ mts tv box 317:
   - MTC
 perfeo_pf_a4551:
   - Perfeo
+telia box:
+  - Telia
+s70cds:
+  - Canal Digital
+nexus player:
+  - Google
 bb2 pro:
   - Mecool
 kii pro:
