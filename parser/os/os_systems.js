@@ -3,7 +3,7 @@ module.exports = {
   'AIX': 'AIX',
   'AND': 'Android',
   'AMG': 'AmigaOS',
-  'ATV': 'Apple TV',
+  'ATV': 'tvOS',
   'ARL': 'Arch Linux',
   'BTR': 'BackTrack',
   'SBA': 'Bada',

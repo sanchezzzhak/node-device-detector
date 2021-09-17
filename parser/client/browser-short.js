@@ -332,6 +332,6 @@ module.exports = {
   'ZV': 'Zvu',
 
 // detected browsers in older versions
-// 'IA': 'Iceape',  =>  pim
-// 'SM': 'SeaMonkey',  =>  pim
+// 'IA': 'Iceape',  :  pim
+// 'SM': 'SeaMonkey',  :  pim
 };
