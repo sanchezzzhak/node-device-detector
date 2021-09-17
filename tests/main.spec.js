@@ -194,7 +194,6 @@ describe('tests clients', function () {
             delete result.client.short_name;
           }
 
-          console.log(fixture.client, result.client)
           if(fixture.client && fixture.client.family === null) {
             fixture.client.family = '';
           }
