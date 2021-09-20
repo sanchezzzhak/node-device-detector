@@ -306,6 +306,8 @@ neosr620:
   - Apple
 6025h_eea:
   - Alcatel
+bmh-tn10:
+  - Huawei
 shtrih-smartpos-f2:
   - Shtrikh-M
 wisenet5:
@@ -1048,6 +1050,8 @@ redmi note 4x:
   - Xiaomi
 mi note 2:
   - Xiaomi
+xig02:
+  - Xiaomi
 'ipod5,1':
   - Apple
 hmt390q:
@@ -1058,6 +1062,28 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -19770,6 +19796,110 @@ cp-j55aw:
   - Covia
 cp-j55ax:
   - Covia
+coral 4:
+  - Smart
+quantum_2_400s:
+  - GOCLEVER
+quantum_2_500_rugged:
+  - GOCLEVER
+quantum_2_550:
+  - GOCLEVER
+quantum_5_500_rugged:
+  - GOCLEVER
+quantum_3_550_rugged:
+  - GOCLEVER
+quantum_3_500_lite:
+  - GOCLEVER
+quantum_3_500:
+  - GOCLEVER
+rome x:
+  - UMIDIGI
+stylo f1:
+  - Stylo
+stylo sv61 vector+:
+  - Stylo
+stylo_s9_topaz:
+  - Stylo
+stylo sm61 magic+:
+  - Stylo
+s57_azure:
+  - Stylo
+s57_alure:
+  - Stylo
+glaze:
+  - Hurricane
+rebel:
+  - Mobicel
+regal r2:
+  - Gresso
+riviera u963:
+  - Riviera
+hm-i559-fl:
+  - Haier
+hm-i560-fl:
+  - Haier
+hm-g553-fl:
+  - Haier
+hm-n701-fl:
+  - Haier
+5028d:
+  - Alcatel
+5029a:
+  - Alcatel
+5030d:
+  - Alcatel
+5030d_eea:
+  - Alcatel
+5030u:
+  - Alcatel
+5030e_ru:
+  - Alcatel
+5030f_eea:
+  - Alcatel
+5061u:
+  - Alcatel
+vyper pro:
+  - Leader Phone
+lp daisy:
+  - Leader Phone
+machfive:
+  - Karbonn
+machone:
+  - Karbonn
+machoneplus:
+  - Karbonn
+powerfive:
+  - Highscreen
+starmobile up max:
+  - Starmobile
+grand max:
+  - Blu
+grand mini:
+  - Blu
+grand2c:
+  - Lava
+gome 2017x82a:
+  - Gome
+ultra_vision_plus:
+  - Hyundai
+cameleon c5:
+  - Accent
+c8finger:
+  - F2 Mobile
+xq-bt44:
+  - Sony
+xq-bc72:
+  - Sony
+asus_i005d:
+  - Asus
+kyv35:
+  - Kyocera
+j9150:
+  - Sony
+class s300 lte:
+  - Benzo
+exmart k1:
+  - Exmart
 bravis_a506:
   - Bravis
 bravis delta:
@@ -27315,28 +27445,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -32478,6 +32586,34 @@ btouch7_plus:
   - Bundy
 compumax blue:
   - Digiland
+quantum_2_1010_mobile:
+  - GOCLEVER
+quantum_2_700_mobile:
+  - GOCLEVER
+quantum_2_960_mobile:
+  - GOCLEVER
+hl810g:
+  - Haier
+kj-ob02:
+  - Kanji
+kj-gochi:
+  - Kanji
+kj-alfark:
+  - Kanji
+next1015bap:
+  - NextBook
+supernova is3g:
+  - Leotec
+xintroni10.1:
+  - TrekStor
+ct735_16gb:
+  - Carrefour
+kftrpwi:
+  - Amazon
+kftrwi:
+  - Amazon
+express3:
+  - Sico
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -33493,6 +33629,10 @@ chromecast:
   - Google
 iconbit stick:
   - IconBIT
+kj-smart4k:
+  - Kanji
+gi uni2:
+  - Galaxy Innovations
 bb2 pro:
   - Mecool
 kii pro:

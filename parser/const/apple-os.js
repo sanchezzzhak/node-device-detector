@@ -1,5 +1,5 @@
 module.exports = [
-  'Apple TV',
+  'tvOS',
   'iOS',
   'Mac',
   'iPadOS',

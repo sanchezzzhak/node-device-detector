@@ -32,6 +32,7 @@ module.exports = {
   'HPX': 'HP-UX',
   'HAI': 'Haiku OS',
   'IPA': 'iPadOS',
+  'HAR': 'HarmonyOS',
   'HAS': 'HasCodingOS',
   'IRI': 'IRIX',
   'INF': 'Inferno',
