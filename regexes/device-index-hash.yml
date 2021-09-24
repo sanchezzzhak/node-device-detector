@@ -11604,6 +11604,7 @@ passion-plus:
   - Trifone
 passion_pro:
   - Trifone
+  - Qnet Mobile
 plum z407:
   - Plum
 plum z516:
@@ -17217,6 +17218,10 @@ hisense infinity e8:
   - Hisense
 gionee f205 lite:
   - Gionee
+yeah_go:
+  - Timovi
+sm-a300f:
+  - Samsung
 pluto__26:
   - Majestic
 pluto_26n:
@@ -19900,6 +19905,88 @@ class s300 lte:
   - Benzo
 exmart k1:
   - Exmart
+matter:
+  - Inco
+milky_way_m2:
+  - iMars
+minerva:
+  - Qubo
+mito_a37_z1plus:
+  - Mito
+mito_a36_w1:
+  - Mito
+minerva_32gb:
+  - Qubo
+mito a77:
+  - Mito
+mito a900:
+  - Mito
+dns s-4003:
+  - DNS
+himax polymer x:
+  - HiMax
+himax polymer:
+  - HiMax
+himax_pure_3s:
+  - HiMax
+himax pure 3s:
+  - HiMax
+hymi 5s plus:
+  - Hyundai
+juno q6:
+  - Masstel
+juno q7:
+  - Masstel
+juno_q5:
+  - Masstel
+p8_3d:
+  - Elephone
+p8_max:
+  - Elephone
+lte_lima:
+  - Telefunken
+lp_veyron:
+  - Leader Phone
+lp_prado:
+  - Leader Phone
+luna_ii:
+  - MyPhone
+luna g55:
+  - Luna
+lte mike:
+  - Telefunken
+lavax10:
+  - Lava
+passion p1:
+  - Qnet Mobile
+passion p2:
+  - Qnet Mobile
+passion p3:
+  - Qnet Mobile
+passion p5:
+  - Qnet Mobile
+passion p6:
+  - Qnet Mobile
+hynex plus:
+  - Qnet Mobile
+hynex plus 2:
+  - Qnet Mobile
+stark k1:
+  - Qnet Mobile
+hynex h3:
+  - Qnet Mobile
+hynex h3+:
+  - Qnet Mobile
+hynex h6+:
+  - Qnet Mobile
+hynex h5+:
+  - Qnet Mobile
+hynex h5:
+  - Qnet Mobile
+levin v1:
+  - Qnet Mobile
+levin v2:
+  - Qnet Mobile
 bravis_a506:
   - Bravis
 bravis delta:
@@ -32614,6 +32701,49 @@ kftrwi:
   - Amazon
 express3:
   - Sico
+zippers tab 10i 3g:
+  - Vexia
+maven_g10:
+  - Odys
+lavie tab e 7sd1:
+  - NEC
+xperia tablet z lte:
+  - Sony
+airbook pro 8s:
+  - AIRON
+mito t85:
+  - Mito
+mito t75:
+  - Mito
+mito_t81:
+  - Mito
+mito t61:
+  - Mito
+mito t59:
+  - Mito
+move_s201:
+  - Mymaga
+  - Krüger&Matz
+freeme x4 7:
+  - Lark
+freeme x4 7hd:
+  - Lark
+pace 10:
+  - Odys
+pace10:
+  - Odys
+pace_10_lte_v2:
+  - Odys
+pb1009:
+  - Packard Bell
+m10400:
+  - Packard Bell
+m10500:
+  - Packard Bell
+m7500:
+  - Packard Bell
+m7600-d:
+  - Packard Bell
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -33633,6 +33763,8 @@ kj-smart4k:
   - Kanji
 gi uni2:
   - Galaxy Innovations
+mito_3255:
+  - Mito
 bb2 pro:
   - Mecool
 kii pro:
