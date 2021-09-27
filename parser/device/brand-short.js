@@ -645,6 +645,7 @@ module.exports = {
   'N5': 'NOA',
   'N1': 'Noain',
   'N6': 'Nobby',
+  '57': 'Nubia',
   'JN': 'NOBUX',
   'NB': 'Noblex',
   'NK': 'Nokia',
@@ -1091,5 +1092,5 @@ module.exports = {
   'OW': 'öwn',
   // legacy brands, might be removed in future versions
   'WB': 'Web TV',
-  'XX': 'Unknown',
+  'XX': 'Unknown'
 };

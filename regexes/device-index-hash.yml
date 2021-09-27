@@ -1052,6 +1052,38 @@ mi note 2:
   - Xiaomi
 xig02:
   - Xiaomi
+m2101k7bl:
+  - Xiaomi
+sm-f711b:
+  - Samsung
+m2104k10ac:
+  - Xiaomi
+joyeuse:
+  - Xiaomi
+redmi note 10 pro:
+  - Xiaomi
+m2103k19c:
+  - Xiaomi
+infinix x693:
+  - Infinix
+m2103k19i:
+  - Xiaomi
+redmi note 9:
+  - Xiaomi
+redmi note 10:
+  - Xiaomi
+redmi note 10s:
+  - Xiaomi
+redmi note 10t:
+  - Xiaomi
+redmi note 10 5g:
+  - Xiaomi
+redmi note 9t:
+  - Xiaomi
+redmi note 8 (2021):
+  - Xiaomi
+sm-f926b:
+  - Samsung
 'ipod5,1':
   - Apple
 hmt390q:
@@ -6707,23 +6739,23 @@ startrail6:
 staraddict iii:
   - SFR
 nx601j:
-  - ZTE
+  - Nubia
 nx513j:
-  - ZTE
+  - Nubia
 nx595j:
-  - ZTE
+  - Nubia
 nx591j:
-  - ZTE
+  - Nubia
 nx563j:
-  - ZTE
+  - Nubia
 nx551j:
-  - ZTE
+  - Nubia
 nx523j_v1:
-  - ZTE
+  - Nubia
 nx531j:
-  - ZTE
+  - Nubia
 nx508j:
-  - ZTE
+  - Nubia
 'ipad5,2':
   - Apple
 'ipad5,1':
@@ -6731,13 +6763,13 @@ nx508j:
 'ipad5,4':
   - Apple
 nx506j:
-  - ZTE
+  - Nubia
 nx503a:
-  - ZTE
+  - Nubia
 nx40x:
-  - ZTE
+  - Nubia
 nx402:
-  - ZTE
+  - Nubia
 n9810:
   - ZTE
 n9560:
@@ -8846,47 +8878,47 @@ n818s:
 v8000_usa_cricket:
   - ZTE
 nx608j:
-  - ZTE
+  - Nubia
 nx617j:
-  - ZTE
+  - Nubia
 nx651j:
-  - ZTE
+  - Nubia
 nx609j:
-  - ZTE
+  - Nubia
 nx629j:
-  - ZTE
+  - Nubia
 nx659j:
-  - ZTE
+  - Nubia
 nx619j:
-  - ZTE
+  - Nubia
 nx612j:
-  - ZTE
+  - Nubia
 nubia z11 mini s:
-  - ZTE
+  - Nubia
 nx569h:
-  - ZTE
+  - Nubia
 nx569j:
-  - ZTE
+  - Nubia
 nx589j:
-  - ZTE
+  - Nubia
 nx606j:
-  - ZTE
+  - Nubia
 nx611j:
-  - ZTE
+  - Nubia
 nx616j:
-  - ZTE
+  - Nubia
 nx627j:
-  - ZTE
+  - Nubia
 nx406e:
-  - ZTE
+  - Nubia
 nx404h:
-  - ZTE
+  - Nubia
 nubia z9 max:
-  - ZTE
+  - Nubia
 nx512j:
-  - ZTE
+  - Nubia
 nubia z9 mini:
-  - ZTE
+  - Nubia
 p545:
   - ZTE
 z5031o:
@@ -12640,9 +12672,9 @@ bravis a554:
 bravis biz:
   - Bravis
 nx505j:
-  - ZTE
+  - Nubia
 nx507j:
-  - ZTE
+  - Nubia
 frl-l23:
   - Huawei
 s20 ultra apex 2021:
@@ -13205,7 +13237,7 @@ vorke z7:
 'neo [reloaded]':
   - NuAns
 nubia z11 mini:
-  - ZTE
+  - Nubia
 nv510wac:
   - Eltex
 nv510wb:
@@ -16804,7 +16836,7 @@ s5140:
 s7:
   - Smartfren
 nx529jq:
-  - ZTE
+  - Nubia
 v210101:
   - Vargo
 ark ukozi u5:
@@ -16911,7 +16943,7 @@ mi a3:
 moto c:
   - Motorola
 nx575j:
-  - ZTE
+  - Nubia
 lgl58vl:
   - LG
 impress_tor:
@@ -17222,6 +17254,8 @@ yeah_go:
   - Timovi
 sm-a300f:
   - Samsung
+2106118c:
+  - Xiaomi
 pluto__26:
   - Majestic
 pluto_26n:
@@ -19015,23 +19049,23 @@ zte n900d:
 zte_n9511:
   - ZTE
 nx573j:
-  - ZTE
+  - Nubia
 nx907j:
-  - ZTE
+  - Nubia
 nx541j:
-  - ZTE
+  - Nubia
 nx597j:
-  - ZTE
+  - Nubia
 nx529j:
-  - ZTE
+  - Nubia
 nx403a:
-  - ZTE
+  - Nubia
 nx510j:
-  - ZTE
+  - Nubia
 nx521j:
-  - ZTE
+  - Nubia
 nx511j:
-  - ZTE
+  - Nubia
 z820:
   - ZTE
 z851m:
@@ -19987,6 +20021,190 @@ levin v1:
   - Qnet Mobile
 levin v2:
   - Qnet Mobile
+sm-a037f:
+  - Samsung
+21061119dg:
+  - Xiaomi
+rmx3363:
+  - Realme
+tecno bd2p:
+  - Tecno Mobile
+m2012k10c:
+  - Xiaomi
+nokia xr20:
+  - Nokia
+21061119ag:
+  - Xiaomi
+tecno kf6j:
+  - Tecno Mobile
+rmx2156:
+  - Realme
+sm-a225f:
+  - Samsung
+sm-a127f:
+  - Samsung
+moto g(50):
+  - Motorola
+zte blade a31ru:
+  - ZTE
+zte blade a51 lite ru:
+  - ZTE
+zte blade a51ru:
+  - ZTE
+zte blade a51:
+  - ZTE
+legend max:
+  - Mobicel
+v2050:
+  - Vivo
+zte blade a31:
+  - ZTE
+rmx3161:
+  - Realme
+rmx3366:
+  - Realme
+cph2235:
+  - OPPO
+wp13:
+  - Oukitel
+kingkong 7:
+  - CUBOT
+armor 11t 5g:
+  - Ulefone
+armor 8 pro:
+  - Ulefone
+de2117:
+  - OnePlus
+dn2101:
+  - OnePlus
+bison pro:
+  - UMIDIGI
+dn2103:
+  - OnePlus
+i2012:
+  - Vivo
+m2101k9ai:
+  - Xiaomi
+t671f:
+  - TCL
+sm-g9860:
+  - Samsung
+redmi 9:
+  - Xiaomi
+s97pro:
+  - Doogee
+eb2101:
+  - OnePlus
+eb2103:
+  - OnePlus
+t766u:
+  - TCL
+t775h:
+  - TCL
+zte a7030:
+  - ZTE
+zte a2022pg:
+  - ZTE
+zte 8030ru:
+  - ZTE
+power armor 13:
+  - Ulefone
+tecno le7:
+  - Tecno Mobile
+tecno kf6k:
+  - Tecno Mobile
+hisense e50 lite:
+  - Hisense
+hisense e50:
+  - Hisense
+hisense infinity h50:
+  - Hisense
+hisense infinity h50 lite:
+  - Hisense
+live 9:
+  - Krüger&Matz
+flow 9:
+  - Krüger&Matz
+n40pro:
+  - Doogee
+x96pro:
+  - Doogee
+w-v745-eea:
+  - Wiko
+w-k610-eea:
+  - Wiko
+v2043_21:
+  - Vivo
+infinix x689c:
+  - Infinix
+moto g(100):
+  - Motorola
+infinix x659b:
+  - Infinix
+infinix x689:
+  - Infinix
+infinix x689b:
+  - Infinix
+infinix x689d:
+  - Infinix
+m2012k11ai:
+  - Xiaomi
+mi 11 lite:
+  - Xiaomi
+mi cc9 pro premium edition:
+  - Xiaomi
+m2102k1ac:
+  - Xiaomi
+moto g (5s):
+  - Motorola
+moto z2:
+  - Motorola
+sm-m625f:
+  - Samsung
+sm-g988w:
+  - Samsung
+sm-g973n:
+  - Samsung
+sm-g9730:
+  - Samsung
+sm-g780g:
+  - Samsung
+a440:
+  - DEXP
+sm-a528b:
+  - Samsung
+sm-a526b:
+  - Samsung
+sm-a5260:
+  - Samsung
+sm-a525m:
+  - Samsung
+sm-a515u1:
+  - Samsung
+galahad:
+  - Xiaomi
+mi 11i:
+  - Xiaomi
+mi 11:
+  - Xiaomi
+hmd global nokia 2.3:
+  - Nokia
+bq-6051g:
+  - bq
+sm-g981n:
+  - Samsung
+sm-g973u1:
+  - Samsung
+sm-g973u:
+  - Samsung
+sm-g525f:
+  - Samsung
+sm-f700n:
+  - Samsung
+sm-f700f:
+  - Samsung
+nx669j:
+  - Nubia
 bravis_a506:
   - Bravis
 bravis delta:
@@ -32744,6 +32962,24 @@ m7500:
   - Packard Bell
 m7600-d:
   - Packard Bell
+sm-t225:
+  - Samsung
+sm-t220:
+  - Samsung
+21051182g:
+  - Xiaomi
+lenovo tb-x6c6x:
+  - Lenovo
+iplay_40h:
+  - AllDocube
+sm-t735:
+  - Samsung
+sm-t515n:
+  - Samsung
+tab x8:
+  - Vertex
+m77qf6:
+  - Mecer
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
