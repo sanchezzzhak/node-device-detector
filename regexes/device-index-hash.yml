@@ -1084,6 +1084,10 @@ redmi note 8 (2021):
   - Xiaomi
 sm-f926b:
   - Samsung
+sm-n986u:
+  - Samsung
+sm-n976b:
+  - Samsung
 'ipod5,1':
   - Apple
 hmt390q:
@@ -20205,6 +20209,230 @@ sm-f700f:
   - Samsung
 nx669j:
   - Nubia
+tecno sc7s:
+  - Tecno Mobile
+tecno rb7s:
+  - Tecno Mobile
+tecno lb6:
+  - Tecno Mobile
+le_connect:
+  - Logicom
+tecno kc6s:
+  - Tecno Mobile
+ithemba:
+  - Stylo
+nubia m2:
+  - Nubia
+i7i 2020:
+  - QMobile
+s56 mist:
+  - Stylo
+switch go:
+  - Mobicel
+s53_stark:
+  - Stylo
+ack1010:
+  - DIXON
+kicka 5 plus 4g:
+  - Vodacom
+  - MobiWire
+m2010j19sl:
+  - Xiaomi
+magno c1:
+  - Zuum
+tecno lc7s:
+  - Tecno Mobile
+tecno kd7s:
+  - Tecno Mobile
+tecno cd6s:
+  - Tecno Mobile
+wp10:
+  - Oukitel
+wp9:
+  - Oukitel
+xt2125-4:
+  - Motorola
+asus_z010da:
+  - Asus
+asus_z00udb:
+  - Asus
+le2127:
+  - OnePlus
+le2117:
+  - OnePlus
+i1928:
+  - Vivo
+itel w5006x:
+  - iTel
+pulse_1:
+  - Mobicel
+s86pro:
+  - Doogee
+s88plus:
+  - Doogee
+s62 pro:
+  - Cat
+s40_life:
+  - Stylo
+s30 ultra apex 2021:
+  - iHunt
+s21 ultra 4g 2021_eea:
+  - iHunt
+v2065:
+  - Vivo
+motorola edge 20 lite:
+  - Motorola
+ht3_pro:
+  - Homtom
+ht3 pro:
+  - Homtom
+xq-ad52:
+  - Sony
+x19 s:
+  - CUBOT
+x19:
+  - CUBOT
+iql626:
+  - MLS
+k7_pro:
+  - Oukitel
+k3_pro:
+  - Oukitel
+k13_pro:
+  - Oukitel
+mi note 3:
+  - Xiaomi
+life_2:
+  - Stylo
+venus v7:
+  - Vestel
+u4001:
+  - Unonu
+vf550:
+  - Bluebird
+via_p3:
+  - Casper
+trendy 2:
+  - Mobicel
+vivo xi+:
+  - Blu
+  - Vivo
+vivo z1i:
+  - Vivo
+nokia x71:
+  - Nokia
+move9:
+  - Krüger&Matz
+mara z:
+  - Mara
+mara phones z1:
+  - Mara
+mara phones x1:
+  - Mara
+mara s:
+  - Mara
+moto z (2):
+  - Motorola
+ta-1038:
+  - Nokia
+ta-1033:
+  - Nokia
+ta-1028:
+  - Nokia
+ta-1025:
+  - Nokia
+ta-1020:
+  - Nokia
+myphone_city_2:
+  - MyPhone
+myphone_fun_6:
+  - MyPhone
+nokia c1 plus:
+  - Nokia
+zs672ks:
+  - Asus
+lenovo pb1-750m:
+  - Lenovo
+cp3706as:
+  - Coolpad
+cp3669as:
+  - Coolpad
+c6 2020:
+  - Blu
+i3213:
+  - Sony
+nubia n11:
+  - Nubia
+cph2271:
+  - OPPO
+tecno cc7s:
+  - Tecno Mobile
+hisense infinity e30 lite:
+  - Hisense
+c note 2:
+  - UMIDIGI
+samsung sm-m426b:
+  - Samsung
+nx549j:
+  - Nubia
+sm-a102u1:
+  - Samsung
+tecno w2:
+  - Tecno Mobile
+lenovo l78121:
+  - Lenovo
+sm-g988u:
+  - Samsung
+sm-m022g:
+  - Samsung
+sm-a125u:
+  - Samsung
+m2012k11i:
+  - Xiaomi
+zte 8030:
+  - ZTE
+wkg-lx9:
+  - Huawei
+lm-v500:
+  - LG
+sm-a015g:
+  - Samsung
+v2069:
+  - Vivo
+mi 5x:
+  - Xiaomi
+sm-a226b:
+  - Samsung
+jsc-an00:
+  - Huawei
+sm-a307gn:
+  - Samsung
+rocket ii:
+  - Zuum
+sm-j810f:
+  - Samsung
+rio_ss:
+  - Mobicel
+oppo a79kt:
+  - OPPO
+nomi i6030:
+  - Nomi
+nomi_i5511:
+  - Nomi
+lg-us701:
+  - LG
+lgm-x401l:
+  - LG
+lgm-k121l:
+  - LG
+lgm-k121k:
+  - LG
+lgm-g600k:
+  - LG
+lgms210:
+  - LG
+lg-f720l:
+  - LG
 bravis_a506:
   - Bravis
 bravis delta:
@@ -32980,6 +33208,59 @@ tab x8:
   - Vertex
 m77qf6:
   - Mecer
+km1069:
+  - Krüger&Matz
+m40_row:
+  - Teclast
+m40(n9h3):
+  - Teclast
+hipad pro:
+  - Chuwi
+pixus_sprint_2_16:
+  - Pixus
+tel-1014giq:
+  - Telefunken
+t737pro:
+  - Navitel
+t10lte:
+  - Winnovo
+n180i:
+  - DEXP
+n380i:
+  - DEXP
+lenovo tb-7305x:
+  - Lenovo
+dl1036:
+  - Digiland
+dby-w09:
+  - Huawei
+i10_eea:
+  - BMAX
+inoipad mini 2+32 wi-fi+3g:
+  - Inoi
+inoipad 2+32 wi-fi+3g:
+  - Inoi
+x_style_tab_a801:
+  - Sigma
+fever_plus_h:
+  - Mobicel
+  - Wiko
+m40se_eea:
+  - Teclast
+p20hd_row:
+  - Teclast
+nomi_c101030:
+  - Nomi
+nomi_c101012:
+  - Nomi
+nomi_c070030:
+  - Nomi
+nomi_c070012:
+  - Nomi
+nomi c070011:
+  - Nomi
+lg-v520:
+  - LG
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -34001,6 +34282,14 @@ gi uni2:
   - Galaxy Innovations
 mito_3255:
   - Mito
+tx6s:
+  - Tanix
+  - Pantech
+tx9s:
+  - Tanix
+  - Pantech
+gtx-r10i pro:
+  - Geotex
 bb2 pro:
   - Mecool
 kii pro:

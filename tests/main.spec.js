@@ -402,7 +402,7 @@ describe('tests oss', function () {
   });
 });
 
-describe('tests buildByMatch replaces', function () {
+describe('tests build by match replaces', function () {
   it('replace count', () => {
     let test = 'Device.set.0.1';
     let item = '$1-$2-$3-$4';
@@ -412,7 +412,6 @@ describe('tests buildByMatch replaces', function () {
     let result = parser.buildByMatch(item, matches);
     expect(result).to.equal('Device-set-0-1');
   })
-
 });
 
 describe('tests version truncate', function () {
