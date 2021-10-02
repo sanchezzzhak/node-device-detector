@@ -461,7 +461,15 @@ class DeviceDetector {
     }
     return [];
   }
-  
+
+  /**
+   * @param {string} userAgent
+   * @returns {ResultDeviceCode}
+   */
+  parseDeviceCode(userAgent) {
+    return this.getParseAliasDevice().parse(userAgent);
+  }
+
   /**
    * parse device
    * @param {string} userAgent
@@ -472,11 +480,11 @@ class DeviceDetector {
     let deviceCode = '';
     
     if (!this.discardDeviceIndexes) {
-      let alias = this.getParseAliasDevice().parse(userAgent);
+      let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
       brandIndexes = this.getBrandsByDeviceCode(deviceCode);
     } else if (!this.discardDeviceAliasCode) {
-      let alias = this.getParseAliasDevice().parse(userAgent);
+      let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
     }
     
