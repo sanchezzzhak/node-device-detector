@@ -102,7 +102,7 @@ const isDesktop = (result) => {
 /**
  * is os android
  * @param result
- * @returns {null|""|boolean}
+ * @returns {boolean}
  */
 const isAndroid = (result) => {
   return result.os && result.os.family === 'Android';
@@ -111,7 +111,7 @@ const isAndroid = (result) => {
 /**
  * is os ios
  * @param result
- * @returns {null|""|boolean}
+ * @returns {boolean}
  */
 const isIOS = (result) => {
   return result.os && result.os.family === 'iOS';
