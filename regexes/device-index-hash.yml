@@ -1098,28 +1098,6 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -27978,6 +27956,28 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
