@@ -3053,6 +3053,8 @@ huawei:
   p40 lite e nfc: 'RE=2020.03;SZ=76.1x159.8x8.1;WT=176;DS=6.39;RS=720x1560;OI=1;OV=9.0;CP=37;RM=4096;'
   p40 lite e: 'RE=2020.03;SZ=76.1x159.8x8.1;WT=176;DS=6.39;RS=720x1560;OI=1;OV=9.0;CP=37;RM=4096;'
   ascend d1: 'DS=4.5;RS=720x1280;SZ=64x129x8.9;WT=132;RE=2012.07;OI=1;OV=4;RM=1024;CP=29;'
+  p40 lite: 'RE=2020.02;SZ=76.3x159.2x8.7;WT=183;DS=6.4;RS=1080x2310;OS=Android 10;CP=57;RM=6144;'
+  jny-lx1: '->p40 lite'
   # ascend d1: 'DS=4.5;RS=720x1280;SZ=64x129x8.9;WT=;RE=2012.02;RM=1024;CP=29;OI=1;OV=4;'
   z100-tl10: '->ascend d3'
   z100-cl00: '->ascend d3'
@@ -3633,6 +3635,7 @@ huawei:
   honor 2: 'DS=4.5;RS=720x1280;SZ=67.5x134x10.5;WT=145;RE=2012.09;RM=2048;CP=;OI=1;OV=4;SM=1;'
   bmh-an10: '->honor 30'
   bmh-an20: '->honor 30'
+  bmh-tn10: '->honor 30'
   # todo rename mxw-an00 to honor 30 lite
   mxw-an00: '->honor 30'
   honor 30: 'DS=6.53;RS=1080x2400;SZ=160.3x74.2x8.1;WT=185;RE=2020.04;RM=6144;CP=53;OI=1;OV=10;SM=2;'
@@ -5413,6 +5416,8 @@ vivo:
   x5pro v: 'RE=2015.07;SZ=73.45x147.9x6.44;WT=147;DS=5.2;RS=1080x1920;OI=1;OV=5.0;CP=22;RM=2048;'
   y913: 'RE=2014.11;RS=480x854;DS=4.5;CP=17;RM=1024;OI=1;OV=4.4.4;SZ=65.85x130.4x8.6;WT=142;SM=2;'
   y51l: 'DS=5;RS=540x960;SZ=71.7x143.8x7.52;WT=157;RE=2016.01;OI=1;OV=5.0.2;RM=1024;CP=17;SM=2;'
+  1916: '->u10'
+  u10: 'RE=2019.09;SZ=76.8x159.4x8.9;WT=190.5;DS=6.35;RS=720x1544;OI=1;OV=9.0;CP=283;RM=3072;'
 
 mobicel:
   r7: 'DS=5.7;RS=480x101;SZ=71x146x9.6;WT=167;RE=2020.04;RM=1024;CP=4;OI=1;OV=8.1;SM=2'
