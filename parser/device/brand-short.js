@@ -761,6 +761,7 @@ module.exports = {
   '0R': 'Raspberry',
   'R9': 'Ravoz',
   'RZ': 'Razer',
+  '95': 'Rakuten',
   'RC': 'RCA Tablets',
   '2R': 'Reach',
   'RB': 'Readboy',
