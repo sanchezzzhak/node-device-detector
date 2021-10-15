@@ -38,12 +38,18 @@
 # Windows
 - regex: 'Windows (?:Mobile|Phone) (?:[\d\.]+;{1,2}) Android (?:[\d\.]+;{1,2})(?: WebView/[0-9].0;)?(?:[^;]+); ([^;]+)\) AppleWebKit'
   name: '$1'
+
+# Android Tenta
+- regex: 'Android.+; ([^;]+); U; .+[)].+Tenta/'
+  name: '$1'
 # Android AppleWebKit
 - regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:[a-z]{2}(?:[_-][a-z]{2})?;)?(?: +)?([^;]+); Android/.+Release/'
   name: '$1'
 - regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:[^;]+;)?(?: +)?([^/;]+)(?:/(?:[\d.]+) Android/|(?:/.+)?[)] Linux/| Release/.+AppleWebKit.+Build/)'
   name: '$1'
-- regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:[^;]+;)?(?: +)?([^/;]+)(Release/.+Build ?/| Build ?/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit|/.+CTC/)'
+- regex: '[; ]([^;]+); HMSCore [\d\.]+; GMSCore [\d\.]+'
+  name: '$1'
+- regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:[^;]+;)?(?: +)?([^/;]+)(?:Release/.+Build ?/| Build ?/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit|/.+CTC/|; GMSCore)'
   name: '$1'
 - regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:arm(?:_.+)?;|[a-z]{2}(?:[_-][a-z]{2})?;)?(?: +)?(.*?)(?:(?:; smart-tv)?[)] ?ShieldExperience|;? Build ?/|\)? ?AppleWebKit)'
   name: '$1'

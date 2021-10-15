@@ -1098,28 +1098,6 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -10731,7 +10709,7 @@ sh-m16:
 hipad x:
   - Chuwi
 zr01:
-  - ZTE
+  - Rakuten
 f-04h:
   - Fujitsu
 pc-te510bal:
@@ -20433,6 +20411,132 @@ lgms210:
   - LG
 lg-f720l:
   - LG
+xq-bt52:
+  - Sony
+archos 55 helium:
+  - Archos
+bv9500plus:
+  - Blackview
+sm-m215g:
+  - Samsung
+n5501l:
+  - NUU Mobile
+sm-j810g:
+  - Samsung
+sov42-u:
+  - Sony
+sm-j530k:
+  - Samsung
+sm-j530s:
+  - Samsung
+sm-j530l:
+  - Samsung
+c18_pro:
+  - Oukitel
+cp3648at:
+  - Coolpad
+lm-q815l:
+  - LG
+lm-q815k:
+  - LG
+zte a7020ru:
+  - ZTE
+ale-l02:
+  - Huawei
+3917jr:
+  - Rakuten
+p710:
+  - Rakuten
+c330:
+  - Rakuten
+g8142:
+  - Sony
+coolpad e501_eu:
+  - Coolpad
+t766h_ru:
+  - TCL
+zte a2020ru pro:
+  - ZTE
+coolpad e502:
+  - Coolpad
+vox v40 3g vt4055mg:
+  - Digma
+clik plus:
+  - Mobicel
+zte a2121e:
+  - ZTE
+wp12 pro:
+  - Oukitel
+jat-al00:
+  - Huawei
+ixion ms550:
+  - DEXP
+intex cloud glory n:
+  - Intex
+santin v9 pro:
+  - Santin
+santin d:
+  - Santin
+santin classone:
+  - Santin
+zte blade v7 plus:
+  - ZTE
+huawei y560-l01:
+  - Huawei
+p760:
+  - S-TELL
+x-treme_pq20:
+  - Sigma
+x-treme_pq37:
+  - Sigma
+bv9600e:
+  - Blackview
+x-treme_pq36:
+  - Sigma
+vivo 1916:
+  - Vivo
+noa vivo:
+  - NOA
+itel w6004:
+  - iTel
+zte 9030:
+  - ZTE
+zte a2021e:
+  - ZTE
+fs8014:
+  - Sharp
+psp7572duo:
+  - Prestigio
+htc_e9pw:
+  - HTC
+le2111:
+  - OnePlus
+w-v750bn-eea:
+  - Wiko
+h8116:
+  - Sony
+m6 mirror:
+  - Gionee
+mz-m1 e:
+  - Meizu
+mz-m3:
+  - Meizu
+mz-mx4:
+  - Meizu
+mz-m3 max:
+  - Meizu
+lenovo k5 pro:
+  - Lenovo
+sm-a260f:
+  - Samsung
+lg-f750k:
+  - LG
+ang-lx1:
+  - Huawei
+h3213:
+  - Sony
+ah9910:
+  - Lava
 bravis_a506:
   - Bravis
 bravis delta:
@@ -23386,8 +23490,6 @@ h30-t00:
 h30-t10:
   - Huawei
 hw-h30-c00:
-  - Huawei
-zh-cn) release/07.10.2014 browser/wap2.0 (:
   - Huawei
 honor h30-l01m:
   - Huawei
@@ -27978,6 +28080,28 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -33261,6 +33385,30 @@ nomi c070011:
   - Nomi
 lg-v520:
   - LG
+e170:
+  - DEXP
+e180:
+  - DEXP
+et-108-11a:
+  - Acer
+lenovo tb-x605fc:
+  - Lenovo
+contixo kt 1100gt 4g:
+  - Contixo
+bq-7055l:
+  - bq
+kon_tiki2:
+  - ONYX BOOX
+m17qf6_3g:
+  - Mecer
+lenovo tb-8704f:
+  - Lenovo
+rct6613w23p:
+  - RCA Tablets
+flylife connect 7.85 3g 2:
+  - Fly
+21051182c:
+  - Xiaomi
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -34290,6 +34438,8 @@ tx9s:
   - Pantech
 gtx-r10i pro:
   - Geotex
+gtking_at:
+  - Beelink
 bb2 pro:
   - Mecool
 kii pro:
