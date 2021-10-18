@@ -111,9 +111,9 @@ exports.hasDesktopFragment = function (userAgent) {
 };
 
 /**
- * @param options
- * @param propName
- * @param defaultValue
+ * @param {object} options
+ * @param {string }propName
+ * @param {*} defaultValue
  * @return {*|null}
  */
 exports.getPropertyValue = function (options, propName, defaultValue) {
