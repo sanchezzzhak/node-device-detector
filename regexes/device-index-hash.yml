@@ -1088,6 +1088,8 @@ sm-n986u:
   - Samsung
 sm-n976b:
   - Samsung
+m2011j18c:
+  - Xiaomi
 'ipod5,1':
   - Apple
 hmt390q:
@@ -15565,8 +15567,6 @@ poco x3:
   - POCO
 v2028:
   - Vivo
-ags3-w09:
-  - Huawei
 ang-an00:
   - Huawei
 artel t10:
@@ -20537,6 +20537,275 @@ h3213:
   - Sony
 ah9910:
   - Lava
+cdy-an95:
+  - Huawei
+oce-an10:
+  - Huawei
+zte v1000:
+  - ZTE
+dt2002c:
+  - Smartisan
+zte v1050:
+  - ZTE
+v2121a:
+  - Vivo
+vivo x20plus a:
+  - Vivo
+pdet10:
+  - OPPO
+vivo nex:
+  - Vivo
+peqm00:
+  - OPPO
+peym00:
+  - OPPO
+v2111a:
+  - Vivo
+sm-c9000:
+  - Samsung
+htc 2q55300:
+  - HTC
+l7620de:
+  - Xiaolajiao
+v2059a:
+  - Vivo
+konka 418:
+  - Konka
+pepm00:
+  - OPPO
+penm00:
+  - OPPO
+cdy-tn90:
+  - Huawei
+m2104k10i:
+  - POCO
+pexm00:
+  - OPPO
+nza-al00:
+  - Huawei
+brq-al00:
+  - Huawei
+bkl-tl10:
+  - Huawei
+brq-an00:
+  - Huawei
+ana-al00:
+  - Huawei
+meizu 18 pro:
+  - Meizu
+meizu 18:
+  - Meizu
+vivo v3max a:
+  - Vivo
+vivo v3max:
+  - Vivo
+vivo v3max l:
+  - Vivo
+vivo x21i:
+  - Vivo
+vivo x21ud a:
+  - Vivo
+vivo x21ud:
+  - Vivo
+vivo go:
+  - Blu
+  - Vivo
+vivo x9i:
+  - Vivo
+vivo x9s l:
+  - Vivo
+vivo x9s plus:
+  - Vivo
+vivo x9s plus l:
+  - Vivo
+vivo xplay6:
+  - Vivo
+vivo y71:
+  - Vivo
+vivo y71a:
+  - Vivo
+vivo y75s:
+  - Vivo
+vivo y83:
+  - Vivo
+vivo y83a:
+  - Vivo
+vivo y85a:
+  - Vivo
+vivo y85:
+  - Vivo
+vivo x21a:
+  - Vivo
+vivo 2005:
+  - Vivo
+v2143a:
+  - Vivo
+v2141a:
+  - Vivo
+v2136a:
+  - Vivo
+v2134a:
+  - Vivo
+v2123a:
+  - Vivo
+v2133a:
+  - Vivo
+v2106a:
+  - Vivo
+v2085a:
+  - Vivo
+htc u-3w:
+  - HTC
+htc 2q4d200:
+  - HTC
+hnr550t:
+  - Hisense
+hnr551t:
+  - Hisense
+hlte216m:
+  - Hisense
+20190620g:
+  - Gionee
+rmx2052:
+  - Realme
+rmx3122:
+  - Realme
+noh-an01:
+  - Huawei
+sm-a325n:
+  - Samsung
+vivo x6plus a:
+  - Vivo
+vivo x7plus:
+  - Vivo
+vivo 1937:
+  - Vivo
+vivo 1613:
+  - Vivo
+vivo 1707:
+  - Vivo
+vivo x5l:
+  - Vivo
+vivo x5pro l:
+  - Vivo
+vivo x5pro d:
+  - Vivo
+vivo y613:
+  - Vivo
+vivo y66i a:
+  - Vivo
+vivo y66i:
+  - Vivo
+vivo y79:
+  - Vivo
+vivo y79a:
+  - Vivo
+vivo x9plus l:
+  - Vivo
+vivo 1801i:
+  - Vivo
+vivo 1802:
+  - Vivo
+vivo 1812_19:
+  - Vivo
+vivo 1820_19:
+  - Vivo
+vivo 1850:
+  - Vivo
+vivo 2015_21:
+  - Vivo
+vivo y75a:
+  - Vivo
+vivo y75:
+  - Vivo
+vivo x6a:
+  - Vivo
+vivo x20a:
+  - Vivo
+vivo x21:
+  - Vivo
+vivo y69a:
+  - Vivo
+vivo x710l:
+  - Vivo
+vivo xplay6l:
+  - Vivo
+vivo y67l:
+  - Vivo
+vivo y67a:
+  - Vivo
+vivo y67:
+  - Vivo
+vivo xplay5s:
+  - Vivo
+blu vivo 5 mini:
+  - Blu
+  - Vivo
+vivo y66l:
+  - Vivo
+vivo x9l:
+  - Vivo
+vivo 1908:
+  - Vivo
+vivo 1908_19:
+  - Vivo
+vivo 4g_r:
+  - NOA
+vivo x6s a:
+  - Vivo
+vivo x6splus d:
+  - Vivo
+vivo y21l:
+  - Vivo
+vivo y51:
+  - Vivo
+vivo y51a:
+  - Vivo
+vivo x6plus d:
+  - Vivo
+vivo 1906_20:
+  - Vivo
+vivo y27:
+  - Vivo
+vivo y27l:
+  - Vivo
+vivo y23l:
+  - Vivo
+vivo 2007:
+  - Vivo
+vivo x6plus l:
+  - Vivo
+vivo x6l:
+  - Vivo
+vivo x6d:
+  - Vivo
+vivo xl3:
+  - Blu
+  - Vivo
+vivo xplay5a:
+  - Vivo
+vivo x7l:
+  - Vivo
+vivo y31l:
+  - Vivo
+vivo y31a:
+  - Vivo
+vivo y31:
+  - Vivo
+vivo y66:
+  - Vivo
+vivo 1813:
+  - Vivo
+vivo y55l:
+  - Vivo
+vivo y55a:
+  - Vivo
+vivo y55:
+  - Vivo
+vivo y37a:
+  - Vivo
+vivo y37:
+  - Vivo
 bravis_a506:
   - Bravis
 bravis delta:
@@ -21638,6 +21907,14 @@ tecno ra7:
   - Tecno Mobile
 le2113:
   - OnePlus
+'iphone14,2':
+  - Apple
+'iphone14,3':
+  - Apple
+'iphone14,4':
+  - Apple
+'iphone14,5':
+  - Apple
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -23491,6 +23768,8 @@ h30-t10:
   - Huawei
 hw-h30-c00:
   - Huawei
+zh-cn) release/07.10.2014 browser/wap2.0 (:
+  - Huawei
 honor h30-l01m:
   - Huawei
 honor h30-l02:
@@ -24020,6 +24299,8 @@ hwi-al00:
 hwi-tl00:
   - Huawei
 par-lx1:
+  - Huawei
+par-al00:
   - Huawei
 par-tl00:
   - Huawei
@@ -33409,6 +33690,32 @@ flylife connect 7.85 3g 2:
   - Fly
 21051182c:
   - Xiaomi
+sm-t312:
+  - Samsung
+sm-t533:
+  - Samsung
+bah3-an10:
+  - Huawei
+bzc-al00:
+  - Huawei
+bzc-w00:
+  - Huawei
+agr-w09hn:
+  - Huawei
+ags3-w09:
+  - Huawei
+ags3-al00:
+  - Huawei
+ags3-al09hn:
+  - Huawei
+ags3-w00d:
+  - Huawei
+ags3-w00e:
+  - Huawei
+ags3-w09hn:
+  - Huawei
+bah2-w09:
+  - Huawei
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:

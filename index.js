@@ -28,6 +28,7 @@ const AliasDevice = require('./parser/device/alias-device');
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
+const CLIENT_TYPE = require('./parser/const/client-type');
 const APPLE_OS_LIST = require('./parser/const/apple-os');
 const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
@@ -408,23 +409,6 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TV;
     }
 
-    // check mobile browsers
-    if (MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1) {
-      deviceType = DEVICE_TYPE.SMARTPHONE;
-    }
-
-    // check os desktop
-    if (deviceType === '') {
-      if (
-        DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
-        DESKTOP_OS_LIST.indexOf(osFamily) !== -1
-      ) {
-        if (MOBILE_BROWSER_LIST.indexOf(clientShortName) === -1) {
-          deviceType = DEVICE_TYPE.DESKTOP;
-        }
-      }
-    }
-
     if (
       DEVICE_TYPE.DESKTOP !== deviceType &&
       userAgent.indexOf('Desktop') !== -1
@@ -433,7 +417,23 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
-    
+
+    let hasMobileBrowser =  (
+      clientType === CLIENT_TYPE.BROWSER &&
+      MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1
+    );
+    let hasDesktopOs = osName !== '' && (
+      DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
+      DESKTOP_OS_LIST.indexOf(osFamily) !== -1
+    );
+
+    // check os desktop and not mobile browser
+    if (deviceType === '') {
+      if (!hasMobileBrowser && hasDesktopOs) {
+        deviceType = DEVICE_TYPE.DESKTOP;
+      }
+    }
+
     return {
       type: deviceType,
     };
