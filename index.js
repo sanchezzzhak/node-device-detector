@@ -390,7 +390,14 @@ class DeviceDetector {
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-    
+
+    /**
+     * All unknown devices under running Java ME are more likely a features phones
+     */
+    if ('Java ME' === osName && '' === deviceType) {
+      deviceType = DEVICE_TYPE.FEATURE_PHONE;
+    }
+
     if (
       deviceType === '' &&
       (osName === 'Windows RT' ||
