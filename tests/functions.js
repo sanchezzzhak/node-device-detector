@@ -36,7 +36,7 @@ function revertKeysForObjects(items) {
 }
 
 function YAMLLoad(yamlPath) {
-  return YAML.safeLoad(fs.readFileSync(yamlPath, 'utf8'));
+  return YAML.load(fs.readFileSync(yamlPath, 'utf8'));
 }
 
 function YAMLDump(objects) {
