@@ -16,7 +16,7 @@ module.exports = {
 	'LIN', 'ARL', 'DEB', 'KNO', 'MIN', 'UBT', 'KBT', 'XBT', 'LBT', 'FED',
 	'RHT', 'VLN', 'MDR', 'GNT', 'SAB', 'SLW', 'SSE', 'CES', 'BTR', 'SAF',
 	'ORD', 'TOS', 'RSO', 'DEE', 'FRE', 'MAG', 'FEN', 'CAI', 'PCL', 'HAS',
-	'LOS', 'DVK',
+	'LOS', 'DVK', 'ROK', 'OWR',
   ],
   'Mac': ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],
