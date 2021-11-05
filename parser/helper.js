@@ -145,7 +145,7 @@ exports.revertObject = function (obj) {
  * @returns {*}
  */
 exports.loadYMLFile = function (file) {
-  return YAML.safeLoad(fs.readFileSync(file));
+  return YAML.load(fs.readFileSync(file));
 };
 
 exports.hasFile = function (file) {
