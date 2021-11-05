@@ -86,155 +86,155 @@ aspire v5-121:
   - Acer
 predator g9-793:
   - Acer
-'macbookair6,2':
+macbookair6,2:
   - Apple
 h135:
   - DEXP
-'macbookair2,1':
+macbookair2,1:
   - Apple
-'macbookair3,1':
+macbookair3,1:
   - Apple
-'macbookair3,2':
+macbookair3,2:
   - Apple
-'macbookair4,1':
+macbookair4,1:
   - Apple
-'macbookair4,2':
+macbookair4,2:
   - Apple
-'macbookair5,1':
+macbookair5,1:
   - Apple
-'macbookair5,2':
+macbookair5,2:
   - Apple
-'macbookair6,1':
+macbookair6,1:
   - Apple
-'macbookair7,1':
+macbookair7,1:
   - Apple
-'macbookair7,2':
+macbookair7,2:
   - Apple
-'macbookair8,1':
+macbookair8,1:
   - Apple
-'macbookair8,2':
+macbookair8,2:
   - Apple
-'macbookair9,1':
+macbookair9,1:
   - Apple
-'macbookair10,1':
+macbookair10,1:
   - Apple
-'macbookpro4,1':
+macbookpro4,1:
   - Apple
-'macbookpro5,1':
+macbookpro5,1:
   - Apple
-'macbookpro5,2':
+macbookpro5,2:
   - Apple
-'macbookpro5,5':
+macbookpro5,5:
   - Apple
-'macbookpro5,3':
+macbookpro5,3:
   - Apple
-'macbookpro5,4':
+macbookpro5,4:
   - Apple
-'macbookpro6,1':
+macbookpro6,1:
   - Apple
-'macbookpro6,2':
+macbookpro6,2:
   - Apple
-'macbookpro7,1':
+macbookpro7,1:
   - Apple
-'macbookpro8,1':
+macbookpro8,1:
   - Apple
-'macbookpro8,2':
+macbookpro8,2:
   - Apple
-'macbookpro8,3':
+macbookpro8,3:
   - Apple
-'macbookpro9,1':
+macbookpro9,1:
   - Apple
-'macbookpro9,2':
+macbookpro9,2:
   - Apple
-'macbookpro10,1':
+macbookpro10,1:
   - Apple
-'macbookpro10,2':
+macbookpro10,2:
   - Apple
-'macbookpro11,1':
+macbookpro11,1:
   - Apple
-'macbookpro11,2':
+macbookpro11,2:
   - Apple
-'macbookpro11,3':
+macbookpro11,3:
   - Apple
-'macbookpro11,4':
+macbookpro11,4:
   - Apple
-'macbookpro11,5':
+macbookpro11,5:
   - Apple
-'macbookpro12,1':
+macbookpro12,1:
   - Apple
-'macbookpro13,1':
+macbookpro13,1:
   - Apple
-'macbookpro13,2':
+macbookpro13,2:
   - Apple
-'macbookpro13,3':
+macbookpro13,3:
   - Apple
-'macbookpro14,1':
+macbookpro14,1:
   - Apple
-'macbookpro14,2':
+macbookpro14,2:
   - Apple
-'macbookpro14,3':
+macbookpro14,3:
   - Apple
-'macbookpro15,1':
+macbookpro15,1:
   - Apple
-'macbookpro15,3':
+macbookpro15,3:
   - Apple
-'macbookpro15,2':
+macbookpro15,2:
   - Apple
-'macbookpro15,4':
+macbookpro15,4:
   - Apple
-'macbookpro16,1':
+macbookpro16,1:
   - Apple
-'macbookpro16,4':
+macbookpro16,4:
   - Apple
-'macbookpro16,2':
+macbookpro16,2:
   - Apple
-'macbookpro16,3':
+macbookpro16,3:
   - Apple
-'macbookpro17,1':
+macbookpro17,1:
   - Apple
-'macbookpro1,1':
+macbookpro1,1:
   - Apple
-'macbookpro1,2':
+macbookpro1,2:
   - Apple
-'macbookpro2,1':
+macbookpro2,1:
   - Apple
-'macbookpro2,2':
+macbookpro2,2:
   - Apple
-'macbookpro3,1':
+macbookpro3,1:
   - Apple
-'macmini7,1':
+macmini7,1:
   - Apple
-'macbook7,1':
+macbook7,1:
   - Apple
-'macpro5,1':
+macpro5,1:
   - Apple
-'imac12,1':
+imac12,1:
   - Apple
-'imac19,2':
+imac19,2:
   - Apple
-'imac14,2':
+imac14,2:
   - Apple
-'imac14,4':
+imac14,4:
   - Apple
-'imac14,1':
+imac14,1:
   - Apple
-'macbook8,1':
+macbook8,1:
   - Apple
-'imac10,1':
+imac10,1:
   - Apple
-'imac20,1':
+imac20,1:
   - Apple
-'macmini9,1':
+macmini9,1:
   - Apple
-'imac17,1':
+imac17,1:
   - Apple
-'macbook9,1':
+macbook9,1:
   - Apple
-'macbook6,1':
+macbook6,1:
   - Apple
-'imac19,1':
+imac19,1:
   - Apple
-'imac20,2':
+imac20,2:
   - Apple
 bilimbook mini:
   - BilimLand
@@ -272,9 +272,9 @@ sch-i500:
   - Samsung
 phone/nexus 5:
   - Google
-'iphone8,4':
+iphone8,4:
   - Apple
-'ipad4,1':
+ipad4,1:
   - Apple
 nexus 5x:
   - Google
@@ -302,12 +302,14 @@ jny-lx1:
   - Huawei
 neosr620:
   - Lumus
-'iphone8,1':
+iphone8,1:
   - Apple
 6025h_eea:
   - Alcatel
 bmh-tn10:
   - Huawei
+ipad3,4:
+  - Apple
 shtrih-smartpos-f2:
   - Shtrikh-M
 wisenet5:
@@ -346,15 +348,15 @@ gi-626:
   - Alcatel
 9022x:
   - Alcatel
-'iphone12,3':
+iphone12,3:
   - Apple
-'iphone12,5':
+iphone12,5:
   - Apple
-'iphone12,8':
+iphone12,8:
   - Apple
-'iphone10,3':
+iphone10,3:
   - Apple
-'iphone11,6':
+iphone11,6:
   - Apple
 me371mg:
   - Asus
@@ -832,7 +834,7 @@ xperia z ultra:
   - Sony
 zur722m:
   - SWISSMOBILITY
-'phablet 5,3 q':
+phablet 5,3 q:
   - Trevi
 trevi_reverse_5.5q:
   - Trevi
@@ -969,7 +971,7 @@ note 11p:
   - Ulefone
 sm-n950u:
   - Samsung
-'iphone10,5':
+iphone10,5:
   - Apple
 htc6600lvw:
   - HTC
@@ -1090,7 +1092,7 @@ sm-n976b:
   - Samsung
 m2011j18c:
   - Xiaomi
-'ipod5,1':
+ipod5,1:
   - Apple
 hmt390q:
   - Xoro
@@ -4364,7 +4366,7 @@ samsung sm-a9200:
   - Samsung
 sm-a920n:
   - Samsung
-'sm-a9[7]':
+sm-a9[7]:
   - Samsung
 samsung sm-a9100:
   - Samsung
@@ -4848,7 +4850,7 @@ samsung sm-j737u:
   - Samsung
 samsung sm-j737r4:
   - Samsung
-'sm-j7[7]':
+sm-j7[7]:
   - Samsung
 samsung sm-j701f:
   - Samsung
@@ -4888,9 +4890,9 @@ sm-j810m:
   - Samsung
 sm-j8 pro:
   - Samsung
-'sm-j9[7] prime':
+sm-j9[7] prime:
   - Samsung
-'sm-j9[8] pro':
+sm-j9[8] pro:
   - Samsung
 samsung sm-a605k/kku1arj1:
   - Samsung
@@ -6740,11 +6742,11 @@ nx531j:
   - Nubia
 nx508j:
   - Nubia
-'ipad5,2':
+ipad5,2:
   - Apple
-'ipad5,1':
+ipad5,1:
   - Apple
-'ipad5,4':
+ipad5,4:
   - Apple
 nx506j:
   - Nubia
@@ -11631,13 +11633,13 @@ plum z712:
   - Plum
 plum z811:
   - Plum
-'iphone13,4':
+iphone13,4:
   - Apple
-'iphone13,3':
+iphone13,3:
   - Apple
-'iphone13,2':
+iphone13,2:
   - Apple
-'iphone13,1':
+iphone13,1:
   - Apple
 casper_via_v6x:
   - Casper
@@ -11811,17 +11813,17 @@ azumi_iro_a4_q:
   - Azumi Mobile
 a862w:
   - Amoi
-'iphone2,1':
+iphone2,1:
   - Apple
-'iphone3,1':
+iphone3,1:
   - Apple
-'iphone5,1':
+iphone5,1:
   - Apple
-'iphone6,2':
+iphone6,2:
   - Apple
-'iphone11,8':
+iphone11,8:
   - Apple
-'iphone11,2':
+iphone11,2:
   - Apple
 archos 40 titanium:
   - Archos
@@ -13218,7 +13220,7 @@ opelmobile_smartjx:
   - OpelMobile
 vorke z7:
   - Vorke
-'neo [reloaded]':
+neo [reloaded]:
   - NuAns
 nubia z11 mini:
   - Nubia
@@ -16831,7 +16833,7 @@ mi 9t:
   - Xiaomi
 lgls990:
   - LG
-'iphone9,3':
+iphone9,3:
   - Apple
 lt c3100:
   - LT Mobile
@@ -17487,7 +17489,7 @@ sm-a505gt:
   - Samsung
 lenovo k50-t5:
   - Lenovo
-'iphone8,2':
+iphone8,2:
   - Apple
 samsung sm-a105m:
   - Samsung
@@ -19535,7 +19537,7 @@ lenovo k12 pro:
   - Lenovo
 moto g 5g:
   - Motorola
-'iphone9,1':
+iphone9,1:
   - Apple
 tecno f4:
   - Tecno Mobile
@@ -20806,6 +20808,293 @@ vivo y37a:
   - Vivo
 vivo y37:
   - Vivo
+f2_color5_5:
+  - Zopo
+f5_color_m5:
+  - Zopo
+f80 piabella:
+  - F2 Mobile
+flow 4 plus:
+  - Krüger&Matz
+cosmos v15:
+  - Hotwav
+cosmos v13:
+  - Hotwav
+cosmos v4:
+  - Hotwav
+cosmos v8:
+  - Hotwav
+cosmos v8-2:
+  - Hotwav
+dingding-sk7:
+  - DING DING
+dingding sk5:
+  - DING DING
+dive 50:
+  - Orange
+dive 50 dual:
+  - Orange
+gionee s10l:
+  - Gionee
+gionee s10b:
+  - Gionee
+gionee s10bl:
+  - Gionee
+tecno kc8s:
+  - Tecno Mobile
+m4_r2:
+  - M4tel
+kempler_9:
+  - Kempler & Strauss
+io light:
+  - Rokit
+io 3d:
+  - Rokit
+neffos_c7a:
+  - Neffos
+s49_poise:
+  - Stylo
+s49 mono:
+  - Stylo
+s49 eco:
+  - Stylo
+s55 nova:
+  - Stylo
+5001u:
+  - Alcatel
+santin 11 xs max:
+  - Santin
+pure plus:
+  - Mobicel
+psp7512duo:
+  - Prestigio
+psp3471duo:
+  - Prestigio
+psp5552duo:
+  - Prestigio
+psp3470duo:
+  - Prestigio
+psp5511duo:
+  - Prestigio
+psp5518duo:
+  - Prestigio
+psp5520duo:
+  - Prestigio
+psp7570duo:
+  - Prestigio
+itel a52s lite:
+  - iTel
+x_tigi_a1:
+  - X-TIGI
+micromax q421:
+  - MicroMax
+micromax q402plus:
+  - MicroMax
+micromax q357:
+  - MicroMax
+micromax bharat 5:
+  - MicroMax
+micromax c1a:
+  - MicroMax
+micromax c2apls:
+  - MicroMax
+k10000 mix:
+  - Oukitel
+  - Xiaomi
+cobra:
+  - Hurricane
+easy_xl:
+  - Highscreen
+alcatel_6060c:
+  - Alcatel
+lg-f650s:
+  - LG
+lg-f650l:
+  - LG
+lg-f650k:
+  - LG
+m4 ss4453-r:
+  - M4tel
+m555i:
+  - S-TELL
+m557:
+  - S-TELL
+p2lite:
+  - Blackview
+c103:
+  - Coolpad
+c105-8:
+  - Coolpad
+htc desire 10 lifestyle:
+  - HTC
+htc desire 530:
+  - HTC
+htc desire 630 dual sim:
+  - HTC
+c106:
+  - Coolpad
+c106-8:
+  - Coolpad
+coolpad 5370:
+  - Coolpad
+micromax q465:
+  - MicroMax
+micromax q462:
+  - MicroMax
+micromax e451:
+  - MicroMax
+lg-h950:
+  - LG
+lg-k120:
+  - LG
+lg-h634:
+  - LG
+lg-f670k:
+  - LG
+lg-f570s:
+  - LG
+was-lx2:
+  - Huawei
+ppa-al20:
+  - Huawei
+primo gh9:
+  - Walton
+p13_blue_plus:
+  - Reeder
+orange nola play:
+  - Orange
+neo lte:
+  - Mobicel
+rmx3203:
+  - Realme
+n5002l:
+  - NUU Mobile
+myphone_prime_5:
+  - MyPhone
+mdg1:
+  - Xiaomi
+nen-lx1:
+  - Huawei
+nen-l22:
+  - Huawei
+koz-al40:
+  - Huawei
+hlte103e:
+  - Hisense
+hisense v40:
+  - Hisense
+hisense u3 2021:
+  - Hisense
+hisense infinity h50 zoom:
+  - Hisense
+hisense infinity h40:
+  - Hisense
+hisense h40 lite:
+  - Hisense
+gravity m:
+  - Zuum
+live 8:
+  - Krüger&Matz
+moto e(6i):
+  - Motorola
+moto e(7) power:
+  - Motorola
+moto e(7i) power:
+  - Motorola
+a509dl:
+  - TCL
+blackberry 9900:
+  - RIM
+blackberry 9700:
+  - RIM
+daytona-g12:
+  - Packard Bell
+2109119dg:
+  - Xiaomi
+21081111rg:
+  - Xiaomi
+2107113sg:
+  - Xiaomi
+cph2036:
+  - OPPO
+cph2237:
+  - OPPO
+cph2247:
+  - OPPO
+de2118:
+  - OnePlus
+like 11 panda pro 2022:
+  - iHunt
+proline_falconxl:
+  - Proline
+ridge plus:
+  - Hurricane
+rush plus:
+  - Hurricane
+p13_blue:
+  - Reeder
+s64_alpha:
+  - Stylo
+hero_ds:
+  - Mobicel
+azumi v4:
+  - Azumi Mobile
+azumi a5:
+  - Azumi Mobile
+pace 2 lite:
+  - K-Touch
+4good s502m 4g:
+  - 4Good
+psp5524duo:
+  - Prestigio
+v2109:
+  - Vivo
+v2026_21:
+  - Vivo
+wp15:
+  - Oukitel
+tecno cg6j:
+  - Tecno Mobile
+v2068:
+  - Vivo
+pixel 6 pro:
+  - Google
+pixel 6:
+  - Google
+rmx3151:
+  - Realme
+ravoz z7 pro:
+  - Ravoz
+revvl v+ 5g:
+  - T-Mobile
+r2022:
+  - F150
+nx666j:
+  - Nubia
+nth-nx9:
+  - Huawei
+kt5512:
+  - DIXON
+motorola edge 20 pro:
+  - Motorola
+zenfone 5z:
+  - Asus
+nokia c1 2nd edition:
+  - Nokia
+tecno bc1s:
+  - Tecno Mobile
+v2102:
+  - Vivo
+v2110:
+  - Vivo
+v2105:
+  - Vivo
+sm-m022f:
+  - Samsung
+zte 9030ru:
+  - ZTE
+moto g(60):
+  - Motorola
 bravis_a506:
   - Bravis
 bravis delta:
@@ -21907,13 +22196,15 @@ tecno ra7:
   - Tecno Mobile
 le2113:
   - OnePlus
-'iphone14,2':
+iphone14,2:
   - Apple
-'iphone14,3':
+iphone14,3:
   - Apple
-'iphone14,4':
+iphone14,4:
   - Apple
-'iphone14,5':
+iphone14,5:
+  - Apple
+iphone/6s ios/11.3:
   - Apple
 y9plus:
   - Doogee
@@ -22513,7 +22804,7 @@ iq240:
   - Fly
 fs529:
   - Fly
-'fx100,7':
+fx100,7:
   - Famoco
 conexis a1:
   - FNB
@@ -29359,29 +29650,29 @@ ek-t7020:
   - EKT
 ek-mii:
   - EKT
-'ipad8,9':
+ipad8,9:
   - Apple
-'ipad8,10':
+ipad8,10:
   - Apple
-'ipad8,11':
+ipad8,11:
   - Apple
-'ipad8,12':
+ipad8,12:
   - Apple
-'ipad11,1':
+ipad11,1:
   - Apple
-'ipad11,2':
+ipad11,2:
   - Apple
-'ipad11,3':
+ipad11,3:
   - Apple
-'ipad11,4':
+ipad11,4:
   - Apple
-'ipad11,6':
+ipad11,6:
   - Apple
-'ipad11,7':
+ipad11,7:
   - Apple
-'ipad13,1':
+ipad13,1:
   - Apple
-'ipad13,2':
+ipad13,2:
   - Apple
 samsung sm-p615c:
   - Samsung
@@ -31075,7 +31366,7 @@ polytron_t7700:
   - Polytron
 h10882m-tn:
   - Proline
-'pocketbook surfpad 3 (10,1)':
+pocketbook surfpad 3 (10,1):
   - PocketBook
 pd-3127:
   - Primepad
@@ -32337,7 +32628,7 @@ vodafone smarttab ii 10:
   - Vodafone
 smarttabii10:
   - Vodafone
-'fr-be, smarttabii7':
+fr-be, smarttabii7:
   - Vodafone
 vodafone smart tab iii 10:
   - Vodafone
@@ -33076,9 +33367,9 @@ actived 8.2 3g:
   - Explay
 lg-v533:
   - LG
-'ipad7,11':
+ipad7,11:
   - Apple
-'ipad7,3':
+ipad7,3:
   - Apple
 p1060x:
   - Medion
@@ -33716,6 +34007,109 @@ ags3-w09hn:
   - Huawei
 bah2-w09:
   - Huawei
+co-mate:
+  - iBall
+druid_l10:
+  - Vonino
+runbop2-en:
+  - Runbo
+plane 1715t 4g pt1139pl:
+  - Digma
+plane 1713t 3g pt1138mg:
+  - Digma
+plane 1573n 4g ps1189ml:
+  - Digma
+plane 1570n 3g ps1185mg:
+  - Digma
+plane 1524 3g ps1136mg:
+  - Digma
+plane 7547s 3g ps7159pg:
+  - Digma
+plane 7561n 3g ps7176mg:
+  - Digma
+plane 7574s 4g ps7191pl:
+  - Digma
+plane 7700t 4g ps1127pl:
+  - Digma
+plane_1523_3g_ps1135mg:
+  - Digma
+plane_1526_4g_ps1138ml:
+  - Digma
+plane_1537e_3g_ps1149mg:
+  - Digma
+plane_1538e_4g_ps1150ml:
+  - Digma
+plane_1550s_3g_ps1163mg:
+  - Digma
+plane_1551s_4g_ps1164ml:
+  - Digma
+plane_1553m_4g_ps1166ml:
+  - Digma
+plane_7006_4g_ps7041pl:
+  - Digma
+plane_7535e_3g_ps7147mg:
+  - Digma
+plane_7545v_3g_ps7151mg:
+  - Digma
+plane_7546s_3g_ps7158pg:
+  - Digma
+plane_7547s_3g_ps7159pg:
+  - Digma
+plane_7556_3g_ps7170mg:
+  - Digma
+plane_9654m_3g_ps9167pg:
+  - Digma
+plane_9634_3g_ps9146mg:
+  - Digma
+plane_8540e_4g_ps8156ml:
+  - Digma
+plane_8522_3g_ps8135mg:
+  - Digma
+pmt1177_3g:
+  - Prestigio
+pmt3101_4g:
+  - Prestigio
+pmt3101_4gh:
+  - Prestigio
+pmt3151_3g:
+  - Prestigio
+pmt3157_3g:
+  - Prestigio
+pmt3161_3g:
+  - Prestigio
+pmt3171_3g:
+  - Prestigio
+pmt3257_3g:
+  - Prestigio
+pmt3257_4g:
+  - Prestigio
+lg-v530:
+  - LG
+p310:
+  - DEXP
+p380:
+  - DEXP
+m40se_row:
+  - Teclast
+m76qf6:
+  - Mecer
+i15-tg:
+  - Cube
+lenovo pb-6505m:
+  - Lenovo
+beeline tab fast 2:
+  - Beeline
+4good people at100:
+  - 4Good
+  - Toshiba
+4good t100m3g:
+  - 4Good
+t40 plus_eea:
+  - Teclast
+t40 plus_row:
+  - Teclast
+iplay20s:
+  - AllDocube
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -34747,6 +35141,10 @@ gtx-r10i pro:
   - Geotex
 gtking_at:
   - Beelink
+u43f8000q:
+  - DEXP
+ugoos-am3:
+  - Ugoos
 bb2 pro:
   - Mecool
 kii pro:
