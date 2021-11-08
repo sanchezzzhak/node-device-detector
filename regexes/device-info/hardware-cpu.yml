@@ -1088,12 +1088,14 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   164:
     name: MediaTek Helio P22 MT6762D
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 12nm
     gpu_id: 25
   165:
     name: Spreadtrum SC7731E
@@ -1107,12 +1109,14 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2500
+    process: 16nm
     gpu_id: 40
   167:
     name: MediaTek MT6516
     type: ARM
     cores: 1
     clock_rate: 416
+    process: 65nm
   168:
     name: MediaTek MT8765A
     type: ARM
@@ -2230,3 +2234,10 @@ cpu:
     clock_rate: 2000
     process: 28nm
     gpu_id: 111
+  334:
+    name:  MediaTek Helio G80 MT6769V/CU
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 113
