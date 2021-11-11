@@ -1418,6 +1418,7 @@ cpu:
     type: ARM
     clock_rate: 1500
     cores: 4
+    process: 28nm
     gpu_id: 1
   216:
     name: HiSilicon Kirin 950
@@ -2241,3 +2242,10 @@ cpu:
     clock_rate: 2000
     process: 12nm
     gpu_id: 113
+  335:
+    name: Spreadtrum SC9830A
+    type: ARM
+    clock_rate: 1500
+    cores: 4
+    process: 28nm
+    gpu_id: 1
