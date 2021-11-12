@@ -16,7 +16,6 @@
 # GP - GPU id (Graphic processor)
 # SM - count SIM slots
 
-
 # 2E
 2e:
   e450 (2018): 'DS=4.5;RS=480x854;SZ=74.2x133x8.7;WT=133;RM=1024;CP=58;OI=1;OV=8.1;'
@@ -6434,6 +6433,26 @@ tecno mobile:
   tecno d3: '->d3'
   f4 pro: 'RE=2018.06;SZ=71.9x151.5x8.5;WT=140;DS=5.45;RS=480x960;OS=Android 7;CP=336;RM=1024'
   tecno f4 pro: '->f4 pro'
+  camon 16: 'RE=2020.10;SZ=77.2x170.9x9.2;WT=207;DS=6.8;RS=720x1640;OS=Android 10;CP=319;RM=4096;'
+  tecno ce9h: '->camon 16'
+  camon 16 premier: 'RE=2020.09;SZ=77.2x170.6x9.1;WT=210;DS=6.85;RS=1080x2460;OS=Android 10;CP=325;RM=8192;'
+  tecno ce9: '->camon 16 premier'
+  camon 16 pro: 'RE=2020.09;SZ=77.2x170.9x9.2;WT=207;DS=6.8;RS=720x1640;OS=Android 10;CP=319;RM=4096;'
+  tecno ce8: '->camon 16 pro'
+  camon 16 s: 'RE=2020.11;SZ=76.5x164.5x9;WT=207;DS=6.6;RS=720x1600;OS=Android 10;CP=171;RM=4096;SM=2;'
+  tecno cd6j: '->camon 16 s'
+  camon 17: 'RE=2021.05;SZ=76.5x164.5x9;WT=201;DS=6.6;RS=720x1600;OS=Android 11;CP=322;RM=4096;'
+  tecno cg6: '->camon 17'
+  camon 15: 'RE=2020.02;SZ=76.4x164.1x8.8;WT=196;DS=6.6;RS=720x1600;OS=Android 10;CP=171;RM=4096;'
+  tecno cd7: '->camon 15'
+  spark 6 go: 'RE=2020.11;SZ=76.3x165.6x9.1;WT=193.5;DS=6.52;RS=720x1600;OS=Android 10;CP=337;RM=3072;'
+  tecno ke5k: '->spark 6 go'
+  spark 6: 'RE=2020.09;SZ=77.3x170.8x9.2;WT=193.5;DS=6.8;RS=720x1640;OS=Android 10;CP=319;RM=4096;'
+  tecno ke7: '->spark 6'
+  camon 16 se: 'RE=2020.10;SZ=77.2x170.9x9.2;WT=207;DS=6.8;RS=720x1640;OS=Android 10;CP=319;RM=4096;'
+  tecno ce7j: '->camon 16 se'
+  camon 15 pro: 'RE=2020.02;SZ=77.7x163.3x9.1;WT=203;DS=6.6;RS=1080x2340;OS=Android 10;CP=38;RM=6144;'
+  tecno cd8: '->camon 15 pro'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'
