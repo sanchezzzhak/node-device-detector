@@ -6414,3 +6414,34 @@ we:
 
 supra:
   m74c 4g: 'RE=2015;OS=Android 5.1;RS=1024x600;WT=247;DS=7;SZ=188x107.8x10.3;CP=335;RM=512;SM=2;'
+
+tecno mobile:
+  s9: 'DS=7;RS=1024x600;OS=Android 4.2;RM=1024;SZ=193x111x9.5;SM=2;'
+  tecno s9: '->s9'
+  pova: 'RE=2020.10;SZ=77.6x171.2x9.4;WT=;DS=6.8;RS=720x1640;OS=Android 10;CP=226;RM=4096;'
+  tecno ld7j: '->pova'
+  tecno ld7: '->pova'
+  pova 2: 'RE=2021.06;SZ=78.8x173.3x9.6;WT=;DS=6.95;RS=1080x2460;OS=Android 11;CP=322;RM=4096;'
+  tecno le7n: '->pova 2'
+  camon i4: 'RE=2019.05;SZ=75.80x156.90x7.96;WT=141;DS=6.22;RS=720x1520;SM=2;OS=Android 9;CP=44;RM=4096;'
+  tecno cb7j: '->camon i4'
+  tecno cb7: '->camon i4'
+  camon iclick 2: 'RE=2018.10;SZ=75.6x156.8x7.8;WT=145;DS=6.2;RS=720x1500;OS=Android 8.1;CP=171;RM=4096;SM=2;'
+  tecno id6: '->camon iclick 2'
+  d1: 'OS=Android 4.2;SZ=69.3x114.9x11.7;DS=2.6;RS=320x480;CP=24;RM=512;'
+  tecno d1: '->d1'
+  d3: 'OS=Android 2.3;SZ=62.5x115.5x11.3;DS=3.5;RS=320x480;RM=512;SM=2;'
+  tecno d3: '->d3'
+  f4 pro: 'RE=2018.06;SZ=71.9x151.5x8.5;WT=140;DS=5.45;RS=480x960;OS=Android 7;CP=336;RM=1024'
+  tecno f4 pro: '->f4 pro'
+
+#f2 mobile:
+#  z8 plus: 'DS=5;OS=Android 8.1;'
+#  z8plus: '->z8 plus'
+#  z8 pocket: 'DS=5;OS=Android 8.1;RM=1024;'
+#  z8pocket: '->z8 pocket'
+#  lt5216: 'RE=2018.05;WT=450;SZ=100x186x54;DS=5;RS=720x1280;RM=2048;'
+#  f80s plus: ''
+#  c8 finger: ''
+#  c8finger: '->c8 finger'
+#  f80 piabella: ''

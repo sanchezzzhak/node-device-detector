@@ -2249,3 +2249,10 @@ cpu:
     cores: 4
     process: 28nm
     gpu_id: 1
+  336:
+    name: MediaTek MT6580W
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
