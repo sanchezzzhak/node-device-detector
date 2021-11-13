@@ -498,6 +498,7 @@ module.exports = {
   'K2': 'KRONO',
   'KE': 'Krüger&Matz',
   '5K': 'KREZ',
+  'WK': 'KRIP',
   'KH': 'KT-Tech',
   'Z6': 'KUBO',
   'K8': 'Kuliao',
