@@ -9200,8 +9200,6 @@ swisstone sd 530:
   - Swisstone
 swisstone sd 510:
   - Swisstone
-8088x_eea:
-  - Alcatel
 b110dl:
   - Blu
 z3153v:
@@ -9248,8 +9246,6 @@ casper_s38:
   - Casper
 advance l5:
   - Blu
-8088q:
-  - Alcatel
 xq-at42:
   - Sony
 asus_i002d:
@@ -22402,6 +22398,65 @@ moto g power (2021):
   - Motorola
 moto g 5g plus:
   - Motorola
+5006g:
+  - Alcatel
+5030a:
+  - Alcatel
+5029f:
+  - Alcatel
+4187m:
+  - TCL
+5002x:
+  - Alcatel
+5007g:
+  - Alcatel
+5102b:
+  - TCL
+a7 pro:
+  - UMIDIGI
+a9 pro:
+  - UMIDIGI
+alcatel_5002r:
+  - Alcatel
+b60pro_mv03:
+  - Bmobile
+e603:
+  - Hyundai
+g50 mega:
+  - Blu
+g50 plus:
+  - Blu
+iku a40:
+  - IKU Mobile
+in_note1:
+  - MicroMax
+k4m:
+  - KRIP
+k503hd:
+  - Epik One
+nen-lx3:
+  - Huawei
+neon ray 2:
+  - Safaricom
+  - Jinga
+5087z:
+  - TCL
+5033xr:
+  - Alcatel
+v2055:
+  - Vivo
+v2060:
+  - Vivo
+v2054:
+  - Vivo
+v2024:
+  - Vivo
+smarte11:
+  - MobiWire
+studio x10:
+  - Blu
+twist 4 pro:
+  - Positivo
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -31890,6 +31945,14 @@ kids09:
   - Alcatel
 9032z:
   - Alcatel
+8094m:
+  - Alcatel
+9032w:
+  - Alcatel
+9048s:
+  - TCL
+gwat8-1:
+  - Gateway
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -33270,6 +33333,10 @@ ka-e410w:
 lglk430:
   - LG
 8088m:
+  - Alcatel
+8088x_eea:
+  - Alcatel
+8088q:
   - Alcatel
 supra m725g:
   - Supra
