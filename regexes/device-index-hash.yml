@@ -44,6 +44,8 @@
   - Xiaomi
 '2014818':
   - Xiaomi
+'100003561':
+  - ONN
 '100005206':
   - ONN
 '100005207':
@@ -51,6 +53,8 @@
 '100005208':
   - ONN
 '100005209':
+  - ONN
+'100011885':
   - ONN
 '100011886':
   - ONN
@@ -250,6 +254,26 @@ aspire 4349:
   - Acer
 goclever netbook r103:
   - GOCLEVER
+macbookpro18,1:
+  - Apple
+macbookpro18,3:
+  - Apple
+macbookpro18,2:
+  - Apple
+macbookpro18,4:
+  - Apple
+imac18,1:
+  - Apple
+imac18,2:
+  - Apple
+imac18,3:
+  - Apple
+imac21,1:
+  - Apple
+imac21,2:
+  - Apple
+imacpro1,1:
+  - Apple
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -9146,6 +9170,7 @@ a001op:
 a1 alpha:
   - A1
 quest:
+  - Oculus
   - CUBOT
 elegance 6:
   - Kiano
@@ -9175,8 +9200,6 @@ swisstone sd 530:
   - Swisstone
 swisstone sd 510:
   - Swisstone
-8088x_eea:
-  - Alcatel
 b110dl:
   - Blu
 z3153v:
@@ -9223,8 +9246,6 @@ casper_s38:
   - Casper
 advance l5:
   - Blu
-8088q:
-  - Alcatel
 xq-at42:
   - Sony
 asus_i002d:
@@ -21095,6 +21116,141 @@ zte 9030ru:
   - ZTE
 moto g(60):
   - Motorola
+shark ksr-a0:
+  - Xiaomi
+santin shuguo:
+  - Santin
+rmx3263:
+  - Realme
+sm-a7050:
+  - Samsung
+16 x:
+  - Meizu
+16t:
+  - Meizu
+4087u:
+  - Alcatel
+4087u_eea:
+  - Alcatel
+5002b:
+  - Alcatel
+5002f_eea:
+  - Alcatel
+5002h:
+  - Alcatel
+5002h_eea:
+  - Alcatel
+a23 max:
+  - Trident
+a3s:
+  - UMIDIGI
+a3x:
+  - UMIDIGI
+a355:
+  - DEXP
+a7s:
+  - UMIDIGI
+axe_ii:
+  - Premio
+c19:
+  - Oukitel
+c22:
+  - Oukitel
+cp3320as2:
+  - Coolpad
+elite e55:
+  - Sky
+koz-al00:
+  - Huawei
+s40_vista:
+  - Stylo
+sky black:
+  - Sky
+titan_1:
+  - Mobicel
+via x20:
+  - Casper
+zoom_1:
+  - Mobicel
+infinix pr652b:
+  - Infinix
+infinix x6812:
+  - Infinix
+a11 pro max:
+  - UMIDIGI
+6125f:
+  - TCL
+6125d:
+  - TCL
+6056h:
+  - Alcatel
+g450:
+  - DEXP
+impress wave:
+  - Vertex
+15 plus:
+  - Meizu
+tp_1_3000:
+  - Taiga System
+g3212:
+  - Sony
+g3112:
+  - Sony
+cavion_base_5_0:
+  - Cavion
+cpe91:
+  - Stylo
+clik:
+  - Mobicel
+benefit_m9:
+  - Ark
+dzire:
+  - Hurricane
+fame:
+  - Mobicel
+fame_ds:
+  - Mobicel
+gpad_u:
+  - Glofiish
+beam:
+  - Hurricane
+aquaris vs:
+  - bq
+  - Intex
+u601s pro:
+  - Hisense
+tecno l9:
+  - Tecno Mobile
+tecno s6:
+  - Tecno Mobile
+vulcan:
+  - Hurricane
+sprint4g:
+  - NOA
+philips s257:
+  - Philips
+philips s318:
+  - Philips
+philips s386:
+  - Philips
+quantum_470_rugged_pro:
+  - GOCLEVER
+quantum_ii_500_n:
+  - GOCLEVER
+beeline smart 8:
+  - Beeline
+archos 50 saphir:
+  - Archos
+archos 40 power:
+  - Archos
+archos 50 platinum 4g:
+  - Archos
+a8 max:
+  - Blackview
+blackview a8 max:
+  - Blackview
+life one x2 mini:
+  - Blu
 bravis_a506:
   - Bravis
 bravis delta:
@@ -22206,6 +22362,101 @@ iphone14,5:
   - Apple
 iphone/6s ios/11.3:
   - Apple
+sm-a326u:
+  - Samsung
+t766j:
+  - TCL
+ks907:
+  - Hisense
+samsung sm-a725m:
+  - Samsung
+samsung sm-a022m:
+  - Samsung
+moto g stylus (2021):
+  - Motorola
+moto g play (2021):
+  - Motorola
+xq-au51:
+  - Sony
+xq-bc52:
+  - Sony
+lg-m703:
+  - LG
+cosmas:
+  - Cellution
+ct_cosmas_v:
+  - Cellution
+kaz-n20:
+  - Kazuna
+5002e:
+  - Alcatel
+5002s:
+  - Alcatel
+power 3:
+  - UMIDIGI
+moto g power (2021):
+  - Motorola
+moto g 5g plus:
+  - Motorola
+5006g:
+  - Alcatel
+5030a:
+  - Alcatel
+5029f:
+  - Alcatel
+4187m:
+  - TCL
+5002x:
+  - Alcatel
+5007g:
+  - Alcatel
+5102b:
+  - TCL
+a7 pro:
+  - UMIDIGI
+a9 pro:
+  - UMIDIGI
+alcatel_5002r:
+  - Alcatel
+b60pro_mv03:
+  - Bmobile
+e603:
+  - Hyundai
+g50 mega:
+  - Blu
+g50 plus:
+  - Blu
+iku a40:
+  - IKU Mobile
+in_note1:
+  - MicroMax
+k4m:
+  - KRIP
+k503hd:
+  - Epik One
+nen-lx3:
+  - Huawei
+neon ray 2:
+  - Safaricom
+  - Jinga
+5087z:
+  - TCL
+5033xr:
+  - Alcatel
+v2055:
+  - Vivo
+v2060:
+  - Vivo
+v2054:
+  - Vivo
+v2024:
+  - Vivo
+smarte11:
+  - MobiWire
+studio x10:
+  - Blu
+twist 4 pro:
+  - Positivo
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -25308,6 +25559,7 @@ aqua style:
   - Intex
 cloud fame 4g:
   - Intex
+  - Mobicel
 intex_cloud_x1:
   - Intex
 intex cloud x11:
@@ -28674,6 +28926,10 @@ aeobc:
   - Amazon
 aeokn:
   - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -29768,6 +30024,30 @@ sm-t818v:
   - Samsung
 sm-t818:
   - Samsung
+ipad14,1:
+  - Apple
+ipad14,2:
+  - Apple
+ipad12,1:
+  - Apple
+ipad12,2:
+  - Apple
+ipad13,9:
+  - Apple
+ipad13,11:
+  - Apple
+ipad13,4:
+  - Apple
+ipad13,6:
+  - Apple
+ipad13,5:
+  - Apple
+ipad13,7:
+  - Apple
+ipad13,8:
+  - Apple
+ipad13,10:
+  - Apple
 jdn-al00:
   - Huawei
 ags2-al00hn:
@@ -31657,6 +31937,22 @@ tecno p703:
   - Tecno Mobile
 magnet_g30:
   - Vonino
+m6200:
+  - Kocaso
+kids09:
+  - Topelotek
+9013a:
+  - Alcatel
+9032z:
+  - Alcatel
+8094m:
+  - Alcatel
+9032w:
+  - Alcatel
+9048s:
+  - TCL
+gwat8-1:
+  - Gateway
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -33038,6 +33334,10 @@ lglk430:
   - LG
 8088m:
   - Alcatel
+8088x_eea:
+  - Alcatel
+8088q:
+  - Alcatel
 supra m725g:
   - Supra
 snap 4g2:
@@ -34110,6 +34410,36 @@ t40 plus_row:
   - Teclast
 iplay20s:
   - AllDocube
+100015685-a:
+  - ONN
+3g_16:
+  - TechPad
+p80h_row:
+  - Teclast
+sky 9 a102 3g ss9236pg:
+  - SUNWIND
+sunwind sky 7 e200 3g st7230mg:
+  - SUNWIND
+  - Sony Ericsson
+qumo_vega_803i:
+  - Qumo
+mrx-w29:
+  - Huawei
+gen-10:
+  - OKSI
+h10888m:
+  - Proline
+fever_plus_j:
+  - Mobicel
+  - Wiko
+supra m84e 3g:
+  - Supra
+archos 80 oxygen:
+  - Archos
+supra m74c 4g:
+  - Supra
+supra m12cg:
+  - Supra
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -35145,6 +35475,22 @@ u43f8000q:
   - DEXP
 ugoos-am3:
   - Ugoos
+leap-s1:
+  - STRONG
+polar_p24l51t2csm:
+  - Polar
+mygica hdr smart tv box:
+  - MyGica
+mygica hdr quad core box:
+  - MyGica
+mygica atv1900 no wv:
+  - MyGica
+mygica atv495 pro 16g:
+  - MyGica
+mygica quad core enjoy tv box:
+  - MyGica
+mygica atv1960:
+  - MyGica
 bb2 pro:
   - Mecool
 kii pro:
@@ -35610,6 +35956,8 @@ tvb-906x:
   - InfoKit
 beelink gs1:
   - Beelink
+andowl:
+  - Andowl
 dns:
   - DNS
 leo-bx9:
@@ -35628,3 +35976,9 @@ nb runiq:
   - New Balance
 vr-1541f:
   - Lenovo
+pacific:
+  - Oculus
+quest 2:
+  - Oculus
+standalone hmd:
+  - Oculus
