@@ -742,6 +742,7 @@ module.exports = {
   'PV': 'Point of View',
   'PL': 'Polaroid',
   'Q6': 'Polar',
+  '97': 'PolarLine',
   'PP': 'PolyPad',
   'P5': 'Polytron',
   'P2': 'Pomp',
