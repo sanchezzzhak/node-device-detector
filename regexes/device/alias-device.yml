@@ -1,5 +1,5 @@
 # Dalvik
-- regex: '^Dalvik/[\d\.]+ \(Linux; U; ?Android ?(?:[\d\.]+;) ?(.+)(?: Build|MIUI)/'
+- regex: '^Dalvik/[\d\.]+ [(]Linux; U; ?Android ?(?:[\d\.]+;) ?(.+)(?: Build|MIUI)/'
   name: '$1'
 
 # MQQBrowser
@@ -21,11 +21,11 @@
   name: '$1'
 
 # Instagram
-- regex: 'Instagram (?:[\d.]+) +\(([^;]+);'
+- regex: 'Instagram (?:[\d.]+) +[(]([^;]+);'
   name: '$1'
 
 # CFNetwork apple
-- regex: 'CFNetwork/.+Darwin/.+(?:\(x86_64\))? +\(([^)]+)\)$'
+- regex: 'CFNetwork/.+Darwin/.+(?:[(]x86_64[)])? +[(]([^)]+)[)]$'
   name: '$1'
 
 - regex: 'IEMobile/[0-9].+;(?:[^;]+); ?([^;]+);'
@@ -49,9 +49,9 @@
   name: '$1'
 - regex: '[; ]([^;]+); HMSCore [\d\.]+; GMSCore [\d\.]+'
   name: '$1'
-- regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:[^;]+;)?(?: +)?([^/;]+)(?:Release/.+Build ?/| Build ?/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit|/.+CTC/|; GMSCore)'
+- regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:[^;]+;)?(?: +)?([^/;]+)(?:Release/.+Build ?/| Build ?/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit|; HPT/|/.+CTC/|; GMSCore)'
   name: '$1'
-- regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:arm(?:_.+)?;|[a-z]{2}(?:[_-][a-z]{2})?;)?(?: +)?(.*?)(?:(?:; smart-tv)?[)] ?ShieldExperience|;? Build ?/|\)? ?AppleWebKit)'
+- regex: 'Android +(?:[\d\.]+;{1,2})(?: +)?(?:arm(?:_.+)?;|[a-z]{2}(?:[_-][a-z]{2})?;)?(?: +)?(.+?)(?:(?:; smart-tv)?[)] ?ShieldExperience|;? Build ?/|\)? ?AppleWebKit|/[\w]+[)] AppleWebKit)'
   name: '$1'
 
 # BlackBerry
@@ -59,7 +59,7 @@
   name: '$1'
 
 # UnityPlayer
-- regex: 'Android OS.+; +([^;]+);?\) AppleWebKit/.+UnityPlayer'
+- regex: 'Android OS.+; +([^;]+);?[)] AppleWebKit/.+UnityPlayer'
   name: '$1'
 
 # Obigo Browser
