@@ -482,7 +482,7 @@
     name: 'SEOmoz, Inc.'
     url: 'http://moz.com/'
 
-- regex: 'facebookexternalhit|facebookplatform|facebookexternalua'
+- regex: 'facebookexternalhit|facebookplatform|facebookexternalua|facebookcatalog'
   name: 'Facebook External Hit'
   category: 'Social Media Agent'
   url: 'https://www.facebook.com/externalhit_uatext.php'
@@ -2595,6 +2595,11 @@
   name: 'DataForSeoBot'
   category: 'Crawler'
   url: 'https://dataforseo.com/dataforseo-bot'
+
+- regex: 'Discordbot/([\d+.]+)'
+  name: 'Discord Bot'
+  category: 'Service Agent'
+  url: 'https://discordapp.com'
 
 # Generic detections
 - regex: '[a-z0-9\-_]*((?<!cu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9])|crawler|crawl|checker|archiver|transcoder|spider)([^a-z]|$)'
