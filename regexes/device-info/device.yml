@@ -6527,6 +6527,13 @@ tecno mobile:
   tecno cd6: '->camon 15 air'
   camon 15 premier: 'RE=2020.04;SZ=77.7x163.3x9.1;WT=203;DS=6.6;RS=1080x2340;OS=Android 10;CP=38;RM=6144;'
   tecno cd8j: '->camon 15 premier'
+  spark youth: 'RE=2019.03;OS=Android 8.1;SZ=76.6x156.95x8.1;WT=155;CP=5;DS=6;RM=1024;SM=2;'
+  tecno ka6: '->spark youth'
+  spark 4 air: 'DS=6.1;RS=720x1560;SZ=75x156.1x9.2;WT=;RE=2019.08;OS=Android 9;RM=2048;CP=44;'
+  tecno kc6: '->spark 4 air'
+  tecno kc6s: '->spark 4 air'
+  camon x pro: 'RE=2018.03;SZ=75.2x158x5.2;WT=148;DS=6.0;RS=1080x2160;OS=Android 8.1;CP=166;RM=4096;'
+  tecno ca8: '->camon x pro'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'
