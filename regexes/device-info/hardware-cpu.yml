@@ -2279,3 +2279,10 @@ cpu:
     clock_rate: 1000
     process: 28nm
     gpu_id: 2
+  340:
+    name: MediaTek Helio А25
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 25
