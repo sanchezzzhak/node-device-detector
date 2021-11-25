@@ -2287,7 +2287,7 @@ cpu:
     process: 12nm
     gpu_id: 25
   341:
-    name: Spreadtrum SC7731SC7721E
+    name: Spreadtrum SC7721E
     type: ARM
     cores: 4
     clock_rate: 1300

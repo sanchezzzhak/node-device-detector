@@ -6571,6 +6571,10 @@ tecno mobile:
   tecno kf7j: '->spark 7p'
   pop 4 air: 'RE=2021.05;DS=6.52;RS=540x1200;SZ=73.8x144x10.6;WT=183;SM=2;RM=1024;CP=341;OS=Android 10;'
   tecno bc1: '->pop 4 air'
+  camon isky 3: 'RE=2029.03;DS=6.2;RM=2048;CP=44;SZ=75.54x154.29x7.9;RS=720x1500;WT=150;OS=Android 9;SM=2;'
+  tecno kb3: '->camon isky 3'
+  spark 4 lite: 'RE=2019.12;SZ=75.8x166.7x8.4;WT=;DS=6.52;RS=720x1600;OS=Android 9.0;CP=44;RM=2048;'
+  tecno bb4k: '->spark 4 lite'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'
