@@ -2257,7 +2257,6 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 1
-
   337:
     name: MediaTek Helio A20 MT6761D
     type: ARM
