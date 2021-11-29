@@ -6601,6 +6601,12 @@ tecno mobile:
   pouvoir 1: 'RE=2018.05;SZ=77.2x154.5x8.8;WT=164;DS=5.5;RS=720x1280;OS=Android 7;CP=336;RM=1024;'
   tecno la6: '->pouvoir 1'
 
+wiko:
+  u feel: 'RE=2016.05;SZ=70.7x143x8.6;WT=145;DS=5;RS=720x1280;CP=79;RM=3072;OS=Android 6;'
+  fever: 'RE=2015.09;SZ=73.8x148x8.3;WT=143;DS=5.2;RS=1080x1920;CP=118;RM=2048;OS=Android 6;'
+  barry: 'RE=2014.03;SZ=73.8x145.8x9.7;WT=155;DS=5;RS=480x854;CP=24;RM=512;OS=Android 4;'
+  birdy: 'RE=2014.05;SZ=67x132x9.6;WT=141;DS=4.5;RS=480x854;CP=7;RM=1024;OS=Android 4;'
+
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'
 #  z8plus: '->z8 plus'
