@@ -6606,6 +6606,17 @@ wiko:
   fever: 'RE=2015.09;SZ=73.8x148x8.3;WT=143;DS=5.2;RS=1080x1920;CP=118;RM=2048;OS=Android 6;'
   barry: 'RE=2014.03;SZ=73.8x145.8x9.7;WT=155;DS=5;RS=480x854;CP=24;RM=512;OS=Android 4;'
   birdy: 'RE=2014.05;SZ=67x132x9.6;WT=141;DS=4.5;RS=480x854;CP=7;RM=1024;OS=Android 4;'
+  view 3 lite: 'RE=2019.05;SZ=70.7x148.4x8.5;WT=147;DS=6.09;RS=720x1520;CP=109;RM=2048;OS=Android 9;'
+  w-v800-tvm: '->view 3 lite'
+  w-v800-eea: '->view 3 lite'
+  w-v800-ope: '->view 3 lite'
+  view 3: 'RE=2019.05;SZ=76.5x159.0x8.2;WT=178;DS=6.26;RS=720x1520;CP=171;RM=3072;OS=Android 9;'
+  w-p311-ope: '->view 3'
+  w-p311-eea: '->view 3'
+
+inoi:
+  2: 'DS=5;RS=480x854;SZ=73.1x144x9.45;WT=162;RE=2018.04;OS=Android 7;RM=1024;CP=9;'
+  3: 'DS=5;RS=480x960;SZ=67x139x10;WT=141;RE=2018;OS=Android 7;RM=1024;CP=8;'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'

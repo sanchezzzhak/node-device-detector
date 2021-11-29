@@ -47,3 +47,8 @@ WE:
   url: https://www.aamra.com.bd
   alias:
     - name: aamra
+
+Inoi:
+  url: https://www.inoi.com
+  alias:
+    - name: INOI
