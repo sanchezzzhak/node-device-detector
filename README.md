@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 30/11/2021_
+_Last update: 01/12/2021_
 
 ## Description
 
@@ -240,7 +240,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1612 devices, alias devices 3564)
+> This parser is experimental and contains few devices. (1625 devices, alias devices 3581)
 >
 ##### Support detail brands/models list:
 
@@ -302,22 +302,23 @@ is not parse result  {name: ""}
 | imo mobile | 5 | 0 | - | inoi | 4 | 0 |
 | intex | 9 | 3 | - | ipro | 6 | 7 |
 | irbis | 15 | 0 | - | kurio | 3 | 3 |
-| lg | 127 | 286 | - | minix | 1 | 1 |
-| mivo | 3 | 2 | - | mobicel | 3 | 1 |
-| motorola | 27 | 24 | - | noa | 1 | 0 |
-| nuu mobile | 9 | 3 | - | nuvo | 3 | 2 |
-| oneplus | 18 | 48 | - | oppo | 12 | 31 |
-| oukitel | 8 | 0 | - | öwn | 1 | 2 |
-| panasonic | 5 | 8 | - | pipo | 5 | 0 |
-| realme | 65 | 94 | - | samsung | 167 | 714 |
-| sony | 44 | 172 | - | supra | 1 | 0 |
-| tecno mobile | 75 | 108 | - | tiphone | 1 | 0 |
-| utok | 1 | 0 | - | uz mobile | 1 | 0 |
-| vernee | 9 | 2 | - | vivo | 173 | 243 |
-| walton | 13 | 0 | - | we | 8 | 0 |
-| weimei | 1 | 0 | - | wiko | 6 | 5 |
-| wileyfox | 9 | 0 | - | wink | 4 | 0 |
-| zync | 2 | 0 | - | zyq | 1 | 13 |
+| lg | 127 | 286 | - | maze | 4 | 0 |
+| minix | 1 | 1 | - | mivo | 3 | 2 |
+| mobicel | 3 | 1 | - | motorola | 27 | 24 |
+| noa | 1 | 0 | - | nuu mobile | 9 | 3 |
+| nuvo | 3 | 2 | - | oneplus | 18 | 48 |
+| oppo | 21 | 48 | - | oukitel | 8 | 0 |
+| öwn | 1 | 2 | - | panasonic | 5 | 8 |
+| pipo | 5 | 0 | - | realme | 65 | 94 |
+| samsung | 167 | 714 | - | sony | 44 | 172 |
+| supra | 1 | 0 | - | tecno mobile | 75 | 108 |
+| tiphone | 1 | 0 | - | utok | 1 | 0 |
+| uz mobile | 1 | 0 | - | vernee | 9 | 2 |
+| vivo | 173 | 243 | - | walton | 13 | 0 |
+| we | 8 | 0 | - | weimei | 1 | 0 |
+| wiko | 6 | 5 | - | wileyfox | 9 | 0 |
+| wink | 4 | 0 | - | zync | 2 | 0 |
+| zyq | 1 | 13 | - |  |  |  |
 
 </details>
 
