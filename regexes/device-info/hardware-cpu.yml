@@ -1873,7 +1873,7 @@ cpu:
     gpu_id: 24
   283:
     name: Qualcomm Snapdragon 665
-    # SDM665
+    # SDM665 SM6125
     type: ARM
     clock_rate: 2200
     cores: 8

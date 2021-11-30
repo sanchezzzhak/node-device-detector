@@ -151,3 +151,34 @@
       height: '163.8'
       thickness: '8.9'
     weight: '202'
+
+- brand: oppo
+  model: pdyt20
+  result:
+    display:
+      size: '6.5'
+      resolution:
+        width: '1080'
+        height: '2400'
+      ratio: '20:9'
+      ppi: '405'
+    hardware:
+      cpu_id: '274'
+      ram: '4096'
+      cpu:
+        name: MediaTek Dimensity 720
+        type: ARM
+        clock_rate: 2000
+        cores: 8
+        process: 7nm
+        gpu_id: 102
+      gpu:
+        name: ARM Mali-G57 MP3
+        clock_rate: 670
+    os: Android 10
+    release: '2020.07'
+    size:
+      width: '75'
+      height: '162.2'
+      thickness: '7.9'
+    weight: '175'
