@@ -6622,6 +6622,17 @@ inoi:
 
 hisense:
   infinity h40 rock: 'SZ=76.4x166.2x9.47;WT=201;DS=6.52;RS=1080x2340;RM=4096;OS=Android 10;CP=290;RE=2020.04;'
+  h30 lite: 'OS=Android 9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
+
+oppo:
+  find x2: 'RE=2020.03;SZ=74.5x164.9x8;WT=209;DS=6.7;RS=1440x3168;OS=Android 10;CP=207;RM=8192;'
+  pdem10: '->find x2'
+  cph2023: '->find x2'
+  find 7a: 'RE=2014.03;SZ=75x152.6x9.2;WT=170;DS=5.5;RS=1080x1920;OS=Android 4.3;CP=139;RM=2048;'
+  x9007: '->find 7a'
+  x9006: '->find 7a'
+  x9000: '->find 7a'
+
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'
