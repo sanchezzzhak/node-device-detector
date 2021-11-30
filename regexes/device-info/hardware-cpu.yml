@@ -1924,6 +1924,7 @@ cpu:
     process: 10nm
     gpu_id: 39
   290:
+    # MT6771V
     name: MediaTek Helio P60
     type: ARM
     cores: 8
@@ -2257,7 +2258,6 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 1
-
   337:
     name: MediaTek Helio A20 MT6761D
     type: ARM
@@ -2279,3 +2279,24 @@ cpu:
     clock_rate: 1000
     process: 28nm
     gpu_id: 2
+  340:
+    name: MediaTek Helio А25
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 25
+  341:
+    name: Spreadtrum SC7721E
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
+  342:
+    name: MediaTek Helio P35 MT6765V
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25
