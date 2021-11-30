@@ -1939,7 +1939,7 @@ cpu:
     process: 20nm
     gpu_id: 80
   292:
-    name: MediaTek Helio P20 MT6757CD
+    name: MediaTek Helio P20 MT6757
     type: ARM
     cores: 8
     clock_rate: 2600
@@ -2300,3 +2300,10 @@ cpu:
     clock_rate: 2300
     process: 12nm
     gpu_id: 25
+  343:
+    name: MediaTek Helio P25 MT6757CD
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 16nm
+    gpu_id: 75
