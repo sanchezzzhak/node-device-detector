@@ -2293,3 +2293,10 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 1
+  342:
+    name: MediaTek Helio P35 MT6765V
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25
