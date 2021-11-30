@@ -6582,7 +6582,7 @@ tecno mobile:
   tecno bc1s: '->pop 4 lte'
   pop 4: 'RE=2020.07;SZ=77.3x160x9.5;WT=;DS=6.0;RS=480x960;OS=Android 10;RM=2048;CP=8;SM=2;'
   tecno bc2c: '->pop 4'
-  pop 4 pro: 'DS=6.52;RE=540x1200;SZ=77.58x167.11x9.55;RE=2020.7;OS=Android 10;RM=2048;CP=8;'
+  pop 4 pro: 'DS=6.52;RS=540x1200;SZ=77.58x167.11x9.55;RE=2020.07;OS=Android 10;RM=2048;CP=8;'
   tecno bc3: '->pop 4 pro'
   pouvoir 4: 'RE=2020.07;SZ=79.6x174.9x9.2;WT=;DS=7.0;RS=720x1640;OS=Android 10;CP=44;RM=3072;'
   tecno lc7s: '->pouvoir 4'
