@@ -2307,3 +2307,10 @@ cpu:
     clock_rate: 2600
     process: 16nm
     gpu_id: 75
+  344:
+    name: MediaTek Dimensity 800 MT6873V
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 7nm
+    gpu_id: 28

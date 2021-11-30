@@ -6654,6 +6654,10 @@ oppo:
   pbbt30: '->a5'
   cph1809: '->a5'
   pbat00: '->a5'
+  ax5: 'RE=2017.07;SZ=75.6x156.2x8.2;WT=168;DS=6.2;RS=720x1520;OS=Android 8.1;CP=214;RM=3072;'
+  cph1851: '->ax5'
+  ax5s: 'RE=2019.03;SZ=75.4x155.9x8.2;WT=170;DS=6.2;RS=720x1520;OS=Android 8.1;CP=38;RM=2048;'
+  cph1920: '->ax5s'
   a5 (2020): 'RE=2019.09;SZ=75.4x163.6x9.1;WT=195;DS=6.5;RS=720x1600;OS=Android 9;CP=283;RM=4096;'
   cph1943: '->a5 (2020)'
   cph1931: '->a5 (2020)'
@@ -6682,8 +6686,7 @@ oppo:
   pbbm00: '->a7x'
   a71: 'RE=2017.09;SZ=73.8x148.1x7.6;WT=137;DS=5.2;RS=720x1280;OS=Android 7.1;CP=40;RM=3072;'
   cph1717: '->a71'
-  # todo rename to a71 (2018)
-  cph1801: '->a71'
+  cph1801: '->a71 (2018)'
   a71 (2018): 'RE=2018.02;SZ=73.8x148.1x7.6;WT=137;DS=5.2;RS=720x1280;OS=Android 7.1;CP=214;RM=2048;'
   a72: 'RE=2020.04;SZ=75.5x162x8.9;WT=192;DS=6.5;RS=1080x2400;OS=Android 10;CP=283;RM=4096;'
   pdyt20: '->pdym20'
@@ -6714,6 +6717,13 @@ oppo:
   pcpm00: '->a91'
   cph2001: '->a91'
   cph2021: '->a91'
+  a92: 'RE=2020.05;SZ=75.5x162x8.9;WT=192;DS=6.5;RS=1080x2400;OS=Android 10;CP=283;RM=6144;'
+  cph2059: '->a92'
+  a92s: 'RE=2020.04;SZ=75.5x163.8x8.1;WT=184;DS=6.57;RS=1080x2400;OS=Android 10;CP=344;RM=6144;'
+  pdkt00: '->a92s'
+  pdkm00: '->a92s'
+
+
 
 maze:
   alpha: 'DS=6;RS=1080x1920;SZ=82.5x159.8x8.1;WT=225;RE=2017.06;OS=Android 7;RM=6144;CP=343;'
