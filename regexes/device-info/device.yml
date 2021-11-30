@@ -6664,6 +6664,10 @@ oppo:
   cph2069: '->a52'
   a32: 'RE=2020.09;SZ=75.1x163.9x8.4;WT=186;DS=6.5;RS=720x1600;OS=Android 10;CP=244;RM=4096;'
   pdvm00: '->a32'
+  a53: 'RE=2020.08;SZ=75.1x163.9x8.4;WT=186;DS=6.5;RS=720x1600;OS=Android 10;CP=244;RM=4096;'
+  cph2127: '->a53'
+  a57: 'RE=2016.11;SZ=72.9x149.1x7.7;WT=147;DS=5.2;RS=720x1280;OS=Android 6;CP=35;RM=3072;'
+  cph1701: '->a57'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OS=Android 8.1;'
