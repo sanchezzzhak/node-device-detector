@@ -1924,6 +1924,7 @@ cpu:
     process: 10nm
     gpu_id: 39
   290:
+    # MT6771V
     name: MediaTek Helio P60
     type: ARM
     cores: 8
