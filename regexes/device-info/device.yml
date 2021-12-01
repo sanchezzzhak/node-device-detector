@@ -6632,6 +6632,10 @@ oppo:
   x9007: '->find 7a'
   x9006: '->find 7a'
   x9000: '->find 7a'
+  find 7: 'RE=2014.03;SZ=75x152.6x9.2;WT=171;DS=5.5;RS=1440x2560;OS=Android 4.3;CP=243;RM=3072;'
+  x9076: '->find 7'
+  x9070: '->find 7'
+  x9077: '->find 7'
   a12: 'RE=2020.04;SZ=75.5x155.9x8.3;WT=165;DS=6.22;RS=720x1520;OS=Android 9;CP=38;RM=3072;'
   cph2077: '->a12'
   cph2083: '->a12'
@@ -6722,7 +6726,8 @@ oppo:
   a92s: 'RE=2020.04;SZ=75.5x163.8x8.1;WT=184;DS=6.57;RS=1080x2400;OS=Android 10;CP=344;RM=6144;'
   pdkt00: '->a92s'
   pdkm00: '->a92s'
-
+  ax7: 'RE=2018.11;SZ=75.4x155.9x8.1;WT=168;DS=6.2;RS=720x1520;OS=Android 8.1;CP=214;RM=3072;SM=2;'
+  cph1903: '->ax7'
 
 
 maze:
