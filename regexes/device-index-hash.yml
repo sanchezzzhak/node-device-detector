@@ -280,6 +280,8 @@ imac21,2:
   - Apple
 imacpro1,1:
   - Apple
+powermac7,2:
+  - Apple
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -21628,6 +21630,72 @@ w-v680-ope:
   - Wiko
 smart_l20x:
   - iGet
+motorola defy:
+  - Motorola
+w-k211-eea:
+  - Wiko
+rmx3370:
+  - Realme
+rmx3430:
+  - Realme
+le2115:
+  - OnePlus
+rp01:
+  - UMIDIGI
+lm-q725s:
+  - LG
+vox_s513_4g_vs5035ml:
+  - Digma
+htc desire 20 pro:
+  - HTC
+ntn-lx1:
+  - Huawei
+g310:
+  - General Mobile
+g510:
+  - General Mobile
+g700:
+  - General Mobile
+huawei g700:
+  - Huawei
+huawei g700-u10:
+  - Huawei
+g501:
+  - General Mobile
+g301:
+  - General Mobile
+pro 6 plus:
+  - Meizu
+eva-l29:
+  - Huawei
+centric cm3321:
+  - Centric
+go sp:
+  - Cloudfone
+go sp 2:
+  - Cloudfone
+next infinity plus:
+  - Cloudfone
+go connect lite 2:
+  - Cloudfone
+go connect lite):
+  - Cloudfone
+go connect:
+  - Cloudfone
+zte blade a31 plus ru:
+  - ZTE
+zte blade a31 lite:
+  - ZTE
+sm-a037g:
+  - Samsung
+sm-g991u:
+  - Samsung
+sm-e625f:
+  - Samsung
+sm-a505gn:
+  - Samsung
+sm-a526u1:
+  - Samsung
 bravis_a506:
   - Bravis
 bravis delta:
@@ -34984,6 +35052,18 @@ inoipad mini 1+16 wi-fi:
   - Inoi
 iplay_8t:
   - AllDocube
+nokia t20:
+  - Nokia
+p80_row:
+  - Teclast
+pmt3231_4g_d_eea:
+  - Prestigio
+sm-t733:
+  - Samsung
+n410:
+  - DEXP
+rq-713s:
+  - RoyQueen
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -36059,6 +36139,8 @@ beyondtv:
   - TCL
 gtking pro:
   - Beelink
+rombica smart box q2:
+  - Rombica
 bb2 pro:
   - Mecool
 kii pro:

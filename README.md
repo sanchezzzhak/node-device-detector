@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 30/11/2021_
+_Last update: 01/12/2021_
 
 ## Description
 
