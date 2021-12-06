@@ -57,6 +57,7 @@ module.exports = {
   'O8': 'AOC',
   'J2': 'AOYODKG',
   '55': 'AOpen',
+  '9Y': 'Aocos',
   'AP': 'Apple',
   'AR': 'Archos',
   'AB': 'Arian Space',
