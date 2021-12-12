@@ -2327,3 +2327,10 @@ cpu:
     clock_rate: 2200
     process: 12nm
     gpu_id: 114
+  347:
+    name: MediaTek Dimensity 1000L MT6885Z
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 110
