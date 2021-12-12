@@ -280,6 +280,8 @@ imac21,2:
   - Apple
 imacpro1,1:
   - Apple
+powermac7,2:
+  - Apple
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -1152,6 +1154,17 @@ sm-n950w:
   - Samsung
 begonia:
   - Xiaomi
+redmi note 9 pro max:
+  - Xiaomi
+redmi note 7s:
+  - Xiaomi
+mz-note9:
+  - Meizu
+mz-infinix x695c:
+  - Infinix
+  - Meizu
+mz-m5 note:
+  - Meizu
 ipod5,1:
   - Apple
 hmt390q:
@@ -1162,6 +1175,32 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -3047,6 +3086,66 @@ cph1913:
   - OPPO
 cph1915:
   - OPPO
+px:
+  - Elephone
+px_pro:
+  - Elephone
+r19:
+  - CUBOT
+m13:
+  - Leagoo
+m12:
+  - Leagoo
+blade e01:
+  - ZTE
+a103so:
+  - Sony
+a102sh:
+  - Sharp
+jelly2_jp:
+  - Unihertz
+sog05:
+  - Sony
+xq-bc42:
+  - Sony
+ldn-l01:
+  - Huawei
+rmx3142:
+  - Realme
+pfgm00:
+  - OPPO
+wp17:
+  - Oukitel
+inoi 7 4+64 2021:
+  - Inoi
+redmi y2:
+  - Xiaomi
+tecno kf6p:
+  - Tecno Mobile
+tecno kg7n:
+  - Tecno Mobile
+tecno pr651:
+  - Tecno Mobile
+rmx3193:
+  - Realme
+rmx3235:
+  - Realme
+rmx3360:
+  - Realme
+rmx3381:
+  - Realme
+kingkong 5:
+  - CUBOT
+cph2139:
+  - OPPO
+cph2249:
+  - OPPO
+g450 2021:
+  - DEXP
+21061119bi:
+  - Xiaomi
+inkosi:
+  - Stylo
 r831k:
   - OPPO
 r831l:
@@ -21628,6 +21727,140 @@ w-v680-ope:
   - Wiko
 smart_l20x:
   - iGet
+motorola defy:
+  - Motorola
+w-k211-eea:
+  - Wiko
+rmx3370:
+  - Realme
+rmx3430:
+  - Realme
+le2115:
+  - OnePlus
+rp01:
+  - UMIDIGI
+lm-q725s:
+  - LG
+vox_s513_4g_vs5035ml:
+  - Digma
+htc desire 20 pro:
+  - HTC
+ntn-lx1:
+  - Huawei
+g310:
+  - General Mobile
+g510:
+  - General Mobile
+g700:
+  - General Mobile
+huawei g700:
+  - Huawei
+huawei g700-u10:
+  - Huawei
+g501:
+  - General Mobile
+g301:
+  - General Mobile
+pro 6 plus:
+  - Meizu
+eva-l29:
+  - Huawei
+centric cm3321:
+  - Centric
+go sp:
+  - Cloudfone
+go sp 2:
+  - Cloudfone
+next infinity plus:
+  - Cloudfone
+go connect lite 2:
+  - Cloudfone
+go connect lite):
+  - Cloudfone
+go connect:
+  - Cloudfone
+zte blade a31 plus ru:
+  - ZTE
+zte blade a31 lite:
+  - ZTE
+sm-a037g:
+  - Samsung
+sm-g991u:
+  - Samsung
+sm-e625f:
+  - Samsung
+sm-a505gn:
+  - Samsung
+sm-a526u1:
+  - Samsung
+blade:
+  - Maze
+comet:
+  - Maze
+moto e20:
+  - Motorola
+moto g(40) fusion:
+  - Motorola
+  - Odys
+moto g(60)s:
+  - Motorola
+lm-q310n:
+  - LG
+elz-an00:
+  - Huawei
+nam-lx9:
+  - Huawei
+motorola one 5g:
+  - Motorola
+redmi 9t:
+  - Xiaomi
+p13 blue 2021:
+  - Reeder
+moto g stylus 5g:
+  - Motorola
+a455:
+  - DEXP
+g660:
+  - DEXP
+samsung sm-a025u1:
+  - Samsung
+v2052:
+  - Vivo
+v2059:
+  - Vivo
+v2145a:
+  - Vivo
+v2148a:
+  - Vivo
+wiko u614as:
+  - Wiko
+bq-5560l:
+  - bq
+cph2131:
+  - OPPO
+drive 8:
+  - Krüger&Matz
+am-h200:
+  - Alcatel
+mz-tecno ke7:
+  - Tecno Mobile
+  - Meizu
+mz-stk-lx1:
+  - Huawei
+  - Meizu
+mz-m2010j19sy:
+  - Xiaomi
+  - Meizu
+mz-m2:
+  - Meizu
+redmi 9c nfc:
+  - Xiaomi
+redmi 9c:
+  - Xiaomi
+redmi 9a:
+  - Xiaomi
+redmi 8a dual:
+  - Xiaomi
 bravis_a506:
   - Bravis
 bravis delta:
@@ -29313,32 +29546,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -34984,6 +35191,32 @@ inoipad mini 1+16 wi-fi:
   - Inoi
 iplay_8t:
   - AllDocube
+nokia t20:
+  - Nokia
+p80_row:
+  - Teclast
+pmt3231_4g_d_eea:
+  - Prestigio
+sm-t733:
+  - Samsung
+n410:
+  - DEXP
+rq-713s:
+  - RoyQueen
+aocos px102:
+  - Aocos
+kpad:
+  - AllDocube
+m40pro_eea:
+  - Teclast
+lenovo tb-j616x:
+  - Lenovo
+w22pro 3g:
+  - Ramos
+l310i:
+  - DEXP
+gravity 2:
+  - SPC
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -36059,6 +36292,8 @@ beyondtv:
   - TCL
 gtking pro:
   - Beelink
+rombica smart box q2:
+  - Rombica
 bb2 pro:
   - Mecool
 kii pro:
@@ -36552,3 +36787,5 @@ standalone hmd:
   - Oculus
 h1-c-aladeng:
   - Gocomma
+lem14:
+  - LEMFO
