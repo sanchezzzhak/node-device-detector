@@ -338,3 +338,6 @@ gpu:
   113:
     name: ARM Mali-G52 MC2
     clock_rate: 950
+  114:
+    name: PowerVR GM9446
+    clock_rate: 970

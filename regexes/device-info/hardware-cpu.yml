@@ -1924,7 +1924,6 @@ cpu:
     process: 10nm
     gpu_id: 39
   290:
-    # MT6771V
     name: MediaTek Helio P60
     type: ARM
     cores: 8
@@ -2314,3 +2313,17 @@ cpu:
     clock_rate: 2000
     process: 7nm
     gpu_id: 28
+  345:
+    name: MediaTek Helio P95 MT6779V
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 114
+  346:
+    name: MediaTek Helio P90 MT6779
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 114
