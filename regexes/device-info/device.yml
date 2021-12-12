@@ -6625,6 +6625,10 @@ hisense:
   h30 lite: 'OS=Android 9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
 
 oppo:
+  a11: 'RE=2019.10;SZ=75.6x163.6x9.1;WT=195;DS=6.5;RS=720x1600;OS=Android 9;CP=283;RM=4096;'
+  pchm10: '->a11'
+  a11x: 'DS=6.5;RS=720x1600;SZ=75.6x163.6x9.1;WT=195;RE=2019.10;OS=Android 9;RM=8192;CP=283;'
+  pchm00: '->a11x'
   find x2: 'RE=2020.03;SZ=74.5x164.9x8;WT=209;DS=6.7;RS=1440x3168;OS=Android 10;CP=207;RM=8192;'
   pdem10: '->find x2'
   cph2023: '->find x2'
@@ -6728,7 +6732,13 @@ oppo:
   pdkm00: '->a92s'
   ax7: 'RE=2018.11;SZ=75.4x155.9x8.1;WT=168;DS=6.2;RS=720x1520;OS=Android 8.1;CP=214;RM=3072;SM=2;'
   cph1903: '->ax7'
-
+  f11 pro: 'RE=2019.03;SZ=76.1x161.3x8.8;WT=190;DS=6.53;RS=1080x2340;OS=Android 9;CP=114;RM=4096;'
+  cph1969: '->f11 pro'
+  cph1987: '->f11 pro'
+  f11: 'RE=2019.03;SZ=76.1x162x8.3;WT=188;DS=6.53;RS=1080x2340;OS=Android 9;CP=114;RM=4096;'
+  cph1911: '->f11'
+  cph1913: '->f11'
+  cph1915: '->f11'
 
 maze:
   alpha: 'DS=6;RS=1080x1920;SZ=82.5x159.8x8.1;WT=225;RE=2017.06;OS=Android 7;RM=6144;CP=343;'
