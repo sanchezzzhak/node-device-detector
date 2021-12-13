@@ -370,6 +370,8 @@ dt40:
   - Urovo
 projector:
   - Epson
+dt50:
+  - Urovo
 gi-626:
   - altron
 5039d_ru:
@@ -1175,32 +1177,6 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -21861,6 +21837,56 @@ redmi 9a:
   - Xiaomi
 redmi 8a dual:
   - Xiaomi
+silver_max:
+  - Kalley
+kis c341:
+  - ZTE
+e553:
+  - Hyundai
+zte blade a0722:
+  - ZTE
+ulefone_armor_5:
+  - Ulefone
+wp1:
+  - Oukitel
+zte axon 7:
+  - ZTE
+u ultra:
+  - HTC
+power_2:
+  - Leagoo
+s60 lite:
+  - Doogee
+zte blade a520c:
+  - ZTE
+zte blade a330:
+  - ZTE
+zte blade a601:
+  - ZTE
+zte blade a610c:
+  - ZTE
+6156h:
+  - TCL
+6125h_ru:
+  - TCL
+5007u_ru:
+  - Alcatel
+yk_p30_eea:
+  - Hoozo
+xplorer_2:
+  - Parrot Mobile
+stk ace:
+  - STK
+itel p13 plus:
+  - iTel
+itel a45:
+  - iTel
+itel l6004l:
+  - iTel
+cruise1:
+  - Seuic
+lenovo l38082:
+  - Lenovo
 bravis_a506:
   - Bravis
 bravis delta:
@@ -29546,6 +29572,32 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -35217,6 +35269,28 @@ l310i:
   - DEXP
 gravity 2:
   - SPC
+m7-3g_qc_3:
+  - Multilaser
+m9-3g:
+  - Multilaser
+m7-3g_quad_core:
+  - Multilaser
+geofox mid 743:
+  - GEOFOX
+atab1021e:
+  - Acer
+core-t4:
+  - Crosscall
+bub6r-3t:
+  - Bubblegum
+archos oxygen 101s:
+  - Archos
+lenovo tb-7305f:
+  - Lenovo
+l370i:
+  - DEXP
+bq-1025l:
+  - bq
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -36294,6 +36368,17 @@ gtking pro:
   - Beelink
 rombica smart box q2:
   - Rombica
+atv r1:
+  - Kalley
+tx3 mini:
+  - Tanix
+  - Pantech
+rombica tv ultima:
+  - Rombica
+polar_p40l33t2csm:
+  - Polar
+perfeo_pf_a4552:
+  - Perfeo
 bb2 pro:
   - Mecool
 kii pro:
