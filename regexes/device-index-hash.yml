@@ -86,6 +86,10 @@ quad-core t3 k2001o nwd:
   - Allwinner
 quad-core t3 k2001-nwd:
   - Allwinner
+f9212a:
+  - Pioneer
+f9212b:
+  - Pioneer
 archos gamepad:
   - Archos
 archos gamepad2:
@@ -1167,6 +1171,8 @@ mz-infinix x695c:
   - Meizu
 mz-m5 note:
   - Meizu
+sm-n9500:
+  - Samsung
 ipod5,1:
   - Apple
 hmt390q:
@@ -21887,6 +21893,84 @@ cruise1:
   - Seuic
 lenovo l38082:
   - Lenovo
+v2039:
+  - Vivo
+nam-al00:
+  - Huawei
+nubia 8011:
+  - Nubia
+tesla_sp9_2:
+  - ComTrade Tesla
+tc52:
+  - Zebra
+tc57:
+  - Zebra
+griffe t9 plus:
+  - Condor
+philips s309:
+  - Philips
+philips s337:
+  - Philips
+philips s616:
+  - Philips
+philips v377:
+  - Philips
+philips_v526:
+  - Philips
+switch1:
+  - Mobicel
+stratus_c5:
+  - Cloud
+stylo_521:
+  - Stylo
+cyclone_c4:
+  - Cloud
+cph2137:
+  - OPPO
+d60lx:
+  - Kodak
+b50pro:
+  - Bmobile
+x50l:
+  - Doogee
+vs571:
+  - Stylo
+x1 dual:
+  - Mobiistar
+vfd 528:
+  - Vodafone
+vfd 525:
+  - Vodafone
+v2 pro:
+  - Vernee
+u25_pro:
+  - Oukitel
+u23:
+  - Oukitel
+u1 mini:
+  - Artel
+u4:
+  - Artel
+tecno f1:
+  - Tecno Mobile
+tecno in5:
+  - Tecno Mobile
+tecno k9:
+  - Tecno Mobile
+tecno s6s:
+  - Tecno Mobile
+tecno w1:
+  - Tecno Mobile
+tecno cx air:
+  - Tecno Mobile
+u17:
+  - Oukitel
+u18:
+  - Oukitel
+u22:
+  - Oukitel
+vs5502:
+  - Stylo
 bravis_a506:
   - Bravis
 bravis delta:
@@ -35291,6 +35375,16 @@ l370i:
   - DEXP
 bq-1025l:
   - bq
+p20hd_rus:
+  - Teclast
+gtkids7:
+  - Ghia
+google pixel slate:
+  - Google
+sunshine_t1:
+  - Cloud
+u63plus:
+  - AllDocube
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -36379,6 +36473,31 @@ polar_p40l33t2csm:
   - Polar
 perfeo_pf_a4552:
   - Perfeo
+rombica tv fly:
+  - Rombica
+  - Fly
+42flea73t2sm:
+  - Erisson
+43u800br:
+  - Kivi
+smart box d1:
+  - Rombica
+smart box f2:
+  - Rombica
+smart box x1:
+  - Rombica
+smart box z1:
+  - Rombica
+smart box h4:
+  - Rombica
+smart box g2:
+  - Rombica
+smart box a1:
+  - Rombica
+smart box a3:
+  - Rombica
+smart box d2:
+  - Rombica
 bb2 pro:
   - Mecool
 kii pro:

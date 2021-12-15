@@ -163,6 +163,7 @@ module.exports = {
   '1C': 'Chuwi',
   'L8': 'Clarmin',
   '25': 'Claresta',
+  '1J': 'Cloud',
   'CD': 'Cloudfone',
   '6C': 'Cloudpad',
   'C0': 'Clout',
@@ -539,10 +540,11 @@ module.exports = {
   'L3': 'Lexand',
   'LX': 'Lexibook',
   'LG': 'LG',
-  'LF': 'Lifemaxx',
-  'LJ': 'L-Max',
-  'LI': 'Lingwin',
+  '39': 'Liberton',
   '5L': 'Linsar',
+  'LF': 'Lifemaxx',
+  'LI': 'Lingwin',
+  'LJ': 'L-Max',
   'LW': 'Linnex',
   'LO': 'Loewe',
   'YL': 'Loview',
@@ -1128,5 +1130,5 @@ module.exports = {
   'OW': 'öwn',
   // legacy brands, might be removed in future versions
   'WB': 'Web TV',
-  'XX': 'Unknown'
+  'XX': 'Unknown',
 };
