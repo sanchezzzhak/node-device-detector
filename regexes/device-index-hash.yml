@@ -376,6 +376,8 @@ projector:
   - Epson
 dt50:
   - Urovo
+mobiprint 4+:
+  - MobiIoT
 gi-626:
   - altron
 5039d_ru:
@@ -23199,6 +23201,155 @@ t790z:
   - T-Mobile
 t790w:
   - T-Mobile
+5030m:
+  - Alcatel
+5061a:
+  - Alcatel
+5102m:
+  - TCL
+5107g:
+  - TCL
+5130m:
+  - TCL
+5002m:
+  - Alcatel
+5004s:
+  - TCL
+akus pro:
+  - Zuum
+akus z1:
+  - Zuum
+5002l:
+  - Alcatel
+5030j:
+  - Alcatel
+5102k:
+  - TCL
+5130j:
+  - TCL
+5006a:
+  - Alcatel
+5024i:
+  - Alcatel
+5101a:
+  - TCL
+5148a:
+  - TCL
+kodak smartway l1 pro:
+  - Kodak
+kodak smartway m2:
+  - Kodak
+  - Meizu
+kodak_smartway_l1:
+  - Kodak
+smartway l2:
+  - Kodak
+smartway_f1:
+  - Kodak
+dsb-0220:
+  - Doro
+dsb-0230:
+  - Doro
+bold m7:
+  - Blu
+aspera_r9:
+  - Aspera
+k5m:
+  - KRIP
+k5d:
+  - KRIP
+k6b:
+  - KRIP
+k5b:
+  - KRIP
+k55h:
+  - KRIP
+k65:
+  - KRIP
+k57:
+  - KRIP
+platinum h5:
+  - Sky
+platinum j5:
+  - Sky
+smooth 5.0:
+  - Smooth Mobile
+smooth 5.5:
+  - Smooth Mobile
+smooth 6.5:
+  - Smooth Mobile
+smooth 6.26 lite:
+  - Smooth Mobile
+smooth626:
+  - Smooth Mobile
+wtcelero5g:
+  - DISH
+w-k610-fra:
+  - Wiko
+w-v755-eea:
+  - Wiko
+w-k560-tvm:
+  - Wiko
+w-v850-eea:
+  - Wiko
+opal 4s:
+  - iPro
+opelmobile_smartx1:
+  - OpelMobile
+boost ultra:
+  - Hi
+elite p55:
+  - Sky
+elite h55:
+  - Sky
+elite c5:
+  - Sky
+elite p5:
+  - Sky
+corn r40:
+  - CORN
+corn r10:
+  - CORN
+corn x5:
+  - CORN
+corn x55:
+  - CORN
+corn_x4:
+  - CORN
+v5_nano:
+  - Evertek
+blade a7s 2020-t:
+  - ZTE
+blade a30:
+  - ZTE
+blade a51:
+  - ZTE
+blade a3 2020-t:
+  - ZTE
+blade a5 2020-t:
+  - ZTE
+blade a3:
+  - ZTE
+blade a320:
+  - ZTE
+v2042:
+  - Vivo
+v2048:
+  - Vivo
+v2057:
+  - Vivo
+v2070:
+  - Vivo
+v2101:
+  - Vivo
+v2104:
+  - Vivo
+v2120:
+  - Vivo
+v2124:
+  - Vivo
+v2129:
+  - Vivo
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -32717,6 +32868,14 @@ qmv7a:
   - Verizon
 ghost g03:
   - Ghost
+surface duo:
+  - Microsoft
+surface duo 2:
+  - Microsoft
+rct6b06p23:
+  - RCA Tablets
+tbbvnc100005208:
+  - ONN
 readboy_g30:
   - Readboy
 readboy_g35:
