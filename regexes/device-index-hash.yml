@@ -10,9 +10,13 @@
   - Vivo
 '5041':
   - Advan
+'5058':
+  - Advan
 '5059':
   - Advan
 '5061':
+  - Advan
+'5062':
   - Advan
 '6002':
   - Advan
@@ -13294,6 +13298,7 @@ elite go:
   - Sky
 elite m5plus:
   - Sky
+  - TechPad
 elite t4:
   - Sky
 c6 2019:
@@ -21973,6 +21978,68 @@ u22:
   - Oukitel
 vs5502:
   - Stylo
+thl_knight_1:
+  - ThL
+ale-l23:
+  - Huawei
+k503s:
+  - Epik One
+elite h5:
+  - Sky
+moto maxx:
+  - Motorola
+moto z2 force:
+  - Motorola
+itel w5005:
+  - iTel
+itel l5002p:
+  - iTel
+neffos c5a:
+  - Neffos
+neffos c5s:
+  - Neffos
+smart_start_3:
+  - MTC
+r4 lte:
+  - Mobicel
+re1:
+  - Konka
+r2_plus:
+  - M4tel
+rio_zam:
+  - Mobicel
+sage:
+  - Hurricane
+sm-j701m:
+  - Samsung
+sm-j701mt:
+  - Samsung
+sm-j710k:
+  - Samsung
+sm-j710fq:
+  - Samsung
+qin 2:
+  - Xiaomi
+qin 2 pro:
+  - Xiaomi
+s3_pro:
+  - UMIDIGI
+stellar p3:
+  - Zuum
+ss5214g:
+  - Soho Style
+sm-a605k:
+  - Samsung
+zte blade 10 vita:
+  - ZTE
+zte a2019 pro:
+  - ZTE
+v3991an:
+  - Wiko
+zte blade a610:
+  - ZTE
+zte blade a210:
+  - ZTE
 bravis_a506:
   - Bravis
 bravis delta:
@@ -23350,6 +23417,152 @@ v2124:
   - Vivo
 v2129:
   - Vivo
+cp3503l:
+  - Coolpad
+cp3504l:
+  - Coolpad
+khatar h-20 pro:
+  - Huavi
+ec1002:
+  - Cricket
+ec211001:
+  - Cricket
+ec211002:
+  - Cricket
+ec211003:
+  - Cricket
+ec211004:
+  - Cricket
+amico_smartphone_4g:
+  - Brondi
+mafe_m820:
+  - Mafe
+bl54pro:
+  - Bmobile
+bl54_pro:
+  - Bmobile
+u304ac:
+  - Cricket
+dammar:
+  - Naomi Phone
+sky_55_eea:
+  - Konrow
+ihunt s60 discovery pro 2022:
+  - iHunt
+s10 tank pro 2020:
+  - iHunt
+symbol m1:
+  - Hotwav
+sakari:
+  - MobiWire
+digicel dl755:
+  - Digicel
+iswag kronos:
+  - iSWAG
+sharp_2:
+  - X-TIGI
+storm_c3:
+  - Cloud
+v608c:
+  - Virzo
+cp3321at:
+  - Coolpad
+gtel infinity 8s:
+  - Gtel
+l55s:
+  - Logic
+l55b:
+  - Logic
+l55a:
+  - Logic
+logic x50:
+  - Logic
+logic l60:
+  - Logic
+gtel infinity 9:
+  - Gtel
+ea211001:
+  - AT&T
+ea211002:
+  - AT&T
+stratus_c5_elite:
+  - Cloud
+core-m5:
+  - Crosscall
+astro 5 pro:
+  - Maxwest
+action-x5:
+  - Crosscall
+core-m4:
+  - Crosscall
+c6l 2020:
+  - Blu
+c5l:
+  - Blu
+c6l:
+  - Blu
+c6l 2021:
+  - Blu
+c5l plus:
+  - Blu
+stg_c10:
+  - STG Telecom
+hk9-4010:
+  - INSYS
+turkcell t80:
+  - Turkcell
+turk telekom tt175:
+  - Türk Telekom
+telekom puls:
+  - T-Mobile
+evm4g3:
+  - Evoo
+neffos c5l:
+  - Neffos
+turkcell t40:
+  - Turkcell
+turkcell t50:
+  - Turkcell
+turkcell t60:
+  - Turkcell
+turkcell t70:
+  - Turkcell
+turkcell turbo t50:
+  - Turkcell
+turkcell maxi plus 5:
+  - Turkcell
+turkcell t20):
+  - Turkcell
+  - Huawei
+turkcell maxipro5:
+  - Turkcell
+  - Huawei
+sm-e225f:
+  - Samsung
+m5plus:
+  - TechPad
+joy pro:
+  - STF Mobile
+miracle 6.0 s:
+  - CellAllure
+rd86e:
+  - Remdun
+sens 5:
+  - Dreamgate
+sp-001:
+  - HERO
+v340u:
+  - AT&T
+v341u:
+  - Vsmart
+sm-s215dl:
+  - Samsung
+a1 alpha 21:
+  - A1
+evermiracle plus:
+  - Evertek
+p9000_max:
+  - POPTEL
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -32876,6 +33089,28 @@ rct6b06p23:
   - RCA Tablets
 tbbvnc100005208:
   - ONN
+lightyear:
+  - SPC
+hope7 max:
+  - X-TIGI
+kingpad_sa10:
+  - Vastking
+joy10 mate:
+  - X-TIGI
+vct9b06q22:
+  - Venturer
+s4t7in:
+  - Selecline
+hr-v101:
+  - Haier
+sm-t561:
+  - Samsung
+turkcell_t_tablet:
+  - Turkcell
+tab 711 4g:
+  - Majestic
+nogapad7g:
+  - NOGA
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -33165,8 +33400,6 @@ sm-t378s:
 sm-t377w:
   - Samsung
 sm-t378v:
-  - Samsung
-sm-t561:
   - Samsung
 sm-t567v:
   - Samsung
@@ -35544,6 +35777,28 @@ sunshine_t1:
   - Cloud
 u63plus:
   - AllDocube
+smartview_7_3g:
+  - MyPhone
+smartview_8_lte:
+  - MyPhone
+smartview_9_6_3g:
+  - MyPhone
+archos 101c platinum:
+  - Archos
+st7160:
+  - Smartab
+t505pro:
+  - Navitel
+sm-t590:
+  - Samsung
+pmt4771_4g_ru:
+  - Prestigio
+pmt4208_3g_e_ru:
+  - Prestigio
+pmt4208_3g_eea:
+  - Prestigio
+optima 1027n 3g tt1236pg:
+  - Digma
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -36657,6 +36912,16 @@ smart box a3:
   - Rombica
 smart box d2:
   - Rombica
+tf-led40s19t2s:
+  - Telefunken
+stv-40led25s:
+  - Shivaki
+stv-40led42s:
+  - Shivaki
+stv_32led42s:
+  - Shivaki
+sun_led32s11:
+  - SUNWIND
 bb2 pro:
   - Mecool
 kii pro:
