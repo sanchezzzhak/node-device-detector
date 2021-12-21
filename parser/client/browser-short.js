@@ -48,6 +48,7 @@ module.exports = {
   'BF': 'Byffox',
   'CA': 'Camino',
   'CL': 'CCleaner',
+  'CJ': 'ChanjetCloud',
   'C6': 'Chedot',
   'C0': 'Centaury',
   'CC': 'Coc Coc',
@@ -304,6 +305,7 @@ module.exports = {
   'ST': 'Streamy',
   'SX': 'Swiftfox',
   'SZ': 'Seznam Browser',
+  'TP': 'T+Browser',
   'TR': 'T-Browser',
   'TO': 't-online.de Browser',
   'TA': 'Tao Browser',
@@ -342,7 +344,7 @@ module.exports = {
   'XI': 'Xiino',
   'XV': 'Xvast',
   'ZE': 'Zetakey',
-  'ZV': 'Zvu',
+  'ZV': 'Zvu'
 
 // detected browsers in older versions
 // 'IA': 'Iceape',  :  pim
