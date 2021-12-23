@@ -2334,3 +2334,10 @@ cpu:
     clock_rate: 2200
     process: 12nm
     gpu_id: 110
+  348:
+    name: MediaTek Helio G35 MT6765G
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25
