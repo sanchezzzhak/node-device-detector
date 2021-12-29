@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 20/12/2021_
+_Last update: 29/12/2021_
 
 ## Description
 
@@ -240,7 +240,7 @@ is not parse result  {name: ""}
 ``` 
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1663 devices, alias devices 3656)
+> This parser is experimental and contains few devices. (1688 devices, alias devices 3703)
 >
 ##### Support detail brands/models list:
 
@@ -307,7 +307,7 @@ is not parse result  {name: ""}
 | mobicel | 3 | 1 | - | motorola | 27 | 24 |
 | noa | 1 | 0 | - | nuu mobile | 9 | 3 |
 | nuvo | 3 | 2 | - | oneplus | 18 | 48 |
-| oppo | 59 | 122 | - | oukitel | 8 | 0 |
+| oppo | 84 | 169 | - | oukitel | 8 | 0 |
 | öwn | 1 | 2 | - | panasonic | 5 | 8 |
 | pipo | 5 | 0 | - | realme | 65 | 94 |
 | samsung | 167 | 714 | - | sony | 44 | 172 |
