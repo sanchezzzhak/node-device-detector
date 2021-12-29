@@ -6874,6 +6874,11 @@ oppo:
   pdnt00: '->reno 4 pro 5g'
   pdnm00: '->reno 4 pro 5g'
   cph2089: '->reno 4 pro 5g'
+  reno 5g: 'RE=2019.04;SZ=77.2x162x9.3;WT=215;DS=6.6;RS=1080x2340;OI=1;OV=9.0;CP=234;RM=8192;'
+  cph1921: '->reno 5g'
+  reno 4 se 5g: 'RE=2020.09;SZ=73.9x160.5x7.8;WT=169;DS=6.43;RS=1080x2400;CP=274;RM=8192;OI=1;OV=10;'
+  peam00: '->reno 4 se 5g'
+  peat00: '->reno 4 se 5g'
 
 maze:
   alpha: 'DS=6;RS=1080x1920;SZ=82.5x159.8x8.1;WT=225;RE=2017.06;OI=1;OV=7;RM=6144;CP=343;'
