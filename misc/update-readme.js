@@ -17,7 +17,7 @@ const sortABC = (a, b) => {
 Brands.sort(sortABC);
 Browsers.sort(sortABC);
 
-let brandInfos = YAML.safeLoad(
+let brandInfos = YAML.load(
   fs.readFileSync(__dirname + '/../regexes/device-info/device.yml', 'utf8')
 );
 

@@ -28,6 +28,7 @@ const AliasDevice = require('./parser/device/alias-device');
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
+const CLIENT_TYPE = require('./parser/const/client-type');
 const APPLE_OS_LIST = require('./parser/const/apple-os');
 const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
@@ -335,17 +336,16 @@ class DeviceDetector {
    * @return {DeviceType}
    */
   parseDeviceType(userAgent, osData, clientData, deviceData) {
-    let osName = osData && osData['name'] ? osData['name'] : '';
-    let osFamily = osData && osData['family'] ? osData['family'] : '';
-    let osVersion = osData && osData['version'] ? osData['version'] : '';
+    let osName = helper.getPropertyValue(osData, 'name', '');
+    let osFamily = helper.getPropertyValue(osData, 'family', '');
+    let osVersion = helper.getPropertyValue(osData, 'version', '');
     
-    let clientType = clientData && clientData['type'] ? clientData['type'] : '';
-    let clientShortName =
-      clientData && clientData['short_name'] ? clientData['short_name'] : '';
-    let clientName = clientData && clientData['name'] ? clientData['name'] : '';
-    let clientFamily =
-      clientData && clientData['family'] ? clientData['family'] : '';
-    let deviceType = deviceData && deviceData['type'] ? deviceData['type'] : '';
+    let clientType = helper.getPropertyValue(clientData, 'type', '');
+    let clientShortName = helper.getPropertyValue(clientData, 'short_name', '');
+
+    let clientName = helper.getPropertyValue(clientData, 'name', '');
+    let clientFamily = helper.getPropertyValue(clientData, 'family', '');
+    let deviceType = helper.getPropertyValue(deviceData, 'type', '');
     
     if (
       deviceType === '' &&
@@ -353,17 +353,17 @@ class DeviceDetector {
       helper.matchUserAgent('Chrome/[.0-9]*', userAgent)
     ) {
       if (
-        helper.matchUserAgent('Chrome/[.0-9]* (Mobile|eliboM)', userAgent) !==
+        helper.matchUserAgent('(Mobile|eliboM) Safari/', userAgent) !==
         null
       ) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
       } else if (
-        helper.matchUserAgent('Chrome/[.0-9]* (?!Mobile)', userAgent) !== null
+        helper.matchUserAgent('(?!Mobile )Safari/', userAgent) !== null
       ) {
         deviceType = DEVICE_TYPE.TABLET;
       }
     }
-    
+
     if (
       deviceType === '' &&
       (helper.hasAndroidTableFragment(userAgent) ||
@@ -375,7 +375,7 @@ class DeviceDetector {
     if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-    
+
     if (deviceType === '' && osName === 'Android' && osVersion !== '') {
       if (helper.versionCompare(osVersion, '2.0') === -1) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
@@ -390,7 +390,14 @@ class DeviceDetector {
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-    
+
+    /**
+     * All unknown devices under running Java ME are more likely a features phones
+     */
+    if ('Java ME' === osName && '' === deviceType) {
+      deviceType = DEVICE_TYPE.FEATURE_PHONE;
+    }
+
     if (
       deviceType === '' &&
       (osName === 'Windows RT' ||
@@ -399,7 +406,8 @@ class DeviceDetector {
     ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
-    
+
+    // check tv fragments and tv clients
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
@@ -407,18 +415,7 @@ class DeviceDetector {
     } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
-    
-    if (deviceType === '') {
-      if (
-        DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
-        DESKTOP_OS_LIST.indexOf(osFamily) !== -1
-      ) {
-        if (MOBILE_BROWSER_LIST.indexOf(clientShortName) === -1) {
-          deviceType = DEVICE_TYPE.DESKTOP;
-        }
-      }
-    }
-    
+
     if (
       DEVICE_TYPE.DESKTOP !== deviceType &&
       userAgent.indexOf('Desktop') !== -1
@@ -427,7 +424,23 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
-    
+
+    let hasMobileBrowser =  (
+      clientType === CLIENT_TYPE.BROWSER &&
+      MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1
+    );
+    let hasDesktopOs = osName !== '' && (
+      DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
+      DESKTOP_OS_LIST.indexOf(osFamily) !== -1
+    );
+
+    // check os desktop and not mobile browser
+    if (deviceType === '') {
+      if (!hasMobileBrowser && hasDesktopOs) {
+        deviceType = DEVICE_TYPE.DESKTOP;
+      }
+    }
+
     return {
       type: deviceType,
     };
@@ -461,7 +474,15 @@ class DeviceDetector {
     }
     return [];
   }
-  
+
+  /**
+   * @param {string} userAgent
+   * @returns {ResultDeviceCode}
+   */
+  parseDeviceCode(userAgent) {
+    return this.getParseAliasDevice().parse(userAgent);
+  }
+
   /**
    * parse device
    * @param {string} userAgent
@@ -472,11 +493,11 @@ class DeviceDetector {
     let deviceCode = '';
     
     if (!this.discardDeviceIndexes) {
-      let alias = this.getParseAliasDevice().parse(userAgent);
+      let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
       brandIndexes = this.getBrandsByDeviceCode(deviceCode);
     } else if (!this.discardDeviceAliasCode) {
-      let alias = this.getParseAliasDevice().parse(userAgent);
+      let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
     }
     

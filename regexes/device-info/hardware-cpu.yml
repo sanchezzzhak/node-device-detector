@@ -1088,12 +1088,14 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1300
+    process: 28nm
     gpu_id: 1
   164:
     name: MediaTek Helio P22 MT6762D
     type: ARM
     cores: 8
     clock_rate: 2000
+    process: 12nm
     gpu_id: 25
   165:
     name: Spreadtrum SC7731E
@@ -1107,12 +1109,14 @@ cpu:
     type: ARM
     cores: 8
     clock_rate: 2500
+    process: 16nm
     gpu_id: 40
   167:
     name: MediaTek MT6516
     type: ARM
     cores: 1
     clock_rate: 416
+    process: 65nm
   168:
     name: MediaTek MT8765A
     type: ARM
@@ -1414,6 +1418,7 @@ cpu:
     type: ARM
     clock_rate: 1500
     cores: 4
+    process: 28nm
     gpu_id: 1
   216:
     name: HiSilicon Kirin 950
@@ -1507,6 +1512,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     gpu_id: 2
   231:
     name: MediaTek MT8765
@@ -1867,7 +1873,7 @@ cpu:
     gpu_id: 24
   283:
     name: Qualcomm Snapdragon 665
-    # SDM665
+    # SDM665 SM6125
     type: ARM
     clock_rate: 2200
     cores: 8
@@ -1932,7 +1938,7 @@ cpu:
     process: 20nm
     gpu_id: 80
   292:
-    name: MediaTek Helio P20 MT6757CD
+    name: MediaTek Helio P20 MT6757
     type: ARM
     cores: 8
     clock_rate: 2600
@@ -2216,3 +2222,122 @@ cpu:
     clock_rate: 1200
     process: 40nm
     gpu_id: 1
+  332:
+    name: MediaTek MT6752
+    type: ARM
+    cores: 8
+    clock_rate: 1700
+    process: 28nm
+    gpu_id: 37
+  333:
+    name: Amlogic S905
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    process: 28nm
+    gpu_id: 111
+  334:
+    name:  MediaTek Helio G80 MT6769V/CU
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 113
+  335:
+    name: Spreadtrum SC9830A
+    type: ARM
+    clock_rate: 1500
+    cores: 4
+    process: 28nm
+    gpu_id: 1
+  336:
+    name: MediaTek MT6580W
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
+  337:
+    name: MediaTek Helio A20 MT6761D
+    type: ARM
+    cores: 4
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 76
+  338:
+    name: MediaTek MT6580P
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
+  339:
+    name: MediaTek MT8753P
+    type: ARM
+    cores: 4
+    clock_rate: 1000
+    process: 28nm
+    gpu_id: 2
+  340:
+    name: MediaTek Helio А25
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 25
+  341:
+    name: Spreadtrum SC7721E
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
+  342:
+    name: MediaTek Helio P35 MT6765V
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25
+  343:
+    name: MediaTek Helio P25 MT6757CD
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 16nm
+    gpu_id: 75
+  344:
+    name: MediaTek Dimensity 800 MT6873V
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 7nm
+    gpu_id: 28
+  345:
+    name: MediaTek Helio P95 MT6779V
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 114
+  346:
+    name: MediaTek Helio P90 MT6779
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 114
+  347:
+    name: MediaTek Dimensity 1000L MT6885Z
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 110
+  348:
+    name: MediaTek Helio G35 MT6765G
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 12nm
+    gpu_id: 25

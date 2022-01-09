@@ -39,3 +39,16 @@ MIVO:
 
 Kurio:
   url: https://kurioworld.com
+
+Oukitel:
+  url: https://oukitel.com.ru
+
+WE:
+  url: https://www.aamra.com.bd
+  alias:
+    - name: aamra
+
+Inoi:
+  url: https://www.inoi.com
+  alias:
+    - name: INOI

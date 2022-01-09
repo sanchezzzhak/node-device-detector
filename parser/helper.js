@@ -111,9 +111,9 @@ exports.hasDesktopFragment = function (userAgent) {
 };
 
 /**
- * @param options
- * @param propName
- * @param defaultValue
+ * @param {object} options
+ * @param {string }propName
+ * @param {*} defaultValue
  * @return {*|null}
  */
 exports.getPropertyValue = function (options, propName, defaultValue) {
@@ -145,7 +145,7 @@ exports.revertObject = function (obj) {
  * @returns {*}
  */
 exports.loadYMLFile = function (file) {
-  return YAML.safeLoad(fs.readFileSync(file));
+  return YAML.load(fs.readFileSync(file));
 };
 
 exports.hasFile = function (file) {

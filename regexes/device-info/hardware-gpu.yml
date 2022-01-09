@@ -335,3 +335,9 @@ gpu:
   112:
     name: ARM Mali-G76 MP4
     clock_rate: 900
+  113:
+    name: ARM Mali-G52 MC2
+    clock_rate: 950
+  114:
+    name: PowerVR GM9446
+    clock_rate: 970

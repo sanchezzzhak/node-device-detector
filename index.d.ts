@@ -6,12 +6,23 @@ declare module 'node-device-detector' {
     parseOs: (userAgent: string) => ResultOs;
     parseClient: (userAgent: string) => ResultClient;
     parseDevice: (userAgent: string) => ResultDevice;
+    parseVendor: (userAgent: string) => ResultVendor;
+    parseDeviceCode: (userAgent: string) => ResultDeviceCode;
     parseDeviceType: (
       userAgent: string,
       os: ResultOs,
       client: ResultClient,
       data?: any
     ) => DeviceType;
+  }
+
+  export interface ResultDeviceCode {
+    name: string;
+  }
+
+  export interface ResultVendor {
+    id: string;
+    name: string;
   }
 
   export interface DetectResult {
@@ -31,11 +42,11 @@ declare module 'node-device-detector' {
   export interface ResultClient {
     type: string;
     name: string;
-    short_name: string;
+    short_name?: string;
     version: string;
-    engine: string;
-    engine_version: string;
-    family: string;
+    engine?: string;
+    engine_version?: string;
+    family?: string;
   }
 
   export interface ResultDevice {
@@ -43,6 +54,7 @@ declare module 'node-device-detector' {
     type: string;
     brand: string;
     model: string;
+    code?: string;
   }
 
   export interface DeviceType {

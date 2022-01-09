@@ -33,7 +33,7 @@ class VendorFragmentAbstractParser extends ParserAbstract {
           let brandId = COLLECTION_BRAND_LIST[name];
           return {
             name: name,
-            id: brandId !== undefined ? brandId : '',
+            id: brandId !== void 0 ? brandId : '',
           };
         }
       }
