@@ -1179,6 +1179,13 @@ mz-m5 note:
   - Meizu
 sm-n9500:
   - Samsung
+sc-02f:
+  - Samsung
+  - SuperSonic
+21091116c:
+  - Xiaomi
+itel l6503:
+  - iTel
 ipod5,1:
   - Apple
 hmt390q:
@@ -22040,6 +22047,169 @@ zte blade a610:
   - ZTE
 zte blade a210:
   - ZTE
+studio g2 hd:
+  - Blu
+studio xl 2:
+  - Blu
+alfa 2:
+  - Leagoo
+alfa 5:
+  - Leagoo
+trunk 1:
+  - Elephone
+sm-j200h:
+  - Samsung
+sm-j120m:
+  - Samsung
+sm-j120f:
+  - Samsung
+sm-j111m:
+  - Samsung
+sm-j110m:
+  - Samsung
+fly life buzz:
+  - Fly
+gm 5 d:
+  - General Mobile
+zte blade v8 mini:
+  - ZTE
+zte a0616:
+  - ZTE
+senseit a250:
+  - Senseit
+senseit r500:
+  - Senseit
+senseit t100:
+  - Senseit
+senseit t250:
+  - Senseit
+senseit a247:
+  - Senseit
+senseit_c155:
+  - Senseit
+senseit w289:
+  - Senseit
+rmx3357:
+  - Realme
+tecno ch9n:
+  - Tecno Mobile
+tecno ch6n:
+  - Tecno Mobile
+tecno bd3:
+  - Tecno Mobile
+tecno kf6i:
+  - Tecno Mobile
+zte blade l9:
+  - ZTE
+zte a2022:
+  - ZTE
+zte a2322g:
+  - ZTE
+vivo 1920_20:
+  - Vivo
+neo_1:
+  - Mobicel
+i2011:
+  - Vivo
+f-51b:
+  - Fujitsu
+a102op:
+  - OPPO
+a103zt:
+  - ZTE
+sc-56b:
+  - Samsung
+  - SuperSonic
+sh-m19:
+  - Sharp
+cph2309:
+  - OPPO
+fcg01:
+  - Fujitsu
+xq-be42:
+  - Sony
+like_hi10_2021:
+  - iHunt
+rmx2022:
+  - Realme
+rocket iii:
+  - Zuum
+21061119al:
+  - Xiaomi
+2107119dc:
+  - Xiaomi
+cph2223:
+  - OPPO
+cph2251:
+  - OPPO
+cph2325:
+  - OPPO
+cph2365:
+  - OPPO
+meizu 18s:
+  - Meizu
+tecno ch7n:
+  - Tecno Mobile
+sm-a125n:
+  - Samsung
+smartisan u3 pro:
+  - Smartisan
+micromax e7533:
+  - MicroMax
+oneplus 7t:
+  - OnePlus
+tecno bd2:
+  - Tecno Mobile
+tecno rc6:
+  - Tecno Mobile
+v1937:
+  - Vivo
+v2029_pk:
+  - Vivo
+w-k211-tvm:
+  - Wiko
+zte 8000:
+  - ZTE
+itel l5006c:
+  - iTel
+itel l5007:
+  - iTel
+itel p651w:
+  - iTel
+itel p681l:
+  - iTel
+itel w4001:
+  - iTel
+moto e:
+  - Motorola
+moto g(9):
+  - Motorola
+armor x9:
+  - Ulefone
+rmx3042:
+  - Realme
+rmx3265:
+  - Realme
+rmx3268:
+  - Realme
+rmx3269:
+  - Realme
+primo gh10:
+  - Walton
+realme 6 pro:
+  - Realme
+power armor 14:
+  - Ulefone
+moto e30:
+  - Motorola
+moto e40:
+  - Motorola
+motorola edge 20:
+  - Motorola
+symphony atom ii:
+  - Symphony
+stellar max:
+  - Zuum
 bravis_a506:
   - Bravis
 bravis delta:
@@ -23563,6 +23733,20 @@ evermiracle plus:
   - Evertek
 p9000_max:
   - POPTEL
+note 20:
+  - CUBOT
+note 7:
+  - CUBOT
+gt20:
+  - Hafury
+2109119di:
+  - Xiaomi
+max 3:
+  - CUBOT
+6025d_eea:
+  - Alcatel
+blaupunkt sf02:
+  - Blaupunkt
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -29084,8 +29268,10 @@ meanit q1 plus:
   - meanIT
 meanit q4:
   - meanIT
+  - Andowl
 meanit q5:
   - meanIT
+  - Andowl
 meanit_x1:
   - meanIT
 meanit_x2:
@@ -35799,6 +35985,36 @@ pmt4208_3g_eea:
   - Prestigio
 optima 1027n 3g tt1236pg:
   - Digma
+archos 80d xenon:
+  - Archos
+archos 70c xenon:
+  - Archos
+archos 101c copper:
+  - Archos
+archos 101b xenon v2:
+  - Archos
+lenovo tb-x6c6f:
+  - Lenovo
+100011886bk:
+  - Atvio
+7gb1:
+  - Hyundai
+7wd1:
+  - Hyundai
+tz718:
+  - Irbis
+tz728:
+  - Irbis
+tz832:
+  - Irbis
+rmp2102:
+  - Realme
+ulefone tab a7:
+  - Ulefone
+m40pro_row:
+  - Teclast
+sc-2110:
+  - SuperSonic
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -36922,6 +37138,26 @@ stv_32led42s:
   - Shivaki
 sun_led32s11:
   - SUNWIND
+40fr52br:
+  - Kivi
+h96 max:
+  - H96
+h96 max rk3318:
+  - H96
+qg9:
+  - Andowl
+mdtv:
+  - MDTV
+fo-r15: []
+tvbox: []
+mbox:
+  - MBOX
+smart tv: []
+qbox:
+  - Q-Box
+m8s+ 4k: []
+pcbox: []
+rk3368-box: []
 bb2 pro:
   - Mecool
 kii pro:
@@ -37055,6 +37291,7 @@ f48d8000k pnl_72048303_lsc480hn08_8:
   - DEXP
 evolveo smart tv box q4:
   - Evolveo
+  - Andowl
 build:
   - Google
 afteuff014:
