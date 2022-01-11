@@ -94,6 +94,20 @@ f9212a:
   - Pioneer
 f9212b:
   - Pioneer
+ff-5000:
+  - Alps
+mpc-70:
+  - Prology
+polestar:
+  - Polestar
+mpc-50:
+  - Prology
+mpc-65:
+  - Prology
+mpc-110dsp:
+  - Prology
+porsche rear seat entertainment:
+  - Porsche
 archos gamepad:
   - Archos
 archos gamepad2:
@@ -382,6 +396,8 @@ dt50:
   - Urovo
 mobiprint 4+:
   - MobiIoT
+v1s-g:
+  - Sunmi
 gi-626:
   - altron
 5039d_ru:
@@ -1186,6 +1202,8 @@ sc-02f:
   - Xiaomi
 itel l6503:
   - iTel
+sm-n960u1:
+  - Samsung
 ipod5,1:
   - Apple
 hmt390q:
@@ -10885,8 +10903,6 @@ lavietab pc-te508s1:
   - NEC
 t799b:
   - TCL
-pc-te507jaw:
-  - NEC
 p360x:
   - Alcatel
 pc-te508baw:
@@ -11946,6 +11962,10 @@ blade v8q:
   - ZTE
 hp slate 7:
   - HP
+sonysol23:
+  - Sony
+infobar a01:
+  - KDDI
 4047a:
   - Alcatel
 5044s:
@@ -22210,6 +22230,97 @@ symphony atom ii:
   - Symphony
 stellar max:
   - Zuum
+ev7_pro:
+  - Viumee
+hmr5012:
+  - Hi
+argon:
+  - NYX Mobile
+pearl k2 prime:
+  - Hotwav
+qmp_k8:
+  - QTECH
+lg-f820l:
+  - LG
+nexo smarty:
+  - NavRoad
+  - Smarty
+nexo handy:
+  - NavRoad
+a1000s_lite:
+  - Xolo
+poco x3_sn:
+  - POCO
+lava lzg403:
+  - Lava
+note_4cam:
+  - TechPad
+ntn-lx3:
+  - Huawei
+myphone_now_esim:
+  - MyPhone
+zte bv0800:
+  - ZTE
+moto g(50) 5g:
+  - Motorola
+sh-rm18:
+  - Sharp
+sm-f926u1:
+  - Samsung
+samsung sm-g965u1:
+  - Samsung
+4063f:
+  - Alcatel
+6125h:
+  - TCL
+6025h_ru:
+  - Alcatel
+dfm48:
+  - DIXON
+jlh-an00:
+  - Huawei
+iris plus 2021:
+  - Hurricane
+lex829:
+  - LeEco
+sm-a037m:
+  - Samsung
+htc one m7:
+  - HTC
+santin fs500z:
+  - Santin
+santin s505:
+  - Santin
+primo n3:
+  - Walton
+power1:
+  - M-Horse
+qmobile i8i pro:
+  - QMobile
+zte blade a6:
+  - ZTE
+cph2071:
+  - OPPO
+ultraj8:
+  - FiGO
+v141:
+  - Symphony
+smart_b19:
+  - BDQ
+shock5.5:
+  - RT Project
+tl554b:
+  - TuCEL
+tc504b:
+  - TuCEL
+sky prestige:
+  - Sky
+pspcl30a0:
+  - Polaroid
+psp5523duo:
+  - Prestigio
+psp3513duo_ru:
+  - Prestigio
 bravis_a506:
   - Bravis
 bravis delta:
@@ -36015,6 +36126,106 @@ m40pro_row:
   - Teclast
 sc-2110:
   - SuperSonic
+sky 9 e201 3g ss9237mg:
+  - SUNWIND
+nomi c10105:
+  - Nomi
+ideatab a3000-h:
+  - Lenovo
+smarty mini7:
+  - Smarty
+smarty mini 7l:
+  - Smarty
+smarty maxi 10l:
+  - Smarty
+nexo smart duo:
+  - NavRoad
+movio 2:
+  - NavRoad
+vankyo_s10_eea:
+  - Vankyo
+vankyo_s8_eea:
+  - Vankyo
+vankyo_s7:
+  - Vankyo
+nexo evo:
+  - NavRoad
+jaguar-01:
+  - DF
+saturn-02:
+  - DF
+saturn-02c:
+  - DF
+tiger-01:
+  - DF
+puma-01:
+  - DF
+k118_eea:
+  - FEONAL
+pc-te510jaw:
+  - NEC
+pc-te410jaw:
+  - NEC
+pc-te507jaw:
+  - NEC
+lenovo yt-k606f:
+  - Lenovo
+d-42a:
+  - Lenovo
+p002:
+  - Asus
+pc-ts508fam:
+  - NEC
+lavie tab e 10fhd2:
+  - NEC
+lenovo yt-j706x:
+  - Lenovo
+pomdtb006:
+  - Polaroid
+egq101:
+  - Ematic
+trekstor surftab b10:
+  - TrekStor
+titan_10_lte:
+  - Odys
+destiny:
+  - BDQ
+pmt7781_4g:
+  - Prestigio
+pmt4667_3g_ru:
+  - Prestigio
+pmt4638_3g_ru:
+  - Prestigio
+pmt4327_3g_ru:
+  - Prestigio
+pmt4311_3g_ru:
+  - Prestigio
+pmt4137_4g:
+  - Prestigio
+pmt4131_4g:
+  - Prestigio
+pmt4118_3g_eea:
+  - Prestigio
+pmt4117_3g_eea:
+  - Prestigio
+pmt4117_3g:
+  - Prestigio
+pmt4111_3g:
+  - Prestigio
+pmt3878_4g:
+  - Prestigio
+pmt3871_4g:
+  - Prestigio
+pmt3861_4g:
+  - Prestigio
+pmt3848_4g:
+  - Prestigio
+pmt3831_4g:
+  - Prestigio
+pmt3771_3g:
+  - Prestigio
+pmt3768_3g:
+  - Prestigio
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -37158,6 +37369,41 @@ qbox:
 m8s+ 4k: []
 pcbox: []
 rk3368-box: []
+hismart 4k atv4:
+  - Hisense
+smart_starwind:
+  - Starwind
+h10 play: []
+mecool-bb2:
+  - Mecool
+stv_32led30c:
+  - Shivaki
+tf-led32s75t2s:
+  - Telefunken
+x-media:
+  - Divisat
+dvs x3:
+  - Divisat
+artline-kmx3:
+  - ArtLine
+50lex-8173/uts2c:
+  - BBK
+55lex-8161/uts2c:
+  - BBK
+55lex-8162/uts2c:
+  - BBK
+dm-led43sr23:
+  - Digma
+dm-led24sr20:
+  - Digma
+55lex-8174/uts2c:
+  - BBK
+28lh7011t:
+  - Asano
+32lh7010t:
+  - Asano
+32h520t:
+  - Leff
 bb2 pro:
   - Mecool
 kii pro:
@@ -37654,3 +37900,17 @@ h1-c-aladeng:
   - Gocomma
 lem14:
   - LEMFO
+moto 360:
+  - Motorola
+gear live:
+  - Samsung
+g watch:
+  - LG
+g watch r:
+  - LG
+smartwatch 3:
+  - Sony
+motorola-f100:
+  - Motorola
+nt-1501c:
+  - IconBIT
