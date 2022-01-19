@@ -403,6 +403,29 @@ describe('tests oss', function () {
   });
 });
 
+describe('test duplicates', function(){
+  const find = (array, count = {}) => {
+    array.forEach(el => count[el] ? count[el]++ : count[el] = 1);
+    return Object.keys(count).filter(key => count[key] > 1);
+  }
+
+  it('brand names' , () => {
+    const deviceBrands = require('./../parser/device/brand-short');
+    const duplicates = find(
+        Object.values(deviceBrands).map(val => String(val).toLowerCase())
+    );
+    expect(duplicates).to.have.lengthOf(0)
+  });
+
+  it('browser names' , () => {
+    const clientBrowsers = require('./../parser/client/browser-short');
+    const duplicates = find(
+        Object.values(clientBrowsers).map(val => String(val).toLowerCase())
+    );
+    expect(duplicates).to.have.lengthOf(0)
+  });
+})
+
 describe('tests detect device type', function () {
   let fixtures = [
     ['Mozilla/5.0 (Linux; U; Android 5.1.1; zh-CN; TEST-XXXXX Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.3.3.191 Mobile Safari/537.36', false, true, false],
