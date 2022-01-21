@@ -2237,7 +2237,7 @@ cpu:
     process: 28nm
     gpu_id: 111
   334:
-    name:  MediaTek Helio G80 MT6769V/CU
+    name: MediaTek Helio G80 MT6769V/CU
     type: ARM
     cores: 8
     clock_rate: 2000
@@ -2341,3 +2341,17 @@ cpu:
     clock_rate: 2300
     process: 12nm
     gpu_id: 25
+  349:
+    name: MediaTek Helio G88
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 113
+  350:
+    name: MediaTek Helio G96
+    type: ARM
+    cores: 8
+    clock_rate: 2050
+    process: 12nm
+    gpu_id: 115
