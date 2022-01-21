@@ -398,6 +398,10 @@ mobiprint 4+:
   - MobiIoT
 v1s-g:
   - Sunmi
+ct60:
+  - Honeywell
+ck65:
+  - Honeywell
 gi-626:
   - altron
 5039d_ru:
@@ -22570,6 +22574,68 @@ rmx1929:
   - Realme
 rmx2003:
   - Realme
+211033mi:
+  - POCO
+lm-k310im:
+  - LG
+lm-k610im:
+  - LG
+p13_max_blue:
+  - Reeder
+p13 blue max 2020:
+  - Reeder
+pcs02:
+  - Philco
+t9s:
+  - Onda
+spc gen:
+  - SPC
+spc gen lite:
+  - SPC
+spc gen max:
+  - SPC
+spc gen plus:
+  - SPC
+spc smart:
+  - SPC
+spc smart max:
+  - SPC
+spc smart plus:
+  - SPC
+5007o:
+  - Alcatel
+5002j:
+  - Alcatel
+bee lite:
+  - Vsmart
+zte a2020n3 pro:
+  - ZTE
+z3351s:
+  - ZTE
+obasmart_3:
+  - Obabox
+oba_conecta_max:
+  - Obabox
+hot 5:
+  - QMobile
+hl9000:
+  - Advance
+gionee f9 plus:
+  - Gionee
+flare_s8_pro:
+  - Cherry Mobile
+flare s8 lite:
+  - Cherry Mobile
+flare_s8_deluxe:
+  - Cherry Mobile
+alien_x_apex_2020:
+  - iHunt
+sm-a305gn:
+  - Samsung
+sm-g950u1:
+  - Samsung
+sm-g955u1:
+  - Samsung
 bravis_a506:
   - Bravis
 bravis delta:
@@ -30584,6 +30650,8 @@ wt22m-fi:
   - AOpen
 wt19m-fi:
   - AOpen
+t2s_lite:
+  - Sunmi
 aeobc:
   - Amazon
 aeokn:
@@ -36551,6 +36619,32 @@ m10_4g_pro:
   - Multilaser
 vivax tpc-102 4g:
   - Vivax
+m7_3g_a10:
+  - Multilaser
+m53-52401:
+  - Haier
+kl9878a_eea:
+  - Klipad
+ptb8r:
+  - Philco
+q10107l-me:
+  - AOC
+qtab1010x:
+  - Vankyo
+  - QMobile
+t1085:
+  - Positivo
+sp3701:
+  - Advance
+sp4701:
+  - Advance
+sp5701:
+  - Advance
+f104bv2_pro:
+  - Fusion5
+fusion5_f104bv2:
+  - Fusion5
+  - Odys
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -37747,6 +37841,8 @@ amigo7xscb:
   - Amino
 s_turbo_pro:
   - Formuler
+n5nova:
+  - Magicsee
 bb2 pro:
   - Mecool
 kii pro:
