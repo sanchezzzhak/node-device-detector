@@ -18,7 +18,7 @@ module.exports = {
     'TB', 'TG', 'TR', 'TS', 'TU', 'TV', 'UB', 'UR', 'VE',
     'VG', 'VI', 'VM', 'WP', 'WH', 'XV', 'YJ', 'YN', 'FH',
     'B1', 'BO', 'HB', 'PC', 'LA', 'LT', 'PD', 'HR', 'HU',
-    'HP', 'IO', 'TP', 'CJ',
+    'HP', 'IO', 'TP', 'CJ', 'HQ',
   ],
   'Firefox': [
     'AX', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
@@ -34,5 +34,5 @@ module.exports = {
   'Nokia Browser': ['DO', 'NB', 'NO', 'NV'],
   'Opera': ['O1', 'OG', 'OH', 'OI', 'OM', 'ON', 'OO', 'OP', 'OX'],
   'Safari': ['MF', 'S7', 'SF', 'SO'],
-  'Sailfish Browser': ['SA']
+  'Sailfish Browser': ['SA'],
 };

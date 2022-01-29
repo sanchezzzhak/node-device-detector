@@ -112,6 +112,8 @@ archos gamepad:
   - Archos
 archos gamepad2:
   - Archos
+shield:
+  - Nvidia
 hibox-hero:
   - Chuwi
 aspire v5-121:
@@ -402,6 +404,8 @@ ct60:
   - Honeywell
 ck65:
   - Honeywell
+idata k1:
+  - iData
 gi-626:
   - altron
 5039d_ru:
@@ -22636,6 +22640,47 @@ sm-g950u1:
   - Samsung
 sm-g955u1:
   - Samsung
+imo q4 pro:
+  - IMO Mobile
+  - Andowl
+hpp-gs1:
+  - Hot Pepper
+vle5:
+  - Hot Pepper
+m671m4:
+  - Ruio
+lm-x600im:
+  - LG
+lm-x440zmw:
+  - LG
+lm-g820v:
+  - LG
+lg-rs988:
+  - LG
+lm-q610(fgn):
+  - LG
+lava lf6810:
+  - Lava
+konnect_608:
+  - Danew
+lava lzg01:
+  - Lava
+e940-2795-00:
+  - Gigaset
+gplus x10:
+  - Gplus
+gplus n809:
+  - Gplus
+gplus z10:
+  - Gplus
+e6921:
+  - Kyocera
+positivo q20:
+  - Positivo
+primo r8:
+  - Walton
+primo rx8 mini:
+  - Walton
 bravis_a506:
   - Bravis
 bravis delta:
@@ -30292,8 +30337,6 @@ a9_lite:
   - Allview
 allview p4i:
   - Allview
-ax4nano:
-  - Allview
 c6_duo:
   - Allview
 e2_living:
@@ -33725,6 +33768,8 @@ tab 711 4g:
   - Majestic
 nogapad7g:
   - NOGA
+ax4nano:
+  - Allview
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -36645,6 +36690,54 @@ f104bv2_pro:
 fusion5_f104bv2:
   - Fusion5
   - Odys
+aidata elde 10 tablet:
+  - AIDATA
+ik-1106:
+  - iKon
+ik-1025:
+  - iKon
+ik-7108:
+  - iKon
+ik-787:
+  - iKon
+ik-1028:
+  - iKon
+jdn2-al00hn:
+  - Huawei
+ira_duo:
+  - IRA
+lm-t600:
+  - LG
+iq1060m:
+  - MLS
+lenovo tb-x606xa:
+  - Lenovo
+lenovo tb-x606fa:
+  - Lenovo
+lenovo tb-x605lc:
+  - Lenovo
+lenovo tb-x306fa:
+  - Lenovo
+lenovo tb-8705x:
+  - Lenovo
+lenovo tb-8505xs:
+  - Lenovo
+kingpad_k10_eea:
+  - Vastking
+etl101al:
+  - Microtech
+imart_pro:
+  - Vonino
+flare tab pro v4.0:
+  - Cherry Mobile
+eutb_758g_tabi_argos_kids:
+  - Eurocase
+rc7t3g21:
+  - RCA Tablets
+rct6876q22n:
+  - RCA Tablets
+rct6a06q22:
+  - RCA Tablets
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -37843,6 +37936,8 @@ s_turbo_pro:
   - Formuler
 n5nova:
   - Magicsee
+neo u22-xj:
+  - Minix
 bb2 pro:
   - Mecool
 kii pro:
@@ -38311,6 +38406,8 @@ beelink gs1:
   - Beelink
 andowl:
   - Andowl
+tivo stream 4k:
+  - TiVo
 dns:
   - DNS
 leo-bx9:
