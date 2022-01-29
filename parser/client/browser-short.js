@@ -130,6 +130,7 @@ module.exports = {
   'HB': 'Harman Browser',
   'HS': 'HasBrowser',
   'HA': 'Hawk Turbo Browser',
+  'HQ': 'Hawk Quick Browser',
   'HE': 'Helio',
   'HO': 'hola! Browser',
   'HJ': 'HotJava',
@@ -344,7 +345,7 @@ module.exports = {
   'XI': 'Xiino',
   'XV': 'Xvast',
   'ZE': 'Zetakey',
-  'ZV': 'Zvu'
+  'ZV': 'Zvu',
 
 // detected browsers in older versions
 // 'IA': 'Iceape',  :  pim
