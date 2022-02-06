@@ -125,6 +125,7 @@ module.exports = {
   'GI': 'GinxDroid Browser',
   'GB': 'Glass Browser',
   'GE': 'Google Earth',
+  'GP': 'Google Earth Pro',
   'GO': 'GOG Galaxy',
   'GR': 'GoBrowser',
   'HB': 'Harman Browser',
