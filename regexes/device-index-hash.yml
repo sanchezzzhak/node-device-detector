@@ -108,6 +108,8 @@ mpc-110dsp:
   - Prology
 porsche rear seat entertainment:
   - Porsche
+zq8003:
+  - Alps
 archos gamepad:
   - Archos
 archos gamepad2:
@@ -305,6 +307,10 @@ imac21,2:
 imacpro1,1:
   - Apple
 powermac7,2:
+  - Apple
+macbook4,1:
+  - Apple
+imac13,2:
   - Apple
 impress_grip:
   - Vertex
@@ -1214,6 +1220,26 @@ sm-n960u1:
   - Samsung
 redmi note 10 pro max:
   - Xiaomi
+21091116ac:
+  - Xiaomi
+21091116i:
+  - Xiaomi
+21091116uc:
+  - Xiaomi
+21121119sc:
+  - Xiaomi
+2201117tg:
+  - Xiaomi
+m1901f71:
+  - Xiaomi
+note_7_pro:
+  - FiGi
+redmi note 5a lite:
+  - Xiaomi
+infinix x663b:
+  - Infinix
+infinix x697:
+  - Infinix
 ipod5,1:
   - Apple
 hmt390q:
@@ -22681,6 +22707,136 @@ primo r8:
   - Walton
 primo rx8 mini:
   - Walton
+shg06:
+  - Sharp
+sh-rm19:
+  - Sharp
+veon_c8680:
+  - VEON
+sm-m326b:
+  - Samsung
+bmm532d:
+  - Black Fox
+bmm441a:
+  - Black Fox
+21121119sg:
+  - Xiaomi
+armor x9 pro:
+  - Ulefone
+armor 12 5g:
+  - Ulefone
+ae9010:
+  - Benco
+ae9950:
+  - Benco
+bmm431s:
+  - Black Fox
+bmm531s:
+  - Black Fox
+cph2321:
+  - OPPO
+mt2110:
+  - OnePlus
+lm-g910n:
+  - LG
+live 9s:
+  - Krüger&Matz
+ihunt cyber wolf 5g:
+  - iHunt
+cp03:
+  - Coolpad
+ntn-l22:
+  - Huawei
+mp02:
+  - UMIDIGI
+mp01:
+  - UMIDIGI
+h2022:
+  - F150
+lava lxx501:
+  - Lava
+moto g200 5g:
+  - Motorola
+lenovo l70081:
+  - Lenovo
+pfdm00:
+  - OPPO
+p13 blue max 128 gb:
+  - Reeder
+redmi k30 pro zoom edition:
+  - Xiaomi
+shark prs-a0:
+  - Xiaomi
+sm-a035f:
+  - Samsung
+sm-a032f:
+  - Samsung
+sm-a125u1:
+  - Samsung
+sm-a127m:
+  - Samsung
+evolveo strongphone g9:
+  - Evolveo
+fendy plus:
+  - Mobicel
+gplus p10:
+  - Gplus
+4187d:
+  - TCL
+5033fp:
+  - Alcatel
+5033yr:
+  - Alcatel
+bq-5060l:
+  - bq
+tecno bd1:
+  - Tecno Mobile
+tecno bd4:
+  - Tecno Mobile
+tecno kg8:
+  - Tecno Mobile
+w-v750bn-ope:
+  - Wiko
+xq-bq72:
+  - Sony
+xq-be72:
+  - Sony
+zs676ks:
+  - Asus
+zte blade a31 plus:
+  - ZTE
+lenovo z6 lite:
+  - Lenovo
+oneplus 9r:
+  - OnePlus
+sm-g990b:
+  - Samsung
+sm-f711u1:
+  - Samsung
+samsung sm-g990e:
+  - Samsung
+samsung sm-g990b:
+  - Samsung
+xt2137-2:
+  - Motorola
+t766h_tr:
+  - TCL
+sm-m526br:
+  - Samsung
+sm-g986w:
+  - Samsung
+sm-g925f:
+  - Samsung
+sm-f711n:
+  - Samsung
+itel a16 plus:
+  - iTel
+fs408:
+  - Fly
+infinix x6812b:
+  - Infinix
+wildfire e1:
+  - HTC
 bravis_a506:
   - Bravis
 bravis delta:
@@ -24218,6 +24374,10 @@ max 3:
   - Alcatel
 blaupunkt sf02:
   - Blaupunkt
+b140dl:
+  - Blu
+tmrvl4g:
+  - T-Mobile
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -36738,6 +36898,77 @@ rct6876q22n:
   - RCA Tablets
 rct6a06q22:
   - RCA Tablets
+t1-a22l:
+  - Huawei
+platinumtab10_4g_v3:
+  - Blow
+platinumtab10_4g_v1:
+  - Blow
+viva_803g:
+  - Allview
+pedi_plus_w:
+  - Odys
+rm-790:
+  - Ross&Moor
+adt_1061:
+  - AIDATA
+m2105k81c:
+  - Xiaomi
+mt01:
+  - UMIDIGI
+hipad-air:
+  - Chuwi
+hipadplus:
+  - Chuwi
+lenovo yt-j706f:
+  - Lenovo
+lenovo tb-j616f:
+  - Lenovo
+lenovo tb-j607f:
+  - Lenovo
+lenovo tb-7306x:
+  - Lenovo
+lenovo tb-7306f:
+  - Lenovo
+rmp2103:
+  - Realme
+rt1:
+  - Oukitel
+ipad6,12:
+  - Apple
+adt1061:
+  - AIDATA
+adt1061_1:
+  - AIDATA
+m10 4g pro x:
+  - Positivo
+elite octa:
+  - Sky
+sm-x205:
+  - Samsung
+sm-x200:
+  - Samsung
+sm-t736b:
+  - Samsung
+sm-t225n:
+  - Samsung
+ags3k-w09:
+  - Huawei
+ags3k-l09:
+  - Huawei
+agrk-w09:
+  - Huawei
+agrk-l09:
+  - Huawei
+i10plus_eea:
+  - BMAX
+b1-790:
+  - Acer
+b108_4g:
+  - Contixo
+hoozo mz104:
+  - Hoozo
+  - Motorola
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -37938,6 +38169,14 @@ n5nova:
   - Magicsee
 neo u22-xj:
   - Minix
+pendoo t95:
+  - Pendoo
+transpeed x4s:
+  - Transpeed
+32lh7030s:
+  - Asano
+horizont 32le7011d:
+  - Horizont
 bb2 pro:
   - Mecool
 kii pro:
