@@ -115,3 +115,21 @@
     model: Primo E10 Plus
   os_family: Android
   browser_family: Android Browser
+-
+  user_agent: Opera/9.50 (Nintendo DSi; Opera/507; U; en-GB)
+  os:
+    name: Nintendo Mobile
+    version: DSi
+    platform: ""
+  client:
+    type: browser
+    name: Opera
+    version: "9.50"
+    engine: Presto
+    engine_version: ""
+  device:
+    type: console
+    brand: Nintendo
+    model: DSi
+  os_family: Mobile Gaming Console
+  browser_family: Opera

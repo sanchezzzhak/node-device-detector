@@ -24,19 +24,24 @@
   name: 'Facebook Audience Network'
   version: '$1'
 
-# Facebook Messenger Lite
-- regex: 'MessengerLiteForiOS.(?:FBAV)(?:[ /]([\d\.]+))?'
-  name: 'Facebook Messenger Lite'
+# Facebook Messenger (https://play.google.com/store/apps/details?id=com.facebook.orca)
+- regex: '(?:MessengerForiOS|MESSENGER|FB_IAB/Orca-Android).(?:FBAV)(?:[ /]([\d\.]+))?'
+  name: 'Facebook Messenger'
   version: '$1'
 
-# Facebook Messenger
-- regex: '(?:MessengerForiOS|MESSENGER).(?:FBAV)(?:[ /]([\d\.]+))?'
-  name: 'Facebook Messenger'
+# Facebook Messenger Lite
+- regex: '(?:mLite|MessengerLite(?:ForiOS)?).(?:FBAV)(?:[ /]([\d\.]+))?'
+  name: 'Facebook Messenger Lite'
   version: '$1'
 
 # Facebook Groups
 - regex: '(?:GroupsForiOS).(?:FBAV)(?:[ /]([\d\.]+))?'
   name: 'Facebook Groups'
+  version: '$1'
+
+# Facebook Lite (https://play.google.com/store/apps/details?id=com.facebook.lite)
+- regex: 'FBAN/EMA.+FBAV(?:[ /]([\d\.]+))?'
+  name: 'Facebook Lite'
   version: '$1'
 
 # Facebook
@@ -67,8 +72,16 @@
   name: 'Google Plus'
   version: ''
 
+# Google Drive (https://apps.apple.com/us/app/google-drive/id507874739)
+- regex: 'Google.DriveExtension(?:/([\d\.]+))?'
+  name: 'Google Drive'
+  version: '$1'
+
 # WeChat
 - regex: 'MicroMessenger/([^; ]+)'
+  name: 'WeChat'
+  version: '$1'
+- regex: 'WeChat/([\d\.]+)'
   name: 'WeChat'
   version: '$1'
 - regex: 'WeChatShareExtensionNew/([\d\.]+)'
@@ -376,6 +389,11 @@
   name: 'Microsoft Office Mobile'
   version: '$1'
 
+# Skype
+- regex: 'Skype/([\d\.]+)'
+  name: 'Skype'
+  version: '$1'
+
 - regex: 'OC/([\d\.]+) \(Skype for Business\)'
   name: 'Skype for Business'
   version: '$1'
@@ -559,11 +577,6 @@
 # Wirtschafts Woche Nachrichte https://apps.apple.com/de/app/wirtschaftswoche-nachrichten/id1339187646
 - regex: '^WirtschaftsWoche-iOS-(\d+[\.\d]+)'
   name: 'Wirtschafts Woche'
-  version: '$1'
-
-# Outlook https://apps.apple.com/ru/app/microsoft-outlook/id951937596
-- regex: '^Outlook-iOS/.+\((\d+[\.\d]+)\)$'
-  name: 'Microsoft Outlook'
   version: '$1'
 
 - regex: '^TVirl/(\d+[\.\d]+)'
@@ -1000,4 +1013,69 @@
 # Focus Keeper (https://apps.apple.com/app/id867374917)
 - regex: 'Focuskeeper/(\d+\.[\.\d]+)?'
   name: 'Focus Keeper'
+  version: '$1'
+
+# Quick Search TV (https://play.google.com/store/apps/details?id=com.aospstudio.tvsearch)
+- regex: 'Quick Search TV/(\d+\.[\.\d]+)'
+  name: 'Quick Search TV'
+  version: '$1'
+
+# Microsoft Store (https://www.microsoft.com/en-us/store/apps/windows)
+- regex: 'WindowsStoreSDK'
+  name: 'Microsoft Store'
+  version: ''
+
+# ASUS Updater (https://www.asus.com/)
+- regex: 'Asus Update/(\d+\.[\.\d]+)'
+  name: 'ASUS Updater'
+  version: '$1'
+
+# IMO.IM HD Version https://play.google.com/store/apps/details?id=com.imo.android.imoimhd
+- regex: 'imoAndroid/(20\d{2}.[\.\d]+)'
+  name: 'IMO HD Video Calls & Chat'
+  version: '$1'
+
+# IMO.IM https://play.google.com/store/apps/details?id=com.imo.android.imoim
+- regex: 'imoAndroid/(\d+\.[\.\d]+)'
+  name: 'IMO International Calls & Chat'
+  version: '$1'
+
+# Microsoft Bing Search (https://play.google.com/store/apps/details?id=com.microsoft.bing | https://apps.apple.com/us/app/microsoft-bing-search/id345323231)
+- regex: 'BingSapphire/(\d+\.[\.\d]+)'
+  name: 'Microsoft Bing Search'
+  version: '$1'
+
+# HiSearch
+- regex: '.+HiSearch/(\d+\.[\.\d]+)'
+  name: 'HiSearch'
+  version: '$1'
+
+# RDDocuments (https://apps.apple.com/app/id364901807)
+- regex: 'RDDocuments/(\d+\.[\.\d]+)'
+  name: 'RDDocuments'
+  version: '$1'
+
+# F-Secure SAFE (https://apps.apple.com/app/f-secure-safe/id572847748)
+- regex: 'FSCDCSafe (\d+\.[\.\d]+)'
+  name: 'F-Secure SAFE'
+  version: '$1'
+
+# Twitterrific (https://apps.apple.com/us/app/twitterrific-tweet-your-way/id580311103)
+- regex: 'Twitterrific'
+  name: 'Twitterrific'
+  version: ''
+
+# Uconnect LIVE (https://apps.apple.com/it/app/uconnect-live/id881830261?l=en)
+- regex: 'UconnectLive'
+  name: 'Uconnect LIVE'
+  version: ''
+
+# Wayback Machine (https://apps.apple.com/us/app/wayback-machine/id1472432422)
+- regex: 'Wayback%20Machine%20Extension'
+  name: 'Wayback Machine'
+  version: ''
+
+# Q-municate (https://www.qmunicateh10.com | https://apps.apple.com/gb/app/q-municate/id909698517)
+- regex: 'com.Nanoteq.QmunicateH10p.+/(\d+\.[\.\d]+) \('
+  name: 'Q-municate'
   version: '$1'
