@@ -4,28 +4,21 @@ const DeviceDetector = require('../index');
 const suite = new Benchmark.Suite();
 const detector = new DeviceDetector();
 
-const random = (array) => {
-  return array[~~(array.length * Math.random())];
-};
+const useragent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36'
+// warming up indexes, first boot takes timeя
+detector.getBrandsByDeviceCode('tests');
 
-const userAgents = [
-  'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36',
-  'Mozilla/5.0 (Linux; Android 7.1.2; E6810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36',
-  'Mozilla/5.0 (Linux; Android 4.4.4; Qin 1s+ Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
-];
 
-const useragent = random(userAgents);
 const experiment = (name, fn) => {
   suite.add(name, {minSamples: 100, fn });
 };
-
 experiment('EnableDeviceIndexes ', function () {
-  detector.discardDeviceIndexes = false;
+  detector.deviceIndexes = true;
   let result = detector.detect(useragent);
 });
 
 experiment('DiscardDeviceIndexes', function () {
-  detector.discardDeviceIndexes = true;
+  detector.deviceIndexes = false;
   let result = detector.detect(useragent);
 });
 

@@ -1,4 +1,6 @@
 const helper = require('./parser/helper');
+const attr = helper.getPropertyValue;
+
 // device parsers
 const MobileParser = require('./parser/device/mobile');
 const NotebookParser = require('./parser/device/notebook');
@@ -22,8 +24,9 @@ const BotParser = require('./parser/bot-abstract-parser');
 // vendor fragment parsers
 const VendorFragmentParser = require(
   './parser/vendor-fragment-abstract-parser');
-
+// other parsers
 const AliasDevice = require('./parser/device/alias-device');
+const ClientHints = require('./parser/client-hints');
 
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
@@ -40,17 +43,19 @@ const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
 
+// static private parser init
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
+const clientHint = new ClientHints;
 
 class DeviceDetector {
-  
   /**
    * @typedef DeviceDetectorOptions
    * @param {boolean} skipBotDetection
    * @param {number|null} osVersionTruncate
    * @param {number|null} clientVersionTruncate
-   * @param {boolean} discardDeviceIndexes
+   * @param {boolean} deviceIndexes
+   * @param {boolean} deviceAliasCode
    * @param {string|null} filePathDeviceIndexes
    */
   
@@ -64,9 +69,9 @@ class DeviceDetector {
     this.deviceParserList = {};
     this.clientParserList = {};
 
-    this.__discardBotDetection = false;
-    this.__discardDeviceIndexes = false;
-    this.__discardDeviceAliasCode = false;
+    this.__skipBotDetection = false;
+    this.__deviceIndexes = false;
+    this.__deviceAliasCode = false;
     this.__clientVersionTruncate = null;
     this.__osVersionTruncate = null;
     this.__osVersionTruncate = null;
@@ -74,38 +79,26 @@ class DeviceDetector {
 
     this.init();
 
-    this.skipBotDetection = helper.getPropertyValue(
-      options,
-      'skipBotDetection',
-      false
-    );
-    this.osVersionTruncate = helper.getPropertyValue(
-      options,
-      'osVersionTruncate',
-      null
-    );
-    this.clientVersionTruncate = helper.getPropertyValue(
-      options,
-      'clientVersionTruncate',
-      null
-    );
-    this.discardDeviceIndexes = helper.getPropertyValue(
-      options,
-      'discardDeviceIndexes',
-      true
-    );
-    this.discardDeviceAliasCode = helper.getPropertyValue(
-      options,
-      'discardDeviceAliasCode',
-      true
-    );
-    this.filePathDeviceIndexes = helper.getPropertyValue(
-      options,
-      'filePathDeviceIndexes',
-      null
-    );
+    this.skipBotDetection = attr(options, 'skipBotDetection', false);
+    this.osVersionTruncate = attr(options, 'osVersionTruncate', null);
+    this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
+
+    this.deviceIndexes = attr(options, 'deviceIndexes', false);
+    // remove in version 2
+    let temp1 = attr(options, 'discardDeviceIndexes', void 0);
+    if (temp1 !== void 0) {
+      this.deviceIndexes = !temp1
+    }
+    this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
+    // remove in version 2
+    let temp2 = attr(options, 'discardDeviceAliasCode', void 0);
+    if (temp2 !== void 0) {
+      this.deviceIndexes = !temp2
+    }
+
+    this.filePathDeviceIndexes = attr(options, 'filePathDeviceIndexes', null);
   }
-  
+
   init() {
     this.addParseOs(OS_PARSER, new OsParser());
     this.addParseClient(CLIENT_PARSER_LIST.FEED_READER, new FeedReaderParser());
@@ -133,29 +126,65 @@ class DeviceDetector {
   }
   
   get skipBotDetection() {
-    return this.__discardBotDetection;
+    return this.__skipBotDetection;
   }
   
   set skipBotDetection(discard) {
-    this.__discardBotDetection = discard;
+    this.__skipBotDetection = discard;
   }
-  
+
+  /***
+   * @deprecated - the method will be removed in v2.0 (detector.deviceIndexes)
+   */
   get discardDeviceIndexes() {
-    return this.__discardDeviceIndexes;
+    return !this.deviceIndexes;
   }
-  
+  /***
+   * @deprecated - the method will be removed in v2.0 (detector.deviceIndexes)
+   */
   set discardDeviceIndexes(discard) {
-    this.__discardDeviceIndexes = discard;
+    this.deviceIndexes = !discard;
   }
-  
+  /***
+   * @deprecated - the method will be removed in v2.0 (detector.deviceAliasCode)
+   */
   get discardDeviceAliasCode() {
-    return this.__discardDeviceAliasCode;
+    return !this.deviceAliasCode;
   }
-  
+  /***
+   * @deprecated - the method will be removed in v2.0 (detector.deviceAliasCode)
+   */
   set discardDeviceAliasCode(discard) {
-    return this.__discardDeviceAliasCode = discard;
+    return this.deviceAliasCode = !discard;
   }
-  
+
+  /**
+   * @param {boolean} status - true use indexes, false not use indexes
+   */
+  set deviceIndexes(status) {
+    this.__deviceIndexes = status;
+  }
+
+  /**
+   * @return {boolean} - true use indexes, false not use indexes
+   */
+  get deviceIndexes() {
+    return this.__deviceIndexes;
+  }
+
+  /**
+   * @param {boolean} status - true use deviceAliasCode,  false not use deviceAliasCode
+   */
+  set deviceAliasCode(status) {
+    this.__deviceAliasCode = status;
+  }
+  /**
+   * @return {boolean} - true use deviceAliasCode, false not use deviceAliasCode
+   */
+  get deviceAliasCode() {
+    return this.__deviceAliasCode;
+  }
+
   set clientVersionTruncate(value) {
     this.__clientVersionTruncate = value;
     for (let name in this.clientParserList) {
@@ -181,7 +210,7 @@ class DeviceDetector {
   setOsVersionTruncate(value) {
     this.osVersionTruncate = value;
   }
-  
+
   setClientVersionTruncate(value) {
     this.clientVersionTruncate = value;
   }
@@ -262,7 +291,15 @@ class DeviceDetector {
   getParseAliasDevice() {
     return aliasDevice;
   }
-  
+
+  /**
+   * get client hint parser
+   * @returns {ClientHints}
+   */
+  getParseClientHints() {
+    return clientHint;
+  }
+
   /**
    * add device type parser
    * @param {string} name
@@ -308,7 +345,12 @@ class DeviceDetector {
   addParseVendor(name, parser) {
     this.vendorParserList[name] = parser;
   }
-  
+
+
+  parseClientHints(headers) {
+    return this.getParseClientHints().parse(headers);
+  }
+
   /**
    * parse OS
    * @param {string} userAgent
@@ -335,17 +377,22 @@ class DeviceDetector {
    * @param {ResultDevice} deviceData
    * @return {DeviceType}
    */
-  parseDeviceType(userAgent, osData, clientData, deviceData) {
-    let osName = helper.getPropertyValue(osData, 'name', '');
-    let osFamily = helper.getPropertyValue(osData, 'family', '');
-    let osVersion = helper.getPropertyValue(osData, 'version', '');
+  parseDeviceType(
+      userAgent,
+      osData,
+      clientData,
+      deviceData,
+  ) {
+    let osName = attr(osData, 'name', '');
+    let osFamily = attr(osData, 'family', '');
+    let osVersion = attr(osData, 'version', '');
     
-    let clientType = helper.getPropertyValue(clientData, 'type', '');
-    let clientShortName = helper.getPropertyValue(clientData, 'short_name', '');
+    let clientType = attr(clientData, 'type', '');
+    let clientShortName = attr(clientData, 'short_name', '');
 
-    let clientName = helper.getPropertyValue(clientData, 'name', '');
-    let clientFamily = helper.getPropertyValue(clientData, 'family', '');
-    let deviceType = helper.getPropertyValue(deviceData, 'type', '');
+    let clientName = attr(clientData, 'name', '');
+    let clientFamily = attr(clientData, 'family', '');
+    let deviceType = attr(deviceData, 'type', '');
     
     if (
       deviceType === '' &&
@@ -492,11 +539,11 @@ class DeviceDetector {
     let brandIndexes = [];
     let deviceCode = '';
     
-    if (!this.discardDeviceIndexes) {
+    if (this.deviceIndexes) {
       let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
       brandIndexes = this.getBrandsByDeviceCode(deviceCode);
-    } else if (!this.discardDeviceAliasCode) {
+    } else if (this.deviceAliasCode) {
       let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
     }
@@ -525,7 +572,7 @@ class DeviceDetector {
       }
     }
   
-    if (!this.discardDeviceAliasCode) {
+    if (this.deviceAliasCode) {
       result.code = deviceCode;
     }
     
@@ -585,10 +632,14 @@ class DeviceDetector {
   
   /**
    * detect os, client and device
-   * @param {string} userAgent
+   * @param {string} userAgent - string from request header['user-agent']
+   * @param {{}} headers - request headers (only used in client hints)
    * @return {DetectResult}
    */
-  detect(userAgent) {
+  detect(userAgent, headers = {}) {
+
+    let clientHintData = this.parseClientHints(headers);
+
     let osData = this.parseOs(userAgent);
     let clientData = this.parseClient(userAgent);
     let deviceData = this.parseDevice(userAgent);
@@ -596,7 +647,7 @@ class DeviceDetector {
       userAgent,
       osData,
       clientData,
-      deviceData,
+      deviceData
     );
     
     deviceData = Object.assign(deviceData, deviceDataType);

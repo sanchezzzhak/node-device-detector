@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const helper = require('../parser/helper');
-const { should, assert, expect } = require('chai');
+const {should, assert, expect} = require('chai');
 const {
   perryJSON,
   perryTable,
@@ -59,12 +59,12 @@ describe('tests clients', function () {
             );
           }
 
-          if(result.client.short_name) {
+          if (result.client.short_name) {
             expect(result.client.short_name, messageError).to.not.equal('UNK');
             delete result.client.short_name;
           }
 
-          if(fixture.client && fixture.client.family === null) {
+          if (fixture.client && fixture.client.family === null) {
             fixture.client.family = '';
           }
           expect(fixture.client, messageError).to.deep.equal(result.client);

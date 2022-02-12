@@ -188,7 +188,7 @@ console.log('Result parse lite', result);
 const detector = new DeviceDetector({
   osVersionTruncate: 0, // Truncate Os version from 5.0 to 5 (default '' or null)
   clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357 .78 to 43.0.2357 (default '' or null)
-  discardDeviceIndexes: false, // quick device definitions using indexing (disabled by default, set value false to enable),
+  deviceIndexes: false,      // Using indexes for faster device model search
   filePathDeviceIndexes: null  // custom index file path
 });
 // format file filePathDeviceIndexes 
@@ -196,10 +196,9 @@ const detector = new DeviceDetector({
 // You can override these settings at any time using special methods, example
 detector.setOsVersionTruncate(0);
 detector.setClientVersionTruncate(2);
-
-detector.discardDeviceIndexes = false;
+detector.deviceIndexes = true;
 /**
-banchmark.js test result:
+node tests/banchmark.js test result:
 ----
 Test: Mozilla/5.0 (Linux; Android 7.1.2; E6810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36
 EnableDeviceIndexes  x 1,184 ops/sec ±0.52% (92 runs sampled)
