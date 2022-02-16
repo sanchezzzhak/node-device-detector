@@ -54,6 +54,8 @@
   - Xiaomi
 '100003561':
   - ONN
+'100003562':
+  - ONN
 '100005206':
   - ONN
 '100005207':
@@ -1240,6 +1242,14 @@ infinix x663b:
   - Infinix
 infinix x697:
   - Infinix
+infinix x683b:
+  - Infinix
+infinix x605:
+  - Infinix
+note_3_pro:
+  - FiGi
+note_11_pro:
+  - FiGi
 ipod5,1:
   - Apple
 hmt390q:
@@ -18942,8 +18952,6 @@ infinix x657c:
   - Infinix
 infinix x680f:
   - Infinix
-infinix x680:
-  - Infinix
 infinix x688c:
   - Infinix
 infinix x688b:
@@ -19327,6 +19335,8 @@ zuum blaze:
   - Zuum
 zuum_zen_i:
   - Zuum
+infinix x680:
+  - Infinix
 lenovo l18081:
   - Lenovo
 lava lh9950:
@@ -19539,6 +19549,10 @@ lenovo x3c50:
   - Lenovo
 lenovo x3 lite:
   - Lenovo
+tis001_s4:
+  - Tigers
+twist 4:
+  - Positivo
 p13_blue_maks:
   - Reeder
 alfa 1:
@@ -22837,6 +22851,90 @@ infinix x6812b:
   - Infinix
 wildfire e1:
   - HTC
+infinix x680d:
+  - Infinix
+infinix x660b:
+  - Infinix
+infinix x660:
+  - Infinix
+infinix x655f:
+  - Infinix
+is655:
+  - iSafe Mobile
+via_e4:
+  - Casper
+via_f20:
+  - Casper
+zte a2020u pro:
+  - ZTE
+zte a2021g:
+  - ZTE
+z5156cc:
+  - ZTE
+a600dl:
+  - TCL
+in_2b:
+  - MicroMax
+le fizz:
+  - Logicom
+hit max:
+  - Philco
+m2103k19pi:
+  - POCO
+lm-v700n:
+  - LG
+tecno ac8:
+  - Tecno Mobile
+oneplus 9 pro:
+  - OnePlus
+blu life x lte:
+  - Blu
+t671e:
+  - TCL
+t671o:
+  - TCL
+t767h:
+  - TCL
+t773o:
+  - TCL
+t781:
+  - TCL
+t810s:
+  - TCL
+t810h:
+  - TCL
+v2114:
+  - Vivo
+v2108:
+  - Vivo
+rmx3393:
+  - Realme
+i2009:
+  - Vivo
+x8_soul_style:
+  - Allview
+v2047:
+  - Vivo
+infinix x6511:
+  - Infinix
+infinix x658e:
+  - Infinix
+gome 2017m95a:
+  - Gome
+titan p4000 pro 2021_eea:
+  - iHunt
+  - Unihertz
+vivax fly6:
+  - Vivax
+  - Fly
+s21 plus 2021_eea:
+  - iHunt
+note 7t:
+  - Ulefone
+via g5:
+  - Casper
+w-v851-ope:
+  - Wiko
 bravis_a506:
   - Bravis
 bravis delta:
@@ -36969,6 +37067,32 @@ b108_4g:
 hoozo mz104:
   - Hoozo
   - Motorola
+1az2p:
+  - Mediacom
+1az2t:
+  - Mediacom
+walpad 10p:
+  - Walton
+wizpad_valuer_v8:
+  - Redfox
+v tab z1:
+  - Vestel
+x104-eea:
+  - Beista
+y103_eea:
+  - YOTOPT
+m2105k81ac:
+  - Xiaomi
+terra_pad_1006:
+  - Wortmann
+t12-eea:
+  - TOSCIDO
+t151-eea:
+  - TOSCIDO
+q280:
+  - DEXP
+q180:
+  - DEXP
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -38177,6 +38301,10 @@ transpeed x4s:
   - Asano
 horizont 32le7011d:
   - Horizont
+vinabox_x20:
+  - Vinabox
+rombica_cinema4k_v01:
+  - Rombica
 bb2 pro:
   - Mecool
 kii pro:
