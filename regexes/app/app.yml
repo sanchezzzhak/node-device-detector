@@ -1,9 +1,35 @@
+# NM = name app
+# CT = category id
+# ST = store in play market
+# TP = type app
+
+# AD = adult app
+# BD = bad app: scram or patched app
+
+
 'com.internet.browser.secure': 'CT=1;NM=Internet Browser;ST=1;TP=browser'
+'com.iebrowser.fast': 'CT=1;NM=IE Browser Fast;ST=1;TP=browser'
+'com.Fast.BrowserUc.lite': 'CT=1;NM=Fast Browser UC 2022;ST=1;TP=browser'
+'com.ucold.browser.secure.browse': 'CT=1;NM=Uc Mini - Private Browser;ST=1;TP=browser'
+'com.opera.mini.native.beta15pahlevan': 'CT=1;NM=Opera Mini;ST=0;TP=browser;BD=1'
+'com.browser.indian.fast': 'CT=1;NM=Indian Browser;ST=1;TP=browser;'
+'com.wSilverMobBrowser': 'CT=1;NM=SilverMob US Browser;ST=0;TP=browser;'
+'fast.explorer.web.browser': 'CT=1;NM=Web Browser & Fast Explorer;ST=1;TP=browser;'
+'com.UCMobile.intl': 'CT=1;NM=UC Browser-Safe, Fast, Private;ST=1;TP=browser;'
+
+'com.xxnxx.browser.vpn': 'CT=1;NM=XXNXX Browser Proxy - Unblock Private;ST=1;TP=browser;AD=1'
+'com.porno.browser.vpn.hub': 'CT=1;NM=Porno Browser VPN hub;ST=1;TP=browser;AD=1'
+
+'info.sunista.app': 'CT=8;NM=Sanista - Persian Instagram;ST=0;TP=app'
+'com.instapro.app': 'CT=8;NM=InstaPro;ST=0;TP=app'
 'net.samay.grammar': 'CT=5;English Grammar Quiz;ST=0;TP=app'
 'earn.bchfaucet': 'CT=2;Earn BCH Faucet;ST=1;TP=app'
 'com.preff.kb.xm.gp': 'CT=4;Emoji Keyboard;ST=1;TP=app'
+'com.ludo.king': 'CT=4;Ludo King;ST=1;TP=app'
 'com.infinity.sotatheme': 'CT=3;Solitaire Theme - Classic Poker;ST=1;TP=app'
 'com.shepeliok.driving.race.lcruiser': 'CT=3;City SUV Toyota Land Cruiser 200 Parking;ST=1;TP=app'
+'com.games.bearparty': 'CT=3;Bear Party: Fall Down IO;ST=1;TP=app'
+'com.water.sort.puzzle.liquid.color.game': 'CT=3;Color Water Sort Puzzle Game;ST=1;TP=app'
 'com.krasiviyprojector.trikota': 'CT=6;11K Illumination Graphics;ST=1;TP=app'
 'com.free.full.movie.downloader.hollywoodbollywood.hindidubbed.allmoviedownloader': 'CT=7;Download movies video HD;ST=1;TP=app'
 'com.Palmier.bt': 'CT=4;Cute BT21 HD Wallpaper;ST=1;TP=app'
