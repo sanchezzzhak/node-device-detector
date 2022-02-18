@@ -33,6 +33,6 @@ module.exports = {
   'NetSurf': ['NE'],
   'Nokia Browser': ['DO', 'NB', 'NO', 'NV'],
   'Opera': ['O1', 'OG', 'OH', 'OI', 'OM', 'ON', 'OO', 'OP', 'OX'],
-  'Safari': ['MF', 'S7', 'SF', 'SO'],
+  'Safari': ['MF', 'S7', 'SF', 'SO', 'PV'],
   'Sailfish Browser': ['SA'],
 };

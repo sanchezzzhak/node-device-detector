@@ -39,6 +39,7 @@ module.exports = {
   'JME': 'Java ME',
   'KOS': 'KaiOS',
   'KNO': 'Knoppix',
+  'KTV': 'KreaTV',
   'KBT': 'Kubuntu',
   'LIN': 'GNU/Linux',
   'LBT': 'Lubuntu',
@@ -62,6 +63,7 @@ module.exports = {
   'T64': 'OSF1',
   'OBS': 'OpenBSD',
   'OWR': 'OpenWrt',
+  'OTV': 'Opera TV',
   'ORD': 'Ordissimo',
   'PCL': 'PCLinuxOS',
   'PSP': 'PlayStation Portable',
@@ -103,5 +105,5 @@ module.exports = {
   'YNS': 'YunOS',
   'IOS': 'iOS',
   'POS': 'palmOS',
-  'WOS': 'webOS'
+  'WOS': 'webOS',
 };
