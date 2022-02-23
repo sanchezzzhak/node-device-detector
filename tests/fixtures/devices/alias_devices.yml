@@ -309,7 +309,19 @@
   user_agent: Mozilla/5.0 (Linux; Android 10; SM-A105F; HPT/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36
   alias:
     name: SM-A105F
-
-- user_agent: Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-AN19; HMSCore 6.1.0.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Mobile Safari/537.36
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-AN19; HMSCore 6.1.0.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Mobile Safari/537.36
   alias:
     name: MRX-AN19
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; M2006C3LC Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.156 Mobile Safari/537.36
+  alias:
+    name: M2006C3LC
+-
+  user_agent: dv(iPh11,2);pr(UCBrowser/11.3.5.1203);ov(15_2_1);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);
+  alias:
+    name: iPhone11,2
+-
+  user_agent: dv(VOG-L29);pr(UCBrowser/13.4.0.1306);ov(Android 10);ss(360715);pi(10802147);bt(GJ);pm(1);bv(1);nm(0);im(0);sr(2);nt(1);bi(355);fi(145);dn(32210210557-ff0aa3dd);ai(720089404747345);
+  alias:
+    name: VOG-L29

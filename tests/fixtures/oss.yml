@@ -2082,8 +2082,8 @@
 -
   user_agent: Mozilla/5.0 (Linux; Andr0id 9; BRAVIA 4K UR1 Build/PTT1.190515.001.S71) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36 OPR/46.0.2207.0 OMI/4.13.5.431.DIA5HBBTV.185 HbbTV/1.5.1 ( DRM; Sony; KDL-GN5; PKG6.4770.0615EUA; ; com.sony.HE.G3.4K; )
   os:
-    name: Android
-    short_name: AND
+    name: Android TV
+    short_name: ADR
     version: "9"
     platform:
     family: Android
@@ -3143,3 +3143,123 @@
     version: ""
     platform: ""
     family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (Librem 5, like iPhone; X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Epiphany/605.1.15
+  os:
+    name: PureOS
+    short_name: PUR
+    version: ""
+    platform: x64
+    family: GNU/Linux
+-
+  user_agent: Dalvik/1.6.0 (Linux; U; Android V3 (AOSP 4.0.3); ALCATEL ONE TOUCH FIRE Build/IML74K)
+  os:
+    name: Android
+    short_name: AND
+    version: 4.0.3
+    platform: ""
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Plasma Mobile, like Android 9.0) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.14.2 Chrome/75.0.3770.116 Mobile Safari/537.36
+  os:
+    name: Plasma Mobile
+    short_name: PLA
+    version: ""
+    platform: ""
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (FreeBSD; U; Viera; like Android 4.0.2; xx; ja-jp) AppleWebKit/534.30 (KHTML, like Gecko) Viera/2.0.0 DIGAPlus/1.0.0 Mobile/534.30
+  os:
+    name: FreeBSD
+    short_name: BSD
+    version: ""
+    platform: ""
+    family: Unix
+-
+  user_agent: Mozilla/5.0 (X11; Fuchsia x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3557.0 Safari/537.36
+  os:
+    name: Fuchsia
+    short_name: FUC
+    version: ""
+    platform: x64
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1) Gecko/20090619 Pardus/2009 Firefox/3.5
+  os:
+    name: Pardus
+    short_name: PAR
+    version: "2009"
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (X11; U; Linux i686; en; rv:1.9b5) Gecko Foresight Linux Epiphany/2.22
+  os:
+    name: Foresight Linux
+    short_name: FOR
+    version: ""
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.12) Gecko/20100826 moonOS/3.0 (Makara) Firefox/3.5.2
+  os:
+    name: moonOS
+    short_name: MON
+    version: "3.0"
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: ELinks/0.9.3 (textmode; Linux 2.6.9-kanotix-8 i686; 127x41)
+  os:
+    name: Kanotix
+    short_name: KAN
+    version: ""
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.2.13) Gecko/20101221 IceCat/3.6.13 (like Firefox/3.6.13) (Zenwalk GNU Linux)
+  os:
+    name: Zenwalk
+    short_name: ZEN
+    version: ""
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (compatible; Konqueror/2.2.2; Linux 2.4.18; X11; i686; AffiliateCashGen/1.0; en) LindowsOS (Lindows.com, Inc.)
+  os:
+    name: LindowsOS
+    short_name: LND
+    version: ""
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: Mozilla/5.0 (X11; U; Linux i686; nl-NL; rv:1.6) Gecko/20050714 Linspire/1.6-5.1.0.50.linspire2.70
+  os:
+    name: Linspire
+    short_name: LNS
+    version: ""
+    platform: x86
+    family: GNU/Linux
+-
+  user_agent: Dalvik/2.1.0 (Linux; U; Android 5.1.1; MStar Android TV Build/LMY47V)
+  os:
+    name: Android TV
+    short_name: ADR
+    version: 5.1.1
+    platform:
+    family: Android
+-
+  user_agent: dv(iPh11,2);pr(UCBrowser/11.3.5.1203);ov(15_2);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);
+  os:
+    name: iOS
+    short_name: IOS
+    version: "15.2"
+    platform:
+    family: iOS
+-
+  user_agent: dv(iPh11,2);pr(UCBrowser/11.3.5.1203);ov(15_2_1);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);
+  os:
+    name: iOS
+    short_name: IOS
+    version: 15.2.1
+    platform:
+    family: iOS

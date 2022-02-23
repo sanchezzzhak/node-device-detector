@@ -89,7 +89,16 @@ exports.hasAndroidMobileFragment = function (userAgent) {
  * @returns {boolean}
  */
 exports.hasOperaTVStoreFragment = function (userAgent) {
-  return this.matchUserAgent('Opera TV Store', userAgent) !== null;
+  return this.matchUserAgent('Opera TV Store| OMI/', userAgent) !== null;
+};
+
+/**
+ * All devices that contain Andr0id in string are assumed to be a tv
+ * @param {string} userAgent
+ * @returns {boolean}
+ */
+exports.hasAndroidTVFragment = function (userAgent) {
+  return this.matchUserAgent('Andr0id|Android TV', userAgent) !== null;
 };
 
 /**
