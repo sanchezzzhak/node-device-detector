@@ -70,6 +70,14 @@
 - regex: 'InettvBrowser/(?:[\d\.]+).+\(.+\) ?(.+); CC/'
   name: '$1'
 
+# Iphone for x-ucbrowser-ua
+- regex: 'dv\(iPh([^)]+)\);pr\(UCBrowser/'
+  name: 'iPhone$1'
+
+# Android for x-ucbrowser-ua
+- regex: 'dv\(([^)]+)\);pr\(UCBrowser/'
+  name: '$1'
+
 # MS Office Apple
 - regex: '(?:Non)?AppStore; Apple/(.*?)\)'
   name: '$1'

@@ -410,6 +410,8 @@ class DeviceDetector {
     // check tv fragments and tv clients
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
+    } else if(helper.hasAndroidTVFragment(userAgent)){
+      deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
