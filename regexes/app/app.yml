@@ -7,6 +7,8 @@
 # BD = bad app: scram or patched app
 
 
+# Browsers
+
 'com.internet.browser.secure': 'CT=1;NM=Internet Browser;ST=1;TP=browser'
 'com.iebrowser.fast': 'CT=1;NM=IE Browser Fast;ST=1;TP=browser'
 'com.Fast.BrowserUc.lite': 'CT=1;NM=Fast Browser UC 2022;ST=1;TP=browser'
@@ -16,10 +18,32 @@
 'com.wSilverMobBrowser': 'CT=1;NM=SilverMob US Browser;ST=0;TP=browser;'
 'fast.explorer.web.browser': 'CT=1;NM=Web Browser & Fast Explorer;ST=1;TP=browser;'
 'com.UCMobile.intl': 'CT=1;NM=UC Browser-Safe, Fast, Private;ST=1;TP=browser;'
+'mark.via.gp': 'CT=1;NM=Via;ST=1;TP=browser;'
+'com.mi.globalbrowser.mini': 'CT=1;NM=Mint Browser;ST=1;TP=browser;'
+'acr.browser.Hexa': 'CT=1;NM=Hexa Web Browser;ST=0;TP=browser;'
+'acr.tez.browse': 'CT=1;NM=Browspeed - SuperFast Browser;ST=0;TP=browser;'
+'com.cake.browser': 'CT=1;NM=Cake Web Browser;ST=1;TP=browser;'
+'com.vivaldi.browser.snapshot': 'CT=1;NM=Vivaldi Browser Snapshot;ST=1;TP=browser;'
+'net.onecook.browser': 'CT=1;NM=Stargon Browser;ST=1;TP=browser;'
+'com.mycompany.app.soulbrowser': 'CT=1;NM=Soul Browser;ST=1;TP=browser;'
+'com.oh.bro': 'CT=1;NM=OH Web Browser;ST=1;TP=browser;'
+'org.torproject.torbrowser': 'CT=1;NM=Tor Browser;ST=1;TP=browser;'
+'com.microsoft.emmx.beta': 'CT=1;NM=Microsoft Edge Beta;ST=1;TP=browser;'
+'web.browser.dragon': 'CT=1;NM=Dragon Browser;ST=1;TP=browser;'
+'phx.hot.browser': 'CT=1;NM=Anka Browser;ST=1;TP=browser;'
+'com.aloha.browser': 'CT=1;NM=Aloha Browser;ST=1;TP=browser;'
 
+# Vpn Browsers
+
+'acr.browser.linxy': 'CT=1;NM=Vegas Browser Anti Block;ST=1;TP=browser;'
 'com.xxnxx.browser.vpn': 'CT=1;NM=XXNXX Browser Proxy - Unblock Private;ST=1;TP=browser;AD=1'
 'com.porno.browser.vpn.hub': 'CT=1;NM=Porno Browser VPN hub;ST=1;TP=browser;AD=1'
+'org.torproject.android': 'CT=1;NM=Orbot;ST=1;TP=browser;'
 
+# Apps
+
+'com.yandex.yamb': 'CT=9;NM=Yandex.Messenger;ST=0;TP=app'
+'com.sgiggle.production': 'CT=9;NM=Tango-Live Stream & Video Chat;ST=0;TP=app'
 'info.sunista.app': 'CT=8;NM=Sanista - Persian Instagram;ST=0;TP=app'
 'com.instapro.app': 'CT=8;NM=InstaPro;ST=0;TP=app'
 'net.samay.grammar': 'CT=5;English Grammar Quiz;ST=0;TP=app'
