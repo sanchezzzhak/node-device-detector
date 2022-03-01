@@ -1,6 +1,6 @@
 // prettier-ignore
 module.exports = {
-  'Android': ['AND', 'CYN', 'FIR', 'REM', 'RZD', 'MLD', 'MCD', 'YNS', 'GRI', 'HAR'],
+  'Android': ['AND', 'CYN', 'FIR', 'REM', 'RZD', 'MLD', 'MCD', 'YNS', 'GRI', 'HAR', 'ADR'],
   'AmigaOS': ['AMG', 'MOR'],
   'BlackBerry': ['BLB', 'QNX'],
   'Brew': ['BMP'],
@@ -13,10 +13,11 @@ module.exports = {
   'iOS': ['IOS', 'ATV', 'WAS', 'IPA'],
   'RISC OS': ['ROS'],
   'GNU/Linux': [
-	'LIN', 'ARL', 'DEB', 'KNO', 'MIN', 'UBT', 'KBT', 'XBT', 'LBT', 'FED',
-	'RHT', 'VLN', 'MDR', 'GNT', 'SAB', 'SLW', 'SSE', 'CES', 'BTR', 'SAF',
-	'ORD', 'TOS', 'RSO', 'DEE', 'FRE', 'MAG', 'FEN', 'CAI', 'PCL', 'HAS',
-	'LOS', 'DVK', 'ROK', 'OWR',
+    'LIN', 'ARL', 'DEB', 'KNO', 'MIN', 'UBT', 'KBT', 'XBT', 'LBT', 'FED',
+    'RHT', 'VLN', 'MDR', 'GNT', 'SAB', 'SLW', 'SSE', 'CES', 'BTR', 'SAF',
+    'ORD', 'TOS', 'RSO', 'DEE', 'FRE', 'MAG', 'FEN', 'CAI', 'PCL', 'HAS',
+    'LOS', 'DVK', 'ROK', 'OWR', 'OTV', 'KTV', 'PUR', 'PLA', 'FUC', 'PAR',
+    'FOR', 'MON', 'KAN', 'ZEN', 'LND', 'LNS',
   ],
   'Mac': ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],

@@ -309,7 +309,59 @@
   user_agent: Mozilla/5.0 (Linux; Android 10; SM-A105F; HPT/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36
   alias:
     name: SM-A105F
-
-- user_agent: Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-AN19; HMSCore 6.1.0.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Mobile Safari/537.36
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-AN19; HMSCore 6.1.0.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Mobile Safari/537.36
   alias:
     name: MRX-AN19
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; M2006C3LC Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.156 Mobile Safari/537.36
+  alias:
+    name: M2006C3LC
+-
+  user_agent: dv(iPh11,2);pr(UCBrowser/11.3.5.1203);ov(15_2_1);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);
+  alias:
+    name: iPhone11,2
+-
+  user_agent: dv(VOG-L29);pr(UCBrowser/13.4.0.1306);ov(Android 10);ss(360715);pi(10802147);bt(GJ);pm(1);bv(1);nm(0);im(0);sr(2);nt(1);bi(355);fi(145);dn(32210210557-ff0aa3dd);ai(720089404747345);
+  alias:
+    name: VOG-L29
+-
+  user_agent: Mozilla/5.0 (Linux; Android 9.0; 1505-A01 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.2 TBS/036557 Safari/537.36 V1_AND_SQ_6.5.3_398_YYB_D QQ/6.5.3.2855 NetType/WIFI WebP/0.3.0 Pixel/1080
+  alias:
+    name: 1505-A01
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; FRL-AN00a; HMSCore 6.0.0.305) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.3.300 Mobile Safari/537.36
+  alias:
+    name: FRL-AN00a
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 6.1.8-RS-20210508.1149; zh-CN; AILABS_S1L Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 UWS/3.22.1.71 Mobile Safari/537.36 UCBS/2.11.1.1 TTID/hybrid@windvane_android_8.5.0 WindVane/8.5.0 WindVane/8.5.0
+  alias:
+    name: AILABS_S1L
+-
+  user_agent: Xiaomi_MDT5_TD-LTE/V1 Linux/4.4.21 Android/7.1 Release/8.8.2017 Browser/AppleWebKit537.36 Mobile Safari/537.36 System/Android 7.1 XiaoMi/MiuiBrowser/8.9.6
+  alias:
+    name: MDT5
+-
+  user_agent: ChanghongC1/V1 Linux/3.4.67 Android/4.4.2 Release/ Browser/AppleWebKit537.36 Mobile Safari/537.36 MBBMS/2.2 System/Android 4.4.2
+  alias:
+    name: ChanghongC1
+-
+  user_agent: MTKDevice_TD/V1 Linux/3.18.19 Android/6.0 Release/01.01.2015 Browser/AppleWebKit537.36 Chrome/44.0.2403.119 Mobile Safari/537.36 System/Android 6.0;
+  alias:
+    name: MTKDevice
+-
+  user_agent: Xiaomi_M1803D5XT_TD-LTE/V1 Linux/4.9.65 Android/8.0 Release/3.10.2018 Browser/AppleWebKit537.36 Mobile Safari/537.36 System/Android 8.0 XiaoMi/MiuiBrowser/9.4.12
+  alias:
+    name: M1803D5XT
+-
+  user_agent: HONOR_Che2-TL00M_TD/5.0 Android/4.4.2 (Linux; U; Android 4.4.2; zh-cn) Release/09.05.2014 Browser/WAP2.0 (AppleWebKit/537.36) Mobile Safari/537.36
+  alias:
+    name: HONOR_Che2-TL00M
+-
+  user_agent: AUX_T5001_TD/1.0 Linux/3.4.5 Android/4.2.2 Release/03.26.2013 Browser/AppleWebKit534.30 Mobile Safari/534.30 MBBMS/2.2;
+  alias:
+    name: AUX_T5001
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; zh-cn; AUX_V965T_TD/1.0 Android/4.0.3 Release/4.25.2013 Browser/AppleWebKit534.30 Build/MocorDroid4.0.3) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  alias:
+    name: AUX_V965T_TD

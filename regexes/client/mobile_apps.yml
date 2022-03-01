@@ -44,6 +44,11 @@
   name: 'Facebook Lite'
   version: '$1'
 
+# Meta Business Suite (https://apps.apple.com/us/app/facebook-business-suite/id514643583)
+- regex: 'FBAN/FBPageAdmin.+FBAV(?:[ /]([\d\.]+))?'
+  name: 'Meta Business Suite'
+  version: '$1'
+
 # Facebook
 - regex: '(?:FBAV|com.facebook.katana)(?:[ /]([\d\.]+))?'
   name: 'Facebook'
@@ -78,7 +83,7 @@
   version: '$1'
 
 # WeChat
-- regex: 'MicroMessenger/([^; ]+)'
+- regex: 'MicroMessenger/([\d\.]+)'
   name: 'WeChat'
   version: '$1'
 - regex: 'WeChat/([\d\.]+)'
@@ -403,6 +408,11 @@
   name: 'Skype for Business'
   version: '$1'
 
+# GroupMe (https://apps.apple.com/us/app/groupme/id392796698)
+- regex: 'GroupMe/([\d\.]+)'
+  name: 'GroupMe'
+  version: '$1'
+
 # TikTok (https://apps.apple.com/app/id835599320 | https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically)
 - regex: '(?:TikTok[/ ]|musical_ly_|AppName/musical_ly app_version/)(\d+\.(?:[\.\d]+))?'
   name: 'TikTok'
@@ -437,6 +447,9 @@
 - regex: 'Slack/(\d+[\.\d]+) CFNetwork'
   name: 'Slack'
   version: ''
+- regex: 'com.tinyspeck.chatlyio/(\d+[\.\d]+)'
+  name: 'Slack'
+  version: '$1'
 
 # https://apps.apple.com/us/app/id362057947
 - regex: 'KAKAOTALK (\d+\.(?:[\.\d]+))?'
@@ -523,10 +536,10 @@
   version: '$1'
 
 # TuneIn Radio Pro
-- regex: 'TuneIn Radio Pro(?:[^/]+)?/(\d+[\.\d]+)'
+- regex: 'TuneIn Radio Pro(?:[^/]*)/(\d+[\.\d]+)'
   name: 'TuneIn Radio Pro'
   version: '$1'
-- regex: 'TuneIn(?: Radio(?:[^/]+)?)?/(\d+[\.\d]+)'
+- regex: 'TuneIn(?: Radio(?:[^/]*))?/(\d+[\.\d]+)'
   name: 'TuneIn Radio'
   version: '$1'
 
@@ -643,7 +656,7 @@
   name: 'Teams'
   version: '$1'
 
-- regex: 'TeamsMobile-iOS'
+- regex: 'TeamsMobile-(?:Android|iOS)'
   name: 'Teams'
   version: ''
 
@@ -1078,4 +1091,103 @@
 # Q-municate (https://www.qmunicateh10.com | https://apps.apple.com/gb/app/q-municate/id909698517)
 - regex: 'com.Nanoteq.QmunicateH10p.+/(\d+\.[\.\d]+) \('
   name: 'Q-municate'
+  version: '$1'
+
+# NET.mede (https://apps.apple.com/us/app/net-mede/id597007101)
+- regex: 'NET.mede'
+  name: 'NET.mede'
+  version: ''
+
+# My Bentley (https://apps.apple.com/us/app/my-bentley/id1008052243)
+- regex: 'My%20Bentley'
+  name: 'My Bentley'
+  version: ''
+
+# Skyeng (https://apps.apple.com/us/app/skyeng-english-online/id1065290732)
+- regex: 'Skyeng%20App'
+  name: 'Skyeng'
+  version: ''
+
+# Skyeng Teachers (https://apps.apple.com/us/app/skyeng-teachers/id1483049537)
+- regex: 'Skyeng%20Teachers'
+  name: 'Skyeng Teachers'
+  version: ''
+
+# Bank Millenium (https://apps.apple.com/us/app/bank-millennium/id412646128)
+- regex: '(Millennium/|Millennium%20Corp)'
+  name: 'Bank Millenium'
+  version: ''
+
+# MBolsa (https://apps.apple.com/us/app/mbolsa/id1533621499)
+- regex: 'MBolsa'
+  name: 'MBolsa'
+  version: ''
+
+# MEmpresas (https://apps.apple.com/us/app/mempresas/id669516182)
+- regex: '(MEmpresas|Millennium%20Empresas)'
+  name: 'MEmpresas'
+  version: ''
+
+# Orange Radio (https://apps.apple.com/fr/app/orange-radio/id1201284975?l=en)
+- regex: 'OrangeRadio/(\d+\.[\.\d]+)'
+  name: 'Orange Radio'
+  version: '$1'
+
+# Radio Italiane https://apps.apple.com/us/app/radio-italiane-radio-it/id1390350146)
+- regex: 'Radio%20Italiane/(\d+\.[\.\d]+)'
+  name: 'Radio Italiane'
+  version: '$1'
+
+# Safari Search Helper
+- regex: 'com.apple.Safari.SearchHelper/(\d+\.[\.\d]+)'
+  name: 'Safari Search Helper'
+  version: '$1'
+
+# Citrix Workspace (https://apps.apple.com/us/app/citrix-workspace/id363501921)
+- regex: 'Citrix%20Viewer'
+  name: 'Citrix Workspace'
+  version: ''
+
+# Mercantile Bank of Michigan (https://apps.apple.com/us/app/mercantile-bank-of-michigan/id428982831)
+- regex: 'com.mercbank.s1mobileipad'
+  name: 'Mercantile Bank of Michigan'
+  version: ''
+
+# DStream Air (https://apps.apple.com/us/app/dstream-air/id1214400521)
+- regex: 'D-Stream%20Air'
+  name: 'DStream Air'
+  version: ''
+
+# Expedia (https://apps.apple.com/us/app/expedia-hotels-flights-car/id427916203)
+- regex: 'ExpediaBookings'
+  name: 'Expedia'
+  version: ''
+
+# Windows Antivirus
+- regex: 'Windows Antivirus (\d+\.[\.\d]+)'
+  name: 'Windows Antivirus'
+  version: '$1'
+
+# Macrium Reflect (https://www.macrium.com/reflectfree)
+- regex: '^Reflect'
+  name: 'Macrium Reflect'
+  version: ''
+
+- regex: 'Opera autoupdate agent'
+  name: 'Opera Updater'
+  version: ''
+
+# Ballz (https://apps.apple.com/us/app/ballz/id1139609950)
+- regex: 'Ballz/(\d+\.[\.\d]+)'
+  name: 'Ballz'
+  version: '$1'
+
+# RNPS Action Cards
+- regex: 'rnps-action-cards/(\d+\.[\.\d]+)'
+  name: 'RNPS Action Cards'
+  version: '$1'
+
+# Plex Media Server (https://www.plex.tv/sv/media-server-downloads/)
+- regex: 'PlexMediaServer/(\d+\.[\.\d]+)'
+  name: 'Plex Media Server'
   version: '$1'
