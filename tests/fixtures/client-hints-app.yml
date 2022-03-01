@@ -8,6 +8,19 @@
   user_agent: Mozilla/5.0 (Linux; Android 8.1.0; ZC554KL Build/OPM1.171019.011;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36
   headers:
     x-requested-with: mark.via.gp
+  os:
+    name: Android
+    version: "8.1.0"
+    platform: ""
+    family: Android
   client:
-    name: 'Via'
-    type: 'browser'
+    type: browser
+    name: Via
+    version: ""
+    engine: Blink
+    engine_version: ""
+    family: Unknown
+  device:
+    type: smartphone
+    brand: Asus
+    model: ZenFone 4 Max
