@@ -26,7 +26,6 @@ const VendorFragmentParser = require(
   './parser/vendor-fragment-abstract-parser');
 // other parsers
 const AliasDevice = require('./parser/device/alias-device');
-const ClientHints = require('./parser/client-hints');
 
 // const, lists
 const DEVICE_TYPE = require('./parser/const/device-type');
@@ -46,7 +45,6 @@ const BOT_PARSER = 'Bot';
 // static private parser init
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
-const clientHint = new ClientHints;
 
 class DeviceDetector {
   /**
@@ -293,14 +291,6 @@ class DeviceDetector {
   }
 
   /**
-   * get client hint parser
-   * @returns {ClientHints}
-   */
-  getParseClientHints() {
-    return clientHint;
-  }
-
-  /**
    * add device type parser
    * @param {string} name
    * @param parser
@@ -348,7 +338,14 @@ class DeviceDetector {
 
 
   parseClientHints(headers) {
+    if (!headers) {
+      return {};
+    }
     return this.getParseClientHints().parse(headers);
+  }
+
+  parseClientHintsApp(appId) {
+
   }
 
   /**
@@ -356,7 +353,7 @@ class DeviceDetector {
    * @param {string} userAgent
    * @return {ResultOs}
    */
-  parseOs(userAgent) {
+  parseOs(userAgent, clientHintData = {}) {
     let result = {};
     for (let name in this.osParserList) {
       let parser = this.osParserList[name];
@@ -382,6 +379,7 @@ class DeviceDetector {
       osData,
       clientData,
       deviceData,
+      clientHintData
   ) {
     let osName = attr(osData, 'name', '');
     let osFamily = attr(osData, 'family', '');
@@ -537,7 +535,7 @@ class DeviceDetector {
    * @param {string} userAgent
    * @return {ResultDevice}
    */
-  parseDevice(userAgent) {
+  parseDevice(userAgent, clientHintData) {
     let brandIndexes = [];
     let deviceCode = '';
     
@@ -619,7 +617,7 @@ class DeviceDetector {
    * @param {string} userAgent
    * @return {ResultClient|{}}
    */
-  parseClient(userAgent) {
+  parseClient(userAgent, clientHintData) {
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
@@ -635,21 +633,20 @@ class DeviceDetector {
   /**
    * detect os, client and device
    * @param {string} userAgent - string from request header['user-agent']
-   * @param {{}} headers - request headers (only used in client hints)
+   * @param {{}} clientHintData
    * @return {DetectResult}
    */
-  detect(userAgent, headers = {}) {
-
-    let clientHintData = this.parseClientHints(headers);
-
-    let osData = this.parseOs(userAgent);
-    let clientData = this.parseClient(userAgent);
-    let deviceData = this.parseDevice(userAgent);
+  detect(userAgent, clientHintData = {}) {
+    console.log({clientHintData})
+    let osData = this.parseOs(userAgent, clientHintData);
+    let clientData = this.parseClient(userAgent, clientHintData);
+    let deviceData = this.parseDevice(userAgent, clientHintData);
     let deviceDataType = this.parseDeviceType(
       userAgent,
       osData,
       clientData,
-      deviceData
+      deviceData,
+      clientHintData
     );
     
     deviceData = Object.assign(deviceData, deviceDataType);

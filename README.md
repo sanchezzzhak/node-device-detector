@@ -140,6 +140,23 @@ DeviceHelper.getDeviceType(result);
 DeviceHelper.getClientType(result);
 ```
 
+Using DeviceDetector + ClientHints
+-
+[[top]](#top)
+
+```js
+const DeviceDetector = require('node-device-detector');
+const DeviceHelper   = require('node-device-detector/helper');
+const ClientHints    = require('node-device-detector/client-hints')
+
+const detector = new DeviceDetector;
+const clientHints = new ClientHints;
+const userAgent = res.headers['user-agent'];
+const clientHintData = clientHints.parse(res.headers);
+const result = detector.detect(userAgent, clientHintData);
+
+```
+
 Using parsers singly <a name="single-parsers"></a>
 -
 [[top]](#top)
@@ -157,7 +174,7 @@ const result = detector.parseBot(userAgent);
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector;
-const result = detector.parseOs(userAgent);
+const result = detector.parseOs(userAgent/*, clientHintData*/);
 console.log('Result parse os', result);  
 ```
 
@@ -166,7 +183,7 @@ console.log('Result parse os', result);
 const DeviceDetector = require('node-device-detector');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector;
-const result = detector.parseClient(userAgent);
+const result = detector.parseClient(userAgent/*, clientHintData*/);
 console.log('Result parse client', result);
 ```
 
@@ -177,7 +194,13 @@ const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWe
 const detector = new DeviceDetector;
 const resultOs = detector.parseOs(userAgent);
 const resultClient = detector.parseClient(userAgent);
-const resultDeviceType = detector.parseDeviceType(userAgent, resultOs, resultClient, {});
+const resultDeviceType = detector.parseDeviceType(
+ userAgent,
+ resultOs,
+ resultClient,
+ {},
+ /*, clientHintData */
+);
 const result = Object.assign({os:resultOs}, {client:resultClient}, {device: resultDeviceType});
 console.log('Result parse lite', result);
 ```

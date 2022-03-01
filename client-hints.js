@@ -1,4 +1,4 @@
-const header = require('./helper');
+const header = require('./parser/helper');
 const attr = header.getPropertyValue;
 
 const CH_UA_FULL_VERSION = 'sec-ch-ua-full-version';
@@ -73,14 +73,19 @@ class ClientHints {
    * @return {boolean}
    */
   static isSupport(headers) {
-    return headers[CH_UA] !== void 0;
+    return headers[CH_UA] !== void 0 || headers[CH_UA.toLowerCase()] !== void 0;
   }
 
 
   /**
    * @param {{}} headers - key/value
    */
-  parse(headers) {
+  parse(objHeaders) {
+    let headers = {};
+    for( let key in objHeaders) {
+      headers[key.toLowerCase()] = objHeaders[key];
+    }
+
     if (!ClientHints.isSupport(headers)) {
       return {};
     }
