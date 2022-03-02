@@ -351,13 +351,17 @@ class DeviceDetector {
   /**
    * parse OS
    * @param {string} userAgent
+   * @param {*} clientHintData
    * @return {ResultOs}
    */
   parseOs(userAgent, clientHintData = {}) {
     let result = {};
+
+    console.log({clientHintData})
+
     for (let name in this.osParserList) {
       let parser = this.osParserList[name];
-      let resultMerge = parser.parse(userAgent);
+      let resultMerge = parser.parse(userAgent, clientHintData);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -618,10 +622,11 @@ class DeviceDetector {
    * @return {ResultClient|{}}
    */
   parseClient(userAgent, clientHintData) {
+
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
-      let resultMerge = parser.parse(userAgent);
+      let resultMerge = parser.parse(userAgent, clientHintData);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -637,7 +642,7 @@ class DeviceDetector {
    * @return {DetectResult}
    */
   detect(userAgent, clientHintData = {}) {
-    console.log({clientHintData})
+
     let osData = this.parseOs(userAgent, clientHintData);
     let clientData = this.parseClient(userAgent, clientHintData);
     let deviceData = this.parseDevice(userAgent, clientHintData);

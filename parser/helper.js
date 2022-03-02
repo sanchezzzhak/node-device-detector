@@ -8,6 +8,11 @@ exports.matchUserAgent = function (str, userAgent) {
   return match.exec(userAgent);
 };
 
+
+exports.fuzzyCompare = function(val1, val2) {
+  return val1.replace(' ', '').toLowerCase() === val2.replace(' ', '').toLowerCase();
+}
+
 exports.versionCompare = function (ver1, ver2) {
   if (ver1 === ver2) {
     return 0;

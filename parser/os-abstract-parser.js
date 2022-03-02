@@ -1,7 +1,44 @@
 const ParserAbstract = require('./abstract-parser');
+const ArrayPath = require("../lib/array-path");
+const helper = require("./helper");
 
 OS_SYSTEMS = require('./os/os_systems');
 OS_FAMILIES = require('./os/os_families');
+
+const compareBrandForClientHints = (brand) => {
+  const CLIENTHINT_MAPPING = {
+    'GNU/Linux': ['Linux'],
+    'Mac': ['MacOS'],
+  };
+  for(let brandName in CLIENTHINT_MAPPING){
+    for(let mapBrand of CLIENTHINT_MAPPING[brandName]){
+      if (brandName.toLowerCase() === mapBrand.toLowerCase()) {
+        return brandName;
+      }
+    }
+  }
+  return brand;
+}
+
+function comparePlatform(platform, bitness = '') {
+  if (platform.indexOf('arm') !== -1) {
+    return 'ARM';
+  }
+  if (platform.indexOf('mips') !== -1) {
+    return 'MIPS';
+  }
+  if (platform.indexOf('sh4') !== -1) {
+    return 'SuperH';
+  }
+  if (platform.indexOf('x64') !== -1 || (platform.indexOf('x86') !== -1 && bitness === '64')) {
+    return 'x64';
+  }
+
+  if (platform.indexOf('x86') !== -1) {
+    return 'x86';
+  }
+  return '';
+}
 
 class OsAbstractParser extends ParserAbstract {
   constructor() {
@@ -42,12 +79,46 @@ class OsAbstractParser extends ParserAbstract {
     return {name, short}
   }
 
-  /**
-   *
-   * @param {string} userAgent
-   * @returns {null|{name: (string|*), short_name: string, family: string, version: string, platform: string}}
-   */
-  parse(userAgent) {
+
+  parseFromClientHints(clientHintsData) {
+    if (!clientHintsData) {
+      return null;
+    }
+
+    let name = '';
+    let short = '';
+    let version = '';
+    let platform = '';
+
+    if (clientHintsData.os) {
+      platform = clientHintsData.os.platform;
+      version = clientHintsData.os.version;
+      let hintName = clientHintsData.os.name;
+      platform  = comparePlatform(platform, clientHintsData.os.bitness);
+      hintName = compareBrandForClientHints(hintName);
+
+      for (let osShort in OS_SYSTEMS) {
+        let osName = OS_SYSTEMS[osShort];
+        if (helper.fuzzyCompare(hintName, osName)) {
+          name = osName;
+          short = osShort;
+          break;
+        }
+      }
+    }
+
+
+
+
+    return {
+      name: name,
+      short_name: short,
+      version: version,
+      platform: platform,
+    }
+  }
+
+  parseFromUserAgent(userAgent) {
     for (let i = 0, l = this.collection.length; i < l; i++) {
       let item = this.collection[i];
       let regex = this.getBaseRegExp(item.regex);
@@ -83,6 +154,37 @@ class OsAbstractParser extends ParserAbstract {
       }
     }
     return null;
+  }
+
+  /**
+   *
+   * @param {string} userAgent
+   * @param clientHintsData
+   * @returns {null|{name: (string|*), short_name: string, family: string, version: string, platform: string}}
+   */
+  parse(userAgent, clientHintsData) {
+    let hint = this.parseFromClientHints(clientHintsData);
+    let data = this.parseFromUserAgent(userAgent);
+    if (hint && hint.name) {
+      let version = hint.version;
+      let platform = hint.platform;
+      if (platform === '' && data !== null) {
+        platform = data.platform;
+      }
+
+      if (version === '' && data['name'] === hint['name']) {
+        version = data['version'];
+      }
+      return {
+        name: hint.name,
+        version: version,
+        short_name: hint.short_name,
+        platform: platform,
+        family: this.parseOsFamily(hint.short_name)
+      };
+    }
+
+    return data;
   }
 
   /**

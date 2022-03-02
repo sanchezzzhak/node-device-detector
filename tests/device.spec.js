@@ -37,6 +37,16 @@ function normalizationFixture(fixture) {
   if (fixture.os !== void 0 && fixture.os.platform === null) {
     fixture.os.platform = "";
   }
+
+  if (fixture.device !== void 0 && fixture.device.brand === null) {
+    fixture.device.brand = "";
+  }
+  if (fixture.device !== void 0 && fixture.device.model === null) {
+    fixture.device.model = "";
+  }
+  if (fixture.device !== void 0 && fixture.device.type === null) {
+    fixture.device.type = "";
+  }
 }
 
 function testsFromFixtureDeviceMobile(fixture) {

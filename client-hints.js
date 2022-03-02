@@ -9,6 +9,7 @@ const CH_UA_PLATFORM_VERSION = 'sec-ch-ua-platform-version';
 const CH_UA_PLATFORM = 'sec-ch-ua-platform';
 const CH_UA_ARCH = 'sec-ch-ua-arch';
 const CH_UA = 'sec-ch-ua';
+const CH_BITNESS = 'sec-ch-ua-bitness';
 const CH_UA_PREFERS_COLOR_SCHEME = 'sec-ch-prefers-color-scheme';
 
 /*
@@ -37,6 +38,9 @@ const CH_UA_PREFERS_COLOR_SCHEME = 'sec-ch-prefers-color-scheme';
   sec-ch-prefers-reduced-data];
 */
 
+
+
+
 function getBrowserNames(headers) {
   let value = attr(headers, CH_UA, '');
   let pattern = new RegExp('"([^"]+)"; ?v="([^"]+)"(?:, )?', 'gi');
@@ -46,7 +50,6 @@ function getBrowserNames(headers) {
     let brand = matches[1];
     let skip = brand.indexOf('Not;A') !== -1
         || brand.indexOf('Not A;') !== -1
-        || brand.indexOf('Chromium') !== -1;
     if (skip) {
       continue
     }
@@ -98,10 +101,13 @@ class ClientHints {
     result.prefers = {
       colorScheme: attr(headers, CH_UA_PREFERS_COLOR_SCHEME, '')
     }
+    let platform = attr(headers, CH_UA_ARCH, '');
+    let bitness = attr(headers, CH_BITNESS, '');
     // os
     result.os = {
       name: attr(headers, CH_UA_PLATFORM, ''),
-      platform: attr(headers, CH_UA_ARCH, '')
+      platform: platform.toLowerCase(),
+      bitness: bitness,
     };
     let osVersion = attr(headers, CH_UA_PLATFORM_VERSION, '');
     if (result.os.name === 'Windows' && osVersion !== '') {
@@ -109,30 +115,30 @@ class ClientHints {
       if (majorOsVersion === 0) {
         osVersion = "";  // 7 | 8 | 8.1
       }
-      if (majorOsVersion > 0 && majorOsVersion < 11) {
+      if (majorOsVersion >= 0 && majorOsVersion < 11) {
         osVersion = "10";
       } else if (majorOsVersion > 11 && majorOsVersion < 16) {
         osVersion = "11";
       }
     }
-    result.os.verion = osVersion;
+    result.os.version = osVersion;
+
+
 
     // client
     let clientData = getBrowserNames(headers);
-    let clientItem = clientData.length ? clientData[0] : {};
-
     result.client = {
-      name: clientItem.brand || "",
-      version: attr(headers, CH_UA_FULL_VERSION, '') || clientItem.version || ""
+      brands: clientData,
+      version: attr(headers, CH_UA_FULL_VERSION, ''),
     };
 
     result.device = {
       code: attr(headers, CH_UA_MODEL, '')
     }
 
-    result.appId = attr(headers, 'x-requested-with' , '')
-    if (result.appId.toLowerCase() === 'xmlhttprequest') {
-      result.appId = '';
+    result.app = attr(headers, 'x-requested-with' , '')
+    if (result.app.toLowerCase() === 'xmlhttprequest') {
+      result.app = '';
     }
 
     return result;
