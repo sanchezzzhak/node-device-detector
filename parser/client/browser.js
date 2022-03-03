@@ -70,45 +70,42 @@ class Browser extends ClientAbstractParser {
       engineVersion = '';
       if (
           data && 'Chromium' === name
-          && data['name'].length
-          && 'Chromium' !== data['name']
-          && 'Chrome' === this.buildFamily(data['short_name'])
+          && 'Chromium' !== data.name
+          && 'Chrome' === this.buildFamily(data.short_name)
       ) {
-        name = data['name'];
-        short = data['short_name'];
-        version = data['version'];
+        name = data.name;
+        short = data.short_name;
+        version = data.version
       }
       // Fix mobile browser names e.g. Chrome => Chrome Mobile
-      if (data && name + ' Mobile' === data['name']) {
-        name = data['name'];
-        short = data['short_name'];
+      if (data && name + ' Mobile' === data.name) {
+        name = data.name;
+        short = data.short_name;
       }
 
-      if (data && name === data['name']) {
+      if (data && name === data.name) {
         engine = data.engine;
         engineVersion = data.engine_version;
 
         // In case the user agent reports a more detailed version, we try to use this instead
-
-        console.log('aaaa',  helper.versionCompare(version, data['version']));
         if (
             data
-            && data['version'].indexOf(version) === 0
-            && helper.versionCompare(version, data['version']) < 0
+            && data.version.indexOf(version) === 0
+            && helper.versionCompare(version, data.version) < 0
         ) {
-          version = data['version'];
+          version = data.version;
         }
       }
 
       family = this.buildFamily(short);
 
     } else if(data !== null) {
-      name = data['name'];
-      version = data['version'];
-      short = data['short_name'];
-      engine = data['engine'];
-      engineVersion = data['engine_version'];
-      family = data['family'];
+      name = data.name;
+      version = data.version;
+      short = data.short_name;
+      engine = data.engine;
+      engineVersion = data.engine_version;
+      family = data.family;
     }
 
     if (name === '') {
@@ -134,9 +131,8 @@ class Browser extends ClientAbstractParser {
     if (clientHintData && clientHintData.client) {
       let brands = ArrayPath.get(clientHintData, 'client.brands', []);
 
-      for (let item of brands) {
-        let brand = compareBrandForClientHints(item.brand);
-
+      for (let brandItem of brands) {
+        let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
           let shortName = this.getCollectionBrowsers()[browserName];
           let found = helper.fuzzyCompare(`${brand}`, browserName)
@@ -146,7 +142,7 @@ class Browser extends ClientAbstractParser {
           if (found) {
             name = browserName;
             short = shortName;
-            version = item.version;
+            version = brandItem.version;
             break;
           }
         }
@@ -154,8 +150,9 @@ class Browser extends ClientAbstractParser {
           break;
         }
       }
-      version = ArrayPath.get(clientHintData, 'client.version', version);
+      version = clientHintData.client.version ? clientHintData.client.version: version
     }
+
 
     return {
       name: name,
