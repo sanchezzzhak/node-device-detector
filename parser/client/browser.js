@@ -9,11 +9,11 @@ const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 
 const compareBrandForClientHints = (brand) => {
   const CLIENTHINT_MAPPING = {
-    'Chrome':['Google Chrome']
+    'Chrome': ['Google Chrome']
   };
-  for(let brandName in CLIENTHINT_MAPPING){
-    for(let mapBrand of CLIENTHINT_MAPPING[brandName]){
-      if (brandName.toLowerCase() === mapBrand.toLowerCase()) {
+  for (let brandName in CLIENTHINT_MAPPING) {
+    for (let mapBrand of CLIENTHINT_MAPPING[brandName]) {
+      if (brand.toLowerCase() === mapBrand.toLowerCase()) {
         return brandName;
       }
     }
@@ -60,46 +60,44 @@ class Browser extends ClientAbstractParser {
     let short = ''
     let family = '';
 
-    console.log({hint }, clientHintsData.client)
-
-    if(hint.name && hint.version) {
+    // client-hint+user-agent
+    if (hint.name && hint.version) {
       name = hint.name;
       version = hint.version;
       short = hint.short_name;
-      engine = '';
-      engineVersion = '';
-      if (
-          data && 'Chromium' === name
-          && 'Chromium' !== data.name
-          && 'Chrome' === this.buildFamily(data.short_name)
-      ) {
-        name = data.name;
-        short = data.short_name;
-        version = data.version
-      }
-      // Fix mobile browser names e.g. Chrome => Chrome Mobile
-      if (data && name + ' Mobile' === data.name) {
-        name = data.name;
-        short = data.short_name;
-      }
-
-      if (data && name === data.name) {
-        engine = data.engine;
-        engineVersion = data.engine_version;
-
-        // In case the user agent reports a more detailed version, we try to use this instead
-        if (
-            data
-            && data.version.indexOf(version) === 0
-            && helper.versionCompare(version, data.version) < 0
-        ) {
-          version = data.version;
-        }
-      }
-
       family = this.buildFamily(short);
 
-    } else if(data !== null) {
+      if (data) {
+        if (
+            'Chromium' === name && 'Chromium' !== data.name
+            && 'Chrome' === this.buildFamily(data.short_name)
+        ) {
+          name = data.name;
+          short = data.short_name;
+          version = data.version
+          family = this.buildFamily(short);
+        }
+
+        // Fix mobile browser names e.g. Chrome => Chrome Mobile
+        if (name + ' Mobile' === data.name) {
+          name = data.name;
+          short = data.short_name;
+        }
+
+        if (name !== data.name && family === this.buildFamily(data.short_name)) {
+          engine = data.engine;
+          engineVersion = data.engine_version;
+        }
+
+        if (name === data.name) {
+          engine = data.engine;
+          engineVersion = data.engine_version;
+          if (data.version && data.version.indexOf(version) === 0 && helper.versionCompare(version, data.version) < 0) {
+            version = data.version;
+          }
+        }
+      }
+    } else if (data !== null) {
       name = data.name;
       version = data.version;
       short = data.short_name;
@@ -123,15 +121,18 @@ class Browser extends ClientAbstractParser {
     }
   }
 
-  parseFromClientHints(clientHintData) {
+  parseFromClientHints(clientHintsData) {
     let name = '';
     let short = '';
     let version = '';
 
-    if (clientHintData && clientHintData.client) {
-      let brands = ArrayPath.get(clientHintData, 'client.brands', []);
+    if (clientHintsData && clientHintsData.client) {
+      let brands = ArrayPath.get(clientHintsData, 'client.brands', []);
 
       for (let brandItem of brands) {
+        if (brandItem.brand === 'Chromium') {
+          continue;
+        }
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
           let shortName = this.getCollectionBrowsers()[browserName];
@@ -140,19 +141,18 @@ class Browser extends ClientAbstractParser {
               || helper.fuzzyCompare(`${brand}`, browserName + ' Browser');
 
           if (found) {
-            name = browserName;
-            short = shortName;
-            version = brandItem.version;
+            name = String(browserName);
+            short = String(shortName);
+            version = String(brandItem.version);
             break;
           }
         }
-        if ('' !== name && 'Chromium' !== name) {
-          break;
-        }
       }
-      version = clientHintData.client.version ? clientHintData.client.version: version
-    }
 
+      if (clientHintsData.client.version) {
+        version = String(clientHintsData.client.version)
+      }
+    }
 
     return {
       name: name,
@@ -162,6 +162,10 @@ class Browser extends ClientAbstractParser {
   }
 
   parseFromUserAgent(userAgent) {
+    if (!userAgent) {
+      return null;
+    }
+
     for (let i = 0, l = this.collection.length; i < l; i++) {
       let item = this.collection[i];
       let regex = this.getBaseRegExp(item.regex);
@@ -196,6 +200,7 @@ class Browser extends ClientAbstractParser {
     }
     return null;
   }
+
   /**
    *  normalisation browser name from any case
    *
@@ -205,10 +210,10 @@ class Browser extends ClientAbstractParser {
   buildName(name) {
     let result = name;
     let normalName = this.getCollectionBrowsers()[name];
-    if(normalName === void 0) {
+    if (normalName === void 0) {
       let lname = name.toLowerCase();
       let browsers = this.getAvailableBrowsers();
-      for(let i=0, l = browsers.length; i < l; i++){
+      for (let i = 0, l = browsers.length; i < l; i++) {
         if (lname === browsers[i].toLowerCase()) {
           result = browsers[i];
           break
@@ -217,7 +222,7 @@ class Browser extends ClientAbstractParser {
     }
     return result;
   }
-  
+
   /**
    * @param {string} shortName
    * @returns {string}
@@ -225,9 +230,9 @@ class Browser extends ClientAbstractParser {
   buildFamily(shortName) {
     for (let browserFamily in BROWSER_FAMILIES) {
       if (
-        browserFamily &&
-        BROWSER_FAMILIES[browserFamily] &&
-        BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1
+          browserFamily &&
+          BROWSER_FAMILIES[browserFamily] &&
+          BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1
       ) {
         return browserFamily;
       }
@@ -249,8 +254,8 @@ class Browser extends ClientAbstractParser {
       let versions = Object.keys(engine.versions).sort(helper.versionCompare);
       for (let i = 0, l = versions.length; i < l; i++) {
         if (
-          browserVersion !== '' &&
-          helper.versionCompare(browserVersion, versions[i]) >= 0
+            browserVersion !== '' &&
+            helper.versionCompare(browserVersion, versions[i]) >= 0
         ) {
           result = engine.versions[versions[i]];
         }
@@ -298,9 +303,9 @@ class Browser extends ClientAbstractParser {
     }
 
     let regexp = new RegExp(
-      engine +
+        engine +
         '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
-      'i'
+        'i'
     );
     let match = regexp.exec(userAgent);
     if (match !== null) {

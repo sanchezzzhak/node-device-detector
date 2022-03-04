@@ -138,6 +138,9 @@ describe('tests devices', function () {
     }
     describe('file fixture ' + file, function () {
       let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
+
+
+
       let total = fixtureData.length;
       // =====
       describe('not used indexes', () => {
@@ -150,6 +153,7 @@ describe('tests devices', function () {
 
             let clientHintData = clientHint.parse(cloneFixture.headers);
             let result = detector.detect(cloneFixture.user_agent, clientHintData);
+
             result.user_agent = cloneFixture.user_agent;
             perryTable(cloneFixture, result);
             runTest(cloneFixture, result);
@@ -167,6 +171,7 @@ describe('tests devices', function () {
             detector.discardDeviceIndexes = false;
             let clientHintData = clientHint.parse(cloneFixture.headers);
             let result = detector.detect(cloneFixture.user_agent, clientHintData);
+
             result.user_agent = cloneFixture.user_agent;
             perryTable(cloneFixture, result);
             runTest(cloneFixture, result);

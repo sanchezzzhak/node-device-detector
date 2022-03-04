@@ -39,10 +39,9 @@ const CH_UA_PREFERS_COLOR_SCHEME = 'sec-ch-prefers-color-scheme';
 */
 
 
-
-
 function getBrowserNames(headers) {
-  let value = attr(headers, CH_UA, '');
+  let value = attr(headers, CH_UA_FULL_VERSION_LIST, attr(headers, CH_UA, ''));
+
   let pattern = new RegExp('"([^"]+)"; ?v="([^"]+)"(?:, )?', 'gi');
   let items = [];
   let matches = null;
@@ -76,12 +75,13 @@ class ClientHints {
    * @return {boolean}
    */
   static isSupport(headers) {
-    return headers[CH_UA] !== void 0 || headers[CH_UA.toLowerCase()] !== void 0;
+    return headers[CH_UA] !== void 0
+        || headers[CH_UA.toLowerCase()] !== void 0
+        || headers[CH_UA_FULL_VERSION_LIST.toLowerCase()] !== void 0;
   }
 
-
   /**
-   * @param {{}} headers - key/value
+   * @param objHeaders
    */
   parse(objHeaders) {
     let headers = {};
@@ -133,7 +133,7 @@ class ClientHints {
     };
 
     result.device = {
-      code: attr(headers, CH_UA_MODEL, '')
+      model: attr(headers, CH_UA_MODEL, '')
     }
 
     result.app = attr(headers, 'x-requested-with' , '')

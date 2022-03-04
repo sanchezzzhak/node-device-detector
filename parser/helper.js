@@ -10,7 +10,7 @@ exports.matchUserAgent = function (str, userAgent) {
 
 
 exports.fuzzyCompare = function(val1, val2) {
-  return val1.replace(' ', '').toLowerCase() === val2.replace(' ', '').toLowerCase();
+  return val1.replace(/ /gi, '').toLowerCase() === val2.replace(/ /gi, '').toLowerCase();
 }
 
 exports.versionCompare = function (ver1, ver2) {

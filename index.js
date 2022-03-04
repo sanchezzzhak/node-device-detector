@@ -336,32 +336,18 @@ class DeviceDetector {
     this.vendorParserList[name] = parser;
   }
 
-
-  parseClientHints(headers) {
-    if (!headers) {
-      return {};
-    }
-    return this.getParseClientHints().parse(headers);
-  }
-
-  parseClientHintsApp(appId) {
-
-  }
-
   /**
    * parse OS
    * @param {string} userAgent
-   * @param {*} clientHintData
+   * @param clientHintsData
    * @return {ResultOs}
    */
-  parseOs(userAgent, clientHintData = {}) {
+  parseOs(userAgent, clientHintsData = {}) {
     let result = {};
-
-    console.log({clientHintData})
 
     for (let name in this.osParserList) {
       let parser = this.osParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHintData);
+      let resultMerge = parser.parse(userAgent, clientHintsData);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -383,7 +369,7 @@ class DeviceDetector {
       osData,
       clientData,
       deviceData,
-      clientHintData
+      clientHintsData
   ) {
     let osName = attr(osData, 'name', '');
     let osFamily = attr(osData, 'family', '');
@@ -638,24 +624,30 @@ class DeviceDetector {
   /**
    * detect os, client and device
    * @param {string} userAgent - string from request header['user-agent']
-   * @param {{}} clientHintData
+   * @param clientHintsData
    * @return {DetectResult}
    */
-  detect(userAgent, clientHintData = {}) {
+  detect(userAgent, clientHintsData = {}) {
 
-    let osData = this.parseOs(userAgent, clientHintData);
-    let clientData = this.parseClient(userAgent, clientHintData);
-    let deviceData = this.parseDevice(userAgent, clientHintData);
+    let osData = this.parseOs(userAgent, clientHintsData);
+    let clientData = this.parseClient(userAgent, clientHintsData);
+    let deviceData = this.parseDevice(userAgent, clientHintsData);
     let deviceDataType = this.parseDeviceType(
       userAgent,
       osData,
       clientData,
       deviceData,
-      clientHintData
+      clientHintsData
     );
-    
+
     deviceData = Object.assign(deviceData, deviceDataType);
-    
+
+    if (deviceData.model === '') {
+      if(clientHintsData.device && clientHintsData.device.model !== ''){
+        deviceData.model = clientHintsData.device.model;
+      }
+    }
+
     /** Assume all devices running iOS / Mac OS are from Apple */
     if (
       deviceData.brand === '' &&
