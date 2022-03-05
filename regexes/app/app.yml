@@ -8,9 +8,15 @@
 # Browsers
 
 'acr.browser.Hexa': 'CT=1;NM=Hexa Web Browser;ST=0;TP=browser;'
-'acr.browser.raisebrowserfull': 'CT=1;NM=Raise Fast & Safe Browser;ST=1;TP=browser;'
-'acr.tez.browse': 'CT=1;NM=Browspeed - SuperFast Browser;ST=0;TP=browser;'
-'com.Fast.BrowserUc.lite': 'CT=1;NM=Fast Browser UC 2022;ST=1;TP=browser'
+'acr.browser.raisebrowserfull': 'CT=1;NM=Raise Fast Browser;ST=1;TP=browser;'
+'acr.tez.browse': 'CT=1;NM=Browspeed Browser;ST=0;TP=browser;'
+'com.Fast.BrowserUc.lite': 'CT=1;NM=Fast Browser UC Lite;ST=1;TP=browser;'
+'acr.browser.barebones': 'CT=1;NM=Lightning Browser;ST=1;TP=browser;'
+'anar.app.darkweb': 'CT=1;NM=Dark Web Browser;ST=1;TP=browser;'
+'com.kiwibrowser.browser': 'CT=1;NM=Kiwi Browser;ST=1;TP=browser;'
+
+# UnTest Browsers
+
 'com.UCMobile.intl': 'CT=1;NM=UC Browser-Safe, Fast, Private;ST=1;TP=browser;'
 'com.aloha.browser': 'CT=1;NM=Aloha Browser;ST=1;TP=browser;'
 'com.browser.indian.fast': 'CT=1;NM=Indian Browser;ST=1;TP=browser;'
@@ -60,7 +66,7 @@
 'com.vewd.core.integration.dia': 'CT=1;NM=Internet Browser for Sony TV;ST=1;TP=browser;'
 'com.cloudmosa.puffinFree': 'CT=1;NM=Puffin Web Browser;ST=1;TP=browser;'
 'nu.tommie.inbrowser': 'CT=1;NM=InBrowser - Incognito Browsing;ST=1;TP=browser;'
-'com.kiwibrowser.browser': 'CT=1;NM=Kiwi Browser;ST=1;TP=browser;'
+
 'mobi.mgeek.TunnyBrowser': 'CT=1;NM=Dolphin Browser - Fast, Private & Adblock🐬;ST=1;TP=browser;'
 'com.opera.gx': 'CT=1;NM=Opera GX: Gaming Browser;ST=1;TP=browser;'
 'com.lechneralexander.privatebrowser': 'CT=1;NM=Private Browser;ST=1;TP=browser;'
@@ -118,7 +124,7 @@
 'com.yandex.browser.alpha': 'CT=1;NM=Yandex Browser (Alpha);ST=1;TP=browser;'
 'com.box.video.downloader': 'CT=1;NM=BOX Movie Browser;ST=1;TP=browser;'
 'com.swiftariel.browser.cherry': 'CT=1;NM=Cherry Browser;ST=1;TP=browser;'
-'acr.browser.barebones': 'CT=1;NM=Lightning Browser;ST=1;TP=browser;'
+
 'cm.browser.privatewindow.download': 'CT=1;NM=CM Browser;ST=1;TP=browser;'
 'com.phlox.tvwebbrowser': 'CT=1;NM=TV Bro;ST=1;TP=browser;'
 'com.brave.browser_nightly': 'CT=1;NM=Brave Browser (Nightly);ST=1;TP=browser;'

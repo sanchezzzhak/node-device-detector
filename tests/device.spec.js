@@ -13,7 +13,12 @@ const {
 const DeviceDetector = require('../index');
 const ClientHint = require('../client-hints');
 const fixtureFolder = getFixtureFolder();
-const excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
+const excludeFilesNames = [
+  'bots.yml',
+  'alias_devices.yml',
+  'clienthints-app.yml',
+  'clienthints.yml'
+];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
 
@@ -186,3 +191,10 @@ describe('tests devices', function () {
   });
 });
 
+describe('tests devices clienthints-app', function () {
+  createTestForFile('clienthints-app.yml')
+});
+
+describe('tests devices clienthints', function () {
+  createTestForFile('clienthints.yml')
+});

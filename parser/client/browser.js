@@ -114,6 +114,12 @@ class Browser extends ClientAbstractParser {
       name = app.name;
       type = String(app.type);
       version = '';
+
+      if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
+        engine = 'Blink'
+        engineVersion = '';
+        family = 'Chrome';
+      }
     }
 
     if (name === '') {
