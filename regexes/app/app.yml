@@ -15,13 +15,13 @@
 'anar.app.darkweb': 'CT=1;NM=Dark Web Browser;ST=1;TP=browser;'
 'com.kiwibrowser.browser': 'CT=1;NM=Kiwi Browser;ST=1;TP=browser;'
 'com.cloudmosa.puffinFree': 'CT=1;NM=Puffin Web Browser;ST=1;TP=browser;'
+'com.aloha.browser': 'CT=1;NM=Aloha Browser;ST=1;TP=browser;'
+'com.cake.browser': 'CT=1;NM=Cake Browser;ST=1;TP=browser;'
 
 # UnTest Browsers
 
 'com.UCMobile.intl': 'CT=1;NM=UC Browser-Safe, Fast, Private;ST=1;TP=browser;'
-'com.aloha.browser': 'CT=1;NM=Aloha Browser;ST=1;TP=browser;'
 'com.browser.indian.fast': 'CT=1;NM=Indian Browser;ST=1;TP=browser;'
-'com.cake.browser': 'CT=1;NM=Cake Web Browser;ST=1;TP=browser;'
 'com.iebrowser.fast': 'CT=1;NM=IE Browser Fast;ST=1;TP=browser'
 'com.inco.browser': 'CT=1;NM=Inco Private Browser;ST=1;TP=browser;'
 'com.incognit.bowser': 'CT=1;NM=Private Browser (JkSense);ST=1;TP=browser;'
