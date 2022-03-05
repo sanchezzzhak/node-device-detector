@@ -128,6 +128,52 @@ const runTest = (fixture, result) => {
   }
 }
 
+const createTestForFile = (file)  => {
+  describe('file fixture ' + file, function () {
+    let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
+
+    let total = fixtureData.length;
+    // =====
+    describe('not used indexes', () => {
+      fixtureData.forEach((fixture, pos) => {
+        normalizationFixture(fixture);
+
+        it(pos + '/' + total, function () {
+          let cloneFixture = Object.assign({}, fixture)
+          detector.discardDeviceIndexes = true;
+
+          let clientHintData = clientHint.parse(cloneFixture.headers);
+          let result = detector.detect(cloneFixture.user_agent, clientHintData);
+
+          result.user_agent = cloneFixture.user_agent;
+          perryTable(cloneFixture, result);
+          runTest(cloneFixture, result);
+
+          testsFromFixtureDeviceMobile(result);
+        });
+      });
+    });
+    // =====
+    describe('used indexes', () => {
+      fixtureData.forEach((fixture, pos) => {
+        normalizationFixture(fixture);
+        it(pos + '/' + total, function () {
+          let cloneFixture = Object.assign({}, fixture)
+          detector.discardDeviceIndexes = false;
+          let clientHintData = clientHint.parse(cloneFixture.headers);
+          let result = detector.detect(cloneFixture.user_agent, clientHintData);
+
+          result.user_agent = cloneFixture.user_agent;
+          perryTable(cloneFixture, result);
+          runTest(cloneFixture, result);
+        });
+      });
+    });
+    // =====
+  });
+}
+
+
 describe('tests devices', function () {
   this.timeout(TIMEOUT);
   detector.discardDeviceAliasCode = true;
@@ -136,49 +182,7 @@ describe('tests devices', function () {
     if (excludeFilesNames.indexOf(file) !== -1) {
       return;
     }
-    describe('file fixture ' + file, function () {
-      let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
-
-
-
-      let total = fixtureData.length;
-      // =====
-      describe('not used indexes', () => {
-        fixtureData.forEach((fixture, pos) => {
-          normalizationFixture(fixture);
-
-          it(pos + '/' + total, function () {
-            let cloneFixture = Object.assign({}, fixture)
-            detector.discardDeviceIndexes = true;
-
-            let clientHintData = clientHint.parse(cloneFixture.headers);
-            let result = detector.detect(cloneFixture.user_agent, clientHintData);
-
-            result.user_agent = cloneFixture.user_agent;
-            perryTable(cloneFixture, result);
-            runTest(cloneFixture, result);
-
-            testsFromFixtureDeviceMobile(result);
-          });
-        });
-      });
-      // =====
-      describe('used indexes', () => {
-        fixtureData.forEach((fixture, pos) => {
-          normalizationFixture(fixture);
-          it(pos + '/' + total, function () {
-            let cloneFixture = Object.assign({}, fixture)
-            detector.discardDeviceIndexes = false;
-            let clientHintData = clientHint.parse(cloneFixture.headers);
-            let result = detector.detect(cloneFixture.user_agent, clientHintData);
-
-            result.user_agent = cloneFixture.user_agent;
-            perryTable(cloneFixture, result);
-            runTest(cloneFixture, result);
-          });
-        });
-      });
-      // =====
-    });
+    createTestForFile(file)
   });
 });
+

@@ -187,7 +187,7 @@
 'com.matthewbenchimol.cydogbrowser': 'CT=1;NM=Cydog Browser;ST=1;TP=browser;'
 'org.lunarbrowser.lunar': 'CT=1;NM=Lunar Web Browser;ST=1;TP=browser;'
 'lightweight.iostheme.fastinternet.webbrowser': 'CT=1;NM=Web Browser - Star Browser;ST=1;TP=browser;'
-'com.pure.mini.browser': 'CT=1;NM=Pure Mini Web Browser;ST=1;TP=browser;'
+'com.pure.mini.browser': 'CT=1;NM=Pure Mini Browser;ST=1;TP=browser;'
 'com.kuto.browser': 'CT=1;NM=KUTO Mini Browser;ST=1;TP=browser;'
 'com.zibb.browser': 'CT=1;NM=Zibb Browser;ST=1;TP=browser;'
 'com.hollabrowser.meforce': 'CT=1;NM=Holla Web Browser (Beta);ST=1;TP=browser;'

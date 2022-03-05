@@ -110,7 +110,7 @@ class Browser extends ClientAbstractParser {
       family = data.family;
     }
 
-    if (app !== null){
+    if (app !== null && app.name !== name){
       name = app.name;
       type = String(app.type);
       version = '';
