@@ -1,5 +1,5 @@
-const ParserAbstract = require('./../abstract-parser');
-const DataPacker = require('./../../lib/data-packer');
+const ParserAbstract = require('./abstract-parser');
+const DataPacker = require('../lib/data-packer');
 
 const SHORT_KEYS = {
   NM: 'name',              // name app
@@ -9,19 +9,13 @@ const SHORT_KEYS = {
   BD: 'is_bad',            // is bad app
 };
 
-class ClientHintsApp extends ParserAbstract {
+class HashHintsAbstract extends ParserAbstract {
   constructor() {
     super();
-    this.resolutionConvertObject = false;
-    /** @type {string} fixture path to file */
-    this.fixtureFile = 'app/app.yml';
-    this.loadCollection();
-
     // load category properties
     this.collectionCategories = this.loadYMLFile(
-        'app/categories.yml'
+        'hints/categories.yml'
     );
-
   }
 
   parse(clientHints) {
@@ -54,4 +48,5 @@ class ClientHintsApp extends ParserAbstract {
 
 }
 
-module.exports = ClientHintsApp;
+
+module.exports = HashHintsAbstract;

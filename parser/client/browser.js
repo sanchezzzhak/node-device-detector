@@ -3,11 +3,11 @@ const CLIENT_TYPE = require('./../const/client-type');
 const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
-const ClientHintsApp = require('./client-hints-app');
+const BrowserHashHints = require('./browser-hash-hints');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 
-const clientHintApp = new ClientHintsApp;
+const browserHashHints = new BrowserHashHints;
 
 const compareBrandForClientHints = (brand) => {
   const CLIENTHINT_MAPPING = {
@@ -47,13 +47,13 @@ class Browser extends ClientAbstractParser {
 
   /**
    * @param {string} userAgent
-   * @param {*} clientHintsData
+   * @param {*} clientHints
    * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
    */
-  parse(userAgent, clientHintsData) {
+  parse(userAgent, clientHints) {
 
-    let app = this.parseFromClientHintsApp(clientHintsData);
-    let hint = this.parseFromClientHints(clientHintsData);
+    let hash = this.parseFromHashHintsApp(clientHints);
+    let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
 
     let type = CLIENT_TYPE.BROWSER;
@@ -110,9 +110,9 @@ class Browser extends ClientAbstractParser {
       family = data.family;
     }
 
-    if (app !== null && app.name !== name){
-      name = app.name;
-      type = String(app.type);
+    if (hash !== null && hash.name !== name && hash.type === CLIENT_TYPE.BROWSER){
+      name = hash.name;
+      type = String(hash.type);
       version = '';
 
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
@@ -137,8 +137,8 @@ class Browser extends ClientAbstractParser {
     }
   }
 
-  parseFromClientHintsApp(clientHints) {
-    return clientHintApp.parse(clientHints);
+  parseFromHashHintsApp(clientHints) {
+    return browserHashHints.parse(clientHints);
   }
 
   parseFromClientHints(clientHints) {

@@ -17,16 +17,16 @@
 'com.cloudmosa.puffinFree': 'CT=1;NM=Puffin Web Browser;ST=1;TP=browser;'
 'com.aloha.browser': 'CT=1;NM=Aloha Browser;ST=1;TP=browser;'
 'com.cake.browser': 'CT=1;NM=Cake Browser;ST=1;TP=browser;'
+'com.UCMobile.intl': 'CT=1;NM=UC Browser;ST=1;TP=browser;'
+'com.iebrowser.fast': 'CT=1;NM=IE Browser Fast;ST=1;TP=browser;'
+'com.internet.browser.secure': 'CT=1;NM=Internet Browser Secure;ST=1;TP=browser;'
 
 # UnTest Browsers
-
-'com.UCMobile.intl': 'CT=1;NM=UC Browser-Safe, Fast, Private;ST=1;TP=browser;'
 'com.browser.indian.fast': 'CT=1;NM=Indian Browser;ST=1;TP=browser;'
-'com.iebrowser.fast': 'CT=1;NM=IE Browser Fast;ST=1;TP=browser'
 'com.inco.browser': 'CT=1;NM=Inco Private Browser;ST=1;TP=browser;'
 'com.incognit.bowser': 'CT=1;NM=Private Browser (JkSense);ST=1;TP=browser;'
 'com.insta.browser': 'CT=1;NM=Insta Browser;ST=0;TP=browser;'
-'com.internet.browser.secure': 'CT=1;NM=Internet Browser;ST=1;TP=browser'
+
 'com.mi.globalbrowser.mini': 'CT=1;NM=Mint Browser;ST=1;TP=browser;'
 'com.microsoft.emmx.beta': 'CT=1;NM=Microsoft Edge Beta;ST=1;TP=browser;'
 'com.mx.browser': 'CT=1;NM=Maxthon Browser;ST=1;TP=browser;'
@@ -381,34 +381,3 @@
 'com.bharat.indianbrowser': 'CT=1;NM=Bharat Browser;ST=1;TP=browser;'
 'com.deepakkumarnaik.tophan': 'CT=1;NM=Tophan Browser;ST=1;TP=browser;'
 'com.imbo.web': 'CT=1;NM=Web Browser Free;ST=1;TP=browser;'
-
-
-# Vpn Browsers
-
-'acr.browser.linxy': 'CT=1;NM=Vegas Browser;ST=1;TP=browser;'
-'org.torproject.android': 'CT=1;NM=Orbot;ST=1;TP=browser;'
-'com.nesc.adblockplusvpn': 'CT=1;NM=Proxy Surf - Buka Blokir Web Tanpa VPN;ST=1;TP=browser;'
-'com.nesc.proxybrowser': 'CT=1;NM=Proxy Browser - Buka Blokir Situs Web;ST=1;TP=browser;'
-'com.nordvpn.android': 'CT=1;NM=Nord VPN;ST=0;TP=app;'
-'com.pandavpn.androidproxy': 'CT=1;NM=Panda VPN Pro;ST=0;TP=app;'
-
-# Apps
-
-'org.telegram.messenger': 'CT=9;NM=Telegram;ST=1;TP=app'
-'com.snapchat.android': 'CT=9;NM=Snapchat;ST=1;TP=app'
-'org.thunderdog.challegram': 'CT=9;NM=Telegram X;ST=1;TP=app'
-'com.yandex.yamb': 'CT=9;NM=Yandex.Messenger;ST=0;TP=app'
-'com.tencent.mm': 'CT=9;NM=WeChat;ST=1;TP=app'
-'org.thoughtcrime.securesms': 'CT=9;NM=Signal;ST=1;TP=app'
-'com.kakao.talk': 'CT=9;NM=KakaoTalk;ST=1;TP=app'
-'net.tandem': 'CT=9;NM=Tandem;ST=1;TP=app'
-'com.panda.likerro': 'CT=10;NM=Likerro;ST=1;TP=app'
-'com.pandrama.app': 'CT=11;NM=Pandrama Dramas en español;ST=0;TP=app'
-'com.sgiggle.production': 'CT=9;NM=Tango-Live Stream & Video Chat;ST=0;TP=app'
-'info.sunista.app': 'CT=8;NM=Sanista - Persian Instagram;ST=0;TP=app'
-'com.instapro.app': 'CT=8;NM=InstaPro;ST=0;TP=app'
-'net.samay.grammar': 'CT=5;English Grammar Quiz;ST=0;TP=app'
-'com.mybrowser.dlvdappfree': 'CT=1;Download Video;ST=1;TP=app'
-'com.mybrowserapp.downloadvideobrowserfree': 'CT=1;Download Video Fast;ST=1;TP=app'
-'com.amaan.phonetochrome': 'CT=1;NM=Phone to Chrome;ST=1;TP=app;'
-'ua.kyiv.heneraliuk.crosupdates': 'CT=1;NM=CrOS Updates News;ST=1;TP=app;'

@@ -1,6 +1,9 @@
 const ClientAbstractParser = require('./../client-abstract-parser');
+const AppHashHints = require('./app-hash-hints');
 
 const CLIENT_TYPE = require('./../const/client-type');
+
+const appHashHints = new AppHashHints;
 
 class MobileApp extends ClientAbstractParser {
   constructor() {
@@ -9,20 +12,43 @@ class MobileApp extends ClientAbstractParser {
     this.loadCollection();
   }
 
+  parseFromHashHintsApp(clientHints) {
+    return appHashHints.parse(clientHints);
+  }
+
   /**
    *
    * @param userAgent
-   * @returns {({name: (string|*), type: string, version: string} & {type: string})|null}
+   * @param clientHints
+   * @returns {({name: string, type: string, version: string})|null}
    */
-  parse(userAgent, clientHintsData) {
-    let result = super.parse(userAgent, clientHintsData);
+  parse(userAgent, clientHints){
+    let hash  = this.parseFromHashHintsApp(clientHints);
+    let result = super.parse(userAgent, clientHints);
+
+    let name = '';
+    let type =  CLIENT_TYPE.MOBILE_APP
+    let version = '';
+
     if (result) {
-      result = Object.assign(result, {
-        type: CLIENT_TYPE.MOBILE_APP,
-      });
-      return result;
+      name = result.name;
+      version = result.version;
     }
-    return null;
+
+    if (hash && name !== hash.name) {
+      name = hash.name;
+      version = '';
+    }
+
+    if(name === '') {
+      return null;
+    }
+
+    return {
+      name: String(name),
+      type: String(type),
+      version: String(version)
+    };
   }
 }
 
