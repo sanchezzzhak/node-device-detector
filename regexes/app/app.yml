@@ -14,6 +14,7 @@
 'acr.browser.barebones': 'CT=1;NM=Lightning Browser;ST=1;TP=browser;'
 'anar.app.darkweb': 'CT=1;NM=Dark Web Browser;ST=1;TP=browser;'
 'com.kiwibrowser.browser': 'CT=1;NM=Kiwi Browser;ST=1;TP=browser;'
+'com.cloudmosa.puffinFree': 'CT=1;NM=Puffin Web Browser;ST=1;TP=browser;'
 
 # UnTest Browsers
 
@@ -64,7 +65,7 @@
 'com.opera.mini.native': 'CT=1;NM=Opera Mini;ST=1;TP=browser;'
 'com.transsion.phoenix': 'CT=1;NM=Phoenix Browser;ST=1;TP=browser;'
 'com.vewd.core.integration.dia': 'CT=1;NM=Internet Browser for Sony TV;ST=1;TP=browser;'
-'com.cloudmosa.puffinFree': 'CT=1;NM=Puffin Web Browser;ST=1;TP=browser;'
+
 'nu.tommie.inbrowser': 'CT=1;NM=InBrowser - Incognito Browsing;ST=1;TP=browser;'
 
 'mobi.mgeek.TunnyBrowser': 'CT=1;NM=Dolphin Browser - Fast, Private & Adblock🐬;ST=1;TP=browser;'
