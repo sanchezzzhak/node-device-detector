@@ -3,9 +3,11 @@ const CLIENT_TYPE = require('./../const/client-type');
 const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
+const ClientHintsApp = require('./client-hints-app');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 
+const clientHintApp = new ClientHintsApp;
 
 const compareBrandForClientHints = (brand) => {
   const CLIENTHINT_MAPPING = {
@@ -50,9 +52,11 @@ class Browser extends ClientAbstractParser {
    */
   parse(userAgent, clientHintsData) {
 
+    let app = this.parseFromClientHintsApp(clientHintsData);
     let hint = this.parseFromClientHints(clientHintsData);
     let data = this.parseFromUserAgent(userAgent);
 
+    let type = CLIENT_TYPE.BROWSER;
     let name = '';
     let version = '';
     let engine = '';
@@ -106,12 +110,18 @@ class Browser extends ClientAbstractParser {
       family = data.family;
     }
 
+    if (app !== null){
+      name = app.name;
+      type = String(app.type);
+      version = '';
+    }
+
     if (name === '') {
       return null;
     }
 
     return {
-      type: CLIENT_TYPE.BROWSER,
+      type: String(type),
       name: String(name),
       short_name: String(short),
       version: String(version),
@@ -121,13 +131,17 @@ class Browser extends ClientAbstractParser {
     }
   }
 
-  parseFromClientHints(clientHintsData) {
+  parseFromClientHintsApp(clientHints) {
+    return clientHintApp.parse(clientHints);
+  }
+
+  parseFromClientHints(clientHints) {
     let name = '';
     let short = '';
     let version = '';
 
-    if (clientHintsData && clientHintsData.client) {
-      let brands = ArrayPath.get(clientHintsData, 'client.brands', []);
+    if (clientHints && clientHints.client) {
+      let brands = ArrayPath.get(clientHints, 'client.brands', []);
 
       for (let brandItem of brands) {
         if (brandItem.brand === 'Chromium') {
@@ -149,8 +163,8 @@ class Browser extends ClientAbstractParser {
         }
       }
 
-      if (clientHintsData.client.version) {
-        version = String(clientHintsData.client.version)
+      if (clientHints.client.version) {
+        version = String(clientHints.client.version)
       }
     }
 

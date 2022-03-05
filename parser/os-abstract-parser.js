@@ -1,5 +1,4 @@
 const ParserAbstract = require('./abstract-parser');
-const ArrayPath = require("../lib/array-path");
 const helper = require("./helper");
 
 OS_SYSTEMS = require('./os/os_systems');
@@ -10,10 +9,10 @@ const compareOsForClientHints = (brand) => {
     'GNU/Linux': ['Linux'],
     'Mac': ['MacOS'],
   };
-  for(let brandName in CLIENTHINT_MAPPING){
-    for(let mapBrand of CLIENTHINT_MAPPING[brandName]){
+  for(let mapName in CLIENTHINT_MAPPING){
+    for(let mapBrand of CLIENTHINT_MAPPING[mapName]){
       if (brand.toLowerCase() === mapBrand.toLowerCase()) {
-        return brandName;
+        return mapName;
       }
     }
   }
@@ -78,7 +77,6 @@ class OsAbstractParser extends ParserAbstract {
     }
     return {name, short}
   }
-
 
   parseFromClientHints(clientHintsData) {
     if (!clientHintsData) {
@@ -160,11 +158,11 @@ class OsAbstractParser extends ParserAbstract {
   /**
    *
    * @param {string} userAgent
-   * @param clientHintsData
+   * @param clientHints
    * @returns {null|{name: (string|*), short_name: string, family: string, version: string, platform: string}}
    */
-  parse(userAgent, clientHintsData) {
-    let hint = this.parseFromClientHints(clientHintsData);
+  parse(userAgent, clientHints) {
+    let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
 
     if (hint && hint.name) {
@@ -177,6 +175,18 @@ class OsAbstractParser extends ParserAbstract {
 
       if (version === '' && data.name === hint.name) {
         version = data.version;
+      }
+
+      if (hint.name === 'Windows' && version !== '') {
+        let majorVersion = ~~version.split('.', 1)[0];
+        if (majorVersion === 0) {
+          version = "";
+        }
+        if (majorVersion > 0 && majorVersion < 11) {
+          version = "10";
+        } else if (majorVersion > 10) {
+          version = "11";
+        }
       }
 
       return {

@@ -339,15 +339,14 @@ class DeviceDetector {
   /**
    * parse OS
    * @param {string} userAgent
-   * @param clientHintsData
+   * @param clientHints
    * @return {ResultOs}
    */
-  parseOs(userAgent, clientHintsData = {}) {
+  parseOs(userAgent, clientHints = {}) {
     let result = {};
-
     for (let name in this.osParserList) {
       let parser = this.osParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHintsData);
+      let resultMerge = parser.parse(userAgent, clientHints);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -362,6 +361,7 @@ class DeviceDetector {
    * @param {ResultOs} osData
    * @param {ResultClient} clientData
    * @param {ResultDevice} deviceData
+   * @param clientHints
    * @return {DeviceType}
    */
   parseDeviceType(
@@ -369,7 +369,7 @@ class DeviceDetector {
       osData,
       clientData,
       deviceData,
-      clientHintsData
+      clientHints
   ) {
     let osName = attr(osData, 'name', '');
     let osFamily = attr(osData, 'family', '');
@@ -523,9 +523,10 @@ class DeviceDetector {
   /**
    * parse device
    * @param {string} userAgent
+   * @param clientHints
    * @return {ResultDevice}
    */
-  parseDevice(userAgent, clientHintData) {
+  parseDevice(userAgent, clientHints) {
     let brandIndexes = [];
     let deviceCode = '';
     
@@ -537,7 +538,8 @@ class DeviceDetector {
       let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
     }
-    
+
+
     let result = {
       id: '',
       type: '',
@@ -565,7 +567,14 @@ class DeviceDetector {
     if (this.deviceAliasCode) {
       result.code = deviceCode;
     }
-    
+
+    // client hints
+    if (result.model === '') {
+      if(clientHints.device && clientHints.device.model !== ''){
+        result.model = clientHints.device.model;
+      }
+    }
+
     return result;
   }
   
@@ -605,14 +614,15 @@ class DeviceDetector {
   /**
    * parse client
    * @param {string} userAgent
+   * @param clientHints
    * @return {ResultClient|{}}
    */
-  parseClient(userAgent, clientHintData) {
+  parseClient(userAgent, clientHints) {
 
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHintData);
+      let resultMerge = parser.parse(userAgent, clientHints);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -624,29 +634,23 @@ class DeviceDetector {
   /**
    * detect os, client and device
    * @param {string} userAgent - string from request header['user-agent']
-   * @param clientHintsData
+   * @param clientHints
    * @return {DetectResult}
    */
-  detect(userAgent, clientHintsData = {}) {
+  detect(userAgent, clientHints = {}) {
 
-    let osData = this.parseOs(userAgent, clientHintsData);
-    let clientData = this.parseClient(userAgent, clientHintsData);
-    let deviceData = this.parseDevice(userAgent, clientHintsData);
+    let osData = this.parseOs(userAgent, clientHints);
+    let clientData = this.parseClient(userAgent, clientHints);
+    let deviceData = this.parseDevice(userAgent, clientHints);
     let deviceDataType = this.parseDeviceType(
       userAgent,
       osData,
       clientData,
       deviceData,
-      clientHintsData
+      clientHints
     );
 
     deviceData = Object.assign(deviceData, deviceDataType);
-
-    if (deviceData.model === '') {
-      if(clientHintsData.device && clientHintsData.device.model !== ''){
-        deviceData.model = clientHintsData.device.model;
-      }
-    }
 
     /** Assume all devices running iOS / Mac OS are from Apple */
     if (

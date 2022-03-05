@@ -89,12 +89,7 @@ class ClientHints {
       headers[key.toLowerCase()] = objHeaders[key];
     }
 
-    if (!ClientHints.isSupport(headers)) {
-      return {};
-    }
-
     let result = {};
-
     result.upgradeHeader = headers[CH_UA_FULL_VERSION] !== void 0;
 
     result.isMobile = attr(headers, CH_UA_MOBILE, '') === '?1';
@@ -108,22 +103,8 @@ class ClientHints {
       name: attr(headers, CH_UA_PLATFORM, ''),
       platform: platform.toLowerCase(),
       bitness: bitness,
+      version: attr(headers, CH_UA_PLATFORM_VERSION, '')
     };
-    let osVersion = attr(headers, CH_UA_PLATFORM_VERSION, '');
-    if (result.os.name === 'Windows' && osVersion !== '') {
-      let majorOsVersion = ~~osVersion.split('.')[0];
-      if (majorOsVersion === 0) {
-        osVersion = "";  // 7 | 8 | 8.1
-      }
-      if (majorOsVersion >= 0 && majorOsVersion < 11) {
-        osVersion = "10";
-      } else if (majorOsVersion > 11 && majorOsVersion < 16) {
-        osVersion = "11";
-      }
-    }
-    result.os.version = osVersion;
-
-
 
     // client
     let clientData = getBrowserNames(headers);
