@@ -110,9 +110,8 @@ class Browser extends ClientAbstractParser {
       family = data.family;
     }
 
-    if (hash !== null && hash.name !== name && hash.type === CLIENT_TYPE.BROWSER){
+    if (hash !== null && hash.name !== name){
       name = hash.name;
-      type = String(hash.type);
       version = '';
 
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {

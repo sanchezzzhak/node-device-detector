@@ -168,3 +168,17 @@ exports.loadYMLFile = function (file) {
 exports.hasFile = function (file) {
   return fs.existsSync(file);
 };
+
+
+exports.trimChars = function (str, chars) {
+  let start = 0,
+      end = str.length;
+
+  while (start < end && str[start] === chars)
+    ++start;
+
+  while (end > start && str[end - 1] === chars)
+    --end;
+
+  return (start > 0 || end < str.length) ? str.substring(start, end) : str;
+}

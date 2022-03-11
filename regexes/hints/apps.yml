@@ -1,36 +1,29 @@
-# NM = name app
-# CT = category id
-# ST = store in play market
-# TP = type app
-
-# BD = bad app: scram or patched app
-
 # Apps
 
-'org.telegram.messenger': 'CT=9;NM=Telegram;ST=1;TP=app'
-'com.snapchat.android': 'CT=9;NM=Snapchat;ST=1;TP=app'
+'org.telegram.messenger': 'Telegram'
+'com.snapchat.android': 'Snapchat'
 
 # UnTest Apps
-'org.thunderdog.challegram': 'CT=9;NM=Telegram X;ST=1;TP=app'
-'com.yandex.yamb': 'CT=9;NM=Yandex.Messenger;ST=0;TP=app'
-'com.tencent.mm': 'CT=9;NM=WeChat;ST=1;TP=app'
-'org.thoughtcrime.securesms': 'CT=9;NM=Signal;ST=1;TP=app'
-'com.kakao.talk': 'CT=9;NM=KakaoTalk;ST=1;TP=app'
-'net.tandem': 'CT=9;NM=Tandem;ST=1;TP=app'
-'com.panda.likerro': 'CT=10;NM=Likerro;ST=1;TP=app'
-'com.pandrama.app': 'CT=11;NM=Pandrama Dramas en español;ST=0;TP=app'
-'com.sgiggle.production': 'CT=9;NM=Tango-Live Stream & Video Chat;ST=0;TP=app'
-'info.sunista.app': 'CT=8;NM=Sanista - Persian Instagram;ST=0;TP=app'
-'com.instapro.app': 'CT=8;NM=InstaPro;ST=0;TP=app'
-'net.samay.grammar': 'CT=5;English Grammar Quiz;ST=0;TP=app'
-'com.mybrowser.dlvdappfree': 'CT=1;Download Video;ST=1;TP=app'
-'com.mybrowserapp.downloadvideobrowserfree': 'CT=1;Download Video Fast;ST=1;TP=app'
-'com.amaan.phonetochrome': 'CT=1;NM=Phone to Chrome;ST=1;TP=app;'
-'ua.kyiv.heneraliuk.crosupdates': 'CT=1;NM=CrOS Updates News;ST=1;TP=app;'
+'org.thunderdog.challegram': 'Telegram X'
+'com.yandex.yamb': 'Yandex.Messenger'
+'com.tencent.mm': 'WeChat'
+'org.thoughtcrime.securesms': 'Signal'
+'com.kakao.talk': 'KakaoTalk'
+'net.tandem': 'Tandem'
+'com.panda.likerro': 'Likerro'
+'com.pandrama.app': 'Pandrama Dramas en español'
+'com.sgiggle.production': 'Tango-Live Stream & Video Chat'
+'info.sunista.app': 'Sanista - Persian Instagram'
+'com.instapro.app': 'InstaPro'
+'net.samay.grammar': 'English Grammar Quiz'
+'com.mybrowser.dlvdappfree': 'Download Video'
+'com.mybrowserapp.downloadvideobrowserfree': 'Download Video Fast'
+'com.amaan.phonetochrome': 'Phone to Chrome'
+'ua.kyiv.heneraliuk.crosupdates': 'CrOS Updates News'
 
-'acr.browser.linxy': 'CT=1;NM=Vegas Browser;ST=1;TP=browser;'
-'org.torproject.android': 'CT=1;NM=Orbot;ST=1;TP=browser;'
-'com.nesc.adblockplusvpn': 'CT=1;NM=Proxy Surf - Buka Blokir Web Tanpa VPN;ST=1;TP=browser;'
-'com.nesc.proxybrowser': 'CT=1;NM=Proxy Browser - Buka Blokir Situs Web;ST=1;TP=browser;'
-'com.nordvpn.android': 'CT=1;NM=Nord VPN;ST=0;TP=app;'
-'com.pandavpn.androidproxy': 'CT=1;NM=Panda VPN Pro;ST=0;TP=app;'
+'acr.browser.linxy': 'Vegas Browser'
+'org.torproject.android': 'Orbot'
+'com.nesc.adblockplusvpn': 'Proxy Surf - Buka Blokir Web Tanpa VPN'
+'com.nesc.proxybrowser': 'Proxy Browser - Buka Blokir Situs Web'
+'com.nordvpn.android': 'Nord VPNST=0'
+'com.pandavpn.androidproxy': 'Panda VPN Pro'

@@ -1,4 +1,5 @@
 const header = require('./parser/helper');
+const helper = require("./parser/helper");
 const attr = header.getPropertyValue;
 
 const CH_UA_FULL_VERSION = 'sec-ch-ua-full-version';
@@ -96,14 +97,16 @@ class ClientHints {
     result.prefers = {
       colorScheme: attr(headers, CH_UA_PREFERS_COLOR_SCHEME, '')
     }
+    let osName = attr(headers, CH_UA_PLATFORM, '');
     let platform = attr(headers, CH_UA_ARCH, '');
     let bitness = attr(headers, CH_BITNESS, '');
+    let osVersion = attr(headers, CH_UA_PLATFORM_VERSION, '');
     // os
     result.os = {
-      name: attr(headers, CH_UA_PLATFORM, ''),
+      name: helper.trimChars(osName, '"'),
       platform: platform.toLowerCase(),
-      bitness: bitness,
-      version: attr(headers, CH_UA_PLATFORM_VERSION, '')
+      bitness: helper.trimChars(bitness, '"'),
+      version: helper.trimChars(osVersion, '"')
     };
 
     // client
