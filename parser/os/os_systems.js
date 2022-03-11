@@ -14,6 +14,7 @@ module.exports = {
   'BMP': 'Brew',
   'CAI': 'Caixa Mágica',
   'CES': 'CentOS',
+  'CLR': 'ClearOS Mobile',
   'COS': 'Chrome OS',
   'CYN': 'CyanogenMod',
   'DEB': 'Debian',
