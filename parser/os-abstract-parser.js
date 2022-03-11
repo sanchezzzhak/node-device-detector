@@ -1,8 +1,9 @@
 const ParserAbstract = require('./abstract-parser');
 const helper = require("./helper");
 
-OS_SYSTEMS = require('./os/os_systems');
-OS_FAMILIES = require('./os/os_families');
+const OS_SYSTEMS = require('./os/os_systems');
+const OS_FAMILIES = require('./os/os_families');
+const ANDROID_APP_LIST = ['com.hisense.odinbrowser']
 
 const compareOsForClientHints = (brand) => {
   const CLIENTHINT_MAPPING = {
@@ -165,19 +166,24 @@ class OsAbstractParser extends ParserAbstract {
     let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
 
+    let name= '', version= '', platform = '', short = '';
+
+
     if (hint && hint.name) {
-      let version = hint.version;
-      let platform = hint.platform;
+      name = hint.name;
+      version = hint.version;
+      platform = hint.platform;
+      short = hint.short_name;
 
       if (platform === '' && data) {
         platform = data.platform;
       }
 
-      if (version === '' && data.name === hint.name) {
+      if (version === '' && data.name === name) {
         version = data.version;
       }
 
-      if (hint.name === 'Windows' && version !== '') {
+      if (name === 'Windows' && version !== '') {
         let majorVersion = ~~version.split('.', 1)[0];
         if (majorVersion === 0) {
           version = "";
@@ -188,17 +194,24 @@ class OsAbstractParser extends ParserAbstract {
           version = "11";
         }
       }
-
-      return {
-        name: hint.name,
-        version: version,
-        short_name: hint.short_name,
-        platform: platform,
-        family: this.parseOsFamily(hint.short_name)
-      };
     }
 
-    return data;
+    if (clientHints && clientHints.app && ANDROID_APP_LIST.indexOf(clientHints.app) !== -1 && data.name !== 'Android'){
+      name = 'Android';
+      short = 'ADR';
+    }
+
+    if (name === '') {
+      return data;
+    }
+
+    return {
+      name: String(name),
+      version: String(version),
+      short_name: String(short),
+      platform: String(platform),
+      family: this.parseOsFamily(short)
+    };
   }
 
   /**
