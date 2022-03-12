@@ -19,7 +19,7 @@ module.exports = {
     'VG', 'VI', 'VM', 'WP', 'WH', 'XV', 'YJ', 'YN', 'FH',
     'B1', 'BO', 'HB', 'PC', 'LA', 'LT', 'PD', 'HR', 'HU',
     'HP', 'IO', 'TP', 'CJ', 'HQ', 'HI', 'NA', 'BW', 'YO',
-    'DC',
+    'DC', 'G8',
   ],
   'Firefox': [
     'AX', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
@@ -33,7 +33,7 @@ module.exports = {
   'NetFront': ['NF'],
   'NetSurf': ['NE'],
   'Nokia Browser': ['DO', 'NB', 'NO', 'NV'],
-  'Opera': ['O1', 'OG', 'OH', 'OI', 'OM', 'ON', 'OO', 'OP', 'OX'],
+  'Opera': ['O1', 'OG', 'OH', 'OI', 'OM', 'ON', 'OO', 'OP', 'OX', 'Y1'],
   'Safari': ['MF', 'S7', 'SF', 'SO', 'PV'],
   'Sailfish Browser': ['SA'],
 };

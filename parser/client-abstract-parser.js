@@ -7,9 +7,10 @@ class ClientAbstractParser extends ParserAbstract {
 
   /**
    * @param {string} userAgent
+   * @param {*} clientHintData
    * @returns {{name: (string|*), type: string, version: string}|null}
    */
-  parse(userAgent) {
+  parse(userAgent, clientHintData) {
     for (let i = 0, l = this.collection.length; i < l; i++) {
       let item = this.collection[i];
       let regex = this.getBaseRegExp(item.regex);

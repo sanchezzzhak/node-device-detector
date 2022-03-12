@@ -8,6 +8,11 @@ exports.matchUserAgent = function (str, userAgent) {
   return match.exec(userAgent);
 };
 
+
+exports.fuzzyCompare = function(val1, val2) {
+  return val1.replace(/ /gi, '').toLowerCase() === val2.replace(/ /gi, '').toLowerCase();
+}
+
 exports.versionCompare = function (ver1, ver2) {
   if (ver1 === ver2) {
     return 0;
@@ -16,6 +21,9 @@ exports.versionCompare = function (ver1, ver2) {
   let right = ver2.split('.');
   let len = Math.min(left.length, right.length);
   for (let i = 0; i < len; i++) {
+    if (left[i] === right[i]) {
+      continue;
+    }
     if (parseInt(left[i]) > parseInt(right[i])) {
       return 1;
     }
@@ -160,3 +168,17 @@ exports.loadYMLFile = function (file) {
 exports.hasFile = function (file) {
   return fs.existsSync(file);
 };
+
+
+exports.trimChars = function (str, chars) {
+  let start = 0,
+      end = str.length;
+
+  while (start < end && str[start] === chars)
+    ++start;
+
+  while (end > start && str[end - 1] === chars)
+    --end;
+
+  return (start > 0 || end < str.length) ? str.substring(start, end) : str;
+}
