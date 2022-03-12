@@ -23,7 +23,7 @@ const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
 
 const detector = new DeviceDetector();
-const clientHint = new ClientHint();
+const clientHints = new ClientHint();
 
 // set result regex in detect model
 detector.getParseDevice('Mobile').resultModelRegex = true;
@@ -142,12 +142,14 @@ const createTestForFile = (file)  => {
     describe('not used indexes', () => {
       fixtureData.forEach((fixture, pos) => {
         normalizationFixture(fixture);
-
         it(pos + '/' + total, function () {
-          let cloneFixture = Object.assign({}, fixture)
-          detector.discardDeviceIndexes = true;
+          if (fixture["bot"] !== void 0) {
+            return this.skip();
+          }
 
-          let clientHintData = clientHint.parse(cloneFixture.headers);
+          let cloneFixture = Object.assign({}, fixture)
+          detector.deviceIndexes = false;
+          let clientHintData = clientHints.parse(cloneFixture.headers);
           let result = detector.detect(cloneFixture.user_agent, clientHintData);
 
           result.user_agent = cloneFixture.user_agent;
@@ -163,9 +165,13 @@ const createTestForFile = (file)  => {
       fixtureData.forEach((fixture, pos) => {
         normalizationFixture(fixture);
         it(pos + '/' + total, function () {
+          if (fixture["bot"] !== void 0) {
+            return this.skip();
+          }
+
           let cloneFixture = Object.assign({}, fixture)
-          detector.discardDeviceIndexes = false;
-          let clientHintData = clientHint.parse(cloneFixture.headers);
+          detector.deviceIndexes = true;
+          let clientHintData = clientHints.parse(cloneFixture.headers);
           let result = detector.detect(cloneFixture.user_agent, clientHintData);
 
           result.user_agent = cloneFixture.user_agent;

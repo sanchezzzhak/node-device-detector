@@ -13,8 +13,10 @@ const {
 } = require('./functions');
 
 const DeviceDetector = require('../index');
+const ClientHints = require('../client-hints');
 const TIMEOUT = 6000;
 const detector = new DeviceDetector();
+const clientHint = new ClientHints;
 let fixtureFolder = getFixtureFolder();
 let ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
 
@@ -31,7 +33,9 @@ describe('tests clients', function () {
       //fixtureData= [  fixtureData[208] ];
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function () {
-          let result = detector.detect(fixture.user_agent);
+
+          let clientHintData = clientHint.parse(fixture.headers || {});
+          let result = detector.detect(fixture.user_agent, clientHintData);
           let messageError = 'fixture data\n' + perryJSON(fixture);
           perryTable(fixture, result);
 

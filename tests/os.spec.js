@@ -7,11 +7,13 @@ const {
   YAMLLoad,
 } = require('./functions');
 
-const DeviceDetector = require('../index');
+const OsDetector = require('../parser/os-abstract-parser');
+const ClientHints = require('../client-hints');
 
 
 const TIMEOUT = 6000;
-const detector = new DeviceDetector();
+const detector = new OsDetector();
+const clientHints = new ClientHints();
 let fixtureFolder = getFixtureFolder();
 
 
@@ -36,33 +38,37 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
   }
 }
 
+const runTest= (fixture, result) => {
+
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+
+  if (isObjNotEmpty(fixture.os.name)) {
+    expect(fixture.os.name, messageError).to.equal(result.name);
+  }
+  if (isObjNotEmpty(fixture.os.short_name)) {
+    expect(fixture.os.short_name, messageError).to.equal(result.short_name);
+  }
+  if (isObjNotEmpty(fixture.os.platform)) {
+    expect(fixture.os.platform, messageError).to.equal(result.platform);
+  }
+  if (isObjNotEmpty(fixture.os.version)) {
+    testVersionAndSkip.call(
+      this,
+      result.version,
+      fixture.os.version,
+      messageError
+    );
+  }
+};
 
 describe('tests oss', function () {
   let fixtureData = YAMLLoad(fixtureFolder + 'oss.yml');
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-
-      let result = detector.detect(fixture.user_agent);
-      let messageError = 'fixture data\n' + perryJSON(fixture);
-      // test os data
-      if (isObjNotEmpty(fixture.os.name)) {
-        expect(fixture.os.name, messageError).to.equal(result.os.name);
-      }
-      if (isObjNotEmpty(fixture.os.short_name)) {
-        expect(fixture.os.short_name, messageError).to.equal(result.os.short_name);
-      }
-      if (isObjNotEmpty(fixture.os.platform)) {
-        expect(fixture.os.platform, messageError).to.equal(result.os.platform);
-      }
-      if (isObjNotEmpty(fixture.os.version)) {
-        testVersionAndSkip.call(
-            this,
-            result.os.version,
-            fixture.os.version,
-            messageError
-        );
-      }
+      let clientHintData  = clientHints.parse(fixture.headers || {})
+      let result = detector.parse(fixture.user_agent, clientHintData);
+      runTest(fixture, result)
     });
   });
 });

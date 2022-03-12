@@ -99,10 +99,22 @@ class OsAbstractParser extends ParserAbstract {
       for (let osShort in OS_SYSTEMS) {
         let osName = OS_SYSTEMS[osShort];
         if (helper.fuzzyCompare(hintName, osName)) {
-          name = osName;
-          short = osShort;
+          name = String(osName);
+          short = String(osShort);
           break;
         }
+      }
+    }
+
+    if (name === 'Windows' && version !== '') {
+      let majorVersion = ~~version.split('.', 1)[0];
+      if (majorVersion === 0) {
+        version = "";
+      }
+      if (majorVersion > 0 && majorVersion < 11) {
+        version = "10";
+      } else if (majorVersion > 10) {
+        version = "11";
       }
     }
 
@@ -166,8 +178,7 @@ class OsAbstractParser extends ParserAbstract {
     let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
 
-    let name= '', version= '', platform = '', short = '';
-
+    let name= '', version= '', platform = '', short = '', family = '';
 
     if (hint && hint.name) {
       name = hint.name;
@@ -179,26 +190,38 @@ class OsAbstractParser extends ParserAbstract {
         platform = data.platform;
       }
 
-      if (version === '' && data.name === name) {
+      // use version from user agent if non was provided in client hints, but os family from useragent matches
+      if (version === '' && data && this.parseOsFamily(short) === data.family) {
         version = data.version;
       }
 
-      if (name === 'Windows' && version !== '') {
-        let majorVersion = ~~version.split('.', 1)[0];
-        if (majorVersion === 0) {
-          version = "";
-        }
-        if (majorVersion > 0 && majorVersion < 11) {
-          version = "10";
-        } else if (majorVersion > 10) {
-          version = "11";
-        }
+      //If the OS name detected from client hints matches the OS family from user agent
+      // but the os name is another, we use the one from user agent, as it might be more detailed
+      if (data && data.family === name && data.name !== name) {
+        name = data.name;
       }
+
+      if ('GNU/Linux' === name
+        && data
+        && 'Chrome OS' === data.name
+        && version === data.version
+      ) {
+        name  = data.name;
+        short = data.short_name;
+      }
+
+      family = this.parseOsFamily(short);
     }
 
-    if (clientHints && clientHints.app && ANDROID_APP_LIST.indexOf(clientHints.app) !== -1 && data.name !== 'Android'){
+    if (clientHints
+      && data
+      && clientHints.app
+      && ANDROID_APP_LIST.indexOf(clientHints.app) !== -1
+      && data.name !== 'Android'
+    ){
       name = 'Android';
       short = 'ADR';
+      family = 'Android';
     }
 
     if (name === '') {
@@ -210,7 +233,7 @@ class OsAbstractParser extends ParserAbstract {
       version: String(version),
       short_name: String(short),
       platform: String(platform),
-      family: this.parseOsFamily(short)
+      family: String(family),
     };
   }
 

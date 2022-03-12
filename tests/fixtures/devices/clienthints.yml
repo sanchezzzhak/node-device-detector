@@ -565,3 +565,147 @@
     model: ""
   os_family: Windows
   browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 PTST/220216.200657
+  headers:
+    Sec-CH-UA-Platform: "Unknown"
+    Sec-CH-UA-Mobile: "?0"
+  bot:
+    name: WebPageTest
+    category: Site Monitor
+    url: https://www.webpagetest.org
+-
+  user_agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 PTST/220216.200657
+  headers:
+    Sec-CH-UA: '" Not A;Brand";v="99", "Chromium";v="98.0.4758.102", "Google Chrome";v="98.0.4758.102"'
+    Sec-CH-UA-Platform: "Unknown"
+    Sec-CH-UA-Mobile: "?0"
+    Sec-CH-UA-Full-Version: "98.0.4758.102"
+    Sec-CH-UA-Platform-Version: "0"
+    Sec-CH-UA-Arch: "x86"
+    Sec-CH-UA-Model: "Model"
+    Sec-CH-Prefers-Color-Scheme: "light"
+  bot:
+    name: WebPageTest
+    category: Site Monitor
+    url: https://www.webpagetest.org
+-
+  user_agent: Mozilla/5.0 (X11; CrOS x86_64 14150.90.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.126 Safari/537.36
+  headers:
+    Sec-CH-UA-Platform: "Chromium OS"
+    Sec-CH-UA-Mobile: "?0"
+  os:
+    name: Chromium OS
+    version: "14150.90.0"
+    platform: x64
+  client:
+    type: browser
+    name: Chrome
+    version: "94.0.4606.126"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: desktop
+    brand: ""
+    model: ""
+  os_family: Chrome OS
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (X11; CrOS x86_64 14150.90.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.126 Safari/537.36
+  headers:
+    Sec-CH-UA-Platform: "Chromium OS"
+    Sec-CH-UA-Mobile: "?0"
+    Sec-CH-UA-Full-Version: "94.0.4606.126"
+    Sec-CH-UA-Platform-Version: "14150.90.0"
+    Sec-CH-UA-Arch: "x86"
+    Sec-CH-UA-Bitness: "64"
+    Sec-CH-Prefers-Color-Scheme: "light"
+  os:
+    name: Chromium OS
+    version: "14150.90.0"
+    platform: x64
+  client:
+    type: browser
+    name: Chrome
+    version: "94.0.4606.126"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: desktop
+    brand: ""
+    model: ""
+  os_family: Chrome OS
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (X11; CrOS armv7l 13597.84.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.98 Safari/537.36
+  headers:
+    Sec-CH-UA-Platform: "Linux"
+    Sec-CH-UA-Mobile: "?0"
+    Sec-CH-UA-Full-Version: "92.0.4515.98"
+    Sec-CH-UA-Platform-Version: "13597.84.0"
+    Sec-CH-UA-Arch: "arm"
+  os:
+    name: Chrome OS
+    version: "13597.84.0"
+    platform: ARM
+  client:
+    type: browser
+    name: Chrome
+    version: "92.0.4515.98"
+    engine: Blink
+    engine_version: ""
+  device:
+    type: desktop
+    brand: ""
+    model: ""
+  os_family: Chrome OS
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.6167.5881 Safari/537.36
+  headers:
+    Sec-CH-UA-Platform: "Windows"
+    Sec-CH-UA-Mobile: "?0"
+    Sec-CH-UA-Full-Version: "?1"
+  os:
+    name: Windows
+    version: ""
+    platform: ""
+  client:
+    type: browser
+    name: Chrome
+    version: 96.0.6167.5881
+    engine: Blink
+    engine_version: ""
+  device:
+    type: desktop
+    brand: ""
+    model: ""
+  os_family: Windows
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.121 Safari/537.36
+  headers:
+    Sec-CH-UA: '"Chromium";v="98.0.4758.121", " Not A;Brand";v="99.0.0.0"'
+    Sec-CH-UA-Platform: "Linux"
+    Sec-CH-UA-Mobile: "?0"
+    Sec-CH-UA-Full-Version: "98.0.4758.121"
+    Sec-CH-UA-Platform-Version: "5.16.11"
+    Sec-CH-UA-Arch: "x86"
+    Sec-CH-UA-Bitness: "64"
+    Sec-CH-Prefers-Color-Scheme: "light"
+  os:
+    name: Fedora
+    version: 5.16.11
+    platform: x64
+  client:
+    type: browser
+    name: Chrome
+    version: 98.0.4758.121
+    engine: Blink
+    engine_version: ""
+  device:
+    type: desktop
+    brand: ""
+    model: ""
+  os_family: GNU/Linux
+  browser_family: Chrome
