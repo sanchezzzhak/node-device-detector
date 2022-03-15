@@ -6794,6 +6794,9 @@ oppo:
   cph2037: '->reno 3 pro'
   cph2009: '->reno 3 pro'
   pcrm00: '->reno 3 pro'
+  # todo rename to Vitality Edition
+  reno 3 lite: 'RE=2020.02;SZ=74.3x160.3x8.0;WT=180;DS=6.4;RS=1080x2400;CP=242;RM=8192;OS=Android 10;'
+  pcrt01: '->reno 3 lite'
   reno 3a: 'SZ=74x161x8.2;WT=175;DS=6.44;CP=283;RS=1080x2400;RM=6144;OI=1;OV=10;RE-2020.06;'
   cph2013: '->reno 3a'
   reno 4 4g: 'RE=2020.07;SZ=73.9x160.3x7.7;WT=165;DS=6.4;RS=1080x2400;OI=1;OV=10;CP=273;RM=8192'
