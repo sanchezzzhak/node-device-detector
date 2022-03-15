@@ -6,7 +6,7 @@ cd tests/tools
 node report-no-added-info-for-devices.js > ../output/report.log
  */
 
-const { YAMLLoad, getFixtureFolder } = require('./../functions');
+const {YAMLLoad, getFixtureFolder} = require('./../functions');
 
 const fs = require('fs');
 const aliasDevice = new (require('../../parser/device/alias-device'))();
@@ -40,6 +40,11 @@ ymlDeviceFiles.forEach((file) => {
   fixtureData.forEach((fixture, pos) => {
     let result = aliasDevice.parse(fixture.user_agent);
     let deviceCode = result.name ? result.name : void 0;
+
+    if (fixture.device === void 0) {
+      return;
+    }
+
     let brand = String(fixture.device.brand).toLowerCase();
     let model = String(fixture.device.model).toLowerCase();
     if (deviceCode !== void 0) {
