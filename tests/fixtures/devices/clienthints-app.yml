@@ -151,7 +151,7 @@
     platform: ""
   client:
     type: browser
-    name: Kiwi Browser
+    name: Kiwi
     version: ""
     engine: Blink
     engine_version: ""
@@ -240,7 +240,7 @@
     brand: Lenovo
     model: A3
   os_family: Android
-  browser_family: ''
+  browser_family: Unknown
 -
   user_agent: Mozilla/5.0 (Linux; Android 9; ZTE Blade V10 Vita Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36
   headers:
@@ -318,6 +318,7 @@
     brand: Google
     model: Pixel 3
   os_family: Android
+  browser_family: Unknown
 -
   user_agent: Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36Snapchat11.59.0.35 (M2006C3LG; Android 10#V12.0.17.0.QCDMIXM#29; gzip)
   headers:
@@ -335,7 +336,7 @@
     brand: Xiaomi
     model: Redmi 9A
   os_family: Android
-
+  browser_family: Unknown
 -
   user_agent: Mozilla/5.0 (Linux; Android 10; SM-A605G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 Instagram 202.0.0.37.124 Android (29/10; 420dpi; 1080x2094; samsung; SM-A605G; a6plte; qcom; en_US; 313224438)
   headers:
@@ -353,6 +354,7 @@
     brand: Samsung
     model: Galaxy A6+
   os_family: Android
+  browser_family: Unknown
 -
   user_agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 7 Build/QKQ1.190910.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.87 Mobile Safari/537.36 Instagram 215.0.0.27.359 Android (29/10; 440dpi; 2048x2048; Xiaomi/xiaomi; Redmi Note 7; la
   headers:
@@ -370,6 +372,7 @@
     brand: Xiaomi
     model: Redmi Note 7
   os_family: Android
+  browser_family: Unknown
 -
   user_agent: Mozilla/5.0 (Linux; Android 9; SM-G965F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2889 MMWEBSDK/20210902 Mobile Safari/537.36 MMWEBID/4096 MicroMessenger/8.0.15.2001(0x28000F41) Process/toolsmp WeChat/arm64 Weixin GPVersion/1 NetType/WIFI Language/en ABI/arm64
   headers:
@@ -585,7 +588,7 @@
     brand: ""
     model: ""
   os_family: Android
-  browser_family: Unknown
+  browser_family: Chrome
 -
   user_agent: Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro Build/RP1A.200720.011; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36
   headers:
@@ -682,5 +685,165 @@
     type: smartphone
     brand: Xiaomi
     model: Redmi 9T
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; YAL-L21 Build/HUAWEIYAL-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.70 Mobile Safari/537.36
+  headers:
+    X-Requested-With: org.easyweb.browser
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: browser
+    name: Easy Browser
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: smartphone
+    brand: Huawei
+    model: Honor 20
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.xbrowser.play
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: browser
+    name: XBrowser Mini
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy A02
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; AKA-L29 Build/HONORAKA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.sharkeeapp.browser
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: browser
+    name: Sharkee Browser
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: smartphone
+    brand: Huawei
+    model: Honor 9C
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; M2003J15SC Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.mobiu.browser
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: browser
+    name: Lark Browser
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: phablet
+    brand: Xiaomi
+    model: Redmi Note 10X
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 8.1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.qflair.browserq
+  os:
+    name: Android
+    version: 8.1.0
+    platform: ""
+  client:
+    type: browser
+    name: Pluma
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: smartphone
+    brand: ""
+    model: ""
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; SM-M215F Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 NoxBrowser/2.0.0 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.noxgroup.app.browser
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: browser
+    name: Nox Browser
+    version: 2.0.0
+    engine: Blink
+    engine_version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy M21
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.77 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.noxgroup.app.browser
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: browser
+    name: Nox Browser
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Redmi 9A
+  os_family: Android
+  browser_family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; M1908C3JGG Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.87 Mobile Safari/537.36
+  headers:
+    X-Requested-With: com.jio.web
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: browser
+    name: JioPages
+    version: ""
+    engine: Blink
+    engine_version: ""
+  device:
+    type: phablet
+    brand: Xiaomi
+    model: Redmi Note 8 (2021)
   os_family: Android
   browser_family: Chrome

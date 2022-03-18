@@ -1276,8 +1276,9 @@ cpu:
   194:
     name: MediaTek Helio X20 MT6797M
     type: ARM
-    clock_rate: 2300
+    clock_rate: 2100
     cores: 10
+    process: 20nm
     gpu_id: 80
   195:
     name: AllWinner A13

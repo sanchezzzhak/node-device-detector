@@ -1,4 +1,3 @@
-
 # Browsers
 'mark.via.gp': 'Via'
 'com.pure.mini.browser': 'Pure Mini Browser'
@@ -8,7 +7,7 @@
 'com.Fast.BrowserUc.lite': 'Fast Browser UC Lite'
 'acr.browser.barebones': 'Lightning Browser'
 'anar.app.darkweb': 'Dark Web Browser'
-'com.kiwibrowser.browser': 'Kiwi Browser'
+'com.kiwibrowser.browser': 'Kiwi'
 'com.cloudmosa.puffinFree': 'Puffin Web Browser'
 'com.aloha.browser': 'Aloha Browser'
 'com.cake.browser': 'Cake Browser'
@@ -17,6 +16,7 @@
 'com.internet.browser.secure': 'Internet Browser Secure'
 'acr.browser.linxy': 'Vegas Browser'
 'com.oh.bro': 'OH Browser'
+'com.oh.brop': 'OH Private Browser'
 'com.duckduckgo.mobile.android': 'DuckDuckGo Privacy Browser'
 'net.onecook.browser': 'Stargon'
 'com.mi.globalbrowser.mini': 'Mint Browser'
@@ -27,3 +27,20 @@
 'org.mozilla.focus': 'Firefox Focus'
 'com.vivaldi.browser': 'Vivaldi'
 'web.browser.dragon': 'Dragon Browser'
+'org.easyweb.browser': 'Easy Browser'
+'com.xbrowser.play': 'XBrowser Mini'
+'com.sharkeeapp.browser': 'Sharkee Browser'
+'com.mobiu.browser': 'Lark Browser'
+'com.qflair.browserq': 'Pluma'
+'com.noxgroup.app.browser': 'Nox Browser'
+'com.jio.web': 'JioPages'
+'com.ume.browser.cust': 'Ume Browser'
+'com.kuto.browser': 'KUTO Mini Browser'
+'com.dolphin.browser.zero': 'Dolphin Zero'
+'mobi.mgeek.TunnyBrowser': 'Dolphin'  # Dolphin + AdBlock
+'nextapp.atlas': 'Atlas'
+'org.mozilla.rocket': 'Firefox Rocket' # Firefox Lite
+'com.mx.browser': 'Maxthon'
+'com.ecosia.android': 'Ecosia'
+'org.lineageos.jelly': 'Jelly'
+'com.opera.gx': 'Opera GX'

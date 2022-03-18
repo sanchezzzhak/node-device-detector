@@ -1,9 +1,9 @@
 const ClientAbstractParser = require('./../client-abstract-parser');
-const AppHashHints = require('./app-hash-hints');
+const AppHints = require('./hints/app-hints');
 
 const CLIENT_TYPE = require('./../const/client-type');
 
-const appHashHints = new AppHashHints;
+const appHints = new AppHints;
 
 class MobileApp extends ClientAbstractParser {
   constructor() {
@@ -13,7 +13,7 @@ class MobileApp extends ClientAbstractParser {
   }
 
   parseFromHashHintsApp(clientHints) {
-    return appHashHints.parse(clientHints);
+    return appHints.parse(clientHints);
   }
 
   /**

@@ -46,6 +46,10 @@
   n6: 'DS=5.93;RS=1080x2160;SZ=75.9x157.8x8.7;WT=182;RE=2017.12;RM=4096;CP=19;OI=1;OV=7.1;SM=2;'
   1801-a01: '->n6 pro'
   n6 pro: 'DS=6;RS=1080x2160;SZ=75.64x157.2x8.15;WT=182;RE=2017.11;RM=6144;CP=19;OI=1;OV=7.1;SM=2;'
+  n4s: 'DS=5.5;RS=1080x1920;SZ=74.6x151.3x8.35;WT=169;RE=2016;OS=Android 6;RM=4096;CP=194;'
+  1505-a02: '->n4s'
+  n5: 'DS=5.5;RS=1080x1920;SZ=76x152x8.25;WT=156;RE=2017;OS=Android 6;RM=6144;CP=196;'
+  1605-a01: '->n5'
 
 3gnet:
   t 900: '->t900'
@@ -147,8 +151,8 @@
 8848:
   m3: 'RE=2016.08;CP=115;RM=4096;WT=220;DS=5;RS=1080x1920;SM=1;'
   m4: 'RE=2017.08;CP=173;RM=6144;DS=5.15;RS=1080x1920;OI=1;OV=7.0;SM=2;'
-  m5: ''
-  m6: ''
+  m5: 'RE=2018.08;CP=25;RM=6144;WT=228;DS=5.65;RS=1080x2160;OI=1;OV=8.1;SM=2;SZ=73.9x167.5x11.9;'
+  m6: 'RM=12288;CP=141;OI=1;OV=10;DS=6.01;RS=1080x2340;'
 
 a1:
   alpha 20 plus: ''
@@ -6634,6 +6638,8 @@ hisense:
   h30 lite: 'OI=1;OV=9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
 
 oppo:
+  a15s: 'RE=2020.12;SZ=75.4x164x7.9;WT=177;DS=6.52;RS=720x1600;OS=Android 10;CP=38;RM=4096;'
+  cph2179: '->a15s'
   a11: 'RE=2019.10;SZ=75.6x163.6x9.1;WT=195;DS=6.5;RS=720x1600;OI=1;OV=9;CP=283;RM=4096;'
   pchm10: '->a11'
   a11x: 'DS=6.5;RS=720x1600;SZ=75.6x163.6x9.1;WT=195;RE=2019.10;OI=1;OV=9;RM=8192;CP=283;'
@@ -6788,6 +6794,9 @@ oppo:
   cph2037: '->reno 3 pro'
   cph2009: '->reno 3 pro'
   pcrm00: '->reno 3 pro'
+  # todo rename to Vitality Edition
+  reno 3 lite: 'RE=2020.02;SZ=74.3x160.3x8.0;WT=180;DS=6.4;RS=1080x2400;CP=242;RM=8192;OS=Android 10;'
+  pcrt01: '->reno 3 lite'
   reno 3a: 'SZ=74x161x8.2;WT=175;DS=6.44;CP=283;RS=1080x2400;RM=6144;OI=1;OV=10;RE-2020.06;'
   cph2013: '->reno 3a'
   reno 4 4g: 'RE=2020.07;SZ=73.9x160.3x7.7;WT=165;DS=6.4;RS=1080x2400;OI=1;OV=10;CP=273;RM=8192'
@@ -6828,6 +6837,7 @@ oppo:
   reno 6: 'RE=2021.07;SZ=73.3x159.1x7.8;WT=173;DS=6.4;RS=1080x2400;OI=1;OV=11;CP=273;RM=8192;'
   cph2235: '->reno 6'
   peqm00: '->reno 6'
+  cph2251: '->reno 6'
   # todo rename reno 6 pro 5g
   reno 6 pro: 'RE=2021.05;SZ=73.1x160x7.6;WT=177;DS=6.55;RS=1080x2400;OI=1;OV=11;CP=324;RM=8192;'
   pepm00: '->reno 6 pro'
@@ -6862,6 +6872,18 @@ oppo:
   a54 5g: 'RE=2021.04;SZ=74.7x162.9x8.4;WT=190;DS=6.5;RS=1080x2400;OI=1;OV=11;CP=307;RM=4096;'
   cph2195: '->a54 5g'
   cph2303: '->a54 5g'
+  opg02: '->a54 5g'
+  a55s 5g: 'RE=2021.11;SZ=74.7x162.1x8.2;WT=178;DS=6.5;RS=1080x2400;CP=307;RM=4096;OS=Android 11;'
+  a102op: '->a55s 5g'
+  cph2309: '->a55s 5g'
+  a55: 'RE=2021.10;SZ=75.7x163.6x8.4;WT=193;DS=6.51;RS=720x1600;CP=323;RM=4096;OS=Android 11;'
+  cph2325: '->a55'
+  a55 5g: 'RE=2021.01;SZ=75.7x163.9x8.4;WT=186;DS=6.5;RS=720x1600;CP=302;RM=6144;OS=Android 11;'
+  pemm00: '->a55 5g'
+  pemt00: '->a55 5g'
+  pemm20: '->a55 5g'
+  r11 plus: 'RE=2017.06;SZ=81.5x165.8x7.8;WT=188;DS=6.0;RS=1080x1920;OS=Android 7.1.1;CP=61;RM=6144;'
+  r11 pluskt: '->r11 plus'
   r15: 'RE=2018.03;SZ=75.2x155.1x7.4;WT=175;DS=6.28;RS=1080x2280;OI=1;OV=8.1;CP=290;RM=4096;'
   pact00: '->r15'
   cph1835: '->r15'

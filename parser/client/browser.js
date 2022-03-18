@@ -3,11 +3,11 @@ const CLIENT_TYPE = require('./../const/client-type');
 const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
-const BrowserHashHints = require('./browser-hash-hints');
+const BrowserHints = require('./hints/browser-hints');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 
-const browserHashHints = new BrowserHashHints;
+const browserHints = new BrowserHints;
 
 const compareBrandForClientHints = (brand) => {
   const CLIENTHINT_MAPPING = {
@@ -107,17 +107,20 @@ class Browser extends ClientAbstractParser {
       short = data.short_name;
       engine = data.engine;
       engineVersion = data.engine_version;
-      family = data.family;
+
     }
 
-    if (hash !== null && hash.name !== name){
+    family = this.buildFamily(short);
+
+    if (hash !== null && name !== hash.name){
       name = hash.name;
       version = '';
+      short = this.buildShortName(name)
 
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
         engine = 'Blink'
         engineVersion = '';
-        family = 'Chrome';
+        family = this.buildFamily(short) || 'Chrome';
       }
     }
 
@@ -137,7 +140,7 @@ class Browser extends ClientAbstractParser {
   }
 
   parseFromHashHintsApp(clientHints) {
-    return browserHashHints.parse(clientHints);
+    return browserHints.parse(clientHints);
   }
 
   parseFromClientHints(clientHints) {
@@ -235,7 +238,7 @@ class Browser extends ClientAbstractParser {
       for (let i = 0, l = browsers.length; i < l; i++) {
         if (lname === browsers[i].toLowerCase()) {
           result = browsers[i];
-          break
+          break;
         }
       }
     }
@@ -243,6 +246,23 @@ class Browser extends ClientAbstractParser {
   }
 
   /**
+   * Get short code browser for full name browser
+   *
+   * @param {string} name
+   * @return {string}
+   */
+  buildShortName(name) {
+    const UNKNOWN = 'UNK';
+    let result = this.getCollectionBrowsers()[name];
+    if (result !== void 0) {
+      return result;
+    }
+    return UNKNOWN;
+  }
+
+  /**
+   * Get browser family for short name browser
+   *
    * @param {string} shortName
    * @returns {string}
    */
@@ -260,6 +280,8 @@ class Browser extends ClientAbstractParser {
   }
 
   /**
+   * Get browser engine for engine name and versions
+   *
    * @param {string} engine
    * @param {string} browserVersion
    * @return {string}
@@ -284,6 +306,7 @@ class Browser extends ClientAbstractParser {
   }
 
   /**
+   * Get engine name for parser engines
    *
    * @param {string} userAgent
    * @returns {string}
@@ -303,6 +326,8 @@ class Browser extends ClientAbstractParser {
   }
 
   /**
+   * Get engine version for useragent and engine name
+   *
    * @param {string} userAgent
    * @param {string} engine
    * @return {string}
@@ -331,19 +356,6 @@ class Browser extends ClientAbstractParser {
       return match.pop();
     }
     return '';
-  }
-
-  /**
-   * @param {string} name
-   * @return {string}
-   */
-  buildShortName(name) {
-    const UNKNOWN = 'UNK';
-    let result = this.getCollectionBrowsers()[name];
-    if (result !== void 0) {
-      return result;
-    }
-    return UNKNOWN;
   }
 }
 

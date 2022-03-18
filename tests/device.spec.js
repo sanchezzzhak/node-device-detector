@@ -98,14 +98,11 @@ const runTest = (fixture, result) => {
       result.browser_family = result.client.family;
     }
     delete result.client.family;
-    if (fixture.browser_family === 'Unknown' && result.browser_family === '') {
+    if (fixture.browser_family === 'Unknown' && (result.browser_family === '' || result.browser_family === void 0)) {
       result.browser_family = 'Unknown';
     }
-    if (fixture.browser_family === 'Unknown') {
-      result.browser_family = fixture.browser_family;
-    }
-
   }
+
   let regex;
   if (result.device) {
     delete result.device.id;
