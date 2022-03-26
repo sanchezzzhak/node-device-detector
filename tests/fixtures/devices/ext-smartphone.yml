@@ -133,3 +133,31 @@
     model: DSi
   os_family: Mobile Gaming Console
   browser_family: Opera
+-
+  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36
+  os:
+    name: Windows
+    version: "11"
+    platform: x64
+  client:
+    type: browser
+    name: Chrome
+    version: 99.0.4844.82
+    engine: Blink
+    engine_version: 99.0.4844.82
+  device:
+    type: desktop
+    brand: ""
+    model: ""
+  os_family: Windows
+  browser_family: Chrome
+  headers:
+    sec-ch-prefers-color-scheme: dark
+    sec-ch-ua: '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"'
+    sec-ch-ua-arch: "x86"
+    sec-ch-ua-full-version: '"99.0.4844.82"'
+    sec-ch-ua-full-version-list: '" Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.4844.82", "Google Chrome";v="99.0.4844.82"'
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: "Windows"
+    sec-ch-ua-platform-version: "11.0.0"

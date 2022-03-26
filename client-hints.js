@@ -53,7 +53,7 @@ function getBrowserNames(headers) {
     if (skip) {
       continue
     }
-    items.push({brand, version: matches[2]});
+    items.push({brand, version: helper.trimChars(matches[2], '"')});
   }
   return items;
 }
@@ -95,7 +95,7 @@ class ClientHints {
 
     result.isMobile = attr(headers, CH_UA_MOBILE, '') === '?1';
     result.prefers = {
-      colorScheme: attr(headers, CH_UA_PREFERS_COLOR_SCHEME, '')
+      colorScheme: helper.trimChars(attr(headers, CH_UA_PREFERS_COLOR_SCHEME, ''), '"')
     }
     let osName = attr(headers, CH_UA_PLATFORM, '');
     let platform = attr(headers, CH_UA_ARCH, '');
@@ -104,7 +104,7 @@ class ClientHints {
     // os
     result.os = {
       name: helper.trimChars(osName, '"'),
-      platform: platform.toLowerCase(),
+      platform: helper.trimChars(platform.toLowerCase(), '"'),
       bitness: helper.trimChars(bitness, '"'),
       version: helper.trimChars(osVersion, '"')
     };
@@ -113,14 +113,14 @@ class ClientHints {
     let clientData = getBrowserNames(headers);
     result.client = {
       brands: clientData,
-      version: attr(headers, CH_UA_FULL_VERSION, ''),
+      version: helper.trimChars(attr(headers, CH_UA_FULL_VERSION, ''), '"'),
     };
 
     result.device = {
-      model: attr(headers, CH_UA_MODEL, '')
+      model: helper.trimChars(attr(headers, CH_UA_MODEL, ''), '"')
     }
 
-    result.app = attr(headers, 'x-requested-with' , '')
+    result.app = helper.trimChars(attr(headers, 'x-requested-with' , ''), '"')
     if (result.app.toLowerCase() === 'xmlhttprequest') {
       result.app = '';
     }
