@@ -10,7 +10,7 @@
     name: Chrome Mobile
     version: 88.0.4324.93
     engine: Blink
-    engine_version: ""
+    engine_version: "88.0.4324.93"
   device:
     type: smartphone
     brand: Vertex
@@ -36,7 +36,7 @@
     name: Chrome Mobile
     version: 50.0.2661.89
     engine: Blink
-    engine_version: ''
+    engine_version: '50.0.2661.89'
   device:
     type: smartphone
     brand: Archos
@@ -54,7 +54,7 @@
     name: Chrome Webview
     version: 30.0.0.0
     engine: Blink
-    engine_version: ''
+    engine_version: '30.0.0.0'
   device:
     type: smartphone
     brand: Intex
@@ -72,7 +72,7 @@
     name: Chrome Mobile
     version: 76.0.3809.132
     engine: Blink
-    engine_version: ''
+    engine_version: 76.0.3809.132
   device:
     type: smartphone
     brand: Asus

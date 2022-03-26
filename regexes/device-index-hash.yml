@@ -174,6 +174,14 @@ aka-l29:
   - Huawei
 m2003j15sc:
   - Xiaomi
+sm-m215f:
+  - Samsung
+m1908c3jgg:
+  - Xiaomi
+ppa-lx2:
+  - Huawei
+sm-a217f:
+  - Samsung
 dn2103:
   - OnePlus
 kfkawi:
@@ -1219,8 +1227,6 @@ infinix x604:
   - Infinix
 sm-n960n:
   - Samsung
-m1908c3jgg:
-  - Xiaomi
 m2101k7bi:
   - Xiaomi
 m2103k19y:
@@ -9773,8 +9779,6 @@ oneplus 7 pro:
   - OnePlus
 oneplus 7t pro:
   - OnePlus
-ppa-lx2:
-  - Huawei
 realme 3 pro:
   - Realme
 realme 5 pro:
@@ -39554,6 +39558,40 @@ mitv-mssp3:
 mitv-ansp0:
   - Xiaomi
 tv box: []
+bravia vh1:
+  - Sony
+bravia 4k ur1:
+  - Sony
+bravia 4k vh2:
+  - Sony
+bravia vu1:
+  - Sony
+aquos-tvx19a:
+  - Sharp
+aquos-tvx19b:
+  - Sharp
+aquos-tvj21-2:
+  - Sharp
+aquos-tvx21a:
+  - Sharp
+vodafone tv:
+  - Vodafone
+eko android tv:
+  - EKO
+eko android tv 2k:
+  - EKO
+eko 2k android tv:
+  - EKO
+eko 4k android tv:
+  - EKO
+kogan tv:
+  - Kogan
+kogan smartertv:
+  - Kogan
+kogan smartertv 2k:
+  - Kogan
+kogantvap:
+  - Kogan
 bb2 pro:
   - Mecool
 kii pro:

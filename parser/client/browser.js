@@ -119,9 +119,14 @@ class Browser extends ClientAbstractParser {
 
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
         engine = 'Blink'
-        engineVersion = '';
         family = this.buildFamily(short) || 'Chrome';
+        engineVersion = this.buildEngineVersion(userAgent, engine);
       }
+    }
+
+    // exclude Blink engine version for browsers
+    if ('Blink' === engine && 'Flow Browser' === name) {
+      engineVersion = '';
     }
 
     if (name === '') {
@@ -346,11 +351,17 @@ class Browser extends ClientAbstractParser {
       }
     }
 
+    let engineToken = engine;
+    if ('Blink' === engine) {
+      engineToken = 'Chrome';
+    }
+
     let regexp = new RegExp(
-        engine +
+      engineToken +
         '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
         'i'
     );
+
     let match = regexp.exec(userAgent);
     if (match !== null) {
       return match.pop();
