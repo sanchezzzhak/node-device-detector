@@ -63,17 +63,35 @@ class ClientHints {
 
   /**
    * @returns {{"accept-ch": string}}
+   * @example
+   * ```js
+      const hintHeaders = ClientHints.getHeaderClientHints();
+      for (let name in hintHeaders) {
+        res.setHeader(name, hintHeaders[headerName]);
+      }
+   * ```
    */
   static getHeaderClientHints() {
     return {
-      'accept-ch':
-          'sec-ch-prefers-color-scheme, sec-ch-ua-full-version, sec-ch-ua-full-version-list, sec-ch-ua-platform, sec-ch-ua-platform-version, sec-ch-ua-model, sec-ch-ua-arch',
+      'accept-ch': [
+        'sec-ch-ua-full-version',
+        'sec-ch-ua-full-version-list', 'sec-ch-ua-platform',
+        'sec-ch-ua-platform-version',
+        'sec-ch-ua-model',
+        'sec-ch-ua-arch',
+        'sec-ch-ua-bitness',
+        'sec-ch-prefers-color-scheme',
+      ].join(', ')
     };
   }
 
   /**
    * @param {{}} headers - key/value
    * @return {boolean}
+   * @example
+   * ```js
+      console.log('is support client hints', ClientHints.isSupport(res.headers));
+   * js
    */
   static isSupport(headers) {
     return headers[CH_UA] !== void 0
