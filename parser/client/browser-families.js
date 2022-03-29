@@ -20,6 +20,7 @@ module.exports = {
     'B1', 'BO', 'HB', 'PC', 'LA', 'LT', 'PD', 'HR', 'HU',
     'HP', 'IO', 'TP', 'CJ', 'HQ', 'HI', 'NA', 'BW', 'YO',
     'DC', 'G8', 'DT', 'AP', 'AK', 'UI', 'SD', 'VN', '4S',
+    '2S',
   ],
   'Firefox': [
     'AX', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
