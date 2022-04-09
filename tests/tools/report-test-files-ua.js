@@ -38,6 +38,15 @@ const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
     let fixtureData = YAMLLoad(folderFixturePath + file);
     fixtureData.forEach((fixture, pos) => {
       let aliasResult = aliasDevice.parse(fixture.user_agent);
+
+      if (!fixture.device) {
+        return;
+      }
+
+      if (fixture.device && !fixture.device.brand) {
+        return;
+      }
+
       let brand = String(fixture.device.brand);
       let model = String(fixture.device.model);
       let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0;

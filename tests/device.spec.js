@@ -36,6 +36,7 @@ function normalizationFixture(fixture) {
   if (fixture.client === null) {
     fixture.client = {};
   }
+
   if (fixture.os === null || Array.isArray(fixture.os)) {
     fixture.os = {};
   }
@@ -100,6 +101,10 @@ const runTest = (fixture, result) => {
     delete result.client.family;
     if (fixture.browser_family === 'Unknown' && (result.browser_family === '' || result.browser_family === void 0)) {
       result.browser_family = 'Unknown';
+    }
+
+    if(fixture.client.version === null && result.client.version === '') {
+      fixture.client.version = '';
     }
   }
 

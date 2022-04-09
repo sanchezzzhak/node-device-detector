@@ -5,6 +5,41 @@
 # @license http://www.gnu.org/licenses/lgpl.html LGPL v3 or later
 ###############
 
+# Viasat Browser (https://browser.viasat.com/)
+- regex: 'Chrome/(\d+\.[\.\d]+).+Sparrow'
+  name: 'Viasat Browser'
+  version: '$1'
+  engine:
+    default: 'WebKit'
+    versions:
+      28: 'Blink'
+- regex: 'Sparrow/.+CFNetwork'
+  name: 'Viasat Browser'
+  version: ''
+  engine:
+    default: 'WebKit'
+
+# Lilo (https://play.google.com/store/apps/details?id=org.lilo.mobile.android2020)
+- regex: 'Lilo/(\d+\.[\.\d]+)'
+  name: 'Lilo'
+  version: '$1'
+  engine:
+    default: 'Blink'
+
+# Lexi Browser (https://play.google.com/store/apps/details?id=com.lexi.browser)
+- regex: 'lexi/(\d+[\.\d]+)'
+  name: 'Lexi Browser'
+  version: '$1'
+  engine:
+    default: 'Blink'
+
+# Floorp (https://floorp.ablaze.one/)
+- regex: 'Floorp/(\d+[\.\d]+)'
+  name: 'Floorp'
+  version: '$1'
+  engine:
+    default: 'Gecko'
+
 # Surf Browser (https://play.google.com/store/apps/details?id=com.gl9.cloudBrowser)
 - regex: 'SurfBrowser/(\d+[\.\d]+)'
   name: 'Surf Browser'
@@ -547,6 +582,8 @@
 - regex: 'PHX/(?:(\d+[\.\d]+))?'
   name: 'Phoenix Browser'
   version: '$1'
+  engine:
+    default: 'Blink'
 
 # PrivacyWall (https://play.google.com/store/apps/details?id=org.privacywall.browser)
 - regex: 'PrivacyWall/(?:(\d+[\.\d]+))?'
@@ -1877,6 +1914,18 @@
   version: ''
   engine:
     default: '' # multi engine -- WebKit or Blink
+
+# Lenovo Browser
+- regex: 'Chrome/.+ (?:LeBrowser|MobileLenovoBrowser)(?:/(\d+[\.\d]+))?'
+  name: 'Lenovo Browser'
+  version: '$1'
+  engine:
+    default: 'Blink'
+- regex: 'LeBrowser(?:/(\d+[\.\d]+))?'
+  name: 'Lenovo Browser'
+  version: '$1'
+  engine:
+    default: 'WebKit'
 
 # Kiwi Browser
 - regex: 'Kiwi Chrome'
