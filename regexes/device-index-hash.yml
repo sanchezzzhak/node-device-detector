@@ -112,6 +112,8 @@ porsche rear seat entertainment:
   - Porsche
 zq8003:
   - Alps
+quad-core t3 p1:
+  - Allwinner
 zc554kl:
   - Asus
 nomi_c080034:
@@ -182,6 +184,62 @@ ppa-lx2:
   - Huawei
 sm-a217f:
   - Samsung
+sm-a105m:
+  - Samsung
+sm-a525m:
+  - Samsung
+sm-t550:
+  - Samsung
+pixel 4a (5g):
+  - Google
+sm-a705gm:
+  - Samsung
+sm-g610f:
+  - Samsung
+vog-l04:
+  - Huawei
+mi a1:
+  - Xiaomi
+vog-l29:
+  - Huawei
+sm-a127f:
+  - Samsung
+sm-a326b:
+  - Samsung
+oneplus a6013:
+  - OnePlus
+poco f2 pro:
+  - POCO
+sm-s727vl:
+  - Samsung
+sm-g975u:
+  - Samsung
+moto e(7i) power:
+  - Motorola
+mar-lx3a:
+  - Huawei
+mar-lx1a:
+  - Huawei
+sm-t290:
+  - Samsung
+pixel 2:
+  - Google
+sm-g990b:
+  - Samsung
+sm-g950f:
+  - Samsung
+sm-g930p:
+  - Samsung
+sm-a750fn:
+  - Samsung
+sm-g950u1:
+  - Samsung
+mya-l03:
+  - Huawei
+sm-g965u1:
+  - Samsung
+infinix x697:
+  - Infinix
 dn2103:
   - OnePlus
 kfkawi:
@@ -1382,8 +1440,6 @@ redmi note 5a lite:
   - Xiaomi
 infinix x663b:
   - Infinix
-infinix x697:
-  - Infinix
 infinix x683b:
   - Infinix
 infinix x605:
@@ -1406,6 +1462,10 @@ iphone13,2:
   - Xiaomi
 tecno le6:
   - Tecno Mobile
+2201117sy:
+  - Xiaomi
+2201117sg:
+  - Xiaomi
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -2975,8 +3035,6 @@ oneplus a3010:
 oneplus a5000:
   - OnePlus
 oneplus a5010:
-  - OnePlus
-oneplus a6013:
   - OnePlus
 oneplus a6010:
   - OnePlus
@@ -5261,8 +5319,6 @@ sm-j720f:
   - Samsung
 samsung sm-g615f:
   - Samsung
-sm-g610f:
-  - Samsung
 sm-g610m:
   - Samsung
 sm-g611mt:
@@ -5274,8 +5330,6 @@ samsung sm-g611m:
 sm-j730gm:
   - Samsung
 samsung sm-j730g:
-  - Samsung
-sm-s727vl:
   - Samsung
 sm-s737tl:
   - Samsung
@@ -5775,8 +5829,6 @@ samsung sm-g935r4:
 sm-g935l:
   - Samsung
 sm-g950:
-  - Samsung
-sm-g950f:
   - Samsung
 scv36:
   - Samsung
@@ -8643,8 +8695,6 @@ mi 9 se:
   - Xiaomi
 mi 9t pro:
   - Xiaomi
-mi a1:
-  - Xiaomi
 mi a2 lite:
   - Xiaomi
 mi cc 9 meitu edition:
@@ -11453,8 +11503,6 @@ lenovo tab 2 a7-30gc:
   - Meizu
 smart box v009:
   - Rombica
-krj-w09:
-  - Huawei
 lenovo tb-7703x:
   - Lenovo
 lenovo tb-x505x:
@@ -13852,6 +13900,7 @@ colombia_2018:
   - Avvio
 excite prime 2 pro:
   - Cloudfone
+  - Hurricane
 excer 8:
   - AVH
 eda50:
@@ -17320,8 +17369,6 @@ atu-l11:
   - Huawei
 bv5500plus:
   - Blackview
-vog-l29:
-  - Huawei
 cph2065:
   - OPPO
 psp7510duo:
@@ -17782,8 +17829,6 @@ moto e6 play:
   - Motorola
 vivo 1921:
   - Vivo
-vog-l04:
-  - Huawei
 thrill boost 2 plus:
   - Cloudfone
 eluga i6:
@@ -17833,8 +17878,6 @@ sm-a510f:
 psp7550duo:
   - Prestigio
 sm-a500f:
-  - Samsung
-sm-a750fn:
   - Samsung
 sm-a305fn:
   - Samsung
@@ -18549,8 +18592,6 @@ vivo 2018:
   - Vivo
 v2037:
   - Vivo
-sm-g975u:
-  - Samsung
 sm-g986u:
   - Samsung
 vivo 1919:
@@ -19314,8 +19355,6 @@ bll-l21:
   - Huawei
 mya-l23:
   - Huawei
-mya-l03:
-  - Huawei
 ultra dream:
   - Hyundai
 ultra link:
@@ -19769,12 +19808,16 @@ tis001_s4:
   - Tigers
 twist 4:
   - Positivo
-sm-a705gm:
-  - Samsung
 sm-a705w:
   - Samsung
 sm-a705yn:
   - Samsung
+lenovo k30-w:
+  - Lenovo
+lenovo x3c70:
+  - Lenovo
+lenovo l38031:
+  - Lenovo
 p13_blue_maks:
   - Reeder
 alfa 1:
@@ -20475,8 +20518,6 @@ rmx2156:
   - Realme
 sm-a225f:
   - Samsung
-sm-a127f:
-  - Samsung
 moto g(50):
   - Motorola
 zte blade a31ru:
@@ -20608,8 +20649,6 @@ sm-a528b:
 sm-a526b:
   - Samsung
 sm-a5260:
-  - Samsung
-sm-a525m:
   - Samsung
 sm-a515u1:
   - Samsung
@@ -21449,8 +21488,6 @@ moto e(6i):
   - Motorola
 moto e(7) power:
   - Motorola
-moto e(7i) power:
-  - Motorola
 a509dl:
   - TCL
 blackberry 9900:
@@ -21960,6 +21997,42 @@ w-k380-tvm2g:
   - Wiko
 primo n4:
   - Walton
+gsmart arty a3:
+  - Gigabyte
+bv2000:
+  - Blackview
+ht7pro:
+  - Homtom
+ht7:
+  - Homtom
+ht5:
+  - Homtom
+as-5411:
+  - Assistant
+b501 easy:
+  - Bravis
+gionee s10cl:
+  - Gionee
+gionee s10c:
+  - Gionee
+eluga_f:
+  - Panasonic
+lenovo k14 plus:
+  - Lenovo
+nokia g21:
+  - Nokia
+sm-g990u:
+  - Samsung
+sm-g9900:
+  - Samsung
+sm-a526w:
+  - Samsung
+mi 11 lite 4g:
+  - Xiaomi
+5028y_ru:
+  - Alcatel
+bq-6001l:
+  - bq
 psp5522duo:
   - Prestigio
 psp3514duo:
@@ -22928,8 +23001,6 @@ alien_x_apex_2020:
   - iHunt
 sm-a305gn:
   - Samsung
-sm-g950u1:
-  - Samsung
 sm-g955u1:
   - Samsung
 imo q4 pro:
@@ -23076,8 +23147,6 @@ lenovo z6 lite:
   - Lenovo
 oneplus 9r:
   - OnePlus
-sm-g990b:
-  - Samsung
 sm-f711u1:
   - Samsung
 samsung sm-g990e:
@@ -23631,6 +23700,174 @@ like hi5:
   - iHunt
 lefit:
   - Logicom
+gionee f6 pro:
+  - Gionee
+pcrt00:
+  - OPPO
+yu fly f9:
+  - YU Fly
+  - Fly
+voga 55909:
+  - VOGA
+huawei crr-ul20:
+  - Huawei
+huawei crr-cl00:
+  - Huawei
+huagan ht6:
+  - Huagan
+  - Homtom
+haipainoble s6:
+  - Haipai
+kkg-an70:
+  - Huawei
+iv2201:
+  - OnePlus
+ne2210:
+  - OnePlus
+mgi-an00:
+  - Huawei
+v2172a:
+  - Vivo
+zte 9030n:
+  - ZTE
+zte 9040n:
+  - ZTE
+titan_pocket:
+  - Unihertz
+sm-f7110:
+  - Samsung
+v2165a:
+  - Vivo
+v2164a:
+  - Vivo
+v2163a:
+  - Vivo
+xt2175-2:
+  - Motorola
+xt2171-3:
+  - Motorola
+cma-an00:
+  - Huawei
+zte a2021h:
+  - ZTE
+zte a2020 sp:
+  - ZTE
+zte 9000n:
+  - ZTE
+zte 8012n:
+  - ZTE
+22011119ti:
+  - Xiaomi
+nat-tn70:
+  - TD Tech
+meizu 18x:
+  - Meizu
+meizu 18s pro:
+  - Meizu
+new-an90:
+  - Huawei
+asus_i005db:
+  - Asus
+any-an00:
+  - Huawei
+vtr-tl00:
+  - Huawei
+vivo x20plus ud:
+  - Vivo
+oysin x60:
+  - OYSIN
+perm10:
+  - OPPO
+pemt20:
+  - OPPO
+pvg100e:
+  - Palm
+qmobile i5i 2019:
+  - QMobile
+qmobile i5i 2018:
+  - QMobile
+lead 3:
+  - Leagoo
+gm discovery ii:
+  - General Mobile
+pelitt t1 max:
+  - Pelitt
+tecno kg5n:
+  - Tecno Mobile
+a20pro:
+  - Blackview
+power 3s:
+  - Ulefone
+pelitt t1 plus:
+  - Pelitt
+hammer_energy:
+  - MyPhone
+ht16pro:
+  - Homtom
+i5030:
+  - Nomi
+i5031:
+  - Nomi
+i508:
+  - Nomi
+i5530:
+  - Nomi
+huawei vns-al00:
+  - Huawei
+huawei vns-tl00:
+  - Huawei
+axe_m_lte:
+  - MyPhone
+as-5412:
+  - Assistant
+huawei gra-ul10:
+  - Huawei
+huawei gra-tl00:
+  - Huawei
+bds2 plus:
+  - BDsharing
+xq-bq52:
+  - Sony
+allure m1 plus:
+  - Condor
+allure m3 lite:
+  - Condor
+aqua s9:
+  - Cherry Mobile
+  - Intex
+aqua s9 max:
+  - Cherry Mobile
+  - Intex
+v2130:
+  - Vivo
+rmx3472:
+  - Realme
+tecno kg5m:
+  - Tecno Mobile
+wp16:
+  - Oukitel
+bq-5565l:
+  - bq
+excite:
+  - Hurricane
+mywigo excite 3:
+  - MyWigo
+  - Hurricane
+excite prime:
+  - Cloudfone
+  - Hurricane
+mywigo excite giii:
+  - MyWigo
+  - Hurricane
+excite prime 2:
+  - Cloudfone
+  - Hurricane
+excitec:
+  - Cloudfone
+hype_x:
+  - Mobicel
+x1_light:
+  - Greentel
 bravis_a506:
   - Bravis
 bravis delta:
@@ -24674,8 +24911,6 @@ lumia 950 xl dual sim:
 lumia 535 dual sim:
   - Microsoft
   - Nokia
-pixel 4a (5g):
-  - Google
 f4502:
   - Movic
 v350c:
@@ -26072,8 +26307,6 @@ nexus s:
 pixel:
   - Google
 g011a:
-  - Google
-pixel 2:
   - Google
 pixel 2 xl:
   - Google
@@ -28007,10 +28240,6 @@ mar-lx1m:
 hwv33:
   - Huawei
 mar-lx2j:
-  - Huawei
-mar-lx1a:
-  - Huawei
-mar-lx3a:
   - Huawei
 vog-tl00:
   - Huawei
@@ -31063,8 +31292,6 @@ newman k1:
   - Newman
 newman p308:
   - Newman
-poco f2 pro:
-  - POCO
 poco x2:
   - POCO
 go3c:
@@ -34053,6 +34280,8 @@ samsung sm-t225:
   - Samsung
 9009a:
   - Alcatel
+lenovo tb-x104f1:
+  - Lenovo
 lenco tab-712:
   - Lenco
 lenco tab-813:
@@ -37018,6 +37247,8 @@ airtab mp1011:
   - DNS
 airtab_mw7851:
   - DNS
+t102ms3g:
+  - Oysters
 x10 (m1d3):
   - Teclast
 10a_lte_eea:
@@ -37166,8 +37397,6 @@ t10(e3c5):
 m89 pro:
   - Teclast
 sm-t555:
-  - Samsung
-sm-t550:
   - Samsung
 lifetab e1071x:
   - Medion
@@ -38286,6 +38515,73 @@ a3-a20fhd:
   - Acer
 m7plus:
   - Reeder
+readboy_c20pro:
+  - Readboy
+bza-l00:
+  - Huawei
+p20hd(n6h5):
+  - Teclast
+krj-w09:
+  - Huawei
+krj2-w09:
+  - Huawei
+krj2-an00:
+  - Huawei
+brt-w09:
+  - Huawei
+brt-an09:
+  - Huawei
+leke pad-l06:
+  - Leke
+fortius quad 7:
+  - ROADMAX
+coyote 1090 dvr maximus pro:
+  - COYOTE
+  - Maximus
+turbopadpro:
+  - TurboPad
+b3-a20b:
+  - Acer
+a101lv:
+  - Lenovo
+atab721e:
+  - Acer
+adt1012l:
+  - AIDATA
+tab-a03-bs:
+  - Benesse
+nova3color:
+  - ONYX BOOX
+dl1016:
+  - Digiland
+tab10ultra:
+  - Masstel
+sm-x906b:
+  - Samsung
+sm-x806b:
+  - Samsung
+sm-x800:
+  - Samsung
+sm-x706b:
+  - Samsung
+bah4-l09:
+  - Huawei
+9295g_ru:
+  - TCL
+optima 10 z802 4g ts1229pl:
+  - Digma
+lenovo tb-j606n:
+  - Lenovo
+bq-9055l:
+  - bq
+cube-t970:
+  - Cube
+trekstor surftab theatre s11:
+  - TrekStor
+gravity 4g_2019:
+  - SPC
+impad_p101:
+  - Impression
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -39592,6 +39888,12 @@ kogan smartertv 2k:
   - Kogan
 kogantvap:
   - Kogan
+mitv-mteq0:
+  - Xiaomi
+vesta_smart_tv:
+  - Vesta
+hismart 2k atv4:
+  - Hisense
 bb2 pro:
   - Mecool
 kii pro:
@@ -40108,3 +40410,7 @@ r2021w2:
   - Autan
 appllp2:
   - LOKMAT
+leo-dlxx:
+  - Huawei
+lem12pro:
+  - LEMFO
