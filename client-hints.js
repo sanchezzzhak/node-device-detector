@@ -62,7 +62,7 @@ function getBrowserNames(headers) {
 class ClientHints {
 
   /**
-   * @returns {{"accept-ch": string}}
+   * @returns {{"accept-ch": ""}}
    * @example
    * ```js
       const hintHeaders = ClientHints.getHeaderClientHints();
@@ -138,7 +138,11 @@ class ClientHints {
       model: helper.trimChars(attr(headers, CH_UA_MODEL, ''), '"')
     }
 
-    result.app = helper.trimChars(attr(headers, 'x-requested-with' , ''), '"')
+    let xRequested = attr(headers, 'x-requested-with',
+      attr(headers, 'http-x-requested-with', '')
+    );
+
+    result.app = helper.trimChars(xRequested, '"')
     if (result.app.toLowerCase() === 'xmlhttprequest') {
       result.app = '';
     }
