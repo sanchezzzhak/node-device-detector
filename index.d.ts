@@ -18,10 +18,10 @@ declare module 'node-device-detector' {
       clientHints?: any
     ) => DeviceType;
 
-    getAvailableDeviceTypes(): any
-    getAvailableBrands(): any
-    getAvailableBrowsers(): any
-    hasBrand(brand: string): boolean
+    getAvailableDeviceTypes: () => any;
+    getAvailableBrands: () => any;
+    getAvailableBrowsers: () => any;
+    hasBrand: (brand: string) => boolean;
   }
 
   export interface ResultDeviceCode {
