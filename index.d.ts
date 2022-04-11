@@ -2,19 +2,26 @@ declare module 'node-device-detector' {
   // export  module to be used in .ts file
   export default class DeviceDetector {
     constructor(options?: any);
-    detect: (userAgent: string) => DetectResult;
-    parseBot: (userAgent: string) => ResultBot;
-    parseOs: (userAgent: string) => ResultOs;
-    parseClient: (userAgent: string) => ResultClient;
-    parseDevice: (userAgent: string) => ResultDevice;
+
+    detect: (userAgent: string, clientHints?: any) => DetectResult;
+    parseBot: (userAgent: string, clientHints?: any) => ResultBot;
+    parseOs: (userAgent: string, clientHints?: any) => ResultOs;
+    parseClient: (userAgent: string, clientHints?: any) => ResultClient;
+    parseDevice: (userAgent: string, clientHints?: any) => ResultDevice;
     parseVendor: (userAgent: string) => ResultVendor;
     parseDeviceCode: (userAgent: string) => ResultDeviceCode;
     parseDeviceType: (
       userAgent: string,
-      os: ResultOs,
-      client: ResultClient,
-      data?: any
+      os?: ResultOs,
+      client?: ResultClient,
+      deviceData?: ResultDevice,
+      clientHints?: any
     ) => DeviceType;
+
+    getAvailableDeviceTypes(): any
+    getAvailableBrands(): any
+    getAvailableBrowsers(): any
+    hasBrand(brand: string): boolean
   }
 
   export interface ResultDeviceCode {

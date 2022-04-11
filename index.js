@@ -591,9 +591,10 @@ class DeviceDetector {
   /**
    * parse bot
    * @param {string} userAgent
+   * @param clientHints
    * @return {ResultBot}
    */
-  parseBot(userAgent) {
+  parseBot(userAgent, clientHints) {
     let result = {};
     
     if (this.skipBotDetection) {

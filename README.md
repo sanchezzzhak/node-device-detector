@@ -427,6 +427,7 @@ Others <a name="others"></a>
 * [detect device in express.js](docs/EXPRESS_SERVER.MD)
 * [detect device in moleculer.js](docs/MICROSERVICE.MD)
 * [detect device in uws.js](docs/UWS_SERVER.MD)
+* [detect device in typescript](docs/TYPE_SCRIPT.MD)
 
 <a name="brands-list"></a>
 
