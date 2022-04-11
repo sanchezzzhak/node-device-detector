@@ -1,6 +1,7 @@
 declare module 'node-device-detector' {
   // export  module to be used in .ts file
   export default class DeviceDetector {
+    constructor(options?: any);
     detect: (userAgent: string) => DetectResult;
     parseBot: (userAgent: string) => ResultBot;
     parseOs: (userAgent: string) => ResultOs;
