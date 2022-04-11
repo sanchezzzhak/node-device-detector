@@ -58,6 +58,9 @@
   u6s: ''
   u8: ''
 
+malata:
+  i5: 'OS=Android 2.3.6;SZ=61.24x115.6x11.95;WT=128'
+
 3q:
   ac0731b: '->qoo! q-pad'
   ac0732c: '->qoo! lite'
@@ -6427,6 +6430,8 @@ tecno mobile:
   tecno ld7: '->pova'
   pova 2: 'RE=2021.06;SZ=78.8x173.3x9.6;WT=;DS=6.95;RS=1080x2460;OI=1;OV=11;CP=322;RM=4096;'
   tecno le7n: '->pova 2'
+  pova neo: 'RE=2021.12;SZ=77.3x171.4x9.1;WT=;DS=6.8;RS=720x1640;OS=Android 11;CP=284;RM=4096;'
+  tecno le6: '->pova neo'
   camon i4: 'RE=2019.05;SZ=75.80x156.90x7.96;WT=141;DS=6.22;RS=720x1520;SM=2;OI=1;OV=9;CP=44;RM=4096;'
   tecno cb7j: '->camon i4'
   tecno cb7: '->camon i4'
@@ -6563,8 +6568,11 @@ tecno mobile:
   tecno kf6p: '->spark 7t'
   spark 8p: 'RE=2021.10;SZ=76.1x164.5x8.9;WT=203;DS=6.6;RS=1080x2408;OS=Android 11;CP=164;RM=4096;'
   tecno kg7n: '->spark 8p'
+  tecno kg7: '->spark 8p'
   spark 8: 'RE=2021.09;SZ=76.1x164.8x9.2;WT=200;DS=6.52;RS=720x1600;OI=1;OV=11;CP=171;RM=2048;'
   tecno kg6: '->spark 8'
+  spark 8t: 'RE=2021.12;SZ=75.9x164.3x8.9;WT=;DS=6.6;RS=1080x2408;OS=Android 11;CP=348;RM=4096;'
+  tecno kg6p: '->spark 8t'
   spark 7 pro: 'RE=2021.04;SZ=76.2x164.9x8.8;WT=193;DS=6.6;RS=720x1600;OI=1;OV=11;CP=226;RM=4096;'
   tecno kf8: '->spark 7 pro'
   camon 17 pro: 'RE=2021.05;SZ=77x168.9x9;WT=201;DS=6.8;RS=1080x2460;OI=1;OV=11;CP=321;RM=8192;'
@@ -6915,6 +6923,11 @@ maze:
   alpha x: 'DS=6;RS=1080x2160;SZ=74.6x156.4x8.1;WT=209;RE=2017.10;OI=1;OV=7;RM=6144;CP=343;'
   comet: 'DS=5.7;RS=720x1440;SZ=73.5x158.8x9.9;WT=234;RE=2017.11;OI=1;OV=7;RM=4096;CP=162;'
   blade: 'DS=5.5;RS=1080x1920;SZ=77x158.5x8;WT=190;RE=2017.04;OI=1;OV=6;RM=3072;CP=118;'
+
+nomi:
+  3: ''
+  libra 4 lte: 'DS=8;RS=1280x800;SZ=212х124х9.5;WT=350;OS=Android 8.1;RM=1024;CP=163;'
+  c080034: '->libra 4 lte'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OI=1;OV=8.1;'
