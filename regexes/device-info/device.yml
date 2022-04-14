@@ -6926,7 +6926,7 @@ maze:
 
 nomi:
   3: ''
-  libra 4 lte: 'DS=8;RS=1280x800;SZ=212х124х9.5;WT=350;OS=Android 8.1;RM=1024;CP=163;'
+  libra 4 lte: 'DS=8;RS=1280x800;SZ=212x124x9.5;WT=350;OS=Android 8.1;RM=1024;CP=163;'
   c080034: '->libra 4 lte'
 
 #f2 mobile:
