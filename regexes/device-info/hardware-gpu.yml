@@ -344,3 +344,6 @@ gpu:
   115:
     name: ARM Mali-G57 MC2
     clock_rate: 850
+  116:
+    name: ARM Mali-G57 MP1
+    clock_rate: 650

@@ -2356,3 +2356,31 @@ cpu:
     clock_rate: 2050
     process: 12nm
     gpu_id: 115
+  351:
+    name: Allwinner A31
+    type: ARM
+    cores: 4
+    clock_rate: 533
+    process: 40nm
+    gpu_id: 7
+  352:
+    name: Amlogic AML8726-M6 # 	AML8726-MX
+    type: ARM
+    cores: 2
+    clock_rate: 1500
+    process: 40nm
+    gpu_id: 1
+  353:
+    name: MediaTek Helio P25 MT6757T
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 16nm
+    gpu_id: 75
+  354:
+    name: Unisoc Tiger T606
+    type: ARM
+    cores: 8
+    clock_rate: 1600
+    process: 12nm
+    gpu_id: 116

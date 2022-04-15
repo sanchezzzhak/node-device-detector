@@ -27,7 +27,7 @@ const VendorFragmentParser = require(
 // other parsers
 const AliasDevice = require('./parser/device/alias-device');
 
-// const, lists
+// const, lists, parser names
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
 const CLIENT_TYPE = require('./parser/const/client-type');
@@ -36,8 +36,6 @@ const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
 const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
-
-// parser names
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
@@ -182,7 +180,11 @@ class DeviceDetector {
   get deviceAliasCode() {
     return this.__deviceAliasCode;
   }
-
+  
+  /**
+   * set truncate client version (default null - all)
+   * @param value
+   */
   set clientVersionTruncate(value) {
     this.__clientVersionTruncate = value;
     for (let name in this.clientParserList) {
@@ -190,10 +192,18 @@ class DeviceDetector {
     }
   }
   
+  /**
+   * get truncate client version
+   * @return int|null
+   */
   get clientVersionTruncate() {
     return this.__clientVersionTruncate;
   }
   
+  /**
+   * set truncate os version (default null - all)
+   * @param value
+   */
   set osVersionTruncate(value) {
     this.__osVersionTruncate = value;
     for (let name in this.osParserList) {
@@ -201,20 +211,33 @@ class DeviceDetector {
     }
   }
   
+  /**
+   * get truncate os version
+   * @param value
+   */
   get osVersionTruncate() {
     return this.__osVersionTruncate;
   }
   
+  /**
+   * set truncate os version (default null - all)
+   * @param value
+   */
   setOsVersionTruncate(value) {
     this.osVersionTruncate = value;
   }
-
+  
+  /**
+   * set truncate client version (default null - all)
+   * @param value
+   */
   setClientVersionTruncate(value) {
     this.clientVersionTruncate = value;
   }
   
   /**
-   * @returns {string[]}
+   * get all device types
+   * @return {string[]}
    */
   getAvailableDeviceTypes() {
     return Object.values(DEVICE_TYPE);
@@ -229,7 +252,7 @@ class DeviceDetector {
   }
   
   /**
-   * has brand
+   * has device brand
    * @param brand
    * @returns {boolean}
    */
@@ -427,7 +450,8 @@ class DeviceDetector {
     }
 
     /**
-     * All unknown devices under running Java ME are more likely a features phones
+     * All unknown devices under running Java ME
+     * are more likely a features phones
      */
     if ('Java ME' === osName && '' === deviceType) {
       deviceType = DEVICE_TYPE.FEATURE_PHONE;
@@ -591,9 +615,10 @@ class DeviceDetector {
   /**
    * parse bot
    * @param {string} userAgent
+   * @param clientHints
    * @return {ResultBot}
    */
-  parseBot(userAgent) {
+  parseBot(userAgent, clientHints) {
     let result = {};
     
     if (this.skipBotDetection) {
