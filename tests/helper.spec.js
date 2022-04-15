@@ -49,10 +49,10 @@ const fixtures = [
       isWearable: false,
       isAndroid: false,
       isIOS: true,
-      isBrowser: true,
-      isApp: false,
+      isBrowser: false,
+      isApp: true,
       isDesktopApp: false,
-      isMobileApp: false,
+      isMobileApp: true,
     },
   },
   {
