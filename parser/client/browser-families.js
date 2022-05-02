@@ -22,7 +22,7 @@ module.exports = {
     'DC', 'G8', 'DT', 'AP', 'AK', 'UI', 'SD', 'VN', '4S',
     '2S', 'RF', 'LR', 'SQ', 'BV', 'L1', 'F0', 'KS', 'V0',
     'C8', 'AZ', 'MM', 'BT', 'N0', 'P0', 'F3', 'VS', 'DU',
-    'D0', 'P1',
+    'D0', 'P1', 'O4',
   ],
   'Firefox': [
     'AX', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',

@@ -9,5 +9,6 @@ module.exports = [
   'WP', 'YN', 'IO', 'IS', 'HQ', 'RW', 'HI', 'NA', 'BW',
   'YO', 'PK', 'MR', 'AP', 'AK', 'UI', 'SD', 'VN', '4S',
   'RF', 'LR', 'SQ', 'BV', 'L1', 'F0', 'KS', 'V0', 'C8',
-  'AZ', 'MM', 'BT', 'N0', 'P0', 'F3',
+  'AZ', 'MM', 'BT', 'N0', 'P0', 'F3', 'DU', 'D0', 'P1',
+  'O4',
 ];

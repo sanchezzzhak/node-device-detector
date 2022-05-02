@@ -43,7 +43,7 @@ class ShellTv extends DeviceAbstractParser {
    * @return {Boolean}
    */
   isShellTv(userAgent) {
-    let regex = '[a-z]+[ _]Shell[ _]\\w{6}';
+    let regex = '[a-z]+[ _]Shell[ _]\\w{6}|tclwebkit\\d+[\\.\\d]*';
     let match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;
   }
