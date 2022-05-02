@@ -3,7 +3,7 @@ const helper = require("./helper");
 
 const OS_SYSTEMS = require('./os/os_systems');
 const OS_FAMILIES = require('./os/os_families');
-const ANDROID_APP_LIST = ['com.hisense.odinbrowser']
+const ANDROID_APP_LIST = ['com.hisense.odinbrowser', 'com.seraphic.openinet.pre']
 
 const compareOsForClientHints = (brand) => {
   const CLIENTHINT_MAPPING = {
@@ -186,10 +186,6 @@ class OsAbstractParser extends ParserAbstract {
       platform = hint.platform;
       short = hint.short_name;
 
-      if (platform === '' && data) {
-        platform = data.platform;
-      }
-
       // use version from user agent if non was provided in client hints, but os family from useragent matches
       if (version === '' && data && this.parseOsFamily(short) === data.family) {
         version = data.version;
@@ -222,6 +218,10 @@ class OsAbstractParser extends ParserAbstract {
       name = 'Android';
       short = 'ADR';
       family = 'Android';
+    }
+
+    if (platform === '' && data) {
+      platform = data.platform;
     }
 
     if (name === '') {
