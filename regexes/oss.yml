@@ -193,6 +193,20 @@
   version: ''
 
 ##########
+# Revenge OS
+##########
+- regex: 'revengeos_x2'
+  name: 'Revenge OS'
+  version: '2'
+
+##########
+# Lineage OS
+##########
+- regex: 'lineage_\w+'
+  name: 'Lineage OS'
+  version: ''
+
+##########
 # Remix OS
 ##########
 - regex: 'RemixOS|Remix (?:Pro|Mini)'
@@ -565,7 +579,7 @@
   name: 'Windows'
   version: ''
 
-- regex: '(?:Windows(?:-Update-Agent)?|Microsoft-(?:CryptoAPI|Delivery-Optimization|WebDAV-MiniRedir|WNS))/(\d+\.\d+)'
+- regex: '(?:Windows(?:-Update-Agent)?|Microsoft-(?:CryptoAPI|Delivery-Optimization|WebDAV-MiniRedir|WNS)|WINDOWS_64)/(\d+\.\d+)'
   name: 'Windows'
   version: '$1'
 

@@ -360,8 +360,8 @@
 -
   user_agent: AUX_T5001_TD/1.0 Linux/3.4.5 Android/4.2.2 Release/03.26.2013 Browser/AppleWebKit534.30 Mobile Safari/534.30 MBBMS/2.2;
   alias:
-    name: AUX_T5001
+    name: T5001
 -
   user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; zh-cn; AUX_V965T_TD/1.0 Android/4.0.3 Release/4.25.2013 Browser/AppleWebKit534.30 Build/MocorDroid4.0.3) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
   alias:
-    name: AUX_V965T_TD
+    name: V965T_TD
