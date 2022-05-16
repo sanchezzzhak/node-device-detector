@@ -3365,7 +3365,7 @@
     name: TencentOS
     short_name: TEN
     version: 4.14.105
-    platform: ""
+    platform:
     family: GNU/Linux
 -
   user_agent: Mozilla/5.0 (Linux; Android 10; bliss_maple) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36
@@ -3373,5 +3373,77 @@
     name: Bliss OS
     short_name: BOS
     version: "12"
+    platform:
+    family: Android
+-
+  user_agent: Roku/DVP (297.70E04154A)
+  os:
+    name: Roku OS
+    short_name: ROK
+    version:
+    platform:
+    family: GNU/Linux
+-
+  user_agent: libdnf (CentOS Stream 8; generic; Linux.x86_64)
+  os:
+    name: CentOS Stream
+    short_name: CST
+    version: "8"
+    platform: x64
+    family: GNU/Linux
+-
+  user_agent: libdnf (CentOS Stream 9; generic; Linux.x86_64)
+  os:
+    name: CentOS Stream
+    short_name: CST
+    version: "9"
+    platform: x64
+    family: GNU/Linux
+-
+  user_agent: libdnf (CentOS Linux 8; generic; Linux.x86_64)
+  os:
+    name: CentOS
+    short_name: CES
+    version: "8"
+    platform: x64
+    family: GNU/Linux
+-
+  user_agent: 'Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/TCL-ME-RTD51M-S1/30/tclwebkit1.0.2/1920*1080(590104473,null;227437109,000)'
+  os:
+    name: Android
+    short_name: AND
+    version: "11"
     platform: ""
     family: Android
+-
+  user_agent: 'Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/TCL-ME-RT95-S1-ME/17/tclwebkit1.0.2/1920*1080(441695831,null;220213472, xxx)'
+  os:
+    name: Android
+    short_name: AND
+    version: "4.2"
+    platform: ""
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; revengeos_x2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36
+  os:
+    name: Revenge OS
+    short_name: REV
+    version: "2"
+    platform: ""
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; lineage_ss2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 OPR/62.3.3146.57763
+  os:
+    name: Lineage OS
+    short_name: LEN
+    version: ""
+    platform: ""
+    family: Android
+-
+  user_agent: 'NGL Client/1.28.0.10 (WINDOWS_64/10.0.19044.1) [2022-04-28T01:01:27.003 0200]'
+  os:
+    name: Windows
+    short_name: WIN
+    version: "10.0"
+    platform: x64
+    family: Windows
