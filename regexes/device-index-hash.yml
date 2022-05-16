@@ -36,6 +36,8 @@
   - Coolpad
 '8950':
   - Thomson
+'9061':
+  - TCL
 '2013023':
   - Xiaomi
 '2014011':
@@ -52,6 +54,10 @@
   - Xiaomi
 '2014818':
   - Xiaomi
+'20190808':
+  - Doov
+'20200308':
+  - Doov
 '100003561':
   - ONN
 '100003562':
@@ -114,6 +120,8 @@ zq8003:
   - Alps
 quad-core t3 p1:
   - Allwinner
+825x_pro:
+  - Alps
 zc554kl:
   - Asus
 nomi_c080034:
@@ -240,6 +248,40 @@ sm-g965u1:
   - Samsung
 infinix x697:
   - Infinix
+jny-lx1:
+  - Huawei
+cph2185:
+  - OPPO
+redmi note 9 pro:
+  - Xiaomi
+moto g play (2021):
+  - Motorola
+sm-s908b:
+  - Samsung
+sm-a326u:
+  - Samsung
+sm-a325m:
+  - Samsung
+sm-a307g:
+  - Samsung
+sm-s260dl:
+  - Samsung
+art-l29n:
+  - Huawei
+sm-a102n:
+  - Samsung
+a509dl:
+  - TCL
+nokia x20:
+  - Nokia
+vivo 1816:
+  - Vivo
+vivo 1606:
+  - Vivo
+cph1821:
+  - OPPO
+vivo 1910:
+  - Vivo
 dn2103:
   - OnePlus
 kfkawi:
@@ -569,8 +611,6 @@ x86_64:
 lgt01:
   - LG
 mediapad 7 lite ii:
-  - Huawei
-jny-lx1:
   - Huawei
 neosr620:
   - Lumus
@@ -1466,6 +1506,30 @@ tecno le6:
   - Xiaomi
 2201117sg:
   - Xiaomi
+2201116sg:
+  - Xiaomi
+infinix x663:
+  - Infinix
+infinix x6810:
+  - Infinix
+infinix x6811:
+  - Infinix
+infinix x695d:
+  - Infinix
+samsung sm-f926w:
+  - Samsung
+2201117tl:
+  - Xiaomi
+sm-f926u:
+  - Samsung
+samsung sm-f711u:
+  - Samsung
+21091116ug:
+  - Xiaomi
+sm-n960w:
+  - Samsung
+samsung redmi note 9s:
+  - Xiaomi
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -1478,6 +1542,46 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -3277,8 +3381,6 @@ cph1725:
   - OPPO
 cph1859:
   - OPPO
-cph1821:
-  - OPPO
 cph1819:
   - OPPO
 cph1881:
@@ -4502,8 +4604,6 @@ sm-a105f:
   - Samsung
 sm-a102u:
   - Samsung
-sm-a102n:
-  - Samsung
 sm-a102w:
   - Samsung
 samsung sm-s102dl:
@@ -4572,8 +4672,6 @@ sm-a320fl:
 scv43:
   - Samsung
 sm-a305n:
-  - Samsung
-sm-a307g:
   - Samsung
 sm-a315g:
   - Samsung
@@ -8191,8 +8289,6 @@ v1930a:
   - Vivo
 v1965a:
   - Vivo
-vivo 1606:
-  - Vivo
 tecno-j8:
   - Tecno Mobile
 tecno ce9:
@@ -8274,8 +8370,6 @@ vivo 1817:
 viv-vivo y913:
   - Vivo
 vivo 1820:
-  - Vivo
-vivo 1816:
   - Vivo
 vivo 1814:
   - Vivo
@@ -9565,8 +9659,6 @@ kob2-l09:
   - Huawei
 art-l29:
   - Huawei
-art-l29n:
-  - Huawei
 m2002j9g:
   - Xiaomi
 s5 silk:
@@ -9681,8 +9773,6 @@ intense_metal_2:
   - FireFly Mobile
 intense_xt:
   - FireFly Mobile
-redmi note 9 pro:
-  - Xiaomi
 mi 9 lite:
   - Xiaomi
 mi note 10 pro:
@@ -10453,6 +10543,7 @@ winwin:
   - Highscreen
 thunder 450w:
   - Kazam
+  - Highscreen
 anry-x20:
   - Anry
 anry-s20:
@@ -17817,8 +17908,6 @@ lgms631:
   - LG
 lg-k130:
   - LG
-vivo 1910:
-  - Vivo
 vivo 1823:
   - Vivo
 vfd 620:
@@ -18738,8 +18827,6 @@ cph2095:
   - OPPO
 cph2135:
   - OPPO
-cph2185:
-  - OPPO
 cph2239:
   - OPPO
 drive9:
@@ -18938,8 +19025,6 @@ nokia c10:
 nokia c20:
   - Nokia
 nokia g10:
-  - Nokia
-nokia x20:
   - Nokia
 poco x3 pro:
   - POCO
@@ -19818,6 +19903,28 @@ lenovo x3c70:
   - Lenovo
 lenovo l38031:
   - Lenovo
+thl t12:
+  - ThL
+j9s_pro:
+  - Jesy
+iqg550:
+  - MLS
+omix x300:
+  - OMIX
+blueline:
+  - Google
+sm-a025u:
+  - Samsung
+xq-be52:
+  - Sony
+tc21:
+  - Zebra
+infinix x6511b:
+  - Infinix
+infinix x689f:
+  - Infinix
+itel p681lm:
+  - iTel
 p13_blue_maks:
   - Reeder
 alfa 1:
@@ -21488,8 +21595,6 @@ moto e(6i):
   - Motorola
 moto e(7) power:
   - Motorola
-a509dl:
-  - TCL
 blackberry 9900:
   - RIM
 blackberry 9700:
@@ -22033,6 +22138,32 @@ mi 11 lite 4g:
   - Alcatel
 bq-6001l:
   - bq
+inoi_6i_lite:
+  - Inoi
+inoi_5i_pro:
+  - Inoi
+sm-a037u:
+  - Samsung
+koobee y3:
+  - Koobee
+sugar s60 pro:
+  - Sugar
+ivvi ss1-01:
+  - ivvi
+ivvi ss1-03:
+  - ivvi
+ivvi i3p-02:
+  - ivvi
+ivvi sk5:
+  - ivvi
+ivvi f2-t:
+  - ivvi
+ivvi v1m:
+  - ivvi
+ivvi f3c:
+  - ivvi
+ivvi v3-t:
+  - ivvi
 psp5522duo:
   - Prestigio
 psp3514duo:
@@ -23868,6 +23999,331 @@ hype_x:
   - Mobicel
 x1_light:
   - Greentel
+itel l5503l:
+  - iTel
+beryllium:
+  - Xiaomi
+crackling:
+  - Wileyfox
+tecno id3k:
+  - Tecno Mobile
+tecno id5a:
+  - Tecno Mobile
+tecno kb2:
+  - Tecno Mobile
+tecno ia5:
+  - Tecno Mobile
+rmx3262:
+  - Realme
+w-v830-id:
+  - Wiko
+hit p10:
+  - Philco
+cyber 9 pro:
+  - Hotwav
+infinix x662:
+  - Infinix
+a105sh:
+  - Sharp
+samsung sm-m536b:
+  - Samsung
+gm6_tur:
+  - General Mobile
+primo zx4:
+  - Walton
+rmx3310:
+  - Realme
+v2132:
+  - Vivo
+v2135:
+  - Vivo
+kyv47-j:
+  - Kyocera
+kyf42:
+  - Kyocera
+kyf38:
+  - Kyocera
+redmi k40:
+  - Xiaomi
+redmi k40 pro+:
+  - Xiaomi
+redmi k40 pro:
+  - Xiaomi
+n1374dl:
+  - Nokia
+micromax e6523:
+  - MicroMax
+6056d:
+  - Alcatel
+6156a:
+  - TCL
+6156d:
+  - TCL
+sm-a025v:
+  - Samsung
+v2116:
+  - Vivo
+t5c:
+  - Leagoo
+plus e:
+  - UMIDIGI
+umi plus e:
+  - UMIDIGI
+lex626:
+  - LeEco
+le x522:
+  - LeEco
+samsung sm-m236b:
+  - Samsung
+sm-a528n:
+  - Samsung
+is530:
+  - iSafe Mobile
+rx600:
+  - Aligator
+rx700:
+  - Aligator
+s48c:
+  - Cat
+d6 lite:
+  - Bluboo
+d6 pro:
+  - Bluboo
+conquest-s19:
+  - Conquest
+g1lite:
+  - X-AGE
+5007s:
+  - Alcatel
+a104sh:
+  - Sharp
+a103sh:
+  - Sharp
+v2166a:
+  - Vivo
+a103op:
+  - OPPO
+nx701j:
+  - Nubia
+abr-al60:
+  - Huawei
+jln-al00:
+  - Huawei
+22041211ac:
+  - Xiaomi
+redmi k30i 5g:
+  - Xiaomi
+sh-m20:
+  - Sharp
+mix 3:
+  - Xiaomi
+moto g31(w):
+  - Motorola
+22011211c:
+  - Xiaomi
+22021211rc:
+  - Xiaomi
+shark par-a0:
+  - Xiaomi
+lge-an10:
+  - Huawei
+  - LG
+sm-w2021:
+  - Samsung
+tna-an00:
+  - Huawei
+tfy-an00:
+  - Huawei
+v2168a:
+  - Vivo
+aoro_a7:
+  - Aoro
+sm-f7000:
+  - Samsung
+f-01h:
+  - Fujitsu
+oppo r7splus:
+  - OPPO
+vk7000:
+  - VKworld
+a553 power:
+  - Ergo
+grand energy:
+  - Blu
+hero2:
+  - Zopo
+studio g hd lte:
+  - Blu
+thunder:
+  - Highscreen
+stk sync 5z plus:
+  - STK
+mobiistar lai zoro 3:
+  - Mobiistar
+lex620:
+  - LeEco
+lex622:
+  - LeEco
+lex650:
+  - LeEco
+lex651:
+  - LeEco
+lex653:
+  - LeEco
+lex657:
+  - LeEco
+lg-f560k:
+  - LG
+lg-f620l:
+  - LG
+sm-e426b:
+  - Samsung
+s2_pro:
+  - UMIDIGI
+s2 pro:
+  - QMobile
+p13 blue 2022:
+  - Reeder
+p13 blue max pro 2021:
+  - Reeder
+p13 blue max pro:
+  - Reeder
+p13 blue maxl 2021:
+  - Reeder
+p13 blue maxl 2022:
+  - Reeder
+zeeker p10:
+  - Zeeker
+via_e30:
+  - Casper
+archos 55 diamond selfie:
+  - Archos
+rp05:
+  - UMIDIGI
+k15 pro:
+  - Oukitel
+bv6600e:
+  - Blackview
+bv8800:
+  - Blackview
+bv6600pro:
+  - Blackview
+tecno w5006s:
+  - Tecno Mobile
+aux_t5001:
+  - AUX
+mann 8s:
+  - Mann
+neolix x9-jd:
+  - Neolix
+hltem800:
+  - Hisense
+atman-x5:
+  - ATMAN
+eyu t53:
+  - EYU
+foodo x10:
+  - FOODO
+ivvi i3-01:
+  - ivvi
+ivvi p60:
+  - ivvi
+ivvi p60_p40:
+  - ivvi
+ivvi p60_x11 plus:
+  - ivvi
+ivvi p60_x12:
+  - ivvi
+ivvi p60_x50:
+  - ivvi
+ivvi m40:
+  - ivvi
+ivvi m10 pro:
+  - ivvi
+kt20201199:
+  - K-Touch
+kt20201188:
+  - K-Touch
+ldxa-2022:
+  - K-Touch
+ldxa-2122:
+  - K-Touch
+m20201419:
+  - YEPEN
+neolix-t7_nggz_c:
+  - Neolix
+neolix-t7_ng_c:
+  - Neolix
+20190619g:
+  - Gionee
+20190417q:
+  - Xiaolajiao
+20190418q:
+  - Gionee
+pcct00:
+  - OPPO
+sh-s40p:
+  - Sharp
+neolix 1-c-ng:
+  - Neolix
+neolix 1-c-t:
+  - Neolix
+neolix 1-c-ngbh:
+  - Neolix
+changhongr9:
+  - Changhong
+fla-al00:
+  - Huawei
+lnd-tl30:
+  - Huawei
+lineage_ss2:
+  - Sharp
+lineage_osprey:
+  - Motorola
+lineage_a6020:
+  - Lenovo
+lineage_c106:
+  - LeEco
+hydrogen:
+  - Xiaomi
+kenzo:
+  - Xiaomi
+lineage_fs504:
+  - Fly
+lineage_serranoltexx:
+  - Samsung
+mogolia:
+  - Huawei
+sm-a225m:
+  - Samsung
+oneplus 8t:
+  - OnePlus
+hisense v50:
+  - Hisense
+hisense u50:
+  - Hisense
+nokia x100:
+  - Nokia
+hisense h50 lite:
+  - Hisense
+bird_l600:
+  - Bird
+bird_l7:
+  - Bird
+ax1092:
+  - Bmobile
+htc_pyramid:
+  - HTC
+hisense l675 pro:
+  - Hisense
+g3223:
+  - Sony
+moto e(6s):
+  - Motorola
+sugar s30:
+  - Sugar
+haier g32:
+  - Haier
 bravis_a506:
   - Bravis
 bravis delta:
@@ -24989,8 +25445,6 @@ iphone14,5:
   - Apple
 iphone/6s ios/11.3:
   - Apple
-sm-a326u:
-  - Samsung
 t766j:
   - TCL
 ks907:
@@ -25000,8 +25454,6 @@ samsung sm-a725m:
 samsung sm-a022m:
   - Samsung
 moto g stylus (2021):
-  - Motorola
-moto g play (2021):
   - Motorola
 xq-au51:
   - Sony
@@ -25425,6 +25877,222 @@ aosp on hammerhead:
   - Google
 xperia e3 (aosp):
   - Sony
+lephone t2v:
+  - Lephone
+lephone t6+v:
+  - Lephone
+lephone t708:
+  - Lephone
+lephone k8:
+  - Lephone
+lephone t13:
+  - Lephone
+lephone t16:
+  - Lephone
+lephone t7+:
+  - Lephone
+lephone t7a:
+  - Lephone
+lephone w7+:
+  - Lephone
+lephone t25:
+  - Lephone
+lephone k9:
+  - Lephone
+lephone t6+:
+  - Lephone
+lephone t5v:
+  - Lephone
+lephone t708v:
+  - Lephone
+bror_w68:
+  - BROR
+bror t60:
+  - BROR
+synq:
+  - Vortex
+cph2371:
+  - OPPO
+ky-51b:
+  - Kyocera
+sm-a032m:
+  - Samsung
+sm-a035m:
+  - Samsung
+tecno kf6ks:
+  - Tecno Mobile
+sm-a135m:
+  - Samsung
+sm-a235m:
+  - Samsung
+2201122g:
+  - Xiaomi
+moto g22:
+  - Motorola
+moto g51 5g:
+  - Motorola
+moto g71 5g:
+  - Motorola
+lm-k330:
+  - LG
+zte axon 10 pro:
+  - ZTE
+liv 1s:
+  - Yezz
+stellar p4:
+  - Zuum
+scg14:
+  - Samsung
+sc-52c:
+  - Samsung
+  - SuperSonic
+hisense e50 128g:
+  - Hisense
+alpha 5v:
+  - Lanix
+orange neva leaf:
+  - Orange
+atlantic454:
+  - Oysters
+atlanticv:
+  - Oysters
+lmcv1:
+  - Nomu
+smart start 3:
+  - MTC
+  - Jinga
+summit:
+  - Cell-C
+multilaser_gmax_2:
+  - Multilaser
+sm-a536e:
+  - Samsung
+sm-a536b:
+  - Samsung
+sm-a336e:
+  - Samsung
+sm-a336b:
+  - Samsung
+cph2363:
+  - OPPO
+cph2307:
+  - OPPO
+cph2305:
+  - OPPO
+shw-m570s:
+  - Samsung
+tecno ch9:
+  - Tecno Mobile
+tecno ch6:
+  - Tecno Mobile
+tfy-lx1:
+  - Huawei
+x626_4g:
+  - Qubo
+wildfire e2 plus:
+  - HTC
+myphone_fun_9:
+  - MyPhone
+le wave:
+  - Logicom
+le swipe:
+  - Logicom
+le omega:
+  - Logicom
+konnect_556:
+  - Danew
+sm-a135f:
+  - Samsung
+xiaomi 11 lite ne:
+  - Xiaomi
+wp18:
+  - Oukitel
+armor x8i:
+  - Ulefone
+ayya t1:
+  - AYYA
+easy k55:
+  - Konrow
+cph2421:
+  - OPPO
+cph2373:
+  - OPPO
+cph2349:
+  - OPPO
+cph2293:
+  - OPPO
+camellia:
+  - POCO
+2201123g:
+  - Xiaomi
+a70:
+  - Blackview
+a70 pro:
+  - Blackview
+switch plus:
+  - Mobicel
+4065f:
+  - Alcatel
+fxt810r:
+  - Future Mobile Technology
+gravity life:
+  - Zuum
+eternity_h68:
+  - Hyundai
+awm999:
+  - Aiwa
+bac-l03:
+  - Huawei
+tq14:
+  - NYX Mobile
+ultra z:
+  - Zuum
+z9 plus:
+  - QMobile
+xt1063:
+  - Motorola
+xt1064:
+  - Motorola
+xt1095:
+  - Motorola
+studio g4:
+  - Blu
+poco m4 pro 5g:
+  - POCO
+mbi r7:
+  - MBI
+oujia s10:
+  - OUJIA
+oujia s27:
+  - OUJIA
+oujia 2018-s10max:
+  - OUJIA
+oujia s27 plus:
+  - OUJIA
+oujia s29:
+  - OUJIA
+oujia_s10:
+  - OUJIA
+oujia2018-s20:
+  - OUJIA
+oujia s20:
+  - OUJIA
+oujia 2019:
+  - OUJIA
+okp6 pro:
+  - Ouki
+20180101m:
+  - Xiaolajiao
+20170605q:
+  - Xiaolajiao
+gns2161b:
+  - Gionee
+gau0820:
+  - Gionee
+lt_c3500:
+  - LT Mobile
+nokia 3.1 a:
+  - Nokia
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -26347,8 +27015,6 @@ gs370:
 gs370_plus:
   - Gigaset
 sm-s9080:
-  - Samsung
-sm-s908b:
   - Samsung
 sm-s908e:
   - Samsung
@@ -29331,6 +29997,7 @@ kyv45:
   - Kyocera
 kazam thunder q45:
   - Kazam
+  - Highscreen
 tornado 348:
   - Kazam
 kazam trooper 551:
@@ -32197,34 +32864,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -33349,6 +33988,10 @@ ipad13,10:
   - Apple
 mids185pr:
   - Polaroid
+ipad13,16:
+  - Apple
+ipad13,17:
+  - Apple
 jdn-al00:
   - Huawei
 ags2-al00hn:
@@ -37249,6 +37892,8 @@ airtab_mw7851:
   - DNS
 t102ms3g:
   - Oysters
+finepower a3:
+  - FinePower
 x10 (m1d3):
   - Teclast
 10a_lte_eea:
@@ -38582,6 +39227,156 @@ gravity 4g_2019:
   - SPC
 impad_p101:
   - Impression
+airtel airpad 7-s:
+  - Airtel
+sm-t827r4:
+  - Samsung
+bq-1081g:
+  - bq
+sm-x700:
+  - Samsung
+t12 3g:
+  - Oysters
+t12v 3g:
+  - Oysters
+t1270g:
+  - MAXX
+aosp on duma:
+  - Asus
+via_l30_0:
+  - Casper
+surpad:
+  - Chuwi
+tenplus x12:
+  - TENPLUS
+viva_1003g_lite:
+  - Allview
+t2000:
+  - HAOVM
+blues10:
+  - COMPUMAX
+hipad plus:
+  - Chuwi
+sh-t01:
+  - Sharp
+lavie t11 11qhd1:
+  - NEC
+p25_row:
+  - Teclast
+lavie t11 112k1:
+  - NEC
+scepter 8 tablet:
+  - QLink
+advan t5c:
+  - Advan
+s470:
+  - DEXP
+s570:
+  - DEXP
+s270i:
+  - DEXP
+lenovo tb-8703f:
+  - Lenovo
+9296g_tr:
+  - TCL
+9296g_eea:
+  - TCL
+gnp21m02:
+  - Gionee
+vucapad_n20:
+  - VUCATIMES
+bzi-w00:
+  - Huawei
+sm-t295n:
+  - Samsung
+sm-t227u:
+  - Samsung
+etl-t850:
+  - Etuline
+eben k8s:
+  - EBEN
+huawei m2-802l:
+  - Huawei
+jdn2-al50hn:
+  - Huawei
+k101_eea:
+  - Zonko
+sgp521:
+  - Sony
+h10882m:
+  - Proline
+metal_tablet_10:
+  - TJC
+slate 21:
+  - HP
+m110:
+  - DEXP
+m210:
+  - DEXP
+hotreals:
+  - HOTREALS
+alfa_8st:
+  - Hometech
+m10 blue max:
+  - Reeder
+t40 pro_row:
+  - Teclast
+kob2-al00hn:
+  - Huawei
+m40(n9h1):
+  - Teclast
+m40se(m5t3):
+  - Teclast
+p20hd(n6h7):
+  - Teclast
+tla001:
+  - Teclast
+bzw-al10:
+  - Huawei
+bzw-al00:
+  - Huawei
+ilium_pad_rx7:
+  - Lanix
+pomdtb005:
+  - Polaroid
+sm-t230:
+  - Samsung
+hope10 pro:
+  - X-TIGI
+la_tab_128:
+  - Logicom
+logicom la tab 129:
+  - Logicom
+logicom la tab 127 hd:
+  - Logicom
+bdl0232pr:
+  - Polaroid
+archos t96 wifi_eea:
+  - Archos
+q11-eea:
+  - YOTOPT
+sm-t387p:
+  - Samsung
+sm-p580:
+  - Samsung
+ghia_axis7p:
+  - Ghia
+lenovo tb-7304f:
+  - Lenovo
+tech pad i700:
+  - TechPad
+ht1002w32:
+  - Hyundai
+qw tb-9718qhd:
+  - Qware
+qw tb-1517d:
+  - Qware
+qw tb-1380qhd:
+  - Qware
+qw tb-1317q:
+  - Qware
+qw tb-7545:
+  - Qware
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -39894,6 +40689,10 @@ vesta_smart_tv:
   - Vesta
 hismart 2k atv4:
   - Hisense
+bravia 8k ur3:
+  - Sony
+evpad-5s:
+  - EVPAD
 bb2 pro:
   - Mecool
 kii pro:
@@ -40364,8 +41163,12 @@ andowl:
   - Andowl
 tivo stream 4k:
   - TiVo
+dexp al-2020:
+  - DEXP
 dns:
   - DNS
+audi_ks1280x480: []
+ks1280x480: []
 leo-bx9:
   - Huawei
 lg watch urbane:
@@ -40414,3 +41217,11 @@ leo-dlxx:
   - Huawei
 lem12pro:
   - LEMFO
+ow19w1:
+  - OPPO
+ow19w2:
+  - OPPO
+ow19w3:
+  - OPPO
+ow20w1:
+  - OPPO
