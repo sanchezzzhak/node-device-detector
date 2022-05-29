@@ -564,6 +564,9 @@ imac11,2:
   - Apple
 remix mini:
   - Jedi
+aquarius pro, std, elt series:
+  - Aquarius
+  - Intex
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -1530,6 +1533,20 @@ sm-n960w:
   - Samsung
 samsung redmi note 9s:
   - Xiaomi
+note_1_lite:
+  - FiGi
+2201117si:
+  - Xiaomi
+2201116ti:
+  - Xiaomi
+willow:
+  - Xiaomi
+2201116tg:
+  - Xiaomi
+rosemary:
+  - Xiaomi
+a101xm:
+  - Xiaomi
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -1542,46 +1559,6 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -24324,6 +24301,60 @@ sugar s30:
   - Sugar
 haier g32:
   - Haier
+studio j8 lte:
+  - Blu
+voyager2_dg310:
+  - Doogee
+5033f:
+  - Alcatel
+sm-a235n:
+  - Samsung
+sm-a235f:
+  - Samsung
+samsung sm-a235n:
+  - Samsung
+samsung sm-a135f:
+  - Samsung
+samsung sm-a336b:
+  - Samsung
+samsung sm-a336e:
+  - Samsung
+pearl k2 2020:
+  - Hotwav
+ht26:
+  - Homtom
+ht37:
+  - Homtom
+trekker-x3:
+  - Crosscall
+beeline smart 6:
+  - Beeline
+infinix x625b:
+  - Infinix
+tecno sa6s:
+  - Tecno Mobile
+sm-m236q:
+  - Samsung
+lenovo s920:
+  - Lenovo
+lenovo s930:
+  - Lenovo
+lenovo s939:
+  - Lenovo
+lenovo s938t:
+  - Lenovo
+lenovo s860:
+  - Lenovo
+lenovo s820c:
+  - Lenovo
+lenovo s820:
+  - Lenovo
+lenovo s750:
+  - Lenovo
+lenovo s720:
+  - Lenovo
+lenovo s890:
+  - Lenovo
 bravis_a506:
   - Bravis
 bravis delta:
@@ -26093,6 +26124,111 @@ lt_c3500:
   - LT Mobile
 nokia 3.1 a:
   - Nokia
+elite aquarius:
+  - AFFIX
+  - Aquarius
+  - Intex
+dexp ixion es2 5'':
+  - DEXP
+220233l2c:
+  - Xiaomi
+blu neo 5.5:
+  - Blu
+v2140:
+  - Vivo
+v2125:
+  - Vivo
+v2118:
+  - Vivo
+sweet 55:
+  - Konrow
+soft5:
+  - Konrow
+v2141:
+  - Vivo
+sm-m336bu:
+  - Samsung
+sm-a826s:
+  - Samsung
+sm-g990u1:
+  - Samsung
+sm-a736b:
+  - Samsung
+sm-a326k:
+  - Samsung
+realme g70 series:
+  - Realme
+sm-a226l:
+  - Samsung
+sm-s205dl:
+  - Samsung
+le_pulse:
+  - Logicom
+le prime:
+  - Logicom
+alien x pro 2021:
+  - iHunt
+2201116pg:
+  - POCO
+itel a571l:
+  - iTel
+s59:
+  - Doogee
+boston 4g:
+  - Gigabyte
+life4g:
+  - Oysters
+2112123ag:
+  - Xiaomi
+220333qag:
+  - Xiaomi
+220333qny:
+  - Xiaomi
+ne2215:
+  - OnePlus
+rmx3462:
+  - Realme
+p61:
+  - Gionee
+shark ksr-h0:
+  - Xiaomi
+orange neva zen:
+  - Orange
+orange neva start:
+  - Orange
+  - Jinga
+core-m4 go:
+  - Crosscall
+santin opsson:
+  - Santin
+staraddict 6:
+  - SFR
+m5c:
+  - Meizu
+explay fresh:
+  - Explay
+  - Jinga
+bal-l49:
+  - Huawei
+hon h01:
+  - Changhong
+sc-51c:
+  - Samsung
+  - SuperSonic
+scg13:
+  - Samsung
+shg07:
+  - Sharp
+asus_a001d:
+  - Asus
+asus_x013db:
+  - Asus
+cosmote xplore:
+  - Cosmote
+flare 2.1:
+  - Cherry Mobile
+flare 2.0:
+  - Cherry Mobile
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -26397,10 +26533,8 @@ easyphone ep5:
   - Easypix
 onyx-1s:
   - Eurostar
-  - Explay
 onyx-3s:
   - Eurostar
-  - Explay
 everclassic:
   - Evertek
 everglory:
@@ -32864,6 +32998,46 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -39377,6 +39551,109 @@ qw tb-1317q:
   - Qware
 qw tb-7545:
   - Qware
+aquarius cmp ne145:
+  - Aquarius
+  - Intex
+aquarius ns220:
+  - Aquarius
+  - Intex
+aquarius cmp ns55a:
+  - Aquarius
+  - Intex
+aquarius cmp ns208:
+  - Aquarius
+  - Intex
+tab2a7-20f:
+  - Lenovo
+u27gt-c8:
+  - Cube
+webpad_1002_02:
+  - Listo
+t72er3g:
+  - Oysters
+t104mbi 3g:
+  - Oysters
+surfer7773g:
+  - Explay
+dexp ursus 10m 3g:
+  - DEXP
+kl628_hl:
+  - Klipad
+kl628ko:
+  - Klipad
+hipadx:
+  - Chuwi
+m17qf7_4g:
+  - Mecer
+dslide_1021:
+  - Danew
+dslide1013qc_v4:
+  - Danew
+sm-x900:
+  - Samsung
+p80_eea:
+  - Teclast
+mobility3g:
+  - Polaroid
+la tab 292:
+  - Logicom
+h410:
+  - DEXP
+h370:
+  - DEXP
+s770i:
+  - DEXP
+blossomb902:
+  - Crown
+qt21101:
+  - Qilive
+teox103:
+  - Thomson
+t13-eea:
+  - TOSCIDO
+tpc-g1010:
+  - JAY-Tech
+k51:
+  - DEXP
+qt19101:
+  - Qilive
+l_ixir_tab_1047hd:
+  - Logicom
+l470:
+  - DEXP
+bah4-w09:
+  - Huawei
+numy_3g_talos:
+  - Ainol
+airtab mc1011:
+  - DNS
+aoson m96t:
+  - Aoson
+wx_na_wf:
+  - Nvidia
+archos 101 helium lite:
+  - Archos
+archos 70b helium:
+  - Archos
+qooq-v50:
+  - Unowhy
+st19101:
+  - Selecline
+archos oxygen 101s ardoiz:
+  - Archos
+sc-01e:
+  - Samsung
+  - SuperSonic
+pa2170:
+  - Vivo
+p85_row:
+  - Teclast
+cm_tenderloin:
+  - HP
+digma_idsd:
+  - Digma
+letab916:
+  - Leotec
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -40693,6 +40970,24 @@ bravia 8k ur3:
   - Sony
 evpad-5s:
   - EVPAD
+polarline_k_55pu11tc-sm:
+  - PolarLine
+polarline_24pl51tc-sm:
+  - PolarLine
+as1_hd:
+  - Openbox
+kk max:
+  - Vontar
+tf-led40s41t2s:
+  - Telefunken
+40lex_7171_fts2c:
+  - BBK
+50u730gr:
+  - Kivi
+rombica smart box a1:
+  - Rombica
+rombica smart box f2:
+  - Rombica
 bb2 pro:
   - Mecool
 kii pro:
