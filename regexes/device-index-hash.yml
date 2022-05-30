@@ -24355,6 +24355,28 @@ lenovo s720:
   - Lenovo
 lenovo s890:
   - Lenovo
+philips xenium v787:
+  - Philips
+redmi 10c:
+  - Xiaomi
+sm-g928k:
+  - Samsung
+sm-g928f:
+  - Samsung
+sm-g928c:
+  - Samsung
+impress_play:
+  - Vertex
+thl t6c:
+  - ThL
+eluga x1:
+  - Panasonic
+symphony z45:
+  - Symphony
+lenovo k12 note:
+  - Lenovo
+sm-g990w:
+  - Samsung
 bravis_a506:
   - Bravis
 bravis delta:
@@ -26229,6 +26251,62 @@ flare 2.1:
   - Cherry Mobile
 flare 2.0:
   - Cherry Mobile
+s9-kc:
+  - Kyocera
+i2126:
+  - Vivo
+i2019:
+  - Vivo
+bq-6645l:
+  - bq
+poco x4 pro 5g:
+  - POCO
+poco x3 gt:
+  - POCO
+poco m4 pro:
+  - POCO
+p8_mini:
+  - Elephone
+htc_m10h:
+  - HTC
+c1-u02:
+  - Coolpad
+one pro:
+  - UMIDIGI
+nova pro:
+  - MDC Store
+p95_pride_7s:
+  - Colors
+sc-04g:
+  - Samsung
+  - SuperSonic
+cph2423:
+  - OnePlus
+  - OPPO
+cph2399:
+  - OnePlus
+  - OPPO
+cph2381:
+  - OnePlus
+  - OPPO
+6165h:
+  - TCL
+21121210g:
+  - POCO
+2107113si:
+  - Xiaomi
+22031116ai:
+  - POCO
+v2134:
+  - Vivo
+v2126:
+  - Vivo
+v2044:
+  - Vivo
+sm-m336k:
+  - Samsung
+sm-e236b:
+  - Samsung
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -36123,6 +36201,18 @@ pocketbook surfpad 4 s:
   - PocketBook
 pocketbook surfpad2:
   - PocketBook
+airtab_mw1011:
+  - DNS
+sm-t385l:
+  - Samsung
+plane 8595 3g ps8212pg:
+  - Digma
+plane 7594 3g ps7210pg:
+  - Digma
+plane 1596 3g ps1213pg:
+  - Digma
+plane 1581 3g ps1200mg:
+  - Digma
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -39654,6 +39744,34 @@ digma_idsd:
   - Digma
 letab916:
   - Leotec
+lifetab e1081x:
+  - Medion
+kl4898_a50:
+  - Klipad
+k38:
+  - DEXP
+bdf-p30:
+  - BDF
+9081x:
+  - TCL
+surface 3:
+  - Microsoft
+hz0010j:
+  - Hoozo
+7dy:
+  - Mediacom
+7cy:
+  - Mediacom
+7by:
+  - Mediacom
+8ay:
+  - Mediacom
+eda71_g:
+  - Honeywell
+m7_3g:
+  - Multilaser
+m10_3g:
+  - Multilaser
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -40988,6 +41106,16 @@ rombica smart box a1:
   - Rombica
 rombica smart box f2:
   - Rombica
+tf-led32s60t2s:
+  - Telefunken
+tf-led43s94t2s:
+  - Telefunken
+ex-32hs016b:
+  - ECON
+28lh7010t:
+  - Asano
+42flx9060t2:
+  - Erisson
 bb2 pro:
   - Mecool
 kii pro:
