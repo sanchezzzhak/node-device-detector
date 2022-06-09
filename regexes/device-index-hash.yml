@@ -286,6 +286,8 @@ dn2103:
   - OnePlus
 kfkawi:
   - Amazon
+mrd-lx1:
+  - Huawei
 archos gamepad:
   - Archos
 archos gamepad2:
@@ -416,6 +418,7 @@ macbookpro3,1:
   - Apple
 macmini7,1:
   - Apple
+  - Advan
 macbook7,1:
   - Apple
 macpro5,1:
@@ -669,6 +672,8 @@ pm80:
   - Point Mobile
 mc401_gwl:
   - iWaylink
+dimagic cube dm011:
+  - Digma
 gi-626:
   - altron
 5039d_ru:
@@ -1547,6 +1552,16 @@ rosemary:
   - Xiaomi
 a101xm:
   - Xiaomi
+tecno le8:
+  - Tecno Mobile
+22031116bg:
+  - Xiaomi
+m1901f7s:
+  - Xiaomi
+redmi note 11s:
+  - Xiaomi
+2201116si:
+  - Xiaomi
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -1559,6 +1574,48 @@ nw-z1000series:
   - Sony
 lenco diverso-700:
   - Lenco
+drp29101:
+  - RCA Tablets
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -7316,6 +7373,10 @@ n9560:
   - ZTE
 n9521:
   - ZTE
+ta-1000:
+  - Nokia
+sm-a205gn:
+  - Samsung
 sky_3.5:
   - Sky
 sky 4.0d:
@@ -15623,6 +15684,30 @@ oinom v9:
   - OINOM
 oinom_v7h:
   - OINOM
+u feel ecom:
+  - Wiko
+u feel:
+  - Wiko
+w_c800s:
+  - Wiko
+sm-a526u:
+  - Samsung
+sm-a5360:
+  - Samsung
+sm-a536u:
+  - Samsung
+sm-a536u1:
+  - Samsung
+sm-a536w:
+  - Samsung
+so-04e:
+  - Sony
+wildfire e1 plus:
+  - HTC
+2201116pi:
+  - POCO
+comio c2 lite:
+  - Comio
 oinom_v7:
   - OINOM
 oinom_v9d:
@@ -24377,6 +24462,10 @@ lenovo k12 note:
   - Lenovo
 sm-g990w:
   - Samsung
+hisense h50:
+  - Hisense
+sm-a135u:
+  - Samsung
 bravis_a506:
   - Bravis
 bravis delta:
@@ -26307,6 +26396,195 @@ sm-m336k:
   - Samsung
 sm-e236b:
   - Samsung
+ne2217:
+  - OnePlus
+ne2211:
+  - OnePlus
+i2203:
+  - Vivo
+i2127:
+  - Vivo
+moto g52:
+  - Motorola
+motorola edge 30 pro:
+  - Motorola
+zte a71 5g:
+  - ZTE
+cph2341:
+  - OPPO
+cph2343:
+  - OPPO
+cph2333:
+  - OPPO
+aris pro:
+  - Vsmart
+aris:
+  - Vsmart
+cma-lx3:
+  - Huawei
+cma-lx2:
+  - Huawei
+tecno kg5j:
+  - Tecno Mobile
+tecno kg5k:
+  - Tecno Mobile
+tecno ch6h:
+  - Tecno Mobile
+tecno bd4i:
+  - Tecno Mobile
+tfy-lx2:
+  - Huawei
+u696cl:
+  - Unimax
+v2149:
+  - Vivo
+v2146:
+  - Vivo
+v2153:
+  - Vivo
+v2151:
+  - Vivo
+hit p13:
+  - Philco
+rmx3516:
+  - Realme
+rmx3511:
+  - Realme
+rmx3501:
+  - Realme
+orange nola fun:
+  - Orange
+220233l2g:
+  - Xiaomi
+21091116ui:
+  - Xiaomi
+rmx3301:
+  - Realme
+rmx3312:
+  - Realme
+rmx3521:
+  - Realme
+rmx3392:
+  - Realme
+note_7p:
+  - Ulefone
+bq-6061l:
+  - bq
+vfd 301:
+  - Vodafone
+vfd 710:
+  - Vodafone
+vfd 501:
+  - Vodafone
+vienna:
+  - Ulefone
+gm6:
+  - General Mobile
+glo:
+  - Mobicel
+h3413:
+  - Sony
+rc2200l:
+  - Orbic
+itel w6503:
+  - iTel
+kyf41:
+  - Kyocera
+2201117pi:
+  - POCO
+sm-s134dl:
+  - Samsung
+megafon sp-w1:
+  - MegaFon
+omnia7:
+  - Samsung
+gt-s7530:
+  - Samsung
+sgh-i677:
+  - Samsung
+gt-i8350:
+  - Samsung
+sgh-i937:
+  - Samsung
+bishop-rq451:
+  - RoyQueen
+telenor smart pro 2:
+  - Telenor
+cm990:
+  - Huawei
+bv6000_ru:
+  - Blackview
+cinemax_infinity:
+  - Zen
+cinemax_prime:
+  - Zen
+diamond 2:
+  - Sico
+dream_one_8:
+  - FireFly Mobile
+digicel dl2 xl:
+  - Digicel
+diamond_lte:
+  - Telefunken
+dexp_es1050:
+  - DEXP
+desire r8 lite:
+  - Cherry Mobile
+  - HTC
+desire r6:
+  - Cherry Mobile
+  - HTC
+desire r6 plus:
+  - Cherry Mobile
+  - HTC
+desay d18:
+  - Desay
+d1_pro:
+  - Bluboo
+phantom5:
+  - Tecno Mobile
+fire2 air lte:
+  - InnJoo
+fire2 pro lte:
+  - InnJoo
+fire_plus_lte:
+  - InnJoo
+fire3 mini:
+  - InnJoo
+fire2 lte:
+  - InnJoo
+evermiracle s:
+  - Evertek
+eversolo:
+  - Evertek
+evershineii:
+  - Evertek
+everglory ii:
+  - Evertek
+everallureii:
+  - Evertek
+evermiracle power:
+  - Evertek
+evertrendy+4g:
+  - Evertek
+era_x:
+  - Xolo
+era_hd:
+  - Xolo
+era_4g:
+  - Xolo
+era 4k:
+  - Xolo
+era 4g:
+  - Xolo
+energy_diamond_mini:
+  - Blu
+elegance 5.0 lite:
+  - Kiano
+elegance_4.5:
+  - Kiano
+elite photopro:
+  - Sky
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -29314,8 +29592,6 @@ atu-l21:
 atu-l22:
   - Huawei
 mrd-lx3:
-  - Huawei
-mrd-lx1:
   - Huawei
 mrd-lx1n:
   - Huawei
@@ -33076,46 +33352,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -39772,6 +40008,70 @@ m7_3g:
   - Multilaser
 m10_3g:
   - Multilaser
+pmt4337_3g_ru:
+  - Prestigio
+pmt3997_w_d_ru:
+  - Prestigio
+pmt3104_wi_d_ru:
+  - Prestigio
+pmt1157_4g_c_ru:
+  - Prestigio
+pmt1107_4g_d_ru:
+  - Prestigio
+sm-x808u:
+  - Samsung
+eda52:
+  - Honeywell
+advan 1011:
+  - Advan
+acer one 8 t4-82l:
+  - Acer
+m10 pro lte:
+  - Reeder
+la tab stand:
+  - Logicom
+9060g:
+  - TCL
+xp10_wifi:
+  - Xtouch
+a3-a50:
+  - Acer
+e1060x:
+  - Medion
+ct9a03w23:
+  - Venturer
+h110:
+  - DEXP
+h210:
+  - DEXP
+t806mh:
+  - AllDocube
+etl101gb:
+  - Microtech
+a8i-q2:
+  - Reeder
+air 7.85 3g:
+  - RoverPad
+art 7.85 3g:
+  - RoverPad
+terra_7ow:
+  - GOCLEVER
+terra_7ol:
+  - GOCLEVER
+c bot tab 70:
+  - Logicom
+c bot tab 100:
+  - Logicom
+et8183gq-hm15:
+  - Eurostar
+et7184gq-b15:
+  - Eurostar
+et7183gq-h16:
+  - Eurostar
+epic_p7:
+  - Vonino
+epic_m8:
+  - Vonino
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -41116,6 +41416,18 @@ ex-32hs016b:
   - Asano
 42flx9060t2:
   - Erisson
+2020/2021 uhd android tv:
+  - Philips
+2021/22 philips uhd android tv:
+  - Philips
+gigatv:
+  - Vodafone
+iconbit movie play:
+  - IconBIT
+dm-led42sr24:
+  - Digma
+yuno.pt430ct02.1.cv358h.t42:
+  - Yuno
 bb2 pro:
   - Mecool
 kii pro:
@@ -41648,3 +41960,5 @@ ow19w3:
   - OPPO
 ow20w1:
   - OPPO
+lem15:
+  - LEMFO
