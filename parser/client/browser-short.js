@@ -329,6 +329,7 @@ module.exports = {
   'PT': 'Polarity',
   'LY': 'PolyBrowser',
   'PI': 'PrivacyWall',
+  'P2': 'Pi Browser',
   'P0': 'PronHub Browser',
   'PC': 'PSI Secure Browser',
   'RW': 'Reqwireless WebViewer',
