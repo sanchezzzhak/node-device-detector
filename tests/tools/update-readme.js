@@ -5,8 +5,8 @@ if (major < 12) {
   return;
 }
 
-const Brands = Object.values(require('./../parser/device/brand-short'));
-const Browsers = Object.values(require('./../parser/client/browser-short'));
+const Brands = Object.values(require('./../../parser/device/brand-short'));
+const Browsers = Object.values(require('./../../parser/client/browser-short'));
 const fs = require('fs');
 
 const YAML = require('js-yaml');
@@ -18,7 +18,7 @@ Brands.sort(sortABC);
 Browsers.sort(sortABC);
 
 let brandInfos = YAML.load(
-  fs.readFileSync(__dirname + '/../regexes/device-info/device.yml', 'utf8')
+  fs.readFileSync(__dirname + '/../../regexes/device-info/device.yml', 'utf8')
 );
 
 // console.log({brandInfos});
@@ -92,7 +92,7 @@ if (row.length === 1) {
 
 console.log('Update README.md');
 
-let someFile = __dirname + '/../README.md';
+let someFile = __dirname + '/../../README.md';
 fs.readFile(someFile, 'utf8', function (err, data) {
   if (err) {
     return console.log(err);
