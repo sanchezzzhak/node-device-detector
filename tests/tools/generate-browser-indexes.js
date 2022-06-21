@@ -8,16 +8,20 @@ const util = require('util');
 let fixtureFolder = getFixtureFolder();
 let browserRegexData = YAMLLoad(
   __dirname + '/../../regexes/client/browsers.yml');
+
+let appRegexData = YAMLLoad(
+  __dirname + '/../../regexes/client/mobile_apps.yml');
+
 let browserFixtureData = YAMLLoad(fixtureFolder + 'clients/browser.yml');
+let appFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
+
 
 const dd = (...vars) => {
   console.log(util.inspect(vars,
     {showHidden: false, depth: null, colors: true}));
 };
 
-let fixtureIndex = {
-
-};
+const output = {};
 
 const findDataKey = (groups, clientName) => {
   for (let group of groups) {
@@ -39,9 +43,16 @@ const findDataKey = (groups, clientName) => {
   return null
 }
 
-const findDataIndex = (user_agent) => {
-  for (let i = 0, l = browserRegexData.length; i < l; i++) {
-    let result = matchUserAgent(browserRegexData[i].regex, user_agent);
+const findDataIndex = (userAgent, clientType) => {
+  let database = [];
+  if (clientType === 'browser') {
+    database = browserRegexData;
+  }
+  if (clientType === 'mobile app') {
+    database = appRegexData;
+  }
+  for (let i = 0, l = database.length; i < l; i++) {
+    let result = matchUserAgent(database[i].regex, userAgent);
     if (result !== null) {
       return i;
     }
@@ -54,26 +65,38 @@ const createIndexForFixture = (fixture) => {
   let clientName = fixture.client.name;
   let clientType = fixture.client.type;
   let keyName = findDataKey(splitData.groups, clientName);
-  let keyIndex = findDataIndex(userAgent)
+  let keyIndex = findDataIndex(userAgent, clientType)
   
-  if (keyName === null) {
-    console.log(userAgent, keyName, clientName, JSON.stringify(splitData.groups), keyIndex)
+  if (keyName === null || keyIndex === null) {
+    dd(userAgent, keyName, clientName, JSON.stringify(splitData.groups), keyIndex)
     return;
   }
-  if (fixtureIndex[keyName] === void 0) {
-    fixtureIndex[keyName] = {};
-    fixtureIndex[keyName].hash = [];
+  if (output[keyName] === void 0) {
+    output[keyName] = {};
+    output[keyName].browsers = [];
+    output[keyName].apps = [];
   }
-  if(!fixtureIndex[keyName].hash.includes(keyIndex)) {
-    fixtureIndex[keyName].hash.push(keyIndex);
-    // fixtureIndex[keyName].ua = userAgent;
-    fixtureIndex[keyName].client = clientName;
-    fixtureIndex[keyName].type = clientType;
+  if(!output[keyName].browsers.includes(keyIndex) && clientType === 'browsers') {
+    output[keyName].browsers.push(keyIndex);
+    output[keyName].browsers.sort();
+  }
+  if(!output[keyName].apps.includes(keyIndex) && clientType === 'mobile app') {
+    output[keyName].apps.push(keyIndex);
+    output[keyName].apps.sort();
   }
 }
-
+appFixtureData.forEach((fixture) => {
+  createIndexForFixture(fixture)
+});
 browserFixtureData.forEach((fixture) => {
   createIndexForFixture(fixture)
 });
 
-console.log(YAMLDump(fixtureIndex));
+let content = YAMLDump(output);
+fs.writeFileSync(
+  __dirname + '/../../regexes/client-index-hash.yml',
+  content,
+  'utf8'
+);
+
+console.log(YAMLDump(output));
