@@ -1,19 +1,37 @@
 const YAML = require('js-yaml');
 const fs = require('fs');
 
-exports.matchUserAgent = function (str, userAgent) {
+/**
+ * match for base regex rule
+ * @param str
+ * @param userAgent
+ * @returns {RegExpExecArray}
+ */
+function matchUserAgent(str, userAgent) {
   str = str.replace(new RegExp('/', 'g'), '\\/');
   let regex = '(?:^|[^A-Z_-])(?:' + str + ')';
   let match = new RegExp(regex, 'i');
   return match.exec(userAgent);
-};
-
-
-exports.fuzzyCompare = function(val1, val2) {
-  return val1.replace(/ /gi, '').toLowerCase() === val2.replace(/ /gi, '').toLowerCase();
 }
 
-exports.versionCompare = function (ver1, ver2) {
+/**
+ *
+ * @param val1
+ * @param val2
+ * @returns {boolean}
+ */
+function fuzzyCompare(val1, val2) {
+  return val1.replace(/ /gi, '').toLowerCase() ===
+    val2.replace(/ /gi, '').toLowerCase();
+}
+
+/**
+ * Compare versions
+ * @param ver1
+ * @param ver2
+ * @returns {number}
+ */
+function versionCompare(ver1, ver2) {
   if (ver1 === ver2) {
     return 0;
   }
@@ -38,94 +56,93 @@ exports.versionCompare = function (ver1, ver2) {
     return -1;
   }
   return 0;
-};
+}
 
 /**
  * @param {string} version
  * @param {number} maxMinorParts - how many version chars trim
  * @returns {string}
  */
-exports.versionTruncate = function (version, maxMinorParts) {
+function versionTruncate(version, maxMinorParts) {
   let versionParts = String(version).split('.');
   if (
-    maxMinorParts !== null &&
-    maxMinorParts !== '' &&
+    maxMinorParts !== void 0 &&
     versionParts.length > maxMinorParts
   ) {
     versionParts = versionParts.slice(0, 1 + maxMinorParts);
   }
   return versionParts.join('.');
-};
+}
 
 /**
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasAndroidTableFragment = function (userAgent) {
+function hasAndroidTableFragment(userAgent) {
   return (
-    this.matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null
+    matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null
   );
-};
+}
 
 /**
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasOperaTableFragment = function (userAgent) {
-  return this.matchUserAgent('Opera Tablet', userAgent) !== null;
-};
+function hasOperaTableFragment(userAgent) {
+  return matchUserAgent('Opera Tablet', userAgent) !== null;
+}
 
 /**
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasTouchFragment = function (userAgent) {
-  return this.matchUserAgent('Touch', userAgent) !== null;
-};
+function hasTouchFragment(userAgent) {
+  return matchUserAgent('Touch', userAgent) !== null;
+}
 
 /**
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasAndroidMobileFragment = function (userAgent) {
-  return this.matchUserAgent('Android( [.0-9]+)?; Mobile;', userAgent) !== null;
-};
+function hasAndroidMobileFragment(userAgent) {
+  return matchUserAgent('Android( [.0-9]+)?; Mobile;', userAgent) !== null;
+}
 
 /**
  * All devices running Opera TV Store are assumed to be a tv
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasOperaTVStoreFragment = function (userAgent) {
-  return this.matchUserAgent('Opera TV Store| OMI/', userAgent) !== null;
-};
+function hasOperaTVStoreFragment(userAgent) {
+  return matchUserAgent('Opera TV Store| OMI/', userAgent) !== null;
+}
 
 /**
  * All devices that contain Andr0id in string are assumed to be a tv
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasAndroidTVFragment = function (userAgent) {
-  return this.matchUserAgent('Andr0id|Android TV', userAgent) !== null;
-};
+function hasAndroidTVFragment(userAgent) {
+  return matchUserAgent('Andr0id|Android TV', userAgent) !== null;
+}
 
 /**
  * All devices running Tizen TV or SmartTV are assumed to be a tv
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasTVFragment = function (userAgent) {
-  return this.matchUserAgent('SmartTV|Tizen.+ TV .+$', userAgent) !== null;
-};
+function hasTVFragment(userAgent) {
+  return matchUserAgent('SmartTV|Tizen.+ TV .+$', userAgent) !== null;
+}
 
 /**
  * Check combinations in string that relate only to desktop UA
  * @param {string} userAgent
  * @returns {boolean}
  */
-exports.hasDesktopFragment = function (userAgent) {
-  return this.matchUserAgent('Desktop (x(?:32|64)|WOW64);', userAgent) !== null;
-};
+function hasDesktopFragment(userAgent) {
+  return matchUserAgent('Desktop (x(?:32|64)|WOW64);', userAgent) !== null;
+}
 
 /**
  * @param {object} options
@@ -133,52 +150,129 @@ exports.hasDesktopFragment = function (userAgent) {
  * @param {*} defaultValue
  * @return {*|null}
  */
-exports.getPropertyValue = function (options, propName, defaultValue) {
+function getPropertyValue(options, propName, defaultValue) {
   return options !== void 0 && options[propName] !== void 0
     ? options[propName]
     : defaultValue !== void 0
-    ? defaultValue
-    : null;
-};
+      ? defaultValue
+      : null;
+}
 
 /**
  *
  * @param {*} obj -
  * @returns {*}
  */
-exports.revertObject = function (obj) {
+function revertObject(obj) {
   return Object.assign(
     {},
     ...Object.entries(obj).map(([a, b]) => ({
       [b]: a,
     })),
-    {}
+    {},
   );
-};
+}
 
 /**
  * Load yaml file (sync read)
  * @param {string} file - absolute file path
  * @returns {*}
  */
-exports.loadYMLFile = function (file) {
+function loadYMLFile(file) {
   return YAML.load(fs.readFileSync(file));
-};
+}
 
-exports.hasFile = function (file) {
+function hasFile(file) {
   return fs.existsSync(file);
-};
+}
 
-
-exports.trimChars = function (str, chars) {
+/**
+ * Remove chars for string
+ *
+ * @param {} str
+ * @param {string} chars
+ * @returns {any}
+ */
+function trimChars(str, chars) {
   let start = 0,
-      end = str.length;
-
+    end = str.length;
+  
   while (start < end && str[start] === chars)
     ++start;
-
+  
   while (end > start && str[end - 1] === chars)
     --end;
-
+  
   return (start > 0 || end < str.length) ? str.substring(start, end) : str;
+}
+
+function getGroupForUserAgentTokens(tokens) {
+  let groupIndex = 0;
+  return tokens.reduce((group = [], token) => {
+    if (token === '') {
+      return;
+    }
+    
+    let data = token.match(/^\((.*)\)$/);
+    if (data !== null) {
+      groupIndex++;
+      let rows = data[1].split(/[;,] /);
+      let row = {};
+      row['#' + groupIndex] = rows;
+      group.push(row);
+      return group;
+    }
+    
+    let rowSlash = token.split('/');
+    if (rowSlash.length === 2) {
+      let row = {};
+      row[rowSlash[0]] = rowSlash[1];
+      group.push(row);
+      return group;
+    }
+    groupIndex++;
+    let row = {};
+    row['#' + groupIndex] = token;
+    group.push(row)
+    return group;
+  }, []);
+}
+
+function getTokensForUserAgent(userAgent) {
+  let tokenRegex = / (?![^(]*\))/i;
+  return userAgent.split(tokenRegex);
+}
+
+/**
+ * Split UserAgent to tokens and groups
+ *
+ * @param userAgent
+ * @returns {{groups: *, userAgent: *, tokens: *}}
+ */
+function splitUserAgent(userAgent) {
+  let tokens = getTokensForUserAgent(userAgent);
+  let groups = getGroupForUserAgentTokens(tokens);
+  
+  return {userAgent, tokens, groups};
+}
+
+module.exports = {
+  matchUserAgent,
+  fuzzyCompare,
+  versionCompare,
+  versionTruncate,
+  hasAndroidTableFragment,
+  hasOperaTableFragment,
+  hasOperaTVStoreFragment,
+  hasAndroidMobileFragment,
+  hasAndroidTVFragment,
+  hasDesktopFragment,
+  hasTVFragment,
+  hasTouchFragment,
+  getPropertyValue,
+  revertObject,
+  loadYMLFile,
+  hasFile,
+  trimChars,
+  splitUserAgent,
 }
