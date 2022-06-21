@@ -20,9 +20,10 @@ class MobileApp extends ClientAbstractParser {
    *
    * @param userAgent
    * @param clientHints
+   * @param positions
    * @returns {({name: string, type: string, version: string})|null}
    */
-  parse(userAgent, clientHints){
+  parse(userAgent, clientHints, positions){
     let hash  = this.parseFromHashHintsApp(clientHints);
     let result = super.parse(userAgent, clientHints);
 

@@ -26,6 +26,7 @@ const VendorFragmentParser = require(
   './parser/vendor-fragment-abstract-parser');
 // other parsers
 const AliasDevice = require('./parser/device/alias-device');
+const IndexerClient = require('./parser/client/indexer-client');
 
 // const, lists, parser names
 const DEVICE_TYPE = require('./parser/const/device-type');
@@ -43,6 +44,8 @@ const BOT_PARSER = 'Bot';
 // static private parser init
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
+
+IndexerClient.load();
 
 class DeviceDetector {
   /**
@@ -67,6 +70,7 @@ class DeviceDetector {
 
     this.__skipBotDetection = false;
     this.__deviceIndexes = false;
+    this.__clientIndexes = false;
     this.__deviceAliasCode = false;
     this.__clientVersionTruncate = null;
     this.__osVersionTruncate = null;
@@ -80,6 +84,8 @@ class DeviceDetector {
     this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
 
     this.deviceIndexes = attr(options, 'deviceIndexes', false);
+    this.clientIndexes = attr(options, 'clientIndexes', true);
+
     // remove in version 2
     let temp1 = attr(options, 'discardDeviceIndexes', void 0);
     if (temp1 !== void 0) {
@@ -166,6 +172,21 @@ class DeviceDetector {
    */
   get deviceIndexes() {
     return this.__deviceIndexes;
+  }
+
+
+  /**
+   * @param {boolean} status - true use indexes, false not use indexes
+   */
+  set clientIndexes(status) {
+    this.__clientIndexes = status;
+  }
+
+  /**
+   * @return {boolean} - true use indexes, false not use indexes
+   */
+  get clientIndexes() {
+    return this.__clientIndexes;
   }
 
   /**
@@ -506,7 +527,14 @@ class DeviceDetector {
       type: deviceType,
     };
   }
-  
+
+  getIdClientsForUA(userAgent) {
+    if ('' === userAgent) {
+      return [];
+    }
+
+  }
+
   /**
    * get brand by device code (used in indexing)
    * @param {string} deviceCode
@@ -563,7 +591,6 @@ class DeviceDetector {
       deviceCode = alias.name ? alias.name : '';
     }
 
-
     let result = {
       id: '',
       type: '',
@@ -611,7 +638,7 @@ class DeviceDetector {
     let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
     return parser.parse(userAgent);
   }
-  
+
   /**
    * parse bot
    * @param {string} userAgent
@@ -644,10 +671,15 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
 
+    let positions;
+    if (this.clientIndexes) {
+      positions = IndexerClient.findClientRegexPositionsForUserAgent(userAgent)
+    }
+
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHints);
+      let resultMerge = parser.parse(userAgent, clientHints, positions);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;

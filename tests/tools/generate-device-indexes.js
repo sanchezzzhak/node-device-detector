@@ -18,32 +18,38 @@ let fixtureFolder = getFixtureFolder();
 ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
 let output = {};
+
+const createIndexForFixture = (fixture) => {
+  // get device code
+  let result = aliasDevice.parse(fixture.user_agent);
+  let deviceCode = result.name ? result.name : void 0;
+  if (deviceCode !== void 0) {
+    deviceCode = deviceCode.toLowerCase();
+    let infos = parserDevice.parseAll(fixture.user_agent);
+    if (infos.length) {
+      let result = [];
+      for (let info of infos) {
+        if (info.brand && result.indexOf(info.brand) === -1) {
+          result.push(info.brand);
+        }
+      }
+      output[deviceCode] = result;
+    }
+  }
+}
+
 ymlDeviceFiles.forEach((file) => {
   if (excludeFilesNames.indexOf(file) !== -1) {
     return;
   }
   let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
-  fixtureData.forEach((fixture, pos) => {
-    // get device code
-    let result = aliasDevice.parse(fixture.user_agent);
-    let deviceCode = result.name ? result.name : void 0;
-    if (deviceCode !== void 0) {
-      deviceCode = deviceCode.toLowerCase();
-      let infos = parserDevice.parseAll(fixture.user_agent);
-      if (infos.length) {
-        let result = [];
-        for (let info of infos) {
-          if (info.brand && result.indexOf(info.brand) === -1) {
-            result.push(info.brand);
-          }
-        }
-        output[deviceCode] = result;
-      }
-    }
+  fixtureData.forEach((fixture) => {
+    createIndexForFixture(fixture)
   });
 });
 
 let content = YAMLDump(output);
+
 fs.writeFileSync(
   __dirname + '/../../regexes/device-index-hash.yml',
   content,

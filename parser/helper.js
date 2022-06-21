@@ -1,5 +1,6 @@
 const YAML = require('js-yaml');
 const fs = require('fs');
+const crypto = require('crypto');
 
 /**
  * match for base regex rule
@@ -21,8 +22,17 @@ function matchUserAgent(str, userAgent) {
  * @returns {boolean}
  */
 function fuzzyCompare(val1, val2) {
-  return val1.replace(/ /gi, '').toLowerCase() ===
-    val2.replace(/ /gi, '').toLowerCase();
+  return val1 !== null && val2 !== null &&
+    val1.replace(/ /gi, '').toLowerCase() === val2.replace(/ /gi, '').toLowerCase();
+}
+
+function createMD5(str) {
+  var hash = 0, i = 0, len = str.length;
+  while (i < len) {
+    hash = ((hash << 5) - hash + str.charCodeAt(i++)) << 0;
+  }
+  return hash.toString(16);
+  ;
 }
 
 /**
@@ -196,51 +206,63 @@ function hasFile(file) {
 function trimChars(str, chars) {
   let start = 0,
     end = str.length;
-  
+
   while (start < end && str[start] === chars)
     ++start;
-  
+
   while (end > start && str[end - 1] === chars)
     --end;
-  
+
   return (start > 0 || end < str.length) ? str.substring(start, end) : str;
 }
 
 function getGroupForUserAgentTokens(tokens) {
   let groupIndex = 0;
-  return tokens.reduce((group = [], token) => {
+  return tokens.reduce((group = {}, token) => {
     if (token === '') {
       return;
     }
-    
+
     let data = token.match(/^\((.*)\)$/);
     if (data !== null) {
       groupIndex++;
-      let rows = data[1].split(/[;,] /);
-      let row = {};
-      row['#' + groupIndex] = rows;
-      group.push(row);
+      group['#' + groupIndex] = data[1].split(/[;,] /);
       return group;
     }
-    
+
     let rowSlash = token.split('/');
     if (rowSlash.length === 2) {
-      let row = {};
-      row[rowSlash[0]] = rowSlash[1];
-      group.push(row);
+      group[rowSlash[0]] = rowSlash[1];
       return group;
     }
     groupIndex++;
-    let row = {};
-    row['#' + groupIndex] = token;
-    group.push(row)
+    group['#' + groupIndex] = token;
     return group;
-  }, []);
+  }, {});
 }
 
 function getTokensForUserAgent(userAgent) {
   let tokenRegex = / (?![^(]*\))/i;
   return userAgent.split(tokenRegex);
+}
+
+function getHashForUserAgentGroups(groups) {
+  let parts = [];
+  for (let key in groups) {
+    if (typeof groups[key] !== 'string' || !groups[key]) {
+      continue;
+    }
+    if (key && String(key).charAt(0) === '#') {
+      if (!groups[key].match(/[/;]/i)) {
+        parts.push(String(groups[key]).toLowerCase());
+        continue;
+      }
+    }
+
+    parts.push(String(key).toLowerCase());
+  }
+
+  return createMD5(parts.join('|'))
 }
 
 /**
@@ -252,8 +274,9 @@ function getTokensForUserAgent(userAgent) {
 function splitUserAgent(userAgent) {
   let tokens = getTokensForUserAgent(userAgent);
   let groups = getGroupForUserAgentTokens(tokens);
-  
-  return {userAgent, tokens, groups};
+  let hash = getHashForUserAgentGroups(groups);
+
+  return {tokens, groups, hash};
 }
 
 module.exports = {
