@@ -26,9 +26,10 @@ const userAgent3 = 'Mozilla/5.0 (Linux; Android 4.2.2; Trooper_X40 Build/Trooper
 
 const userAgent4 = 'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-CN; R831K Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.3.1.549 U3/0.8.0 Mobile Safari/534.30';
 
-const userAgent5 = 'Mozilla/5.0 ArchLinux (X11; U; Linux x86_64; en-US) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30';
+const userAgent5 = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36';
 
 cpuUsage();
+/*
 createTest('test1', userAgent1);
 createTest('test2', userAgent1);
 createTest('test3', userAgent2);
@@ -37,5 +38,5 @@ createTest('test5', userAgent4);
 createTest('test6', userAgent1);
 createTest('test7', userAgent5);
 createTest('test8', userAgent1);
-createTest('test9', userAgent5);
+createTest('test9', userAgent5);*/
 createTest('test10', userAgent5);

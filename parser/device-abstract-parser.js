@@ -6,6 +6,9 @@ const COLLECTION_BRAND_LIST = helper.revertObject(
   require('./device/brand-short')
 );
 
+const DESKTOP_PATTERN = '(?:Windows (?:NT|IoT)|X11; Linux x86_64)';
+const DESKTOP_EXCLUDE_PATTERN = '^.+Mozilla/|Lenovo|compatible; MSIE|like iPhone|Windows Phone|Trident/|Tesla/|XBOX|Tablet PC|FBMD/|ARM; ?([^)]+)';
+
 class DeviceParserAbstract extends ParserAbstract {
   constructor() {
     super();
@@ -80,7 +83,7 @@ class DeviceParserAbstract extends ParserAbstract {
       let result = {
         id: brandId !== void 0 ? brandId : '',
         brand: brandName,
-        model: model !== null ? String(model).trim() : '',
+        model: model ? String(model).trim() : '',
         type: deviceType,
       };
       if (this.resultModelRegex) {
@@ -101,6 +104,15 @@ class DeviceParserAbstract extends ParserAbstract {
    * @private
    */
   __parse(userAgent, canBreak = true, brandIndexes = []) {
+  
+    let isDesktop =
+      helper.matchUserAgent(DESKTOP_PATTERN, userAgent) &&
+      !helper.matchUserAgent(DESKTOP_EXCLUDE_PATTERN, userAgent);
+    
+    if (isDesktop) {
+      return [];
+    }
+    
     let output = [];
     if (brandIndexes.length) {
       for (let cursor of brandIndexes) {
@@ -134,6 +146,7 @@ class DeviceParserAbstract extends ParserAbstract {
    * @returns {{model: (string|string), id: (*|string), type: string, brand: string}|null}
    */
   parse(userAgent, brandIndexes = []) {
+    
     let result = this.__parse(userAgent, true, brandIndexes);
     if (result.length) {
       return result[0];

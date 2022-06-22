@@ -9,7 +9,8 @@ const ShellTvParser = require('./parser/device/shell-tv');
 const ConsoleParser = require('./parser/device/console');
 const CarBrowserParser = require('./parser/device/car-browser');
 const CameraParser = require('./parser/device/camera');
-const PortableMediaPlayerParser = require('./parser/device/portable-media-player');
+const PortableMediaPlayerParser = require(
+  './parser/device/portable-media-player');
 // client parsers
 const MobileAppParser = require('./parser/client/mobile-app');
 const MediaPlayerParser = require('./parser/client/media-player');
@@ -69,7 +70,7 @@ class DeviceDetector {
     this.botParserList = {};
     this.deviceParserList = {};
     this.clientParserList = {};
-
+    
     this.__skipBotDetection = false;
     this.__deviceIndexes = false;
     this.__clientIndexes = false;
@@ -78,14 +79,14 @@ class DeviceDetector {
     this.__osVersionTruncate = null;
     
     this.init();
-  
+    
     this.skipBotDetection = attr(options, 'skipBotDetection', false);
     this.osVersionTruncate = attr(options, 'osVersionTruncate', null);
     this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
-  
-    this.deviceIndexes = attr(options, 'deviceIndexes', false);
+    
+    this.deviceIndexes = attr(options, 'deviceIndexes', true);
     this.clientIndexes = attr(options, 'clientIndexes', true);
-  
+    
     // remove in version 2
     let temp1 = attr(options, 'discardDeviceIndexes', void 0);
     if (temp1 !== void 0) {
@@ -99,12 +100,13 @@ class DeviceDetector {
     }
     
   }
-
+  
   init() {
     this.addParseOs(OS_PARSER, new OsParser());
     this.addParseClient(CLIENT_PARSER_LIST.FEED_READER, new FeedReaderParser());
     this.addParseClient(CLIENT_PARSER_LIST.MOBILE_APP, new MobileAppParser());
-    this.addParseClient(CLIENT_PARSER_LIST.MEDIA_PLAYER, new MediaPlayerParser());
+    this.addParseClient(CLIENT_PARSER_LIST.MEDIA_PLAYER,
+      new MediaPlayerParser());
     this.addParseClient(CLIENT_PARSER_LIST.PIM, new PIMParser());
     this.addParseClient(CLIENT_PARSER_LIST.BROWSER, new BrowserParser());
     this.addParseClient(CLIENT_PARSER_LIST.LIBRARY, new LibraryParser());
@@ -120,9 +122,9 @@ class DeviceDetector {
       new PortableMediaPlayerParser(),
     );
     this.addParseDevice(DEVICE_PARSER_LIST.MOBILE, new MobileParser());
-
+    
     this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser());
-
+    
     this.addParseBot(BOT_PARSER, new BotParser());
   }
   
@@ -133,39 +135,42 @@ class DeviceDetector {
   set skipBotDetection(discard) {
     this.__skipBotDetection = discard;
   }
-
+  
   /***
    * @deprecated - the method will be removed in v2.0 (detector.deviceIndexes)
    */
   get discardDeviceIndexes() {
     return !this.deviceIndexes;
   }
+  
   /***
    * @deprecated - the method will be removed in v2.0 (detector.deviceIndexes)
    */
   set discardDeviceIndexes(discard) {
     this.deviceIndexes = !discard;
   }
+  
   /***
    * @deprecated - the method will be removed in v2.0 (detector.deviceAliasCode)
    */
   get discardDeviceAliasCode() {
     return !this.deviceAliasCode;
   }
+  
   /***
    * @deprecated - the method will be removed in v2.0 (detector.deviceAliasCode)
    */
   set discardDeviceAliasCode(discard) {
     return this.deviceAliasCode = !discard;
   }
-
+  
   /**
    * @param {boolean} status - true use indexes, false not use indexes
    */
   set deviceIndexes(status) {
     this.__deviceIndexes = status;
   }
-
+  
   /**
    * @return {boolean} - true use indexes, false not use indexes
    */
@@ -182,20 +187,21 @@ class DeviceDetector {
       this.clientParserList[name].clientIndexes = status;
     }
   }
-
+  
   /**
    * @return {boolean} - true use indexes, false not use indexes
    */
   get clientIndexes() {
     return this.__clientIndexes;
   }
-
+  
   /**
    * @param {boolean} status - true use deviceAliasCode,  false not use deviceAliasCode
    */
   set deviceAliasCode(status) {
     this.__deviceAliasCode = status;
   }
+  
   /**
    * @return {boolean} - true use deviceAliasCode, false not use deviceAliasCode
    */
@@ -288,7 +294,8 @@ class DeviceDetector {
    * @returns {string[]}
    */
   getAvailableBrowsers() {
-    return this.getParseClient(CLIENT_PARSER_LIST.BROWSER).getAvailableBrowsers();
+    return this.getParseClient(CLIENT_PARSER_LIST.BROWSER).
+    getAvailableBrowsers();
   }
   
   /**
@@ -334,7 +341,7 @@ class DeviceDetector {
   getParseAliasDevice() {
     return aliasDevice;
   }
-
+  
   /**
    * add device type parser
    * @param {string} name
@@ -380,7 +387,7 @@ class DeviceDetector {
   addParseVendor(name, parser) {
     this.vendorParserList[name] = parser;
   }
-
+  
   /**
    * parse OS
    * @param {string} userAgent
@@ -410,11 +417,11 @@ class DeviceDetector {
    * @return {DeviceType}
    */
   parseDeviceType(
-      userAgent,
-      osData,
-      clientData,
-      deviceData,
-      clientHints
+    userAgent,
+    osData,
+    clientData,
+    deviceData,
+    clientHints,
   ) {
     let osName = attr(osData, 'name', '');
     let osFamily = attr(osData, 'family', '');
@@ -422,7 +429,7 @@ class DeviceDetector {
     
     let clientType = attr(clientData, 'type', '');
     let clientShortName = attr(clientData, 'short_name', '');
-
+    
     let clientName = attr(clientData, 'name', '');
     let clientFamily = attr(clientData, 'family', '');
     let deviceType = attr(deviceData, 'type', '');
@@ -443,7 +450,7 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.TABLET;
       }
     }
-
+    
     if (
       deviceType === '' &&
       (helper.hasAndroidTableFragment(userAgent) ||
@@ -455,7 +462,7 @@ class DeviceDetector {
     if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-
+    
     if (deviceType === '' && osName === 'Android' && osVersion !== '') {
       if (helper.versionCompare(osVersion, '2.0') === -1) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
@@ -470,7 +477,7 @@ class DeviceDetector {
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
-
+    
     /**
      * All unknown devices under running Java ME
      * are more likely a features phones
@@ -478,7 +485,7 @@ class DeviceDetector {
     if (deviceType === '' && osName === 'Java ME') {
       deviceType = DEVICE_TYPE.FEATURE_PHONE;
     }
-
+    
     if (
       deviceType === '' &&
       (osName === 'Windows RT' ||
@@ -487,18 +494,18 @@ class DeviceDetector {
     ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
-
+    
     // check tv fragments and tv clients
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if(helper.hasAndroidTVFragment(userAgent)){
+    } else if (helper.hasAndroidTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
-
+    
     if (
       DEVICE_TYPE.DESKTOP !== deviceType &&
       userAgent.indexOf('Desktop') !== -1
@@ -510,11 +517,11 @@ class DeviceDetector {
     
     // check os desktop and not mobile browser
     if (deviceType === '') {
-      let hasMobileBrowser =  (
+      let hasMobileBrowser = (
         clientType === CLIENT_TYPE.BROWSER &&
         MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1
       );
-  
+      
       let hasDesktopOs = osName !== '' && (
         DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
         DESKTOP_OS_LIST.indexOf(osFamily) !== -1
@@ -523,12 +530,12 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
-
+    
     return {
       type: deviceType,
     };
   }
-
+  
   /**
    * get brand by device code (used in indexing)
    * @param {string} deviceCode
@@ -541,7 +548,7 @@ class DeviceDetector {
     
     return IndexerDevice.findDeviceBrandsForDeviceCode(deviceCode);
   }
-
+  
   /**
    * @param {string} userAgent
    * @returns {ResultDeviceCode}
@@ -549,7 +556,7 @@ class DeviceDetector {
   parseDeviceCode(userAgent) {
     return aliasDevice.parse(userAgent);
   }
-
+  
   /**
    * parse device
    * @param {string} userAgent
@@ -568,13 +575,17 @@ class DeviceDetector {
       let alias = this.parseDeviceCode(userAgent);
       deviceCode = alias.name ? alias.name : '';
     }
-
+    
     let result = {
       id: '',
       type: '',
       brand: '',
       model: '',
     };
+    
+    if (this.deviceAliasCode) {
+      result.code = deviceCode;
+    }
     
     for (let name in this.deviceParserList) {
       let parser = this.deviceParserList[name];
@@ -592,18 +603,14 @@ class DeviceDetector {
         result.id = resultVendor.id;
       }
     }
-  
-    if (this.deviceAliasCode) {
-      result.code = deviceCode;
-    }
-
+    
     // client hints
     if (result.model === '') {
-      if(clientHints.device && clientHints.device.model !== ''){
+      if (clientHints.device && clientHints.device.model !== '') {
         result.model = clientHints.device.model;
       }
     }
-
+    
     return result;
   }
   
@@ -616,7 +623,7 @@ class DeviceDetector {
     let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
     return parser.parse(userAgent);
   }
-
+  
   /**
    * parse bot
    * @param {string} userAgent
@@ -661,27 +668,23 @@ class DeviceDetector {
     return result;
   }
   
-  /**
-   * detect os, client and device
-   * @param {string} userAgent - string from request header['user-agent']
-   * @param clientHints
-   * @return {DetectResult}
-   */
-  detect(userAgent, clientHints = {}) {
-
-    let osData = this.parseOs(userAgent, clientHints);
-    let clientData = this.parseClient(userAgent, clientHints);
-    let deviceData = this.parseDevice(userAgent, clientHints);
+  prepareDetectResult(
+    userAgent,
+    osData,
+    clientData,
+    deviceData,
+    clientHints,
+  ) {
     let deviceDataType = this.parseDeviceType(
       userAgent,
       osData,
       clientData,
       deviceData,
-      clientHints
+      clientHints,
     );
-
+    
     deviceData = Object.assign(deviceData, deviceDataType);
-
+    
     /** Assume all devices running iOS / Mac OS are from Apple */
     if (
       deviceData.brand === '' &&
@@ -691,12 +694,62 @@ class DeviceDetector {
       deviceData.id = 'AP';
       deviceData.brand = 'Apple';
     }
-
+    
     return {
       os: osData,
       client: clientData,
       device: deviceData,
     };
+  }
+  
+  /**
+   * detect os, client and device for async
+   * @param {string} userAgent - string from request header['user-agent']
+   * @param clientHints
+   * @return {DetectResult}
+   */
+  async detectAsync(userAgent, clientHints = {}) {
+    let devicePromise = new Promise((resolve) => {
+      return resolve(this.parseDevice(userAgent, clientHints));
+    });
+    let osPromise = new Promise((resolve) => {
+      return resolve(this.parseOs(userAgent, clientHints));
+    });
+    let clientPromise = new Promise((resolve) => {
+      return resolve(this.parseClient(userAgent, clientHints));
+    });
+    
+    let [deviceData, osData, clientData] = await Promise.all([
+      devicePromise, osPromise, clientPromise,
+    ]);
+    
+    return this.prepareDetectResult(
+      userAgent,
+      osData,
+      clientData,
+      deviceData,
+      clientHints
+    )
+  }
+  
+  /**
+   * detect os, client and device for sync
+   * @param {string} userAgent - string from request header['user-agent']
+   * @param clientHints
+   * @return {DetectResult}
+   */
+  detect(userAgent, clientHints = {}) {
+    let deviceData = this.parseDevice(userAgent, clientHints);
+    let osData = this.parseOs(userAgent, clientHints);
+    let clientData = this.parseClient(userAgent, clientHints);
+  
+    return this.prepareDetectResult(
+      userAgent,
+      osData,
+      clientData,
+      deviceData,
+      clientHints
+    )
   }
 }
 
