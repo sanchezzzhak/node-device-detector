@@ -10,45 +10,46 @@ class MobileApp extends ClientAbstractParser {
     super();
     this.fixtureFile = 'client/mobile_apps.yml';
     this.loadCollection();
+    this.collectionLength = this.collection.length;
+    this.type = CLIENT_TYPE.MOBILE_APP;
   }
-
+  
   parseFromHashHintsApp(clientHints) {
     return appHints.parse(clientHints);
   }
-
+  
   /**
-   *
    * @param userAgent
    * @param clientHints
-   * @param positions
    * @returns {({name: string, type: string, version: string})|null}
    */
-  parse(userAgent, clientHints, positions){
-    let hash  = this.parseFromHashHintsApp(clientHints);
+  parse(userAgent, clientHints) {
+    
+    let hash = this.parseFromHashHintsApp(clientHints);
     let result = super.parse(userAgent, clientHints);
-
+    
     let name = '';
-    let type =  CLIENT_TYPE.MOBILE_APP
+    let type = CLIENT_TYPE.MOBILE_APP;
     let version = '';
-
+    
     if (result) {
       name = result.name;
       version = result.version;
     }
-
+    
     if (hash && name !== hash.name) {
       name = hash.name;
       version = '';
     }
-
-    if(name === '') {
+    
+    if (name === '') {
       return null;
     }
-
+    
     return {
       name: String(name),
       type: String(type),
-      version: String(version)
+      version: String(version),
     };
   }
 }

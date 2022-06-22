@@ -27,6 +27,7 @@ const VendorFragmentParser = require(
 // other parsers
 const AliasDevice = require('./parser/device/alias-device');
 const IndexerClient = require('./parser/client/indexer-client');
+const IndexerDevice = require('./parser/device/indexer-device');
 
 // const, lists, parser names
 const DEVICE_TYPE = require('./parser/const/device-type');
@@ -45,7 +46,8 @@ const BOT_PARSER = 'Bot';
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
 
-IndexerClient.load();
+IndexerDevice.init();
+IndexerClient.init();
 
 class DeviceDetector {
   /**
@@ -74,31 +76,28 @@ class DeviceDetector {
     this.__deviceAliasCode = false;
     this.__clientVersionTruncate = null;
     this.__osVersionTruncate = null;
-    this.__osVersionTruncate = null;
-
-
+    
     this.init();
-
+  
     this.skipBotDetection = attr(options, 'skipBotDetection', false);
     this.osVersionTruncate = attr(options, 'osVersionTruncate', null);
     this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
-
+  
     this.deviceIndexes = attr(options, 'deviceIndexes', false);
     this.clientIndexes = attr(options, 'clientIndexes', true);
-
+  
     // remove in version 2
     let temp1 = attr(options, 'discardDeviceIndexes', void 0);
     if (temp1 !== void 0) {
-      this.deviceIndexes = !temp1
+      this.deviceIndexes = !temp1;
     }
     this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
     // remove in version 2
     let temp2 = attr(options, 'discardDeviceAliasCode', void 0);
     if (temp2 !== void 0) {
-      this.deviceIndexes = !temp2
+      this.deviceIndexes = !temp2;
     }
-
-    this.filePathDeviceIndexes = attr(options, 'filePathDeviceIndexes', null);
+    
   }
 
   init() {
@@ -173,13 +172,15 @@ class DeviceDetector {
   get deviceIndexes() {
     return this.__deviceIndexes;
   }
-
-
+  
   /**
    * @param {boolean} status - true use indexes, false not use indexes
    */
   set clientIndexes(status) {
     this.__clientIndexes = status;
+    for (let name in this.clientParserList) {
+      this.clientParserList[name].clientIndexes = status;
+    }
   }
 
   /**
@@ -474,7 +475,7 @@ class DeviceDetector {
      * All unknown devices under running Java ME
      * are more likely a features phones
      */
-    if ('Java ME' === osName && '' === deviceType) {
+    if (deviceType === '' && osName === 'Java ME') {
       deviceType = DEVICE_TYPE.FEATURE_PHONE;
     }
 
@@ -506,18 +507,18 @@ class DeviceDetector {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
-
-    let hasMobileBrowser =  (
-      clientType === CLIENT_TYPE.BROWSER &&
-      MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1
-    );
-    let hasDesktopOs = osName !== '' && (
-      DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
-      DESKTOP_OS_LIST.indexOf(osFamily) !== -1
-    );
-
+    
     // check os desktop and not mobile browser
     if (deviceType === '') {
+      let hasMobileBrowser =  (
+        clientType === CLIENT_TYPE.BROWSER &&
+        MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1
+      );
+  
+      let hasDesktopOs = osName !== '' && (
+        DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
+        DESKTOP_OS_LIST.indexOf(osFamily) !== -1
+      );
       if (!hasMobileBrowser && hasDesktopOs) {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
@@ -526,13 +527,6 @@ class DeviceDetector {
     return {
       type: deviceType,
     };
-  }
-
-  getIdClientsForUA(userAgent) {
-    if ('' === userAgent) {
-      return [];
-    }
-
   }
 
   /**
@@ -544,24 +538,8 @@ class DeviceDetector {
     if ('' === deviceCode) {
       return [];
     }
-    if (this.__deviceIndexexHash === void 0) {
-      this.__deviceIndexexHash = {};
-      
-      let path = __dirname + '/regexes/device-index-hash.yml';
-      
-      if (this.filePathDeviceIndexes) {
-        path = this.filePathDeviceIndexes;
-      }
-      if (helper.hasFile(path)) {
-        this.__deviceIndexexHash = helper.loadYMLFile(path);
-      }
-    }
-    let lDeviceCode = deviceCode.toLowerCase();
-    let brands = this.__deviceIndexexHash[lDeviceCode];
-    if (brands !== void 0) {
-      return brands;
-    }
-    return [];
+    
+    return IndexerDevice.findDeviceBrandsForDeviceCode(deviceCode);
   }
 
   /**
@@ -569,7 +547,7 @@ class DeviceDetector {
    * @returns {ResultDeviceCode}
    */
   parseDeviceCode(userAgent) {
-    return this.getParseAliasDevice().parse(userAgent);
+    return aliasDevice.parse(userAgent);
   }
 
   /**
@@ -670,16 +648,11 @@ class DeviceDetector {
    * @return {ResultClient|{}}
    */
   parseClient(userAgent, clientHints) {
-
-    let positions;
-    if (this.clientIndexes) {
-      positions = IndexerClient.findClientRegexPositionsForUserAgent(userAgent)
-    }
-
+    
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHints, positions);
+      let resultMerge = parser.parse(userAgent, clientHints);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;

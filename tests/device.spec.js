@@ -141,7 +141,12 @@ const createTestForFile = (file)  => {
 
     let total = fixtureData.length;
     // =====
-    describe('not used indexes', () => {
+    describe('not used indexes', function() {
+      before(() => {
+        detector.deviceIndexes = false;
+        detector.clientIndexes = false;
+      })
+      
       fixtureData.forEach((fixture, pos) => {
         normalizationFixture(fixture);
         it(pos + '/' + total, function () {
@@ -150,7 +155,6 @@ const createTestForFile = (file)  => {
           }
 
           let cloneFixture = Object.assign({}, fixture)
-          detector.deviceIndexes = false;
           let clientHintData = clientHints.parse(cloneFixture.headers);
           let result = detector.detect(cloneFixture.user_agent, clientHintData);
 
@@ -163,7 +167,11 @@ const createTestForFile = (file)  => {
       });
     });
     // =====
-    describe('used indexes', () => {
+    describe('used indexes', function() {
+      before(() => {
+        detector.deviceIndexes = true;
+        detector.clientIndexes = true;
+      })
       fixtureData.forEach((fixture, pos) => {
         normalizationFixture(fixture);
         it(pos + '/' + total, function () {
@@ -172,7 +180,6 @@ const createTestForFile = (file)  => {
           }
 
           let cloneFixture = Object.assign({}, fixture)
-          detector.deviceIndexes = true;
           let clientHintData = clientHints.parse(cloneFixture.headers);
           let result = detector.detect(cloneFixture.user_agent, clientHintData);
 

@@ -1,5 +1,8 @@
 const fs = require('fs');
 const ArrayPath = require('../../lib/array-path');
+
+const CLIENT_TYPES = require('../../parser/const/client-type');
+
 const {YAMLLoad, YAMLDump, getFixtureFolder} = require('./../functions');
 const {splitUserAgent, matchUserAgent, fuzzyCompare} = require(
   './../../parser/helper');
@@ -21,15 +24,15 @@ const replaceAll = (source, search, replace) => {
   let str = String(source);
   search.forEach((item, i) => {
     str = str.replace(search[i], replace[i]);
-  })
+  });
   return str;
-}
+};
 
 const findDataKey = (groups, clientName) => {
   if (!groups) {
     return null;
   }
-
+  
   try {
     for (let keyName in groups) {
       if (Array.isArray(groups[keyName])) {
@@ -45,32 +48,33 @@ const findDataKey = (groups, clientName) => {
       }
       let searchArray = ['%20', / ?app| ?browser/i];
       let replaceArray = [' ', ''];
-
+      
       // remove prefix App and Browser
       let first = replaceAll(keyName, searchArray, replaceArray);
       let second = replaceAll(clientName, searchArray, replaceArray);
       if (fuzzyCompare(first, second)) {
         return String(keyName);
       }
-
+      
       if (second.indexOf(first) !== -1) {
         return String(keyName);
       }
     }
-
+    
   } catch (e) {
-
+  
   }
-  return null
-}
+  return null;
+};
 
 const findDataIndex = (userAgent, clientType) => {
   let database = [];
-  if (clientType === 'browser') {
+  if (clientType === CLIENT_TYPES.BROWSER) {
     database = browserRegexData;
-  }
-  if (clientType === 'mobile app') {
+  } else if (clientType === CLIENT_TYPES.MOBILE_APP) {
     database = appRegexData;
+  } else {
+    return null;
   }
   for (let i = 0, l = database.length; i < l; i++) {
     let result = matchUserAgent(database[i].regex, userAgent);
@@ -78,36 +82,62 @@ const findDataIndex = (userAgent, clientType) => {
       return i;
     }
   }
-}
+  
+  return null;
+};
+
+
+// console.log(splitUserAgent('Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36'))
+//
+// return;
+
 
 const createIndexForFixture = (fixture) => {
+  
+  const sortAsc = (a, b) => a - b;
+  
   let userAgent = fixture.user_agent;
   let splitData = splitUserAgent(userAgent);
   let clientName = ArrayPath.get(fixture, 'client.name', null);
   let clientType = ArrayPath.get(fixture, 'client.type', null);
-  let keyIndex = findDataIndex(userAgent, clientType)
+  let headers = ArrayPath.get(fixture, 'headers', null);
+  if (headers !== null) {
+    return;
+  }
+  
+  let keyIndex = findDataIndex(userAgent, clientType);
   let keyName = splitData.hash;
-
-  if (['browser', 'mobile app'].indexOf(clientType) === -1 || !clientName || !keyIndex) {
+  
+  if (
+    ![CLIENT_TYPES.BROWSER, CLIENT_TYPES.MOBILE_APP].includes(clientType) ||
+    !clientName ||
+    keyIndex === null
+  ) {
     return;
   }
   if (output[keyName] === void 0) {
     output[keyName] = [[], []];
   }
-  if (!output[keyName][0].includes(keyIndex) && clientType === 'browser') {
+  
+  if (!output[keyName][0].includes(keyIndex) && clientType ===
+    CLIENT_TYPES.BROWSER) {
     output[keyName][0].push(keyIndex);
-    output[keyName][0].sort((a, b) => a - b);
+    output[keyName][0] = output[keyName][0].sort(sortAsc);
   }
-  if (!output[keyName][1].includes(keyIndex) && clientType === 'mobile app') {
+  
+  if (!output[keyName][1].includes(keyIndex) && clientType ===
+    CLIENT_TYPES.MOBILE_APP) {
     output[keyName][1].push(keyIndex);
-    output[keyName][1].sort((a, b) => a - b);
+    output[keyName][1] = output[keyName][1].sort(sortAsc);
   }
-}
+};
+
 appFixtureData.forEach((fixture) => {
-  createIndexForFixture(fixture)
+  createIndexForFixture(fixture);
 });
+
 browserFixtureData.forEach((fixture) => {
-  createIndexForFixture(fixture)
+  createIndexForFixture(fixture);
 });
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
@@ -119,14 +149,14 @@ ymlDeviceFiles.forEach((file) => {
   }
   let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
   fixtureData.forEach((fixture) => {
-    createIndexForFixture(fixture)
+    createIndexForFixture(fixture);
   });
 });
 
 let content = YAMLDump(output);
 
 fs.writeFileSync(
-  __dirname + '/../../regexes/device-index-hash.yml',
+  __dirname + '/../../regexes/client-index-hash.yml',
   content,
-  'utf8'
+  'utf8',
 );

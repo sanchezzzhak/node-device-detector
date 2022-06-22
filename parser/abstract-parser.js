@@ -23,6 +23,7 @@ class ParserAbstract {
   constructor() {
     this.fixtureFile = null;
     this.collection = null;
+    this.type = null;
     this.versionTruncation = null;
   }
 

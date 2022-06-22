@@ -4,9 +4,9 @@ const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
 const BrowserHints = require('./hints/browser-hints');
+const IndexerClient = require('./indexer-client');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
-
 const browserHints = new BrowserHints;
 
 const compareBrandForClientHints = (brand) => {
@@ -23,13 +23,14 @@ const compareBrandForClientHints = (brand) => {
   return brand;
 }
 
-
 class Browser extends ClientAbstractParser {
   constructor() {
     super();
     this.engine_collection = [];
     this.fixtureFile = 'client/browsers.yml';
     this.loadCollection();
+    this.type = CLIENT_TYPE.BROWSER;
+    this.collectionLength = this.collection.length;
   }
 
   getCollectionBrowsers() {
@@ -48,14 +49,13 @@ class Browser extends ClientAbstractParser {
   /**
    * @param {string} userAgent
    * @param {*} clientHints
-   * @param {array|null} positions
    * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
    */
-  parse(userAgent, clientHints, positions) {
+  parse(userAgent, clientHints) {
 
     let hash = this.parseFromHashHintsApp(clientHints);
     let hint = this.parseFromClientHints(clientHints);
-    let data = this.parseFromUserAgent(userAgent, positions);
+    let data = this.parseFromUserAgent(userAgent);
 
     let type = CLIENT_TYPE.BROWSER;
     let name = '';
@@ -163,6 +163,7 @@ class Browser extends ClientAbstractParser {
         }
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
+          
           let shortName = this.getCollectionBrowsers()[browserName];
           let found = helper.fuzzyCompare(`${brand}`, browserName)
             || helper.fuzzyCompare(`${brand} Browser`, browserName)
@@ -189,8 +190,12 @@ class Browser extends ClientAbstractParser {
     };
   }
 
-  __passeFormUserAgentPosition(userAgent, i = 0) {
-    let item = this.collection[i];
+  __parseFormUserAgentPosition(userAgent, position = 0) {
+    let item = this.collection[position];
+    if (item === void 0) {
+      return null;
+    }
+    
     let regex = this.getBaseRegExp(item.regex);
     let match = regex.exec(userAgent);
 
@@ -224,24 +229,31 @@ class Browser extends ClientAbstractParser {
     return null;
   }
 
-  parseFromUserAgent(userAgent, positions) {
+  parseFromUserAgent(userAgent) {
     if (!userAgent) {
       return null;
     }
-
-    if (positions && positions[0].length) {
-      for (let i = 0, l = positions[0].length; i < l; i++) {
-        let result = this.__passeFormUserAgentPosition(userAgent, positions[0][i]);
+  
+    let positions = [];
+    if (this.clientIndexes) {
+      positions = IndexerClient.findClientRegexPositionsForUserAgent(
+        userAgent,
+        this.type,
+      );
+    }
+  
+    // scan by positions
+    if (positions !== null && positions.length) {
+      for (let i = 0, l = positions.length; i < l; i++) {
+        let result = this.__parseFormUserAgentPosition(userAgent, positions[i]);
         if (result !== null) {
           return result;
         }
       }
     }
-
-    let position = 0;
-    let l = this.collection.length;
-    for (; position < l; position++) {
-      let result = this.__passeFormUserAgentPosition(userAgent, position);
+    
+    for ( let position = 0; position < this.collectionLength; position++) {
+      let result = this.__parseFormUserAgentPosition(userAgent, position);
       if (result !== null) {
         return result;
       }

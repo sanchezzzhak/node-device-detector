@@ -23,7 +23,8 @@ function matchUserAgent(str, userAgent) {
  */
 function fuzzyCompare(val1, val2) {
   return val1 !== null && val2 !== null &&
-    val1.replace(/ /gi, '').toLowerCase() === val2.replace(/ /gi, '').toLowerCase();
+    val1.replace(/ /gi, '').toLowerCase() ===
+    val2.replace(/ /gi, '').toLowerCase();
 }
 
 function createMD5(str) {
@@ -70,13 +71,14 @@ function versionCompare(ver1, ver2) {
 
 /**
  * @param {string} version
- * @param {number} maxMinorParts - how many version chars trim
+ * @param {*} maxMinorParts - how many version chars trim
  * @returns {string}
  */
 function versionTruncate(version, maxMinorParts) {
   let versionParts = String(version).split('.');
   if (
-    maxMinorParts !== void 0 &&
+    maxMinorParts !== null &&
+    maxMinorParts !== '' &&
     versionParts.length > maxMinorParts
   ) {
     versionParts = versionParts.slice(0, 1 + maxMinorParts);
@@ -206,13 +208,13 @@ function hasFile(file) {
 function trimChars(str, chars) {
   let start = 0,
     end = str.length;
-
+  
   while (start < end && str[start] === chars)
     ++start;
-
+  
   while (end > start && str[end - 1] === chars)
     --end;
-
+  
   return (start > 0 || end < str.length) ? str.substring(start, end) : str;
 }
 
@@ -222,14 +224,14 @@ function getGroupForUserAgentTokens(tokens) {
     if (token === '') {
       return;
     }
-
+    
     let data = token.match(/^\((.*)\)$/);
     if (data !== null) {
       groupIndex++;
       group['#' + groupIndex] = data[1].split(/[;,] /);
       return group;
     }
-
+    
     let rowSlash = token.split('/');
     if (rowSlash.length === 2) {
       group[rowSlash[0]] = rowSlash[1];
@@ -246,25 +248,6 @@ function getTokensForUserAgent(userAgent) {
   return userAgent.split(tokenRegex);
 }
 
-function getHashForUserAgentGroups(groups) {
-  let parts = [];
-  for (let key in groups) {
-    if (typeof groups[key] !== 'string' || !groups[key]) {
-      continue;
-    }
-    if (key && String(key).charAt(0) === '#') {
-      if (!groups[key].match(/[/;]/i)) {
-        parts.push(String(groups[key]).toLowerCase());
-        continue;
-      }
-    }
-
-    parts.push(String(key).toLowerCase());
-  }
-
-  return createMD5(parts.join('|'))
-}
-
 /**
  * Split UserAgent to tokens and groups
  *
@@ -274,9 +257,29 @@ function getHashForUserAgentGroups(groups) {
 function splitUserAgent(userAgent) {
   let tokens = getTokensForUserAgent(userAgent);
   let groups = getGroupForUserAgentTokens(tokens);
-  let hash = getHashForUserAgentGroups(groups);
-
-  return {tokens, groups, hash};
+  
+  let parts = [];
+  for (let key in groups) {
+    if (typeof groups[key] !== 'string' || !groups[key]) {
+      continue;
+    }
+    if (key && String(key).charAt(0) === '#') {
+      if (
+        !groups[key].match(/[/;]/i) &&
+        !groups[key].match(/^\s*[\d.]+/i)
+      ) {
+        parts.push(String(groups[key]).toLowerCase());
+        continue;
+      }
+      continue;
+    }
+    
+    parts.push(String(key).toLowerCase());
+  }
+  let hash = createMD5(parts.join('.')).replace('-', '');
+  let path = parts.join('.');
+  
+  return {tokens, groups, hash, path};
 }
 
 module.exports = {
@@ -298,4 +301,4 @@ module.exports = {
   hasFile,
   trimChars,
   splitUserAgent,
-}
+};

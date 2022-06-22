@@ -11,7 +11,7 @@ const cpuUsage = () => {
 const createTest = (testname, ua) => {
   console.time(testname);
   cpuUsage()
-  detector.detect(ua);
+  const result = detector.detect(ua);
   console.timeEnd(testname);
   console.log(testname, ua);
   console.log(testname, cpuUsage())
