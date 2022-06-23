@@ -7,6 +7,8 @@ class MediaPlayer extends ClientAbstractParser {
     super();
     this.fixtureFile = 'client/mediaplayers.yml';
     this.loadCollection();
+    this.collectionLength = this.collection.length;
+    this.type = CLIENT_TYPE.MEDIA_PLAYER;
   }
 
   /**

@@ -4,9 +4,9 @@ const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
 const BrowserHints = require('./hints/browser-hints');
+const IndexerClient = require('./indexer-client');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
-
 const browserHints = new BrowserHints;
 
 const compareBrandForClientHints = (brand) => {
@@ -23,13 +23,14 @@ const compareBrandForClientHints = (brand) => {
   return brand;
 }
 
-
 class Browser extends ClientAbstractParser {
   constructor() {
     super();
     this.engine_collection = [];
     this.fixtureFile = 'client/browsers.yml';
     this.loadCollection();
+    this.type = CLIENT_TYPE.BROWSER;
+    this.collectionLength = this.collection.length;
   }
 
   getCollectionBrowsers() {
@@ -73,8 +74,8 @@ class Browser extends ClientAbstractParser {
 
       if (data) {
         if (
-            'Chromium' === name && 'Chromium' !== data.name
-            && 'Chrome' === this.buildFamily(data.short_name)
+          'Chromium' === name && 'Chromium' !== data.name
+          && 'Chrome' === this.buildFamily(data.short_name)
         ) {
           name = data.name;
           short = data.short_name;
@@ -112,7 +113,7 @@ class Browser extends ClientAbstractParser {
 
     family = this.buildFamily(short);
 
-    if (hash !== null && name !== hash.name){
+    if (hash !== null && name !== hash.name) {
       name = hash.name;
       version = '';
       short = this.buildShortName(name)
@@ -162,10 +163,11 @@ class Browser extends ClientAbstractParser {
         }
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
+          
           let shortName = this.getCollectionBrowsers()[browserName];
           let found = helper.fuzzyCompare(`${brand}`, browserName)
-              || helper.fuzzyCompare(`${brand} Browser`, browserName)
-              || helper.fuzzyCompare(`${brand}`, browserName + ' Browser');
+            || helper.fuzzyCompare(`${brand} Browser`, browserName)
+            || helper.fuzzyCompare(`${brand}`, browserName + ' Browser');
 
           if (found) {
             name = String(browserName);
@@ -188,43 +190,75 @@ class Browser extends ClientAbstractParser {
     };
   }
 
+  __parseFormUserAgentPosition(userAgent, position = 0) {
+    let item = this.collection[position];
+    if (item === void 0) {
+      return null;
+    }
+    
+    let regex = this.getBaseRegExp(item.regex);
+    let match = regex.exec(userAgent);
+
+    if (match !== null) {
+      let name = this.buildByMatch(item.name, match);
+      name = this.buildName(name);
+      let version = this.buildVersion(item.version, match);
+
+      let short = this.buildShortName(name);
+      let engine = this.buildEngine(
+        item.engine !== void 0 ? item.engine : {},
+        version
+      );
+      if (engine === '') {
+        engine = this.parseEngine(userAgent);
+      }
+
+      let engineVersion = this.buildEngineVersion(userAgent, engine);
+      let family = this.buildFamily(short);
+
+      return {
+        name: name,
+        short_name: String(short),
+        version: version,
+        engine: String(engine),
+        engine_version: String(engineVersion),
+        family: family,
+      };
+    }
+
+    return null;
+  }
+
   parseFromUserAgent(userAgent) {
     if (!userAgent) {
       return null;
     }
-
-    for (let i = 0, l = this.collection.length; i < l; i++) {
-      let item = this.collection[i];
-      let regex = this.getBaseRegExp(item.regex);
-      let match = regex.exec(userAgent);
-
-      if (match !== null) {
-        let name = this.buildByMatch(item.name, match);
-        name = this.buildName(name);
-        let version = this.buildVersion(item.version, match);
-
-        let short = this.buildShortName(name);
-        let engine = this.buildEngine(
-            item.engine !== void 0 ? item.engine : {},
-            version
-        );
-        if (engine === '') {
-          engine = this.parseEngine(userAgent);
+  
+    let positions = [];
+    if (this.clientIndexes) {
+      positions = IndexerClient.findClientRegexPositionsForUserAgent(
+        userAgent,
+        this.type,
+      );
+    }
+  
+    // scan by positions
+    if (positions !== null && positions.length) {
+      for (let i = 0, l = positions.length; i < l; i++) {
+        let result = this.__parseFormUserAgentPosition(userAgent, positions[i]);
+        if (result !== null) {
+          return result;
         }
-
-        let engineVersion = this.buildEngineVersion(userAgent, engine);
-        let family = this.buildFamily(short);
-
-        return {
-          name: name,
-          short_name: String(short),
-          version: version,
-          engine: String(engine),
-          engine_version: String(engineVersion),
-          family: family,
-        };
       }
     }
+    
+    for ( let position = 0; position < this.collectionLength; position++) {
+      let result = this.__parseFormUserAgentPosition(userAgent, position);
+      if (result !== null) {
+        return result;
+      }
+    }
+
     return null;
   }
 
@@ -274,9 +308,9 @@ class Browser extends ClientAbstractParser {
   buildFamily(shortName) {
     for (let browserFamily in BROWSER_FAMILIES) {
       if (
-          browserFamily &&
-          BROWSER_FAMILIES[browserFamily] &&
-          BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1
+        browserFamily &&
+        BROWSER_FAMILIES[browserFamily] &&
+        BROWSER_FAMILIES[browserFamily].indexOf(shortName) !== -1
       ) {
         return browserFamily;
       }
@@ -300,8 +334,8 @@ class Browser extends ClientAbstractParser {
       let versions = Object.keys(engine.versions).sort(helper.versionCompare);
       for (let i = 0, l = versions.length; i < l; i++) {
         if (
-            browserVersion !== '' &&
-            helper.versionCompare(browserVersion, versions[i]) >= 0
+          browserVersion !== '' &&
+          helper.versionCompare(browserVersion, versions[i]) >= 0
         ) {
           result = engine.versions[versions[i]];
         }
@@ -358,8 +392,8 @@ class Browser extends ClientAbstractParser {
 
     let regexp = new RegExp(
       engineToken +
-        '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
-        'i'
+      '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
+      'i'
     );
 
     let match = regexp.exec(userAgent);

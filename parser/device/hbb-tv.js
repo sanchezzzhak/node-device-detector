@@ -15,9 +15,10 @@ class HbbTv extends DeviceAbstractParser {
   /**
    *
    * @param {string} userAgent
+   * @param brandIndexes
    * @returns {null|{model: string, id: string, type: string, brand: string}}
    */
-  parse(userAgent) {
+  parse(userAgent, brandIndexes) {
     if (!this.isHubTv(userAgent)) {
       return null;
     }
@@ -29,7 +30,7 @@ class HbbTv extends DeviceAbstractParser {
       model: '',
     };
 
-    let resultParse = super.parse(userAgent)
+    let resultParse = super.parse(userAgent, brandIndexes)
     if (resultParse) {
       result.id = resultParse.id;
       result.brand = resultParse.brand;

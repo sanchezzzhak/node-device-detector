@@ -7,14 +7,18 @@ class FeedReader extends ClientAbstractParser {
     super();
     this.fixtureFile = 'client/feed_readers.yml';
     this.loadCollection();
+    this.collectionLength = this.collection.length;
+    this.type = CLIENT_TYPE.FEED_READER;
   }
 
   /**
    *
    * @param userAgent
+   * @param clientHintsData
    * @returns {({name: (string|*), type: string, version: string} & {type: string})|null}
    */
   parse(userAgent, clientHintsData) {
+    
     let result = super.parse(userAgent, clientHintsData);
     if (result) {
       result = Object.assign(result, {

@@ -7,11 +7,14 @@ class Library extends ClientAbstractParser {
     super();
     this.fixtureFile = 'client/libraries.yml';
     this.loadCollection();
+    this.collectionLength = this.collection.length;
+    this.type = CLIENT_TYPE.LIBRARY;
   }
 
   /**
    *
    * @param userAgent
+   * @param clientHintsData
    * @returns {({name: (string|*), type: string, version: string} & {type: string})|null}
    */
   parse(userAgent, clientHintsData) {
