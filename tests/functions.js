@@ -48,7 +48,7 @@ function perryJSON(obj) {
 }
 
 function isObjNotEmpty(value) {
-  return value !== void 0 && value !== null;
+  return value !== void 0 && value !== null
 }
 
 function normalizeVersion(version, count) {

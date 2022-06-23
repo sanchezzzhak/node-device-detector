@@ -199,27 +199,28 @@ const createTestForFile = (file) => {
       });
     });
     
-    describe('not used indexes + async', function() {
-      before(() => {
-        detector.deviceIndexes = false;
-        detector.clientIndexes = false;
-      });
-      fixtureData.forEach((fixture, pos) => {
-        normalizationFixture(fixture);
-        createSubTests(fixture, true, pos);
-      });
-    });
+    // describe('not used indexes + async', function() {
+    //   before(() => {
+    //     detector.deviceIndexes = false;
+    //     detector.clientIndexes = false;
+    //   });
+    //   fixtureData.forEach((fixture, pos) => {
+    //     normalizationFixture(fixture);
+    //     createSubTests(fixture, true, pos);
+    //   });
+    // });
+    //
+    // describe('used indexes + async', function() {
+    //   before(() => {
+    //     detector.deviceIndexes = true;
+    //     detector.clientIndexes = true;
+    //   });
+    //   fixtureData.forEach((fixture, pos) => {
+    //     normalizationFixture(fixture);
+    //     createSubTests(fixture, true, pos);
+    //   });
+    // });
     
-    describe('used indexes + async', function() {
-      before(() => {
-        detector.deviceIndexes = true;
-        detector.clientIndexes = true;
-      });
-      fixtureData.forEach((fixture, pos) => {
-        normalizationFixture(fixture);
-        createSubTests(fixture, true, pos);
-      });
-    });
     // =====
   });
 };
