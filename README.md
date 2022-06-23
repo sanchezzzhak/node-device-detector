@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 09/06/2022_
+_Last update: 23/06/2022_
 
 ## Description
 
@@ -15,6 +15,8 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 ![YAML Lint](https://github.com/sanchezzzhak/node-device-detector/workflows/YAML%20Lint/badge.svg?branch=master)
 ![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg?branch=master)
 ![CodeQL](https://github.com/sanchezzzhak/node-device-detector/workflows/CodeQL/badge.svg?branch=master)
+
+## Contents
 
 + [Helpers](#helpers)
 + [Single parsers](#single-parsers)
@@ -39,7 +41,11 @@ Usage
 -
 ```js
 const DeviceDetector = require('node-device-detector');
-const detector = new DeviceDetector;
+const detector = new DeviceDetector({
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: false,
+});
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const result = detector.detect(userAgent);
 console.log('result parse', result);
@@ -61,7 +67,7 @@ console.log('result parse', result);
   client:  { 
     type: 'browser',            // client type 
     name: 'Chrome Mobile',      // client name name
-    short_name: 'CM',           // client short code name (only browser, format A-Z0-9{2})
+    short_name: 'CM',           // client short code name (only browser, format A-Z0-9{2,3})
     version: '43.0.2357.78',    // client version
     engine: 'Blink',            // client engine name (only browser)
     engine_version: ''          // client engine version (only browser)
@@ -72,6 +78,7 @@ console.log('result parse', result);
     type: 'smartphone',         // device type
     brand: 'ZTE',               // device brand name
     model: 'Nubia Z7 max'       // device model name
+    code: 'NX505J'              // device model code  (only result for enable detector.deviceAliasCode) 
   }
 }
 ```
@@ -89,7 +96,6 @@ Result parse empty
   }
 }
 ```
-
 
 ### Helpers<a name="helpers"></a> ###
 [[top]](#top)
@@ -149,12 +155,19 @@ const DeviceDetector = require('node-device-detector');
 const DeviceHelper   = require('node-device-detector/helper');
 const ClientHints    = require('node-device-detector/client-hints')
 
-const detector = new DeviceDetector;
+const detector = new DeviceDetector({
+
+  // ... all options scroll to Setter/Getter/Options
+});
+
 const clientHints = new ClientHints;
 const userAgent = res.headers['user-agent'];
 const clientHintData = clientHints.parse(res.headers);
 const result = detector.detect(userAgent, clientHintData);
 
+// result promise
+// added for 2.0.4 version or later
+const result = detector.detectAsync(userAgent, clientHintData);
 ```
 
 Using parsers singly <a name="single-parsers"></a>
@@ -209,32 +222,19 @@ console.log('Result parse lite', result);
 [[top]](#top)
 ```js
 const detector = new DeviceDetector({
-  osVersionTruncate: 0, // Truncate Os version from 5.0 to 5 (default '' or null)
-  clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357 .78 to 43.0.2357 (default '' or null)
-  deviceIndexes: false,      // Using indexes for faster device model search
-  filePathDeviceIndexes: null  // custom index file path
+  osVersionTruncate: 0,      // Truncate OS version from 5.0 to 5 (default '' or null)
+  clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357.78 to 43.0.2357 (default '' or null)
+  deviceIndexes: true,       // Using indexes for faster device search (default false)
+  clientIndexes: true,       // Using indexes for faster client search (default false)
+  deviceAliasCode: false,    // adds the device code to result device.code as is (default false)
 });
-// format file filePathDeviceIndexes 
 
-// You can override these settings at any time using special methods, example
-detector.setOsVersionTruncate(0);
-detector.setClientVersionTruncate(2);
+// You can override these settings at any time using special setters, example
+detector.osVersionTruncate = 0;
+detector.clientVersionTruncate = 2;
 detector.deviceIndexes = true;
-/**
-node tests/banchmark.js test result:
-----
-Test: Mozilla/5.0 (Linux; Android 7.1.2; E6810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36
-EnableDeviceIndexes  x 1,184 ops/sec ±0.52% (92 runs sampled)
-DiscardDeviceIndexes x 636 ops/sec ±0.44% (94 runs sampled)
-----
-Test: Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36
-EnableDeviceIndexes  x 1,148 ops/sec ±0.49% (93 runs sampled)
-DiscardDeviceIndexes x 404 ops/sec ±0.38% (92 runs sampled)
-----
-Test: Mozilla/5.0 (Linux; Android 4.4.4; Qin 1s+ Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
-EnableDeviceIndexes  x 1,022 ops/sec ±0.43% (92 runs sampled)
-DiscardDeviceIndexes x 395 ops/sec ±0.31% (90 runs sampled)
-*/
+detector.clientIndexes = true;
+detector.deviceAliasCode = true,
 
 // Array available device types
 detector.getAvailableDeviceTypes();
@@ -260,6 +260,60 @@ result
 is not parse result  {name: ""}
 */
 ``` 
+
+### What about performance?
+```
+node tests/banchmark.js test result:
+
+Test Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36
+-----
+detector.parseDevice (deviceIndexes on) x 10,449 ops/sec ±0.27% (93 runs sampled)
+detector.parseDevice (deviceIndexes off) x 261 ops/sec ±88.58% (92 runs sampled)
+detector.parseClient (clientIndexes on) x 1,703 ops/sec ±0.36% (92 runs sampled)
+detector.parseClient (clientIndexes off) x 859 ops/sec ±0.46% (93 runs sampled)
+detector.parseOS x 10,034 ops/sec ±0.23% (94 runs sampled)
+detector.detect (indexes off) x 254 ops/sec ±0.46% (85 runs sampled)
+detector.detect (indexes on) x 1,114 ops/sec ±1.44% (91 runs sampled)
+```
+<details>
+<summary>Other tests</summary>
+
+```
+Test Mozilla/5.0 (Linux; Android 12; M2101K9AG Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 UCURSOS/v1.6_273-android
+-----
+detector.parseDevice (deviceIndexes on) x 5,457 ops/sec ±0.23% (95 runs sampled)
+detector.parseDevice (deviceIndexes off) x 220 ops/sec ±31.15% (87 runs sampled)
+detector.parseClient (clientIndexes on) x 5,797 ops/sec ±0.32% (92 runs sampled)
+detector.parseClient (clientIndexes off) x 6,243 ops/sec ±0.47% (93 runs sampled)
+detector.parseOS x 7,570 ops/sec ±0.92% (93 runs sampled)
+detector.detect (indexes off) x 203 ops/sec ±78.87% (86 runs sampled)
+detector.detect (indexes on) x 1,695 ops/sec ±1.49% (88 runs sampled)
+
+Test Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36
+-----
+detector.parseDevice (deviceIndexes on) x 2,315 ops/sec ±0.62% (94 runs sampled)
+detector.parseDevice (deviceIndexes off) x 448 ops/sec ±78.47% (89 runs sampled)
+detector.parseClient (clientIndexes on) x 1,664 ops/sec ±0.69% (92 runs sampled)
+detector.parseClient (clientIndexes off) x 844 ops/sec ±1.09% (93 runs sampled)
+detector.parseOS x 10,258 ops/sec ±0.31% (95 runs sampled)
+detector.detect (indexes off) x 254 ops/sec ±48.42% (89 runs sampled)
+detector.detect (indexes on) x 808 ops/sec ±0.40% (92 runs sampled)
+-----
+Test Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44
+-----
+detector.parseDevice (deviceIndexes on) x 8,387 ops/sec ±1.21% (94 runs sampled)
+detector.parseDevice (deviceIndexes off) x 8,645 ops/sec ±0.32% (95 runs sampled)
+detector.parseClient (clientIndexes on) x 1,751 ops/sec ±1.87% (91 runs sampled)
+detector.parseClient (clientIndexes off) x 1,227 ops/sec ±0.57% (93 runs sampled)
+detector.parseOS x 4,921 ops/sec ±0.25% (97 runs sampled)
+detector.detect (indexes off) x 799 ops/sec ±1.04% (92 runs sampled)
+detector.detect (indexes on) x 1,032 ops/sec ±0.61% (94 runs sampled)
+-----
+```
+</details>
+
+> I recommend using cache, since we have thousands of regular expressions ~13261 count.
+> 
 
 ### Get more information about a device (experimental)
 > This parser is experimental and contains few devices. (1718 devices, alias devices 3739)

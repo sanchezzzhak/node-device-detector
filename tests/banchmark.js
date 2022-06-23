@@ -1,6 +1,8 @@
 const Benchmark = require('benchmark');
 const DeviceDetector = require('../index');
 
+Benchmark.support.timeout = false;
+
 const detector = new DeviceDetector();
 
 const createBenchmark = (useragent) => {
@@ -10,18 +12,19 @@ const createBenchmark = (useragent) => {
 // add listeners
   suite.on('cycle', function(event) {
     console.log(String(event.target));
-  })
+  });
   
-  suite.add('parse device EnableIndexes', function() {
+  
+  suite.add('detector.parseDevice (deviceIndexes on)', function() {
     return detector.parseDevice(useragent, {});
   }, {
     'onStart': () => {
       detector.deviceIndexes = true;
       detector.clientIndexes = true;
     },
-  })
+  });
   
-  suite.add('parse device DisableIndexes', function() {
+  suite.add('detector.parseDevice (deviceIndexes off)', function() {
     return detector.parseDevice(useragent, {});
   }, {
     'onStart': () => {
@@ -30,53 +33,51 @@ const createBenchmark = (useragent) => {
     },
   });
   
-  
-  suite.add('parse client EnableIndexes', function() {
+  suite.add('detector.parseClient (clientIndexes on)', function() {
     return detector.parseClient(useragent, {});
   }, {
     'onStart': () => {
       detector.clientIndexes = true;
     },
-  })
+  });
   
-  suite.add('parse client DisableIndexes', function() {
+  suite.add('detector.parseClient (clientIndexes off)', function() {
     return detector.parseClient(useragent, {});
   }, {
     'onStart': () => {
       detector.clientIndexes = false;
     },
-  })
+  });
   
-  suite.add('parse os', function() {
+  suite.add('detector.parseOS', function() {
     return detector.parseOs(useragent, {});
   }, {
     'onStart': () => {
       detector.clientIndexes = false;
       detector.deviceIndexes = false;
     },
-  })
+  });
   
-  suite.add('common detect DisableIndexes', function() {
+  suite.add('detector.detect (indexes off)', function() {
     return detector.detect(useragent, {});
   }, {
     'onStart': () => {
       detector.clientIndexes = false;
       detector.deviceIndexes = false;
     },
-  })
+  });
   
-  suite.add('common detect EnableIndexes', function() {
+  suite.add('detector.detect (indexes on)', function() {
     return detector.detect(useragent, {});
   }, {
     'onStart': () => {
       detector.clientIndexes = true;
       detector.deviceIndexes = true;
     },
-  })
+  });
   suite.run({async: false, queued: true});
   console.log('-----');
-}
-
+};
 
 const useragents = [
   'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36',
@@ -88,4 +89,4 @@ const useragents = [
 
 useragents.forEach((useragent) => {
   createBenchmark(useragent);
-})
+});

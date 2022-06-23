@@ -57,8 +57,8 @@ class DeviceDetector {
    * @param {number|null} osVersionTruncate
    * @param {number|null} clientVersionTruncate
    * @param {boolean} deviceIndexes
+   * @param {boolean} clientIndexes
    * @param {boolean} deviceAliasCode
-   * @param {string|null} filePathDeviceIndexes
    */
   
   /**
@@ -83,22 +83,20 @@ class DeviceDetector {
     this.skipBotDetection = attr(options, 'skipBotDetection', false);
     this.osVersionTruncate = attr(options, 'osVersionTruncate', null);
     this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
+    this.deviceIndexes = attr(options, 'deviceIndexes', false);
+    this.clientIndexes = attr(options, 'clientIndexes', false);
+    this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
     
-    this.deviceIndexes = attr(options, 'deviceIndexes', true);
-    this.clientIndexes = attr(options, 'clientIndexes', true);
-    
-    // remove in version 2
+    // remove in version 2+
     let temp1 = attr(options, 'discardDeviceIndexes', void 0);
     if (temp1 !== void 0) {
       this.deviceIndexes = !temp1;
     }
-    this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
-    // remove in version 2
+    // remove in version 2+
     let temp2 = attr(options, 'discardDeviceAliasCode', void 0);
     if (temp2 !== void 0) {
-      this.deviceIndexes = !temp2;
+      this.deviceAliasCode = !temp2;
     }
-    
   }
   
   init() {
@@ -241,7 +239,7 @@ class DeviceDetector {
   
   /**
    * get truncate os version
-   * @param value
+   * @return {}
    */
   get osVersionTruncate() {
     return this.__osVersionTruncate;
@@ -249,6 +247,7 @@ class DeviceDetector {
   
   /**
    * set truncate os version (default null - all)
+   * @deprecated the method will be removed in v2.0 (use detector.osVersionTruncate)
    * @param value
    */
   setOsVersionTruncate(value) {
@@ -257,6 +256,7 @@ class DeviceDetector {
   
   /**
    * set truncate client version (default null - all)
+   * @deprecated the method will be removed in v2.0 (use detector.clientVersionTruncate)
    * @param value
    */
   setClientVersionTruncate(value) {

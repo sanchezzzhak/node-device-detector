@@ -1,22 +1,16 @@
-
 const DeviceDetector = require('../index');
 
-const detector = new DeviceDetector({deviceIndexes: true});
-
-let lastCpuUsage;
-const cpuUsage = () => {
-  return lastCpuUsage = process.cpuUsage(lastCpuUsage);
-}
+const detector = new DeviceDetector({
+  deviceIndexes: true, clientIndexes: true,
+});
 
 const createTest = (testname, ua) => {
   console.time(testname);
-  cpuUsage()
   const result = detector.detect(ua);
   console.timeEnd(testname);
   console.log(testname, ua);
-  console.log(testname, cpuUsage())
-  console.log('------')
-}
+  console.log('------');
+};
 
 const userAgent1 = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 
@@ -28,8 +22,6 @@ const userAgent4 = 'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-CN; R831K Build/JDQ
 
 const userAgent5 = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36';
 
-cpuUsage();
-/*
 createTest('test1', userAgent1);
 createTest('test2', userAgent1);
 createTest('test3', userAgent2);
@@ -38,5 +30,5 @@ createTest('test5', userAgent4);
 createTest('test6', userAgent1);
 createTest('test7', userAgent5);
 createTest('test8', userAgent1);
-createTest('test9', userAgent5);*/
-createTest('test10', userAgent5);
+createTest('test9', userAgent5);
+createTest('test10', userAgent4);
