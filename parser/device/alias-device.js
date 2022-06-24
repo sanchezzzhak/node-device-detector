@@ -10,6 +10,7 @@ class AliasDevice extends AbstractParser {
     this.__brandReplaceRegexp = '';
     this.__replaceBrand = true;
     this.loadCollection();
+    this.initRegexsBrandReplace();
   }
 
   hasReplaceBrand() {
@@ -51,19 +52,23 @@ class AliasDevice extends AbstractParser {
     return result;
   }
 
+  initRegexsBrandReplace(){
+    let escapeeChars = [/\+/gi, /\./gi];
+    let replaceChars = ['\\+', '\\.'];
+    let customBrands = ['HUAWEI HUAWEI', 'viv-vivo'];
+    let brands = customBrands
+    .concat(Object.keys(COLLECTION_BRAND_LIST))
+    .join('|');
+    for (let i = 0, l = escapeeChars.length; i < l; i++) {
+      brands = brands.replace(escapeeChars[i], replaceChars[i]);
+    }
+    this.__brandReplaceRegexp =
+      '(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(' + brands + ')[ _]';
+  }
+  
   getBrandReplaceRegexp() {
     if (!this.__brandReplaceRegexp) {
-      let escapeeChars = [/\+/gi, /\./gi];
-      let replaceChars = ['\\+', '\\.'];
-      let customBrands = ['HUAWEI HUAWEI', 'viv-vivo'];
-      let brands = customBrands
-        .concat(Object.keys(COLLECTION_BRAND_LIST))
-        .join('|');
-      for (let i = 0, l = escapeeChars.length; i < l; i++) {
-        brands = brands.replace(escapeeChars[i], replaceChars[i]);
-      }
-      this.__brandReplaceRegexp =
-        '(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(' + brands + ')[ _]';
+      this.initRegexsBrandReplace();
     }
     return this.__brandReplaceRegexp;
   }

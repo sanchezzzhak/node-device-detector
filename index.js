@@ -397,8 +397,7 @@ class DeviceDetector {
   parseOs(userAgent, clientHints = {}) {
     let result = {};
     for (let name in this.osParserList) {
-      let parser = this.osParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHints);
+      let resultMerge = this.osParserList[name].parse(userAgent, clientHints);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -588,8 +587,9 @@ class DeviceDetector {
     }
     
     for (let name in this.deviceParserList) {
-      let parser = this.deviceParserList[name];
-      let resultMerge = parser.parse(userAgent, brandIndexes);
+      let resultMerge = this.deviceParserList[name].parse(userAgent,
+        brandIndexes);
+      
       if (resultMerge) {
         result = Object.assign({}, result, resultMerge);
         break;
@@ -620,8 +620,7 @@ class DeviceDetector {
    * @return {{name:'', id:''}|null}
    */
   parseVendor(userAgent) {
-    let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
-    return parser.parse(userAgent);
+    let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER).parse(userAgent);
   }
   
   /**
@@ -638,8 +637,7 @@ class DeviceDetector {
     }
     
     for (let name in this.botParserList) {
-      let parser = this.botParserList[name];
-      let resultMerge = parser.parse(userAgent);
+      let resultMerge = this.botParserList[name].parse(userAgent);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -658,8 +656,8 @@ class DeviceDetector {
     
     let result = {};
     for (let name in this.clientParserList) {
-      let parser = this.clientParserList[name];
-      let resultMerge = parser.parse(userAgent, clientHints);
+      let resultMerge = this.clientParserList[name].parse(userAgent,
+        clientHints);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -728,8 +726,8 @@ class DeviceDetector {
       osData,
       clientData,
       deviceData,
-      clientHints
-    )
+      clientHints,
+    );
   }
   
   /**
@@ -742,14 +740,14 @@ class DeviceDetector {
     let deviceData = this.parseDevice(userAgent, clientHints);
     let osData = this.parseOs(userAgent, clientHints);
     let clientData = this.parseClient(userAgent, clientHints);
-  
+    
     return this.prepareDetectResult(
       userAgent,
       osData,
       clientData,
       deviceData,
-      clientHints
-    )
+      clientHints,
+    );
   }
 }
 
