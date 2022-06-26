@@ -10,7 +10,8 @@ const { YAMLLoad, getFixtureFolder } = require('./../functions');
 
 const aliasDevice = new AliasDevice();
 const detector = new DeviceDetect({
-  discardDeviceIndexes: false,
+  deviceIndexes: true,
+  clientIndexes: true,
 });
 
 let outputExist = {};

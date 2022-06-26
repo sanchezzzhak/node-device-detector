@@ -8,7 +8,7 @@ const aliasDevice = new (require('../../parser/device/alias-device'))();
 aliasDevice.setReplaceBrand(false);
 
 const detector = new (require('../../index'))({
-  discardDeviceIndexes: true,
+  deviceIndexes: false,
 });
 
 let parserDevice = detector.getParseDevice('Mobile');

@@ -27,8 +27,8 @@ const getRemoteFileContent = (url) => {
         reject(err);
       })
       response.on('end', () => {
-        fs.writeFileSync(savePath, fs.readFileSync(savePath, {encoding:'ucs2'}), {encoding:'utf8'});
-        resolve(fs.readFileSync(savePath, {encoding:'utf8'}));
+        fs.writeFileSync(savePath, fs.readFileSync(savePath, {encoding: 'ucs2'}), {encoding: 'utf8'});
+        resolve(fs.readFileSync(savePath, {encoding: 'utf8'}));
       });
     });
   })
@@ -38,9 +38,9 @@ const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
 
 const detector = new DeviceDetect({
-  discardDeviceIndexes: false,
+  deviceIndexes: false,
 });
-let outputExist = {};
+
 let fixtures = {};
 
 const run = async (folderFixturePath) => {
@@ -66,7 +66,7 @@ const run = async (folderFixturePath) => {
       let brand = String(fixture.device.brand);
       let model = String(fixture.device.model);
       let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0;
-      if(deviceCode !== void 0) {
+      if (deviceCode !== void 0) {
         fixtures[deviceCode] = {brand, model};
       }
     });
@@ -79,7 +79,7 @@ const run = async (folderFixturePath) => {
   let lines = content.split('\n');
   // Retail Branding,Marketing Name,Device,Model
 
-  console.log(`Brand, Marketing Name,Device,Model,MATCH POS,Brand,Model,Simulate4,Simulate3`);
+  console.log(`Brand,Marketing Name,Device,Model,MATCH POS,Brand (inUs),Model (inUs),-----,Simulate4 (detect for column Model),Simulate3 (detect for column Device)`);
 
   lines.forEach((line, i) => {
     if (i === 0) {
@@ -120,21 +120,21 @@ const run = async (folderFixturePath) => {
 
     let useragent1 = `Dalvik/2.1.0 (Linux; U; Android xx; ${column4} Build/MRA58K)`;
     let result1 = detector.detect(useragent1);
-    let simulate4= result1.device.brand + ' - ' +  result1.device.model;
+    let simulate4 = result1.device.brand + ' - ' + result1.device.model;
     if (result1.device.brand) {
       simulateDetect++;
     }
 
     let useragent2 = `Dalvik/2.1.0 (Linux; U; Android xx; ${column3} Build/MRA58K)`;
     let result2 = detector.detect(useragent2);
-    let simulate3 = result2.device.brand + ' - ' +  result2.device.model;
+    let simulate3 = result2.device.brand + ' - ' + result2.device.model;
 
-    console.log(`${column1},${column2},${column3},${column4},${pos},${brand},${model},${simulate4},${simulate3}`);
+    console.log(`${column1},${column2},${column3},${column4}, ${pos},${brand},${model},,${simulate4},${simulate3}`);
 
   });
-  const interestCalc = (foundCount, totalCount) =>  ((foundCount/totalCount) * 100).toFixed(2);
-  const percentFound = interestCalc(foundCount,totalCount);
-  const percentSimulate = interestCalc(simulateDetect,totalCount);
+  const interestCalc = (foundCount, totalCount) => ((foundCount / totalCount) * 100).toFixed(2);
+  const percentFound = interestCalc(foundCount, totalCount);
+  const percentSimulate = interestCalc(simulateDetect, totalCount);
 
   console.log(`Total, ${totalCount}, Found ${foundCount} (${percentFound}%), Simulate Found ${simulateDetect} (${percentSimulate}%)`);
 };
