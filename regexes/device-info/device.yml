@@ -1214,6 +1214,16 @@ infinix:
   x657: '->smart 5'
   x657b: '->smart 5'
   x657c: '->smart 5'
+  x6810: '->zero x neo'
+  x6811: '->zero x pro'
+  zero x pro: 'RE=2021.09;SZ=75.7x164.1x7.8;WT=193;DS=6.67;RS=1080x2400;OS=Android 11;CP=321;RM=8192;'
+  zero 5: 'RE=2018;SZ=82.4x166.4x8;WT=197;DS=5.98;RS=1080x1920;OS=Android 7.0;CP=343;RM=6144;'
+  x603: '->zero 5'
+  note 5: 'RE=2018;SZ=75x158x8.4;WT=173;DS=6.0;RS=1080x2160;OS=Android 8.1;CP=63;RM=3072;'
+  x604: '->note 5'
+  x604b: '->note 5'
+  zero 8i: 'RE=2020.12;SZ=76.1x168.7x9.1;WT=210.5;DS=6.85;RS=1080x2460;OS=Android 10;CP=325;RM=8192;'
+  x687b: '->zero 8i'
 
 allview:
   2 speed quad: ''
