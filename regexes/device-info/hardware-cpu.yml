@@ -2384,3 +2384,10 @@ cpu:
     clock_rate: 1600
     process: 12nm
     gpu_id: 116
+  355:
+    name: MediaTek Helio A25
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 25

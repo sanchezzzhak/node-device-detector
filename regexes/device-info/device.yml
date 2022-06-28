@@ -48,6 +48,7 @@
   n6 pro: 'DS=6;RS=1080x2160;SZ=75.64x157.2x8.15;WT=182;RE=2017.11;RM=6144;CP=19;OI=1;OV=7.1;SM=2;'
   n4s: 'DS=5.5;RS=1080x1920;SZ=74.6x151.3x8.35;WT=169;RE=2016;OI=1;OV=6;RM=4096;CP=194;'
   1505-a02: '->n4s'
+  1505-a01: '->n4s'
   n5: 'DS=5.5;RS=1080x1920;SZ=76x152x8.25;WT=156;RE=2017;OI=1;OV=6;RM=6144;CP=196;'
   1605-a01: '->n5'
 
@@ -1183,6 +1184,36 @@ alldocube:
   t1006s: '->m5s'
   u1006: '->iplay 10 pro 10.1"'
   u1006h: '->iplay 10 pro 10.1"'
+
+infinix:
+  hot 10: 'RE=2020.09;SZ=77.6x171.1x8.9;WT=195;DS=6.78;RS=720x1640;OS=Android 10;CP=319;RM=3072;'
+  x682b: '->hot 10'
+  x682c: '->hot 10'
+  hot 10 play: 'RE=2021.01;SZ=78x171.8x8.9;WT=207;DS=6.82;RS=720x1640;OS=Android 10;CP=284;RM=2048;'
+  x688c: '->hot 10 play'
+  x688b: '->hot 10 play'
+  hot 9: 'RE=2020.03;SZ=76.8x165.4x8.8;WT=185;DS=6.6;RS=720x1600;OS=Android 10;CP=355;RM=2048;'
+  x655: '->hot 9'
+  x655d: '->hot 9'
+  x655c: '->hot 9'
+  note 11 pro: 'RE=2021.10;SZ=78.4x173.1x8.7;WT=;DS=6.95;RS=1080x2460;OS=Android 11;CP=350;RM=4096;'
+  x697: '->note 11 pro'
+  note 7: 'RE=2020.04;SZ=79x173.4x8.8;WT=206;DS=6.95;RS=720x1640;OS=Android 10;CP=319;RM=4096;'
+  x690: '->note 7'
+  x690b: '->note 7'
+  note 7 lite: 'RE=2020.04;SZ=76.8x165.4x8.8;WT=185;DS=6.6;RS=720x1600;OS=Android 10;CP=319;RM=4096;'
+  x656: '->note 7 lite'
+  note 8: 'RE=2020.10;SZ=78.8x175.3x9;WT=;DS=6.95;RS=720x1640;OS=Android 10;CP=226;RM=6144;'
+  x692: '->note 8'
+  hot 9 play: 'RE=2020.04;SZ=78x171.8x8.9;WT=209;DS=6.82;RS=720x1640;OS=Android 9;CP=44;RM=2048;'
+  x680: '->hot 9 play'
+  x680f: '->hot 9 play'
+  x680c: '->hot 9 play;CP=RM=4096;CP=355;'
+  x680b: '->hot 9 play;RM=3072;CP=355;'
+  smart 5: 'RE=2020.09;SZ=76.4x165.5x8.8;WT=;DS=6.6;RS=720x1600;OS=Android 10;CP=337;RM=2048;'
+  x657: '->smart 5'
+  x657b: '->smart 5'
+  x657c: '->smart 5'
 
 allview:
   2 speed quad: ''
@@ -4084,6 +4115,7 @@ imo mobile:
   tab y5: 'DS=7;RS=480x800;RSZ=197x124x11.5;WT=352;RE=2013;SM=1;CP=246;RM=512;OI=1;OV=4.0.4;'
   tab z6: 'DS=7;RS=480x800;SZ=200x118x13.5;WT=390;RE=2012.09;SM=1;CP=245;RM=512;OI=1;OV=4.0.3;'
   tab z7: 'DS=7;RS=600x1024;SZ=198x124x11;WT=399;RE=2012.10;OI=1;OV=4.0.3;CP=180;RM=512;'
+
 
 motorola:
   v360: 'RE=2005.01;SZ=47x90x24;WT=104;DS=1.9;RS=176x220;'
