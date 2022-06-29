@@ -1710,7 +1710,7 @@
     category: Site Monitor
     url: https://last-modified.com/en/about
     producer:
-      name: ''
+      name: ""
       url: https://last-modified.com/en
 -
   user_agent: linkdex.com/v2.0 and linkdex.com/v2.1
@@ -4885,3 +4885,12 @@
     name: CriteoBot
     category: Crawler
     url: https://www.criteo.com/criteo-crawler/
+-
+  user_agent: PayPal IPN ( https://www.paypal.com/ipn )
+  bot:
+    name: PayPal IPN
+    category: Service Agent
+    url: https://developer.paypal.com/api/nvp-soap/ipn/IPNIntro/
+    producer:
+      name: PayPal, Inc.
+      url: https://www.paypal.com/
