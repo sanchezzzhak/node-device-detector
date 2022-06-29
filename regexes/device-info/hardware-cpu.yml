@@ -1444,24 +1444,28 @@ cpu:
     type: ARM
     clock_rate: 1200
     cores: 2
+    process: 45nm
     gpu_id: 56
   220:
     name: Qualcomm Snapdragon S4 Play MSM8625Q
     type: ARM
     clock_rate: 1200
     cores: 2
+    process: 45nm
     gpu_id: 56
   221:
     name: HiSilicon Kirin 960
     type: ARM
     clock_rate: 2400
     cores: 8
+    process: 16nm
     gpu_id: 89
   222:
     name: HiSilicon Kirin 960s
     type: ARM
     clock_rate: 2100
     cores: 8
+    process: 16nm
     gpu_id: 89
   223:
     name: HiSilicon Kirin 935
@@ -1481,6 +1485,7 @@ cpu:
     type: ARM
     clock_rate: 2500
     cores: 8
+    process: 16nm
     gpu_id: 80
   226:
     name: MediaTek Helio G80
@@ -1494,6 +1499,7 @@ cpu:
     type: ARM
     clock_rate: 2000
     cores: 8
+    process: 28nm
     gpu_id: 21
   228:
     name: Hisilicon Hi3798MV200

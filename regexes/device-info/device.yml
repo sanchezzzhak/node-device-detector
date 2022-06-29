@@ -6426,6 +6426,32 @@ minix:
 blu:
   vivo 8l: 'DS=5.3;RS=720x1280;SZ=74.4x150.5x8;WT=161;RE=2017.08;OI=1;OV=7.0;RM=3072;CP=118;'
   8l: '->vivo 8l'
+  xl2: '->vivo xl2'
+  vivo xl2: 'RE=2017.01;SZ=76.6x154x9.2;WT=175;DS=5.5;RS=720x1280;OS=Android 6.0;CP=69;RM=3072;'
+  xl3: '->vivo xl3'
+  vivo xl3: 'RE=2018.02;SZ=70.7x147.7x8;WT=143;DS=5.5;RS=720x1440;OS=Android 8.0;CP=9;RM=3072;'
+  xl4: '->vivo xl4'
+  vivo go: 'RE=2018.12;SZ=75.2x156.7x8.4;WT=155;DS=6.0;RS=720x1440;OS=Android 9.0;CP=8;RM=1024;'
+  go: '->vivo go'
+  vivo xl4: 'RE=2018.12;SZ=76.2x157.2x8;WT=178;DS=6.2;RS=720x1520;OS=Android 8.1;CP=171;RM=3072;'
+  vivo 5r: 'RE=2016.09;SZ=75.6x154.5x8.3;WT=166;DS=5.5;RS=1080x1920;OS=Android 6.0;CP=118;RM=3072;'
+  5r: '->vivo 5r'
+  vivo one plus: 'RE=2018.04;SZ=76.7x164.8x8.6;WT=173;DS=6.0;RS=720x1440;OS=Android 7.1;CP=8;RM=2048;'
+  one plus: '->vivo one plus'
+  vivo one plus (2019): 'RE=2019.01;SZ=75.2x156.7x8.3;WT=178;DS=6.2;RS=720x1500;OS=Android 8.1;CP=8;RM=2048;'
+  one plus 2019: '->vivo one plus (2019)'
+  vivo xl3 plus: 'RE=2018.03;SZ=76.5x158.1x8.2;WT=169;DS=6.0;RS=720x1440;OS=Android 7.1.2;CP=20;RM=3072;'
+  xl3 plus: '->vivo xl3 plus'
+  vivo xi: 'RE=2018.09;SZ=72.9x149x7.9;WT=187;DS=5.9;RS=720x1520;OS=Android 8.1;CP=171;RM=3072;'
+  xi: '->vivo xi'
+  vivo xi plus: 'RE=2018.08;SZ=75.5x155x7.8;WT=199;DS=6.2;RS=1080x2246;OS=Android 8.1;CP=114;RM=4096;'
+  vivo xi+: '->vivo xi plus'
+  xi plus: '->vivo xi plus'
+  xi+: '->vivo xi plus'
+  c6 (2020): 'RE=2020.10;SZ=78.4x160.7x10.3;WT=230;DS=6.0;RS=720x1440;OS=Android 10;RM=1024;'
+  c6 2020: '->c6 (2020)'
+  view mega: 'RE=2020.04;SZ=78x167.5x9.4;WT=189;DS=6.0;RS=720x1440;OS=Android 9.0;CP=44;RM=2048;'
+  b110dl: '->view mega'
 
 noa:
   vivo: 'DS=5.45;RS=640x1280;SZ=70.9x148.7x8.9;WT=155;RE=2018.12;OI=1;OV=8.1;RM=2048;CP=83;'
@@ -6995,6 +7021,9 @@ nomi:
   3: ''
   libra 4 lte: 'DS=8;RS=1280x800;SZ=212x124x9.5;WT=350;OI=1;OV=8.1;RM=1024;CP=163;'
   c080034: '->libra 4 lte'
+
+i-mobile:
+  i-note 2: 'RS=800x480;DS=7;CP=219;OS=Android 4.1;SZ=194.8x123x12.8;WT=300;'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OI=1;OV=8.1;'
