@@ -86,17 +86,6 @@ class DeviceDetector {
     this.deviceIndexes = attr(options, 'deviceIndexes', false);
     this.clientIndexes = attr(options, 'clientIndexes', false);
     this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
-    
-    // remove in version 2+
-    let temp1 = attr(options, 'discardDeviceIndexes', void 0);
-    if (temp1 !== void 0) {
-      this.deviceIndexes = !temp1;
-    }
-    // remove in version 2+
-    let temp2 = attr(options, 'discardDeviceAliasCode', void 0);
-    if (temp2 !== void 0) {
-      this.deviceAliasCode = !temp2;
-    }
   }
   
   init() {
@@ -133,35 +122,7 @@ class DeviceDetector {
   set skipBotDetection(discard) {
     this.__skipBotDetection = discard;
   }
-  
-  /***
-   * @deprecated - the method will be removed in v2.0 (detector.deviceIndexes)
-   */
-  get discardDeviceIndexes() {
-    return !this.deviceIndexes;
-  }
-  
-  /***
-   * @deprecated - the method will be removed in v2.0 (detector.deviceIndexes)
-   */
-  set discardDeviceIndexes(discard) {
-    this.deviceIndexes = !discard;
-  }
-  
-  /***
-   * @deprecated - the method will be removed in v2.0 (detector.deviceAliasCode)
-   */
-  get discardDeviceAliasCode() {
-    return !this.deviceAliasCode;
-  }
-  
-  /***
-   * @deprecated - the method will be removed in v2.0 (detector.deviceAliasCode)
-   */
-  set discardDeviceAliasCode(discard) {
-    return this.deviceAliasCode = !discard;
-  }
-  
+
   /**
    * @param {boolean} status - true use indexes, false not use indexes
    */
@@ -521,7 +482,7 @@ class DeviceDetector {
         clientType === CLIENT_TYPE.BROWSER &&
         MOBILE_BROWSER_LIST.indexOf(clientShortName) !== -1
       );
-      
+
       let hasDesktopOs = osName !== '' && (
         DESKTOP_OS_LIST.indexOf(osName) !== -1 ||
         DESKTOP_OS_LIST.indexOf(osFamily) !== -1
@@ -582,7 +543,7 @@ class DeviceDetector {
       brand: '',
       model: '',
     };
-    
+
     if (this.deviceAliasCode) {
       result.code = deviceCode;
     }

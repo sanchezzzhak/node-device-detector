@@ -3,13 +3,12 @@ const helper = require("../helper");
 let collection;
 let path = __dirname + '/../../regexes/device-index-hash.yml';
 
-class IndexerDevice
-{
+class IndexerDevice {
   static findDeviceBrandsForDeviceCode(deviceCode) {
-    if(!IndexerDevice.ready()) {
+    if (!IndexerDevice.ready()) {
       return null;
     }
-    
+
     let lDeviceCode = deviceCode.toLowerCase();
     let brands = collection[lDeviceCode];
     if (brands !== void 0) {
