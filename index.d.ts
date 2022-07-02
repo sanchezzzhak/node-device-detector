@@ -3,9 +3,9 @@ declare module 'node-device-detector' {
   export default class DeviceDetector {
 
     /**
-     * @param options {*}
+     * @param {DeviceDetectorOptions} options
      **/
-    constructor(options?: any);
+    constructor(options?: DeviceDetectorOptions);
 
     detect: (userAgent: string, clientHints?: any) => DetectResult;
     parseBot: (userAgent: string, clientHints?: any) => ResultBot;
@@ -150,6 +150,15 @@ declare module 'node-device-detector' {
      */
     addParseVendor(name: string, parser: any): void;
 
+  }
+
+  export interface DeviceDetectorOptions {
+    skipBotDetection?: boolean;
+    osVersionTruncate?: number | null;
+    clientVersionTruncate?: number | null;
+    deviceIndexes?: boolean;
+    clientIndexes?: boolean;
+    deviceAliasCode?: boolean;
   }
 
   export interface ResultDeviceCode {
