@@ -128,32 +128,8 @@ quad-core t3 p1:
   - Alps
 sda-835tab:
   - Pioneer
-zc554kl:
-  - Asus
-nomi_c080034:
-  - Nomi
-sm-a115f:
-  - Samsung
-dra-lx9:
-  - Huawei
-cph2179:
-  - OPPO
-infinix x682b:
-  - Infinix
-sm-a013f:
-  - Samsung
-mobicel_r1:
-  - Mobicel
-redmi note 9s:
-  - Xiaomi
-lenovo l18021:
-  - Lenovo
-zte blade v10 vita:
-  - ZTE
-neffos_c9a:
-  - Neffos
-m2004j19c:
-  - Xiaomi
+benz_hy1920x720:
+  - Alps
 pixel 3:
   - Google
 m2006c3lg:
@@ -166,34 +142,8 @@ sm-g965f:
   - Samsung
 sm-f926n:
   - Samsung
-jsn-l21:
-  - Huawei
-vivo 1907:
-  - Vivo
-sm-a307fn:
-  - Samsung
-redmi note 8 pro:
-  - Xiaomi
 sm-j600l:
   - Samsung
-tecno rb6s:
-  - Tecno Mobile
-imsmart a504:
-  - Impression
-m2010j19sy:
-  - Xiaomi
-yal-l21:
-  - Huawei
-sm-a022g:
-  - Samsung
-aka-l29:
-  - Huawei
-m2003j15sc:
-  - Xiaomi
-sm-m215f:
-  - Samsung
-m1908c3jgg:
-  - Xiaomi
 ppa-lx2:
   - Huawei
 sm-a217f:
@@ -216,6 +166,8 @@ mi a1:
   - Xiaomi
 vog-l29:
   - Huawei
+sm-a307fn:
+  - Samsung
 sm-a127f:
   - Samsung
 sm-a326b:
@@ -288,6 +240,14 @@ cph1821:
   - OPPO
 vivo 1910:
   - Vivo
+eml-l29:
+  - Huawei
+sm-a528b:
+  - Samsung
+sm-g973f:
+  - Samsung
+zc554kl:
+  - Asus
 dn2103:
   - OnePlus
 kfkawi:
@@ -1224,6 +1184,10 @@ redmi note 6 pro:
   - Xiaomi
 redmi note 7 pro:
   - Xiaomi
+redmi note 8 pro:
+  - Xiaomi
+m2003j15sc:
+  - Xiaomi
 samsung sm-f916b:
   - Samsung
 sm-f916n:
@@ -1347,6 +1311,8 @@ infinix x604:
   - Infinix
 sm-n960n:
   - Samsung
+m1908c3jgg:
+  - Xiaomi
 m2101k7bi:
   - Xiaomi
 m2103k19y:
@@ -1363,6 +1329,8 @@ zte a2121l:
   - ZTE
 zte 8010:
   - ZTE
+redmi note 9s:
+  - Xiaomi
 as360:
   - DEXP
 redmi note 5:
@@ -1580,6 +1548,22 @@ redmi note 11s:
   - Xiaomi
 tecno le6h:
   - Tecno Mobile
+infinix x698:
+  - Infinix
+infinix x6811b:
+  - Infinix
+infinix x604b:
+  - Infinix
+infinix x572-lte:
+  - Infinix
+infinix x572:
+  - Infinix
+infinix x571:
+  - Infinix
+infinix x610b:
+  - Infinix
+heyou50:
+  - Alcatel
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -2764,6 +2748,8 @@ neffos c5 max:
 tp601a:
   - Neffos
 neffos_c9:
+  - Neffos
+neffos_c9a:
   - Neffos
 neffos n1:
   - Neffos
@@ -8871,6 +8857,8 @@ redmi 5 plus:
   - Xiaomi
 redmi 5a:
   - Xiaomi
+m2004j19c:
+  - Xiaomi
 m2006c3lc:
   - Xiaomi
 redmi k20 pro:
@@ -9320,6 +9308,8 @@ primo gh7i:
   - Walton
 primo gf7:
   - Walton
+nokia g11:
+  - Nokia
 zte b2017g:
   - ZTE
 zte a2018:
@@ -9407,6 +9397,8 @@ blade v ultra:
 zte blade v0730:
   - ZTE
 zte blade v0800:
+  - ZTE
+zte blade v10 vita:
   - ZTE
 zte blade v1000:
   - ZTE
@@ -10058,6 +10050,8 @@ va170:
   - DEXP
 bush spira d5 dual camera:
   - Bush
+dra-lx9:
+  - Huawei
 zs661ks:
   - Asus
 rmx2155:
@@ -15786,6 +15780,50 @@ impress_bear:
   - Vertex
 impress_vega:
   - Vertex
+halo 4 lte:
+  - InnJoo
+sm-g955w:
+  - Samsung
+symphony_z12:
+  - Symphony
+symphony z50:
+  - Symphony
+tecno-w5:
+  - Tecno Mobile
+haier_i50:
+  - Haier
+haier_al40:
+  - Haier
+tecno-w3:
+  - Tecno Mobile
+bv4000:
+  - Blackview
+bv4000pro-ru:
+  - Blackview
+impress_funk:
+  - Vertex
+impress_stone:
+  - Vertex
+inoi_6i:
+  - Inoi
+infinix x624b:
+  - Infinix
+infinix x609b:
+  - Infinix
+infinix x606d:
+  - Infinix
+infinix x606b:
+  - Infinix
+infinix x559c:
+  - Infinix
+infinix x5514d:
+  - Infinix
+im-a910s:
+  - Pantech
+im-a910l:
+  - Pantech
+im-a910k:
+  - Pantech
 oinom_v7:
   - OINOM
 oinom_v9d:
@@ -15981,6 +16019,8 @@ z45q star:
   - Videocon
 z50 nova:
   - Videocon
+sm-a022g:
+  - Samsung
 sm-a525f:
   - Samsung
 sm-a325f:
@@ -16006,6 +16046,8 @@ rmx3201:
 kingkong mini2:
   - CUBOT
 m2010j19sg:
+  - Xiaomi
+m2010j19sy:
   - Xiaomi
 m2007j17g:
   - Xiaomi
@@ -17663,6 +17705,8 @@ blu studio c 5+5 lte:
   - Blu
 vivo 1907_19:
   - Vivo
+vivo 1907:
+  - Vivo
 vivo 1906:
   - Vivo
 vivo 1851:
@@ -17958,6 +18002,44 @@ sm-a300f:
   - Samsung
 2106118c:
   - Xiaomi
+tecno_b1f:
+  - Tecno Mobile
+x-tigi_v18 pro:
+  - X-TIGI
+iphone10,4:
+  - Apple
+iphone10,2:
+  - Apple
+primo gh11:
+  - Walton
+sm-a510k:
+  - Samsung
+lenovo k8 note:
+  - Lenovo
+lenovo k8 plus:
+  - Lenovo
+lg-h871s:
+  - LG
+gm 5 plus d:
+  - General Mobile
+asus_z017dc:
+  - Asus
+lenovo k14:
+  - Lenovo
+hisense e60 lite:
+  - Hisense
+hisense v40s:
+  - Hisense
+infinix x662b:
+  - Infinix
+infinix x6511e:
+  - Infinix
+sm-a035g:
+  - Samsung
+sm-a336m:
+  - Samsung
+impress_lux:
+  - Vertex
 pluto__26:
   - Majestic
 pluto_26n:
@@ -18963,6 +19045,8 @@ cph2095:
   - OPPO
 cph2135:
   - OPPO
+cph2179:
+  - OPPO
 cph2239:
   - OPPO
 drive9:
@@ -19435,6 +19519,8 @@ infinix x680f:
 infinix x688c:
   - Infinix
 infinix x688b:
+  - Infinix
+infinix x682b:
   - Infinix
 infinix x682c:
   - Infinix
@@ -20438,6 +20524,8 @@ cph2269:
   - OPPO
 tecno ka7o:
   - Tecno Mobile
+tecno rb6s:
+  - Tecno Mobile
 tecno sa2s:
   - Tecno Mobile
 vivo one plus 2019:
@@ -20889,8 +20977,6 @@ sm-g780g:
   - Samsung
 a440:
   - DEXP
-sm-a528b:
-  - Samsung
 sm-a526b:
   - Samsung
 sm-a5260:
@@ -26937,6 +27023,347 @@ ne2213:
   - OnePlus
 grand pro:
   - MDC Store
+kyv43_j:
+  - Kyocera
+rmx3286:
+  - Realme
+tecno mobile kg6k:
+  - Tecno Mobile
+tecno cg8h:
+  - Tecno Mobile
+slide lite:
+  - Smart
+  - Wiko
+sky 5.0pro ii:
+  - Sky
+seoul mix:
+  - Hyundai
+  - Xiaomi
+seoul eco:
+  - Hyundai
+seoul 5 plus:
+  - Hyundai
+selfix_es732_experius:
+  - Selfix
+secret_x:
+  - FireFly Mobile
+gm 6:
+  - General Mobile
+go4.5:
+  - IKI Mobile
+up octa:
+  - Starmobile
+itel s661w:
+  - iTel
+itel s661lpn:
+  - iTel
+itel s661ln:
+  - iTel
+itel s661l:
+  - iTel
+itel a661l:
+  - iTel
+itel a661w:
+  - iTel
+infinix zero 4:
+  - Infinix
+itel a551l:
+  - iTel
+itel a509wm:
+  - iTel
+asus-x01ad:
+  - Asus
+cph2375:
+  - OPPO
+desire eye:
+  - HTC
+bl60m_mv05:
+  - Bmobile
+infinix x6816d:
+  - Infinix
+infinix x6816c:
+  - Infinix
+infinix x665b:
+  - Infinix
+infinix x665:
+  - Infinix
+itel p682lpn:
+  - iTel
+trident a75 pro max:
+  - Trident
+w-k521-eea:
+  - Wiko
+infinix x675:
+  - Infinix
+lg-ms870:
+  - LG
+impress_noda:
+  - Lark
+  - Vertex
+ibrit_af51:
+  - iBrit
+halo 5 3g:
+  - InnJoo
+v6_metal:
+  - QMobile
+v505c:
+  - Virzo
+v501c:
+  - Virzo
+v356b:
+  - Klipad
+v356:
+  - Klipad
+v2 2018:
+  - QMobile
+v155:
+  - Symphony
+v145:
+  - Symphony
+v142:
+  - Symphony
+v140:
+  - Symphony
+v128:
+  - Symphony
+v102:
+  - Symphony
+v105:
+  - Symphony
+ut3g:
+  - Unonu
+unonu x4g:
+  - Unonu
+point_x503:
+  - Vivax
+x7_soul_style:
+  - Allview
+  - iOcean
+a40 indian:
+  - Karbonn
+a40 indian plus:
+  - Karbonn
+a40_indian:
+  - Karbonn
+a9_indian:
+  - Karbonn
+a45 indian:
+  - Karbonn
+xt1806:
+  - Motorola
+xt1802:
+  - Motorola
+xt1801:
+  - Motorola
+discovery elite:
+  - General Mobile
+discovery air:
+  - General Mobile
+dorel 3s:
+  - UTOK
+dorel 4:
+  - UTOK
+i star two:
+  - Starlight
+i star one:
+  - Starlight
+i120:
+  - Symphony
+i6i 2020:
+  - QMobile
+i7plus:
+  - Ruio
+i72:
+  - Symphony
+i75:
+  - Symphony
+i65:
+  - Symphony
+infinity a4:
+  - Condor
+infinity max:
+  - Sico
+inspire_u5:
+  - SOLO
+inspire_u5_plus:
+  - SOLO
+inspire_4g:
+  - FireFly Mobile
+infinix x623b:
+  - Infinix
+infinix x623:
+  - Infinix
+infinix x622:
+  - Infinix
+infinix x620b:
+  - Infinix
+infinix x620:
+  - Infinix
+infinix x5515i:
+  - Infinix
+infinix x5515f:
+  - Infinix
+infinix x5515:
+  - Infinix
+infinity_light:
+  - Leader Phone
+infinity_i5:
+  - Condor
+infinity_i4:
+  - Condor
+intex_iv0118nd:
+  - Intex
+intex ip0418nd:
+  - Intex
+intex im0118nd:
+  - Intex
+i15:
+  - Symphony
+cph2411:
+  - OnePlus
+  - OPPO
+cyber 7:
+  - Hotwav
+moto g 5g (2022):
+  - Motorola
+sm-g525n:
+  - Samsung
+rmx3562:
+  - Realme
+22041219i:
+  - Xiaomi
+v2183a:
+  - Vivo
+pftm20:
+  - OPPO
+heyou60:
+  - Alcatel
+z30 pro:
+  - Symphony
+z30:
+  - Symphony
+maad+:
+  - GLX
+maad:
+  - GLX
+masstel_n668:
+  - Masstel
+maxtron_v13:
+  - Maxtron
+maxtron v13:
+  - Maxtron
+maxtron apollo:
+  - Maxtron
+maxtron-v17:
+  - Maxtron
+maxtron v12:
+  - Maxtron
+maxtron v15:
+  - Maxtron
+maxtron v20:
+  - Maxtron
+maxtron pluto:
+  - Maxtron
+v94:
+  - Symphony
+v92:
+  - Symphony
+v96:
+  - Symphony
+v97:
+  - Symphony
+v98:
+  - Symphony
+v99:
+  - Symphony
+venus z30:
+  - Vestel
+axioo_ax5:
+  - Axioo
+axioo ax5:
+  - Axioo
+spice f311:
+  - Spice
+star_plus_plus:
+  - Starlight
+star_two:
+  - Starlight
+sunny3 mini:
+  - Wiko
+tecno cf7s:
+  - Tecno Mobile
+tian_p3000:
+  - iHunt
+tis_001:
+  - Tigers
+tis001c:
+  - Tigers
+tis001b:
+  - Tigers
+tis001a:
+  - Tigers
+tis001:
+  - Tigers
+titanp6000:
+  - iHunt
+infinix x5516c:
+  - Infinix
+infinix x5516b:
+  - Infinix
+infinix x5516:
+  - Infinix
+jazz 2:
+  - Aspera
+lava lf9820:
+  - Lava
+lava lf9810:
+  - Lava
+lava le9940:
+  - Lava
+l553:
+  - Hyundai
+itel w6501:
+  - iTel
+itel w5005p:
+  - iTel
+iqw626:
+  - MLS
+iqd10s:
+  - MLS
+infinix x652c:
+  - Infinix
+infinity e5:
+  - Condor
+  - Telenor
+infinity e5 pro:
+  - Condor
+  - Telenor
+flare s8 max:
+  - Cherry Mobile
+i8i dual:
+  - QMobile
+cirrus_c2:
+  - Cloud
+cirrus 6:
+  - Fly
+infinity cinema 2:
+  - QMobile
+infinity triple:
+  - QMobile
+infinity santos:
+  - QMobile
+zte-v9vita:
+  - ZTE
+infinity prime 2:
+  - QMobile
+panasonic p85 nxt:
+  - Panasonic
+panasonic p55 nxt:
+  - Panasonic
+next infinity:
+  - Cloudfone
+next infinity pro:
+  - Cloudfone
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -29047,6 +29474,8 @@ hry-lx1t:
   - Huawei
 huawei u9508:
   - Huawei
+yal-l21:
+  - Huawei
 yal-al00:
   - Huawei
 yal-tl00:
@@ -29331,6 +29760,8 @@ ksa-al00:
   - Huawei
 ksa-lx9:
   - Huawei
+jsn-l21:
+  - Huawei
 jsn-l42:
   - Huawei
 jsn-l23:
@@ -29368,6 +29799,8 @@ lld-al10:
 lld-l31:
   - Huawei
 moa-lx9n:
+  - Huawei
+aka-l29:
   - Huawei
 lld-al20:
   - Huawei
@@ -29701,8 +30134,6 @@ eml-al00:
   - Huawei
 eml-l09:
   - Huawei
-eml-l29:
-  - Huawei
 eml-tl00:
   - Huawei
 ane-lx3:
@@ -29919,6 +30350,38 @@ huawei cun-l01:
   - Huawei
 huawei cun-l02:
   - Huawei
+mi a2 lite) salamweb/2.0.8.1167:
+  - Xiaomi
+mara z d:
+  - Mara
+lm-x410pm:
+  - LG
+itel l5503s:
+  - iTel
+infinix x625d:
+  - Infinix
+infinix x652:
+  - Infinix
+infinix x627w:
+  - Infinix
+infinix x626b lte:
+  - Infinix
+hisense rocks 6:
+  - Hisense
+hisense f19:
+  - Hisense
+hisense e30:
+  - Hisense
+qmobile_q_infinity_cinema:
+  - QMobile
+cinemax_infinity_blaze:
+  - Zen
+cinemax-force:
+  - Zen
+panasonic p95:
+  - Panasonic
+moto e4 plus:
+  - Motorola
 huawei cun-l03:
   - Huawei
 huawei cun-l21:
@@ -31076,6 +31539,8 @@ lenovo-lenovo-a288t:
   - Lenovo
 lenovo a288t:
   - Lenovo
+lenovo l18021:
+  - Lenovo
 lenovo a390_row:
   - Lenovo
 l18011:
@@ -31849,6 +32314,12 @@ bv5000:
   - Blackview
 bv7000:
   - Blackview
+w_k300s:
+  - Wiko
+x-tigi_v28:
+  - X-TIGI
+x-tigi_v15:
+  - X-TIGI
 ls-4005:
   - LYF
 lyf_ls-4006:
@@ -33150,6 +33621,8 @@ people g503:
 s501m 3g:
   - 4Good
 matrix:
+  - Mobicel
+mobicel_r1:
   - Mobicel
 pcs01:
   - Philco
@@ -35308,7 +35781,6 @@ mi7_hero_tab:
   - iZotron
 iball slide 3g7271:
   - iBall
-  - Wiko
 snap_4g2:
   - iBall
 733tpc:
@@ -38690,6 +39162,8 @@ lg-v497:
   - LG
 teo104g:
   - Thomson
+nomi_c080034:
+  - Nomi
 nomi_c070034:
   - Nomi
 nomi_c070010:
@@ -40579,6 +41053,21 @@ vivah7:
   - Allview
 dslide1016_v2:
   - Danew
+archos 101 xenon lite:
+  - Archos
+tel-74giqa:
+  - Telefunken
+m40pro_rus:
+  - Teclast
+optima 10 a502 3g ts1245pg:
+  - Digma
+  - Impression
+optima 7 a102 3g ts7243pg:
+  - Digma
+hsg1376:
+  - HannSpree
+impad_p701:
+  - Impression
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -40649,6 +41138,77 @@ pmt3317_3g:
   - Prestigio
 pmt3301_4g:
   - Prestigio
+8491x_tr:
+  - TCL
+tel-73giqa11:
+  - Telefunken
+ts-m105g-1:
+  - DIXON
+silver pos:
+  - Prestigio
+k41:
+  - DEXP
+k31:
+  - DEXP
+k48:
+  - DEXP
+lenovo tb-j607z:
+  - Lenovo
+i11_eea:
+  - BMAX
+i11:
+  - BMAX
+alfa10tx:
+  - Hometech
+ht1003x16:
+  - Hyundai
+ht1002w16:
+  - Hyundai
+ht0703k16:
+  - Hyundai
+breeze iv:
+  - Turbo-X
+iball slide cleo s9:
+  - iBall
+insignia_lab:
+  - Timovi
+  - GOCLEVER
+insignia_delta3:
+  - Timovi
+  - GOCLEVER
+hero10rk:
+  - Thomson
+winnovot2:
+  - Winnovo
+actab1022:
+  - Acer
+alfa_8sl:
+  - Hometech
+vector_slim:
+  - Ghia
+wave i007kids:
+  - EXO
+wave i007t:
+  - EXO
+x1060x:
+  - Medion
+sky vision2:
+  - Sky
+smartabs4:
+  - SMARTEC
+supernova_i216:
+  - Leotec
+t71_w:
+  - Lava
+iraw7258:
+  - IRA
+iqs801:
+  - MLS
+iq1017:
+  - MLS
+  - Fly
+google pixelbook:
+  - Google
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -42015,6 +42575,12 @@ hph07:
   - 'True'
 iconbit movie uno:
   - IconBIT
+lcd_xxsufoc475a:
+  - Sharp
+ptv32ss04z_cis_ml:
+  - Prestigio
+mitv-ayfr0:
+  - Xiaomi
 bb2 pro:
   - Mecool
 kii pro:

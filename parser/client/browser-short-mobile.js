@@ -10,5 +10,5 @@ module.exports = [
   'YO', 'PK', 'MR', 'AP', 'AK', 'UI', 'SD', 'VN', '4S',
   'RF', 'LR', 'SQ', 'BV', 'L1', 'F0', 'KS', 'V0', 'C8',
   'AZ', 'MM', 'BT', 'N0', 'P0', 'F3', 'DU', 'D0', 'P1',
-  'O4',
+  'O4', 'XO', 'U0', 'B0', 'VA', 'X0',
 ];
