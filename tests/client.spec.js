@@ -40,7 +40,7 @@ describe('tests clients', function () {
           perryTable(fixture, result);
 
           // fix values fixture null
-          if (!result.client.version && fixture.client.version === null) {
+          if (result.client.version === '' && fixture.client.version === null) {
             result.client.version = fixture.client.version;
           }
 
