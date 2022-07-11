@@ -22,11 +22,10 @@ class BotAbstractParser extends ParserAbstract {
         let producer = item.producer ? item.producer : {};
         if (producer.name === null) {
           producer.name = '';
-          console.log(producer)
         }
 
         return {
-          name: item.name ? String(item.name) : '',
+          name: item.name ? item.name : '',
           category: item.category ? item.category : '',
           url: item.url ? item.url : '',
           producer: producer
