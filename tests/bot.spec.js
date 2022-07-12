@@ -39,6 +39,11 @@ describe('tests bots', function () {
           expect(fixture.bot.url, messageError).to.equal(result.url);
         }
         if (isObjNotEmpty(fixture.bot.producer)) {
+
+          if(fixture.bot.producer.name === null) {
+            fixture.bot.producer.name = '';
+          }
+
           expect(fixture.bot.producer, messageError).to.have.deep.equal(
               result.producer
           );

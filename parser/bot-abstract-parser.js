@@ -19,11 +19,16 @@ class BotAbstractParser extends ParserAbstract {
       let match = regex.exec(userAgent);
 
       if (match !== null) {
+        let producer = item.producer ? item.producer : {};
+        if (producer.name === null) {
+          producer.name = '';
+        }
+
         return {
           name: item.name ? item.name : '',
           category: item.category ? item.category : '',
           url: item.url ? item.url : '',
-          producer: item.producer ? item.producer : {},
+          producer: producer
         };
       }
     }

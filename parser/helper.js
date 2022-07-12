@@ -33,7 +33,6 @@ function createMD5(str) {
     hash = ((hash << 5) - hash + str.charCodeAt(i++)) << 0;
   }
   return hash.toString(16);
-  ;
 }
 
 /**

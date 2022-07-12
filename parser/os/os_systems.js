@@ -73,6 +73,7 @@ module.exports = {
   'MRE': 'MRE',
   'WII': 'Nintendo',
   'NDS': 'Nintendo Mobile',
+  'NOV': 'Nova',
   'OS2': 'OS/2',
   'T64': 'OSF1',
   'OBS': 'OpenBSD',
