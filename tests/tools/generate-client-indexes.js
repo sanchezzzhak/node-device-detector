@@ -109,6 +109,7 @@ const createIndexForFixture = (fixture) => {
   ) {
     return;
   }
+
   if (output[keyName] === void 0) {
     output[keyName] = [[], []];
   }
