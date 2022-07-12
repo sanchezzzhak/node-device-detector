@@ -536,6 +536,8 @@ remix mini:
 aquarius pro, std, elt series:
   - Aquarius
   - Intex
+nuc10i3fnh:
+  - Intel
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -650,6 +652,10 @@ tps390:
   - Telpo
 odroid-n2:
   - Hardkernel
+teachtouch table:
+  - TeachTouch
+desk21t-03:
+  - actiMirror
 gi-626:
   - altron
 5039d_ru:
@@ -27361,6 +27367,46 @@ gravity 4g:
   - SPC
 gravity 3g_2019:
   - SPC
+snami m380:
+  - SNAMI
+snami_m340:
+  - SNAMI
+raptor:
+  - Quest
+famous 5:
+  - Famous
+famous red 5+:
+  - Famous
+famous 5plus:
+  - Famous
+emporia_s2:
+  - Emporia
+frogone:
+  - iReplace
+infiniton_t5:
+  - Infiniton
+bk2021:
+  - Backcell
+db8plus:
+  - DbPhone
+dl_horizon_selfie:
+  - DL
+digicom dtok:
+  - DIGICOM
+infone xe:
+  - InFone
+infone x:
+  - InFone
+ino scout 2:
+  - iNo Mobile
+xpower_p6000:
+  - Raylandz
+otto cr05:
+  - OTTO
+o71:
+  - Kenbo
+o61:
+  - Kenbo
 tian_p3000:
   - iHunt
 tis_001:
@@ -31698,6 +31744,24 @@ kazam trooper 551:
   - Kazam
 trooper_x35:
   - Kazam
+logic l4t:
+  - Logic
+ap5705s:
+  - Athesi
+hmr5450:
+  - Hi
+rd16q:
+  - Remdun
+smartn12:
+  - MobiWire
+smartn11:
+  - MobiWire
+smart c11:
+  - MobiWire
+stg_p10:
+  - STG Telecom
+heyou70:
+  - Essentielb
 trooper_x40:
   - Kazam
 kazam trooper x45:
@@ -36668,6 +36732,27 @@ samsung sm-t225:
   - Alcatel
 lenovo tb-x104f1:
   - Lenovo
+papyre_pad_7.1:
+  - PAPYRE
+communicator_9.7_3g:
+  - I-INN
+bpm9727:
+  - BLISS
+clicktabdsh18:
+  - Envizen
+dt0704k08:
+  - Denali
+drn-809:
+  - DreamTab
+drn-709:
+  - DreamTab
+digicom_a10_lte:
+  - DIGICOM
+pioneer computers dreambook:
+  - Pioneer Computers
+  - Pioneer
+redway_7:
+  - Redway
 lenco tab-712:
   - Lenco
 lenco tab-813:
@@ -41463,6 +41548,40 @@ f104evii_pro:
   - Fusion5
 latabstandrb:
   - Logicom
+h11-eea:
+  - LNMBBS
+q3_eea:
+  - Facetel
+smb-h8009:
+  - HLLO
+n10-eea:
+  - YUMKEM
+l211-eea:
+  - YUMKEM
+famous_tab_10:
+  - Famous
+zik_w1027:
+  - ZIK
+ps_tab_wb01:
+  - PlusStyle
+nbtb101:
+  - New Bridge
+phantom_z:
+  - VALEM
+pixba2019:
+  - ENACOM
+qc77qps:
+  - Mastertech
+actab821:
+  - Acer
+actab1021_a:
+  - Acer
+8dy:
+  - Mediacom
+elite_octaxs:
+  - Sky
+elite_octaplus:
+  - Sky
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -43064,6 +43183,8 @@ neo-x8:
   - Huawei
 neo-x8-plus:
   - Minix
+ttk box 214:
+  - TTK-TV
 bb2 pro:
   - Mecool
 kii pro:
@@ -43598,3 +43719,5 @@ ow20w1:
   - OPPO
 lem15:
   - LEMFO
+geozon lte:
+  - GEOZON
