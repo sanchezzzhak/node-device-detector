@@ -656,6 +656,8 @@ teachtouch table:
   - TeachTouch
 desk21t-03:
   - actiMirror
+mobigo2:
+  - MobiIoT
 gi-626:
   - altron
 5039d_ru:
@@ -31762,6 +31764,32 @@ stg_p10:
   - STG Telecom
 heyou70:
   - Essentielb
+digit4g energy:
+  - Digit4G
+digit4g-pro:
+  - Digit4G
+teracube 2e:
+  - Teracube
+teracube one:
+  - Teracube
+solarin:
+  - Sirin Labs
+sp-6150:
+  - Siragon
+novey l2:
+  - Novey
+unsp7:
+  - Unnion Technologies
+ev1 pro:
+  - Partner Mobile
+sp-5300:
+  - Siragon
+kodak_smartway_t2:
+  - Kodak
+gravity_6p:
+  - Maxwest
+cellacom_s62:
+  - Cellacom
 trooper_x40:
   - Kazam
 kazam trooper x45:
@@ -32722,7 +32750,7 @@ hardcaseh550s:
 cubot j3 pro:
   - CUBOT
 finney u1:
-  - Sirin labs
+  - Sirin Labs
 gaamii g1:
   - Santin
 santin gaamii:
@@ -41582,6 +41610,26 @@ elite_octaxs:
   - Sky
 elite_octaplus:
   - Sky
+nexo-tab-7:
+  - Völfen
+enova tab 10 lte:
+  - eNOVA
+w-109:
+  - TOSCIDO
+neocore_n1g1:
+  - neoCore
+tab-a03-br2:
+  - Benesse
+ts_m103a:
+  - DIXON
+neocore e1-2:
+  - neoCore
+jp5 inmate media device:
+  - JPay
+jp5s inmate media device:
+  - JPay
+w109:
+  - TOSCIDO
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -43185,6 +43233,16 @@ neo-x8-plus:
   - Minix
 ttk box 214:
   - TTK-TV
+t96mini:
+  - T96
+zealot:
+  - Zealot
+x88pro10.r1.00.6330.d4:
+  - X88
+x96air_a100:
+  - X96
+h96max rk3318:
+  - H96
 bb2 pro:
   - Mecool
 kii pro:
