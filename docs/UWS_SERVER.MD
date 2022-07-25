@@ -11,7 +11,11 @@ const UWS = require('uWebSockets.js');
 
 const port = 3001;
 // init detector
-const deviceDetector = new DeviceDetector;
+const deviceDetector = new DeviceDetector({
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: false,
+});
 
 const prettyPrintJson = (obj) => JSON.stringify(obj, null, 2);
 

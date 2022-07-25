@@ -9,8 +9,12 @@ const ClientHintParser = require('node-device-detector/parser/client-hint-parser
 
 const routerOpts = {}
 const router = Router(routerOpts);
-const deviceDetector = new DeviceDetector;
-const clientHint = new ClientHintParser;
+const deviceDetector = new DeviceDetector({
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: false,
+});
+const clientHint = new ClientHintParser();
 const port = 3001;
 const timeout = 3e5;
 

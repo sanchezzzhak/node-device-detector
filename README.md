@@ -494,6 +494,7 @@ Others <a name="others"></a>
 
 ##### Examples
 * [detect device in native server](docs/NATIVE_SERVER.MD)
+* [detect device + client hints in native server](docs/CLIENT_HINT_NATIVE_SERVER.MD)
 * [detect device in express.js](docs/EXPRESS_SERVER.MD)
 * [detect device in moleculer.js](docs/MICROSERVICE.MD)
 * [detect device in uws.js](docs/UWS_SERVER.MD)

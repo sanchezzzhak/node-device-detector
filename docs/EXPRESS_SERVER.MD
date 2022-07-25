@@ -6,7 +6,11 @@ const DeviceDetector = require('node-device-detector');
 const ClientHints = require('node-device-detector/client-hints')
 
 // init app
-const deviceDetector = new DeviceDetector;
+const deviceDetector = new DeviceDetector({
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: false,
+});
 const clientHints = new ClientHints;
 
 const app = express();
