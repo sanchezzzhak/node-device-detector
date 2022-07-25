@@ -27,7 +27,6 @@ const DetectDetector = require('node-device-detector');
 const MemCache = require("../mixins/memcache");
 const crypto = require('crypto');
 
-
 const DEVICE_TYPE = require('node-device-detector/parser/const/device-type');
 
 /**
@@ -140,7 +139,11 @@ class DeviceDetectorService extends Service {
   
   
   serviceCreated() {
-	this.#detector = new DetectDetector();
+	this.#detector = new DetectDetector({
+      clientIndexes: true,
+      deviceIndexes: true,
+      deviceAliasCode: false,
+    });
   }
   
   serviceStarted() {

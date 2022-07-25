@@ -7,7 +7,7 @@ const COLLECTION_BRAND_LIST = helper.revertObject(
 );
 
 const DESKTOP_PATTERN = '(?:Windows (?:NT|IoT)|X11; Linux x86_64)';
-const DESKTOP_EXCLUDE_PATTERN = ' Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)';
+const DESKTOP_EXCLUDE_PATTERN = ' Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|OculusBrowser|ricoh|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)';
 
 class DeviceParserAbstract extends ParserAbstract {
   constructor() {

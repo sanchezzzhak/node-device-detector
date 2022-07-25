@@ -27,6 +27,12 @@ declare module 'node-device-detector' {
     get osVersionTruncate(): any;
     set clientVersionTruncate(arg: any);
     get clientVersionTruncate(): any;
+    set clientIndexes(arg: boolean);
+    get clientIndexes(): boolean;
+    set deviceIndexes(arg: boolean);
+    get deviceIndexes(): boolean;
+    set deviceAliasCode(arg: boolean);
+    get deviceAliasCode(): boolean;
     setOsVersionTruncate(value: any): void;
     setClientVersionTruncate(value: any): void;
 

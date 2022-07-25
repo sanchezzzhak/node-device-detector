@@ -17,7 +17,9 @@ import * as ClientHints from 'node-device-detector/client-hints';
 
 //@ts-ignore
 const detector = new DeviceDetector({
-  deviceIndex: true
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: false,
 });
 //@ts-ignore
 const clientHints = new ClientHints;

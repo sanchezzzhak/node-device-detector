@@ -8,7 +8,11 @@ const DeviceDetector = require('node-device-detector');
 
 const routerOpts = {}
 const router = Router(routerOpts);
-const deviceDetector = new DeviceDetector;
+const deviceDetector = new DeviceDetector({
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: false,
+});
 const port = 3001;
 const timeout = 3e5;
 
