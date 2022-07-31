@@ -6,6 +6,8 @@
   - Stylo
 '800':
   - Nokia
+'816':
+  - TechPad
 '900':
   - Nokia
 '909':
@@ -36,10 +38,16 @@
   - Alcatel
 '8067':
   - Alcatel
+'8068':
+  - Alcatel
 '8082':
   - Alcatel
 '8092':
   - Alcatel
+'8167':
+  - TCL
+'8182':
+  - TCL
 '8295':
   - Coolpad
 '8950':
@@ -133,6 +141,8 @@ quad-core t3 p1:
 sda-835tab:
   - Pioneer
 benz_hy1920x720:
+  - Alps
+8227l_demo:
   - Alps
 pixel 3:
   - Google
@@ -1620,46 +1630,8 @@ lenco diverso-700:
   - Lenco
 drp29101:
   - RCA Tablets
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
+drp2091:
+  - RCA Tablets
 i7u:
   - Advan
 i4u:
@@ -19834,6 +19806,7 @@ zte blade apex:
   - ZTE
 blade apex2:
   - ZTE
+  - Oale
 blade g lte:
   - ZTE
 blade g lux:
@@ -27968,6 +27941,66 @@ bl8800pro:
   - Blackview
 armor x10:
   - Ulefone
+bee:
+  - Vsmart
+nokia 8 v 5g uw:
+  - Nokia
+shark par-h0:
+  - Xiaomi
+e5823:
+  - Sony
+haier_t53p:
+  - Haier
+a55 pro:
+  - Blackview
+a90:
+  - Blackview
+5031g:
+  - Alcatel
+a126:
+  - Inoi
+a555:
+  - DEXP
+sm-a700fd:
+  - Samsung
+p9000:
+  - Elephone
+p9000_lite:
+  - Elephone
+paris_lite:
+  - Ulefone
+lava_r1s:
+  - Lava
+c_note:
+  - Starlight
+nls-nft10:
+  - Newland
+c1 lite:
+  - Mobiistar
+bss50:
+  - BlueSky
+bss45:
+  - BlueSky
+axe:
+  - Premio
+ax684:
+  - Bmobile
+ax686a:
+  - Bmobile
+ax687:
+  - Bmobile
+avvio_q503:
+  - Avvio
+apex2:
+  - Oale
+alphatel_t1:
+  - Leader Phone
+a30-ru:
+  - Blackview
+6cs:
+  - Elong Mobile
+5eq:
+  - Yezz
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -34939,6 +34972,46 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -42147,6 +42220,39 @@ tab9:
   - Blackview
 tz199:
   - Irbis
+tab_3g_7-1:
+  - Vertex
+k18:
+  - DEXP
+k21:
+  - DEXP
+h270:
+  - DEXP
+m107_9863a_64_q:
+  - BDF
+pmt4891_4g_eea:
+  - Prestigio
+pmt4791_4g_ru:
+  - Prestigio
+pmt4238_4g_eea:
+  - Prestigio
+dl9003:
+  - Digiland
+base10_3g_silver:
+  - Cavion
+ax503:
+  - Allview
+  - Bmobile
+a7_wf:
+  - Ghia
+81v:
+  - Vue Micro
+816x:
+  - TechPad
+770g:
+  - Touch Plus
+770n:
+  - Touch Plus
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -43538,6 +43644,12 @@ h96max rk3318:
   - H96
 iconbit xds1100:
   - IconBIT
+rst_b1103hd:
+  - Legend
+55u600kd:
+  - Kivi
+aquos_tve19a:
+  - Sharp
 bb2 pro:
   - Mecool
 kii pro:
