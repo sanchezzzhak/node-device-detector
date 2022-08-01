@@ -3,11 +3,27 @@ const helper = require('./../helper');
 
 const COLLECTION_BRAND_LIST = helper.revertObject(require('./brand-short'));
 
+const createReplaceBrandRegexp = () => {
+  let escapeeChars = [/\+/gi, /\./gi];
+  let replaceChars = ['\\+', '\\.'];
+  let customBrands = ['HUAWEI HUAWEI', 'viv-vivo'];
+  let brands = customBrands
+  .concat(Object.keys(COLLECTION_BRAND_LIST))
+  .join('|');
+  for (let i = 0, l = escapeeChars.length; i < l; i++) {
+    brands = brands.replace(escapeeChars[i], replaceChars[i]);
+  }
+  return new RegExp(
+    '(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(' + brands + ')[ _]',
+    'isg'
+  );
+}
+const REPLACE_BRAND_REGEXP = createReplaceBrandRegexp();
+
 class AliasDevice extends AbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'device/alias-device.yml';
-    this.__brandReplaceRegexp = '';
     this.__replaceBrand = true;
     this.loadCollection();
   }
@@ -42,7 +58,7 @@ class AliasDevice extends AbstractParser {
         result.name = this.buildByMatch(item['name'], match);
         if (this.hasReplaceBrand()) {
           result.name = result.name
-            .replace(new RegExp(this.getBrandReplaceRegexp(), 'isg'), '')
+            .replace(REPLACE_BRAND_REGEXP, '')
         }
         break;
       }
@@ -50,23 +66,7 @@ class AliasDevice extends AbstractParser {
     result.name = result.name.trim();
     return result;
   }
-
-  getBrandReplaceRegexp() {
-    if (!this.__brandReplaceRegexp) {
-      let escapeeChars = [/\+/gi, /\./gi];
-      let replaceChars = ['\\+', '\\.'];
-      let customBrands = ['HUAWEI HUAWEI', 'viv-vivo'];
-      let brands = customBrands
-        .concat(Object.keys(COLLECTION_BRAND_LIST))
-        .join('|');
-      for (let i = 0, l = escapeeChars.length; i < l; i++) {
-        brands = brands.replace(escapeeChars[i], replaceChars[i]);
-      }
-      this.__brandReplaceRegexp =
-        '(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(' + brands + ')[ _]';
-    }
-    return this.__brandReplaceRegexp;
-  }
+  
 }
 
 module.exports = AliasDevice;

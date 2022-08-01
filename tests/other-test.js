@@ -1,7 +1,8 @@
 const DeviceDetector = require('../index');
 
 const detector = new DeviceDetector({
-  deviceIndexes: true, clientIndexes: true,
+  deviceIndexes: true,
+  clientIndexes: true,
 });
 
 const createTest = (testname, ua) => {
@@ -24,11 +25,11 @@ const userAgent5 = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 
 createTest('test1', userAgent1);
 createTest('test2', userAgent1);
-createTest('test3', userAgent2);
-createTest('test4', userAgent3);
-createTest('test5', userAgent4);
-createTest('test6', userAgent1);
+// createTest('test3', userAgent2);
+// createTest('test4', userAgent3);
+// createTest('test5', userAgent4);
+// createTest('test6', userAgent1);
 createTest('test7', userAgent5);
-createTest('test8', userAgent1);
-createTest('test9', userAgent5);
-createTest('test10', userAgent4);
+// createTest('test8', userAgent1);
+// createTest('test9', userAgent5);
+// createTest('test10', userAgent4);

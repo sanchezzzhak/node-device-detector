@@ -24,7 +24,7 @@ const createBenchmark = (useragent) => {
     },
   });
   
-  suite.add('detector.parseDevice (deviceIndexes off)', function() {
+  /*suite.add('detector.parseDevice (deviceIndexes off)', function() {
     return detector.parseDevice(useragent, {});
   }, {
     'onStart': () => {
@@ -65,7 +65,7 @@ const createBenchmark = (useragent) => {
       detector.clientIndexes = false;
       detector.deviceIndexes = false;
     },
-  });
+  });*/
   
   suite.add('detector.detect (indexes on)', function() {
     return detector.detect(useragent, {});
