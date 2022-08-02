@@ -3,10 +3,13 @@ const DeviceDetector = require('../index');
 
 Benchmark.support.timeout = false;
 
-const detector = new DeviceDetector();
+const detector = new DeviceDetector({
+  deviceIndexes: true,
+  clientIndexes: true,
+});
 
 const createBenchmark = (useragent) => {
-  console.log('Test', useragent);
+  console.log('UA', useragent);
   console.log('-----');
   const suite = new Benchmark.Suite;
 // add listeners
@@ -17,64 +20,20 @@ const createBenchmark = (useragent) => {
   
   suite.add('detector.parseDevice (deviceIndexes on)', function() {
     return detector.parseDevice(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.deviceIndexes = true;
-      detector.clientIndexes = true;
-    },
   });
-  
-  /*suite.add('detector.parseDevice (deviceIndexes off)', function() {
-    return detector.parseDevice(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.deviceIndexes = false;
-      detector.clientIndexes = false;
-    },
-  });
-  
+
   suite.add('detector.parseClient (clientIndexes on)', function() {
     return detector.parseClient(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.clientIndexes = true;
-    },
-  });
-  
-  suite.add('detector.parseClient (clientIndexes off)', function() {
-    return detector.parseClient(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.clientIndexes = false;
-    },
   });
   
   suite.add('detector.parseOS', function() {
     return detector.parseOs(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.clientIndexes = false;
-      detector.deviceIndexes = false;
-    },
   });
-  
-  suite.add('detector.detect (indexes off)', function() {
-    return detector.detect(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.clientIndexes = false;
-      detector.deviceIndexes = false;
-    },
-  });*/
-  
+
   suite.add('detector.detect (indexes on)', function() {
     return detector.detect(useragent, {});
-  }, {
-    'onStart': () => {
-      detector.clientIndexes = true;
-      detector.deviceIndexes = true;
-    },
   });
+
   suite.run({async: false, queued: true});
   console.log('-----');
 };
