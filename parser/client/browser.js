@@ -4,7 +4,6 @@ const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
 const BrowserHints = require('./hints/browser-hints');
-const IndexerClient = require('./indexer-client');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 const browserHints = new BrowserHints;
@@ -189,8 +188,8 @@ class Browser extends ClientAbstractParser {
       version: version
     };
   }
-
-  __parseFormUserAgentPosition(userAgent, position = 0) {
+  
+  parseUserAgentByPosition(userAgent, position = 0) {
     let item = this.collection[position];
     if (item === void 0) {
       return null;
@@ -233,33 +232,7 @@ class Browser extends ClientAbstractParser {
     if (!userAgent) {
       return null;
     }
-  
-    let positions = [];
-    if (this.clientIndexes) {
-      positions = IndexerClient.findClientRegexPositionsForUserAgent(
-        userAgent,
-        this.type,
-      );
-    }
-  
-    // scan by positions
-    if (positions !== null && positions.length) {
-      for (let i = 0, l = positions.length; i < l; i++) {
-        let result = this.__parseFormUserAgentPosition(userAgent, positions[i]);
-        if (result !== null) {
-          return result;
-        }
-      }
-    }
-    
-    for ( let position = 0; position < this.collectionLength; position++) {
-      let result = this.__parseFormUserAgentPosition(userAgent, position);
-      if (result !== null) {
-        return result;
-      }
-    }
-
-    return null;
+    return super.parse(userAgent, {});
   }
 
   /**

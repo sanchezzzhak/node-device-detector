@@ -42,6 +42,8 @@
   - Alcatel
 '8082':
   - Alcatel
+'8084':
+  - Alcatel
 '8092':
   - Alcatel
 '8167':
@@ -552,6 +554,8 @@ aquarius pro, std, elt series:
   - Intex
 nuc10i3fnh:
   - Intel
+zc-339:
+  - Wanmukang
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -678,6 +682,8 @@ tinker board s:
   - Asus
 tinker board:
   - Asus
+atol 150f:
+  - ATOL
 gi-626:
   - altron
 5039d_ru:
@@ -1632,6 +1638,46 @@ drp29101:
   - RCA Tablets
 drp2091:
   - RCA Tablets
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -28001,6 +28047,60 @@ a30-ru:
   - Elong Mobile
 5eq:
   - Yezz
+lt50+:
+  - Azumi Mobile
+e13:
+  - Haier
+a202so:
+  - Sony
+sog07:
+  - Sony
+so-52c:
+  - Sony
+a202sh:
+  - Sharp
+ticktock:
+  - Unihertz
+xq-cc44:
+  - Sony
+yu5012:
+  - MicroMax
+cma-an40:
+  - Huawei
+isprit u50 lte:
+  - Venso
+cph2275:
+  - OPPO
+premier5:
+  - Sky
+rmx3492:
+  - Realme
+sm-a3360:
+  - Samsung
+lenovo x2-to:
+  - Lenovo
+lenovo x2-cu:
+  - Lenovo
+lenovo x2-ap:
+  - Lenovo
+fx4423:
+  - FILIX
+flare j5 mini:
+  - Cherry Mobile
+flare j5s:
+  - Cherry Mobile
+flare j3s:
+  - Cherry Mobile
+flare j3 mini:
+  - Cherry Mobile
+flare j3 max:
+  - Cherry Mobile
+flare_a1_roam:
+  - Cherry Mobile
+flare_p3_plus:
+  - Cherry Mobile
+flare_p3_lite:
+  - Cherry Mobile
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -34972,46 +35072,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -42253,6 +42313,37 @@ a7_wf:
   - Touch Plus
 770n:
   - Touch Plus
+10edge:
+  - Mediacom
+jr-j71:
+  - JREN
+m7_wifi:
+  - Multilaser
+light_at200:
+  - 4Good
+i15-tc:
+  - Cube
+ilium_pad_rx10v5:
+  - Lanix
+tibuta_masterpad-e100:
+  - Tibuta
+ex7w1 plus:
+  - EXCEED
+p10se_eea:
+  - Teclast
+atlantis_a10_g403:
+  - Blaupunkt
+at8b:
+  - Evercoss
+fusion aura 3s:
+  - Cherry Mobile
+  - Odys
+fz703:
+  - Akai
+fz701:
+  - Akai
+fire_v7:
+  - Odotpad
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -43650,6 +43741,28 @@ rst_b1103hd:
   - Kivi
 aquos_tve19a:
   - Sharp
+hb-2000:
+  - NTT West
+formuler z alpha:
+  - Formuler
+as_4k_ci_pro_plus:
+  - Openbox
+as_4k_plus:
+  - Openbox
+as_4k_2x:
+  - Openbox
+as4k:
+  - Openbox
+as4k-2x:
+  - Openbox
+as4k-plus:
+  - Openbox
+as4k_ci:
+  - Openbox
+as_4k:
+  - Openbox
+as4k_ci_pro:
+  - Openbox
 bb2 pro:
   - Mecool
 kii pro:
@@ -44186,3 +44299,5 @@ lem15:
   - LEMFO
 geozon lte:
   - GEOZON
+leo-dlxxe:
+  - Huawei

@@ -1,25 +1,34 @@
 const fs = require('fs');
 const ArrayPath = require('../../lib/array-path');
-
-const CLIENT_TYPES = require('../../parser/const/client-type');
-
 const {YAMLLoad, YAMLDump, getFixtureFolder} = require('./../functions');
 const {splitUserAgent, matchUserAgent, fuzzyCompare} = require(
   './../../parser/helper');
+const CLIENT_TYPES = require('../../parser/const/client-type');
 
 let fixtureFolder = getFixtureFolder();
 
-let browserRegexData = YAMLLoad(
+// regex list
+const databases = {};
+databases[CLIENT_TYPES.BROWSER] = YAMLLoad(
   __dirname + '/../../regexes/client/browsers.yml');
-
-let appRegexData = YAMLLoad(
+databases[CLIENT_TYPES.MOBILE_APP] = YAMLLoad(
   __dirname + '/../../regexes/client/mobile_apps.yml');
+databases[CLIENT_TYPES.MEDIA_PLAYER] = YAMLLoad(
+  __dirname + '/../../regexes/client/mediaplayers.yml');
+databases[CLIENT_TYPES.FEED_READER] = YAMLLoad(
+  __dirname + '/../../regexes/client/feed_readers.yml');
+databases[CLIENT_TYPES.PIM] = YAMLLoad(
+  __dirname + '/../../regexes/client/pim.yml');
 
-let browserFixtureData = YAMLLoad(fixtureFolder + 'clients/browser.yml');
+
 let appFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
+let browserFixtureData = YAMLLoad(fixtureFolder + 'clients/browser.yml');
+let mediaplayerFixtureData = YAMLLoad(fixtureFolder + 'clients/mediaplayer.yml');
+let libraryFixtureData = YAMLLoad(fixtureFolder + 'clients/library.yml');
+let readerFixtureData = YAMLLoad(fixtureFolder + 'clients/feed_reader.yml');
+let pimFixtureData = YAMLLoad(fixtureFolder + 'clients/pim.yml');
 
 const output = {};
-
 const replaceAll = (source, search, replace) => {
   let str = String(source);
   search.forEach((item, i) => {
@@ -68,14 +77,11 @@ const findDataKey = (groups, clientName) => {
 };
 
 const findDataIndex = (userAgent, clientType) => {
-  let database = [];
-  if (clientType === CLIENT_TYPES.BROWSER) {
-    database = browserRegexData;
-  } else if (clientType === CLIENT_TYPES.MOBILE_APP) {
-    database = appRegexData;
-  } else {
-    return null;
+  let database = databases[clientType];
+  if (!database) {
+    return null
   }
+  
   for (let i = 0, l = database.length; i < l; i++) {
     let result = matchUserAgent(database[i].regex, userAgent);
     if (result !== null) {
@@ -86,15 +92,16 @@ const findDataIndex = (userAgent, clientType) => {
   return null;
 };
 
+const sortAsc = (a, b) => a - b;
+
 const createIndexForFixture = (fixture) => {
-  
-  const sortAsc = (a, b) => a - b;
   
   let userAgent = fixture.user_agent;
   let splitData = splitUserAgent(userAgent);
   let clientName = ArrayPath.get(fixture, 'client.name', null);
   let clientType = ArrayPath.get(fixture, 'client.type', null);
   let headers = ArrayPath.get(fixture, 'headers', null);
+  // skip clienthints
   if (headers !== null) {
     return;
   }
@@ -103,7 +110,7 @@ const createIndexForFixture = (fixture) => {
   let keyName = splitData.hash;
   
   if (
-    ![CLIENT_TYPES.BROWSER, CLIENT_TYPES.MOBILE_APP].includes(clientType) ||
+    !Object.values(CLIENT_TYPES).includes(clientType) ||
     !clientName ||
     keyIndex === null
   ) {
@@ -111,7 +118,14 @@ const createIndexForFixture = (fixture) => {
   }
 
   if (output[keyName] === void 0) {
-    output[keyName] = [[], []];
+    output[keyName] = [
+      [], // browser
+      [], // app
+      [], // lib
+      [], // media player
+      [], // reader
+      [], // pim
+    ];
   }
   
   if (!output[keyName][0].includes(keyIndex) && clientType ===
@@ -125,13 +139,49 @@ const createIndexForFixture = (fixture) => {
     output[keyName][1].push(keyIndex);
     output[keyName][1] = output[keyName][1].sort(sortAsc);
   }
+  
+  if (!output[keyName][2].includes(keyIndex) && clientType ===
+    CLIENT_TYPES.LIBRARY) {
+    output[keyName][2].push(keyIndex);
+    output[keyName][2] = output[keyName][2].sort(sortAsc);
+  }
+  
+  if (!output[keyName][3].includes(keyIndex) && clientType ===
+    CLIENT_TYPES.MEDIA_PLAYER) {
+    output[keyName][3].push(keyIndex);
+    output[keyName][3] = output[keyName][3].sort(sortAsc);
+  }
+  
+  if (!output[keyName][4].includes(keyIndex) && clientType ===
+    CLIENT_TYPES.FEED_READER) {
+    output[keyName][4].push(keyIndex);
+    output[keyName][4] = output[keyName][4].sort(sortAsc);
+  }
+  if (!output[keyName][5].includes(keyIndex) && clientType ===
+    CLIENT_TYPES.PIM) {
+    output[keyName][5].push(keyIndex);
+    output[keyName][5] = output[keyName][5].sort(sortAsc);
+  }
 };
+
+// create index for fixtures
 
 appFixtureData.forEach((fixture) => {
   createIndexForFixture(fixture);
 });
-
 browserFixtureData.forEach((fixture) => {
+  createIndexForFixture(fixture);
+});
+libraryFixtureData.forEach((fixture) => {
+  createIndexForFixture(fixture);
+});
+mediaplayerFixtureData.forEach((fixture) => {
+  createIndexForFixture(fixture);
+});
+readerFixtureData.forEach((fixture) => {
+  createIndexForFixture(fixture);
+});
+pimFixtureData.forEach((fixture) => {
   createIndexForFixture(fixture);
 });
 

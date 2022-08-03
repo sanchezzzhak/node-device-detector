@@ -1,11 +1,11 @@
 const ParserAbstract = require('./abstract-parser');
-const IndexerClient = require('./client/indexer-client')
-
+const IndexerClient = require('./client/indexer-client');
 
 class ClientAbstractParser extends ParserAbstract {
   constructor() {
     super();
     this.collectionLength = 0;
+    this.type = '';
     this.__clientIndexes = true;
   }
   
@@ -26,37 +26,50 @@ class ClientAbstractParser extends ParserAbstract {
     if (!userAgent) {
       return null;
     }
-  
-    let positions = [];
-    if (this.clientIndexes) {
-      positions = IndexerClient.findClientRegexPositionsForUserAgent(
+    
+    // get positions by indexes
+    if (this.clientIndexes && this.type !== '') {
+      let positions = IndexerClient.findClientRegexPositionsForUserAgent(
         userAgent,
         this.type,
       );
-    }
-   
-    // scan by positions
-    if (positions !== null && positions.length) {
-      for (let i = 0, l = positions.length; i < l; i++) {
-        let result = this.__parseFormUserAgentPosition(userAgent, positions[i]);
-        if (result !== null) {
-          return result;
-        }
+      // scan by positions
+      let result = this.parseUserAgentByPositions(userAgent, positions);
+      if (result !== null) {
+        return null;
       }
     }
     
     // full scan
     for (let i = 0, l = this.collectionLength; i < l; i++) {
-      let result = this.__parseFormUserAgentPosition(userAgent, i);
+      let result = this.parseUserAgentByPosition(userAgent, i);
       if (result !== null) {
         return result;
       }
     }
-    
+    return null;
+  }
+
+  parseUserAgentByPositions(userAgent, positions) {
+    if (positions !== null && positions.length) {
+      for (let i = 0, l = positions.length; i < l; i++) {
+        let result = this.parseUserAgentByPosition(userAgent, positions[i]);
+        if (result !== null) {
+          return result;
+        }
+      }
+    }
     return null;
   }
   
-  __parseFormUserAgentPosition(userAgent, position = 0) {
+  /**
+   * Inline parse userAgent by position collection
+   *
+   * @param {String} userAgent
+   * @param {Number} position
+   * @returns {{name: (string|*), type: string, version: string}|null}
+   */
+  parseUserAgentByPosition(userAgent, position = 0) {
     let item = this.collection[position];
     
     if (item === void 0) {
