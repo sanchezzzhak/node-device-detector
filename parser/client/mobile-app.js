@@ -35,7 +35,9 @@ class MobileApp extends ClientAbstractParser {
     }
     
     if (hash && name !== hash.name) {
+      console.log(hash, name)
       name = hash.name;
+      version = '';
     }
     
     if (name === '') {

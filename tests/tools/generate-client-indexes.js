@@ -95,20 +95,16 @@ const findDataIndex = (userAgent, clientType) => {
 const sortAsc = (a, b) => a - b;
 
 const createIndexForFixture = (fixture) => {
-  
   let userAgent = fixture.user_agent;
   let splitData = splitUserAgent(userAgent);
   let clientName = ArrayPath.get(fixture, 'client.name', null);
   let clientType = ArrayPath.get(fixture, 'client.type', null);
-  let headers = ArrayPath.get(fixture, 'headers', null);
-  // skip clienthints
-  if (headers !== null) {
-    return;
-  }
-  
+
   let keyIndex = findDataIndex(userAgent, clientType);
   let keyName = splitData.hash;
-  
+
+  // console.log(clientType, keyName, keyIndex, splitData.path)
+
   if (
     !clientName ||
     keyIndex === null

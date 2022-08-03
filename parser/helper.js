@@ -27,7 +27,7 @@ function fuzzyCompare(val1, val2) {
     val2.replace(/ /gi, '').toLowerCase();
 }
 
-function createMD5(str) {
+function createHash(str) {
   var hash = 0, i = 0, len = str.length;
   while (i < len) {
     hash = ((hash << 5) - hash + str.charCodeAt(i++)) << 0;
@@ -262,6 +262,7 @@ function splitUserAgent(userAgent) {
     if (typeof groups[key] !== 'string' || !groups[key]) {
       continue;
     }
+
     if (key && String(key).charAt(0) === '#') {
       if (
         !groups[key].match(/[/;]/i) &&
@@ -275,7 +276,7 @@ function splitUserAgent(userAgent) {
     
     parts.push(String(key).toLowerCase());
   }
-  let hash = createMD5(parts.join('.')).replace('-', '');
+  let hash = createHash(parts.join('.')).replace('-', '');
   let path = parts.join('.');
   
   return {tokens, groups, hash, path};
