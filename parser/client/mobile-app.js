@@ -18,23 +18,20 @@ class MobileApp extends ClientAbstractParser {
     return appHints.parse(clientHints);
   }
   
-  /**
-   * @param userAgent
-   * @param clientHints
-   * @returns {({name: string, type: string, version: string})|null}
-   */
-  parse(userAgent, clientHints) {
-    
-    let hash = this.parseFromHashHintsApp(clientHints);
-    let result = super.parse(userAgent, clientHints);
-    
+  parseFromClientHints(clientHints) {
+    let name = '';
+    let version = '';
+    return {name, version}
+  }
+  
+  prepareParseResult(userAgent, data, hint, hash) {
     let name = '';
     let type = CLIENT_TYPE.MOBILE_APP;
     let version = '';
     
-    if (result) {
-      name = result.name;
-      version = result.version;
+    if (data) {
+      name = data.name;
+      version = data.version;
     }
     
     if (hash && name !== hash.name) {
@@ -51,6 +48,18 @@ class MobileApp extends ClientAbstractParser {
       type: String(type),
       version: String(version),
     };
+  }
+
+  /**
+   * @param userAgent
+   * @param clientHints
+   * @returns {({name: string, type: string, version: string})|null}
+   */
+  parse(userAgent, clientHints) {
+    let hash = this.parseFromHashHintsApp(clientHints);
+    let hint = this.parseFromClientHints(clientHints);
+    let data = super.parse(userAgent, clientHints);
+    return this.prepareParseResult(userAgent, data, hint, hash);
   }
 }
 

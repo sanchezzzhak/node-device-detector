@@ -44,18 +44,13 @@ class Browser extends ClientAbstractParser {
     super.loadCollection();
     this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
   }
-
-  /**
-   * @param {string} userAgent
-   * @param {*} clientHints
-   * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
-   */
-  parse(userAgent, clientHints) {
-
-    let hash = this.parseFromHashHintsApp(clientHints);
-    let hint = this.parseFromClientHints(clientHints);
-    let data = this.parseFromUserAgent(userAgent);
-
+  
+  prepareParseResult(
+    userAgent,
+    data,
+    hint,
+    hash
+  ) {
     let type = CLIENT_TYPE.BROWSER;
     let name = '';
     let version = '';
@@ -63,14 +58,14 @@ class Browser extends ClientAbstractParser {
     let engineVersion = '';
     let short = ''
     let family = '';
-
+  
     // client-hint+user-agent
     if (hint.name && hint.version) {
       name = hint.name;
       version = hint.version;
       short = hint.short_name;
       family = this.buildFamily(short);
-
+    
       if (data) {
         if (
           'Chromium' === name && 'Chromium' !== data.name
@@ -81,18 +76,18 @@ class Browser extends ClientAbstractParser {
           version = data.version
           family = this.buildFamily(short);
         }
-
+      
         // Fix mobile browser names e.g. Chrome => Chrome Mobile
         if (name + ' Mobile' === data.name) {
           name = data.name;
           short = data.short_name;
         }
-
+      
         if (name !== data.name && family === this.buildFamily(data.short_name)) {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
-
+      
         if (name === data.name) {
           engine = data.engine;
           engineVersion = data.engine_version;
@@ -107,32 +102,32 @@ class Browser extends ClientAbstractParser {
       short = data.short_name;
       engine = data.engine;
       engineVersion = data.engine_version;
-
+    
     }
-
+  
     family = this.buildFamily(short);
-
+  
     if (hash !== null && name !== hash.name) {
       name = hash.name;
       version = '';
       short = this.buildShortName(name)
-
+    
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
         engine = 'Blink'
         family = this.buildFamily(short) || 'Chrome';
         engineVersion = this.buildEngineVersion(userAgent, engine);
       }
     }
-
+  
     // exclude Blink engine version for browsers
     if ('Blink' === engine && 'Flow Browser' === name) {
       engineVersion = '';
     }
-
+  
     if (name === '') {
       return null;
     }
-
+  
     return {
       type: String(type),
       name: String(name),
@@ -143,7 +138,21 @@ class Browser extends ClientAbstractParser {
       family: String(family),
     }
   }
+  
+  /**
+   * @param {string} userAgent
+   * @param {*} clientHints
+   * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
+   */
+  parse(userAgent, clientHints) {
 
+    let hash = this.parseFromHashHintsApp(clientHints);
+    let hint = this.parseFromClientHints(clientHints);
+    let data = this.parseFromUserAgent(userAgent);
+
+     return this.prepareParseResult(userAgent, data, hint, hash);
+  }
+  
   parseFromHashHintsApp(clientHints) {
     return browserHints.parse(clientHints);
   }

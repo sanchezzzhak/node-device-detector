@@ -617,13 +617,27 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
     
+    if(this.clientIndexes) {
+      const extendParsers = [CLIENT_TYPE.BROWSER, CLIENT_TYPE.MOBILE_APP];
+      for (let name in this.clientParserList) {
+        let parser = this.clientParserList[name];
+        let data = parser.parseUserAgentByPositions(userAgent);
+        if (extendParsers.indexOf(parser.type) !== -1 && data !== null) {
+          let hash = parser.parseFromHashHintsApp(clientHints);
+          let hint = parser.parseFromClientHints(clientHints);
+          return parser.prepareParseResult(userAgent, data, hint, hash);
+        }
+        if (data !== null) {
+          return data;
+        }
+      }
+    }
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
       let resultMerge = parser.parse(userAgent, clientHints);
       if (resultMerge) {
-        result = Object.assign(result, resultMerge);
-        break;
+        return Object.assign(result, resultMerge);
       }
     }
     return result;

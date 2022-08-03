@@ -27,16 +27,11 @@ class ClientAbstractParser extends ParserAbstract {
       return null;
     }
     
-    // get positions by indexes
-    if (this.clientIndexes && this.type !== '') {
-      let positions = IndexerClient.findClientRegexPositionsForUserAgent(
-        userAgent,
-        this.type,
-      );
-      // scan by positions
-      let result = this.parseUserAgentByPositions(userAgent, positions);
+    // scan indexes
+    if (this.clientIndexes) {
+     let result = this.parseUserAgentByPositions(userAgent);
       if (result !== null) {
-        return null;
+        return result;
       }
     }
     
@@ -49,8 +44,12 @@ class ClientAbstractParser extends ParserAbstract {
     }
     return null;
   }
-
-  parseUserAgentByPositions(userAgent, positions) {
+  
+  parseUserAgentByPositions(userAgent) {
+    let positions = IndexerClient.findClientRegexPositionsForUserAgent(
+      userAgent,
+      this.type,
+    );
     if (positions !== null && positions.length) {
       for (let i = 0, l = positions.length; i < l; i++) {
         let result = this.parseUserAgentByPosition(userAgent, positions[i]);
