@@ -616,22 +616,24 @@ class DeviceDetector {
    * @return {ResultClient|{}}
    */
   parseClient(userAgent, clientHints) {
-    
     if(this.clientIndexes) {
       const extendParsers = [CLIENT_TYPE.BROWSER, CLIENT_TYPE.MOBILE_APP];
       for (let name in this.clientParserList) {
         let parser = this.clientParserList[name];
         let data = parser.parseUserAgentByPositions(userAgent);
-        if (extendParsers.indexOf(parser.type) !== -1 && data !== null) {
+        if (extendParsers.includes(parser.type)) {
           let hash = parser.parseFromHashHintsApp(clientHints);
           let hint = parser.parseFromClientHints(clientHints);
-          return parser.prepareParseResult(userAgent, data, hint, hash);
-        }
-        if (data !== null) {
+          let result = parser.prepareParseResult(userAgent, data, hint, hash);
+          if (result !== null) {
+             return result;
+          }
+        } else if (data !== null) {
           return data;
         }
       }
     }
+
     let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];

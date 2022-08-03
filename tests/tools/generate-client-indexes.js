@@ -20,8 +20,8 @@ databases[CLIENT_TYPES.FEED_READER] = YAMLLoad(
 databases[CLIENT_TYPES.PIM] = YAMLLoad(
   __dirname + '/../../regexes/client/pim.yml');
 
-
 let appFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
+let appHintFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
 let browserFixtureData = YAMLLoad(fixtureFolder + 'clients/browser.yml');
 let mediaplayerFixtureData = YAMLLoad(fixtureFolder + 'clients/mediaplayer.yml');
 let libraryFixtureData = YAMLLoad(fixtureFolder + 'clients/library.yml');
@@ -110,7 +110,6 @@ const createIndexForFixture = (fixture) => {
   let keyName = splitData.hash;
   
   if (
-    !Object.values(CLIENT_TYPES).includes(clientType) ||
     !clientName ||
     keyIndex === null
   ) {
@@ -127,7 +126,7 @@ const createIndexForFixture = (fixture) => {
       [], // pim
     ];
   }
-  
+
   if (!output[keyName][0].includes(keyIndex) && clientType ===
     CLIENT_TYPES.BROWSER) {
     output[keyName][0].push(keyIndex);

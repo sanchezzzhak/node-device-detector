@@ -48,7 +48,7 @@ class ClientAbstractParser extends ParserAbstract {
   parseUserAgentByPositions(userAgent) {
     let positions = IndexerClient.findClientRegexPositionsForUserAgent(
       userAgent,
-      this.type,
+      String(this.type),
     );
     if (positions !== null && positions.length) {
       for (let i = 0, l = positions.length; i < l; i++) {
@@ -80,7 +80,7 @@ class ClientAbstractParser extends ParserAbstract {
     
     if (match !== null) {
       return {
-        type: '',
+        type: String(this.type),
         name: this.buildByMatch(item.name, match),
         version: this.buildVersion(item.version, match),
       };
