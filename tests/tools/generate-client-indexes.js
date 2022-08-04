@@ -6,22 +6,22 @@ const {splitUserAgent, matchUserAgent, fuzzyCompare} = require(
 const CLIENT_TYPES = require('../../parser/const/client-type');
 
 let fixtureFolder = getFixtureFolder();
+let regexesFolder = __dirname + '/../../regexes/';
 
 // regex list
 const databases = {};
 databases[CLIENT_TYPES.BROWSER] = YAMLLoad(
-  __dirname + '/../../regexes/client/browsers.yml');
+  regexesFolder + 'client/browsers.yml');
 databases[CLIENT_TYPES.MOBILE_APP] = YAMLLoad(
-  __dirname + '/../../regexes/client/mobile_apps.yml');
+  regexesFolder + 'client/mobile_apps.yml');
 databases[CLIENT_TYPES.MEDIA_PLAYER] = YAMLLoad(
-  __dirname + '/../../regexes/client/mediaplayers.yml');
+  regexesFolder + 'client/mediaplayers.yml');
 databases[CLIENT_TYPES.FEED_READER] = YAMLLoad(
-  __dirname + '/../../regexes/client/feed_readers.yml');
+  regexesFolder + 'client/feed_readers.yml');
 databases[CLIENT_TYPES.PIM] = YAMLLoad(
-  __dirname + '/../../regexes/client/pim.yml');
+  regexesFolder + 'client/pim.yml');
 
 let appFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
-let appHintFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
 let browserFixtureData = YAMLLoad(fixtureFolder + 'clients/browser.yml');
 let mediaplayerFixtureData = YAMLLoad(fixtureFolder + 'clients/mediaplayer.yml');
 let libraryFixtureData = YAMLLoad(fixtureFolder + 'clients/library.yml');
@@ -41,7 +41,7 @@ const findDataKey = (groups, clientName) => {
   if (!groups) {
     return null;
   }
-  
+
   try {
     for (let keyName in groups) {
       if (Array.isArray(groups[keyName])) {
@@ -57,21 +57,21 @@ const findDataKey = (groups, clientName) => {
       }
       let searchArray = ['%20', / ?app| ?browser/i];
       let replaceArray = [' ', ''];
-      
+
       // remove prefix App and Browser
       let first = replaceAll(keyName, searchArray, replaceArray);
       let second = replaceAll(clientName, searchArray, replaceArray);
       if (fuzzyCompare(first, second)) {
         return String(keyName);
       }
-      
+
       if (second.indexOf(first) !== -1) {
         return String(keyName);
       }
     }
-    
+
   } catch (e) {
-  
+
   }
   return null;
 };
@@ -81,14 +81,14 @@ const findDataIndex = (userAgent, clientType) => {
   if (!database) {
     return null
   }
-  
+
   for (let i = 0, l = database.length; i < l; i++) {
     let result = matchUserAgent(database[i].regex, userAgent);
     if (result !== null) {
       return i;
     }
   }
-  
+
   return null;
 };
 
@@ -128,25 +128,25 @@ const createIndexForFixture = (fixture) => {
     output[keyName][0].push(keyIndex);
     output[keyName][0] = output[keyName][0].sort(sortAsc);
   }
-  
+
   if (!output[keyName][1].includes(keyIndex) && clientType ===
     CLIENT_TYPES.MOBILE_APP) {
     output[keyName][1].push(keyIndex);
     output[keyName][1] = output[keyName][1].sort(sortAsc);
   }
-  
+
   if (!output[keyName][2].includes(keyIndex) && clientType ===
     CLIENT_TYPES.LIBRARY) {
     output[keyName][2].push(keyIndex);
     output[keyName][2] = output[keyName][2].sort(sortAsc);
   }
-  
+
   if (!output[keyName][3].includes(keyIndex) && clientType ===
     CLIENT_TYPES.MEDIA_PLAYER) {
     output[keyName][3].push(keyIndex);
     output[keyName][3] = output[keyName][3].sort(sortAsc);
   }
-  
+
   if (!output[keyName][4].includes(keyIndex) && clientType ===
     CLIENT_TYPES.FEED_READER) {
     output[keyName][4].push(keyIndex);
@@ -195,8 +195,4 @@ ymlDeviceFiles.forEach((file) => {
 
 let content = YAMLDump(output);
 
-fs.writeFileSync(
-  __dirname + '/../../regexes/client-index-hash.yml',
-  content,
-  'utf8',
-);
+fs.writeFileSync(regexesFolder + 'client-index-hash.yml', content, 'utf8');
