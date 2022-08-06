@@ -244,7 +244,18 @@ function getGroupForUserAgentTokens(tokens) {
 
 function getTokensForUserAgent(userAgent) {
   let tokenRegex = / (?![^(]*\))/i;
-  return userAgent.split(tokenRegex);
+  let tokens = userAgent.split(tokenRegex);
+  if (tokens[1] && tokens[1].toLowerCase() === '(linux;') {
+    let filterWebkit = false;
+    tokens = tokens.filter((token, i) => {
+      if (!filterWebkit && token.toLowerCase().indexOf('applewebkit/') !== -1) {
+        filterWebkit = true;
+      }
+      return filterWebkit || i ===0;
+    });
+
+  }
+  return tokens;
 }
 
 /**

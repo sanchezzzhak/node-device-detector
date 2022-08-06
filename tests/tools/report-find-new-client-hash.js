@@ -18,7 +18,7 @@ const run = async (absolutePath) => {
     useragent = trimChars(useragent, '"');
     let data = splitUserAgent(useragent);
     if(!database[data.hash]) {
-      console.log(data.hash, data.path, useragent)
+      console.log(data.hash, '    ', data.path, '     ', useragent)
     }
   }
 }

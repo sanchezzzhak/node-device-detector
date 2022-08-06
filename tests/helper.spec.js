@@ -1,5 +1,6 @@
 const detector = new (require('../index'))();
 const DeviceHelper = require('../helper');
+const ParserHelper = require('../parser/helper');
 const { should, assert, expect } = require('chai');
 
 /*
@@ -150,3 +151,31 @@ describe('test helpers', function () {
     });
   });
 });
+
+
+describe('test splitUserAgent', function () {
+  const userAgents = [
+    {
+      useragent: 'Mozilla/5.0 (Linux; Android 11; moto tab g70 LTE Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Safari/537.36 GoogleApp/13.22.15.26.arm64',
+      hash: '79a29cd8',
+      path: 'mozilla.applewebkit.version.chrome.safari.googleapp'
+    }, {
+      useragent: 'Mozilla/5.0 (Linux; Android 8.1.0; moto e5 (XT1920DL)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36',
+      hash: '99bd518',
+      path: 'mozilla.applewebkit.chrome.mobile.safari'
+    }, {
+      useragent: 'Mozilla/5.0 (Linux; U; Android 7.1.2; en-US; K920 (CN) Build/NJH47F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.2.1303 Mobile Safari/537.36',
+      hash: '426141aa',
+      path: 'mozilla.applewebkit.version.chrome.ucbrowser.mobile.safari'
+    }
+  ];
+
+  userAgents.forEach((item, index) => {
+    it('test ' + index, () => {
+      let data = ParserHelper.splitUserAgent(item.useragent);
+      expect(data.hash + ' ' + data.path, 'data: ' + JSON.stringify(data, null, 2))
+      .to
+      .equal(item.hash + ' ' + item.path);
+    })
+  });
+})
