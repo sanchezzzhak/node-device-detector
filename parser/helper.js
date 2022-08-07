@@ -223,14 +223,12 @@ function getGroupForUserAgentTokens(tokens) {
     if (token === '') {
       return;
     }
-    
     let data = token.match(/^\((.*)\)$/);
     if (data !== null) {
       groupIndex++;
       group['#' + groupIndex] = data[1].split(/[;,] /);
       return group;
     }
-    
     let rowSlash = token.split('/');
     if (rowSlash.length === 2) {
       group[rowSlash[0]] = rowSlash[1];
@@ -244,18 +242,7 @@ function getGroupForUserAgentTokens(tokens) {
 
 function getTokensForUserAgent(userAgent) {
   let tokenRegex = / (?![^(]*\))/i;
-  let tokens = userAgent.split(tokenRegex);
-  if (tokens[1] && tokens[1].toLowerCase() === '(linux;') {
-    let filterWebkit = false;
-    tokens = tokens.filter((token, i) => {
-      if (!filterWebkit && token.toLowerCase().indexOf('applewebkit/') !== -1) {
-        filterWebkit = true;
-      }
-      return filterWebkit || i ===0;
-    });
-
-  }
-  return tokens;
+  return userAgent.split(tokenRegex);
 }
 
 /**

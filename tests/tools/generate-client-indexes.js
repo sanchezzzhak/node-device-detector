@@ -103,8 +103,6 @@ const createIndexForFixture = (fixture) => {
   let keyIndex = findDataIndex(userAgent, clientType);
   let keyName = splitData.hash;
 
-  // console.log(clientType, keyName, keyIndex, splitData.path)
-
   if (
     !clientName ||
     keyIndex === null
@@ -116,10 +114,10 @@ const createIndexForFixture = (fixture) => {
     output[keyName] = [
       [], // browser
       [], // app
-      [], // lib
-      [], // media player
-      [], // reader
-      [], // pim
+      // [], // lib
+      // [], // media player
+      // [], // reader
+      // [], // pim
     ];
   }
 
@@ -135,28 +133,28 @@ const createIndexForFixture = (fixture) => {
     output[keyName][1] = output[keyName][1].sort(sortAsc);
   }
 
-  if (!output[keyName][2].includes(keyIndex) && clientType ===
-    CLIENT_TYPES.LIBRARY) {
-    output[keyName][2].push(keyIndex);
-    output[keyName][2] = output[keyName][2].sort(sortAsc);
-  }
-
-  if (!output[keyName][3].includes(keyIndex) && clientType ===
-    CLIENT_TYPES.MEDIA_PLAYER) {
-    output[keyName][3].push(keyIndex);
-    output[keyName][3] = output[keyName][3].sort(sortAsc);
-  }
-
-  if (!output[keyName][4].includes(keyIndex) && clientType ===
-    CLIENT_TYPES.FEED_READER) {
-    output[keyName][4].push(keyIndex);
-    output[keyName][4] = output[keyName][4].sort(sortAsc);
-  }
-  if (!output[keyName][5].includes(keyIndex) && clientType ===
-    CLIENT_TYPES.PIM) {
-    output[keyName][5].push(keyIndex);
-    output[keyName][5] = output[keyName][5].sort(sortAsc);
-  }
+  // if (!output[keyName][2].includes(keyIndex) && clientType ===
+  //   CLIENT_TYPES.LIBRARY) {
+  //   output[keyName][2].push(keyIndex);
+  //   output[keyName][2] = output[keyName][2].sort(sortAsc);
+  // }
+  //
+  // if (!output[keyName][3].includes(keyIndex) && clientType ===
+  //   CLIENT_TYPES.MEDIA_PLAYER) {
+  //   output[keyName][3].push(keyIndex);
+  //   output[keyName][3] = output[keyName][3].sort(sortAsc);
+  // }
+  //
+  // if (!output[keyName][4].includes(keyIndex) && clientType ===
+  //   CLIENT_TYPES.FEED_READER) {
+  //   output[keyName][4].push(keyIndex);
+  //   output[keyName][4] = output[keyName][4].sort(sortAsc);
+  // }
+  // if (!output[keyName][5].includes(keyIndex) && clientType ===
+  //   CLIENT_TYPES.PIM) {
+  //   output[keyName][5].push(keyIndex);
+  //   output[keyName][5] = output[keyName][5].sort(sortAsc);
+  // }
 };
 
 // create index for fixtures
@@ -167,18 +165,18 @@ appFixtureData.forEach((fixture) => {
 browserFixtureData.forEach((fixture) => {
   createIndexForFixture(fixture);
 });
-libraryFixtureData.forEach((fixture) => {
-  createIndexForFixture(fixture);
-});
-mediaplayerFixtureData.forEach((fixture) => {
-  createIndexForFixture(fixture);
-});
-readerFixtureData.forEach((fixture) => {
-  createIndexForFixture(fixture);
-});
-pimFixtureData.forEach((fixture) => {
-  createIndexForFixture(fixture);
-});
+// libraryFixtureData.forEach((fixture) => {
+//   createIndexForFixture(fixture);
+// });
+// mediaplayerFixtureData.forEach((fixture) => {
+//   createIndexForFixture(fixture);
+// });
+// readerFixtureData.forEach((fixture) => {
+//   createIndexForFixture(fixture);
+// });
+// pimFixtureData.forEach((fixture) => {
+//   createIndexForFixture(fixture);
+// });
 
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
