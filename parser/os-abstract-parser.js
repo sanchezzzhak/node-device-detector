@@ -8,12 +8,11 @@ const ANDROID_APP_LIST = [
   'com.seraphic.openinet.pre',
   'com.appssppa.idesktoppcbrowser'
 ];
-
+const CLIENTHINT_MAPPING = {
+  'GNU/Linux': ['Linux'],
+  'Mac': ['MacOS'],
+};
 const compareOsForClientHints = (brand) => {
-  const CLIENTHINT_MAPPING = {
-    'GNU/Linux': ['Linux'],
-    'Mac': ['MacOS'],
-  };
   for(let mapName in CLIENTHINT_MAPPING){
     for(let mapBrand of CLIENTHINT_MAPPING[mapName]){
       if (brand.toLowerCase() === mapBrand.toLowerCase()) {

@@ -40,15 +40,16 @@ class DeviceParserAbstract extends ParserAbstract {
    * @private
    */
   __parseForBrand(cursor, userAgent) {
-    let model = '';
-    let deviceType = '';
-    let brandName = '';
     let item = this.collection[cursor];
     if (item === void 0) {
       return null;
     }
-
+    
+    let model = '';
+    let deviceType = '';
+    let brandName = '';
     let regex = item['regex'];
+    
     let match = this.getBaseRegExp(regex).exec(userAgent);
 
     if (match) {

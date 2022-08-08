@@ -110,6 +110,10 @@
   alias:
     name: iPhone11,8
 
+- user_agent: Test Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 239.2.0.17.109 (iPhone9,3; iOS 15_5; it_IT; it-IT; scale=2.00; 750x1334; 376668393) NW/3
+  alias:
+    name: iPhone9,3
+
 - user_agent: Mozilla/5.0 (Linux; Android 10; SM-A102U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 Instagram 167.0.0.24.120 Android (29/10; 320dpi; 720x1402; samsung; SM-A102U; a10e; exynos7884B; en_US; 256966589)
   alias:
     name: SM-A102U
