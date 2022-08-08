@@ -26,6 +26,10 @@
   - Advan
 '5062':
   - Advan
+'5202':
+  - Advan
+'5505':
+  - Advan
 '6002':
   - Advan
 '6004':
@@ -262,6 +266,12 @@ sm-a528b:
   - Samsung
 sm-g973f:
   - Samsung
+redmi note 8 pro:
+  - Xiaomi
+sm-g930f:
+  - Samsung
+huawei mla-al10:
+  - Huawei
 zc554kl:
   - Asus
 dn2103:
@@ -618,6 +628,12 @@ jln-lx1:
   - Huawei
 pixel 6 pro:
   - Google
+sm-n960n:
+  - Samsung
+sm-g930w8:
+  - Samsung
+huawei nxt-cl00:
+  - Huawei
 shtrih-smartpos-f2:
   - Shtrikh-M
 wisenet5:
@@ -684,6 +700,8 @@ tinker board:
   - Asus
 atol 150f:
   - ATOL
+ptc760:
+  - Hytera
 gi-626:
   - altron
 5039d_ru:
@@ -1220,8 +1238,6 @@ redmi note 6 pro:
   - Xiaomi
 redmi note 7 pro:
   - Xiaomi
-redmi note 8 pro:
-  - Xiaomi
 m2003j15sc:
   - Xiaomi
 samsung sm-f916b:
@@ -1345,8 +1361,6 @@ k019:
   - Asus
 infinix x604:
   - Infinix
-sm-n960n:
-  - Samsung
 m1908c3jgg:
   - Xiaomi
 m2101k7bi:
@@ -3629,6 +3643,10 @@ g450 2021:
   - Xiaomi
 inkosi:
   - Stylo
+tcl p590l:
+  - TCL
+amoi n850:
+  - Amoi
 r831k:
   - OPPO
 r831l:
@@ -19283,8 +19301,6 @@ bv9000pro:
   - Blackview
 bv5800pro_ru:
   - Blackview
-sm-g930f:
-  - Samsung
 easy_xl_pro:
   - Highscreen
 neffos c7 lite:
@@ -28101,6 +28117,93 @@ flare_p3_plus:
   - Cherry Mobile
 flare_p3_lite:
   - Cherry Mobile
+fj:
+  - FiGi
+hb_x7:
+  - HexaByte
+hiking_a18:
+  - HiKing
+hl5576:
+  - Advance
+rk25wo:
+  - CipherLab
+l1f-pluss:
+  - BrandCode
+v12fnlite:
+  - Wiko
+l60 turbo:
+  - SPC
+l60 pro:
+  - SPC
+l601f:
+  - Hyundai
+l9502:
+  - Lumitel
+l9503:
+  - Lumitel
+lg-m320g:
+  - LG
+live 7:
+  - Krüger&Matz
+lt_c3300:
+  - LT Mobile
+lt_c1500:
+  - LT Mobile
+lt_s10:
+  - LT Mobile
+luna v57:
+  - Elevate
+  - Stylo
+luna v55a:
+  - Elevate
+  - Stylo
+luna g62:
+  - Elevate
+  - Stylo
+luna g60x:
+  - Elevate
+  - Stylo
+luna g58:
+  - Elevate
+  - Stylo
+m10 nano:
+  - Evertek
+mango s5:
+  - Mango
+mango_sq7:
+  - Mango
+impress open:
+  - Vertex
+archos 50c neon:
+  - Archos
+  - Jinga
+archos 50b platinum:
+  - Archos
+archos 35b titanium:
+  - Archos
+archos 40c titanium:
+  - Archos
+archos 40c tiv2:
+  - Archos
+archos 40d titanium:
+  - Archos
+archos 45 neon:
+  - Archos
+  - Jinga
+archos 45b titanium:
+  - Archos
+archos 45c platinum:
+  - Archos
+archos 50c helium:
+  - Archos
+archos 50c oxygen:
+  - Archos
+archos 52 platinum:
+  - Archos
+archos 59 titanium:
+  - Archos
+arctic450:
+  - Oysters
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -30738,8 +30841,6 @@ ideos x5:
 u8800:
   - Huawei
 huawei-m931:
-  - Huawei
-huawei mla-al10:
   - Huawei
 pot-al10:
   - Huawei
@@ -42344,6 +42445,63 @@ fz701:
   - Akai
 fire_v7:
   - Odotpad
+ghia_vector_3g:
+  - Ghia
+ghia_axis7_3g:
+  - Ghia
+piranha pro ii tab 7.0:
+  - PIRANHA
+s170i:
+  - DEXP
+sencor_10_1q102:
+  - Sencor
+l110:
+  - DEXP
+l170:
+  - DEXP
+l180:
+  - DEXP
+lg-p530l:
+  - LG
+m7go_2019:
+  - Reeder
+m7s_plus:
+  - Multilaser
+archos 101 magnus:
+  - Archos
+archos 101 copper:
+  - Archos
+archos 101 xenon v2:
+  - Archos
+archos 101b copper:
+  - Archos
+archos 101b platinium:
+  - Archos
+archos 101c neon:
+  - Archos
+  - Jinga
+archos 101c xenon:
+  - Archos
+archos 101d neon:
+  - Archos
+  - Jinga
+archos 70 copper:
+  - Archos
+archos 70b copper:
+  - Archos
+archos 70b xenon:
+  - Archos
+archos 80b xenon:
+  - Archos
+archos 90 copper:
+  - Archos
+archos 90b copper:
+  - Archos
+archos 90b neon:
+  - Archos
+  - Jinga
+archos 96 xenon:
+  - Archos
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -43763,6 +43921,8 @@ as_4k:
   - Openbox
 as4k_ci_pro:
   - Openbox
+sh6b7ce_eu012:
+  - STRONG
 bb2 pro:
   - Mecool
 kii pro:

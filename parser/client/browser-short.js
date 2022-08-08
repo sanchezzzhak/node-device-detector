@@ -24,8 +24,8 @@ module.exports = {
   'DW': 'Dark Web Browser',
   '1B': '115 Browser',
   '2B': '2345 Browser',
-  '36': '360 Phone Browser',
   '3B': '360 Browser',
+  '36': '360 Phone Browser',
   '7B': '7654 Browser',
   'AA': 'Avant Browser',
   'AB': 'ABrowse',
@@ -386,6 +386,7 @@ module.exports = {
   'SL': 'Sleipnir',
   'S6': 'Slimjet',
   'S7': 'SP Browser',
+  '9S': 'Sony Small Browser',
   '8S': 'Secure Private Browser',
   'T1': 'Stampy Browser',
   '7S': '7Star',
@@ -418,6 +419,7 @@ module.exports = {
   'TB': 'Tenta Browser',
   'TE': 'Tesla Browser',
   'TZ': 'Tizen Browser',
+  'TI': 'Tint Browser',
   'TU': 'Tungsten',
   'TG': 'ToGate',
   'TS': 'TweakStyle',
@@ -465,8 +467,9 @@ module.exports = {
   'XV': 'Xvast',
   'ZE': 'Zetakey',
   'ZV': 'Zvu',
+  'ZI': 'Zirco Browser',
 
 // detected browsers in older versions
-// 'IA': 'Iceape',  :  pim
-// 'SM': 'SeaMonkey',  :  pim
+// 'IA': 'Iceape',  : pim
+// 'SM': 'SeaMonkey',  : pim
 };
