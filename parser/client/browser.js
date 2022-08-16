@@ -200,6 +200,13 @@ class Browser extends ClientAbstractParser {
             version = String(brandItem.version);
             break;
           }
+  
+          // If we detected a brand, that is not chromium,
+          // we will use it, otherwise we will look further
+          if ('' !== name && 'Chromium' !== name) {
+            break;
+          }
+          
         }
       }
 

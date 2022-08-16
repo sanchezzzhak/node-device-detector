@@ -457,6 +457,7 @@ aspire 4349:
   - Acer
 goclever netbook r103:
   - GOCLEVER
+  - Aoson
 macbookpro18,1:
   - Apple
 macbookpro18,3:
@@ -1636,6 +1637,16 @@ infinix x672:
   - Infinix
 sm-f900u1:
   - Samsung
+honor x10 max:
+  - Huawei
+kkg-an00:
+  - Huawei
+22041216c:
+  - Xiaomi
+sm-n986c:
+  - Samsung
+v2170a:
+  - Vivo
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -10673,8 +10684,6 @@ xt1965-6:
   - Motorola
 tel-an10:
   - Huawei
-kkg-an00:
-  - Huawei
 hope7_mate:
   - X-TIGI
 asus_i003dd:
@@ -14128,6 +14137,7 @@ vision ultra:
   - Timovi
 victor v1:
   - Kzen
+  - iMan
 via_a1_1:
   - Casper
 colors s9:
@@ -28204,6 +28214,204 @@ archos 59 titanium:
   - Archos
 arctic450:
   - Oysters
+m50a:
+  - Evercoss
+m50a max:
+  - Evercoss
+mark 5:
+  - QMobile
+micromax bharat 5 pro:
+  - MicroMax
+micromax bharat 5 plus:
+  - MicroMax
+micromax c2a:
+  - MicroMax
+mione hero 5:
+  - Mione
+  - Mio
+mione iii:
+  - Mione
+  - Mio
+mione n10pro:
+  - Mione
+  - Mio
+pgz110:
+  - OnePlus
+zun_n:
+  - Vonino
+sm-g991v:
+  - Samsung
+pixel 6a:
+  - Google
+xq-bq42:
+  - Sony
+sh-52c:
+  - Sharp
+shl23:
+  - Sharp
+v2203a:
+  - Vivo
+itel l6006f:
+  - iTel
+htc dezire z:
+  - HTC
+kirei a5q plus:
+  - Azumi Mobile
+cubot note s:
+  - CUBOT
+sm-a526n:
+  - Samsung
+pfem10:
+  - OPPO
+air1 pro:
+  - F150
+coolpad_2041_s0:
+  - Coolpad
+reno4 z 5g:
+  - OPPO
+reno5 pro 5g:
+  - OPPO
+tecno ci6n:
+  - Tecno Mobile
+reno5 z 5g:
+  - OPPO
+archos access 45 4g:
+  - Archos
+honor x10 pro:
+  - Huawei
+find x3 neo:
+  - OPPO
+sm-g991a:
+  - Samsung
+alpha gtx:
+  - Highscreen
+primo gm2 plus:
+  - Walton
+primo gm2:
+  - Walton
+pulse retro:
+  - Boost
+pulse sky:
+  - Boost
+pulse glide:
+  - Boost
+q01a:
+  - Q-Touch
+qmobile blue 5:
+  - QMobile
+r2 3g:
+  - Blu
+r1_lite:
+  - Lava
+r40k:
+  - Evercoss
+r70:
+  - Evercoss
+r5c:
+  - Evercoss
+r30:
+  - Symphony
+aqua lite:
+  - Intex
+iphone6,1:
+  - Apple
+p30 pro:
+  - Homtom
+p88_pride_1x:
+  - Colors
+redmi 4 pro:
+  - Xiaomi
+redmi 6 pro extreme:
+  - Xiaomi
+s10 tank 2020:
+  - iHunt
+s5506:
+  - Ruio
+s5710:
+  - Aligator
+z6201v:
+  - ZTE
+coolpad_2041:
+  - Coolpad
+kylin50i:
+  - iPro
+pacific454:
+  - Oysters
+victor_s:
+  - iMan
+victor:
+  - iMan
+venus_v3_5580:
+  - Vestel
+pixel 7 pro:
+  - Google
+xq-ct54:
+  - Sony
+v2162:
+  - Vivo
+v2154:
+  - Vivo
+v2150:
+  - Vivo
+v2147:
+  - Vivo
+v2117:
+  - Vivo
+zte a31 lite:
+  - ZTE
+nokia c21 plus:
+  - Nokia
+peppa-l23b:
+  - Huawei
+any-nx1:
+  - Huawei
+vivo z1pro:
+  - Vivo
+vivo v9youth:
+  - Vivo
+vivo v9pro:
+  - Vivo
+v2207a:
+  - Vivo
+22041216g:
+  - POCO
+s7t 5g:
+  - Vivo
+sm-a500h:
+  - Samsung
+wp19:
+  - Oukitel
+find x2 pro:
+  - OPPO
+find x2 lite:
+  - OPPO
+g300:
+  - General Mobile
+lge-an20:
+  - Huawei
+  - LG
+lge-nx9:
+  - Huawei
+  - LG
+22041219g:
+  - Xiaomi
+sm-j100fn:
+  - Samsung
+pure_f:
+  - Highscreen
+rhythm_rx75:
+  - Rivo
+x1_atom_l:
+  - Lava
+agora xi:
+  - Kogan
+p750i:
+  - S-TELL
+oukitel-c3:
+  - Oukitel
+  - Ouki
+omega_hd_4:
+  - Cherry Mobile
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -31306,6 +31514,8 @@ panasonic p95:
   - Panasonic
 moto e4 plus:
   - Motorola
+fp4:
+  - Fairphone
 huawei cun-l03:
   - Huawei
 huawei cun-l21:
@@ -42502,6 +42712,94 @@ archos 90b neon:
   - Jinga
 archos 96 xenon:
   - Archos
+ml-wi-m9-3g:
+  - Multilaser
+1100as:
+  - Touch Plus
+archos access 70 3g:
+  - Archos
+kj-ac02:
+  - Kanji
+kj_alfark:
+  - Kanji
+optima 1026n 3g tt1192pg:
+  - Digma
+plane_1525_3g_ps1137mg:
+  - Digma
+lenovo tb128fu:
+  - Lenovo
+rmp2108:
+  - Realme
+r103:
+  - Aoson
+r70a:
+  - Evercoss
+reeder_m7_go:
+  - Reeder
+p80x:
+  - Teclast
+s20_eea:
+  - Vankyo
+z4_eea:
+  - Vankyo
+zt216_1:
+  - Zyrex
+zt216_2:
+  - Zyrex
+honor v6 wi-fi:
+  - Huawei
+honor v6 5g:
+  - Huawei
+kobe3-l09:
+  - Huawei
+ht0701w16:
+  - Hyundai
+sm-x806n:
+  - Samsung
+sunshine_t1_elite:
+  - Cloud
+smile_x:
+  - AllDocube
+net_k7:
+  - KRONO
+sm-p585n0:
+  - Samsung
+sm-p585y:
+  - Samsung
+taq_10g:
+  - Denver
+taq-10:
+  - Denver
+taq-102:
+  - Denver
+taq-70:
+  - Denver
+taq-90:
+  - Denver
+taq_104_eea:
+  - Denver
+taristab4:
+  - Stylo
+orange_tab_7_4g:
+  - Orange
+ov-qualcore 1023 3g:
+  - Overmax
+ov-qualcore_1023_3g:
+  - Overmax
+optima 1023n 3g ts1186mg:
+  - Digma
+optima 1022n 3g ts1184mg:
+  - Digma
+optima 1024n 4g tt1188pl:
+  - Digma
+optima 1025n 4g ts1190ml:
+  - Digma
+optima 7016n 3g ts7175mg:
+  - Digma
+optima 7017n 3g ts7177mg:
+  - Digma
+optima 7018n 4g ts7179ml:
+  - Digma
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -43923,6 +44221,39 @@ as4k_ci_pro:
   - Openbox
 sh6b7ce_eu012:
   - STRONG
+aftdct31:
+  - Toshiba
+  - Amazon
+rombica smart box l2:
+  - Rombica
+24lex_7155/uts2c:
+  - BBK
+polarline_40pl52tc-sm:
+  - PolarLine
+adt-2:
+  - Google
+orbsmart s86:
+  - Orbsmart
+tox1:
+  - TOX
+topsion:
+  - Topsion
+viva_home:
+  - Allview
+pab4411:
+  - Prestigio
+gi itv912:
+  - Galaxy Innovations
+kant-369:
+  - Huawei
+kant-360s:
+  - Huawei
+kant-360:
+  - Huawei
+horizont 43le7022d:
+  - Horizont
+tf-led32s74t2s:
+  - Telefunken
 bb2 pro:
   - Mecool
 kii pro:
