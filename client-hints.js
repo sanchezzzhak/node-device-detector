@@ -133,7 +133,7 @@ class ClientHints {
       brands: clientData,
       version: helper.trimChars(attr(headers, CH_UA_FULL_VERSION, ''), '"'),
     };
-
+    
     result.device = {
       model: helper.trimChars(attr(headers, CH_UA_MODEL, ''), '"')
     }

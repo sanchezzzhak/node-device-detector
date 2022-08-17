@@ -45,6 +45,14 @@ class Browser extends ClientAbstractParser {
     this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
   }
   
+  /**
+   *
+   * @param userAgent
+   * @param data
+   * @param hint
+   * @param hash
+   * @returns {null|{engine: string, name: string, short_name: string, type: string, engine_version: string, family: string, version: string}}
+   */
   prepareParseResult(
     userAgent,
     data,
@@ -58,25 +66,37 @@ class Browser extends ClientAbstractParser {
     let engineVersion = '';
     let short = ''
     let family = '';
-  
     // client-hint+user-agent
     if (hint.name && hint.version) {
       name = hint.name;
       version = hint.version;
       short = hint.short_name;
       family = this.buildFamily(short);
-    
+      
       if (data) {
+        // If version from client hints report 2022.04, then is the Iridium browser
+        // https://iridiumbrowser.de/news/2022/05/16/version-2022-04-released
+        if ('2022.04' === version) {
+          name          = 'Iridium';
+          short         = 'I1';
+          engine        = data.engine;
+          engineVersion = data.engine_version;
+        }
+  
+        if ('Atom' === name) {
+          version = data.version;
+        }
+        
         if (
-          'Chromium' === name && 'Chromium' !== data.name
-          && 'Chrome' === this.buildFamily(data.short_name)
+          data.name &&
+          'Chromium' === name &&
+          'Chromium' !== data.name
         ) {
           name = data.name;
           short = data.short_name;
           version = data.version
           family = this.buildFamily(short);
         }
-      
         // Fix mobile browser names e.g. Chrome => Chrome Mobile
         if (name + ' Mobile' === data.name) {
           name = data.name;
@@ -166,9 +186,6 @@ class Browser extends ClientAbstractParser {
       let brands = ArrayPath.get(clientHints, 'client.brands', []);
 
       for (let brandItem of brands) {
-        if (brandItem.brand === 'Chromium') {
-          continue;
-        }
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
           
@@ -183,6 +200,13 @@ class Browser extends ClientAbstractParser {
             version = String(brandItem.version);
             break;
           }
+  
+          // If we detected a brand, that is not chromium,
+          // we will use it, otherwise we will look further
+          if ('' !== name && 'Chromium' !== name) {
+            break;
+          }
+          
         }
       }
 
