@@ -2018,8 +2018,7 @@ cpu:
     process: 5nm
     gpu_id: 107
   302:
-    name: MediaTek Dimensity 700
-    # MT6833
+    name: MediaTek Dimensity 700 #  MT6833
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -2041,8 +2040,7 @@ cpu:
     process: 7nm
     gpu_id: 67
   305:
-    # SM8350
-    name: Qualcomm Snapdragon 888 5G
+    name: Qualcomm Snapdragon 888 5G #  SM8350
     type: ARM
     cores: 8
     clock_rate: 2840
@@ -2397,3 +2395,17 @@ cpu:
     clock_rate: 1800
     process: 12nm
     gpu_id: 25
+  356:
+    name: Dimensity 810 # 	MT6833P
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 6nm
+    gpu_id: 108
+  357:
+    name: Qualcomm Snapdragon 8 Gen 1 #  SM8450
+    type: ARM
+    cores: 8
+    clock_rate: 3000
+    process: 4nm
+    gpu_id: 117
