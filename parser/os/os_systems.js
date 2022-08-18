@@ -91,6 +91,7 @@ module.exports = {
   'ROS': 'RISC OS',
   'ROK': 'Roku OS',
   'RSO': 'Rosa',
+  'ROU': 'RouterOS',
   'REM': 'Remix OS',
   'REX': 'REX',
   'RZD': 'RazoDroiD',
