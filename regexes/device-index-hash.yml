@@ -567,6 +567,8 @@ nuc10i3fnh:
   - Intel
 zc-339:
   - Wanmukang
+samsung chromebook 3:
+  - Samsung
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -703,6 +705,12 @@ atol 150f:
   - ATOL
 ptc760:
   - Hytera
+wpos-3:
+  - Wiseasy
+m3us20w:
+  - M3 Mobile
+artidiag800 bt:
+  - TOPDON
 gi-626:
   - altron
 5039d_ru:
@@ -28469,6 +28477,45 @@ tet-an10:
   - Huawei
 karbonn x21:
   - Karbonn
+max2 plus:
+  - Yezz
+cph2459:
+  - OnePlus
+  - OPPO
+doro 8100:
+  - Doro
+elite e55max:
+  - Sky
+lava lzg403 225:
+  - Lava
+220333ql:
+  - Xiaomi
+fne-an00:
+  - Huawei
+htc desire 12s:
+  - HTC
+mate30 rs:
+  - Huawei
+t601dl:
+  - TCL
+redmi y1:
+  - Xiaomi
+lovme-x50:
+  - Lovme
+lovme x20:
+  - Lovme
+lovme-t9:
+  - Lovme
+lovme-t6:
+  - Lovme
+lovme-x22:
+  - Lovme
+lovme x6:
+  - Lovme
+lovme x10:
+  - Lovme
+lovme-t19:
+  - Lovme
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -42908,6 +42955,46 @@ plane 8021n 4g ps8183ml:
   - Digma
 plane 8522 3g ps8135mg:
   - Digma
+masstel tab 10a:
+  - Masstel
+kingpad_m10:
+  - Vastking
+elite octamax:
+  - Sky
+tab_911_3g:
+  - Majestic
+tab_811_4g:
+  - Majestic
+tangotab_x:
+  - Simbans
+hihi-41kh-tab-1-eea:
+  - HiHi
+hihi-40kh-tab-01:
+  - HiHi
+d-01h:
+  - Huawei
+tb328fu:
+  - Lenovo
+t101_2021:
+  - Hugerock
+jt08-x1:
+  - Geanee
+jt10-90:
+  - Geanee
+jt10-81b:
+  - Geanee
+b21:
+  - DEXP
+b18:
+  - DEXP
+b17:
+  - DEXP
+b31:
+  - DEXP
+b38:
+  - DEXP
+cp20:
+  - Coopers
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
