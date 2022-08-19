@@ -1591,8 +1591,7 @@ cpu:
     process: 10nm
     gpu_id: 90
   242:
-    name: Qualcomm Snapdragon 765G
-    # SM7250
+    name: Qualcomm Snapdragon 765G # SM7250
     type: ARM
     cores: 8
     clock_rate: 2400
@@ -2409,3 +2408,17 @@ cpu:
     clock_rate: 3000
     process: 4nm
     gpu_id: 117
+  358:
+    name: Qualcomm Snapdragon 695 5G #  SM6375
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 6nm
+    gpu_id: 103
+  359:
+    name: Qualcomm Snapdragon 778G 5G #  SM7325
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 6nm
+    gpu_id: 118
