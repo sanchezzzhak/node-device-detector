@@ -5131,6 +5131,11 @@ irbis:
   tz722: 'DS=7;RS=1024x600;SZ=188x108.3x10.2;WT=263;OI=1;OV=8.1;CP=74;RM=1024;SM=2;RE=2018;'
 
 vivo:
+  t1 5g: 'RE=2022.02;SZ=75.8x164x8.3;WT=187;DS=6.58;RS=1080x2408;OS=Android 11;CP=358;RM=4096;A'
+  v2115a: '->t1 5g'
+  v2141: '->t1 5g'
+  v2150: '->t1 5g'
+  v2157: '->t1 5g'
   iqoo 8 pro: 'RE=2021.08;SZ=75.2x165x9.2;WT=205;DS=6.78;RS=1440x3200;OS=Android 11;CP=305;RM=8192;'
   v2141a: '->iqoo 8 pro'
   iqoo 8: 'RE=2021.08;SZ=75.1x159x8.6;WT=200;DS=6.56;RS=1080x2376;OS=Android 11;CP=305;RM=8192;'
@@ -5600,6 +5605,8 @@ vivo:
   iqoo z6: 'RE=2022.03;SZ=75.8x164x8.3;WT=185;DS=6.58;RS=1080x2408;OS=Android 12;CP=358;RM=4096'
   i2203: '->iqoo z6'
   i2127: '->iqoo z6'
+  i2202: '->iqoo z6'
+  i2206: '->iqoo z6'
   iqoo z6 pro: 'RE=2022.04;SZ=73.6x159.7x8.5;WT=180;DS=6.44;RS=1080x2404;OS=Android 12;CP=359;RM=6144'
   i2126: '->iqoo z6 pro'
 
