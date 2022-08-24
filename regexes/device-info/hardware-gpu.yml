@@ -348,5 +348,8 @@ gpu:
     name: ARM Mali-G57 MP1
     clock_rate: 650
   117:
-    name: Adreno 730
+    name: Qualcomm Adreno 730
     clock_rate: 900
+  118:
+    name: Qualcomm Adreno 642L
+    clock_rate: 0
