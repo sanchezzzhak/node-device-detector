@@ -1263,6 +1263,7 @@ module.exports = {
   'VAL': 'VALEM',
   'VB': 'VC',
   'VN': 'Venso',
+  'VEN': 'Venstar',
   'UV': 'Venturer',
   'VQ': 'Vega',
   'WC': 'VEON',
