@@ -1717,6 +1717,20 @@ m2003j6b2g:
   - Xiaomi
 m2003j6a1g:
   - Xiaomi
+sm-n915s:
+  - Samsung
+sm-n915p:
+  - Samsung
+sm-n915l:
+  - Samsung
+sm-n915k:
+  - Samsung
+sm-n915g:
+  - Samsung
+sm-n915f:
+  - Samsung
+sm-n910s:
+  - Samsung
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -1733,46 +1747,6 @@ drp29101:
   - RCA Tablets
 drp2091:
   - RCA Tablets
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -4661,6 +4635,12 @@ nobu_a55_pro:
   - Azumi Mobile
 poptel k1:
   - POPTEL
+avvio l800:
+  - Avvio
+avvio_l800:
+  - Avvio
+admire blaze:
+  - Zen
 runbof1:
   - Runbo
 runbo f1 plus:
@@ -28786,6 +28766,74 @@ grand xl:
   - Blu
 grant:
   - Zuum
+gtel vivo4:
+  - Gtel
+gtel_vivo3:
+  - Gtel
+gtel x6plus:
+  - Gtel
+gtel x5plus:
+  - Gtel
+gtel_x5s:
+  - Gtel
+gtel_x5mini:
+  - Gtel
+gtel x6mini:
+  - Gtel
+gtel x6s:
+  - Gtel
+lt c1400:
+  - LT Mobile
+lm-x210s:
+  - LG
+lm-x210l:
+  - LG
+atom 2x:
+  - Lava
+active 1:
+  - Vsmart
+a240:
+  - MicroMax
+e601f:
+  - Hyundai
+e61pro:
+  - Kenbo
+e503f:
+  - Hyundai
+e465go:
+  - Hyundai
+lenovo l38083:
+  - Lenovo
+lgl163bl:
+  - LG
+lg-vs985:
+  - LG
+lg-ls980:
+  - LG
+lt p8:
+  - LT Mobile
+lt p9:
+  - LT Mobile
+lt p10i:
+  - LT Mobile
+partner evolution:
+  - Partner Mobile
+panther:
+  - Hurricane
+nokia 3 v:
+  - Nokia
+nokia 3.1 c:
+  - Nokia
+s32:
+  - Altice
+s32_plus:
+  - Altice
+s42:
+  - Cat
+s52:
+  - Cat
+s60 discovery plus:
+  - iHunt
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -35753,6 +35801,46 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -43332,6 +43420,22 @@ gravity 3g:
   - SPC
 gravity pro:
   - SPC
+acer one 7 4g:
+  - Acer
+ace10:
+  - Venstar
+e7224hg:
+  - Evertek
+lp_t70:
+  - Leader Phone
+picassotab_9:
+  - Simbans
+pmt4991_4g:
+  - Prestigio
+s30_eea:
+  - Vankyo
+s770:
+  - DEXP
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -44827,6 +44931,10 @@ s900_pro:
   - Unblock Tech
 abx-332:
   - Harper
+polarline_k_32pl13tc-sm:
+  - PolarLine
+polarline_k_32pl14tc-sm:
+  - PolarLine
 bb2 pro:
   - Mecool
 kii pro:
