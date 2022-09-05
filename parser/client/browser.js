@@ -76,7 +76,7 @@ class Browser extends ClientAbstractParser {
       if (data) {
         // If version from client hints report 2022.04, then is the Iridium browser
         // https://iridiumbrowser.de/news/2022/05/16/version-2022-04-released
-        if ('2022.04' === version) {
+        if (['2022.04', '2022'].indexOf(version) !== -1) {
           name          = 'Iridium';
           short         = 'I1';
           engine        = data.engine;
