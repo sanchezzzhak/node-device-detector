@@ -769,6 +769,10 @@ m3us20w:
   - M3 Mobile
 artidiag800 bt:
   - TOPDON
+wizarpos q2:
+  - WizarPos
+optoma-uhd:
+  - Optoma
 gi-626:
   - altron
 5039d_ru:
@@ -1731,6 +1735,30 @@ sm-n915f:
   - Samsung
 sm-n910s:
   - Samsung
+infinix x676b:
+  - Infinix
+infinix x671b:
+  - Infinix
+infinix x663d:
+  - Infinix
+sm-f721n:
+  - Samsung
+22041216uc:
+  - Xiaomi
+m2003j15ss:
+  - Xiaomi
+m2002f4lg:
+  - Xiaomi
+m1910f4s:
+  - Xiaomi
+m1908c3ji:
+  - Xiaomi
+m1908c3jh:
+  - Xiaomi
+redmi note 11:
+  - Xiaomi
+redmi note 11 pro:
+  - Xiaomi
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -28834,6 +28862,131 @@ s52:
   - Cat
 s60 discovery plus:
   - iHunt
+pffm10:
+  - OPPO
+w-v770:
+  - Wiko
+220333qpg:
+  - POCO
+mix 2s art:
+  - Xiaomi
+bl8800:
+  - Blackview
+a063:
+  - Nothing Phone
+nx702j:
+  - Nubia
+dio-an00:
+  - Huawei
+t8s:
+  - Leagoo
+m2001j2g:
+  - Xiaomi
+mate xs:
+  - Huawei
+mate 40 rs:
+  - Huawei
+honor x10 5g:
+  - Huawei
+honor x10 lite:
+  - Huawei
+kle-ao:
+  - Xiaomi
+honor 9c:
+  - Huawei
+honor 9a:
+  - Huawei
+honor 30s:
+  - Huawei
+honor 30:
+  - Huawei
+m1908f1xe:
+  - Xiaomi
+doogee x7 pro:
+  - Doogee
+m2001c3k3i:
+  - Xiaomi
+m1906f9si:
+  - Xiaomi
+m1906f9sh:
+  - Xiaomi
+m1902f1g:
+  - Xiaomi
+6102d:
+  - TCL
+bv4900s:
+  - Blackview
+lenovo s60-a:
+  - Lenovo
+shark ktus-h0:
+  - Xiaomi
+reno5 5g:
+  - OPPO
+sm-g998t:
+  - Samsung
+sm-g998p:
+  - Samsung
+sm-a135u1:
+  - Samsung
+x point:
+  - teXet
+y530:
+  - Huawei
+lg-f180s:
+  - LG
+x600 nfc:
+  - OMIX
+sm-m135f:
+  - Samsung
+pfzm10:
+  - OPPO
+pgim10:
+  - OPPO
+sdy-an00:
+  - Huawei
+cph2401:
+  - OnePlus
+  - OPPO
+cph2385:
+  - OPPO
+y20t:
+  - Vivo
+y30g:
+  - Vivo
+y31s 5g:
+  - Vivo
+y33s:
+  - Vivo
+y50t:
+  - Vivo
+y55s 5g:
+  - Vivo
+t776h:
+  - TCL
+sch-i545pp:
+  - Samsung
+santin ng3:
+  - Santin
+a1603:
+  - OPPO
+mi 4lte:
+  - Xiaomi
+p10000 pro:
+  - Blackview
+l925:
+  - Ark
+e5606:
+  - Sony
+bravo z40:
+  - Magnus
+bravo-z22:
+  - Magnus
+bravo_z12:
+  - Magnus
+brandcode b6s:
+  - BrandCode
+bv2000s:
+  - Blackview
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -43436,6 +43589,37 @@ s30_eea:
   - Vankyo
 s770:
   - DEXP
+lomonosov:
+  - ONYX BOOX
+poke2color:
+  - ONYX BOOX
+turbokids3gnew:
+  - TurboKids
+8491x_ru:
+  - TCL
+sm-t736n:
+  - Samsung
+sm-t225c:
+  - Samsung
+qumo altair 701:
+  - Qumo
+opd2102a:
+  - OPPO
+tx201la:
+  - Asus
+  - Pantech
+mipad 3:
+  - Xiaomi
+u25gt-c4yt:
+  - Cube
+dt07-tab4g:
+  - D-Tech
+tpm4g_wt8:
+  - Miray
+ml-so-m9-3g:
+  - Multilaser
+mlx8:
+  - Multilaser
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -44935,6 +45119,27 @@ polarline_k_32pl13tc-sm:
   - PolarLine
 polarline_k_32pl14tc-sm:
   - PolarLine
+h32f8000c:
+  - DEXP
+43lu8010t:
+  - Asano
+40u600kd:
+  - Kivi
+rombica tv mercury:
+  - Rombica
+  - Turbo-X
+rombica smart box q1:
+  - Rombica
+x96_x6_i:
+  - X96
+x96max_plus_ultra:
+  - X96
+x88pro10.r1.dd.6330.xy.d4:
+  - X88
+x88pro10.r.dd.6330.d4:
+  - X88
+gazer_tv:
+  - Gazer
 bb2 pro:
   - Mecool
 kii pro:
