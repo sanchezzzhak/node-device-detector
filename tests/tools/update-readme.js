@@ -147,7 +147,7 @@ fs.readFile(someFile, 'utf8', function (err, data) {
   
   let browserChunk = 7;
   let browserChunks = arrayToChunk(Browsers, browserChunk);
-  let browserLists = arrayToMarkdown(browserChunks,  Array(brandChunks).fill(' Browser '))
+  let browserLists = arrayToMarkdown(browserChunks,  Array(browserChunk).fill(' Browser '))
   
   data = data.replace(
     /(^#{5} Support detect browsers list(?:.*?)<\/details>)/gims,
