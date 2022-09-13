@@ -1759,6 +1759,8 @@ redmi note 11:
   - Xiaomi
 redmi note 11 pro:
   - Xiaomi
+sm-f936u:
+  - Samsung
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -1775,6 +1777,46 @@ drp29101:
   - RCA Tablets
 drp2091:
   - RCA Tablets
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -28698,6 +28740,10 @@ zte a2022l:
   - ZTE
 g55 lite:
   - Elevate
+eko star g50:
+  - EKO
+eko novy g50:
+  - EKO
 d65lx:
   - Kodak
 f40g2:
@@ -28987,6 +29033,172 @@ brandcode b6s:
   - BrandCode
 bv2000s:
   - Blackview
+bv500:
+  - Blackview
+celkon q4gplus:
+  - Celkon
+ego_max_s:
+  - Torque
+ego_surf_i:
+  - Torque
+ego_surf_s:
+  - Torque
+droidz quad:
+  - Torque
+  - Motorola
+droidz beat tv:
+  - Torque
+  - Motorola
+droidz avatar tv:
+  - Torque
+  - Motorola
+droidz easy:
+  - Torque
+  - Motorola
+droidz excel:
+  - Torque
+  - Motorola
+droidz rotate:
+  - Torque
+  - Motorola
+droidz sport:
+  - Torque
+  - Motorola
+droidz match tv:
+  - Torque
+  - Motorola
+droidz blast:
+  - Torque
+  - Motorola
+droidz atom x:
+  - Torque
+  - Motorola
+droidz motion:
+  - Torque
+  - Motorola
+droidz sky 3g:
+  - Torque
+  - Motorola
+droidz play:
+  - Torque
+  - Motorola
+droidz trend:
+  - Torque
+  - Motorola
+droidz force:
+  - Torque
+  - Motorola
+droidz span:
+  - Torque
+  - Motorola
+droidz swivel:
+  - Torque
+  - Motorola
+droidz atom s:
+  - Torque
+  - Motorola
+droidz drive+:
+  - Torque
+  - Motorola
+droidz smart:
+  - Torque
+  - Motorola
+evolveo strongphone d2 mini:
+  - Evolveo
+hs-l671:
+  - Hisense
+hs-l695:
+  - Hisense
+karbonn aura power:
+  - Karbonn
+kafit v900:
+  - MTN
+komu k70:
+  - Komu
+komu k45:
+  - Komu
+kingstar i15:
+  - Kingstar
+kingstar-a11:
+  - Kingstar
+kingstara17:
+  - Kingstar
+karbonn aura sleek 4g:
+  - Karbonn
+karbonn aura power 4g:
+  - Karbonn
+lanin t4:
+  - Lanin
+noir a8:
+  - QMobile
+noir a1:
+  - QMobile
+noir a1 lite:
+  - QMobile
+noir_x1s:
+  - QMobile
+venus_v3_5045:
+  - Vestel
+venus_v3_5040:
+  - Vestel
+vestel_5530_dual:
+  - Vestel
+venus_v3_5030:
+  - Vestel
+venus_v3_5010:
+  - Vestel
+xt1225:
+  - Motorola
+xt1514:
+  - Motorola
+xt1524:
+  - Motorola
+xt1526:
+  - Motorola
+xt1527:
+  - Motorola
+xt912:
+  - Motorola
+22041219pi:
+  - POCO
+zte a2020n2 pro:
+  - ZTE
+xiaomi redmi 8a/8a dual:
+  - Xiaomi
+general_mobile_4g_dual:
+  - General Mobile
+gm_5_d:
+  - General Mobile
+redmi_6a:
+  - Xiaomi
+redmi_6:
+  - Xiaomi
+primo rm4:
+  - Walton
+sm-a536v:
+  - Samsung
+hisense h60 smart:
+  - Hisense
+z6251v:
+  - ZTE
+o+ 8.38z android:
+  - O+
+o+ 8.97 android:
+  - O+
+myphone rio 2 lite:
+  - MyPhone
+myphone rio 2:
+  - MyPhone
+myphone rio pixie:
+  - MyPhone
+myphone rio 2 fun:
+  - MyPhone
+sharp aquos p6:
+  - Sharp
+sharp aquos s2 4:
+  - Sharp
+venus z40:
+  - Vestel
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -35954,46 +36166,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -43620,6 +43792,70 @@ ml-so-m9-3g:
   - Multilaser
 mlx8:
   - Multilaser
+c-701 ultra:
+  - Zentality
+c-703ultra:
+  - Zentality
+droidz duo:
+  - Torque
+  - Motorola
+droidz dash:
+  - Torque
+  - Motorola
+droidz push i:
+  - Torque
+  - Motorola
+droidz edge+:
+  - Torque
+  - Motorola
+e1c pro:
+  - Advan
+droidz duo slim:
+  - Torque
+  - Motorola
+droidz dash x:
+  - Torque
+  - Motorola
+droidz portal:
+  - Torque
+  - Motorola
+droidz portal x:
+  - Torque
+  - Motorola
+easy_nav_2:
+  - Symphony
+hsg1351:
+  - HannSpree
+kali_8:
+  - nJoy
+kidslegacytabpro:
+  - Zinox
+vsi7q_1:
+  - ViewSonic
+wv8-m:
+  - Bluewave
+logikids4:
+  - Logicom
+midb1048phe:
+  - Polaroid
+midi109pde:
+  - Polaroid
+midi156pde:
+  - Polaroid
+tm-mid870sb:
+  - Touchmate
+signature-s8:
+  - Dany
+xoro megapad3204v5:
+  - Xoro
+ollee008twoa:
+  - Ollee
+nxa8lte116:
+  - NextBook
+nxa116qc164:
+  - NextBook
+nxa101lte116:
+  - NextBook
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -45140,6 +45376,25 @@ x88pro10.r.dd.6330.d4:
   - X88
 gazer_tv:
   - Gazer
+ec6108v8:
+  - Huawei
+ec6108v9-01:
+  - Huawei
+evolveo android stick q4:
+  - Evolveo
+  - Andowl
+yundoo-y2:
+  - YUNDOO
+yundoo-y6:
+  - YUNDOO
+yundoo-y7:
+  - YUNDOO
+yundoo-y8:
+  - YUNDOO
+md09tv:
+  - Billow
+dreamstar a4:
+  - DreamStar
 bb2 pro:
   - Mecool
 kii pro:
