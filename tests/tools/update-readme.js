@@ -21,8 +21,6 @@ let brandInfos = YAML.load(
   fs.readFileSync(__dirname + '/../../regexes/device-info/device.yml', 'utf8')
 );
 
-// console.log({brandInfos});
-
 let deviceInfoData = {};
 let deviceAliasCount = 0;
 let deviceInfoCount = 0;
@@ -54,6 +52,40 @@ for (let brand in brandInfos) {
     }
   }
 }
+
+function arrayToChunk (arr, len) {
+  let chunks = [],
+    i = 0,
+    n = arr.length;
+  while (i < n) {
+    chunks.push(arr.slice(i, i += len));
+  }
+  return chunks;
+}
+
+function arrayToMarkdown (array, columns, alignment = 'center') {
+  let table = ""
+  const separator = {
+    'left': ':---',
+    'right': '---:',
+    'center': '---'
+  }
+  // table headers
+  table += columns.join(" | ")
+  table += "\r\n"
+  table += columns.map(function() {
+    return separator[alignment] || separator.center
+  }).join(' | ')
+  table += "\r\n"
+  // body
+  array.forEach(function(row) {
+    table += row.map(function(item) {
+      return String(item || "")
+    }).join(" | ") + "\r\n"
+  })
+  return table
+}
+
 
 // sort device brand by key
 
@@ -97,7 +129,9 @@ fs.readFile(someFile, 'utf8', function (err, data) {
   if (err) {
     return console.log(err);
   }
-  let brandLists = Brands.join(', ');
+  let brandChunks = 7;
+  let brandsChunks = arrayToChunk(Brands, brandChunks);
+  let brandLists = arrayToMarkdown(brandsChunks,  Array(brandChunks).fill(' Brand '))
 
   data = data.replace(
     /(^#{5} Support detail brands\/models list(?:.*?)<\/details>)/gims,
@@ -108,13 +142,16 @@ fs.readFile(someFile, 'utf8', function (err, data) {
 
   data = data.replace(
     /(^#{5} Support detect brands list(?:.*?)<\/details>)/gims,
-    `##### Support detect brands list (${Brands.length}):\n\n<details>\n<summary>Show details</summary>\n\n* ${brandLists}\n\n</details>`
+    `##### Support detect brands list (${Brands.length}):\n\n<details>\n<summary>Show details</summary>\n\n ${brandLists}\n\n</details>`
   );
-
-  let browserLists = Browsers.join(', ');
+  
+  let browserChunk = 7;
+  let browserChunks = arrayToChunk(Browsers, browserChunk);
+  let browserLists = arrayToMarkdown(browserChunks,  Array(browserChunk).fill(' Browser '))
+  
   data = data.replace(
     /(^#{5} Support detect browsers list(?:.*?)<\/details>)/gims,
-    `##### Support detect browsers list (${Browsers.length}):\n\n<details>\n<summary>Show details</summary>\n\n* ${browserLists}\n</details>`
+    `##### Support detect browsers list (${Browsers.length}):\n\n<details>\n<summary>Show details</summary>\n\n ${browserLists}\n</details>`
   );
 
   data = data.replace(

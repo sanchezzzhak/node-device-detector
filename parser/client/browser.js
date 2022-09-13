@@ -83,7 +83,7 @@ class Browser extends ClientAbstractParser {
           engineVersion = data.engine_version;
         }
   
-        if ('Atom' === name) {
+        if ('Atom' === name || 'Huawei Browser' === name) {
           version = data.version;
         }
         
