@@ -1777,46 +1777,6 @@ drp29101:
   - RCA Tablets
 drp2091:
   - RCA Tablets
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -22626,6 +22586,12 @@ ivvi f3c:
   - ivvi
 ivvi v3-t:
   - ivvi
+elegance_4_0_black:
+  - Kiano
+elegance_4_0:
+  - Kiano
+cm2221:
+  - Centric
 psp5522duo:
   - Prestigio
 psp3514duo:
@@ -29199,6 +29165,140 @@ sharp aquos s2 4:
   - Sharp
 venus z40:
   - Vestel
+rmx3503:
+  - Realme
+primo n5:
+  - Walton
+tecno be6j:
+  - Tecno Mobile
+lg-d802tr:
+  - LG
+xiaomi_m1902f1t:
+  - Xiaomi
+duopix f9 pro:
+  - Ziox
+dtacphonex3:
+  - Dtac
+dtacphonet3:
+  - Dtac
+dtacphones3:
+  - Dtac
+doro 8042:
+  - Doro
+rmx3506:
+  - Realme
+redmi 9t nfc:
+  - Xiaomi
+cube 5.0_2gb:
+  - Xolo
+p13 blue max pl:
+  - Reeder
+o3:
+  - Fonos
+o31 plus:
+  - Kenbo
+o+ sonic:
+  - O+
+o+_360_hd_2.0:
+  - O+
+o+_360_alpha_plus_2.0:
+  - O+
+o+ xfinit:
+  - O+
+o+ ultra lite:
+  - O+
+nyx_alter:
+  - NYX Mobile
+o+ 8.98 android:
+  - O+
+o+ 8.37y android:
+  - O+
+o+ evo 4g:
+  - O+
+o+ grande:
+  - O+
+o+ 8.17 android:
+  - O+
+o+ 8.33 android:
+  - O+
+o+ 8.37z android:
+  - O+
+o+ 8.38 android:
+  - O+
+o+ 8.92:
+  - O+
+o+ 8.93 android:
+  - O+
+o+ 360:
+  - O+
+o+ 360 hd:
+  - O+
+o+ 360 alpha:
+  - O+
+o+ 360 alpha plus:
+  - O+
+o+ 8.6 android:
+  - O+
+o+ 8.52 android(8gb):
+  - O+
+o+ 8.12 android:
+  - O+
+o+_8.12_android:
+  - O+
+o+ 8.91 android:
+  - O+
+o+ 8.31z android:
+  - O+
+o+ 8.15 android:
+  - O+
+o+ presto 700 lte:
+  - O+
+  - Simbans
+nuu_a3l:
+  - NUU Mobile
+nuu_q500:
+  - NUU Mobile
+odyssey aeon:
+  - ZH&K
+  - Odys
+odyssey_j9:
+  - ZH&K
+odyssey_dtv7:
+  - ZH&K
+odyssey_dtv6:
+  - ZH&K
+odyssey j5:
+  - ZH&K
+odyssey victory:
+  - ZH&K
+odyssey j10:
+  - ZH&K
+odyssey j10 mini:
+  - ZH&K
+odyssey glaze+:
+  - ZH&K
+odyssey_ultra:
+  - ZH&K
+odyssey_flame:
+  - ZH&K
+odyssey popo:
+  - ZH&K
+odyssey_ace:
+  - ZH&K
+odyssey saga:
+  - ZH&K
+odyssey sacred:
+  - ZH&K
+odysseynext:
+  - ZH&K
+odyssey perri:
+  - ZH&K
+odyssey tytan:
+  - ZH&K
+odyssey swift:
+  - ZH&K
+odyssey_evo:
+  - ZH&K
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -36166,6 +36266,46 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -43856,6 +43996,14 @@ nxa116qc164:
   - NextBook
 nxa101lte116:
   - NextBook
+alfa_8mg:
+  - Hometech
+alfa_10yc:
+  - Hometech
+o+ stream hdtv:
+  - O+
+o+ fab go:
+  - O+
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
