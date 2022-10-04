@@ -1761,6 +1761,10 @@ redmi note 11 pro:
   - Xiaomi
 sm-f936u:
   - Samsung
+sm-f936b:
+  - Samsung
+sm-f721b:
+  - Samsung
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -25812,6 +25816,7 @@ bl9000:
   - Doogee
 discovery dg500:
   - Doogee
+  - General Mobile
 discovery2-dg500c:
   - Doogee
 hitman_dg850:
@@ -29299,6 +29304,191 @@ odyssey swift:
   - ZH&K
 odyssey_evo:
   - ZH&K
+nomi i507:
+  - Nomi
+nomi_i503:
+  - Nomi
+nomi i504:
+  - Nomi
+nomi 6 plus:
+  - Nomi
+nitro_5m:
+  - Maxwest
+nitro 55m:
+  - Maxwest
+nitro_55_lte:
+  - Maxwest
+nitro 551:
+  - Talius
+nautiz_x2:
+  - Handheld
+asus_z01bdc:
+  - Asus
+asus_z01bdb:
+  - Asus
+asus_z011dd:
+  - Asus
+asus_z010db:
+  - Asus
+asus_z00udh:
+  - Asus
+asus_z00ldd:
+  - Asus
+asus_x00ddb:
+  - Asus
+asus_x00dda:
+  - Asus
+mega2max:
+  - Sico
+mega 10:
+  - Camfone
+meeplus_1:
+  - Elecson
+majesty 4g:
+  - Kzen
+majesty m5:
+  - Kzen
+doogee x9 pro:
+  - Doogee
+doogee x7_pro:
+  - Doogee
+doogee x5_max_pro:
+  - Doogee
+doogee x5 max pro:
+  - Doogee
+discovery ii mini:
+  - General Mobile
+discovery:
+  - Explay
+  - General Mobile
+discovery elite plus:
+  - General Mobile
+discovery_xt:
+  - NEXT
+ecoo e04 3gb:
+  - ECOO
+ecoo e04:
+  - ECOO
+ecoo_e04_3gb+:
+  - ECOO
+ecoo_e05:
+  - ECOO
+ecoo e04_plus:
+  - ECOO
+lava a89:
+  - Lava
+k-touch m1s:
+  - K-Touch
+lava_a44:
+  - Lava
+mafe_m810:
+  - Mafe
+mafe_m825:
+  - Mafe
+masstel_juno_q5plus:
+  - Masstel
+masstel_juno_s6:
+  - Masstel
+masstel n535:
+  - Masstel
+masstel lt52:
+  - Masstel
+masstel  n435:
+  - Masstel
+masstel_n600s:
+  - Masstel
+masstel_n558:
+  - Masstel
+masstel n660s:
+  - Masstel
+masstel n6:
+  - Masstel
+masstel n515:
+  - Masstel
+masstel b380:
+  - Masstel
+masstel n412:
+  - Masstel
+masstel n420:
+  - Masstel
+masstel n456:
+  - Masstel
+masstel n470:
+  - Masstel
+masstel n506:
+  - Masstel
+masstel n510:
+  - Masstel
+masstel n525:
+  - Masstel
+masstel n660:
+  - Masstel
+mach six vr:
+  - Karbonn
+fne-nx9:
+  - Huawei
+rmx3311:
+  - Realme
+sm-g990b2:
+  - Samsung
+ctr-lx1:
+  - Huawei
+pocket:
+  - MyPhone
+power p1:
+  - VIWA
+carbon 1 mark ii:
+  - Carbon Mobile
+moto g stylus 5g (2022):
+  - Motorola
+v2205:
+  - Vivo
+tecno be8:
+  - Tecno Mobile
+asus_ai2201_a:
+  - Asus
+xq-cc54:
+  - Sony
+cph2415:
+  - OnePlus
+  - OPPO
+vne-n41:
+  - Huawei
+s35:
+  - Doogee
+s98pro:
+  - Doogee
+s98:
+  - Doogee
+s61pro:
+  - Doogee
+s89pro:
+  - Doogee
+sm-m135fu:
+  - Samsung
+2206122sc:
+  - Xiaomi
+2203121c:
+  - Xiaomi
+s35t:
+  - Doogee
+infinix x6816:
+  - Infinix
+moto e32:
+  - Motorola
+huawei kii-l22:
+  - Huawei
+e380:
+  - Acer
+e2_jump:
+  - Allview
+e-boda sunny v37:
+  - E-Boda
+  - Wiko
+dynamic jumpl:
+  - NGM
+dynamic jump:
+  - NGM
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -36385,6 +36575,7 @@ discovery 1000c:
   - Blaupunkt
 discovery_1001:
   - Blaupunkt
+  - Explay
 discovery 1001a:
   - Blaupunkt
 discovery 111c:
@@ -44004,6 +44195,98 @@ o+ stream hdtv:
   - O+
 o+ fab go:
   - O+
+obook20_plus:
+  - Onda
+obook20 plus:
+  - Onda
+obook 20 dualos:
+  - Onda
+obook 20 plus:
+  - Onda
+ninetec ultratab 10 pro:
+  - NINETEC
+ninetec platinum 10 g3:
+  - NINETEC
+nasco tango 7:
+  - NASCO
+f104evii_eea:
+  - Fusion5
+mega7:
+  - iPro
+h1003_lte_pro1:
+  - Allview
+h1003_lte_pro3:
+  - Allview
+h1004_lte:
+  - Allview
+discovery 108c:
+  - Blaupunkt
+discovery 102c:
+  - Blaupunkt
+revolution a8:
+  - iMuz
+ct1005:
+  - Carrefour
+masstel tab10:
+  - Masstel
+masstel tab7:
+  - Masstel
+masstel tab 860:
+  - Masstel
+masstel tab 712:
+  - Masstel
+masstel tab 1100:
+  - Masstel
+masstel tab 706:
+  - Masstel
+masstel tab 710:
+  - Masstel
+masstel tab 805:
+  - Masstel
+masstel tab 815:
+  - Masstel
+masstel tab 715:
+  - Masstel
+maia pad plus:
+  - Cherry Mobile
+pmt5718_4g:
+  - Prestigio
+lenovo a5500-hv:
+  - Lenovo
+gravity se:
+  - SPC
+space_one10:
+  - Odys
+p30air_row:
+  - Teclast
+sm-t737:
+  - Samsung
+aosp on santos103g:
+  - Samsung
+archos 101 platinum 3g:
+  - Archos
+t40pro:
+  - Teclast
+m40air_eea:
+  - Teclast
+e1014hg:
+  - Evertek
+e-tab5:
+  - General Mobile
+e-boda revo r76 gps:
+  - E-Boda
+e-boda izzycomm z80:
+  - E-Boda
+e-board-mx055:
+  - ChiliGreen
+e-board mx054:
+  - ChiliGreen
+dx765 pro:
+  - Kocaso
+dual c981hd:
+  - TechPad
+dtb-7168g:
+  - D-Link
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -45543,6 +45826,10 @@ md09tv:
   - Billow
 dreamstar a4:
   - DreamStar
+movix pro:
+  - Dom.ru
+movix pro voice:
+  - Dom.ru
 bb2 pro:
   - Mecool
 kii pro:
