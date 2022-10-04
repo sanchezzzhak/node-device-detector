@@ -5201,6 +5201,7 @@ vivo:
   v2034a: '->y30'
   v2036a: '->y30'
   y30: 'RE=2020.05;SZ=76.5x162x9.1;WT=197;DS=6.47;RS=720x1560;OI=1;OV=10;CP=38;RM=4096;'
+  1939: '->y30'
   v1824a: '->iqoo'
   v1824ba: '->iqoo'
   iqoo: 'RE=2019.03;SZ=75.2x157.7x8.5;WT=196;DS=6.41;RS=1080x2340;OI=1;OV=9.0;CP=234;RM=6144;'
@@ -5609,6 +5610,10 @@ vivo:
   i2206: '->iqoo z6'
   iqoo z6 pro: 'RE=2022.04;SZ=73.6x159.7x8.5;WT=180;DS=6.44;RS=1080x2404;OS=Android 12;CP=359;RM=6144'
   i2126: '->iqoo z6 pro'
+  x note: 'RE=2022.04;SZ=80.3x168.8x8.4;WT=221;DS=7.0;RS=1440x3080;OS=Android 12;CP=357;RM=8192;'
+  v2170a: '->x note'
+  x fold: 'RE=2022.04;SZ=144.9x162x6.3;WT=311;DS=8.03;RS=1916x2160;OS=Android 12;CP=357;RM=12288;'
+  v2178a: '->x fold'
 
 mobicel:
   r7: 'DS=5.7;RS=480x101;SZ=71x146x9.6;WT=167;RE=2020.04;RM=1024;CP=4;OI=1;OV=8.1;SM=2'
