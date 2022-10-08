@@ -465,6 +465,13 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TV;
     }
 
+    /**
+     * All devices containing TV fragment are assumed to be a tv
+     */
+    if (deviceType === '' && helper.matchUserAgent('[(]TV;', userAgent)) {
+      deviceType = DEVICE_TYPE.TV;
+    }
+
     if (
       DEVICE_TYPE.DESKTOP !== deviceType &&
       userAgent.indexOf('Desktop') !== -1
