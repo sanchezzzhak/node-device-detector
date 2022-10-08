@@ -627,6 +627,10 @@ zc-339:
   - Wanmukang
 samsung chromebook 3:
   - Samsung
+latitude 7390:
+  - Dell
+satellite l50-c:
+  - Toshiba
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -773,6 +777,12 @@ wizarpos q2:
   - WizarPos
 optoma-uhd:
   - Optoma
+eft_h2:
+  - EFT
+avaya vantage:
+  - Avaya
+ct40:
+  - Honeywell
 gi-626:
   - altron
 5039d_ru:
@@ -1761,9 +1771,19 @@ redmi note 11 pro:
   - Xiaomi
 sm-f936u:
   - Samsung
+2201116sc:
+  - Xiaomi
 sm-f936b:
   - Samsung
 sm-f721b:
+  - Samsung
+tecno lg6n:
+  - Tecno Mobile
+sm-f936n:
+  - Samsung
+samsung sm-f936n:
+  - Samsung
+sm-f721u1:
   - Samsung
 ipod5,1:
   - Apple
@@ -1781,6 +1801,8 @@ drp29101:
   - RCA Tablets
 drp2091:
   - RCA Tablets
+nw-zx500series:
+  - Sony
 i7u:
   - Advan
 i4u:
@@ -2822,7 +2844,7 @@ ek-5040:
 ek-6020:
   - EKT
 hammer titan 2:
-  - MyPhone
+  - Hammer
   - Unihertz
 myphone_infinity_ii_lte:
   - MyPhone
@@ -8535,6 +8557,66 @@ kd50:
   - Kodak
 r7_1:
   - Mobicel
+airis tm50qz:
+  - Airis
+alpha 1v:
+  - Lanix
+af9030:
+  - Lava
+amber8:
+  - iPro
+aosp on bramble:
+  - Google
+amber8s:
+  - iPro
+aosp on sunfish:
+  - Google
+ap5701:
+  - Athesi
+ap5702:
+  - Athesi
+astro 55r:
+  - Maxwest
+astro 5t:
+  - Maxwest
+astro 5x:
+  - Maxwest
+aura pro:
+  - Zuum
+aura pro jlo:
+  - Zuum
+betacrux:
+  - H133
+bl50p_tg05:
+  - Bmobile
+bl50p_tg06:
+  - Bmobile
+bl50p_tg07:
+  - Bmobile
+bl50:
+  - Bmobile
+bl51_mv05:
+  - Bmobile
+bl60_tg05:
+  - Bmobile
+ds502:
+  - Digidragon
+ds6018:
+  - Digidragon
+ds6261:
+  - Digidragon
+flare y5:
+  - Cherry Mobile
+kempler_p3:
+  - Kempler & Strauss
+nobu a55 pro:
+  - Azumi Mobile
+okapia x1:
+  - Okapia
+rock_x8+:
+  - Extrem
+tronik_1:
+  - CORN
 vivo 1603:
   - Vivo
 vivo 1610:
@@ -10541,9 +10623,9 @@ drive_6:
 flow7:
   - Krüger&Matz
 hammer_explorer:
-  - MyPhone
+  - Hammer
 hammer_iron_3_lte:
-  - MyPhone
+  - Hammer
 lm-v40:
   - LG
 mar-lx3am:
@@ -14806,8 +14888,6 @@ fenmmy_note:
   - Gome
 fendy_ds:
   - Mobicel
-fast73g:
-  - Accent
 express3-max:
   - Sico
 ex7sl4:
@@ -17447,7 +17527,7 @@ utime_t1:
 ice2:
   - Highscreen
 hammer_force:
-  - MyPhone
+  - Hammer
 wp12:
   - Oukitel
 oneplus 8:
@@ -19263,7 +19343,7 @@ cph2239:
 drive9:
   - Krüger&Matz
 iron_2:
-  - MyPhone
+  - Hammer
 archos 50 power:
   - Archos
 sm-a205f:
@@ -20286,7 +20366,7 @@ a511 harmony:
 soldier:
   - Elephone
 hammer_iron_3:
-  - MyPhone
+  - Hammer
 nomi_i5710:
   - Nomi
 oppo r11s:
@@ -22269,7 +22349,7 @@ iphone9,4:
 iphone9,2:
   - Apple
 hammer_blade_3:
-  - MyPhone
+  - Hammer
 g9 pro:
   - Blu
 m2004j19pi:
@@ -22359,7 +22439,7 @@ hisense e max:
 hisense e40 lite:
   - Hisense
 hammer_energy_2:
-  - MyPhone
+  - Hammer
 u202aa:
   - AT&T
 tet-an00:
@@ -24361,7 +24441,7 @@ power 3s:
 pelitt t1 plus:
   - Pelitt
 hammer_energy:
-  - MyPhone
+  - Hammer
 ht16pro:
   - Homtom
 i5030:
@@ -29489,6 +29569,443 @@ dynamic jumpl:
   - NGM
 dynamic jump:
   - NGM
+a201op:
+  - OPPO
+a204sh:
+  - Sharp
+hammer_explorer_pro:
+  - Hammer
+hammer_energy_18x9:
+  - Hammer
+hammer energy 3g:
+  - Hammer
+hammer iron:
+  - Hammer
+v2180a:
+  - Vivo
+moto g52j 5g:
+  - Motorola
+telego_nova_3:
+  - Telego
+agora go:
+  - Kogan
+gla-al00:
+  - Huawei
+huawei rio-al00:
+  - Huawei
+huawei mt2-l01:
+  - Huawei
+huawei mla-l12:
+  - Huawei
+impress_nero:
+  - Vertex
+impress_frost:
+  - Vertex
+shark ktus-a0:
+  - Xiaomi
+huawei p8max:
+  - Huawei
+sm-a037u1:
+  - Samsung
+tone-m17:
+  - Tone
+infinix zero 4 plus:
+  - Infinix
+m-ppxx555u:
+  - Mediacom
+panasonic p85:
+  - Panasonic
+pi 5.5l:
+  - Scosmos
+tlw-100:
+  - QFX
+zte v0840:
+  - ZTE
+compact_e2_plus:
+  - Myria
+condor allure a55 slim:
+  - Condor
+intense rise:
+  - ZH&K
+intense hype:
+  - ZH&K
+intense game:
+  - ZH&K
+x-tigi_v33:
+  - X-TIGI
+x-tigi_v18:
+  - X-TIGI
+x-tigi_v21:
+  - X-TIGI
+xt1750:
+  - Motorola
+xt1725:
+  - Motorola
+xt1723:
+  - Motorola
+xt1721:
+  - Motorola
+xt1662:
+  - Motorola
+xt1570:
+  - Motorola
+xt1093:
+  - Motorola
+x_tigi_a1plus:
+  - X-TIGI
+xt1754:
+  - Motorola
+xt1756:
+  - Motorola
+xylo p:
+  - Vonino
+eros_star:
+  - M-Tech
+eros smart:
+  - M-Tech
+eternity g25:
+  - Hyundai
+eternity_h65:
+  - Hyundai
+eternity_h67:
+  - Hyundai
+ev6 elite:
+  - Viumee
+ev5 x:
+  - Viumee
+ev7_play:
+  - Viumee
+ev7:
+  - Viumee
+eva_e01:
+  - Kzen
+e-tel i240:
+  - E-tel
+e-tel i300:
+  - E-tel
+e-tel n7:
+  - E-tel
+e-tel n6:
+  - E-tel
+e-tel o9:
+  - E-tel
+e-tel i7c:
+  - E-tel
+zte a2016:
+  - ZTE
+vivid_pro:
+  - FireFly Mobile
+vida_i501:
+  - VIDA
+vida_i450:
+  - VIDA
+vida i-450:
+  - VIDA
+vida_i512:
+  - VIDA
+vida-i401:
+  - VIDA
+vida-v401:
+  - VIDA
+vision lte:
+  - InnJoo
+vin 5:
+  - iMI
+vin3 s:
+  - iMI
+vin3:
+  - iMI
+vin3 lite:
+  - iMI
+marshal me-348:
+  - Marshal
+marshal me-347:
+  - Marshal
+marshal_me-364:
+  - Marshal
+marshal me-364:
+  - Marshal
+marshal me-365:
+  - Marshal
+marshal me-366:
+  - Marshal
+messi no.1:
+  - iMI
+messi 3:
+  - iMI
+v-hope e928:
+  - V-HOPE
+v hope v918:
+  - V-HOPE
+redmi_s2:
+  - Xiaomi
+redmi_note_8_pro:
+  - Xiaomi
+z3352ca:
+  - ZTE
+iris870:
+  - Lava
+iris821:
+  - Lava
+iris820:
+  - Lava
+iris702:
+  - Lava
+iris41:
+  - Lava
+iris 870s:
+  - Lava
+iris 870:
+  - Lava
+iris 870 4g:
+  - Lava
+iris 860:
+  - Lava
+iris 821:
+  - Lava
+iris 820:
+  - Lava
+pixel4x:
+  - Google
+ja2-smp0601:
+  - Aiwa
+lgl22:
+  - LG
+htx21:
+  - KDDI
+htl21:
+  - KDDI
+aquaris vs plus:
+  - bq
+  - Intex
+aquaris c plus:
+  - bq
+  - Intex
+azumi k55ql:
+  - Azumi Mobile
+b3pro:
+  - Stream
+comio c1 pro:
+  - Comio
+crusader:
+  - Hi
+d600:
+  - Blu
+d510:
+  - Blu
+d500:
+  - Blu
+d6:
+  - Bluboo
+f9_plus:
+  - Gol Mobile
+eluga_y_pro:
+  - Panasonic
+eluga_y:
+  - Panasonic
+eluga ray 600:
+  - Panasonic
+eluga ray 530:
+  - Panasonic
+flex-3:
+  - Inco
+flow6:
+  - Krüger&Matz
+fpt_x15:
+  - FPT
+htc_u-1u:
+  - HTC
+htc_m10f:
+  - HTC
+htc desire 555:
+  - HTC
+htc desire 550:
+  - HTC
+b8lite:
+  - Clarmin
+b8plus:
+  - Clarmin
+b5pro:
+  - MicroMax
+bpro:
+  - Bitel
+b260:
+  - DEXP
+b245:
+  - DEXP
+b1s:
+  - Stream
+infinix x668c:
+  - Infinix
+j5:
+  - CUBOT
+lava ln9810:
+  - Lava
+lava le9820:
+  - Lava
+lava le9810:
+  - Lava
+micromax q351:
+  - MicroMax
+micromax q350r:
+  - MicroMax
+micromax aq4502:
+  - MicroMax
+micromax e453:
+  - MicroMax
+micromax q3001:
+  - MicroMax
+micromax q303:
+  - MicroMax
+micromax q350:
+  - MicroMax
+micromax q349:
+  - MicroMax
+micromax q3301:
+  - MicroMax
+micromax q352:
+  - MicroMax
+micromax q354:
+  - MicroMax
+micromax q480:
+  - MicroMax
+mito a880:
+  - Mito
+k-kool:
+  - Wiko
+jax x:
+  - Vonino
+itel s11plus:
+  - iTel
+itel p12:
+  - iTel
+intex_aqua_4.0_4g:
+  - Intex
+intex_cloud_style_4g:
+  - Intex
+intex aqua young 4g:
+  - Intex
+intex aqua trend lite:
+  - Intex
+intex aqua amaze+:
+  - Intex
+intex aqua costa:
+  - Intex
+intex aqua crystal:
+  - Intex
+intex aqua supreme+:
+  - Intex
+intex aqua strong 5.1+:
+  - Intex
+intex aqua prime 4g:
+  - Intex
+intex aqua lions 4g:
+  - Intex
+intex aqua 4g mini:
+  - Intex
+intense_metal_4g:
+  - FireFly Mobile
+intense xl:
+  - FireFly Mobile
+intense 5:
+  - FireFly Mobile
+infinix zero 3:
+  - Infinix
+i-style 713:
+  - i-mobile
+i-mobile iq ii:
+  - i-mobile
+flare p1 plus:
+  - Cherry Mobile
+soda s2:
+  - Soda
+soda e1:
+  - Soda
+soda fire:
+  - Soda
+22041216ug:
+  - POCO
+22041219ny:
+  - Xiaomi
+asus_ai2201_b:
+  - Asus
+asus_ai2201_c:
+  - Asus
+armor 15:
+  - Ulefone
+lge-an00:
+  - Huawei
+  - LG
+air1:
+  - F150
+xq-be62:
+  - Sony
+infinix x6823c:
+  - Infinix
+22071219cg:
+  - POCO
+moto g82 5g:
+  - Motorola
+moto g42:
+  - Motorola
+tecno kg5p:
+  - Tecno Mobile
+nx709s:
+  - Nubia
+zte a2023g:
+  - ZTE
+mi 11 ultra:
+  - Xiaomi
+realme 8i:
+  - Realme
+rmx3371:
+  - Realme
+rmx3474:
+  - Realme
+asus_ai2202:
+  - Asus
+22041219pg:
+  - POCO
+poco x4 gt:
+  - POCO
+asus_ai2201_f:
+  - Asus
+2207117bpg:
+  - POCO
+v2202:
+  - Vivo
+v2218a:
+  - Vivo
+v2207:
+  - Vivo
+v2201:
+  - Vivo
+v2209:
+  - Vivo
+hisense e50s 128gb:
+  - Hisense
+t602dl:
+  - TCL
+tecno kh6:
+  - Tecno Mobile
+moto g62 5g:
+  - Motorola
+rmx3551:
+  - Realme
+pgam10:
+  - OPPO
+cph2413:
+  - OnePlus
+  - OPPO
+xiaomi 12 lite:
+  - Xiaomi
+22081212c:
+  - Xiaomi
+cph2469:
+  - OnePlus
+  - OPPO
+xiaomi 12x:
+  - Xiaomi
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -35493,21 +36010,21 @@ myphone_fun_8:
 myphone fun lte:
   - MyPhone
 hammer active:
-  - MyPhone
+  - Hammer
 hammer_active2:
-  - MyPhone
+  - Hammer
 hammer_active2_lte:
-  - MyPhone
+  - Hammer
 hammer_axe_m_lte:
   - MyPhone
 hammer axe pro:
   - MyPhone
 hammer_blade2_pro:
-  - MyPhone
+  - Hammer
 hammer energy:
-  - MyPhone
+  - Hammer
 hammer iron 2:
-  - MyPhone
+  - Hammer
 accent_neon:
   - Accent
 meanit_c1:
@@ -40537,6 +41054,16 @@ sk5501:
   - Smart Kassel
 tabletexo_wave_i101r:
   - EXO
+alba7q:
+  - Alba
+betelgeuse:
+  - Ceibal
+dg101tbips:
+  - DGTEC
+gemini_4g:
+  - Planet Computers
+magnet_g10:
+  - Vonino
 onyx_z:
   - Vonino
 orin_qs:
@@ -43427,6 +43954,24 @@ jp5s inmate media device:
   - JPay
 w109:
   - TOSCIDO
+sm-p585m:
+  - Samsung
+ct101:
+  - Compaq
+ct1085_32gb:
+  - Compaq
+ctb761:
+  - Coby Kyros
+feel_7013n:
+  - Gear Mobile
+bntv650:
+  - Barnes & Noble
+bntv460:
+  - Barnes & Noble
+micromax p681:
+  - MicroMax
+micromaxp802:
+  - MicroMax
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -44287,6 +44832,88 @@ dual c981hd:
   - TechPad
 dtb-7168g:
   - D-Link
+asus xpad 10lte:
+  - Asus
+hmw-w09:
+  - Huawei
+lenovo tb-q706f:
+  - Lenovo
+sm-t377v:
+  - Samsung
+lenovo yt-x703f:
+  - Lenovo
+lenovo yb1-x90l:
+  - Lenovo
+lenovo yb1-x90f:
+  - Lenovo
+lenovo tb-8x04f:
+  - Lenovo
+lenovo tb-8504l:
+  - Lenovo
+pomelo-max+:
+  - Odotpad
+zte-k88:
+  - ZTE
+zte-k92:
+  - ZTE
+xelio_hd10:
+  - Odys
+xelio_hd10_lte:
+  - Odys
+xavy g7:
+  - Vonino
+dt0705w08:
+  - Denali
+dx_ta_7001:
+  - Dinax
+dx_tasl83:
+  - Dinax
+e-tel-q4:
+  - E-tel
+engage7+:
+  - Starmobile
+ypadp702:
+  - Yooz
+ypadp701:
+  - Yooz
+marshal me-700a:
+  - Marshal
+marshal-me-617:
+  - Marshal
+marshal-me-720:
+  - Marshal
+iris_pad_g8020:
+  - Iris
+everypad2:
+  - Lenovo
+bengal_6:
+  - GoldMaster
+fleet_7:
+  - Facime
+fxt113r:
+  - FMT
+itp-xd80l:
+  - iNavi
+iplay10:
+  - AllDocube
+edison 3:
+  - bq
+edison 3 3g:
+  - bq
+fast7 3g:
+  - Accent
+fast73g:
+  - Accent
+hey-w09:
+  - Huawei
+sm-t735n:
+  - Samsung
+opd2102:
+  - OPPO
+got-al09:
+  - Huawei
+sm-p613:
+  - Samsung
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -45830,6 +46457,32 @@ movix pro:
   - Dom.ru
 movix pro voice:
   - Dom.ru
+tx3mini:
+  - Tanix
+  - Pantech
+tx3 max:
+  - Tanix
+  - Pantech
+evpad-3s:
+  - EVPAD
+abx-210:
+  - Harper
+abx-110:
+  - Harper
+xr4500:
+  - BuzzTV
+rk3368: []
+rk322x-box: []
+rk3128_box: []
+realtekatv: []
+tim_box:
+  - TIMvision
+flowbox-f1:
+  - Skyworth
+leelbox:
+  - Leelbox
+divermax speedbox 3 sb1800:
+  - DiverMax
 bb2 pro:
   - Mecool
 kii pro:
