@@ -1785,6 +1785,10 @@ samsung sm-f936n:
   - Samsung
 sm-f721u1:
   - Samsung
+sm-f9360:
+  - Samsung
+sm-f936u1:
+  - Samsung
 ipod5,1:
   - Apple
 panasonic sv-mv100:
@@ -1803,6 +1807,46 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -8617,6 +8661,34 @@ rock_x8+:
   - Extrem
 tronik_1:
   - CORN
+thrill power:
+  - Cloudfone
+telma_f1_max_4g:
+  - Telma
+tinku lte:
+  - Quipus
+tmaf025g:
+  - T-Mobile
+tmaf035g:
+  - T-Mobile
+tc15:
+  - Zebra
+tc77:
+  - Zebra
+hammer_energy_2_2022:
+  - Hammer
+kc516 pro:
+  - Konka
+kc516:
+  - Konka
+clearphone 220:
+  - ClearPHONE
+iswag neo:
+  - iSWAG
+coolmintt blaze 2:
+  - Mintt
+iswag activ:
+  - iSWAG
 vivo 1603:
   - Vivo
 vivo 1610:
@@ -29923,6 +29995,22 @@ soda e1:
   - Soda
 soda fire:
   - Soda
+tecno ci8:
+  - Tecno Mobile
+rmx3610:
+  - Realme
+rp03:
+  - UMIDIGI
+rp04:
+  - UMIDIGI
+pffm20:
+  - OPPO
+pgp110:
+  - OnePlus
+poco f4 gt:
+  - POCO
+xq-aq62:
+  - Sony
 22041216ug:
   - POCO
 22041219ny:
@@ -30006,6 +30094,72 @@ cph2469:
   - OPPO
 xiaomi 12x:
   - Xiaomi
+redmi k40 gaming:
+  - Xiaomi
+sm-a136b:
+  - Samsung
+sm-e135f:
+  - Samsung
+rmx3475:
+  - Realme
+redmi 8 series:
+  - Xiaomi
+redmi 9t, note 9 4g, 9 power:
+  - Xiaomi
+cph2357:
+  - OPPO
+find n:
+  - OPPO
+epic pro_1:
+  - Mobicel
+pal-al00:
+  - Huawei
+pal-lx9:
+  - Huawei
+iku a22:
+  - IKU Mobile
+w-v750bn-tvm:
+  - Wiko
+sm-g996p:
+  - Samsung
+rmx3513:
+  - Realme
+black shark 4s:
+  - Xiaomi
+black shark 4s pro:
+  - Xiaomi
+black shark 4:
+  - Xiaomi
+black shark 4 pro:
+  - Xiaomi
+gplus p10+:
+  - Gplus
+gplus p10 2022:
+  - Gplus
+ihunt like 12 pro:
+  - iHunt
+ihunt titan x 5g:
+  - iHunt
+  - Unihertz
+ihunt s22 ultra:
+  - iHunt
+ihunt s22 plus:
+  - iHunt
+iku x2:
+  - IKU Mobile
+sm-a125a:
+  - Samsung
+sm-a125t:
+  - Samsung
+agm glory_g1s:
+  - AGM
+  - Akai
+bq-5765l:
+  - bq
+bqru-6868l:
+  - bq
+tech pad x10:
+  - TechPad
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -36973,46 +37127,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -41064,6 +41178,12 @@ gemini_4g:
   - Planet Computers
 magnet_g10:
   - Vonino
+team_7_3g:
+  - Gol Mobile
+tpc_8063g:
+  - Vivax
+gravity-2-max:
+  - SPC
 onyx_z:
   - Vonino
 orin_qs:
@@ -44914,6 +45034,28 @@ got-al09:
   - Huawei
 sm-p613:
   - Samsung
+novaairc:
+  - ONYX BOOX
+novatab_r10:
+  - Rizzen
+gt1001:
+  - OKSI
+noteair2p:
+  - ONYX BOOX
+noteair2:
+  - ONYX BOOX
+i10_pro:
+  - BMAX
+k61:
+  - DEXP
+d11:
+  - DEXP
+d21:
+  - DEXP
+up10_sh36lag:
+  - Technopc
+t40 pro_eea:
+  - Teclast
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -46483,6 +46625,8 @@ leelbox:
   - Leelbox
 divermax speedbox 3 sb1800:
   - DiverMax
+ut8:
+  - Ugoos
 bb2 pro:
   - Mecool
 kii pro:

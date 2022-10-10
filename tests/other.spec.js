@@ -98,6 +98,7 @@ describe('tests vendor fragments', function () {
 
 
 describe('test duplicates', function(){
+  this.timeout(TIMEOUT);
   const find = (array, count = {}) => {
     array.forEach(el => count[el] ? count[el]++ : count[el] = 1);
     return Object.keys(count).filter(key => count[key] > 1);

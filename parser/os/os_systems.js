@@ -129,4 +129,5 @@ module.exports = {
   'IOS': 'iOS',
   'POS': 'palmOS',
   'WOS': 'webOS',
+  
 };

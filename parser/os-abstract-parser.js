@@ -199,7 +199,12 @@ class OsAbstractParser extends ParserAbstract {
       if (data && data.family === name && data.name !== name) {
         name = data.name;
       }
-
+  
+      if ('HarmonyOS' === name) {
+        version = '';
+        short = 'HAR';
+      }
+      
       if ('GNU/Linux' === name
         && data
         && 'Chrome OS' === data.name

@@ -1,6 +1,15 @@
 const spawn = require('node:child_process').spawn;
 const fs = require('node:fs');
+
 const TMP_DIR = __dirname + '/../output/_git';
+
+const errorLog = (signal) => {
+  console.log(signal.toString());
+};
+
+const log = (signal) => {
+  console.log(signal.toString());
+};
 
 const gitDownload = () => {
   return new Promise((resolve, reject) => {
@@ -9,9 +18,12 @@ const gitDownload = () => {
         'clone', 'git@github.com:matomo-org/device-detector.git', TMP_DIR],
     ];
     const git = spawn.apply(spawn, cmd);
-    git.stderr.on('data', console.error);
+    git.stderr.on('data', errorLog);
+    git.stdin.on('data', log);
     git.on('close', function(err, signal) {
-      if (err) return reject(err);
+      if (err){
+        return reject(err);
+      }
       return resolve(signal);
     });
   });
@@ -156,16 +168,48 @@ const syncShortBrowserFamilies = async () => {
   )
 };
 
+const syncShortOsFamilies = async () => {
+  console.log('Sync os families');
+  const sourceFile = TMP_DIR + '/Parser/OperatingSystem.php';
+  const targetFile = __dirname + '/../../parser/os/os_families.js';
+  const content = fs.readFileSync(sourceFile).toString();
+  const match = / static \$osFamilies = \[([^;]+)\];/mg.exec(content);
+  
+  let newContent = match[1]
+  .replace(/\s+=>\s+/gm, ": ")
+  .replace(/^\s+/gm, "  ")
+  
+  fs.writeFileSync(targetFile,
+    `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
+  )
+};
+
+const syncShortOs = async () => {
+  console.log('Sync os');
+  const sourceFile = TMP_DIR + '/Parser/OperatingSystem.php';
+  const targetFile = __dirname + '/../../parser/os/os_systems.js';
+  const content = fs.readFileSync(sourceFile).toString();
+  const match = / static \$operatingSystems = \[([^;]+)\];/mg.exec(content);
+  
+  let newContent = match[1]
+  .replace(/\s+=>\s+/gm, ": ")
+  .replace(/^\s+/gm, "  ")
+  
+  fs.writeFileSync(targetFile,
+    `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
+  )
+};
+
 (async function() {
-  /*if (fs.existsSync(TMP_DIR)) {
-      console.log('clear dir output/_git');
-      fs.rmSync(TMP_DIR, {recursive: true, force: true});
+  if (fs.existsSync(TMP_DIR)) {
+    console.log('clear dir output/_git');
+    fs.rmSync(TMP_DIR, {recursive: true, force: true});
   }
   console.log('create dir output/_git');
   fs.mkdirSync(TMP_DIR);
   console.log('download git repository');
-  await gitDownload();*/
   
+  await gitDownload();
   await syncTestOsFixtures();
   await syncTestDeviceFixtures();
   await syncTestParserFixtures();
@@ -176,6 +220,8 @@ const syncShortBrowserFamilies = async () => {
   await syncShortBrowserBrands();
   await syncShortMobileBrowser();
   await syncShortBrowserFamilies();
+  await syncShortOsFamilies();
+  await syncShortOs();
   
 })();
 

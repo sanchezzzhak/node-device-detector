@@ -1014,6 +1014,7 @@ module.exports = {
   'QA': 'Quantum',
   'QUE': 'Quest',
   'QU': 'Quechua',
+  'QUI': 'Quipus',
   'QO': 'Qumo',
   'UQ': 'Qubo',
   'YQ': 'QLink',
@@ -1047,6 +1048,7 @@ module.exports = {
   'R7': 'Ritzviva',
   'RV': 'Riviera',
   '6R': 'Rivo',
+  'RIZ': 'Rizzen',
   'RR': 'Roadrover',
   'QR': 'ROADMAX',
   'R1': 'Rokit',
@@ -1211,6 +1213,7 @@ module.exports = {
   'T2': 'Telenor',
   'TE': 'Telit',
   '65': 'Telia',
+  'TEL': 'Telma',
   'PW': 'Telpo',
   'TER': 'Teracube',
   'TD': 'Tesco',
@@ -1462,4 +1465,5 @@ module.exports = {
   // legacy brands, might be removed in future versions
   'WB': 'Web TV',
   'XX': 'Unknown',
+  
 };
