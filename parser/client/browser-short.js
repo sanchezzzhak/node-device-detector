@@ -497,7 +497,8 @@ module.exports = {
   'ZE': 'Zetakey',
   'ZV': 'Zvu',
   'ZI': 'Zirco Browser',
-// detected browsers in older versions
-// 'IA': 'Iceape',  : pim
-// 'SM': 'SeaMonkey',  : pim
+  // detected browsers in older versions
+  // 'IA': 'Iceape',  => pim
+  // 'SM': 'SeaMonkey',  => pim
+  
 };

@@ -14,4 +14,5 @@ module.exports = [
   'B5', 'B6', 'TC', 'A6', '2X', 'F4', 'YG', 'WR', 'NA',
   'DM', '1M', 'A7', 'XN', 'XT', 'XB', 'W1', 'HT', 'B7',
   'B9',
+  
 ];
