@@ -1,6 +1,6 @@
 {
   "name": "node-device-detector",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Nodejs device detector (port matomo-org/device-detector)",
   "main": "index.js",
   "scripts": {
