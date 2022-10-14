@@ -783,6 +783,8 @@ avaya vantage:
   - Avaya
 ct40:
   - Honeywell
+pine a64:
+  - PINE
 gi-626:
   - altron
 5039d_ru:
@@ -30160,6 +30162,90 @@ bqru-6868l:
   - bq
 tech pad x10:
   - TechPad
+nitro 55n:
+  - Maxwest
+nitro_5n:
+  - Maxwest
+nitro 4n lte:
+  - Maxwest
+nile x:
+  - Sico
+p2:
+  - Haier
+element-p5501:
+  - Sencor
+element p5500:
+  - Sencor
+everfancy iii:
+  - Evertek
+pan-l29:
+  - Huawei
+flare xl 2:
+  - Cherry Mobile
+flare x lite:
+  - Cherry Mobile
+flare_s5_max:
+  - Cherry Mobile
+flare_s5:
+  - Cherry Mobile
+flare s5 power:
+  - Cherry Mobile
+flare s5 max:
+  - Cherry Mobile
+flare j7:
+  - Cherry Mobile
+flare j2:
+  - Cherry Mobile
+flare j1s:
+  - Cherry Mobile
+flare j1 plus:
+  - Cherry Mobile
+flare j1:
+  - Cherry Mobile
+flare infinity:
+  - Cherry Mobile
+fivo plus:
+  - iLife
+fivo lite:
+  - iLife
+jspq65:
+  - Jivi
+itel s13 pro:
+  - iTel
+itel s13:
+  - iTel
+up vision:
+  - Starmobile
+up neo:
+  - Starmobile
+up snap:
+  - Starmobile
+urano 47:
+  - Majestic
+micromax q4101:
+  - MicroMax
+ns5004:
+  - Nous
+archos sense 55 s:
+  - Archos
+tc55:
+  - Zebra
+chat_5+:
+  - ExMobile
+ultym5:
+  - Huawei
+eluga_a3:
+  - Panasonic
+eluga_i2_activ:
+  - Panasonic
+rltp5567:
+  - RCA Tablets
+mtt ideal:
+  - M.T.T.
+infinit 2:
+  - MyPhone
+titanium t355:
+  - Leotec
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -44092,6 +44178,10 @@ micromax p681:
   - MicroMax
 micromaxp802:
   - MicroMax
+nitro phablet 7n:
+  - Maxwest
+navo s:
+  - Vonino
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -45056,6 +45146,16 @@ up10_sh36lag:
   - Technopc
 t40 pro_eea:
   - Teclast
+up918:
+  - Technopc
+up778:
+  - Technopc
+up768:
+  - Technopc
+up1018:
+  - Technopc
+ax4nano_plus:
+  - Allview
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -46627,6 +46727,12 @@ divermax speedbox 3 sb1800:
   - DiverMax
 ut8:
   - Ugoos
+ptv32ss04z_cis_bk:
+  - Prestigio
+ptv50ss04x_cis_bk:
+  - Prestigio
+50lex-8127/uts2c:
+  - BBK
 bb2 pro:
   - Mecool
 kii pro:

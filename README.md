@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 08/10/2022_
+_Last update: 14/10/2022_
 
 ## Description
 
@@ -500,7 +500,7 @@ Others <a name="others"></a>
 
 <a name="brands-list"></a>
 
-##### Support detect brands list (1461):
+##### Support detect brands list (1465):
 
 <details>
 <summary>Show details</summary>
@@ -644,78 +644,79 @@ Ovvi | öwn | Owwo | OYSIN | Oysters | Oyyu | OzoneHD
 P-UP | Packard Bell | Paladin | Palm | Panacom | Panasonic | Pantech
 PAPYRE | Parrot Mobile | Partner Mobile | PCBOX | PCD | PCD Argentina | PEAQ
 Pelitt | Pendoo | Pentagram | Perfeo | Phicomm | Philco | Philips
-Phonemax | phoneOne | Pico | Pioneer | Pioneer Computers | PiPO | PIRANHA
-Pixela | Pixelphone | Pixus | Planet Computers | Ployer | Plum | PlusStyle
-Pluzz | PocketBook | POCO | Point Mobile | Point of View | Polar | PolarLine
-Polaroid | Polestar | PolyPad | Polytron | Pomp | Poppox | POPTEL
-Porsche | Positivo | Positivo BGH | PPTV | Premio | Prestigio | Primepad
-Primux | Pritom | Prixton | PROFiLO | Proline | Prology | ProScan
-Protruly | ProVision | PULID | Purism | Q-Box | Q-Touch | Q.Bell
-QFX | Qilive | QLink | QMobile | Qnet Mobile | QTECH | Qtek
-Quantum | Qubo | Quechua | Quest | Qumo | Qware | R-TV
-Rakuten | Ramos | Raspberry | Ravoz | Raylandz | Razer | RCA Tablets
-Reach | Readboy | Realme | RED | Redbean | Redfox | Redway
-Reeder | REGAL | Remdun | Retroid Pocket | Revo | Ricoh | Rikomagic
-RIM | Rinno | Ritmix | Ritzviva | Riviera | Rivo | ROADMAX
-Roadrover | Rokit | Roku | Rombica | Ross&Moor | Rover | RoverPad
-Royole | RoyQueen | RT Project | RugGear | Ruio | Runbo | Ryte
-S-TELL | S2Tel | Saba | Safaricom | Sagem | Saiet | Salora
-Samsung | Sanei | Sansui | Santin | Sanyo | Savio | SCBC
-Schneider | Schok | Scosmos | Seatel | Seeken | SEG | Sega
-Selecline | Selenga | Selevision | Selfix | SEMP TCL | Sencor | Sendo
-Senkatel | Senseit | Senwa | Seuic | SFR | Shanling | Sharp
-Shift Phones | Shivaki | Shtrikh-M | Shuttle | Sico | Siemens | Sigma
-Silelis | Silent Circle | Simbans | Simply | Singtech | Siragon | Sirin Labs
-SK Broadband | SKG | Sky | Skyworth | Smadl | Smailo | Smart
-Smart Electronic | Smart Kassel | Smartab | SmartBook | SMARTEC | Smartfren | Smartisan
-Smarty | Smooth Mobile | Smotreshka | SNAMI | Soda | Softbank | Soho Style
-SOLE | SOLO | Solone | Sonim | SONOS | Sony | Sony Ericsson
-Soundmax | Soyes | Spark | SPC | Spectralink | Spectrum | Spice
-Sprint | SQOOL | Star | Starlight | Starmobile | Starway | Starwind
-STF Mobile | STG Telecom | STK | Stonex | Storex | StrawBerry | Stream
-STRONG | Stylo | Subor | Sugar | Sumvision | Sunmi | Sunny
-Sunstech | SunVan | Sunvell | SUNWIND | SuperSonic | SuperTab | Supra
-Suzuki | Swipe | SWISSMOBILITY | Swisstone | SWTV | Sylvania | Symphony
-Syrox | T-Mobile | T96 | TAG Tech | Taiga System | Takara | Talius
-Tambo | Tanix | TB Touch | TCL | TD Systems | TD Tech | TeachTouch
-Technicolor | Technika | TechniSat | Technopc | TechnoTrend | TechPad | Techwood
-Teclast | Tecno Mobile | TEENO | Teknosa | Tele2 | Telefunken | Telego
-Telenor | Telia | Telit | Telpo | TENPLUS | Teracube | Tesco
-Tesla | Tetratab | teXet | ThL | Thomson | Thuraya | TIANYU
-Tibuta | Tigers | Time2 | Timovi | TIMvision | Tinai | Tinmo
-TiPhone | TiVo | TJC | TOKYO | Tolino | Tone | Tooky
-Top House | TOPDON | Topelotek | Toplux | Topsion | Topway | Torex
-Torque | TOSCIDO | Toshiba | Touch Plus | Touchmate | TOX | Transpeed
-TrekStor | Trevi | Trident | Trifone | Trio | Tronsmart | True
-True Slim | TTEC | TTK-TV | TuCEL | Tunisie Telecom | Turbo | Turbo-X
-TurboKids | TurboPad | Türk Telekom | Turkcell | TVC | TWM | Twoe
-TWZ | Tymes | U-Magic | U.S. Cellular | Ugoos | Uhans | Uhappy
-Ulefone | Umax | UMIDIGI | Unblock Tech | Unihertz | Unimax | Uniscope
-Unistrong | UNIWA | Unknown | Unnecto | Unnion Technologies | UNNO | Unonu
-Unowhy | Urovo | UTime | UTOK | UTStarcom | UZ Mobile | V-HOPE
-v-mobile | VAIO | VALEM | Vankyo | Vargo | Vastking | VAVA
-VC | VDVD | Vega | Venso | Venstar | Venturer | VEON
-Verico | Verizon | Vernee | Verssed | Vertex | Vertu | Verykool
-Vesta | Vestel | Vexia | VGO TEL | Victurio | VIDA | Videocon
-Videoweb | ViewSonic | Vinabox | Vinga | Vinsoc | Vios | Vipro
-Virzo | Vision Touch | Vitelcom | Viumee | Vivax | Vivo | VIWA
-Vizio | VK Mobile | VKworld | Vodacom | Vodafone | VOGA | Völfen
-Vonino | Vontar | Vorago | Vorcom | Vorke | Vortex | Voto
-VOX | Voxtel | Voyo | Vsmart | Vsun | VUCATIMES | Vue Micro
-Vulcan | VVETIME | Walton | Wanmukang | WE | Web TV | Weelikeit
-Weimei | WellcoM | WELLINGTON | Western Digital | Westpoint | Wexler | Wieppo
-Wigor | Wiko | Wileyfox | Winds | Wink | Winmax | Winnovo
-Wintouch | Wiseasy | WIWA | WizarPos | Wizz | Wolder | Wolfgang
-Wolki | Wonu | Woo | Wortmann | Woxter | X-AGE | X-BO
-X-TIGI | X-View | X.Vision | X88 | X96 | X96Q | XGIMI
-Xgody | Xiaodu | Xiaolajiao | Xiaomi | Xion | Xolo | Xoro
-Xshitou | Xtouch | Xtratech | Yandex | Yarvik | YASIN | YEPEN
-Yes | Yezz | Yoka TV | Yooz | Yota | YOTOPT | Ytone
-Yu | YU Fly | Yuandao | YUHO | YUMKEM | YUNDOO | Yuno
-Yusun | Yxtel | Zaith | Zatec | Zealot | Zebra | Zeeker
-Zeemi | Zen | Zenek | Zentality | Zfiner | ZH&K | Zidoo
-ZIFRO | ZIK | Zinox | Ziox | Zonda | Zonko | Zopo
-ZTE | Zuum | Zync | ZYQ | Zyrex
+Phonemax | phoneOne | Pico | PINE | Pioneer | Pioneer Computers | PiPO
+PIRANHA | Pixela | Pixelphone | Pixus | Planet Computers | Ployer | Plum
+PlusStyle | Pluzz | PocketBook | POCO | Point Mobile | Point of View | Polar
+PolarLine | Polaroid | Polestar | PolyPad | Polytron | Pomp | Poppox
+POPTEL | Porsche | Positivo | Positivo BGH | PPTV | Premio | Prestigio
+Primepad | Primux | Pritom | Prixton | PROFiLO | Proline | Prology
+ProScan | Protruly | ProVision | PULID | Purism | Q-Box | Q-Touch
+Q.Bell | QFX | Qilive | QLink | QMobile | Qnet Mobile | QTECH
+Qtek | Quantum | Qubo | Quechua | Quest | Quipus | Qumo
+Qware | R-TV | Rakuten | Ramos | Raspberry | Ravoz | Raylandz
+Razer | RCA Tablets | Reach | Readboy | Realme | RED | Redbean
+Redfox | Redway | Reeder | REGAL | Remdun | Retroid Pocket | Revo
+Ricoh | Rikomagic | RIM | Rinno | Ritmix | Ritzviva | Riviera
+Rivo | Rizzen | ROADMAX | Roadrover | Rokit | Roku | Rombica
+Ross&Moor | Rover | RoverPad | Royole | RoyQueen | RT Project | RugGear
+Ruio | Runbo | Ryte | S-TELL | S2Tel | Saba | Safaricom
+Sagem | Saiet | Salora | Samsung | Sanei | Sansui | Santin
+Sanyo | Savio | SCBC | Schneider | Schok | Scosmos | Seatel
+Seeken | SEG | Sega | Selecline | Selenga | Selevision | Selfix
+SEMP TCL | Sencor | Sendo | Senkatel | Senseit | Senwa | Seuic
+SFR | Shanling | Sharp | Shift Phones | Shivaki | Shtrikh-M | Shuttle
+Sico | Siemens | Sigma | Silelis | Silent Circle | Simbans | Simply
+Singtech | Siragon | Sirin Labs | SK Broadband | SKG | Sky | Skyworth
+Smadl | Smailo | Smart | Smart Electronic | Smart Kassel | Smartab | SmartBook
+SMARTEC | Smartfren | Smartisan | Smarty | Smooth Mobile | Smotreshka | SNAMI
+Soda | Softbank | Soho Style | SOLE | SOLO | Solone | Sonim
+SONOS | Sony | Sony Ericsson | Soundmax | Soyes | Spark | SPC
+Spectralink | Spectrum | Spice | Sprint | SQOOL | Star | Starlight
+Starmobile | Starway | Starwind | STF Mobile | STG Telecom | STK | Stonex
+Storex | StrawBerry | Stream | STRONG | Stylo | Subor | Sugar
+Sumvision | Sunmi | Sunny | Sunstech | SunVan | Sunvell | SUNWIND
+SuperSonic | SuperTab | Supra | Suzuki | Swipe | SWISSMOBILITY | Swisstone
+SWTV | Sylvania | Symphony | Syrox | T-Mobile | T96 | TAG Tech
+Taiga System | Takara | Talius | Tambo | Tanix | TB Touch | TCL
+TD Systems | TD Tech | TeachTouch | Technicolor | Technika | TechniSat | Technopc
+TechnoTrend | TechPad | Techwood | Teclast | Tecno Mobile | TEENO | Teknosa
+Tele2 | Telefunken | Telego | Telenor | Telia | Telit | Telma
+Telpo | TENPLUS | Teracube | Tesco | Tesla | Tetratab | teXet
+ThL | Thomson | Thuraya | TIANYU | Tibuta | Tigers | Time2
+Timovi | TIMvision | Tinai | Tinmo | TiPhone | TiVo | TJC
+TOKYO | Tolino | Tone | Tooky | Top House | TOPDON | Topelotek
+Toplux | Topsion | Topway | Torex | Torque | TOSCIDO | Toshiba
+Touch Plus | Touchmate | TOX | Transpeed | TrekStor | Trevi | Trident
+Trifone | Trio | Tronsmart | True | True Slim | TTEC | TTK-TV
+TuCEL | Tunisie Telecom | Turbo | Turbo-X | TurboKids | TurboPad | Türk Telekom
+Turkcell | TVC | TWM | Twoe | TWZ | Tymes | U-Magic
+U.S. Cellular | Ugoos | Uhans | Uhappy | Ulefone | Umax | UMIDIGI
+Unblock Tech | Unihertz | Unimax | Uniscope | Unistrong | UNIWA | Unknown
+Unnecto | Unnion Technologies | UNNO | Unonu | Unowhy | Urovo | UTime
+UTOK | UTStarcom | UZ Mobile | V-HOPE | v-mobile | VAIO | VALEM
+Vankyo | Vargo | Vastking | VAVA | VC | VDVD | Vega
+Venso | Venstar | Venturer | VEON | Verico | Verizon | Vernee
+Verssed | Vertex | Vertu | Verykool | Vesta | Vestel | Vexia
+VGO TEL | Victurio | VIDA | Videocon | Videoweb | ViewSonic | Vinabox
+Vinga | Vinsoc | Vios | Vipro | Virzo | Vision Touch | Vitelcom
+Viumee | Vivax | Vivo | VIWA | Vizio | VK Mobile | VKworld
+Vodacom | Vodafone | VOGA | Völfen | Vonino | Vontar | Vorago
+Vorcom | Vorke | Vortex | Voto | VOX | Voxtel | Voyo
+Vsmart | Vsun | VUCATIMES | Vue Micro | Vulcan | VVETIME | Walton
+Wanmukang | WE | Web TV | Weelikeit | Weimei | WellcoM | WELLINGTON
+Western Digital | Westpoint | Wexler | Wieppo | Wigor | Wiko | Wileyfox
+Winds | Wink | Winmax | Winnovo | Wintouch | Wiseasy | WIWA
+WizarPos | Wizz | Wolder | Wolfgang | Wolki | Wonu | Woo
+Wortmann | Woxter | X-AGE | X-BO | X-TIGI | X-View | X.Vision
+X88 | X96 | X96Q | XGIMI | Xgody | Xiaodu | Xiaolajiao
+Xiaomi | Xion | Xolo | Xoro | Xshitou | Xtouch | Xtratech
+Yandex | Yarvik | YASIN | YEPEN | Yes | Yezz | Yoka TV
+Yooz | Yota | YOTOPT | Ytone | Yu | YU Fly | Yuandao
+YUHO | YUMKEM | YUNDOO | Yuno | Yusun | Yxtel | Zaith
+Zatec | Zealot | Zebra | Zeeker | Zeemi | Zen | Zenek
+Zentality | Zfiner | ZH&K | Zidoo | ZIFRO | ZIK | Zinox
+Ziox | Zonda | Zonko | Zopo | ZTE | Zuum | Zync
+ZYQ | Zyrex
 
 
 </details>
