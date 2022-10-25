@@ -106,6 +106,16 @@ const syncRegexDevice = async () => {
     fs.copyFileSync(dirFixtures + file, dirTarget + file);
   }
 };
+const syncRegexCommon = async () => {
+  console.log('Sync os, bot, vendor regex');
+  const dirFixtures = TMP_DIR + '/regexes/';
+  const dirTarget = __dirname + '/../../regexes/';
+  const files = getFilesForDir(dirFixtures);
+  for (let file of files) {
+    console.log('copy file %s to dir %s', file, dirTarget);
+    fs.copyFileSync(dirFixtures + file, dirTarget + file);
+  }
+};
 
 const syncShortDeviceBrands = async () => {
   console.log('Sync short device brands');
@@ -214,6 +224,7 @@ const syncShortOs = async () => {
   await syncTestDeviceFixtures();
   await syncTestParserFixtures();
   await syncTestClientFixtures();
+  await syncRegexCommon();
   await syncRegexClient();
   await syncRegexDevice();
   await syncShortDeviceBrands();
