@@ -126,6 +126,7 @@ module.exports = {
   'XBT': 'Xubuntu',
   'YNS': 'YunOS',
   'ZEN': 'Zenwalk',
+  'ZOR': 'ZorinOS',
   'IOS': 'iOS',
   'POS': 'palmOS',
   'WOS': 'webOS',
