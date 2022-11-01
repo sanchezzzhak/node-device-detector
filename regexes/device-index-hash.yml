@@ -631,6 +631,8 @@ latitude 7390:
   - Dell
 satellite l50-c:
   - Toshiba
+samsung chromebook plus:
+  - Samsung
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -785,8 +787,20 @@ ct40:
   - Honeywell
 pine a64:
   - PINE
+mc2700:
+  - Zebra
 sm-f721u:
   - Samsung
+note 13p:
+  - Ulefone
+note 12p:
+  - Ulefone
+22061218c:
+  - Xiaomi
+tecno lg7n:
+  - Tecno Mobile
+infinix x6819:
+  - Infinix
 gi-626:
   - altron
 5039d_ru:
@@ -1811,6 +1825,48 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -29975,6 +30031,10 @@ poco f4 gt:
   - POCO
 xq-aq62:
   - Sony
+qin2 pro:
+  - Xiaomi
+mzb8298in:
+  - Xiaomi
 22041216ug:
   - POCO
 22041219ny:
@@ -30256,6 +30316,255 @@ kingkong mini2 pro:
   - Xiaomi
 22071212ag:
   - Xiaomi
+mobicel metro2:
+  - Mobicel
+honor play 4t:
+  - Huawei
+s50_bold:
+  - Stylo
+5033ep:
+  - Alcatel
+bmm431b:
+  - Black Fox
+s6523 ru:
+  - Revomovil
+s60pro:
+  - OSCAL
+mp06:
+  - UMIDIGI
+mp05:
+  - UMIDIGI
+pacifici4g:
+  - Oysters
+impress mars:
+  - Vertex
+wbl7519:
+  - Gionee
+wbl7361:
+  - Gionee
+itel a15r:
+  - iTel
+w-k211-th:
+  - Wiko
+itel w4001s:
+  - iTel
+itel w5504:
+  - iTel
+itel w5003:
+  - iTel
+itel w4003:
+  - iTel
+ath-tl00:
+  - Huawei
+iro a55 q:
+  - Azumi Mobile
+iqoo u1x:
+  - Vivo
+iqoo u1:
+  - Vivo
+motorola p30 note:
+  - Motorola
+mbu-a0:
+  - Xiaomi
+inkulu_pro:
+  - Stylo
+inkosi_pro:
+  - Stylo
+legend pro_1:
+  - Mobicel
+dqr22:
+  - Stylo
+elite v55:
+  - Sky
+epic_1:
+  - Mobicel
+nnh-an00:
+  - Huawei
+pdct00:
+  - OPPO
+p smart s:
+  - Huawei
+moscow:
+  - Stylo
+721_pro:
+  - Stylo
+pot-l01:
+  - Huawei
+oneplus 8 lite:
+  - OnePlus
+step_up:
+  - Stylo
+x70-2021:
+  - Premio
+titan slim:
+  - Unihertz
+zte blade a52 lite:
+  - ZTE
+22081212ug:
+  - Xiaomi
+6165a:
+  - TCL
+bv7100:
+  - Blackview
+nokia g11 plus:
+  - Nokia
+w10 pro:
+  - Hotwav
+wp20 pro:
+  - Oukitel
+x97pro:
+  - Doogee
+sm-a336n:
+  - Samsung
+sm-a047f:
+  - Samsung
+samsung sm-a047f:
+  - Samsung
+hpb-an00:
+  - Huawei
+a2010l36:
+  - Lenovo
+sm-a125p:
+  - Samsung
+sm-a102j:
+  - Samsung
+sm-a115v:
+  - Samsung
+sm-a215t:
+  - Samsung
+sm-a215p:
+  - Samsung
+sm-a215r4:
+  - Samsung
+sm-a326j:
+  - Samsung
+gionee_max pro:
+  - Gionee
+konka a800:
+  - Konka
+cs45xa:
+  - Cyrus
+rk25:
+  - CipherLab
+sm-m236l:
+  - Samsung
+huawei rio-l02:
+  - Huawei
+itel w5002:
+  - iTel
+itel a14:
+  - iTel
+itel l6006s:
+  - iTel
+itel l5007s:
+  - iTel
+infinix x6511g:
+  - Infinix
+itel a510w:
+  - iTel
+itel a509w:
+  - iTel
+itel a507ls:
+  - iTel
+arctic:
+  - Stylo
+220733sg:
+  - Xiaomi
+urano27:
+  - Majestic
+umi zero:
+  - UMIDIGI
+umi c1:
+  - UMIDIGI
+ghongv12:
+  - Changhong
+forward_next:
+  - NGM
+ixion ml245:
+  - DEXP
+ixion m850:
+  - DEXP
+  - Kocaso
+ixion m750:
+  - DEXP
+  - Kocaso
+ixion m545:
+  - DEXP
+ixion m355:
+  - DEXP
+  - Meizu
+i_smart:
+  - VGO TEL
+k9 smart selfie:
+  - Karbonn
+k9 smart eco:
+  - Karbonn
+k9 smart eco plus:
+  - Karbonn
+iqf 200:
+  - MLS
+intex elyt dual_plus:
+  - Intex
+intex elyt e7:
+  - Intex
+intex elyt e6:
+  - Intex
+intex elyt dual:
+  - Intex
+inova:
+  - Symphony
+impress_fortune:
+  - Vertex
+impress_event:
+  - Vertex
+impress_genius:
+  - Vertex
+impress_lightning:
+  - Vertex
+impress_lotus:
+  - Vertex
+impress_new:
+  - Vertex
+impress_razor:
+  - Vertex
+impress_spring:
+  - Vertex
+gorilla 9 plus:
+  - InFone
+go-x:
+  - NYX Mobile
+go onyx plus:
+  - GoMobile
+  - Explay
+go onyx mini:
+  - GoMobile
+  - Explay
+go onyx lte:
+  - GoMobile
+  - Explay
+go onyx hd:
+  - GoMobile
+  - Explay
+fun value 4g:
+  - öwn
+ft162d:
+  - Freetel
+fs8026:
+  - Sharp
+fs8025:
+  - Sharp
+freedom c105:
+  - Just5
+fpt_x9:
+  - FPT
+fpt_x10:
+  - FPT
+fpt x50:
+  - FPT
+fpt x3:
+  - FPT
+fpt s68 4g:
+  - FPT
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -37223,46 +37532,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -45220,6 +45489,75 @@ hipadpro:
   - Chuwi
 got-w29:
   - Huawei
+tbook 16 pro(e6c1):
+  - Teclast
+tbook 10 s(e6n7):
+  - Teclast
+ama a703:
+  - AMA
+monsterpad7:
+  - Turbo
+v_tab_7810:
+  - Vestel
+ama_a703:
+  - AMA
+k28:
+  - DEXP
+t21:
+  - DEXP
+huawei m2-803l:
+  - Huawei
+huawei m2-801w:
+  - Huawei
+b28:
+  - DEXP
+b27:
+  - DEXP
+tab 10 pro:
+  - Blackview
+p410:
+  - DEXP
+t500 3g:
+  - Navitel
+t74mri3g:
+  - Oysters
+supra m728g:
+  - Supra
+plane 7006 4g ps7041ml:
+  - Digma
+kob2-l03:
+  - Huawei
+zpad-x8-pro:
+  - Zinox
+okt1:
+  - Oukitel
+tab-p10232-3g:
+  - Point of View
+brace-x1:
+  - iBall
+monster 4gxx:
+  - Dany
+sm-p619:
+  - Samsung
+ursus 10ev:
+  - DEXP
+ultima 8 twist:
+  - Wexler
+ultima 7 twist:
+  - Wexler
+ultima 7 octa:
+  - Wexler
+ultima 7:
+  - Wexler
+ue pad 1:
+  - UE
+iqt800:
+  - MLS
+insignia delta 2:
+  - Timovi
+  - GOCLEVER
+hykker_mytab10:
+  - Hykker
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -46825,6 +47163,109 @@ vhix-40f152msy:
   - Hi
 vhix-40f152msyb:
   - Hi
+tx5 pro:
+  - Tanix
+  - Pantech
+xdsr785hdr_avant:
+  - Xcruiser
+x96mate_plus:
+  - X96
+h96_max_rk3566:
+  - H96
+h96_max_rk3318:
+  - H96
+h96_max_v11:
+  - H96
+optima_t-ii:
+  - Divisat
+iconbit xds110:
+  - IconBIT
+tp01_box:
+  - Topsion
+32yst5970:
+  - Skyline
+32lh1210:
+  - V-HOME
+32y_stv-r:
+  - Hiberg
+39hsy111x:
+  - Hi
+55usy151x:
+  - Hi
+u43f8000eg:
+  - DEXP
+u55g8000qg:
+  - DEXP
+u50g9000cg:
+  - DEXP
+tf-led58s06t2su:
+  - Telefunken
+skyline 50ust5970:
+  - Skyline
+ptv40ss04y_cis_ml:
+  - Prestigio
+hty-55uhd11b-s2:
+  - Hartens
+hty-50uhdo11mg-hc22:
+  - Hartens
+hty-50uhdo11g-hc22:
+  - Hartens
+hty-43fhd06b-s2:
+  - Hartens
+hty-32hdro6b-hc22:
+  - Hartens
+39les80t2sm:
+  - Erisson
+24lh7020t:
+  - Asano
+ulx-55utcs3234:
+  - Yuno
+ulx-32tcs226-b:
+  - Yuno
+u50g8000qg-a:
+  - DEXP
+u50g8000qg:
+  - DEXP
+u43h8000e:
+  - DEXP
+u43f8100qg:
+  - DEXP
+smart_tv_bq:
+  - bq
+h39f8000q:
+  - DEXP
+h32g8000cg:
+  - DEXP
+h32f8100q:
+  - DEXP
+h32f8000q-f:
+  - DEXP
+h32f8000q-e:
+  - DEXP
+h32f8000q-a:
+  - DEXP
+h32f8000q-d:
+  - DEXP
+h24h8000c:
+  - DEXP
+h24f8000q:
+  - DEXP
+32ghs57:
+  - Doffler
+32h540s:
+  - Leff
+32h530t:
+  - Leff
+32hsy119x:
+  - Hi
+55u730gr:
+  - Kivi
+u43g9000cg:
+  - DEXP
+f43f8000qg:
+  - DEXP
+gi fly t2:
+  - Galaxy Innovations
 bb2 pro:
   - Mecool
 kii pro:
