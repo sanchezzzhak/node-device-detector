@@ -7110,6 +7110,12 @@ nomi:
 i-mobile:
   i-note 2: 'RS=800x480;DS=7;CP=219;OS=Android 4.1;SZ=194.8x123x12.8;WT=300;'
 
+kiowa:
+  s5 cristal: 'RE=2018.07;WT=;DS=5;RS=480x854;OI=1;OV=8.1;CP=6;RM=1024;SM=2'
+
+cgv:
+  ultimate t8: 'RE=2015.04;SZ=77.1x151.4x12.2;WT=210;DS=5;RS=720x1280;OI=1;OV=8.1;CP=;RM=2048;SM=2'
+
 #f2 mobile:
 #  z8 plus: 'DS=5;OI=1;OV=8.1;'
 #  z8plus: '->z8 plus'
