@@ -6823,6 +6823,10 @@ hisense:
   infinity h40 rock: 'SZ=76.4x166.2x9.47;WT=201;DS=6.52;RS=1080x2340;RM=4096;OI=1;OV=10;CP=290;RE=2020.04;'
   h30 lite: 'OI=1;OV=9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
 
+poco:
+  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OS=Android 11;CP=356;RM=6144'
+  21091116AG: '->m4 pro 5g'
+
 oppo:
   a15s: 'RE=2020.12;SZ=75.4x164x7.9;WT=177;DS=6.52;RS=720x1600;OI=1;OV=10;CP=38;RM=4096;'
   cph2179: '->a15s'
@@ -7109,6 +7113,19 @@ nomi:
 
 i-mobile:
   i-note 2: 'RS=800x480;DS=7;CP=219;OS=Android 4.1;SZ=194.8x123x12.8;WT=300;'
+
+kiowa:
+  s5 cristal: 'RE=2018.07;WT=;DS=5;RS=480x854;OI=1;OV=8.1;CP=6;RM=1024;SM=2'
+
+cgv:
+  ultimate t8: 'RE=2015.04;SZ=77.1x151.4x12.2;WT=210;DS=5;RS=720x1280;OI=1;OV=8.1;CP=;RM=2048;SM=2'
+
+hoffmann:
+  x play: 'RE=;SZ=71.3x142.5x9.2;WT=165.3;DS=5;RS=;OI=1;OV=6;CP=;RM=2048;SM=2'
+  x-play: '->x play'
+
+cyrus:
+  apel: 'RE=2013;SZ=66x132x9.8;WT=130;DS=4.5;RS=540x960;OI=1;OV=4.1;CP=235;RM=512;'
 
 #f2 mobile:
 #  z8 plus: 'DS=5;OI=1;OV=8.1;'

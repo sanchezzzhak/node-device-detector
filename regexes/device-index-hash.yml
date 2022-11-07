@@ -150,6 +150,8 @@ benz_hy1920x720:
   - Alps
 8227l_demo:
   - Alps
+quad-core t3 p3:
+  - Allwinner
 pixel 3:
   - Google
 m2006c3lg:
@@ -352,6 +354,8 @@ predator g9-793:
   - Acer
 macbookair6,2:
   - Apple
+inspiron 3541:
+  - Dell
 h135:
   - DEXP
 macbookair2,1:
@@ -633,6 +637,28 @@ satellite l50-c:
   - Toshiba
 samsung chromebook plus:
   - Samsung
+satellite c655:
+  - Toshiba
+satellite a100:
+  - Toshiba
+satellite pro l300:
+  - Toshiba
+inspiron n4050:
+  - Dell
+inspiron 5567:
+  - Dell
+inspiron 5545:
+  - Dell
+inspiron 5468:
+  - Dell
+inspiron 3558:
+  - Dell
+inspiron 3542:
+  - Dell
+inspiron 3521:
+  - Dell
+f0cu0028rk:
+  - Lenovo
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -801,6 +827,10 @@ tecno lg7n:
   - Tecno Mobile
 infinix x6819:
   - Infinix
+rr_fortuna3g:
+  - Samsung
+tecno lg8n:
+  - Tecno Mobile
 gi-626:
   - altron
 5039d_ru:
@@ -1825,48 +1855,6 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -30565,6 +30553,149 @@ fpt x3:
   - FPT
 fpt s68 4g:
   - FPT
+yu fly f8:
+  - YU Fly
+  - Fly
+sico topaz:
+  - Sico
+sgino6:
+  - iNo Mobile
+sakura_fte1:
+  - Freetel
+s90_apex:
+  - iHunt
+s62_eco_3:
+  - Four Mobile
+s554020:
+  - Fluo
+s5500:
+  - AllCall
+s51_lite:
+  - Cellacom
+s518:
+  - Ruio
+s5006:
+  - Ruio
+s2 advance:
+  - Smooth Mobile
+s186_sky_3:
+  - Four Mobile
+s17:
+  - Homtom
+s104g:
+  - Lephone
+s100apex:
+  - iHunt
+rs-401:
+  - Maxcom
+ru1:
+  - Konka
+rltp5573:
+  - RCA Tablets
+rio_rw:
+  - Mobicel
+rio_bn:
+  - Mobicel
+quatro 10:
+  - Quatro
+quatro 8:
+  - Quatro
+quatro fsm1453:
+  - Quatro
+quantum fly:
+  - Quantum
+  - Fly
+5053y_eea:
+  - Alcatel
+p6901:
+  - Wiko
+mobiistar e selfie:
+  - Mobiistar
+m653:
+  - China Mobile
+lg-us601:
+  - LG
+lg-m700v:
+  - LG
+lg-f430l:
+  - LG
+lg-f370s:
+  - LG
+gm 5:
+  - General Mobile
+gionee f6l:
+  - Gionee
+coolpad e2c:
+  - Coolpad
+coolpad cor-i0:
+  - Coolpad
+  - Huawei
+aqua ring:
+  - Intex
+aqua q8:
+  - Intex
+am1010v:
+  - White Mobile
+allinmobile_arena:
+  - ALLINmobile
+aerial:
+  - STF Mobile
+ads1:
+  - Sharp
+primo gh7:
+  - Walton
+primo gf6:
+  - Walton
+primo g8:
+  - Walton
+prime p444:
+  - Jivi
+prime p4442:
+  - Jivi
+prime p390:
+  - Jivi
+prime p300:
+  - Jivi
+prime p30:
+  - Jivi
+prime o8:
+  - PRIME
+positivo slim:
+  - Positivo
+plus2 4g:
+  - Sico
+pi_plus:
+  - OKWU
+pi plus:
+  - OKWU
+philips x598:
+  - Philips
+philips s369:
+  - Philips
+pearl_neo:
+  - Mint
+pearl a4:
+  - Accent
+pearl a4 plus:
+  - Accent
+panasonic p99:
+  - Panasonic
+22071219ci:
+  - POCO
+220733si:
+  - Xiaomi
+cph2477:
+  - OPPO
+rmx3612:
+  - Realme
+poco m4 5g:
+  - POCO
+pgbm10:
+  - OPPO
+vne-lx1:
+  - Huawei
+u616at:
+  - Wiko
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -37532,6 +37663,48 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -45558,6 +45731,57 @@ insignia delta 2:
   - GOCLEVER
 hykker_mytab10:
   - Hykker
+zed book g:
+  - iLife
+wx_un_do:
+  - Nvidia
+wv8-l:
+  - Bluewave
+viva_i7g:
+  - Allview
+via_s7-3g:
+  - Casper
+u103gt1:
+  - MyTab
+  - Cube
+tpc-xe10dw:
+  - JAY-Tech
+s180i:
+  - DEXP
+s180:
+  - DEXP
+rq-768:
+  - RoyQueen
+rq-712:
+  - RoyQueen
+p1050x:
+  - Medion
+p1040x:
+  - Medion
+nx16a8116kp:
+  - NextBook
+nx16a10132sps:
+  - NextBook
+magnet_w10:
+  - Vonino
+lg-lk460:
+  - LG
+konrow_701x:
+  - Konrow
+aquaris m10 fhd:
+  - bq
+  - Intex
+aquaris m10 4g:
+  - bq
+  - Intex
+alfa_8t:
+  - Hometech
+positivo bgh m840:
+  - BGH
+22081281ac:
+  - Xiaomi
+22081283g:
+  - Xiaomi
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -47266,6 +47490,8 @@ f43f8000qg:
   - DEXP
 gi fly t2:
   - Galaxy Innovations
+32lex-7162/ts2c:
+  - BBK
 bb2 pro:
   - Mecool
 kii pro:

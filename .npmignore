@@ -3,6 +3,7 @@ tests/
 .npmignore
 .github/
 .yamllint
+.eslintrc.cjs
 .idea/
 .prettierrc.json
 .prettierignore

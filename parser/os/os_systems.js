@@ -93,6 +93,7 @@ module.exports = {
   'RSO': 'Rosa',
   'ROU': 'RouterOS',
   'REM': 'Remix OS',
+  'RRS': 'Resurrection Remix OS',
   'REX': 'REX',
   'RZD': 'RazoDroiD',
   'SAB': 'Sabayon',
