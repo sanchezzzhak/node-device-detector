@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install modules
-        run: npm intall
-      - name: Run ESLint
-        run: npx eslint . --ext .jsx,.ts,.tsx
+      - uses: stefanoeb/eslint-action@1.0.2
+        with:
+          args: './**/*.{ts,tsx} --max-warnings 0'
