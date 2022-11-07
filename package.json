@@ -7,7 +7,8 @@
     "test": "mocha -- -R dot tests/*.spec.js",
     "test-coverage-text": "nyc --check-coverage --lines 90 --per-file --reporter=text mocha -- -R dot tests/*.spec.js",
     "test-coverage-html": "nyc --reporter=html mocha -- -R dot tests/*.spec.js",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "eslint": "eslint . --ext .jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",
