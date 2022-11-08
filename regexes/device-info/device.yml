@@ -5096,7 +5096,7 @@ intex:
   aqua 3g: 'DS=4;OI=1;OV=4.2;RM=512;RE=2014.06;RS=480x800;WT=105;SZ=65x125x10;CP=287;'
   aqua active: 'RE=2013.04;DS=3.5;RM=256;WT=122;SZ=49.70x115.30x13.80;OI=1;OV=2.3;RS=320x480;'
   aqua.active: '->aqua active'
-  aqua glory: ''
+  aqua glory: 'RE=2013.01;DS=4;RM=256;CP=246;WT=114;SZ=67.3x114x11.8;OI=1;OV=2.3;RS=320x480;SM=2;'
   aqua i-4+: ''
   aqua marvel: ''
   aqua star: ''
