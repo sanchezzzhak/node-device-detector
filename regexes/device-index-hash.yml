@@ -831,6 +831,8 @@ rr_fortuna3g:
   - Samsung
 tecno lg8n:
   - Tecno Mobile
+infinix x676c:
+  - Infinix
 gi-626:
   - altron
 5039d_ru:
@@ -1855,6 +1857,48 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -30696,6 +30740,95 @@ vne-lx1:
   - Huawei
 u616at:
   - Wiko
+v2143:
+  - Vivo
+v2158:
+  - Vivo
+v2168:
+  - Vivo
+v2188a:
+  - Vivo
+rmx3624:
+  - Realme
+rmx3630:
+  - Realme
+rmx3395:
+  - Realme
+rmx3563:
+  - Realme
+rmx3690:
+  - Realme
+infinix x665e:
+  - Infinix
+sm-m136b:
+  - Samsung
+sm-m536s:
+  - Samsung
+moto e32(s):
+  - Motorola
+moto g32:
+  - Motorola
+moto g72:
+  - Motorola
+infinix x665c:
+  - Infinix
+cph2337:
+  - OPPO
+cph2455:
+  - OPPO
+cph2461:
+  - OPPO
+cph2473:
+  - OPPO
+i2208:
+  - Vivo
+infinix x6827:
+  - Infinix
+infinix x668:
+  - Infinix
+n152dl:
+  - Nokia
+axioo_ax4:
+  - Axioo
+ax950:
+  - Bmobile
+ax925:
+  - Bmobile
+ax825:
+  - Bmobile
+avvio_pro550:
+  - Avvio
+avvio pro550:
+  - Avvio
+  - Polaroid
+avvio_pro450:
+  - Avvio
+avvio_a400:
+  - Avvio
+avance classic:
+  - Chico Mobile
+aurii_vivid:
+  - FireFly Mobile
+aurii_magnum:
+  - FireFly Mobile
+aurii_inspire:
+  - FireFly Mobile
+aurii_fame:
+  - FireFly Mobile
+aurii_amuse_4g:
+  - FireFly Mobile
+universetap:
+  - Oukitel
+uniden_c505:
+  - Uniden
+uniden c505:
+  - Uniden
+umi_fair:
+  - UMIDIGI
+u972_pro:
+  - Hisense
+u972:
+  - Hisense
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -37663,48 +37796,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -45782,6 +45873,13 @@ positivo bgh m840:
   - Xiaomi
 22081283g:
   - Xiaomi
+rt2:
+  - Oukitel
+ax502:
+  - Allview
+  - Bmobile
+ax501q:
+  - Allview
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
