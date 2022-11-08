@@ -781,6 +781,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     gpu_id: 5
   114:
     name: MediaTek Helio P70 MT6771
@@ -2422,3 +2423,17 @@ cpu:
     clock_rate: 2400
     process: 6nm
     gpu_id: 118
+  360:
+    name: Spreadtrum SC9830A
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    process: 28nm
+    gpu_id: 1
+  361:
+    name: Spreadtrum SC9832A
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
