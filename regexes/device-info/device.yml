@@ -6833,6 +6833,16 @@ poco:
   21091116AG: '->m4 pro 5g'
 
 oppo:
+  a15: 'RE=2020.10;SZ=75.4x164x7.9;WT=175;DS=6.52;RS=720x1600;OS=Android 10;CP=38;RM=2048;'
+  a31c: 'RE=2015.04;SZ=65.5x131.9x8;WT=135;DS=4.5;RS=480x854;OS=Android 4.4;CP=17;RM=1024;'
+  f5 youth: 'RE=2017.11;SZ=76x156.5x7.5;WT=152;DS=6.0;RS=1080x2160;OS=Android 7.1;CP=166;RM=3072;'
+  cph1725: '->f5 youth'
+  ob-oppo a31c: '->a31c'
+  cph2185: '->a15'
+  find x5 pro: 'RE=2022.02;SZ=;WT=218;DS=6.7;RS=1440x3216;OS=Android 12;CP=357;RM=8192;'
+  pffm20: '->find x5 pro'
+  pfem10: '->find x5 pro'
+  cph2305: '->find x5 pro;CP=362;'
   a15s: 'RE=2020.12;SZ=75.4x164x7.9;WT=177;DS=6.52;RS=720x1600;OI=1;OV=10;CP=38;RM=4096;'
   cph2179: '->a15s'
   a11: 'RE=2019.10;SZ=75.6x163.6x9.1;WT=195;DS=6.5;RS=720x1600;OI=1;OV=9;CP=283;RM=4096;'

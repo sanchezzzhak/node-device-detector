@@ -2437,3 +2437,10 @@ cpu:
     clock_rate: 1300
     process: 28nm
     gpu_id: 1
+  362:
+    name: MediaTek Dimensity 9000
+    type: ARM
+    cores: 8
+    clock_rate: 3500
+    process: 4nm
+    gpu_id: 119
