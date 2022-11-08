@@ -1362,8 +1362,7 @@ cpu:
     cores: 2/4
     gpu_id: 88
   207:
-    # SM8250
-    name: Qualcomm Snapdragon 865
+    name: Qualcomm Snapdragon 865  # SM8250
     type: ARM
     clock_rate: 2840
     cores: 8
@@ -2444,3 +2443,10 @@ cpu:
     clock_rate: 3500
     process: 4nm
     gpu_id: 119
+  363:
+    name: Qualcomm Snapdragon 680 4G  # SM6225
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 6nm
+    gpu_id: 92
