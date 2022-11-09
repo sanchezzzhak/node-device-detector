@@ -2,6 +2,55 @@ const ParserAbstract = require('./../abstract-parser');
 const DataPacker = require('./../../lib/data-packer');
 
 
+/**
+ * @typedef InfoResult
+ * @param {InfoDisplay} display
+ * @param {number|null} sim
+ * @param {string|InfoSize} size
+ * @param {string} weight
+ * @param {string|null} release
+ * @param {string|null} os
+ * @param {InfoHardware} hardware
+ * @param {InfoPerformance} performance
+ *
+ * @typedef InfoResolution
+ * @param {string} width
+ * @param {string} height
+ *
+ * @typedef InfoDisplay
+ * @param {string} size
+ * @param {string|InfoResolution} resolution
+ * @param {string} ratio
+ * @param {string} ppi
+ *
+ * @typedef InfoPerformance
+ * @param {number} antutu
+ *
+ * @typedef InfoHardwareCPU:
+ * @param {string} name
+ * @param {string} type
+ * @param {number} cores
+ * @param {number} clock_rate
+ * @param {string|null} process
+ * @param {number} gpu_id
+ *
+ * @typedef InfoHardwareGPU:
+ * @param {string} name
+ * @param {number} clock_rate
+ *
+ * @typedef InfoHardware
+ * @param {number} ram
+ * @param {number} cpu_id
+ * @param {InfoHardwareCPU} cpu
+ * @param {InfoHardwareGPU} gpu
+ *
+ * @typedef InfoSize
+ * @param {string} width
+ * @param {string} height
+ * @param {string} thickness
+ *
+ */
+
 /*
 
 ### Get more information about a device (experimental)
@@ -28,19 +77,6 @@ cast methods
 infoDevice.setSizeConvertObject(true);
 infoDevice.setResolutionConvertObject(true);
 ```
- */
-
-/**
- * @typedef InfoDisplay
- * @param {string} size
- * @param {string} resolution
- * @param {string} ratio
- *
- * @typedef InfoResult
- * @param {InfoDisplay} display
- * @param {string} size
- * @param {string} weight
- * @param {string|null} release
  */
 
 // private methods
@@ -174,17 +210,18 @@ const SHORT_KEYS = {
   DS: 'display.size',
   // DT: 'display.type',        // string: display type IPS, LCD, OLED, SLED etc.
   // TS: 'display.touch',       // boolean: touch support
-  RS: 'display.resolution', // string|obj: 1080x1920
-  SZ: 'size', // string|obj: 155.4x75.2x7.7
-  WT: 'weight', // int: weight
-  RE: 'release', // string:year release
-  RM: 'hardware.ram', // int: RAM in MB
-  CP: 'hardware.cpu_id', // int: <id>
-  GP: 'hardware.gpu_id', // int: <id>
-  OS: 'os', // string: Android 4.4
-  OI: 'os_id', // int: OS ID
-  OV: 'os_version', // int: OS ID
-  SM: 'sim', // int: count SIM
+  RS: 'display.resolution',     // string|obj: 1080x1920
+  SZ: 'size',                   // string|obj: 155.4x75.2x7.7
+  WT: 'weight',                 // int: weight
+  RE: 'release',                // string:year release
+  RM: 'hardware.ram',           // int: RAM in MB
+  CP: 'hardware.cpu_id',        // int: <id>
+  GP: 'hardware.gpu_id',        // int: <id>
+  OS: 'os',                     // string: Android 4.4
+  OI: 'os_id',                  // int: OS ID
+  OV: 'os_version',             // int: OS ID
+  SM: 'sim',                    // int: count SIM
+  TT: 'performance.antutu',     // int: antutu score
 };
 
 /**
@@ -290,6 +327,7 @@ class InfoDevice extends ParserAbstract {
     this.prepareResultHardware(result);
     this.prepareResultSoftware(result);
     this.prepareResultSize(result);
+    this.prepareResultPerformance(result);
     result = mergeDeep(result, mergeData);
 
     // redirect and overwrite params
@@ -386,6 +424,16 @@ class InfoDevice extends ParserAbstract {
       if (ppi) {
         result.display.ppi = String(ppi);
       }
+    }
+  }
+
+  /**
+   * Converts the values of the performance section to the desired format type
+   * @param result {InfoResult}
+   */
+  prepareResultPerformance(result) {
+    if(result.performance !== void 0 && result.performance.antutu !== void 0) {
+      result.performance.antutu = parseInt(result.performance.antutu);
     }
   }
 

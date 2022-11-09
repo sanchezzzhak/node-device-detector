@@ -146,7 +146,11 @@ describe('tests info-device', function() {
             }
           }
         }
-        
+
+        if (result.performance && result.performance.antutu !== void 0) {
+          expect(result.performance.antutu, formatMessageNumber).to.match(patternNumber);
+        }
+
         if (result.weight !== void 0 && result.weight !== '') {
           expect(result.weight, formatMessageFloat).to.match(patternFloat);
         }
