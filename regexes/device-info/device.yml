@@ -6818,6 +6818,14 @@ wiko:
   view 3: 'RE=2019.05;SZ=76.5x159.0x8.2;WT=178;DS=6.26;RS=720x1520;CP=171;RM=3072;OI=1;OV=9;'
   w-p311-ope: '->view 3'
   w-p311-eea: '->view 3'
+  y60: 'RE=2019.04;SZ=71.8x146.8x9.3;WT=177.7;DS=5.45;RS=480x960;OS=Android 9.0;CP=293;RM=1024;TT=32000;'
+  w-k510-eea: '->y60'
+  w-k510-tvm: '->y60'
+  w-k510-sun: '->y60'
+  w-k510-ope: '->y60'
+  w-k510-byt: '->y60'
+  w-k510-th: '->y60'
+  w-k510s-swi: '->y60'
 
 inoi:
   2: 'DS=5;RS=480x854;SZ=73.1x144x9.45;WT=162;RE=2018.04;OI=1;OV=7;RM=1024;CP=9;'
@@ -6832,6 +6840,11 @@ hisense:
 poco:
   m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=356;RM=6144'
   21091116AG: '->m4 pro 5g'
+  f2 pro: 'RE=2020.05;SZ=75.4x163.3x8.9;WT=219;DS=6.67;RS=1080x2400;OS=Android 10;CP=207;RM=6144;TT=538221;'
+  m2004j11g: '->f2 pro'
+#  x3 nfc: 'RE=2020.09;SZ=76.8x165.3x9.4;WT=215;DS=6.67;RS=1080x2400;OS=Android 10;CP=Qualcomm SM7150-AC Snapdragon 732G (8 nm);RM=6144;TT=283750;'
+#  m2007j20ct: '->x3 nfc'
+#  m2007j20cg: '->x3 nfc'
 
 oppo:
   a15: 'RE=2020.10;SZ=75.4x164x7.9;WT=175;DS=6.52;RS=720x1600;OI=1;OV=10;CP=38;RM=2048;'
