@@ -1893,8 +1893,7 @@ cpu:
     process: 12nm
     gpu_id: 25
   285:
-    name: Qualcomm Snapdragon 662
-    # SM6115
+    name: Qualcomm Snapdragon 662  # SM6115
     type: ARM
     clock_rate: 2000
     cores: 8
@@ -2450,3 +2449,10 @@ cpu:
     clock_rate: 2400
     process: 6nm
     gpu_id: 92
+  364:
+    name: Qualcomm Snapdragon 732G  # SM7150-AC
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 8nm
+    gpu_id: 96
