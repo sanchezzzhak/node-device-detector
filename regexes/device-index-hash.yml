@@ -12,6 +12,8 @@
   - Nokia
 '909':
   - Nokia
+'1201':
+  - OPPO
 '1819':
   - Vivo
 '1825':
@@ -37,6 +39,14 @@
 '8051':
   - Alcatel
 '8052':
+  - Alcatel
+'8054':
+  - Alcatel
+'8055':
+  - Alcatel
+'8056':
+  - Alcatel
+'8057':
   - Alcatel
 '8063':
   - Alcatel
@@ -815,6 +825,8 @@ pine a64:
   - PINE
 mc2700:
   - Zebra
+nbp-60:
+  - Sewoo
 sm-f721u:
   - Samsung
 note 13p:
@@ -833,6 +845,16 @@ tecno lg8n:
   - Tecno Mobile
 infinix x676c:
   - Infinix
+sc-54c:
+  - Samsung
+  - SuperSonic
+scg16:
+  - Samsung
+sc-55c:
+  - Samsung
+  - SuperSonic
+sm-w9023:
+  - Samsung
 gi-626:
   - altron
 5039d_ru:
@@ -1857,48 +1879,6 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -30829,6 +30809,274 @@ u972_pro:
   - Hisense
 u972:
   - Hisense
+pftm10:
+  - OPPO
+pha120:
+  - OPPO
+pggm10:
+  - OPPO
+nco-al00:
+  - Huawei
+ldox-2130:
+  - K-Touch
+v2166ba:
+  - Vivo
+v2219a:
+  - Vivo
+m2004j15sc:
+  - Xiaomi
+shg08:
+  - Sharp
+pixel 7:
+  - Google
+sh-m22:
+  - Sharp
+dco-al00:
+  - Huawei
+cet-al00:
+  - Huawei
+ava-pa00:
+  - TD Tech
+tyh622m:
+  - China Telecom
+sog09:
+  - Sony
+xq-ct44:
+  - Sony
+tfy-an40:
+  - Huawei
+adt-an00:
+  - Huawei
+tdt-ma01:
+  - TD Tech
+v2217a:
+  - Vivo
+tetc-f5:
+  - TETC
+rmo-an00:
+  - Huawei
+vne-an00:
+  - Huawei
+cosmos three:
+  - Cherry Mobile
+  - Hotwav
+crono 64:
+  - Majestic
+desire r7 lite:
+  - Cherry Mobile
+  - HTC
+diamond d1:
+  - Starmobile
+diamond d5:
+  - Invens
+diamond d6:
+  - Invens
+diamond m:
+  - Blu
+diamond_x:
+  - UMIDIGI
+u6 prime:
+  - Evercoss
+v7_metal:
+  - QMobile
+vfd720:
+  - Vodafone
+vfd 822:
+  - Vodafone
+vfd 529:
+  - Vodafone
+w-k130-byt:
+  - Wiko
+z2lite:
+  - iBrit
+z50_pro:
+  - Lava
+z518:
+  - Plum
+z519:
+  - Plum
+z9a:
+  - Leagoo
+zte a0722:
+  - ZTE
+me 3s:
+  - iVooMi
+me 2:
+  - iVooMi
+me 3:
+  - iVooMi
+me 4:
+  - iVooMi
+me 5:
+  - iVooMi
+mercury tough:
+  - Vsun
+  - Turbo-X
+aqua tough:
+  - Vsun
+  - Intex
+aqua twist:
+  - Intex
+huawei tag-l32:
+  - Huawei
+huawei tag-l23:
+  - Huawei
+huawei tag-l22:
+  - Huawei
+huawei tag-l21:
+  - Huawei
+huawei tag-l13:
+  - Huawei
+huawei tag-l03:
+  - Huawei
+huawei tag-l01:
+  - Huawei
+huawei rio-ul00:
+  - Huawei
+huawei rio-tl00:
+  - Huawei
+alh-bd00:
+  - Hi Nova
+sm-a135n:
+  - Samsung
+xq-cq72:
+  - Sony
+lgus990:
+  - LG
+lgus610:
+  - LG
+lgus110:
+  - LG
+lgs02:
+  - LG
+lgl56vl:
+  - LG
+lgl53bl:
+  - LG
+lgk520:
+  - LG
+lgk500j:
+  - LG
+lgk200f:
+  - LG
+lgas992:
+  - LG
+lg-m151:
+  - LG
+lg-k600:
+  - LG
+lg-k557:
+  - LG
+fantasy:
+  - Cell-C
+fero_j1:
+  - Fero
+flare_x_v3:
+  - Cherry Mobile
+flare_s_play:
+  - Cherry Mobile
+esmart_m2:
+  - Switel
+esmart e2:
+  - Switel
+esmart m3:
+  - Switel
+j7 pro:
+  - QMobile
+ivvi f2s:
+  - ivvi
+ix ultra:
+  - Maximus
+sigma_4_0:
+  - Ophone
+  - Sigma
+beeta_4_0:
+  - Ophone
+active 5.0:
+  - Ophone
+admire_unity:
+  - Zen
+v2212:
+  - Vivo
+v2214:
+  - Vivo
+notepad_y80:
+  - Dragon Touch
+v2164ka:
+  - Vivo
+zte 8031:
+  - ZTE
+a208sh:
+  - Sharp
+xtreme xt309:
+  - Jivi
+x_tigi_photo p20:
+  - X-TIGI
+x_tigi_v16:
+  - X-TIGI
+x_tigi_a2:
+  - X-TIGI
+x_rainbow:
+  - InFone
+z51:
+  - Lava
+z92:
+  - Lava
+z61:
+  - Lava
+asus_x00adc:
+  - Asus
+asus_x00ada:
+  - Asus
+asus_x009db:
+  - Asus
+alpha 950xl:
+  - Lanix
+aquaris m5.5:
+  - bq
+  - Intex
+duubee e1:
+  - Duubee
+t5 pro:
+  - Hotwav
+bush spira e2x 5" smartphone:
+  - Bush
+bush spira d2 5.5" smartphone:
+  - Bush
+bush spira c2 5" smartphone:
+  - Bush
+bush spira b2 5 smartphone:
+  - Bush
+turbo-x_epsilon:
+  - Turbo-X
+turbo-x y:
+  - Turbo-X
+turbo-x i:
+  - Turbo-X
+turbo-x lamda:
+  - Turbo-X
+turbo-x_pi_4g:
+  - Turbo-X
+turbox_i4g:
+  - Turbo-X
+turbo_x_pi 1 4g:
+  - Turbo-X
+lenovo s580:
+  - Lenovo
+lenovo s660:
+  - Lenovo
+lamia l01:
+  - Kzen
+l590a:
+  - FoxxD
+kzg scope:
+  - KZG
+iyou_m1:
+  - iYou
+navtech_touchy_f2:
+  - K-Lite
+tecno_wx3:
+  - Tecno Mobile
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -37057,18 +37305,21 @@ turbox_ray:
   - Turbo
 turbo_x5_black:
   - Turbo
+  - Turbo-X
 turbox5black:
   - Turbo
 turbox5hero:
   - Turbo
 turbo_x5_max:
   - Turbo
+  - Turbo-X
 turbox5space:
   - Turbo
 turbo x6 z:
   - Turbo
 turbo_x8:
   - Turbo
+  - Turbo-X
 ghongv10:
   - Ghong
 tele2_maxi:
@@ -37796,6 +38047,48 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -44765,6 +45058,82 @@ nitro phablet 7n:
   - Maxwest
 navo s:
   - Vonino
+fast818:
+  - Farassoo
+fast810:
+  - Farassoo
+etab5:
+  - General Mobile
+xgt_eea:
+  - Xgody
+xm14g:
+  - Xtratech
+xpad_m9_3g:
+  - Xwave
+x_tigi_joy7_tv:
+  - X-TIGI
+x_tigi_joy7_mate:
+  - X-TIGI
+xzpad412lte:
+  - Hamlet
+plane 8713t 3g ps8106pg:
+  - Digma
+tab 13:
+  - Blackview
+bush spira b1 8":
+  - Bush
+bush spira b1 10.1":
+  - Bush
+turbo-x coral ii:
+  - Turbo-X
+calltab10.1:
+  - Turbo-X
+calltab2gb10:
+  - Turbo-X
+calltab7inch:
+  - Turbo-X
+aqua_ii:
+  - Turbo-X
+  - Intex
+earth 7.0'3g:
+  - Infiniton
+earth10:
+  - Infiniton
+rainbowii 3g:
+  - Ainol
+  - Wiko
+rainbow 3g:
+  - Ainol
+  - Wiko
+rainbowiii3g:
+  - Turbo-X
+  - Wiko
+rubikii7:
+  - Turbo-X
+rubik 10.1 ii:
+  - Turbo-X
+rubik_10_iii:
+  - Turbo-X
+quad-core a33 inet:
+  - Turbo-X
+turbo-x tablet hive vi:
+  - Turbo-X
+orange mouve 2:
+  - Orange
+lanix_pad_e7:
+  - Lanix
+laika:
+  - SPC
+ktab_1003:
+  - Konrow
+njoy_turnus_8:
+  - nJoy
+njoy_tityos_10:
+  - nJoy
+njoy_arcas_7:
+  - nJoy
+neoqc4g:
+  - Master-G
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -45880,6 +46249,44 @@ ax502:
   - Bmobile
 ax501q:
   - Allview
+iplay9t:
+  - AllDocube
+ags3k-w20:
+  - Huawei
+vexia fcs e2 clm:
+  - Vexia
+vt701:
+  - Virzo
+viz070tab811blu:
+  - Vizmo
+viz101tab811blk:
+  - Vizmo
+webpad7007:
+  - Listo
+webpad_1003:
+  - Listo
+zoom:
+  - Mobicel
+meanit_c80c81:
+  - meanIT
+meanit_c10c11:
+  - meanIT
+tb132fu:
+  - Lenovo
+lguk750:
+  - LG
+lg-v755:
+  - LG
+lg-v525s1:
+  - LG
+lg-v525s3:
+  - LG
+lg-v525:
+  - LG
+lg-v522:
+  - LG
+lg-p755l:
+  - LG
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -47387,7 +47794,6 @@ h32f8000c:
   - Kivi
 rombica tv mercury:
   - Rombica
-  - Turbo-X
 rombica smart box q1:
   - Rombica
 x96_x6_i:
@@ -47590,6 +47996,12 @@ gi fly t2:
   - Galaxy Innovations
 32lex-7162/ts2c:
   - BBK
+10moons_t2:
+  - 10moons
+eo104k_bl:
+  - Blackpcs
+eo104k-bl:
+  - Blackpcs
 bb2 pro:
   - Mecool
 kii pro:
