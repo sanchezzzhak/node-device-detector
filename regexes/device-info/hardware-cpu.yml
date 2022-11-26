@@ -781,6 +781,7 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1500
+    process: 28nm
     gpu_id: 5
   114:
     name: MediaTek Helio P70 MT6771
@@ -1361,8 +1362,7 @@ cpu:
     cores: 2/4
     gpu_id: 88
   207:
-    # SM8250
-    name: Qualcomm Snapdragon 865
+    name: Qualcomm Snapdragon 865  # SM8250
     type: ARM
     clock_rate: 2840
     cores: 8
@@ -1893,8 +1893,7 @@ cpu:
     process: 12nm
     gpu_id: 25
   285:
-    name: Qualcomm Snapdragon 662
-    # SM6115
+    name: Qualcomm Snapdragon 662  # SM6115
     type: ARM
     clock_rate: 2000
     cores: 8
@@ -2422,3 +2421,38 @@ cpu:
     clock_rate: 2400
     process: 6nm
     gpu_id: 118
+  360:
+    name: Spreadtrum SC9830A
+    type: ARM
+    cores: 4
+    clock_rate: 1500
+    process: 28nm
+    gpu_id: 1
+  361:
+    name: Spreadtrum SC9832A
+    type: ARM
+    cores: 4
+    clock_rate: 1300
+    process: 28nm
+    gpu_id: 1
+  362:
+    name: MediaTek Dimensity 9000
+    type: ARM
+    cores: 8
+    clock_rate: 3500
+    process: 4nm
+    gpu_id: 119
+  363:
+    name: Qualcomm Snapdragon 680 4G  # SM6225
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 6nm
+    gpu_id: 92
+  364:
+    name: Qualcomm Snapdragon 732G  # SM7150-AC
+    type: ARM
+    cores: 8
+    clock_rate: 2300
+    process: 8nm
+    gpu_id: 96

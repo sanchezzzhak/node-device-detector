@@ -6,7 +6,6 @@ deviceInfo.setResolutionConvertObject(true);
 deviceInfo.setSizeConvertObject(true);
 
 const REPORT_TYPE_YML = 'yml';
-const REPORT_TYPE_USERAGENT = 'useragent';
 const REPORT_TYPE_JSON = 'json';
 
 let brand = process.argv[2];
@@ -16,10 +15,6 @@ let format = process.argv[4] || 'yml';
 function printReport(result, format = 'yml') {
   if (REPORT_TYPE_YML === format) {
     console.log(YAML.dump([result], { indent: 2, lineWidth: Infinity }));
-    return;
-  }
-  if (REPORT_TYPE_USERAGENT === format) {
-    console.log(result.user_agent);
     return;
   }
   if (REPORT_TYPE_JSON === format) {
