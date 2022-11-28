@@ -855,6 +855,10 @@ sc-55c:
   - SuperSonic
 sm-w9023:
   - Samsung
+infinix x6820:
+  - Infinix
+ego phab 3g:
+  - Torque
 gi-626:
   - altron
 5039d_ru:
@@ -31077,6 +31081,97 @@ navtech_touchy_f2:
   - K-Lite
 tecno_wx3:
   - Tecno Mobile
+pkt411:
+  - Condor
+itel p661w:
+  - iTel
+itel w4002:
+  - iTel
+power armor x11 pro:
+  - Ulefone
+view xl:
+  - Wiko
+sm-j260mu:
+  - Samsung
+motorola edge 30 ultra:
+  - Motorola
+moto e22i:
+  - Motorola
+iphone5,2:
+  - Apple
+iphone7,1:
+  - Apple
+zvii:
+  - Symphony
+vhem:
+  - Wiko
+sm-a236b:
+  - Samsung
+vne-lx3:
+  - Huawei
+b1 pro:
+  - F150
+x7_soul_pro:
+  - Allview
+  - iOcean
+iphone14,7:
+  - Apple
+t phone pro:
+  - T-Mobile
+t phone:
+  - T-Mobile
+zte a7040:
+  - ZTE
+rainbow lite:
+  - Wiko
+conquest s21:
+  - Conquest
+tecno ca6s:
+  - Tecno Mobile
+a2020n3:
+  - ZTE
+itel s663l:
+  - iTel
+vne-lx2:
+  - Huawei
+any-lx2:
+  - Huawei
+huawei g6-l11:
+  - Huawei
+tectoy_5029y:
+  - TecToy
+infocus m260:
+  - Foxconn
+infocus m812a:
+  - Foxconn
+infocus m680:
+  - Foxconn
+hongqi hq1:
+  - Santin
+g-tide_e520:
+  - G-TiDE
+g-tide vans 8:
+  - G-TiDE
+swipe_elite_3m:
+  - Swipe
+swipe_elite_3:
+  - Swipe
+sun_s5501:
+  - Solone
+starmobile play max:
+  - Starmobile
+starnaute 3:
+  - SFR
+mya9 dtv:
+  - MyPhone
+mya8 dtv:
+  - MyPhone
+mya7 dtv:
+  - MyPhone
+mya10:
+  - MyPhone
+my807:
+  - MyPhone
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -45134,6 +45229,29 @@ njoy_arcas_7:
   - nJoy
 neoqc4g:
   - Master-G
+mytab u30gt 2:
+  - Cube
+  - MyPhone
+m10a_3g:
+  - Multilaser
+kc770:
+  - Positivo BGH
+archos t 101 4g:
+  - Archos
+viva_h801_lte:
+  - Allview
+ipad8,5:
+  - Apple
+myt5 dtv:
+  - MyPhone
+myt3 dtv:
+  - MyPhone
+mygpad m1782:
+  - MygPad
+mygpad m1781:
+  - MygPad
+mygpad m1712:
+  - MygPad
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -46287,6 +46405,18 @@ lg-v522:
   - LG
 lg-p755l:
   - LG
+m9_wifi:
+  - Multilaser
+t15-eea:
+  - TOSCIDO
+a1-734:
+  - Acer
+itel w7002p:
+  - iTel
+energy tablet pro 3:
+  - Energy Sistem
+geofox mid 743+:
+  - GEOFOX
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -48002,6 +48132,10 @@ eo104k_bl:
   - Blackpcs
 eo104k-bl:
   - Blackpcs
+boxd7:
+  - DEALDIG
+supra shell hv550qub-b05:
+  - Supra
 bb2 pro:
   - Mecool
 kii pro:
