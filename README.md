@@ -41,7 +41,7 @@ Usage
 -
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 // or ESModule
 import DeviceDetector from "node-device-detector";
 
@@ -106,7 +106,7 @@ Result parse empty
 
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 const DeviceHelper = require('node-device-detector/helper');
 // or ESModule
 import DeviceDetector from "node-device-detector";
@@ -160,9 +160,9 @@ Using DeviceDetector + ClientHints
 
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 const DeviceHelper   = require('node-device-detector/helper');
-const { default: ClientHints}    = require('node-device-detector/client-hints');
+const ClientHints    = require('node-device-detector/client-hints').default;
 // or ESModule
 import DeviceDetector from "node-device-detector";
 import DeviceHelper from "node-device-detector/helper";
@@ -175,7 +175,7 @@ const detector = new DeviceDetector({
   // ... all options scroll to Setter/Getter/Options
 });
 
-const clientHints = new ClientHints;
+const clientHints = new ClientHints();
 const userAgent = res.headers['user-agent'];
 const clientHintData = clientHints.parse(res.headers);
 const result = detector.detect(userAgent, clientHintData);
@@ -192,7 +192,7 @@ Using parsers singly <a name="single-parsers"></a>
 #### Detect Bot
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 // or ESModule
 import DeviceDetector from "node-device-detector";
 
@@ -204,7 +204,7 @@ const result = detector.parseBot(userAgent);
 #### Detect Os
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 // or ESModule
 import DeviceDetector from "node-device-detector";
 
@@ -221,7 +221,7 @@ console.log('Result parse os', result);
 #### Detect Client 
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 // or ESModule
 import DeviceDetector from "node-device-detector";
 
@@ -238,7 +238,7 @@ console.log('Result parse client', result);
 #### Lite parse not detect brand
 ```js
 // commonJS
-const { default: DeviceDetector } = require('node-device-detector');
+const DeviceDetector = require('node-device-detector').default;
 // or ESModule
 import DeviceDetector from "node-device-detector";
 
