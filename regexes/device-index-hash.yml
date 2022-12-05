@@ -162,6 +162,8 @@ benz_hy1920x720:
   - Alps
 quad-core t3 p3:
   - Allwinner
+sda-80tab:
+  - Pioneer
 pixel 3:
   - Google
 m2006c3lg:
@@ -827,6 +829,8 @@ mc2700:
   - Zebra
 nbp-60:
   - Sewoo
+smart_prime:
+  - ATOL
 sm-f721u:
   - Samsung
 note 13p:
@@ -859,6 +863,12 @@ infinix x6820:
   - Infinix
 ego phab 3g:
   - Torque
+22021119kr:
+  - Xiaomi
+v2229a:
+  - Vivo
+scg17:
+  - Samsung
 gi-626:
   - altron
 5039d_ru:
@@ -1883,6 +1893,48 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -31103,6 +31155,58 @@ iphone7,1:
   - Apple
 zvii:
   - Symphony
+moon:
+  - Echo Mobiles
+momo3s:
+  - Mosimosi
+  - Ployer
+mobiistar_lai zumbo_s_2017_lite:
+  - Mobiistar
+mobiistar_lai zumbo_s_2017:
+  - Mobiistar
+mobiistar zumbo j2:
+  - Mobiistar
+mobiistar zoro 5:
+  - Mobiistar
+mobiistar lai z1 4g:
+  - Mobiistar
+mobell s50:
+  - Mobell
+m512:
+  - Smartex
+m50e-1a:
+  - Dialog
+m50 max:
+  - Evercoss
+m4-ss4458-r:
+  - M4tel
+m bot 54:
+  - Logicom
+m bot 51:
+  - Logicom
+lt_s9_note:
+  - LT Mobile
+lt18:
+  - F2 Mobile
+lt16:
+  - F2 Mobile
+lp infinity+:
+  - Leader Phone
+look:
+  - Echo Mobiles
+logic x4 plus:
+  - Logic
+logic instrument fieldbook f1b:
+  - Archos
+  - Logic Instrument
+light one:
+  - VIWA
+life x6:
+  - Citycall
+y8:
+  - Doogee
+x90l:
+  - Doogee
 vhem:
   - Wiko
 sm-a236b:
@@ -31172,6 +31276,68 @@ mya10:
   - MyPhone
 my807:
   - MyPhone
+rs35:
+  - CipherLab
+max80 plus:
+  - Maxfone
+kingkong mini 3:
+  - CUBOT
+infinix x6826b:
+  - Infinix
+xq-aq52:
+  - Sony
+sh-53c:
+  - Sharp
+rky-an00:
+  - Huawei
+mga-al00:
+  - Huawei
+2207122mc:
+  - Xiaomi
+ctr-lx2:
+  - Huawei
+gla-lx1:
+  - Huawei
+itel p682l:
+  - iTel
+p7plus:
+  - Lava
+lephone_w7r:
+  - Lephone
+p8 max:
+  - Gionee
+m300-l09:
+  - Huawei
+htc desire 22 pro:
+  - HTC
+qx1000:
+  - Fxtec
+v2180ga:
+  - Vivo
+v2164pa:
+  - Vivo
+g0615d:
+  - Gree
+v2231a:
+  - Vivo
+ixion es850:
+  - DEXP
+ixion es550:
+  - DEXP
+so-54c:
+  - Sony
+rmx3623:
+  - Realme
+memor 20:
+  - Datalogic
+neva rise s1:
+  - Maxcom
+nco-lx1:
+  - Huawei
+any-lx3:
+  - Huawei
+eve-lx9:
+  - Huawei
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -38142,48 +38308,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -45252,6 +45376,22 @@ mygpad m1781:
   - MygPad
 mygpad m1712:
   - MygPad
+ml-wi-m7_3g_plus:
+  - Multilaser
+mf716+:
+  - Mecer
+mf716:
+  - Mecer
+m10a-lite:
+  - Multilaser
+citi kids 81 cs8233mg:
+  - Digma
+octa-t700m-t2:
+  - EWIS
+pro 1600e 4g rs1248pl:
+  - Digma
+pro 1400e 4g rs1253pl:
+  - Digma
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -46417,6 +46557,22 @@ energy tablet pro 3:
   - Energy Sistem
 geofox mid 743+:
   - GEOFOX
+9295g_eea:
+  - TCL
+p7pro:
+  - Pritom
+p25_t_eea:
+  - Teclast
+p20s_row:
+  - Teclast
+u221-eea:
+  - YUMKEM
+tecno p702as:
+  - Tecno Mobile
+1ey4g:
+  - Mediacom
+nm-netpad7:
+  - Netmak
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -48136,6 +48292,18 @@ boxd7:
   - DEALDIG
 supra shell hv550qub-b05:
   - Supra
+smart box f3:
+  - Rombica
+smart box b1:
+  - Rombica
+h-dmp100:
+  - Hyundai
+neko_lt-50nx7020s:
+  - NEKO
+neko_lt-43nx8000s:
+  - NEKO
+haier android tv ff pro:
+  - Haier
 bb2 pro:
   - Mecool
 kii pro:
