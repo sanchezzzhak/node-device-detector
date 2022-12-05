@@ -40,7 +40,11 @@ yarn add node-device-detector
 Usage
 -
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+
 const detector = new DeviceDetector({
   clientIndexes: true,
   deviceIndexes: true,
@@ -101,10 +105,14 @@ Result parse empty
 [[top]](#top)
 
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
 const DeviceHelper = require('node-device-detector/helper');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+import DeviceHelper from "node-device-detector/helper";
 
-const detector = new DeviceDetector;
+const detector = new DeviceDetector();
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const result = detector.detect(userAgent);
 
@@ -151,9 +159,14 @@ Using DeviceDetector + ClientHints
 [[top]](#top)
 
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
 const DeviceHelper   = require('node-device-detector/helper');
-const ClientHints    = require('node-device-detector/client-hints')
+const { default: ClientHints}    = require('node-device-detector/client-hints');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+import DeviceHelper from "node-device-detector/helper";
+import ClientHints from "node-device-detector/client-hints";
 
 const detector = new DeviceDetector({
   clientIndexes: true,
@@ -178,7 +191,11 @@ Using parsers singly <a name="single-parsers"></a>
 
 #### Detect Bot
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+
 const userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)';
 const detector = new DeviceDetector();
 const result = detector.parseBot(userAgent);
@@ -186,7 +203,11 @@ const result = detector.parseBot(userAgent);
 
 #### Detect Os
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector({
   clientIndexes: true,
@@ -199,7 +220,11 @@ console.log('Result parse os', result);
 
 #### Detect Client 
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector({
     clientIndexes: true,
@@ -212,7 +237,11 @@ console.log('Result parse client', result);
 
 #### Lite parse not detect brand
 ```js
-const DeviceDetector = require('node-device-detector');
+// commonJS
+const { default: DeviceDetector } = require('node-device-detector');
+// or ESModule
+import DeviceDetector from "node-device-detector";
+
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const detector = new DeviceDetector({
   clientIndexes: true,
