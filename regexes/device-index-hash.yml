@@ -1893,48 +1893,6 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -38308,6 +38266,48 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
