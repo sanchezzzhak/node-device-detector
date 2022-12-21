@@ -869,6 +869,18 @@ v2229a:
   - Vivo
 scg17:
   - Samsung
+samsung-sm-n920a:
+  - Samsung
+samsung-sm-n915a:
+  - Samsung
+samsung-sm-n910a:
+  - Samsung
+sm-g530fz:
+  - Samsung
+sm-g530y:
+  - Samsung
+22101316c:
+  - Xiaomi
 gi-626:
   - altron
 5039d_ru:
@@ -31338,6 +31350,146 @@ any-lx3:
   - Huawei
 eve-lx9:
   - Huawei
+sm-g3300:
+  - Samsung
+samsung sm-g925j:
+  - Samsung
+sm-a605x:
+  - Samsung
+samsung sm-a605x:
+  - Samsung
+sm-j510:
+  - Samsung
+sm-j710:
+  - Samsung
+samsung sm-g955fd:
+  - Samsung
+samsung galaxy s10+:
+  - Samsung
+samsung sm-j727v:
+  - Samsung
+samsung sm-j727t:
+  - Samsung
+sm-j710fn:
+  - Samsung
+sm-a5ooh:
+  - Samsung
+sm-a045f:
+  - Samsung
+sm-g920s:
+  - Samsung
+samsung-sm-g920a:
+  - Samsung
+sm-g935a:
+  - Samsung
+samsung sm-g935a:
+  - Samsung
+sm-a6:
+  - Samsung
+sm-a6+:
+  - Samsung
+samsung sm-j727a:
+  - Samsung
+sm-j8:
+  - Samsung
+samsung sm-g490f:
+  - Samsung
+samsung-sm-g828a:
+  - Samsung
+samsung-sm-g870a:
+  - Samsung
+santin armor 2:
+  - Santin
+  - Ulefone
+samsung sm-g925a:
+  - Samsung
+roma r2:
+  - Gigabyte
+sm-g360v:
+  - Samsung
+sm-g360p:
+  - Samsung
+sm-g360m:
+  - Samsung
+sm-g360hu:
+  - Samsung
+sm-g850f:
+  - Samsung
+sm-g850fq:
+  - Samsung
+sm-g850a:
+  - Samsung
+sm-g801f:
+  - Samsung
+sm-g800r4:
+  - Samsung
+sm-g800hq:
+  - Samsung
+sm-g800h:
+  - Samsung
+sm-g360h:
+  - Samsung
+idroid royal v5:
+  - iDroid
+idolx 6040:
+  - Alcatel
+icherry c221:
+  - i-Cherry
+plume l5:
+  - Condor
+bq-6353l:
+  - bq
+armor 17 pro:
+  - Ulefone
+armor x6 pro:
+  - Ulefone
+itel a631w:
+  - iTel
+zte 7540n:
+  - ZTE
+power armor 18t:
+  - Ulefone
+tank 01:
+  - Unihertz
+infinix x6821:
+  - Infinix
+asus_ai2202_b:
+  - Asus
+bne-lx1:
+  - Huawei
+dco-lx9:
+  - Huawei
+s96gt:
+  - Doogee
+micromax q306:
+  - MicroMax
+note_1c:
+  - FiGi
+itel p552w:
+  - iTel
+asus_ai2203_d:
+  - Asus
+sh-rm19s:
+  - Sharp
+xm-sw1:
+  - X-Mobile
+v2220a:
+  - Vivo
+v2190a:
+  - Vivo
+sh-m24:
+  - Sharp
+wildfire e plus:
+  - HTC
+sm-g900f:
+  - Samsung
+sm-g900fq:
+  - Samsung
+andromax c46b2h:
+  - Haier
+  - Smartfren
+andromax b26d2h:
+  - Smartfren
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -46573,6 +46725,74 @@ tecno p702as:
   - Mediacom
 nm-netpad7:
   - Netmak
+samsung sm-t321:
+  - Samsung
+sm-t321:
+  - Samsung
+samsung sm-t905:
+  - Samsung
+samsung sm-t595n:
+  - Samsung
+samsung sm-t590x:
+  - Samsung
+samsung sm-t585n0:
+  - Samsung
+sm-t595n:
+  - Samsung
+sm-t819c:
+  - Samsung
+samsung-sm-t817a:
+  - Samsung
+s3t10in:
+  - Selecline
+ieos_quad_w:
+  - Odys
+ieos_quad_pro:
+  - Odys
+idsq8_3g:
+  - Digma
+idsq7_3g:
+  - Digma
+idsq8:
+  - Digma
+idsq7:
+  - Digma
+idsq11_3g:
+  - Digma
+idsq11:
+  - Digma
+idsq10_3g:
+  - Digma
+idrq10_3g:
+  - Digma
+idrq10:
+  - Digma
+creapad_1009_eea:
+  - Awow
+lenovo tb128xu:
+  - Lenovo
+tab r6 pro:
+  - Hotwav
+m8l plus:
+  - Blu
+ts-m704f-1:
+  - DIXON
+hipad max:
+  - Chuwi
+vivimage_e11:
+  - VIVIMAGE
+dtab01:
+  - Huawei
+ags3k-w00:
+  - Huawei
+tb-js101a:
+  - JoySurf
+bzt4-w19:
+  - Huawei
+readboy_g90s:
+  - Readboy
+deyi-10m18:
+  - DEYI
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -48304,6 +48524,13 @@ neko_lt-43nx8000s:
   - NEKO
 haier android tv ff pro:
   - Haier
+sm-led32m04s_-ver01:
+  - Soundmax
+  - Samsung
+smart box c1:
+  - Rombica
+as_4k_ci_lite:
+  - Openbox
 bb2 pro:
   - Mecool
 kii pro:
