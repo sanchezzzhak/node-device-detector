@@ -108,6 +108,12 @@
   - ONN
 '100026191':
   - ONN
+'100071481':
+  - ONN
+'100071483':
+  - ONN
+'100071485':
+  - ONN
 dmc-cm1:
   - Panasonic
 samsung ek-gn120:
@@ -5814,6 +5820,124 @@ sm-j9[7] prime:
   - Samsung
 sm-j9[8] pro:
   - Samsung
+element play:
+  - Kalley
+up 32:
+  - Positivo
+5002w:
+  - Alcatel
+t766s:
+  - TCL
+t790s:
+  - TCL
+m9106:
+  - Movitel
+art1:
+  - Yezz
+lio-l09:
+  - Huawei
+m8421:
+  - Movitel
+sp-6100:
+  - Siragon
+x67 5g:
+  - Archos
+a508dl:
+  - TCL
+uniqcell_a4:
+  - Uniqcell
+yolo:
+  - Positivo
+padua:
+  - Cellution
+bl60_tg17:
+  - Bmobile
+benny10:
+  - iPro
+easy_5_eea:
+  - Konrow
+5002u:
+  - Alcatel
+c55 pro:
+  - CORN
+trek:
+  - Olympia
+fenix8_3g:
+  - CORN
+mga-lx3:
+  - Huawei
+aura_z:
+  - Zuum
+black_z:
+  - Kalley
+u328aa:
+  - AT&T
+v2206:
+  - Vivo
+hd1917:
+  - OnePlus
+black_g_2:
+  - Kalley
+t771k:
+  - TCL
+t779w:
+  - TCL
+t767w:
+  - TCL
+t767g:
+  - TCL
+t603dl:
+  - TCL
+t506d:
+  - TCL
+t776o:
+  - TCL
+t671g:
+  - TCL
+v2139:
+  - Vivo
+t701dl:
+  - TCL
+u626aa:
+  - AT&T
+n151dl:
+  - Nokia
+4188c:
+  - TCL
+4188r:
+  - TCL
+n150dl:
+  - Nokia
+v2169:
+  - Vivo
+sl101ae:
+  - Cricket
+220733sl:
+  - Xiaomi
+6027a:
+  - Alcatel
+sl100ea:
+  - Cricket
+4188s:
+  - TCL
+olax prime 12:
+  - Olax
+v2221:
+  - Vivo
+rc608l:
+  - Orbic
+multilaser_e_pro:
+  - Multilaser
+logic l63:
+  - Logic
+logic l65 lite:
+  - Logic
+corn note1:
+  - CORN
+yestel p30:
+  - Yestel
+art1_pro:
+  - Yezz
 samsung sm-a605k/kku1arj1:
   - Samsung
 sm-a202k:
@@ -45544,6 +45668,30 @@ pro 1600e 4g rs1248pl:
   - Digma
 pro 1400e 4g rs1253pl:
   - Digma
+neocore_e2:
+  - neoCore
+9032t:
+  - Alcatel
+q3pro:
+  - Facetel
+mt-t800:
+  - Moxee
+x10mt16:
+  - Xtratech
+1hy4g:
+  - Mediacom
+core-t5:
+  - Crosscall
+100011886a:
+  - ONN
+100044018g:
+  - ONN
+9013t:
+  - Alcatel
+8094t_eea:
+  - Alcatel
+9309x:
+  - Alcatel
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -48531,6 +48679,10 @@ smart box c1:
   - Rombica
 as_4k_ci_lite:
   - Openbox
+you-box:
+  - Youin
+qk9max:
+  - Andowl
 bb2 pro:
   - Mecool
 kii pro:
