@@ -399,7 +399,7 @@ class DeviceDetector {
    * @returns {string|*}
    */
   prepareUserAgent(userAgent) {
-    if (userAgent && this.maxUserAgentSize && this.maxUserAgentSize > userAgent.length) {
+    if (userAgent && this.maxUserAgentSize && this.maxUserAgentSize < userAgent.length) {
       return String(userAgent.substr(0, this.maxUserAgentSize));
     }
     return userAgent;
