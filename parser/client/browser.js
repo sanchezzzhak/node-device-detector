@@ -8,10 +8,12 @@ const BrowserHints = require('./hints/browser-hints');
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 const browserHints = new BrowserHints;
 
+const CLIENTHINT_MAPPING = {
+  'Chrome': ['Google Chrome']
+};
+const IRIDIUM_VERSIONS = ['2022.04', '2022', '2022.11', '2021.12'];
+
 const compareBrandForClientHints = (brand) => {
-  const CLIENTHINT_MAPPING = {
-    'Chrome': ['Google Chrome']
-  };
   for (let brandName in CLIENTHINT_MAPPING) {
     for (let mapBrand of CLIENTHINT_MAPPING[brandName]) {
       if (brand.toLowerCase() === mapBrand.toLowerCase()) {
@@ -44,7 +46,7 @@ class Browser extends ClientAbstractParser {
     super.loadCollection();
     this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
   }
-  
+
   /**
    *
    * @param userAgent
@@ -72,21 +74,21 @@ class Browser extends ClientAbstractParser {
       version = hint.version;
       short = hint.short_name;
       family = this.buildFamily(short);
-      
+
       if (data) {
         // If version from client hints report 2022.04, then is the Iridium browser
         // https://iridiumbrowser.de/news/2022/05/16/version-2022-04-released
-        if (['2022.04', '2022'].indexOf(version) !== -1) {
+        if (IRIDIUM_VERSIONS.indexOf(version) !== -1) {
           name          = 'Iridium';
           short         = 'I1';
           engine        = data.engine;
           engineVersion = data.engine_version;
         }
-  
+
         if ('Atom' === name || 'Huawei Browser' === name) {
           version = data.version;
         }
-        
+
         if (
           data.name &&
           'Chromium' === name &&
@@ -102,12 +104,12 @@ class Browser extends ClientAbstractParser {
           name = data.name;
           short = data.short_name;
         }
-      
+
         if (name !== data.name && family === this.buildFamily(data.short_name)) {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
-      
+
         if (name === data.name) {
           engine = data.engine;
           engineVersion = data.engine_version;
@@ -122,32 +124,32 @@ class Browser extends ClientAbstractParser {
       short = data.short_name;
       engine = data.engine;
       engineVersion = data.engine_version;
-    
+
     }
-  
+
     family = this.buildFamily(short);
-  
+
     if (hash !== null && name !== hash.name) {
       name = hash.name;
       version = '';
       short = this.buildShortName(name)
-    
+
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
         engine = 'Blink'
         family = this.buildFamily(short) || 'Chrome';
         engineVersion = this.buildEngineVersion(userAgent, engine);
       }
     }
-  
+
     // exclude Blink engine version for browsers
     if ('Blink' === engine && 'Flow Browser' === name) {
       engineVersion = '';
     }
-  
+
     if (name === '') {
       return null;
     }
-  
+
     return {
       type: String(type),
       name: String(name),
@@ -158,7 +160,7 @@ class Browser extends ClientAbstractParser {
       family: String(family),
     }
   }
-  
+
   /**
    * @param {string} userAgent
    * @param {*} clientHints
@@ -172,7 +174,7 @@ class Browser extends ClientAbstractParser {
 
      return this.prepareParseResult(userAgent, data, hint, hash);
   }
-  
+
   parseFromHashHintsApp(clientHints) {
     return browserHints.parse(clientHints);
   }
@@ -188,7 +190,7 @@ class Browser extends ClientAbstractParser {
       for (let brandItem of brands) {
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
-          
+
           let shortName = this.getCollectionBrowsers()[browserName];
           let found = helper.fuzzyCompare(`${brand}`, browserName)
             || helper.fuzzyCompare(`${brand} Browser`, browserName)
@@ -200,13 +202,13 @@ class Browser extends ClientAbstractParser {
             version = String(brandItem.version);
             break;
           }
-  
+
           // If we detected a brand, that is not chromium,
           // we will use it, otherwise we will look further
           if ('' !== name && 'Chromium' !== name) {
             break;
           }
-          
+
         }
       }
 
@@ -221,13 +223,13 @@ class Browser extends ClientAbstractParser {
       version: version
     };
   }
-  
+
   parseUserAgentByPosition(userAgent, position = 0) {
     let item = this.collection[position];
     if (item === void 0) {
       return null;
     }
-    
+
     let regex = this.getBaseRegExp(item.regex);
     let match = regex.exec(userAgent);
 
