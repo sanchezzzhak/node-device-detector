@@ -67,7 +67,19 @@ describe('tests single parse nootebook', function () {
   }
 });
 
-describe('test discard options', function() {
+describe('test maxUserAgentSize option', function() {
+  this.timeout(TIMEOUT);
+  detector.maxUserAgentSize = 10;
+  expect(detector.maxUserAgentSize).to.equal(10);
+  let UA = 'Mozilla/5.0 (Linux; Android 5.1; Primo ZX2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36';
+  let result = detector.detect(UA);
+  expect(result.device.model).to.equal('');
+  expect(result.device.type).to.equal('');
+  expect(result.device.brand).to.equal('');
+  detector.maxUserAgentSize = null;
+});
+
+describe('test deviceAliasCode options', function() {
   this.timeout(TIMEOUT);
   let UA = 'Mozilla/5.0 (Linux; Android 5.1; Primo ZX2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36';
   it('test deviceAliasCode enable', () => {

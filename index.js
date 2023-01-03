@@ -77,6 +77,7 @@ class DeviceDetector {
     this.__deviceAliasCode = false;
     this.__clientVersionTruncate = null;
     this.__osVersionTruncate = null;
+    this.__maxUserAgentSize = null;
 
     this.init();
 
@@ -86,6 +87,7 @@ class DeviceDetector {
     this.deviceIndexes = attr(options, 'deviceIndexes', false);
     this.clientIndexes = attr(options, 'clientIndexes', false);
     this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
+    this.maxUserAgentSize = attr(options, 'maxUserAgentSize', null);
   }
 
   init() {
@@ -113,6 +115,31 @@ class DeviceDetector {
     this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser());
 
     this.addParseBot(BOT_PARSER, new BotParser());
+  }
+
+  /**
+   * Set string size limit for the useragent
+   * @param {number} size
+   */
+  set maxUserAgentSize(size) {
+    this.__maxUserAgentSize = size;
+    for (let name in this.clientParserList) {
+      this.clientParserList[name].setMaxUserAgentSize(size);
+    }
+    for (let name in this.osParserList) {
+      this.osParserList[name].setMaxUserAgentSize(size);
+    }
+    for (let name in this.deviceParserList) {
+      this.deviceParserList[name].setMaxUserAgentSize(size);
+    }
+  }
+
+  /**
+   * Get string size limit for the useragent
+   * @returns {null|number}
+   */
+  get maxUserAgentSize() {
+    return this.__maxUserAgentSize;
   }
 
   get skipBotDetection() {
@@ -200,7 +227,7 @@ class DeviceDetector {
 
   /**
    * get truncate os version
-   * @return {}
+   * @return {null|number}
    */
   get osVersionTruncate() {
     return this.__osVersionTruncate;
@@ -367,6 +394,18 @@ class DeviceDetector {
   }
 
   /**
+   * prepare user agent for restrict rules
+   * @param {string|*} userAgent
+   * @returns {string|*}
+   */
+  prepareUserAgent(userAgent) {
+    if (userAgent && this.maxUserAgentSize && this.maxUserAgentSize < userAgent.length) {
+      return String(userAgent.substr(0, this.maxUserAgentSize));
+    }
+    return userAgent;
+  }
+
+  /**
    * parse device type
    * @param {string} userAgent
    * @param {ResultOs} osData
@@ -382,6 +421,9 @@ class DeviceDetector {
     deviceData,
     clientHints,
   ) {
+
+    userAgent = this.prepareUserAgent(userAgent);
+
     let osName = attr(osData, 'name', '');
     let osFamily = attr(osData, 'family', '');
     let osVersion = attr(osData, 'version', '');
@@ -702,6 +744,7 @@ class DeviceDetector {
    * @return {DetectResult}
    */
   async detectAsync(userAgent, clientHints = {}) {
+    userAgent = this.prepareUserAgent(userAgent);
     let devicePromise = new Promise((resolve) => {
       return resolve(this.parseDevice(userAgent, clientHints));
     });
@@ -732,6 +775,7 @@ class DeviceDetector {
    * @return {DetectResult}
    */
   detect(userAgent, clientHints = {}) {
+    userAgent = this.prepareUserAgent(userAgent);
     let deviceData = this.parseDevice(userAgent, clientHints);
     let osData = this.parseOs(userAgent, clientHints);
     let clientData = this.parseClient(userAgent, clientHints);

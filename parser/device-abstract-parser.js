@@ -147,7 +147,7 @@ class DeviceParserAbstract extends ParserAbstract {
    * @returns {{model: (string|string), id: (*|string), type: string, brand: string}|null}
    */
   parse(userAgent, brandIndexes = []) {
-    
+    userAgent = this.prepareUserAgent(userAgent);
     let result = this.__parse(userAgent, true, brandIndexes);
     if (result.length) {
       return result[0];
