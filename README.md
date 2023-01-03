@@ -270,6 +270,7 @@ const detector = new DeviceDetector({
   deviceIndexes: true,       // Using indexes for faster device search (default false)
   clientIndexes: true,       // Using indexes for faster client search (default false)
   deviceAliasCode: false,    // adds the device code to result device.code as is (default false)
+  maxUserAgentSize: 500,     // uses only 500 chars from useragent string (default null - unlimited)
 });
 
 // You can override these settings at any time using special setters, example
@@ -278,6 +279,7 @@ detector.clientVersionTruncate = 2;
 detector.deviceIndexes = true;
 detector.clientIndexes = true;
 detector.deviceAliasCode = true;
+detector.maxUserAgentSize = 500;
 
 // Array available device types
 detector.getAvailableDeviceTypes();
