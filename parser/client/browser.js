@@ -167,12 +167,11 @@ class Browser extends ClientAbstractParser {
    * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
    */
   parse(userAgent, clientHints) {
-
+    userAgent = this.prepareUserAgent(userAgent);
     let hash = this.parseFromHashHintsApp(clientHints);
     let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
-
-     return this.prepareParseResult(userAgent, data, hint, hash);
+    return this.prepareParseResult(userAgent, data, hint, hash);
   }
 
   parseFromHashHintsApp(clientHints) {

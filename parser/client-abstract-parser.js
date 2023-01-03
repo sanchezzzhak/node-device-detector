@@ -26,7 +26,8 @@ class ClientAbstractParser extends ParserAbstract {
     if (!userAgent) {
       return null;
     }
-    
+    userAgent = this.prepareUserAgent(userAgent);
+
     // scan indexes
     if (this.clientIndexes) {
      let result = this.parseUserAgentByPositions(userAgent);

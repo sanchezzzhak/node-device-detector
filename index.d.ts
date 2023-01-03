@@ -26,6 +26,8 @@ export default class DeviceDetector {
   get clientVersionTruncate(): any;
   set clientIndexes(arg: boolean);
   get clientIndexes(): boolean;
+  get maxUserAgentSize(): null|number;
+  set maxUserAgentSize(size: number);
   setOsVersionTruncate(value: any): void;
   setClientVersionTruncate(value: any): void;
 
@@ -154,6 +156,7 @@ export interface DeviceDetectorOptions {
   skipBotDetection?: boolean;
   osVersionTruncate?: number | null;
   clientVersionTruncate?: number | null;
+  maxUserAgentSize?: number | null;
   deviceIndexes?: boolean;
   clientIndexes?: boolean;
   deviceAliasCode?: boolean;

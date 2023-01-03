@@ -18,7 +18,6 @@ class FeedReader extends ClientAbstractParser {
    * @returns {({name: (string|*), type: string, version: string} & {type: string})|null}
    */
   parse(userAgent, clientHintsData) {
-    
     let result = super.parse(userAgent, clientHintsData);
     if (result) {
       result = Object.assign(result, {

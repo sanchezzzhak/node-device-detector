@@ -42,6 +42,7 @@ class AliasDevice extends AbstractParser {
    * @returns {{name: string}}
    */
   parse(userAgent) {
+    userAgent = this.prepareUserAgent(userAgent);
     let result = {
       name: '',
     };

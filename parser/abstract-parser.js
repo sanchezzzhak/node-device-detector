@@ -6,7 +6,8 @@ const BASE_REGEXES_DIR = __dirname + '/../regexes/';
  * @return {string}
  */
 function fixStringName(result) {
-  return result.replace(new RegExp('_', 'g'), ' ').replace(/ TD$/i, '');
+  return result.replace(new RegExp('_', 'g'), ' ')
+      .replace(/ TD$/i, '');
 }
 
 /**
@@ -25,6 +26,7 @@ class ParserAbstract {
     this.collection = null;
     this.type = null;
     this.versionTruncation = null;
+    this.maxUserAgentSize = null;
   }
 
   /**
@@ -35,6 +37,7 @@ class ParserAbstract {
   }
 
   /**
+   * load yaml file
    * @param {string} file
    * @returns {*}
    */
@@ -97,8 +100,28 @@ class ParserAbstract {
   }
 
   /**
-   * @param version
-   * @param matches
+   * Set string size limit for the useragent
+   * @param {number} size
+   */
+  setMaxUserAgentSize(size) {
+    this.maxUserAgentSize = size;
+  }
+
+  /**
+   * Prepare user agent for restrict rules
+   * @param {string|*} userAgent
+   * @returns {string|*}
+   */
+  prepareUserAgent(userAgent) {
+    if (userAgent && this.maxUserAgentSize && this.maxUserAgentSize > userAgent.length) {
+      return String(userAgent.substr(0, this.maxUserAgentSize));
+    }
+    return userAgent;
+  }
+
+  /**
+   * @param {string|number} version
+   * @param {array} matches
    * @return {string}
    */
   buildVersion(version, matches) {

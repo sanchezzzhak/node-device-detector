@@ -178,6 +178,7 @@ class OsAbstractParser extends ParserAbstract {
    * @returns {null|{name: (string|*), short_name: string, family: string, version: string, platform: string}}
    */
   parse(userAgent, clientHints) {
+    userAgent = this.prepareUserAgent(userAgent);
     let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
 
