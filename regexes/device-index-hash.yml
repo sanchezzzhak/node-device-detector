@@ -108,11 +108,15 @@
   - ONN
 '100026191':
   - ONN
+'100043279':
+  - ONN
 '100071481':
   - ONN
 '100071483':
   - ONN
 '100071485':
+  - ONN
+'100071486':
   - ONN
 dmc-cm1:
   - Panasonic
@@ -677,6 +681,8 @@ inspiron 3521:
   - Dell
 f0cu0028rk:
   - Lenovo
+inspiron 13-5378:
+  - Dell
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -886,6 +892,10 @@ sm-g530fz:
 sm-g530y:
   - Samsung
 22101316c:
+  - Xiaomi
+22087ra4di:
+  - Xiaomi
+22101316ucp:
   - Xiaomi
 gi-626:
   - altron
@@ -4847,6 +4857,38 @@ avvio_l800:
   - Avvio
 admire blaze:
   - Zen
+rmx3661:
+  - Realme
+v2160:
+  - Vivo
+v2203:
+  - Vivo
+v2228:
+  - Vivo
+v2208:
+  - Vivo
+x668_64gb:
+  - Qubo
+wtvis01:
+  - Verizon
+t774b:
+  - TCL
+t781s:
+  - TCL
+t781spp:
+  - TCL
+samba65s:
+  - iPro
+rhino-quest:
+  - Ruggex
+rs-403:
+  - Syco
+p1_amateur:
+  - Kempler & Strauss
+osmartphona:
+  - MTC
+nco-lx3:
+  - Huawei
 runbof1:
   - Runbo
 runbo f1 plus:
@@ -5938,6 +5980,118 @@ yestel p30:
   - Yestel
 art1_pro:
   - Yezz
+aura plus jlo:
+  - Zuum
+boost_max:
+  - Hi
+boost:
+  - Hi
+b60pro:
+  - Bmobile
+c60 ultra:
+  - CORN
+city5:
+  - Konrow
+cs22xa:
+  - Cyrus
+cs22xa_eea:
+  - Cyrus
+w626 lite:
+  - Wolki
+mh-t6000:
+  - Moxee
+ws5se:
+  - Wolki
+ws626:
+  - Wolki
+22071219ai:
+  - Xiaomi
+2210132c:
+  - Xiaomi
+6165s:
+  - TCL
+6159a:
+  - TCL
+6127a:
+  - TCL
+6102a:
+  - TCL
+6056a:
+  - Alcatel
+6025a:
+  - Alcatel
+6002a:
+  - Alcatel
+6002d:
+  - Alcatel
+4163d:
+  - TCL
+4188l:
+  - TCL
+5031a:
+  - Alcatel
+5031d:
+  - Alcatel
+5032o:
+  - Alcatel
+5033fr:
+  - Alcatel
+5033mp:
+  - Alcatel
+5033tr:
+  - Alcatel
+5033dr:
+  - Alcatel
+5058j:
+  - Alcatel
+5102l:
+  - TCL
+5124j:
+  - TCL
+5102p:
+  - TCL
+5102o:
+  - TCL
+5164d:
+  - TCL
+alpha 5g:
+  - 'True'
+cm17xa:
+  - Cyrus
+ctr-lx3:
+  - Huawei
+digitplay1:
+  - Digit4G
+elite b65:
+  - Sky
+elite_g55:
+  - Sky
+faith29:
+  - MTN
+genesis_126:
+  - Mobile Kingdom
+gla-lx3:
+  - Huawei
+hammer_blade_5g:
+  - Hammer
+hammer_explorer_plus:
+  - Hammer
+halo4 pro:
+  - Airpha
+z3353ca:
+  - ZTE
+studio x10l:
+  - Blu
+wtckt01:
+  - Cricket
+rmx3493:
+  - Realme
+rmx3396:
+  - Realme
+rmx3572:
+  - Realme
+i2201:
+  - Vivo
 samsung sm-a605k/kku1arj1:
   - Samsung
 sm-a202k:
@@ -17516,6 +17670,7 @@ astro-s451:
   - Astro
 astro s501:
   - Astro
+  - Obi
 astro 5s:
   - Maxwest
 astro x55:
@@ -31614,6 +31769,132 @@ andromax c46b2h:
   - Smartfren
 andromax b26d2h:
   - Smartfren
+heyou10:
+  - Essentielb
+hermes:
+  - Qubo
+hl4736:
+  - Advance
+hl5585:
+  - Advance
+phoenix 2:
+  - Fly
+philips_w3568:
+  - Philips
+pap7500:
+  - Prestigio
+pap5503duo:
+  - Prestigio
+sf1:
+  - Obi
+roar_a50:
+  - Symphony
+qmobile z8 plus:
+  - QMobile
+qmobile x950:
+  - QMobile
+model y:
+  - Sunmax
+smartvision3:
+  - Kapsys
+ctr-al00:
+  - Huawei
+a201kc:
+  - Kyocera
+bq-5033:
+  - bq
+xt2241-1:
+  - Motorola
+primo hm5:
+  - Walton
+z pro:
+  - UMIDIGI
+y777_fire:
+  - SSKY
+y6c:
+  - Doogee
+xylo x:
+  - Vonino
+xm300:
+  - Landvo
+xm200 pro:
+  - Landvo
+xcom x520:
+  - XCOM
+xcom ismart:
+  - XCOM
+x5maxpro:
+  - Doogee
+x5max_s:
+  - Doogee
+x5_pro:
+  - Akai
+x501_prime:
+  - Cellacom
+x5 metal:
+  - Akai
+x3_pro_slim:
+  - Akai
+x28:
+  - Lava
+x28 plus:
+  - Lava
+x3 pro slim:
+  - Akai
+x-treme_pq17:
+  - Sigma
+x-treme_pq14:
+  - Sigma
+wolder_34:
+  - Wolder
+wolder_27:
+  - Wolder
+'wolder wiam #65':
+  - Wolder
+'wolder wiam #51':
+  - Wolder
+'wolder wiam #23':
+  - Wolder
+wise2_plus:
+  - Telego
+winstar s-5:
+  - Winstar
+wileyfox surf:
+  - Wileyfox
+wiam_33:
+  - Wolder
+wiam_65_lite:
+  - Wolder
+vr bot 552:
+  - Logicom
+vr bot 552 plus:
+  - Logicom
+pocket 3:
+  - CUBOT
+bv5200:
+  - Blackview
+bv7200:
+  - Blackview
+asus_ai2203_c:
+  - Asus
+cph2471:
+  - OPPO
+motorola edge 30 neo:
+  - Motorola
+lenovo l71091:
+  - Lenovo
+air1 ultra:
+  - F150
+primo gh10i:
+  - Walton
+zte 9100n:
+  - ZTE
+infinix x6825:
+  - Infinix
+santin hexin-h2-a:
+  - Santin
+santin hexin-h3:
+  - Santin
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -35879,6 +36160,7 @@ ilium s106:
   - Lanix
 ilium s520:
   - Lanix
+  - Obi
 ilium s620:
   - Lanix
 ilium s670:
@@ -41158,7 +41440,6 @@ eos10:
   - Odys
 falcon_10_plus_3g:
   - Odys
-  - Obi
 fusion:
   - Odys
 ieos_quad_10_pro:
@@ -45692,6 +45973,34 @@ core-t5:
   - Alcatel
 9309x:
   - Alcatel
+acrux:
+  - Ceibal
+bellatrix:
+  - Ceibal
+btpc-1022qc3g-tv:
+  - Brigmton
+c15100m:
+  - Kurio
+c70w:
+  - Cwowdefu
+100015685-e:
+  - ONN
+tp7a4:
+  - Philco
+wm1001:
+  - Wecool
+ent11qf12:
+  - Entity
+sgin_x10:
+  - SGIN
+rmp2107:
+  - Realme
+t21-eea:
+  - TOSCIDO
+t22-eea:
+  - TOSCIDO
+r8l5t:
+  - Orbic
 tq700:
   - GOCLEVER
 tpc-xte8:
@@ -46941,6 +47250,44 @@ readboy_g90s:
   - Readboy
 deyi-10m18:
   - DEYI
+p10hd_lite:
+  - Teclast
+lavie t8 8hd1:
+  - NEC
+sm-t815c:
+  - Samsung
+bah4-al10:
+  - Huawei
+yy-107h:
+  - YELLYOUTH
+waltter neo 10.1:
+  - Waltter
+m40 plus_eea:
+  - Teclast
+kl2108nbe:
+  - Klipad
+tb328xu:
+  - Lenovo
+opd2101:
+  - OPPO
+vivah8lte:
+  - Allview
+vivah7lte:
+  - Allview
+vivah10lte:
+  - Allview
+pro 1800f 4g rs1249pl:
+  - Digma
+ags5-l09:
+  - Huawei
+p30hd_row:
+  - Teclast
+zl80:
+  - BDF
+sm-x806e:
+  - Samsung
+g101-og:
+  - Santin
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -48683,6 +49030,32 @@ you-box:
   - Youin
 qk9max:
   - Andowl
+superbox_s2pro:
+  - SuperBOX
+polar_wk_p43u51t2scsm:
+  - Polar
+polar_wk_p39l21t2csm:
+  - Polar
+youwei mini5g:
+  - Youwei
+vim2:
+  - Khadas
+vinabox_x2-2018:
+  - Vinabox
+vinabox-x10plus:
+  - Vinabox
+vinabox x9 2018:
+  - Vinabox
+vinabox-x9:
+  - Vinabox
+vinabox-x2:
+  - Vinabox
+32f700gr:
+  - Kivi
+ulx-43utcs347:
+  - Yuno
+rombica tv air:
+  - Rombica
 bb2 pro:
   - Mecool
 kii pro:
@@ -49159,6 +49532,8 @@ dns:
   - DNS
 audi_ks1280x480: []
 ks1280x480: []
+aosp on r33a0: []
+hx322x_box: []
 leo-bx9:
   - Huawei
 lg watch urbane:
