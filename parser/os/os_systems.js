@@ -87,6 +87,7 @@ module.exports = {
   'PS3': 'PlayStation',
   'PUR': 'PureOS',
   'RHT': 'Red Hat',
+  'RED': 'RedOS',
   'REV': 'Revenge OS',
   'ROS': 'RISC OS',
   'ROK': 'Roku OS',
