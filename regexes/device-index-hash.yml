@@ -18,6 +18,10 @@
   - Vivo
 '1825':
   - Coolpad
+'2032':
+  - Coolpad
+'2039':
+  - Coolpad
 '5041':
   - Advan
 '5058':
@@ -35,6 +39,8 @@
 '6002':
   - Advan
 '6004':
+  - Advan
+'6201':
   - Advan
 '8051':
   - Alcatel
@@ -843,6 +849,10 @@ nbp-60:
   - Sewoo
 smart_prime:
   - ATOL
+vormor-x5-pro:
+  - Vormor
+smart_slim_plus:
+  - ATOL
 sm-f721u:
   - Samsung
 note 13p:
@@ -897,6 +907,10 @@ sm-g530y:
   - Xiaomi
 22101316ucp:
   - Xiaomi
+sm-f721c:
+  - Samsung
+samsung sm-f7210:
+  - Samsung
 gi-626:
   - altron
 5039d_ru:
@@ -1921,6 +1935,10 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
+musicpad_m1:
+  - Vonino
+musicpad_h1:
+  - Vonino
 da220hql:
   - Acer
 da241hl:
@@ -31895,6 +31913,109 @@ santin hexin-h2-a:
   - Santin
 santin hexin-h3:
   - Santin
+vertex_luck_l_5045_3g:
+  - Vertex
+redmi 9t nfc_sn:
+  - Xiaomi
+lt c3200:
+  - LT Mobile
+tf6:
+  - Telefunken
+symbol:
+  - Hotwav
+symbol pro:
+  - Hotwav
+star7 3g:
+  - CORN
+star 6.0 g65:
+  - EKO
+star 5.5 g55:
+  - EKO
+star 5.0 g50:
+  - EKO
+star 4.0 g40:
+  - EKO
+zte c2017:
+  - ZTE
+tecno wx3lte:
+  - Tecno Mobile
+redmi 10 2022:
+  - Xiaomi
+ef501:
+  - Bluebird
+santin bdsharing:
+  - Santin
+apk ukozi u6:
+  - Ark
+luck l130:
+  - Vertex
+stark:
+  - GFive
+rd86qe:
+  - DSIC
+s32_nfc:
+  - Altice
+rk95:
+  - CipherLab
+eda61k:
+  - Honeywell
+v18 pro_a:
+  - X-TIGI
+thomson serea500:
+  - Thomson
+mascom s750:
+  - Mascom
+npa205sh:
+  - Sharp
+abr-al80:
+  - Huawei
+2211133c:
+  - Xiaomi
+v2241a:
+  - Vivo
+cet-al60:
+  - Huawei
+23013rk75c:
+  - Xiaomi
+v2244a:
+  - Vivo
+anp-an00:
+  - Huawei
+shg10:
+  - Sharp
+a202zt:
+  - ZTE
+sc-56c:
+  - Samsung
+  - SuperSonic
+xq-cq44:
+  - Sony
+mgz-bd00:
+  - Hi Nova
+v2243a:
+  - Vivo
+p-01k:
+  - Panasonic
+f-52b:
+  - Fujitsu
+v2238a:
+  - Vivo
+phm110:
+  - OPPO
+pgw110:
+  - OPPO
+land rover explore r:
+  - Land Rover
+infinix x680c:
+  - Infinix
+new 11:
+  - VGO TEL
+soshphone:
+  - SOSH
+sts550:
+  - Saiet
+symphony z32:
+  - Symphony
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -47288,6 +47409,90 @@ sm-x806e:
   - Samsung
 g101-og:
   - Santin
+m bot tab 103:
+  - Logicom
+m bot tab 10:
+  - Logicom
+teo13p:
+  - Thomson
+teo10s:
+  - Thomson
+tf501_ec:
+  - Telefunken
+tab8plus:
+  - Masstel
+tab7q804val:
+  - VALTECH
+tab7a3g05:
+  - Sankey
+tab7plus:
+  - Masstel
+tab5:
+  - GIRASOLE
+tab10plus:
+  - Masstel
+tab1081:
+  - Sunstech
+tab-s1:
+  - MOVISUN
+t7a6inc:
+  - Noblex
+t3g_04:
+  - Samtech
+mp01a3g:
+  - MwalimuPlus
+torex pad 8pro:
+  - Torex
+torex pad 8 pro:
+  - Torex
+kfrawi:
+  - Amazon
+kfquwi:
+  - Amazon
+kfthwi:
+  - Amazon
+readboy_g550a:
+  - Readboy
+tb138fc:
+  - Lenovo
+rod-w09:
+  - Huawei
+jt10-x:
+  - Geanee
+h10_us:
+  - Winnovo
+wgrr-w09:
+  - Huawei
+lenovo tb-x306nc_prc:
+  - Lenovo
+actab1021:
+  - Acer
+la_tab_124_hd_plus:
+  - Logicom
+tab_a6:
+  - Oangcc
+via_l30:
+  - Casper
+gtvr10s:
+  - Ghia
+mupad_k10:
+  - iMuz
+mupad104:
+  - iMuz
+mupadt7:
+  - iMuz
+mupad t10:
+  - iMuz
+mupad 7s:
+  - iMuz
+mitab california:
+  - Wolder
+mercury hd quad core:
+  - eSTAR
+maven_7_plus:
+  - Odys
+m-wpw801:
+  - Mediacom
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49056,6 +49261,21 @@ ulx-43utcs347:
   - Yuno
 rombica tv air:
   - Rombica
+nv720wb:
+  - Eltex
+lpx-g box max:
+  - LPX-G
+tf500:
+  - Telefunken
+olto-43st20u:
+  - OLTO
+tesla xt550:
+  - ComTrade Tesla
+  - Motorola
+perfeo_pf_a4553:
+  - Perfeo
+ipc002:
+  - Invin
 bb2 pro:
   - Mecool
 kii pro:
