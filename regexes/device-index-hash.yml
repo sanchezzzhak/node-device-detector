@@ -689,6 +689,14 @@ f0cu0028rk:
   - Lenovo
 inspiron 13-5378:
   - Dell
+travelmate spin b118-g2-r:
+  - Acer
+travelmate p653-m:
+  - Acer
+travelmate 5760g:
+  - Acer
+travelmate 8371:
+  - Acer
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -911,6 +919,8 @@ sm-f721c:
   - Samsung
 samsung sm-f7210:
   - Samsung
+redmi note 11s 5g:
+  - Xiaomi
 gi-626:
   - altron
 5039d_ru:
@@ -32016,6 +32026,48 @@ sts550:
   - Saiet
 symphony z32:
   - Symphony
+i5g:
+  - Advan
+hisense f17:
+  - Hisense
+hisense f28:
+  - Hisense
+g355:
+  - DEXP
+f1x4g:
+  - Telma
+f2_plus:
+  - Koobee
+evm4g6:
+  - Evoo
+redmi 10 5g:
+  - Xiaomi
+xiaomi 12 pro:
+  - Xiaomi
+xiaomi 12t pro:
+  - Xiaomi
+xiaomi 12t:
+  - Xiaomi
+sm-m127n:
+  - Samsung
+redmi 10a:
+  - Xiaomi
+x95i:
+  - Doogee
+x93:
+  - Doogee
+x95:
+  - Doogee
+redmi 9at:
+  - Xiaomi
+xp9800:
+  - Guophone
+memor 1:
+  - Datalogic
+af9020:
+  - Lava
+ea630:
+  - Unitech
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -47493,6 +47545,36 @@ maven_7_plus:
   - Odys
 m-wpw801:
   - Mediacom
+gtab718:
+  - Ghia
+gtkids7a:
+  - Ghia
+g1101t:
+  - Positivo BGH
+fusion5_f704b:
+  - Fusion5
+fusion5_f105d:
+  - Fusion5
+fusion5_f104e:
+  - Fusion5
+fine 7b:
+  - Everex
+eagle_961:
+  - Krüger&Matz
+eagle_1068:
+  - Krüger&Matz
+axis7_slim:
+  - Ghia
+axis7_led:
+  - Ghia
+hope8_mate:
+  - X-TIGI
+itel w7001:
+  - iTel
+joy8 mate:
+  - X-TIGI
+dbook_110:
+  - Danew
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49276,6 +49358,19 @@ perfeo_pf_a4553:
   - Perfeo
 ipc002:
   - Invin
+km9 pro:
+  - Mecool
+aftti43:
+  - Amazon
+aftso001:
+  - JVC
+  - Amazon
+gtcombo:
+  - GTMEDIA
+smart box y1:
+  - Rombica
+swg2001a-a:
+  - Beeline
 bb2 pro:
   - Mecool
 kii pro:
