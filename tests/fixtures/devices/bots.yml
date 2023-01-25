@@ -5461,3 +5461,15 @@
     producer:
       name: Xovi GmbH
       url: http://www.xovi.de
+-
+  user_agent: Overcast/1.0 Podcast Sync (123 subscribers; feed-id=456789; +http://overcast.fm/)
+  bot:
+    name: Overcast Podcast Sync
+    category: Service Agent
+    url: https://overcast.fm/podcasterinfo
+-
+  user_agent: Verity/1.1 (https://gumgum.com/verity; verity-support@gumgum.com)
+  bot:
+    name: GumGum Verity
+    category: Service Agent
+    url: https://gumgum.com/verity

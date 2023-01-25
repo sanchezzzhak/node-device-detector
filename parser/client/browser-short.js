@@ -475,6 +475,7 @@ module.exports = {
   'WH': 'Whale Browser',
   'WO': 'wOSBrowser',
   'WT': 'WeTab Browser',
+  'WL': 'Wolvic',
   'YG': 'YAGI',
   'YJ': 'Yahoo! Japan Browser',
   'YA': 'Yandex Browser',
