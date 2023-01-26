@@ -62,14 +62,20 @@ class AggregateNewUa {
     })
   }
 
+  /**
+   *
+   * @param {string} useragent
+   * @returns {boolean}
+   */
   check (useragent) {
     let aliasResult = aliasDevice.parse(useragent)
     let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0
 
     let result = detector.detect(useragent)
-    let isFoundModel = result.device && result.device.model !== void 0
-    let isFoundBrand = result.device && result.device.brand !== void 0
+    let isFoundModel = result.device && result.device.model
+    let isFoundBrand = result.device && result.device.brand
 
+    // to find new device code for fixtures (unique mode on)
     if (
       this.uniqueOutput &&
       fixtures[deviceCode] === void 0 &&
@@ -77,14 +83,16 @@ class AggregateNewUa {
     ) {
       outputExist[deviceCode] = 1
       return true
-    } else if (!this.uniqueOutput && fixtures[deviceCode] === void 0) {
+    }
+    // to find new device code for fixtures (unique mode off)
+    if (!this.uniqueOutput && fixtures[deviceCode] === void 0) {
       return true
     }
-    // } else if(fixtures[deviceCode] === void 0 && !isFoundModel && isFoundBrand) {
-    //   console.log(useragent)
-    // } else if(deviceCode && !isFoundBrand) {
-    //   console.log(useragent)
-    // }
+    // to find unknown device model or brand
+    if (deviceCode && (!isFoundModel || !isFoundBrand)) {
+      return true
+    }
+
     return false
 
   }
