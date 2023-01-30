@@ -921,6 +921,18 @@ samsung sm-f7210:
   - Samsung
 redmi note 11s 5g:
   - Xiaomi
+redmi note 11 4g:
+  - Xiaomi
+redmi note 11 pro 5g:
+  - Xiaomi
+redmi note 11 se:
+  - Xiaomi
+redmi note 12 pro:
+  - Xiaomi
+redmi note 11 pro+ 5g:
+  - Xiaomi
+redmi note 11e:
+  - Xiaomi
 gi-626:
   - altron
 5039d_ru:
@@ -32068,6 +32080,44 @@ af9020:
   - Lava
 ea630:
   - Unitech
+tp601e:
+  - Neffos
+tp601c:
+  - Neffos
+tp601b:
+  - Neffos
+thomson t510h:
+  - Thomson
+t47_09:
+  - BenQ
+sugar c-88dual:
+  - Sugar
+sp5040-casiopea ii:
+  - Woo
+sonim-xp7700:
+  - Sonim
+sonim-xp5700:
+  - Sonim
+i-mobile iq z pro:
+  - i-mobile
+i-mobile iq z bright:
+  - i-mobile
+v1277:
+  - XElectron
+qmp-m1-n-ip:
+  - QTECH
+sm-a505ft:
+  - Samsung
+itel p551w:
+  - iTel
+zte blade a51 lite:
+  - ZTE
+redmi a1+:
+  - Xiaomi
+mi 10 lite zoom:
+  - Xiaomi
+sm-a042f:
+  - Samsung
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -47575,6 +47625,44 @@ joy8 mate:
   - X-TIGI
 dbook_110:
   - Danew
+tpc-xe10d-h:
+  - JAY-Tech
+tablet_dl_3910:
+  - DL
+tablet_dl_3903:
+  - DL
+tablet_dl_3420:
+  - DL
+tablet_dl_3411:
+  - DL
+tablet_dl_3410:
+  - DL
+tab918qc:
+  - Sunstech
+tab917qc-8gb:
+  - Sunstech
+tab917qc-16gb:
+  - Sunstech
+t74rd:
+  - Oysters
+t7014q+prixton:
+  - Prixton
+t1700q-prixton:
+  - Prixton
+t1700q prixton:
+  - Prixton
+supra_m743:
+  - Supra
+sm-t330nu:
+  - Samsung
+ideal 8s:
+  - Hometech
+v116w-dualos:
+  - Onda
+u27gt-c8p:
+  - Cube
+u25gt-w4:
+  - Cube
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49371,6 +49459,18 @@ smart box y1:
   - Rombica
 swg2001a-a:
   - Beeline
+stb0819:
+  - Elenberg
+wud55h7762sn:
+  - WANSA
+wud55g7762s:
+  - WANSA
+vibox v5 pro:
+  - ViBox
+vibox_v2_pro:
+  - ViBox
+hk1 mini+:
+  - Vontar
 bb2 pro:
   - Mecool
 kii pro:
