@@ -1,6 +1,5 @@
-// this is a working file for filtering user agents that have not yet been processed and added to tests
-// Usage
-// node report-test-files-ua.js "/src/www/scan-logs/" "/src/www/node-device-detector/tests/fixtures/" > ua_not_exist_tests.log
+// this is a working file for filtering user agents that
+// have not yet been processed and added to tests
 
 const readline = require('readline');
 const fs = require('fs');
@@ -14,11 +13,18 @@ const isDir = (path) => {
   return fs.lstatSync(path).isDirectory();
 };
 
+/**
+ * @param {string} folderTestPath - folder check all files or file
+ * @param {string} folderFixturePath - current database fixtires
+ * @param {number} uniqueOutput - stage filter only unique device code
+ * @usage
+ * node report-test-files-ua.js "/src/www/scan-logs/" "/src/www/node-device-detector/tests/fixtures/" > ua_not_exist_tests.log
+ */
 const run = (folderTestPath, folderFixturePath, uniqueOutput = 0) => {
 
   const aggregateNewUa = new AggregateNewUa({
     folderFixturePath,
-    uniqueOutput
+    uniqueOutput,
   });
 
   let files = [];
