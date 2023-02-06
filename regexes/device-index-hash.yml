@@ -697,6 +697,8 @@ travelmate 5760g:
   - Acer
 travelmate 8371:
   - Acer
+dell chromebook 13 (7310):
+  - Dell
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -932,6 +934,20 @@ redmi note 12 pro:
 redmi note 11 pro+ 5g:
   - Xiaomi
 redmi note 11e:
+  - Xiaomi
+redmi note 11t 5g:
+  - Xiaomi
+redmi note 10t 5g:
+  - Xiaomi
+redmi note 11r:
+  - Xiaomi
+redmi note 11 pro+:
+  - Xiaomi
+redmi note 11e pro:
+  - Xiaomi
+redmi note 11t pro:
+  - Xiaomi
+redmi note 9 4g:
   - Xiaomi
 gi-626:
   - altron
@@ -1995,6 +2011,8 @@ xdh-2a-b1:
   - Xiaodu
 10bdl4151t:
   - Philips
+da222hql:
+  - Acer
 aeobc:
   - Amazon
 aeokn:
@@ -13925,12 +13943,16 @@ dash xl:
   - Blu
 blu energy diamond:
   - Blu
+  - Energy Sistem
 blu energy x plus:
   - Blu
+  - Energy Sistem
 blu energy x plus 2:
   - Blu
+  - Energy Sistem
 energy xl:
   - Blu
+  - Energy Sistem
 blu grand 5.5 hd:
   - Blu
 blu grand x lte:
@@ -14063,6 +14085,7 @@ v2040:
   - Vivo
 energy x 2:
   - Blu
+  - Energy Sistem
 block 3 mini:
   - STF Mobile
 block_mini:
@@ -14829,8 +14852,10 @@ elt0802h:
   - High Q
 energye500:
   - Energizer
+  - Energy Sistem
 energye500s_eu:
   - Energizer
+  - Energy Sistem
 epix:
   - Timovi
 era5x:
@@ -15911,6 +15936,7 @@ elite_vr:
   - Swipe
 energy e12:
   - Energizer
+  - Energy Sistem
 geotel_amigo:
   - Geotel
 iball_slide_wings_4gp:
@@ -18840,8 +18866,10 @@ ta-1044:
   - Nokia
 qmobile energy x2:
   - QMobile
+  - Energy Sistem
 qmobile energy x1:
   - QMobile
+  - Energy Sistem
 qmobile black two:
   - QMobile
 qmobile a600:
@@ -27519,6 +27547,7 @@ era 4g:
   - Xolo
 energy_diamond_mini:
   - Blu
+  - Energy Sistem
 elegance 5.0 lite:
   - Kiano
 elegance_4.5:
@@ -30070,6 +30099,7 @@ hammer_energy_18x9:
   - Hammer
 hammer energy 3g:
   - Hammer
+  - Energy Sistem
 hammer iron:
   - Hammer
 v2180a:
@@ -32118,6 +32148,206 @@ mi 10 lite zoom:
   - Xiaomi
 sm-a042f:
   - Samsung
+zte v817:
+  - ZTE
+zte blade c2 plus:
+  - ZTE
+lg-d950:
+  - LG
+lg-d375ar:
+  - LG
+lg-e445:
+  - LG
+lg-d685:
+  - LG
+lg-e977:
+  - LG
+lg-d321:
+  - LG
+lg-us780:
+  - LG
+lgls620:
+  - LG
+lg-e450f:
+  - LG
+lg-d625:
+  - LG
+lg-ls840:
+  - LG
+lg-f510l:
+  - LG
+lg-f320k:
+  - LG
+lg-f340s:
+  - LG
+lg-d610:
+  - LG
+lg-e410:
+  - LG
+lg-d285:
+  - LG
+lg-d107:
+  - LG
+lg-d120:
+  - LG
+lg-vs450pp:
+  - LG
+lg-e986:
+  - LG
+lg-d160:
+  - LG
+vs930 4g:
+  - LG
+lg-p712:
+  - LG
+lg-e435:
+  - LG
+lg-p655h:
+  - LG
+lg-p714:
+  - LG
+lg-f520s:
+  - LG
+lg-f200k:
+  - LG
+energy phone pro:
+  - Energy Sistem
+energy phone pro qi:
+  - Energy Sistem
+energy phone pro hd:
+  - Energy Sistem
+energy phone colors:
+  - Energy Sistem
+studio energy:
+  - Blu
+energy phone max 2+:
+  - Energy Sistem
+sm-g973x:
+  - Samsung
+s8_plus_a:
+  - Bluboo
+s8a:
+  - Bluboo
+s710 ruby:
+  - Four Mobile
+s61 jazz:
+  - Stylo
+s5us:
+  - Eks Mobility
+s5701l:
+  - NUU Mobile
+s55b:
+  - Evercoss
+s55a:
+  - Evercoss
+s505024:
+  - Sansui
+rx460:
+  - Aligator
+zte 8045:
+  - ZTE
+poco m5s:
+  - POCO
+a1_pro:
+  - UMIDIGI
+huawei p6 s-u06:
+  - Huawei
+zte blade l370:
+  - ZTE
+poco c40:
+  - POCO
+htc desire 620g dual sim:
+  - HTC
+s6523:
+  - Revomovil
+cet-lx9:
+  - Huawei
+poco f4:
+  - POCO
+eve-lx9n:
+  - Huawei
+razor_plus_4g:
+  - FireFly Mobile
+w10:
+  - Hotwav
+kingkong 6:
+  - CUBOT
+a101bm:
+  - Kyocera
+eda51k:
+  - Honeywell
+eda40:
+  - Honeywell
+e10_pro:
+  - Elephone
+senseit e400:
+  - Senseit
+mix 3 the palace museum edition:
+  - Xiaomi
+poco m5:
+  - POCO
+poco c3:
+  - POCO
+mi cc9e:
+  - Xiaomi
+lenovo s60a:
+  - Lenovo
+redmi 10 prime:
+  - Xiaomi
+redmi k30 ultra:
+  - Xiaomi
+redmi k30s ultra:
+  - Xiaomi
+redmi 10x 4g:
+  - Xiaomi
+redmi 9 prime:
+  - Xiaomi
+mi 11 pro:
+  - Xiaomi
+mi 11 le:
+  - Xiaomi
+mi 11 lite 5g ne:
+  - Xiaomi
+hn3-u01:
+  - Huawei
+atrix hd:
+  - Motorola
+xiaomi 12s ultra:
+  - Xiaomi
+xiaomi 12s pro:
+  - Xiaomi
+xiaomi 12s:
+  - Xiaomi
+redmi 10 prime+ 5g:
+  - Xiaomi
+redmi 9 power:
+  - Xiaomi
+redmi 10x pro:
+  - Xiaomi
+xiaomi_m1805d1st:
+  - Xiaomi
+holly-u19:
+  - Huawei
+albatros c2:
+  - V-Gen
+nova p3:
+  - Mobell
+notrino:
+  - Smart
+noa_stilo:
+  - NOA
+next_p:
+  - Iris
+next u:
+  - Iris
+next p+:
+  - Iris
+newsday_n2+:
+  - Newsday
+nedaphone v9:
+  - Nedaphone
+movic-w2:
+  - Movic
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -32336,18 +32566,25 @@ eclipse_g500:
   - E-Boda
 energy400:
   - Energizer
+  - Energy Sistem
 energy 400 lte:
   - Energizer
+  - Energy Sistem
 energy 400s:
   - Energizer
+  - Energy Sistem
 energy_500_lte:
   - Energizer
+  - Energy Sistem
 energy e520 lte:
   - Energizer
+  - Energy Sistem
 energy s500:
   - Energizer
+  - Energy Sistem
 energy s600:
   - Energizer
+  - Energy Sistem
 powermaxp490:
   - Energizer
 ph-1:
@@ -33612,8 +33849,10 @@ ultra energy:
   - Hyundai
 ultra energy lite:
   - Hyundai
+  - Energy Sistem
 ultra energy plus:
   - Hyundai
+  - Energy Sistem
 ultra live ii:
   - Hyundai
 ultra storm:
@@ -38259,8 +38498,10 @@ phicomm clue m:
   - Phicomm
 phicomm energy 3+:
   - Phicomm
+  - Energy Sistem
 phicomm e653(energy l):
   - Phicomm
+  - Energy Sistem
 multilaser_e:
   - Multilaser
 multilaser_e_lite:
@@ -42208,6 +42449,12 @@ momo9 star:
   - Ployer
 dns airtab m75t:
   - DNS
+bmxc 800:
+  - BMXC
+huawei m2-a01l:
+  - Huawei
+b1-730:
+  - Acer
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -47663,6 +47910,48 @@ u27gt-c8p:
   - Cube
 u25gt-w4:
   - Cube
+smartbook_s7qs:
+  - SmartBook
+lg-e987:
+  - LG
+lgas323:
+  - LG
+an7ig3:
+  - Arnova
+energy i10 dual:
+  - Energy Sistem
+energy tablet 9 neo 2:
+  - Energy Sistem
+energy phone neo:
+  - Energy Sistem
+energy neo 9:
+  - Energy Sistem
+energy tablet neo 10 3g:
+  - Energy Sistem
+pmt3407_4g:
+  - Prestigio
+symtab50:
+  - Symphony
+optima 1245c 4g ts1277ml:
+  - Digma
+optima 1411d 4g ts1273pl:
+  - Digma
+iplay_50:
+  - AllDocube
+tab a1015:
+  - Sigma
+9161g:
+  - TCL
+htc a103:
+  - HTC
+ags5-w09:
+  - Huawei
+gravity2-4g:
+  - SPC
+xiaomi pad 5 pro:
+  - Xiaomi
+nomi c080010 libra2:
+  - Nomi
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49471,6 +49760,36 @@ vibox_v2_pro:
   - ViBox
 hk1 mini+:
   - Vontar
+vontar x4:
+  - Vontar
+vontar x2:
+  - Vontar
+dexp shell pt320at01-5:
+  - DEXP
+yandexmodule2-00001:
+  - Yandex
+dexp shell lc390tu1a:
+  - DEXP
+32h550t:
+  - Leff
+hty-32hdr06g:
+  - Hartens
+43f1ydx000bs2:
+  - Irbis
+h-led40gs5003:
+  - Hyundai
+h32f8000qg-a:
+  - DEXP
+h32h8001c:
+  - DEXP
+h32f8000qg:
+  - DEXP
+dm-led55ur31:
+  - Digma
+32lex-7272:
+  - BBK
+h32h8051c-g:
+  - DEXP
 bb2 pro:
   - Mecool
 kii pro:
