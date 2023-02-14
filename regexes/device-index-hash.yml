@@ -865,6 +865,10 @@ vormor-x5-pro:
   - Vormor
 smart_slim_plus:
   - ATOL
+mc2200:
+  - Zebra
+mc93:
+  - Zebra
 sm-f721u:
   - Samsung
 note 13p:
@@ -950,6 +954,8 @@ redmi note 11e pro:
 redmi note 11t pro:
   - Xiaomi
 redmi note 9 4g:
+  - Xiaomi
+22095ra98c:
   - Xiaomi
 gi-626:
   - altron
@@ -32404,6 +32410,67 @@ sm-a236u1:
   - Samsung
 miwang m2s:
   - MIWANG
+ihunt note ultra:
+  - iHunt
+mp03:
+  - UMIDIGI
+mp04:
+  - UMIDIGI
+mp08:
+  - UMIDIGI
+v2166:
+  - Vivo
+itel s11x:
+  - iTel
+itel s11xb:
+  - iTel
+is6plus:
+  - Iris
+is3plus:
+  - Iris
+iris88_lite:
+  - Lava
+iris88_go:
+  - Lava
+iris88s:
+  - Lava
+iris88:
+  - Lava
+iris65:
+  - Lava
+iris42:
+  - Lava
+iris 50 pro:
+  - Lava
+iris 31:
+  - Lava
+i2_lite:
+  - iVooMi
+i2:
+  - iVooMi
+hisense hi 1 pro:
+  - Hisense
+note 6:
+  - Ulefone
+note 9:
+  - CUBOT
+lt600t:
+  - ZoomSmart
+  - Sony
+primo f10:
+  - Walton
+primo nf5:
+  - Walton
+sky55_eea:
+  - Konrow
+zte n939sc:
+  - ZTE
+yu yureka black:
+  - Yu
+nokia c5 endi:
+  - Nokia
+nokia c2 tennen:
+  - Nokia
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -48016,6 +48083,38 @@ v tab z1 a:
   - Vestel
 rubenstab_t11:
   - Frunsi
+hpad2:
+  - HeadWolf
+sm-x205c:
+  - Samsung
+nogapad 7g:
+  - NOGA
+optima prime 4 3g tt7174pg:
+  - Digma
+optima_prime_3_3g_ts7131mg:
+  - Digma
+m40air_row:
+  - Teclast
+pritom_m10:
+  - Pritom
+m863-eea:
+  - BMXC
+pb-6505y:
+  - Lenovo
+zxt-10hl323s:
+  - Zamolxe
+zxt-10fl323g-pro:
+  - Zamolxe
+ultrapad_up10.s36la:
+  - Technopc
+regal tab 10.1:
+  - REGAL
+redway7_pro:
+  - Redway
+lifetab e1080x:
+  - Medion
+e101gcm:
+  - Great Asia
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
