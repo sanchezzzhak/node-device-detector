@@ -1,3 +1,5 @@
+'16':
+  - Meizu
 '221':
   - Stylo
 '710':
@@ -32348,6 +32350,60 @@ nedaphone v9:
   - Nedaphone
 movic-w2:
   - Movic
+star n9589:
+  - Star
+redmi pro:
+  - Xiaomi
+jy-g4s:
+  - Jiayu
+huawei p7-l07:
+  - Huawei
+jy-g5s:
+  - Jiayu
+tornado slim:
+  - Fly
+class_c250:
+  - Beafon
+s61:
+  - Doogee
+archos core 62s:
+  - Archos
+revel 3g:
+  - Cherry Mobile
+relnat premier:
+  - RelNAT
+itel w5503:
+  - iTel
+telo_te6:
+  - TeloSystems
+22081212g:
+  - Xiaomi
+rky-lx1:
+  - Huawei
+tecno ad8:
+  - Tecno Mobile
+rmx3663:
+  - Realme
+rmx3686:
+  - Realme
+rmx3687:
+  - Realme
+pgu110:
+  - OPPO
+nokia g60 5g:
+  - Nokia
+via f30 plus:
+  - Casper
+zte blade a52:
+  - ZTE
+infinix x6826:
+  - Infinix
+sm-a236e:
+  - Samsung
+sm-a236u1:
+  - Samsung
+miwang m2s:
+  - MIWANG
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -47952,6 +48008,14 @@ xiaomi pad 5 pro:
   - Xiaomi
 nomi c080010 libra2:
   - Nomi
+tab 15:
+  - Blackview
+telp-1013kbc:
+  - Telefunken
+v tab z1 a:
+  - Vestel
+rubenstab_t11:
+  - Frunsi
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49790,6 +49854,17 @@ dm-led55ur31:
   - BBK
 h32h8051c-g:
   - DEXP
+rkm mk902ii:
+  - Rikomagic
+  - Sony Ericsson
+rkm mk902:
+  - Rikomagic
+rkm mk802iv:
+  - Rikomagic
+  - Sony Ericsson
+rkm mk802iiis:
+  - Rikomagic
+  - Sony Ericsson
 bb2 pro:
   - Mecool
 kii pro:
@@ -50330,3 +50405,5 @@ geozon lte:
   - GEOZON
 leo-dlxxe:
   - Huawei
+appllp max:
+  - LOKMAT
