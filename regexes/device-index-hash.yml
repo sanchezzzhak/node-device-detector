@@ -957,6 +957,8 @@ redmi note 9 4g:
   - Xiaomi
 22095ra98c:
   - Xiaomi
+22101316uc:
+  - Xiaomi
 gi-626:
   - altron
 5039d_ru:
@@ -2021,6 +2023,8 @@ xdh-2a-b1:
   - Philips
 da222hql:
   - Acer
+blm-00:
+  - Huawei
 aeobc:
   - Amazon
 aeokn:
@@ -9133,6 +9137,8 @@ coolmintt blaze 2:
   - Mintt
 iswag activ:
   - iSWAG
+iphone15,2:
+  - Apple
 vivo 1603:
   - Vivo
 vivo 1610:
@@ -32471,6 +32477,96 @@ nokia c5 endi:
   - Nokia
 nokia c2 tennen:
   - Nokia
+snap_pro:
+  - NASCO
+r1 lite:
+  - iLA
+red royal edition:
+  - Famous
+ixion el450:
+  - DEXP
+ep19_star:
+  - Ephone
+ep19:
+  - Ephone
+archos sense 55 dc:
+  - Archos
+archos sense 50 dc:
+  - Archos
+archos core 50p:
+  - Archos
+zte blade a315:
+  - ZTE
+young y56:
+  - SYH
+young y35:
+  - SYH
+young y51+:
+  - SYH
+young y55:
+  - SYH
+young y36+:
+  - SYH
+ys7pro:
+  - YunSong
+ys8pro:
+  - YunSong
+ys6 pro:
+  - YunSong
+yu 6000:
+  - Yu
+lava z3 up 2:
+  - Lava
+2206123sc:
+  - Xiaomi
+a204so:
+  - Sony
+a101fc:
+  - Fujitsu
+fio-bd00:
+  - Hi Nova
+scg18:
+  - Samsung
+sm-a233c:
+  - Samsung
+v2242a:
+  - Vivo
+pgx110:
+  - OPPO
+phj110:
+  - OPPO
+bne-al00:
+  - Huawei
+rmx3611:
+  - Realme
+pcd pl5507:
+  - PCD
+pcd_ph4002:
+  - PCD
+pcd_ph3501:
+  - PCD
+pcd_e400:
+  - PCD
+panasonic t41:
+  - Panasonic
+panasonic t33:
+  - Panasonic
+panasonic p41:
+  - Panasonic
+pam412:
+  - Condor
+forward_evolve:
+  - NGM
+kenny:
+  - Wiko
+kayeta:
+  - MobiWire
+kata-m4s:
+  - Kata
+karbonn yuva 2:
+  - Karbonn
+abr-al90:
+  - Huawei
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -48115,6 +48211,42 @@ lifetab e1080x:
   - Medion
 e101gcm:
   - Great Asia
+quicktab plus:
+  - PC Smart
+polaris_808_be:
+  - Blaupunkt
+polaris_808:
+  - Blaupunkt
+bmxc801:
+  - BMXC
+archos core 70 3g:
+  - Archos
+archos sense 101 x:
+  - Archos
+archos core 101 3g:
+  - Archos
+d-51c:
+  - Sharp
+bah4-w29:
+  - Huawei
+p30hd_eea:
+  - Teclast
+3g 1026-q18:
+  - iBall
+pcb-t750:
+  - PCBOX
+party:
+  - Explay
+paladin evo:
+  - iRobot
+flylife web 7.85 slim:
+  - Fly
+flylife web 7:
+  - Fly
+bah4-w39:
+  - Huawei
+bzt-w09:
+  - Huawei
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49964,6 +50096,12 @@ rkm mk802iv:
 rkm mk802iiis:
   - Rikomagic
   - Sony Ericsson
+polar_p32l32t2csm:
+  - Polar
+k50dlx9us:
+  - TD Systems
+k24dlx9hs:
+  - TD Systems
 bb2 pro:
   - Mecool
 kii pro:
