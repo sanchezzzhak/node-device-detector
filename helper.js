@@ -163,7 +163,8 @@ const isSmartSpeaker = (result) => {
 };
 
 /**
- * is device type peripheral (portable terminal, portable projector)
+ * is device type peripheral (portable terminal, post terminal,
+ * single board computers, portable projector)
  * @param result
  * @returns {boolean}
  */
@@ -222,7 +223,7 @@ const isDesktopApp = (result) => {
  * @returns {boolean}
  */
 const isMobileApp = (result) => {
-  return isApp(result) && isMobile(result);
+  return isApp(result) && (isMobile(result) || isTablet(result));
 };
 
 

@@ -1,6 +1,5 @@
 const YAML = require('js-yaml');
 const fs = require('fs');
-const crypto = require('crypto');
 
 /**
  * match for base regex rule
@@ -104,6 +103,7 @@ function hasOperaTableFragment(userAgent) {
 }
 
 /**
+ * Checks for the presence of a string in the UATouch
  * @param {string} userAgent
  * @returns {boolean}
  */
@@ -129,12 +129,12 @@ function hasOperaTVStoreFragment(userAgent) {
 }
 
 /**
- * All devices that contain Andr0id in string are assumed to be a tv
+ * All devices containing TV fragment are assumed to be a tv
  * @param {string} userAgent
  * @returns {boolean}
  */
 function hasAndroidTVFragment(userAgent) {
-  return matchUserAgent('Andr0id|Android TV', userAgent) !== null;
+  return matchUserAgent('Andr0id|Android TV|[(]lite[)] TV', userAgent) !== null;
 }
 
 /**
@@ -156,6 +156,7 @@ function hasDesktopFragment(userAgent) {
 }
 
 /**
+ * Get value by attribute for object or default value
  * @param {object} options
  * @param {string }propName
  * @param {*} defaultValue
@@ -170,7 +171,7 @@ function getPropertyValue(options, propName, defaultValue) {
 }
 
 /**
- *
+ * Values ​​become keys, and keys become values
  * @param {*} obj -
  * @returns {*}
  */

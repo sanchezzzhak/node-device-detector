@@ -452,6 +452,15 @@ class DeviceDetector {
       }
     }
 
+    /**
+     * Some UA contain the fragment 'Pad/APad', so we assume those devices as tablets
+     */
+    if (deviceType === DEVICE_TYPE.SMARTPHONE
+        && helper.matchUserAgent('Pad/APad', userAgent)
+    ) {
+      deviceType = DEVICE_TYPE.TABLET;
+    }
+
     if (
       deviceType === '' &&
       (helper.hasAndroidTableFragment(userAgent) ||
@@ -504,13 +513,6 @@ class DeviceDetector {
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
-      deviceType = DEVICE_TYPE.TV;
-    }
-
-    /**
-     * All devices containing TV fragment are assumed to be a tv
-     */
-    if (deviceType === '' && helper.matchUserAgent('[(]TV;', userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     }
 
