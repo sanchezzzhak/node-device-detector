@@ -72,9 +72,27 @@ function normalizeVersion(version, count) {
 function getFixtureFolder() {
   return __dirname + '/fixtures/';
 }
+function getOutputFolder() {
+  return __dirname + '/output/';
+}
+
+const isFile = (path) => {
+  try {
+    return fs.lstatSync(path).isFile();
+  } catch (e) {
+
+  }
+  return false
+};
+
+const isDir = (path) => {
+  return fs.lstatSync(path).isDirectory();
+};
 
 
 module.exports = {
+  isFile,
+  isDir,
   YAMLDump,
   YAMLLoad,
   revertKeysForObjects,
@@ -82,5 +100,6 @@ module.exports = {
   perryTable,
   perryJSON,
   getFixtureFolder,
+  getOutputFolder,
   isObjNotEmpty,
 };

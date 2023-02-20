@@ -4,35 +4,13 @@
  * node report-google-device.js > ../output/diff-supported-devices.csv
  */
 
-const https = require('https')
+const https = require('https');
 const fs = require('fs');
 const AliasDevice = require('../../parser/device/alias-device');
 const DeviceDetect = require('../../index.js');
-const {YAMLLoad, getFixtureFolder} = require('./../functions');
-
-const SOURCE = 'https://storage.googleapis.com/play_public/supported_devices.csv'
-
-/**
- * Download google csv file and hard cast content to utf8
- * @param {string }url
- * @return {Promise<unknown>}
- */
-const getRemoteFileContent = (url) => {
-  return new Promise((resolve, reject) => {
-    const savePath = __dirname + '/../output/supported_devices.csv'
-    const file = fs.createWriteStream(savePath);
-    https.get(url).on('response', function (response) {
-      response.pipe(file);
-      response.on('error', (err) => {
-        reject(err);
-      })
-      response.on('end', () => {
-        fs.writeFileSync(savePath, fs.readFileSync(savePath, {encoding: 'ucs2'}), {encoding: 'utf8'});
-        resolve(fs.readFileSync(savePath, {encoding: 'utf8'}));
-      });
-    });
-  })
-}
+const {getOutputFolder, getFixtureFolder} = require('./../functions');
+const AggregateNewUa = require('./lib/aggregate-new-ua');
+const AggregateGoogleCode = require('./lib/aggregate-google-code');
 
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
@@ -43,50 +21,48 @@ const detector = new DeviceDetect({
 
 let fixtures = {};
 
-const run = async (folderFixturePath) => {
+const run = async (folderFixturePath, uniqueOutput = false) => {
 
-  let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
-  if (folderFixturePath === '') {
-    folderFixturePath = getFixtureFolder() + 'devices/';
-  }
-  // get all devices codes from tests
-  let ymlDeviceFiles = fs.readdirSync(folderFixturePath);
-  ymlDeviceFiles.forEach((file) => {
-    if (excludeFilesNames.indexOf(file) !== -1) {
-      return;
-    }
-    let fixtureData = YAMLLoad(folderFixturePath + file);
-    fixtureData.forEach((fixture, pos) => {
-      let aliasResult = aliasDevice.parse(fixture.user_agent);
+  const printRow = (data) => {
+    let row = data.map(item => `"${item}"`).join(',');
+    console.log(row);
+  };
 
-      if (fixture.device === void 0) {
-        return;
-      }
-
-      let brand = String(fixture.device.brand);
-      let model = String(fixture.device.model);
-      let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0;
-      if (deviceCode !== void 0) {
-        fixtures[deviceCode] = {brand, model};
-      }
-    });
+  const aggregateNewUa = new AggregateNewUa({
+    uniqueOutput,
   });
+  const aggregateGoggleCode = new AggregateGoogleCode();
+  await aggregateGoggleCode.syncDeviceSupportCsv();
+  let lines = await aggregateGoggleCode.getCsvData();
+
+  printRow([
+    // google data
+    'Brand',
+    'Marketing Name',
+    'Device',
+    'Model',
+    //
+    'Matches by',
+    // detector
+    'detector brand',
+    'detector model',
+    // detect by google columns
+    'Simulate UA by column Model',
+    'Simulate UA by column Device',
+  ]);
 
   let foundCount = 0;
   let totalCount = 0;
   let simulateDetect = 0;
-  let content = await getRemoteFileContent(SOURCE);
-  let lines = content.split('\n');
   // Retail Branding,Marketing Name,Device,Model
 
-  console.log(`Brand,Marketing Name,Device,Model,MATCH POS,Brand (inUs),Model (inUs),-----,Simulate4 (detect for column Model),Simulate3 (detect for column Device)`);
+  console.log();
 
-  lines.forEach((line, i) => {
+  lines.forEach((columns, i) => {
     if (i === 0) {
       return;
     }
     totalCount++;
-    let columns = line.split(',');
     let brand = '';
     let model = '';
     let pos = '-';
@@ -96,22 +72,26 @@ const run = async (folderFixturePath) => {
     let column3 = String(columns[2]).trim();
     let column4 = String(columns[3]).trim();
 
-    if (fixtures[column4.toLowerCase()]) {
-      brand = fixtures[column4.toLowerCase()].brand;
-      model = fixtures[column4.toLowerCase()].model;
-      pos = 4;
-    } else if (fixtures[column3.toLowerCase()]) {
-      brand = fixtures[column3.toLowerCase()].brand;
-      model = fixtures[column3.toLowerCase()].model;
-      pos = 3;
-    } else if (fixtures[column2.toLowerCase()]) {
-      brand = fixtures[column2.toLowerCase()].brand;
-      model = fixtures[column2.toLowerCase()].model;
-      pos = 2;
-    } else if (fixtures[column1.toLowerCase()]) {
-      brand = fixtures[column1.toLowerCase()].brand;
-      model = fixtures[column1.toLowerCase()].model;
-      pos = 1;
+    let result1 = aggregateNewUa.get(column4.toLowerCase());
+    let result2 = aggregateNewUa.get(column3.toLowerCase());
+    let result3 = aggregateNewUa.get(column2.toLowerCase());
+    let result4 = aggregateNewUa.get(column1.toLowerCase());
+    if (result1) {
+      brand = result1.brand;
+      model = result1.model;
+      pos = 'Model';
+    } else if (result2) {
+      brand = result2.brand;
+      model = result2.model;
+      pos = 'Device';
+    } else if (result3) {
+      brand = result3.brand;
+      model = result3.model;
+      pos = 'Marketing Name';
+    } else if (result4) {
+      brand = result4.brand;
+      model = result4.model;
+      pos = 'Brand';
     }
 
     if (pos !== '-') {
@@ -119,26 +99,41 @@ const run = async (folderFixturePath) => {
     }
 
     let useragent1 = `Dalvik/2.1.0 (Linux; U; Android xx; ${column4} Build/MRA58K)`;
-    let result1 = detector.detect(useragent1);
-    let simulate4 = result1.device.brand + ' - ' + result1.device.model;
-    if (result1.device.brand) {
+    let simulateModel = detector.detect(useragent1);
+    let simulateModelStr = simulateModel.device.brand + ' - ' + simulateModel.device.model;
+    if (simulateModel.device.brand) {
       simulateDetect++;
     }
 
     let useragent2 = `Dalvik/2.1.0 (Linux; U; Android xx; ${column3} Build/MRA58K)`;
-    let result2 = detector.detect(useragent2);
-    let simulate3 = result2.device.brand + ' - ' + result2.device.model;
+    let simulateDevice = detector.detect(useragent2);
+    let simulateDeviceStr = simulateDevice.device.brand + ' - ' + simulateDevice.device.model;
 
-    console.log(`${column1},${column2},${column3},${column4}, ${pos},${brand},${model},,${simulate4},${simulate3}`);
-
+    printRow([
+      // google data
+      column1,
+      column2,
+      column3,
+      column4,
+      //
+      pos,
+      // detector
+      brand,
+      model,
+      // detect by google columns
+      simulateModelStr,
+      simulateDeviceStr,
+    ]);
   });
-  const interestCalc = (foundCount, totalCount) => ((foundCount / totalCount) * 100).toFixed(2);
+
+  const interestCalc = (foundCount, totalCount) => ((foundCount / totalCount) *
+      100).toFixed(2);
   const percentFound = interestCalc(foundCount, totalCount);
   const percentSimulate = interestCalc(simulateDetect, totalCount);
 
-  console.log(`Total, ${totalCount}, Found ${foundCount} (${percentFound}%), Simulate Found ${simulateDetect} (${percentSimulate}%)`);
+  console.log(
+      `Total, ${totalCount}, Found ${foundCount} (${percentFound}%), Simulate Found ${simulateDetect} (${percentSimulate}%)`);
 };
-
 
 let testsPath = process.argv[2] || '';
 run(testsPath);

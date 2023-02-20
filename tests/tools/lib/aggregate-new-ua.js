@@ -62,6 +62,10 @@ class AggregateNewUa {
     })
   }
 
+  get(deviceCode) {
+    return fixtures[deviceCode] ?  fixtures[deviceCode]: null;
+  }
+
   /**
    *
    * @param {string} useragent
