@@ -4,6 +4,8 @@ const DeviceDetect = require('../../../index')
 const { YAMLLoad, getFixtureFolder } = require('./../../functions')
 
 const aliasDevice = new AliasDevice()
+aliasDevice.setReplaceBrand(false);
+
 const detector = new DeviceDetect({
   deviceIndexes: true,
   clientIndexes: true,
