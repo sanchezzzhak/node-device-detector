@@ -19,18 +19,14 @@ const detector = new DeviceDetect({
   deviceIndexes: false,
 });
 
-let fixtures = {};
-
-const run = async (folderFixturePath, uniqueOutput = false) => {
+const run = async () => {
 
   const printRow = (data) => {
     let row = data.map(item => `"${item}"`).join(',');
     console.log(row);
   };
 
-  const aggregateNewUa = new AggregateNewUa({
-    uniqueOutput,
-  });
+  const aggregateNewUa = new AggregateNewUa();
   const aggregateGoggleCode = new AggregateGoogleCode();
   await aggregateGoggleCode.syncDeviceSupportCsv();
   let lines = await aggregateGoggleCode.getCsvData();
@@ -72,10 +68,10 @@ const run = async (folderFixturePath, uniqueOutput = false) => {
     let column3 = String(columns[2]).trim();
     let column4 = String(columns[3]).trim();
 
-    let result1 = aggregateNewUa.get(column4.toLowerCase());
-    let result2 = aggregateNewUa.get(column3.toLowerCase());
-    let result3 = aggregateNewUa.get(column2.toLowerCase());
-    let result4 = aggregateNewUa.get(column1.toLowerCase());
+    let result1 = aggregateNewUa.get(column4);
+    let result2 = aggregateNewUa.get(column3);
+    let result3 = aggregateNewUa.get(column2);
+
     if (result1) {
       brand = result1.brand;
       model = result1.model;
@@ -88,10 +84,6 @@ const run = async (folderFixturePath, uniqueOutput = false) => {
       brand = result3.brand;
       model = result3.model;
       pos = 'Marketing Name';
-    } else if (result4) {
-      brand = result4.brand;
-      model = result4.model;
-      pos = 'Brand';
     }
 
     if (pos !== '-') {

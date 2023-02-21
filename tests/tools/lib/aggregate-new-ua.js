@@ -48,7 +48,7 @@ class AggregateNewUa {
           return
         }
 
-        if (fixture.device && !fixture.device.brand) {
+        if (!fixture.device.brand) {
           return
         }
 
@@ -63,7 +63,8 @@ class AggregateNewUa {
   }
 
   get(deviceCode) {
-    return fixtures[deviceCode] ?  fixtures[deviceCode]: null;
+    let code = deviceCode.toLowerCase()
+    return fixtures[code] ? fixtures[code]: null;
   }
 
   /**
