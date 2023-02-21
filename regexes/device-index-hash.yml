@@ -1,3 +1,5 @@
+'16':
+  - Meizu
 '221':
   - Stylo
 '710':
@@ -18,6 +20,10 @@
   - Vivo
 '1825':
   - Coolpad
+'2032':
+  - Coolpad
+'2039':
+  - Coolpad
 '5041':
   - Advan
 '5058':
@@ -35,6 +41,8 @@
 '6002':
   - Advan
 '6004':
+  - Advan
+'6201':
   - Advan
 '8051':
   - Alcatel
@@ -683,6 +691,16 @@ f0cu0028rk:
   - Lenovo
 inspiron 13-5378:
   - Dell
+travelmate spin b118-g2-r:
+  - Acer
+travelmate p653-m:
+  - Acer
+travelmate 5760g:
+  - Acer
+travelmate 8371:
+  - Acer
+dell chromebook 13 (7310):
+  - Dell
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -843,6 +861,14 @@ nbp-60:
   - Sewoo
 smart_prime:
   - ATOL
+vormor-x5-pro:
+  - Vormor
+smart_slim_plus:
+  - ATOL
+mc2200:
+  - Zebra
+mc93:
+  - Zebra
 sm-f721u:
   - Samsung
 note 13p:
@@ -896,6 +922,42 @@ sm-g530y:
 22087ra4di:
   - Xiaomi
 22101316ucp:
+  - Xiaomi
+sm-f721c:
+  - Samsung
+samsung sm-f7210:
+  - Samsung
+redmi note 11s 5g:
+  - Xiaomi
+redmi note 11 4g:
+  - Xiaomi
+redmi note 11 pro 5g:
+  - Xiaomi
+redmi note 11 se:
+  - Xiaomi
+redmi note 12 pro:
+  - Xiaomi
+redmi note 11 pro+ 5g:
+  - Xiaomi
+redmi note 11e:
+  - Xiaomi
+redmi note 11t 5g:
+  - Xiaomi
+redmi note 10t 5g:
+  - Xiaomi
+redmi note 11r:
+  - Xiaomi
+redmi note 11 pro+:
+  - Xiaomi
+redmi note 11e pro:
+  - Xiaomi
+redmi note 11t pro:
+  - Xiaomi
+redmi note 9 4g:
+  - Xiaomi
+22095ra98c:
+  - Xiaomi
+22101316uc:
   - Xiaomi
 gi-626:
   - altron
@@ -1921,6 +1983,10 @@ drp2091:
   - RCA Tablets
 nw-zx500series:
   - Sony
+musicpad_m1:
+  - Vonino
+musicpad_h1:
+  - Vonino
 da220hql:
   - Acer
 da241hl:
@@ -1955,6 +2021,10 @@ xdh-2a-b1:
   - Xiaodu
 10bdl4151t:
   - Philips
+da222hql:
+  - Acer
+blm-00:
+  - Huawei
 aeobc:
   - Amazon
 aeokn:
@@ -9067,6 +9137,8 @@ coolmintt blaze 2:
   - Mintt
 iswag activ:
   - iSWAG
+iphone15,2:
+  - Apple
 vivo 1603:
   - Vivo
 vivo 1610:
@@ -13885,12 +13957,16 @@ dash xl:
   - Blu
 blu energy diamond:
   - Blu
+  - Energy Sistem
 blu energy x plus:
   - Blu
+  - Energy Sistem
 blu energy x plus 2:
   - Blu
+  - Energy Sistem
 energy xl:
   - Blu
+  - Energy Sistem
 blu grand 5.5 hd:
   - Blu
 blu grand x lte:
@@ -14023,6 +14099,7 @@ v2040:
   - Vivo
 energy x 2:
   - Blu
+  - Energy Sistem
 block 3 mini:
   - STF Mobile
 block_mini:
@@ -14789,8 +14866,10 @@ elt0802h:
   - High Q
 energye500:
   - Energizer
+  - Energy Sistem
 energye500s_eu:
   - Energizer
+  - Energy Sistem
 epix:
   - Timovi
 era5x:
@@ -15871,6 +15950,7 @@ elite_vr:
   - Swipe
 energy e12:
   - Energizer
+  - Energy Sistem
 geotel_amigo:
   - Geotel
 iball_slide_wings_4gp:
@@ -18800,8 +18880,10 @@ ta-1044:
   - Nokia
 qmobile energy x2:
   - QMobile
+  - Energy Sistem
 qmobile energy x1:
   - QMobile
+  - Energy Sistem
 qmobile black two:
   - QMobile
 qmobile a600:
@@ -27479,6 +27561,7 @@ era 4g:
   - Xolo
 energy_diamond_mini:
   - Blu
+  - Energy Sistem
 elegance 5.0 lite:
   - Kiano
 elegance_4.5:
@@ -30030,6 +30113,7 @@ hammer_energy_18x9:
   - Hammer
 hammer energy 3g:
   - Hammer
+  - Energy Sistem
 hammer iron:
   - Hammer
 v2180a:
@@ -31895,6 +31979,594 @@ santin hexin-h2-a:
   - Santin
 santin hexin-h3:
   - Santin
+vertex_luck_l_5045_3g:
+  - Vertex
+redmi 9t nfc_sn:
+  - Xiaomi
+lt c3200:
+  - LT Mobile
+tf6:
+  - Telefunken
+symbol:
+  - Hotwav
+symbol pro:
+  - Hotwav
+star7 3g:
+  - CORN
+star 6.0 g65:
+  - EKO
+star 5.5 g55:
+  - EKO
+star 5.0 g50:
+  - EKO
+star 4.0 g40:
+  - EKO
+zte c2017:
+  - ZTE
+tecno wx3lte:
+  - Tecno Mobile
+redmi 10 2022:
+  - Xiaomi
+ef501:
+  - Bluebird
+santin bdsharing:
+  - Santin
+apk ukozi u6:
+  - Ark
+luck l130:
+  - Vertex
+stark:
+  - GFive
+rd86qe:
+  - DSIC
+s32_nfc:
+  - Altice
+rk95:
+  - CipherLab
+eda61k:
+  - Honeywell
+v18 pro_a:
+  - X-TIGI
+thomson serea500:
+  - Thomson
+mascom s750:
+  - Mascom
+npa205sh:
+  - Sharp
+abr-al80:
+  - Huawei
+2211133c:
+  - Xiaomi
+v2241a:
+  - Vivo
+cet-al60:
+  - Huawei
+23013rk75c:
+  - Xiaomi
+v2244a:
+  - Vivo
+anp-an00:
+  - Huawei
+shg10:
+  - Sharp
+a202zt:
+  - ZTE
+sc-56c:
+  - Samsung
+  - SuperSonic
+xq-cq44:
+  - Sony
+mgz-bd00:
+  - Hi Nova
+v2243a:
+  - Vivo
+p-01k:
+  - Panasonic
+f-52b:
+  - Fujitsu
+v2238a:
+  - Vivo
+phm110:
+  - OPPO
+pgw110:
+  - OPPO
+land rover explore r:
+  - Land Rover
+infinix x680c:
+  - Infinix
+new 11:
+  - VGO TEL
+soshphone:
+  - SOSH
+sts550:
+  - Saiet
+symphony z32:
+  - Symphony
+i5g:
+  - Advan
+hisense f17:
+  - Hisense
+hisense f28:
+  - Hisense
+g355:
+  - DEXP
+f1x4g:
+  - Telma
+f2_plus:
+  - Koobee
+evm4g6:
+  - Evoo
+redmi 10 5g:
+  - Xiaomi
+xiaomi 12 pro:
+  - Xiaomi
+xiaomi 12t pro:
+  - Xiaomi
+xiaomi 12t:
+  - Xiaomi
+sm-m127n:
+  - Samsung
+redmi 10a:
+  - Xiaomi
+x95i:
+  - Doogee
+x93:
+  - Doogee
+x95:
+  - Doogee
+redmi 9at:
+  - Xiaomi
+xp9800:
+  - Guophone
+memor 1:
+  - Datalogic
+af9020:
+  - Lava
+ea630:
+  - Unitech
+tp601e:
+  - Neffos
+tp601c:
+  - Neffos
+tp601b:
+  - Neffos
+thomson t510h:
+  - Thomson
+t47_09:
+  - BenQ
+sugar c-88dual:
+  - Sugar
+sp5040-casiopea ii:
+  - Woo
+sonim-xp7700:
+  - Sonim
+sonim-xp5700:
+  - Sonim
+i-mobile iq z pro:
+  - i-mobile
+i-mobile iq z bright:
+  - i-mobile
+v1277:
+  - XElectron
+qmp-m1-n-ip:
+  - QTECH
+sm-a505ft:
+  - Samsung
+itel p551w:
+  - iTel
+zte blade a51 lite:
+  - ZTE
+redmi a1+:
+  - Xiaomi
+mi 10 lite zoom:
+  - Xiaomi
+sm-a042f:
+  - Samsung
+zte v817:
+  - ZTE
+zte blade c2 plus:
+  - ZTE
+lg-d950:
+  - LG
+lg-d375ar:
+  - LG
+lg-e445:
+  - LG
+lg-d685:
+  - LG
+lg-e977:
+  - LG
+lg-d321:
+  - LG
+lg-us780:
+  - LG
+lgls620:
+  - LG
+lg-e450f:
+  - LG
+lg-d625:
+  - LG
+lg-ls840:
+  - LG
+lg-f510l:
+  - LG
+lg-f320k:
+  - LG
+lg-f340s:
+  - LG
+lg-d610:
+  - LG
+lg-e410:
+  - LG
+lg-d285:
+  - LG
+lg-d107:
+  - LG
+lg-d120:
+  - LG
+lg-vs450pp:
+  - LG
+lg-e986:
+  - LG
+lg-d160:
+  - LG
+vs930 4g:
+  - LG
+lg-p712:
+  - LG
+lg-e435:
+  - LG
+lg-p655h:
+  - LG
+lg-p714:
+  - LG
+lg-f520s:
+  - LG
+lg-f200k:
+  - LG
+energy phone pro:
+  - Energy Sistem
+energy phone pro qi:
+  - Energy Sistem
+energy phone pro hd:
+  - Energy Sistem
+energy phone colors:
+  - Energy Sistem
+studio energy:
+  - Blu
+energy phone max 2+:
+  - Energy Sistem
+sm-g973x:
+  - Samsung
+s8_plus_a:
+  - Bluboo
+s8a:
+  - Bluboo
+s710 ruby:
+  - Four Mobile
+s61 jazz:
+  - Stylo
+s5us:
+  - Eks Mobility
+s5701l:
+  - NUU Mobile
+s55b:
+  - Evercoss
+s55a:
+  - Evercoss
+s505024:
+  - Sansui
+rx460:
+  - Aligator
+zte 8045:
+  - ZTE
+poco m5s:
+  - POCO
+a1_pro:
+  - UMIDIGI
+huawei p6 s-u06:
+  - Huawei
+zte blade l370:
+  - ZTE
+poco c40:
+  - POCO
+htc desire 620g dual sim:
+  - HTC
+s6523:
+  - Revomovil
+cet-lx9:
+  - Huawei
+poco f4:
+  - POCO
+eve-lx9n:
+  - Huawei
+razor_plus_4g:
+  - FireFly Mobile
+w10:
+  - Hotwav
+kingkong 6:
+  - CUBOT
+a101bm:
+  - Kyocera
+eda51k:
+  - Honeywell
+eda40:
+  - Honeywell
+e10_pro:
+  - Elephone
+senseit e400:
+  - Senseit
+mix 3 the palace museum edition:
+  - Xiaomi
+poco m5:
+  - POCO
+poco c3:
+  - POCO
+mi cc9e:
+  - Xiaomi
+lenovo s60a:
+  - Lenovo
+redmi 10 prime:
+  - Xiaomi
+redmi k30 ultra:
+  - Xiaomi
+redmi k30s ultra:
+  - Xiaomi
+redmi 10x 4g:
+  - Xiaomi
+redmi 9 prime:
+  - Xiaomi
+mi 11 pro:
+  - Xiaomi
+mi 11 le:
+  - Xiaomi
+mi 11 lite 5g ne:
+  - Xiaomi
+hn3-u01:
+  - Huawei
+atrix hd:
+  - Motorola
+xiaomi 12s ultra:
+  - Xiaomi
+xiaomi 12s pro:
+  - Xiaomi
+xiaomi 12s:
+  - Xiaomi
+redmi 10 prime+ 5g:
+  - Xiaomi
+redmi 9 power:
+  - Xiaomi
+redmi 10x pro:
+  - Xiaomi
+xiaomi_m1805d1st:
+  - Xiaomi
+holly-u19:
+  - Huawei
+albatros c2:
+  - V-Gen
+nova p3:
+  - Mobell
+notrino:
+  - Smart
+noa_stilo:
+  - NOA
+next_p:
+  - Iris
+next u:
+  - Iris
+next p+:
+  - Iris
+newsday_n2+:
+  - Newsday
+nedaphone v9:
+  - Nedaphone
+movic-w2:
+  - Movic
+star n9589:
+  - Star
+redmi pro:
+  - Xiaomi
+jy-g4s:
+  - Jiayu
+huawei p7-l07:
+  - Huawei
+jy-g5s:
+  - Jiayu
+tornado slim:
+  - Fly
+class_c250:
+  - Beafon
+s61:
+  - Doogee
+archos core 62s:
+  - Archos
+revel 3g:
+  - Cherry Mobile
+relnat premier:
+  - RelNAT
+itel w5503:
+  - iTel
+telo_te6:
+  - TeloSystems
+22081212g:
+  - Xiaomi
+rky-lx1:
+  - Huawei
+tecno ad8:
+  - Tecno Mobile
+rmx3663:
+  - Realme
+rmx3686:
+  - Realme
+rmx3687:
+  - Realme
+pgu110:
+  - OPPO
+nokia g60 5g:
+  - Nokia
+via f30 plus:
+  - Casper
+zte blade a52:
+  - ZTE
+infinix x6826:
+  - Infinix
+sm-a236e:
+  - Samsung
+sm-a236u1:
+  - Samsung
+miwang m2s:
+  - MIWANG
+ihunt note ultra:
+  - iHunt
+mp03:
+  - UMIDIGI
+mp04:
+  - UMIDIGI
+mp08:
+  - UMIDIGI
+v2166:
+  - Vivo
+itel s11x:
+  - iTel
+itel s11xb:
+  - iTel
+is6plus:
+  - Iris
+is3plus:
+  - Iris
+iris88_lite:
+  - Lava
+iris88_go:
+  - Lava
+iris88s:
+  - Lava
+iris88:
+  - Lava
+iris65:
+  - Lava
+iris42:
+  - Lava
+iris 50 pro:
+  - Lava
+iris 31:
+  - Lava
+i2_lite:
+  - iVooMi
+i2:
+  - iVooMi
+hisense hi 1 pro:
+  - Hisense
+note 6:
+  - Ulefone
+note 9:
+  - CUBOT
+lt600t:
+  - ZoomSmart
+  - Sony
+primo f10:
+  - Walton
+primo nf5:
+  - Walton
+sky55_eea:
+  - Konrow
+zte n939sc:
+  - ZTE
+yu yureka black:
+  - Yu
+nokia c5 endi:
+  - Nokia
+nokia c2 tennen:
+  - Nokia
+snap_pro:
+  - NASCO
+r1 lite:
+  - iLA
+red royal edition:
+  - Famous
+ixion el450:
+  - DEXP
+ep19_star:
+  - Ephone
+ep19:
+  - Ephone
+archos sense 55 dc:
+  - Archos
+archos sense 50 dc:
+  - Archos
+archos core 50p:
+  - Archos
+zte blade a315:
+  - ZTE
+young y56:
+  - SYH
+young y35:
+  - SYH
+young y51+:
+  - SYH
+young y55:
+  - SYH
+young y36+:
+  - SYH
+ys7pro:
+  - YunSong
+ys8pro:
+  - YunSong
+ys6 pro:
+  - YunSong
+yu 6000:
+  - Yu
+lava z3 up 2:
+  - Lava
+2206123sc:
+  - Xiaomi
+a204so:
+  - Sony
+a101fc:
+  - Fujitsu
+fio-bd00:
+  - Hi Nova
+scg18:
+  - Samsung
+sm-a233c:
+  - Samsung
+v2242a:
+  - Vivo
+pgx110:
+  - OPPO
+phj110:
+  - OPPO
+bne-al00:
+  - Huawei
+rmx3611:
+  - Realme
+pcd pl5507:
+  - PCD
+pcd_ph4002:
+  - PCD
+pcd_ph3501:
+  - PCD
+pcd_e400:
+  - PCD
+panasonic t41:
+  - Panasonic
+panasonic t33:
+  - Panasonic
+panasonic p41:
+  - Panasonic
+pam412:
+  - Condor
+forward_evolve:
+  - NGM
+kenny:
+  - Wiko
+kayeta:
+  - MobiWire
+kata-m4s:
+  - Kata
+karbonn yuva 2:
+  - Karbonn
+abr-al90:
+  - Huawei
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -32113,18 +32785,25 @@ eclipse_g500:
   - E-Boda
 energy400:
   - Energizer
+  - Energy Sistem
 energy 400 lte:
   - Energizer
+  - Energy Sistem
 energy 400s:
   - Energizer
+  - Energy Sistem
 energy_500_lte:
   - Energizer
+  - Energy Sistem
 energy e520 lte:
   - Energizer
+  - Energy Sistem
 energy s500:
   - Energizer
+  - Energy Sistem
 energy s600:
   - Energizer
+  - Energy Sistem
 powermaxp490:
   - Energizer
 ph-1:
@@ -33389,8 +34068,10 @@ ultra energy:
   - Hyundai
 ultra energy lite:
   - Hyundai
+  - Energy Sistem
 ultra energy plus:
   - Hyundai
+  - Energy Sistem
 ultra live ii:
   - Hyundai
 ultra storm:
@@ -38036,8 +38717,10 @@ phicomm clue m:
   - Phicomm
 phicomm energy 3+:
   - Phicomm
+  - Energy Sistem
 phicomm e653(energy l):
   - Phicomm
+  - Energy Sistem
 multilaser_e:
   - Multilaser
 multilaser_e_lite:
@@ -41985,6 +42668,12 @@ momo9 star:
   - Ployer
 dns airtab m75t:
   - DNS
+bmxc 800:
+  - BMXC
+huawei m2-a01l:
+  - Huawei
+b1-730:
+  - Acer
 readboy_g30:
   - Readboy
 readboy_g35:
@@ -47288,6 +47977,276 @@ sm-x806e:
   - Samsung
 g101-og:
   - Santin
+m bot tab 103:
+  - Logicom
+m bot tab 10:
+  - Logicom
+teo13p:
+  - Thomson
+teo10s:
+  - Thomson
+tf501_ec:
+  - Telefunken
+tab8plus:
+  - Masstel
+tab7q804val:
+  - VALTECH
+tab7a3g05:
+  - Sankey
+tab7plus:
+  - Masstel
+tab5:
+  - GIRASOLE
+tab10plus:
+  - Masstel
+tab1081:
+  - Sunstech
+tab-s1:
+  - MOVISUN
+t7a6inc:
+  - Noblex
+t3g_04:
+  - Samtech
+mp01a3g:
+  - MwalimuPlus
+torex pad 8pro:
+  - Torex
+torex pad 8 pro:
+  - Torex
+kfrawi:
+  - Amazon
+kfquwi:
+  - Amazon
+kfthwi:
+  - Amazon
+readboy_g550a:
+  - Readboy
+tb138fc:
+  - Lenovo
+rod-w09:
+  - Huawei
+jt10-x:
+  - Geanee
+h10_us:
+  - Winnovo
+wgrr-w09:
+  - Huawei
+lenovo tb-x306nc_prc:
+  - Lenovo
+actab1021:
+  - Acer
+la_tab_124_hd_plus:
+  - Logicom
+tab_a6:
+  - Oangcc
+via_l30:
+  - Casper
+gtvr10s:
+  - Ghia
+mupad_k10:
+  - iMuz
+mupad104:
+  - iMuz
+mupadt7:
+  - iMuz
+mupad t10:
+  - iMuz
+mupad 7s:
+  - iMuz
+mitab california:
+  - Wolder
+mercury hd quad core:
+  - eSTAR
+maven_7_plus:
+  - Odys
+m-wpw801:
+  - Mediacom
+gtab718:
+  - Ghia
+gtkids7a:
+  - Ghia
+g1101t:
+  - Positivo BGH
+fusion5_f704b:
+  - Fusion5
+fusion5_f105d:
+  - Fusion5
+fusion5_f104e:
+  - Fusion5
+fine 7b:
+  - Everex
+eagle_961:
+  - Krüger&Matz
+eagle_1068:
+  - Krüger&Matz
+axis7_slim:
+  - Ghia
+axis7_led:
+  - Ghia
+hope8_mate:
+  - X-TIGI
+itel w7001:
+  - iTel
+joy8 mate:
+  - X-TIGI
+dbook_110:
+  - Danew
+tpc-xe10d-h:
+  - JAY-Tech
+tablet_dl_3910:
+  - DL
+tablet_dl_3903:
+  - DL
+tablet_dl_3420:
+  - DL
+tablet_dl_3411:
+  - DL
+tablet_dl_3410:
+  - DL
+tab918qc:
+  - Sunstech
+tab917qc-8gb:
+  - Sunstech
+tab917qc-16gb:
+  - Sunstech
+t74rd:
+  - Oysters
+t7014q+prixton:
+  - Prixton
+t1700q-prixton:
+  - Prixton
+t1700q prixton:
+  - Prixton
+supra_m743:
+  - Supra
+sm-t330nu:
+  - Samsung
+ideal 8s:
+  - Hometech
+v116w-dualos:
+  - Onda
+u27gt-c8p:
+  - Cube
+u25gt-w4:
+  - Cube
+smartbook_s7qs:
+  - SmartBook
+lg-e987:
+  - LG
+lgas323:
+  - LG
+an7ig3:
+  - Arnova
+energy i10 dual:
+  - Energy Sistem
+energy tablet 9 neo 2:
+  - Energy Sistem
+energy phone neo:
+  - Energy Sistem
+energy neo 9:
+  - Energy Sistem
+energy tablet neo 10 3g:
+  - Energy Sistem
+pmt3407_4g:
+  - Prestigio
+symtab50:
+  - Symphony
+optima 1245c 4g ts1277ml:
+  - Digma
+optima 1411d 4g ts1273pl:
+  - Digma
+iplay_50:
+  - AllDocube
+tab a1015:
+  - Sigma
+9161g:
+  - TCL
+htc a103:
+  - HTC
+ags5-w09:
+  - Huawei
+gravity2-4g:
+  - SPC
+xiaomi pad 5 pro:
+  - Xiaomi
+nomi c080010 libra2:
+  - Nomi
+tab 15:
+  - Blackview
+telp-1013kbc:
+  - Telefunken
+v tab z1 a:
+  - Vestel
+rubenstab_t11:
+  - Frunsi
+hpad2:
+  - HeadWolf
+sm-x205c:
+  - Samsung
+nogapad 7g:
+  - NOGA
+optima prime 4 3g tt7174pg:
+  - Digma
+optima_prime_3_3g_ts7131mg:
+  - Digma
+m40air_row:
+  - Teclast
+pritom_m10:
+  - Pritom
+m863-eea:
+  - BMXC
+pb-6505y:
+  - Lenovo
+zxt-10hl323s:
+  - Zamolxe
+zxt-10fl323g-pro:
+  - Zamolxe
+ultrapad_up10.s36la:
+  - Technopc
+regal tab 10.1:
+  - REGAL
+redway7_pro:
+  - Redway
+lifetab e1080x:
+  - Medion
+e101gcm:
+  - Great Asia
+quicktab plus:
+  - PC Smart
+polaris_808_be:
+  - Blaupunkt
+polaris_808:
+  - Blaupunkt
+bmxc801:
+  - BMXC
+archos core 70 3g:
+  - Archos
+archos sense 101 x:
+  - Archos
+archos core 101 3g:
+  - Archos
+d-51c:
+  - Sharp
+bah4-w29:
+  - Huawei
+p30hd_eea:
+  - Teclast
+3g 1026-q18:
+  - iBall
+pcb-t750:
+  - PCBOX
+party:
+  - Explay
+paladin evo:
+  - iRobot
+flylife web 7.85 slim:
+  - Fly
+flylife web 7:
+  - Fly
+bah4-w39:
+  - Huawei
+bzt-w09:
+  - Huawei
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -49056,6 +50015,93 @@ ulx-43utcs347:
   - Yuno
 rombica tv air:
   - Rombica
+nv720wb:
+  - Eltex
+lpx-g box max:
+  - LPX-G
+tf500:
+  - Telefunken
+olto-43st20u:
+  - OLTO
+tesla xt550:
+  - ComTrade Tesla
+  - Motorola
+perfeo_pf_a4553:
+  - Perfeo
+ipc002:
+  - Invin
+km9 pro:
+  - Mecool
+aftti43:
+  - Amazon
+aftso001:
+  - JVC
+  - Amazon
+gtcombo:
+  - GTMEDIA
+smart box y1:
+  - Rombica
+swg2001a-a:
+  - Beeline
+stb0819:
+  - Elenberg
+wud55h7762sn:
+  - WANSA
+wud55g7762s:
+  - WANSA
+vibox v5 pro:
+  - ViBox
+vibox_v2_pro:
+  - ViBox
+hk1 mini+:
+  - Vontar
+vontar x4:
+  - Vontar
+vontar x2:
+  - Vontar
+dexp shell pt320at01-5:
+  - DEXP
+yandexmodule2-00001:
+  - Yandex
+dexp shell lc390tu1a:
+  - DEXP
+32h550t:
+  - Leff
+hty-32hdr06g:
+  - Hartens
+43f1ydx000bs2:
+  - Irbis
+h-led40gs5003:
+  - Hyundai
+h32f8000qg-a:
+  - DEXP
+h32h8001c:
+  - DEXP
+h32f8000qg:
+  - DEXP
+dm-led55ur31:
+  - Digma
+32lex-7272:
+  - BBK
+h32h8051c-g:
+  - DEXP
+rkm mk902ii:
+  - Rikomagic
+  - Sony Ericsson
+rkm mk902:
+  - Rikomagic
+rkm mk802iv:
+  - Rikomagic
+  - Sony Ericsson
+rkm mk802iiis:
+  - Rikomagic
+  - Sony Ericsson
+polar_p32l32t2csm:
+  - Polar
+k50dlx9us:
+  - TD Systems
+k24dlx9hs:
+  - TD Systems
 bb2 pro:
   - Mecool
 kii pro:
@@ -49596,3 +50642,5 @@ geozon lte:
   - GEOZON
 leo-dlxxe:
   - Huawei
+appllp max:
+  - LOKMAT

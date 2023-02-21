@@ -33,7 +33,7 @@ module.exports = {
   'FB', 'FE', 'FF', 'FM', 'FR', 'FY', 'GZ', 'I4', 'IF',
   'IW', 'LH', 'LY', 'MB', 'MN', 'MO', 'MY', 'OA', 'OS',
   'PI', 'PX', 'QA', 'QM', 'S5', 'SX', 'TF', 'TO', 'WF',
-  'ZV', 'FP', 'AD',
+  'ZV', 'FP', 'AD', 'WL',
   ],
   'Internet Explorer': ['BZ', 'CZ', 'IE', 'IM', 'PS'],
   'Konqueror': ['KO'],
