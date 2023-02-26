@@ -5,7 +5,13 @@ export default class ClientHints {
   parse(objHeaders: JSONObject): JSONObject;
 }
 
-export type JSONValue = string | number | boolean | JSONObject | JSONArray;
+export type JSONValue =
+  | string
+  | number
+  | boolean
+  | JSONObject
+  | JSONArray
+  | null;
 
 export interface JSONObject {
   [k: string]: JSONValue;
