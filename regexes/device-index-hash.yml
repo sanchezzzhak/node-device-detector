@@ -701,6 +701,14 @@ travelmate 8371:
   - Acer
 dell chromebook 13 (7310):
   - Dell
+easynote tv11hc:
+  - Packard Bell
+dell chromebook 11 (3180):
+  - Dell
+acer chromebook 15 (cb3-532):
+  - Acer
+hp chromebook x2:
+  - HP
 impress_grip:
   - Vertex
 archos diamond plus:
@@ -768,6 +776,8 @@ sm-n960n:
 sm-g930w8:
   - Samsung
 huawei nxt-cl00:
+  - Huawei
+dra-l01:
   - Huawei
 shtrih-smartpos-f2:
   - Shtrikh-M
@@ -1987,6 +1997,10 @@ musicpad_m1:
   - Vonino
 musicpad_h1:
   - Vonino
+hitv205n:
+  - Hisense
+nw-a300series:
+  - Sony
 da220hql:
   - Acer
 da241hl:
@@ -3127,8 +3141,6 @@ noa c25:
 noa core forte:
   - NOA
 noa_e1:
-  - NOA
-noa_g1:
   - NOA
 noa_h10:
   - NOA
@@ -10795,8 +10807,6 @@ vs870 4g:
   - LG
 5042t:
   - Alcatel
-vivax tablet tpc 802 3g:
-  - Vivax
 fire2 plus lte:
   - InnJoo
 nimbus 101q:
@@ -32567,6 +32577,231 @@ karbonn yuva 2:
   - Karbonn
 abr-al90:
   - Huawei
+halo3_pro:
+  - Airpha
+5024f:
+  - Alcatel
+5024d:
+  - Alcatel
+2q8l10000:
+  - HTC
+gionee s10c pro:
+  - Gionee
+alfa l:
+  - Lava
+aquaris e5 hd:
+  - bq
+  - Intex
+wildfire r70:
+  - HTC
+v4 nano:
+  - Evertek
+v4+:
+  - Evertek
+v75m:
+  - Symphony
+v120:
+  - Symphony
+v130:
+  - Symphony
+kicka zoom:
+  - MobiWire
+htc desire 19s:
+  - HTC
+htc desire 19+:
+  - HTC
+hapi10:
+  - Masstel
+m4crd:
+  - Mint
+m4cr:
+  - Mint
+m370i:
+  - InFocus
+m370:
+  - InFocus
+m350 pro:
+  - QMobile
+haier_a41:
+  - Haier
+magic_1:
+  - Attila
+global3 b01:
+  - FMT
+autoid q9:
+  - Seuic
+autoid q7:
+  - Seuic
+20190419q:
+  - Gionee
+pccm40:
+  - OPPO
+roam_cat m8:
+  - Roam Cat
+ldox-2123:
+  - K-Touch
+ldox-2121:
+  - K-Touch
+hla note1-l:
+  - Xiaolajiao
+changhongs07:
+  - Changhong
+sany v8 pro:
+  - SANY
+sany v8:
+  - SANY
+orbis:
+  - NYX Mobile
+opus 3:
+  - Xolo
+outdoor wt4 en:
+  - Telefunken
+vivax pro m1:
+  - Vivax
+vivax fun s10:
+  - Vivax
+vivid_premium:
+  - FireFly Mobile
+desire620g:
+  - HTC
+evmfv2:
+  - Evoo
+kamba_2:
+  - 7 Mobile
+kamba:
+  - 7 Mobile
+forward ruby:
+  - NGM
+forwardruby:
+  - NGM
+agm_h5:
+  - AGM
+blaze g:
+  - CG Mobile
+blaze n:
+  - CG Mobile
+noa_g1:
+  - C5 Mobile
+  - NOA
+noain x9 plus:
+  - Noain
+brown 2:
+  - MyPhone
+blubood2:
+  - Bluboo
+bonvi note:
+  - NOVO
+bonvi prime:
+  - NOVO
+bonvi pro:
+  - NOVO
+borneo_pro:
+  - NOVO
+boom p1:
+  - Pano
+vi_note:
+  - NOVO
+coolpad c202:
+  - Coolpad
+tecno bf7:
+  - Tecno Mobile
+lava lzg402 om:
+  - Lava
+cph2495:
+  - OPPO
+lenovo k10e70:
+  - Lenovo
+lebest l9:
+  - LeBest
+tecno-mobile ch9n:
+  - Tecno Mobile
+voto v5x:
+  - Voto
+voto v2i:
+  - Voto
+volt_sv451_vision:
+  - Volt
+  - Vonino
+volt_5xl:
+  - Surge
+cosmo duo:
+  - Highscreen
+micromax q333:
+  - MicroMax
+micromax q324:
+  - MicroMax
+htconem8eye:
+  - HTC
+htconem8:
+  - HTC
+htc_0pcv2:
+  - HTC
+htc desire 510:
+  - HTC
+benwee w5pro:
+  - BenWee
+benwee l5:
+  - BenWee
+tcl m2u:
+  - TCL
+im-a930s:
+  - Pantech
+huawei mt2-l05:
+  - Huawei
+htc_v01:
+  - HTC
+htc_po582:
+  - HTC
+htc_pn071:
+  - HTC
+htc_one_mini_2:
+  - HTC
+htc_m8sx:
+  - HTC
+htc_m8minx:
+  - HTC
+titanium vista:
+  - Karbonn
+tiger_lite:
+  - Ulefone
+thrill_boost:
+  - Cloudfone
+thrill hd:
+  - Cloudfone
+thl t9+:
+  - ThL
+thl t9 pro:
+  - ThL
+thl t9 plus:
+  - ThL
+telenor_smart_4g:
+  - Telenor
+tecno-n9s:
+  - Tecno Mobile
+tecno-n9:
+  - Tecno Mobile
+tecno-n8:
+  - Tecno Mobile
+tecno-n6s:
+  - Tecno Mobile
+tecno-n6:
+  - Tecno Mobile
+ox_x1:
+  - TWZ
+lp-02:
+  - Sharp
+samsung sm-a035f:
+  - Samsung
+sm-f926w:
+  - Samsung
+ann-an00:
+  - Huawei
+sm-a315n:
+  - Samsung
+sm-m3070:
+  - Samsung
+primo vx:
+  - Walton
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -35609,8 +35844,6 @@ mya-l22:
 mya-u29:
   - Huawei
 mya-l02:
-  - Huawei
-dra-l01:
   - Huawei
 dra-l21:
   - Huawei
@@ -45748,6 +45981,16 @@ walpad 10p:
   - Walton
 wizpad_valuer_v8:
   - Redfox
+vivax tablet tpc 802 3g:
+  - Vivax
+dc-1032:
+  - Everest
+everpad dc-709:
+  - Everest
+dc-718:
+  - Everest
+dc-1104:
+  - Everest
 v tab z1:
   - Vestel
 x104-eea:
@@ -48247,6 +48490,117 @@ bah4-w39:
   - Huawei
 bzt-w09:
   - Huawei
+archos core 101 3g ultra:
+  - Archos
+v10_4g:
+  - Onda
+bt7x1:
+  - BRAVE
+m1092q:
+  - Cavion
+m-sp7mxah:
+  - Mediacom
+m-sp7mxa:
+  - Mediacom
+tangotab8:
+  - Simbans
+m8_go:
+  - Reeder
+leke pad-l04:
+  - Leke
+8800i:
+  - DIMO
+viewpad_m10:
+  - ViewSonic
+vivax tablet tpc-804 3g:
+  - Vivax
+dc-714:
+  - Everest
+dc-855:
+  - Everest
+dc-856:
+  - Everest
+dc-9714:
+  - Everest
+dc-9712-8:
+  - Everest
+dd-1gb:
+  - iBall
+dc-709:
+  - Everest
+dc-705:
+  - Everest
+dc-1215:
+  - Everest
+dc-1028:
+  - Everest
+everpad dc-1102:
+  - Everest
+dc-9715:
+  - Everest
+dc-1216:
+  - Everest
+dc-1545:
+  - Everest
+kidpad_lite:
+  - Multilaser
+noatab:
+  - C5 Mobile
+cabana:
+  - Boost
+strikaplay:
+  - Boost
+cybook tablet:
+  - Bookeen
+bluslate7:
+  - BluSlate
+bluslate6:
+  - BluSlate
+impad 9415:
+  - Impression
+impad 1006:
+  - Impression
+leagoo_leapad_7i:
+  - Leagoo
+lect-tab1011:
+  - Lectrus
+lect-tab0711:
+  - Lectrus
+slide_dazzle_3500:
+  - iBall
+  - Wiko
+viewpad 8e:
+  - ViewSonic
+tmk715l:
+  - Condor
+tm800a620m:
+  - NuVision
+tm101a620m:
+  - NuVision
+tfx711g:
+  - Condor
+tfx714l:
+  - Condor
+tfx713l:
+  - Condor
+ht0703w08:
+  - Hyundai
+i1_3gd:
+  - Cube
+tb128fu:
+  - Lenovo
+vankyo_s8:
+  - Vankyo
+ffftab10a4:
+  - FFF SmartLife
+polparoid pure:
+  - Polaroid
+v-pad pop:
+  - Versus
+v80 se:
+  - Onda
+v80_se:
+  - Onda
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -50102,6 +50456,18 @@ k50dlx9us:
   - TD Systems
 k24dlx9hs:
   - TD Systems
+dm-led32sr21:
+  - Digma
+65lex-8173/uts2c:
+  - BBK
+65lex-8162/uts2c:
+  - BBK
+t40sgled-a15:
+  - Eurostar
+t40sled-a14:
+  - Eurostar
+vivax-40le78t2s2sm:
+  - Vivax
 bb2 pro:
   - Mecool
 kii pro:
