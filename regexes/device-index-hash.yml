@@ -182,6 +182,8 @@ quad-core t3 p3:
   - Allwinner
 sda-80tab:
   - Pioneer
+aivi-n3000rv:
+  - Humax
 pixel 3:
   - Google
 m2006c3lg:
@@ -879,6 +881,8 @@ mc2200:
   - Zebra
 mc93:
   - Zebra
+pnc550:
+  - Hytera
 sm-f721u:
   - Samsung
 note 13p:
@@ -968,6 +972,14 @@ redmi note 9 4g:
 22095ra98c:
   - Xiaomi
 22101316uc:
+  - Xiaomi
+22111317i:
+  - Xiaomi
+22101316i:
+  - Xiaomi
+22101316up:
+  - Xiaomi
+22101317c:
   - Xiaomi
 gi-626:
   - altron
@@ -2001,52 +2013,6 @@ hitv205n:
   - Hisense
 nw-a300series:
   - Sony
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-da222hql:
-  - Acer
-blm-00:
-  - Huawei
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 i7u:
   - Advan
 i4u:
@@ -32802,6 +32768,141 @@ sm-m3070:
   - Samsung
 primo vx:
   - Walton
+sm-g736b:
+  - Samsung
+sm-s911b:
+  - Samsung
+sm-s911n:
+  - Samsung
+sm-s916b:
+  - Samsung
+sm-s916n:
+  - Samsung
+sm-s918b:
+  - Samsung
+sm-s918n:
+  - Samsung
+v2227a:
+  - Vivo
+v2217:
+  - Vivo
+ravoz v3:
+  - Ravoz
+itel s663ln:
+  - iTel
+ihunt cyber shark 4g:
+  - iHunt
+moto e22:
+  - Motorola
+ravoz v2:
+  - Ravoz
+sh-13c:
+  - Sharp
+artel t21:
+  - Artel
+tecno mobile ch6n:
+  - Tecno Mobile
+cph2447:
+  - OnePlus
+  - OPPO
+cph2481:
+  - OPPO
+22101320g:
+  - POCO
+phq110:
+  - OPPO
+phk110:
+  - OnePlus
+nx711j:
+  - Nubia
+nx729j:
+  - Nubia
+sm-a042m:
+  - Samsung
+sm-m045f:
+  - Samsung
+xt2201-6:
+  - Motorola
+wp18 pro:
+  - Oukitel
+vna-lx2:
+  - Huawei
+m2010j19gc:
+  - POCO
+rmo-nx1:
+  - Huawei
+rky-lx3:
+  - Huawei
+wp21:
+  - Oukitel
+s41pro:
+  - Doogee
+s89:
+  - Doogee
+mp17:
+  - UMIDIGI
+mp18:
+  - UMIDIGI
+crt-lx1:
+  - Huawei
+infinix x666b:
+  - Infinix
+zte blade a32:
+  - ZTE
+2210129sg:
+  - Xiaomi
+bv9200:
+  - Blackview
+neo_plus:
+  - Mobicel
+22111317pg:
+  - POCO
+sm-a515f:
+  - Samsung
+t507u:
+  - TCL
+ixion xl240:
+  - DEXP
+sm-g800m:
+  - Samsung
+sm-g800y:
+  - Samsung
+sm-g800x:
+  - Samsung
+4good kids s45:
+  - 4Good
+4good s503m 3g:
+  - 4Good
+4good s500m 3g:
+  - 4Good
+4good s400m 3g:
+  - 4Good
+4good s350m 3g:
+  - 4Good
+starshine iii:
+  - SFR
+shv-e330k:
+  - Samsung
+prime mini se:
+  - Highscreen
+psp3534duo_ru:
+  - Prestigio
+psp3416duo_eu:
+  - Prestigio
+point x502:
+  - Vivax
+hl6577:
+  - Advance
+hl6256:
+  - Advance
+next lite:
+  - Cloudfone
+myphone uno:
+  - MyPhone
+vox s509 3g vs5032pg:
+  - Digma
+vox_g501_4g_vs5033ml:
+  - Digma
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -36939,8 +37040,6 @@ s4a5:
 lexand s4a4 neon:
   - Lexand
   - Jinga
-sc7 pro hd:
-  - Lexand
 s4a1:
   - Lexand
 lemhoov  l15:
@@ -39782,6 +39881,52 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+da222hql:
+  - Acer
+blm-00:
+  - Huawei
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -48601,6 +48746,34 @@ v80 se:
   - Onda
 v80_se:
   - Onda
+ct9a06p23:
+  - Venturer
+opd2201:
+  - OPPO
+22081283c:
+  - Xiaomi
+anry-1006:
+  - Anry
+sm-t503:
+  - Samsung
+tw10:
+  - Beafon
+scream 3g:
+  - Explay
+sb7 pro hd:
+  - Lexand
+sc7 pro hd:
+  - Lexand
+4good t704m 3g:
+  - 4Good
+4good t703m 3g:
+  - 4Good
+mpqc7:
+  - Mpman
+mitab_pro_10_plus:
+  - Wolder
+mitab_pro_10:
+  - Wolder
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -50468,6 +50641,36 @@ t40sled-a14:
   - Eurostar
 vivax-40le78t2s2sm:
   - Vivax
+selenga_a5:
+  - Selenga
+tox3:
+  - Ugoos
+x96mini_11:
+  - X96
+nexon x1+:
+  - NEXON
+3188hd:
+  - NGpon
+r68 ii:
+  - Beelink
+pyramid a5x:
+  - Rupa
+orbsmart h-01:
+  - Orbsmart
+nogapc pro:
+  - NOGA
+nogapc live:
+  - NOGA
+mystery_tv_d4906xf16:
+  - Mystery
+mystery_tv_d4306lf13:
+  - Mystery
+mystery_tv_d3155sh12:
+  - Mystery
+mystery_tv_d2365ch58_ua:
+  - Mystery
+mystery_tv_d2365ch58:
+  - Mystery
 bb2 pro:
   - Mecool
 kii pro:
