@@ -1186,6 +1186,7 @@ module.exports = {
   'S6': 'Senseit',
   'EW': 'Senwa',
   '24': 'Seeken',
+  'SEB': 'SEBBE',
   '61': 'Seuic',
   'SX': 'SFR',
   'SGI': 'SGIN',
@@ -1595,6 +1596,7 @@ module.exports = {
   'ZQ': 'ZYQ',
   'Z4': 'ZH&K',
   'OW': 'öwn',
+  'WBF': 'Webfleet',
   // legacy brands, might be removed in future versions
   'WB': 'Web TV',
   'XX': 'Unknown',

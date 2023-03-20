@@ -184,6 +184,8 @@ sda-80tab:
   - Pioneer
 aivi-n3000rv:
   - Humax
+pro 8475:
+  - Webfleet
 pixel 3:
   - Google
 m2006c3lg:
@@ -883,6 +885,8 @@ mc93:
   - Zebra
 pnc550:
   - Hytera
+ps20j:
+  - Zebra
 sm-f721u:
   - Samsung
 note 13p:
@@ -981,6 +985,10 @@ redmi note 9 4g:
   - Xiaomi
 22101317c:
   - Xiaomi
+note 10p:
+  - Ulefone
+note 6p:
+  - Ulefone
 gi-626:
   - altron
 5039d_ru:
@@ -2013,6 +2021,52 @@ hitv205n:
   - Hisense
 nw-a300series:
   - Sony
+da220hql:
+  - Acer
+da241hl:
+  - Acer
+vsd220:
+  - ViewSonic
+ifp7550-3:
+  - ViewSonic
+ifp9850-3:
+  - ViewSonic
+ifp8650-3:
+  - ViewSonic
+ifp6550-3:
+  - ViewSonic
+wt22m-fi:
+  - AOpen
+wt19m-fi:
+  - AOpen
+t2s_lite:
+  - Sunmi
+xdh-0f-a1:
+  - Xiaodu
+xdh-17-a1:
+  - Xiaodu
+xdh-18-a1:
+  - Xiaodu
+xdh-21-a1:
+  - Xiaodu
+xdh-29-b1:
+  - Xiaodu
+xdh-2a-b1:
+  - Xiaodu
+10bdl4151t:
+  - Philips
+da222hql:
+  - Acer
+blm-00:
+  - Huawei
+aeobc:
+  - Amazon
+aeokn:
+  - Amazon
+aeoch:
+  - Amazon
+aeocw:
+  - Amazon
 i7u:
   - Advan
 i4u:
@@ -32903,6 +32957,63 @@ vox s509 3g vs5032pg:
   - Digma
 vox_g501_4g_vs5033ml:
   - Digma
+s10-kc:
+  - Kyocera
+motorola edge plus 5g uw (2022):
+  - Motorola
+kc-s302:
+  - Kyocera
+tecno kg5q:
+  - Tecno Mobile
+stratus_c7:
+  - Cloud
+power armor 16 pro:
+  - Ulefone
+moto g53 5g:
+  - Motorola
+power armor 19:
+  - Ulefone
+tecno l6502s:
+  - Tecno Mobile
+cph2483:
+  - OPPO
+motorola razr 2022:
+  - Motorola
+cph2437:
+  - OPPO
+cph2449:
+  - OnePlus
+  - OPPO
+sm-a146u:
+  - Samsung
+sm-a236u:
+  - Samsung
+xq-cq54:
+  - Sony
+p13 blue max pro 256 gb:
+  - Reeder
+sm-f700w:
+  - Samsung
+d60 pro:
+  - Doogee
+chp1723:
+  - OPPO
+sm-a037w:
+  - Samsung
+astro 8r:
+  - Maxwest
+moto e13:
+  - Motorola
+hit p8:
+  - Philco
+archos access 50 3g:
+  - Archos
+nitro 8:
+  - Maxwest
+view go:
+  - Wiko
+sm-s911w:
+  - Samsung
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -39881,52 +39992,6 @@ as-4421:
   - Assistant
 gsmart alto a2:
   - Gigabyte
-da220hql:
-  - Acer
-da241hl:
-  - Acer
-vsd220:
-  - ViewSonic
-ifp7550-3:
-  - ViewSonic
-ifp9850-3:
-  - ViewSonic
-ifp8650-3:
-  - ViewSonic
-ifp6550-3:
-  - ViewSonic
-wt22m-fi:
-  - AOpen
-wt19m-fi:
-  - AOpen
-t2s_lite:
-  - Sunmi
-xdh-0f-a1:
-  - Xiaodu
-xdh-17-a1:
-  - Xiaodu
-xdh-18-a1:
-  - Xiaodu
-xdh-21-a1:
-  - Xiaodu
-xdh-29-b1:
-  - Xiaodu
-xdh-2a-b1:
-  - Xiaodu
-10bdl4151t:
-  - Philips
-da222hql:
-  - Acer
-blm-00:
-  - Huawei
-aeobc:
-  - Amazon
-aeokn:
-  - Amazon
-aeoch:
-  - Amazon
-aeocw:
-  - Amazon
 bush 10.0 mytablet:
   - Bush
 bush 7.85 tablet:
@@ -48774,6 +48839,24 @@ mitab_pro_10_plus:
   - Wolder
 mitab_pro_10:
   - Wolder
+h7_us:
+  - Winnovo
+m8l 2022:
+  - Blu
+lenovo tb-8506x:
+  - Lenovo
+ct1056_32gb:
+  - Carrefour
+sm-t813:
+  - Samsung
+1ey:
+  - Mediacom
+s22_eea:
+  - SEBBE
+s23_eea:
+  - SEBBE
+ilium pad x8:
+  - Lanix
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -50671,6 +50754,8 @@ mystery_tv_d2365ch58_ua:
   - Mystery
 mystery_tv_d2365ch58:
   - Mystery
+chromecast hd:
+  - Google
 bb2 pro:
   - Mecool
 kii pro:
