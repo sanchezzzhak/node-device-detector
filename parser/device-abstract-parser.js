@@ -113,7 +113,7 @@ class DeviceParserAbstract extends ParserAbstract {
     if (isDesktop) {
       return [];
     }
-    
+
     let output = [];
     if (brandIndexes.length) {
       for (let cursor of brandIndexes) {
@@ -150,6 +150,15 @@ class DeviceParserAbstract extends ParserAbstract {
     userAgent = this.prepareUserAgent(userAgent);
     let result = this.__parse(userAgent, true, brandIndexes);
     if (result.length) {
+      // if it is fake device iphone/ipad then result empty
+      if (result[0].brand === 'Apple' && /android /i.test(userAgent)) {
+        return {
+          id: '',
+          brand: '',
+          model: '',
+          type: result[0].type,
+        };
+      }
       return result[0];
     }
     return null;

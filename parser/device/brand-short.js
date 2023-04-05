@@ -540,6 +540,7 @@ module.exports = {
   'Q1': 'High Q',
   '1H': 'Hipstreet',
   'HI': 'Hisense',
+  'HIP': 'HIPER',
   'HC': 'Hitachi',
   'H8': 'Hitech',
   'W3': 'HiMax',
