@@ -188,6 +188,32 @@ pro 8475:
   - Webfleet
 roik10:
   - ROiK
+vc8300:
+  - Zebra
+yt5760l:
+  - XY Auto
+yt5760b:
+  - XY Auto
+yt5760a:
+  - XY Auto
+yt5716c:
+  - XY Auto
+yt5716:
+  - XY Auto
+yt7216:
+  - XY Auto
+yt7216c:
+  - XY Auto
+yt7260b:
+  - XY Auto
+yt7260l:
+  - XY Auto
+yt9216cj:
+  - XY Auto
+yt9270:
+  - XY Auto
+yt9216bj:
+  - XY Auto
 pixel 3:
   - Google
 m2006c3lg:
@@ -889,6 +915,10 @@ pnc550:
   - Hytera
 ps20j:
   - Zebra
+eft_h4:
+  - EFT
+eft_h3:
+  - EFT
 sm-f721u:
   - Samsung
 note 13p:
@@ -991,6 +1021,12 @@ note 10p:
   - Ulefone
 note 6p:
   - Ulefone
+infinix x677:
+  - Infinix
+infinix x6815c:
+  - Infinix
+23021raa2y:
+  - Xiaomi
 gi-626:
   - altron
 5039d_ru:
@@ -33103,6 +33139,142 @@ sm-w2020:
   - Samsung
 sm-a125v:
   - Samsung
+tecno mobile kg6p:
+  - Tecno Mobile
+symbol s4:
+  - Hotwav
+ravoz z3 pro:
+  - Ravoz
+primo e12:
+  - Walton
+peppa-l03b:
+  - Huawei
+nex 3s 5g:
+  - Vivo
+artel q21:
+  - Artel
+masstel hapi 15:
+  - Masstel
+masstel hapi 30:
+  - Masstel
+cph2487:
+  - OnePlus
+  - OPPO
+cph2417:
+  - OnePlus
+  - OPPO
+pgt110:
+  - OPPO
+poco x5 gt pro:
+  - POCO
+tecno ci7n:
+  - Tecno Mobile
+2210132g:
+  - Xiaomi
+s19 max 64gb:
+  - Reeder
+rmx3709:
+  - Realme
+sm-a146b:
+  - Samsung
+sm-g990u2:
+  - Samsung
+2209116ag:
+  - Xiaomi
+a161:
+  - Inoi
+le max 2:
+  - LeEco
+n30:
+  - Iris
+rmx3710:
+  - Realme
+cph2407:
+  - OPPO
+infinix x6517:
+  - Infinix
+itel s663lc:
+  - iTel
+zte_blade_a31_plus_ru:
+  - ZTE
+itel a512w:
+  - iTel
+epic_2:
+  - Mobicel
+rmx2183:
+  - Realme
+mz-meizu 18s:
+  - Meizu
+luna g9:
+  - Luna
+  - Stylo
+asus_ai2203_a:
+  - Asus
+poco x5 5g:
+  - POCO
+poco x5 pro 5g:
+  - POCO
+ds-cl2 pro:
+  - Dcode
+lava lzg401:
+  - Lava
+berry pro:
+  - Mobicel
+r7_2:
+  - Mobicel
+itel a571wm:
+  - iTel
+sm-a145f:
+  - Samsung
+vi20220819:
+  - VIIPOO
+2211133g:
+  - Xiaomi
+tronik_3:
+  - CORN
+zeeker t100:
+  - Zeeker
+zte a2022py:
+  - ZTE
+infinix x6515:
+  - Infinix
+infocus m808:
+  - InFocus
+  - Foxconn
+epic pro_2:
+  - Mobicel
+zte blade a52ru:
+  - ZTE
+vtl-202101:
+  - Vertu
+vipro edge 2:
+  - Vipro
+lg-h340ar:
+  - LG
+tecno mobile kg8:
+  - Tecno Mobile
+tecno kf6h:
+  - Tecno Mobile
+itel a631l:
+  - iTel
+star 3:
+  - Vsmart
+star 4:
+  - Vsmart
+itel l6006l:
+  - iTel
+sm-a136s:
+  - Samsung
+black shark 3s:
+  - Xiaomi
+ebg-n19:
+  - Huawei
+els-n29:
+  - Huawei
+ego note 4g:
+  - Torque
+g10+:
+  - Symphony
 y9plus:
   - Doogee
 doro 8030/8031/8028:
@@ -48994,6 +49166,62 @@ sky 1123b 3g ss1259pg:
   - SUNWIND
 sky 1262c 3g ss1260pg:
   - SUNWIND
+tdt4518_4g_e_ru:
+  - TopDevice
+t81n_up:
+  - Lava
+t12m_eea:
+  - Dragon Touch
+tb-x505f:
+  - Lenovo
+snook-x10:
+  - Ctroniq
+punos 10:
+  - Punos
+azimut 3:
+  - Mediacom
+awow_creapad_1003_eea:
+  - Awow
+anpad_u2:
+  - ANXONIT
+m17qf6-3gplus:
+  - Mecer
+livingstone2:
+  - ONYX BOOX
+v tab z2 lte:
+  - Vestel
+tr7989:
+  - Advance
+kob2k-l09:
+  - Huawei
+hope8 lte:
+  - X-TIGI
+iplay50 pro:
+  - AllDocube
+g10_eea:
+  - GOODTEL
+z08mk:
+  - Viper
+yt3-x50f:
+  - Lenovo
+space_m10:
+  - RedLine
+spacetab_h20:
+  - HAOQIN
+citi 8313c 4g cs8268pl:
+  - Digma
+plane_8548s_3g_ps8161pg:
+  - Digma
+8402d 4g ws8251pl:
+  - Digma
+archos core 3g v4:
+  - Archos
+archos t 101x 4g:
+  - Archos
+citi kids 10 cs1232mg:
+  - Digma
+citi kids 80 cs8239rw:
+  - Digma
 senkatel_t1009:
   - Senkatel
 senkatel_t7011:
@@ -50911,6 +51139,94 @@ hiper media tv i4:
   - BBK
 43lex-8243uts2c:
   - BBK
+topdevice_tdtv65bs06u_9632:
+  - TopDevice
+topdevice_tdtv50bs06u_9632:
+  - TopDevice
+topdevice_tdtv43bs06u_9632:
+  - TopDevice
+tdtv32bs02h:
+  - TopDevice
+kant-359:
+  - Huawei
+kd1:
+  - Mecool
+pendoo x11 pro:
+  - Pendoo
+transpeed x4:
+  - Transpeed
+tf-led50s25t2su:
+  - Telefunken
+tf-led50s04t2su:
+  - Telefunken
+u75h8000k:
+  - DEXP
+u50h8000e:
+  - DEXP
+u65h8000k:
+  - DEXP
+4k google tv stick:
+  - Realme
+24lh1207:
+  - Vityaz
+24lh8010t:
+  - Asano
+24yst5970:
+  - Skyline
+40lf7030s:
+  - Asano
+40lst5970:
+  - Skyline
+50lu1210:
+  - V-HOME
+50lu8120t:
+  - Asano
+50u540s:
+  - Leff
+55lu1210:
+  - V-HOME
+55lu8120t:
+  - Asano
+55sa703:
+  - Samtron
+55u540s:
+  - Leff
+vontar h1:
+  - Vontar
+sw-led32sg300:
+  - Starwind
+sw-led32sg301:
+  - Starwind
+sw-led32sg302:
+  - Starwind
+sw-led40sg300:
+  - Starwind
+sun-led32xs300:
+  - SUNWIND
+sun-led24xs310:
+  - SUNWIND
+40kfs57:
+  - Doffler
+40f540s:
+  - Leff
+40f660ts:
+  - Harper
+42lf7110t:
+  - Asano
+43f550t:
+  - Leff
+32khs57:
+  - Doffler
+32yst5975:
+  - Skyline
+mts tv box 303:
+  - MTC
+dv8235:
+  - MTC
+formuler z10:
+  - Formuler
+formuler z10 pro max:
+  - Formuler
 bb2 pro:
   - Mecool
 kii pro:
@@ -51453,3 +51769,5 @@ leo-dlxxe:
   - Huawei
 appllp max:
   - LOKMAT
+pico neo 3:
+  - Pico
