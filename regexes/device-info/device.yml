@@ -1244,6 +1244,10 @@ infinix:
   x660c: '->s5 pro'
   x660b: '->s5 pro'
   x660: '->s5 pro'
+  zero 6: 'RE=2019.03;SZ=;WT=178;DS=6.18;SM=2;RS=1080x2246;OS=Android 8.0;CP=205;RM=6144;'
+  x620b: '->zero 6'
+  zero 6 pro: 'RE=2019.03;SZ=;WT=178;DS=6.18;SM=2;RS=1080x2246;OS=Android 8.0;CP=205;RM=6144;'
+  x620: '->zero 6 pro'
 
 allview:
   2 speed quad: ''
