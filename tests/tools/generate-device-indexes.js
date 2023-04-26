@@ -9,7 +9,12 @@ aliasDevice.setReplaceBrand(false);
 
 const detector = new (require('../../index'))({
   deviceIndexes: false,
+  clientIndexes: false,
 });
+// enable debug position for device parsers
+for (let name in detector.deviceParserList) {
+  detector.deviceParserList[name].resultModelPosition = true;
+}
 
 let parserDevice = detector.getParseDevice('Mobile');
 
@@ -30,7 +35,7 @@ const createIndexForFixture = (fixture) => {
       let result = [];
       for (let info of infos) {
         if (info.brand && result.indexOf(info.brand) === -1) {
-          result.push(info.brand);
+          result.push(info.id);
         }
       }
       output[deviceCode] = result;
@@ -42,6 +47,7 @@ ymlDeviceFiles.forEach((file) => {
   if (excludeFilesNames.indexOf(file) !== -1) {
     return;
   }
+  console.log('create indexes for file: ', 'devices/' + file)
   let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
   fixtureData.forEach((fixture) => {
     createIndexForFixture(fixture)
