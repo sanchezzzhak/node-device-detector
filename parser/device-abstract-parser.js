@@ -174,7 +174,7 @@ class DeviceParserAbstract extends ParserAbstract {
   }
 
   /**
-   * get brand short id by name
+   * get brand name by short id
    * @param {string} id
    * @returns {string|void}
    */
