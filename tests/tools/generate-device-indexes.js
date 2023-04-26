@@ -11,10 +11,6 @@ const detector = new (require('../../index'))({
   deviceIndexes: false,
   clientIndexes: false,
 });
-// enable debug position for device parsers
-for (let name in detector.deviceParserList) {
-  detector.deviceParserList[name].resultModelPosition = true;
-}
 
 let parserDevice = detector.getParseDevice('Mobile');
 
