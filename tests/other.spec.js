@@ -79,7 +79,7 @@ describe('test maxUserAgentSize option', function() {
   detector.maxUserAgentSize = null;
 });
 
-describe('test deviceAliasCode options', function() {
+describe('test deviceAliasCode option', function() {
   this.timeout(TIMEOUT);
   let UA = 'Mozilla/5.0 (Linux; Android 5.1; Primo ZX2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36';
   it('test deviceAliasCode enable', () => {
