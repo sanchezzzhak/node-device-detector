@@ -214,6 +214,8 @@ yt9270:
   - XYA
 yt9216bj:
   - XYA
+yt9213aj:
+  - XYA
 pixel 3:
   - GO
 m2006c3lg:
@@ -417,6 +419,8 @@ predator g9-793:
 macbookair6,2:
   - AP
 inspiron 3541:
+  - DL
+latitude e4300:
   - DL
 h135:
   - DX
@@ -741,6 +745,16 @@ acer chromebook 15 (cb3-532):
   - AC
 hp chromebook x2:
   - HP
+vostro 3546:
+  - DL
+vostro 14-3468:
+  - DL
+swift sf113-31:
+  - AC
+latitude e4310:
+  - DL
+k50ij:
+  - AU
 impress_grip:
   - VX
 archos diamond plus:
@@ -919,6 +933,8 @@ eft_h4:
   - EFT
 eft_h3:
   - EFT
+nls-mt65:
+  - N9
 sm-f721u:
   - SA
 note 13p:
@@ -1027,6 +1043,22 @@ infinix x6815c:
   - IF
 23021raa2y:
   - XI
+23021raaeg:
+  - XI
+22101316ug:
+  - XI
+sm-f936w:
+  - SA
+m-ppxx530u:
+  - MC
+m-ppxx525u:
+  - MC
+m-ppxs552u:
+  - MC
+m-ppxs510l:
+  - MC
+infinix-x551:
+  - IF
 gi-626:
   - A5
 5039d_ru:
@@ -12352,34 +12384,6 @@ lguk410:
   - LG
 4ife 4k smart tv box:
   - '04'
-rct6703w12:
-  - RC
-rct6a06p22:
-  - RC
-rct6303w87dk:
-  - RC
-rct6773w22b:
-  - RC
-rct6203w46l:
-  - RC
-rct6973w43:
-  - RC
-rct6873w42m:
-  - RC
-ht0701l16:
-  - HN
-ht0704k08:
-  - HN
-ht0704w08:
-  - VU
-ht1004l16:
-  - HN
-htb801:
-  - ZH
-ht_7rt:
-  - H0
-ht_8mz:
-  - H0
 huawei:
   - HU
 hurricane_ignite:
@@ -31640,7 +31644,6 @@ look:
 logic x4 plus:
   - 1L
 logic instrument fieldbook f1b:
-  - AR
   - LH
 light one:
   - 6V
@@ -33275,6 +33278,298 @@ ego note 4g:
   - TOR
 g10+:
   - SM
+tecno ki5q:
+  - TB
+v2237:
+  - VV
+sm-a546e:
+  - SA
+t610k:
+  - TC
+tecno ki5m:
+  - TB
+tecno ad9:
+  - TB
+power armor 18:
+  - UL
+bv5200 pro:
+  - B2
+air1 ultra+:
+  - 5F
+v2186a:
+  - VV
+xt2335-3:
+  - MR
+tecno bf6:
+  - TB
+rs51_hs:
+  - CIP
+rs550:
+  - 8E
+tecno in1 pro:
+  - TB
+turbophone4g compact 2108:
+  - MIV
+turbo_mini_f1:
+  - DO
+omega_lite_2:
+  - CH
+omega6_4g:
+  - 6P
+okapia_mirage:
+  - OA
+ok-smart11:
+  - OKI
+ok-ls2:
+  - OKI
+ok-ls1:
+  - OKI
+ok-lx6:
+  - OKI
+ok-lx5:
+  - OKI
+ojos vivir:
+  - CI
+ojos plus:
+  - CI
+ojos dos mini:
+  - CI
+ojos dos:
+  - CI
+ober_primo e8:
+  - OBR
+scg19:
+  - SA
+sm-a346e:
+  - SA
+sm-a146p:
+  - SA
+luna g6e:
+  - L9
+  - '69'
+sm-s918w:
+  - SA
+sm-s918u1:
+  - SA
+sm-s916u1:
+  - SA
+sm-s9110:
+  - SA
+sm-m146b:
+  - SA
+sm-g990w2:
+  - SA
+sm-g990u3:
+  - SA
+sm-a546b:
+  - SA
+moto g13:
+  - MR
+xt2243-2:
+  - MR
+itel a44 pro:
+  - IZ
+intex aqua style 3:
+  - IX
+ino s9:
+  - INO
+inoi 2 lite:
+  - I4
+inhon_v6:
+  - INH
+impress fortune:
+  - VX
+everstar q40:
+  - EV
+c2_color_m4:
+  - ZP
+xeno v1:
+  - 2N
+z719dl:
+  - ZT
+xperia acro s:
+  - SE
+x4_soul_infinity_plus:
+  - A2
+vfd 512:
+  - VF
+vfd 511:
+  - VF
+vernee thor:
+  - VR
+umi z:
+  - UM
+5045x:
+  - AL
+m5 lite cdma:
+  - GI
+m457:
+  - 8L
+m-ppxs510:
+  - MC
+m-ppxg551:
+  - MC
+m-ppxg515:
+  - MC
+m-ppxg512:
+  - MC
+m-ppxg511:
+  - MC
+m-ppxg510:
+  - MC
+m-ppxg415:
+  - MC
+m-ppxg410:
+  - MC
+m-ppas520:
+  - MC
+m-ppar450:
+  - MC
+m-ppag552:
+  - MC
+lynx_luxe:
+  - SKK
+lt_m6:
+  - QL
+lt_m5_lite:
+  - QL
+lt_m5:
+  - QL
+lp_evora_light:
+  - LL
+lp_infinity:
+  - LL
+lion 1:
+  - VX
+lion 2:
+  - VX
+lion 3:
+  - VX
+life x8:
+  - BU
+basco l451:
+  - JG
+basco l450:
+  - JG
+basco_m1:
+  - JG
+basco_l3:
+  - JG
+bay:
+  - H2
+balr_x7:
+  - IC
+balrx7_pak:
+  - IC
+aston a7+:
+  - QY
+aston a5+:
+  - QY
+aston a3+:
+  - QY
+asse.q5:
+  - ASS
+  - '60'
+asse-q3:
+  - ASS
+asse q5s:
+  - ASS
+xolo one hd:
+  - XO
+impress envy:
+  - VX
+eluga_pulse_x:
+  - PA
+eluga_pulse:
+  - PA
+eluga_mark_2:
+  - PA
+eluga_arc_2:
+  - PA
+eluga ray:
+  - PA
+eluga prim:
+  - PA
+eluga i3 mega:
+  - PA
+elite_grace:
+  - 0W
+elite star:
+  - 0W
+elite prime:
+  - 0W
+elite note:
+  - 0W
+elite 6.0l+:
+  - SW
+eko_star_g58:
+  - EK
+eko_star_g55:
+  - EK
+eko_star_g50e:
+  - EK
+echo push:
+  - E4
+hexin-h2-a:
+  - SQ
+hlte229t:
+  - HI
+gly1620:
+  - GI
+evolveo strongphone g5:
+  - EO
+lp_spectrum_s2:
+  - LL
+ln9821:
+  - LV
+ln9820:
+  - LV
+litepro:
+  - ZO1
+life 7s:
+  - S8
+koobee f2 plus:
+  - KB
+kachocolate:
+  - N4
+k700a:
+  - WK
+k536:
+  - 8E
+uniden prime 500:
+  - UND
+gfive president a97:
+  - 0G
+gfive_president_xhero_5:
+  - 0G
+gfive president xhero 7:
+  - 0G
+gfive president xhero 1:
+  - 0G
+gfive_president_smart_a98:
+  - 0G
+gfive president classic 1:
+  - 0G
+gfive president classic 7:
+  - 0G
+gfive president smart 2:
+  - 0G
+gfive president smart 5:
+  - 0G
+gfive president g6 plus:
+  - 0G
+gfive president g10 fashion:
+  - 0G
+gfive president tango 3(t3100):
+  - 0G
+gfive president(g6):
+  - 0G
+gfive president(g9):
+  - 0G
+gfive president(g10):
+  - 0G
+admire_sense+:
+  - ZN
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -48531,6 +48826,34 @@ viz070tab811blu:
   - VIZ
 viz101tab811blk:
   - VIZ
+rct6703w12:
+  - RC
+rct6a06p22:
+  - RC
+rct6303w87dk:
+  - RC
+rct6773w22b:
+  - RC
+rct6203w46l:
+  - RC
+rct6973w43:
+  - RC
+rct6873w42m:
+  - RC
+ht0701l16:
+  - HN
+ht0704k08:
+  - HN
+ht0704w08:
+  - HN
+ht1004l16:
+  - HN
+htb801:
+  - ZH
+ht_7rt:
+  - H0
+ht_8mz:
+  - H0
 webpad7007:
   - JJ
 webpad_1003:
@@ -49222,6 +49545,86 @@ citi kids 10 cs1232mg:
   - D2
 citi kids 80 cs8239rw:
   - D2
+sky kids 70 ss7238pg:
+  - W8
+optima 1240c ts1276aw:
+  - D2
+optima 7 e200 3g ts7244pg:
+  - D2
+optima 8250c ts8274aw:
+  - D2
+optima 8258c 4g ts8275ml:
+  - D2
+sky 7143b 3g ss7265pg:
+  - W8
+pic7gs8:
+  - ADV
+bnt-801w:
+  - 2B
+onelerndb009:
+  - ONL
+tolino tab 8:
+  - T1
+olkya liger 71g:
+  - OLK
+got-w09:
+  - HU
+tab1090:
+  - 0H
+archos 97c platinum:
+  - AR
+archos 70d titanium:
+  - AR
+lenovo tb3-x70f:
+  - LE
+lenovo tb3-850f:
+  - LE
+woxter_n90:
+  - WX
+woxter_n70:
+  - WX
+fieldpad 8:
+  - RUT
+fieldbook k101:
+  - LH
+neutabk1:
+  - NEU
+elan 4g2:
+  - IB
+lm-01:
+  - DTE
+linsay_f10xhd:
+  - LIN
+koral 7w4:
+  - HN
+kidzy70:
+  - '00'
+k7 kids:
+  - '79'
+joy10_lte:
+  - XT
+ursus 9x 3g:
+  - DX
+ursus 9px 3g:
+  - DX
+ursus 9ev mini 3g:
+  - DX
+ursus 8ev2 3g:
+  - DX
+ursus 8ev 3g:
+  - DX
+ursus 10m2 3g:
+  - DX
+uqm13a:
+  - 4V
+uqm12a:
+  - 4V
+u51gt-c8:
+  - CU
+u27gt-sd:
+  - CU
+gfive gpad701:
+  - 0G
 senkatel_t1009:
   - '01'
 senkatel_t7011:
@@ -51227,6 +51630,26 @@ formuler z10:
   - F5
 formuler z10 pro max:
   - F5
+afttiff43:
+  - KN
+netta 3.100m:
+  - GOL
+netta 2 pro:
+  - GOL
+kraft_ktv-p50uhd02t2ciwl:
+  - KRA
+kraft_ktv-p43uhd02t2ciwl:
+  - KRA
+kraft-ktv-g40fhd02t2ciwl:
+  - KRA
+k50dlj10us:
+  - T0
+k43dlj10us:
+  - T0
+k32dlx10hs:
+  - T0
+k32dlj12hs:
+  - T0
 bb2 pro:
   - 0M
 kii pro:
