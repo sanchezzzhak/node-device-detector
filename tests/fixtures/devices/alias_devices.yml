@@ -377,3 +377,23 @@
   user_agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; Mi Note 10 Lite;iPhone: Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.5.1304 Mobile Safari/537.36'
   alias:
     name: Mi Note 10 Lite
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.2.2; zh-CN; R831K Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.3.1.549 U3/0.8.0 Mobile Safari/534.30
+  alias:
+    name: R831K
+-
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1707 Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+  alias:
+    name: CPH1707
+-
+  user_agent: Mozilla/5.0 (Linux; Android 7.0; Z9 PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36
+  alias:
+    name: Z9 PLUS
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 2.3.3; ja-jp; COOLPIX S800c Build/CP01_WW) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+  alias:
+    name: COOLPIX S800c
+-
+  user_agent: com.ipspirates.ort v.612 (OnePlus 9, Android 12, zh_CN
+  alias:
+    name: '9'
