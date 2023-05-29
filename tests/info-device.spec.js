@@ -53,9 +53,9 @@ describe('tests info-device', function() {
     expect(result.size.thickness).to.equal('7.7');
   });
   
-  let patternNumber = /^[0-9\.]+$/i;
-  let patternFloat = /^[0-9\.]+$/i;
-  let patternRatio = /^[0-9\.]+:[0-9\.]+$/i;
+  let patternNumber = /^[0-9.]+$/i;
+  let patternFloat = /^[0-9.]+$/i;
+  let patternRatio = /^[0-9.]+:[0-9.]+$/i;
   let patternYear = /^([0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$/i;
   
   for (let brand in DATA_DEVICE_INFO) {

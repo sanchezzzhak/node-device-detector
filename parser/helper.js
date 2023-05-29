@@ -201,7 +201,7 @@ function hasFile(file) {
 /**
  * Remove chars for string
  *
- * @param {} str
+ * @param {string} str
  * @param {string} chars
  * @returns {any}
  */
