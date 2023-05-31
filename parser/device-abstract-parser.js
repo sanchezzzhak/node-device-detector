@@ -105,7 +105,7 @@ class DeviceParserAbstract extends ParserAbstract {
    */
   __parse(userAgent, canBreak = true, brandIndexes = []) {
   
-    let isDesktop =
+    const isDesktop =
       helper.matchUserAgent(DESKTOP_PATTERN, userAgent) &&
       !helper.matchUserAgent(DESKTOP_EXCLUDE_PATTERN, userAgent);
     
@@ -113,11 +113,11 @@ class DeviceParserAbstract extends ParserAbstract {
       return [];
     }
 
-    let output = [];
+    const output = [];
     if (brandIndexes.length) {
       for (let cursorId of brandIndexes) {
-        let cursor = this.getBrandNameById(cursorId);
-        let result = this.__parseForBrand(cursor, userAgent);
+        const cursor = this.getBrandNameById(cursorId);
+        const result = this.__parseForBrand(cursor, userAgent);
         if (result === null) {
           continue;
         }
@@ -128,7 +128,7 @@ class DeviceParserAbstract extends ParserAbstract {
 
     if (!output.length) {
       for (let cursor in this.collection) {
-        let result = this.__parseForBrand(cursor, userAgent);
+        const result = this.__parseForBrand(cursor, userAgent);
         if (result === null) {
           continue;
         }
