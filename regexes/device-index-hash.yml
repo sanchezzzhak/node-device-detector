@@ -949,6 +949,8 @@ telo_m5:
   - TLS
 idata 50:
   - 6Z
+idata_i3al:
+  - 6Z
 sm-f721u:
   - SA
 note 13p:
@@ -1091,6 +1093,10 @@ redmi_note_5:
   - XI
 v2266a:
   - VV
+sm-f721w:
+  - SA
+infinix x6716:
+  - IF
 gi-626:
   - A5
 5039d_ru:
@@ -2161,6 +2167,8 @@ da222hql:
   - AC
 blm-00:
   - HU
+xd-sdd05-2101:
+  - XW
 aeobc:
   - KN
 aeokn:
@@ -34448,6 +34456,133 @@ fun_value:
   - OW
 fun value lite:
   - OW
+g-tide v7s:
+  - GT
+g-tide vans 8c:
+  - GT
+g-tide vans 9:
+  - GT
+furious 7 pro:
+  - BC
+paris:
+  - UL
+hisense infinity h60 zoom:
+  - HI
+hisense e32 lite:
+  - HI
+avvio_795:
+  - AV
+n100:
+  - DO
+a350:
+  - DX
+a350 tv:
+  - EX
+micromax a350:
+  - MI
+  - DX
+view max:
+  - FL
+view max pro:
+  - QM
+4188v:
+  - TC
+konnect power:
+  - 0W
+konnect prime:
+  - 0W
+konnect neo 4g:
+  - 0W
+kogan agora 6:
+  - KG
+knmobile q55:
+  - KNM
+5001d_eea:
+  - AL
+5001d_ru:
+  - AL
+5001j:
+  - AL
+wim:
+  - WI
+eluga ray 500:
+  - PA
+sh-01e:
+  - SH
+bz02:
+  - FU
+rg725:
+  - RG
+go 55303:
+  - GRO
+uoogou t10:
+  - UOO
+jkopo f1:
+  - KP
+uoogou f9:
+  - UOO
+eluga i9:
+  - PA
+eluga i7:
+  - PA
+emerald_m55cr:
+  - MIN
+a41 power:
+  - KA
+a1 indian:
+  - KA
+aura storm:
+  - KA
+aura champ:
+  - KA
+eluga i4:
+  - PA
+intex aqua zenith:
+  - IX
+maxi 20:
+  - PR1
+m10+max:
+  - EV
+4188o:
+  - TC
+t768s:
+  - TC
+blade a31:
+  - ZT
+bl52:
+  - BM
+zte 9045:
+  - ZT
+figi p40 max:
+  - J9
+figi p40:
+  - J9
+figi fse1020:
+  - J9
+omega q:
+  - H2
+x540:
+  - LA
+kingkong power:
+  - CB
+zte a7050:
+  - ZT
+zte 8046:
+  - ZT
+v30t:
+  - DO
+v30:
+  - DO
+nokia_xplus:
+  - NK
+nokia xr21:
+  - NK
+nokia xr20 5g:
+  - NK
+nokia c2 2nd edition:
+  - NK
+motorola edge plus (2022):
+  - MR
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -50744,6 +50879,58 @@ elite8qi:
   - VIL
 elite7qs:
   - VIL
+bdl1064pr001:
+  - PL
+etw101gt_c:
+  - 6Q
+9137w:
+  - TC
+8491x:
+  - TC
+pmt3103_w_ru:
+  - PR
+8084_eea:
+  - AL
+f803ym:
+  - WAF
+1402d 4g ws1250pl:
+  - D2
+p25_t_row:
+  - T7
+lavie t7 7sd1:
+  - NE
+lavie tab 10fhd3:
+  - NE
+lavie tab t12 12qhd1:
+  - NE
+p30air_eea:
+  - T7
+m170:
+  - DX
+pmt4511_4g_eea:
+  - PR
+elite t10:
+  - SW
+bp_6110:
+  - BP
+gta7plus:
+  - GH
+m40(n9h2):
+  - T7
+plane_7012m_3g_ps7082mg:
+  - D2
+u70c:
+  - E9
+u800b:
+  - CEI
+u70b:
+  - E9
+moto tab g70:
+  - MR
+nokia t10:
+  - NK
+nokia t21:
+  - NK
 senkatel_t1009:
   - '01'
 senkatel_t7011:
@@ -52512,6 +52699,7 @@ ulx-43utcs347:
   - YN
 rombica tv air:
   - R3
+  - A95
 nv720wb:
   - 4E
 lpx-g box max:
@@ -52805,6 +52993,76 @@ thl box 1 pro:
   - T4
 dangcaphd d8 pro:
   - DA1
+h32f8000q-b:
+  - DX
+h32f8000q-c:
+  - DX
+h32f8100q-a:
+  - DX
+f43f8000cg:
+  - DX
+f43f8000cg-h:
+  - DX
+f43f8000q-g:
+  - DX
+f43f8000qg-a:
+  - DX
+f43f8000qg-d:
+  - DX
+sfcstb2lite:
+  - X1
+haier android tv dvb2k:
+  - HA
+a95x plus:
+  - A95
+a95x max:
+  - A95
+a95x-f1:
+  - A95
+a95xr5:
+  - A95
+a95x f3:
+  - A95
+a95x f3 air:
+  - A95
+a95x f2:
+  - A95
+a95x-r2:
+  - A95
+a95x-r1:
+  - A95
+a95x-a2:
+  - A95
+a95xw2:
+  - A95
+a95x_f3:
+  - A95
+a95xz2plus:
+  - A95
+a95xz2:
+  - A95
+a95xr3:
+  - A95
+a95x-r3_ru:
+  - A95
+a95x r3:
+  - A95
+a95x max +:
+  - A95
+a95x f2 ru:
+  - A95
+a95x f3 slim:
+  - A95
+a95x pro:
+  - A95
+a95x-a1:
+  - A95
+a95x_f3air_ii:
+  - A95
+a95xf4:
+  - A95
+ab5116-01:
+  - NM
 bb2 pro:
   - 0M
 kii pro:
@@ -52884,6 +53142,7 @@ vorke z6 plus:
   - 2V
 a95x_r1:
   - 3L
+  - A95
 nv501:
   - 4E
 nv501wac:
@@ -53356,3 +53615,5 @@ thor s:
   - ZE1
 thor pro:
   - ZE1
+gll-al01:
+  - HU
