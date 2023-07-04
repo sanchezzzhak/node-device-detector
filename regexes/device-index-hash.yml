@@ -220,6 +220,8 @@ yt9216bj:
   - XYA
 yt9213aj:
   - XYA
+mpc-100:
+  - 5O
 pixel 3:
   - GO
 m2006c3lg:
@@ -951,6 +953,8 @@ idata 50:
   - 6Z
 idata_i3al:
   - 6Z
+multiposx9:
+  - MPS
 sm-f721u:
   - SA
 note 13p:
@@ -1097,6 +1101,22 @@ sm-f721w:
   - SA
 infinix x6716:
   - IF
+2303era42l:
+  - XI
+galaxy note 20 ultra:
+  - SA
+galaxy s21:
+  - SA
+galaxy note 20:
+  - SA
+galaxy note 10:
+  - SA
+galaxy note 10+:
+  - SA
+galaxy note 2:
+  - SA
+m1906g7g:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -34583,6 +34603,131 @@ nokia c2 2nd edition:
   - NK
 motorola edge plus (2022):
   - MR
+htc desire 21 pro 5g:
+  - HT
+htc desire 628 dual sim:
+  - HT
+htc desire 728 dual sim:
+  - HT
+htc desire 728g dual sim:
+  - HT
+htc desire 828 dual sim:
+  - HT
+htc desire 830 dual sim:
+  - HT
+pgem10:
+  - OP
+a181_plus:
+  - I4
+mna-lx9:
+  - HU
+iphone15,3:
+  - AP
+alt-l29:
+  - HU
+galaxy a72:
+  - SA
+mao-lx9n:
+  - HU
+lex725:
+  - L1
+cph2527:
+  - OP
+enjoy 20 se:
+  - HU
+v2239a:
+  - VV
+tecno ck7n:
+  - TB
+impress_intouch_3g:
+  - VX
+poco f5:
+  - 0P
+poco f5 pro:
+  - 0P
+lna-al00:
+  - HU
+23026rn54g:
+  - XI
+itel it1655:
+  - IZ
+redmi 10 power:
+  - XI
+galaxy s21 ultra:
+  - SA
+galaxy s10:
+  - SA
+galaxy s20:
+  - SA
+galaxy s20+:
+  - SA
+galaxy a52:
+  - SA
+galaxy s10e:
+  - SA
+zte 9046:
+  - ZT
+galaxy s7 edge:
+  - SA
+finepowerc5:
+  - F1
+finepowerc1:
+  - F1
+eluga ray max:
+  - PA
+pixavi phone:
+  - BAR
+galaxy s20 ultra:
+  - SA
+sm-s911u1:
+  - SA
+samsung sm-a346b:
+  - SA
+vtl-202201:
+  - VE
+22111317pi:
+  - 0P
+blade a7 2019:
+  - ZT
+pgt-an20:
+  - HU
+f101:
+  - FOS
+  - NAN
+coolpad f101:
+  - CO
+x-treme_pq18:
+  - 1S
+i005da:
+  - AU
+anb-an00:
+  - HU
+yal-l61:
+  - HU
+sttm21vapp:
+  - SH
+stg-al00:
+  - HU
+sm-a5460:
+  - SA
+ila r1:
+  - I7
+lna-lx9:
+  - HU
+x-style_s3502:
+  - 1S
+xiaomi 13 lite:
+  - XI
+hg11:
+  - HD
+tecno_kf6n:
+  - TB
+vna-lx3:
+  - HU
+lio-tn00:
+  - HU
+nokia c02:
+  - NK
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -35632,8 +35777,6 @@ g91 pro:
 hisense f8 mini:
   - HI
 htc desire 10 compact:
-  - HT
-htc desire 21 pro 5g:
   - HT
 i2018:
   - VV
@@ -50931,6 +51074,22 @@ nokia t10:
   - NK
 nokia t21:
   - NK
+m10es11:
+  - IBO
+x2_eea:
+  - 'YES'
+groberwert hd7:
+  - GR1
+fz-a2a:
+  - PA
+hipad xpro:
+  - 1C
+k7_a101_eea:
+  - PRI
+lenovo tb-j6c6f:
+  - LE
+readboy_g600:
+  - RB
 senkatel_t1009:
   - '01'
 senkatel_t7011:
@@ -53063,6 +53222,26 @@ a95xf4:
   - A95
 ab5116-01:
   - NM
+hty-55uhd05b-s2:
+  - HA1
+baff43yfhd:
+  - BFF
+u65yq2200gr:
+  - HIP
+harper_24r490ts:
+  - HAR
+h-led24bs5000:
+  - HN
+evolveo android box h8:
+  - EO
+evolveo android box h4:
+  - EO
+sw-led43sg302:
+  - '45'
+32lh8010t:
+  - 8A
+32lx9051t2:
+  - '05'
 bb2 pro:
   - 0M
 kii pro:
