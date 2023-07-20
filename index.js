@@ -568,21 +568,46 @@ class DeviceDetector {
   }
 
   /**
+   * restore original userAgent for clientHints object
+   * @param {string} userAgent
+   * @param {{os:{version:""}, device: {model:""}}} clientHints
+   */
+  restoreUserAgentForClientHints(
+      userAgent,
+      clientHints,
+  ) {
+    if (!clientHints || !clientHints.device) {
+      return userAgent;
+    }
+    const deviceModel = clientHints.device.model;
+    if (deviceModel && /Android 10[.\d]*; K(?: Build\/|[;)])/i.test(userAgent)) {
+      const osHints = attr(clientHints, 'os', {});
+      const osVersion = attr(osHints, 'version', '');
+      return userAgent.replace(/(Android 10[.\d]*; K)/,
+          `Android ${osVersion !== '' ? osVersion : '10'} ${deviceModel};`,
+      );
+    }
+    return userAgent;
+  }
+
+
+  /**
    * parse device
    * @param {string} userAgent
    * @param clientHints
    * @return {ResultDevice}
    */
   parseDevice(userAgent, clientHints) {
+    let ua = this.restoreUserAgentForClientHints(userAgent, clientHints)
     let brandIndexes = [];
     let deviceCode = '';
 
     if (this.deviceIndexes) {
-      let alias = this.parseDeviceCode(userAgent);
+      let alias = this.parseDeviceCode(ua);
       deviceCode = alias.name ? alias.name : '';
       brandIndexes = this.getBrandsByDeviceCode(deviceCode);
     } else if (this.deviceAliasCode) {
-      let alias = this.parseDeviceCode(userAgent);
+      let alias = this.parseDeviceCode(ua);
       deviceCode = alias.name ? alias.name : '';
     }
 
@@ -599,7 +624,7 @@ class DeviceDetector {
 
     for (let name in this.deviceParserList) {
       let parser = this.deviceParserList[name];
-      let resultMerge = parser.parse(userAgent, brandIndexes);
+      let resultMerge = parser.parse(ua, brandIndexes);
       if (resultMerge) {
         result = Object.assign({}, result, resultMerge);
         break;
@@ -607,7 +632,7 @@ class DeviceDetector {
     }
 
     if (result && result.brand === '') {
-      let resultVendor = this.parseVendor(userAgent);
+      let resultVendor = this.parseVendor(ua);
       if (resultVendor) {
         result.brand = resultVendor.name;
         result.id = resultVendor.id;
