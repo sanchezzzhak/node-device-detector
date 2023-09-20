@@ -5,6 +5,7 @@ export default class DeviceDetector {
   constructor(options?: DeviceDetectorOptions);
 
   detect: (userAgent: string, clientHints?: any) => DetectResult;
+  detectAsync: (userAgent: string, clientHints?: any) => Promise<DetectResult>;
   parseBot: (userAgent: string, clientHints?: any) => ResultBot;
   parseOs: (userAgent: string, clientHints?: any) => ResultOs;
   parseClient: (userAgent: string, clientHints?: any) => ResultClient;
