@@ -124,3 +124,12 @@
 - regex: 'Downcast/(\d+\.[\d\.]+)?'
   name: 'Downcast'
   version: '$1'
+
+- regex: 'StudioDisplay/(\d+\.[\d\.]+)'
+  name: 'StudioDisplay'
+  version: '$1'
+
+# JHelioviewer (https://www.jhelioviewer.org/)
+- regex: 'JHV/SWHV-([.\d+]+)'
+  name: 'JHelioviewer'
+  version: '$1'
