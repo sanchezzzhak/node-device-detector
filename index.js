@@ -512,7 +512,7 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TV;
     } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (deviceType === '' && CLIENT_TV_LIST.indexOf(clientName) !== -1) {
+    } else if (CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
 
