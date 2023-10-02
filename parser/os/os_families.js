@@ -2,7 +2,7 @@
 module.exports = {
   'Android': [
   'AND', 'CYN', 'FIR', 'REM', 'RZD', 'MLD', 'MCD', 'YNS', 'GRI', 'HAR',
-  'ADR', 'CLR', 'BOS', 'REV', 'LEN', 'SIR', 'RRS',
+  'ADR', 'CLR', 'BOS', 'REV', 'LEN', 'SIR', 'RRS', 'WER', 'PIC',
   ],
   'AmigaOS': ['AMG', 'MOR'],
   'BlackBerry': ['BLB', 'QNX'],
