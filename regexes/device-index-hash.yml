@@ -1191,6 +1191,8 @@ sm-f946b:
   - SA
 sm-f731b:
   - SA
+tecno mobile lg6n:
+  - TB
 gi-626:
   - A5
 5039d_ru:
@@ -35221,6 +35223,60 @@ xiaomi 13 pro:
   - XI
 tecno s1:
   - TB
+v2229:
+  - VV
+rmx3830:
+  - RE
+rmx3740:
+  - RE
+samsung sm-m546b:
+  - SA
+sparx neo 7 pro:
+  - SPX
+sparx neo 7:
+  - SPX
+samsung sm-a546w:
+  - SA
+redmi 10x lte:
+  - XI
+new 22:
+  - V6
+walton primo x5:
+  - WA
+itel s665ln:
+  - IZ
+sparx neo 7 ultra:
+  - SPX
+takee 1:
+  - 6E
+rea-nx9:
+  - HU
+reno5 k 5g:
+  - OP
+base_varia:
+  - BAS
+agora lite:
+  - KG
+agora 4g pro:
+  - KG
+ckk inspire 1:
+  - CKK
+ckk garnet:
+  - CKK
+v2302:
+  - VV
+infinix x6835:
+  - IF
+explosion:
+  - H2
+v2254:
+  - VV
+r15 neo:
+  - OP
+asus_ai2205_d:
+  - AU
+v2238:
+  - VV
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -43447,6 +43503,15 @@ tecno dp7cpro:
   - TB
 t50pro_w_row:
   - T7
+at723c:
+  - 3K
+huawei mediapad t1 10 4g:
+  - HU
+maximus 3.0:
+  - MAT
+  - ZM
+23043rp34i:
+  - XI
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54024,6 +54089,26 @@ u43yq2200gr:
   - BB
 50lu8110t:
   - 8A
+50ucy2-g:
+  - DX
+24lh7011t:
+  - 8A
+philips uhd android tv:
+  - PH
+32h600gr:
+  - KV
+65usy151x:
+  - 3H
+h32yq2200gr:
+  - HIP
+55u630s:
+  - 4B
+43lu1204:
+  - VIT
+40lex-7202fts2c:
+  - BB
+43lex-7287ts2c:
+  - BB
 bb2 pro:
   - 0M
 kii pro:
