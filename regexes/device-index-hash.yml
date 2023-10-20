@@ -1193,6 +1193,8 @@ sm-f731b:
   - SA
 tecno mobile lg6n:
   - TB
+iphone14,8:
+  - AP
 gi-626:
   - A5
 5039d_ru:
@@ -2221,54 +2223,6 @@ hitv205n:
   - HI
 nw-a300series:
   - SO
-da220hql:
-  - AC
-da241hl:
-  - AC
-vsd220:
-  - VS
-ifp7550-3:
-  - VS
-ifp9850-3:
-  - VS
-ifp8650-3:
-  - VS
-ifp6550-3:
-  - VS
-wt22m-fi:
-  - '55'
-wt19m-fi:
-  - '55'
-t2s_lite:
-  - 2J
-xdh-0f-a1:
-  - XW
-xdh-17-a1:
-  - XW
-xdh-18-a1:
-  - XW
-xdh-21-a1:
-  - XW
-xdh-29-b1:
-  - XW
-xdh-2a-b1:
-  - XW
-10bdl4151t:
-  - PH
-da222hql:
-  - AC
-blm-00:
-  - HU
-xd-sdd05-2101:
-  - XW
-aeobc:
-  - KN
-aeokn:
-  - KN
-aeoch:
-  - KN
-aeocw:
-  - KN
 i7u:
   - A9
 i4u:
@@ -14760,6 +14714,7 @@ aquaris_m4.5:
   - IX
 apollo 5 neo:
   - RF
+  - VR
 5033q:
   - AL
 elite m45:
@@ -35277,6 +35232,61 @@ asus_ai2205_d:
   - AU
 v2238:
   - VV
+sm-a546u1:
+  - SA
+avvio_793:
+  - AV
+smart 4g m1:
+  - '11'
+honor play 4t pro:
+  - HU
+sm-a146m:
+  - SA
+meo smart a40:
+  - ZT
+link55:
+  - KW
+slide2:
+  - WI
+sm-a236m:
+  - SA
+p13 blue max 128 gb 2022:
+  - RD
+vx20 pro:
+  - 4M
+x20 pro:
+  - CB
+htc desire 526g dual sim:
+  - HT
+monaco:
+  - LQ
+apollo:
+  - VR
+q-502:
+  - 1L
+htc desire 600 dual sim:
+  - HT
+smarta35:
+  - ZT
+c1_max:
+  - EL
+23053rn02l:
+  - XI
+moto g14:
+  - MR
+sm-m546b:
+  - SA
+sm-a346m:
+  - SA
+sm-a145m:
+  - SA
+sm-j600gt:
+  - SA
+vx4:
+  - VP
+  - LG
+k700:
+  - SPU
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -42250,6 +42260,54 @@ as-4421:
   - A8
 gsmart alto a2:
   - GG
+da220hql:
+  - AC
+da241hl:
+  - AC
+vsd220:
+  - VS
+ifp7550-3:
+  - VS
+ifp9850-3:
+  - VS
+ifp8650-3:
+  - VS
+ifp6550-3:
+  - VS
+wt22m-fi:
+  - '55'
+wt19m-fi:
+  - '55'
+t2s_lite:
+  - 2J
+xdh-0f-a1:
+  - XW
+xdh-17-a1:
+  - XW
+xdh-18-a1:
+  - XW
+xdh-21-a1:
+  - XW
+xdh-29-b1:
+  - XW
+xdh-2a-b1:
+  - XW
+10bdl4151t:
+  - PH
+da222hql:
+  - AC
+blm-00:
+  - HU
+xd-sdd05-2101:
+  - XW
+aeobc:
+  - KN
+aeokn:
+  - KN
+aeoch:
+  - KN
+aeocw:
+  - KN
 bush 10.0 mytablet:
   - B1
 bush 7.85 tablet:
@@ -43512,6 +43570,14 @@ maximus 3.0:
   - ZM
 23043rp34i:
   - XI
+ps650:
+  - PEN
+penta ws704dx:
+  - PEN
+mitab_colors_10:
+  - WL
+phonepad 83g:
+  - AIR
 jdn-al00:
   - HU
 ags2-al00hn:
