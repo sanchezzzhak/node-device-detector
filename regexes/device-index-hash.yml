@@ -827,6 +827,8 @@ sch-i500:
   - SA
 phone/nexus 5:
   - GO
+ipad3,6:
+  - AP
 iphone8,4:
   - AP
 ipad4,1:
@@ -845,11 +847,15 @@ sm-t515:
   - SA
 pdem10:
   - OP
+iphone12,1:
+  - AP
 inoi_5i_lite:
   - I4
 iphone:
   - AP
 x86_64:
+  - AP
+iphone7,2:
   - AP
 lgt01:
   - LG
@@ -877,6 +883,8 @@ huawei nxt-cl00:
   - HU
 dra-l01:
   - HU
+iphone12,3:
+  - AP
 shtrih-smartpos-f2:
   - RS
 wisenet5:
@@ -1209,8 +1217,6 @@ gi-626:
   - AL
 9022x:
   - AL
-iphone12,3:
-  - AP
 iphone12,5:
   - AP
 iphone12,8:
@@ -2223,6 +2229,54 @@ hitv205n:
   - HI
 nw-a300series:
   - SO
+da220hql:
+  - AC
+da241hl:
+  - AC
+vsd220:
+  - VS
+ifp7550-3:
+  - VS
+ifp9850-3:
+  - VS
+ifp8650-3:
+  - VS
+ifp6550-3:
+  - VS
+wt22m-fi:
+  - '55'
+wt19m-fi:
+  - '55'
+t2s_lite:
+  - 2J
+xdh-0f-a1:
+  - XW
+xdh-17-a1:
+  - XW
+xdh-18-a1:
+  - XW
+xdh-21-a1:
+  - XW
+xdh-29-b1:
+  - XW
+xdh-2a-b1:
+  - XW
+10bdl4151t:
+  - PH
+da222hql:
+  - AC
+blm-00:
+  - HU
+xd-sdd05-2101:
+  - XW
+aeobc:
+  - KN
+aeokn:
+  - KN
+aeoch:
+  - KN
+aeocw:
+  - KN
 i7u:
   - A9
 i4u:
@@ -13385,6 +13439,10 @@ iphone2,1:
 iphone3,1:
   - AP
 iphone5,1:
+  - AP
+iphone5,2:
+  - AP
+iphone5,4:
   - AP
 iphone6,2:
   - AP
@@ -27150,8 +27208,6 @@ aosp on hammerhead:
   - GO
 xperia e3 (aosp):
   - SO
-iphone7,2:
-  - AP
 iphone10,1:
   - AP
 lephone t2v:
@@ -31682,8 +31738,6 @@ motorola edge 30 ultra:
   - MR
 moto e22i:
   - MR
-iphone5,2:
-  - AP
 iphone7,1:
   - AP
 zvii:
@@ -36246,8 +36300,6 @@ sm-a136u1:
   - SA
 sm-a136w:
   - SA
-iphone12,1:
-  - AP
 samsung sm-m022g:
   - SA
 samsung sm-e5260:
@@ -42260,54 +42312,6 @@ as-4421:
   - A8
 gsmart alto a2:
   - GG
-da220hql:
-  - AC
-da241hl:
-  - AC
-vsd220:
-  - VS
-ifp7550-3:
-  - VS
-ifp9850-3:
-  - VS
-ifp8650-3:
-  - VS
-ifp6550-3:
-  - VS
-wt22m-fi:
-  - '55'
-wt19m-fi:
-  - '55'
-t2s_lite:
-  - 2J
-xdh-0f-a1:
-  - XW
-xdh-17-a1:
-  - XW
-xdh-18-a1:
-  - XW
-xdh-21-a1:
-  - XW
-xdh-29-b1:
-  - XW
-xdh-2a-b1:
-  - XW
-10bdl4151t:
-  - PH
-da222hql:
-  - AC
-blm-00:
-  - HU
-xd-sdd05-2101:
-  - XW
-aeobc:
-  - KN
-aeokn:
-  - KN
-aeoch:
-  - KN
-aeocw:
-  - KN
 bush 10.0 mytablet:
   - B1
 bush 7.85 tablet:
@@ -52491,6 +52495,8 @@ an7dg3-cp:
   - AN
 archm901:
   - AN
+ipad2,1:
+  - AP
 archos 101 cobalt:
   - AR
 archos 101 neon:

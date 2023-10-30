@@ -85,6 +85,10 @@
 - regex: 'dv\(([^)]+)\);pr\(UCBrowser/'
   name: '$1'
 
+# iPhone/iPad/iPod code devices
+- regex: '[\( ]iP(hone|[ao]d)(\d{1,2}),(\d{1,2});'
+  name: 'iP$1$2,$3'
+
 # MS Office Apple
 - regex: '(?:Non)?AppStore; Apple/(.*?)\)'
   name: '$1'
