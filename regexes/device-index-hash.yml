@@ -2229,54 +2229,8 @@ hitv205n:
   - HI
 nw-a300series:
   - SO
-da220hql:
-  - AC
-da241hl:
-  - AC
-vsd220:
-  - VS
-ifp7550-3:
-  - VS
-ifp9850-3:
-  - VS
-ifp8650-3:
-  - VS
-ifp6550-3:
-  - VS
-wt22m-fi:
-  - '55'
-wt19m-fi:
-  - '55'
-t2s_lite:
-  - 2J
-xdh-0f-a1:
-  - XW
-xdh-17-a1:
-  - XW
-xdh-18-a1:
-  - XW
-xdh-21-a1:
-  - XW
-xdh-29-b1:
-  - XW
-xdh-2a-b1:
-  - XW
-10bdl4151t:
-  - PH
-da222hql:
-  - AC
-blm-00:
-  - HU
-xd-sdd05-2101:
-  - XW
-aeobc:
-  - KN
-aeokn:
-  - KN
-aeoch:
-  - KN
-aeocw:
-  - KN
+ipod7,1:
+  - AP
 i7u:
   - A9
 i4u:
@@ -35341,6 +35295,54 @@ vx4:
   - LG
 k700:
   - SPU
+amz-l29:
+  - HU
+'wiam #71':
+  - WL
+dream:
+  - TR
+lenovo k51c78:
+  - LE
+lenovo s90-u:
+  - LE
+amoi n828:
+  - AO
+multilaser_g_max_2_se_64:
+  - 1R
+sm-a047m:
+  - SA
+pixel 8 pro:
+  - GO
+a205kc:
+  - KY
+sog10:
+  - SO
+sc-53d:
+  - SA
+  - SU
+so-52d:
+  - SO
+sc-52d:
+  - SA
+  - SU
+sonyso-02e:
+  - SO
+rea-an00:
+  - HU
+agt-an00:
+  - HU
+sh-01d:
+  - SH
+multilaser_h_5g:
+  - 1R
+iphone5,3:
+  - AP
+23028rn4di:
+  - XI
+phw110:
+  - OP
+s6501l:
+  - NL
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -42312,6 +42314,54 @@ as-4421:
   - A8
 gsmart alto a2:
   - GG
+da220hql:
+  - AC
+da241hl:
+  - AC
+vsd220:
+  - VS
+ifp7550-3:
+  - VS
+ifp9850-3:
+  - VS
+ifp8650-3:
+  - VS
+ifp6550-3:
+  - VS
+wt22m-fi:
+  - '55'
+wt19m-fi:
+  - '55'
+t2s_lite:
+  - 2J
+xdh-0f-a1:
+  - XW
+xdh-17-a1:
+  - XW
+xdh-18-a1:
+  - XW
+xdh-21-a1:
+  - XW
+xdh-29-b1:
+  - XW
+xdh-2a-b1:
+  - XW
+10bdl4151t:
+  - PH
+da222hql:
+  - AC
+blm-00:
+  - HU
+xd-sdd05-2101:
+  - XW
+aeobc:
+  - KN
+aeokn:
+  - KN
+aeoch:
+  - KN
+aeocw:
+  - KN
 bush 10.0 mytablet:
   - B1
 bush 7.85 tablet:
@@ -43582,6 +43632,16 @@ mitab_colors_10:
   - WL
 phonepad 83g:
   - AIR
+zmooth:
+  - ZKI
+kfsnwi:
+  - KN
+i10plus:
+  - Y5
+p40hd_t_eea:
+  - T7
+ipad6,11:
+  - AP
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54181,6 +54241,16 @@ h32yq2200gr:
   - BB
 43lex-7287ts2c:
   - BB
+32lex-7289-c:
+  - BB
+55lex-8202uts2c:
+  - BB
+hiberg43yuhd:
+  - HIB
+sw-led43ub404:
+  - '45'
+vontar h618:
+  - 1V
 bb2 pro:
   - 0M
 kii pro:
