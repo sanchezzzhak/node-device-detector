@@ -78,8 +78,12 @@ const run = async (folderFixturePath) => {
   let content = await getRemoteFileContent(SOURCE);
   let lines = content.split('\n');
   // Retail Branding,Marketing Name,Device,Model
-
-  console.log(`Brand,Marketing Name,Device,Model,MATCH POS,Brand (inUs),Model (inUs),-----,Simulate4 (detect for column Model),Simulate3 (detect for column Device)`);
+  let headers = [
+    'Brand','Marketing Name','Device','Model','MATCH POS','Brand (inUs)','Model (inUs)',
+    '-----',
+    'Simulate4 (detect for column Model)','Simulate3 (detect for column Device)'
+  ];
+  console.log(`${headers.join(',')}`);
 
   lines.forEach((line, i) => {
     if (i === 0) {
