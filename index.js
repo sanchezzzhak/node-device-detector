@@ -753,6 +753,7 @@ class DeviceDetector {
       deviceData.id = '';
       deviceData.brand = '';
       deviceData.model = '';
+      deviceData.type = '';
     }
     /** Assume all devices running iOS / Mac OS are from Apple */
     if (
