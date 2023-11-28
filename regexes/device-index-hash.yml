@@ -434,6 +434,8 @@ bnd-al00:
   - HU
 bg2-w09:
   - HU
+sm-t865:
+  - SA
 zc554kl:
   - AU
 dn2103:
@@ -2203,6 +2205,22 @@ sm-f9360:
   - SA
 sm-f936u1:
   - SA
+sm-g781b:
+  - SA
+a1601:
+  - OP
+iv2201:
+  - 'ON'
+clt-l29:
+  - HU
+rmx3491:
+  - RE
+sm-a102u:
+  - SA
+sm-s134dl:
+  - SA
+iphone ios/16.6:
+  - AP
 ipod5,1:
   - AP
 panasonic sv-mv100:
@@ -2231,6 +2249,54 @@ nw-a300series:
   - SO
 ipod7,1:
   - AP
+da220hql:
+  - AC
+da241hl:
+  - AC
+vsd220:
+  - VS
+ifp7550-3:
+  - VS
+ifp9850-3:
+  - VS
+ifp8650-3:
+  - VS
+ifp6550-3:
+  - VS
+wt22m-fi:
+  - '55'
+wt19m-fi:
+  - '55'
+t2s_lite:
+  - 2J
+xdh-0f-a1:
+  - XW
+xdh-17-a1:
+  - XW
+xdh-18-a1:
+  - XW
+xdh-21-a1:
+  - XW
+xdh-29-b1:
+  - XW
+xdh-2a-b1:
+  - XW
+10bdl4151t:
+  - PH
+da222hql:
+  - AC
+blm-00:
+  - HU
+xd-sdd05-2101:
+  - XW
+aeobc:
+  - KN
+aeokn:
+  - KN
+aeoch:
+  - KN
+aeocw:
+  - KN
 i7u:
   - A9
 i4u:
@@ -4007,8 +4073,6 @@ cph1969:
   - OP
 cph1987:
   - OP
-a1601:
-  - OP
 cph1609:
   - OP
 cph1613:
@@ -5287,8 +5351,6 @@ samsung sm-a015m:
 sm-a105n:
   - SA
 sm-a105f:
-  - SA
-sm-a102u:
   - SA
 sm-a102w:
   - SA
@@ -14387,8 +14449,6 @@ sm-g930vl:
   - SA
 sm-g7810:
   - SA
-sm-g781b:
-  - SA
 sm-g781n:
   - SA
 sm-g781u:
@@ -15233,6 +15293,8 @@ l-ite 552 hd:
   - LM
 l-egantone:
   - LM
+jvc shell 536d5005cf5b_fhd:
+  - JV
 lavietab pc-te510s1:
   - NE
 ilium l900:
@@ -25055,8 +25117,6 @@ haipainoble s6:
   - XH
 kkg-an70:
   - HU
-iv2201:
-  - 'ON'
 ne2210:
   - 'ON'
 mgi-an00:
@@ -27634,8 +27694,6 @@ kyf41:
   - KY
 2201117pi:
   - 0P
-sm-s134dl:
-  - SA
 megafon sp-w1:
   - MP
 omnia7:
@@ -35343,6 +35401,59 @@ phw110:
   - OP
 s6501l:
   - NL
+cph2451:
+  - 'ON'
+  - OP
+cph2491:
+  - 'ON'
+  - OP
+cph2513:
+  - 'ON'
+  - OP
+cph2515:
+  - 'ON'
+  - OP
+cph2389:
+  - 'ON'
+  - OP
+cph2519:
+  - OP
+cph2521:
+  - OP
+cph2523:
+  - OP
+a301op:
+  - OP
+cph2591:
+  - OP
+cph2525:
+  - OP
+cph2529:
+  - OP
+cph2551:
+  - 'ON'
+  - OP
+cph2569:
+  - 'ON'
+  - OP
+cph2579:
+  - OP
+pjc110:
+  - OP
+phv110:
+  - OP
+scg21:
+  - SA
+v3:
+  - W2
+vivo v3:
+  - VV
+f-10d:
+  - FU
+f-04e:
+  - FU
+f-12d:
+  - FU
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -36356,8 +36467,6 @@ mt2111:
   - 'ON'
 v2142:
   - VV
-rmx3491:
-  - RE
 black g:
   - KL
 4187u:
@@ -38212,8 +38321,6 @@ hwv32:
 clt-tl01:
   - HU
 clt-l09:
-  - HU
-clt-l29:
   - HU
 clt-al00:
   - HU
@@ -42314,54 +42421,6 @@ as-4421:
   - A8
 gsmart alto a2:
   - GG
-da220hql:
-  - AC
-da241hl:
-  - AC
-vsd220:
-  - VS
-ifp7550-3:
-  - VS
-ifp9850-3:
-  - VS
-ifp8650-3:
-  - VS
-ifp6550-3:
-  - VS
-wt22m-fi:
-  - '55'
-wt19m-fi:
-  - '55'
-t2s_lite:
-  - 2J
-xdh-0f-a1:
-  - XW
-xdh-17-a1:
-  - XW
-xdh-18-a1:
-  - XW
-xdh-21-a1:
-  - XW
-xdh-29-b1:
-  - XW
-xdh-2a-b1:
-  - XW
-10bdl4151t:
-  - PH
-da222hql:
-  - AC
-blm-00:
-  - HU
-xd-sdd05-2101:
-  - XW
-aeobc:
-  - KN
-aeokn:
-  - KN
-aeoch:
-  - KN
-aeocw:
-  - KN
 bush 10.0 mytablet:
   - B1
 bush 7.85 tablet:
@@ -43642,6 +43701,8 @@ p40hd_t_eea:
   - T7
 ipad6,11:
   - AP
+f-01d:
+  - FU
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -52868,6 +52929,16 @@ mystery shell 536d400xf54_fhd:
   - 6M
 mystery shell 536d400xf31_fhd:
   - 6M
+jvc shell 536d480xf61_fhd:
+  - JV
+jvc shell 536d4306lf12_fhd:
+  - JV
+jvc shell 536d4205cf1b_fhd:
+  - JV
+jvc shell 536d400xf54_fhd:
+  - JV
+jvc shell 536d315xh33_hd:
+  - JV
 yuno shell smarttv: []
 yasin android tv:
   - YJ
@@ -54251,6 +54322,34 @@ sw-led43ub404:
   - '45'
 vontar h618:
   - 1V
+arcelik android tv:
+  - ARC
+arcelik android uhd tv:
+  - ARC
+arcelik google tv:
+  - ARC
+philips google tv ta1:
+  - PH
+oppocnm632:
+  - OP
+profilo 4k android tv:
+  - PF
+altus android tv:
+  - ALT
+beko android tv:
+  - BEK
+grundig android tv:
+  - GU
+grundig google tv uhd+:
+  - GU
+jvc android tv:
+  - JV
+bauhn 4k android tv:
+  - BAU
+mstar android tv:
+  - 3R
+regal google tv:
+  - Z9
 bb2 pro:
   - 0M
 kii pro:
@@ -54670,10 +54769,8 @@ hk1 plus:
   - 1V
 nvidia shield; smart-tv:
   - NV
-  - SA
 nvidia_shield_pro_2019:
   - NV
-  - SA
 ozone hd:
   - OZ
 t95kpro:
