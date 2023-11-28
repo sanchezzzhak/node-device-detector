@@ -146,6 +146,12 @@ class Browser extends ClientAbstractParser {
       engineVersion = '';
     }
 
+    if ('Every Browser' === name) {
+      family = 'Chrome';
+      engine = 'Blink';
+      engineVersion = '';
+    }
+
     if (name === '') {
       return null;
     }
@@ -394,11 +400,11 @@ class Browser extends ClientAbstractParser {
 
     let engineToken = engine;
     if ('Blink' === engine) {
-      engineToken = 'Chrome';
+      engineToken = 'Chrome|Cronet';
     }
 
     let regexp = new RegExp(
-      engineToken +
+      '(?:' + engineToken + ')' +
       '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
       'i'
     );

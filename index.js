@@ -746,7 +746,14 @@ class DeviceDetector {
     );
 
     deviceData = Object.assign(deviceData, deviceDataType);
-
+    /**
+     * if it's fake UA then it's best not to identify it as Apple running Android OS
+     */
+    if ('Android' === osData.name && 'Apple' === deviceData.brand) {
+      deviceData.id = '';
+      deviceData.brand = '';
+      deviceData.model = '';
+    }
     /** Assume all devices running iOS / Mac OS are from Apple */
     if (
       deviceData.brand === '' &&
