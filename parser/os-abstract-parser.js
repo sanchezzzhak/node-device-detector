@@ -6,7 +6,8 @@ const OS_FAMILIES = require('./os/os_families');
 const ANDROID_APP_LIST = [
   'com.hisense.odinbrowser',
   'com.seraphic.openinet.pre',
-  'com.appssppa.idesktoppcbrowser'
+  'com.appssppa.idesktoppcbrowser',
+  'every.browser.inc',
 ];
 const CLIENTHINT_MAPPING = {
   'GNU/Linux': ['Linux'],

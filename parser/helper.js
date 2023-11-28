@@ -134,7 +134,10 @@ function hasOperaTVStoreFragment(userAgent) {
  * @returns {boolean}
  */
 function hasAndroidTVFragment(userAgent) {
-  return matchUserAgent('Andr0id|Android TV|[(]lite[)] TV|[(]TV;', userAgent) !== null;
+  return matchUserAgent(
+      'Andr0id|(?:Android(?: UHD)?|Google) TV|[(]lite[)] TV|[(]TV;|BRAVIA',
+      userAgent
+  ) !== null;
 }
 
 /**
