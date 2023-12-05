@@ -222,6 +222,8 @@ yt9213aj:
   - XYA
 mpc-100:
   - 5O
+sda-8tab:
+  - PI
 pixel 3:
   - GO
 m2006c3lg:
@@ -436,6 +438,8 @@ bg2-w09:
   - HU
 sm-t865:
   - SA
+m2010j19sy:
+  - XI
 zc554kl:
   - AU
 dn2103:
@@ -807,6 +811,52 @@ google pixelbook go:
   - GO
 travelmate b118-m:
   - AC
+mac14,3:
+  - AP
+mac14,9:
+  - AP
+mac14,2:
+  - AP
+mac13,1:
+  - AP
+mac13,2:
+  - AP
+mac14,14:
+  - AP
+mac14,7:
+  - AP
+mac14,5:
+  - AP
+mac14,6:
+  - AP
+mac14,10:
+  - AP
+mac14,12:
+  - AP
+mac14,15:
+  - AP
+mac14,13:
+  - AP
+mac14,8:
+  - AP
+mac15,4:
+  - AP
+mac15,5:
+  - AP
+mac15,7:
+  - AP
+mac15,9:
+  - AP
+mac15,11:
+  - AP
+mac15,3:
+  - AP
+mac15,6:
+  - AP
+mac15,8:
+  - AP
+mac15,10:
+  - AP
 impress_grip:
   - VX
 archos diamond plus:
@@ -1205,6 +1255,26 @@ tecno mobile lg6n:
   - TB
 iphone14,8:
   - AP
+23054ra19c:
+  - XI
+2312crad3c:
+  - XI
+tecno lh8n:
+  - TB
+2312draabc:
+  - XI
+23090ra98c:
+  - XI
+2308cpxd0c:
+  - XI
+23076ra4bc:
+  - XI
+xiaomi mix fold 3:
+  - XI
+g9fpl:
+  - GO
+22101320c:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -17097,8 +17167,6 @@ rmx3201:
 kingkong mini2:
   - CB
 m2010j19sg:
-  - XI
-m2010j19sy:
   - XI
 m2007j17g:
   - XI
@@ -35454,6 +35522,196 @@ f-04e:
   - FU
 f-12d:
   - FU
+cyber 13 pro:
+  - HV
+zte blade a33+:
+  - ZT
+23078pnd5g:
+  - XI
+tecno ad11:
+  - TB
+lava lxx503:
+  - LV
+ge2ae:
+  - GO
+xq-dq72:
+  - SO
+infinix x6739:
+  - IF
+xq-dc72:
+  - SO
+panasonic t45 4g:
+  - PA
+asus_ai2302:
+  - AU
+2306epn60g:
+  - XI
+mobicel_r6:
+  - 4M
+nova lite3plus:
+  - HU
+nova 5t pro:
+  - HU
+v2250:
+  - VV
+zte_blade_l130ru:
+  - ZT
+tecno_ca7:
+  - TB
+zte_blade_a0620:
+  - ZT
+e5051:
+  - 1P
+e5018:
+  - BI
+e435 plus:
+  - HN
+dsr_r8:
+  - CH
+dsr_r7p:
+  - CH
+dsr_r7:
+  - CH
+dunns slinger:
+  - UD
+duke8:
+  - CKK
+duke 3:
+  - CKK
+duke   ii:
+  - CKK
+dopod 7p:
+  - DP
+lt c1300:
+  - QL
+qin3ultra:
+  - XI
+dl5003ql:
+  - DD
+dl5503ql:
+  - DD
+cynus f7:
+  - MB
+cynus e6:
+  - MB
+cynus e4:
+  - MB
+cynus e10:
+  - MB
+cubix cube 3:
+  - CH
+dash_jr_3g:
+  - BU
+dagger dg550:
+  - DO
+cynus t8:
+  - MB
+itel a32f:
+  - IZ
+beeline smart 5:
+  - B5
+y100x:
+  - DO
+getnord-onyx:
+  - GNO
+onida_i4g1:
+  - OIN
+qsmart rocket:
+  - QM
+digit4g e3 pro:
+  - DIG
+qmobile i6 metal 2018:
+  - QM
+digit4g e2 pro:
+  - DIG
+gn5001s:
+  - GI
+sparx neo 5 plus:
+  - SPX
+2310fpca4g:
+  - 0P
+23106rn0da:
+  - XI
+23078rkd5c:
+  - XI
+23053rn02i:
+  - XI
+2305003m:
+  - FEY
+active 8 pro:
+  - B2
+blade l210:
+  - ZT
+blade l210ru:
+  - ZT
+via x30:
+  - R4
+ver-an10:
+  - HU
+ver-an00:
+  - HU
+wtattrw2:
+  - 6A
+itel s681ln:
+  - IZ
+motorola edge 40:
+  - MR
+23127pn0cc:
+  - XI
+23116pn5bc:
+  - XI
+g0dzq:
+  - GO
+g1mnw:
+  - GO
+g82u8:
+  - GO
+g9bqd:
+  - GO
+mzb0e6din:
+  - 0P
+v2320:
+  - VV
+v2317:
+  - VV
+v2310:
+  - VV
+wdy-an00:
+  - HU
+tecno bg6:
+  - TB
+air1 ultra pro:
+  - 5F
+zte blade a53:
+  - ZT
+redmi k30s:
+  - XI
+redmi k30 pro zoom:
+  - XI
+redmi k20pro:
+  - XI
+wp28:
+  - OE
+wp27:
+  - OE
+wp26:
+  - OE
+wp23 pro:
+  - OE
+cyber x pro:
+  - HV
+kingkong star:
+  - CB
+infinix x6731b:
+  - IF
+infinix x6731:
+  - IF
+rp08:
+  - UM
+rmx3823:
+  - RE
+rmx3770:
+  - RE
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -43703,6 +43961,53 @@ ipad6,11:
   - AP
 f-01d:
   - FU
+jarvis7_85:
+  - '588'
+mq703g_1:
+  - TWN
+tb310xu:
+  - LE
+dunnsexecutive:
+  - UD
+dp7cpro:
+  - TB
+dp7cpro-sga1:
+  - TB
+dp8d:
+  - TB
+dl718m:
+  - DD
+dl703qr:
+  - DD
+dl702q:
+  - DD
+dl1022qr:
+  - DD
+dl1010q:
+  - DD
+cuddle a4:
+  - IB
+optima 1200b ts1266rw:
+  - D2
+hiper s-pad:
+  - HIP
+23073rpbfg:
+  - XI
+23043rp34c:
+  - XI
+tb320fc:
+  - LE
+2307brpdcc:
+  - XI
+okt3:
+  - OE
+rt7 titan 5g:
+  - OE
+  - UZ
+rt6:
+  - OE
+rt5:
+  - OE
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54350,6 +54655,27 @@ mstar android tv:
   - 3R
 regal google tv:
   - Z9
+vmp-046-664:
+  - V7
+hty-22fhdo6b-hc22:
+  - HA1
+neko_lt-55nx8000s:
+  - NEK
+dm-led43sbb31:
+  - D2
+32fcy1:
+  - DX
+orbsmart rx-01:
+  - ORB
+sm-led65m01su:
+  - X2
+  - SA
+vontar r3:
+  - 1V
+skyline_55u7510:
+  - SKY
+skyline 58u7510:
+  - SKY
 bb2 pro:
   - 0M
 kii pro:

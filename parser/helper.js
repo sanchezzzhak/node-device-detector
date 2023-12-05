@@ -155,7 +155,7 @@ function hasTVFragment(userAgent) {
  * @returns {boolean}
  */
 function hasDesktopFragment(userAgent) {
-  return matchUserAgent('Desktop (x(?:32|64)|WOW64);', userAgent) !== null;
+  return matchUserAgent('Desktop(?: (x(?:32|64)|WOW64))?;', userAgent) !== null;
 }
 
 /**
