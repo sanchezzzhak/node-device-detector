@@ -1275,6 +1275,12 @@ g9fpl:
   - GO
 22101320c:
   - XI
+pixel fold:
+  - GO
+2312dra50c:
+  - XI
+23027rad4i:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -2319,54 +2325,6 @@ nw-a300series:
   - SO
 ipod7,1:
   - AP
-da220hql:
-  - AC
-da241hl:
-  - AC
-vsd220:
-  - VS
-ifp7550-3:
-  - VS
-ifp9850-3:
-  - VS
-ifp8650-3:
-  - VS
-ifp6550-3:
-  - VS
-wt22m-fi:
-  - '55'
-wt19m-fi:
-  - '55'
-t2s_lite:
-  - 2J
-xdh-0f-a1:
-  - XW
-xdh-17-a1:
-  - XW
-xdh-18-a1:
-  - XW
-xdh-21-a1:
-  - XW
-xdh-29-b1:
-  - XW
-xdh-2a-b1:
-  - XW
-10bdl4151t:
-  - PH
-da222hql:
-  - AC
-blm-00:
-  - HU
-xd-sdd05-2101:
-  - XW
-aeobc:
-  - KN
-aeokn:
-  - KN
-aeoch:
-  - KN
-aeocw:
-  - KN
 i7u:
   - A9
 i4u:
@@ -35712,6 +35670,160 @@ rmx3823:
   - RE
 rmx3770:
   - RE
+rmx3619:
+  - RE
+motorola edge 40 neo:
+  - MR
+pixel 8:
+  - GO
+motorola razr 40:
+  - MR
+motorola razr 40 ultra:
+  - MR
+nubia 8150n:
+  - '57'
+sm-s711b:
+  - SA
+moto g84 5g:
+  - MR
+moto g54 5g:
+  - MR
+v31gt:
+  - DO
+v2304a:
+  - VV
+v2302a:
+  - VV
+v2282a:
+  - VV
+v2279a:
+  - VV
+v2322:
+  - VV
+v2314a:
+  - VV
+v2313a:
+  - VV
+v2278a:
+  - VV
+v2271a:
+  - VV
+v2270a:
+  - VV
+v2248:
+  - VV
+v2245a:
+  - VV
+mi 11x pro:
+  - XI
+mi 11x:
+  - XI
+alp-l29s:
+  - HU
+moto g53y 5g:
+  - MR
+tecno mobile ki7:
+  - TB
+xq-de72:
+  - SO
+sm-s236dl:
+  - SA
+sm-s146vl:
+  - SA
+sm-m346b1:
+  - SA
+sm-m346b:
+  - SA
+sm-a055f:
+  - SA
+rmx3820:
+  - RE
+rmx3636:
+  - RE
+rmx3624_natv_vf:
+  - RE
+power armor x11:
+  - UL
+sm-a057f:
+  - SA
+sm-a146u1:
+  - SA
+sm-a146w:
+  - SA
+sm-a245n:
+  - SA
+sm-a3460:
+  - SA
+sm-a346n:
+  - SA
+nx713j:
+  - '57'
+jelly star:
+  - UZ
+i2217:
+  - VV
+e940-2849-00:
+  - GS
+cyber x:
+  - HV
+asus_ai2205_a:
+  - AU
+23077rabdc:
+  - XI
+23076rn8dy:
+  - XI
+23046pnc9c:
+  - XI
+hammer_iron_4:
+  - HAM
+hammer_blade_4:
+  - HAM
+220733spi:
+  - 0P
+220733sph:
+  - 0P
+220733sh:
+  - XI
+20220728mt:
+  - SLF
+23049pcd8i:
+  - 0P
+2302epcc4i:
+  - 0P
+23028rncai:
+  - XI
+bv5300:
+  - B2
+b135dl:
+  - BU
+ae9120:
+  - 2X
+ae9220:
+  - 2X
+ae9240:
+  - 2X
+ae9150:
+  - 2X
+ae9260:
+  - 2X
+i2212:
+  - VV
+gwkk3:
+  - GO
+gp4bc:
+  - GO
+gkws6:
+  - GO
+gc3ve:
+  - GO
+zte blade a54:
+  - ZT
+zte a2023:
+  - ZT
+zte 9050n:
+  - ZT
+xq-dc54:
+  - SO
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -42679,6 +42791,54 @@ as-4421:
   - A8
 gsmart alto a2:
   - GG
+da220hql:
+  - AC
+da241hl:
+  - AC
+vsd220:
+  - VS
+ifp7550-3:
+  - VS
+ifp9850-3:
+  - VS
+ifp8650-3:
+  - VS
+ifp6550-3:
+  - VS
+wt22m-fi:
+  - '55'
+wt19m-fi:
+  - '55'
+t2s_lite:
+  - 2J
+xdh-0f-a1:
+  - XW
+xdh-17-a1:
+  - XW
+xdh-18-a1:
+  - XW
+xdh-21-a1:
+  - XW
+xdh-29-b1:
+  - XW
+xdh-2a-b1:
+  - XW
+10bdl4151t:
+  - PH
+da222hql:
+  - AC
+blm-00:
+  - HU
+xd-sdd05-2101:
+  - XW
+aeobc:
+  - KN
+aeokn:
+  - KN
+aeoch:
+  - KN
+aeocw:
+  - KN
 bush 10.0 mytablet:
   - B1
 bush 7.85 tablet:
@@ -44008,6 +44168,54 @@ rt6:
   - OE
 rt5:
   - OE
+opd2203:
+  - 'ON'
+npad x:
+  - NON
+npadplus:
+  - NON
+npadair:
+  - NON
+npad-pro:
+  - NON
+noteair3c:
+  - 3O
+npad-plus:
+  - NON
+pad 60:
+  - OSC
+sm-x916b:
+  - SA
+tab 80:
+  - B2
+tab 60:
+  - B2
+t30pro:
+  - DO
+t10s:
+  - DO
+t20mini:
+  - DO
+t40 air:
+  - T7
+tab kingkong:
+  - CB
+eln-w09:
+  - HU
+eln-l09:
+  - HU
+23073rpbfc:
+  - XI
+iplay_50s:
+  - 3A
+gtx_jaculus:
+  - GTX
+9494g:
+  - TC
+btk-al09:
+  - HU
+btk-w09:
+  - HU
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54676,6 +54884,10 @@ skyline_55u7510:
   - SKY
 skyline 58u7510:
   - SKY
+mlt43usd02:
+  - MAU
+mlt32hsx02:
+  - MAU
 bb2 pro:
   - 0M
 kii pro:
