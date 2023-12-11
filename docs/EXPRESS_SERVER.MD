@@ -24,7 +24,7 @@ const hasBotResult = (result) => {
 // create middleware
 const middlewareDetect = (req, res, next) => {
   const useragent = req.headers['user-agent']; 
-  const clientHintsData = clientHints.parse(res.headers);
+  const clientHintsData = clientHints.parse(req.headers);
 
   req.useragent = useragent;
   req.device = deviceDetector.detect(useragent, clientHintsData);
