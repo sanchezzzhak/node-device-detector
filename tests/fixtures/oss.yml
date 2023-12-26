@@ -3998,3 +3998,123 @@
     version:
     platform:
     family: Other Mobile
+-
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.2; AFTBU001) AppleWebKit/537.36 (KHTML, like Gecko) Silk/96.1.237 like Chrome/96.0.4664.128 Safari/537.36
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "6"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; AFTKRT Build/RS8101.1854N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.197 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "8"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 9; KFMAWI Build/PS7327.3329N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.197 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "7"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; KFSUWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.11.3.1204 Mobile Safari/537.36
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "5"
+    platform: 
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; KFQUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/94.5.2 like Chrome/94.0.4606.128 Safari/537.36
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "8"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 7.1.2; KFMUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/80.4.14 like Chrome/80.0.3987.119 Safari/537.36
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "6"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.0.3; en-gb; KFTT Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "3"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.2.2; KFAPWI Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Safari/537.36
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "3"
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 4.0.4; KFJWA Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.42 Safari/537.36
+  os:
+    name: Fire OS
+    short_name: FIR
+    version: "3"
+    platform:
+    family: Android
+-
+  user_agent: AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 (+DRM; UMC-Sharp; FVP6886;1.0.0.0;1.0.0.0; UMC_GoogleTV_2019;UMC_SHARP;) FVC/4.0 (UMC; UMC_GoogleTV_2019;)
+  os:
+    name: Android TV
+    short_name: ADR
+    version:
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 (+DRM;UMC-Sharp; FVP9685;1.0.0.0; 1.0.0.0;UMC_AndroidTV_2021;UMC_SHARP;) FVC/6.0 (UMC;UMC_AndroidTV_2021;)
+  os:
+    name: Android TV
+    short_name: ADR
+    version:
+    platform: ARM
+    family: Android
+-
+  user_agent: smarttv_AFTS_Build_565189620_Chromium_34.0.1847.114
+  os:
+    name: Fire OS
+    short_name: FIR
+    version:
+    platform:
+    family: Android
+-
+  user_agent: Mozilla/5.0 (Linux; Android 9.0.0; P1 Build/PQ3B.190801.002; wv-atv; mse) Google/1.0.0 AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36
+  os:
+    name: Android TV
+    short_name: ADR
+    version: 9.0.0
+    platform:
+    family: Android
+-
+  user_agent: Aloha/1 CFNetwork/1492.0.1 Darwin/23.3.0
+  os:
+    name: iOS
+    short_name: IOS
+    version: "17.3"
+    platform:
+    family: iOS
+-
+  user_agent: Safari/19617.1.17.11.9 CFNetwork/1490.0.4 Darwin/23.2.0
+  os:
+    name: Mac
+    short_name: MAC
+    version: "14.2"
+    platform:
+    family: Mac

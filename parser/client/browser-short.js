@@ -322,6 +322,7 @@ module.exports = {
   'NS': 'Netscape',
   'WR': 'NextWord Browser',
   'NT': 'NTENT Browser',
+  'NU': 'Nuanti Meta',
   'OC': 'Oculus Browser',
   'O6': 'Odd Browser',
   'O1': 'Opera Mini iOS',
