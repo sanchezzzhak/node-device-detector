@@ -1,5 +1,5 @@
 const ParserAbstract = require('./abstract-parser');
-const helper = require("./helper");
+const helper = require('./helper');
 
 const OS_SYSTEMS = require('./os/os_systems');
 const OS_FAMILIES = require('./os/os_families');
@@ -7,22 +7,38 @@ const ANDROID_APP_LIST = [
   'com.hisense.odinbrowser',
   'com.seraphic.openinet.pre',
   'com.appssppa.idesktoppcbrowser',
-  'every.browser.inc',
+  'every.browser.inc'
 ];
 const CLIENTHINT_MAPPING = {
   'GNU/Linux': ['Linux'],
-  'Mac': ['MacOS'],
+  'Mac': ['MacOS']
 };
+
+const FIREOS_VERSION_MAPPING = {
+  '11': '8',
+  '10': '8',
+  '9': '7',
+  '7': '6',
+  '5': '5',
+  '4.4.3': '4.5.1',
+  '4.4.2': '4',
+  '4.2.2': '3',
+  '4.0.3': '3',
+  '4.0.2': '3',
+  '4': '2',
+  '2': '1'
+};
+
 const compareOsForClientHints = (brand) => {
-  for(let mapName in CLIENTHINT_MAPPING){
-    for(let mapBrand of CLIENTHINT_MAPPING[mapName]){
+  for (let mapName in CLIENTHINT_MAPPING) {
+    for (let mapBrand of CLIENTHINT_MAPPING[mapName]) {
       if (brand.toLowerCase() === mapBrand.toLowerCase()) {
         return mapName;
       }
     }
   }
   return brand;
-}
+};
 
 function comparePlatform(platform, bitness = '') {
   if (platform.indexOf('arm') !== -1) {
@@ -80,7 +96,7 @@ class OsAbstractParser extends ParserAbstract {
         break;
       }
     }
-    return {name, short}
+    return { name, short };
   }
 
   parseFromClientHints(clientHintsData) {
@@ -97,7 +113,7 @@ class OsAbstractParser extends ParserAbstract {
       platform = clientHintsData.os.platform;
       version = clientHintsData.os.version;
       let hintName = clientHintsData.os.name;
-      platform  = comparePlatform(platform.toLowerCase(), clientHintsData.os.bitness);
+      platform = comparePlatform(platform.toLowerCase(), clientHintsData.os.bitness);
       hintName = compareOsForClientHints(hintName);
 
       for (let osShort in OS_SYSTEMS) {
@@ -113,12 +129,12 @@ class OsAbstractParser extends ParserAbstract {
     if (name === 'Windows' && version !== '') {
       let majorVersion = ~~version.split('.', 1)[0];
       if (majorVersion === 0) {
-        version = "";
+        version = '';
       }
       if (majorVersion > 0 && majorVersion < 11) {
-        version = "10";
+        version = '10';
       } else if (majorVersion > 10) {
-        version = "11";
+        version = '11';
       }
     }
 
@@ -126,8 +142,8 @@ class OsAbstractParser extends ParserAbstract {
       name: name,
       short_name: short,
       version: version,
-      platform: platform,
-    }
+      platform: platform
+    };
   }
 
   parseFromUserAgent(userAgent) {
@@ -142,18 +158,18 @@ class OsAbstractParser extends ParserAbstract {
         let {
           name,
           short
-        } = this.getOsDataByName(this.buildByMatch(item.name, match))
+        } = this.getOsDataByName(this.buildByMatch(item.name, match));
 
         let version = item.version !== void 0
-            ? this.buildVersion(item.version, match)
-            : '';
+          ? this.buildVersion(item.version, match)
+          : '';
 
         if (item.versions !== void 0) {
           for (let versionItem of item.versions) {
             let regex = this.getBaseRegExp(versionItem.regex);
             let match = regex.exec(userAgent);
             if (match !== null) {
-              version = this.buildVersion(versionItem.version, match)
+              version = this.buildVersion(versionItem.version, match);
               break;
             }
           }
@@ -164,7 +180,7 @@ class OsAbstractParser extends ParserAbstract {
           short_name: short,
           version: version,
           platform: this.parsePlatform(userAgent),
-          family: this.parseOsFamily(short),
+          family: this.parseOsFamily(short)
         };
       }
     }
@@ -183,7 +199,7 @@ class OsAbstractParser extends ParserAbstract {
     let hint = this.parseFromClientHints(clientHints);
     let data = this.parseFromUserAgent(userAgent);
 
-    let name= '', version= '', platform = '', short = '', family = '';
+    let name = '', version = '', platform = '', short = '', family = '';
 
     if (hint && hint.name) {
       name = hint.name;
@@ -201,18 +217,28 @@ class OsAbstractParser extends ParserAbstract {
       if (data && data.family === name && data.name !== name) {
         name = data.name;
       }
-  
+
       if ('HarmonyOS' === name) {
         version = '';
         short = 'HAR';
       }
-      
+
+      if ('Fire OS' === data.name) {
+        let majorVersion = ~~version.split('.', 1)[0];
+        short = data.short_name;
+        if (FIREOS_VERSION_MAPPING[version]) {
+          version = FIREOS_VERSION_MAPPING[version];
+        } else if (FIREOS_VERSION_MAPPING[majorVersion]) {
+          version = FIREOS_VERSION_MAPPING[majorVersion];
+        }
+      }
+
       if ('GNU/Linux' === name
         && data
         && 'Chrome OS' === data.name
         && version === data.version
       ) {
-        name  = data.name;
+        name = data.name;
         short = data.short_name;
       }
 
@@ -224,7 +250,7 @@ class OsAbstractParser extends ParserAbstract {
       && clientHints.app
       && ANDROID_APP_LIST.indexOf(clientHints.app) !== -1
       && data.name !== 'Android'
-    ){
+    ) {
       name = 'Android';
       short = 'ADR';
       family = 'Android';
@@ -243,7 +269,7 @@ class OsAbstractParser extends ParserAbstract {
       version: String(version),
       short_name: String(short),
       platform: String(platform),
-      family: String(family),
+      family: String(family)
     };
   }
 
@@ -254,7 +280,7 @@ class OsAbstractParser extends ParserAbstract {
    */
   parsePlatform(userAgent) {
     if (
-        this.getBaseRegExp('arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]').test(userAgent)
+      this.getBaseRegExp('arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]').test(userAgent)
     ) {
       return 'ARM';
     }
