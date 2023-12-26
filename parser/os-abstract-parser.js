@@ -223,7 +223,7 @@ class OsAbstractParser extends ParserAbstract {
         short = 'HAR';
       }
 
-      if ('Fire OS' === data.name) {
+      if (data && 'Fire OS' === data.name) {
         let majorVersion = ~~version.split('.', 1)[0];
         short = data.short_name;
         if (FIREOS_VERSION_MAPPING[version]) {
