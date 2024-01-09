@@ -201,12 +201,17 @@ class ClientHints {
     for (let key in meta) {
       let value = meta[key];
       let lowerCaseKey = key.toLowerCase();
+
+      if (value === void 0) {
+        continue;
+      }
+
       switch (lowerCaseKey) {
         case 'width':
         case 'height':
         case 'ratio':
         case 'hashc':
-          result.meta[key] = parseFloat(value.toFixed(3));
+          result.meta[key] = parseFloat(value).toFixed(3);
           break;
         case 'gpu':
         case 'hashg':

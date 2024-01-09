@@ -27,6 +27,7 @@ const VendorFragmentParser = require(
   './parser/vendor-fragment-abstract-parser');
 // other parsers
 const AliasDevice = require('./parser/device/alias-device');
+const DeviceHint = require('./parser/device/hints/device-hint');
 const IndexerClient = require('./parser/client/indexer-client');
 const IndexerDevice = require('./parser/device/indexer-device');
 
@@ -43,12 +44,18 @@ const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
 
+// ===========================
 // static private parser init
+// ===========================
+
+const deviceHint = new DeviceHint();
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
 
+
 IndexerDevice.init();
 IndexerClient.init();
+
 
 class DeviceDetector {
   /**
@@ -594,7 +601,7 @@ class DeviceDetector {
   /**
    * parse device
    * @param {string} userAgent
-   * @param clientHints
+   * @param {Object} clientHints
    * @return {ResultDevice}
    */
   parseDevice(userAgent, clientHints) {
@@ -618,16 +625,30 @@ class DeviceDetector {
       model: '',
     };
 
+    if (clientHints) {
+      let resultHint = deviceHint.parse(clientHints);
+      if (resultHint.type) {
+        result.type = resultHint.type;
+        result.brand = resultHint.brand;
+        result.model = resultHint.model;
+        if (deviceCode === '' && resultHint.code && this.deviceAliasCode) {
+          result.code = resultHint.code;
+        }
+      }
+    }
+
     if (this.deviceAliasCode) {
       result.code = deviceCode;
     }
 
-    for (let name in this.deviceParserList) {
-      let parser = this.deviceParserList[name];
-      let resultMerge = parser.parse(ua, brandIndexes);
-      if (resultMerge) {
-        result = Object.assign({}, result, resultMerge);
-        break;
+    if (result && result.brand === '') {
+      for (let name in this.deviceParserList) {
+        let parser = this.deviceParserList[name];
+        let resultMerge = parser.parse(ua, brandIndexes);
+        if (resultMerge) {
+          result = Object.assign({}, result, resultMerge);
+          break;
+        }
       }
     }
 

@@ -18,6 +18,7 @@ const excludeFilesNames = [
   'alias_devices.yml',
   'clienthints-app.yml',
   'clienthints.yml',
+  'device-hash.yml',
 ];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
@@ -87,12 +88,18 @@ function testsFromFixtureDeviceMobile(fixture) {
 }
 
 const runTest = (fixture, result) => {
-  
-  if (fixture.headers) {
+
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+
+  // remove client hints for diff result
+  if (fixture.headers !== void 0) {
     delete fixture.headers;
   }
-  
-  let messageError = 'fixture data\n' + perryJSON(fixture);
+  // remove client meta for diff result
+  if (fixture.meta !== void 0) {
+    delete fixture.meta;
+  }
+
   if (result.client) {
     delete result.client.short_name;
     if (fixture.browser_family !== void 0) {
@@ -153,7 +160,9 @@ const createTestForFile = (file) => {
           return this.skip();
         }
         let cloneFixture = Object.assign({}, fixture);
-        let clientHintData = clientHints.parse(cloneFixture.headers);
+        let headers = cloneFixture.headers;
+        let meta = cloneFixture.meta;
+        let clientHintData = clientHints.parse(headers, meta);
         let result = null;
         
         if (forAsync) {
@@ -239,6 +248,10 @@ describe('tests devices', function() {
 
 describe('tests devices clienthints-app', function() {
   createTestForFile('clienthints-app.yml');
+});
+
+describe('tests devices device-hash', function() {
+  createTestForFile('device-hash.yml');
 });
 
 describe('tests devices clienthints', function() {
