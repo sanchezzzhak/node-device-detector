@@ -207,11 +207,13 @@ class ClientHints {
       }
 
       switch (lowerCaseKey) {
-        case 'width':
-        case 'height':
         case 'ratio':
         case 'hashc':
           result.meta[key] = parseFloat(value).toFixed(3);
+          break;
+        case 'width':
+        case 'height':
+          result.meta[key] = String(parseFloat(value).toFixed(0));
           break;
         case 'gpu':
         case 'hashg':
@@ -247,8 +249,8 @@ class ClientHints {
         width: '',
         height: '',
         ratio: '',
-        hashc: '',
-        hashg: '',
+        hashC: '',
+        hashG: '',
         gpu: '',
         gamut: '',
         ram: '',

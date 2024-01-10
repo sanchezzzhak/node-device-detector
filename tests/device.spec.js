@@ -18,7 +18,7 @@ const excludeFilesNames = [
   'alias_devices.yml',
   'clienthints-app.yml',
   'clienthints.yml',
-  'device-hash.yml',
+  'device-hint.yml',
 ];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
@@ -251,7 +251,7 @@ describe('tests devices clienthints-app', function() {
 });
 
 describe('tests devices device-hash', function() {
-  createTestForFile('device-hash.yml');
+  createTestForFile('device-hint.yml');
 });
 
 describe('tests devices clienthints', function() {
