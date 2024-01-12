@@ -254,6 +254,34 @@
       brand: Apple
       device: smartphone
       model: iPhone 11
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"27.160"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+        o: [[27.160, 32.800]]
+      code: 'iPhone14,5'
+      brand: Apple
+      device: phablet
+      model: iPhone 13
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"26.300"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+      code: 'iPhone13,2'
+      brand: Apple
+      device: phablet
+      model: iPhone 12
+    - # {"width":"1284","height":"2778","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"23.160"}
+      check:
+        width: '1284'
+        height: '2778'
+        ratio: '3'
+      code: 'iPhone14,3'
+      brand: Apple
+      device: phablet
+      model: iPhone 13 Pro Max
     - # {"width":"960","height":"2079","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"25.160"}
       check:
         width: '960'

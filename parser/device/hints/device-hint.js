@@ -31,8 +31,8 @@ class DeviceHint extends AbstractParser {
       return {};
     }
 
-    let hash = clientHints.meta.hashG;
-    let record = this.collection[hash];
+    let hashG = clientHints.meta.hashG;
+    let record = this.collection[hashG];
 
     if (record === void 0) {
       return {};
@@ -45,6 +45,7 @@ class DeviceHint extends AbstractParser {
     const ratio = String(clientHints.meta.ratio);
     const width = String(clientHints.meta.width);
     const height = String(clientHints.meta.height);
+    const hashC = parseFloat(clientHints.meta.hashC);
 
     for(let item of record.devices) {
       const check = item.check;
@@ -56,6 +57,15 @@ class DeviceHint extends AbstractParser {
         continue;
       }
       if (false === (fuzzyCompareNumber(check.width, width) && fuzzyCompareNumber(check.height, height))) {
+        continue;
+      }
+      // check operations hashC;
+      if (check.o !== void 0 && Array.isArray(check.o)) {
+        for(let operations of check.o) {
+          if (hashC >= operations[0] && hashC <= operations[1]) {
+            return makeResult(item);
+          }
+        }
         continue;
       }
 

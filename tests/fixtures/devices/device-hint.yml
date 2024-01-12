@@ -102,11 +102,11 @@
   os:
     name: iOS
     version: 16.7.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -131,11 +131,11 @@
   os:
     name: iOS
     version: 16.7.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -159,11 +159,11 @@
   os:
     name: iOS
     version: 14.4.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -187,11 +187,11 @@
   os:
     name: iOS
     version: 16.6.1
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -215,11 +215,11 @@
   os:
     name: iOS
     version: 14.4.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -243,11 +243,11 @@
   os:
     name: iOS
     version: 16.0.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -271,11 +271,11 @@
   os:
     name: iOS
     version: 16.7.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -299,11 +299,11 @@
   os:
     name: iOS
     version: 16.3.1
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -327,11 +327,11 @@
   os:
     name: iOS
     version: 15.7.9
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -355,11 +355,11 @@
   os:
     name: iOS
     version: 15.7.9
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -383,11 +383,11 @@
   os:
     name: iOS
     version: 15.0.2
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -411,11 +411,11 @@
   os:
     name: iOS
     version: "15.8"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -439,11 +439,11 @@
   os:
     name: iOS
     version: "16.7.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -467,11 +467,11 @@
   os:
     name: iOS
     version: "16.6"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -495,11 +495,11 @@
   os:
     name: iOS
     version: "17.1.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -523,11 +523,11 @@
   os:
     name: iOS
     version: "17.1.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -551,11 +551,11 @@
   os:
     name: iOS
     version: "17.1.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -579,11 +579,11 @@
   os:
     name: iOS
     version: "17.1.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -607,11 +607,11 @@
   os:
     name: iOS
     version: "16.0.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -635,11 +635,11 @@
   os:
     name: iOS
     version: "16.4.1"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -663,11 +663,11 @@
   os:
     name: iOS
     version: "15.8"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -691,11 +691,11 @@
   os:
     name: iOS
     version: "16.1.2"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
@@ -719,16 +719,100 @@
   os:
     name: iOS
     version: "15.4.1"
-    platform: ''
+    platform: ""
   client:
     type: browser
     name: Mobile Safari
-    version: ''
+    version: ""
     engine: WebKit
     engine_version: 605.1.15
   device:
     type: smartphone
     brand: Apple
     model: iPhone 6s
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) WebKit/8616 (KHTML, like Gecko) Mobile/21B101
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "26.300"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: "8616"
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 12
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1284"
+    height: "2778"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "23.160"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 13 Pro Max
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "27.160"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 13
   os_family: iOS
   browser_family: Safari
