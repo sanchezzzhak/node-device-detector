@@ -816,3 +816,283 @@
     model: iPhone 13
   os_family: iOS
   browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "20.200"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 14
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "22.160"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 14
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "24.160"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 14
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "21.160"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 14
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "828"
+    height: "1792"
+    ratio: "2"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "33.700"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 11
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "828"
+    height: "1792"
+    ratio: "2"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "31.700"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 11
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "828"
+    height: "1792"
+    ratio: "2"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "29.700"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 11
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "53.000"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 12 Pro
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "54.000"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 12 Pro
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "1170"
+    height: "2532"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "5378714267"
+    hashC: "22.282"
+  os:
+    name: iOS
+    version: "17.1.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 12 Pro
+  os_family: iOS
+  browser_family: Safari
