@@ -1096,3 +1096,31 @@
     model: iPhone 12 Pro
   os_family: iOS
   browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20C65
+  headers:
+  meta:
+    width: "1179"
+    height: "2556"
+    ratio: "3"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "2117418865"
+    hashC: "23.600"
+  os:
+    name: iOS
+    version: "16.2"
+    platform: ""
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ""
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 14 Pro
+  os_family: iOS
+  browser_family: Safari
