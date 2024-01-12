@@ -172,13 +172,37 @@ const createTestForFile = (file) => {
           result = await detector.detect(cloneFixture.user_agent,
             clientHintData);
         }
+
+        // check base
         result.user_agent = cloneFixture.user_agent;
+        // print fixture and result is debug enable
         perryTable(cloneFixture, result);
+        // check fixture test
         runTest(cloneFixture, result);
+
         if (!firstTestFixture) {
           testsFromFixtureDeviceMobile(result);
           firstTestFixture = true;
         }
+
+        // check client-hints by hashG
+        if (clientHintData.meta && clientHintData.meta.hashG) {
+          let hintResult = detector.getParseDeviceHint().parse(clientHintData);
+          if (hintResult.code) {
+            let detectResult = {};
+            if (forAsync) {
+              detectResult = await detector.detectAsync(hintResult.code);
+            } else {
+              detectResult = await detector.detect(hintResult.code);
+            }
+            const metaData = perryJSON(clientHintData.meta || {});
+            const hintData = perryJSON(hintResult);
+            expect(hintResult.type, `device meta ${metaData}\nresult ${hintData}`).equal(detectResult.device.type);
+            expect(hintResult.model, `device meta ${metaData}\nresult ${hintData}`).equal(detectResult.device.model);
+            expect(hintResult.brand, `device meta ${metaData}\nresult${hintData}`).equal(detectResult.device.brand);
+          }
+        }
+
       
       });
     };

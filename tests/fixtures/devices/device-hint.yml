@@ -197,7 +197,7 @@
   device:
     type: smartphone
     brand: Apple
-    model: iPhone XR
+    model: iPhone XS
   os_family: iOS
   browser_family: Safari
 -
@@ -225,7 +225,7 @@
   device:
     type: smartphone
     brand: Apple
-    model: iPhone XR
+    model: iPhone XS
   os_family: iOS
   browser_family: Safari
 -
@@ -393,7 +393,7 @@
   device:
     type: smartphone
     brand: Apple
-    model: iPhone XR
+    model: iPhone XS
   os_family: iOS
   browser_family: Safari
 -
@@ -645,7 +645,7 @@
   device:
     type: phablet
     brand: Apple
-    model: iPhone Xs Max
+    model: iPhone XS Max
   os_family: iOS
   browser_family: Safari
 -
@@ -674,5 +674,61 @@
     type: smartphone
     brand: Apple
     model: iPhone 7
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+  headers:
+  meta:
+    width: "828"
+    height: "1792"
+    ratio: "2"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "3350098807"
+    hashC: "51.400"
+  os:
+    name: iOS
+    version: "16.1.2"
+    platform: ''
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ''
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 11
+  os_family: iOS
+  browser_family: Safari
+-
+  user_agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E258
+  headers:
+  meta:
+    width: "640"
+    height: "1136"
+    ratio: "2"
+    gpu: Apple GPU
+    colorDepth: "32"
+    gamut: p3
+    hashG: "6380682222"
+    hashC: "93.000"
+  os:
+    name: iOS
+    version: "15.4.1"
+    platform: ''
+  client:
+    type: browser
+    name: Mobile Safari
+    version: ''
+    engine: WebKit
+    engine_version: 605.1.15
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 6s
   os_family: iOS
   browser_family: Safari

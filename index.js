@@ -336,6 +336,14 @@ class DeviceDetector {
   }
 
   /**
+   * get device hint parser
+   * @returns {DeviceHint}
+   */
+  getParseDeviceHint() {
+    return deviceHint;
+  }
+
+  /**
    * add device type parser
    * @param {string} name
    * @param parser

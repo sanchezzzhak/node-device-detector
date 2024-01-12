@@ -37,7 +37,7 @@
   code: 'iPhone11,6'
   brand: Apple
   device: phablet
-  model: iPhone Xs Max
+  model: iPhone XS Max
 
 
 '3350098807':
@@ -60,7 +60,15 @@
       brand: Apple
       device: phablet
       model: iPhone 11 Pro
-
+    - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3350098807","hashC":"51.400"}
+      check:
+        width: '828'
+        height: '1792'
+        ratio: '2'
+      code: 'iPhone12,1'
+      brand: Apple
+      device: smartphone
+      model: iPhone 11
 
 '5130835905':
   devices:
@@ -125,28 +133,43 @@
   code: 'iPhone11,2'
   brand: Apple
   device: smartphone
-  model: iPhone XR
+  model: iPhone XS
 
 # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5367674935","hashC":"40.200"}
 '5367674935':
   code: 'iPhone11,2'
   brand: Apple
   device: smartphone
-  model: iPhone XR
+  model: iPhone XS
 
 # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"undefined","hashG":"4261809908","hashC":"45.200"}
 '4261809908':
   code: 'iPhone11,2'
   brand: Apple
   device: smartphone
-  model: iPhone XR
+  model: iPhone XS
 
-# {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"214.500"}
+
 '6380682222':
-  code: 'iPhone9,3'
-  brand: Apple
-  device: smartphone
-  model: iPhone 7
+  devices:
+    - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"214.500"}
+      check:
+        width: '750'
+        height: '1334'
+        ratio: '2'
+      code: 'iPhone9,3'
+      brand: Apple
+      device: smartphone
+      model: iPhone 7
+    - # {"width":"640","height":"1136","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"srgb","cores":"4","hashG":"6380682222","hashC":"93.000"}
+      check:
+        width: '640'
+        height: '1136'
+        ratio: '2'
+      code: 'iPhone8,1'
+      brand: Apple
+      device: smartphone
+      model: iPhone 6s
 
 '4124039611':
   devices:
