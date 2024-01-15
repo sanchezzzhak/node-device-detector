@@ -10,13 +10,13 @@ const makeResult = (data) => {
     code: String(data.code),
     brand: String(data.brand),
     type: String(data.device),
-    model: String(data.model),
+    model: String(data.model)
   };
 };
 
 const fuzzyCompareNumber = (value1, value2, num = 3) => {
   return parseFloat(value1).toFixed(num) === parseFloat(value2).toFixed(num);
-}
+};
 
 class DeviceHint extends AbstractParser {
 
@@ -26,7 +26,7 @@ class DeviceHint extends AbstractParser {
     this.loadCollection();
   }
 
-  parse(clientHints = {}){
+  parse(clientHints = {}) {
     if (!clientHints.meta || !clientHints.meta.hashG) {
       return {};
     }
@@ -47,7 +47,7 @@ class DeviceHint extends AbstractParser {
     const height = String(clientHints.meta.height);
     const hashC = parseFloat(clientHints.meta.hashC);
 
-    for(let item of record.devices) {
+    for (let item of record.devices) {
       const check = item.check;
       // check ratio and size screen
       if (check.ratio === void 0 || check.width === void 0 || check.height === void 0) {
@@ -61,7 +61,7 @@ class DeviceHint extends AbstractParser {
       }
       // check operations hashC;
       if (check.o !== void 0 && Array.isArray(check.o)) {
-        for(let operations of check.o) {
+        for (let operations of check.o) {
           if (hashC >= operations[0] && hashC <= operations[1]) {
             return makeResult(item);
           }
