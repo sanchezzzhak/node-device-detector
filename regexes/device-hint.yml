@@ -1,14 +1,22 @@
-# {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"153084108","hashC":"27.800"}
+
 '153084108':
-  code: 'iPhone14,5'
-  brand: Apple
-  device: phablet
-  model: iPhone 13
+  devices:
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"153084108","hashC":"27.800"}
+      check:
+        gpu: 'Apple GPU'
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+      code: 'iPhone14,5'
+      brand: Apple
+      device: phablet
+      model: iPhone 13
 
 '3133334187':
   devices:
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3133334187","hashC":"31.800"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -18,6 +26,7 @@
       model: iPhone 13
     - # {"width":"1290","height":"2796","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3133334187","hashC":"23.600"}
       check:
+        gpu: 'Apple GPU'
         width: '1290'
         height: '2796'
         ratio: '3'
@@ -32,18 +41,25 @@
   device: phablet
   model: iPhone 13
 
-# {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3163944329","hashC":"51.200"}
-'3163944329':
-  code: 'iPhone11,6'
-  brand: Apple
-  device: phablet
-  model: iPhone XS Max
 
+'3163944329':
+  devices:
+    - # {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3163944329","hashC":"51.200"}
+      check:
+        gpu: 'Apple GPU'
+        width: '1242'
+        height: '2688'
+        ratio: '3'
+      code: 'iPhone11,6'
+      brand: Apple
+      device: phablet
+      model: iPhone XS Max
 
 '5530393581':
   devices:
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5530393581","hashC":"50.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -53,6 +69,7 @@
       model: iPhone XS Max
     - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5530393581","hashC":"37.400"}
       check:
+        gpu: 'Apple GPU'
         width: '828'
         height: '1792'
         ratio: '2'
@@ -65,6 +82,7 @@
   devices:
     - # {"width":"1290","height":"2796","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5782751891","hashC":"17.916"}
       check:
+        gpu: 'Apple GPU'
         width: '1290'
         height: '2796'
         ratio: '3'
@@ -74,6 +92,7 @@
       model: iPhone 15 Pro Max
     - # {"width":"1179","height":"2556","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5782751891","hashC":"20.916"}
       check:
+        gpu: 'Apple GPU'
         width: '1179'
         height: '2556'
         ratio: '3'
@@ -86,6 +105,7 @@
   devices:
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"srgb","cores":"","hashG":"6207145364","hashC":"496.000"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -95,6 +115,7 @@
       model: iPhone 6
     - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"srgb","cores":"","hashG":"6207145364","hashC":"592.000"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2208'
         ratio: '3'
@@ -107,6 +128,7 @@
   devices:
     - # {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3350098807","hashC":"36.600"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2688'
         ratio: '3'
@@ -116,6 +138,7 @@
       model: iPhone 11 Pro Max
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3350098807","hashC":"33.400"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -125,6 +148,7 @@
       model: iPhone 11 Pro
     - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"3350098807","hashC":"51.400"}
       check:
+        gpu: 'Apple GPU'
         width: '828'
         height: '1792'
         ratio: '2'
@@ -138,6 +162,7 @@
     - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"43.400"}
       # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"40.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2208'
         ratio: '3'
@@ -147,6 +172,7 @@
       model: iPhone 8 Plus
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"44.400"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -157,6 +183,7 @@
       model: iPhone 8
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"42.400"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -166,6 +193,7 @@
       model: iPhone 13 Mini
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"44.400"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -176,6 +204,7 @@
       model: iPhone X
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"49.400"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -188,6 +217,7 @@
   devices:
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"47.400"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -198,6 +228,7 @@
     - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"40.400"}
       # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"36.400"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2208'
         ratio: '3'
@@ -208,6 +239,7 @@
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"52.400"}
       # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"38.400"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -216,12 +248,19 @@
       device: phablet
       model: iPhone X
 
-# {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"undefined","hashG":"3051268582","hashC":"55.300"}
+
 '3051268582':
-  code: 'iPhone11,8'
-  brand: Apple
-  device: smartphone
-  model: iPhone XR
+  devices:
+    - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"","hashG":"3051268582","hashC":"55.300"}
+      check:
+        gpu: 'Apple GPU'
+        width: '828'
+        height: '1792'
+        ratio: '2'
+      code: 'iPhone11,8'
+      brand: Apple
+      device: smartphone
+      model: iPhone XR
 
 # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"undefined","hashG":"3384252520","hashC":"39.200"}
 '3384252520':
@@ -235,6 +274,7 @@
   devices:
     - # {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5367674935","hashC":"34.300"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2688'
         ratio: '3'
@@ -244,6 +284,7 @@
       model: iPhone XS Max
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5367674935","hashC":"40.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -252,17 +293,25 @@
       device: smartphone
       model: iPhone XS
 
-# {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"","hashG":"4261809908","hashC":"45.200"}
+
 '4261809908':
-  code: 'iPhone11,2'
-  brand: Apple
-  device: smartphone
-  model: iPhone XS
+  devices:
+    - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"","hashG":"4261809908","hashC":"45.200"}
+      check:
+        gpu: 'Apple GPU'
+        width: '1125'
+        height: '2436'
+        ratio: '3'
+      code: 'iPhone11,2'
+      brand: Apple
+      device: smartphone
+      model: iPhone XS
 
 '6380682222':
   devices:
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"56.200"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -274,6 +323,7 @@
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"214.500"}
       # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"66.200"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -283,6 +333,7 @@
       model: iPhone 7
     - # {"width":"640","height":"1136","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"srgb","cores":"4","hashG":"6380682222","hashC":"93.000"}
       check:
+        gpu: 'Apple GPU'
         width: '640'
         height: '1136'
         ratio: '2'
@@ -292,6 +343,7 @@
       model: iPhone 6s
     - # {"width":"1125","height":"2001","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"54.600"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2001'
         ratio: '3'
@@ -305,6 +357,7 @@
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4124039611","hashC":"69.000"}
       # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4124039611","hashC":"63.400"} # iPhone9,1
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -314,6 +367,7 @@
       model: iPhone 7
     - # {"width":"1125","height":"2001","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4124039611","hashC":"45.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2001'
         ratio: '3'
@@ -323,6 +377,7 @@
       model: iPhone 7 Plus
     - # {"width":"640","height":"1136","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4124039611","hashC":"73.800"}
       check:
+        gpu: 'Apple GPU'
         width: '640'
         height: '1136'
         ratio: '2'
@@ -335,6 +390,7 @@
   devices:
     - # {"width":"1179","height":"2556","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"23.600"}
       check:
+        gpu: 'Apple GPU'
         width: '1179'
         height: '2556'
         ratio: '3'
@@ -344,6 +400,7 @@
       model: iPhone 14 Pro
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"21.800"}
       check:
+        gpu: 'Apple GPU'
         width: '1125'
         height: '2436'
         ratio: '3'
@@ -353,6 +410,7 @@
       model: iPhone 13 Mini
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"29.000"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -363,6 +421,7 @@
       model: iPhone 12
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"29.800"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -372,6 +431,7 @@
       model: iPhone 13
     - # {"width":"1284","height":"2778","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"25.000"}
       check:
+        gpu: 'Apple GPU'
         width: '1284'
         height: '2778'
         ratio: '3'
@@ -381,6 +441,7 @@
       model: iPhone 12 Pro Max
     - # {"width":"1290","height":"2796","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"27.600"}
       check:
+        gpu: 'Apple GPU'
         width: '1290'
         height: '2796'
         ratio: '3'
@@ -393,6 +454,7 @@
   devices:
     - # iPhone SE (2020) {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"53.500"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1334'
         ratio: '2'
@@ -402,6 +464,7 @@
       model: iPhone SE (2020)
     - # {"width":"750","height":"1624","ratio":"2","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"38.700"}
       check:
+        gpu: 'Apple GPU'
         width: '750'
         height: '1624'
         ratio: '2'
@@ -411,6 +474,7 @@
       model: iPhone 11
     - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"32.700"}
       check:
+        gpu: 'Apple GPU'
         width: '828'
         height: '1792'
         ratio: '2'
@@ -420,6 +484,7 @@
       model: iPhone 11
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"53.000"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -431,6 +496,7 @@
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"27.160"}
       # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"23.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -441,6 +507,7 @@
       model: iPhone 13
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"20.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -452,6 +519,7 @@
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"26.300"}
       # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"26.282"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -461,6 +529,7 @@
       model: iPhone 12
     - # {"width":"1284","height":"2778","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"23.160"}
       check:
+        gpu: 'Apple GPU'
         width: '1284'
         height: '2778'
         ratio: '3'
@@ -470,6 +539,7 @@
       model: iPhone 13 Pro Max
     - # {"width":"960","height":"2079","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"25.160"}
       check:
+        gpu: 'Apple GPU'
         width: '960'
         height: '2079'
         ratio: '3'
@@ -479,6 +549,7 @@
       model: iPhone 13
     - # {"width":"1179","height":"2556","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"24.099"}
       check:
+        gpu: 'Apple GPU'
         width: '1179'
         height: '2556'
         ratio: '3'
@@ -491,6 +562,7 @@
   devices:
     - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"","hashG":"778516929","hashC":"42.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2208'
         ratio: '3'
@@ -504,6 +576,7 @@
     - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2946061183","hashC":"59.100"}
       # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2946061183","hashC":"68.100"}
       check:
+        gpu: 'Apple GPU'
         width: '828'
         height: '1792'
         ratio: '2'
@@ -516,6 +589,7 @@
   devices:
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5451112210","hashC":"28.099"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -528,6 +602,7 @@
   devices:
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"1924010892","hashC":"53.000"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -538,6 +613,7 @@
       model: iPhone 12
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"1924010892","hashC":"30.160"}
       check:
+        gpu: 'Apple GPU'
         width: '1170'
         height: '2532'
         ratio: '3'
@@ -550,6 +626,7 @@
   devices:
     - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4225431393","hashC":"48.300"}
       check:
+        gpu: 'Apple GPU'
         width: '828'
         height: '1792'
         ratio: '2'
@@ -559,6 +636,7 @@
       model: iPhone XR
     - # {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4225431393","hashC":"50.200"}
       check:
+        gpu: 'Apple GPU'
         width: '1242'
         height: '2688'
         ratio: '3'

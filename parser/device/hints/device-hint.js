@@ -64,6 +64,9 @@ class DeviceHint extends AbstractParser {
       if (false === (fuzzyCompareNumber(check.width, width) && fuzzyCompareNumber(check.height, height))) {
         continue;
       }
+      if (check.gpu !== void 0 && check.gpu !== clientHints.meta.gpu) {
+        continue;
+      }
       // check operations hashC;
       if (check.o !== void 0 && Array.isArray(check.o)) {
         for (let operations of check.o) {
