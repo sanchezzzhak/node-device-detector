@@ -6,6 +6,11 @@ const AbstractParser = require('../../abstract-parser');
  * @return {{code: string, model: string, type: string, brand: string}}
  */
 const makeResult = (data) => {
+
+  if (data.code == void 0) {
+    return {};
+  }
+
   return {
     code: String(data.code),
     brand: String(data.brand),

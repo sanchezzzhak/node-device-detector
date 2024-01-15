@@ -39,12 +39,27 @@
   device: phablet
   model: iPhone XS Max
 
-# {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5530393581","hashC":"50.200"}
+
 '5530393581':
-  code: 'iPhone11,6'
-  brand: Apple
-  device: phablet
-  model: iPhone XS Max
+  devices:
+    - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5530393581","hashC":"50.200"}
+      check:
+        width: '1125'
+        height: '2436'
+        ratio: '3'
+      code: 'iPhone11,6'
+      brand: Apple
+      device: phablet
+      model: iPhone XS Max
+    - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5530393581","hashC":"37.400"}
+      check:
+        width: '828'
+        height: '1792'
+        ratio: '2'
+      code: 'iPhone11,8'
+      brand: Apple
+      device: smartphone
+      model: iPhone XR
 
 '5782751891':
   devices:
@@ -121,6 +136,7 @@
 '5130835905':
   devices:
     - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"43.400"}
+      # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"40.200"}
       check:
         width: '1242'
         height: '2208'
@@ -129,6 +145,16 @@
       brand: Apple
       device: phablet
       model: iPhone 8 Plus
+    - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"44.400"}
+      check:
+        width: '750'
+        height: '1334'
+        ratio: '2'
+        o: [[44.400, 44.600]]
+      code: 'iPhone10,1'
+      brand: Apple
+      device: smartphone
+      model: iPhone 8
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"42.400"}
       check:
         width: '750'
@@ -138,6 +164,16 @@
       brand: Apple
       device: smartphone
       model: iPhone 13 Mini
+    - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"44.400"}
+      check:
+        width: '1125'
+        height: '2436'
+        ratio: '3'
+        o: [[44.400, 46.400]]
+      code: 'iPhone10,3'
+      brand: Apple
+      device: phablet
+      model: iPhone X
     - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5130835905","hashC":"49.400"}
       check:
         width: '1125'
@@ -158,8 +194,9 @@
       code: 'iPhone10,4'
       brand: Apple
       device: smartphone
-      model: iPhone 13 Mini
+      model: iPhone 8
     - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"40.400"}
+      # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"36.400"}
       check:
         width: '1242'
         height: '2208'
@@ -168,6 +205,16 @@
       brand: Apple
       device: phablet
       model: iPhone 8 Plus
+    - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"52.400"}
+      # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2177903040","hashC":"38.400"}
+      check:
+        width: '1125'
+        height: '2436'
+        ratio: '3'
+      code: 'iPhone10,3'
+      brand: Apple
+      device: phablet
+      model: iPhone X
 
 # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"undefined","hashG":"3051268582","hashC":"55.300"}
 '3051268582':
@@ -183,24 +230,49 @@
   device: smartphone
   model: iPhone XS
 
-# {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5367674935","hashC":"40.200"}
-'5367674935':
-  code: 'iPhone11,2'
-  brand: Apple
-  device: smartphone
-  model: iPhone XS
 
-# {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"undefined","hashG":"4261809908","hashC":"45.200"}
+'5367674935':
+  devices:
+    - # {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5367674935","hashC":"34.300"}
+      check:
+        width: '1242'
+        height: '2688'
+        ratio: '3'
+      code: 'iPhone11,6'
+      brand: Apple
+      device: phablet
+      model: iPhone XS Max
+    - # {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5367674935","hashC":"40.200"}
+      check:
+        width: '1125'
+        height: '2436'
+        ratio: '3'
+      code: 'iPhone11,2'
+      brand: Apple
+      device: smartphone
+      model: iPhone XS
+
+# {"width":"1125","height":"2436","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"","hashG":"4261809908","hashC":"45.200"}
 '4261809908':
   code: 'iPhone11,2'
   brand: Apple
   device: smartphone
   model: iPhone XS
 
-
 '6380682222':
   devices:
+    - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"56.200"}
+      check:
+        width: '750'
+        height: '1334'
+        ratio: '2'
+        o: [ [ 55.200, 56.200 ] ]
+      code: 'iPhone9,1'
+      brand: Apple
+      device: smartphone
+      model: iPhone 7
     - # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"214.500"}
+      # {"width":"750","height":"1334","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"66.200"}
       check:
         width: '750'
         height: '1334'
@@ -218,6 +290,15 @@
       brand: Apple
       device: smartphone
       model: iPhone 6s
+    - # {"width":"1125","height":"2001","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"6380682222","hashC":"54.600"}
+      check:
+        width: '1125'
+        height: '2001'
+        ratio: '3'
+      code: 'iPhone9,4'
+      brand: Apple
+      device: phablet
+      model: iPhone 7 Plus
 
 '4124039611':
   devices:
@@ -270,8 +351,17 @@
       brand: Apple
       device: smartphone
       model: iPhone 13 Mini
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"29.000"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+        o: [[29.000, 29.000]]
+      code: 'iPhone13,2'
+      brand: Apple
+      device: phablet
+      model: iPhone 12
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"29.800"}
-      # iPhone13,2 {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"29.000"}
       check:
         width: '1170'
         height: '2532'
@@ -289,6 +379,15 @@
       brand: Apple
       device: phablet
       model: iPhone 12 Pro Max
+    - # {"width":"1290","height":"2796","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2117418865","hashC":"27.600"}
+      check:
+        width: '1290'
+        height: '2796'
+        ratio: '3'
+      code: 'iPhone15,3'
+      brand: Apple
+      device: phablet
+      model: iPhone 14 Pro Max
 
 '5378714267':
   devices:
@@ -329,26 +428,27 @@
       brand: Apple
       device: phablet
       model: iPhone 12 Pro
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"27.160"}
+      # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"23.200"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+        o: [ [ 27.160, 27.800 ], [ 23.160, 23.200]]
+      code: 'iPhone14,5'
+      brand: Apple
+      device: phablet
+      model: iPhone 13
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"20.200"}
       check:
         width: '1170'
         height: '2532'
         ratio: '3'
-        o: [[20.200, 24.160]]
+        o: [ [ 20.200, 24.160 ] ]
       code: 'iPhone14,7'
       brand: Apple
       device: phablet
       model: iPhone 14
-    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"27.160"}
-      check:
-        width: '1170'
-        height: '2532'
-        ratio: '3'
-        o: [[27.160, 32.800]]
-      code: 'iPhone14,5'
-      brand: Apple
-      device: phablet
-      model: iPhone 13
     - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"26.300"}
       # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"5378714267","hashC":"26.282"}
       check:
@@ -386,3 +486,83 @@
       brand: Apple
       device: phablet
       model: iPhone 14 Pro
+
+'778516929':
+  devices:
+    - # {"width":"1242","height":"2208","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"","hashG":"778516929","hashC":"42.200"}
+      check:
+        width: '1242'
+        height: '2208'
+        ratio: '3'
+      code: 'iPhone9,2'
+      brand: Apple
+      device: phablet
+      model: iPhone 7 Plus
+
+'2946061183':
+  devices:
+    - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2946061183","hashC":"59.100"}
+      # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"2946061183","hashC":"68.100"}
+      check:
+        width: '828'
+        height: '1792'
+        ratio: '2'
+      code: 'iPhone12,1'
+      brand: Apple
+      device: smartphone
+      model: iPhone 11
+
+'5451112210':
+  devices:
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"5451112210","hashC":"28.099"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+      code: 'iPhone14,5'
+      brand: Apple
+      device: phablet
+      model: iPhone 13
+
+'1924010892':
+  devices:
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"1924010892","hashC":"53.000"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+        o: [[50.000, 53.000]]
+      code: 'iPhone13,2'
+      brand: Apple
+      device: phablet
+      model: iPhone 12
+    - # {"width":"1170","height":"2532","ratio":"3","gpu":"Apple GPU","colorDepth":"24","gamut":"p3","cores":"4","hashG":"1924010892","hashC":"30.160"}
+      check:
+        width: '1170'
+        height: '2532'
+        ratio: '3'
+      code: 'iPhone14,7'
+      brand: Apple
+      device: phablet
+      model: iPhone 14
+
+'4225431393':
+  devices:
+    - # {"width":"828","height":"1792","ratio":"2","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4225431393","hashC":"48.300"}
+      check:
+        width: '828'
+        height: '1792'
+        ratio: '2'
+      code: 'iPhone11,8'
+      brand: Apple
+      device: smartphone
+      model: iPhone XR
+    - # {"width":"1242","height":"2688","ratio":"3","gpu":"Apple GPU","colorDepth":"32","gamut":"p3","cores":"4","hashG":"4225431393","hashC":"50.200"}
+      check:
+        width: '1242'
+        height: '2688'
+        ratio: '3'
+      code: 'iPhone11,6'
+      brand: Apple
+      device: phablet
+      model: iPhone XS Max
