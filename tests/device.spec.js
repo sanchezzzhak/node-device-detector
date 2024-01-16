@@ -18,11 +18,10 @@ const excludeFilesNames = [
   'alias_devices.yml',
   'clienthints-app.yml',
   'clienthints.yml',
-  'device-hint.yml',
+  'device-apple-hint.yml',
 ];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
-
 const detector = new DeviceDetector();
 const clientHints = new ClientHint();
 
@@ -164,13 +163,12 @@ const createTestForFile = (file) => {
         let meta = cloneFixture.meta;
         let clientHintData = clientHints.parse(headers, meta);
         let result = null;
-        
+
+        // get result
         if (forAsync) {
-          result = await detector.detectAsync(cloneFixture.user_agent,
-            clientHintData);
+          result = await detector.detectAsync(cloneFixture.user_agent, clientHintData);
         } else {
-          result = await detector.detect(cloneFixture.user_agent,
-            clientHintData);
+          result = await detector.detect(cloneFixture.user_agent, clientHintData);
         }
 
         // check base
@@ -179,15 +177,14 @@ const createTestForFile = (file) => {
         perryTable(cloneFixture, result);
         // check fixture test
         runTest(cloneFixture, result);
-
+        // check tests fixture report
         if (!firstTestFixture) {
           testsFromFixtureDeviceMobile(result);
           firstTestFixture = true;
         }
-
-        // check client-hints by hashG
+        // check client-hints by hashG apple
         if (clientHintData.meta && clientHintData.meta.hashG) {
-          let hintResult = detector.getParseDeviceHint().parse(clientHintData);
+          let hintResult = detector.getParseDeviceAppleHint().parse(clientHintData);
           if (hintResult.code) {
             let detectResult = {};
             if (forAsync) {
@@ -207,7 +204,7 @@ const createTestForFile = (file) => {
       });
     };
     
-    // =====
+    // ===== create tests for disable all indexes
     
     describe('not used indexes', function() {
       before(() => {
@@ -220,7 +217,9 @@ const createTestForFile = (file) => {
         createSubTests(fixture, false, pos);
       });
     });
-    // =====
+
+    // ===== create tests for enable all indexes
+
     describe('used indexes', function() {
       before(() => {
         detector.deviceIndexes = true;
@@ -258,6 +257,8 @@ const createTestForFile = (file) => {
   });
 };
 
+// base tests for devices fixtures
+
 describe('tests devices', function() {
   this.timeout(TIMEOUT);
   detector.deviceAliasCode = false;
@@ -270,13 +271,19 @@ describe('tests devices', function() {
   });
 });
 
+// client hints apps tests
+
 describe('tests devices clienthints-app', function() {
   createTestForFile('clienthints-app.yml');
 });
 
+// client hints apple device tests
+
 describe('tests devices device-hash', function() {
-  createTestForFile('device-hint.yml');
+  createTestForFile('device-apple-hint.yml');
 });
+
+// client hints tests
 
 describe('tests devices clienthints', function() {
   createTestForFile('clienthints.yml');

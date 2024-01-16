@@ -23,11 +23,11 @@ const fuzzyCompareNumber = (value1, value2, num = 3) => {
   return parseFloat(value1).toFixed(num) === parseFloat(value2).toFixed(num);
 };
 
-class DeviceHint extends AbstractParser {
+class DeviceAppleHint extends AbstractParser {
 
   constructor() {
     super();
-    this.fixtureFile = 'device-hint.yml';
+    this.fixtureFile = 'device-apple-hint.yml';
     this.loadCollection();
   }
 
@@ -85,4 +85,4 @@ class DeviceHint extends AbstractParser {
 
 }
 
-module.exports = DeviceHint;
+module.exports = DeviceAppleHint;

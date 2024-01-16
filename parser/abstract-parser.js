@@ -20,20 +20,34 @@ function fixStringVersion(result) {
   return result.trim();
 }
 
+const collectionMap = {};
+
 class ParserAbstract {
   constructor() {
     this.fixtureFile = null;
-    this.collection = null;
     this.type = null;
     this.versionTruncation = null;
     this.maxUserAgentSize = null;
+  }
+
+  get collection() {
+    if (!this.hasLoadCollection()) {
+      return null;
+    }
+    return collectionMap[this.fixtureFile];
+  }
+
+  hasLoadCollection() {
+    return collectionMap[this.fixtureFile] !== void 0
   }
 
   /**
    * load collection
    */
   loadCollection() {
-    this.collection = this.loadYMLFile(this.fixtureFile);
+    if (!this.hasLoadCollection()) {
+      collectionMap[this.fixtureFile] = this.loadYMLFile(this.fixtureFile);
+    }
   }
 
   /**

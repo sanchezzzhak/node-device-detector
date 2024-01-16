@@ -21,6 +21,7 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 + [Helpers](#helpers)
 + [Single parsers](#single-parsers)
 + [Settings](#options)
++ [Specific methods](#specific-methods)
 + [Examples](#others)
 + [Support brands](#brands-list)
 + [Support device types](#device-types)
@@ -49,6 +50,8 @@ const detector = new DeviceDetector({
   clientIndexes: true,
   deviceIndexes: true,
   deviceAliasCode: false,
+  deviceTrusted: false,
+  maxUserAgentSize: 500,
 });
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const result = detector.detect(userAgent);
@@ -83,6 +86,7 @@ console.log('result parse', result);
     brand: 'ZTE',               // device brand name
     model: 'Nubia Z7 max'       // device model name
     code: 'NX505J'              // device model code  (only result for enable detector.deviceAliasCode) 
+    trusted: true               // device trusted (only result for enable detector.deviceTrusted and have fixture date) 
   }
 }
 ```
@@ -172,6 +176,7 @@ const detector = new DeviceDetector({
   clientIndexes: true,
   deviceIndexes: true,
   deviceAliasCode: false,
+  deviceTrusted: false,
   // ... all options scroll to Setter/Getter/Options
 });
 
@@ -269,8 +274,9 @@ const detector = new DeviceDetector({
   clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357.78 to 43.0.2357 (default '' or null)
   deviceIndexes: true,       // Using indexes for faster device search (default false)
   clientIndexes: true,       // Using indexes for faster client search (default false)
-  deviceAliasCode: false,    // adds the device code to result device.code as is (default false)
+  deviceAliasCode: true,     // adds the device code to result device.code as is (default false)
   maxUserAgentSize: 500,     // uses only 500 chars from useragent string (default null - unlimited)
+  deviceTrusted: true,       // check device by specification (default false)
 });
 
 // You can override these settings at any time using special setters, example
@@ -280,6 +286,7 @@ detector.deviceIndexes = true;
 detector.clientIndexes = true;
 detector.deviceAliasCode = true;
 detector.maxUserAgentSize = 500;
+detector.deviceTrusted = true;
 
 // Array available device types
 detector.getAvailableDeviceTypes();
@@ -287,6 +294,30 @@ detector.getAvailableDeviceTypes();
 detector.getAvailableBrands();
 // Array available browsers
 detector.getAvailableBrowsers();
+```
+
+### Specific methods <a name="specific-methods"></a> ###
+
+```js
+const DEVICE_PARSER_NAMES = detector.getDeviceParserNames(); // result colection names for device parsers 
+const CLIENT_PARSER_NAMES = detector.getClientParserNames(); // result colection names for client parsers 
+const OS_PARSER_NAMES = detector.getOsParserNames();         // result collection names for os parsers
+const BOT_PARSER_NAMES = detector.getBotParserNames();       // result collection names for bot parsers   
+
+const aliasDevice = detector.getParseAliasDevice();          // result AliasDevice parser
+const deviceAppleHint = detector.getParseDeviceAppleHint();  // result DeviceAppleHint parser
+const deviceInfo = detector.getParseInfoDevice();            // result InfoDevice parser
+
+// added custom parser
+detector.addParseDevice('MyDeviceParser', new MyDeviceParser);
+detector.addParseClient('MyClientParser', new MyClientParser);
+detector.addParseOs('MyOsParser', new MyOsParser);
+detector.addParseOs('MyBotParser', new MyBotParser);
+// get single parser
+detector.getParseDevice('MyDeviceParser' /* or DEVICE_PARSER_NAMES.MOBILE */);
+detector.getParseClient('MyClientParser'  /* or CLIENT_PARSER_NAMES.BROWSER */);
+detector.getParseOs('MyOsParser'/* or OS_PARSER_NAMES.DEFAULT */);
+detector.getParseBot('MyBotParser');
 ```
 
 ### Getting device code as it (experimental) <a name="device-code"></a>
@@ -297,6 +328,14 @@ const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWe
 const aliasDevice = new AliasDevice;
 const result = aliasDevice.parse(userAgent);
 console.log('Result parse code model', result);
+
+// or
+const DeviceDetector = require('node-device-detector');
+const detector = new DeviceDetector()
+const aliasDevice = detector.getParseAliasDevice();
+const result = aliasDevice.parse(userAgent);
+console.log('Result parse code model', result);
+
 /*
 result 
 {
@@ -449,9 +488,17 @@ Yes we use tests, total tests 73.7k
 
 ```js
 const InfoDevice = require('node-device-detector/parser/device/info-device');
-const infoDevice = new InfoDevice;
+const infoDevice = new InfoDevice();
 const result = infoDevice.info('Asus', 'Zenfone 4');
 console.log('Result information', result);
+
+// or 
+const DeviceDetector = require('node-device-detector');
+const detector = new DeviceDetector();
+const infoDevice = detector.getParseInfoDevice();
+const result = infoDevice.info('Asus', 'Zenfone 4');
+console.log('Result information', result);
+
 /*
 result
 {
