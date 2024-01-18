@@ -57,7 +57,7 @@ const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWe
 const result = detector.detect(userAgent);
 console.log('result parse', result);
 ```
-> PS: When creating an object`detector = new DeviceDetector;` data for parsing is reloaded from files, consider this, the best option is initialization at application start
+> PS: When creating an object`detector = new DeviceDetector(DeviceDetectorOptions);` data for parsing is reloaded from files, consider this, the best option is initialization at application start
 > I recommend seeing [examples](#others)
 
 ### Result parse
@@ -579,6 +579,7 @@ Others <a name="others"></a>
 * [detect device in moleculer.js](docs/MICROSERVICE.MD)
 * [detect device in uws.js](docs/UWS_SERVER.MD)
 * [detect device in typescript](docs/TYPE_SCRIPT.MD)
+* [get client hints in browser](docs/CLIENT_HINTS_BROWSER.MD)
 
 <a name="brands-list"></a>
 
