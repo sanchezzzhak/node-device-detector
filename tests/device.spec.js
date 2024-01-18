@@ -18,7 +18,6 @@ const excludeFilesNames = [
   'alias_devices.yml',
   'clienthints-app.yml',
   'clienthints.yml',
-  'device-apple-hint.yml',
 ];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
@@ -182,25 +181,6 @@ const createTestForFile = (file) => {
           testsFromFixtureDeviceMobile(result);
           firstTestFixture = true;
         }
-        // check client-hints by hashG apple
-        if (clientHintData.meta && clientHintData.meta.hashG) {
-          let hintResult = detector.getParseDeviceAppleHint().parse(clientHintData);
-          if (hintResult.code) {
-            let detectResult = {};
-            if (forAsync) {
-              detectResult = await detector.detectAsync(hintResult.code);
-            } else {
-              detectResult = await detector.detect(hintResult.code);
-            }
-            const metaData = perryJSON(clientHintData.meta || {});
-            const hintData = perryJSON(hintResult);
-            expect(hintResult.type, `device meta ${metaData}\nresult ${hintData}`).equal(detectResult.device.type);
-            expect(hintResult.model, `device meta ${metaData}\nresult ${hintData}`).equal(detectResult.device.model);
-            expect(hintResult.brand, `device meta ${metaData}\nresult${hintData}`).equal(detectResult.device.brand);
-          }
-        }
-
-      
       });
     };
     
@@ -275,12 +255,6 @@ describe('tests devices', function() {
 
 describe('tests devices clienthints-app', function() {
   createTestForFile('clienthints-app.yml');
-});
-
-// client hints apple device tests
-
-describe('tests devices device-hash', function() {
-  createTestForFile('device-apple-hint.yml');
 });
 
 // client hints tests

@@ -25,6 +25,13 @@ function fuzzyCompare(val1, val2) {
     val1.replace(/ /gi, '').toLowerCase() ===
     val2.replace(/ /gi, '').toLowerCase();
 }
+function fuzzyCompareNumber(value1, value2, num = 3) {
+  return parseFloat(value1).toFixed(num) === parseFloat(value2).toFixed(num);
+}
+
+function fuzzyBetweenNumber(value, min, max) {
+  return value >= min && value <= max;
+}
 
 function createHash(str) {
   var hash = 0, i = 0, len = str.length;
@@ -284,9 +291,12 @@ function splitUserAgent(userAgent) {
   return {tokens, groups, hash, path};
 }
 
+
 module.exports = {
   matchUserAgent,
   fuzzyCompare,
+  fuzzyCompareNumber,
+  fuzzyBetweenNumber,
   versionCompare,
   versionTruncate,
   hasAndroidTableFragment,

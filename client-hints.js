@@ -208,7 +208,6 @@ class ClientHints {
 
       switch (lowerCaseKey) {
         case 'ratio':
-        case 'hashc':
           result.meta[key] = parseFloat(value).toFixed(3);
           break;
         case 'width':
@@ -216,7 +215,6 @@ class ClientHints {
           result.meta[key] = String(parseFloat(value).toFixed(0));
           break;
         case 'gpu':
-        case 'hashg':
         case 'gamut':
         case 'ram':
           result.meta[key] = value;
@@ -229,12 +227,6 @@ class ClientHints {
           break;
       }
     }
-
-    /*
-    {"width":"721.875","height":"1601.25","ratio":"1.875","ram":"4","gpu":"ANGLE (ARM, Mali-G52 MC2, OpenGL ES 3.2)","colorDepth":"24","gamut":"srgb","cores":"8","hashG":"4544217206","hashC":"66.900","hints":{"brands":[{"brand":"Not_A Brand","version":"8"},{"brand":"Chromium","version":"120"},{"brand":"Google Chrome","version":"120"}],"fullVersionList":[{"brand":"Not_A Brand","version":"8.0.0.0"},{"brand":"Chromium","version":"120.0.6099.116"},{"brand":"Google Chrome","version":"120.0.6099.116"}],"mobile":"1","model":"SM-M225FV","platform":"Android","platformVersion":"13.0.0","uaFullVersion":"120.0.6099.116","wow64":"0"}}
-     */
-
-
   }
 
   /**
@@ -249,8 +241,6 @@ class ClientHints {
         width: '',
         height: '',
         ratio: '',
-        hashC: '',
-        hashG: '',
         gpu: '',
         gamut: '',
         ram: '',

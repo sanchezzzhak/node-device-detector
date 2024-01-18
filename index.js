@@ -27,7 +27,6 @@ const VendorFragmentParser = require(
   './parser/vendor-fragment-abstract-parser');
 // other parsers
 const AliasDevice = require('./parser/device/alias-device');
-const DeviceAppleHint = require('./parser/device/hints/device-apple-hint');
 const IndexerClient = require('./parser/client/indexer-client');
 const IndexerDevice = require('./parser/device/indexer-device');
 const InfoDevice = require('./parser/device/info-device');
@@ -49,7 +48,6 @@ const BOT_PARSER = 'Bot';
 // static private parser init
 // ===========================
 
-const deviceAppleHint = new DeviceAppleHint();
 const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
 const infoDevice = new InfoDevice();
@@ -349,14 +347,6 @@ class DeviceDetector {
    */
   getParseAliasDevice() {
     return aliasDevice;
-  }
-
-  /**
-   * get device apple hint parser
-   * @returns {DeviceAppleHint}
-   */
-  getParseDeviceAppleHint() {
-    return deviceAppleHint;
   }
 
   /**
