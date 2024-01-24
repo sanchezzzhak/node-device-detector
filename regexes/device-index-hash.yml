@@ -226,6 +226,8 @@ sda-8tab:
   - PI
 quad-core t3 k2001m:
   - A7
+aftlbt962e2:
+  - KN
 pixel 3:
   - GO
 m2006c3lg:
@@ -2498,6 +2500,8 @@ aeokn:
 aeoch:
   - KN
 aeocw:
+  - KN
+aeohy:
   - KN
 i7u:
   - A9
@@ -54971,6 +54975,37 @@ aftkauk002:
   - KN
 bravia m6:
   - SO
+aftmd001:
+  - TC
+aftkm:
+  - KN
+aftka002:
+  - KN
+aftha002:
+  - TS
+aftha003:
+  - TS
+  - KN
+aftha004:
+  - TS
+  - KN
+aftmon001:
+  - 4F
+aftmon002:
+  - 4F
+aftjuli1:
+  - JV
+aftpr001:
+  - AMZ
+  - KN
+aftwmst22:
+  - JV
+  - KN
+afttiff55:
+  - OIN
+  - KN
+aftha001:
+  - KN
 bb2 pro:
   - 0M
 kii pro:
