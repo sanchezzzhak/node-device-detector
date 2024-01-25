@@ -29,7 +29,7 @@ module.exports = {
   'XB', 'W1', 'HT', 'B8', 'F5', 'B9', 'WA', 'T0', 'HC',
   'O6', 'P7', 'LJ', 'LC', 'O7', 'N2', 'A8', 'P8', 'RB',
   '1W', 'EV', 'I9', 'V4', 'H4', '1T', 'M5', '0S', '0C',
-  'ZR', 'D6', 'F6',
+  'ZR', 'D6', 'F6', 'RC', 'WD', 'P3', 'FT',
   ],
   'Firefox': [
   'AX', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
