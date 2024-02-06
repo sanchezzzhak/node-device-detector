@@ -65,11 +65,11 @@ console.log('result parse', result);
 ```text
 { 
   os: { 
-    name: 'Android',            // os name       
-    short_name: 'AND',          // os short code name (format A-Z0-9{3})
-    version: '5.0',             // os version
-    platform: '',               // os platform (x64, x32, amd etc.)
-    family: 'Android'           // os family
+    name: 'Android',           // os name       
+    short_name: 'AND',         // os short code name (format A-Z0-9{3})
+    version: '5.0',            // os version
+    platform: '',              // os platform (x64, x32, amd etc.)
+    family: 'Android'          // os family
   },
   client:  { 
     type: 'browser',            // client type 
@@ -86,7 +86,7 @@ console.log('result parse', result);
     brand: 'ZTE',               // device brand name
     model: 'Nubia Z7 max'       // device model name
     code: 'NX505J'              // device model code  (only result for enable detector.deviceAliasCode) 
-    trusted: true               // device trusted (only result for enable detector.deviceTrusted and have fixture date) 
+    trusted: true               // device trusted (result only for enable detector.deviceTrusted and have fixture data + ClientHints are required) 
   }
 }
 ```

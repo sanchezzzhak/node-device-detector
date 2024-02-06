@@ -64,6 +64,7 @@ class DeviceDetector {
    * @param {boolean} deviceIndexes
    * @param {boolean} clientIndexes
    * @param {boolean} deviceAliasCode
+   * @param {boolean} deviceSpecification
    * @param {number|null} maxUserAgentSize
    * @param {boolean} trustedDevice
    */
@@ -83,6 +84,7 @@ class DeviceDetector {
     this.__clientIndexes = false;
     this.__deviceAliasCode = false;
     this.__deviceTrusted = false;
+    this.__deviceInfo = false;
     this.__clientVersionTruncate = null;
     this.__osVersionTruncate = null;
     this.__maxUserAgentSize = null;
@@ -97,6 +99,7 @@ class DeviceDetector {
     this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
     this.maxUserAgentSize = attr(options, 'maxUserAgentSize', null);
     this.deviceTrusted = attr(options, 'deviceTrusted', false);
+    this.deviceInfo = attr(options, 'deviceInfo', false);
   }
 
   init() {
@@ -128,6 +131,14 @@ class DeviceDetector {
 
   get deviceTrusted() {
     return this.__deviceTrusted;
+  }
+
+  set deviceInfo(stage) {
+    this.__deviceInfo = stage;
+  }
+
+  get deviceInfo() {
+    return this.__deviceInfo;
   }
 
   /**
@@ -690,18 +701,6 @@ class DeviceDetector {
         result.model = clientHints.device.model;
       }
     }
-    // meta hints for only apple devices
-    if (result.brand === 'Apple' && clientHints) {
-      let resultHint = deviceAppleHint.parse(clientHints);
-      if (resultHint.type) {
-        result.type = resultHint.type;
-        result.brand = resultHint.brand;
-        result.model = resultHint.model;
-        if (result.code === '' && resultHint.code && this.deviceAliasCode) {
-          result.code = resultHint.code;
-        }
-      }
-    }
 
     return result;
   }
@@ -821,12 +820,31 @@ class DeviceDetector {
       deviceData.id = 'AP';
       deviceData.brand = 'Apple';
     }
+    /**
+     * get device specification
+     */
+    let deviceInfo = {};
+    if (this.deviceInfo || this.deviceTrusted) {
+      deviceInfo = this.getParseInfoDevice().info(deviceData.brand, deviceData.model);
+    }
+    /**
+     * Check device is trusted
+     */
+    if (this.deviceTrusted) {
+      deviceData.trusted = this.prepareResultTrusted(deviceInfo, osData, clientData, deviceData, clientHints);
+    }
 
     return {
       os: osData,
       client: clientData,
       device: deviceData
     };
+  }
+
+  prepareResultTrusted(deviceInfo, osData, clientData, deviceData, clientHints) {
+    const deviceInfo = this.getParseInfoDevice().info()
+
+    return this.getParseInfoDevice().trusted();
   }
 
   /**
