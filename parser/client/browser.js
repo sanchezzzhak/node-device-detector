@@ -80,7 +80,7 @@ class Browser extends ClientAbstractParser {
         // If the version reported from the client hints is YYYY or YYYY.MM (e.g., 2022 or 2022.04),
         // then it is the Iridium browser
         // https://iridiumbrowser.de/news/
-        if (/202[0-3]/.test(version)) {
+        if (/^202[0-4]/.test(version)) {
           name = 'Iridium';
           short = 'I1';
           engine = data.engine;

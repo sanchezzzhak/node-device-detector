@@ -440,14 +440,9 @@ class DeviceDetector {
       osFamily === 'Android' &&
       helper.matchUserAgent('Chrome/[.0-9]*', userAgent)
     ) {
-      if (
-        helper.matchUserAgent('(Mobile|eliboM) Safari/', userAgent) !==
-        null
-      ) {
+      if (helper.matchUserAgent('(Mobile|eliboM)', userAgent) !== null) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
-      } else if (
-        helper.matchUserAgent('(?!Mobile )Safari/', userAgent) !== null
-      ) {
+      } else{
         deviceType = DEVICE_TYPE.TABLET;
       }
     }
