@@ -9,9 +9,10 @@ const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 const browserHints = new BrowserHints;
 
 const CLIENTHINT_MAPPING = {
-  'Chrome': ['Google Chrome']
+  'Chrome': ['Google Chrome'],
+  'Vewd Browser': ['Vewd Core'],
+  'DuckDuckGo Privacy Browser': ['DuckDuckGo']
 };
-const IRIDIUM_VERSIONS = ['2022.04', '2022', '2022.11', '2021.12'];
 
 const compareBrandForClientHints = (brand) => {
   for (let brandName in CLIENTHINT_MAPPING) {
@@ -22,7 +23,7 @@ const compareBrandForClientHints = (brand) => {
     }
   }
   return brand;
-}
+};
 
 class Browser extends ClientAbstractParser {
   constructor() {
@@ -66,7 +67,7 @@ class Browser extends ClientAbstractParser {
     let version = '';
     let engine = '';
     let engineVersion = '';
-    let short = ''
+    let short = '';
     let family = '';
     // client-hint+user-agent
     if (hint.name && hint.version) {
@@ -76,12 +77,13 @@ class Browser extends ClientAbstractParser {
       family = this.buildFamily(short);
 
       if (data) {
-        // If version from client hints report 2022.04, then is the Iridium browser
-        // https://iridiumbrowser.de/news/2022/05/16/version-2022-04-released
-        if (IRIDIUM_VERSIONS.indexOf(version) !== -1) {
-          name          = 'Iridium';
-          short         = 'I1';
-          engine        = data.engine;
+        // If the version reported from the client hints is YYYY or YYYY.MM (e.g., 2022 or 2022.04),
+        // then it is the Iridium browser
+        // https://iridiumbrowser.de/news/
+        if (/^202[0-4]/.test(version)) {
+          name = 'Iridium';
+          short = 'I1';
+          engine = data.engine;
           engineVersion = data.engine_version;
         }
 
@@ -89,6 +91,16 @@ class Browser extends ClientAbstractParser {
           version = data.version;
         }
 
+        if ('DuckDuckGo Privacy Browser' === name) {
+          version = '';
+        }
+
+        if ('Vewd Browser' === name) {
+          engine = data.engine;
+          engineVersion = data.engine_version;
+        }
+
+        // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
         if (
           data.name &&
           'Chromium' === name &&
@@ -96,7 +108,7 @@ class Browser extends ClientAbstractParser {
         ) {
           name = data.name;
           short = data.short_name;
-          version = data.version
+          version = data.version;
           family = this.buildFamily(short);
         }
         // Fix mobile browser names e.g. Chrome => Chrome Mobile
@@ -132,10 +144,10 @@ class Browser extends ClientAbstractParser {
     if (hash !== null && name !== hash.name) {
       name = hash.name;
       version = '';
-      short = this.buildShortName(name)
+      short = this.buildShortName(name);
 
       if (/Chrome\/.+ Safari\/537.36/.test(userAgent)) {
-        engine = 'Blink'
+        engine = 'Blink';
         family = this.buildFamily(short) || 'Chrome';
         engineVersion = this.buildEngineVersion(userAgent, engine);
       }
@@ -163,8 +175,8 @@ class Browser extends ClientAbstractParser {
       version: String(version),
       engine: String(engine),
       engine_version: String(engineVersion),
-      family: String(family),
-    }
+      family: String(family)
+    };
   }
 
   /**
@@ -218,7 +230,7 @@ class Browser extends ClientAbstractParser {
       }
 
       if (clientHints.client.version) {
-        version = String(clientHints.client.version)
+        version = String(clientHints.client.version);
       }
     }
 
@@ -261,7 +273,7 @@ class Browser extends ClientAbstractParser {
         version: version,
         engine: String(engine),
         engine_version: String(engineVersion),
-        family: family,
+        family: family
       };
     }
 

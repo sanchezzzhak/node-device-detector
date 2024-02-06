@@ -226,6 +226,8 @@ sda-8tab:
   - PI
 quad-core t3 k2001m:
   - A7
+aftlbt962e2:
+  - KN
 pixel 3:
   - GO
 m2006c3lg:
@@ -1433,6 +1435,10 @@ hlte720t:
   - HI
 scg06:
   - SA
+infinix x6711:
+  - IF
+infinix x6815d:
+  - IF
 gi-626:
   - A5
 5039d_ru:
@@ -2498,6 +2504,8 @@ aeokn:
 aeoch:
   - KN
 aeocw:
+  - KN
+aeohy:
   - KN
 i7u:
   - A9
@@ -34593,6 +34601,149 @@ a350 tv:
   - EX
 s554020:
   - FLU
+shine 12t:
+  - AA
+  - J0
+shine 12:
+  - AA
+  - J0
+new 12:
+  - V6
+new 15:
+  - V6
+orbit y50:
+  - WA
+orbit y21:
+  - WA
+neo_6:
+  - SPX
+neo 5:
+  - SPX
+lava lzx407:
+  - LV
+force f15:
+  - NOV
+force g20:
+  - NOV
+fri-nx9:
+  - HU
+diamond pro max:
+  - 7I
+ali-nx1:
+  - HU
+23076pc4bi:
+  - 0P
+2306004m:
+  - FEY
+2312fpca6g:
+  - 0P
+ihunt fit runner:
+  - IH
+nitro n62:
+  - MW
+mx-a10r:
+  - MW
+magno c2:
+  - ZU
+celero5g:
+  - DQ
+celero5g+:
+  - DQ
+digit infinity:
+  - DIG
+digit infinity max:
+  - DIG
+  - '13'
+digit glory1:
+  - DIG
+digit4g energy max:
+  - DIG
+  - E1
+aligator_s6100:
+  - 4A
+sm-a057m:
+  - SA
+sm-a055m:
+  - SA
+sm-a137fn:
+  - SA
+sm-s7110:
+  - SA
+symphony z60:
+  - SM
+unia62_s01:
+  - UZ
+volla phone 22:
+  - VOP
+  - RZ
+volla phone x23:
+  - VOP
+nu65:
+  - IPL
+23108rn04y:
+  - XI
+lava be_u:
+  - LV
+i2301:
+  - VV
+i2216:
+  - VV
+i2214:
+  - VV
+i2213:
+  - VV
+i2207:
+  - VV
+i2223:
+  - VV
+grace 9:
+  - MEM
+ds-cl3 pro:
+  - DCO
+ds-cl3 lite:
+  - DCO
+ds-bd3:
+  - DCO
+pjg110:
+  - OP
+pja110:
+  - 'ON'
+phu110:
+  - OP
+phs110:
+  - OP
+pht110:
+  - OP
+n6000:
+  - B2
+a200 pro:
+  - B2
+v2307:
+  - VV
+v2303:
+  - VV
+sparx neo x:
+  - SPX
+miz-bd00:
+  - 8X
+tecno_ki5m:
+  - TB
+n156dl:
+  - NK
+glk-lx3:
+  - HU
+v2244:
+  - VV
+v2312:
+  - VV
+v2324:
+  - VV
+v2325:
+  - VV
+infinix x6832:
+  - IF
+rmx3785:
+  - RE
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -44048,6 +44199,22 @@ micromax p681:
   - MI
 micromaxp802:
   - MI
+tb300fu:
+  - LE
+23073rpbfl:
+  - XI
+mobi 7 lte:
+  - WY
+cmg101:
+  - JW
+u1005e:
+  - 3A
+m8go2020:
+  - RD
+iplay50 mini:
+  - 3A
+np01j:
+  - '57'
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54929,6 +55096,30 @@ tb-b01:
   - BB
 28lex_7144_ts2c:
   - BB
+sunwell_t95zplus:
+  - 5S
+polar_wk_p32l55t2csm:
+  - Q6
+polar_k_p55u51t2csm:
+  - Q6
+polar_k_p43u51t2scsm:
+  - Q6
+polar_k_p42l21t2csm:
+  - Q6
+polar_k_p32l32t2csm:
+  - Q6
+polar_k_p32l21t2scsm:
+  - Q6
+polarline_wk_42pl11tc-sm:
+  - '97'
+polarline_k_65pu51tc-sm:
+  - '97'
+polarline_k_50pu11tc-sm:
+  - '97'
+polarline_k_42pl11tc-sm:
+  - '97'
+polarline_k_24pl51tc-sm:
+  - '97'
 black box tv pro:
   - BLK
 box q:
@@ -54971,6 +55162,39 @@ aftkauk002:
   - KN
 bravia m6:
   - SO
+aftmd001:
+  - TC
+aftkm:
+  - KN
+aftka002:
+  - KN
+aftha002:
+  - TS
+aftha003:
+  - TS
+  - KN
+aftha004:
+  - TS
+  - KN
+aftmon001:
+  - 4F
+aftmon002:
+  - 4F
+aftjuli1:
+  - JV
+aftpr001:
+  - AMZ
+  - KN
+aftwmst22:
+  - JV
+  - KN
+afttiff55:
+  - OIN
+  - KN
+aftha001:
+  - KN
+vol001:
+  - V02
 bb2 pro:
   - 0M
 kii pro:
