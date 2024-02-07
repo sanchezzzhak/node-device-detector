@@ -1,32 +1,18 @@
 const ParserAbstract = require('./../abstract-parser');
 const DataPacker = require('./../../lib/data-packer');
 
-
 /**
- * @typedef InfoResult
- * @param {InfoDisplay} display
+ * @typedef ResultDeviceInfo
+ * @param {ResultDeviceInfoDisplay} display
  * @param {number|null} sim
- * @param {string|InfoSize} size
+ * @param {string|ResultDeviceInfoSize} size
  * @param {string} weight
  * @param {string|null} release
  * @param {string|null} os
- * @param {InfoHardware} hardware
- * @param {InfoPerformance} performance
+ * @param {ResultDeviceInfoHardware} hardware
+ * @param {ResultDeviceInfoPerformance} performance
  *
- * @typedef InfoResolution
- * @param {string} width
- * @param {string} height
- *
- * @typedef InfoDisplay
- * @param {string} size
- * @param {string|InfoResolution} resolution
- * @param {string} ratio
- * @param {string} ppi
- *
- * @typedef InfoPerformance
- * @param {number} antutu
- *
- * @typedef InfoHardwareCPU:
+ * @typedef ResultDeviceInfoHardwareCPU:
  * @param {string} name
  * @param {string} type
  * @param {number} cores
@@ -34,17 +20,30 @@ const DataPacker = require('./../../lib/data-packer');
  * @param {string|null} process
  * @param {number} gpu_id
  *
- * @typedef InfoHardwareGPU:
+ * @typedef ResultDeviceInfoHardwareGPU:
  * @param {string} name
  * @param {number} clock_rate
  *
- * @typedef InfoHardware
+ * @typedef ResultDeviceInfoResolution
+ * @param {string} width
+ * @param {string} height
+ *
+ * @typedef ResultDeviceInfoDisplay
+ * @param {string} size
+ * @param {string|ResultDeviceInfoResolution} resolution
+ * @param {string} ratio
+ * @param {string} ppi
+ *
+ * @typedef ResultDeviceInfoPerformance
+ * @param {number} antutu
+ *
+ * @typedef ResultDeviceInfoHardware
  * @param {number} ram
  * @param {number} cpu_id
- * @param {InfoHardwareCPU} cpu
- * @param {InfoHardwareGPU} gpu
+ * @param {ResultDeviceInfoHardwareCPU} cpu
+ * @param {ResultDeviceInfoHardwareGPU} gpu
  *
- * @typedef InfoSize
+ * @typedef ResultDeviceInfoSize
  * @param {string} width
  * @param {string} height
  * @param {string} thickness
@@ -430,7 +429,7 @@ class InfoDevice extends ParserAbstract {
 
   /**
    * Converts the values of the performance section to the desired format type
-   * @param result {InfoResult}
+   * @param result {ResultDeviceInfo}
    */
   prepareResultPerformance(result) {
     if (result.performance !== void 0 && result.performance.antutu !== void 0) {
@@ -442,7 +441,7 @@ class InfoDevice extends ParserAbstract {
    * The main method for obtaining information on brand and device
    * @param {String} deviceBrand
    * @param {String} deviceModel
-   * @return {InfoResult|null}
+   * @return {ResultDeviceInfo|null}
    */
   info(deviceBrand, deviceModel) {
     return this.find(deviceBrand, deviceModel, {});

@@ -14,6 +14,20 @@ function matchUserAgent(str, userAgent) {
   return match.exec(userAgent);
 }
 
+function matchReplace(template, matches) {
+  let max = matches.length-1 || 1;
+  if (template.indexOf('$') !== -1) {
+    for (let nb = 1; nb <= max; nb++) {
+      if (template.indexOf('$' + nb) === -1) {
+        continue;
+      }
+      let replace = matches[nb] !== void 0 ? matches[nb] : '';
+      template = template.replace(new RegExp('\\$' + nb, 'g'), replace);
+    }
+  }
+  return template;
+}
+
 /**
  *
  * @param val1
@@ -313,4 +327,5 @@ module.exports = {
   hasFile,
   trimChars,
   splitUserAgent,
+  matchReplace
 };

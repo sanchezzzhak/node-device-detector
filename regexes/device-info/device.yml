@@ -1,10 +1,11 @@
 # Compact format in line
-# DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;TT=;
+# DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;TT=;DP=;
 
 # This file has a specific structure
 # what does each shortcode mean?
 # DS - Display size
 # RS - Resolution screen (W x H)
+# DP - Device pixel ratio
 # SZ - Device Size (W x H x T)
 # WT - Weight grams
 # RE - Release date
@@ -6842,7 +6843,7 @@ hisense:
   h30 lite: 'OI=1;OV=9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
 
 poco:
-  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=356;RM=6144'
+  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=356;RM=6144;'
   21091116AG: '->m4 pro 5g'
   f2 pro: 'RE=2020.05;SZ=75.4x163.3x8.9;WT=219;DS=6.67;RS=1080x2400;OS=Android 10;CP=207;RM=6144;TT=538221;'
   m2004j11g: '->f2 pro'

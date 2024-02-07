@@ -30,7 +30,8 @@ const AliasDevice = require('./parser/device/alias-device');
 const IndexerClient = require('./parser/client/indexer-client');
 const IndexerDevice = require('./parser/device/indexer-device');
 const InfoDevice = require('./parser/device/info-device');
-
+// checks
+const DeviceTrusted = require('./parser/device/device-trusted');
 // const, lists, parser names
 const DEVICE_TYPE = require('./parser/const/device-type');
 const CLIENT_TV_LIST = require('./parser/const/clients-tv');
@@ -61,12 +62,12 @@ class DeviceDetector {
    * @param {boolean} skipBotDetection
    * @param {number|null} osVersionTruncate
    * @param {number|null} clientVersionTruncate
+   * @param {number|null} maxUserAgentSize
    * @param {boolean} deviceIndexes
    * @param {boolean} clientIndexes
    * @param {boolean} deviceAliasCode
-   * @param {boolean} deviceSpecification
-   * @param {number|null} maxUserAgentSize
-   * @param {boolean} trustedDevice
+   * @param {boolean} deviceInfo
+   * @param {boolean} deviceTrusted
    */
 
   /**
@@ -459,7 +460,7 @@ class DeviceDetector {
    */
   prepareUserAgent(userAgent) {
     if (userAgent && this.maxUserAgentSize && this.maxUserAgentSize < userAgent.length) {
-      return String(userAgent.substr(0, this.maxUserAgentSize));
+      return String(userAgent).substring(0, this.maxUserAgentSize);
     }
     return userAgent;
   }
@@ -820,18 +821,17 @@ class DeviceDetector {
       deviceData.id = 'AP';
       deviceData.brand = 'Apple';
     }
-    /**
-     * get device specification
-     */
+
     let deviceInfo = {};
     if (this.deviceInfo || this.deviceTrusted) {
       deviceInfo = this.getParseInfoDevice().info(deviceData.brand, deviceData.model);
+      if (this.deviceInfo) {
+        deviceData.info = deviceInfo;
+      }
     }
-    /**
-     * Check device is trusted
-     */
+
     if (this.deviceTrusted) {
-      deviceData.trusted = this.prepareResultTrusted(deviceInfo, osData, clientData, deviceData, clientHints);
+      deviceData.trusted =  DeviceTrusted.check(deviceInfo, osData, clientData, deviceData, clientHints);
     }
 
     return {
@@ -839,12 +839,6 @@ class DeviceDetector {
       client: clientData,
       device: deviceData
     };
-  }
-
-  prepareResultTrusted(deviceInfo, osData, clientData, deviceData, clientHints) {
-    const deviceInfo = this.getParseInfoDevice().info()
-
-    return this.getParseInfoDevice().trusted();
   }
 
   /**
