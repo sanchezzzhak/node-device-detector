@@ -207,9 +207,6 @@ class ClientHints {
       }
 
       switch (lowerCaseKey) {
-        case 'ratio':
-          result.meta[key] = parseFloat(value).toFixed(3);
-          break;
         case 'width':
         case 'height':
           result.meta[key] = String(parseFloat(value).toFixed(0));
@@ -231,7 +228,7 @@ class ClientHints {
 
   /**
    * @param {{}} hints - headers or client-hints params
-   * @param {{}} meta  - client custom metric params
+   * @param {{}} meta  - client custom js metric params
    */
   parse(hints, meta = {}) {
     let result = {
@@ -240,7 +237,6 @@ class ClientHints {
       meta: {
         width: '',
         height: '',
-        ratio: '',
         gpu: '',
         gamut: '',
         ram: '',

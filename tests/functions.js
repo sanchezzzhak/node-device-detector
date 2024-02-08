@@ -2,9 +2,44 @@ const fs = require('fs');
 const Table = require('cli-table');
 const YAML = require('js-yaml');
 
+const csv = require('@fast-csv/parse');
+
+const parseCsvLine = (string, separator = ',') => {
+  return new Promise((resolve, reject) => {
+    csv.parseString(string, { headers: false })
+      .on('error', error => {reject(error)})
+      .on('data', row => { resolve(row)})
+  })
+}
+
 function hasEnvDebug() {
   return (process.env.DEBUG_TABLE && process.env.DEBUG_TABLE === 'true');
 }
+function isFile (path) {
+  return fs.lstatSync(path).isFile();
+}
+
+function isDir(path) {
+  return fs.lstatSync(path).isDirectory();
+}
+
+function grabLogFiles(folderTestPath) {
+  let files = [];
+  if (isDir(folderTestPath)) {
+    fs.readdirSync(folderTestPath).forEach((file) => {
+      let absolutePath = folderTestPath + file;
+      if (!isFile(absolutePath)) {
+        return;
+      }
+      files.push(absolutePath);
+    });
+  } else if (isFile(folderTestPath)) {
+    files.push(folderTestPath);
+  }
+
+  return files;
+}
+
 /**
  * @param fixture
  * @param result
@@ -77,6 +112,10 @@ function getFixtureFolder() {
 module.exports = {
   YAMLDump,
   YAMLLoad,
+  grabLogFiles,
+  isFile,
+  isDir,
+  parseCsvLine,
   revertKeysForObjects,
   normalizeVersion,
   perryTable,
