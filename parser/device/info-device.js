@@ -1,54 +1,7 @@
 const ParserAbstract = require('./../abstract-parser');
 const DataPacker = require('./../../lib/data-packer');
 
-/**
- * @typedef ResultDeviceInfo
- * @param {ResultDeviceInfoDisplay} display
- * @param {number|null} sim
- * @param {string|ResultDeviceInfoSize} size
- * @param {string} weight
- * @param {string|null} release
- * @param {string|null} os
- * @param {ResultDeviceInfoHardware} hardware
- * @param {ResultDeviceInfoPerformance} performance
- *
- * @typedef ResultDeviceInfoHardwareCPU:
- * @param {string} name
- * @param {string} type
- * @param {number} cores
- * @param {number} clock_rate
- * @param {string|null} process
- * @param {number} gpu_id
- *
- * @typedef ResultDeviceInfoHardwareGPU:
- * @param {string} name
- * @param {number} clock_rate
- *
- * @typedef ResultDeviceInfoResolution
- * @param {string} width
- * @param {string} height
- *
- * @typedef ResultDeviceInfoDisplay
- * @param {string} size
- * @param {string|ResultDeviceInfoResolution} resolution
- * @param {string} ratio
- * @param {string} ppi
- *
- * @typedef ResultDeviceInfoPerformance
- * @param {number} antutu
- *
- * @typedef ResultDeviceInfoHardware
- * @param {number} ram
- * @param {number} cpu_id
- * @param {ResultDeviceInfoHardwareCPU} cpu
- * @param {ResultDeviceInfoHardwareGPU} gpu
- *
- * @typedef ResultDeviceInfoSize
- * @param {string} width
- * @param {string} height
- * @param {string} thickness
- *
- */
+
 
 /*
 
@@ -56,7 +9,7 @@ const DataPacker = require('./../../lib/data-packer');
 > year, weight, release, display.size, display.resolution, display.ratio
 ```js
 const InfoDevice = require('node-device-detector/parser/device/info-device');
-const infoDevice = new InfoDevice;
+const infoDevice = new InfoDevice();
 const result = infoDevice.info('Asus', 'Zenfone 4');
 console.log('Result information about device', result);
 /*
@@ -191,7 +144,7 @@ const sortObject = (o) =>
 
 /**
  * @usage
- * let i = new InfoDevice
+ * let i = new InfoDevice();
  * let result = i.info('Asus', 'ZenFone 4')
  * console.log({result});
  * // result if found
@@ -220,7 +173,7 @@ const SHORT_KEYS = {
   OI: 'os_id',                  // int: OS ID
   OV: 'os_version',             // int: OS ID
   SM: 'sim',                    // int: count SIM
-  TT: 'performance.antutu'     // int: antutu score
+  TT: 'performance.antutu'      // int: antutu score
 };
 
 let collectionHardwareCPU = null;
@@ -300,17 +253,15 @@ class InfoDevice extends ParserAbstract {
   }
 
   find(deviceBrand, deviceModel, mergeData = {}) {
+
     if (!deviceBrand.length || !deviceModel.length) {
       return null;
     }
 
     const fixStringName = (str) => str.replace(new RegExp('_', 'g'), ' ');
 
-    deviceBrand = fixStringName(deviceBrand);
-    deviceModel = fixStringName(deviceModel);
-
-    let brand = deviceBrand.trim().toLowerCase();
-    let model = deviceModel.trim().toLowerCase();
+    let brand = fixStringName(deviceBrand).trim().toLowerCase();
+    let model = fixStringName(deviceModel).trim().toLowerCase();
 
     if (
       this.collection[brand] === void 0 ||

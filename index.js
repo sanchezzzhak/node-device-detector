@@ -639,9 +639,10 @@ class DeviceDetector {
       const osHints = attr(clientHints, 'os', {});
       const osVersion = attr(osHints, 'version', '');
       return userAgent.replace(/(Android 10[.\d]*; K)/,
-        `Android ${osVersion !== '' ? osVersion : '10'} ${deviceModel};`
+        `Android ${osVersion !== '' ? osVersion: '10'}; ${deviceModel}`
       );
     }
+
     return userAgent;
   }
 
@@ -657,24 +658,27 @@ class DeviceDetector {
     let brandIndexes = [];
     let deviceCode = '';
 
-    if (this.deviceIndexes) {
-      let alias = this.parseDeviceCode(ua);
-      deviceCode = alias.name ? alias.name : '';
-      brandIndexes = this.getBrandsByDeviceCode(deviceCode);
-    } else if (this.deviceAliasCode) {
-      let alias = this.parseDeviceCode(ua);
-      deviceCode = alias.name ? alias.name : '';
-    }
-
     let result = {
       id: '',
       type: '',
       brand: '',
-      model: ''
+      model: '',
+      code: '',
+      info: {},
+      trusted: null
     };
 
-    if (this.deviceAliasCode) {
-      result.code = deviceCode;
+    if (this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted) {
+      if (clientHints.device && clientHints.device.model) {
+        result.code = clientHints.device.model;
+      } else {
+        const alias = this.parseDeviceCode(ua);
+        result.code = alias.name ? alias.name : '';
+      }
+    }
+
+    if (this.deviceIndexes) {
+      brandIndexes = this.getBrandsByDeviceCode(result.code);
     }
 
     if (result && result.brand === '') {
@@ -700,6 +704,14 @@ class DeviceDetector {
     if (result.model === '') {
       if (clientHints.device && clientHints.device.model !== '') {
         result.model = clientHints.device.model;
+      }
+    }
+
+    // device info
+    if (this.deviceInfo || this.deviceTrusted) {
+      const deviceInfo = this.getParseInfoDevice().info(result.brand, result.model);
+      if (this.deviceInfo) {
+        result.info = deviceInfo;
       }
     }
 
@@ -822,16 +834,18 @@ class DeviceDetector {
       deviceData.brand = 'Apple';
     }
 
-    let deviceInfo = {};
-    if (this.deviceInfo || this.deviceTrusted) {
-      deviceInfo = this.getParseInfoDevice().info(deviceData.brand, deviceData.model);
-      if (this.deviceInfo) {
-        deviceData.info = deviceInfo;
-      }
+    if (this.deviceTrusted) {
+      deviceData.trusted = DeviceTrusted.check(osData, clientData, deviceData, clientHints);
+    } else {
+      delete deviceData.trusted;
     }
 
-    if (this.deviceTrusted) {
-      deviceData.trusted =  DeviceTrusted.check(deviceInfo, osData, clientData, deviceData, clientHints);
+    if (!this.deviceAliasCode) {
+      delete deviceData.code;
+    }
+
+    if (!this.deviceInfo) {
+      delete deviceData.info;
     }
 
     return {

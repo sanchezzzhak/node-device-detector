@@ -209,7 +209,7 @@ class ClientHints {
       switch (lowerCaseKey) {
         case 'width':
         case 'height':
-          result.meta[key] = String(parseFloat(value).toFixed(0));
+          result.meta[key] = String(parseInt(value));
           break;
         case 'gpu':
         case 'gamut':

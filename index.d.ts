@@ -32,6 +32,12 @@ export default class DeviceDetector {
   setOsVersionTruncate(value: any): void;
   setClientVersionTruncate(value: any): void;
 
+  set deviceTrusted(arg: boolean);
+  get deviceTrusted(): boolean;
+
+  set deviceInfo(arg: boolean);
+  get deviceInfo(): boolean;
+
   /**
    * @param {boolean} arg - true use indexes, false not use indexes
    */
@@ -161,6 +167,8 @@ export interface DeviceDetectorOptions {
   deviceIndexes?: boolean;
   clientIndexes?: boolean;
   deviceAliasCode?: boolean;
+  deviceTrusted?: boolean;
+  deviceInfo?: boolean;
 }
 
 export interface ResultDeviceCode {
@@ -202,6 +210,8 @@ export interface ResultDevice {
   brand: string;
   model: string;
   code?: string;
+  trusted?: boolean|null;
+  info?: ResultDeviceInfo|null
 }
 
 export interface DeviceType {
@@ -214,4 +224,58 @@ export interface ResultBot {
   producer: any;
   category: string;
   url: string;
+}
+
+export interface ResultDeviceInfoDisplay {
+  size: string;
+  resolution?: string|ResultDeviceInfoResolution;
+  ratio?: string;
+  ppi?: string;
+}
+
+export interface ResultDeviceInfoResolution {
+  width: string;
+  height: string;
+}
+
+export interface ResultDeviceInfoPerformance {
+  antutu?: number;
+}
+
+export interface ResultDeviceInfoHardwareGPU {
+  name: string;
+  clock_rate?: number;
+}
+
+export interface ResultDeviceInfoHardware {
+  ram: number
+  cpu_id?: number
+  cpu?: ResultDeviceInfoHardwareCPU
+  gpu?: ResultDeviceInfoHardwareGPU
+}
+
+export interface ResultDeviceInfoSize {
+  width: string;
+  height: string;
+  thickness: string;
+}
+
+export interface ResultDeviceInfoHardwareCPU {
+  name: string;
+  type: string;
+  cores?: number;
+  clock_rate?: number;
+  process?: string;
+  gpu_id?: number;
+}
+
+export interface ResultDeviceInfo {
+  display?: ResultDeviceInfoDisplay;
+  sim?: number|null;
+  size?: string|ResultDeviceInfoSize|null;
+  weight?: string|null;
+  release?: string|null;
+  os?: string|null;
+  hardware?: ResultDeviceInfoHardware|null;
+  performance?: ResultDeviceInfoPerformance|null;
 }

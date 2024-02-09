@@ -20,20 +20,20 @@ const PARSE_TYPE_CSV_MATA_HINTS = 'csv-meta-hints';
  * @param {string} folderTestPath - folder check all files or file
  * @param {string} folderFixturePath - current database fixtures
  * @param {{
- *    uniqueOutput: 0,
- *    formatOutput: 'string',
- *    formatParse: 'csv-meta-hints',
+ *    unique: 0,
+ *    output: 'string',
+ *    parse: 'csv-meta-hints',
  *    skipCheck: 0,
- *    fixtureDeviceTrusted: 0,
- *    fixtureDeviceInfo: 0,
- *    fixtureDeviceCode: 0
+ *    deviceTrusted: 0,
+ *    deviceInfo: 0,
+ *    deviceCode: 0
  * }} options
  */
 const parserLog = (folderTestPath, folderFixturePath, options) => {
 
-  const uniqueOutput = options.uniqueOutput ?? 0;
-  const formatOutput = options.formatOutput ?? FORMAT_OUTPUT_STRING;
-  const formatParse = options.formatParse ?? '';
+  const uniqueOutput = options.unique ?? 0;
+  const formatOutput = options.output ?? FORMAT_OUTPUT_STRING;
+  const formatParse = options.parse ?? '';
 
   let files = grabLogFiles(folderTestPath);
   if (!files.length) {
@@ -45,17 +45,16 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
   const detector = new DeviceDetector({
     clientIndexes: true,
     deviceIndexes: true,
-    deviceAliasCode: options.fixtureDeviceCode === '1',
-    deviceTrusted: options.fixtureDeviceTrusted === '1',
-    deviceInfo: options.fixtureDeviceInfo === '1',
+    deviceAliasCode: options.deviceCode  === '1',
+    deviceTrusted: options.deviceTrusted  === '1',
+    deviceInfo: options.deviceInfo === '1',
   });
+
   const aggregateNewUa = new AggregateNewUa({
     folderFixturePath, uniqueOutput
   });
 
   files.forEach(async (absolutePath) => {
-
-    console.log(formatParse);
     const lineReader = readline.createInterface({
       input: fs.createReadStream(absolutePath), terminal: false
     });
@@ -89,6 +88,7 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         const result = {
           user_agent: ParserHelper.trimChars(useragent, '"'),
           headers: {},
+          meta: {},
           os: {
             name: detectResult.os.name ?? '',
             version: detectResult.os.version ?? '',
@@ -116,13 +116,27 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
           browser_family: detectResult.client.family ?? 'Unknown'
         };
 
+        if (Object.keys(clientHintData.meta ?? {}).length === 0) {
+          delete result.meta;
+        } else if(clientHintData.meta) {
+          result.meta = Object.assign(result.meta, clientHintData.meta);
+        }
+
         if (Object.keys(clientHintData).length === 0) {
           delete result.headers;
-        } else {
-          if (clientHintJson.hints) {
-            result.headers = Object.assign(result.headers, clientHintJson.hints);
-          }
-          // console.log({clientHintData})
+        } else if (clientHintJson.hints) {
+          result.headers = Object.assign(result.headers, clientHintJson.hints);
+        }
+
+        if (detector.deviceAliasCode) {
+          result.device.code = detectResult.device.code
+        }
+        if (detector.deviceTrusted) {
+          result.device.trusted = detectResult.device.trusted
+        }
+
+        if (detector.deviceInfo) {
+          result.device.info = detectResult.device.info
         }
 
         console.log(YAML.dump([result], { indent: 2, lineWidth: Infinity }));
@@ -151,16 +165,6 @@ program
   .option('-ci, --compact-info <number>', 'append device info to device.info (compact mode)', '0')
   .action(function(parsePath, testsPath) {
     const options = this.opts();
-    parserLog(parsePath, testsPath, {
-      formatOutput:
-      options.output,
-      uniqueOutput: options.unique,
-      formatParse: options.parse,
-      skipCheck: options.skipCheck,
-      deviceTrusted: options.deviceTrusted,
-      deviceInfo: options.deviceInfo,
-      deviceCode: options.deviceCode,
-      compactInfo: options.compactInfo,
-    });
+    parserLog(parsePath, testsPath, options);
   });
 program.parse(process.argv);
