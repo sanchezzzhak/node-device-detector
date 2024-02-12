@@ -707,12 +707,9 @@ class DeviceDetector {
       }
     }
 
-    // device info
+    // device info or deviceTrusted
     if (this.deviceInfo || this.deviceTrusted) {
-      const deviceInfo = this.getParseInfoDevice().info(result.brand, result.model);
-      if (this.deviceInfo) {
-        result.info = deviceInfo;
-      }
+      result.info = this.getParseInfoDevice().info(result.brand, result.model);
     }
 
     return result;

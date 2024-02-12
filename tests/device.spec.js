@@ -238,7 +238,6 @@ const createTestForFile = (file) => {
 };
 
 // base tests for devices fixtures
-
 describe('tests devices', function() {
   this.timeout(TIMEOUT);
   detector.deviceAliasCode = false;
@@ -252,13 +251,11 @@ describe('tests devices', function() {
 });
 
 // client hints apps tests
-
 describe('tests devices clienthints-app', function() {
   createTestForFile('clienthints-app.yml');
 });
 
 // client hints tests
-
 describe('tests devices clienthints', function() {
   createTestForFile('clienthints.yml');
 });

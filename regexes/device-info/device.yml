@@ -18,6 +18,7 @@
 # GP - GPU id (Graphic processor)
 # SM - count SIM slots
 # TT - test AnTuTu score
+# TG - test GeekBench score
 
 # 2E
 2e:
@@ -6843,7 +6844,7 @@ hisense:
   h30 lite: 'OI=1;OV=9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
 
 poco:
-  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=356;RM=6144;'
+  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=365;RM=6144;'
   21091116AG: '->m4 pro 5g'
   f2 pro: 'RE=2020.05;SZ=75.4x163.3x8.9;WT=219;DS=6.67;RS=1080x2400;OS=Android 10;CP=207;RM=6144;TT=538221;'
   m2004j11g: '->f2 pro'
@@ -7210,3 +7211,11 @@ cyrus:
 #  c8 finger: ''
 #  c8finger: '->c8 finger'
 #  f80 piabella: ''
+
+xiaomi:
+  'm2006c3mg': '->redmi 9c'
+  'redmi 9c': 'RE=2020.06;SZ=77x164.9x9;WT=196;DS=6.53;RS=720x1600;OS=Android 10;CP=348;RM=2048;'
+  '22011119uy': '->redmi 10 (2022)'
+  'redmi 10 (2022)': 'RE=2022.02;SZ=75.5x162x8.9;WT=181;DS=6.5;RS=1080x2400;OI=1;OV=10;CP=349;RM=4096;'
+  '23053rn02y': '->redmi 12'
+  'redmi 12': 'RE=2023.06;SZ=76.3x168.6x8.2;WT=198.5;DS=6.79;RS=1080x2460;OI=1;OV=13;CP=349;RM=2048;TT=258006;TG=1303;'

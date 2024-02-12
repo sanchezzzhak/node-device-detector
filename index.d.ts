@@ -240,6 +240,7 @@ export interface ResultDeviceInfoResolution {
 
 export interface ResultDeviceInfoPerformance {
   antutu?: number;
+  geekbench?: number;
 }
 
 export interface ResultDeviceInfoHardwareGPU {

@@ -173,7 +173,8 @@ const SHORT_KEYS = {
   OI: 'os_id',                  // int: OS ID
   OV: 'os_version',             // int: OS ID
   SM: 'sim',                    // int: count SIM
-  TT: 'performance.antutu'      // int: antutu score
+  TT: 'performance.antutu',      // int: antutu score
+  TG: 'performance.geekbench'      // int: geekbench score
 };
 
 let collectionHardwareCPU = null;
@@ -385,6 +386,9 @@ class InfoDevice extends ParserAbstract {
   prepareResultPerformance(result) {
     if (result.performance !== void 0 && result.performance.antutu !== void 0) {
       result.performance.antutu = parseInt(result.performance.antutu);
+    }
+    if (result.performance !== void 0 && result.performance.geekbench !== void 0) {
+      result.performance.geekbench = parseInt(result.performance.geekbench);
     }
   }
 

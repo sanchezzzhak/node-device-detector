@@ -1,0 +1,220 @@
+---
+-
+  user_agent: Mozilla/5.0 (Linux; arm_64; Android 10; YAL-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.731 YaSearchBrowser/24.11.1 BroPP/1.0 YaSearchApp/24.11.1 webOmni SA/3 Mobile Safari/537.36
+  headers:
+    brands:
+      - brand: Not_A Brand
+        version: '8'
+      - brand: Chromium
+        version: '120'
+      - brand: Yandex
+        version: '24'
+    fullVersionList:
+      - brand: Not_A Brand
+        version: 8.0.0.0
+      - brand: Chromium
+        version: 120.0.6099.217
+      - brand: Yandex
+        version: 24.1.1.731
+    mobile: '1'
+    model: YAL-L21
+    platform: Android
+    platformVersion: 10.0.0
+    uaFullVersion: 24.1.1.731
+    wow64: '0'
+  meta:
+    width: '1080'
+    height: '2340'
+    gpu: ANGLE (ARM, Mali-G76, OpenGL ES 3.2)
+  device:
+    type: smartphone
+    brand: Huawei
+    model: Honor 20
+    code: YAL-L21
+    trusted: true
+-
+  user_agent: Mozilla/5.0 (Linux; arm; Android 13; 21091116AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.129 YaBrowser/23.11.5.129.00 SA/3 Mobile Safari/537.36
+  headers:
+    brands:
+      - brand: Chromium
+        version: '118'
+      - brand: Yandex
+        version: '23'
+      - brand: Not=A?Brand
+        version: '99'
+    fullVersionList:
+      - brand: Chromium
+        version: 118.0.5993.159
+      - brand: Yandex
+        version: 23.11.5.129
+      - brand: Not=A?Brand
+        version: 99.0.0.0
+    mobile: '1'
+    model: 21091116AG
+    platform: Android
+    platformVersion: 13.0.0
+    uaFullVersion: 23.11.5.129
+    wow64: '0'
+  meta:
+    width: '1080'
+    height: '2400'
+    gpu: ANGLE (ARM, Mali-G57 MC2, OpenGL ES 3.2)
+  device:
+    type: smartphone
+    brand: POCO
+    model: M4 Pro 5G
+    code: 21091116AG
+    trusted: true
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; 22011119UY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36
+  headers:
+    model: 22011119UY
+    platform: Android
+    platformVersion: '11'
+    uaFullVersion: 92.0.4515.131
+  meta:
+    width: '1080'
+    height: '2400'
+    gpu: Mali-G52
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Redmi 10 (2022)
+    code: 22011119UY
+    trusted: true
+-
+  user_agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_5_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16H71 [FBAN/FBIOS;FBAV/376.0.0.27.108;FBBV/383940242;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iOS;FBSV/12.5.6;FBSS/3;FBID/phone;FBLC/en_US;FBOP/5;FBRV/386155537]'
+  headers:
+  meta:
+    width: '375'
+    height: '812'
+    gpu: ANGLE (NVIDIA, NVIDIA GeForce MX330 Direct3D11 vs_5_0 ps_5_0, D3D11)
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 6 Plus
+    code: iPhone7,1
+    trusted: false
+-
+  user_agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20C65 [FBAN/FBPageAdmin;FBDV/iPhone15,3;FBMD/iPhone;FBSN/iOS;FBSV/16.2;FBSS/3;FBID/phone;FBLC/th_TH;FBOP/5;FBDI/88D816D0-1116-42DC-BB72-9BBA1CD59FB9]'
+  headers:
+  meta:
+    width: '430'
+    height: '932'
+    gpu: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)
+  device:
+    type: phablet
+    brand: Apple
+    model: iPhone 14 Pro Max
+    code: iPhone15,3
+    trusted: false
+
+- user_agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19F77 [FBAN/FBIOS;FBDV/iPhone9,1;FBMD/iPhone;FBSN/iOS;FBSV/15.5;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]'
+  headers:
+  meta:
+    width: '375'
+    height: '667'
+    gpu: ANGLE (VMware, VMware SVGA 3D Direct3D11 vs_5_0 ps_5_0, D3D11)
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 7
+    code: iPhone9,1
+    trusted: false
+-
+  user_agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21B101 [FBAN/FBIOS;FBAV/445.0.0.35.117;FBBV/548375166;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/17.1.2;FBSS/2;FBID/phone;FBLC/es_LA;FBOP/5;FBRV/550068703]'
+  headers:
+    brands:
+      - brand: Not_A Brand
+        version: '8'
+      - brand: Chromium
+        version: '120'
+    fullVersionList:
+      - brand: Not_A Brand
+        version: 8.0.0.0
+      - brand: Chromium
+        version: 120.0.6099.71
+      - brand: Google Chrome
+        version: 120.0.6099.71
+    mobile: '0'
+    platform: Linux
+    platformVersion: 5.19.0
+    uaFullVersion: 120.0.6099.71
+    wow64: '0'
+    architecture: 'x86'
+  meta:
+    width: '2000'
+    height: '2000'
+    gpu: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)
+  device:
+    type: smartphone
+    brand: Apple
+    model: iPhone 11
+    code: iPhone12,1
+    trusted: false
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36
+  headers:
+    brands:
+      - brand: Google Chrome
+        version: '111'
+      - brand: Not(A:Brand
+        version: '8'
+      - brand: Chromium
+        version: '111'
+    fullVersionList:
+      - brand: Google Chrome
+        version: 111.0.5563.116
+      - brand: Not(A:Brand
+        version: 8.0.0.0
+      - brand: Chromium
+        version: 111.0.5563.116
+    mobile: '1'
+    model: 23053RN02Y
+    platform: Android
+    platformVersion: 13.0.0
+    uaFullVersion: 111.0.5563.116
+    wow64: '0'
+  meta:
+    width: '1080'
+    height: '2461'
+    gpu: Mali-G52 MC2
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Redmi 12
+    code: 23053RN02Y
+    trusted: true
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36
+  headers:
+    brands:
+      - brand: Not A(Brand
+        version: '99'
+      - brand: Google Chrome
+        version: '121'
+      - brand: Chromium
+        version: '121'
+    fullVersionList:
+      - brand: Not A(Brand
+        version: 99.0.0.0
+      - brand: Google Chrome
+        version: 121.0.6167.143
+      - brand: Chromium
+        version: 121.0.6167.143
+    mobile: '1'
+    model: M2006C3MG
+    platform: Android
+    platformVersion: 11.0.0
+    uaFullVersion: 121.0.6167.143
+    wow64: '0'
+  meta:
+    width: '1600'
+    height: '720'
+    gpu: ANGLE (Imagination Technologies, PowerVR Rogue GE8320, OpenGL ES 3.2)
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Redmi 9C
+    code: M2006C3MG
+    trusted: true
