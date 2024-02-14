@@ -2177,7 +2177,7 @@ cpu:
     process: 6nm
     gpu_id: 110
   325:
-    name: MediaTek Helio G90T
+    name: MediaTek Helio G90T #MT6785V/CC
     type: ARM
     cores: 8
     clock_rate: 2050
@@ -2352,7 +2352,7 @@ cpu:
     process: 12nm
     gpu_id: 113
   350:
-    name: MediaTek Helio G96
+    name: MediaTek Helio G96 # MT6781
     type: ARM
     cores: 8
     clock_rate: 2050
@@ -2463,3 +2463,17 @@ cpu:
     clock_rate: 2400
     process: 6nm
     gpu_id: 115
+  366:
+    name: Unisoc Tiger T612
+    type: ARM
+    cores: 8
+    clock_rate: 1800
+    process: 12nm
+    gpu_id: 116
+  367:
+    name: MediaTek Helio G36
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 25

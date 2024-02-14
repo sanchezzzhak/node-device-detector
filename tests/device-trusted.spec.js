@@ -13,6 +13,7 @@ const detector = new DeviceDetector({
   deviceAliasCode: true,
   deviceIndexes: true,
   deviceTrusted: true,
+  deviceInfo: false,
 });
 const clientHint = new ClientHint();
 

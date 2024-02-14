@@ -709,7 +709,9 @@ class DeviceDetector {
 
     // device info or deviceTrusted
     if (this.deviceInfo || this.deviceTrusted) {
-      result.info = this.getParseInfoDevice().info(result.brand, result.model);
+      result.info = this.getParseInfoDevice().info(
+        result.brand, result.code ? result.code : result.model
+      );
     }
 
     return result;
