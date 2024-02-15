@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 06/02/2024_
+_Last update: 15/02/2024_
 
 ## Description
 
@@ -51,6 +51,7 @@ const detector = new DeviceDetector({
   deviceIndexes: true,
   deviceAliasCode: false,
   deviceTrusted: false,
+  deviceInfo: false,
   maxUserAgentSize: 500,
 });
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
@@ -86,7 +87,8 @@ console.log('result parse', result);
     brand: 'ZTE',               // device brand name
     model: 'Nubia Z7 max'       // device model name
     code: 'NX505J'              // device model code  (only result for enable detector.deviceAliasCode) 
-    trusted: true               // device trusted (result only for enable detector.deviceTrusted and have fixture data + ClientHints are required) 
+    trusted: true               // device trusted (result only for enable detector.deviceTrusted and have fixture data + ClientHints are required)
+    info: {}                    // device specs (result only fir enable detector.deviceInfo)
   }
 }
 ```
@@ -177,6 +179,7 @@ const detector = new DeviceDetector({
   deviceIndexes: true,
   deviceAliasCode: false,
   deviceTrusted: false,
+  deviceInfo: false,
   // ... all options scroll to Setter/Getter/Options
 });
 
@@ -277,6 +280,7 @@ const detector = new DeviceDetector({
   deviceAliasCode: true,     // adds the device code to result device.code as is (default false)
   maxUserAgentSize: 500,     // uses only 500 chars from useragent string (default null - unlimited)
   deviceTrusted: true,       // check device by specification (default false)
+  deviceInfo: true,          // adds the device info to result device.info (default false)
 });
 
 // You can override these settings at any time using special setters, example
@@ -287,6 +291,7 @@ detector.clientIndexes = true;
 detector.deviceAliasCode = true;
 detector.maxUserAgentSize = 500;
 detector.deviceTrusted = true;
+detector.deviceInfo = true;
 
 // Array available device types
 detector.getAvailableDeviceTypes();
@@ -323,16 +328,15 @@ detector.getParseBot('MyBotParser');
 ### Getting device code as it (experimental) <a name="device-code"></a>
 [[top]](#top)
 ```js
-const AliasDevice = require('node-device-detector/parser/device/alias-device');
-const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
-const aliasDevice = new AliasDevice;
-const result = aliasDevice.parse(userAgent);
-console.log('Result parse code model', result);
-
-// or
 const DeviceDetector = require('node-device-detector');
 const detector = new DeviceDetector()
 const aliasDevice = detector.getParseAliasDevice();
+const result = aliasDevice.parse(userAgent);
+console.log('Result parse code model', result);
+// or
+const AliasDevice = require('node-device-detector/parser/device/alias-device');
+const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
+const aliasDevice = new AliasDevice;
 const result = aliasDevice.parse(userAgent);
 console.log('Result parse code model', result);
 
@@ -400,7 +404,7 @@ detector.detect (indexes on) x 1,032 ops/sec ±0.61% (94 runs sampled)
 Yes we use tests, total tests 73.9k
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1815 devices, alias devices 3881)
+> This parser is experimental and contains few devices. (1825 devices, alias devices 3891)
 >
 ##### Support detail brands/models list:
 
@@ -473,8 +477,8 @@ Yes we use tests, total tests 73.9k
 | nuvo | 3 | 2 | - | oneplus | 18 | 48 |
 | oppo | 103 | 202 | - | oukitel | 8 | 0 |
 | öwn | 1 | 2 | - | panasonic | 5 | 8 |
-| pipo | 5 | 0 | - | poco | 8 | 14 |
-| realme | 65 | 94 | - | samsung | 167 | 714 |
+| pipo | 5 | 0 | - | poco | 9 | 15 |
+| realme | 67 | 96 | - | samsung | 168 | 716 |
 | sony | 44 | 172 | - | supra | 1 | 0 |
 | tecno mobile | 91 | 131 | - | tiphone | 1 | 0 |
 | utok | 1 | 0 | - | uz mobile | 1 | 0 |
@@ -482,20 +486,20 @@ Yes we use tests, total tests 73.9k
 | walton | 13 | 0 | - | we | 8 | 0 |
 | weimei | 1 | 0 | - | wiko | 7 | 12 |
 | wileyfox | 9 | 0 | - | wink | 4 | 0 |
-| zync | 2 | 0 | - | zyq | 1 | 13 |
+| xiaomi | 6 | 5 | - | zync | 2 | 0 |
+| zyq | 1 | 13 | - |  |  |  |
 
 </details>
 
 ```js
-const InfoDevice = require('node-device-detector/parser/device/info-device');
-const infoDevice = new InfoDevice();
-const result = infoDevice.info('Asus', 'Zenfone 4');
-console.log('Result information', result);
-
-// or 
 const DeviceDetector = require('node-device-detector');
 const detector = new DeviceDetector();
 const infoDevice = detector.getParseInfoDevice();
+const result = infoDevice.info('Asus', 'Zenfone 4');
+console.log('Result information', result);
+// or 
+const InfoDevice = require('node-device-detector/parser/device/info-device');
+const infoDevice = new InfoDevice();
 const result = infoDevice.info('Asus', 'Zenfone 4');
 console.log('Result information', result);
 
