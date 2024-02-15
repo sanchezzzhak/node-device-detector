@@ -1,5 +1,8 @@
 
 This code is designed to receive client-hints on your page without additional page refresh
+
+### small js lib for get clienthints and meta data devices
+
 ```js
 
 export default function DeviceMeta() {
@@ -136,13 +139,13 @@ export default function DeviceMeta() {
 
 ```
 
-### usage client
+### uses client js
 
 ```js
 
     let deviceMeta = new DeviceMeta();
     let metaData = deviceMeta.info();
-
+    
     async function postData(url = "", data = {}) {
       const response = await fetch(url, {
         method: "POST",
@@ -166,4 +169,52 @@ export default function DeviceMeta() {
   .catch(e => console.error(e))
   .then(resoinse = response.json())
   .then(result => console.log(result));
+```
+
+### backend server 
+```js
+
+const http = require('http');
+const finalhandler = require('finalhandler'); // https://www.npmjs.com/package/finalhandler
+const Router = require('router');  // https://www.npmjs.com/package/router
+var bodyParser = require('body-parser')  // https://www.npmjs.com/package/body-parser
+const DeviceDetector = require('node-device-detector');
+const ClientHints = require('node-device-detector/client-hints');
+
+const routerOpts = {}
+const router = Router(routerOpts);
+const deviceDetector = new DeviceDetector({
+  clientIndexes: true,
+  deviceIndexes: true,
+  deviceAliasCode: true,
+  deviceTrusted: true,
+});
+const clientHint = new ClientHints();
+const port = 3001;
+const timeout = 3e5;
+
+const prettyPrintJson = (obj) => JSON.stringify(obj, null, 2);
+
+router.use(bodyParser.json());
+
+router.post('/api/t', (req, res) => {
+  const useragent = res.body.useragent ?? req.headers['user-agent'];
+  const hints = clientHint.parse(res.body.hints ?? req.headers, res.body.meta);
+  const result = deviceDetector.detect(useragent, hints);
+  const bot = deviceDetector.parseBot(useragent);
+
+  const body = prettyPrintJson({useragent, result, bot});
+  res.end(body);
+});
+
+// create server
+const server = http.createServer(function onRequest(req, res) {
+  router(req, res, finalhandler(req, res));
+});
+server.listen({port, timeout}, (err, result) => {
+  console.log('server listen port %s', port);
+})
+
+
+
 ```
