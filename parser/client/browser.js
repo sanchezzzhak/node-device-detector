@@ -10,8 +10,12 @@ const browserHints = new BrowserHints;
 
 const CLIENTHINT_MAPPING = {
   'Chrome': ['Google Chrome'],
+  'Chrome Webview': ['Android WebView'],
+  'DuckDuckGo Privacy Browser': ['DuckDuckGo'],
+  'Edge WebView': ['Microsoft Edge WebView2'],
+  'Microsoft Edge': ['Edge'],
+  'Norton Private Browser': ['Norton Secure Browser'],
   'Vewd Browser': ['Vewd Core'],
-  'DuckDuckGo Privacy Browser': ['DuckDuckGo']
 };
 
 const compareBrandForClientHints = (brand) => {
@@ -87,6 +91,15 @@ class Browser extends ClientAbstractParser {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
+
+        // https://bbs.360.cn/thread-16096544-1-1.html
+        if (/^15/.test(version) && /^144/.test(data.version)) {
+          name          = '360 Secure Browser';
+          short         = '3B';
+          engine        = data.engine;
+          engineVersion = data.engine_version;
+        }
+
 
         if ('Atom' === name || 'Huawei Browser' === name) {
           version = data.version;
@@ -204,7 +217,6 @@ class Browser extends ClientAbstractParser {
 
     if (clientHints && clientHints.client) {
       let brands = ArrayPath.get(clientHints, 'client.brands', []);
-
       for (let brandItem of brands) {
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
@@ -220,13 +232,12 @@ class Browser extends ClientAbstractParser {
             version = String(brandItem.version);
             break;
           }
+        }
 
-          // If we detected a brand, that is not chromium,
-          // we will use it, otherwise we will look further
-          if ('' !== name && 'Chromium' !== name) {
-            break;
-          }
-
+        // If we detected a brand, that is not chromium,
+        // we will use it, otherwise we will look further
+        if ('' !== name && 'Chromium' !== name && 'Microsoft Edge' !== name) {
+          break;
         }
       }
 
@@ -402,8 +413,8 @@ class Browser extends ClientAbstractParser {
       return '';
     }
 
-    if (engine === 'Gecko') {
-      let pattern = '[ ](?:rv[: ]([0-9.]+)).*gecko/[0-9]{8,10}';
+    if (engine === 'Gecko' || engine === 'Clecko') {
+      let pattern = '[ ](?:rv[: ]([0-9\.]+)).*(?:g|cl)ecko/[0-9]{8,10}';
       let regexp = new RegExp(pattern, 'i');
       let match = regexp.exec(userAgent);
       if (match !== null) {

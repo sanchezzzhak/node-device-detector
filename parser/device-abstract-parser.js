@@ -156,9 +156,10 @@ class DeviceParserAbstract extends ParserAbstract {
           id: '',
           brand: '',
           model: '',
-          type: result[0].type,
+          type: '',
         };
       }
+
       return result[0];
     }
     return null;

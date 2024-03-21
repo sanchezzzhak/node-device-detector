@@ -132,6 +132,10 @@ function hasTouchFragment(userAgent) {
   return matchUserAgent('Touch', userAgent) !== null;
 }
 
+function hasVRFragment(userAgent) {
+  return matchUserAgent('Android( [\.0-9]+)?; Mobile VR;| VR ', userAgent) !== null
+}
+
 /**
  * @param {string} userAgent
  * @returns {boolean}
@@ -313,6 +317,7 @@ module.exports = {
   fuzzyBetweenNumber,
   versionCompare,
   versionTruncate,
+  hasVRFragment,
   hasAndroidTableFragment,
   hasOperaTableFragment,
   hasOperaTVStoreFragment,

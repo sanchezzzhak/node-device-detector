@@ -171,7 +171,7 @@ class ClientHints {
           let matches = null;
           while (matches = pattern.exec(value)) {
             let brand = matches[1];
-            let skip = brand.indexOf('Not;A') !== -1 || brand.indexOf('Not A;') !== -1;
+            let skip = brand.indexOf('Not;A') !== -1 || brand.indexOf('Not A;') !== -1 || brand.indexOf('Not.A') !== -1;
             if (skip) {
               continue;
             }

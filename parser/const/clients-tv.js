@@ -7,4 +7,10 @@ module.exports = [
   'Open TV Browser',
   'Seraphic Sraf',
   'Opera Devices',
+  'Crow Browser',
+  'Vewd Browser',
+  'TiviMate',
+  'Quick Search TV',
+  'QJY TV Browser',
+  'TV Bro',
 ];

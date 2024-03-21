@@ -103,8 +103,10 @@ class DeviceDetector {
     this.deviceInfo = attr(options, 'deviceInfo', false);
   }
 
+
   init() {
     this.addParseOs(OS_PARSER, new OsParser());
+
     this.addParseClient(CLIENT_PARSER_LIST.FEED_READER, new FeedReaderParser());
     this.addParseClient(CLIENT_PARSER_LIST.MOBILE_APP, new MobileAppParser());
     this.addParseClient(CLIENT_PARSER_LIST.MEDIA_PLAYER, new MediaPlayerParser());
@@ -495,6 +497,13 @@ class DeviceDetector {
     let clientFamily = attr(clientData, 'family', '');
     let deviceType = attr(deviceData, 'type', '');
 
+    /**
+     * All devices containing VR fragment are assumed to be a wearable
+     */
+    if (deviceType === '' && helper.hasVRFragment(userAgent)) {
+      deviceType = DEVICE_TYPE.WEARABLE;
+    }
+
     if (
       deviceType === '' &&
       osFamily === 'Android' &&
@@ -759,13 +768,8 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
-
     let result = {};
-
-    console.log(this.clientIndexes);
-
     for (let name in this.clientParserList) {
-
       let parser = this.clientParserList[name];
       if (this.clientIndexes && extendParsers.includes(name)) {
         let hash = parser.parseFromHashHintsApp(clientHints);
@@ -803,22 +807,21 @@ class DeviceDetector {
     );
 
     deviceData = Object.assign(deviceData, deviceDataType);
+
     /**
-     * if it's fake UA then it's best not to identify it as Apple running Android OS
+     * if it's fake UA then it's best not to identify it as Apple running Android OS or GNU/Linux
      */
-    if ('Android' === osData.name && 'Apple' === deviceData.brand) {
+    if (deviceData.brand === 'Apple' && APPLE_OS_LIST.indexOf(osData.name) === -1) {
       deviceData.id = '';
       deviceData.brand = '';
       deviceData.model = '';
       deviceData.type = '';
     }
-    /** Assume all devices running iOS / Mac OS are from Apple */
-    if (
-      deviceData.brand === '' &&
-      osData.name !== '' &&
-      APPLE_OS_LIST.indexOf(osData.name) !== -1
-    ) {
-      deviceData.id = 'AP';
+
+    /**
+     * Assume all devices running iOS / Mac OS are from Apple
+     */
+    if (deviceData.brand === '' && APPLE_OS_LIST.indexOf(osData.name) !== -1) {
       deviceData.brand = 'Apple';
     }
 

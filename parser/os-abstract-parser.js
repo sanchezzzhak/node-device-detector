@@ -223,7 +223,7 @@ class OsAbstractParser extends ParserAbstract {
         short = 'HAR';
       }
 
-      if (name === 'PICO OS') {
+      if ('PICO OS' === name) {
         version = data.version;
         short = 'PIC'
       }
