@@ -21,7 +21,6 @@ const excludeFilesNames = [
 ];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 const TIMEOUT = 6000;
-
 const detector = new DeviceDetector();
 const clientHints = new ClientHint();
 
@@ -87,12 +86,18 @@ function testsFromFixtureDeviceMobile(fixture) {
 }
 
 const runTest = (fixture, result) => {
-  
-  if (fixture.headers) {
+
+  let messageError = 'fixture data\n' + perryJSON(fixture);
+
+  // remove client hints for diff result
+  if (fixture.headers !== void 0) {
     delete fixture.headers;
   }
-  
-  let messageError = 'fixture data\n' + perryJSON(fixture);
+  // remove client meta for diff result
+  if (fixture.meta !== void 0) {
+    delete fixture.meta;
+  }
+
   if (result.client) {
     delete result.client.short_name;
     if (fixture.browser_family !== void 0) {
@@ -153,28 +158,33 @@ const createTestForFile = (file) => {
           return this.skip();
         }
         let cloneFixture = Object.assign({}, fixture);
-        let clientHintData = clientHints.parse(cloneFixture.headers);
+        let headers = cloneFixture.headers;
+        let meta = cloneFixture.meta;
+        let clientHintData = clientHints.parse(headers, meta);
         let result = null;
-        
+
+        // get result
         if (forAsync) {
-          result = await detector.detectAsync(cloneFixture.user_agent,
-            clientHintData);
+          result = await detector.detectAsync(cloneFixture.user_agent, clientHintData);
         } else {
-          result = await detector.detect(cloneFixture.user_agent,
-            clientHintData);
+          result = await detector.detect(cloneFixture.user_agent, clientHintData);
         }
+
+        // check base
         result.user_agent = cloneFixture.user_agent;
+        // print fixture and result is debug enable
         perryTable(cloneFixture, result);
+        // check fixture test
         runTest(cloneFixture, result);
+        // check tests fixture report
         if (!firstTestFixture) {
           testsFromFixtureDeviceMobile(result);
           firstTestFixture = true;
         }
-      
       });
     };
     
-    // =====
+    // ===== create tests for disable all indexes
     
     describe('not used indexes', function() {
       before(() => {
@@ -187,7 +197,9 @@ const createTestForFile = (file) => {
         createSubTests(fixture, false, pos);
       });
     });
-    // =====
+
+    // ===== create tests for enable all indexes
+
     describe('used indexes', function() {
       before(() => {
         detector.deviceIndexes = true;
@@ -225,6 +237,7 @@ const createTestForFile = (file) => {
   });
 };
 
+// base tests for devices fixtures
 describe('tests devices', function() {
   this.timeout(TIMEOUT);
   detector.deviceAliasCode = false;
@@ -237,10 +250,12 @@ describe('tests devices', function() {
   });
 });
 
+// client hints apps tests
 describe('tests devices clienthints-app', function() {
   createTestForFile('clienthints-app.yml');
 });
 
+// client hints tests
 describe('tests devices clienthints', function() {
   createTestForFile('clienthints.yml');
 });

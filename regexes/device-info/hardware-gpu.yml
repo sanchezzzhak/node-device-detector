@@ -246,7 +246,7 @@ gpu:
     name: Qualcomm Adreno 630
     clock_rate: 650
   83:
-    name: ARM Mali-G52 MP2
+    name: ARM Mali-G52 MC2
     clock_rate: 850
   84:
     name: Vivante GC1000
@@ -356,3 +356,6 @@ gpu:
   119:
     name: ARM Mali-G710 MP10
     clock_rate: 0
+  120:
+    name: ARM Mali-G76 MC4
+    clock_rate: 900

@@ -5,7 +5,7 @@ const http = require('http');
 const finalhandler = require('finalhandler'); // https://www.npmjs.com/package/finalhandler
 const Router = require('router');  // https://www.npmjs.com/package/router
 const DeviceDetector = require('node-device-detector');
-const ClientHintParser = require('node-device-detector/parser/client-hint-parser');
+const ClientHints = require('node-device-detector/client-hints');
 
 const routerOpts = {}
 const router = Router(routerOpts);
@@ -14,7 +14,7 @@ const deviceDetector = new DeviceDetector({
   deviceIndexes: true,
   deviceAliasCode: false,
 });
-const clientHint = new ClientHintParser();
+const clientHint = new ClientHints();
 const port = 3001;
 const timeout = 3e5;
 
@@ -26,7 +26,7 @@ const middlewareDetect = (req, res) => {
   req.bot = deviceDetector.parseBot(useragent);
   req.hints = clientHint.parse(req.headers);
   
-  res.writeHead(200, ClientHintParser.getHeaderClientHints())
+  res.writeHead(200, ClientHints.getHeaderClientHints())
 };
 
 const prettyPrintJson = (obj) => JSON.stringify(obj, null, 2);

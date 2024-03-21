@@ -1,10 +1,11 @@
 # Compact format in line
-# DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;TT=;
+# DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;TT=;DP=;
 
 # This file has a specific structure
 # what does each shortcode mean?
 # DS - Display size
 # RS - Resolution screen (W x H)
+# DP - Device pixel ratio
 # SZ - Device Size (W x H x T)
 # WT - Weight grams
 # RE - Release date
@@ -17,6 +18,7 @@
 # GP - GPU id (Graphic processor)
 # SM - count SIM slots
 # TT - test AnTuTu score
+# TG - test GeekBench score
 
 # 2E
 2e:
@@ -4312,6 +4314,7 @@ samsung:
   sm-a115u: '->galaxy a11'
   sm-a115u1: '->galaxy a11'
   sm-a115w: '->galaxy a11'
+  sm-a127f: '->galaxy a12;RE=2021.08;CP=250;OI=1;OV=11;'
   galaxy a12: 'RE=2020.10;SZ=75.8x164x8.9;WT=205;DS=6.5;RS=720x1600;OI=1;OV=10;CP=38;RM=3072;'
   sm-a125f: '->galaxy a12'
   sm-a125m: '->galaxy a12'
@@ -4417,6 +4420,7 @@ samsung:
   galaxy a20s: 'RE=2019.09;SZ=77.5x163.3x8;WT=183;DS=6.5;RS=720x1560;OI=1;OV=9.0;CP=214;RM=2048;'
   sm-a2070: '->galaxy a20s'
   sm-a207m: '->galaxy a20s'
+  sm-a207f: '->galaxy a20s'
   galaxy a21: 'RE=2020.04;SZ=76.7x167.8x8.1;WT=193;DS=6.5;RS=720x1600;OI=1;OV=10;CP=38;RM=3072;'
   sm-a215u: '->galaxy a21'
   sm-a215u1: '->galaxy a21'
@@ -5942,6 +5946,8 @@ mivo:
   jazz j1 2018: '->jazz j1 (2018)'
 
 realme:
+  c30: 'RE=2022.06;SZ=75.6x164.1x8.5;WT=182;DS=6.5;RS=720x1600;OI=1;OV=11;CP=366;RM=2048;'
+  rmx3581: '->c30'
   1: 'RE=2018.05;SZ=75.2x156.5x7.8;WT=155;DS=6.0;RS=1080x2160;OI=1;OV=8.1;CP=290;RM=3072;'
   cph1861: '->1'
   2: 'RE=2018.08;SZ=75.6x156.2x8.2;WT=168;DS=6.2;RS=720x1520;OI=1;OV=8.1;CP=214;RM=3072;'
@@ -6101,6 +6107,8 @@ realme:
   rmx3171: '->narzo 30a'
   c25s: 'RE=2021.06;SZ=75.9x164.5x9.6;WT=209;DS=6.5;RS=720x1600;OI=1;OV=11;CP=322;RM=4096;'
   rmx3195: '->c25s'
+  narzo 50: 'RE=2022.02;SZ=75.5x164.1x8.5;WT=194;DS=6.6;RS=1080x2412;OI=1;OV=11;CP=350;RM=4096;'
+  rmx3286: '->narzo 50'
 
 lg:
   v30: 'RE=2017.08;SZ=75.4x151.7x7.3;WT=158;DS=6.0;RS=1440x2880;OI=1;OV=7.1.2;CP=25;RM=4096;'
@@ -6842,8 +6850,8 @@ hisense:
   h30 lite: 'OI=1;OV=9;SZ=73.6x153.7x9;WT=156;RE=2019.07;CP=109;DS=6.1;RM=3072;'
 
 poco:
-  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=356;RM=6144'
-  21091116AG: '->m4 pro 5g'
+  m4 pro 5g: 'RE=2021.11;SZ=75.8x163.6x8.8;WT=195;DS=6.6;RS=1080x2400;OI=1;OV=11;CP=365;RM=6144;'
+  21091116ag: '->m4 pro 5g'
   f2 pro: 'RE=2020.05;SZ=75.4x163.3x8.9;WT=219;DS=6.67;RS=1080x2400;OS=Android 10;CP=207;RM=6144;TT=538221;'
   m2004j11g: '->f2 pro'
   m3: 'RE=2020.11;SZ=77.3x162.3x9.6;WT=198;DS=6.53;RS=1080x2340;OS=Android 10;CP=285;RM=4096;TT=177904;'
@@ -6864,6 +6872,8 @@ poco:
   m2103k19py: '->m3 pro 5g'
   camellia: '->m3 pro 5g'
   m2103k19pi: '->m3 pro 5g'
+  c51: 'RE=2023.04;SZ=76.8x164.9x9.1;WT=192;DS=6.52;RS=720x1600;OS=Android 13;CP=367;'
+  2305epcc4g: '->c51'
 
 oppo:
   a15: 'RE=2020.10;SZ=75.4x164x7.9;WT=175;DS=6.52;RS=720x1600;OI=1;OV=10;CP=38;RM=2048;'
@@ -7209,3 +7219,16 @@ cyrus:
 #  c8 finger: ''
 #  c8finger: '->c8 finger'
 #  f80 piabella: ''
+
+xiaomi:
+  m2006c3mg: '->redmi 9c'
+  redmi 9c: 'RE=2020.06;SZ=77x164.9x9;WT=196;DS=6.53;RS=720x1600;OS=Android 10;CP=348;RM=2048;'
+  22011119uy: '->redmi 10 (2022)'
+  redmi 10 (2022): 'RE=2022.02;SZ=75.5x162x8.9;WT=181;DS=6.5;RS=1080x2400;OI=1;OV=10;CP=349;RM=4096;'
+  23053rn02y: '->redmi 12'
+  redmi 12: 'RE=2023.06;SZ=76.3x168.6x8.2;WT=198.5;DS=6.79;RS=1080x2460;OI=1;OV=13;CP=349;RM=2048;TT=258006;TG=1303;'
+  redmi 9c nfc: 'RE=2020.08;SZ=77.1x164.9x9;WT=196;DS=6.53;RS=720x1600;OI=1;OV=10;CP=348;RM=2048;'
+  m2006c3mng: '->redmi 9c nfc'
+  redmi note 8 pro: 'RE=2019.08;SZ=76.4x161.4x8.8;WT=200;DS=6.53;RS=1080x2340;OI=1;OV=9;CP=325;GP=120;RM=4096;TT=224759;TG=6999;'
+  redmi 10: 'RE=2021.08;SZ=75.5x162x8.9;WT=181;DS=6.5;RS=1080x2400;OI=1;OV=11;CP=349;RM=4096;'
+  21061119dg: '->redmi 10'

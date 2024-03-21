@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 06/02/2024_
+_Last update: 15/02/2024_
 
 ## Description
 
@@ -21,6 +21,7 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 + [Helpers](#helpers)
 + [Single parsers](#single-parsers)
 + [Settings](#options)
++ [Specific methods](#specific-methods)
 + [Examples](#others)
 + [Support brands](#brands-list)
 + [Support device types](#device-types)
@@ -49,12 +50,15 @@ const detector = new DeviceDetector({
   clientIndexes: true,
   deviceIndexes: true,
   deviceAliasCode: false,
+  deviceTrusted: false,
+  deviceInfo: false,
+  maxUserAgentSize: 500,
 });
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const result = detector.detect(userAgent);
 console.log('result parse', result);
 ```
-> PS: When creating an object`detector = new DeviceDetector;` data for parsing is reloaded from files, consider this, the best option is initialization at application start
+> PS: When creating an object`detector = new DeviceDetector(DeviceDetectorOptions);` data for parsing is reloaded from files, consider this, the best option is initialization at application start
 > I recommend seeing [examples](#others)
 
 ### Result parse
@@ -62,11 +66,11 @@ console.log('result parse', result);
 ```text
 { 
   os: { 
-    name: 'Android',            // os name       
-    short_name: 'AND',          // os short code name (format A-Z0-9{3})
-    version: '5.0',             // os version
-    platform: '',               // os platform (x64, x32, amd etc.)
-    family: 'Android'           // os family
+    name: 'Android',           // os name       
+    short_name: 'AND',         // os short code name (format A-Z0-9{3})
+    version: '5.0',            // os version
+    platform: '',              // os platform (x64, x32, amd etc.)
+    family: 'Android'          // os family
   },
   client:  { 
     type: 'browser',            // client type 
@@ -83,6 +87,8 @@ console.log('result parse', result);
     brand: 'ZTE',               // device brand name
     model: 'Nubia Z7 max'       // device model name
     code: 'NX505J'              // device model code  (only result for enable detector.deviceAliasCode) 
+    trusted: true               // device trusted (result only for enable detector.deviceTrusted and have fixture data + ClientHints are required)
+    info: {}                    // device specs (result only fir enable detector.deviceInfo)
   }
 }
 ```
@@ -172,6 +178,8 @@ const detector = new DeviceDetector({
   clientIndexes: true,
   deviceIndexes: true,
   deviceAliasCode: false,
+  deviceTrusted: false,
+  deviceInfo: false,
   // ... all options scroll to Setter/Getter/Options
 });
 
@@ -269,8 +277,10 @@ const detector = new DeviceDetector({
   clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357.78 to 43.0.2357 (default '' or null)
   deviceIndexes: true,       // Using indexes for faster device search (default false)
   clientIndexes: true,       // Using indexes for faster client search (default false)
-  deviceAliasCode: false,    // adds the device code to result device.code as is (default false)
+  deviceAliasCode: true,     // adds the device code to result device.code as is (default false)
   maxUserAgentSize: 500,     // uses only 500 chars from useragent string (default null - unlimited)
+  deviceTrusted: true,       // check device by specification (default false)
+  deviceInfo: true,          // adds the device info to result device.info (default false)
 });
 
 // You can override these settings at any time using special setters, example
@@ -280,6 +290,8 @@ detector.deviceIndexes = true;
 detector.clientIndexes = true;
 detector.deviceAliasCode = true;
 detector.maxUserAgentSize = 500;
+detector.deviceTrusted = true;
+detector.deviceInfo = true;
 
 // Array available device types
 detector.getAvailableDeviceTypes();
@@ -289,14 +301,45 @@ detector.getAvailableBrands();
 detector.getAvailableBrowsers();
 ```
 
+### Specific methods <a name="specific-methods"></a> ###
+
+```js
+const DEVICE_PARSER_NAMES = detector.getDeviceParserNames(); // result colection names for device parsers 
+const CLIENT_PARSER_NAMES = detector.getClientParserNames(); // result colection names for client parsers 
+const OS_PARSER_NAMES = detector.getOsParserNames();         // result collection names for os parsers
+const BOT_PARSER_NAMES = detector.getBotParserNames();       // result collection names for bot parsers   
+
+const aliasDevice = detector.getParseAliasDevice();          // result AliasDevice parser
+const deviceAppleHint = detector.getParseDeviceAppleHint();  // result DeviceAppleHint parser
+const deviceInfo = detector.getParseInfoDevice();            // result InfoDevice parser
+
+// added custom parser
+detector.addParseDevice('MyDeviceParser', new MyDeviceParser);
+detector.addParseClient('MyClientParser', new MyClientParser);
+detector.addParseOs('MyOsParser', new MyOsParser);
+detector.addParseOs('MyBotParser', new MyBotParser);
+// get single parser
+detector.getParseDevice('MyDeviceParser' /* or DEVICE_PARSER_NAMES.MOBILE */);
+detector.getParseClient('MyClientParser'  /* or CLIENT_PARSER_NAMES.BROWSER */);
+detector.getParseOs('MyOsParser'/* or OS_PARSER_NAMES.DEFAULT */);
+detector.getParseBot('MyBotParser');
+```
+
 ### Getting device code as it (experimental) <a name="device-code"></a>
 [[top]](#top)
 ```js
+const DeviceDetector = require('node-device-detector');
+const detector = new DeviceDetector()
+const aliasDevice = detector.getParseAliasDevice();
+const result = aliasDevice.parse(userAgent);
+console.log('Result parse code model', result);
+// or
 const AliasDevice = require('node-device-detector/parser/device/alias-device');
 const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 const aliasDevice = new AliasDevice;
 const result = aliasDevice.parse(userAgent);
 console.log('Result parse code model', result);
+
 /*
 result 
 {
@@ -361,7 +404,7 @@ detector.detect (indexes on) x 1,032 ops/sec ±0.61% (94 runs sampled)
 Yes we use tests, total tests 73.9k
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1815 devices, alias devices 3881)
+> This parser is experimental and contains few devices. (1825 devices, alias devices 3891)
 >
 ##### Support detail brands/models list:
 
@@ -434,8 +477,8 @@ Yes we use tests, total tests 73.9k
 | nuvo | 3 | 2 | - | oneplus | 18 | 48 |
 | oppo | 103 | 202 | - | oukitel | 8 | 0 |
 | öwn | 1 | 2 | - | panasonic | 5 | 8 |
-| pipo | 5 | 0 | - | poco | 8 | 14 |
-| realme | 65 | 94 | - | samsung | 167 | 714 |
+| pipo | 5 | 0 | - | poco | 9 | 15 |
+| realme | 67 | 96 | - | samsung | 168 | 716 |
 | sony | 44 | 172 | - | supra | 1 | 0 |
 | tecno mobile | 91 | 131 | - | tiphone | 1 | 0 |
 | utok | 1 | 0 | - | uz mobile | 1 | 0 |
@@ -443,15 +486,23 @@ Yes we use tests, total tests 73.9k
 | walton | 13 | 0 | - | we | 8 | 0 |
 | weimei | 1 | 0 | - | wiko | 7 | 12 |
 | wileyfox | 9 | 0 | - | wink | 4 | 0 |
-| zync | 2 | 0 | - | zyq | 1 | 13 |
+| xiaomi | 6 | 5 | - | zync | 2 | 0 |
+| zyq | 1 | 13 | - |  |  |  |
 
 </details>
 
 ```js
-const InfoDevice = require('node-device-detector/parser/device/info-device');
-const infoDevice = new InfoDevice;
+const DeviceDetector = require('node-device-detector');
+const detector = new DeviceDetector();
+const infoDevice = detector.getParseInfoDevice();
 const result = infoDevice.info('Asus', 'Zenfone 4');
 console.log('Result information', result);
+// or 
+const InfoDevice = require('node-device-detector/parser/device/info-device');
+const infoDevice = new InfoDevice();
+const result = infoDevice.info('Asus', 'Zenfone 4');
+console.log('Result information', result);
+
 /*
 result
 {
@@ -532,6 +583,7 @@ Others <a name="others"></a>
 * [detect device in moleculer.js](docs/MICROSERVICE.MD)
 * [detect device in uws.js](docs/UWS_SERVER.MD)
 * [detect device in typescript](docs/TYPE_SCRIPT.MD)
+* [get client hints in browser](docs/CLIENT_HINTS_BROWSER.MD)
 
 <a name="brands-list"></a>
 

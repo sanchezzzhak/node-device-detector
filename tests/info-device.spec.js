@@ -10,7 +10,7 @@ const DATA_DEVICE_INFO = YAMLLoad(
 );
 
 let ymlDeviceInfoFiles = fs.readdirSync(getFixtureFolder() + 'devices-info/');
-const detector = new DeviceDetector({discardDeviceIndexes: false});
+const detector = new DeviceDetector({});
 const infoDevice = new InfoDevice();
 const TIMEOUT = 6000;
 

@@ -20,20 +20,34 @@ function fixStringVersion(result) {
   return result.trim();
 }
 
+const collectionMap = {};
+
 class ParserAbstract {
   constructor() {
     this.fixtureFile = null;
-    this.collection = null;
     this.type = null;
     this.versionTruncation = null;
     this.maxUserAgentSize = null;
+  }
+
+  get collection() {
+    if (!this.hasLoadCollection()) {
+      return null;
+    }
+    return collectionMap[this.fixtureFile];
+  }
+
+  hasLoadCollection() {
+    return collectionMap[this.fixtureFile] !== void 0
   }
 
   /**
    * load collection
    */
   loadCollection() {
-    this.collection = this.loadYMLFile(this.fixtureFile);
+    if (!this.hasLoadCollection()) {
+      collectionMap[this.fixtureFile] = this.loadYMLFile(this.fixtureFile);
+    }
   }
 
   /**
@@ -54,17 +68,7 @@ class ParserAbstract {
   buildByMatch(item, matches) {
     item = item || '';
     item = item.toString();
-    let max = matches.length-1 || 1;
-    if (item.indexOf('$') !== -1) {
-      for (let nb = 1; nb <= max; nb++) {
-        if (item.indexOf('$' + nb) === -1) {
-          continue;
-        }
-        let replace = matches[nb] !== void 0 ? matches[nb] : '';
-        item = item.replace(new RegExp('\\$' + nb, 'g'), replace);
-      }
-    }
-    return item;
+    return helper.matchReplace(item, matches)
   }
 
   /**

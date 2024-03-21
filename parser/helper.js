@@ -14,6 +14,20 @@ function matchUserAgent(str, userAgent) {
   return match.exec(userAgent);
 }
 
+function matchReplace(template, matches) {
+  let max = matches.length-1 || 1;
+  if (template.indexOf('$') !== -1) {
+    for (let nb = 1; nb <= max; nb++) {
+      if (template.indexOf('$' + nb) === -1) {
+        continue;
+      }
+      let replace = matches[nb] !== void 0 ? matches[nb] : '';
+      template = template.replace(new RegExp('\\$' + nb, 'g'), replace);
+    }
+  }
+  return template;
+}
+
 /**
  *
  * @param val1
@@ -24,6 +38,13 @@ function fuzzyCompare(val1, val2) {
   return val1 !== null && val2 !== null &&
     val1.replace(/ /gi, '').toLowerCase() ===
     val2.replace(/ /gi, '').toLowerCase();
+}
+function fuzzyCompareNumber(value1, value2, num = 3) {
+  return parseFloat(value1).toFixed(num) === parseFloat(value2).toFixed(num);
+}
+
+function fuzzyBetweenNumber(value, min, max) {
+  return value >= min && value <= max;
 }
 
 function createHash(str) {
@@ -284,9 +305,12 @@ function splitUserAgent(userAgent) {
   return {tokens, groups, hash, path};
 }
 
+
 module.exports = {
   matchUserAgent,
   fuzzyCompare,
+  fuzzyCompareNumber,
+  fuzzyBetweenNumber,
   versionCompare,
   versionTruncate,
   hasAndroidTableFragment,
@@ -303,4 +327,5 @@ module.exports = {
   hasFile,
   trimChars,
   splitUserAgent,
+  matchReplace
 };

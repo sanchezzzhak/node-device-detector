@@ -2,54 +2,6 @@ const ParserAbstract = require('./../abstract-parser');
 const DataPacker = require('./../../lib/data-packer');
 
 
-/**
- * @typedef InfoResult
- * @param {InfoDisplay} display
- * @param {number|null} sim
- * @param {string|InfoSize} size
- * @param {string} weight
- * @param {string|null} release
- * @param {string|null} os
- * @param {InfoHardware} hardware
- * @param {InfoPerformance} performance
- *
- * @typedef InfoResolution
- * @param {string} width
- * @param {string} height
- *
- * @typedef InfoDisplay
- * @param {string} size
- * @param {string|InfoResolution} resolution
- * @param {string} ratio
- * @param {string} ppi
- *
- * @typedef InfoPerformance
- * @param {number} antutu
- *
- * @typedef InfoHardwareCPU:
- * @param {string} name
- * @param {string} type
- * @param {number} cores
- * @param {number} clock_rate
- * @param {string|null} process
- * @param {number} gpu_id
- *
- * @typedef InfoHardwareGPU:
- * @param {string} name
- * @param {number} clock_rate
- *
- * @typedef InfoHardware
- * @param {number} ram
- * @param {number} cpu_id
- * @param {InfoHardwareCPU} cpu
- * @param {InfoHardwareGPU} gpu
- *
- * @typedef InfoSize
- * @param {string} width
- * @param {string} height
- * @param {string} thickness
- *
- */
 
 /*
 
@@ -57,7 +9,7 @@ const DataPacker = require('./../../lib/data-packer');
 > year, weight, release, display.size, display.resolution, display.ratio
 ```js
 const InfoDevice = require('node-device-detector/parser/device/info-device');
-const infoDevice = new InfoDevice;
+const infoDevice = new InfoDevice();
 const result = infoDevice.info('Asus', 'Zenfone 4');
 console.log('Result information about device', result);
 /*
@@ -125,7 +77,7 @@ const getDataByIdInCollection = (collection, id) => {
 const castResolutionPPI = (width, height, size) => {
   return Math.round(
     Math.sqrt(Math.pow(parseInt(width), 2) + Math.pow(parseInt(height), 2)) /
-      parseFloat(size)
+    parseFloat(size)
   );
 };
 
@@ -161,14 +113,14 @@ const mergeDeep = (target, source) => {
       [prop]: isDeep(prop)
         ? mergeDeep(target[prop], source[prop])
         : source[prop]
-        ? source[prop]
-        : target[prop],
+          ? source[prop]
+          : target[prop]
     }))
     .reduce((a, b) => ({ ...a, ...b }), {});
 
   return {
     ...target,
-    ...replaced,
+    ...replaced
   };
 };
 
@@ -192,7 +144,7 @@ const sortObject = (o) =>
 
 /**
  * @usage
- * let i = new InfoDevice
+ * let i = new InfoDevice();
  * let result = i.info('Asus', 'ZenFone 4')
  * console.log({result});
  * // result if found
@@ -221,8 +173,13 @@ const SHORT_KEYS = {
   OI: 'os_id',                  // int: OS ID
   OV: 'os_version',             // int: OS ID
   SM: 'sim',                    // int: count SIM
-  TT: 'performance.antutu',     // int: antutu score
+  TT: 'performance.antutu',      // int: antutu score
+  TG: 'performance.geekbench'      // int: geekbench score
 };
+
+let collectionHardwareCPU = null;
+let collectionHardwareGPU = null;
+let collectionSoftware = null;
 
 /**
  * Class for obtaining information on a device
@@ -237,25 +194,22 @@ class InfoDevice extends ParserAbstract {
     this.resolutionConvertObject = false;
     /** @type {string} fixture path to file */
     this.fixtureFile = 'device-info/device.yml';
-
-    this.collectionHardwareCPU = {};
-    this.collectionHardwareGPU = {};
     this.loadCollection();
   }
 
   loadCollection() {
     super.loadCollection();
     // load hardware properties
-    this.collectionHardwareCPU = this.loadYMLFile(
-      'device-info/hardware-cpu.yml'
-    );
-    this.collectionHardwareGPU = this.loadYMLFile(
-      'device-info/hardware-gpu.yml'
-    );
+    if (collectionHardwareCPU === null) {
+      collectionHardwareCPU = this.loadYMLFile('device-info/hardware-cpu.yml');
+    }
+    if (collectionHardwareGPU === null) {
+      collectionHardwareGPU = this.loadYMLFile('device-info/hardware-gpu.yml');
+    }
     // load software properties
-    this.collectionSoftware = this.loadYMLFile(
-      'device-info/software.yml'
-    );
+    if (collectionSoftware === null) {
+      collectionSoftware = this.loadYMLFile('device-info/software.yml');
+    }
   }
 
   /**
@@ -279,38 +233,36 @@ class InfoDevice extends ParserAbstract {
    * @returns {null|*}
    */
   getOsById(id) {
-    if (this.collectionSoftware['os'] === void 0) {
+    if (collectionSoftware['os'] === void 0) {
       return null;
     }
-    return getDataByIdInCollection(this.collectionSoftware['os'], id);
+    return getDataByIdInCollection(collectionSoftware['os'], id);
   }
 
   getGpuById(id) {
-    if (this.collectionHardwareGPU['gpu'] === void 0) {
+    if (collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
-    return getDataByIdInCollection(this.collectionHardwareGPU['gpu'], id);
+    return getDataByIdInCollection(collectionHardwareGPU['gpu'], id);
   }
 
   getCpuById(id) {
-    if (this.collectionHardwareCPU['cpu'] === void 0) {
+    if (collectionHardwareCPU['cpu'] === void 0) {
       return null;
     }
-    return getDataByIdInCollection(this.collectionHardwareCPU['cpu'], id);
+    return getDataByIdInCollection(collectionHardwareCPU['cpu'], id);
   }
 
   find(deviceBrand, deviceModel, mergeData = {}) {
+
     if (!deviceBrand.length || !deviceModel.length) {
       return null;
     }
 
     const fixStringName = (str) => str.replace(new RegExp('_', 'g'), ' ');
 
-    deviceBrand = fixStringName(deviceBrand);
-    deviceModel = fixStringName(deviceModel);
-
-    let brand = deviceBrand.trim().toLowerCase();
-    let model = deviceModel.trim().toLowerCase();
+    let brand = fixStringName(deviceBrand).trim().toLowerCase();
+    let model = fixStringName(deviceModel).trim().toLowerCase();
 
     if (
       this.collection[brand] === void 0 ||
@@ -352,11 +304,11 @@ class InfoDevice extends ParserAbstract {
       if (os !== null) {
         output.push(os.name);
       }
-      if(result.os_version) {
+      if (result.os_version) {
         output.push(result.os_version);
         delete result.os_version;
       }
-      if(output.length === 2) {
+      if (output.length === 2) {
         result.os = output.join(' ');
       }
     }
@@ -429,11 +381,14 @@ class InfoDevice extends ParserAbstract {
 
   /**
    * Converts the values of the performance section to the desired format type
-   * @param result {InfoResult}
+   * @param result {ResultDeviceInfo}
    */
   prepareResultPerformance(result) {
-    if(result.performance !== void 0 && result.performance.antutu !== void 0) {
+    if (result.performance !== void 0 && result.performance.antutu !== void 0) {
       result.performance.antutu = parseInt(result.performance.antutu);
+    }
+    if (result.performance !== void 0 && result.performance.geekbench !== void 0) {
+      result.performance.geekbench = parseInt(result.performance.geekbench);
     }
   }
 
@@ -441,7 +396,7 @@ class InfoDevice extends ParserAbstract {
    * The main method for obtaining information on brand and device
    * @param {String} deviceBrand
    * @param {String} deviceModel
-   * @return {InfoResult|null}
+   * @return {ResultDeviceInfo|null}
    */
   info(deviceBrand, deviceModel) {
     return this.find(deviceBrand, deviceModel, {});
