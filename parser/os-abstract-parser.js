@@ -3,12 +3,14 @@ const helper = require('./helper');
 
 const OS_SYSTEMS = require('./os/os_systems');
 const OS_FAMILIES = require('./os/os_families');
+
 const ANDROID_APP_LIST = [
   'com.hisense.odinbrowser',
   'com.seraphic.openinet.pre',
   'com.appssppa.idesktoppcbrowser',
   'every.browser.inc'
 ];
+
 const CLIENTHINT_MAPPING = {
   'GNU/Linux': ['Linux'],
   'Mac': ['MacOS']
@@ -50,10 +52,12 @@ function comparePlatform(platform, bitness = '') {
   if (platform.indexOf('sh4') !== -1) {
     return 'SuperH';
   }
+  if (platform.indexOf('sparc64') !== -1) {
+    return 'SPARC64';
+  }
   if (platform.indexOf('x64') !== -1 || (platform.indexOf('x86') !== -1 && bitness === '64')) {
     return 'x64';
   }
-
   if (platform.indexOf('x86') !== -1) {
     return 'x86';
   }
@@ -225,7 +229,6 @@ class OsAbstractParser extends ParserAbstract {
 
       if ('PICO OS' === name) {
         version = data.version;
-        short = 'PIC'
       }
 
       if (data && 'Fire OS' === data.name) {

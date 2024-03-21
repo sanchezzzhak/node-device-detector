@@ -111,7 +111,7 @@ function versionTruncate(version, maxMinorParts) {
  */
 function hasAndroidTableFragment(userAgent) {
   return (
-    matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null
+    matchUserAgent('Android( [.0-9]+)?; Tablet', userAgent) !== null
   );
 }
 
@@ -133,7 +133,7 @@ function hasTouchFragment(userAgent) {
 }
 
 function hasVRFragment(userAgent) {
-  return matchUserAgent('Android( [\.0-9]+)?; Mobile VR;| VR ', userAgent) !== null
+  return matchUserAgent('Android( [.0-9]+)?; Mobile VR;| VR ', userAgent) !== null
 }
 
 /**
@@ -160,7 +160,7 @@ function hasOperaTVStoreFragment(userAgent) {
  */
 function hasAndroidTVFragment(userAgent) {
   return matchUserAgent(
-      'Andr0id|(?:Android(?: UHD)?|Google) TV|[(]lite[)] TV|[(]TV;|BRAVIA',
+      'Andr0id|(?:Android(?: UHD)?|Google) TV|[(]lite[)] TV|BRAVIA|[(]TV;',
       userAgent
   ) !== null;
 }

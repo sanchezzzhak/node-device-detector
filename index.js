@@ -504,11 +504,15 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.WEARABLE;
     }
 
+    /**
+     * Chrome on Android passes the device type based on the keyword 'Mobile'
+     * If it is present the device should be a smartphone, otherwise it's a tablet
+     * See https://developer.chrome.com/multidevice/user-agent#chrome_for_android_user_agent
+     * Note: We do not check for browser (family) here, as there might be mobile apps using Chrome, that won't have
+     *       a detected browser, but can still be detected. So we check the useragent for Chrome instead.
+     */
     if (
-      deviceType === '' &&
-      osFamily === 'Android' &&
-      helper.matchUserAgent('Chrome/[.0-9]*', userAgent)
-    ) {
+      deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[.0-9]*', userAgent)) {
       if (helper.matchUserAgent('(Mobile|eliboM)', userAgent) !== null) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
       } else{
@@ -519,24 +523,32 @@ class DeviceDetector {
     /**
      * Some UA contain the fragment 'Pad/APad', so we assume those devices as tablets
      */
-    if (deviceType === DEVICE_TYPE.SMARTPHONE
-      && helper.matchUserAgent('Pad/APad', userAgent)
-    ) {
+    if (deviceType === DEVICE_TYPE.SMARTPHONE && helper.matchUserAgent('Pad/APad', userAgent)) {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
-    if (
-      deviceType === '' &&
-      (helper.hasAndroidTableFragment(userAgent) ||
-        helper.hasOperaTableFragment(userAgent))
-    ) {
+    /**
+     * Some UA contain the fragment 'Android; Tablet;' or 'Opera Tablet', so we assume those devices as tablets
+     */
+    if (deviceType === '' && (helper.hasAndroidTableFragment(userAgent) || helper.hasOperaTableFragment(userAgent))) {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
+    /**
+     * Some user agents simply contain the fragment 'Android; Mobile;', so we assume those devices as smartphones
+     */
     if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
 
+    /**
+     * Android up to 3.0 was designed for smartphones only. But as 3.0, which was tablet only, was published
+     * too late, there were a bunch of tablets running with 2.x
+     * With 4.0 the two trees were merged and it is for smartphones and tablets
+     *
+     * So were are expecting that all devices running Android < 2 are smartphones
+     * Devices running Android 3.X are tablets. Device type of Android 2.X and 4.X+ are unknown
+     */
     if (deviceType === '' && osName === 'Android' && osVersion !== '') {
       if (helper.versionCompare(osVersion, '2.0') === -1) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
@@ -548,6 +560,9 @@ class DeviceDetector {
       }
     }
 
+    /**
+     * All detected feature phones running android are more likely a smartphone
+     */
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
@@ -560,6 +575,15 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.FEATURE_PHONE;
     }
 
+    /**
+     * According to http://msdn.microsoft.com/en-us/library/ie/hh920767(v=vs.85).aspx
+     * Internet Explorer 10 introduces the "Touch" UA string token. If this token is present at the end of the
+     * UA string, the computer has touch capability, and is running Windows 8 (or later).
+     * This UA string will be transmitted on a touch-enabled system running Windows 8 (RT)
+     *
+     * As most touch enabled devices are tablets and only a smaller part are desktops/notebooks we assume that
+     * all Windows 8 touch devices are tablets.
+     */
     if (
       deviceType === '' &&
       (osName === 'Windows RT' ||
@@ -569,14 +593,28 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
-    // check tv fragments and tv clients
+    /**
+     * All devices running Opera TV Store are assumed to be a tv
+     */
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (helper.hasAndroidTVFragment(userAgent)) {
+    }
+    /**
+     * All devices that contain Andr0id in string are assumed to be a tv
+     */
+    if (helper.hasAndroidTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
+    }
+    /**
+     * All devices running Tizen TV or SmartTV are assumed to be a tv
+     */
+    if (deviceType === '' && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (CLIENT_TV_LIST.indexOf(clientName) !== -1) {
+    }
+    /**
+     * Devices running those clients are assumed to be a TV
+     */
+    if (CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
 
