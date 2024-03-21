@@ -62,6 +62,7 @@ class Browser extends ClientAbstractParser {
     hint,
     hash
   ) {
+
     let type = CLIENT_TYPE.BROWSER;
     let name = '';
     let version = '';
@@ -70,7 +71,7 @@ class Browser extends ClientAbstractParser {
     let short = '';
     let family = '';
     // client-hint+user-agent
-    if (hint.name && hint.version) {
+    if (hint && hint.name && hint.version) {
       name = hint.name;
       version = hint.version;
       short = hint.short_name;

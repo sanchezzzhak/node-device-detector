@@ -223,6 +223,11 @@ class OsAbstractParser extends ParserAbstract {
         short = 'HAR';
       }
 
+      if (name === 'PICO OS') {
+        version = data.version;
+        short = 'PIC'
+      }
+
       if (data && 'Fire OS' === data.name) {
         let majorVersion = ~~version.split('.', 1)[0];
         short = data.short_name;
@@ -245,15 +250,18 @@ class OsAbstractParser extends ParserAbstract {
       family = this.parseOsFamily(short);
     }
 
-    if (clientHints
-      && data
-      && clientHints.app
-      && ANDROID_APP_LIST.indexOf(clientHints.app) !== -1
-      && data.name !== 'Android'
-    ) {
-      name = 'Android';
-      short = 'ADR';
-      family = 'Android';
+    if (clientHints && data && clientHints.app) {
+      if (ANDROID_APP_LIST.indexOf(clientHints.app) !== -1 && data.name !== 'Android') {
+        name = 'Android';
+        short = 'ADR';
+        family = 'Android';
+      }
+      if (clientHints.app === 'org.lineageos.jelly' && name !== 'Lineage OS') {
+        name    = 'Lineage OS';
+        family  = 'Android';
+        short   = 'LEN';
+        version = '';
+      }
     }
 
     if (platform === '' && data) {
@@ -289,6 +297,9 @@ class OsAbstractParser extends ParserAbstract {
     }
     if (this.getBaseRegExp('sh4').test(userAgent)) {
       return 'SuperH';
+    }
+    if (this.getBaseRegExp('sparc64').test(userAgent)) {
+      return 'SPARC64';
     }
     if (this.getBaseRegExp('64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|amd64|x86_?64').test(userAgent)) {
       return 'x64';

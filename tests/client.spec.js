@@ -53,14 +53,8 @@ describe('tests clients', function () {
           }
 
           // fix version fixture
-          if (
-              fixture.client.version !== null &&
-              typeof fixture.client.version === 'number'
-          ) {
-            fixture.client.version = normalizeVersion(
-                String(fixture.client.version),
-                2
-            );
+          if (fixture.client.version !== null && typeof fixture.client.version === 'number') {
+            fixture.client.version = String(fixture.client.version);
           }
 
           if (result.client.short_name) {

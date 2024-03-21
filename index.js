@@ -761,7 +761,11 @@ class DeviceDetector {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
 
     let result = {};
+
+    console.log(this.clientIndexes);
+
     for (let name in this.clientParserList) {
+
       let parser = this.clientParserList[name];
       if (this.clientIndexes && extendParsers.includes(name)) {
         let hash = parser.parseFromHashHintsApp(clientHints);
@@ -777,21 +781,6 @@ class DeviceDetector {
       let resultMerge = parser.parse(userAgent, clientHints);
       if (resultMerge) {
         return Object.assign(result, resultMerge);
-      }
-    }
-
-    if (this.clientIndexes) {
-      for (let i = 0, l = extendParsers.length; i < l; i++) {
-        let name = extendParsers[i];
-        let parser = this.clientParserList[name];
-        if (!parser) {
-          continue;
-        }
-
-        let resultMerge = parser.parse(userAgent, clientHints);
-        if (resultMerge) {
-          return Object.assign(result, resultMerge);
-        }
       }
     }
 

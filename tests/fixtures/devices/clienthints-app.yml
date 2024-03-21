@@ -203,7 +203,7 @@
     http-x-requested-with: com.yahoo.onesearch
   os:
     name: Android
-    version: 7.1.1
+    version: '7.1.1'
     platform: ""
   client:
     type: mobile app
@@ -437,7 +437,7 @@
     http-x-requested-with: com.aol.mobile.aolapp
   os:
     name: Android
-    version: 6.0.1
+    version: '6.0.1'
     platform: ""
   client:
     type: mobile app
@@ -599,7 +599,7 @@
     http-x-requested-with: jp.gocro.smartnews.android
   os:
     name: Android
-    version: 8.0.0
+    version: '8.0.0'
     platform:
   client:
     type: mobile app
@@ -617,7 +617,7 @@
     http-x-requested-with: com.lenovo.anyshare.gps
   os:
     name: Android
-    version: 8.0.0
+    version: '8.0.0'
     platform:
   client:
     type: mobile app
@@ -873,7 +873,7 @@
     platform: ""
   client:
     type: mobile app
-    name: Microsoft Bing Search
+    name: Microsoft Bing
     version: 22.2.400225301
   device:
     type: smartphone
@@ -891,7 +891,7 @@
     platform: ""
   client:
     type: mobile app
-    name: Microsoft Bing Search
+    name: Microsoft Bing
     version: 21.9.400310302
   device:
     type: smartphone
@@ -959,7 +959,7 @@
     x-requested-with: com.jaumo
   os:
     name: Android
-    version: 8.1.0
+    version: '8.1.0'
     platform: ""
   client:
     type: mobile app
@@ -977,7 +977,7 @@
     x-requested-with: com.skout.android
   os:
     name: Android
-    version: 6.0.1
+    version: '6.0.1'
     platform: ""
   client:
     type: mobile app
@@ -1123,7 +1123,7 @@
     http-x-requested-with: com.andrewshu.android.redditdonation
   os:
     name: Android
-    version: 8.0.0
+    version: '8.0.0'
     platform: ""
   client:
     type: mobile app
@@ -1249,7 +1249,7 @@
     http-x-requested-with: com.baidu.searchbox
   os:
     name: HarmonyOS
-    version: 2.2.0
+    version: '2.2.0'
     platform: ""
   client:
     type: mobile app
@@ -1339,7 +1339,7 @@
     http-x-requested-with: com.tcl.live
   os:
     name: Android
-    version: 5.1.1
+    version: '5.1.1'
     platform: ""
   client:
     type: mobile app
@@ -1411,7 +1411,7 @@
     http-x-requested-with: com.opera.app.news
   os:
     name: Android
-    version: 8.1.0
+    version: '8.1.0'
     platform: ""
   client:
     type: mobile app
@@ -1537,7 +1537,7 @@
     http-x-requested-with: com.twitter.android
   os:
     name: Android
-    version: 6.0.1
+    version: '6.0.1'
     platform: ""
   client:
     type: mobile app
@@ -1555,7 +1555,7 @@
     http-x-requested-with: com.waze
   os:
     name: Android
-    version: 5.1.1
+    version: '5.1.1'
     platform: ""
   client:
     type: mobile app
@@ -1591,7 +1591,7 @@
     http-x-requested-with: com.cleanmaster.mguard
   os:
     name: Android
-    version: 5.1.1
+    version: '5.1.1'
     platform: ""
   client:
     type: mobile app
@@ -2231,5 +2231,377 @@
     type: smartphone
     brand: Google
     model: Pixel 5
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 14; SM-A536B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.231 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.fsecure.ms.dnafi
+  os:
+    name: Android
+    version: "14"
+    platform: ""
+  client:
+    type: mobile app
+    name: DNA Digiturva
+    version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy A53 5G
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; STK-LX1 Build/HUAWEISTK-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.fsecure.ms.teliasweden
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: Telia Trygg
+    version: ""
+  device:
+    type: smartphone
+    brand: Huawei
+    model: P smart Z
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.fsecure.ms.upc.ch
+  os:
+    name: Android
+    version: "5.0"
+    platform: ""
+  client:
+    type: mobile app
+    name: UPC Internet Security
+    version: ""
+  device:
+    type: phablet
+    brand: Samsung
+    model: Galaxy Note 3
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 12; SM-G975F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.fsecure.ms.sfr
+  os:
+    name: Android
+    version: "12"
+    platform: ""
+  client:
+    type: mobile app
+    name: SFR Sécurité
+    version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy S10+
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; SM-A202F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.43 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.fsecure.ms.sonera
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: mobile app
+    name: Telia Turvapaketti
+    version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy A20e
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; SM-G965U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36 DaumApps/6.9.27 DaumDevice/mobile
+  headers:
+    http-x-requested-with: net.daum.android.daum
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: Daum
+    version: 6.9.27
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy S9+
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; U; Android 4.4; en-us; Nexus 4 Build/JOP24G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  headers:
+    http-x-requested-with: com.ezt.vpn
+  os:
+    name: Android
+    version: "4.4"
+    platform: ""
+  client:
+    type: mobile app
+    name: EZVPN
+    version: ""
+  device:
+    type: smartphone
+    brand: Google
+    model: Nexus 4
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; 5007G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.nocardteam.nocardvpn
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: NoCard VPN
+    version: ""
+  device:
+    type: smartphone
+    brand: Alcatel
+    model: 1V (2020)
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; 5007G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.nocardteam.nocardvpn.lite
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: NoCard VPN Lite
+    version: ""
+  device:
+    type: smartphone
+    brand: Alcatel
+    model: 1V (2020)
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: +Simple Browser
+  headers:
+    http-x-requested-with: com.massimple.nacion.parana.es
+  os: [ ]
+  client:
+    type: mobile app
+    name: +Simple
+    version: ""
+  device:
+    type: ""
+    brand: ""
+    model: ""
+  os_family: Unknown
+  browser_family: Unknown
+-
+  user_agent: +Simple Browser
+  headers:
+    http-x-requested-with: com.massimple.nacion.gcba.es
+  os: [ ]
+  client:
+    type: mobile app
+    name: +Simple
+    version: ""
+  device:
+    type: ""
+    brand: ""
+    model: ""
+  os_family: Unknown
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; SM-G965U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 mkBrowser/1.5.1
+  headers:
+    http-x-requested-with: com.antivirus.master.cmsecurity
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: CM Security
+    version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy S9+
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; JLN-LX3 Build/HUAWEIJLN-LX3; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 Sapphire/23.3.401205602
+  headers:
+    http-x-requested-with: com.microsoft.math
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: mobile app
+    name: Microsoft Math Solver
+    version: ""
+  device:
+    type: smartphone
+    brand: Huawei
+    model: Nova 9 SE
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; ZTE 8010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Instabridge/21.9.0
+  headers:
+    http-x-requested-with: com.instabridge.android
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: mobile app
+    name: Instabridge
+    version: 21.9.0
+  device:
+    type: phablet
+    brand: ZTE
+    model: Blade V2020 Smart
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 Whatplay
+  headers:
+    http-x-requested-with: com.repotools.whatplay
+  os:
+    name: Android
+    version: "11"
+    platform: ""
+  client:
+    type: mobile app
+    name: Whatplay
+    version: ""
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Mi 9
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: 'Mozilla/5.0  App/2000002 Plu/3013 channel/0main  (Linux; Android 12; CET-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.2526.83 Mobile Safari/537.36 SearchCraft/2.6.1 (Baidu; P2 11.3.1)'
+  headers:
+    http-x-requested-with: com.saf.seca
+  os:
+    name: Android
+    version: "12"
+    platform: ""
+  client:
+    type: mobile app
+    name: SearchCraft
+    version: 2.6.1
+  device:
+    type: smartphone
+    brand: Huawei
+    model: Mate 50
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; HMA-L29 Build/HUAWEIHMA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36 HMSCore/6.5.1.302
+  headers:
+    http-x-requested-with: com.huawei.hwsearch
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: Petal Search
+    version: ""
+  device:
+    type: smartphone
+    brand: Huawei
+    model: Mate 20
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; Redmi 8A Dual Build/QKQ1.191014.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 appname/PLAYit appverc/20602004 appname/PLAYit appverc/20602004 appname/PLAYit appverc/20602004 appname/PLAYit appverc/20602004
+  headers:
+    http-x-requested-with: com.playit.videoplayer
+  os:
+    name: Android
+    version: "10"
+    platform: ""
+  client:
+    type: mobile app
+    name: PLAYit
+    version: ""
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Redmi 8A Dual
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11.0; Orange TV Box Build/QTG1.200615.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.22 Mobile Safari/537.36
+  headers:
+    http-x-requested-with: com.droidlogic.xlauncher
+  os:
+    name: Android
+    version: "11.0"
+    platform: ""
+  client:
+    type: mobile app
+    name: X Launcher
+    version: ""
+  device:
+    type: tv
+    brand: Orange
+    model: TV Box
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 12; SM-A032F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36 binu/7441 (5b9a75f88345479c)
+  headers:
+    http-x-requested-with: nu.bi.moya
+  os:
+    name: Android
+    version: "12"
+    platform: ""
+  client:
+    type: mobile app
+    name: Moya
+    version: ""
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy A03 Core
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 14; Pixel 6 Build/UQ1A.240105.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0
+  headers:
+    http-x-requested-with: com.microsoft.copilot
+  os:
+    name: Android
+    version: "14"
+    platform: ""
+  client:
+    type: mobile app
+    name: Microsoft Copilot
+    version: ""
+  device:
+    type: smartphone
+    brand: Google
+    model: Pixel 6
   os_family: Android
   browser_family: Unknown
