@@ -93,13 +93,12 @@ class Browser extends ClientAbstractParser {
         }
 
         // https://bbs.360.cn/thread-16096544-1-1.html
-        if (/^15/.test(version) && /^144/.test(data.version)) {
+        if (/^15/.test(version) && /^114/.test(data.version)) {
           name          = '360 Secure Browser';
           short         = '3B';
           engine        = data.engine;
           engineVersion = data.engine_version;
         }
-
 
         if ('Atom' === name || 'Huawei Browser' === name) {
           version = data.version;
@@ -115,11 +114,7 @@ class Browser extends ClientAbstractParser {
         }
 
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
-        if (
-          data.name &&
-          'Chromium' === name &&
-          'Chromium' !== data.name
-        ) {
+        if (data.name && 'Chromium' === name && 'Chromium' !== data.name) {
           name = data.name;
           short = data.short_name;
           version = data.version;
