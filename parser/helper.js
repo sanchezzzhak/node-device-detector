@@ -283,7 +283,7 @@ function getTokensForUserAgent(userAgent) {
 function splitUserAgent(userAgent) {
   let tokens = getTokensForUserAgent(userAgent);
   let groups = getGroupForUserAgentTokens(tokens);
-  
+
   let parts = [];
   for (let key in groups) {
     if (typeof groups[key] !== 'string' || !groups[key]) {
@@ -305,7 +305,10 @@ function splitUserAgent(userAgent) {
   }
   let hash = createHash(parts.join('.')).replace('-', '');
   let path = parts.join('.');
-  
+
+  // console.log({tokens, groups, hash, path});
+
+
   return {tokens, groups, hash, path};
 }
 

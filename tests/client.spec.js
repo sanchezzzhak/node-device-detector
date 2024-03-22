@@ -14,9 +14,11 @@ const {
 
 const DeviceDetector = require('../index');
 const ClientHints = require('../client-hints');
+const CLIENT_TYPE = require('../parser/const/client-type');
+const CLIENT_PARSER = require('../parser/const/client-parser');
 const TIMEOUT = 6000;
 const detector = new DeviceDetector();
-const clientHint = new ClientHints;
+const clientHint = new ClientHints();
 let fixtureFolder = getFixtureFolder();
 let ymlClientFiles = fs.readdirSync(fixtureFolder + 'clients/');
 
@@ -27,45 +29,60 @@ describe('tests clients', function () {
     if (skipFiles.indexOf(file) !== -1) {
       return;
     }
+
     describe('file fixture ' + file, function () {
       let fixtureData = YAMLLoad(fixtureFolder + 'clients/' + file);
       let total = fixtureData.length;
-      //fixtureData= [  fixtureData[208] ];
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function () {
-
           let clientHintData = clientHint.parse(fixture.headers || {});
-          let result = detector.detect(fixture.user_agent, clientHintData);
+          let fixtureClientType = fixture.client.type ?? '';
+          let cleint = {};
+
+          switch (fixtureClientType) {
+            case CLIENT_TYPE.LIBRARY:
+              cleint = detector.getParseClient(CLIENT_PARSER.LIBRARY).parse(fixture.user_agent, clientHintData)
+              break;
+            case CLIENT_TYPE.BROWSER:
+              cleint = detector.getParseClient(CLIENT_PARSER.BROWSER).parse(fixture.user_agent, clientHintData)
+              break;
+            default:
+              cleint = detector.detect(fixture.user_agent, clientHintData).client;
+              break;
+          }
+
           let messageError = 'fixture data\n' + perryJSON(fixture);
-          perryTable(fixture, result);
+          perryTable(fixture, cleint);
+
 
           // fix values fixture null
-          if (result.client.version === '' && fixture.client.version === null) {
-            result.client.version = fixture.client.version;
+          if (cleint.version === '' && fixture.client.version === null) {
+            cleint.version = fixture.client.version;
           }
 
-          if (!result.client.engine_version && fixture.client.engine_version === null) {
-            result.client.engine_version = fixture.client.engine_version;
+          if (!cleint.engine_version && fixture.client.engine_version === null) {
+            cleint.engine_version = fixture.client.engine_version;
           }
 
-          if (!result.client.engine && fixture.client.engine === null) {
-            result.client.engine = fixture.client.engine;
+          if (!cleint.engine && fixture.client.engine === null) {
+            cleint.engine = fixture.client.engine;
           }
 
           // fix version fixture
           if (fixture.client.version !== null && typeof fixture.client.version === 'number') {
-            fixture.client.version = String(fixture.client.version);
+            fixture.version = String(fixture.client.version);
           }
 
-          if (result.client.short_name) {
-            expect(result.client.short_name, messageError).to.not.equal('UNK');
-            delete result.client.short_name;
+          if (cleint.short_name) {
+            expect(cleint.short_name, messageError).to.not.equal('UNK');
+            delete cleint.short_name;
           }
 
           if (fixture.client && fixture.client.family === null) {
             fixture.client.family = '';
           }
-          expect(fixture.client, messageError).to.deep.equal(result.client);
+
+          expect(fixture.client, messageError).to.deep.equal(cleint);
         });
       });
     });

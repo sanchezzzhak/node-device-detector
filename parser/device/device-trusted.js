@@ -98,6 +98,15 @@ const checkDisplaySize = (deviceData, clientHints) => {
   return true;
 };
 
+const isGpuExistForClientHints = (clientHints) => {
+  return clientHints.meta && clientHints.meta.gpu && clientHints.meta.gpu.length > 0;
+}
+
+const isAppleBrandForDeviceData = (deviceData) => {
+  return deviceData.brand === 'Apple'
+    || (deviceData.brand === '' && /ip(?:hone|[ao]d)/i.test(deviceData.code))
+};
+
 /**
  * @param {ResultDevice} deviceData
  * @param {Object} clientHints
@@ -117,6 +126,7 @@ const checkGpu = (deviceData, clientHints) => {
   return true;
 };
 
+
 class DeviceTrusted {
 
   /**
@@ -128,26 +138,31 @@ class DeviceTrusted {
    */
   static check(osData, clientData, deviceData, clientHints) {
 
-    const AppleGpuRegex = /GPU Apple/i;
-    const hasGpuExist = clientHints.meta && clientHints.meta.gpu && clientHints.meta.gpu.length > 0;
+    const regexAppleGpu = /GPU Apple/i;
+    const isGpuExist = isGpuExistForClientHints(clientHints);
+    const isAppleBrand = isAppleBrandForDeviceData(deviceData);
+
     // is Apple and lack of client-hints
-    if (deviceData.brand === 'Apple' && clientHints.client.brands.length > 0) {
+    if (isAppleBrand && clientHints.client.brands.length > 0) {
       return false;
     }
     // is Apple and check correct gpu name
-    if (deviceData.brand === 'Apple' && hasGpuExist && !AppleGpuRegex.test(clientHints.meta.gpu)) {
+    if (isAppleBrand && isGpuExist && !regexAppleGpu.test(clientHints.meta.gpu)) {
       return false;
-    } else if (deviceData.brand === 'Apple' && hasGpuExist && AppleGpuRegex.test(clientHints.meta.gpu)) {
+    } else if (isAppleBrand && isGpuExist && regexAppleGpu.test(clientHints.meta.gpu)) {
       return true;
     }
 
     if (deviceData.info) {
+      // check for display size
       if (!checkDisplaySize(deviceData, clientHints)) {
         return false;
       }
+      // check for gpu name
       if (!checkGpu(deviceData, clientHints)) {
         return false;
       }
+
       return true;
     }
 
