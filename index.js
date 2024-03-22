@@ -511,8 +511,7 @@ class DeviceDetector {
      * Note: We do not check for browser (family) here, as there might be mobile apps using Chrome, that won't have
      *       a detected browser, but can still be detected. So we check the useragent for Chrome instead.
      */
-    if (
-      deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[.0-9]*', userAgent)) {
+    if (deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[.0-9]*', userAgent)) {
       if (helper.matchUserAgent('(Mobile|eliboM)', userAgent) !== null) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
       } else{
@@ -748,10 +747,8 @@ class DeviceDetector {
     }
 
     // client hints
-    if (result.model === '') {
-      if (clientHints.device && clientHints.device.model !== '') {
-        result.model = clientHints.device.model;
-      }
+    if (result.model === '' && clientHints.device && clientHints.device.model !== '') {
+      result.model = clientHints.device.model;
     }
 
     // device info or deviceTrusted
@@ -836,15 +833,6 @@ class DeviceDetector {
     deviceData,
     clientHints
   ) {
-    let deviceDataType = this.parseDeviceType(
-      userAgent,
-      osData,
-      clientData,
-      deviceData,
-      clientHints
-    );
-
-    deviceData = Object.assign(deviceData, deviceDataType);
 
     /**
      * if it's fake UA then it's best not to identify it as Apple running Android OS or GNU/Linux
@@ -862,6 +850,17 @@ class DeviceDetector {
     if (deviceData.brand === '' && APPLE_OS_LIST.indexOf(osData.name) !== -1) {
       deviceData.brand = 'Apple';
     }
+
+    let deviceDataType = this.parseDeviceType(
+      userAgent,
+      osData,
+      clientData,
+      deviceData,
+      clientHints
+    );
+
+    deviceData = Object.assign(deviceData, deviceDataType);
+
 
     if (this.deviceTrusted) {
       deviceData.trusted = DeviceTrusted.check(osData, clientData, deviceData, clientHints);
@@ -918,7 +917,7 @@ class DeviceDetector {
   /**
    * detect os, client and device for sync
    * @param {string} userAgent - string from request header['user-agent']
-   * @param clientHints
+   * @param {{}} clientHints
    * @return {DetectResult}
    */
   detect(userAgent, clientHints = {}) {

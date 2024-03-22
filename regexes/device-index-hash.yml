@@ -444,14 +444,46 @@ sm-t865:
   - SA
 m2010j19sy:
   - XI
+sm-a536b:
+  - SA
+stk-lx1:
+  - HU
+sm-n9005:
+  - SA
+sm-g975f:
+  - SA
+sm-a202f:
+  - SA
+sm-g965u:
+  - SA
+nexus 4:
+  - GO
+5007g:
+  - AL
+jln-lx3:
+  - HU
+zte 8010:
+  - ZT
+mi 9:
+  - XI
+cet-al00:
+  - HU
+hma-l29:
+  - HU
+redmi 8a dual:
+  - XI
+orange tv box:
+  - OR
+sm-a032f:
+  - SA
+pixel 6:
+  - GO
 zc554kl:
   - AU
 dn2103:
   - 'ON'
 kfkawi:
   - KN
-sm-a032f:
-  - SA
 2201116sg:
   - XI
 sm-m426b:
@@ -1761,8 +1793,6 @@ sc-01f:
   - SU
 sm-n9006:
   - SA
-sm-n9005:
-  - SA
 sm-n9000q:
   - SA
 sm-n900t:
@@ -2081,8 +2111,6 @@ tecno le7n:
 tecno ld7:
   - TB
 zte a2121l:
-  - ZT
-zte 8010:
   - ZT
 redmi note 9s:
   - XI
@@ -2506,6 +2534,14 @@ aeoch:
 aeocw:
   - KN
 aeohy:
+  - KN
+aeocn:
+  - KN
+aeoat:
+  - KN
+aeota:
+  - KN
+aeobp:
   - KN
 i7u:
   - A9
@@ -9986,6 +10022,7 @@ neon_ray:
   - X1
 x-bo v10:
   - X3
+  - WCP
 x-bo v11:
   - X3
 xbo v7:
@@ -10667,6 +10704,7 @@ zte blade v0800:
   - ZT
 zte blade v10 vita:
   - ZT
+  - WCP
 zte blade v1000:
   - ZT
 zte blade v0720:
@@ -13684,6 +13722,7 @@ zte blade l210:
   - ZT
 zte blade v10:
   - ZT
+  - WCP
 zte blade a5 2020:
   - ZT
 zte blade a3 2020:
@@ -17786,8 +17825,6 @@ sm-j610fn:
   - SA
 sm-j120fn:
   - SA
-sm-g965u:
-  - SA
 was-lx3:
   - HU
 htc_d526h:
@@ -19199,8 +19236,6 @@ zs673ks:
   - AU
 fig-al10:
   - HU
-sm-g975f:
-  - SA
 sm-g973w:
   - SA
 nord n10 5g:
@@ -19222,6 +19257,7 @@ zte blade a7 2019ru:
   - ZT
 zte blade v10 vita ru:
   - ZT
+  - WCP
 zte blade a3 2020ru:
   - ZT
 zte blade a3 2019ru:
@@ -19932,8 +19968,6 @@ mi max:
   - XI
 axon mini:
   - ZT
-mi 9:
-  - XI
 mi a2:
   - XI
 myphone_fun6lite:
@@ -21765,8 +21799,6 @@ tecno cg6j:
   - TB
 v2068:
   - VV
-pixel 6:
-  - GO
 rmx3151:
   - RE
 ravoz z7 pro:
@@ -22494,8 +22526,6 @@ redmi 9c nfc:
 redmi 9c:
   - XI
 redmi 9a:
-  - XI
-redmi 8a dual:
   - XI
 silver_max:
   - KL
@@ -25648,8 +25678,6 @@ moto g 5g plus:
   - TC
 5002x:
   - AL
-5007g:
-  - AL
 5102b:
   - TC
 a7 pro:
@@ -26129,8 +26157,6 @@ summit:
 multilaser_gmax_2:
   - 1R
 sm-a536e:
-  - SA
-sm-a536b:
   - SA
 sm-a336e:
   - SA
@@ -27413,8 +27439,6 @@ sm-s426dl:
   - SA
 tecno be7:
   - TB
-jln-lx3:
-  - HU
 moto g4 plus:
   - MR
 moto g5:
@@ -30284,8 +30308,6 @@ pixel 7:
 sh-m22:
   - SH
 dco-al00:
-  - HU
-cet-al00:
   - HU
 ava-pa00:
   - YY
@@ -33693,6 +33715,7 @@ vetas v9:
   - VET
 vetas v10:
   - VET
+  - WCP
 intex aqua power iv:
   - IX
 itel a20:
@@ -34744,6 +34767,46 @@ infinix x6832:
   - IF
 rmx3785:
   - RE
+q5.8:
+  - UNQ
+space a5.8:
+  - UNQ
+ws054:
+  - WQ
+armadillo phone:
+  - PRA
+ttfone tt20:
+  - TTF
+core-z5:
+  - C1
+qrash:
+  - QA
+tagphone:
+  - 7G
+corn_c4:
+  - 4R
+safaricom et kimem:
+  - X1
+tesla_sp6_4_lite:
+  - C7
+ultramintt a6:
+  - OM
+ravoz v1:
+  - R9
+coolmintt a7:
+  - OM
+bullittgrouplimited s61:
+  - CA
+coolmintt x7:
+  - OM
+rmx3782:
+  - RE
+rmx3780:
+  - RE
+rmx3890:
+  - RE
+23100rn82l:
+  - XI
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -35616,8 +35679,6 @@ galaxy nexus:
   - GO
   - SA
 glass 1:
-  - GO
-nexus 4:
   - GO
 nexus 5:
   - GO
@@ -37396,8 +37457,6 @@ bla-l29:
   - HU
 bla-tl00:
   - HU
-hma-l29:
-  - HU
 hma-al00:
   - HU
 hma-l09:
@@ -37569,8 +37628,6 @@ pot-lx3:
 pot-lx1af:
   - HU
 pot-al00:
-  - HU
-stk-lx1:
   - HU
 vtr-l09:
   - HU
@@ -44215,6 +44272,68 @@ iplay50 mini:
   - 3A
 np01j:
   - '57'
+mid169:
+  - TK
+titaniumgtcolorsgo:
+  - XV
+elite octax:
+  - SW
+kfrapwi:
+  - KN
+ultramintt t10:
+  - OM
+kftuwi:
+  - KN
+puya:
+  - U8
+ipad8,1:
+  - AP
+ipad8,3:
+  - AP
+ipad8,8:
+  - AP
+ipad8,7:
+  - AP
+ipad8,6:
+  - AP
+ipad6,3:
+  - AP
+ipad6,4:
+  - AP
+ipad6,7:
+  - AP
+ipad4,8:
+  - AP
+ipad4,9:
+  - AP
+ipad4,2:
+  - AP
+ipad4,3:
+  - AP
+ipad3,5:
+  - AP
+ipad3,1:
+  - AP
+ipad3,2:
+  - AP
+ipad3,3:
+  - AP
+ipad2,5:
+  - AP
+ipad2,7:
+  - AP
+ipad2,3:
+  - AP
+ipad2,4:
+  - AP
+ipad8,2:
+  - AP
+ipad8,4:
+  - AP
+ipad7,12:
+  - AP
+ipad6,8:
+  - AP
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -45728,6 +45847,7 @@ obook 20 se:
   - OD
 v10 4g:
   - OD
+  - WCP
 v820w-dualos:
   - OD
 v891-dualos:
@@ -55195,6 +55315,77 @@ aftha001:
   - KN
 vol001:
   - V02
+panodic:
+  - PND
+fenoti_42fn6000f:
+  - FEN
+mag425a:
+  - MIR
+imaq tetra:
+  - IMA
+amlogic alvatech gt1:
+  - B0
+cood-e tv 4k:
+  - CDE
+d2140:
+  - '74'
+d2150:
+  - '74'
+ai pont: []
+dq08:
+  - 1V
+minim8s:
+  - 5S
+x96mini:
+  - INK
+wzone:
+  - BOT
+i96 pro:
+  - DRO
+swtv-20ae-pro:
+  - SK
+swtv:
+  - SK
+mybox:
+  - NST
+v10:
+  - WCP
+t95pro:
+  - IOT
+x6-pro:
+  - HIR
+8k3528-t: []
+mxq-h3:
+  - 5S
+mx10: []
+v88: []
+h8s: []
+x92: []
+veon 4k smart tv:
+  - WC
+panavox android tv:
+  - PNV
+hyundai 2k tv:
+  - HN
+tv348_dvb:
+  - UD1
+tv358dvb:
+  - UD1
+tv348_isdb:
+  - UD1
+tv001 on rtd289x: []
+net tv.plus: []
+o2 tv box:
+  - OT
+tvb-100:
+  - TLK
+cyclone x8:
+  - SZ
+aftalmo:
+  - KN
+aftboxe1:
+  - TS
+  - KN
 bb2 pro:
   - 0M
 kii pro:

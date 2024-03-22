@@ -229,9 +229,10 @@ class OsAbstractParser extends ParserAbstract {
 
       if ('PICO OS' === name) {
         version = data.version;
+        short = 'PIC';
       }
 
-      if (data && 'Fire OS' === data.name) {
+      if (data && data.name === 'Fire OS') {
         let majorVersion = ~~version.split('.', 1)[0];
         short = data.short_name;
         if (FIREOS_VERSION_MAPPING[version]) {
