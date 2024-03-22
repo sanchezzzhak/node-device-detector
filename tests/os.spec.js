@@ -23,7 +23,7 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
   } catch (e) {
     let regex = new RegExp('^([0-9]+).0$', 'i');
     let check =
-        regex.exec(fixtureVersion) !== null &&
+        regex.exec(''+ fixtureVersion) !== null &&
         Math.ceil(resultVersion) === Math.ceil(fixtureVersion);
 
     if (check) {
@@ -51,14 +51,7 @@ const runTest= (fixture, result) => {
   if (isObjNotEmpty(fixture.os.platform)) {
     expect(fixture.os.platform, messageError).to.equal(result.platform);
   }
-  if (isObjNotEmpty(fixture.os.version)) {
-    testVersionAndSkip.call(
-      this,
-      result.version,
-      fixture.os.version,
-      messageError
-    );
-  }
+  expect('' + fixture.os.version, messageError).to.equal('' + result.version);
 };
 
 describe('tests oss', function () {
@@ -66,8 +59,7 @@ describe('tests oss', function () {
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      let clientHintData  = clientHints.parse(fixture.headers || {})
-      let result = detector.parse(fixture.user_agent, clientHintData);
+      let result = detector.parse(fixture.user_agent, clientHints.parse(fixture.headers ?? {}));
       runTest(fixture, result)
     });
   });

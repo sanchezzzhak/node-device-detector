@@ -37,52 +37,51 @@ describe('tests clients', function () {
         it(pos + '/' + total, function () {
           let clientHintData = clientHint.parse(fixture.headers || {});
           let fixtureClientType = fixture.client.type ?? '';
-          let cleint = {};
+          let client = {};
 
           switch (fixtureClientType) {
             case CLIENT_TYPE.LIBRARY:
-              cleint = detector.getParseClient(CLIENT_PARSER.LIBRARY).parse(fixture.user_agent, clientHintData)
+              client = detector.getParseClient(CLIENT_PARSER.LIBRARY).parse(fixture.user_agent, clientHintData)
               break;
             case CLIENT_TYPE.BROWSER:
-              cleint = detector.getParseClient(CLIENT_PARSER.BROWSER).parse(fixture.user_agent, clientHintData)
+              client = detector.getParseClient(CLIENT_PARSER.BROWSER).parse(fixture.user_agent, clientHintData)
               break;
             default:
-              cleint = detector.detect(fixture.user_agent, clientHintData).client;
+              client = detector.detect(fixture.user_agent, clientHintData).client;
               break;
           }
 
           let messageError = 'fixture data\n' + perryJSON(fixture);
-          perryTable(fixture, cleint);
-
+          perryTable(fixture, client);
 
           // fix values fixture null
-          if (cleint.version === '' && fixture.client.version === null) {
-            cleint.version = fixture.client.version;
+          if (client.version === '' && fixture.client.version === null) {
+            client.version = fixture.client.version;
           }
 
-          if (!cleint.engine_version && fixture.client.engine_version === null) {
-            cleint.engine_version = fixture.client.engine_version;
+          if (!client.engine_version && fixture.client.engine_version === null) {
+            client.engine_version = fixture.client.engine_version;
           }
 
-          if (!cleint.engine && fixture.client.engine === null) {
-            cleint.engine = fixture.client.engine;
+          if (!client.engine && fixture.client.engine === null) {
+            client.engine = fixture.client.engine;
           }
 
           // fix version fixture
-          if (fixture.client.version !== null && typeof fixture.client.version === 'number') {
-            fixture.version = String(fixture.client.version);
+          if (fixture.client.version !== null && Number.isFinite(fixture.client.version)) {
+            fixture.client.version = '' + fixture.client.version;
           }
 
-          if (cleint.short_name) {
-            expect(cleint.short_name, messageError).to.not.equal('UNK');
-            delete cleint.short_name;
+          if (client.short_name) {
+            expect(client.short_name, messageError).to.not.equal('UNK');
+            delete client.short_name;
           }
 
           if (fixture.client && fixture.client.family === null) {
             fixture.client.family = '';
           }
 
-          expect(fixture.client, messageError).to.deep.equal(cleint);
+          expect(fixture.client, messageError).to.deep.equal(client);
         });
       });
     });

@@ -601,8 +601,4 @@ module.exports = {
   'ZV': 'Zvu',
   'ZI': 'Zirco Browser',
   'ZR': 'Zordo Browser',
-  // detected browsers in older versions
-  // 'IA': 'Iceape',  => pim
-  // 'SM': 'SeaMonkey',  => pim
-  
 };

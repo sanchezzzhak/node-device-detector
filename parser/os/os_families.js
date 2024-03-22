@@ -23,7 +23,7 @@ module.exports = {
   'LOS', 'DVK', 'ROK', 'OWR', 'OTV', 'KTV', 'PUR', 'PLA', 'FUC', 'PAR',
   'FOR', 'MON', 'KAN', 'ZEN', 'LND', 'LNS', 'CHN', 'AMZ', 'TEN', 'CST',
   'NOV', 'ROU', 'ZOR', 'RED', 'KAL', 'ORA', 'VID', 'TIV', 'BSN', 'RAS',
-  'UOS', 'PIO', 'FRI', 'LIR', 'WEB',
+  'UOS', 'PIO', 'FRI', 'LIR', 'WEB', 'SER', 'ASP',
   ],
   'Mac': ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],

@@ -16,20 +16,20 @@ const CLIENTHINT_MAPPING = {
   'Mac': ['MacOS']
 };
 
-const FIREOS_VERSION_MAPPING = {
-  '11': '8',
-  '10': '8',
-  '9': '7',
-  '7': '6',
-  '5': '5',
-  '4.4.3': '4.5.1',
-  '4.4.2': '4',
-  '4.2.2': '3',
-  '4.0.3': '3',
-  '4.0.2': '3',
-  '4': '2',
-  '2': '1'
-};
+const FIRE_OS_VERSION_MAPPING = require('./os/fire-os-version-map');
+const LINEAGE_OS_VERSION_MAPPING = require('./os/lineage-os-version-map');
+
+
+const getVersionForMapping = (version, map) => {
+  const majorVersion = ~~version.split('.', 1)[0];
+  if (map[version]) {
+    return map[version];
+  }
+  if (map[majorVersion]) {
+    return map[majorVersion];
+  }
+  return '';
+}
 
 const compareOsForClientHints = (brand) => {
   for (let mapName in CLIENTHINT_MAPPING) {
@@ -233,13 +233,8 @@ class OsAbstractParser extends ParserAbstract {
       }
 
       if (data && data.name === 'Fire OS') {
-        let majorVersion = ~~version.split('.', 1)[0];
         short = data.short_name;
-        if (FIREOS_VERSION_MAPPING[version]) {
-          version = FIREOS_VERSION_MAPPING[version];
-        } else if (FIREOS_VERSION_MAPPING[majorVersion]) {
-          version = FIREOS_VERSION_MAPPING[majorVersion];
-        }
+        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
       }
 
       if ('GNU/Linux' === name
@@ -252,6 +247,12 @@ class OsAbstractParser extends ParserAbstract {
       }
 
       family = this.parseOsFamily(short);
+    } else if (data && data.name) {
+      name = data.name;
+      version = data.version;
+      short = data.short_name;
+      platform = data.platform;
+      family = data.family;
     }
 
     if (clientHints && data && clientHints.app) {
@@ -259,12 +260,19 @@ class OsAbstractParser extends ParserAbstract {
         name = 'Android';
         short = 'ADR';
         family = 'Android';
+        version = '';
+      }
+      if (clientHints.app === 'org.mozilla.tv.firefox' && name !== 'Fire OS') {
+        name = 'Fire OS';
+        family = 'Android';
+        short = 'FIR';
+        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
       }
       if (clientHints.app === 'org.lineageos.jelly' && name !== 'Lineage OS') {
-        name    = 'Lineage OS';
-        family  = 'Android';
-        short   = 'LEN';
-        version = '';
+        name = 'Lineage OS';
+        family = 'Android';
+        short = 'LEN';
+        version = getVersionForMapping(data.version, LINEAGE_OS_VERSION_MAPPING);
       }
     }
 
