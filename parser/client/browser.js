@@ -407,13 +407,12 @@ class Browser extends ClientAbstractParser {
     if (engine === '') {
       return '';
     }
-
     if (engine === 'Gecko' || engine === 'Clecko') {
-      let pattern = '[ ](?:rv[: ]([0-9.]+))';
+      let pattern = '[ ](?:rv[: ])([0-9.]+)';
       let regexp = new RegExp(pattern, 'i');
       let match = regexp.exec(userAgent);
-      if (match !== null) {
-        return match.pop();
+      if (match !== null && /(?:g|cl)ecko\/[0-9]{8,10}/i.test(userAgent)) {
+        return match[1];
       }
     }
 
@@ -430,7 +429,7 @@ class Browser extends ClientAbstractParser {
 
     let match = regexp.exec(userAgent);
     if (match !== null) {
-      return match.pop();
+      return match[1]
     }
     return '';
   }
