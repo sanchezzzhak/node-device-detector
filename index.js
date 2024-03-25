@@ -103,8 +103,10 @@ class DeviceDetector {
     this.deviceInfo = attr(options, 'deviceInfo', false);
   }
 
+
   init() {
     this.addParseOs(OS_PARSER, new OsParser());
+
     this.addParseClient(CLIENT_PARSER_LIST.FEED_READER, new FeedReaderParser());
     this.addParseClient(CLIENT_PARSER_LIST.MOBILE_APP, new MobileAppParser());
     this.addParseClient(CLIENT_PARSER_LIST.MEDIA_PLAYER, new MediaPlayerParser());
@@ -495,11 +497,21 @@ class DeviceDetector {
     let clientFamily = attr(clientData, 'family', '');
     let deviceType = attr(deviceData, 'type', '');
 
-    if (
-      deviceType === '' &&
-      osFamily === 'Android' &&
-      helper.matchUserAgent('Chrome/[.0-9]*', userAgent)
-    ) {
+    /**
+     * All devices containing VR fragment are assumed to be a wearable
+     */
+    if (deviceType === '' && helper.hasVRFragment(userAgent)) {
+      deviceType = DEVICE_TYPE.WEARABLE;
+    }
+
+    /**
+     * Chrome on Android passes the device type based on the keyword 'Mobile'
+     * If it is present the device should be a smartphone, otherwise it's a tablet
+     * See https://developer.chrome.com/multidevice/user-agent#chrome_for_android_user_agent
+     * Note: We do not check for browser (family) here, as there might be mobile apps using Chrome, that won't have
+     *       a detected browser, but can still be detected. So we check the useragent for Chrome instead.
+     */
+    if (deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[.0-9]*', userAgent)) {
       if (helper.matchUserAgent('(Mobile|eliboM)', userAgent) !== null) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
       } else{
@@ -510,24 +522,32 @@ class DeviceDetector {
     /**
      * Some UA contain the fragment 'Pad/APad', so we assume those devices as tablets
      */
-    if (deviceType === DEVICE_TYPE.SMARTPHONE
-      && helper.matchUserAgent('Pad/APad', userAgent)
-    ) {
+    if (deviceType === DEVICE_TYPE.SMARTPHONE && helper.matchUserAgent('Pad/APad', userAgent)) {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
-    if (
-      deviceType === '' &&
-      (helper.hasAndroidTableFragment(userAgent) ||
-        helper.hasOperaTableFragment(userAgent))
-    ) {
+    /**
+     * Some UA contain the fragment 'Android; Tablet;' or 'Opera Tablet', so we assume those devices as tablets
+     */
+    if (deviceType === '' && (helper.hasAndroidTableFragment(userAgent) || helper.hasOperaTableFragment(userAgent))) {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
+    /**
+     * Some user agents simply contain the fragment 'Android; Mobile;', so we assume those devices as smartphones
+     */
     if (deviceType === '' && helper.hasAndroidMobileFragment(userAgent)) {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
 
+    /**
+     * Android up to 3.0 was designed for smartphones only. But as 3.0, which was tablet only, was published
+     * too late, there were a bunch of tablets running with 2.x
+     * With 4.0 the two trees were merged and it is for smartphones and tablets
+     *
+     * So were are expecting that all devices running Android < 2 are smartphones
+     * Devices running Android 3.X are tablets. Device type of Android 2.X and 4.X+ are unknown
+     */
     if (deviceType === '' && osName === 'Android' && osVersion !== '') {
       if (helper.versionCompare(osVersion, '2.0') === -1) {
         deviceType = DEVICE_TYPE.SMARTPHONE;
@@ -539,6 +559,9 @@ class DeviceDetector {
       }
     }
 
+    /**
+     * All detected feature phones running android are more likely a smartphone
+     */
     if (deviceType === DEVICE_TYPE.FEATURE_PHONE && osFamily === 'Android') {
       deviceType = DEVICE_TYPE.SMARTPHONE;
     }
@@ -551,6 +574,15 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.FEATURE_PHONE;
     }
 
+    /**
+     * According to http://msdn.microsoft.com/en-us/library/ie/hh920767(v=vs.85).aspx
+     * Internet Explorer 10 introduces the "Touch" UA string token. If this token is present at the end of the
+     * UA string, the computer has touch capability, and is running Windows 8 (or later).
+     * This UA string will be transmitted on a touch-enabled system running Windows 8 (RT)
+     *
+     * As most touch enabled devices are tablets and only a smaller part are desktops/notebooks we assume that
+     * all Windows 8 touch devices are tablets.
+     */
     if (
       deviceType === '' &&
       (osName === 'Windows RT' ||
@@ -560,14 +592,28 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
-    // check tv fragments and tv clients
+    /**
+     * All devices running Opera TV Store are assumed to be a tv
+     */
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (helper.hasAndroidTVFragment(userAgent)) {
+    }
+    /**
+     * All devices that contain Andr0id in string are assumed to be a tv
+     */
+    if (helper.hasAndroidTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (deviceType === '' && helper.hasTVFragment(userAgent)) {
+    }
+    /**
+     * All devices running Tizen TV or SmartTV are assumed to be a tv
+     */
+    if (deviceType === '' && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
-    } else if (CLIENT_TV_LIST.indexOf(clientName) !== -1) {
+    }
+    /**
+     * Devices running those clients are assumed to be a TV
+     */
+    if (CLIENT_TV_LIST.indexOf(clientName) !== -1) {
       deviceType = DEVICE_TYPE.TV;
     }
 
@@ -701,10 +747,8 @@ class DeviceDetector {
     }
 
     // client hints
-    if (result.model === '') {
-      if (clientHints.device && clientHints.device.model !== '') {
-        result.model = clientHints.device.model;
-      }
+    if (result.model === '' && clientHints.device && clientHints.device.model !== '') {
+      result.model = clientHints.device.model;
     }
 
     // device info or deviceTrusted
@@ -759,43 +803,25 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
-
-    let result = {};
     for (let name in this.clientParserList) {
       let parser = this.clientParserList[name];
+
       if (this.clientIndexes && extendParsers.includes(name)) {
         let hash = parser.parseFromHashHintsApp(clientHints);
         let hint = parser.parseFromClientHints(clientHints);
         let data = parser.parseUserAgentByPositions(userAgent);
         let result = parser.prepareParseResult(userAgent, data, hint, hash);
         if (result !== null && result.name) {
-          return result;
+          return Object.assign({}, result);
         }
-        continue;
       }
 
-      let resultMerge = parser.parse(userAgent, clientHints);
-      if (resultMerge) {
-        return Object.assign(result, resultMerge);
-      }
-    }
-
-    if (this.clientIndexes) {
-      for (let i = 0, l = extendParsers.length; i < l; i++) {
-        let name = extendParsers[i];
-        let parser = this.clientParserList[name];
-        if (!parser) {
-          continue;
-        }
-
-        let resultMerge = parser.parse(userAgent, clientHints);
-        if (resultMerge) {
-          return Object.assign(result, resultMerge);
-        }
+      let result = parser.parse(userAgent, clientHints);
+      if (result && result.name) {
+        return Object.assign({}, result);
       }
     }
-
-    return result;
+    return {};
   }
 
   prepareDetectResult(
@@ -805,6 +831,24 @@ class DeviceDetector {
     deviceData,
     clientHints
   ) {
+
+    /**
+     * if it's fake UA then it's best not to identify it as Apple running Android OS or GNU/Linux
+     */
+    if (deviceData.brand === 'Apple' && APPLE_OS_LIST.indexOf(osData.name) === -1) {
+      deviceData.id = '';
+      deviceData.brand = '';
+      deviceData.model = '';
+      deviceData.type = '';
+    }
+
+    /**
+     * Assume all devices running iOS / Mac OS are from Apple
+     */
+    if (deviceData.brand === '' && APPLE_OS_LIST.indexOf(osData.name) !== -1) {
+      deviceData.brand = 'Apple';
+    }
+
     let deviceDataType = this.parseDeviceType(
       userAgent,
       osData,
@@ -814,24 +858,7 @@ class DeviceDetector {
     );
 
     deviceData = Object.assign(deviceData, deviceDataType);
-    /**
-     * if it's fake UA then it's best not to identify it as Apple running Android OS
-     */
-    if ('Android' === osData.name && 'Apple' === deviceData.brand) {
-      deviceData.id = '';
-      deviceData.brand = '';
-      deviceData.model = '';
-      deviceData.type = '';
-    }
-    /** Assume all devices running iOS / Mac OS are from Apple */
-    if (
-      deviceData.brand === '' &&
-      osData.name !== '' &&
-      APPLE_OS_LIST.indexOf(osData.name) !== -1
-    ) {
-      deviceData.id = 'AP';
-      deviceData.brand = 'Apple';
-    }
+
 
     if (this.deviceTrusted) {
       deviceData.trusted = DeviceTrusted.check(osData, clientData, deviceData, clientHints);
@@ -888,7 +915,7 @@ class DeviceDetector {
   /**
    * detect os, client and device for sync
    * @param {string} userAgent - string from request header['user-agent']
-   * @param clientHints
+   * @param {{}} clientHints
    * @return {DetectResult}
    */
   detect(userAgent, clientHints = {}) {

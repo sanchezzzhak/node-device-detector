@@ -10,8 +10,12 @@ const browserHints = new BrowserHints;
 
 const CLIENTHINT_MAPPING = {
   'Chrome': ['Google Chrome'],
+  'Chrome Webview': ['Android WebView'],
+  'DuckDuckGo Privacy Browser': ['DuckDuckGo'],
+  'Edge WebView': ['Microsoft Edge WebView2'],
+  'Microsoft Edge': ['Edge'],
+  'Norton Private Browser': ['Norton Secure Browser'],
   'Vewd Browser': ['Vewd Core'],
-  'DuckDuckGo Privacy Browser': ['DuckDuckGo']
 };
 
 const compareBrandForClientHints = (brand) => {
@@ -62,6 +66,7 @@ class Browser extends ClientAbstractParser {
     hint,
     hash
   ) {
+
     let type = CLIENT_TYPE.BROWSER;
     let name = '';
     let version = '';
@@ -70,7 +75,7 @@ class Browser extends ClientAbstractParser {
     let short = '';
     let family = '';
     // client-hint+user-agent
-    if (hint.name && hint.version) {
+    if (hint && hint.name && hint.version) {
       name = hint.name;
       version = hint.version;
       short = hint.short_name;
@@ -84,6 +89,14 @@ class Browser extends ClientAbstractParser {
           name = 'Iridium';
           short = 'I1';
           engine = data.engine;
+          engineVersion = data.engine_version;
+        }
+
+        // https://bbs.360.cn/thread-16096544-1-1.html
+        if (/^15/.test(version) && /^114/.test(data.version)) {
+          name          = '360 Secure Browser';
+          short         = '3B';
+          engine        = data.engine;
           engineVersion = data.engine_version;
         }
 
@@ -101,11 +114,7 @@ class Browser extends ClientAbstractParser {
         }
 
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
-        if (
-          data.name &&
-          'Chromium' === name &&
-          'Chromium' !== data.name
-        ) {
+        if (data.name && 'Chromium' === name && 'Chromium' !== data.name) {
           name = data.name;
           short = data.short_name;
           version = data.version;
@@ -203,7 +212,6 @@ class Browser extends ClientAbstractParser {
 
     if (clientHints && clientHints.client) {
       let brands = ArrayPath.get(clientHints, 'client.brands', []);
-
       for (let brandItem of brands) {
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
@@ -219,13 +227,12 @@ class Browser extends ClientAbstractParser {
             version = String(brandItem.version);
             break;
           }
+        }
 
-          // If we detected a brand, that is not chromium,
-          // we will use it, otherwise we will look further
-          if ('' !== name && 'Chromium' !== name) {
-            break;
-          }
-
+        // If we detected a brand, that is not chromium,
+        // we will use it, otherwise we will look further
+        if ('' !== name && 'Chromium' !== name && 'Microsoft Edge' !== name) {
+          break;
         }
       }
 
@@ -400,13 +407,12 @@ class Browser extends ClientAbstractParser {
     if (engine === '') {
       return '';
     }
-
-    if (engine === 'Gecko') {
-      let pattern = '[ ](?:rv[: ]([0-9.]+)).*gecko/[0-9]{8,10}';
+    if (engine === 'Gecko' || engine === 'Clecko') {
+      let pattern = '[ ](?:rv[: ])([0-9.]+)';
       let regexp = new RegExp(pattern, 'i');
       let match = regexp.exec(userAgent);
-      if (match !== null) {
-        return match.pop();
+      if (match !== null && /(?:g|cl)ecko\/[0-9]{8,10}/i.test(userAgent)) {
+        return match[1];
       }
     }
 
@@ -423,7 +429,7 @@ class Browser extends ClientAbstractParser {
 
     let match = regexp.exec(userAgent);
     if (match !== null) {
-      return match.pop();
+      return match[1]
     }
     return '';
   }

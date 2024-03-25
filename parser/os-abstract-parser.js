@@ -3,31 +3,33 @@ const helper = require('./helper');
 
 const OS_SYSTEMS = require('./os/os_systems');
 const OS_FAMILIES = require('./os/os_families');
+
 const ANDROID_APP_LIST = [
   'com.hisense.odinbrowser',
   'com.seraphic.openinet.pre',
   'com.appssppa.idesktoppcbrowser',
   'every.browser.inc'
 ];
+
 const CLIENTHINT_MAPPING = {
   'GNU/Linux': ['Linux'],
   'Mac': ['MacOS']
 };
 
-const FIREOS_VERSION_MAPPING = {
-  '11': '8',
-  '10': '8',
-  '9': '7',
-  '7': '6',
-  '5': '5',
-  '4.4.3': '4.5.1',
-  '4.4.2': '4',
-  '4.2.2': '3',
-  '4.0.3': '3',
-  '4.0.2': '3',
-  '4': '2',
-  '2': '1'
-};
+const FIRE_OS_VERSION_MAPPING = require('./os/fire-os-version-map');
+const LINEAGE_OS_VERSION_MAPPING = require('./os/lineage-os-version-map');
+
+
+const getVersionForMapping = (version, map) => {
+  const majorVersion = ~~version.split('.', 1)[0];
+  if (map[version]) {
+    return map[version];
+  }
+  if (map[majorVersion]) {
+    return map[majorVersion];
+  }
+  return '';
+}
 
 const compareOsForClientHints = (brand) => {
   for (let mapName in CLIENTHINT_MAPPING) {
@@ -50,10 +52,12 @@ function comparePlatform(platform, bitness = '') {
   if (platform.indexOf('sh4') !== -1) {
     return 'SuperH';
   }
+  if (platform.indexOf('sparc64') !== -1) {
+    return 'SPARC64';
+  }
   if (platform.indexOf('x64') !== -1 || (platform.indexOf('x86') !== -1 && bitness === '64')) {
     return 'x64';
   }
-
   if (platform.indexOf('x86') !== -1) {
     return 'x86';
   }
@@ -223,14 +227,14 @@ class OsAbstractParser extends ParserAbstract {
         short = 'HAR';
       }
 
-      if (data && 'Fire OS' === data.name) {
-        let majorVersion = ~~version.split('.', 1)[0];
+      if ('PICO OS' === name) {
+        version = data.version;
+        short = 'PIC';
+      }
+
+      if (data && data.name === 'Fire OS') {
         short = data.short_name;
-        if (FIREOS_VERSION_MAPPING[version]) {
-          version = FIREOS_VERSION_MAPPING[version];
-        } else if (FIREOS_VERSION_MAPPING[majorVersion]) {
-          version = FIREOS_VERSION_MAPPING[majorVersion];
-        }
+        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
       }
 
       if ('GNU/Linux' === name
@@ -243,17 +247,33 @@ class OsAbstractParser extends ParserAbstract {
       }
 
       family = this.parseOsFamily(short);
+    } else if (data && data.name) {
+      name = data.name;
+      version = data.version;
+      short = data.short_name;
+      platform = data.platform;
+      family = data.family;
     }
 
-    if (clientHints
-      && data
-      && clientHints.app
-      && ANDROID_APP_LIST.indexOf(clientHints.app) !== -1
-      && data.name !== 'Android'
-    ) {
-      name = 'Android';
-      short = 'ADR';
-      family = 'Android';
+    if (clientHints && data && clientHints.app) {
+      if (ANDROID_APP_LIST.indexOf(clientHints.app) !== -1 && data.name !== 'Android') {
+        name = 'Android';
+        short = 'ADR';
+        family = 'Android';
+        version = '';
+      }
+      if (clientHints.app === 'org.mozilla.tv.firefox' && name !== 'Fire OS') {
+        name = 'Fire OS';
+        family = 'Android';
+        short = 'FIR';
+        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
+      }
+      if (clientHints.app === 'org.lineageos.jelly' && name !== 'Lineage OS') {
+        name = 'Lineage OS';
+        family = 'Android';
+        short = 'LEN';
+        version = getVersionForMapping(data.version, LINEAGE_OS_VERSION_MAPPING);
+      }
     }
 
     if (platform === '' && data) {
@@ -289,6 +309,9 @@ class OsAbstractParser extends ParserAbstract {
     }
     if (this.getBaseRegExp('sh4').test(userAgent)) {
       return 'SuperH';
+    }
+    if (this.getBaseRegExp('sparc64').test(userAgent)) {
+      return 'SPARC64';
     }
     if (this.getBaseRegExp('64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|amd64|x86_?64').test(userAgent)) {
       return 'x64';

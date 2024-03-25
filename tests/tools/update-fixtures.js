@@ -29,6 +29,13 @@ const gitDownload = () => {
   });
 };
 
+const replacePhpArrayToJS = (context) => {
+  return context
+    .replace(/'\s+=>\s+'/gm, "': '")
+    .replace(/\s+=>\s+/gm, ": ")
+    .replace(/^\s+/gm, "  ")
+}
+
 const getFilesForDir = (target) => {
   return fs.readdirSync(target, {withFileTypes: true})
   .filter(dirent => dirent.isFile()).map(dirent => dirent.name);
@@ -123,14 +130,29 @@ const syncShortDeviceBrands = async () => {
   const targetFile = __dirname + '/../../parser/device/brand-short.js';
   const content = fs.readFileSync(sourceFile).toString();
   const match = / static \$deviceBrands = \[([^\]]+)/mg.exec(content);
-  let newContent = match[1]
-  .replace(/'\s+=>\s+'/gm, "': '")
-  .replace(/^\s+/gm, "  ")
-  
+  let newContent = replacePhpArrayToJS(match[1])
   fs.writeFileSync(targetFile,
     `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
   )
 };
+
+const syncOsVersionMapping = async () => {
+  console.log('Sync os version mapping');
+  const sourceFile = TMP_DIR + '/Parser/OperatingSystem.php';
+  const content = fs.readFileSync(sourceFile).toString();
+
+  let match = / private \$fireOsVersionMapping = \[([^;]+)\];/mg.exec(content);
+  let newContent = replacePhpArrayToJS(match[1])
+  fs.writeFileSync(__dirname + '/../../parser/os/fire-os-version-map.js',
+    `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
+  )
+
+   match = / private \$lineageOsVersionMapping = \[([^;]+)\];/mg.exec(content);
+  newContent = replacePhpArrayToJS(match[1])
+  fs.writeFileSync(__dirname + '/../../parser/os/lineage-os-version-map.js',
+    `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
+  )
+}
 
 const syncShortBrowserBrands = async () => {
   console.log('Sync short browser brands');
@@ -138,10 +160,7 @@ const syncShortBrowserBrands = async () => {
   const targetFile = __dirname + '/../../parser/client/browser-short.js';
   const content = fs.readFileSync(sourceFile).toString();
   const match = / static \$availableBrowsers = \[([^\]]+)/mg.exec(content);
-  let newContent = match[1]
-  .replace(/'\s+=>\s+'/gm, "': '")
-  .replace(/^\s+/gm, "  ")
-  
+  let newContent = replacePhpArrayToJS(match[1])
   fs.writeFileSync(targetFile,
     `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
   )
@@ -153,10 +172,7 @@ const syncShortMobileBrowser = async () => {
   const targetFile = __dirname + '/../../parser/client/browser-short-mobile.js';
   const content = fs.readFileSync(sourceFile).toString();
   const match = / static \$mobileOnlyBrowsers = \[([^\]]+)/mg.exec(content);
-  let newContent = match[1]
-  .replace(/'\s+=>\s+'/gm, "': '")
-  .replace(/^\s+/gm, "  ")
-  
+  let newContent = replacePhpArrayToJS(match[1])
   fs.writeFileSync(targetFile,
     `// prettier-ignore\nmodule.exports = [\n${newContent}\n];\n`
   )
@@ -169,10 +185,7 @@ const syncShortBrowserFamilies = async () => {
   const content = fs.readFileSync(sourceFile).toString();
   const match = / static \$browserFamilies = \[([^;]+)\];/mg.exec(content);
   
-  let newContent = match[1]
-  .replace(/\s+=>\s+/gm, ": ")
-  .replace(/^\s+/gm, "  ")
-  
+  let newContent = replacePhpArrayToJS(match[1]);
   fs.writeFileSync(targetFile,
     `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
   )
@@ -185,10 +198,7 @@ const syncShortOsFamilies = async () => {
   const content = fs.readFileSync(sourceFile).toString();
   const match = / static \$osFamilies = \[([^;]+)\];/mg.exec(content);
   
-  let newContent = match[1]
-  .replace(/\s+=>\s+/gm, ": ")
-  .replace(/^\s+/gm, "  ")
-  
+  let newContent = replacePhpArrayToJS(match[1])
   fs.writeFileSync(targetFile,
     `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
   )
@@ -201,10 +211,7 @@ const syncShortOs = async () => {
   const content = fs.readFileSync(sourceFile).toString();
   const match = / static \$operatingSystems = \[([^;]+)\];/mg.exec(content);
   
-  let newContent = match[1]
-  .replace(/\s+=>\s+/gm, ": ")
-  .replace(/^\s+/gm, "  ")
-  
+  let newContent = replacePhpArrayToJS(match[1])
   fs.writeFileSync(targetFile,
     `// prettier-ignore\nmodule.exports = {\n${newContent}\n};\n`
   )
@@ -233,6 +240,6 @@ const syncShortOs = async () => {
   await syncShortBrowserFamilies();
   await syncShortOsFamilies();
   await syncShortOs();
-  
+  await syncOsVersionMapping();
 })();
 

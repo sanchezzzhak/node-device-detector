@@ -111,7 +111,7 @@ function versionTruncate(version, maxMinorParts) {
  */
 function hasAndroidTableFragment(userAgent) {
   return (
-    matchUserAgent('Android( [\\.0-9]+)?; Tablet', userAgent) !== null
+    matchUserAgent('Android( [.0-9]+)?; Tablet', userAgent) !== null
   );
 }
 
@@ -130,6 +130,10 @@ function hasOperaTableFragment(userAgent) {
  */
 function hasTouchFragment(userAgent) {
   return matchUserAgent('Touch', userAgent) !== null;
+}
+
+function hasVRFragment(userAgent) {
+  return matchUserAgent('Android( [.0-9]+)?; Mobile VR;| VR ', userAgent) !== null
 }
 
 /**
@@ -156,7 +160,7 @@ function hasOperaTVStoreFragment(userAgent) {
  */
 function hasAndroidTVFragment(userAgent) {
   return matchUserAgent(
-      'Andr0id|(?:Android(?: UHD)?|Google) TV|[(]lite[)] TV|[(]TV;|BRAVIA',
+      'Andr0id|(?:Android(?: UHD)?|Google) TV|[(]lite[)] TV|BRAVIA|[(]TV;',
       userAgent
   ) !== null;
 }
@@ -279,7 +283,7 @@ function getTokensForUserAgent(userAgent) {
 function splitUserAgent(userAgent) {
   let tokens = getTokensForUserAgent(userAgent);
   let groups = getGroupForUserAgentTokens(tokens);
-  
+
   let parts = [];
   for (let key in groups) {
     if (typeof groups[key] !== 'string' || !groups[key]) {
@@ -301,7 +305,10 @@ function splitUserAgent(userAgent) {
   }
   let hash = createHash(parts.join('.')).replace('-', '');
   let path = parts.join('.');
-  
+
+  // console.log({tokens, groups, hash, path});
+
+
   return {tokens, groups, hash, path};
 }
 
@@ -313,6 +320,7 @@ module.exports = {
   fuzzyBetweenNumber,
   versionCompare,
   versionTruncate,
+  hasVRFragment,
   hasAndroidTableFragment,
   hasOperaTableFragment,
   hasOperaTVStoreFragment,

@@ -1397,6 +1397,22 @@
   os_family: Unknown
   browser_family: Unknown
 -
+  user_agent: 'Spotify/120800923 OSX/0 (MacBookPro6,2)'
+  os:
+    name: Mac
+    version: ""
+    platform: ""
+  client:
+    type: mobile app
+    name: Spotify
+    version: "120800923"
+  device:
+    type: "desktop"
+    brand: "Apple"
+    model: 'MacBook Pro 15" (2010)'
+  os_family: Mac
+  browser_family: Unknown
+-
   user_agent: 'AmazonMusic'
   os: [ ]
   client:
@@ -7225,19 +7241,19 @@
   os_family: Android
   browser_family: Unknown
 -
-  user_agent: 'Mozilla/5.0 (Mobile; Safaricom_Kimem_Kerefa_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2 PodKast'
+  user_agent: Mozilla/5.0 (Mobile; Safaricom_Kimem_Kerefa_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2 PodKast
   os:
     name: KaiOS
-    version: "2.5.3.2"
+    version: 2.5.3.2
     platform: ""
   client:
     type: mobile app
     name: PodKast
     version: ""
   device:
-    type: ""
-    brand: ""
-    model: ''
+    type: smartphone
+    brand: Safaricom
+    model: Kimem Kerefa 4G
   os_family: Firefox OS
   browser_family: Unknown
 -
@@ -8800,19 +8816,6 @@
   os_family: iOS
   browser_family: Unknown
 -
-  user_agent: 'Zeno'
-  os: [ ]
-  client:
-    type: mobile app
-    name: Radio Zeno
-    version: ""
-  device:
-    type: ""
-    brand: ""
-    model: ''
-  os_family: Unknown
-  browser_family: Unknown
--
   user_agent: 'Zune/4.8'
   os: [ ]
   client:
@@ -8883,19 +8886,7 @@
     model: ''
   os_family: iOS
   browser_family: Unknown
--
-  user_agent: 'Trackable/0.1 NNjCeA'
-  os: [ ]
-  client:
-    type: mobile app
-    name: Trackable
-    version: "0.1"
-  device:
-    type: ""
-    brand: ""
-    model: ''
-  os_family: Unknown
-  browser_family: Unknown
+
 -
   user_agent: 'Uforia/1056 CFNetwork/1406.0.4 Darwin/22.4.0'
   os:
