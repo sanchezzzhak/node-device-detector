@@ -409,7 +409,7 @@ class Browser extends ClientAbstractParser {
     }
 
     if (engine === 'Gecko' || engine === 'Clecko') {
-      let pattern = '[ ](?:rv[: ]([0-9\.]+)).*(?:g|cl)ecko/[0-9]{8,10}';
+      let pattern = '[ ](?:rv[: ]([0-9.]+))';
       let regexp = new RegExp(pattern, 'i');
       let match = regexp.exec(userAgent);
       if (match !== null) {
