@@ -117,12 +117,17 @@ const checkGpu = (deviceData, clientHints) => {
   let deviceGPU = deviceInfo && deviceInfo.hardware && deviceInfo.hardware.gpu
     ? deviceInfo.hardware.gpu.name
     : null;
+
   let metaGPU = attr(clientHints.meta, 'gpu', null);
-  if (deviceGPU !== null && metaGPU !== null) {
-    if (!isDeviceGpuValid(deviceGPU, metaGPU)) {
-      return false;
-    }
+
+  if (metaGPU === 'PowerVR SGX Doma') {
+    metaGPU = 'PowerVR GE8320';
   }
+
+  if (metaGPU !== null && deviceGPU !== null) {
+    return isDeviceGpuValid(deviceGPU, metaGPU)
+  }
+
   return true;
 };
 

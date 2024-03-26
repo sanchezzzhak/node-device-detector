@@ -2785,6 +2785,7 @@ blackview:
   e7s: ''
   omega pro: ''
   p10000 pro: ''
+  bv6600: 'RE=2021.03;SZ=79.4x159x18;WT=325;DS=5.7;RS=720x1440;OI=1;OV=10;CP=355;RM=4096;'
 
 # Bravis
 bravis:
@@ -4397,7 +4398,7 @@ samsung:
   sm-a102w: '->galaxy a10e'
   sm-a107m: '->galaxy a10s'
   sm-a107f: '->galaxy a10s'
-  galaxy a10s: 'RE=2019.08;SZ=75.8x156.9x7.8;WT=168;DS=6.2;RS=720x1520;OI=1;OV=9.0;CP=171;RM=2048;'
+  galaxy a10s: 'RE=2019.08;SZ=75.8x156.9x7.8;WT=168;DS=6.2;RS=720x1520;OI=1;OV=9;CP=171;RM=2048;'
   galaxy note 20 5g: 'RE=2020.08;SZ=75.2x161.6x8.3;WT=192;DS=6.7;RS=1080x2400;OI=1;OV=10;CP=249;RM=8192;'
   sm-n9810: '->galaxy note 20 5g'
   sm-n981b: '->galaxy note 20 5g'

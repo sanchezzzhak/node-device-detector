@@ -787,3 +787,49 @@
     trusted: true
   os_family: Android
   browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; SM-A107F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.180 Mobile Safari/537.36 TwitterAndroid
+  headers:
+  meta:
+    width: '720'
+    height: '1521'
+    gpu: PowerVR SGX Doma
+  os:
+    name: Android
+    version: 11.0.0
+    platform: ''
+  client:
+    type: mobile app
+    name: Twitter
+    version: ''
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy A10s
+    code: SM-A107F
+    trusted: true
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; BV6600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.180 Mobile Safari/537.36 TwitterAndroid
+  headers:
+  meta:
+    width: '720'
+    height: '1440'
+    gpu: PowerVR SGX Doma
+  os:
+    name: Android
+    version: 10.0.0
+    platform: ''
+  client:
+    type: mobile app
+    name: Twitter
+    version: ''
+  device:
+    type: smartphone
+    brand: Blackview
+    model: BV6600
+    code: BV6600
+    trusted: true
+  os_family: Android
+  browser_family: Unknown

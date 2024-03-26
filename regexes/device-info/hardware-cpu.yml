@@ -2387,7 +2387,7 @@ cpu:
     process: 12nm
     gpu_id: 116
   355:
-    name: MediaTek Helio A25
+    name: MediaTek Helio A25   #MT6762V/WD
     type: ARM
     cores: 8
     clock_rate: 1800
