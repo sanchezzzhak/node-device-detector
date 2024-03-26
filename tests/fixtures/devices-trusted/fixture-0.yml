@@ -549,3 +549,132 @@
     model: Galaxy A12
     code: SM-A127F
     trusted: true
+-
+  user_agent: Mozilla/5.0 (Linux; Android 13; SM-G780G Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.64 Mobile Safari/537.36 TwitterAndroid
+  headers:
+    brands:
+      - brand: Chromium
+        version: '122'
+      - brand: Not(A:Brand
+        version: '24'
+      - brand: Android WebView
+        version: '122'
+    fullVersionList:
+      - brand: Chromium
+        version: 122.0.6261.64
+      - brand: Not(A:Brand
+        version: 24.0.0.0
+      - brand: Android WebView
+        version: 122.0.6261.64
+    mobile: '1'
+    model: SM-G780G
+    platform: Android
+    platformVersion: 13.0.0
+    uaFullVersion: 122.0.6261.64
+    wow64: '0'
+  meta:
+    width: '1080'
+    height: '2401'
+    gpu: ANGLE (Qualcomm, Adreno (TM) 650, OpenGL ES 3.2)
+  os:
+    name: Android
+    version: 13.0.0
+    platform: ''
+  client:
+    type: mobile app
+    name: Twitter
+    version: ''
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy S20 FE
+    code: SM-G780G
+    trusted: true
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 13; SM-G780F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.180 Mobile Safari/537.36 TwitterAndroid
+  headers:
+    brands:
+      - brand: Not A(Brand
+        version: '99'
+      - brand: Android WebView
+        version: '121'
+      - brand: Chromium
+        version: '121'
+    fullVersionList:
+      - brand: Not A(Brand
+        version: 99.0.0.0
+      - brand: Android WebView
+        version: 121.0.6167.180
+      - brand: Chromium
+        version: 121.0.6167.180
+    mobile: '1'
+    model: SM-G780F
+    platform: Android
+    platformVersion: 13.0.0
+    uaFullVersion: 121.0.6167.180
+    wow64: '0'
+  meta:
+    width: '1080'
+    height: '2400'
+    gpu: Mali-G77
+  os:
+    name: Android
+    version: 13.0.0
+    platform: ''
+  client:
+    type: mobile app
+    name: Twitter
+    version: ''
+  device:
+    type: smartphone
+    brand: Samsung
+    model: Galaxy S20 FE
+    code: SM-G780F
+    trusted: true
+  os_family: Android
+  browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 13; 220333QNY Build/TKQ1.221114.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.180 Mobile Safari/537.36 TwitterAndroid
+  headers:
+    brands:
+      - brand: Not A(Brand
+        version: '99'
+      - brand: Android WebView
+        version: '121'
+      - brand: Chromium
+        version: '121'
+    fullVersionList:
+      - brand: Not A(Brand
+        version: 99.0.0.0
+      - brand: Android WebView
+        version: 121.0.6167.180
+      - brand: Chromium
+        version: 121.0.6167.180
+    mobile: '1'
+    model: 220333QNY
+    platform: Android
+    platformVersion: 13.0.0
+    uaFullVersion: 121.0.6167.180
+    wow64: '0'
+  meta:
+    width: '720'
+    height: '1650'
+    gpu: Adreno (TM) 610
+  os:
+    name: Android
+    version: 13.0.0
+    platform: ''
+  client:
+    type: mobile app
+    name: Twitter
+    version: ''
+  device:
+    type: smartphone
+    brand: Xiaomi
+    model: Redmi 10C
+    code: 220333QNY
+    trusted: true
+  os_family: Android
+  browser_family: Unknown
