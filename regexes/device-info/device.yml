@@ -7237,3 +7237,5 @@ xiaomi:
   21061119dg: '->redmi 10'
   redmi 10c: 'RE=2022.03;SZ=76.6x169.6x8.3;WT=190;DS=6.71;RS=720x1650;OI=1;OV=11;CP=363;RM=3072;'
   220333qny: '->redmi 10c'
+  mi 11 lite: 'RE=2021.03;SZ=75.7x160.5x6.8;WT=157;DS=6.55;RS=1080x2400;OI=1;OV=11;CP=364;RM=4096;TT=290172;TG=1796;'
+  m2101k9ag: '->mi 11 lite'
