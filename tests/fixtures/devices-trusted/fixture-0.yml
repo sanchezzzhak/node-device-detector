@@ -764,3 +764,26 @@
     trusted: true
   os_family: Android
   browser_family: Unknown
+-
+  user_agent: Mozilla/5.0 (Linux; Android 12; PEHM00 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 TwitterAndroid
+  headers:
+  meta:
+    width: '1080'
+    height: '2400'
+    gpu: Adreno (TM) 619
+  os:
+    name: Android
+    version: '12'
+    platform: ''
+  client:
+    type: mobile app
+    name: Twitter
+    version: ''
+  device:
+    type: smartphone
+    brand: OPPO
+    model: A93
+    code: PEHM00
+    trusted: true
+  os_family: Android
+  browser_family: Unknown

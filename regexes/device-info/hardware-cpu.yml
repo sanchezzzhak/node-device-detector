@@ -2052,7 +2052,7 @@ cpu:
     process: 6nm
     gpu_id: 110
   307:
-    name: Qualcomm Snapdragon 480 5G
+    name: Qualcomm Snapdragon 480 5G #  SM4350
     type: ARM
     cores: 8
     clock_rate: 2000
