@@ -1,6 +1,6 @@
 {
   "name": "node-device-detector",
-  "version": "2.0.18",
+  "version": "2.1.0",
   "description": "Nodejs device detector (port matomo-org/device-detector)",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,9 @@
     "detect browser",
     "detect device brand",
     "detect device model",
-    "detect user-agent"
+    "detect user-agent",
+    "detect trusted device",
+    "client-hints"
   ],
   "author": "sanchezzzhak",
   "license": "MIT",
