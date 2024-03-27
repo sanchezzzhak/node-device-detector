@@ -2785,6 +2785,7 @@ blackview:
   e7s: ''
   omega pro: ''
   p10000 pro: ''
+  bv6600: 'RE=2021.03;SZ=79.4x159x18;WT=325;DS=5.7;RS=720x1440;OI=1;OV=10;CP=355;RM=4096;'
 
 # Bravis
 bravis:
@@ -4397,7 +4398,7 @@ samsung:
   sm-a102w: '->galaxy a10e'
   sm-a107m: '->galaxy a10s'
   sm-a107f: '->galaxy a10s'
-  galaxy a10s: 'RE=2019.08;SZ=75.8x156.9x7.8;WT=168;DS=6.2;RS=720x1520;OI=1;OV=9.0;CP=171;RM=2048;'
+  galaxy a10s: 'RE=2019.08;SZ=75.8x156.9x7.8;WT=168;DS=6.2;RS=720x1520;OI=1;OV=9;CP=171;RM=2048;'
   galaxy note 20 5g: 'RE=2020.08;SZ=75.2x161.6x8.3;WT=192;DS=6.7;RS=1080x2400;OI=1;OV=10;CP=249;RM=8192;'
   sm-n9810: '->galaxy note 20 5g'
   sm-n981b: '->galaxy note 20 5g'
@@ -4728,6 +4729,9 @@ samsung:
   sm-g781u1: '->galaxy s20 fe 5g'
   sm-g781v: '->galaxy s20 fe 5g'
   sm-g781w: '->galaxy s20 fe 5g'
+  galaxy s20 fe: 'RE=2020.09;SZ=74.5x159.8x8.4;WT=190;DS=6.5;RS=1080x2400;OI=1;OV=10;CP=249;RM=6144;'
+  sm-g780g: '->galaxy s20 fe;CP=207;'
+  sm-g780f: '->galaxy s20 fe;'
   galaxy s4 zoom: 'RE=2013.06;SZ=63.5x125.5x15.4;WT=208;DS=4.3;RS=540x960;OI=1;OV=4.2.2;CP=;RM=1536;'
   sm-c105a: '->galaxy s4 zoom'
   sm-c105: '->galaxy s4 zoom'
@@ -7181,6 +7185,9 @@ oppo:
   peym00: '->k9 pro 5g'
   k9 5g: 'RE=2021.05;SZ=73.4x159.1x7.9;WT=172;DS=6.43;RS=1080x2400;OI=1;OV=11;CP=242;RM=8192;TT=449750;'
   pexm00: '->k9 5g'
+  a93: 'RE=2021.01;SZ=74.7x162.9x8.4;WT=188;DS=6.5;RS=1080x2400;OI=1;OV=11;CP=307;RM=8192;'
+  pehm00: '->a93'
+  peht00: '->a93'
 
 maze:
   alpha: 'DS=6;RS=1080x1920;SZ=82.5x159.8x8.1;WT=225;RE=2017.06;OI=1;OV=7;RM=6144;CP=343;'
@@ -7230,5 +7237,11 @@ xiaomi:
   redmi 9c nfc: 'RE=2020.08;SZ=77.1x164.9x9;WT=196;DS=6.53;RS=720x1600;OI=1;OV=10;CP=348;RM=2048;'
   m2006c3mng: '->redmi 9c nfc'
   redmi note 8 pro: 'RE=2019.08;SZ=76.4x161.4x8.8;WT=200;DS=6.53;RS=1080x2340;OI=1;OV=9;CP=325;GP=120;RM=4096;TT=224759;TG=6999;'
+  redmi note 9 pro: 'RE=2020.04;SZ=76.7x165.8x8.8;WT=209;DS=6.67;RS=1080x2400;OI=1;OV=10;CP=273;RM=6144;TT=279625;TG=1785;'
+  m2003j6b2g: '->redmi note 9 pro'
   redmi 10: 'RE=2021.08;SZ=75.5x162x8.9;WT=181;DS=6.5;RS=1080x2400;OI=1;OV=11;CP=349;RM=4096;'
   21061119dg: '->redmi 10'
+  redmi 10c: 'RE=2022.03;SZ=76.6x169.6x8.3;WT=190;DS=6.71;RS=720x1650;OI=1;OV=11;CP=363;RM=3072;'
+  220333qny: '->redmi 10c'
+  mi 11 lite: 'RE=2021.03;SZ=75.7x160.5x6.8;WT=157;DS=6.55;RS=1080x2400;OI=1;OV=11;CP=364;RM=4096;TT=290172;TG=1796;'
+  m2101k9ag: '->mi 11 lite'

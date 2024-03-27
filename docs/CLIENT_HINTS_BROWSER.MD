@@ -6,15 +6,15 @@ This code is designed to receive client-hints on your page without additional pa
 ```js
 
 export default function DeviceMeta() {
-  
   let gl;
   if (!gl) {
     try {
+      let canvas = document.createElement('canvas');
       gl = canvas.getContext('webgl') ||
         canvas.getContext('experimental-webgl');
     } catch (e) {}
   }
-  let  hints = {};
+  let hints = {};
   if (navigator.userAgentData) {
     const fetchHints = [
       'brands',
@@ -162,7 +162,7 @@ export default function DeviceMeta() {
       return response;
     }
    // send track device information and client-hints for background processing
-   fetch('/api/t', { 
+   postData('/api/t', { 
       eventId,  // custom params (for example, this could be the visit ID)
       metaData  // client-hints + meta data for device
    })
