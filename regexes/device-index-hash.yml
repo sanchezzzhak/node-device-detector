@@ -2525,6 +2525,8 @@ blm-00:
   - HU
 xd-sdd05-2101:
   - XW
+portalgo:
+  - OQ
 aeobc:
   - KN
 aeokn:
@@ -34807,6 +34809,42 @@ rmx3890:
   - RE
 23100rn82l:
   - XI
+v2252:
+  - VV
+v2239:
+  - VV
+v2230a:
+  - VV
+tmrv065g:
+  - TM
+t phone (2023):
+  - TM
+x-treme pq55:
+  - 1S
+xiaomi 14 pro:
+  - XI
+via m35:
+  - R4
+sparx s7:
+  - SPX
+sm-s135dl:
+  - SA
+sm-a336bn:
+  - SA
+sm-s711u:
+  - SA
+tiger 12:
+  - OSC
+zte 8550:
+  - ZT
+sky b63:
+  - SW
+nokia g42 5g:
+  - NK
+thinkphone by motorola:
+  - MR
+via m30 plus:
+  - R4
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -44334,6 +44372,16 @@ ipad7,12:
   - AP
 ipad6,8:
   - AP
+tb371fc:
+  - LE
+sm-x810:
+  - SA
+sm-x716b:
+  - SA
+sm-x216b:
+  - SA
+tb310fu:
+  - LE
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -55386,6 +55434,8 @@ aftalmo:
 aftboxe1:
   - TS
   - KN
+triaplaybox:
+  - TRI
 bb2 pro:
   - 0M
 kii pro:
