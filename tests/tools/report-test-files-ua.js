@@ -1,6 +1,7 @@
 const readline = require('readline');
 const { Command } = require('commander');
 const YAML = require('js-yaml');
+const path = require('path');
 
 const fs = require('fs');
 const DeviceDetector = require('./../../index');
@@ -50,7 +51,8 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
   });
 
   const aggregateNewUa = new AggregateNewUa({
-    folderFixturePath, uniqueOutput
+    folderFixturePath: path.resolve(folderFixturePath) + '/',
+    uniqueOutput
   });
 
   const reportFixture = (useragent, detectResult, clientHintData, clientHintJson) => {
@@ -135,7 +137,8 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         clientHintJson.hints ?? clientHintJson,
         clientHintJson.meta ?? clientHintJson
       );
-      const check = !options.skipCheck ? aggregateNewUa.check(useragent) : true;
+
+      const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent) : true;
       const detectResult = detector.detect(useragent, clientHintData);
 
       if (check && formatOutput === FORMAT_OUTPUT_STRING) {
