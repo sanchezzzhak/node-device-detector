@@ -228,6 +228,8 @@ quad-core t3 k2001m:
   - A7
 aftlbt962e2:
   - KN
+airtouch performance 10x:
+  - AIT
 pixel 3:
   - GO
 m2006c3lg:
@@ -905,6 +907,8 @@ aspire v5-573g:
   - AC
 asus chromebook flip c101pa:
   - AU
+lifebook ah532:
+  - FU
 impress_grip:
   - VX
 archos diamond plus:
@@ -1471,6 +1475,18 @@ infinix x6711:
   - IF
 infinix x6815d:
   - IF
+2312draabg:
+  - XI
+23117ra68g:
+  - XI
+23124ra7eo:
+  - XI
+2312dra50g:
+  - XI
+23129raa4g:
+  - XI
+2312dra50i:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -34845,6 +34861,89 @@ thinkphone by motorola:
   - MR
 via m30 plus:
   - R4
+honor magic 2 3d:
+  - HU
+samsung sm-a156b:
+  - SA
+infinix hot 3 lte:
+  - IF
+nova 6se:
+  - HU
+2311drk48g:
+  - 0P
+shark 8:
+  - B2
+23129rn51x:
+  - XI
+honor play 8a:
+  - HU
+rmx3834:
+  - RE
+kingkong 8:
+  - CB
+pjs110:
+  - OP
+phn110:
+  - OP
+tiger 10:
+  - OSC
+rmx3762:
+  - RE
+sl112a:
+  - 6A
+sl112c:
+  - CK
+xanon x20:
+  - WA
+mzb8257in:
+  - XI
+omix.x5:
+  - QQ
+noh-an80:
+  - HU
+lava lex402:
+  - LV
+  - L1
+lt_9701:
+  - QL
+23122pcd1g:
+  - 0P
+2311drn14i:
+  - XI
+poco c65:
+  - 0P
+pgt-n09:
+  - HU
+tmrv06p5g:
+  - TM
+wp32:
+  - OE
+wp30 pro:
+  - OE
+wp33 pro:
+  - OE
+wp19 pro:
+  - OE
+24031pn0dc:
+  - XI
+23127pn0cg:
+  - XI
+23117rk66c:
+  - XI
+asus_ai2401_d:
+  - AU
+asus_ai2401_c:
+  - AU
+realme 8:
+  - RE
+rmx3888:
+  - RE
+rmx3842:
+  - RE
+rmx3840:
+  - RE
+rmx3701:
+  - RE
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -44382,6 +44481,16 @@ sm-x216b:
   - SA
 tb310fu:
   - LE
+armor pad lite:
+  - UL
+mt-t8b22:
+  - MOX
+teo8m:
+  - TN
+teo10m:
+  - TN
+pixel tablet:
+  - GO
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -55436,6 +55545,8 @@ aftboxe1:
   - KN
 triaplaybox:
   - TRI
+nexon_x10:
+  - N8
 bb2 pro:
   - 0M
 kii pro:
