@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@fast-csv/parse": "^5.0.0",
+    "@fast-csv/format": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "benchmark": "^2.1.4",
