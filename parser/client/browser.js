@@ -415,6 +415,7 @@ class Browser extends ClientAbstractParser {
         return match[1];
       }
     }
+
     let engineToken = '' + engine;
 
     if ('Blink' === engine) {
@@ -429,7 +430,7 @@ class Browser extends ClientAbstractParser {
       engineToken = 'Arachne\\/5\\.';
     }
 
-    let regexp= new RegExp(
+    let regexp = new RegExp(
       '(?:' + engineToken + ')' +
       '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
       'i'
