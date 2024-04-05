@@ -47,6 +47,13 @@ class AliasDevice extends AbstractParser {
     this.__replaceBrand = replace;
   }
 
+  getBaseRegExp(str) {
+    str = str.replace(new RegExp('/', 'g'), '\\/');
+    str = str.replace(new RegExp('\\+\\+', 'g'), '+');
+    str = '(?:' + str + ')';
+    return new RegExp(str, 'i');
+  }
+
   /**
    * @param {string} userAgent
    * @returns {{name: string}}

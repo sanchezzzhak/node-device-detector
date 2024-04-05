@@ -416,9 +416,18 @@ class Browser extends ClientAbstractParser {
       }
     }
 
-    let engineToken = engine;
+    let engineToken = '' + engine;
+
     if ('Blink' === engine) {
       engineToken = 'Chrome|Cronet';
+    }
+
+    if ('LibWeb' === engine) {
+      engineToken = 'LibWeb\\+LibJs\\/';
+    }
+
+    if ('Arachne' === engine) {
+      engineToken = 'Arachne\\/5\\.';
     }
 
     let regexp = new RegExp(
@@ -431,6 +440,7 @@ class Browser extends ClientAbstractParser {
     if (match !== null) {
       return match[1]
     }
+
     return '';
   }
 }
