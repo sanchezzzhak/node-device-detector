@@ -33,6 +33,7 @@ module.exports = {
   'N3', 'GD', 'O9', 'Q3', 'F7', 'K2', 'P5', 'H5', 'V3',
   'K3', 'Q4', 'G2', 'R2', 'WX', 'XP', '3I', 'BG', 'R0',
   'JO', 'OL', 'GN', 'W4', 'QI', 'E1', 'RI', '8B', '5B',
+  'K4',
   ],
   'Firefox': [
   'FF', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
