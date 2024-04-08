@@ -29,6 +29,7 @@ module.exports = {
   'DEE': 'Deepin',
   'DFB': 'DragonFly',
   'DVK': 'DVKBuntu',
+  'ELE': 'ElectroBSD',
   'FED': 'Fedora',
   'FEN': 'Fenix',
   'FOS': 'Firefox OS',

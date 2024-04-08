@@ -111,7 +111,7 @@ function versionTruncate(version, maxMinorParts) {
  */
 function hasAndroidTableFragment(userAgent) {
   return (
-    matchUserAgent('Android( [.0-9]+)?; Tablet', userAgent) !== null
+    matchUserAgent('Android( [.0-9]+)?; Tablet|.*-tablet$', userAgent) !== null
   );
 }
 
@@ -141,7 +141,7 @@ function hasVRFragment(userAgent) {
  * @returns {boolean}
  */
 function hasAndroidMobileFragment(userAgent) {
-  return matchUserAgent('Android( [.0-9]+)?; Mobile;', userAgent) !== null;
+  return matchUserAgent('Android( [.0-9]+)?; Mobile;|.*-mobile$', userAgent) !== null;
 }
 
 /**
