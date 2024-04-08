@@ -30,7 +30,10 @@ module.exports = {
   'Real-time OS': ['MTK', 'TDX', 'MRE', 'JME', 'REX'],
   'Other Mobile': ['WOS', 'POS', 'SBA', 'TIZ', 'SMG', 'MAE', 'LUN'],
   'Symbian': ['SYM', 'SYS', 'SY3', 'S60', 'S40'],
-  'Unix': ['SOS', 'AIX', 'HPX', 'BSD', 'NBS', 'OBS', 'DFB', 'SYL', 'IRI', 'T64', 'INF'],
+  'Unix': [
+  'SOS', 'AIX', 'HPX', 'BSD', 'NBS', 'OBS', 'DFB', 'SYL', 'IRI', 'T64',
+  'INF', 'ELE',
+  ],
   'WebTV': ['WTV'],
   'Windows': ['WIN'],
   'Windows Mobile': ['WPH', 'WMO', 'WCE', 'WRT', 'WIO'],

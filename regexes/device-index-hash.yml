@@ -1511,6 +1511,8 @@ infinix x6853:
   - XI
 tecno mobile lh8n:
   - TB
+tecno li9:
+  - TB
 gi-626:
   - A5
 5039d_ru:
@@ -28125,6 +28127,7 @@ zte a31 lite:
   - ZT
 nokia c21 plus:
   - NK
+  - OE
 peppa-l23b:
   - HU
 any-nx1:
@@ -35366,6 +35369,78 @@ ccit 405:
   - CNT
 a397i:
   - LE
+j9l:
+  - BU
+j10:
+  - CB
+via m30:
+  - R4
+v2323a:
+  - VV
+v2334a:
+  - VV
+v2321:
+  - VV
+v2311:
+  - VV
+tecno kj7:
+  - TB
+v2285a:
+  - VV
+v2251:
+  - VV
+v2242:
+  - VV
+v2240:
+  - VV
+v2232a:
+  - VV
+v2225:
+  - VV
+24030pn60g:
+  - XI
+sh-51d:
+  - SH
+shg09:
+  - SH
+xig04:
+  - XI
+xq-dq44:
+  - SO
+a065:
+  - NOT
+a142:
+  - NOT
+tas-l09:
+  - HU
+tagphone advanced:
+  - 7G
+c21 plus:
+  - OE
+cruise2:
+  - '61'
+h166:
+  - FPS
+g91s:
+  - BU
+b2 ultra:
+  - 5F
+b2 pro:
+  - 5F
+clk-lx2:
+  - HU
+f101 pro:
+  - FOS
+f102:
+  - FOS
+sparx neo 7 ultra 8gb:
+  - SPX
+bv8900:
+  - B2
+elite power:
+  - 0W
+speedo_1:
+  - 0G
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -45014,6 +45089,28 @@ ccit a703+:
   - CNT
 ccita715g:
   - CNT
+tg3dbg1ma:
+  - UM
+tlg01_eea:
+  - T7
+spirit qs:
+  - V2
+tab 8e:
+  - B2
+creapad_1009:
+  - WW
+tab 12 pro:
+  - B2
+g-10 ultra:
+  - GRL
+tab 13 pro:
+  - B2
+tab 18:
+  - B2
+vanwinv62:
+  - VAW
+vanwin-v62:
+  - VAW
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -56094,6 +56191,48 @@ q40yf-pb:
   - QWT
 q32yh-pb:
   - QWT
+rombica smart box g3:
+  - R3
+ct-8743:
+  - CEN
+ct-8732:
+  - CEN
+ct-8724:
+  - CEN
+ct-8575:
+  - CEN
+ct-8565:
+  - CEN
+ct-8558:
+  - CEN
+ct-8550:
+  - CEN
+ct-8543:
+  - CEN
+ct-8540:
+  - CEN
+ct-8532:
+  - CEN
+salutetv:
+  - SBR
+vekta ld-43sf4850bs:
+  - VEK
+vorke_z1:
+  - 2V
+vontar_x3:
+  - 1V
+sw-led65ug403:
+  - '45'
+ulx-50utcs3234:
+  - YN
+ulx-43ftcs2234:
+  - YN
+ulx-32tcsw2234:
+  - YN
+ulx-24tcs221:
+  - YN
+globmall x4:
+  - GLB
 bb2 pro:
   - 0M
 kii pro:
