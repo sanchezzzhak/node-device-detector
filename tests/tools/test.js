@@ -2,8 +2,9 @@ const readline = require('node:readline');
 const { Command } = require('commander');
 const ClientHints = require('../../client-hints');
 const DeviceDetector = require('../../index');
-const {reportFixture, parseCsvLine } = require('../functions');
+const {reportFixture, parseCsvLine, YAMLLoad } = require('../functions');
 const AggregateNewUa = require('./lib/aggregate-new-ua');
+const YAML = require('js-yaml');
 
 const query = (query) => {
   return new Promise((resolve, reject) => {
@@ -31,8 +32,8 @@ program.option('-sc, --skip-check <number>', 'skip check useragent exist for tes
   .option('-ci, --compact-info <number>', 'append device info to device.info (compact mode)', '0')
   .argument('[useragent]', 'useragent string')
   .argument('[hintsRaw]', 'client-hints string')
-  .argument('[hintFormat]', 'hints format(yaml, csv, json)')
-  .action(async function(userAgent, hintsRaw) {
+  .argument('[hintFormat]', 'hints format(yaml, json)')
+  .action(async function(userAgent, hintsRaw, hintFormat) {
     const opts = this.opts();
 
     let clientHintJson = {};
@@ -44,8 +45,14 @@ program.option('-sc, --skip-check <number>', 'skip check useragent exist for tes
     if (!hintsRaw) {
       hintsRaw = await query('client-hints:');
     }
-    if (hintsRaw.trim()) {
-      hintsFormat = await query('client-hints format (yaml, csv, json):');
+    if (hintsRaw && !hintFormat) {
+      hintsFormat = await query('client-hints format (yaml, json):');
+    }
+    if (hintsRaw && hintsFormat === 'json') {
+      clientHintJson = JSON.parse(hintsRaw);
+    }
+    if (hintsRaw && hintsFormat === 'yaml') {
+      clientHintJson = YAML.load(hintsRaw);
     }
 
     const clientHints = new ClientHints();

@@ -80,7 +80,11 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         clientHintJson.meta ?? clientHintJson
       );
 
-      const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent) : true;
+      if (useragent.includes('; Android 10; K)') && !clientHintData.device.model) {
+         continue;
+      }
+
+      const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent, clientHintJson) : true;
       const detectResult = detector.detect(useragent, clientHintData);
 
       if (check && formatOutput === FORMAT_OUTPUT_STRING) {
