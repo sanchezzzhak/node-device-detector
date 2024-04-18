@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const DeviceDetector = require('./../../index');
 const ClientHints = require('./../../client-hints');
-const {grabLogFiles, parseCsvLine} = require('../functions');
+const {grabLogFiles, parseCsvLine, reportFixture} = require('../functions');
 
 const ParserHelper = require('./../../parser/helper');
 const AggregateNewUa = require('./lib/aggregate-new-ua');
@@ -55,64 +55,6 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
     uniqueOutput
   });
 
-  const reportFixture = (useragent, detectResult, clientHintData, clientHintJson) => {
-    const result = {
-      user_agent: ParserHelper.trimChars(useragent, '"'),
-      headers: {},
-      meta: {},
-      os: {
-        name: detectResult.os.name ?? '',
-        version: detectResult.os.version ?? '',
-        platform: detectResult.os.platform ?? ''
-      },
-      client: {
-        ...(detectResult.client.type === 'browser' ? {
-          type: detectResult.client.type ?? '',
-          name: detectResult.client.name ?? '',
-          version: detectResult.client.version ?? '',
-          engine: detectResult.client.engine ?? '',
-          engine_version: detectResult.client.engine_version ?? ''
-        } : {
-          type: detectResult.client.type ?? '',
-          name: detectResult.client.name ?? '',
-          version: detectResult.client.version ?? '',
-        })
-      },
-      device: {
-        type: detectResult.device.type ?? '',
-        brand: detectResult.device.brand ?? '',
-        model: detectResult.device.model ?? ''
-      },
-      os_family: detectResult.os.family ?? '',
-      browser_family: detectResult.client.family ?? 'Unknown'
-    };
-
-    if (Object.keys(clientHintData.meta ?? {}).length === 0) {
-      delete result.meta;
-    } else if(clientHintData.meta) {
-      result.meta = Object.assign(result.meta, clientHintData.meta);
-    }
-
-    if (Object.keys(clientHintData).length === 0) {
-      delete result.headers;
-    } else if (clientHintJson.hints) {
-      result.headers = Object.assign(result.headers, clientHintJson.hints);
-    }
-
-    if (detector.deviceAliasCode) {
-      result.device.code = detectResult.device.code
-    }
-    if (detector.deviceTrusted) {
-      result.device.trusted = detectResult.device.trusted
-    }
-
-    if (detector.deviceInfo) {
-      result.device.info = detectResult.device.info
-    }
-    console.log(YAML.dump([result], { indent: 2, lineWidth: Infinity }));
-  };
-
-
 
   files.forEach(async (absolutePath) => {
     const lineReader = readline.createInterface({
@@ -138,14 +80,23 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         clientHintJson.meta ?? clientHintJson
       );
 
-      const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent) : true;
+      if (useragent.includes('; Android 10; K)') && !clientHintData.device.model) {
+         continue;
+      }
+
+      const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent, clientHintJson) : true;
       const detectResult = detector.detect(useragent, clientHintData);
 
       if (check && formatOutput === FORMAT_OUTPUT_STRING) {
         console.log(useragent);
       }
+
       if (check && formatOutput === FORMAT_OUTPUT_FIXTURE) {
-        reportFixture(useragent, detectResult, clientHintData, clientHintJson);
+        reportFixture(useragent, detectResult, clientHintData, clientHintJson, {
+          deviceAliasCode: detector.deviceAliasCode,
+          deviceTrusted: detector.deviceTrusted,
+          deviceInfo: detector.deviceInfo,
+        });
       }
 
     }

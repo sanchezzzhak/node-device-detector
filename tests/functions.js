@@ -4,6 +4,8 @@ const YAML = require('js-yaml');
 
 const csv = require('@fast-csv/parse');
 
+const ParserHelper = require('../parser/helper');
+
 const parseCsvLine = (string, separator = ',') => {
   return new Promise((resolve, reject) => {
     csv.parseString(string, { headers: false })
@@ -108,6 +110,64 @@ function getFixtureFolder() {
   return __dirname + '/fixtures/';
 }
 
+function reportFixture (useragent, detectResult, clientHintData, clientHintJson, options){
+  const result = {
+    user_agent: ParserHelper.trimChars(useragent, '"'),
+    headers: {},
+    meta: {},
+    os: {
+      name: detectResult.os.name ?? '',
+      version: detectResult.os.version ?? '',
+      platform: detectResult.os.platform ?? ''
+    },
+    client: {
+      ...(detectResult.client.type === 'browser' ? {
+        type: detectResult.client.type ?? '',
+        name: detectResult.client.name ?? '',
+        version: detectResult.client.version ?? '',
+        engine: detectResult.client.engine ?? '',
+        engine_version: detectResult.client.engine_version ?? ''
+      } : {
+        type: detectResult.client.type ?? '',
+        name: detectResult.client.name ?? '',
+        version: detectResult.client.version ?? '',
+      })
+    },
+    device: {
+      type: detectResult.device.type ?? '',
+      brand: detectResult.device.brand ?? '',
+      model: detectResult.device.model ?? ''
+    },
+    os_family: detectResult.os.family ?? '',
+    browser_family: detectResult.client.family ?? 'Unknown'
+  };
+
+  if (Object.keys(clientHintData.meta ?? {}).length === 0) {
+    delete result.meta;
+  } else if(clientHintData.meta) {
+    result.meta = Object.assign(result.meta, clientHintData.meta);
+  }
+
+  if (Object.keys(clientHintData).length === 0) {
+    delete result.headers;
+  } else if (clientHintJson.hints) {
+    result.headers = Object.assign(result.headers, clientHintJson.hints);
+  }
+
+  if (options.deviceAliasCode) {
+    result.device.code = detectResult.device.code
+  }
+  if (options.deviceTrusted) {
+    result.device.trusted = detectResult.device.trusted
+  }
+
+  if (options.deviceInfo) {
+    result.device.info = detectResult.device.info
+  }
+  console.log(YAML.dump([result], { indent: 2, lineWidth: Infinity }));
+}
+
+
 
 module.exports = {
   YAMLDump,
@@ -121,5 +181,6 @@ module.exports = {
   perryTable,
   perryJSON,
   getFixtureFolder,
+  reportFixture,
   isObjNotEmpty,
 };

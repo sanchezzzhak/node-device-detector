@@ -46,6 +46,9 @@ function comparePlatform(platform, bitness = '') {
   if (platform.indexOf('arm') !== -1) {
     return 'ARM';
   }
+  if (platform.indexOf('loongarch64') !== -1) {
+    return 'LoongArch64';
+  }
   if (platform.indexOf('mips') !== -1) {
     return 'MIPS';
   }
@@ -299,10 +302,11 @@ class OsAbstractParser extends ParserAbstract {
    * @return {string}
    */
   parsePlatform(userAgent) {
-    if (
-      this.getBaseRegExp('arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]').test(userAgent)
-    ) {
+    if (this.getBaseRegExp('arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]').test(userAgent)) {
       return 'ARM';
+    }
+    if (this.getBaseRegExp('loongarch64').test(userAgent)) {
+      return 'LoongArch64';
     }
     if (this.getBaseRegExp('mips').test(userAgent)) {
       return 'MIPS';

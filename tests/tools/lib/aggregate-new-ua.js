@@ -1,12 +1,16 @@
 const fs = require('fs')
-const AliasDevice = require('../../../parser/device/alias-device')
+
 const DeviceDetect = require('../../../index')
+const AliasDevice = require('../../../parser/device/alias-device')
+const ClientHints = require('../../../client-hints')
 const { YAMLLoad, getFixtureFolder } = require('./../../functions')
 
+const clientHints = new ClientHints();
 const aliasDevice = new AliasDevice()
 const detector = new DeviceDetect({
   deviceIndexes: true,
   clientIndexes: true,
+  deviceAliasCode: true,
 })
 
 let outputExist = {}
@@ -54,10 +58,11 @@ class AggregateNewUa {
 
         let brand = String(fixture.device.brand)
         let model = String(fixture.device.model)
+
         let deviceCode = aliasResult.name
           ? aliasResult.name.toLowerCase()
           : void 0
-        fixtures[deviceCode] = { brand, model }
+        fixtures[deviceCode] = { brand, model}
       })
     })
   }
@@ -65,13 +70,18 @@ class AggregateNewUa {
   /**
    *
    * @param {string} useragent
+   * @param {{}} clientHintJson
    * @returns {boolean}
    */
-  check (useragent) {
-    let aliasResult = aliasDevice.parse(useragent)
-    let deviceCode = aliasResult.name ? aliasResult.name.toLowerCase() : void 0
+  check (useragent, clientHintJson = {}) {
+    const clientHintData = clientHints.parse(
+      clientHintJson.hints ?? clientHintJson,
+      clientHintJson.meta ?? clientHintJson
+    );
+    let result = detector.detect(useragent, clientHintData)
+    let deviceCode = result.device && result.device.code ? result.device.code.toLowerCase() : void 0
 
-    let result = detector.detect(useragent)
+
     let isFoundModel = result.device && result.device.model
     let isFoundBrand = result.device && result.device.brand
 
