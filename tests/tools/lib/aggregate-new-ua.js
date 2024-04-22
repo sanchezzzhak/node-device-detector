@@ -1,17 +1,18 @@
 const fs = require('fs')
 
 const DeviceDetect = require('../../../index')
-const AliasDevice = require('../../../parser/device/alias-device')
 const ClientHints = require('../../../client-hints')
 const { YAMLLoad, getFixtureFolder } = require('./../../functions')
 
 const clientHints = new ClientHints();
-const aliasDevice = new AliasDevice()
 const detector = new DeviceDetect({
   deviceIndexes: true,
   clientIndexes: true,
   deviceAliasCode: true,
 })
+
+aliasDevice = detector.getParseAliasDevice();
+aliasDevice.setReplaceBrand(false);
 
 let outputExist = {}
 let fixtures = {}
