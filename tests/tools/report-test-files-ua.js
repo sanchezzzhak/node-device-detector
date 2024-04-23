@@ -12,6 +12,7 @@ const ParserHelper = require('./../../parser/helper');
 const AggregateNewUa = require('./lib/aggregate-new-ua');
 
 const FORMAT_OUTPUT_STRING = 'string';
+const FORMAT_OUTPUT_STRING_HEADER = 'string-header';
 const FORMAT_OUTPUT_FIXTURE = 'fixture';
 const PARSE_TYPE_LOG = 'log';
 const PARSE_TYPE_CSV_MATA_HINTS = 'csv-meta-hints';
@@ -91,6 +92,13 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         console.log(useragent);
       }
 
+      if (check && formatOutput === FORMAT_OUTPUT_STRING_HEADER) {
+        console.log(useragent);
+        if (clientHintJson.hints) {
+          console.log(YAML.dump(clientHintJson.hints, { indent: 2, lineWidth: Infinity }))
+        }
+      }
+
       if (check && formatOutput === FORMAT_OUTPUT_FIXTURE) {
         reportFixture(useragent, detectResult, clientHintData, clientHintJson, {
           deviceAliasCode: detector.deviceAliasCode,
@@ -115,7 +123,7 @@ program
   .argument('[testsPath]', 'folder fixtures for compares', __dirname + '/../fixtures/devices/')
   .option('-u, --unique <number>', 'stage filter only unique device code', '0')
   .option('-p, --parse <string>', 'parse type [log, csv-meta-hints]', 'log')
-  .option('-o, --output <string>', 'output type [string, fixture]', 'string')
+  .option('-o, --output <string>', 'output type [string, string-header, fixture]', 'string')
   .option('-sc, --skip-check <number>', 'skip check useragent exist for tests', '0')
   .option('-dt, --device-trusted <number>', 'append trusted param to device.trusted', '0')
   .option('-di, --device-info <number>', 'append device info param to device.info', '0')

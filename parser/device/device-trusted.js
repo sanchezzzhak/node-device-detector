@@ -80,10 +80,10 @@ const checkDisplaySize = (deviceData, clientHints) => {
       deviceWidth = resolution[0];
       deviceHeight = resolution[1];
     } else {
-      deviceWidth = deviceInfo.display && deviceInfo.display.resolution.width
+      deviceWidth = deviceInfo.display && deviceInfo.display.resolution && deviceInfo.display.resolution.width
         ? deviceInfo.display.resolution.width
         : null;
-      deviceHeight = deviceInfo.display && deviceInfo.display.resolution.height
+      deviceHeight = deviceInfo.display && deviceInfo.display.resolution && deviceInfo.display.resolution.height
         ? deviceInfo.display.resolution.height
         : null;
     }
