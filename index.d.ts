@@ -157,6 +157,14 @@ export default class DeviceDetector {
    * @param {*} parser
    */
   addParseVendor(name: string, parser: any): void;
+
+  /**
+   * restore original userAgent from clientHints object
+   * @param userAgent
+   * @param clientHints
+   * @return string
+   */
+  restoreUserAgentFromClientHints(userAgent: string, clientHints?: object): string;
 }
 
 export interface DeviceDetectorOptions {

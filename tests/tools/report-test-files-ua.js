@@ -2,6 +2,7 @@ const readline = require('readline');
 const { Command } = require('commander');
 const YAML = require('js-yaml');
 const path = require('path');
+const chalk = require('chalk');
 
 const fs = require('fs');
 const DeviceDetector = require('./../../index');
@@ -13,6 +14,7 @@ const AggregateNewUa = require('./lib/aggregate-new-ua');
 
 const FORMAT_OUTPUT_STRING = 'string';
 const FORMAT_OUTPUT_STRING_HEADER = 'string-header';
+const FORMAT_OUTPUT_STRING_RESTORE = 'string-restore';
 const FORMAT_OUTPUT_FIXTURE = 'fixture';
 const PARSE_TYPE_LOG = 'log';
 const PARSE_TYPE_CSV_MATA_HINTS = 'csv-meta-hints';
@@ -81,8 +83,10 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         clientHintJson.meta ?? clientHintJson
       );
 
-      if (useragent.includes('; Android 10; K)') && !clientHintData.device.model) {
-         continue;
+      if (useragent.includes('; Android 10; K)')) {
+         if (!clientHintData.device.model || clientHintData.device.model === 'K') {
+          continue;
+        }
       }
 
       const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent, clientHintJson) : true;
@@ -90,6 +94,10 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
 
       if (check && formatOutput === FORMAT_OUTPUT_STRING) {
         console.log(useragent);
+      }
+
+      if (check && formatOutput === FORMAT_OUTPUT_STRING_RESTORE) {
+        console.log(detector.restoreUserAgentFromClientHints(useragent, clientHintData));
       }
 
       if (check && formatOutput === FORMAT_OUTPUT_STRING_HEADER) {
@@ -117,13 +125,24 @@ program.description(`==========================================================
   This is a working file for filtering user agents that have not yet been processed and added to tests.
   Usages:
   $> node report-test-files-ua.js "./file.log" "./tests/fixtures/devices/" -u 1 -p log
+  
+  parse types -p:
+    ${chalk.blue('log')}             - ${chalk.yellow('each line must have user-agent')}
+    ${chalk.blue('csv-meta-hints')}  - ${chalk.yellow('special format (1 column user-agent, 2 column json headers)')}
+
+  output formats -o:
+    ${chalk.blue('string')}          - ${chalk.yellow('print user-agent')}
+    ${chalk.blue('fixture')}         - ${chalk.yellow('print success fixture for test')}
+    ${chalk.blue('string-header')}   - ${chalk.yellow('print user-agent and next line headers')}
+    ${chalk.blue('string-restore')}  - ${chalk.yellow('print user-agent (user-agent will be modified based on client hints)')}
+  
 ==========================================================`);
 program
   .argument('[parsePath]', 'folder check all files or file')
   .argument('[testsPath]', 'folder fixtures for compares', __dirname + '/../fixtures/devices/')
   .option('-u, --unique <number>', 'stage filter only unique device code', '0')
   .option('-p, --parse <string>', 'parse type [log, csv-meta-hints]', 'log')
-  .option('-o, --output <string>', 'output type [string, string-header, fixture]', 'string')
+  .option('-o, --output <string>', 'output type [string, string-header, string-restore, fixture]', 'string')
   .option('-sc, --skip-check <number>', 'skip check useragent exist for tests', '0')
   .option('-dt, --device-trusted <number>', 'append trusted param to device.trusted', '0')
   .option('-di, --device-info <number>', 'append device info param to device.info', '0')
