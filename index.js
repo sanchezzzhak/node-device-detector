@@ -669,11 +669,11 @@ class DeviceDetector {
   }
 
   /**
-   * restore original userAgent for clientHints object
+   * restore original userAgent from clientHints object
    * @param {string} userAgent
    * @param {{os:{version:''}, device: {model:''}}} clientHints
    */
-  restoreUserAgentForClientHints(
+  restoreUserAgentFromClientHints(
     userAgent,
     clientHints
   ) {
@@ -700,7 +700,7 @@ class DeviceDetector {
    * @return {ResultDevice}
    */
   parseDevice(userAgent, clientHints) {
-    let ua = this.restoreUserAgentForClientHints(userAgent, clientHints);
+    let ua = this.restoreUserAgentFromClientHints(userAgent, clientHints);
     let brandIndexes = [];
     let deviceCode = '';
 

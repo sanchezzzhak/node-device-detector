@@ -1,3 +1,5 @@
+import { JSONObject } from './client-hints';
+
 export default class DeviceDetector {
   /**
    * @param {DeviceDetectorOptions} options
@@ -157,6 +159,14 @@ export default class DeviceDetector {
    * @param {*} parser
    */
   addParseVendor(name: string, parser: any): void;
+
+  /**
+   * restore original userAgent from clientHints object
+   * @param {string} userAgent
+   * @param {JSONObject} clientHints
+   * @return string
+   */
+  restoreUserAgentFromClientHints(userAgent: string, clientHints?: JSONObject): string;
 }
 
 export interface DeviceDetectorOptions {

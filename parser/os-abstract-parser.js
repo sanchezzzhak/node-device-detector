@@ -302,7 +302,7 @@ class OsAbstractParser extends ParserAbstract {
    * @return {string}
    */
   parsePlatform(userAgent) {
-    if (this.getBaseRegExp('arm|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]').test(userAgent)) {
+    if (this.getBaseRegExp('arm|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]').test(userAgent)) {
       return 'ARM';
     }
     if (this.getBaseRegExp('loongarch64').test(userAgent)) {

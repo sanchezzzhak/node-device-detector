@@ -48,6 +48,12 @@ class AggregateNewUa {
       let fixtureData = YAMLLoad(folderFixturePath + file)
       fixtureData.forEach((fixture, pos) => {
         let aliasResult = aliasDevice.parse(fixture.user_agent)
+        if (fixture.headers) {
+          let clientHintData = clientHints.parse(fixture.headers);
+          if (clientHintData?.device?.model) {
+            aliasResult = {name: clientHintData.model}
+          }
+        }
 
         if (!fixture.device) {
           return
@@ -63,7 +69,7 @@ class AggregateNewUa {
         let deviceCode = aliasResult.name
           ? aliasResult.name.toLowerCase()
           : void 0
-        fixtures[deviceCode] = { brand, model}
+        fixtures[deviceCode] = {brand, model}
       })
     })
   }
