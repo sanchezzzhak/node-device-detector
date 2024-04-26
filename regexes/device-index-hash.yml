@@ -480,6 +480,8 @@ sm-a032f:
   - SA
 pixel 6:
   - GO
+sm-g950n:
+  - SA
 zc554kl:
   - AU
 dn2103:
@@ -1119,6 +1121,8 @@ multiposx9:
   - MPS
 sobietech slp:
   - SOB
+miprojm05:
+  - XI
 sm-f721u:
   - SA
 note 13p:
@@ -2489,8 +2493,6 @@ iv2201:
   - 'ON'
 clt-l29:
   - HU
-rmx3491:
-  - RE
 sm-a102u:
   - SA
 sm-s134dl:
@@ -7207,8 +7209,6 @@ samsung sm-g9500:
 samsung sm-g950w:
   - SA
 samsung sm-g950u:
-  - SA
-sm-g950n:
   - SA
 sc-02j:
   - SA
@@ -35506,6 +35506,128 @@ moto g04:
   - MR
 bvl-an20:
   - HU
+tiger_x12:
+  - 9W
+sm-a156e:
+  - SA
+zte 8050:
+  - ZT
+fgd-al00:
+  - HU
+iris fuel f1:
+  - LV
+panasonic_eluga_i3:
+  - PA
+polytron r2457:
+  - P5
+iqoo z1x 5g:
+  - VV
+r1 hd:
+  - BU
+p60:
+  - CB
+sparx neo 8 plus:
+  - SPX
+gtm_5v.5:
+  - GP
+sm-m236b:
+  - SA
+v2219:
+  - VV
+v2308:
+  - VV
+clk-an00:
+  - HU
+mi max3pro:
+  - XI
+coolmintttribe:
+  - OM
+sm-s9210:
+  - SA
+sm-s921b:
+  - SA
+samsung sm-s921w:
+  - SA
+sm-s921u:
+  - SA
+sm-s921u1:
+  - SA
+sm-s921n:
+  - SA
+sm-s9280:
+  - SA
+sm-s928u1:
+  - SA
+sm-s928u:
+  - SA
+sm-s928n:
+  - SA
+sm-s928b:
+  - SA
+sm-s928w:
+  - SA
+sm-s928q:
+  - SA
+sm-s921q:
+  - SA
+ky-42c:
+  - KY
+sh65 2gb/32gb 4800mah gms:
+  - FPS
+  - SH
+oneplus a6000:
+  - 'ON'
+sm-a426n:
+  - SA
+nokia c300:
+  - NK
+hd62:
+  - JW
+symphony g100:
+  - SM
+nokia g100:
+  - NK
+g100:
+  - GN
+infinix x6836:
+  - IF
+sm-a256e:
+  - SA
+sm-a145p:
+  - SA
+wileyfox swift 2 plus:
+  - WF
+s19 maxl 128gb:
+  - RD
+s19 max 32gb:
+  - RD
+itel p661n:
+  - IZ
+s19 max pro:
+  - RD
+x700:
+  - QQ
+pgt-an00:
+  - HU
+sm-a526a:
+  - SA
+sm-s9260:
+  - SA
+shine 12 pro:
+  - AA
+  - J0
+bv4800:
+  - B2
+s51:
+  - DO
+5131g:
+  - TC
+novisea a10:
+  - NOS
+pju110:
+  - OP
+5g ug phone u23:
+  - ZT
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -36517,6 +36639,8 @@ mt2111:
   - 'ON'
 v2142:
   - VV
+rmx3491:
+  - RE
 black g:
   - KL
 4187u:
@@ -45184,6 +45308,28 @@ htc a102:
   - HT
 plt1077g:
   - P1
+hit 16 hs1002pl:
+  - D2
+tab a802:
+  - 1S
+p26t_eea:
+  - T7
+vankyo_s10:
+  - VC
+bravis np 747 sd:
+  - BV
+gt40 ultra:
+  - 8L1
+gdi-w09:
+  - HU
+twintab-t103gq1:
+  - TWN
+m10_eea:
+  - PRI
+tornado 8:
+  - EX
+wo 9:
+  - WAO
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54309,6 +54455,12 @@ x_game:
   - 3A
 egl11qf6:
   - GW
+volta4:
+  - 3O
+sm-x616b:
+  - SA
+sky 1264c 4g ss1271pl:
+  - W8
 tf-led40s63t2s_536d400pf33_fhd:
   - TL
 gtking:
@@ -56318,6 +56470,34 @@ brandt fhd tv:
   - 8B
 yndx-00091:
   - YD
+r3g:
+  - '40'
+dv9135:
+  - M9
+crd55-uhd9:
+  - MAG
+43st20h:
+  - OLT
+ld-32sr5112bs:
+  - VEK
+yndx-00092:
+  - YD
+nexon_x5+:
+  - N8
+50ssd-smart tv-r1:
+  - HEC
+h-led50fu7001:
+  - HN
+h32ey1500b:
+  - ACC
+hty-43fhd06b-s2-t9:
+  - HA1
+h-led55bu7003:
+  - HN
+nexon_x3:
+  - N8
+h-dmp103:
+  - HN
 bb2 pro:
   - 0M
 kii pro:
@@ -56951,3 +57131,5 @@ watch7,5:
   - AP
 kidphone4g:
   - 7E
+x9 call2:
+  - WAO

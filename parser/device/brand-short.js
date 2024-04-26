@@ -1068,6 +1068,7 @@ module.exports = {
   'N1': 'Noain',
   'N6': 'Nobby',
   'NOC': 'Novacom',
+  'NOS': 'NoviSea',
   'NOV': 'Novey',
   'NO1': 'NOVO',
   '57': 'Nubia',
