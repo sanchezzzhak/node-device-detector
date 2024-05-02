@@ -1519,6 +1519,8 @@ tecno li9:
   - TB
 sm-n985f:
   - SA
+sm-f907b:
+  - SA
 gi-626:
   - A5
 5039d_ru:
@@ -2535,6 +2537,8 @@ nw-a100series:
   - SO
 xdp-300r:
   - PI
+r6iii:
+  - HBY
 da220hql:
   - AC
 da241hl:
@@ -33617,6 +33621,8 @@ galaxy s20 ultra:
   - SA
 sm-s911u1:
   - SA
+sm-a346b:
+  - SA
 samsung sm-a346b:
   - SA
 vtl-202201:
@@ -33909,6 +33915,10 @@ tecno ck8n:
   - TB
 joe:
   - MJ
+bl8000:
+  - B2
+zte blade a53 pro:
+  - ZT
 via x30 plus:
   - R4
 rmx3660:
@@ -34430,8 +34440,6 @@ sparx neo 5 plus:
   - XI
 2305003m:
   - FEY
-active 8 pro:
-  - B2
 blade l210:
   - ZT
 blade l210ru:
@@ -35628,6 +35636,121 @@ pju110:
   - OP
 5g ug phone u23:
   - ZT
+ul40:
+  - A0
+cuiud f7:
+  - CUI
+asus_i007d:
+  - AU
+a463bg:
+  - AL
+sm-s515dl:
+  - SA
+zte 7160n:
+  - ZT
+rmx3999:
+  - RE
+mi5x:
+  - XI
+v2230ea:
+  - VV
+tecno mobile kj7:
+  - TB
+xt2301-5:
+  - MR
+nokia c22:
+  - NK
+ds-cl2 lite:
+  - DCO
+zte 8150n:
+  - ZT
+zte 7060:
+  - ZT
+zte blade a33s:
+  - ZT
+zte blade a53+:
+  - ZT
+infinix x6817b:
+  - IF
+agm g2:
+  - A3
+nokia x10:
+  - NK
+bv8900 pro:
+  - B2
+bv9300 pro:
+  - B2
+agm_h6:
+  - A3
+sm-m115f:
+  - SA
+myphone jet:
+  - R3
+  - MY
+mipo_m25:
+  - MIP
+mipo_m46_pro:
+  - MIP
+modern 8:
+  - OSC
+new 10:
+  - V6
+elite a63max:
+  - SW
+bold n3:
+  - BU
+sh-52d:
+  - SH
+dm-b50104:
+  - DAR
+flat 1c:
+  - OSC
+nexg n71:
+  - WA
+dct 90:
+  - DIJ
+ds-cl3:
+  - DCO
+bv6200:
+  - B2
+armor x12 pro:
+  - UL
+armor x13:
+  - UL
+armor 24:
+  - UL
+sl004t:
+  - KB
+armor 20wt:
+  - UL
+ds-bd2:
+  - DCO
+lt_6509:
+  - QL
+mp07:
+  - UM
+new 20:
+  - V6
+k9 pro 5g:
+  - OP
+  - OE
+k9s:
+  - OP
+k9x:
+  - OP
+ds-cl1:
+  - DCO
+mp09:
+  - UM
+mione pro plus:
+  - X7
+  - MO
+sm-a4260:
+  - SA
+goa-al80u:
+  - HU
+ulefone_s11:
+  - UL
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -42213,8 +42336,6 @@ sugar y8 max:
   - 9S
 sugar y9:
   - 9S
-ul40:
-  - A0
 allview 2 speed quad:
   - A2
 a10_lite_2019:
@@ -45330,6 +45451,50 @@ tornado 8:
   - EX
 wo 9:
   - WAO
+m10-12_eea:
+  - AC
+tab a1020:
+  - LE
+tab_stand_pro:
+  - LM
+cm7800plus:
+  - CIA
+leagoo_leapad7_8:
+  - L5
+flylife connect 10.1 3g 2:
+  - FL
+tab_a1010_neo:
+  - 1S
+tab_a1025_x-treme:
+  - 1S
+kt200pro:
+  - CNT
+kt300pro:
+  - CNT
+kt600pro:
+  - CNT
+tdt4541_4g_e_ru:
+  - TOP
+armor pad:
+  - UL
+mega 1:
+  - B2
+active 8:
+  - B2
+active 8 pro:
+  - B2
+tab 7 wifi:
+  - B2
+i11_plus_eea:
+  - Y5
+strong tablet p15000 pro:
+  - IH
+optima 8403d 4g ts8287pl:
+  - D2
+hiper-m-pad:
+  - HIP
+htc a100:
+  - HT
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -56498,6 +56663,18 @@ nexon_x3:
   - N8
 h-dmp103:
   - HN
+32h600gu:
+  - KV
+vhix-40f152msy-b:
+  - 3H
+le-50ztus30:
+  - '54'
+yndx-00101:
+  - YD
+dreamstar w2:
+  - DR1
+43ucy1:
+  - DX
 bb2 pro:
   - 0M
 kii pro:
