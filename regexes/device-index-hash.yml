@@ -1123,6 +1123,8 @@ sobietech slp:
   - SOB
 miprojm05:
   - XI
+dt20:
+  - 9U
 sm-f721u:
   - SA
 note 13p:
@@ -35751,6 +35753,113 @@ goa-al80u:
   - HU
 ulefone_s11:
   - UL
+a303op:
+  - OP
+c5l 2021:
+  - BU
+c30 pro:
+  - OSC
+c31 pro:
+  - OE
+c31:
+  - OE
+f22:
+  - QIN
+gplus x10+:
+  - 8G
+d61l:
+  - KK
+f21 pro:
+  - QIN
+f22 pro:
+  - QIN
+f22pro:
+  - QIN
+x-treme_pq18_max:
+  - 1S
+nokia c21:
+  - NK
+nokia c30:
+  - NK
+orb s:
+  - R1
+ravoz z6 pro:
+  - R9
+oppo a33m:
+  - OP
+oppo_a33m:
+  - OP
+a727_infinity_pro:
+  - GV
+neffos c5:
+  - NF
+p5_energy:
+  - A2
+tit-l01:
+  - HU
+digiceldl1plus:
+  - D3
+sm-c5010:
+  - SA
+gar-an60:
+  - HU
+sh60 2gb/32gb 3000mah hms:
+  - FPS
+  - SH
+armor x12:
+  - UL
+sm-a908n:
+  - SA
+a1 alpha eco:
+  - '41'
+itel a663lc:
+  - IZ
+itel a665l:
+  - IZ
+itel a666l:
+  - IZ
+itel a666ln:
+  - IZ
+itel p663ln:
+  - IZ
+lava lxx506:
+  - LV
+mp27:
+  - UM
+mp34:
+  - UM
+nokia c210:
+  - NK
+nokia g310 5g:
+  - NK
+nokia g50:
+  - NK
+tecno ck6:
+  - TB
+via a40:
+  - R4
+via_x40:
+  - R4
+vocal v1:
+  - VOC
+v30pro:
+  - DO
+v20s:
+  - DO
+zte blade a34:
+  - ZT
+xsmart nova 7:
+  - XSM
+xig03:
+  - XI
+v2272a:
+  - VV
+v2318a:
+  - VV
+aligator rx850:
+  - 4A
+move 10:
+  - KE
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -45495,6 +45604,29 @@ hiper-m-pad:
   - HIP
 htc a100:
   - HT
+htc a101:
+  - HT
+  - AC
+nomi c10103:
+  - NM
+bliss-t6:
+  - BLI
+piranha8032:
+  - PIR
+p10x:
+  - WAI
+pixus_line:
+  - PX
+t40hd:
+  - T7
+alldocube iplay50_mini_pro:
+  - 3A
+tb330xu:
+  - LE
+iplay50_mini_pro:
+  - 3A
+redmi pad se:
+  - XI
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -56674,6 +56806,36 @@ yndx-00101:
 dreamstar w2:
   - DR1
 43ucy1:
+  - DX
+openbox a9:
+  - OH
+ozonehd nexo:
+  - OZ
+tdtv32bs04h:
+  - TOP
+24hhy1:
+  - ACL
+24khs57:
+  - DF
+32f540s:
+  - 4B
+32hhy1:
+  - ACL
+40fcy1:
+  - DX
+f32h8050c:
+  - DX
+f43h8050c:
+  - DX
+50ucy1-g:
+  - DX
+55ucy1-g:
+  - DX
+65ucy1-b:
+  - DX
+65ucy1-g:
+  - DX
+u43h8050eg:
   - DX
 bb2 pro:
   - 0M
