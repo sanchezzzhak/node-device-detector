@@ -502,6 +502,8 @@ shield:
   - NV
 dexp freya:
   - DX
+razer edge 5g:
+  - RZ
 hibox-hero:
   - 1C
 aspire v5-121:
@@ -1125,6 +1127,12 @@ miprojm05:
   - XI
 dt20:
   - 9U
+jin tu x1:
+  - JIN
+m3sl20:
+  - M3M
+nl5h00x:
+  - LE
 sm-f721u:
   - SA
 note 13p:
@@ -1523,6 +1531,10 @@ sm-n985f:
   - SA
 sm-f907b:
   - SA
+infinix x6850:
+  - IF
+v2303a:
+  - VV
 gi-626:
   - A5
 5039d_ru:
@@ -21872,6 +21884,7 @@ kt5512:
   - X6
 motorola edge 20 pro:
   - MR
+  - SPX
 zenfone 5z:
   - AU
 nokia c1 2nd edition:
@@ -34768,7 +34781,6 @@ unia62_s01:
   - UZ
 volla phone 22:
   - VOP
-  - RZ
 volla phone x23:
   - VOP
 nu65:
@@ -35860,6 +35872,157 @@ aligator rx850:
   - 4A
 move 10:
   - KE
+i2302:
+  - VV
+comio c1:
+  - C6
+cph2607:
+  - OP
+cph2609:
+  - 'ON'
+  - OP
+nokia c32:
+  - NK
+mp29:
+  - UM
+realme x7 max 5g:
+  - RE
+xq-dq54:
+  - SO
+v2309:
+  - VV
+nokia c3:
+  - NK
+cph1821ex:
+  - OP
+htc_d628u:
+  - HT
+v1936tl:
+  - VV
+ctr-l81:
+  - HU
+z5x 712:
+  - VV
+life one x3:
+  - BU
+yal-tl50:
+  - HU
+b1550vl:
+  - BU
+wp36:
+  - OE
+i2219:
+  - VV
+pjf110:
+  - 'ON'
+pjh110:
+  - OP
+itel p665l:
+  - IZ
+bvl-n49:
+  - HU
+xt2323-3:
+  - MR
+buzz 4pro:
+  - AE
+flow 10:
+  - KE
+lava lzx414:
+  - LV
+lava lxx508:
+  - LV
+lava lxx505:
+  - LV
+voto v2:
+  - V1
+a170:
+  - I4
+a171:
+  - I4
+a180:
+  - I4
+gionee m15:
+  - GI
+g71 plus:
+  - BU
+i 618 app plus+:
+  - IN3
+iplus p3:
+  - IPL
+live 10s:
+  - KE
+sf04 4g:
+  - BP
+wiko t50:
+  - WI
+cp12:
+  - CO
+k16:
+  - OE
+ihunt s24 ultra:
+  - IH
+ihunt s23 ultra:
+  - IH
+hammer iron v:
+  - HAM
+le link:
+  - LM
+p11000 pro:
+  - IH
+rmx3751:
+  - RE
+vortex cm62:
+  - JW
+vortex hd65 choice:
+  - JW
+v2315:
+  - VV
+e940-2796-00:
+  - GS
+e940-2878-03:
+  - GS
+edge 20 pro:
+  - SPX
+e940-2766-00:
+  - GS
+e940-2797-00:
+  - GS
+ds-cl2:
+  - DCO
+innova10:
+  - SM
+lt 2003:
+  - QL
+hppl60a:
+  - U8
+nexg n6:
+  - WA
+nexg n70:
+  - WA
+nokia c200:
+  - NK
+power_armor14_pro:
+  - UL
+power armor 16s:
+  - UL
+s41 max:
+  - DO
+s41 plus:
+  - DO
+moto g34 5g:
+  - MR
+s19 max pro s edge:
+  - RD
+celero3 5g:
+  - DQ
+digitnext_ultra:
+  - DIG
+digit4g_e4_pro:
+  - DIG
+nokia c1:
+  - NK
+fin-al60:
+  - HU
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -45627,6 +45790,168 @@ iplay50_mini_pro:
   - 3A
 redmi pad se:
   - XI
+bb-mobile techno 7.0 3g:
+  - 0B
+gt-w170:
+  - GZ
+  - SA
+iplay50:
+  - 3A
+g3_eea:
+  - GOO
+eagle 806:
+  - KE
+t45hd:
+  - T7
+t45hd_eea:
+  - T7
+t40hd_eea:
+  - T7
+p85t_row:
+  - T7
+p30t:
+  - T7
+ztab10:
+  - JW
+btab10:
+  - JW
+f13_eea:
+  - HZ
+m50hd:
+  - T7
+m50hd_eea:
+  - T7
+m50hd_row:
+  - T7
+m50 pro:
+  - T7
+8305c 4g ts8289pl:
+  - D2
+9160g:
+  - TC
+mbk-t2101:
+  - MBK
+space_one_10se:
+  - O1
+tab-8us2:
+  - WHO
+tablet pc 10 pro:
+  - IH
+tpc1013:
+  - LVI
+digma pro hit 104 hs1005pl:
+  - D2
+digma pro hit 14 hs1006pl:
+  - D2
+dt1:
+  - FOS
+dt2:
+  - FOS
+e11:
+  - KHI
+e12:
+  - KHI
+e17:
+  - KHI
+e18:
+  - KHI
+e28:
+  - KHI
+ee10a:
+  - EGS
+h38:
+  - KHI
+h21:
+  - KHI
+h19:
+  - KHI
+h11:
+  - KHI
+digma pro prime 18 ms1003pl:
+  - D2
+digma pro prime 18 ms1002pl:
+  - D2
+digma pro prime 18 ms1001pl:
+  - D2
+citi 1313c 4g cs1273pl:
+  - D2
+npad y1:
+  - NON
+opd2302:
+  - OP
+ot6:
+  - OE
+ot8:
+  - OE
+picassotabx14:
+  - '10'
+pixus_drive:
+  - PX
+pixus_wing:
+  - PX
+platinumtab11_4g:
+  - Q2
+rmp2204:
+  - RE
+sky pad10max:
+  - SW
+sky_pad10max:
+  - SW
+sky pad8:
+  - SW
+sky pad8pro:
+  - SW
+e38:
+  - KHI
+dt1 lite:
+  - FOS
+gwat10-1:
+  - GA
+k110_eea:
+  - '67'
+i9_plus_eea:
+  - Y5
+m40plus_eea:
+  - T7
+platinumtab10v22:
+  - Q2
+pad 11:
+  - OSC
+pad 15:
+  - OSC
+pad 18:
+  - OSC
+pad 8:
+  - OSC
+r10:
+  - DO
+r20:
+  - DO
+p85_eea:
+  - T7
+t10plus:
+  - DO
+htc a101 plus:
+  - HT
+  - AC
+logic instrument fieldbook ks80:
+  - LH
+tb330fu:
+  - LE
+tab 70 wifi:
+  - B2
+spider 8:
+  - OSC
+sm-x210:
+  - SA
+tpc-xe10:
+  - JA
+ceptertab10l:
+  - CEP
+clovertek_g12:
+  - CLT
+elite10qhpro:
+  - VIL
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54792,6 +55117,12 @@ toucan stick 4k:
   - I2
 vmp023.p.02.d4:
   - V7
+digma shell lc430duy:
+  - D2
+digma shell t320xvn02.g:
+  - D2
+digma shell lc390tu1a:
+  - D2
 mystery shell 536d420cf12_fhd:
   - 6M
 mystery shell 536d315ph21_hd:
@@ -54812,6 +55143,8 @@ eled-48smart:
   - JE
 eled-32smart:
   - JE
+digma shell hv320whb-n85:
+  - D2
 telefunken shell 536d315ph41_hd:
   - TL
 telefunken shell 536d315ch37_hd:
@@ -56837,6 +57170,126 @@ f43h8050c:
   - DX
 u43h8050eg:
   - DX
+ex-60us001b:
+  - '35'
+gtx-r10i:
+  - Q4
+cadena pro a csb-231:
+  - CAD
+yndx-00102:
+  - YD
+u55e9100q:
+  - DX
+u50e9100q:
+  - DX
+u50f8000q:
+  - DX
+gtx-98q:
+  - Q4
+technosat w2:
+  - TTS
+technosat x98mini:
+  - TTS
+dm-led43sr22:
+  - D2
+me-cool s:
+  - 0M
+h24f8000c:
+  - DX
+24ghs55:
+  - DF
+24ghs57:
+  - DF
+24h1ydx000bs2:
+  - I6
+24h520t:
+  - 4B
+24lex-7269:
+  - BB
+28h540s:
+  - 4B
+50kus65:
+  - DF
+50u620s:
+  - 4B
+50u630s:
+  - 4B
+50u660ts:
+  - HAR
+50lu1204:
+  - VIT
+dm-led43ubb31:
+  - D2
+dm-led50ubb31:
+  - D2
+dm-led55ubb31:
+  - D2
+ex-32hs006b:
+  - '35'
+f43h8000qg:
+  - DX
+h32f8000cg:
+  - DX
+h32g8000kw:
+  - DX
+h32g8000q:
+  - DX
+h32h8000k:
+  - DX
+h32h8000q:
+  - DX
+hiberg55yuhd:
+  - HIB
+hiberg50yuhd:
+  - HIB
+hgtv-led50uhds102t2:
+  - HLB
+hgtv-led55uhds102t2:
+  - HLB
+hgtv-led40fhds100t2:
+  - HLB
+hgtv-led43uhds102t2:
+  - HLB
+hgtv-led55uhdsq100t2:
+  - HLB
+hgtv-led32hds102t2:
+  - HLB
+hgtv-led43fhds102t2:
+  - HLB
+hgtv-led65uhds101t2:
+  - HLB
+h-led32bs5003:
+  - HN
+h-led40bs5003:
+  - HN
+h-led43bu7003:
+  - HN
+harper 55q850ts:
+  - HAR
+harper 55u660ts:
+  - HAR
+harper 58u750ts:
+  - HAR
+harper 50u750ts:
+  - HAR
+harper 65q850ts:
+  - HAR
+harper-50u660ts:
+  - HAR
+tf-led32s14t2s:
+  - TL
+tf-led43s95t2su:
+  - TL
+tf-led50s03t2su:
+  - TL
+tf-led55s11t2su-1:
+  - TL
+mlt55usx02:
+  - MAU
+dm-led32sbb31:
+  - D2
+dm-led40sbb31:
+  - D2
 bb2 pro:
   - 0M
 kii pro:
