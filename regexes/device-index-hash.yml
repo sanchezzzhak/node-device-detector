@@ -1535,6 +1535,8 @@ infinix x6850:
   - IF
 v2303a:
   - VV
+tecno li7:
+  - TB
 gi-626:
   - A5
 5039d_ru:
@@ -36023,6 +36025,91 @@ nokia c1:
   - NK
 fin-al60:
   - HU
+zte 7531n:
+  - ZT
+cha-al80:
+  - HU
+bal-al80:
+  - HU
+tecno cl6:
+  - TB
+rmx3843:
+  - RE
+rmx3868:
+  - RE
+rmx3998:
+  - RE
+scg20:
+  - SA
+meizu 20:
+  - M1
+meizu 20 pro:
+  - M1
+bvl-an00:
+  - HU
+asus_ai2401_h:
+  - AU
+kingkong_ax:
+  - CB
+lly-nx1:
+  - HU
+23129rn51h:
+  - XI
+e5mini:
+  - EMR
+clk-lx3:
+  - HU
+cg65:
+  - JW
+konka_i256:
+  - KO
+linq l10:
+  - QM
+linq x100:
+  - QM
+i-style 8.5:
+  - IO
+fuel f1 mini:
+  - LV
+evo-vx1:
+  - GOB
+nim-500q:
+  - NU
+my_star_18:
+  - OL
+bkl-l09s:
+  - HU
+bla-l29s:
+  - HU
+flare_selfie:
+  - CH
+mione xs max:
+  - X7
+  - MO
+mla-l12:
+  - HU
+lem-al00:
+  - HU
+buzz 4:
+  - AE
+buzz 4s:
+  - AE
+v2218:
+  - VV
+xq-cq62:
+  - SO
+xq-de54:
+  - SO
+xq-dq62:
+  - SO
+24053py09c:
+  - XI
+v2312ba:
+  - VV
+pot-lx2:
+  - HU
+twist 4 mini:
+  - PS
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -45952,6 +46039,28 @@ clovertek_g12:
   - CLT
 elite10qhpro:
   - VIL
+gt40promax:
+  - PAD
+nogapad 10hd:
+  - OG
+kon_tiki3:
+  - 3O
+wo 8:
+  - WAO
+venus pad14:
+  - LIB
+24018rpacg:
+  - XI
+inoipad 128+4gb wi-fi+4g:
+  - I4
+inoipad pro:
+  - I4
+tdt3778_wi_e_cis:
+  - TOP
+tdt4528_4g_e_ru:
+  - TOP
+td-tp010g-2:
+  - WSS
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -57290,6 +57399,42 @@ dm-led32sbb31:
   - D2
 dm-led40sbb31:
   - D2
+soullink s1:
+  - SUL
+n5max_x4:
+  - 6Y
+atom-108al:
+  - 2A
+atom-216al:
+  - 2A
+43lf1210:
+  - VHM
+40ghs57:
+  - DF
+43f511t:
+  - 4B
+55kus65:
+  - DF
+skystream one:
+  - SK1
+tq55ufbtv1:
+  - TUV
+tdtv43cs05u:
+  - TOP
+tdtv43cs06u:
+  - TOP
+tdtv50bs06u:
+  - TOP
+tdtv50cs05u:
+  - TOP
+tdtv55bs06u:
+  - TOP
+tdtv65bs05u_bk:
+  - TOP
+tdtv43bs06u_bk:
+  - TOP
+tdtv40bs04f:
+  - TOP
 bb2 pro:
   - 0M
 kii pro:
@@ -57925,3 +58070,5 @@ kidphone4g:
   - 7E
 x9 call2:
   - WAO
+lem16:
+  - W9
