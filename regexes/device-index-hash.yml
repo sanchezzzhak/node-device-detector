@@ -1133,6 +1133,8 @@ m3sl20:
   - M3M
 nl5h00x:
   - LE
+pnc560:
+  - HYT
 sm-f721u:
   - SA
 note 13p:
@@ -1537,6 +1539,12 @@ v2303a:
   - VV
 tecno li7:
   - TB
+v2337a:
+  - VV
+sm-n981b:
+  - SA
+sm-f707u:
+  - SA
 gi-626:
   - A5
 5039d_ru:
@@ -2615,6 +2623,8 @@ aeota:
   - KN
 aeobp:
   - KN
+yndx-00055:
+  - YD
 i7u:
   - A9
 i4u:
@@ -36110,6 +36120,87 @@ pot-lx2:
   - HU
 twist 4 mini:
   - PS
+ady-al00:
+  - HU
+gar-an00:
+  - HU
+rmx3841:
+  - RE
+bal-an20:
+  - HU
+atlas w:
+  - ZT
+stg-lx2:
+  - HU
+armor_c1w:
+  - KHI
+i003d:
+  - AU
+rmx3844:
+  - RE
+v2339:
+  - VV
+vca-an00:
+  - HU
+rmx3852:
+  - RE
+xt2131-4:
+  - MR
+v2317a:
+  - VV
+v2284a:
+  - VV
+juliaqn-l21b:
+  - HU
+buzz 4lite:
+  - AE
+ga01180-us:
+  - GO
+tyh631m:
+  - U9
+rmx3512:
+  - RE
+n155dl:
+  - NK
+rmx3870:
+  - RE
+tecno mobile ci8n:
+  - TB
+buzz 4 prime:
+  - AE
+elite p55max:
+  - SW
+elite r55:
+  - SW
+s6512l:
+  - NL
+u680ac:
+  - CK
+sm-e156b:
+  - SA
+t607dl:
+  - TC
+f106 pro:
+  - FOS
+g025i:
+  - GO
+e940-2849-01:
+  - GS
+tecno mobile bg6:
+  - TB
+sm-s156v:
+  - SA
+rmx3618:
+  - RE
+hbp-al00:
+  - HU
+cph2439:
+  - OP
+orbit y70:
+  - WA
+cph2613:
+  - 'ON'
+  - OP
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -46061,6 +46152,53 @@ tdt4528_4g_e_ru:
   - TOP
 td-tp010g-2:
   - WSS
+pce-w30:
+  - HU
+pce-w40:
+  - HU
+pa2373:
+  - VV
+ipa2375:
+  - VV
+ezpad m11:
+  - 7J
+  - EZ
+y121-eea:
+  - FLY
+darwinx:
+  - 3O
+p85t_eea:
+  - T7
+elite t8plus:
+  - SW
+p40s_eea:
+  - T7
+faust6:
+  - 3O
+pixus_titan:
+  - PX
+optima 8259c 4g ts8286pl:
+  - D2
+iplay 50 mini pro:
+  - 3A
+optima 1442e 4g ts1290pl:
+  - D2
+m40_plus_eea:
+  - T7
+t40s_eea:
+  - T7
+platinumtab8_4g:
+  - Q2
+opd2301:
+  - OP
+livingstone3:
+  - 3O
+10a30q:
+  - LG
+p40s_row:
+  - T7
+m40plus_row:
+  - T7
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -57435,6 +57573,66 @@ tdtv43bs06u_bk:
   - TOP
 tdtv40bs04f:
   - TOP
+32ghs56:
+  - DF
+32r751ts:
+  - HAR
+hty-75u06b-vn:
+  - HA1
+f40h8000e:
+  - DX
+samtron_w_43sa701:
+  - SAM
+swtv-22ae-fhd:
+  - SK
+p42l31t2csm:
+  - Q6
+polarline_wk_32pl51stc-sm:
+  - '97'
+28h550t:
+  - 4B
+43f750ts:
+  - HAR
+baff32ystv:
+  - BFF
+swtv-22ae:
+  - SK
+43lf1204:
+  - VIT
+85u750ts:
+  - HAR
+40lf8120t:
+  - 8A
+hty_43fhd06b:
+  - HA1
+hty-32h06w-vz:
+  - HA1
+hty-43f06w-vz:
+  - HA1
+h32h8050cg:
+  - DX
+hty-32h06b-vz:
+  - HA1
+hty-65u11b-vs:
+  - HA1
+hty-65uhd06b-ha22:
+  - HA1
+32lx9000ct:
+  - '05'
+hty-65uhdo6b-hk22:
+  - HA1
+vhix-50u169msy:
+  - 3H
+hty-43u11s-vd:
+  - HA1
+hty-43fhdo6b-hk22:
+  - HA1
+tf-led43s97t2su:
+  - TL
+sw-led32sg311:
+  - '45'
+hty-50u11b-vs:
+  - HA1
 bb2 pro:
   - 0M
 kii pro:
@@ -58072,3 +58270,5 @@ x9 call2:
   - WAO
 lem16:
   - W9
+samsung ticwatch pro 3 ultra gps:
+  - MVO
