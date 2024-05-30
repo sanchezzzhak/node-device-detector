@@ -111,7 +111,7 @@ function versionTruncate(version, maxMinorParts) {
  */
 function hasAndroidTableFragment(userAgent) {
   return (
-    matchUserAgent('Android( [.0-9]+)?; Tablet|.*-tablet$', userAgent) !== null
+    matchUserAgent('Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*-tablet$', userAgent) !== null
   );
 }
 

@@ -24,7 +24,7 @@ module.exports = {
   'FOR', 'MON', 'KAN', 'ZEN', 'LND', 'LNS', 'CHN', 'AMZ', 'TEN', 'CST',
   'NOV', 'ROU', 'ZOR', 'RED', 'KAL', 'ORA', 'VID', 'TIV', 'BSN', 'RAS',
   'UOS', 'PIO', 'FRI', 'LIR', 'WEB', 'SER', 'ASP', 'AOS', 'LOO', 'EUL',
-  'SCI', 'ALP', 'CLO', 'ROC', 'OVZ', 'PVE',
+  'SCI', 'ALP', 'CLO', 'ROC', 'OVZ', 'PVE', 'RST',
   ],
   'Mac': ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],
