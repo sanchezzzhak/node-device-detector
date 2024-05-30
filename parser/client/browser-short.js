@@ -357,6 +357,7 @@ module.exports = {
   'MY': 'Mypal',
   'MR': 'Monument Browser',
   'MW': 'MAUI WAP Browser',
+  'N7': 'Naenara Browser',
   'NW': 'Navigateur Web',
   'NK': 'Naked Browser',
   'NA': 'Naked Browser Pro',

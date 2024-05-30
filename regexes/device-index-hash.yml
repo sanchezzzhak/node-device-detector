@@ -488,6 +488,11 @@ dn2103:
   - 'ON'
 kfkawi:
   - KN
+'':
+  - AP
+  - OQ
+  - LG
+  - TLY
 2201116sg:
   - XI
 sm-m426b:
@@ -504,6 +509,10 @@ dexp freya:
   - DX
 razer edge 5g:
   - RZ
+rg405v:
+  - ANC
+rg505:
+  - ANC
 hibox-hero:
   - 1C
 aspire v5-121:
@@ -1135,6 +1144,8 @@ nl5h00x:
   - LE
 pnc560:
   - HYT
+esp-300:
+  - EXL
 sm-f721u:
   - SA
 note 13p:
@@ -1545,6 +1556,16 @@ sm-n981b:
   - SA
 sm-f707u:
   - SA
+tecno li6:
+  - TB
+redmi note 13 pro 5g:
+  - XI
+redmi note 13 pro+ 5g:
+  - XI
+redmi note 13 5g:
+  - XI
+redmi note 12r:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -36201,6 +36222,157 @@ orbit y70:
 cph2613:
   - 'ON'
   - OP
+tecno cl9:
+  - TB
+2312bpc51h:
+  - 0P
+pixel 8a:
+  - GO
+g020a:
+  - GO
+g020m:
+  - GO
+g020p:
+  - GO
+lava lzx411:
+  - LV
+lava lix402:
+  - LV
+origin_679:
+  - TN
+e7446:
+  - MI
+e7533:
+  - MI
+v2034:
+  - VV
+v2156fa:
+  - VV
+w-k521-ope:
+  - WI
+x63pro:
+  - XMO
+wave 6c:
+  - B2
+ghl1x:
+  - GO
+rmx3850:
+  - RE
+v2222:
+  - VV
+xq-de44:
+  - SO
+v2333:
+  - VV
+v2334:
+  - VV
+v2336:
+  - VV
+v2352a:
+  - VV
+redmi 12 5g:
+  - XI
+xiaomi 14 ultra:
+  - XI
+poco x4 gt pro:
+  - 0P
+redmi k50 mercedes-amg f1 team:
+  - XI
+redmi k50 pro:
+  - XI
+redmi k50 ultra:
+  - XI
+redmi k60:
+  - XI
+redmi k60 pro:
+  - XI
+villaon v30:
+  - VI1
+n6001l:
+  - NL
+motorola razr plus 2023:
+  - MR
+motorola razr 2023:
+  - MR
+motorola edge 50 pro:
+  - MR
+motorola edge 2023:
+  - MR
+motorola edge plus 2023:
+  - MR
+s22 flip:
+  - CA
+revolution-x69k:
+  - NEX
+sm-a022m:
+  - SA
+nubia z17:
+  - '57'
+pjb110:
+  - OP
+lt-c3750:
+  - QL
+l79031:
+  - LE
+mnt-bd00:
+  - 8X
+22120rn86c:
+  - XI
+sm-a8050:
+  - SA
+23124rn87g:
+  - XI
+hd65_ultra:
+  - JW
+itel s667ln:
+  - IZ
+itel s666ln:
+  - IZ
+itel a507lm:
+  - IZ
+itel a511lp:
+  - IZ
+itel s662lc:
+  - IZ
+luna v6:
+  - L9
+  - '69'
+tecno mobile bf6:
+  - TB
+wildfire e3 lite:
+  - HT
+23124rn87c:
+  - XI
+rmx3765:
+  - RE
+phf110:
+  - OP
+sh-m26:
+  - SH
+itel p683l:
+  - IZ
+itel a663l:
+  - IZ
+z60 plus:
+  - SM
+smartv22:
+  - VF
+sn304ae:
+  - CK
+sparx neo 7 plus:
+  - SPX
+jelly 2e:
+  - UZ
+sm-e346b:
+  - SA
+s19 max:
+  - RD
+sh-c06:
+  - SH
+n50s:
+  - DO
+mp26:
+  - UM
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -46199,6 +46371,82 @@ p40s_row:
   - T7
 m40plus_row:
   - T7
+t10k_plus:
+  - 1D
+pa2473:
+  - VV
+t811:
+  - 3A
+a410_4g:
+  - AC
+kvadra_t:
+  - KVA
+npads:
+  - NON
+at1011e:
+  - AZE
+eut310a-11a:
+  - AC
+faust5:
+  - 3O
+galileo:
+  - 3O
+vnt_tab8:
+  - VNP
+bioniqp116:
+  - ARI
+24018rpacc:
+  - XI
+xiaomi pad 6s pro 12.4:
+  - XI
+xiaomi pad 6 pro:
+  - XI
+xiaomi pad 6:
+  - XI
+citi 8269c 3g cs8254pg:
+  - D2
+kt1007_eea:
+  - NER
+wpad3:
+  - HEW
+p26t_row:
+  - T7
+optima 1415d 4g ts1294pl:
+  - D2
+p40hd_t_row:
+  - T7
+tablet fnac 10 3g:
+  - BX
+km1073:
+  - KE
+km1072:
+  - KE
+magnet_g50_pro:
+  - V2
+armor pad 2:
+  - UL
+smart l32:
+  - IG
+q10-eea:
+  - FAC
+m820-eea:
+  - MA2
+a13_eea:
+  - OAN
+i11_plus:
+  - Y5
+optima 1414d 4g ts1289pl:
+  - D2
+optima 1444e 4g ts1291pl:
+  - D2
+optima 7258c 4g ts7226pl:
+  - D2
+8496g:
+  - TC
+9466x:
+  - TC
+8196g:
+  - TC
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -57633,6 +57881,63 @@ sw-led32sg311:
   - '45'
 hty-50u11b-vs:
   - HA1
+td32hfgev1:
+  - TUV
+td32hfwev1:
+  - TUV
+td43ffgtv1:
+  - TUV
+td43ufgcv1:
+  - TUV
+td50ufgev1:
+  - TUV
+td55ufgev1:
+  - TUV
+td65ufgcv1:
+  - TUV
+td75ufgcv1:
+  - TUV
+tdtv24cs04h:
+  - TOP
+tdtv43bs06u:
+  - TOP
+evpad-pro-max:
+  - 5U
+32r750ts:
+  - HAR
+32r670ts:
+  - HAR
+32lh8030s:
+  - 8A
+32le7051d:
+  - 4H
+40f750ts:
+  - HAR
+ct-8740:
+  - CEN
+skyline_50ust5970:
+  - SKY
+sm-qled50t2su:
+  - X2
+  - SA
+tle-50usbm:
+  - REN
+8k618-t:
+  - 5R
+43st20u:
+  - OLT
+43u540s:
+  - 4B
+43u550t:
+  - 4B
+43u750ts:
+  - HAR
+lt-55u900:
+  - GOS
+iconbit xlr3090:
+  - I2
+32les904t2sm:
+  - '05'
 bb2 pro:
   - 0M
 kii pro:

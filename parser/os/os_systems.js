@@ -107,6 +107,7 @@ module.exports = {
   'PIO': 'Raspberry Pi OS',
   'RAS': 'Raspbian',
   'RHT': 'Red Hat',
+  'RST': 'Red Star',
   'RED': 'RedOS',
   'REV': 'Revenge OS',
   'ROS': 'RISC OS',

@@ -41,7 +41,7 @@ module.exports = {
   'IW', 'LH', 'LY', 'MB', 'MN', 'MO', 'MY', 'OA', 'OS',
   'PI', 'PX', 'QA', 'S5', 'SX', 'TF', 'TO', 'WF', 'ZV',
   'FP', 'AD', 'WL', '2I', 'P9', 'KJ', 'WY', 'VK', 'W5',
-  '7C',
+  '7C', 'N7',
   ],
   'Internet Explorer': ['IE', 'CZ', 'BZ', 'IM', 'PS', '3A', '4A', 'RN'],
   'Konqueror': ['KO'],
