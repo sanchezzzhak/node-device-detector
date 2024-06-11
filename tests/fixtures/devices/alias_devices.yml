@@ -421,3 +421,7 @@
   user_agent: com.apple.invitation-registration [Watch OS,10.0,21R355,Watch7,5]
   alias:
     name: Watch7,5
+-
+  user_agent: Mozilla/5.0 (Linux; Android 11; en-US; RMX3357; iPhone; Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36
+  alias:
+    name: RMX3357

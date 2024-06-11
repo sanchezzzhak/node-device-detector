@@ -1469,6 +1469,7 @@ module.exports = {
   '69': 'Stylo',
   '9S': 'Sugar',
   'SUR': 'Surge',
+  'SUF': 'Surfans',
   '06': 'Subor',
   'SZ': 'Sumvision',
   '0H': 'Sunstech',

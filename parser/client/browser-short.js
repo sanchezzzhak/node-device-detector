@@ -302,6 +302,7 @@ module.exports = {
   'K4': 'Kitt',
   'KW': 'Kiwi',
   'KD': 'Kode Browser',
+  'KU': 'KUN',
   'KT': 'KUTO Mini Browser',
   'KY': 'Kylo',
   'KZ': 'Kazehakase',
