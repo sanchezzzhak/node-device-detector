@@ -924,6 +924,8 @@ lifebook ah532:
   - FU
 gp70 2od:
   - MZ
+hp engage one pro aio system:
+  - HP
 impress_grip:
   - VX
 archos diamond plus:
@@ -1565,6 +1567,10 @@ redmi note 13 pro+ 5g:
 redmi note 13 5g:
   - XI
 redmi note 12r:
+  - XI
+sm-f946w:
+  - SA
+redmi note 12r pro:
   - XI
 gi-626:
   - A5
@@ -36373,6 +36379,64 @@ n50s:
   - DO
 mp26:
   - UM
+v2319:
+  - VV
+t609dl:
+  - TC
+sm-a805f:
+  - SA
+w-k610-tvm:
+  - WI
+fri-an00:
+  - HU
+note 23:
+  - CB
+note 24:
+  - CB
+cph2351:
+  - OP
+a151:
+  - I4
+moto g go:
+  - MR
+xiaomi 14 pro ti:
+  - XI
+xiaomi 13 ultra:
+  - XI
+lt_9902:
+  - QL
+t431q:
+  - TC
+a161_plus:
+  - I4
+p63l:
+  - PD
+f92 e 5g:
+  - BU
+dvk82 mercury:
+  - '69'
+blk-al00:
+  - HU
+y51a:
+  - VV
+xt2093dl:
+  - MR
+hisense e60:
+  - HI
+hisense u964:
+  - HI
+hbn-al10:
+  - HU
+xiaomi civi:
+  - XI
+xiaomi 12 pro dimensity:
+  - XI
+samsung sm-a015v:
+  - SA
+sm-m015f:
+  - SA
+meizu m10:
+  - M1
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -46447,6 +46511,34 @@ optima 7258c 4g ts7226pl:
   - TC
 8196g:
   - TC
+ags5-w00:
+  - HU
+pet 1008-f464e:
+  - PE
+digma pro hit 108e hs1004pl:
+  - D2
+kids 1247c ws1251pl:
+  - D2
+kids 8260c ws8253pl:
+  - D2
+kids_8280c_ws8252pl:
+  - D2
+p80t_eea:
+  - T7
+p80t_row:
+  - T7
+p30s_w_eea:
+  - T7
+optima 1304c 4g ts1292pl:
+  - D2
+100071481a:
+  - O4
+y61-eea:
+  - Y9
+iplay50pro:
+  - 3A
+glofiish gpad air:
+  - U6
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -57938,6 +58030,62 @@ iconbit xlr3090:
   - I2
 32les904t2sm:
   - '05'
+dm-led32sbb35:
+  - D2
+dm-led24sbb31:
+  - D2
+43lf8120t:
+  - 8A
+43lu8120t:
+  - 8A
+43lu8130s:
+  - 8A
+43lst5970:
+  - SKY
+yasin 4k g smart tv:
+  - YJ
+yasin 2k g smart tv:
+  - YJ
+hiberg43yuhd-r:
+  - HIB
+hiberg50yuhd-r:
+  - HIB
+hty-24hdro6b-hc22:
+  - HA1
+hty-24hdro6w-hc22:
+  - HA1
+hty-32fhd06b-ha22:
+  - HA1
+h-led50bu7003:
+  - HN
+hty-32hdr06b-s2-t9:
+  - HA1
+hty-32hdr06g-hk22:
+  - HA1
+hty-32hdro6g-hk22:
+  - HA1
+hty-43f11b-vs:
+  - HA1
+hty-43fhdo6g-hc22:
+  - HA1
+hty-50u11s-vd:
+  - HA1
+hty-55u11b-vs:
+  - HA1
+hty-55u11s-vd:
+  - HA1
+hty-22fhdo6w-hc22:
+  - HA1
+hty-24h06b-vz:
+  - HA1
+hty-24hdr06b-s2-t9:
+  - HA1
+baff40yfhd:
+  - BFF
+aquos-tve19a:
+  - SH
+aquos-tve21f:
+  - SH
 bb2 pro:
   - 0M
 kii pro:
@@ -58577,3 +58725,5 @@ lem16:
   - W9
 samsung ticwatch pro 3 ultra gps:
   - MVO
+arc-al00:
+  - HU

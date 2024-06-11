@@ -56,7 +56,7 @@
   name: '$1'
 - regex: '[; ]([^;]+); HMSCore [\d\.]+; GMSCore [\d\.]+'
   name: '$1'
-- regex: 'Android +(?:[^;]+;{1,2}) ?(?:[^;]+;)? ?([^/;]+)(?:Release/.+Build ?/| Build ?/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit|; HPT/|/.+CTC/|; GMSCore)'
+- regex: 'Android +(?:[^;]+;{1,2}) ?(?:[^;]+;)? ?([^/;]+)(?:Release/.+Build ?/| Build ?/.+AppleWebKit|; HMSCore|; wv\) AppleWebKit|; HPT/|/.+CTC/|; iPhone; Build/|; GMSCore)'
   name: '$1'
 - regex: 'Android +(?:[^;]+;{1,2}) ?(?:arm(?:_.*)?;|[a-z]{2}(?:[_-][a-z]{2})?;)? ?(.*?)(?:(?:; smart-tv)?[)] ?ShieldExperience|;? Build ?/|\)? ?AppleWebKit|/[\w]+\) AppleWebKit)'
   name: '$1'
