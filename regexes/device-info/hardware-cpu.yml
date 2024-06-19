@@ -2477,3 +2477,10 @@ cpu:
     clock_rate: 2200
     process: 12nm
     gpu_id: 25
+  368:
+    name: MediaTek Dimensity 7050
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 6nm
+    gpu_id: 121

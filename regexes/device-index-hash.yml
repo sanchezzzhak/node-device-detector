@@ -36437,6 +36437,104 @@ sm-m015f:
   - SA
 meizu m10:
   - M1
+weimei_neon2:
+  - WM
+2q55100:
+  - HT
+z00udh:
+  - AU
+iris x8s:
+  - LV
+ady-lx9:
+  - HU
+hbn-lx9:
+  - HU
+gravity 5.5 lte:
+  - MW
+v2352:
+  - VV
+rmx3910:
+  - RE
+y51 pk:
+  - VV
+fun +:
+  - FT
+zte blade l3:
+  - ZT
+bravo z11:
+  - '23'
+f100l:
+  - GI
+samsung sm-e225f:
+  - SA
+qmobile s2:
+  - QM
+glk-lx2:
+  - HU
+2404arn45a:
+  - XI
+vt8216:
+  - ENI
+sgh-t399:
+  - SA
+v2140a:
+  - VV
+22120rn86h:
+  - XI
+qmobile s9:
+  - QM
+v2406:
+  - VV
+poco f6 pro:
+  - 0P
+cph2605:
+  - 'ON'
+  - OP
+24048rn6cg:
+  - XI
+sm-a546v:
+  - SA
+sparx ultra 11:
+  - SPX
+grace 10:
+  - MEM
+24069pc21g:
+  - 0P
+2404apc5fg:
+  - 0P
+blackberry key2:
+  - RM
+blackberry motion:
+  - RM
+  - MR
+pixel 9 pro xl:
+  - GO
+pamr0008in:
+  - MR
+v2345:
+  - VV
+rmx3997:
+  - RE
+comio x1 note:
+  - C6
+rc609l:
+  - O5
+rc608l2:
+  - O5
+smart_ultimate_64:
+  - FS
+hbn-al80:
+  - HU
+hbp-lx9:
+  - HU
+itel p663l:
+  - IZ
+cp12p:
+  - CO
+armor 23 ultra:
+  - UL
+mp13:
+  - UM
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -46539,6 +46637,32 @@ iplay50pro:
   - 3A
 glofiish gpad air:
   - U6
+9.4 fff:
+  - AR
+x900_us:
+  - AOW
+ex10sl4:
+  - BRV
+p11se_art:
+  - RD
+armor pad 3 pro:
+  - UL
+iplay_60_lite:
+  - 3A
+qt23109bp:
+  - QI
+qt22101b:
+  - QI
+m50:
+  - AAU
+hit 16 hs1003pl:
+  - D2
+hit 16 hs1001pl:
+  - D2
+hey2-n09:
+  - HU
+zc-p95:
+  - ROT
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -58086,6 +58210,10 @@ aquos-tve19a:
   - SH
 aquos-tve21f:
   - SH
+smux box a1:
+  - SMU
+j-link ii:
+  - D6
 bb2 pro:
   - 0M
 kii pro:
@@ -58727,3 +58855,5 @@ samsung ticwatch pro 3 ultra gps:
   - MVO
 arc-al00:
   - HU
+samsung sm-r885u:
+  - SA
