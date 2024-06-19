@@ -359,3 +359,6 @@ gpu:
   120:
     name: ARM Mali-G76 MC4
     clock_rate: 900
+  121:
+    name: ARM Mali-G68 MP4
+    clock_rate: 950
