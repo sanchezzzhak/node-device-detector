@@ -1572,6 +1572,16 @@ sm-f946w:
   - SA
 redmi note 12r pro:
   - XI
+infinix x6851:
+  - IF
+infinix x6851b:
+  - IF
+sm-f946n:
+  - SA
+sm-f9460:
+  - SA
+sm-n976n:
+  - SA
 gi-626:
   - A5
 5039d_ru:
@@ -25607,12 +25617,14 @@ bl12000:
 bl12000 pro:
   - DO
 bl5000:
+  - B2
   - DO
 bl5500_lite:
   - DO
 bl7000:
   - DO
 bl9000:
+  - B2
   - DO
 discovery dg500:
   - DO
@@ -36535,6 +36547,74 @@ armor 23 ultra:
   - UL
 mp13:
   - UM
+pjy110:
+  - OP
+asus_ai2401_a:
+  - AU
+smart_ultimate:
+  - FS
+xt2233-2:
+  - MR
+xt2225-1:
+  - MR
+xt-2201:
+  - MR
+z2352n:
+  - '57'
+zg65 pro:
+  - JW
+hmd pulse pro:
+  - HMD
+24040rn64y:
+  - XI
+2312frafdi:
+  - 0P
+2312crnccl:
+  - XI
+23113rkc6g:
+  - 0P
+v2337:
+  - VV
+v2366ga:
+  - VV
+v2324ha:
+  - VV
+v2412:
+  - VV
+motorola moto g8 power:
+  - MR
+infinix x6871:
+  - IF
+zte nubia z20:
+  - '57'
+  - ZT
+bl9000 pro:
+  - B2
+  - DO
+v2354a:
+  - VV
+tecno cl7:
+  - TB
+sm-m346b2:
+  - SA
+sm-c5560:
+  - SA
+sm-a5560:
+  - SA
+sm-a546s:
+  - SA
+sm-a155n:
+  - SA
+n55 pro:
+  - DO
+24069ra21c:
+  - XI
+sm-e146b:
+  - SA
+sm-g977p:
+  - SA
+conquest_s20:
+  - 4C
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -37406,8 +37486,6 @@ gm 8 d:
 galaxy nexus:
   - GO
   - SA
-glass 1:
-  - GO
 nexus 5:
   - GO
 nexus one:
@@ -46663,6 +46741,42 @@ hey2-n09:
   - HU
 zc-p95:
   - ROT
+tyd-109:
+  - TYD
+tyd-109_pro:
+  - TYD
+t104_64gb:
+  - UQ
+terra_pad_1200_v2:
+  - WR
+v12e-lte-8128:
+  - VA2
+agm_pad_p2:
+  - A3
+sm-x916c:
+  - SA
+sm-x910:
+  - SA
+sm-x818u:
+  - SA
+sm-x816b:
+  - SA
+sm-x610:
+  - SA
+sm-x216c:
+  - SA
+sm-x115:
+  - SA
+ot5 s:
+  - OE
+sm-x216n:
+  - SA
+t26-eea:
+  - 6O
+tdt3887_wi_d_cis:
+  - TOP
+voom tab 2:
+  - I5
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -57589,6 +57703,14 @@ polarline_k_42pl11tc-sm:
   - '97'
 polarline_k_24pl51tc-sm:
   - '97'
+yndx-00073:
+  - YD
+x96air_v2:
+  - X96
+x96air_100w:
+  - X96
+x96air_p1:
+  - X96
 black box tv pro:
   - BLK
 box q:
@@ -58214,6 +58336,45 @@ smux box a1:
   - SMU
 j-link ii:
   - D6
+sm-led65m02su:
+  - X2
+  - SA
+sm-led55m02su:
+  - X2
+  - SA
+sm-led50m02su:
+  - X2
+  - SA
+sm-led43m02su:
+  - X2
+  - SA
+sm-led32m14s:
+  - X2
+  - SA
+sm-led32m10s:
+  - X2
+  - SA
+sm-led32m09s:
+  - X2
+  - SA
+sm-led24m09s:
+  - X2
+  - SA
+sm-led24m06s:
+  - X2
+  - SA
+sw-led58ug401:
+  - '45'
+sw-22ae nf:
+  - SK
+x96air_p2:
+  - X96
+x96air_p3:
+  - X96
+sw-led55ug403:
+  - '45'
+switron-i12a:
+  - WN
 bb2 pro:
   - 0M
 kii pro:
@@ -58857,3 +59018,5 @@ arc-al00:
   - HU
 samsung sm-r885u:
   - SA
+glass 1:
+  - GO

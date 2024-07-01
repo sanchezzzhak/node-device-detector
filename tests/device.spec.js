@@ -20,7 +20,7 @@ const excludeFilesNames = [
   'clienthints.yml',
 ];
 const ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
-const TIMEOUT = 6000;
+const TIMEOUT = 10000;
 const detector = new DeviceDetector();
 const clientHints = new ClientHint();
 
