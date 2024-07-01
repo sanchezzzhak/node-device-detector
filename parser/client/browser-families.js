@@ -33,7 +33,7 @@ module.exports = {
   'N3', 'GD', 'O9', 'Q3', 'F7', 'K2', 'P5', 'H5', 'V3',
   'K3', 'Q4', 'G2', 'R2', 'WX', 'XP', '3I', 'BG', 'R0',
   'JO', 'OL', 'GN', 'W4', 'QI', 'E1', 'RI', '8B', '5B',
-  'K4',
+  'K4', 'WK',
   ],
   'Firefox': [
   'FF', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
@@ -41,7 +41,7 @@ module.exports = {
   'IW', 'LH', 'LY', 'MB', 'MN', 'MO', 'MY', 'OA', 'OS',
   'PI', 'PX', 'QA', 'S5', 'SX', 'TF', 'TO', 'WF', 'ZV',
   'FP', 'AD', 'WL', '2I', 'P9', 'KJ', 'WY', 'VK', 'W5',
-  '7C', 'N7',
+  '7C', 'N7', 'W7', '8P',
   ],
   'Internet Explorer': ['IE', 'CZ', 'BZ', 'IM', 'PS', '3A', '4A', 'RN'],
   'Konqueror': ['KO'],
