@@ -263,6 +263,7 @@ module.exports = {
   'I6': 'iDesktop PC Browser',
   'IC': 'iCab',
   'I2': 'iCab Mobile',
+  '4I': 'iNet Browser',
   'I1': 'Iridium',
   'I3': 'Iron Mobile',
   'I4': 'IceCat',
@@ -349,6 +350,7 @@ module.exports = {
   'MU': 'MIUI Browser',
   'MS': 'Mobile Silk',
   'MK': 'Mogok Browser',
+  'M8': 'Motorola Internet Browser',
   'MN': 'Minimo',
   'MT': 'Mint Browser',
   'MX': 'Maxthon',
@@ -570,6 +572,7 @@ module.exports = {
   'UM': 'UC Browser Mini',
   'UT': 'UC Browser Turbo',
   'UI': 'Ui Browser Mini',
+  'UP': 'UPhone Browser',
   'UR': 'UR Browser',
   'UZ': 'Uzbl',
   'UE': 'Ume Browser',
@@ -587,6 +590,7 @@ module.exports = {
   'VB': 'Vision Mobile Browser',
   'V4': 'Vertex Surf',
   'VM': 'VMware AirWatch',
+  'V6': 'VMS Mosaic',
   'VK': 'Vonkeror',
   'VU': 'Vuhuv',
   'WI': 'Wear Internet Browser',
@@ -632,6 +636,7 @@ module.exports = {
   'ZV': 'Zvu',
   'ZI': 'Zirco Browser',
   'ZR': 'Zordo Browser',
+  'ZT': 'ZTE Browser',
   // detected browsers in older versions
   // 'IA': 'Iceape',: pim
   // 'SM': 'SeaMonkey',: pim

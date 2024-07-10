@@ -15,7 +15,6 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 ![YAML Lint](https://github.com/sanchezzzhak/node-device-detector/workflows/YAML%20Lint/badge.svg?branch=master)
 ![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg?branch=master)
 ![CodeQL](https://github.com/sanchezzzhak/node-device-detector/workflows/CodeQL/badge.svg?branch=master)
-[![Featured on Openbase](https://badges.openbase.com/js/featured/node-device-detector.svg?token=5WrtsBbraPlUMJtKRE7o5w9fmuVUjXBHmiO0Pr/38v0=)](https://openbase.com/js/node-device-detector?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 ## Contents
 
 + [Helpers](#helpers)
@@ -412,7 +411,7 @@ detector.detect (indexes on) x 1,032 ops/sec ±0.61% (94 runs sampled)
 </details>
 
 ### What about tests?
-Yes we use tests, total tests ~78.1k
+Yes we use tests, total tests ~78.6k
 
 ### Get more information about a device (experimental)
 > This parser is experimental and contains few devices. (1833 devices, alias devices 3899)
