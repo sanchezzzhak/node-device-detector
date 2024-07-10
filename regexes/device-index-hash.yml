@@ -130,6 +130,8 @@
   - O4
 '100071486':
   - O4
+'100110603':
+  - O4
 dmc-cm1:
   - PA
 samsung ek-gn120:
@@ -230,6 +232,8 @@ aftlbt962e2:
   - KN
 airtouch performance 10x:
   - AIT
+tb8163p3_bsp:
+  - XY
 pixel 3:
   - GO
 m2006c3lg:
@@ -527,6 +531,10 @@ latitude e4300:
   - DL
 h135:
   - DX
+hp elitebook 2560p:
+  - HP
+hp elitebook 2570p:
+  - HP
 macbookair2,1:
   - AP
 macbookair3,1:
@@ -926,6 +934,8 @@ gp70 2od:
   - MZ
 hp engage one pro aio system:
   - HP
+hp elitebook 8470p:
+  - HP
 impress_grip:
   - VX
 archos diamond plus:
@@ -1148,6 +1158,10 @@ pnc560:
   - HYT
 esp-300:
   - EXL
+hongtop_projector:
+  - HON
+orangepi_3_lts:
+  - ORP
 sm-f721u:
   - SA
 note 13p:
@@ -1581,6 +1595,16 @@ sm-f946n:
 sm-f9460:
   - SA
 sm-n976n:
+  - SA
+sm-w7023:
+  - SA
+v2256a:
+  - VV
+infinix x6852:
+  - IF
+sm-w7024:
+  - SA
+sm-f7210:
   - SA
 gi-626:
   - A5
@@ -36615,6 +36639,210 @@ sm-g977p:
   - SA
 conquest_s20:
   - 4C
+lava le9940_w:
+  - LV
+jkm-l03:
+  - HU
+23088pnd5r:
+  - XI
+2308011m:
+  - FEY
+gionee s11:
+  - GI
+gionee m7:
+  - GI
+gionee f6:
+  - GI
+qmobile xli:
+  - QM
+enjoy z 5g:
+  - HU
+enjoy 20 plus 5g:
+  - HU
+enjoy 20e helio p35:
+  - HU
+enjoy 20 5g:
+  - HU
+enjoy 10e:
+  - HU
+enjoy 20 pro 5g:
+  - HU
+rmx3993:
+  - RE
+sm-m446k:
+  - SA
+rmx3851:
+  - RE
+sm-g977u:
+  - SA
+origin_679_pro:
+  - TN
+u380ac:
+  - CK
+g61s:
+  - BU
+rmx3871:
+  - RE
+cyber 15:
+  - HV
+u6080ac:
+  - CK
+amico smartphone xs:
+  - BR
+rmx3853:
+  - RE
+rmx3939:
+  - RE
+poco f6:
+  - 0P
+tank 2 pro:
+  - UZ
+v2069ba:
+  - VV
+v2327a:
+  - VV
+v2343a:
+  - VV
+pjv110:
+  - OP
+wp35:
+  - OE
+t phone 2:
+  - TM
+v2410:
+  - VV
+v2366ha:
+  - VV
+hmd pulse plus:
+  - HMD
+hmd pulse:
+  - HMD
+e7200:
+  - KY
+i2218:
+  - VV
+cph2631:
+  - OP
+cph2629:
+  - OP
+cph2625:
+  - OP
+a401xm:
+  - XI
+bvl-n59:
+  - HU
+sm-s926w:
+  - SA
+sm-s926u:
+  - SA
+sm-s926u1:
+  - SA
+sm-s926n:
+  - SA
+sm-s926b:
+  - SA
+sm-s921w:
+  - SA
+sm-a156w:
+  - SA
+itel a667l:
+  - IZ
+zte axon 11 5g:
+  - ZT
+itel a513w:
+  - IZ
+itel a509wp:
+  - IZ
+itel a661wp:
+  - IZ
+aligator_s5550:
+  - 4A
+pjr110:
+  - OP
+v2361a:
+  - VV
+mp38:
+  - UM
+v2339fa:
+  - VV
+zg55:
+  - JW
+z2356:
+  - ZT
+zte a2024h:
+  - ZT
+23116pn5bg:
+  - XI
+pilot 2:
+  - OSC
+tecno mobile kj6:
+  - TB
+tc27:
+  - PZ
+wp38:
+  - OE
+x30p:
+  - CB
+xp9900:
+  - OI
+ali-nx3:
+  - HU
+pace a1:
+  - RHI
+rmx3783:
+  - RE
+bv8100:
+  - B2
+armor 26 ultra:
+  - UL
+armor 22:
+  - UL
+a302zt:
+  - ZT
+silver_max_pro_2:
+  - KL
+reno4 se 5g:
+  - OP
+inkosi_pro_4g:
+  - '69'
+g901:
+  - GN
+g53:
+  - BU
+core_x:
+  - XSM
+vipro s20:
+  - 0V
+jdy-lx1:
+  - HU
+eli-an00:
+  - HU
+amico smartphone s+:
+  - BR
+tyh632m:
+  - U9
+be pro:
+  - UL
+bloom2:
+  - WI
+hero 10:
+  - B2
+'2000_000170_00':
+  - REP
+five pro:
+  - LM
+kl605:
+  - 0K
+sm-a908b:
+  - SA
+solar pro:
+  - LM
+iqoo 8:
+  - VV
+iqoo 8 pro:
+  - VV
+i6 metal hd:
+  - QM
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -46777,6 +47005,82 @@ tdt3887_wi_d_cis:
   - TOP
 voom tab 2:
   - I5
+kids708:
+  - DK
+brt81:
+  - NT
+cm8500plus:
+  - CIA
+torex_pad818:
+  - 7T
+mupad102:
+  - IMU
+sm-x518u:
+  - SA
+sm-x516b:
+  - SA
+sm-x306b:
+  - SA
+2405crpfdg:
+  - XI
+sm-x218u:
+  - SA
+sm-x110:
+  - SA
+sm-p620:
+  - SA
+tab76:
+  - LM
+hpad1:
+  - HEW
+v-z40:
+  - VIK
+2405cpcfbg:
+  - 0P
+yq10s_max:
+  - AT1
+yq10s_gold:
+  - AT1
+zte t1004:
+  - ZT
+tab_918_pro_4g:
+  - MJ
+tb301fu:
+  - LE
+tb02:
+  - RE4
+teox10-mt8sl128lte:
+  - TN
+x700_eea:
+  - AOW
+m10l plus:
+  - BU
+g-10 pro:
+  - GRL
+z-f1010:
+  - EGS
+asusxpad10:
+  - AU
+tk806_eea:
+  - AEE
+100092980a:
+  - O4
+kl638dk_eea:
+  - 0K
+mt-1011qr:
+  - TJD
+smartpad_k7_eu:
+  - BYY
+smartpad_t10:
+  - BYY
+smartpad_t10_eu:
+  - BYY
+via s40:
+  - R4
+g-tide_h1:
+  - GT
+dby2-w00:
+  - HU
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -58375,6 +58679,143 @@ sw-led55ug403:
   - '45'
 switron-i12a:
   - WN
+rasse-001:
+  - B5
+q65yk-mb:
+  - QWT
+orbsmart s85:
+  - ORB
+nwx-65u169tsy-a:
+  - NQ
+nvx-65u321msy:
+  - NQ
+p32l33t2csm:
+  - Q6
+netwit_p12039s:
+  - NWT
+le-55ztus30:
+  - '54'
+le-50ztus32-a:
+  - '54'
+le-43ztfs25-b:
+  - '54'
+le-32zths25-a:
+  - '54'
+ld-50su8815bs:
+  - VEK
+ld-43su8821bs:
+  - VEK
+ld-43sf4815bs:
+  - VEK
+ld-32sr4815bs:
+  - VEK
+km8-atv-mf:
+  - MP
+lt-55nx8001s:
+  - NEK
+lt-43nf8020s:
+  - NEK
+x96max_plus2:
+  - X96
+x96max_plus_5:
+  - X96
+x96max_plus_q1:
+  - X96
+x96max_plus:
+  - X96
+x96max_plus_q2:
+  - X96
+sw-led58ub400:
+  - '45'
+sw-led55ub401:
+  - '45'
+sw-led50ug403:
+  - '45'
+sw-led50ug400:
+  - '45'
+rombica smart box x1:
+  - R3
+htv-55u11b-vs:
+  - HA1
+i-925:
+  - GOL
+i-905:
+  - GOL
+4ktv-0su:
+  - PA
+sl-led32s49t2s:
+  - SC1
+sm-led32m13s:
+  - X2
+  - SA
+sm-led43m01su:
+  - X2
+  - SA
+sm-led43m02s:
+  - X2
+  - SA
+43fles902t2sm:
+  - '05'
+43fles901t2sm:
+  - '05'
+tanix a3:
+  - 9N
+nv731wb:
+  - 4E
+nv730wb:
+  - 4E
+nv731:
+  - 4E
+h-led43eu1312:
+  - HN
+h-led43gu7003:
+  - HN
+h-led50eu1311:
+  - HN
+h-led50gu7003:
+  - HN
+h-led65bu7003:
+  - HN
+h-led65gu7003:
+  - HN
+h-led75bu7005:
+  - HN
+h-led43fs5001-p:
+  - HN
+h-led32fs5001-c:
+  - HN
+h-led32fs5003:
+  - HN
+h-led32gs5003:
+  - HN
+h-led40fs5001:
+  - HN
+h-led40fs5003:
+  - HN
+h-led42fs5001:
+  - HN
+h-led42fs5003:
+  - HN
+h-led65eu1311:
+  - HN
+hiberg75yuhd:
+  - HIB
+65kus65:
+  - DF
+65lex-8262:
+  - BB
+24h510t:
+  - 4B
+75ucy1-g:
+  - DX
+h-led43fs5001:
+  - HN
+ex-50us003b:
+  - '35'
+55u510s:
+  - 4B
+50u510s:
+  - 4B
 bb2 pro:
   - 0M
 kii pro:
