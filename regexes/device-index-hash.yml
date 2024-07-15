@@ -17670,6 +17670,7 @@ komu_k30:
   - KM
 k60:
   - KM
+  - KB
 kruger&matz move 6:
   - KE
 shark 5000:
@@ -27361,6 +27362,7 @@ snami_m340:
   - SNA
 raptor:
   - QUE
+  - 5F
 famous 5:
   - FAM
 famous red 5+:
@@ -36843,6 +36845,83 @@ iqoo 8 pro:
   - VV
 i6 metal hd:
   - QM
+sne-l01:
+  - HU
+rbn-nx3:
+  - HU
+vodafone pro 4g:
+  - VF
+hero h5:
+  - BC
+hero h7:
+  - BC
+halo2 lte:
+  - I5
+haixu v11:
+  - XHU
+zte a2023h:
+  - ZT
+zte 9042n:
+  - ZT
+sup-bd00:
+  - 8X
+twist 5 max:
+  - PS
+gfy-al00:
+  - HU
+ane-l23:
+  - HU
+sm-a707w:
+  - SA
+pe-cl00:
+  - HU
+sm-a606y:
+  - SA
+p780:
+  - '95'
+orbit m20:
+  - WA
+digni-smart:
+  - 6E
+ae9230:
+  - 2X
+a30_plus:
+  - A2
+raptor ltd:
+  - 5F
+k12:
+  - OE
+s95:
+  - DO
+elite g63:
+  - SW
+dk10:
+  - DO
+clk-nx1:
+  - HU
+a52 pro:
+  - B2
+air2 ultra:
+  - 5F
+s200m:
+  - IP
+doro liberto 825:
+  - DR
+doro 8030:
+  - DR
+hisense e70:
+  - HI
+ihunt titan p15000 ultra:
+  - IH
+  - UZ
+clk-nx2:
+  - HU
+drive 10:
+  - KE
+rmx3576:
+  - RE
+koz-al00cm:
+  - HU
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -47081,6 +47160,48 @@ g-tide_h1:
   - GT
 dby2-w00:
   - HU
+tab 12:
+  - B2
+smart l11:
+  - IG
+smart l31:
+  - IG
+smart w32:
+  - IG
+f3a:
+  - HEW
+t40_plus_rus:
+  - T7
+masstel tab 83:
+  - 2M
+masstel_tab_82:
+  - 2M
+smart tab 4g e-biz pro:
+  - '11'
+smart tab 4g m1:
+  - '11'
+smart tab 4g e-biz:
+  - '11'
+g-20ultra:
+  - GRL
+ev10:
+  - HOG
+f10xipg:
+  - LIN
+eagle_807:
+  - KE
+eagle_1074:
+  - KE
+ags3-w9:
+  - HU
+pad831b:
+  - 7T
+venue7 3740 lte:
+  - DL
+archos t101 hd 4g:
+  - AR
+archos t101 fhd wifi:
+  - AR
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -58816,6 +58937,38 @@ ex-50us003b:
   - 4B
 50u510s:
   - 4B
+43u6510:
+  - SKY
+43u700gr:
+  - KV
+43fsy112xb:
+  - 3H
+43fsy112x:
+  - 3H
+43gus65:
+  - DF
+50yuhd-r:
+  - HIB
+ld-24sr4715bs:
+  - VEK
+ld-24sr4815bs:
+  - VEK
+ld-32sr5115bs:
+  - VEK
+ld-39sr4815bs:
+  - VEK
+ld-55su8815bs:
+  - VEK
+le-43ztfs25-f:
+  - '54'
+tq50ufbcv1:
+  - TUV
+tle-43fsbm:
+  - REN
+td86ufbtv1:
+  - TUV
+43le7052d:
+  - 4H
 bb2 pro:
   - 0M
 kii pro:
