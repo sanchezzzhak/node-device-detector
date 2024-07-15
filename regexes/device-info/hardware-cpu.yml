@@ -2484,3 +2484,31 @@ cpu:
     clock_rate: 2600
     process: 6nm
     gpu_id: 121
+  369:
+    name: 'MediaTek Dimensity 1300'
+    type: ARM
+    cores: 8
+    clock_rate: 3000
+    process: 6nm
+    gpu_id: 110
+  370:
+    name: 'Qualcomm Snapdragon 7 Gen 1' # SM7450-AB
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 4nm
+    gpu_id: 122
+  371:
+    name: 'MediaTek Dimensity 8100 Max'
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 5nm
+    gpu_id: 123
+  372:
+    name: 'MediaTek Dimensity 810'
+    type: ARM
+    cores: 8
+    clock_rate: 2400
+    process: 6nm
+    gpu_id: 115

@@ -362,3 +362,9 @@ gpu:
   121:
     name: ARM Mali-G68 MP4
     clock_rate: 950
+  122:
+    name: Qualcomm Adreno 644
+    clock_rate: 0
+  123:
+    name: ARM Mali-G610 MC6
+    clock_rate: 0
