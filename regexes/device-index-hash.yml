@@ -1162,6 +1162,8 @@ hongtop_projector:
   - HON
 orangepi_3_lts:
   - ORP
+v2_pro-st:
+  - 2J
 sm-f721u:
   - SA
 note 13p:
@@ -1606,6 +1608,10 @@ sm-w7024:
   - SA
 sm-f7210:
   - SA
+m2003j6a1i:
+  - XI
+m1908c3jg:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -2624,6 +2630,8 @@ xdp-300r:
   - PI
 r6iii:
   - HBY
+swofy m503-pro:
+  - SWO
 da220hql:
   - AC
 da241hl:
@@ -36922,6 +36930,86 @@ rmx3576:
   - RE
 koz-al00cm:
   - HU
+m1903c3gi:
+  - XI
+m1912g7be:
+  - XI
+m1903f10i:
+  - XI
+m1810f6li:
+  - XI
+poco m6:
+  - 0P
+stylo sonic:
+  - '69'
+hisense u70 pro:
+  - HI
+jdy-an00:
+  - HU
+xt2141-1:
+  - MR
+chp2219:
+  - OP
+xt2131dl:
+  - MR
+ae9310:
+  - 2X
+xt2321-3:
+  - MR
+xt2251-1:
+  - MR
+xt2171-2:
+  - MR
+xt2169-1:
+  - MR
+xt2129-2:
+  - MR
+xt2127-2:
+  - MR
+xt2093-3:
+  - MR
+xt2093-7:
+  - MR
+xt2335-2:
+  - MR
+xt2315-1:
+  - MR
+xt2083-9:
+  - MR
+xt2115-1:
+  - MR
+xt2129-1:
+  - MR
+xt2221-1:
+  - MR
+xt2215-1:
+  - MR
+xt2303-2:
+  - MR
+xt2131-1:
+  - MR
+xt2091-8:
+  - LE
+xt2129-3:
+  - MR
+panb0015in:
+  - MR
+pamr0010in:
+  - MR
+pamr0002in:
+  - MR
+panv0009in:
+  - MR
+md-ph-001:
+  - MOD
+m1908c3kg:
+  - XI
+m1904f3bg:
+  - XI
+lunar pro:
+  - LM
+villaon v6751l:
+  - VI1
 y9plus:
   - DO
 doro 8030/8031/8028:
@@ -47202,6 +47290,8 @@ archos t101 hd 4g:
   - AR
 archos t101 fhd wifi:
   - AR
+kl9878ae:
+  - 0K
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -58969,6 +59059,14 @@ td86ufbtv1:
   - TUV
 43le7052d:
   - 4H
+xk03h:
+  - QX
+sei600go:
+  - GO1
+heimat_h65pu2303svf:
+  - HEI
+stv-32dhbk2r-t9:
+  - TUV
 bb2 pro:
   - 0M
 kii pro:

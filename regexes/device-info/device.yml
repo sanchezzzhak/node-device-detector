@@ -4212,6 +4212,9 @@ motorola:
   motog3: '->moto g3'
   moto g4: 'RE=2016.05;SZ=76.6x153x9.8;WT=155;DS=5.5;RS=1080x1920;OI=1;OV=6.0.1;CP=65;RM=2048;'
   moto g (4): '->moto g4'
+  moto razr 40 ultra: 'RE=2023.06;SZ=74x170.8x7;WT=184.5;DS=6.9;RS=1080x2640;OI=1;OV=13;CP=373;RM=8192;TT=975461;TG=3645;'
+  xt2321-2: '->moto razr 40 ultra'
+  xt2321-3: '->moto razr 40 ultra'
 
 nuvo:
   nd40: 'RE=2014.12;RS=480x800;WT=130;SZ=63x128x9.6;DS=4;SM=2;OI=1;OV=4.4;'

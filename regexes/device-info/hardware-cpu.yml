@@ -2512,3 +2512,10 @@ cpu:
     clock_rate: 2400
     process: 6nm
     gpu_id: 115
+  373:
+    name: Qualcomm Snapdragon 8+ Gen 1 # SM8475
+    type: ARM
+    cores: 8
+    clock_rate: 3000
+    process: 4nm
+    gpu_id: 117
