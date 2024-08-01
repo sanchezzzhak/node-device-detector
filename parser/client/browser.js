@@ -104,15 +104,10 @@ class Browser extends ClientAbstractParser {
           version = data.version;
         }
 
-        if ('DuckDuckGo Privacy Browser' === name) {
-          version = '';
-        }
-
         if ('Vewd Browser' === name) {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
-
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
         if (data.name && 'Chromium' === name && 'Chromium' !== data.name) {
           name = data.name;
@@ -125,18 +120,27 @@ class Browser extends ClientAbstractParser {
           name = data.name;
           short = data.short_name;
         }
-
+        // If user agent detects another browser, but the family matches, we use the detected engine from user agent
         if (name !== data.name && family === this.buildFamily(data.short_name)) {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
-
+        // If the browser name matches the client hints then browser engine overwrite
         if (name === data.name) {
           engine = data.engine;
           engineVersion = data.engine_version;
-          if (data.version && data.version.indexOf(version) === 0 && helper.versionCompare(version, data.version) < 0) {
-            version = data.version;
-          }
+        }
+        // In case the user agent reports a more detailed version, we try to use this instead
+        if (data.version && data.version.indexOf(version) === 0 && helper.versionCompare(version, data.version) < 0) {
+          version = data.version;
+        }
+        // If DDG Private browser then set version empty string
+        if ('DuckDuckGo Privacy Browser' === name) {
+          version = '';
+        }
+        // If client hints report the following browsers, we use the version from useragent
+        if (data.version && ['MU', 'OM', 'OP'].indexOf(short) !== -1) {
+          version = data.version;
         }
       }
     } else if (data !== null) {
