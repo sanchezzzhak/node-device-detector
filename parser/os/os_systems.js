@@ -18,6 +18,7 @@ module.exports = {
   'BEO': 'BeOS',
   'BLB': 'BlackBerry OS',
   'QNX': 'BlackBerry Tablet OS',
+  'PAN': 'blackPanther OS',
   'BOS': 'Bliss OS',
   'BMP': 'Brew',
   'BSN': 'BrightSignOS',

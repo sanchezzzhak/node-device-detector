@@ -617,6 +617,7 @@ module.exports = {
   'YG': 'YAGI',
   'YJ': 'Yahoo! Japan Browser',
   'YA': 'Yandex Browser',
+  'Y4': 'Yandex Browser Corp',
   'YL': 'Yandex Browser Lite',
   'YN': 'Yaani Browser',
   'Y2': 'Yo Browser',
