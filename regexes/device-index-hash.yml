@@ -38309,6 +38309,57 @@ g1f8f:
   - GO
 z2359:
   - ZT
+sm-g990e:
+  - SA
+mx-a65:
+  - MW
+soft5p:
+  - KW
+g011c:
+  - GO
+gt60 pro:
+  - C5
+gt60:
+  - C5
+hd65_select:
+  - JW
+hd65_plus:
+  - JW
+hd65:
+  - JW
+cubot hafury v1:
+  - CB
+  - HF
+pjw110:
+  - OP
+lra-an00:
+  - HU
+gbd-nx9:
+  - HU
+fcp-an10:
+  - HU
+elp-nx9:
+  - HU
+xq-ec54:
+  - SO
+xq-ct62:
+  - SO
+xq-es54:
+  - SO
+xq-es72:
+  - SO
+sm-a356u1:
+  - SA
+hisense e32 pro:
+  - HI
+jny-l01:
+  - HU
+r570e:
+  - FPS
+pixpro l1 pro:
+  - PIX
+g013a:
+  - GO
 gs55-6:
   - GS
 gs57-6:
@@ -47466,6 +47517,18 @@ pixus_folio:
   - PX
 d118_eea:
   - '67'
+at81k:
+  - AT1
+btxs1:
+  - BRV
+g-8 pro:
+  - GRL
+hanson_flex_hs6000:
+  - HA2
+hbook-pro:
+  - ZH
+volta5:
+  - 3O
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -59267,6 +59330,40 @@ tf-led32s08t2s:
   - TL
 sl-led55s01t2su:
   - SC1
+a-stream:
+  - BP
+newal_tv_uhd-5042:
+  - NEW
+vekta ld-24sr4850bs:
+  - VEK
+oled tv s9:
+  - HA
+ulx-43ftcs2234-t9:
+  - YN
+nokia streaming box 8000:
+  - NK
+polarline_w_43pl51tc-sm:
+  - '97'
+polarline_w_43pu11tc-sm:
+  - '97'
+polarline_w_32pl55tc-sm:
+  - '97'
+polarline_w_42pl11tc-sm:
+  - '97'
+polarline_w_40pl52tc-sm:
+  - '97'
+polarline_w_32pl14tc-sm:
+  - '97'
+polarline_w_32pl13tc-sm:
+  - '97'
+polarline_w_24pl51tc-sm:
+  - '97'
+polarline_wk_43pl51stc-sm:
+  - '97'
+polarline_wk_24pl51tc-sm:
+  - '97'
+polarline_wk_32pl13tc-sm:
+  - '97'
 bb2 pro:
   - 0M
 kii pro:
@@ -59746,6 +59843,7 @@ aosp on r33a0: []
 hx322x_box: []
 x98_s500: []
 p1: []
+waydroid x86_64 device: []
 leo-bx9:
   - HU
 lg watch urbane:
@@ -59912,3 +60010,5 @@ samsung sm-r885u:
   - SA
 glass 1:
   - GO
+pico neo 3 os5.9.5.0 like quest:
+  - QP
