@@ -111,8 +111,8 @@ class DeviceDetector {
     this.addParseClient(CLIENT_PARSER_LIST.MOBILE_APP, new MobileAppParser());
     this.addParseClient(CLIENT_PARSER_LIST.MEDIA_PLAYER, new MediaPlayerParser());
     this.addParseClient(CLIENT_PARSER_LIST.PIM, new PIMParser());
-    this.addParseClient(CLIENT_PARSER_LIST.LIBRARY, new LibraryParser());
     this.addParseClient(CLIENT_PARSER_LIST.BROWSER, new BrowserParser());
+    this.addParseClient(CLIENT_PARSER_LIST.LIBRARY, new LibraryParser());
 
     this.addParseDevice(DEVICE_PARSER_LIST.HBBTV, new HbbTvParser());
     this.addParseDevice(DEVICE_PARSER_LIST.SHELLTV, new ShellTvParser());

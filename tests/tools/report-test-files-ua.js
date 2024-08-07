@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const DeviceDetector = require('./../../index');
 const ClientHints = require('./../../client-hints');
-const {grabLogFiles, parseCsvLine, reportFixture} = require('../functions');
+const { grabLogFiles, parseCsvLine, reportFixture } = require('../functions');
 
 const ParserHelper = require('./../../parser/helper');
 const AggregateNewUa = require('./lib/aggregate-new-ua');
@@ -30,6 +30,7 @@ const PARSE_TYPE_CSV_MATA_HINTS = 'csv-meta-hints';
  *    deviceTrusted: 0,
  *    deviceInfo: 0,
  *    deviceCode: 0
+ *    printFile: 0
  * }} options
  */
 const parserLog = (folderTestPath, folderFixturePath, options) => {
@@ -48,9 +49,9 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
   const detector = new DeviceDetector({
     clientIndexes: true,
     deviceIndexes: true,
-    deviceAliasCode: options.deviceCode  === '1',
-    deviceTrusted: options.deviceTrusted  === '1',
-    deviceInfo: options.deviceInfo === '1',
+    deviceAliasCode: options.deviceCode === '1',
+    deviceTrusted: options.deviceTrusted === '1',
+    deviceInfo: options.deviceInfo === '1'
   });
 
   const aggregateNewUa = new AggregateNewUa({
@@ -58,65 +59,73 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
     uniqueOutput
   });
 
+  (async () => {
 
-  files.forEach(async (absolutePath) => {
-    const lineReader = readline.createInterface({
-      input: fs.createReadStream(absolutePath), terminal: false
-    });
-    for await (const row of lineReader) {
-      let useragent = '';
-      let clientHintJson = {};
+    for (let absolutePath of files) {
 
-      switch (formatParse) {
-        case PARSE_TYPE_LOG:
-          useragent = row;
-          break;
-        case PARSE_TYPE_CSV_MATA_HINTS:
-          const columns = await parseCsvLine(row);
-          useragent = columns[0];
-          clientHintJson = JSON.parse(columns[1]);
-          break;
+      const lineReader = readline.createInterface({
+        input: fs.createReadStream(absolutePath), terminal: false
+      });
+
+      if (options.printFile) {
+        console.log(`\n\nFILE: ${absolutePath}\n\n`)
       }
 
-      const clientHintData = clientHints.parse(
-        clientHintJson.hints ?? clientHintJson,
-        clientHintJson.meta ?? clientHintJson
-      );
+      for await (const row of lineReader) {
+        let useragent = '';
+        let clientHintJson = {};
 
-      if (useragent.includes('; Android 10; K)')) {
-         if (!clientHintData.device.model || clientHintData.device.model === 'K') {
-          continue;
+        switch (formatParse) {
+          case PARSE_TYPE_LOG:
+            useragent = row;
+            break;
+          case PARSE_TYPE_CSV_MATA_HINTS:
+            const columns = await parseCsvLine(row);
+            useragent = columns[0];
+            clientHintJson = JSON.parse(columns[1]);
+            break;
+        }
+
+        const clientHintData = clientHints.parse(
+          clientHintJson.hints ?? clientHintJson,
+          clientHintJson.meta ?? clientHintJson
+        );
+
+        if (useragent.includes('; Android 10; K)')) {
+          if (!clientHintData.device.model || clientHintData.device.model === 'K') {
+            continue;
+          }
+        }
+
+        const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent, clientHintJson) : true;
+        const detectResult = detector.detect(useragent, clientHintData);
+
+        if (check && formatOutput === FORMAT_OUTPUT_STRING) {
+          console.log(useragent);
+        }
+
+        if (check && formatOutput === FORMAT_OUTPUT_STRING_RESTORE) {
+          console.log(detector.restoreUserAgentFromClientHints(useragent, clientHintData));
+        }
+
+        if (check && formatOutput === FORMAT_OUTPUT_STRING_HEADER) {
+          console.log(useragent);
+          if (clientHintJson.hints) {
+            console.log(YAML.dump(clientHintJson.hints, { indent: 2, lineWidth: Infinity }));
+          }
+        }
+
+        if (check && formatOutput === FORMAT_OUTPUT_FIXTURE) {
+          reportFixture(useragent, detectResult, clientHintData, clientHintJson, {
+            deviceAliasCode: detector.deviceAliasCode,
+            deviceTrusted: detector.deviceTrusted,
+            deviceInfo: detector.deviceInfo
+          });
         }
       }
-
-      const check = String(options.skipCheck) === '0' ? aggregateNewUa.check(useragent, clientHintJson) : true;
-      const detectResult = detector.detect(useragent, clientHintData);
-
-      if (check && formatOutput === FORMAT_OUTPUT_STRING) {
-        console.log(useragent);
-      }
-
-      if (check && formatOutput === FORMAT_OUTPUT_STRING_RESTORE) {
-        console.log(detector.restoreUserAgentFromClientHints(useragent, clientHintData));
-      }
-
-      if (check && formatOutput === FORMAT_OUTPUT_STRING_HEADER) {
-        console.log(useragent);
-        if (clientHintJson.hints) {
-          console.log(YAML.dump(clientHintJson.hints, { indent: 2, lineWidth: Infinity }))
-        }
-      }
-
-      if (check && formatOutput === FORMAT_OUTPUT_FIXTURE) {
-        reportFixture(useragent, detectResult, clientHintData, clientHintJson, {
-          deviceAliasCode: detector.deviceAliasCode,
-          deviceTrusted: detector.deviceTrusted,
-          deviceInfo: detector.deviceInfo,
-        });
-      }
-
     }
-  });
+
+  })();
 };
 
 
@@ -148,6 +157,7 @@ program
   .option('-di, --device-info <number>', 'append device info param to device.info', '0')
   .option('-dc, --device-code <number>', 'append code param to device.code', '0')
   .option('-ci, --compact-info <number>', 'append device info to device.info (compact mode)', '0')
+  .option('-pf, --print-file <number>', 'print file path', '0')
   .action(function(parsePath, testsPath) {
     const options = this.opts();
     parserLog(parsePath, testsPath, options);
