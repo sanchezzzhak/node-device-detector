@@ -517,6 +517,8 @@ rg405v:
   - ANC
 rg505:
   - ANC
+20jjs0cu1m:
+  - LE
 hibox-hero:
   - 1C
 aspire v5-121:
@@ -936,6 +938,8 @@ hp engage one pro aio system:
   - HP
 hp elitebook 8470p:
   - HP
+hp compaq 8200 elite sff pc:
+  - HP
 impress_grip:
   - VX
 archos diamond plus:
@@ -1076,6 +1080,7 @@ desk21t-03:
   - ACT
 mobigo2:
   - ID
+  - 6W
 cn80:
   - WH
 tinker board s:
@@ -1164,6 +1169,8 @@ orangepi_3_lts:
   - ORP
 v2_pro-st:
   - 2J
+hy416:
+  - HOP
 sm-f721u:
   - SA
 note 13p:
@@ -1616,6 +1623,8 @@ tecno le6j:
   - TB
 sm-f916b:
   - SA
+a2121g:
+  - ZT
 gi-626:
   - A5
 5039d_ru:
@@ -3702,6 +3711,7 @@ w717:
   - HA
 myphonemy27:
   - MY
+  - MY1
 s-tell m477:
   - 8L
 ek-5336:
@@ -3740,13 +3750,13 @@ hammer titan 2:
   - HAM
   - UZ
 myphone_infinity_ii_lte:
-  - MY
+  - MY1
 mya17:
   - MY
 myphone_pocket_18x9:
-  - MY
+  - MY1
 myphone_q-smart_iii:
-  - MY
+  - MY1
 nuvo blue nd40:
   - N0
 nuvo green nd 45:
@@ -7053,8 +7063,6 @@ sm-g980f:
 sm-g981b:
   - SA
 scg01:
-  - SA
-sm-g988b:
   - SA
 sm-g985f:
   - SA
@@ -11718,129 +11726,6 @@ primo nf4:
   - WA
 cph1925:
   - OP
-aquaris_a4.5:
-  - BX
-  - IX
-tg-l800s:
-  - L9
-ibrit_i7:
-  - 7I
-ibrit_i5:
-  - 7I
-ibrit_power6:
-  - 7I
-ibrit_speed pro:
-  - 7I
-jade7s:
-  - IP
-itel-it1520:
-  - IZ
-itel-it1512:
-  - IZ
-powerfivemaxlite:
-  - H2
-powerfivemax2:
-  - H2
-rs8501:
-  - GZ
-royale_x2:
-  - F7
-fero_y1:
-  - F7
-halo plus:
-  - I5
-halo 4:
-  - I5
-halo2 3g:
-  - I5
-innjoo 2:
-  - I5
-innjoo 3:
-  - I5
-innjoo one 3g:
-  - I5
-innjoo_pro2:
-  - I5
-innjoo 4:
-  - I5
-innjoo x3:
-  - I5
-innjoo 2 lte:
-  - I5
-halo_4_mini_lte:
-  - I5
-halo x lte:
-  - I5
-hotz_m1:
-  - JG
-xt1965-6:
-  - MR
-tel-an10:
-  - HU
-asus_i003dd:
-  - AU
-mp1605:
-  - 3M
-luna g50:
-  - L9
-  - '69'
-asus zenfone 2e:
-  - AU
-quest lite:
-  - CB
-pearl k2:
-  - HV
-winwin:
-  - H2
-thunder 450w:
-  - KZ
-  - H2
-asus_x002:
-  - AU
-hlte227t:
-  - HI
-cool_9s:
-  - CO
-hlte316t:
-  - HI
-hlte216t:
-  - HI
-hlte215t:
-  - HI
-hlte310t:
-  - HI
-hlte226t:
-  - HI
-hlte202n:
-  - HI
-hlte510m:
-  - HI
-hlte500t:
-  - HI
-hlte501n:
-  - HI
-hlte311t:
-  - HI
-hlte203t:
-  - HI
-hlte730t:
-  - HI
-hlte210t:
-  - HI
-melrose_2019:
-  - 0E
-1831-a0:
-  - CO
-tel-tn00:
-  - HU
-tnnh-an00:
-  - HU
-zyvv1:
-  - 3V
-f103s:
-  - GI
-gome 2017x05a:
-  - G5
 so-41a:
   - SO
 xig01:
@@ -12083,7 +11968,7 @@ m-ppxg5m:
 start3g:
   - JG
 pocket_2:
-  - MY
+  - MY1
 mars touch:
   - V9
 zviii:
@@ -12419,7 +12304,7 @@ k545:
 fresh4g:
   - JG
 prime_4_lite:
-  - MY
+  - MY1
 indigo:
   - EX
 inco_plain_2:
@@ -12992,6 +12877,8 @@ asus_i001db:
   - AU
 zs660kl:
   - AU
+asus_i003dd:
+  - AU
 asus_z008:
   - AU
 z00d:
@@ -13015,6 +12902,8 @@ asus_z00md:
 asus_z00td:
   - AU
 asus_z011d:
+  - AU
+asus zenfone 2e:
   - AU
 asus_z012s:
   - AU
@@ -13183,6 +13072,8 @@ asus_x01bda:
 zb631kl:
   - AU
 asus_x003:
+  - AU
+asus_x002:
   - AU
 asus_x550:
   - AU
@@ -13906,6 +13797,8 @@ sm-g981v:
 sm-g9758:
   - SA
 sm-g770u1:
+  - SA
+sm-g988b:
   - SA
 sm-s906l:
   - SA
@@ -14708,7 +14601,7 @@ qphone 7.1:
 q9s55in4g:
   - QI
 q_smart_be:
-  - MY
+  - MY1
 roarv95:
   - SM
 roar_v150:
@@ -14902,7 +14795,7 @@ fendy_ds:
 zorro 001:
   - CB
 prime_18x9:
-  - MY
+  - MY1
 omega_lite_3c:
   - CH
 hero_h5+:
@@ -14972,9 +14865,9 @@ mtech jazbaa:
 cmcc-m860:
   - C3
 prime3lite:
-  - MY
+  - MY1
 prime_18x9_lte:
-  - MY
+  - MY1
 primo d9:
   - WA
 primo e9:
@@ -15838,12 +15731,16 @@ inoi_5_pro:
   - I4
 myphone agua rio:
   - MY
+  - MY1
 myphone agua rio lite:
   - MY
+  - MY1
 myphone agua rio fun:
   - MY
+  - MY1
 myphone agua infinity:
   - MY
+  - MY1
 qsmart_canopus:
   - QM
 qsmart i6i 2020:
@@ -16678,7 +16575,7 @@ flow 5plus:
 fan-m300h:
   - FB
 fun_18x9:
-  - MY
+  - MY1
 fun_s20:
   - V5
 flare hd 3:
@@ -19577,7 +19474,7 @@ zte blade v0920:
 hisense rock 5:
   - HI
 myphone_pocket_pro:
-  - MY
+  - MY1
 meizu c9 pro:
   - M1
 meizu m8 lite:
@@ -19645,7 +19542,7 @@ huawei tit-l01:
 htcd200lvwpp:
   - HT
 myphone fun4:
-  - MY
+  - MY1
 alp-l29:
   - HU
 evolveo strongphone g7:
@@ -20126,11 +20023,11 @@ axon mini:
 mi a2:
   - XI
 myphone_fun6lite:
-  - MY
+  - MY1
 myphone_fun_7_lte:
-  - MY
+  - MY1
 myphone_fun_18x9_eea:
-  - MY
+  - MY1
 oppo r9sk:
   - OP
 robby2:
@@ -20458,7 +20355,7 @@ inoi_7i:
 moto g (5):
   - MR
 myphone_prime_3:
-  - MY
+  - MY1
 moto e5 plus:
   - MR
 moto e5:
@@ -20880,7 +20777,7 @@ lp_veyron:
 lp_prado:
   - LL
 luna_ii:
-  - MY
+  - MY1
 luna g55:
   - L9
   - '69'
@@ -21227,9 +21124,9 @@ ta-1025:
 ta-1020:
   - NK
 myphone_city_2:
-  - MY
+  - MY1
 myphone_fun_6:
-  - MY
+  - MY1
 nokia c1 plus:
   - NK
 zs672ks:
@@ -21873,7 +21770,7 @@ rmx3203:
 n5002l:
   - NL
 myphone_prime_5:
-  - MY
+  - MY1
 mdg1:
   - XI
 nen-lx1:
@@ -23060,7 +22957,7 @@ note_4cam:
 ntn-lx3:
   - HU
 myphone_now_esim:
-  - MY
+  - MY1
 zte bv0800:
   - ZT
 moto g(50) 5g:
@@ -24226,7 +24123,7 @@ huawei vns-al00:
 huawei vns-tl00:
   - HU
 axe_m_lte:
-  - MY
+  - MY1
 as-5412:
   - A8
 huawei gra-ul10:
@@ -24737,6 +24634,9 @@ bq aquaris 5 hd:
   - BX
   - IX
 bq aquaris 5.7:
+  - BX
+  - IX
+aquaris_a4.5:
   - BX
   - IX
 aquaris c:
@@ -25334,6 +25234,8 @@ cubot p9:
   - CB
 cubot_power:
   - CB
+quest lite:
+  - CB
 cubot r11:
   - CB
 cubot r9:
@@ -25499,9 +25401,13 @@ c106-7:
   - CO
 orl-c0:
   - CO
+cool_9s:
+  - CO
 vcr-i0:
   - CO
 vcr-a0:
+  - CO
+1831-a0:
   - CO
 coolpad flo:
   - CO
@@ -26335,7 +26241,7 @@ x626_4g:
 wildfire e2 plus:
   - HT
 myphone_fun_9:
-  - MY
+  - MY1
 le wave:
   - LM
 le swipe:
@@ -26888,13 +26794,13 @@ iq4490i:
 iq4418:
   - FL
 myphone axe 3g:
-  - MY
+  - MY1
 myphone infinity lte:
-  - MY
+  - MY1
 myphone infinity 3g:
-  - MY
+  - MY1
 myphone cube 16gb:
-  - MY
+  - MY1
 primo r5:
   - WA
 primo r5 plus:
@@ -27352,7 +27258,7 @@ qmobile i6 metal one:
 kiowa s5 ultra:
   - '46'
 q-smart_plus:
-  - MY
+  - MY1
   - QM
 qmobile i6 metal 2017:
   - QM
@@ -28615,6 +28521,7 @@ ftwo:
   - J9
 go 2:
   - QA
+  - YE
 grand m2 lte:
   - BU
   - M1
@@ -28973,12 +28880,16 @@ o+ 8.97 android:
   - O3
 myphone rio 2 lite:
   - MY
+  - MY1
 myphone rio 2:
   - MY
+  - MY1
 myphone rio pixie:
   - MY
+  - MY1
 myphone rio 2 fun:
   - MY
+  - MY1
 sharp aquos p6:
   - SH
 sharp aquos s2 4:
@@ -29250,7 +29161,7 @@ ctr-lx1:
   - HU
 pocket:
   - CB
-  - MY
+  - MY1
 power p1:
   - 6V
 carbon 1 mark ii:
@@ -29909,7 +29820,7 @@ rltp5567:
 mtt ideal:
   - MQ
 infinit 2:
-  - MY
+  - TQ
 titanium t355:
   - LT
 cph1939:
@@ -30766,6 +30677,7 @@ logic x4 plus:
   - 1L
 logic instrument fieldbook f1b:
   - LH
+  - 1L
 light one:
   - 6V
 life x6:
@@ -32107,6 +32019,7 @@ next lite:
   - CD
 myphone uno:
   - MY
+  - MY1
 vox s509 3g vs5032pg:
   - D2
 vox_g501_4g_vs5033ml:
@@ -33437,6 +33350,7 @@ three proofings w7:
 toogo go 2:
   - TOO
   - QA
+  - YE
 thl 2015a:
   - T4
 tele2fon_v6:
@@ -35323,7 +35237,7 @@ hisense v40i:
 maa-an00:
   - HU
 myphone n23:
-  - MY
+  - MY1
 smini:
   - DO
 s19 max pro s zoom:
@@ -35789,7 +35703,7 @@ sm-m115f:
   - SA
 myphone jet:
   - R3
-  - MY
+  - MY1
 mipo_m25:
   - MIP
 mipo_m46_pro:
@@ -35961,6 +35875,50 @@ aligator rx850:
   - 4A
 move 10:
   - KE
+go1:
+  - YE
+go2:
+  - YE
+le000z93p:
+  - LV
+logic x57a:
+  - 1L
+mobigo2l:
+  - 6W
+rcareno5011619:
+  - RC
+helio 30:
+  - SM
+go 3:
+  - YE
+smooth note 6.8:
+  - HH
+mintt m3:
+  - OM
+vp005:
+  - UW
+stg h10:
+  - GQ
+eskimo_k5001:
+  - RTK
+primo r9:
+  - WA
+ms5424g:
+  - YM
+in_2c:
+  - MI
+iku x3:
+  - 8I
+alpha 9v:
+  - LA
+bl40_mv12:
+  - BM
+bl60 pro:
+  - BM
+bl61:
+  - BM
+bl62:
+  - BM
 i2302:
   - VV
 comio c1:
@@ -37467,6 +37425,10 @@ aurii virtuoso:
   - F3
 aurii_xcite:
   - F3
+royale_x2:
+  - F7
+fero_y1:
+  - F7
 fp1:
   - FA
 fp1u:
@@ -37798,6 +37760,8 @@ go503:
   - G1
 gome_c7_note_plus:
   - G5
+gome 2017x05a:
+  - G5
 gome 2018x38a:
   - G5
 gome 2016g68a:
@@ -37863,6 +37827,8 @@ dream_d1:
 gionee-e6/e6:
   - GI
 f100a:
+  - GI
+f103s:
   - GI
 f106l:
   - GI
@@ -38360,6 +38326,238 @@ pixpro l1 pro:
   - PIX
 g013a:
   - GO
+v2361ga:
+  - VV
+saturn:
+  - '69'
+santin k1:
+  - SQ
+omega hd 3:
+  - CH
+cam-l03:
+  - HU
+meizu c9:
+  - M1
+f3313:
+  - SO
+sm-j200bt:
+  - SA
+b5532:
+  - MD
+blade l7:
+  - ZT
+shahin iii:
+  - GX
+crush_x565:
+  - SMT
+blaze_x500:
+  - SMT
+nex 3 5g:
+  - VV
+2pzf1:
+  - HT
+reno ace 2 eva:
+  - OP
+w-k610-ope:
+  - WI
+smart 4g max 5.5:
+  - '11'
+rx17pro:
+  - OP
+honor 30 lite:
+  - HU
+hisense u30:
+  - HI
+sm-m536b:
+  - SA
+honor 30 pro+:
+  - HU
+cph2637:
+  - OP
+moto edge 20:
+  - MR
+phy120:
+  - OP
+honor 20 pro:
+  - HU
+m1803d5xa:
+  - XI
+lra-tl00:
+  - HU
+hry-l21:
+  - HU
+solar:
+  - LM
+andy 4e:
+  - YE
+tecno cl8:
+  - TB
+jny-l21:
+  - HU
+ilike u5 pro:
+  - AK
+eve-al00:
+  - HU
+jny-tl10:
+  - HU
+hisense f10:
+  - HI
+primo nx6:
+  - WA
+lge-n49b:
+  - HU
+  - LG
+honor 20 lite:
+  - HU
+honor 9x lite:
+  - HU
+honor 8a pro:
+  - HU
+honor play 3e:
+  - HU
+honor 20i:
+  - HU
+wukong-l29a:
+  - HU
+honor play 8:
+  - HU
+juliaqn-l01b:
+  - HU
+doogee x98 pro:
+  - DO
+honor 9s:
+  - HU
+f7 youth:
+  - OP
+nova y60:
+  - HU
+pcht10:
+  - OP
+a181:
+  - I4
+orbit y20:
+  - WA
+ix pro:
+  - 4M
+ix:
+  - 4M
+ix-1:
+  - 4M
+v2364a:
+  - VV
+x10_soul:
+  - A2
+x20_soul:
+  - A2
+v10_viper:
+  - A2
+smartphone_x5:
+  - '09'
+nexg n8:
+  - WA
+nexg n73:
+  - WA
+nexg n72:
+  - WA
+nexg n71 plus:
+  - WA
+l71061:
+  - LE
+l70081:
+  - LE
+ihunt s24 plus:
+  - IH
+ihunt_s23_plus:
+  - IH
+hisense e70 pro:
+  - HI
+panv0005in:
+  - MR
+panb0001in:
+  - MR
+moto g200:
+  - MR
+infinix x666:
+  - IF
+imo q5:
+  - IL
+  - '60'
+mito a67:
+  - 8M
+nexg n25:
+  - WA
+nexg n9:
+  - WA
+nokia x7:
+  - NK
+pocket_18x9:
+  - MY1
+motorola e6s:
+  - MR
+nokia c2:
+  - NK
+ninetology z1+:
+  - NI1
+ninetology x1:
+  - NI1
+v2355:
+  - VV
+v2351:
+  - VV
+v2350:
+  - VV
+v2401:
+  - VV
+v2199ga:
+  - VV
+xt2137-1:
+  - MR
+m1908c3ih:
+  - XI
+a301sh:
+  - SH
+samsung sm-a235m:
+  - SA
+juliaqn-l23a:
+  - HU
+iplay 50 pro:
+  - 3A
+2q6e1:
+  - HT
+ga02099:
+  - GO
+x75-2021:
+  - FP
+us215:
+  - LG
+a2023p:
+  - ZT
+a2022p:
+  - ZT
+a2022:
+  - ZT
+itel a667lp:
+  - IZ
+g4s1m:
+  - GO
+shift:
+  - 4M
+hisense e40:
+  - HI
+i99:
+  - SM
+i66:
+  - SM
+ravoz z6 lite:
+  - R9
+spurt k800:
+  - SPU
+sm-a750f:
+  - SA
+philips v387:
+  - PH
+smart fly v500:
+  - V5
 gs55-6:
   - GS
 gs57-6:
@@ -38395,6 +38593,8 @@ rs71d:
 rs74d:
   - GZ
 rs81d:
+  - GZ
+rs8501:
   - GZ
 rs8502:
   - GZ
@@ -38476,6 +38676,10 @@ power five evo:
   - H2
 power five max:
   - H2
+powerfivemax2:
+  - H2
+powerfivemaxlite:
+  - H2
 powerfivepro:
   - H2
 powerfour:
@@ -38495,6 +38699,8 @@ pure_power:
 razar_pro:
   - H2
 tasty:
+  - H2
+winwin:
   - H2
 zera f:
   - H2
@@ -38567,7 +38773,13 @@ hafury mix:
   - XI
 hafury umax:
   - HF
+hlte202n:
+  - HI
+hlte203t:
+  - HI
 hlte700t:
+  - HI
+hlte730t:
   - HI
 hlte221e:
   - HI
@@ -38577,11 +38789,23 @@ hitv300c:
   - HI
 hlte200t:
   - HI
+hlte210t:
+  - HI
+hlte215t:
+  - HI
 hlte217t:
+  - HI
+hlte227t:
+  - HI
+hlte500t:
+  - HI
+hlte310t:
   - HI
 hlte310m:
   - HI
 hlte510t:
+  - HI
+hlte510m:
   - HI
 hlte223e:
   - HI
@@ -38651,9 +38875,19 @@ hisense i639t:
   - HI
 hlte213t:
   - HI
+hlte311t:
+  - HI
+hlte216t:
+  - HI
+hlte316t:
+  - HI
+hlte226t:
+  - HI
 i46d1g:
   - HI
 eg680:
+  - HI
+hlte501n:
   - HI
 homtom_ht16:
   - HM
@@ -39242,6 +39476,7 @@ bittium tough mobile 2:
   - ZB
 logic instrument fieldbook f1:
   - LH
+  - 1L
 jad-lx9:
   - HU
 amber8s pro:
@@ -39757,6 +39992,8 @@ ask-al00x:
   - HU
 ksa-al10:
   - HU
+tnnh-an00:
+  - HU
 chm-tl00:
   - HU
 chm-tl00h:
@@ -39803,9 +40040,13 @@ oxf-an00:
   - HU
 oxf-an10:
   - HU
+tel-tn00:
+  - HU
 tel-an00a:
   - HU
 tel-an00:
+  - HU
+tel-an10:
   - HU
 scl-l01:
   - HU
@@ -40387,6 +40628,8 @@ jkm-lx3:
   - HU
 stk-l21:
   - HU
+pearl k2:
+  - HV
 venus_x10:
   - HV
 venus x12:
@@ -40451,7 +40694,31 @@ inoi_3_power:
   - I4
 inoi_7_lite:
   - I4
+innjoo 2:
+  - I5
+innjoo 2 lte:
+  - I5
+innjoo 3:
+  - I5
+innjoo 4:
+  - I5
+halo2 3g:
+  - I5
+halo 4:
+  - I5
+halo_4_mini_lte:
+  - I5
+halo plus:
+  - I5
+halo x lte:
+  - I5
+innjoo one 3g:
+  - I5
+innjoo_pro2:
+  - I5
 innjoo x:
+  - I5
+innjoo x3:
   - I5
 sp05:
   - I6
@@ -40658,6 +40925,8 @@ i-mobile iq1-1:
   - IO
 i-mobile iq5.1 pro:
   - IO
+jade7s:
+  - IP
 kylin 5.0:
   - IP
 kylin_5.0s:
@@ -40741,6 +41010,10 @@ itel_it1400:
   - IZ
 itel it1500:
   - IZ
+itel-it1512:
+  - IZ
+itel-it1520:
+  - IZ
 blaster:
   - J5
 blaster 2:
@@ -40768,6 +41041,8 @@ jfone js501:
 jinga basco l3:
   - JG
 jinga basco neo:
+  - JG
+hotz_m1:
   - JG
 jinga_igo_l2:
   - JG
@@ -41202,6 +41477,9 @@ kyv38:
   - KY
 kyv45:
   - KY
+thunder 450w:
+  - KZ
+  - H2
 kazam thunder q45:
   - KZ
   - H2
@@ -41393,9 +41671,14 @@ lephone_w9:
   - L7
 clarmin_b6:
   - L8
+luna g50:
+  - L9
+  - '69'
 luna g60:
   - L9
   - '69'
+tg-l800s:
+  - L9
 luna v55:
   - L9
   - '69'
@@ -42026,8 +42309,10 @@ lemoov2:
   - LM
 le smooth:
   - LM
+  - HH
 le smooth fr:
   - LM
+  - HH
 laiq glam:
   - LQ
   - NY
@@ -42193,7 +42478,7 @@ pure 1:
 pure 2:
   - 9H
 q-smart_iii_plus:
-  - MY
+  - MY1
   - QM
 y6_piano:
   - DO
@@ -43016,6 +43301,8 @@ moto g(6):
   - MR
 moto g(6) plus:
   - MR
+xt1965-6:
+  - MR
 moto g(7) power:
   - MR
 xt1663:
@@ -43171,24 +43458,26 @@ meu an500:
   - MX
 myphone a888:
   - MY
+  - MY1
 myphone a919 duo:
   - MY
+  - MY1
 myphone_axe_lte:
-  - MY
+  - MY1
 myphone_c-smart_4:
-  - MY
+  - MY1
 c-smart_pix:
-  - MY
+  - MY1
 myphone cityxl:
-  - MY
+  - MY1
 myphone cube:
-  - MY
+  - MY1
 cube_lte:
-  - MY
+  - MY1
 myphone_fun_8:
-  - MY
+  - MY1
 myphone fun lte:
-  - MY
+  - MY1
 hammer active:
   - HAM
 hammer_active2:
@@ -43196,9 +43485,9 @@ hammer_active2:
 hammer_active2_lte:
   - HAM
 hammer_axe_m_lte:
-  - MY
+  - MY1
 hammer axe pro:
-  - MY
+  - MY1
 hammer_blade2_pro:
   - HAM
 hammer energy:
@@ -43234,6 +43523,8 @@ techno x595bt:
   - 0B
 maxvi_ms401:
   - 0D
+melrose_2019:
+  - 0E
 melrose_s9:
   - 0E
 itruck 7 3g:
@@ -43541,6 +43832,8 @@ mp1718:
   - 3M
 meitu v4:
   - 3M
+mp1605:
+  - 3M
 positivo mini i:
   - 3P
 s455:
@@ -43573,6 +43866,8 @@ twist se:
   - 3P
 twist xl:
   - 3P
+zyvv1:
+  - 3V
 aligator rx510:
   - 4A
 aligator s4080:
@@ -43664,6 +43959,14 @@ maxtron_v3:
   - 6X
 maxtron-v7:
   - 6X
+ibrit_i5:
+  - 7I
+ibrit_i7:
+  - 7I
+ibrit_power6:
+  - 7I
+ibrit_speed pro:
+  - 7I
 ms450:
   - 7M
 ms453:
@@ -44158,6 +44461,7 @@ gsmart alto a2:
   - GG
 bush 10.0 mytablet:
   - B1
+  - MY1
 bush 7.85 tablet:
   - B1
 beeline tab:
@@ -45869,56 +46173,8 @@ plum z712:
   - P4
 plum z811:
   - P4
-sm-t360:
-  - SA
-samsung sm-t332:
-  - SA
-samsung sm-t677:
-  - SA
-samsung sm-t670:
-  - SA
-sm-t677nk:
-  - SA
-sm-t677nl:
-  - SA
-sm-t677v:
-  - SA
-sm-t537v:
-  - SA
-anry-x20:
-  - 7A
-anry-s20:
-  - 7A
-hi10 pro:
-  - 1C
-hibook pro:
-  - 1C
-hi10 plus:
-  - 1C
-hi8 air:
-  - 1C
-hi8 pro:
-  - 1C
-t1001x:
-  - 3A
 mixzo mx1021:
   - 1Z
-access_q784c:
-  - '20'
-tz192:
-  - I6
-tz191:
-  - I6
-tz185:
-  - I6
-tz174:
-  - I6
-tz171:
-  - I6
-tz104:
-  - I6
-tz761:
-  - I6
 kyt32:
   - KY
 kyt31:
@@ -45943,12 +46199,6 @@ tf-mid708g:
   - TL
 tf-mid804g:
   - TL
-samsung-sm-t707a:
-  - SA
-sm-t357w:
-  - SA
-sm-t357t:
-  - SA
 tm-mid794c:
   - T8
 tm-mid795:
@@ -45956,7 +46206,7 @@ tm-mid795:
 nova_x7_plus_3g:
   - O1
 mytab_10iii:
-  - MY
+  - MY1
 nt-tp10:
   - 7N
 odys_nova_x7:
@@ -46242,36 +46492,14 @@ kyt33:
   - KY
 citi 7587 3g cs7204mg:
   - D2
-junior_8_pro:
-  - O1
 tf-mid1005g:
   - TL
-sm-t337v:
-  - SA
-sm-t337t:
-  - SA
 pixus_joker:
   - PX
-xperia z2 tablet wifi:
-  - SO
 a2109a:
   - LE
 a3500-hv:
   - LE
-samsung-sm-t337a:
-  - SA
-samsung-sm-t537a:
-  - SA
-samsung sm-t387r4:
-  - SA
-sm-t378k:
-  - SA
-samsung-sm-t818a:
-  - SA
-fz-b2d:
-  - PA
-hope7_mate:
-  - XT
 touchbook m7 pro:
   - BU
 lavie tab e 10fhd1:
@@ -47110,6 +47338,7 @@ htc a101 plus:
   - AC
 logic instrument fieldbook ks80:
   - LH
+  - 1L
 tb330fu:
   - LE
 tab 70 wifi:
@@ -47529,6 +47758,30 @@ hbook-pro:
   - ZH
 volta5:
   - 3O
+contixo cx1065 3g:
+  - 3C
+tgr-w09:
+  - HU
+tpc-g1011lte:
+  - JA
+mitraveler 958:
+  - TIV
+tae08n10:
+  - ENO
+tabultracpro:
+  - 3O
+gocolor7:
+  - 3O
+pluri_m8_2020:
+  - V2
+v-z50:
+  - VIK
+8052_ru:
+  - AL
+oysters t82p 3g:
+  - OY
+sb5 hd:
+  - L3
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -47799,6 +48052,8 @@ irbis tz02:
   - I6
 tz100:
   - I6
+tz104:
+  - I6
 tz142:
   - I6
 tz150:
@@ -47807,7 +48062,11 @@ tz165:
   - I6
 tz170:
   - I6
+tz171:
+  - I6
 tz173:
+  - I6
+tz174:
   - I6
 tz175:
   - I6
@@ -47823,7 +48082,13 @@ tz183:
   - I6
 tz184:
   - I6
+tz185:
+  - I6
 tz186:
+  - I6
+tz191:
+  - I6
+tz192:
   - I6
 tz195:
   - I6
@@ -47868,6 +48133,8 @@ tz753:
 tz754:
   - I6
 tz757:
+  - I6
+tz761:
   - I6
 tz762:
   - I6
@@ -48893,9 +49160,9 @@ mypad 2:
 mypad 750hd:
   - MY
 mytab10ii:
-  - MY
+  - MY1
 mytab_10_q:
-  - MY
+  - MY1
 enjoy 7 plus:
   - MZ
 primo76:
@@ -48973,6 +49240,8 @@ falcon_10_plus_3g:
 fusion:
   - O1
 ieos_quad_10_pro:
+  - O1
+junior_8_pro:
   - O1
 maven10_hd:
   - O1
@@ -49150,6 +49419,8 @@ pd-3127:
 pd-3127nc:
   - P9
 p-08d:
+  - PA
+fz-b2d:
   - PA
 pcb-t103 curi lite:
   - PB
@@ -49714,7 +49985,11 @@ sm-t536:
   - SA
 sm-t531:
   - SA
+samsung-sm-t537a:
+  - SA
 samsung sm-t535:
+  - SA
+sm-t537v:
   - SA
 sm-t530nu:
   - SA
@@ -49732,9 +50007,17 @@ samsung sm-t237p:
   - SA
 sm-t230nu:
   - SA
+samsung-sm-t337a:
+  - SA
 samsung sm-t335:
   - SA
 sm-t331:
+  - SA
+sm-t337t:
+  - SA
+sm-t337v:
+  - SA
+samsung sm-t332:
   - SA
 sm-t330:
   - SA
@@ -49764,6 +50047,10 @@ samsung sm-t285:
   - SA
 sm-p350:
   - SA
+sm-t357t:
+  - SA
+sm-t357w:
+  - SA
 sm-t355y:
   - SA
 sm-t385:
@@ -49775,6 +50062,8 @@ sm-t387w:
 sm-t387t:
   - SA
 sm-t387v:
+  - SA
+samsung sm-t387r4:
   - SA
 sm-t387aa:
   - SA
@@ -49806,7 +50095,11 @@ samsung sm-t395:
   - SA
 sm-t365:
   - SA
+sm-t360:
+  - SA
 sm-t378l:
+  - SA
+sm-t378k:
   - SA
 sm-t378s:
   - SA
@@ -49831,6 +50124,8 @@ sm-t807p:
 samsung sm-t800:
   - SA
 samsung sm-t705:
+  - SA
+samsung-sm-t707a:
   - SA
 sm-t705:
   - SA
@@ -49857,6 +50152,8 @@ sm-t710:
 sm-t713:
   - SA
 sm-t815:
+  - SA
+samsung-sm-t818a:
   - SA
 sm-t818t:
   - SA
@@ -49932,7 +50229,17 @@ samsung sm-t325:
   - SA
 sm-t320:
   - SA
+sm-t677v:
+  - SA
 samsung-sm-t677a:
+  - SA
+sm-t677nl:
+  - SA
+sm-t677nk:
+  - SA
+samsung sm-t677:
+  - SA
+samsung sm-t670:
   - SA
 gt-n8013:
   - SA
@@ -49983,6 +50290,8 @@ sgp611:
 sgp612:
   - SO
 sgp712:
+  - SO
+xperia z2 tablet wifi:
   - SO
 so-05g:
   - SO
@@ -50628,6 +50937,8 @@ telepad731:
   - XR
 telepad795:
   - XR
+hope7_mate:
+  - XT
 x-tigi_joy10_pro:
   - XT
 x-tigi_joy7_max:
@@ -50726,6 +51037,8 @@ ultimax:
   - '10'
 valumax:
   - '10'
+access_q784c:
+  - '20'
 p024:
   - AU
 supernova qi32:
@@ -52221,11 +52534,11 @@ sunshine_t1:
 u63plus:
   - 3A
 smartview_7_3g:
-  - MY
+  - MY1
 smartview_8_lte:
-  - MY
+  - MY1
 smartview_9_6_3g:
-  - MY
+  - MY1
 archos 101c platinum:
   - AR
 st7160:
@@ -53451,7 +53764,7 @@ neoqc4g:
   - MAS
 mytab u30gt 2:
   - CU
-  - MY
+  - MY1
 m10a_3g:
   - 1R
 kc770:
@@ -55530,7 +55843,7 @@ if195a:
 smart_l102:
   - IG
 smartview_9.6_3g:
-  - MY
+  - MY1
 st1009x:
   - 3B
   - SE
@@ -55765,6 +56078,22 @@ lenovo tb-j6c6f:
   - LE
 readboy_g600:
   - RB
+mid_1089ipsa100:
+  - LAS
+scepter8:
+  - YQ
+tabletexo_wave_i101s:
+  - EH
+mq703g:
+  - TWN
+mt003-21:
+  - MIG
+byybuo_smartpad_t10:
+  - BYY
+ox-p010-2:
+  - OXT
+x10mt87:
+  - X8
 senkatel_t1009:
   - '01'
 senkatel_t7011:
@@ -55787,11 +56116,21 @@ crony-7021:
   - 0C
 tab2323gmqc:
   - 0H
+hi10 plus:
+  - 1C
+hi10 pro:
+  - 1C
 cw-hi10 pro:
   - 1C
 cw-hi12:
   - 1C
 cw-hi8-super:
+  - 1C
+hi8 air:
+  - 1C
+hi8 pro:
+  - 1C
+hibook pro:
   - 1C
 cw-v17hd3g:
   - 1C
@@ -55879,6 +56218,8 @@ andromeda s850:
 u1006:
   - 3A
 iplay_20:
+  - 3A
+t1001x:
   - 3A
 t1001xs:
   - 3A
@@ -56052,9 +56393,10 @@ pnt-7045:
   - 3S
 mytab 8 mini dual core:
   - 3T
-  - MY
+  - MY1
 mytab-u55gt:
   - 3T
+  - MY1
 people gt300:
   - 4G
 t700i_3g:
@@ -56100,6 +56442,10 @@ mid-783g:
 mid-833g:
   - 6M
 anry-rs10:
+  - 7A
+anry-s20:
+  - 7A
+anry-x20:
   - 7A
 torex-ps12:
   - 7T
@@ -56660,6 +57006,12 @@ sm-x616b:
   - SA
 sky 1264c 4g ss1271pl:
   - W8
+walpad8g:
+  - WA
+walpad_8g:
+  - WA
+poke3:
+  - 3O
 tf-led40s63t2s_536d400pf33_fhd:
   - TL
 gtking:
@@ -58297,15 +58649,6 @@ eagle gold:
   - EQ
 changhong android tv:
   - C2
-sm-led40m04s:
-  - X2
-  - SA
-tr99 mini+:
-  - 5R
-tr99:
-  - 5R
-transpeed_6k:
-  - 5R
 atom-216rk:
   - 2A
 omnicast uhd:
@@ -59364,6 +59707,65 @@ polarline_wk_24pl51tc-sm:
   - '97'
 polarline_wk_32pl13tc-sm:
   - '97'
+43lu8030s:
+  - 8A
+ld-43sf4815bs-t9:
+  - VEK
+polar_w_p40l31t2scsm:
+  - Q6
+openbox a8:
+  - OH
+limet95:
+  - LIM
+mlt43usd02g:
+  - MAU
+sw-led43ug400:
+  - '45'
+sl-led24s90t2s:
+  - SC1
+55mt-udg54g:
+  - R3
+v39tphe01s:
+  - JW
+v32tphde1s:
+  - JW
+v24tphde1s:
+  - JW
+sw-led58ua401:
+  - '45'
+sw-led50ub400:
+  - '45'
+sw-led43ug405:
+  - '45'
+sw-led32sb300:
+  - '45'
+sw-led40sb304:
+  - '45'
+sw-led43sb304:
+  - '45'
+sw-led43ug401:
+  - '45'
+sw-led43ug403:
+  - '45'
+sdott00000: []
+sdstb00: []
+sdstb02:
+  - UGR
+sdott0202:
+  - UGR
+ott xview av1:
+  - MCA
+mediabox: []
+32les902t2sm:
+  - '05'
+y-4301-fhd-r:
+  - NRD
+y-4001-fhd-r:
+  - NRD
+sun-led65xu401:
+  - W8
+55u620s:
+  - 4B
 bb2 pro:
   - 0M
 kii pro:
@@ -59466,6 +59868,12 @@ vega s95_pro:
   - 4T
 vega s95_telos:
   - 4T
+transpeed_6k:
+  - 5R
+tr99:
+  - 5R
+tr99 mini+:
+  - 5R
 t95zplus:
   - 5S
 32lf7130s:
@@ -59731,6 +60139,9 @@ sm-led32m04s:
   - X2
   - SA
 sm-led32m11s:
+  - X2
+  - SA
+sm-led40m04s:
   - X2
   - SA
 nexbox-a1:
