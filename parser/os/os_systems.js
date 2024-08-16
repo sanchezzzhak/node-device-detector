@@ -124,6 +124,7 @@ module.exports = {
   'RST': 'Red Star',
   'RED': 'RedOS',
   'REV': 'Revenge OS',
+  'RIS': 'risingOS',
   'ROS': 'RISC OS',
   'ROC': 'Rocky Linux',
   'ROK': 'Roku OS',
