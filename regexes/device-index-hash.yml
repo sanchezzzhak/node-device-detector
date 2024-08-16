@@ -132,6 +132,8 @@
   - O4
 '100110603':
   - O4
+'100135925':
+  - O4
 dmc-cm1:
   - PA
 samsung ek-gn120:
@@ -234,6 +236,8 @@ airtouch performance 10x:
   - AIT
 tb8163p3_bsp:
   - XY
+dilink5.0 for byd auto:
+  - BYD
 pixel 3:
   - GO
 m2006c3lg:
@@ -1171,6 +1175,8 @@ v2_pro-st:
   - 2J
 hy416:
   - HOP
+lenovo projector701:
+  - LE
 sm-f721u:
   - SA
 note 13p:
@@ -1625,6 +1631,16 @@ sm-f916b:
   - SA
 a2121g:
   - ZT
+sm-f711u:
+  - SA
+xig05:
+  - XI
+sm-f741w:
+  - SA
+sm-f741b:
+  - SA
+infinix x6850b:
+  - IF
 gi-626:
   - A5
 5039d_ru:
@@ -25990,6 +26006,7 @@ sky_55_eea:
   - KW
 ihunt s60 discovery pro 2022:
   - IH
+  - FS
 s10 tank pro 2020:
   - IH
 symbol m1:
@@ -35865,6 +35882,7 @@ zte blade a34:
   - ZT
 xsmart nova 7:
   - XSM
+  - HU
 xig03:
   - XI
 v2272a:
@@ -38558,6 +38576,203 @@ philips v387:
   - PH
 smart fly v500:
   - V5
+okapiamagic:
+  - OA
+magic+:
+  - OA
+cph2687:
+  - OP
+cph2681:
+  - OP
+cph2643:
+  - OP
+cph2619:
+  - 'ON'
+  - OP
+cph2621:
+  - 'ON'
+  - OP
+cph2639:
+  - OP
+doov l525:
+  - DV
+v2346:
+  - VV
+gionee s9:
+  - GI
+gionee s10:
+  - GI
+hongmi 4:
+  - XI
+xolo black1x:
+  - XO
+ringing bells smart 101:
+  - RNB
+hongmi 5a:
+  - XI
+i-mobile iq xpro2:
+  - IO
+i-mobile_iq_big2:
+  - IO
+i-mobile iq z:
+  - IO
+xt2081-1:
+  - MR
+ultra 8 pro:
+  - SPX
+discovery pro:
+  - FS
+c51:
+  - OE
+c38:
+  - DX
+  - OE
+c36:
+  - OE
+c35:
+  - OE
+c33:
+  - OE
+b1:
+  - 5F
+b2:
+  - 5F
+armor p1s:
+  - KHI
+xt2225-2:
+  - MR
+orange rise 35:
+  - OR
+hlte720e:
+  - HI
+gdl xtreme 4:
+  - GDL
+gq3060tf3:
+  - UL
+itel a511lq:
+  - IZ
+nokia c12 pro:
+  - NK
+  - OE
+xt2091-7:
+  - LE
+xt2343-3:
+  - MR
+xt2221-2:
+  - MR
+xt2158-6:
+  - MR
+v max plus:
+  - DO
+v2343:
+  - VV
+s punk:
+  - DO
+mzb0ggwin:
+  - 0P
+mzb0a5ein:
+  - XI
+mzb0a0min:
+  - 0P
+lenovo z6 pro 5g:
+  - LE
+l78031:
+  - LE
+kyg03:
+  - KY
+energizer ultimate 65g:
+  - ED
+energizer power max p550s:
+  - ED
+energizer hardcase h570s:
+  - ED
+go3z5:
+  - GO
+fp5:
+  - FA
+g6qu3:
+  - GO
+zg65:
+  - JW
+z2350:
+  - ZT
+nova 6:
+  - HU
+nova 7 5g:
+  - HU
+nova 7i:
+  - HU
+nova 7 pro 5g:
+  - HU
+nova 7 se 5g:
+  - HU
+nova 8i:
+  - HU
+nova 8 se:
+  - HU
+nova 8:
+  - HU
+rmx3800:
+  - RE
+wp50:
+  - OE
+v2403a:
+  - VV
+s118:
+  - DO
+sm-a245m:
+  - SA
+rtg-nx9:
+  - HU
+pro k10:
+  - NOV
+s41t:
+  - DO
+fri-an10:
+  - HU
+a302op:
+  - OP
+motorola edge 50 fusion:
+  - MR
+  - O1
+motorola moto g84 5g:
+  - MR
+iqoo z5x:
+  - VV
+iqoo z5:
+  - VV
+iqoo z3 5g:
+  - VV
+t7:
+  - HV
+rmx3781:
+  - RE
+realme 7 pro:
+  - RE
+fla-l23:
+  - HU
+g013c:
+  - GO
+sharp aquos zero6:
+  - SH
+pr4jbx20a:
+  - UM
+pg2309gba:
+  - UM
+redmi k60 ultra:
+  - XI
+redmi turbo 3:
+  - XI
+2406ern9ci:
+  - XI
+rx pro:
+  - 4M
+redmi k60e:
+  - XI
+xsmart mate 10:
+  - XSM
+ayat101:
+  - YR
 gs55-6:
   - GS
 gs57-6:
@@ -47782,6 +47997,58 @@ oysters t82p 3g:
   - OY
 sb5 hd:
   - L3
+chronos_10:
+  - NJO
+s-tab1:
+  - ATU
+smartbook s9+:
+  - '47'
+p16w:
+  - WEE
+digma pro star 14 as8001pl:
+  - D2
+digma pro hit 104 hs1008pl:
+  - D2
+citi 1421d 4g cs1274pl:
+  - D2
+citi 1314c 4g cs1275pl:
+  - D2
+hit 18 hs1012pl:
+  - D2
+hit 18 hs1011pl:
+  - D2
+hit 18 hs1010pl:
+  - D2
+ego1003:
+  - EGO
+eagle_1076:
+  - KE
+dbr-w10:
+  - HU
+zb30:
+  - ZZB
+ceptertab101:
+  - CEP
+net_r7:
+  - K2
+sm-x516n:
+  - SA
+tab 60 kids:
+  - B2
+tab 50 kids:
+  - B2
+t60:
+  - T7
+t50pro_w_eea:
+  - T7
+t50:
+  - T7
+t20mini kid:
+  - DO
+rt8:
+  - OE
+rmp2205:
+  - RE
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -55591,8 +55858,6 @@ agm-w09hn:
   - HU
 m10 go:
   - RD
-c38:
-  - DX
 t5_eea:
   - 'YES'
 8491x_eea:
@@ -59766,6 +60031,96 @@ sun-led65xu401:
   - W8
 55u620s:
   - 4B
+hty-75uhd06b-s2:
+  - HA1
+43lf7010t:
+  - 8A
+sbdv-00006:
+  - SBR
+hty-65uhd06b-s2:
+  - HA1
+43ulx9060t2:
+  - '05'
+43u1ydx000fbs2:
+  - I6
+43sa705:
+  - SAM
+43lf1212:
+  - VIT
+43lex-9201uts2c:
+  - BB
+43yuhd-r:
+  - HIB
+50le7053d:
+  - 4H
+55yuhd-r:
+  - HIB
+65yuhd-r:
+  - HIB
+65u520s:
+  - 4B
+65u001bs2:
+  - I6
+65lu1210:
+  - VHM
+65lex-8234-uts2c.hv650qub-f9d:
+  - BB
+65lex-8174:
+  - BB
+55u1ydx000bs2:
+  - I6
+43lex-8289uts2c:
+  - BB
+32lx9050t2:
+  - '05'
+43f520t:
+  - 4B
+42lex-7255fts2c:
+  - BB
+32ystv-r:
+  - BFF
+32h700gr:
+  - KV
+32h650s:
+  - 4B
+24lh1203:
+  - VHM
+24lf7020t:
+  - 8A
+kp1:
+  - HOM
+km7:
+  - 0M
+konka 2k android tv:
+  - KO
+metz 2k tv:
+  - ME
+yasin 4k android tv:
+  - YJ
+yasin 2k android tv:
+  - YJ
+ex-32hs017b:
+  - '35'
+hibergqled55y:
+  - HIB
+nv721wb:
+  - 4E
+nv710wb:
+  - 4E
+42fles904t2sm:
+  - '05'
+onn 2k tv stick:
+  - O4
+f30up:
+  - VI2
+v-home_24lh1211:
+  - VHM
+ugoos am6:
+  - UG
+sternenschein g-21:
+  - DYM
+vhix-65u169tsy:
+  - 3H
 bb2 pro:
   - 0M
 kii pro:
