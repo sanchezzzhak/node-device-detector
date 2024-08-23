@@ -21,6 +21,6 @@ module.exports = [
   'M7', 'GN', 'D3', 'IG', 'HW', '4O', 'OU', '5P', 'KE',
   '5A', 'TT', '6P', 'G3', '7P', 'VU', 'F8', 'L4', 'DK',
   'DP', 'KL', 'K4', 'N6', 'KU', 'WK', 'M8', 'UP', 'ZT',
-  '9P', 'N8',
+  '9P', 'N8', 'VR',
   
 ];
