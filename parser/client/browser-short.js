@@ -585,6 +585,7 @@ module.exports = {
   'V0': 'vBrowser',
   'VA': 'Vast Browser',
   'V3': 'VD Browser',
+  'VR': 'Veera',
   'VE': 'Venus Browser',
   'WD': 'Vewd Browser',
   'V5': 'VibeMate',

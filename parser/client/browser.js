@@ -13,10 +13,13 @@ const CLIENTHINT_MAPPING = {
   'Chrome Webview': ['Android WebView'],
   'DuckDuckGo Privacy Browser': ['DuckDuckGo'],
   'Edge WebView': ['Microsoft Edge WebView2'],
+  'Mi Browser': ['Miui Browser', 'XiaoMiBrowser'],
   'Microsoft Edge': ['Edge'],
   'Norton Private Browser': ['Norton Secure Browser'],
   'Vewd Browser': ['Vewd Core'],
 };
+
+const BROWSERHINT_SKIP_VERSION = ['MU', 'OM', 'OP', 'VR'];
 
 const compareBrandForClientHints = (brand) => {
   for (let brandName in CLIENTHINT_MAPPING) {
@@ -53,6 +56,7 @@ class Browser extends ClientAbstractParser {
   }
 
   /**
+   * Generates the result for the parse method
    *
    * @param userAgent
    * @param data
@@ -139,7 +143,7 @@ class Browser extends ClientAbstractParser {
           version = '';
         }
         // If client hints report the following browsers, we use the version from useragent
-        if (data.version && ['MU', 'OM', 'OP'].indexOf(short) !== -1) {
+        if (data.version && BROWSERHINT_SKIP_VERSION.indexOf(short) !== -1) {
           version = data.version;
         }
       }
@@ -193,6 +197,8 @@ class Browser extends ClientAbstractParser {
   }
 
   /**
+   * General method for parsing user-agent and client-hints
+   *
    * @param {string} userAgent
    * @param {*} clientHints
    * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
@@ -205,10 +211,22 @@ class Browser extends ClientAbstractParser {
     return this.prepareParseResult(userAgent, data, hint, hash);
   }
 
+  /**
+   * Parses client-hints for getting the browser name from the application ID (clientHints.app)
+   *
+   * @param {*} clientHints
+   * @return {{name: *}}
+   */
   parseFromHashHintsApp(clientHints) {
     return browserHints.parse(clientHints);
   }
 
+  /**
+   * Parses client-hints for getting browser name, version, short name
+   *
+   * @param {*} clientHints
+   * @return {{name: string, short_name: string, version: string}}
+   */
   parseFromClientHints(clientHints) {
     let name = '';
     let short = '';
@@ -252,6 +270,13 @@ class Browser extends ClientAbstractParser {
     };
   }
 
+  /**
+   * Inline parse userAgent by position collection
+   *
+   * @param {string} userAgent
+   * @param {number} position
+   * @return {{engine: *, name: string, short_name: *, engine_version: *, family: string, version: string}|null}
+   */
   parseUserAgentByPosition(userAgent, position = 0) {
     let item = this.collection[position];
     if (item === void 0) {

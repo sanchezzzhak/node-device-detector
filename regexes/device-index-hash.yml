@@ -31415,6 +31415,7 @@ e10_pro:
   - EL
 senseit e400:
   - S6
+  - PC
 mix 3 the palace museum edition:
   - XI
 poco m5:
@@ -34909,6 +34910,60 @@ rmx3890:
   - RE
 23100rn82l:
   - XI
+ap6301:
+  - ATH
+ack2326:
+  - A0
+aprix c55:
+  - SIS
+astro 55t:
+  - MW
+bl63_tg07:
+  - BM
+c5 max:
+  - BU
+c5 plus:
+  - BU
+cp3636a:
+  - CO
+crt-nx3:
+  - HU
+eabf22206a:
+  - 6A
+ea500plus:
+  - UNT
+24069pc21i:
+  - 0P
+e0116:
+  - EVR
+e0117:
+  - EVR
+l622:
+  - HN
+l604:
+  - HN
+g50:
+  - BU
+g61:
+  - BU
+g70:
+  - BU
+g71:
+  - BU
+g91:
+  - BU
+ms5514g:
+  - YM
+pl571us:
+  - PC
+5131a:
+  - TC
+5164a:
+  - TC
+5033tp:
+  - TC
+5133mp:
+  - TC
 v2252:
   - VV
 v2239:
@@ -51493,6 +51548,7 @@ maxtron t1:
   - 6X
 citi 8 e400 4g cs8231pl:
   - D2
+  - PC
 citi 7 e401 4g cs7234pl:
   - D2
 bq-7083g:
@@ -54120,6 +54176,32 @@ t22-eea:
   - 6O
 r8l5t:
   - O5
+azupik:
+  - AZU
+cm822:
+  - CIA
+cm522:
+  - CIA
+eut110-11a:
+  - AC
+lw788:
+  - LW1
+m1045w:
+  - ENA
+pcb-t104:
+  - PB
+v100m4l:
+  - PRT
+9309x2_eea:
+  - TC
+9198s:
+  - TC
+9132s:
+  - TC
+9460g:
+  - TC
+9183w:
+  - TC
 tq700:
   - GC
 tpc-xte8:
