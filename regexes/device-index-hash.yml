@@ -490,6 +490,16 @@ pixel 6:
   - GO
 sm-g950n:
   - SA
+sm-j105h:
+  - SA
+vne-lx3:
+  - HU
+infinix x688b:
+  - IF
+infinix x665e:
+  - IF
+m2007j3sg:
+  - XI
 zc554kl:
   - AU
 dn2103:
@@ -1177,6 +1187,10 @@ hy416:
   - HOP
 lenovo projector701:
   - LE
+hce600:
+  - CHC
+hce700:
+  - CHC
 sm-f721u:
   - SA
 note 13p:
@@ -1641,6 +1655,8 @@ sm-f741b:
   - SA
 infinix x6850b:
   - IF
+rubyplus:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -11355,8 +11371,6 @@ m2006c3lvg:
   - XI
 m2007j3sc:
   - XI
-m2007j3sg:
-  - XI
 oneplus 5t:
   - 'ON'
 oneplus 7 pro:
@@ -17654,8 +17668,6 @@ asus_z017db:
   - AU
 tecno w5 lite:
   - TB
-sm-j105h:
-  - SA
 ine-lx1:
   - HU
 ine-lx2:
@@ -19524,8 +19536,6 @@ infinix x657c:
 infinix x680f:
   - IF
 infinix x688c:
-  - IF
-infinix x688b:
   - IF
 infinix x682b:
   - IF
@@ -30298,8 +30308,6 @@ rmx3563:
   - RE
 rmx3690:
   - RE
-infinix x665e:
-  - IF
 sm-m136b:
   - SA
 sm-m536s:
@@ -30707,8 +30715,6 @@ vhem:
   - WI
 sm-a236b:
   - SA
-vne-lx3:
-  - HU
 b1 pro:
   - 5F
 x7_soul_pro:
@@ -34964,6 +34970,70 @@ pl571us:
   - TC
 5133mp:
   - TC
+chcnav:
+  - CHC
+allure a8 pro:
+  - C5
+elite_d55:
+  - SW
+enie e2:
+  - FRT
+ikosora+:
+  - 6W
+vimoq p662lo:
+  - VIM
+vimoq a631lo:
+  - VIM
+vimoq s661ls:
+  - VIM
+ob_588:
+  - A5
+platinum_b4p:
+  - SW
+art 3s:
+  - YE
+quantum q30:
+  - QA
+smooth 6.0:
+  - HH
+u668ac:
+  - CK
+cm17xa_eea:
+  - C4
+siragon_sp_7200:
+  - '31'
+uni 10x:
+  - UNQ
+uni go:
+  - UNQ
+chw-lx3:
+  - HU
+frl-l21:
+  - HU
+element 5:
+  - KL
+airtel imagine:
+  - 7U
+stylo rain:
+  - '69'
+elite n55max:
+  - SW
+bl53_tg06:
+  - BM
+ct45p:
+  - WH
+advannasapro:
+  - A9
+6065a:
+  - AL
+5003x:
+  - AL
+5131e:
+  - AL
+6002j:
+  - AL
+s6003l:
+  - NL
 v2252:
   - VV
 v2239:
@@ -38828,6 +38898,30 @@ xsmart mate 10:
   - XSM
 ayat101:
   - YR
+xt2013-2:
+  - MR
+xt2061-3:
+  - MR
+s501aplus:
+  - IP
+s cyber:
+  - DO
+24072px77c:
+  - XI
+xt2307-1:
+  - MR
+model 5:
+  - HYA
+model 6s:
+  - HYA
+studio g plus:
+  - BU
+lava lzg403 25:
+  - LV
+iku a70:
+  - 8I
+lava lzx408:
+  - LV
 gs55-6:
   - GS
 gs57-6:
@@ -48104,6 +48198,22 @@ rt8:
   - OE
 rmp2205:
   - RE
+d3_eea:
+  - DMO
+iplay_60:
+  - 3A
+kant2:
+  - 3O
+opd2304:
+  - 'ON'
+iplay50_lite:
+  - 3A
+u310-eea:
+  - YUM
+ihunt strong tablet x pro:
+  - IH
+kingpad z10_eea:
+  - VA
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -54202,6 +54312,46 @@ v100m4l:
   - TC
 9183w:
   - TC
+ancel801:
+  - ANL
+zkempler_pro:
+  - KS
+mintaka:
+  - HA
+8ey:
+  - MC
+cnm6762:
+  - CNM
+ocean k8:
+  - OLA
+vivax_tpc-105_4g:
+  - V5
+kidiby:
+  - KID
+tikeasy 10d:
+  - AR
+pr5860:
+  - AD
+elite10qh:
+  - VIL
+creapad_1005_eea:
+  - WW
+f105d_128:
+  - 5J
+9006w:
+  - AL
+9015b:
+  - AL
+9024w:
+  - AL
+9025q:
+  - AL
+10wb2:
+  - HN
+10la1:
+  - HN
+smooth 8gt:
+  - HH
 tq700:
   - GC
 tpc-xte8:
@@ -60203,6 +60353,27 @@ sternenschein g-21:
   - DYM
 vhix-65u169tsy:
   - 3H
+bid-at200:
+  - 5Z
+td55ufbhv1:
+  - TUV
+43f660ts:
+  - HAR
+rh-le43dsy-c:
+  - ROH
+50sa707:
+  - SAM
+media tv m5:
+  - HIP
+go700fr:
+  - GO1
+  - G1
+selenga:
+  - 9G
+ergogs:
+  - E7
+pvbox_p5_pro:
+  - PVB
 bb2 pro:
   - 0M
 kii pro:

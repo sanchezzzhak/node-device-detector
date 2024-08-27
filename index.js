@@ -122,7 +122,6 @@ class DeviceDetector {
     this.addParseDevice(DEVICE_PARSER_LIST.CAMERA, new CameraParser());
     this.addParseDevice(DEVICE_PARSER_LIST.PORTABLE_MEDIA_PLAYER, new PortableMediaPlayerParser());
     this.addParseDevice(DEVICE_PARSER_LIST.MOBILE, new MobileParser());
-
     this.addParseVendor(VENDOR_FRAGMENT_PARSER, new VendorFragmentParser());
 
     this.addParseBot(BOT_PARSER, new BotParser());
