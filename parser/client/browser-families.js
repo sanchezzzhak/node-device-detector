@@ -2,7 +2,7 @@
 module.exports = {
   'Android Browser': ['AN'],
   'BlackBerry Browser': ['BB'],
-  'Baidu': ['BD', 'BS'],
+  'Baidu': ['BD', 'BS', 'H6'],
   'Amiga': ['AV', 'AW'],
   'Chrome': [
   'CH', '2B', '7S', 'A0', 'AC', 'A4', 'AE', 'AH', 'AI',
@@ -33,7 +33,8 @@ module.exports = {
   'N3', 'GD', 'O9', 'Q3', 'F7', 'K2', 'P5', 'H5', 'V3',
   'K3', 'Q4', 'G2', 'R2', 'WX', 'XP', '3I', 'BG', 'R0',
   'JO', 'OL', 'GN', 'W4', 'QI', 'E1', 'RI', '8B', '5B',
-  'K4', 'WK', 'T3', 'K5', 'MU', '9P', 'K6', 'VR',
+  'K4', 'WK', 'T3', 'K5', 'MU', '9P', 'K6', 'VR', 'N9',
+  'M9', 'F9', '0P', '0A', 'JR', 'D3',
   ],
   'Firefox': [
   'FF', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
