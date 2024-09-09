@@ -19,7 +19,7 @@ const CLIENTHINT_MAPPING = {
   'Vewd Browser': ['Vewd Core'],
 };
 
-const BROWSERHINT_SKIP_VERSION = ['MU', 'OM', 'OP', 'VR'];
+const BROWSERHINT_SKIP_VERSION = ['A0', 'AL', 'HP', 'JR', 'MU', 'OM', 'OP', 'VR'];
 
 const compareBrandForClientHints = (brand) => {
   for (let brandName in CLIENTHINT_MAPPING) {
@@ -104,7 +104,8 @@ class Browser extends ClientAbstractParser {
           engineVersion = data.engine_version;
         }
 
-        if ('Atom' === name || 'Huawei Browser' === name) {
+        // If client hints report the following browsers, we use the version from useragent
+        if (data.version && BROWSERHINT_SKIP_VERSION.indexOf(short) !== -1) {
           version = data.version;
         }
 
@@ -141,10 +142,6 @@ class Browser extends ClientAbstractParser {
         // If DDG Private browser then set version empty string
         if ('DuckDuckGo Privacy Browser' === name) {
           version = '';
-        }
-        // If client hints report the following browsers, we use the version from useragent
-        if (data.version && BROWSERHINT_SKIP_VERSION.indexOf(short) !== -1) {
-          version = data.version;
         }
       }
     } else if (data !== null) {
@@ -448,7 +445,7 @@ class Browser extends ClientAbstractParser {
     let engineToken = '' + engine;
 
     if ('Blink' === engine) {
-      engineToken = 'Chrome|Cronet';
+      engineToken = 'Chr[o0]me|Cronet';
     }
 
     if ('LibWeb' === engine) {
