@@ -500,6 +500,12 @@ infinix x665e:
   - IF
 m2007j3sg:
   - XI
+sm-s918w:
+  - SA
+sm-a136u1:
+  - SA
+sm-t503:
+  - SA
 zc554kl:
   - AU
 dn2103:
@@ -531,6 +537,8 @@ rg405v:
   - ANC
 rg505:
   - ANC
+retroid pocket 3 plus:
+  - CB
 20jjs0cu1m:
   - LE
 hibox-hero:
@@ -32399,8 +32407,6 @@ sm-a146p:
 luna g6e:
   - L9
   - '69'
-sm-s918w:
-  - SA
 sm-s918u1:
   - SA
 sm-s916u1:
@@ -38134,8 +38140,6 @@ sm-a326w:
   - SA
 sm-a136u:
   - SA
-sm-a136u1:
-  - SA
 sm-a136w:
   - SA
 samsung sm-m022g:
@@ -38922,6 +38926,122 @@ iku a70:
   - 8I
 lava lzx408:
   - LV
+pka110:
+  - OP
+pjx110:
+  - 'ON'
+tecno cl6k:
+  - TB
+x4000:
+  - XRL
+i2306:
+  - VV
+moto g64 5g:
+  - MR
+sh-54d:
+  - SH
+primo rx9:
+  - WA
+pearl k3 2021:
+  - HV
+rmx3930:
+  - RE
+plume l5 pro:
+  - C5
+hppl63a:
+  - U8
+astro 63r:
+  - MW
+bharat 5:
+  - MI
+mipo_m17:
+  - MIP
+kingkong x:
+  - CB
+kingkong ace 3:
+  - CB
+iqoo 7 india:
+  - VV
+iqoo 7 legend:
+  - VV
+iqoo 7:
+  - VV
+lava lzg409:
+  - LV
+rmx3995:
+  - RE
+2407frk8ec:
+  - XI
+2311bpn23c:
+  - XI
+xiaomi 14:
+  - XI
+xiaomi 13t:
+  - XI
+z2450:
+  - ZT
+lio-al10:
+  - HU
+lunar:
+  - LM
+buzz 5 ultra:
+  - AE
+bold k10:
+  - BU
+cubot x30:
+  - CB
+discovery se:
+  - FS
+g5nz6:
+  - GO
+g8vou:
+  - GO
+jp1:
+  - JAM
+lfi one:
+  - LTL
+mp25:
+  - UM
+mp24:
+  - UM
+mp20:
+  - UM
+mp19:
+  - UM
+mx-a64:
+  - MW
+ms651:
+  - 7M
+alt-an00:
+  - HU
+tecno bg6m:
+  - TB
+v2362a:
+  - VV
+servo 16max:
+  - SER
+ihunt s24 xtreme:
+  - IH
+g025n:
+  - GO
+energizer hard case g5:
+  - ED
+a0622:
+  - ZT
+a0616:
+  - ZT
+reno 6:
+  - OP
+reno 5:
+  - OP
+2pzm3:
+  - HT
+yuho_y1_stars:
+  - Y0
+xt2363-2:
+  - MR
+xt2343-1:
+  - MR
 gs55-6:
   - GS
 gs57-6:
@@ -48214,6 +48334,60 @@ ihunt strong tablet x pro:
   - IH
 kingpad z10_eea:
   - VA
+sky_pad8pro:
+  - SW
+quartzlite:
+  - 8U
+v tab 2:
+  - V6
+alfa_10bt_v2:
+  - H0
+it_701a:
+  - ATM
+k113_eea:
+  - '67'
+k118:
+  - ZW
+xt2261-1:
+  - MR
+f35w_eea:
+  - CWO
+c82w_eea:
+  - CWO
+f21w:
+  - WEE
+smart_w31:
+  - IG
+t28-eea:
+  - 6O
+t13_eea:
+  - 'YES'
+i9_plus:
+  - Y5
+lavie tab 9qhd1:
+  - NE
+m821-eea:
+  - MA2
+m820:
+  - MA2
+mes-b1:
+  - MES
+mt11:
+  - UM
+mt10:
+  - UM
+mt07:
+  - UM
+m-t4:
+  - ATU
+m-t3:
+  - ATU
+s-tab10:
+  - ATU
+inoipad 64gb wi-fi+3g:
+  - I4
+a15_eea:
+  - OAN
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -56046,8 +56220,6 @@ opd2201:
   - XI
 anry-1006:
   - 7A
-sm-t503:
-  - SA
 tw10:
   - BEF
 scream 3g:
@@ -60374,6 +60546,26 @@ ergogs:
   - E7
 pvbox_p5_pro:
   - PVB
+nordmende_55nm6000u:
+  - NR
+32sn6000h:
+  - SEN
+32lh8011t:
+  - 8A
+32lf7111t:
+  - 8A
+32st30h:
+  - OLT
+42gfs56:
+  - DF
+32f550t:
+  - 4B
+40f550t:
+  - 4B
+gtkingii:
+  - B0
+yndx-00075:
+  - YD
 bb2 pro:
   - 0M
 kii pro:
