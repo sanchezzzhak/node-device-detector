@@ -1,5 +1,5 @@
 
-class ArrayPath
+export class ArrayPath
 {
   /**
    * get key int or str
@@ -86,5 +86,3 @@ class ArrayPath
     return ArrayPath.set(obj[currentPath], path.slice(1), value, doNotReplace);
   }
 }
-
-module.exports = ArrayPath;

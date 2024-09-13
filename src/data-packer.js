@@ -1,7 +1,7 @@
 
-const ArrayPath = require('./array-path');
+import ArrayPath from './array-path';
 
-class DataPacker {
+export class DataPacker {
   /**
    * pack objects to str
    * format: shortcode=value;
@@ -38,4 +38,3 @@ class DataPacker {
   }
 }
 
-module.exports = DataPacker;
