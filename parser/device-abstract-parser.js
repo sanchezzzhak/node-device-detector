@@ -103,7 +103,7 @@ class DeviceParserAbstract extends ParserAbstract {
    * iterations parse for collection
    * @param {string} userAgent
    * @param {boolean} canBreak
-   * @param {array} brandIndexes
+   * @param {string[]} brandIndexes
    * @returns {[]}
    * @private
    */

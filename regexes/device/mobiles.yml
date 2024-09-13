@@ -40717,7 +40717,7 @@ Bolva:
 
 # DIJITSU (http://dijitsu.com.tr/)
 DIJITSU:
-  regex: 'DIJITSU_|LGE; [0-9]{2}DW[0-9]{4}\d*;|(?:DCT 90)(?:[);/ ]|$)'
+  regex: 'DIJITSU_|LGE; [0-9]{2}DW[0-9]\d*;|(?:DCT 90)(?:[);/ ]|$)'
   device: 'smartphone'
   models:
     - regex: 'DCT 90'

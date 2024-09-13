@@ -1,5 +1,5 @@
 const helper = require('./parser/helper');
-const attr = helper.getPropertyValue;
+const {attr} = helper;
 
 // device parsers
 const MobileParser = require('./parser/device/mobile');
@@ -41,6 +41,7 @@ const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
 const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
+const { hasUserAgentClientHintsFragment, hasDeviceModelByClientHints } = require('./parser/helper');
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
@@ -313,7 +314,7 @@ class DeviceDetector {
   /**
    * get device parser by name
    * @param {string} name
-   * @return {DeviceParserAbstract}
+   * @return {DeviceParserAbstract|null}
    */
   getParseDevice(name) {
     return this.deviceParserList[name] ? this.deviceParserList[name] : null;
@@ -336,6 +337,7 @@ class DeviceDetector {
   getParseBot(name) {
     return this.botParserList[name] ? this.botParserList[name] : null;
   }
+
   /**
    * get os parser by name
    * @param name
@@ -438,7 +440,7 @@ class DeviceDetector {
   /**
    * parse OS
    * @param {string} userAgent
-   * @param clientHints
+   * @param {ResultClientHints|{}} clientHints
    * @return {ResultOs}
    */
   parseOs(userAgent, clientHints = {}) {
@@ -472,7 +474,7 @@ class DeviceDetector {
    * @param {ResultOs} osData
    * @param {ResultClient} clientData
    * @param {ResultDevice} deviceData
-   * @param clientHints
+   * @param {ResultClientHints} clientHints
    * @return {DeviceType}
    */
   parseDeviceType(
@@ -649,7 +651,7 @@ class DeviceDetector {
   /**
    * get brand by device code (used in indexing)
    * @param {string} deviceCode
-   * @returns {*[]}
+   * @returns {string[]}
    */
   getBrandsByDeviceCode(deviceCode) {
     if ('' === deviceCode) {
@@ -660,6 +662,7 @@ class DeviceDetector {
   }
 
   /**
+   * parse device model code from useragent string
    * @param {string} userAgent
    * @returns {ResultDeviceCode}
    */
@@ -670,17 +673,17 @@ class DeviceDetector {
   /**
    * restore original userAgent from clientHints object
    * @param {string} userAgent
-   * @param {{os:{version:''}, device: {model:''}}} clientHints
+   * @param {ResultClientHints} clientHints
    */
   restoreUserAgentFromClientHints(
     userAgent,
     clientHints
   ) {
-    if (!clientHints || !clientHints.device) {
+    if (!helper.hasDeviceModelByClientHints(clientHints)) {
       return userAgent;
     }
     const deviceModel = clientHints.device.model;
-    if (deviceModel && /Android 10[.\d]*; K(?: Build\/|[;)])/i.test(userAgent)) {
+    if (deviceModel && helper.hasUserAgentClientHintsFragment(userAgent)) {
       const osHints = attr(clientHints, 'os', {});
       const osVersion = attr(osHints, 'version', '');
       return userAgent.replace(/(Android 10[.\d]*; K)/,
@@ -691,11 +694,10 @@ class DeviceDetector {
     return userAgent;
   }
 
-
   /**
    * parse device
    * @param {string} userAgent
-   * @param {Object} clientHints
+   * @param {ResultClientHints} clientHints
    * @return {ResultDevice}
    */
   parseDevice(userAgent, clientHints) {
@@ -713,8 +715,12 @@ class DeviceDetector {
       trusted: null
     };
 
+    if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(userAgent)) {
+      return Object.assign({}, result);
+    }
+
     if (this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted) {
-      if (clientHints.device && clientHints.device.model) {
+      if (helper.hasDeviceModelByClientHints(clientHints)) {
         result.code = clientHints.device.model;
       } else {
         const alias = this.parseDeviceCode(ua);
@@ -746,15 +752,14 @@ class DeviceDetector {
     }
 
     // client hints
-    if (result.model === '' && clientHints.device && clientHints.device.model !== '') {
+    if (result.model === '' && helper.hasDeviceModelByClientHints(clientHints)) {
       result.model = clientHints.device.model;
     }
 
     // device info or deviceTrusted
     if (this.deviceInfo || this.deviceTrusted) {
-      result.info = this.getParseInfoDevice().info(
-        result.brand, result.code ? result.code : result.model
-      );
+      let deviceModel = result.code ? result.code : result.model;
+      result.info = this.getParseInfoDevice().info(result.brand, deviceModel);
     }
 
     return result;
@@ -763,7 +768,7 @@ class DeviceDetector {
   /**
    * parse vendor
    * @param {string} userAgent
-   * @return {{name:'', id:''}|null}
+   * @return {ResultVendor|null}
    */
   parseVendor(userAgent) {
     let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
@@ -773,8 +778,8 @@ class DeviceDetector {
   /**
    * parse bot
    * @param {string} userAgent
-   * @param {Object} clientHints
-   * @return {ResultBot}
+   * @param {ResultClientHints} clientHints
+   * @return {ResultBot|{}}
    */
   parseBot(userAgent, clientHints) {
     let result = {};
@@ -797,7 +802,7 @@ class DeviceDetector {
   /**
    * parse client
    * @param {string} userAgent
-   * @param clientHints
+   * @param {ResultClientHints} clientHints
    * @return {ResultClient|{}}
    */
   parseClient(userAgent, clientHints) {
@@ -883,7 +888,7 @@ class DeviceDetector {
   /**
    * detect os, client and device for async
    * @param {string} userAgent - string from request header['user-agent']
-   * @param clientHints
+   * @param {ResultClientHints|{}} clientHints
    * @return {DetectResult}
    */
   async detectAsync(userAgent, clientHints = {}) {
@@ -914,7 +919,7 @@ class DeviceDetector {
   /**
    * detect os, client and device for sync
    * @param {string} userAgent - string from request header['user-agent']
-   * @param {{}} clientHints
+   * @param {ResultClientHints|{}} clientHints
    * @return {DetectResult}
    */
   detect(userAgent, clientHints = {}) {

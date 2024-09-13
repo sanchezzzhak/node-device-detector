@@ -13,8 +13,8 @@ class VendorFragmentAbstractParser extends ParserAbstract {
   }
 
   /**
-   * @param userAgent
-   * @returns {null|{name: string, id: string}}
+   * @param {string} userAgent
+   * @returns {ResultVendor|null}
    */
   parse(userAgent) {
     for (let cursor in this.collection) {
