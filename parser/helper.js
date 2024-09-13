@@ -184,13 +184,31 @@ function hasDesktopFragment(userAgent) {
 }
 
 /**
+ * Check combinations is string that UserAgent ClientHints
+ * @param {string} userAgent
+ * @return {boolean}
+ */
+function hasUserAgentClientHintsFragment(userAgent) {
+  return /Android 10[.\d]*; K(?: Build\/|[;)])/i.test(userAgent);
+}
+
+/**
+ *
+ * @param {ResultClientHints|*} clientHints
+ * @return {boolean}
+ */
+function hasDeviceModelByClientHints(clientHints) {
+  return clientHints && clientHints.device && clientHints.device.model;
+}
+
+/**
  * Get value by attribute for object or default value
  * @param {object} options
  * @param {string }propName
  * @param {*} defaultValue
  * @return {*|null}
  */
-function getPropertyValue(options, propName, defaultValue) {
+function attr(options, propName, defaultValue) {
   return options !== void 0 && options[propName] !== void 0
     ? options[propName]
     : defaultValue !== void 0
@@ -199,7 +217,7 @@ function getPropertyValue(options, propName, defaultValue) {
 }
 
 /**
- * Values ​​become keys, and keys become values
+ * Values become keys, and keys become values
  * @param {*} obj -
  * @returns {*}
  */
@@ -228,7 +246,6 @@ function hasFile(file) {
 
 /**
  * Remove chars for string
- *
  * @param {string} str
  * @param {string} chars
  * @returns {any}
@@ -327,9 +344,11 @@ module.exports = {
   hasAndroidMobileFragment,
   hasAndroidTVFragment,
   hasDesktopFragment,
+  hasUserAgentClientHintsFragment,
+  hasDeviceModelByClientHints,
   hasTVFragment,
   hasTouchFragment,
-  getPropertyValue,
+  attr,
   revertObject,
   loadYMLFile,
   hasFile,

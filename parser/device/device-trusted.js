@@ -1,5 +1,5 @@
 const helper = require('../helper');
-const attr = helper.getPropertyValue;
+const {attr} = helper;
 
 /**
  * check screen size

@@ -10,6 +10,7 @@ const CH_UA_ARCH = 'sec-ch-ua-arch';
 const CH_UA = 'sec-ch-ua';
 const CH_BITNESS = 'sec-ch-ua-bitness';
 const CH_UA_PREFERS_COLOR_SCHEME = 'sec-ch-prefers-color-scheme';
+const CH_UA_FORM_FACTORS = 'sec-ch-ua-form-factors';
 
 /*
   All combinations
@@ -67,10 +68,10 @@ class ClientHints {
    * @returns {{'accept-ch': ''}}
    * @example
    * ```js
-   const hintHeaders = ClientHints.getHeaderClientHints();
-   for (let name in hintHeaders) {
-   res.setHeader(name, hintHeaders[headerName]);
-   }
+   * const hintHeaders = ClientHints.getHeaderClientHints();
+   * for (let name in hintHeaders) {
+   *   res.setHeader(name, hintHeaders[headerName]);
+   * }
    * ```
    */
   static getHeaderClientHints() {
@@ -83,7 +84,8 @@ class ClientHints {
         CH_UA_MODEL,
         CH_UA_ARCH,
         CH_BITNESS,
-        CH_UA_PREFERS_COLOR_SCHEME
+        CH_UA_PREFERS_COLOR_SCHEME,
+        CH_UA_FORM_FACTORS
       ].join(', ')
     };
   }
@@ -101,8 +103,8 @@ class ClientHints {
   }
 
   /**
-   * @param {{}} hints
-   * @param {{}} result
+   * @param {JSONObject|{}} hints
+   * @param {ResultClientHints|JSONObject} result
    * @private
    */
   __parseHints(hints, result) {
@@ -188,13 +190,23 @@ class ClientHints {
             result.app = '';
           }
           break;
+        case 'formfactors':
+          result.formFactors = value.map(val => val.toLowerCase());
+          break;
+        case 'http-sec-ch-ua-form-factors':
+        case 'sec-ch-ua-form-factors':
+          let matchFactors = /"([a-z]+)"/i.exec(value.toLowerCase());
+          if (matchFactors && matchFactors[1]) {
+            result.formFactors = matchFactors[1];
+          }
+          break;
       }
     }
   }
 
   /**
-   * @param {{}} meta
-   * @param {{}} result
+   * @param {JSONObject|{}} meta
+   * @param {ResultClientHints} result
    * @private
    */
   __parseMeta(meta, result) {
@@ -227,13 +239,14 @@ class ClientHints {
   }
 
   /**
-   * @param {{}} hints - headers or client-hints params
-   * @param {{}} meta  - client custom js metric params
+   * @return {ResultClientHints|JSONObject|{}}
+   * @private
    */
-  parse(hints, meta = {}) {
-    let result = {
+  __blank() {
+    return {
       upgradeHeader: false,
       isMobile: false,
+      formFactors: [],
       meta: {
         width: '',
         height: '',
@@ -248,9 +261,17 @@ class ClientHints {
       client: { brands: [], version: '' },
       device: { model: '' }
     };
+  }
+
+  /**
+   * @param {JSONObject|{}} hints - headers or client-hints params
+   * @param {JSONObject|{}} meta  - client custom js metric params
+   * @return {ResultClientHints}
+   */
+  parse(hints, meta = {}) {
+    let result = this.__blank()
     this.__parseHints(hints, result);
     this.__parseMeta(meta, result);
-
     return result;
   }
 

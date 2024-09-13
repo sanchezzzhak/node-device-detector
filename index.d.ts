@@ -1,4 +1,4 @@
-import { JSONObject } from './client-hints';
+import { JSONObject, ResultClientHints } from './client-hints';
 
 export default class DeviceDetector {
   /**
@@ -6,20 +6,20 @@ export default class DeviceDetector {
    **/
   constructor(options?: DeviceDetectorOptions);
 
-  detect: (userAgent: string, clientHints?: any) => DetectResult;
-  detectAsync: (userAgent: string, clientHints?: any) => Promise<DetectResult>;
-  parseBot: (userAgent: string, clientHints?: any) => ResultBot;
-  parseOs: (userAgent: string, clientHints?: any) => ResultOs;
-  parseClient: (userAgent: string, clientHints?: any) => ResultClient;
-  parseDevice: (userAgent: string, clientHints?: any) => ResultDevice;
+  detect: (userAgent: string, clientHints?: ResultClientHints|JSONObject) => DetectResult;
+  detectAsync: (userAgent: string, clientHints?: ResultClientHints|JSONObject) => Promise<DetectResult>;
+  parseBot: (userAgent: string, clientHints?: ResultClientHints|JSONObject) => ResultBot;
+  parseOs: (userAgent: string, clientHints?: ResultClientHints|JSONObject) => ResultOs;
+  parseClient: (userAgent: string, clientHints?: ResultClientHints|JSONObject) => ResultClient;
+  parseDevice: (userAgent: string, clientHints?: ResultClientHints|JSONObject) => ResultDevice;
   parseDeviceType: (
     userAgent: string,
     os?: ResultOs,
     client?: ResultClient,
     deviceData?: ResultDevice,
-    clientHints?: any
+    clientHints?: ResultClientHints|JSONObject
   ) => DeviceType;
-  parseVendor: (userAgent: string) => ResultVendor;
+  parseVendor: (userAgent: string) => ResultVendor|null;
   parseDeviceCode: (userAgent: string) => ResultDeviceCode;
   set skipBotDetection(arg: boolean);
   get skipBotDetection(): boolean;
@@ -29,7 +29,7 @@ export default class DeviceDetector {
   get clientVersionTruncate(): any;
   set clientIndexes(arg: boolean);
   get clientIndexes(): boolean;
-  get maxUserAgentSize(): null|number;
+  get maxUserAgentSize(): number|null;
   set maxUserAgentSize(size: number);
   setOsVersionTruncate(value: any): void;
   setClientVersionTruncate(value: any): void;
@@ -163,10 +163,10 @@ export default class DeviceDetector {
   /**
    * restore original userAgent from clientHints object
    * @param {string} userAgent
-   * @param {JSONObject} clientHints
+   * @param {ResultClientHints|JSONObject} clientHints
    * @return string
    */
-  restoreUserAgentFromClientHints(userAgent: string, clientHints?: JSONObject): string;
+  restoreUserAgentFromClientHints(userAgent: string, clientHints?: JSONObject|ResultClientHints): string;
 }
 
 export interface DeviceDetectorOptions {
@@ -225,7 +225,7 @@ export interface ResultDevice {
 }
 
 export interface DeviceType {
-  id: string;
+  id?: string;
   type: string;
 }
 
