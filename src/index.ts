@@ -48,6 +48,7 @@ import CLIENT_PARSER_LIST from './parser/const/client-parser';
 import MOBILE_BROWSER_LIST from './parser/client/browser-short-mobile';
 // helpers
 import * as helper from './parser/helper';
+import * as module from 'module';
 
 const { hasUserAgentClientHintsFragment, hasDeviceModelByClientHints, attr } = helper;
 

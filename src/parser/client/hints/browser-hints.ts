@@ -1,4 +1,4 @@
-import {AbstractParser} from '../../abstract-parser';
+import AbstractParser from '../../abstract-parser';
 import { ResultClientHints } from '../../../client-hints';
 
 export class BrowserHints extends AbstractParser

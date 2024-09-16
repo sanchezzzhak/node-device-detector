@@ -3,6 +3,10 @@
   "compilerOptions": {
     "module": "commonjs",
     "outDir": "dist/cjs",
-    "target": "esnext"
+    "target": "esnext",
+//    "noImplicitAny": false,
+//    "skipLibCheck": true,
+//    "resolveJsonModule": true,
+//    "esModuleInterop": true
   }
 }

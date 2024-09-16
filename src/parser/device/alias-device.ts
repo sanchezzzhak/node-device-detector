@@ -1,10 +1,11 @@
 import {ResultAliasDevice } from '../../index';
-import {AbstractParser } from '../abstract-parser';
+import AbstractParser  from '../abstract-parser';
 
 
 import * as helper from './../helper';
+import BRAND_SHORTS from './brand-short';
 
-const COLLECTION_BRAND_LIST = helper.revertObject(require('./brand-short'));
+const COLLECTION_BRAND_LIST = helper.revertObject(BRAND_SHORTS);
 
 const createReplaceBrandRegexp = () => {
   const escapeeChars = [/\+/gi, /\./gi];

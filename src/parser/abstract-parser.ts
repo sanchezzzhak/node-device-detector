@@ -23,13 +23,17 @@ function fixStringVersion(result) {
 
 const collectionMap = {};
 
-export class AbstractParser {
+export default class AbstractParser {
 
   public fixtureFile: string|null;
   public versionTruncation: number|null;
   public type: string;
   public maxUserAgentSize: number| null;
   public collectionLength: number| null;
+
+  constructor() {
+    /* */
+  }
 
   get collection() {
     if (!this.hasLoadCollection()) {

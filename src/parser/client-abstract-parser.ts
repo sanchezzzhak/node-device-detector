@@ -1,6 +1,6 @@
 import { IndexerClient } from './client/indexer-client';
 
-import { AbstractParser } from './abstract-parser';
+import AbstractParser from './abstract-parser';
 import { JSONObject, ResultClientHints } from '../client-hints';
 import { ResultClient } from '../index';
 

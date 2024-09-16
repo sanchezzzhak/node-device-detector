@@ -1,4 +1,4 @@
-import {AbstractParser} from './abstract-parser'
+import AbstractParser from './abstract-parser'
 import * as helper from './helper';
 
 import * as OS_SYSTEMS from './os/os_systems';

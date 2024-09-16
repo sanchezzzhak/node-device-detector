@@ -1,4 +1,4 @@
-import { AbstractParser} from './abstract-parser';
+import AbstractParser from './abstract-parser';
 import { ResultBot } from '../index';
 
 export class BotParser extends AbstractParser {

@@ -1,4 +1,4 @@
-import {AbstractParser} from './abstract-parser';
+import AbstractParser from './abstract-parser';
 import * as helper from './helper';
 
 import COLLECTION_BRAND_IDS from './device/brand-short';

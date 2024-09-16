@@ -1,8 +1,11 @@
-const AbstractParser = require('../parser/abstract-parser')
+const AbstractParser = require('../dist/cjs/parser/abstract-parser')
 const { should, assert, expect } = require('chai');
 
+console.log(AbstractParser);
+
 describe('tests AbstractParser', function () {
-  let parser = new AbstractParser;
+
+  let parser = new AbstractParser();
   it('AbstractParser::getBaseRegExp', () => {
     let regex = 'ASUS_Z012DE';
     expect(parser.getBaseRegExp(regex).test('ASUS_Z012DE')).to.equal(true);

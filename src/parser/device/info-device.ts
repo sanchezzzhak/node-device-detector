@@ -1,4 +1,4 @@
-import { AbstractParser } from '../abstract-parser';
+import AbstractParser from '../abstract-parser';
 
 
 import {DataPacker}  from '../../data-packer';
