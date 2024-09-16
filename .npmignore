@@ -16,4 +16,4 @@ coverage/
 .npmignore
 tests/
 node_modules/
-fixup
+fixup.js

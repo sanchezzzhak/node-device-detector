@@ -13,7 +13,7 @@
     }
   },
   "scripts": {
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && bash ./fixup",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node ./fixup.js",
     "test": "mocha -- -R dot tests/*.spec.js",
     "test-coverage-text": "nyc --check-coverage --lines 90 --per-file --reporter=text mocha -- -R dot tests/*.spec.js",
     "test-coverage-html": "nyc --reporter=html mocha -- -R dot tests/*.spec.js",
@@ -54,8 +54,9 @@
     "npm": ">= 6.x"
   },
   "devDependencies": {
-    "@fast-csv/parse": "^5.0.0",
     "@fast-csv/format": "^5.0.0",
+    "@fast-csv/parse": "^5.0.0",
+    "@types/node": "^22.5.5",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "benchmark": "^2.1.4",

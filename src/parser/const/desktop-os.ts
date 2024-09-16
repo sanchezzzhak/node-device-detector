@@ -1,0 +1,10 @@
+export default [
+  'AmigaOS',
+  'IBM',
+  'GNU/Linux',
+  'Mac',
+  'Unix',
+  'Windows',
+  'BeOS',
+  'Chrome OS',
+];

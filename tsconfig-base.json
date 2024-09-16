@@ -10,7 +10,7 @@
     "listEmittedFiles": false,
     "listFiles": false,
     "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": false,
     "noImplicitAny": false,
     "pretty": true,
     "resolveJsonModule": true,
