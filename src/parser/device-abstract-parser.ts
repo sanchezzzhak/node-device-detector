@@ -2,7 +2,7 @@ import AbstractParser from './abstract-parser';
 import * as helper from './helper';
 
 import COLLECTION_BRAND_IDS from './device/brand-short';
-import { ResultDevice } from '../index';
+import { ResultDevice } from '../types';
 const COLLECTION_BRAND_LIST = helper.revertObject(COLLECTION_BRAND_IDS);
 
 const DESKTOP_PATTERN = '(?:Windows (?:NT|IoT)|X11; Linux x86_64)';
@@ -12,7 +12,7 @@ const DESKTOP_EXCLUDE_PATTERN = [
   'PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)',
 ].join('|');
 
-export class DeviceParserAbstract extends AbstractParser {
+export default class DeviceParserAbstract extends AbstractParser {
 
   public resultModelRegex: boolean;
 

@@ -132,7 +132,7 @@ const checkGpu = (deviceData, clientHints) => {
 };
 
 
-export class DeviceTrusted {
+export default class DeviceTrusted {
 
   /**
    * @param {ResultOs} osData

@@ -13,7 +13,7 @@ CLIENT_TYPES_MAP[CLIENT_TYPES.PIM] = 5;
 let collection;
 const path = __dirname + '/../../regexes/client-index-hash.yml';
 
-export class IndexerClient {
+export default class IndexerClient {
   
   /**
    * @param {string} userAgent

@@ -1,10 +1,9 @@
-import { IndexerClient } from './client/indexer-client';
-
+import IndexerClient from './client/indexer-client';
 import AbstractParser from './abstract-parser';
 import { JSONObject, ResultClientHints } from '../client-hints';
-import { ResultClient } from '../index';
+import { ResultClient } from '../types';
 
-export class ClientAbstractParser extends AbstractParser {
+export default class ClientAbstractParser extends AbstractParser {
 
   #clientIndexes = false;
 
@@ -29,7 +28,7 @@ export class ClientAbstractParser extends AbstractParser {
    * @returns {ResultClient|null}
    */
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  parse(userAgent: string, clientHintData: ResultClientHints|JSONObject): ResultClient | null {
+  parse(userAgent: string, clientHintData: ResultClientHints| JSONObject): ResultClient | JSONObject | null {
     if (!userAgent) {
       return null;
     }
@@ -56,7 +55,7 @@ export class ClientAbstractParser extends AbstractParser {
   /**
    * @param {string} userAgent
    */
-  parseUserAgentByPositions(userAgent: string): ResultClient | null {
+  parseUserAgentByPositions(userAgent: string): ResultClient | JSONObject | null {
     const positions = IndexerClient.findClientRegexPositionsForUserAgent(userAgent, String(this.type));
     if (positions !== null && positions.length) {
       for (let i = 0, l = positions.length; i < l; i++) {
@@ -76,7 +75,7 @@ export class ClientAbstractParser extends AbstractParser {
    * @param {Number} position
    * @returns {{ResultClient|null}
    */
-  parseUserAgentByPosition(userAgent: string, position = 0): ResultClient | null {
+  parseUserAgentByPosition(userAgent: string, position = 0): ResultClient | JSONObject | null {
     const item = this.collection[position];
 
     if (item === void 0) {
@@ -98,4 +97,3 @@ export class ClientAbstractParser extends AbstractParser {
   }
 }
 
-module.exports = ClientAbstractParser;

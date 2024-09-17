@@ -3,7 +3,7 @@ import * as helper from '../helper';
 let collection;
 const path = __dirname + '/../../regexes/device-index-hash.yml';
 
-export class IndexerDevice {
+export default class IndexerDevice {
   static findDeviceBrandsForDeviceCode(deviceCode) {
     if (!IndexerDevice.ready()) {
       return null;

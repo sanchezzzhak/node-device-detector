@@ -2,36 +2,36 @@
 import { JSONObject, ResultClientHints } from './client-hints';
 
 // os parsers
-import { OsParser } from './parser/os-parser';
+import OsParser from './parser/os-parser';
 
 // client parsers
-import { FeedReaderParser } from './parser/client/feed-reader';
-import { MobileAppParser } from './parser/client/mobile-app';
-import { MediaPlayerParser } from './parser/client/media-player';
-import { PimParser } from './parser/client/pim';
-import { BrowserParser } from './parser/client/browser';
-import { LibraryParser } from './parser/client/library';
+import FeedReaderParser from './parser/client/feed-reader';
+import MobileAppParser from './parser/client/mobile-app';
+import MediaPlayerParser from './parser/client/media-player';
+import PimParser from './parser/client/pim';
+import BrowserParser from './parser/client/browser';
+import LibraryParser from './parser/client/library';
 
 // device parsers
-import { HbbTvParser } from './parser/device/hbb-tv';
-import { ShellTvParser } from './parser/device/shell-tv';
-import { NotebookParser } from './parser/device/notebook';
-import { ConsoleParser } from './parser/device/console';
-import { CarParser } from './parser/device/car';
-import { CameraParser } from './parser/device/camera';
-import { PortableMediaPlayerParser } from './parser/device/portable-media-player';
-import { MobileParser } from './parser/device/mobile';
+import HbbTvParser from './parser/device/hbb-tv';
+import ShellTvParser from './parser/device/shell-tv';
+import NotebookParser from './parser/device/notebook';
+import ConsoleParser from './parser/device/console';
+import CarParser from './parser/device/car';
+import CameraParser from './parser/device/camera';
+import PortableMediaPlayerParser from './parser/device/portable-media-player';
+import MobileParser from './parser/device/mobile';
 
 // other parsers
-import { AliasDevice } from './parser/device/alias-device';
-import { IndexerClient } from './parser/client/indexer-client';
-import { IndexerDevice } from './parser/device/indexer-device';
-import { InfoDevice } from './parser/device/info-device';
-import { VendorFragmentParser } from './parser/vendor-fragment-parser';
-import { BotParser } from './parser/bot-parser';
+import AliasDevice from './parser/device/alias-device';
+import IndexerClient from './parser/client/indexer-client';
+import IndexerDevice from './parser/device/indexer-device';
+import InfoDevice from './parser/device/info-device';
+import VendorFragmentParser from './parser/vendor-fragment-parser';
+import BotParser from './parser/bot-parser';
 
 // check parsers
-import { DeviceTrusted } from './parser/device/device-trusted';
+import DeviceTrusted from './parser/device/device-trusted';
 
 // constants, lists, parser names
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
@@ -48,7 +48,15 @@ import CLIENT_PARSER_LIST from './parser/const/client-parser';
 import MOBILE_BROWSER_LIST from './parser/client/browser-short-mobile';
 // helpers
 import * as helper from './parser/helper';
-import * as module from 'module';
+
+import {
+  DetectResult,
+  DeviceDetectorOptions, DeviceType, ResultBot,
+  ResultClient,
+  ResultDevice,
+  ResultDeviceCode, ResultOs,
+  ResultVendor
+} from './types';
 
 const { hasUserAgentClientHintsFragment, hasDeviceModelByClientHints, attr } = helper;
 
@@ -64,135 +72,7 @@ IndexerDevice.init();
 IndexerClient.init();
 
 
-export interface DeviceDetectorOptions {
-  skipBotDetection?: boolean;
-  osVersionTruncate?: number | null;
-  clientVersionTruncate?: number | null;
-  maxUserAgentSize?: number | null;
-  clientIndexes?: boolean;
-  deviceIndexes?: boolean;
-  deviceAliasCode?: boolean;
-  deviceInfo?: boolean;
-  deviceTrusted?: boolean;
-}
-
-export interface ResultDeviceCode {
-  name: string;
-}
-
-export interface ResultVendor {
-  id: string;
-  name: string;
-}
-
-export interface DetectResult {
-  os: ResultOs;
-  client: ResultClient;
-  device: ResultDevice;
-}
-
-export interface ResultOs {
-  name: string;
-  short_name: string;
-  version: string;
-  platform: string;
-  family: string;
-}
-
-export interface ResultClient {
-  type: string;
-  name: string;
-  short_name?: string;
-  version: string;
-  engine?: string;
-  engine_version?: string;
-  family?: string;
-}
-
-export interface ResultDevice {
-  id: string;
-  type: string;
-  brand: string;
-  model: string;
-  code?: string;
-  trusted?: boolean | null;
-  info?: ResultDeviceInfo | null;
-  regex?: any
-}
-
-export interface ResultAliasDevice {
-  name: string;
-}
-
-export interface DeviceType {
-  id?: string;
-  type: string;
-}
-
-export interface ResultBot {
-  name: string;
-  producer: any;
-  category: string;
-  url: string;
-}
-
-export interface ResultDeviceInfoDisplay {
-  size: string;
-  resolution?: string | ResultDeviceInfoResolution;
-  ratio?: string;
-  ppi?: string;
-}
-
-export interface ResultDeviceInfoResolution {
-  width: string;
-  height: string;
-}
-
-export interface ResultDeviceInfoPerformance {
-  antutu?: number;
-  geekbench?: number;
-}
-
-export interface ResultDeviceInfoHardwareGPU {
-  name: string;
-  clock_rate?: number;
-}
-
-export interface ResultDeviceInfoHardware {
-  ram: number;
-  cpu_id?: number;
-  cpu?: ResultDeviceInfoHardwareCPU;
-  gpu?: ResultDeviceInfoHardwareGPU;
-}
-
-export interface ResultDeviceInfoSize {
-  width: string;
-  height: string;
-  thickness: string;
-}
-
-export interface ResultDeviceInfoHardwareCPU {
-  name: string;
-  type: string;
-  cores?: number;
-  clock_rate?: number;
-  process?: string;
-  gpu_id?: number;
-}
-
-export interface ResultDeviceInfo {
-  display?: ResultDeviceInfoDisplay;
-  sim?: number | null;
-  size?: string | ResultDeviceInfoSize | null;
-  weight?: string | null;
-  release?: string | null;
-  os?: string | null;
-  hardware?: ResultDeviceInfoHardware | null;
-  performance?: ResultDeviceInfoPerformance | null;
-}
-
-
-export class DeviceDetector {
+export default class DeviceDetector {
 
   #vendorParserList = {};
   #osParserList = {};
@@ -649,15 +529,15 @@ export class DeviceDetector {
 
     userAgent = this.prepareUserAgent(userAgent);
 
-    let osName = attr(osData, 'name', '');
-    let osFamily = attr(osData, 'family', '');
-    let osVersion = attr(osData, 'version', '');
+    const osName = attr(osData, 'name', '');
+    const osFamily = attr(osData, 'family', '');
+    const osVersion = attr(osData, 'version', '');
 
-    let clientType = attr(clientData, 'type', '');
-    let clientShortName = attr(clientData, 'short_name', '');
+    const clientType = attr(clientData, 'type', '');
+    const clientShortName = attr(clientData, 'short_name', '');
 
-    let clientName = attr(clientData, 'name', '');
-    let clientFamily = attr(clientData, 'family', '');
+    const clientName = attr(clientData, 'name', '');
+    const clientFamily = attr(clientData, 'family', '');
     let deviceType = attr(deviceData, 'type', '');
 
     /**

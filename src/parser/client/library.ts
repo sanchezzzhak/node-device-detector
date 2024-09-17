@@ -1,10 +1,10 @@
-import { ResultClientHints } from '../../client-hints';
-import { ResultClient } from '../../index';
-import { ClientAbstractParser } from '../client-abstract-parser';
+import { JSONObject, ResultClientHints } from '../../client-hints';
+import { ResultClient } from '../../types';
+import ClientAbstractParser from '../client-abstract-parser';
 
 import CLIENT_TYPE from './../const/client-type';
 
-export class LibraryParser extends ClientAbstractParser {
+export default class LibraryParser extends ClientAbstractParser {
 
   constructor() {
     super();
@@ -20,7 +20,7 @@ export class LibraryParser extends ClientAbstractParser {
    * @param {ResultClientHints} clientHintsData
    * @returns {ResultClient|null}
    */
-  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | null {
+  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | JSONObject | null {
     let result = super.parse(userAgent, clientHintsData);
     if (result) {
       result = Object.assign(result, {

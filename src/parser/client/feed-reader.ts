@@ -1,9 +1,9 @@
 import CLIENT_TYPE from './../const/client-type';
-import { ClientAbstractParser } from '../client-abstract-parser';
-import { ResultClient } from '../../index';
-import { ResultClientHints } from '../../client-hints';
+import ClientAbstractParser from '../client-abstract-parser';
+import { ResultClient } from '../../types';
+import { JSONObject, ResultClientHints } from '../../client-hints';
 
-export class FeedReaderParser extends ClientAbstractParser {
+export default class FeedReaderParser extends ClientAbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'client/feed_readers.yml';
@@ -18,7 +18,7 @@ export class FeedReaderParser extends ClientAbstractParser {
    * @param {ResultClientHints} clientHintsData
    * @returns {ResultClient|null}
    */
-  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | null {
+  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | JSONObject | null {
     let result = super.parse(userAgent, clientHintsData);
     if (result) {
       result = Object.assign(result, {

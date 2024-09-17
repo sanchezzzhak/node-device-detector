@@ -1,12 +1,12 @@
 import * as helper from './helper';
 
 import BRAND_SHORTS from './device/brand-short';
-import { ResultVendor } from '../index';
+import { ResultVendor } from '../types';
 import AbstractParser from './abstract-parser';
 
 const COLLECTION_BRAND_LIST = helper.revertObject(BRAND_SHORTS);
 
-export class VendorFragmentParser extends AbstractParser {
+export default class VendorFragmentParser extends AbstractParser {
 
   constructor() {
     super();

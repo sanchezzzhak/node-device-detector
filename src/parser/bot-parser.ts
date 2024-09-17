@@ -1,7 +1,7 @@
 import AbstractParser from './abstract-parser';
-import { ResultBot } from '../index';
+import { ResultBot } from '../types';
 
-export class BotParser extends AbstractParser {
+export default class BotParser extends AbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'bots.yml';

@@ -1,12 +1,13 @@
-import { ClientAbstractParser } from '../client-abstract-parser';
+import ClientAbstractParser from '../client-abstract-parser';
 
 import CLIENT_TYPE from './../const/client-type';
 import { AppHints } from './hints/app-hints';
 import { ResultClientHints } from '../../client-hints';
+import { ResultClient } from '../../types';
 
 const appHints = new AppHints();
 
-export class MobileAppParser extends ClientAbstractParser {
+export default class MobileAppParser extends ClientAbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'client/mobile_apps.yml';
@@ -19,7 +20,7 @@ export class MobileAppParser extends ClientAbstractParser {
     return appHints.parse(clientHints);
   }
   
-  parseFromClientHints(clientHints: ResultClientHints) {
+  parseFromClientHints(clientHints) {
     return {name: '', version: ''}
   }
   
@@ -49,11 +50,11 @@ export class MobileAppParser extends ClientAbstractParser {
   }
 
   /**
-   * @param userAgent
-   * @param clientHints
-   * @returns {({name: string, type: string, version: string})|null}
+   * @param {string} userAgent
+   * @param {ResultClientHints} clientHints
+   * @returns {ResultClient|null}
    */
-  parse(userAgent, clientHints) {
+  parse(userAgent:string, clientHints): ResultClient | null {
     const hash = this.parseFromHashHintsApp(clientHints);
     const hint = this.parseFromClientHints(clientHints);
     const data = super.parse(userAgent, clientHints);

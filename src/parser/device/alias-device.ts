@@ -1,4 +1,4 @@
-import {ResultAliasDevice } from '../../index';
+import {ResultAliasDevice } from '../../types';
 import AbstractParser  from '../abstract-parser';
 
 
@@ -35,7 +35,7 @@ const normalizationUserAgent = (userAgent) => {
 
 const REPLACE_BRAND_REGEXP = createReplaceBrandRegexp();
 
-export class AliasDevice extends AbstractParser {
+export default class AliasDevice extends AbstractParser {
 
   #replaceBrand = true
 

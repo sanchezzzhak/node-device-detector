@@ -119,7 +119,7 @@ export interface ResultClientHints {
 
 /* tslint:disable */
 
-export class ClientHints {
+export default class ClientHints {
 
   /**
    * @returns {{'accept-ch': ''}}

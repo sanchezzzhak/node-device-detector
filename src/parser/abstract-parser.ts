@@ -1,6 +1,6 @@
 import * as helper from './helper';
 
-const BASE_REGEXES_DIR = __dirname + '/../regexes/';
+const BASE_REGEXES_DIR = helper.getBaseRegexDir()
 
 /**
  * @param {string} result

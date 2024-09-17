@@ -1,8 +1,10 @@
 
 import DEVICE_TYPE from './../const/device-type';
-import { DeviceParserAbstract } from '../device-abstract-parser';
+import DeviceParserAbstract from '../device-abstract-parser';
+import { ResultDevice } from '../../types';
+import { JSONObject } from '../../client-hints';
 
-export class ShellTvParser extends DeviceParserAbstract {
+export default class ShellTvParser extends DeviceParserAbstract {
 
   constructor() {
     super();
@@ -12,9 +14,9 @@ export class ShellTvParser extends DeviceParserAbstract {
   
   /**
    * @param {string} userAgent
-   * @returns {null|{model: string, id: string, type: string, brand: string}}
+   * @returns {ResultDevice|JSONObject|null}
    */
-  parse(userAgent: string) {
+  parse(userAgent: string): ResultDevice | JSONObject | null {
     if (!this.isShellTv(userAgent)) {
       return null;
     }
@@ -37,10 +39,10 @@ export class ShellTvParser extends DeviceParserAbstract {
   
   /**
    * has checked userAgent fragment is shell tv
-   * @param {String} userAgent
-   * @return {Boolean}
+   * @param {string} userAgent
+   * @return {boolean}
    */
-  isShellTv(userAgent: string) {
+  isShellTv(userAgent: string): boolean {
     const regex = '[a-z]+[ _]Shell[ _]\\w{6}|tclwebkit\\d+[\\.\\d]*';
     const match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;

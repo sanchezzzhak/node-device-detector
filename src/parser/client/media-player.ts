@@ -1,10 +1,10 @@
-import { ClientAbstractParser } from '../client-abstract-parser';
+import ClientAbstractParser from '../client-abstract-parser';
 
 import CLIENT_TYPE from './../const/client-type';
-import { ResultClientHints } from '../../client-hints';
-import { ResultClient } from '../../index';
+import { JSONObject, ResultClientHints } from '../../client-hints';
+import { ResultClient } from '../../types';
 
-export class MediaPlayerParser extends ClientAbstractParser {
+export default class MediaPlayerParser extends ClientAbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'client/mediaplayers.yml';
@@ -16,9 +16,9 @@ export class MediaPlayerParser extends ClientAbstractParser {
   /**
    * @param {string} userAgent
    * @param {ResultClientHints} clientHintsData
-   * @returns {ResultClient|null}
+   * @returns {ResultClient|JSONObject|null}
    */
-  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | null {
+  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | JSONObject | null {
     let result = super.parse(userAgent, clientHintsData);
     if (result) {
       result = Object.assign(result, {

@@ -184,7 +184,7 @@ let collectionSoftware = null;
 /**
  * Class for obtaining information on a device
  */
-export class InfoDevice extends AbstractParser {
+export default class InfoDevice extends AbstractParser {
 
   public sizeConvertObject: boolean;
   public resolutionConvertObject: boolean;

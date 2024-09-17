@@ -1,8 +1,8 @@
-import { DeviceParserAbstract } from '../device-abstract-parser';
+import DeviceParserAbstract from '../device-abstract-parser';
 
 import DEVICE_TYPE from './../const/device-type';
 
-export class NotebookParser extends DeviceParserAbstract {
+export default class NotebookParser extends DeviceParserAbstract {
   constructor() {
     super();
     this.fixtureFile = 'device/notebooks.yml';

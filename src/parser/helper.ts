@@ -1,6 +1,16 @@
 import * as YAML from 'js-yaml';
 import fs from 'fs';
 
+export function getBaseRegexDir(): string {
+  const baseDir = __dirname;
+  if (/dist/.test(baseDir)) {
+    return baseDir + '/../../../regexes/';
+  }
+
+  return baseDir + '/../../regexes/';
+}
+
+
 /**
  * match for base regex rule
  * @param str

@@ -1,8 +1,9 @@
-import { ResultDevice } from '../../index';
-import { DeviceParserAbstract } from '../device-abstract-parser';
+import { ResultDevice } from '../../types';
+import DeviceParserAbstract from '../device-abstract-parser';
 import DEVICE_TYPE from './../const/device-type';
+import { JSONObject } from '../../client-hints';
 
-export class HbbTvParser extends DeviceParserAbstract {
+export default class HbbTvParser extends DeviceParserAbstract {
   /**
    *
    */
@@ -18,7 +19,7 @@ export class HbbTvParser extends DeviceParserAbstract {
    * @param {string[]} brandIndexes
    * @returns {ResultDevice|null}
    */
-  parse(userAgent: string, brandIndexes): ResultDevice|null {
+  parse(userAgent: string, brandIndexes): ResultDevice | JSONObject | null {
     if (!this.isHubTv(userAgent)) {
       return null;
     }
@@ -27,10 +28,10 @@ export class HbbTvParser extends DeviceParserAbstract {
       id: '',
       type: DEVICE_TYPE.TV,
       brand: '',
-      model: '',
+      model: ''
     };
 
-    const resultParse = super.parse(userAgent, brandIndexes)
+    const resultParse = super.parse(userAgent, brandIndexes);
     if (resultParse) {
       result.id = resultParse.id;
       result.brand = resultParse.brand;
@@ -40,11 +41,11 @@ export class HbbTvParser extends DeviceParserAbstract {
   }
 
   /**
-   * has check userAgent fragment is hub tv
-   * @param {String} userAgent
-   * @return {Boolean}
+   * has checked userAgent fragment is hub tv
+   * @param {string} userAgent
+   * @return {boolean}
    */
-  isHubTv(userAgent) {
+  isHubTv(userAgent: string): boolean {
     const regex = 'HbbTV/([1-9]{1}(?:.[0-9]{1}){1,2})';
     const match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;

@@ -1,6 +1,6 @@
-import { DeviceParserAbstract } from '../device-abstract-parser';
+import DeviceParserAbstract from '../device-abstract-parser';
 
-export class CarParser extends DeviceParserAbstract {
+export default class CarParser extends DeviceParserAbstract {
   constructor() {
     super();
     this.fixtureFile = 'device/car_browsers.yml';

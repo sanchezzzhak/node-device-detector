@@ -1,11 +1,11 @@
-import { ClientAbstractParser } from '../client-abstract-parser';
+import ClientAbstractParser from '../client-abstract-parser';
 import CLIENT_TYPE from './../const/client-type';
 import BROWSER_FAMILIES from './browser-families';
 import { ArrayPath } from '../../array-path';
 import * as helper from './../helper';
 import { BrowserHints } from './hints/browser-hints';
 import __BROWSER_SHORT from './browser-short';
-import { ResultClient } from '../../index';
+import { ResultClient } from '../../types';
 
 const BROWSER_SHORT = helper.revertObject(__BROWSER_SHORT);
 
@@ -35,7 +35,7 @@ const compareBrandForClientHints = (brand) => {
   return brand;
 };
 
-export class BrowserParser extends ClientAbstractParser {
+export default class BrowserParser extends ClientAbstractParser {
 
   public engine_collection: any[];
 
@@ -331,12 +331,12 @@ export class BrowserParser extends ClientAbstractParser {
    */
   buildName(name) {
     let result = name;
-    let normalName = this.getCollectionBrowsers()[name];
+    const normalName = this.getCollectionBrowsers()[name];
     if (normalName === void 0) {
-      let lname = name.toLowerCase();
-      let browsers = this.getAvailableBrowsers();
+      const lowerName = name.toLowerCase();
+      const browsers = this.getAvailableBrowsers();
       for (let i = 0, l = browsers.length; i < l; i++) {
-        if (lname === browsers[i].toLowerCase()) {
+        if (lowerName === browsers[i].toLowerCase()) {
           result = browsers[i];
           break;
         }
@@ -353,7 +353,7 @@ export class BrowserParser extends ClientAbstractParser {
    */
   buildShortName(name) {
     const UNKNOWN = 'UNK';
-    let result = this.getCollectionBrowsers()[name];
+    const result = this.getCollectionBrowsers()[name];
     if (result !== void 0) {
       return result;
     }
@@ -392,7 +392,7 @@ export class BrowserParser extends ClientAbstractParser {
       result = engine.default;
     }
     if (engine.hasOwnProperty('versions')) {
-      let versions = Object.keys(engine.versions).sort(helper.versionCompare);
+      const versions = Object.keys(engine.versions).sort(helper.versionCompare);
       for (let i = 0, l = versions.length; i < l; i++) {
         if (
           browserVersion !== '' &&
@@ -414,9 +414,9 @@ export class BrowserParser extends ClientAbstractParser {
   parseEngine(userAgent) {
     let result = '';
     for (let i = 0, l = this.engine_collection.length; i < l; i++) {
-      let item = this.engine_collection[i];
-      let regex = this.getBaseRegExp(item.regex);
-      let match = regex.exec(userAgent);
+      const item = this.engine_collection[i];
+      const regex = this.getBaseRegExp(item.regex);
+      const match = regex.exec(userAgent);
       if (match !== null) {
         result = item.name;
         break;

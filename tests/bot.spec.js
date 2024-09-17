@@ -1,5 +1,5 @@
 
-const DeviceDetector = require('../index');
+const DeviceDetector = require('./../dist/cjs').default;
 const fs = require('fs');
 const { should, assert, expect } = require('chai');
 const {

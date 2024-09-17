@@ -1,9 +1,9 @@
 import CLIENT_TYPE from './../const/client-type';
-import {ClientAbstractParser} from '../client-abstract-parser'
-import { ResultClientHints } from '../../client-hints';
-import { ResultClient } from '../../index';
+import ClientAbstractParser from '../client-abstract-parser'
+import { JSONObject, ResultClientHints } from '../../client-hints';
+import { ResultClient } from '../../types';
 
-export class PimParser extends ClientAbstractParser {
+export default class PimParser extends ClientAbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'client/pim.yml';
@@ -16,9 +16,9 @@ export class PimParser extends ClientAbstractParser {
    *
    * @param {string} userAgent
    * @param {ResultClientHints} clientHintsData
-   * @returns {ResultClient}
+   * @returns {ResultClient|JSONObject|null}
    */
-  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient {
+  parse(userAgent: string, clientHintsData: ResultClientHints): ResultClient | JSONObject | null {
     let result = super.parse(userAgent, clientHintsData);
     if (result) {
       result = Object.assign(result, {
@@ -26,5 +26,6 @@ export class PimParser extends ClientAbstractParser {
       });
       return result;
     }
+    return result;
   }
 }

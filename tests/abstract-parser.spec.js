@@ -1,4 +1,4 @@
-const AbstractParser = require('../dist/cjs/parser/abstract-parser')
+const AbstractParser = require('./parsers/abstract-parser')
 const { should, assert, expect } = require('chai');
 
 console.log(AbstractParser);

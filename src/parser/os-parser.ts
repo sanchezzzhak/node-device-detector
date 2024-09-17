@@ -1,4 +1,4 @@
-import AbstractParser from './abstract-parser'
+import AbstractParser from './abstract-parser';
 import * as helper from './helper';
 
 import * as OS_SYSTEMS from './os/os_systems';
@@ -19,7 +19,7 @@ const CLIENTHINT_MAPPING = {
 import FIRE_OS_VERSION_MAPPING from './os/fire-os-version-map';
 import LINEAGE_OS_VERSION_MAPPING from './os/lineage-os-version-map';
 import { ResultClientHints } from '../client-hints';
-import { ResultOs } from '../index';
+import { ResultOs } from '../types';
 
 
 const getVersionForMapping = (version, map) => {
@@ -31,7 +31,7 @@ const getVersionForMapping = (version, map) => {
     return map[majorVersion];
   }
   return '';
-}
+};
 
 const compareOsForClientHints = (brand) => {
   for (let mapName in CLIENTHINT_MAPPING) {
@@ -44,7 +44,13 @@ const compareOsForClientHints = (brand) => {
   return brand;
 };
 
-function comparePlatform(platform, bitness = '') {
+/**
+ *
+ * @param {string} platform
+ * @param {string} bitness
+ * @return {string}
+ */
+function comparePlatform(platform: string, bitness= ''): string {
   if (platform.indexOf('arm') !== -1) {
     return 'ARM';
   }
@@ -69,7 +75,7 @@ function comparePlatform(platform, bitness = '') {
   return '';
 }
 
-export class OsParser extends AbstractParser {
+export default class OsParser extends AbstractParser {
   constructor() {
     super();
     this.fixtureFile = 'oss.yml';
@@ -108,7 +114,7 @@ export class OsParser extends AbstractParser {
     return { name, short };
   }
 
-  parseFromClientHints(clientHintsData:ResultClientHints) {
+  parseFromClientHints(clientHintsData: ResultClientHints) {
     if (!clientHintsData) {
       return null;
     }
@@ -203,7 +209,7 @@ export class OsParser extends AbstractParser {
    * @param {ResultClientHints} clientHints
    * @returns {ResultOs|null}
    */
-  parse(userAgent: string, clientHints: ResultClientHints): ResultOs|null {
+  parse(userAgent: string, clientHints: ResultClientHints): ResultOs | null {
     userAgent = this.prepareUserAgent(userAgent);
     const hint = this.parseFromClientHints(clientHints);
     const data = this.parseFromUserAgent(userAgent);

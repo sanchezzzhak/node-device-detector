@@ -4,7 +4,7 @@ const YAML = require('js-yaml');
 
 const csv = require('@fast-csv/parse');
 
-const ParserHelper = require('../parser/helper');
+const ParserHelper = require('../dist/cjs/parser/helper');
 
 const parseCsvLine = (string, separator = ',') => {
   return new Promise((resolve, reject) => {
