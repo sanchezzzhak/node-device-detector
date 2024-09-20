@@ -113,12 +113,12 @@ class Browser extends ClientAbstractParser {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
-
+        
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
         if (
           ('Chromium' === name || 'Chrome Webview' === name) &&
           data.name !== ''&&
-         ['CR', 'CV', 'AN'].indexOf(data.short_name) !== -1
+         ['CR', 'CV', 'AN'].indexOf(data.short_name) === -1
         ) {
           name = data.name;
           short = data.short_name;

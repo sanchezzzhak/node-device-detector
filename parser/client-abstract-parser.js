@@ -2,19 +2,21 @@ const ParserAbstract = require('./abstract-parser');
 const IndexerClient = require('./client/indexer-client');
 
 class ClientAbstractParser extends ParserAbstract {
+
+  #clientIndexes = true;
+
   constructor() {
     super();
     this.collectionLength = 0;
     this.type = '';
-    this.__clientIndexes = true;
   }
   
   get clientIndexes() {
-    return this.__clientIndexes;
+    return this.#clientIndexes;
   }
   
   set clientIndexes(stage) {
-    this.__clientIndexes = stage;
+    this.#clientIndexes = stage;
   }
   
   /**

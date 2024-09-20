@@ -102,10 +102,6 @@ class DeviceParserAbstract extends ParserAbstract {
    */
   #parse(userAgent, canBreak = true, brandIndexes = []) {
 
-    /*if (helper.hasDesktopFragment(userAgent)) {
-      return [];
-    }*/
-
     const output = [];
     if (brandIndexes.length) {
       for (let cursorId of brandIndexes) {

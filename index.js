@@ -58,39 +58,27 @@ IndexerDevice.init();
 IndexerClient.init();
 
 class DeviceDetector {
-  /**
-   * @typedef DeviceDetectorOptions
-   * @param {boolean} skipBotDetection
-   * @param {number|null} osVersionTruncate
-   * @param {number|null} clientVersionTruncate
-   * @param {number|null} maxUserAgentSize
-   * @param {boolean} deviceIndexes
-   * @param {boolean} clientIndexes
-   * @param {boolean} deviceAliasCode
-   * @param {boolean} deviceInfo
-   * @param {boolean} deviceTrusted
-   */
+
+  vendorParserList = {};
+  osParserList = {};
+  botParserList = {};
+  deviceParserList = {};
+  clientParserList = {};
+
+  #skipBotDetection = false;
+  #deviceIndexes = false;
+  #clientIndexes = false;
+  #deviceAliasCode = false;
+  #deviceTrusted = false;
+  #deviceInfo = false;
+  #clientVersionTruncate = null;
+  #osVersionTruncate = null;
+  #maxUserAgentSize = null;
 
   /**
    * @param {DeviceDetectorOptions} options
    **/
   constructor(options) {
-    this.vendorParserList = {};
-    this.osParserList = {};
-    this.botParserList = {};
-    this.deviceParserList = {};
-    this.clientParserList = {};
-
-    this.__skipBotDetection = false;
-    this.__deviceIndexes = false;
-    this.__clientIndexes = false;
-    this.__deviceAliasCode = false;
-    this.__deviceTrusted = false;
-    this.__deviceInfo = false;
-    this.__clientVersionTruncate = null;
-    this.__osVersionTruncate = null;
-    this.__maxUserAgentSize = null;
-
     this.init();
 
     this.skipBotDetection = attr(options, 'skipBotDetection', false);
@@ -129,19 +117,19 @@ class DeviceDetector {
   }
 
   set deviceTrusted(check) {
-    this.__deviceTrusted = check;
+    this.#deviceTrusted = check;
   }
 
   get deviceTrusted() {
-    return this.__deviceTrusted;
+    return this.#deviceTrusted;
   }
 
   set deviceInfo(stage) {
-    this.__deviceInfo = stage;
+    this.#deviceInfo = stage;
   }
 
   get deviceInfo() {
-    return this.__deviceInfo;
+    return this.#deviceInfo;
   }
 
   /**
@@ -149,7 +137,7 @@ class DeviceDetector {
    * @param {number} size
    */
   set maxUserAgentSize(size) {
-    this.__maxUserAgentSize = size;
+    this.#maxUserAgentSize = size;
     for (let name in this.clientParserList) {
       this.clientParserList[name].setMaxUserAgentSize(size);
     }
@@ -166,60 +154,64 @@ class DeviceDetector {
    * @returns {null|number}
    */
   get maxUserAgentSize() {
-    return this.__maxUserAgentSize;
+    return this.#maxUserAgentSize;
   }
 
   get skipBotDetection() {
-    return this.__skipBotDetection;
+    return this.#skipBotDetection;
   }
 
   set skipBotDetection(discard) {
-    this.__skipBotDetection = discard;
+    this.#skipBotDetection = discard;
   }
 
   /**
    * @param {boolean} status - true use indexes, false not use indexes
    */
   set deviceIndexes(status) {
-    this.__deviceIndexes = status;
+    this.#deviceIndexes = status;
   }
 
   /**
    * @return {boolean} - true use indexes, false not use indexes
    */
   get deviceIndexes() {
-    return this.__deviceIndexes;
+    return this.#deviceIndexes;
   }
 
   /**
-   * @param {boolean} status - true use indexes, false not use indexes
+   * true use indexes, false not use indexes
+   * @param {boolean} status
    */
   set clientIndexes(status) {
-    this.__clientIndexes = status;
+    this.#clientIndexes = status;
     for (let name in this.clientParserList) {
       this.clientParserList[name].clientIndexes = status;
     }
   }
 
   /**
-   * @return {boolean} - true use indexes, false not use indexes
+   * true use indexes, false not use indexes
+   * @return {boolean}
    */
   get clientIndexes() {
-    return this.__clientIndexes;
+    return this.#clientIndexes;
   }
 
   /**
-   * @param {boolean} status - true use deviceAliasCode,  false not use deviceAliasCode
+   * true use deviceAliasCode, false not use deviceAliasCode
+   * @param {boolean} status
    */
   set deviceAliasCode(status) {
-    this.__deviceAliasCode = status;
+    this.#deviceAliasCode = status;
   }
 
   /**
-   * @return {boolean} - true use deviceAliasCode, false not use deviceAliasCode
+   * true use deviceAliasCode, false not use deviceAliasCode
+   * @return {boolean}
    */
   get deviceAliasCode() {
-    return this.__deviceAliasCode;
+    return this.#deviceAliasCode;
   }
 
   /**
@@ -227,7 +219,7 @@ class DeviceDetector {
    * @param value
    */
   set clientVersionTruncate(value) {
-    this.__clientVersionTruncate = value;
+    this.#clientVersionTruncate = value;
     for (let name in this.clientParserList) {
       this.clientParserList[name].setVersionTruncation(value);
     }
@@ -238,7 +230,7 @@ class DeviceDetector {
    * @return int|null
    */
   get clientVersionTruncate() {
-    return this.__clientVersionTruncate;
+    return this.#clientVersionTruncate;
   }
 
   /**
@@ -246,7 +238,7 @@ class DeviceDetector {
    * @param value
    */
   set osVersionTruncate(value) {
-    this.__osVersionTruncate = value;
+    this.#osVersionTruncate = value;
     for (let name in this.osParserList) {
       this.osParserList[name].setVersionTruncation(value);
     }
@@ -257,7 +249,7 @@ class DeviceDetector {
    * @return {null|number}
    */
   get osVersionTruncate() {
-    return this.__osVersionTruncate;
+    return this.#osVersionTruncate;
   }
 
   /**
@@ -288,7 +280,7 @@ class DeviceDetector {
 
   /**
    * get all brands
-   * @returns {string[]}
+   * @return {string[]}
    */
   getAvailableBrands() {
     return this.getParseDevice(DEVICE_PARSER_LIST.MOBILE).getAvailableBrands();
@@ -297,7 +289,7 @@ class DeviceDetector {
   /**
    * has device brand
    * @param brand
-   * @returns {boolean}
+   * @return {boolean}
    */
   hasBrand(brand) {
     return this.getParseDevice(DEVICE_PARSER_LIST.MOBILE).getCollectionBrands()[brand] !== void 0;
@@ -730,7 +722,6 @@ class DeviceDetector {
   parseDevice(userAgent, clientHints) {
     let ua = this.restoreUserAgentFromClientHints(userAgent, clientHints);
     let brandIndexes = [];
-    let deviceCode = '';
 
     let result = {
       id: '',
@@ -746,8 +737,7 @@ class DeviceDetector {
       return Object.assign({}, result);
     }
 
-    const hasResultCode = this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted;
-    if (hasResultCode) {
+    if (this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted) {
       if (helper.hasDeviceModelByClientHints(clientHints)) {
         result.code = clientHints.device.model;
       } else {
