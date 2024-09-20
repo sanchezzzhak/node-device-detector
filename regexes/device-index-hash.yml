@@ -512,16 +512,17 @@ dn2103:
   - 'ON'
 kfkawi:
   - KN
+'':
+  - AP
+  - OQ
+  - LG
+  - TLY
 2201116sg:
   - XI
 sm-m426b:
   - SA
 samsung sm-a032m:
   - SA
-'':
-  - AP
-  - LG
-  - TLY
 sgin_e10m:
   - SGI
 iphone15,2:
@@ -559,10 +560,20 @@ hibox-hero:
   - 1C
 aspire v5-121:
   - AC
+predator g9-793:
+  - AC
 macbookair6,2:
   - AP
+inspiron 3541:
+  - DL
+latitude e4300:
+  - DL
 h135:
   - DX
+hp elitebook 2560p:
+  - HP
+hp elitebook 2570p:
+  - HP
 macbookair2,1:
   - AP
 macbookair3,1:
@@ -578,6 +589,18 @@ macbookair5,1:
 macbookair5,2:
   - AP
 macbookair6,1:
+  - AP
+macbookair7,1:
+  - AP
+macbookair7,2:
+  - AP
+macbookair8,1:
+  - AP
+macbookair8,2:
+  - AP
+macbookair9,1:
+  - AP
+macbookair10,1:
   - AP
 macbookpro4,1:
   - AP
@@ -613,6 +636,46 @@ macbookpro10,2:
   - AP
 macbookpro11,1:
   - AP
+macbookpro11,2:
+  - AP
+macbookpro11,3:
+  - AP
+macbookpro11,4:
+  - AP
+macbookpro11,5:
+  - AP
+macbookpro12,1:
+  - AP
+macbookpro13,1:
+  - AP
+macbookpro13,2:
+  - AP
+macbookpro13,3:
+  - AP
+macbookpro14,1:
+  - AP
+macbookpro14,2:
+  - AP
+macbookpro14,3:
+  - AP
+macbookpro15,1:
+  - AP
+macbookpro15,3:
+  - AP
+macbookpro15,2:
+  - AP
+macbookpro15,4:
+  - AP
+macbookpro16,1:
+  - AP
+macbookpro16,4:
+  - AP
+macbookpro16,2:
+  - AP
+macbookpro16,3:
+  - AP
+macbookpro17,1:
+  - AP
 macbookpro1,1:
   - AP
 macbookpro1,2:
@@ -622,6 +685,41 @@ macbookpro2,1:
 macbookpro2,2:
   - AP
 macbookpro3,1:
+  - AP
+macmini7,1:
+  - AP
+  - A9
+macbook7,1:
+  - AP
+macpro5,1:
+  - AP
+imac12,1:
+  - AP
+imac19,2:
+  - AP
+imac14,2:
+  - AP
+imac14,4:
+  - AP
+imac14,1:
+  - AP
+macbook8,1:
+  - AP
+imac10,1:
+  - AP
+imac20,1:
+  - AP
+macmini9,1:
+  - AP
+imac17,1:
+  - AP
+macbook9,1:
+  - AP
+macbook6,1:
+  - AP
+imac19,1:
+  - AP
+imac20,2:
   - AP
 bilimbook mini:
   - BA
@@ -638,6 +736,26 @@ aspire 4349:
 goclever netbook r103:
   - GC
   - 3N
+macbookpro18,1:
+  - AP
+macbookpro18,3:
+  - AP
+macbookpro18,2:
+  - AP
+macbookpro18,4:
+  - AP
+imac18,1:
+  - AP
+imac18,2:
+  - AP
+imac18,3:
+  - AP
+imac21,1:
+  - AP
+imac21,2:
+  - AP
+imacpro1,1:
+  - AP
 powermac7,2:
   - AP
 macbook4,1:
@@ -791,6 +909,52 @@ google pixelbook go:
   - GO
 travelmate b118-m:
   - AC
+mac14,3:
+  - AP
+mac14,9:
+  - AP
+mac14,2:
+  - AP
+mac13,1:
+  - AP
+mac13,2:
+  - AP
+mac14,14:
+  - AP
+mac14,7:
+  - AP
+mac14,5:
+  - AP
+mac14,6:
+  - AP
+mac14,10:
+  - AP
+mac14,12:
+  - AP
+mac14,15:
+  - AP
+mac14,13:
+  - AP
+mac14,8:
+  - AP
+mac15,4:
+  - AP
+mac15,5:
+  - AP
+mac15,7:
+  - AP
+mac15,9:
+  - AP
+mac15,11:
+  - AP
+mac15,3:
+  - AP
+mac15,6:
+  - AP
+mac15,8:
+  - AP
+mac15,10:
+  - AP
 chromebook 14 (cb3-431):
   - AC
 asus chromebook flip c302:
