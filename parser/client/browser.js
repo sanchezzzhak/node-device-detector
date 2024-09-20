@@ -113,8 +113,13 @@ class Browser extends ClientAbstractParser {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
+
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
-        if (data.name && 'Chromium' === name && 'Chromium' !== data.name) {
+        if (
+          ('Chromium' === name || 'Chrome Webview' === name) &&
+          data.name !== ''&&
+         ['CR', 'CV', 'AN'].indexOf(data.short_name) !== -1
+        ) {
           name = data.name;
           short = data.short_name;
           version = data.version;
@@ -171,8 +176,14 @@ class Browser extends ClientAbstractParser {
     if ('Blink' === engine && 'Flow Browser' === name) {
       engineVersion = '';
     }
-
+    // the browser simulate ua for Android OS
     if ('Every Browser' === name) {
+      family = 'Chrome';
+      engine = 'Blink';
+      engineVersion = '';
+    }
+    // This browser simulates user-agent of Firefox
+    if ('TV-Browser Internet' === name && 'Gecko' === engine) {
       family = 'Chrome';
       engine = 'Blink';
       engineVersion = '';
@@ -202,9 +213,9 @@ class Browser extends ClientAbstractParser {
    */
   parse(userAgent, clientHints) {
     userAgent = this.prepareUserAgent(userAgent);
-    let hash = this.parseFromHashHintsApp(clientHints);
-    let hint = this.parseFromClientHints(clientHints);
-    let data = this.parseFromUserAgent(userAgent);
+    const hash = this.parseFromHashHintsApp(clientHints);
+    const hint = this.parseFromClientHints(clientHints);
+    const data = this.parseFromUserAgent(userAgent);
     return this.prepareParseResult(userAgent, data, hint, hash);
   }
 

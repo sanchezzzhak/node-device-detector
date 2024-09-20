@@ -60,6 +60,7 @@ describe('tests single parse nootebook', function() {
   for (let i = 0, total = fixtureData.length; i < total; i++) {
     it(i + '/' + total, function() {
       let fixture = fixtureData[i];
+      console.log(fixture);
       let result = parser.parse(fixture.user_agent);
       delete result.id;
       expect(fixture.device).to.deep.equal(result);

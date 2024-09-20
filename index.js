@@ -592,6 +592,26 @@ class DeviceDetector {
     ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
+    /**
+     * All devices running Puffin Secure Browser that contain letter 'D' are assumed to be desktops
+     */
+    if (deviceType === '' && helper.hasPuffinDesktopFragment(userAgent)) {
+      deviceType = DEVICE_TYPE.DESKTOP;
+    }
+
+    /**
+     * All devices running Puffin Web Browser that contain letter 'P' are assumed to be smartphones
+     */
+    if (deviceType === '' && helper.hasPuffinSmartphoneFragment(userAgent)) {
+      deviceType = DEVICE_TYPE.SMARTPHONE;
+    }
+
+    /**
+     * All devices running Puffin Web Browser that contain letter 'T' are assumed to be tablets
+     */
+    if (deviceType === '' && helper.hasPuffinTabletFragment(userAgent)) {
+      deviceType = DEVICE_TYPE.TABLET;
+    }
 
     /**
      * All devices running Opera TV Store are assumed to be a tv
@@ -619,10 +639,9 @@ class DeviceDetector {
     }
 
     if (
-      DEVICE_TYPE.DESKTOP !== deviceType &&
-      userAgent.indexOf('Desktop') !== -1
+      DEVICE_TYPE.DESKTOP !== deviceType && userAgent.indexOf('Desktop') !== -1
     ) {
-      if (helper.hasDesktopFragment(userAgent)) {
+      if (helper.matchUserAgent('Desktop(?: (x(?:32|64)|WOW64))?;', userAgent)) {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
@@ -682,12 +701,20 @@ class DeviceDetector {
     if (!helper.hasDeviceModelByClientHints(clientHints)) {
       return userAgent;
     }
+
     const deviceModel = clientHints.device.model;
-    if (deviceModel && helper.hasUserAgentClientHintsFragment(userAgent)) {
+
+    if (deviceModel !== '' && helper.hasUserAgentClientHintsFragment(userAgent)) {
       const osHints = attr(clientHints, 'os', {});
       const osVersion = attr(osHints, 'version', '');
       return userAgent.replace(/(Android 10[.\d]*; K)/,
         `Android ${osVersion !== '' ? osVersion: '10'}; ${deviceModel}`
+      );
+    }
+
+    if (deviceModel !== '' && helper.hasDesktopFragment(userAgent)) {
+      return userAgent.replace(/(X11; Linux x86_64)/,
+        `X11; Linux x86_64; ${deviceModel}`
       );
     }
 
@@ -715,11 +742,12 @@ class DeviceDetector {
       trusted: null
     };
 
-    if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(userAgent)) {
+    if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(ua)) {
       return Object.assign({}, result);
     }
 
-    if (this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted) {
+    const hasResultCode = this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted;
+    if (hasResultCode) {
       if (helper.hasDeviceModelByClientHints(clientHints)) {
         result.code = clientHints.device.model;
       } else {
