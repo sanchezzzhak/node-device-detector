@@ -41,7 +41,6 @@ function testVersionAndSkip(resultVersion, fixtureVersion, messageError) {
 const runTest= (fixture, result) => {
 
   let messageError = 'fixture data\n' + perryJSON(fixture);
-
   if (isObjNotEmpty(fixture.os.name)) {
     expect(fixture.os.name, messageError).to.equal(result.name);
   }

@@ -5,13 +5,6 @@ const helper = require('./helper');
 const COLLECTION_BRAND_IDS =  require('./device/brand-short');
 const COLLECTION_BRAND_LIST = helper.revertObject(COLLECTION_BRAND_IDS);
 
-const DESKTOP_PATTERN = '(?:Windows (?:NT|IoT)|X11; Linux x86_64)';
-const DESKTOP_EXCLUDE_PATTERN = [
-  'CE-HTML',
-  ' Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser',
-  'PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)',
-].join('|');
-
 class DeviceParserAbstract extends ParserAbstract {
   constructor() {
     super();
@@ -28,21 +21,21 @@ class DeviceParserAbstract extends ParserAbstract {
 
   /**
    * @param {string} userAgent
-   * @param {array} brandIndexes
+   * @param {string[]} brandIndexes
    * @returns {[]}
    */
   parseAll(userAgent, brandIndexes = []) {
-    return this.__parse(userAgent, false, brandIndexes);
+    return this.#parse(userAgent, false, brandIndexes);
   }
 
   /**
    * iteration item parse, see __parse
    * @param {string} cursor
    * @param {string} userAgent
-   * @returns {{model: *, id: *, type, brand}|null}
+   * @return {{model: *, id: *, type, brand}|null}
    * @private
    */
-  __parseForBrand(cursor, userAgent) {
+  #parseForBrand(cursor, userAgent) {
     let item = this.collection[cursor];
     if (item === void 0) {
       return null;
@@ -104,24 +97,16 @@ class DeviceParserAbstract extends ParserAbstract {
    * @param {string} userAgent
    * @param {boolean} canBreak
    * @param {string[]} brandIndexes
-   * @returns {[]}
+   * @return {[]}
    * @private
    */
-  __parse(userAgent, canBreak = true, brandIndexes = []) {
-  
-    const isDesktop =
-      helper.matchUserAgent(DESKTOP_PATTERN, userAgent) &&
-      !helper.matchUserAgent(DESKTOP_EXCLUDE_PATTERN, userAgent);
-    
-    if (isDesktop) {
-      return [];
-    }
+  #parse(userAgent, canBreak = true, brandIndexes = []) {
 
     const output = [];
     if (brandIndexes.length) {
       for (let cursorId of brandIndexes) {
         const cursor = this.getBrandNameById(cursorId);
-        const result = this.__parseForBrand(cursor, userAgent);
+        const result = this.#parseForBrand(cursor, userAgent);
         if (result === null) {
           continue;
         }
@@ -132,7 +117,7 @@ class DeviceParserAbstract extends ParserAbstract {
 
     if (!output.length) {
       for (let cursor in this.collection) {
-        const result = this.__parseForBrand(cursor, userAgent);
+        const result = this.#parseForBrand(cursor, userAgent);
         if (result === null) {
           continue;
         }
@@ -148,11 +133,11 @@ class DeviceParserAbstract extends ParserAbstract {
    * Result brand and model
    * @param {string} userAgent    - useragent string
    * @param {array} brandIndexes  - check the devices in this list
-   * @returns {{model: (string|string), id: (*|string), type: string, brand: string}|null}
+   * @return {{model: (string|string), id: (*|string), type: string, brand: string}|null}
    */
   parse(userAgent, brandIndexes = []) {
     userAgent = this.prepareUserAgent(userAgent);
-    let result = this.__parse(userAgent, true, brandIndexes);
+    let result = this.#parse(userAgent, true, brandIndexes);
     if (result.length) {
       // if it is fake device iphone/ipad then result empty
       if (result[0].brand === 'Apple' && /android /i.test(userAgent)) {
@@ -172,7 +157,7 @@ class DeviceParserAbstract extends ParserAbstract {
   /**
    * get brand short id by name
    * @param {string} brandName
-   * @returns {string|void}
+   * @return {string|void}
    */
   getBrandIdByName(brandName) {
     return COLLECTION_BRAND_LIST[brandName];
@@ -181,7 +166,7 @@ class DeviceParserAbstract extends ParserAbstract {
   /**
    * get brand name by short id
    * @param {string} id
-   * @returns {string|void}
+   * @return {string|void}
    */
   getBrandNameById(id) {
     return COLLECTION_BRAND_IDS[id];

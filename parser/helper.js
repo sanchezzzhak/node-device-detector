@@ -29,26 +29,42 @@ function matchReplace(template, matches) {
 }
 
 /**
- *
- * @param val1
- * @param val2
- * @returns {boolean}
+ * @param {string|null} val1
+ * @param {string|null} val2
+ * @return {boolean}
  */
 function fuzzyCompare(val1, val2) {
   return val1 !== null && val2 !== null &&
     val1.replace(/ /gi, '').toLowerCase() ===
     val2.replace(/ /gi, '').toLowerCase();
 }
+
+/**
+ * @param {number|string} value1
+ * @param {number|string} value2
+ * @param {number} num
+ * @return {boolean}
+ */
 function fuzzyCompareNumber(value1, value2, num = 3) {
   return parseFloat(value1).toFixed(num) === parseFloat(value2).toFixed(num);
 }
 
+/**
+ * @param {number} value
+ * @param {number} min
+ * @param {number} max
+ * @return {boolean}
+ */
 function fuzzyBetweenNumber(value, min, max) {
   return value >= min && value <= max;
 }
 
+/**
+ * @param {string} str
+ * @return {string}
+ */
 function createHash(str) {
-  var hash = 0, i = 0, len = str.length;
+  let hash = 0, i = 0, len = str.length;
   while (i < len) {
     hash = ((hash << 5) - hash + str.charCodeAt(i++)) << 0;
   }
@@ -57,9 +73,9 @@ function createHash(str) {
 
 /**
  * Compare versions
- * @param ver1
- * @param ver2
- * @returns {number}
+ * @param {string} ver1
+ * @param {string} ver2
+ * @return {number}
  */
 function versionCompare(ver1, ver2) {
   if (ver1 === ver2) {
@@ -107,7 +123,7 @@ function versionTruncate(version, maxMinorParts) {
 
 /**
  * @param {string} userAgent
- * @returns {boolean}
+ * @return {boolean}
  */
 function hasAndroidTableFragment(userAgent) {
   return (
@@ -117,7 +133,7 @@ function hasAndroidTableFragment(userAgent) {
 
 /**
  * @param {string} userAgent
- * @returns {boolean}
+ * @return {boolean}
  */
 function hasOperaTableFragment(userAgent) {
   return matchUserAgent('Opera Tablet', userAgent) !== null;
@@ -147,16 +163,42 @@ function hasAndroidMobileFragment(userAgent) {
 /**
  * All devices running Opera TV Store are assumed to be a tv
  * @param {string} userAgent
- * @returns {boolean}
+ * @return {boolean}
  */
 function hasOperaTVStoreFragment(userAgent) {
   return matchUserAgent('Opera TV Store| OMI/', userAgent) !== null;
 }
 
 /**
+ * All devices running Puffin Secure Browser that contain letter 'D' are assumed to be desktops
+ * @param {string} userAgent
+ * @return {boolean}
+ */
+function hasPuffinDesktopFragment(userAgent) {
+  return matchUserAgent('Puffin/(?:\\d+[.\\d]+)[LMW]D', userAgent) !== null
+}
+
+/**
+ * All devices running Puffin Web Browser that contain letter 'P' are assumed to be smartphones
+ * @param {string} userAgent
+ * @return {boolean}
+ */
+function hasPuffinSmartphoneFragment(userAgent) {
+  return matchUserAgent('Puffin/(?:\\d+[.\\d]+)[AIFLW]P', userAgent) !== null
+}
+
+/**
+ * All devices running Puffin Web Browser that contain letter 'T' are assumed to be tablets
+ * @param {string} userAgent
+ * @return {boolean}
+ */
+function hasPuffinTabletFragment(userAgent) {
+  return matchUserAgent('Puffin/(?:\\d+[.\\d]+)[AILW]T', userAgent) !== null
+}
+/**
  * All devices containing TV fragment are assumed to be a tv
  * @param {string} userAgent
- * @returns {boolean}
+ * @return {boolean}
  */
 function hasAndroidTVFragment(userAgent) {
   return matchUserAgent(
@@ -180,8 +222,17 @@ function hasTVFragment(userAgent) {
  * @returns {boolean}
  */
 function hasDesktopFragment(userAgent) {
-  return matchUserAgent('Desktop(?: (x(?:32|64)|WOW64))?;', userAgent) !== null;
+  const DESKTOP_PATTERN = '(?:Windows (?:NT|IoT)|X11; Linux x86_64)';
+  const DESKTOP_EXCLUDE_PATTERN = [
+    'CE-HTML',
+    ' Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser',
+    'PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)',
+  ].join('|');
+
+  return matchUserAgent(DESKTOP_PATTERN, userAgent) !== null &&
+    !matchUserAgent(DESKTOP_EXCLUDE_PATTERN, userAgent) !== null;
 }
+
 
 /**
  * Check combinations is string that UserAgent ClientHints
@@ -354,5 +405,8 @@ module.exports = {
   hasFile,
   trimChars,
   splitUserAgent,
-  matchReplace
+  matchReplace,
+  hasPuffinDesktopFragment,
+  hasPuffinSmartphoneFragment,
+  hasPuffinTabletFragment
 };

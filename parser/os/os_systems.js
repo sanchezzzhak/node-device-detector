@@ -116,6 +116,7 @@ module.exports = {
   'PSP': 'PlayStation Portable',
   'PS3': 'PlayStation',
   'PVE': 'Proxmox VE',
+  'PUF': 'Puffin OS',
   'PUR': 'PureOS',
   'QTP': 'Qtopia',
   'PIO': 'Raspberry Pi OS',

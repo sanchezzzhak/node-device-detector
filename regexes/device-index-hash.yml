@@ -523,22 +523,37 @@ sm-m426b:
   - SA
 samsung sm-a032m:
   - SA
+sgin_e10m:
+  - SGI
+iphone15,2:
+  - AP
+iq&t n8:
+  - QN
+hlte239e:
+  - HI
 archos gamepad:
   - AR
 archos gamepad2:
   - AR
+retroid pocket 2plus:
+  - 8R
 shield:
   - NV
 dexp freya:
   - DX
+retroid pocket 2+:
+  - 8R
 razer edge 5g:
   - RZ
 rg405v:
   - ANC
 rg505:
   - ANC
+retroid pocket 4 pro:
+  - 8R
 retroid pocket 3 plus:
   - CB
+  - 8R
 20jjs0cu1m:
   - LE
 hibox-hero:
@@ -1199,6 +1214,8 @@ hce600:
   - CHC
 hce700:
   - CHC
+m3sm15x:
+  - M3M
 sm-f721u:
   - SA
 note 13p:
@@ -1503,8 +1520,6 @@ iphone13,3:
   - AP
 iphone13,2:
   - AP
-iphone15,2:
-  - AP
 mi note 10 pro:
   - XI
 scv44:
@@ -1665,6 +1680,16 @@ infinix x6850b:
   - IF
 rubyplus:
   - XI
+iphone10,3:
+  - AP
+iphone10,5:
+  - AP
+iphone11,6:
+  - AP
+iphone12,5:
+  - AP
+iphone12,8:
+  - AP
 gi-626:
   - A5
 5039d_ru:
@@ -1679,14 +1704,6 @@ gi-626:
   - AL
 9022x:
   - AL
-iphone12,5:
-  - AP
-iphone12,8:
-  - AP
-iphone10,3:
-  - AP
-iphone11,6:
-  - AP
 me371mg:
   - AU
 k012:
@@ -2268,8 +2285,6 @@ note 11p:
   - UL
 sm-n950u:
   - SA
-iphone10,5:
-  - AP
 htc6600lvw:
   - HT
 redmi note 4:
@@ -12129,6 +12144,48 @@ dvc-tn20:
   - HU
 shf34:
   - SH
+kwsa80k:
+  - KNW
+gne-n001s:
+  - GPL
+earn2 cl:
+  - '34'
+liv 3s lte:
+  - YE
+liv 3 lte:
+  - YE
+ls5018fp:
+  - EW
+milan_pro:
+  - OL
+mobilemapper60:
+  - TRB
+ec55:
+  - PZ
+ea602:
+  - UNT
+elite l55:
+  - SW
+elite c63:
+  - SW
+elite a6:
+  - SW
+elite max:
+  - SW
+mp5184g:
+  - YM
+lex l11a:
+  - MTS
+lex l11e:
+  - MTS
+s20iq19:
+  - GME
+ikall:
+  - IKL
+ss5314g:
+  - '68'
+ss5424g:
+  - '68'
 shf33:
   - SH
 shl25:
@@ -32880,6 +32937,8 @@ celero3 5g+:
   - DQ
 zte blade l220:
   - ZT
+iphone5,3:
+  - AP
 primo zx3:
   - WA
 primo s6:
@@ -34311,8 +34370,6 @@ sh-01d:
   - SH
 multilaser_h_5g:
   - 1R
-iphone5,3:
-  - AP
 23028rn4di:
   - XI
 phw110:
@@ -34946,10 +35003,6 @@ ea500plus:
   - UNT
 24069pc21i:
   - 0P
-e0116:
-  - EVR
-e0117:
-  - EVR
 l622:
   - HN
 l604:
@@ -50180,6 +50233,7 @@ pov_tab-protab26:
   - PV
 pixus himax:
   - PX
+  - W3
 play three v2.0:
   - PX
 play three v3.1:
@@ -52417,6 +52471,12 @@ finepower a3:
   - F1
 x-pad style 8 3g (revision 3):
   - TZ
+kfquwi:
+  - KN
+kfrawi:
+  - KN
+cx9006:
+  - CX0
 x10 (m1d3):
   - T7
 10a_lte_eea:
@@ -54526,6 +54586,24 @@ f105d_128:
   - HN
 smooth 8gt:
   - HH
+nqt-1013giq11:
+  - 7Q
+e0111:
+  - EVR
+e0113:
+  - EVR
+e0114:
+  - EVR
+e0116:
+  - EVR
+e0117:
+  - EVR
+ptb10r:
+  - 4P
+4104116n:
+  - GH
+ift1018:
+  - IFT
 tq700:
   - GC
 tpc-xte8:
@@ -55873,10 +55951,6 @@ torex pad 8pro:
   - 7T
 torex pad 8 pro:
   - 7T
-kfrawi:
-  - KN
-kfquwi:
-  - KN
 kfthwi:
   - KN
 readboy_g550a:
@@ -60566,6 +60640,16 @@ gtkingii:
   - B0
 yndx-00075:
   - YD
+longtv louie:
+  - LNG
+fibetv:
+  - BEL
+hlq max:
+  - IHL
+h96 mini h8:
+  - 9Z
+h96plus:
+  - 9Z
 bb2 pro:
   - 0M
 kii pro:

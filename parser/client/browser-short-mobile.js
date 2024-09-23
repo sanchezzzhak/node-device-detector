@@ -3,7 +3,7 @@ module.exports = [
   '36', 'AH', 'AI', 'BL', 'C1', 'C4', 'CB', 'CW', 'DB',
   '3M', 'DT', 'EU', 'EZ', 'FK', 'FM', 'FR', 'FX', 'GH',
   'GI', 'GR', 'HA', 'HU', 'IV', 'JB', 'KD', 'M1', 'MF',
-  'MN', 'MZ', 'NX', 'OC', 'OI', 'OM', 'OZ', 'PU', 'PI',
+  'MN', 'MZ', 'NX', 'OC', 'OI', 'OM', 'OZ', '2P', 'PI',
   'PE', 'QU', 'RE', 'S0', 'S7', 'SA', 'SB', 'SG', 'SK',
   'ST', 'SU', 'T1', 'UH', 'UM', 'UT', 'VE', 'VV', 'WI',
   'WP', 'YN', 'IO', 'IS', 'HQ', 'RW', 'HI', 'PN', 'BW',
@@ -22,6 +22,7 @@ module.exports = [
   '5A', 'TT', '6P', 'G3', '7P', 'VU', 'F8', 'L4', 'DK',
   'DP', 'KL', 'K4', 'N6', 'KU', 'WK', 'M8', 'UP', 'ZT',
   '9P', 'N8', 'VR', 'N9', 'M9', 'F9', '0P', '0A', '2F',
-  '2M', 'K7', '1N', '8A', 'H7', 'X3', 'X4', '5O',
+  '2M', 'K7', '1N', '8A', 'H7', 'X3', 'X4', '5O', '6I',
+  '7I', 'X5',
   
 ];
