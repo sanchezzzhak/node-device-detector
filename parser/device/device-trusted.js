@@ -179,7 +179,13 @@ class DeviceTrusted {
     const isGpuExist = isGpuExistForClientHints(clientHints);
     const isAppleBrand = isAppleBrandForDeviceData(deviceData);
     // is Apple and lack of client-hints
-    if (isAppleBrand && clientHints?.client?.brands?.length > 0) {
+    if (
+      isAppleBrand &&
+      clientHints &&
+      clientHints.client &&
+      clientHints.client.brands &&
+      clientHints.client.brands.length > 0
+    ) {
       return false;
     }
     // is Apple and check correct gpu name
