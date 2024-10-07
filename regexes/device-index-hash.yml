@@ -238,6 +238,8 @@ tb8163p3_bsp:
   - XY
 dilink5.0 for byd auto:
   - BYD
+apollo10 pro:
+  - CPD
 pixel 3:
   - GO
 m2006c3lg:
@@ -1690,6 +1692,20 @@ iphone12,5:
   - AP
 iphone12,8:
   - AP
+redmi note 13:
+  - XI
+tecno mobile li6:
+  - TB
+tecno mobile li9:
+  - TB
+fcp-n49:
+  - HU
+fcp-an10:
+  - HU
+biloba:
+  - XI
+m1901f7g:
+  - XI
 gi-626:
   - A5
 5039d_ru:
@@ -38502,8 +38518,6 @@ lra-an00:
   - HU
 gbd-nx9:
   - HU
-fcp-an10:
-  - HU
 elp-nx9:
   - HU
 xq-ec54:
@@ -39095,6 +39109,177 @@ xt2363-2:
   - MR
 xt2343-1:
   - MR
+hyper 7 pro:
+  - HV
+rmx3988:
+  - RE
+v17 sd665:
+  - VV
+pkd130:
+  - OP
+v2409:
+  - VV
+v2344:
+  - VV
+v2348:
+  - VV
+s6702x:
+  - NL
+pixel 9 pro:
+  - GO
+motorola razr 50:
+  - MR
+ds-cl4 lite:
+  - DCO
+nova60:
+  - C5
+zte 7543n:
+  - ZT
+z2351n:
+  - '57'
+lt s33:
+  - QL
+tecno mobile ch6i:
+  - TB
+rmx3992:
+  - RE
+rmx3990:
+  - RE
+rmx3933:
+  - RE
+rmx3921:
+  - RE
+rmx3869:
+  - RE
+pixel 9:
+  - GO
+pixel 9 pro fold:
+  - GO
+jdy-lx2:
+  - HU
+kingkong_es:
+  - CB
+blade10 ultra:
+  - DO
+blade10 pro:
+  - DO
+blade10:
+  - DO
+a5slim:
+  - ETH
+a015:
+  - CMF
+2407fpn8eg:
+  - XI
+sh-c03:
+  - SH
+ds-cr1:
+  - DCO
+w-k211-ope:
+  - WI
+sh-c04:
+  - SH
+z2453:
+  - ZT
+xt2401-2:
+  - MR
+vocal v11:
+  - VOC
+wp39:
+  - OE
+wp28 s:
+  - OE
+wp28 e:
+  - OE
+u play:
+  - HT
+ultra 8:
+  - SPX
+tecno kl5:
+  - TB
+tecno camon i4:
+  - TB
+phone (2a):
+  - NOT
+iron va:
+  - HAM
+energizer energy s550:
+  - ED
+  - OB
+  - E1
+asus_ai2401_e:
+  - AU
+doogee s35:
+  - DO
+doogee n50:
+  - DO
+doogee n40 pro:
+  - DO
+g025e:
+  - GO
+cph2693:
+  - OP
+cph2667:
+  - OP
+cph2661:
+  - 'ON'
+  - OP
+cph2663:
+  - 'ON'
+  - OP
+cph2641:
+  - OP
+smart_p24:
+  - 6W
+'1907_19':
+  - VV
+blackview a55 pro:
+  - B2
+b160v:
+  - BU
+ihunt titan p10000 pro:
+  - IH
+  - UZ
+itel vision 2:
+  - IZ
+yale-l71a:
+  - HU
+yale-l61d:
+  - HU
+honor play 3:
+  - HU
+honor 9x pro:
+  - HU
+honor 9x:
+  - HU
+honor 8s:
+  - HU
+honor 8a:
+  - HU
+honor 20:
+  - HU
+honor 10i:
+  - HU
+y85a:
+  - VV
+y85:
+  - VV
+y83a:
+  - VV
+y71:
+  - VV
+y71a:
+  - VV
+nokia 8.3:
+  - NK
+m1903c3eg:
+  - XI
+m1582c_max:
+  - YM
+a6020l37:
+  - LE
+a6020a46:
+  - LE
 gs55-6:
   - GS
 gs57-6:
@@ -48441,6 +48626,32 @@ inoipad 64gb wi-fi+3g:
   - I4
 a15_eea:
   - OAN
+k10c:
+  - COL
+ex8s1:
+  - EF
+opd2403:
+  - 'ON'
+opd2303:
+  - OP
+7_premium_pro:
+  - H0
+iplay60_mini_pro:
+  - 3A
+via l40:
+  - R4
+ags6-w09:
+  - HU
+ags6-l09:
+  - HU
+ags3-al09:
+  - HU
+y88x__plus:
+  - DJ
+quartzpro:
+  - 8U
+magicdrawingpad:
+  - XPP
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -60650,6 +60861,26 @@ h96 mini h8:
   - 9Z
 h96plus:
   - 9Z
+stv-55led41:
+  - '78'
+sw-led65ug402:
+  - '45'
+sw-led43ub400:
+  - '45'
+sw-led43sb300:
+  - '45'
+sw-led40sb300:
+  - '45'
+sw-led32sb304:
+  - '45'
+50ust5970:
+  - SKY
+50lu8130s:
+  - 8A
+50lf7010t:
+  - 8A
+korax-eurobox:
+  - KRX
 bb2 pro:
   - 0M
 kii pro:
@@ -61306,4 +61537,6 @@ samsung sm-r885u:
 glass 1:
   - GO
 pico neo 3 os5.9.5.0 like quest:
+  - QP
+a8110:
   - QP

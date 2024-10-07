@@ -240,7 +240,7 @@ function hasDesktopFragment(userAgent) {
  * @return {boolean}
  */
 function hasUserAgentClientHintsFragment(userAgent) {
-  return /Android 10[.\d]*; K(?: Build\/|[;)])/i.test(userAgent);
+  return /Android (?:10[.\d]*; K(?: Build\/|[;)])|1[1-5]\)) AppleWebKit/i.test(userAgent);
 }
 
 /**

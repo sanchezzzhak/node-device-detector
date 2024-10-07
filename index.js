@@ -1,5 +1,5 @@
 const helper = require('./parser/helper');
-const {attr} = helper;
+const { attr } = helper;
 
 // device parsers
 const MobileParser = require('./parser/device/mobile');
@@ -40,6 +40,7 @@ const APPLE_OS_LIST = require('./parser/const/apple-os');
 const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
 const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
 const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
+const FORM_FACTORS_MAPPING = require('./parser/const/form-factor-mapping');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
 const { hasUserAgentClientHintsFragment, hasDeviceModelByClientHints } = require('./parser/helper');
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
@@ -490,6 +491,23 @@ class DeviceDetector {
     let clientFamily = attr(clientData, 'family', '');
     let deviceType = attr(deviceData, 'type', '');
 
+
+    // client hint detect device type
+    if (
+      deviceType === '' &&
+      clientHints &&
+      clientHints.device &&
+      clientHints.device.model &&
+      clientHints.formFactors.length
+    ) {
+      for(const [type, deviceTypeName] of Object.entries(FORM_FACTORS_MAPPING)) {
+          if (clientHints.formFactors.includes(type)) {
+            deviceType = '' + deviceTypeName;
+            break;
+          }
+      }
+    }
+
     /**
      * All devices containing VR fragment are assumed to be a wearable
      */
@@ -505,11 +523,9 @@ class DeviceDetector {
      *       a detected browser, but can still be detected. So we check the useragent for Chrome instead.
      */
     if (deviceType === '' && osFamily === 'Android' && helper.matchUserAgent('Chrome/[.0-9]*', userAgent)) {
-      if (helper.matchUserAgent('(Mobile|eliboM)', userAgent) !== null) {
-        deviceType = DEVICE_TYPE.SMARTPHONE;
-      } else{
-        deviceType = DEVICE_TYPE.TABLET;
-      }
+      deviceType = helper.matchUserAgent('(Mobile|eliboM)', userAgent)
+        ? DEVICE_TYPE.SMARTPHONE
+        : DEVICE_TYPE.TABLET;
     }
 
     /**
@@ -578,33 +594,32 @@ class DeviceDetector {
      */
     if (
       deviceType === '' &&
-      (osName === 'Windows RT' ||
-        (osName === 'Windows' && helper.versionCompare(osVersion, '8') >= 0)) &&
+      (osName === 'Windows RT' || (osName === 'Windows' && helper.versionCompare(osVersion, '8') >= 0)) &&
       helper.hasTouchFragment(userAgent)
     ) {
       deviceType = DEVICE_TYPE.TABLET;
     }
-    /**
-     * All devices running Puffin Secure Browser that contain letter 'D' are assumed to be desktops
-     */
-    if (deviceType === '' && helper.hasPuffinDesktopFragment(userAgent)) {
-      deviceType = DEVICE_TYPE.DESKTOP;
-    }
 
-    /**
-     * All devices running Puffin Web Browser that contain letter 'P' are assumed to be smartphones
-     */
-    if (deviceType === '' && helper.hasPuffinSmartphoneFragment(userAgent)) {
-      deviceType = DEVICE_TYPE.SMARTPHONE;
+    if (deviceType === '' && /Puffin\/\d/i.test(userAgent)) {
+      /**
+       * All devices running Puffin Secure Browser that contain letter 'D' are assumed to be desktops
+       */
+      if (helper.hasPuffinDesktopFragment(userAgent)) {
+        deviceType = DEVICE_TYPE.DESKTOP;
+      }
+      /**
+       * All devices running Puffin Web Browser that contain letter 'P' are assumed to be smartphones
+       */
+      if (helper.hasPuffinSmartphoneFragment(userAgent)) {
+        deviceType = DEVICE_TYPE.SMARTPHONE;
+      }
+      /**
+       * All devices running Puffin Web Browser that contain letter 'T' are assumed to be tablets
+       */
+      if (helper.hasPuffinTabletFragment(userAgent)) {
+        deviceType = DEVICE_TYPE.TABLET;
+      }
     }
-
-    /**
-     * All devices running Puffin Web Browser that contain letter 'T' are assumed to be tablets
-     */
-    if (deviceType === '' && helper.hasPuffinTabletFragment(userAgent)) {
-      deviceType = DEVICE_TYPE.TABLET;
-    }
-
     /**
      * All devices running Opera TV Store are assumed to be a tv
      */
@@ -699,8 +714,8 @@ class DeviceDetector {
     if (deviceModel !== '' && helper.hasUserAgentClientHintsFragment(userAgent)) {
       const osHints = attr(clientHints, 'os', {});
       const osVersion = attr(osHints, 'version', '');
-      return userAgent.replace(/(Android 10[.\d]*; K)/,
-        `Android ${osVersion !== '' ? osVersion: '10'}; ${deviceModel}`
+      return userAgent.replace(/(Android (?:10[.\d]*; K|1[1-5]))/,
+        `Android ${osVersion !== '' ? osVersion : '10'}; ${deviceModel}`
       );
     }
 
@@ -733,7 +748,8 @@ class DeviceDetector {
       trusted: null
     };
 
-    if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(ua)) {
+    // skip all parse is client-hints useragent and model not exist
+    if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(userAgent)) {
       return Object.assign({}, result);
     }
 
@@ -769,7 +785,7 @@ class DeviceDetector {
       }
     }
 
-    // client hints
+    // client hints get model raw
     if (result.model === '' && helper.hasDeviceModelByClientHints(clientHints)) {
       result.model = clientHints.device.model;
     }
