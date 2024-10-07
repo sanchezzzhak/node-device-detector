@@ -46,6 +46,7 @@ const CH_UA_FORM_FACTORS = 'sec-ch-ua-form-factors';
   'sec-ch-ua-platform-version',
   'sec-ch-viewport-height',
   'sec-ch-viewport-width',
+  'sec-ch-ua-from-factors',
   'sec-ch-width',
   'ua',
   'ua-arch',
@@ -107,48 +108,48 @@ class ClientHints {
    * @param {ResultClientHints|JSONObject} result
    * @private
    */
-  __parseHints(hints, result) {
+  #parseHints(hints, result) {
     for (let key in hints) {
       let value = hints[key];
-      let lowerCaseKey = key.toLowerCase().replace('_', '-');
+      const lowerCaseKey = key.toLowerCase().replace('_', '-');
 
       switch (lowerCaseKey) {
         case 'http-sec-ch-ua-arch':
         case 'sec-ch-ua-arch':
         case 'arch':
         case 'architecture':
-          result.os.platform = helper.trimChars(value, '"');
+          result.os.platform = this.#trim(value);
           break;
         case 'http-sec-ch-ua-bitness':
         case 'sec-ch-ua-bitness':
         case 'bitness':
-          result.os.bitness = helper.trimChars(value, '"');
+          result.os.bitness = this.#trim(value);
           break;
         case 'http-sec-ch-ua-mobile':
         case 'sec-ch-ua-mobile':
         case 'mobile':
-          result.isMobile = true === value || '1' === value || '?1' === value;
+          result.isMobile = this.#bool(value);
           break;
         case 'http-sec-ch-ua-model':
         case 'sec-ch-ua-model':
         case 'model':
-          result.device.model = helper.trimChars(value, '"');
+          result.device.model = this.#trim(value);
           break;
         case 'http-sec-ch-ua-full-version':
         case 'sec-ch-ua-full-version':
         case 'uafullversion':
           result.upgradeHeader = true;
-          result.client.version = helper.trimChars(value, '"');
+          result.client.version = this.#trim(value);
           break;
         case 'http-sec-ch-ua-platform':
         case 'sec-ch-ua-platform':
         case 'platform':
-          result.os.name = helper.trimChars(value, '"');
+          result.os.name = this.#trim(value);
           break;
         case 'http-sec-ch-ua-platform-version':
         case 'sec-ch-ua-platform-version':
         case 'platformversion':
-          result.os.version = helper.trimChars(value, '"');
+          result.os.version = this.#trim(value);
           break;
         case 'brands':
           if (result.client.brands.length > 0) {
@@ -168,40 +169,80 @@ class ClientHints {
         // eslint-disable-next-line no-fallthrough
         case 'http-sec-ch-ua-full-version-list':
         case 'sec-ch-ua-full-version-list':
-          let pattern = new RegExp('"([^"]+)"; ?v="([^"]+)"(?:, )?', 'gi');
-          let items = [];
-          let matches = null;
-          while (matches = pattern.exec(value)) {
-            let brand = matches[1];
-            let skip = brand.indexOf('Not;A') !== -1 || brand.indexOf('Not A;') !== -1 || brand.indexOf('Not.A') !== -1;
-            if (skip) {
-              continue;
-            }
-            items.push({ brand, version: helper.trimChars(matches[2], '"') });
-          }
+          const items = this.#parseFullVersionList(value);
           if (items.length > 0) {
             result.client.brands = items;
           }
           break;
         case 'x-requested-with':
         case 'http-x-requested-with':
-          result.app = value;
-          if (value.toLowerCase() === 'xmlhttprequest') {
-            result.app = '';
-          }
+          result.app = this.#parseApp(value)
           break;
         case 'formfactors':
-          result.formFactors = value.map(val => val.toLowerCase());
-          break;
         case 'http-sec-ch-ua-form-factors':
         case 'sec-ch-ua-form-factors':
-          let matchFactors = /"([a-z]+)"/i.exec(value.toLowerCase());
-          if (matchFactors && matchFactors[1]) {
-            result.formFactors = matchFactors[1];
-          }
+          result.formFactors = this.#parseFormFactor(value);
           break;
       }
     }
+  }
+
+  /**
+   * @param {boolean|string} value
+   * @return {boolean}
+   */
+  #bool(value) {
+    return true === value || '1' === value || '?1' === value;
+  }
+
+  /**
+   * @param {string} value
+   * @return {string}
+   */
+  #trim(value) {
+    return helper.trimChars(value, '"');
+  }
+
+  /**
+   * @param {string} value
+   * @return {string}
+   */
+  #parseApp(value) {
+    return value.toLowerCase() === 'xmlhttprequest' ? '' : value;
+  }
+
+  /**
+   * @param {string} value
+   * @return {[]}
+   */
+  #parseFullVersionList(value) {
+    const skipBrands = ['Not;A', 'Not A;', 'Not.A'];
+    const pattern = new RegExp('"([^"]+)"; ?v="([^"]+)"(?:, )?', 'gi');
+    const items = [];
+
+    let matches = null;
+    while ((matches = pattern.exec(value)) !== null) {
+      const brand = matches[1];
+      if (skipBrands.some(item => brand.includes(item))) {
+        continue;
+      }
+      items.push({ brand, version: helper.trimChars(matches[2], '"') });
+    }
+    return items;
+  }
+  /**
+   * @param {string|string[]} value
+   * @return {string[]}
+   */
+  #parseFormFactor(value) {
+    if (Array.isArray(value)) {
+      return value.map(val => val.toLowerCase());
+    }
+
+    const matches = value.toLowerCase().match(/"([a-z]+)"/gi);
+    return matches!== null ? matches.map(formFactor => {
+      return helper.trimChars(formFactor, '"')
+    }): [];
   }
 
   /**
@@ -209,7 +250,7 @@ class ClientHints {
    * @param {ResultClientHints} result
    * @private
    */
-  __parseMeta(meta, result) {
+  #parseMeta(meta, result) {
     for (let key in meta) {
       let value = meta[key];
       let lowerCaseKey = key.toLowerCase();
@@ -242,7 +283,7 @@ class ClientHints {
    * @return {ResultClientHints|JSONObject|{}}
    * @private
    */
-  __blank() {
+  #blank() {
     return {
       upgradeHeader: false,
       isMobile: false,
@@ -269,9 +310,9 @@ class ClientHints {
    * @return {ResultClientHints}
    */
   parse(hints, meta = {}) {
-    let result = this.__blank()
-    this.__parseHints(hints, result);
-    this.__parseMeta(meta, result);
+    let result = this.#blank()
+    this.#parseHints(hints, result);
+    this.#parseMeta(meta, result);
     return result;
   }
 

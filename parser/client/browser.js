@@ -189,6 +189,15 @@ class Browser extends ClientAbstractParser {
       engineVersion = '';
     }
 
+    if ('Wolvic' === name) {
+      if ('Blink' === engine) {
+        family = 'Chrome';
+      }
+      if ('Gecko' === engine) {
+        family = 'Firefox';
+      }
+    }
+
     if (name === '') {
       return null;
     }
