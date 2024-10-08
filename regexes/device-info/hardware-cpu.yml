@@ -2535,3 +2535,24 @@ cpu:
     clock_rate: 3250
     process: 4nm
     gpu_id: 124
+  376:
+    name: MediaTek Dimensity 9200
+    type: ARM
+    cores: 8
+    clock_rate: 3050
+    process: 4nm
+    gpu_id: 125
+  377:
+    name: Qualcomm Snapdragon 8 Gen 2 # SM8550-AB
+    type: ARM
+    cores: 8
+    clock_rate: 3200
+    process: 4nm
+    gpu_id: 126
+  378:
+    name: Qualcomm Snapdragon 8 Gen 3 # SM8650-AB
+    type: ARM
+    cores: 8
+    clock_rate: 3300
+    process: 4nm
+    gpu_id: 127
