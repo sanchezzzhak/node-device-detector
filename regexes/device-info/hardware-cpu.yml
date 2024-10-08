@@ -1526,12 +1526,14 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1280
+    process: 28nm
     gpu_id: 2
   232:
     name: MediaTek Helio P25
     type: ARM
     cores: 8
     clock_rate: 2600
+    process: 16nm
     gpu_id: 75
   233:
     name: Samsung Exynos 4412 Quad
@@ -2519,3 +2521,10 @@ cpu:
     clock_rate: 3000
     process: 4nm
     gpu_id: 117
+  374:
+    name: Unisoc Tiger T310
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 76
