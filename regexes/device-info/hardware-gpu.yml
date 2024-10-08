@@ -368,3 +368,15 @@ gpu:
   123:
     name: ARM Mali-G610 MC6
     clock_rate: 0
+  124:
+    name: ARM Mali-G720 MP12
+    clock_rate: 0
+  125:
+    name: ARM Mali-G715 MP11
+    clock_rate: 0
+  126:
+    name: Qualcomm Adreno 740
+    clock_rate: 0
+  127:
+    name: Qualcomm Adreno 750
+    clock_rate: 0

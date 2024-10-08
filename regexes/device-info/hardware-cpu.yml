@@ -1526,12 +1526,14 @@ cpu:
     type: ARM
     cores: 4
     clock_rate: 1280
+    process: 28nm
     gpu_id: 2
   232:
     name: MediaTek Helio P25
     type: ARM
     cores: 8
     clock_rate: 2600
+    process: 16nm
     gpu_id: 75
   233:
     name: Samsung Exynos 4412 Quad
@@ -2519,3 +2521,38 @@ cpu:
     clock_rate: 3000
     process: 4nm
     gpu_id: 117
+  374:
+    name: Unisoc Tiger T310
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 76
+  375:
+    name: MediaTek Dimensity 9300
+    type: ARM
+    cores: 8
+    clock_rate: 3250
+    process: 4nm
+    gpu_id: 124
+  376:
+    name: MediaTek Dimensity 9200
+    type: ARM
+    cores: 8
+    clock_rate: 3050
+    process: 4nm
+    gpu_id: 125
+  377:
+    name: Qualcomm Snapdragon 8 Gen 2 # SM8550-AB
+    type: ARM
+    cores: 8
+    clock_rate: 3200
+    process: 4nm
+    gpu_id: 126
+  378:
+    name: Qualcomm Snapdragon 8 Gen 3 # SM8650-AB
+    type: ARM
+    cores: 8
+    clock_rate: 3300
+    process: 4nm
+    gpu_id: 127

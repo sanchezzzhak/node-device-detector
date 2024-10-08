@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 07/10/2024_
+_Last update: 08/10/2024_
 
 ## Description
 
@@ -414,7 +414,7 @@ detector.detect (indexes on) x 1,032 ops/sec ±0.61% (94 runs sampled)
 Yes we use tests, total tests ~80.8k
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (1845 devices, alias devices 3912)
+> This parser is experimental and contains few devices. (1862 devices, alias devices 3923)
 >
 ##### Support detail brands/models list:
 
@@ -491,13 +491,14 @@ Yes we use tests, total tests ~80.8k
 | poco | 9 | 15 | - | realme | 67 | 96 |
 | samsung | 170 | 718 | - | sony | 44 | 172 |
 | supra | 1 | 0 | - | tecno mobile | 91 | 131 |
-| tiphone | 1 | 0 | - | utok | 1 | 0 |
-| uz mobile | 1 | 0 | - | vernee | 9 | 2 |
-| vivo | 196 | 286 | - | walton | 13 | 0 |
-| we | 8 | 0 | - | weimei | 1 | 0 |
-| wiko | 7 | 12 | - | wileyfox | 9 | 0 |
-| wink | 4 | 0 | - | xiaomi | 9 | 8 |
-| zync | 2 | 0 | - | zyq | 1 | 13 |
+| tiphone | 1 | 0 | - | ulefone | 8 | 0 |
+| utok | 1 | 0 | - | uz mobile | 1 | 0 |
+| vernee | 9 | 2 | - | vivo | 205 | 297 |
+| walton | 13 | 0 | - | we | 8 | 0 |
+| weimei | 1 | 0 | - | wiko | 7 | 12 |
+| wileyfox | 9 | 0 | - | wink | 4 | 0 |
+| xiaomi | 9 | 8 | - | zync | 2 | 0 |
+| zyq | 1 | 13 | - |  |  |  |
 
 </details>
 
