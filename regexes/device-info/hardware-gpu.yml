@@ -368,3 +368,6 @@ gpu:
   123:
     name: ARM Mali-G610 MC6
     clock_rate: 0
+  124:
+    name: ARM Mali-G720 MP12
+    clock_rate: 0

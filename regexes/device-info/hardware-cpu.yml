@@ -2528,3 +2528,10 @@ cpu:
     clock_rate: 2000
     process: 12nm
     gpu_id: 76
+  375:
+    name: MediaTek Dimensity 9300
+    type: ARM
+    cores: 8
+    clock_rate: 3250
+    process: 4nm
+    gpu_id: 124
