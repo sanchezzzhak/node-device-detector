@@ -72,6 +72,7 @@ module.exports = {
   'KTV': 'KreaTV',
   'KBT': 'Kubuntu',
   'LIN': 'GNU/Linux',
+  'LEA': 'LeafOS',
   'LND': 'LindowsOS',
   'LNS': 'Linspire',
   'LEN': 'Lineage OS',
