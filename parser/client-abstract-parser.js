@@ -45,11 +45,12 @@ class ClientAbstractParser extends ParserAbstract {
         return result;
       }
     }
+
     return null;
   }
   
   parseUserAgentByPositions(userAgent) {
-    let positions = IndexerClient.findClientRegexPositionsForUserAgent(
+    const positions = IndexerClient.findClientRegexPositionsForUserAgent(
       userAgent,
       String(this.type),
     );

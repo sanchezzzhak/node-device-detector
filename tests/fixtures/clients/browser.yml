@@ -6066,7 +6066,7 @@
     name: CCleaner
     version: 99.0.15185.77
     engine: Blink
-    engine_version: 99.0.4844.74
+    engine_version: 99.0.15185.77
     family: Chrome
   headers:
     Sec-CH-UA: '" Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.15185.77", "CCleaner Browser";v="99.0.15185.77"'
@@ -7138,9 +7138,9 @@
   client:
     type: browser
     name: Brave
-    version: "106.0.0.0"
+    version: 106.0.0.0
     engine: Blink
-    engine_version: "106.0.0.0"
+    engine_version: 106.0.0.0
     family: Chrome
   headers:
     Sec-CH-UA: '"Chromium";v="106", "Brave";v="106", "Not;A=Brand";v="99"'
@@ -7149,9 +7149,9 @@
   client:
     type: browser
     name: Brave
-    version: "106.0.0.0"
+    version: 106.0.0.0
     engine: Blink
-    engine_version: "106.0.0.0"
+    engine_version: 106.0.0.0
     family: Chrome
   headers:
     Sec-CH-UA: '"Chromium";v="106", "Brave Browser";v="106", "Not;A=Brand";v="99"'
@@ -7521,7 +7521,7 @@
     name: Avira Secure Browser
     version: 116.0.22144.111
     engine: Blink
-    engine_version: 116.0.0.0
+    engine_version: 116.0.22144.111
     family: Chrome
   headers:
     Sec-CH-UA: '"Chromium";v="116.0.22144.111", "Not)A;Brand";v="24.0.0.0", "Avira Secure Browser";v="116.0.22144.111"'
@@ -7555,7 +7555,7 @@
     name: Norton Private Browser
     version: 115.0.21984.175
     engine: Blink
-    engine_version: 115.0.0.0
+    engine_version: 115.0.21984.175
     family: Chrome
   headers:
     Sec-CH-UA: '"Not/A)Brand";v="99.0.0.0", "Norton Secure Browser";v="115.0.21984.175", "Chromium";v="115.0.21984.175"'
@@ -7566,7 +7566,7 @@
     name: Norton Private Browser
     version: 121.0.23861.160
     engine: Blink
-    engine_version: 121.0.0.0
+    engine_version: 121.0.23861.160
     family: Chrome
   headers:
     Sec-CH-UA: '"Not A(Brand";v="99.0.0.0", "Norton Private Browser";v="121.0.23861.160", "Chromium";v="121.0.23861.160"'
@@ -7577,7 +7577,7 @@
     name: ALVA
     version: 113.0.0.0
     engine: Blink
-    engine_version: 113.0.0.0
+    engine_version: 113.0.5643.0
     family: Chrome
   headers:
     Sec-CH-UA: '"Chromium";v="113.0.5643.0", "Not-A.Brand";v="24.0.0.0"'
@@ -7588,7 +7588,7 @@
     name: Yandex Browser
     version: 23.3.1.895
     engine: Blink
-    engine_version: 110.0.0.0
+    engine_version: 110.0.5481.208
     family: ""
   headers:
     Sec-CH-UA: '"Chromium";v="110.0.5481.208", "Not A(Brand";v="24.0.0.0", "YaBrowser";v="23.3.1.895"'
@@ -7838,7 +7838,7 @@
     name: Chromium
     version: 34.0.1847.114
     engine: Blink
-    engine_version: ""
+    engine_version: 34.0.1847.114
     family: Chrome
 -
   user_agent: Mozilla/5.0 (Windows NT 10.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36 Dragon/103.0.2674.92
@@ -7854,9 +7854,9 @@
   client:
     type: browser
     name: Crow Browser
-    version: "94.0.4606.128"
+    version: 94.0.4606.128
     engine: Blink
-    engine_version: "94.0.4606.128"
+    engine_version: 94.0.4606.128
     family: Chrome
   headers:
     Sec-CH-UA: '"Not.A/Brand";v="8", "Chromium";v="94", "CrowBrowser";v="94"'
@@ -7865,9 +7865,9 @@
   client:
     type: browser
     name: Vewd Browser
-    version: "4.24.3.23"
+    version: 4.24.3.23
     engine: Blink
-    engine_version: "120.0.6099.56"
+    engine_version: 120.0.6099.56
     family: Chrome
   headers:
     Sec-CH-UA: '"Not_A Brand";v="8", "Chromium";v="120", "Vewd Core";v="4.24"'
@@ -7930,7 +7930,7 @@
   user_agent: ArcMobile2/1 CFNetwork/1494.0.5 Darwin/23.4.0
   client:
     type: browser
-    name: Arc
+    name: Arc Search
     version: ""
     engine: WebKit
     engine_version: ""
@@ -8406,7 +8406,7 @@
     name: Chrome Webview
     version: 116.0.5845.164
     engine: Blink
-    engine_version: 116.0.0.0
+    engine_version: 116.0.5845.164
     family: Chrome
   headers:
     Sec-CH-UA: '"Chromium";v="116.0.5845.164", "Not)A;Brand";v="24.0.0.0", "Android WebView";v="116.0.5845.164"'
@@ -8858,9 +8858,9 @@
     type: browser
     name: Pluma
     version: 119.0.0.0
-    engine: ""
-    engine_version: ""
-    family: ""
+    engine: Blink
+    engine_version: 119.0.0.0
+    family: Chrome
   headers:
     Sec-CH-UA: '"Pluma";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"'
     Sec-CH-UA-Full-Version: 119.0.0.0
@@ -9435,7 +9435,7 @@
   user_agent: ArcMobile2/1.3.1; iPhone; iOS 16.1.1; Scale/2.00
   client:
     type: browser
-    name: Arc
+    name: Arc Search
     version: 1.3.1
     engine: WebKit
     engine_version: ""
@@ -9663,7 +9663,7 @@
     name: Total Browser
     version: 116.0.5845.10014
     engine: Blink
-    engine_version: 116.0.0.0
+    engine_version: 116.0.5845.10014
     family: Chrome
   headers:
     Sec-CH-UA: '"Not)A;Brand";v="24.0.0.0", "Total Browser";v="116.0.5845.10014"'
@@ -9686,7 +9686,7 @@
     name: Spark
     version: 107.0.5304.122
     engine: Blink
-    engine_version: 107.0.0.0
+    engine_version: 107.0.5304.122
     family: Chrome
   headers:
     Sec-CH-UA: '"Spark";v="107.0.5304.122", "Not=A?Brand";v="24.0.0.0"'
@@ -9754,7 +9754,7 @@
     name: Presearch
     version: ""
     engine: Blink
-    engine_version: 123.0.0.0
+    engine_version: 123.0.6312.121
     family: Chrome
   headers:
     Sec-CH-UA: '"Chromium";v="123.0.6312.121", "Not:A-Brand";v="8.0.0.0"'
@@ -10312,3 +10312,52 @@
     family: Chrome
   headers:
     http-x-requested-with: com.cloaktp.browser
+-
+  user_agent: Mozilla/5.0 (X11;Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.4280.88 Safari/537.36 Model/NT6904K (SKW690;WHALEOSSKWNT6904KTVP1;WHALEOS-SKW-NT6904KTV-1000051.000;;_TV_NT6904K_HHbrowser_2k22;) LaTivu_1.0.1_2022 CE-HTML/1.0 NETTV_4.6.0.1 SignOn/2.0 SmartTvA/5.0.0 WhaleTV/3.0 WhaleBrowser/1.1.933.1 en
+  client:
+    type: browser
+    name: Whale TV Browser
+    version: 1.1.933.1
+    engine: Blink
+    engine_version: 107.0.4280.88
+    family: Chrome
+-
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Skye/6.4.1 Chrome/96.0.4664.110 Electron/16.0.7 Safari/537.36
+  client:
+    type: browser
+    name: Skye
+    version: 6.4.1
+    engine: Blink
+    engine_version: 96.0.4664.110
+    family: Chrome
+-
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Singlebox/38.2.0 Chrome/116.0.5845.190 Electron/26.2.2 Safari/537.36
+  client:
+    type: browser
+    name: Singlebox
+    version: 38.2.0
+    engine: Blink
+    engine_version: 116.0.5845.190
+    family: Chrome
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.60 Mobile Safari/537.36
+  client:
+    type: browser
+    name: Arc Search
+    version: ""
+    engine: Blink
+    engine_version: 130.0.6723.60
+    family: Chrome
+  headers:
+    http-x-requested-with: company.thebrowser.arc
+-
+  user_agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36
+  client:
+    type: browser
+    name: Chrome Webview
+    version: ""
+    engine: Blink
+    engine_version: 123.0.0.0
+    family: Chrome
+  headers:
+    http-x-requested-with: com.android.webview

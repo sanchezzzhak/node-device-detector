@@ -42,7 +42,6 @@ const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
 const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
 const FORM_FACTORS_MAPPING = require('./parser/const/form-factor-mapping');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
-const { hasUserAgentClientHintsFragment, hasDeviceModelByClientHints } = require('./parser/helper');
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
@@ -697,45 +696,12 @@ class DeviceDetector {
   }
 
   /**
-   * restore original userAgent from clientHints object
-   * @param {string} userAgent
-   * @param {ResultClientHints} clientHints
-   */
-  restoreUserAgentFromClientHints(
-    userAgent,
-    clientHints
-  ) {
-    if (!helper.hasDeviceModelByClientHints(clientHints)) {
-      return userAgent;
-    }
-
-    const deviceModel = clientHints.device.model;
-
-    if (deviceModel !== '' && helper.hasUserAgentClientHintsFragment(userAgent)) {
-      const osHints = attr(clientHints, 'os', {});
-      const osVersion = attr(osHints, 'version', '');
-      return userAgent.replace(/(Android (?:10[.\d]*; K|1[1-5]))/,
-        `Android ${osVersion !== '' ? osVersion : '10'}; ${deviceModel}`
-      );
-    }
-
-    if (deviceModel !== '' && helper.hasDesktopFragment(userAgent)) {
-      return userAgent.replace(/(X11; Linux x86_64)/,
-        `X11; Linux x86_64; ${deviceModel}`
-      );
-    }
-
-    return userAgent;
-  }
-
-  /**
    * parse device
    * @param {string} userAgent
    * @param {ResultClientHints} clientHints
    * @return {ResultDevice}
    */
   parseDevice(userAgent, clientHints) {
-    let ua = this.restoreUserAgentFromClientHints(userAgent, clientHints);
     let brandIndexes = [];
 
     let result = {
@@ -748,6 +714,7 @@ class DeviceDetector {
       trusted: null
     };
 
+    let ua = helper.restoreUserAgentFromClientHints(userAgent, clientHints);
     // skip all parse is client-hints useragent and model not exist
     if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(userAgent)) {
       return Object.assign({}, result);
@@ -805,8 +772,7 @@ class DeviceDetector {
    * @return {ResultVendor|null}
    */
   parseVendor(userAgent) {
-    let parser = this.getParseVendor(VENDOR_FRAGMENT_PARSER);
-    return parser.parse(userAgent);
+    return this.getParseVendor(VENDOR_FRAGMENT_PARSER).parse(userAgent);
   }
 
   /**
@@ -823,8 +789,7 @@ class DeviceDetector {
     }
 
     for (let name in this.botParserList) {
-      let parser = this.botParserList[name];
-      let resultMerge = parser.parse(userAgent);
+      let resultMerge = this.botParserList[name].parse(userAgent);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -842,19 +807,19 @@ class DeviceDetector {
   parseClient(userAgent, clientHints) {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
     for (let name in this.clientParserList) {
-      let parser = this.clientParserList[name];
+      const parser = this.clientParserList[name];
 
-      if (this.clientIndexes && extendParsers.includes(name)) {
-        let hash = parser.parseFromHashHintsApp(clientHints);
-        let hint = parser.parseFromClientHints(clientHints);
-        let data = parser.parseUserAgentByPositions(userAgent);
-        let result = parser.prepareParseResult(userAgent, data, hint, hash);
-        if (result !== null && result.name) {
+      if (this.clientIndexes && extendParsers.includes(name) && userAgent) {
+        const hash = parser.parseFromHashHintsApp(clientHints);
+        const hint = parser.parseFromClientHints(clientHints);
+        const data = parser.parseUserAgentByPositions(userAgent);
+        const result = parser.prepareParseResult(userAgent, data, hint, hash);
+        if (result && result.name) {
           return Object.assign({}, result);
         }
       }
 
-      let result = parser.parse(userAgent, clientHints);
+      const result = parser.parse(userAgent, clientHints);
       if (result && result.name) {
         return Object.assign({}, result);
       }
@@ -896,7 +861,6 @@ class DeviceDetector {
     );
 
     deviceData = Object.assign(deviceData, deviceDataType);
-
 
     if (this.deviceTrusted) {
       deviceData.trusted = DeviceTrusted.check(osData, clientData, deviceData, clientHints);

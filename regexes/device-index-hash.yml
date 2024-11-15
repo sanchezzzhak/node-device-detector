@@ -1061,6 +1061,8 @@ dra-l01:
   - HU
 iphone12,3:
   - AP
+xq-cc54:
+  - SO
 shtrih-smartpos-f2:
   - RS
 wisenet5:
@@ -1705,6 +1707,20 @@ fcp-an10:
 biloba:
   - XI
 m1901f7g:
+  - XI
+m2003j6b1i:
+  - XI
+tecno_lh7n:
+  - TB
+infinix x6716b:
+  - IF
+infinix x6838:
+  - IF
+24115ra8ec:
+  - XI
+24090ra29c:
+  - XI
+2406ern9cc:
   - XI
 gi-626:
   - A5
@@ -29282,8 +29298,6 @@ tecno be8:
   - TB
 asus_ai2201_a:
   - AU
-xq-cc54:
-  - SO
 cph2415:
   - 'ON'
   - OP
@@ -39280,6 +39294,180 @@ a6020l37:
   - LE
 a6020a46:
   - LE
+ehlel c7 pro:
+  - EHL
+armor 27t pro:
+  - UL
+armor 27 pro:
+  - UL
+armor 25t:
+  - UL
+aqm-tl10:
+  - HU
+art-tl00:
+  - HU
+xt2131-3:
+  - MR
+cp23nv3:
+  - CO
+cph2669:
+  - OP
+xt1710-10:
+  - MR
+blackview a55:
+  - B2
+mar-l21mea:
+  - HU
+sm-m156b:
+  - SA
+sm-m215f:
+  - SA
+sm-a426b:
+  - SA
+doogee v10:
+  - DO
+  - WCP
+tecno kl4:
+  - TB
+w-k630-tru:
+  - WI
+ana-n29:
+  - HU
+iqoo neo 5:
+  - VV
+  - SPX
+p60_ultra_5g:
+  - UM2
+2406apnfag:
+  - XI
+2312bpc51x:
+  - 0P
+24066pc95i:
+  - 0P
+rmx5000:
+  - RE
+nx725j:
+  - '57'
+a50uns:
+  - NB
+aligator_s6550:
+  - 4A
+chp2365:
+  - OP
+nep n11:
+  - RE3
+nep n9:
+  - RE3
+rmx3920:
+  - RE
+v2426:
+  - VV
+v2418:
+  - VV
+v2404:
+  - VV
+v2403:
+  - VV
+v2347:
+  - VV
+v2356:
+  - VV
+hbn-al00:
+  - HU
+hammer_energy_x:
+  - HAM
+syco rs-442:
+  - SYC
+sts602:
+  - Y7
+villaon v501w:
+  - VI1
+infinix x6882:
+  - IF
+infinix x6861:
+  - IF
+infinix x6532:
+  - IF
+infinix x6531:
+  - IF
+infinix x6531b:
+  - IF
+infinix_x6517:
+  - IF
+infinix x6525d:
+  - IF
+infinix x6860:
+  - IF
+infinix x6720b:
+  - IF
+xt2343-6:
+  - MR
+xt2343-2:
+  - MR
+xt2333-1:
+  - MR
+x21i a:
+  - VV
+x21a:
+  - VV
+xt1970-2:
+  - MR
+gzpfo:
+  - GO
+gwvk6:
+  - GO
+gur25:
+  - GO
+gr83y:
+  - GO
+gkv4x:
+  - GO
+ggh2x:
+  - GO
+gec77:
+  - GO
+gc15s:
+  - GO
+g8hhn:
+  - GO
+g576d:
+  - GO
+ga04851-us:
+  - GO
+g2ybb:
+  - GO
+g1b60:
+  - GO
+e6523:
+  - MI
+sea-tl00:
+  - HU
+bharat 5 plus:
+  - MI
+v2417a:
+  - VV
+v2410a:
+  - VV
+v2357a:
+  - VV
+v2353da:
+  - VV
+flc-an00:
+  - HU
+redmi 14c:
+  - XI
+2405cpx3dc:
+  - XI
+xiaomi 14t pro:
+  - XI
+xiaomi 12:
+  - XI
+2409brn2cy:
+  - XI
+2409brn2ca:
+  - XI
+24049rn28l:
+  - XI
 gs55-6:
   - GS
 gs57-6:
@@ -40282,8 +40470,6 @@ z6250cc:
   - ZT
 z6750m:
   - ZT
-a50uns:
-  - NB
 a60uns:
   - NB
 agm_h3:
@@ -48652,6 +48838,58 @@ quartzpro:
   - 8U
 magicdrawingpad:
   - XPP
+slate 10 hd:
+  - HP
+slate 21 pro:
+  - HP
+ns220r:
+  - HJ
+ns220:
+  - HJ
+lifetabplus:
+  - FPS
+lifetab e1091x:
+  - MD
+bach-w09:
+  - HU
+tb360zu:
+  - LE
+tb301xu:
+  - LE
+tab1000:
+  - HEM
+24075rp89g:
+  - XI
+24074rpd2g:
+  - XI
+ex7x4:
+  - EF
+rod2-w09:
+  - HU
+leopad_10:
+  - ADR
+leopad 10x:
+  - ADR
+leopad_10s:
+  - ADR
+npadq:
+  - NON
+su15 pro:
+  - 8L1
+t20mini pro:
+  - DO
+infinix x1101b:
+  - IF
+i9_plus_row:
+  - Y5
+ipa2475:
+  - VV
+24076rp19g:
+  - XI
+24074rpd2i:
+  - XI
+azimut_4:
+  - MC
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -60881,6 +61119,22 @@ sw-led32sb304:
   - 8A
 korax-eurobox:
   - KRX
+sm-qled55t21su:
+  - X2
+  - SA
+sm-led32m12s:
+  - X2
+  - SA
+onvo_50ov6000u:
+  - ONV
+onvo_43ov6000f:
+  - ONV
+gi-98quick:
+  - '99'
+amaze ax-50 advance:
+  - DAN
+senna_32sn6000h:
+  - SEN
 bb2 pro:
   - 0M
 kii pro:

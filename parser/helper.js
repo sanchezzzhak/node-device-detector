@@ -2,6 +2,42 @@ const YAML = require('js-yaml');
 const fs = require('fs');
 
 /**
+ * restore original userAgent from clientHints object
+ * @param {string} userAgent
+ * @param {ResultClientHints} clientHints
+ */
+function restoreUserAgentFromClientHints(userAgent, clientHints) {
+  if (!hasDeviceModelByClientHints(clientHints)) {
+    return userAgent;
+  }
+
+  const deviceModel = clientHints.device.model;
+  if (deviceModel === '') {
+    return userAgent;
+  }
+
+  let newUserAgent = '' + userAgent;
+  if (hasUserAgentClientHintsFragment(newUserAgent)) {
+    const osHints = attr(clientHints, 'os', {});
+    const osVersion = attr(osHints, 'version', '');
+    newUserAgent = newUserAgent.replace(/(Android (?:10[.\d]*; K|1[1-5]))/,
+      `Android ${osVersion !== '' ? osVersion : '10'}; ${deviceModel}`
+    );
+  }
+
+  if (!hasDesktopFragment(newUserAgent)) {
+    return newUserAgent;
+  }
+
+  newUserAgent = newUserAgent.replace(/(X11; Linux x86_64)/,
+    `X11; Linux x86_64; ${deviceModel}`
+  );
+
+  return newUserAgent;
+}
+
+
+/**
  * match for base regex rule
  * @param str
  * @param userAgent
@@ -253,6 +289,14 @@ function hasDeviceModelByClientHints(clientHints) {
 }
 
 /**
+ * @param {string} name
+ * @return {boolean}
+ */
+function hasDeviceModelWrong (name) {
+  return !!(name === '' || ['LeafOS on ARM64'].includes(name));
+}
+
+/**
  * Get value by attribute for object or default value
  * @param {object} options
  * @param {string }propName
@@ -373,10 +417,6 @@ function splitUserAgent(userAgent) {
   }
   let hash = createHash(parts.join('.')).replace('-', '');
   let path = parts.join('.');
-
-  // console.log({tokens, groups, hash, path});
-
-
   return {tokens, groups, hash, path};
 }
 
@@ -408,5 +448,7 @@ module.exports = {
   matchReplace,
   hasPuffinDesktopFragment,
   hasPuffinSmartphoneFragment,
-  hasPuffinTabletFragment
+  hasPuffinTabletFragment,
+  hasDeviceModelWrong,
+  restoreUserAgentFromClientHints
 };
