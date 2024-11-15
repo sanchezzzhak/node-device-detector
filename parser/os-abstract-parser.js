@@ -21,7 +21,7 @@ const LINEAGE_OS_VERSION_MAPPING = require('./os/lineage-os-version-map');
 
 
 const getVersionForMapping = (version, map) => {
-  const majorVersion = ~~version.split('.', 1)[0];
+  const majorVersion =  '' + version.split('.', 1)[0];
   if (map[version]) {
     return map[version];
   }
@@ -32,9 +32,10 @@ const getVersionForMapping = (version, map) => {
 }
 
 const compareOsForClientHints = (brand) => {
+  const lowerName = brand.toLowerCase();
   for (let mapName in CLIENTHINT_MAPPING) {
     for (let mapBrand of CLIENTHINT_MAPPING[mapName]) {
-      if (brand.toLowerCase() === mapBrand.toLowerCase()) {
+      if (lowerName === mapBrand.toLowerCase()) {
         return mapName;
       }
     }
@@ -106,8 +107,8 @@ class OsAbstractParser extends ParserAbstract {
     return { name, short };
   }
 
-  parseFromClientHints(clientHintsData) {
-    if (!clientHintsData) {
+  parseFromClientHints(hint) {
+    if (!hint) {
       return null;
     }
 
@@ -115,12 +116,14 @@ class OsAbstractParser extends ParserAbstract {
     let short = '';
     let version = '';
     let platform = '';
+    let hintName = '';
 
-    if (clientHintsData.os) {
-      platform = clientHintsData.os.platform;
-      version = clientHintsData.os.version;
-      let hintName = clientHintsData.os.name;
-      platform = comparePlatform(platform.toLowerCase(), clientHintsData.os.bitness);
+    if (hint.os && hint.os.name) {
+      platform = hint.os.platform;
+      version = hint.os.version;
+      hintName = hint.os.name;
+
+      platform = comparePlatform(platform.toLowerCase(), hint.os.bitness);
       hintName = compareOsForClientHints(hintName);
 
       for (let osShort in OS_SYSTEMS) {
@@ -133,18 +136,22 @@ class OsAbstractParser extends ParserAbstract {
       }
     }
 
-    if (name === 'Windows' && version !== '') {
+    if ('Windows' === name &&  '' !== version) {
       let majorVersion = ~~version.split('.', 1)[0];
+      let minorVersion = ~~version.split('.', 2)[1];
       if (majorVersion === 0) {
-        version = '';
-      }
-      if (majorVersion > 0 && majorVersion < 11) {
+        let minorVersionMapping = {1: '7', 2 :'8', 3 :'8.1'};
+        version = minorVersionMapping[minorVersion] ?? version;
+      } else if (majorVersion > 0 && majorVersion < 11) {
         version = '10';
       } else if (majorVersion > 10) {
         version = '11';
       }
     }
-
+    // On Windows, version 0.0.0 can be either 7, 8 or 8.1, so we return 0.0.0
+    if ('Windows' !== name && '0.0.0' !== version && 0 === parseInt(version)) {
+      version = '';
+    }
     return {
       name: name,
       short_name: short,
@@ -198,15 +205,18 @@ class OsAbstractParser extends ParserAbstract {
   /**
    *
    * @param {string} userAgent
-   * @param clientHints
+   * @param {ClientHintsResult} clientHints
    * @returns {null|{name: (string|*), short_name: string, family: string, version: string, platform: string}}
    */
   parse(userAgent, clientHints) {
-    userAgent = this.prepareUserAgent(userAgent);
+    let ua = helper.restoreUserAgentFromClientHints(this.prepareUserAgent(userAgent), clientHints);
     let hint = this.parseFromClientHints(clientHints);
-    let data = this.parseFromUserAgent(userAgent);
-
-    let name = '', version = '', platform = '', short = '', family = '';
+    let data = this.parseFromUserAgent(ua);
+    let name = '';
+    let version = '';
+    let platform = '';
+    let short = '';
+    let family = '';
 
     if (hint && hint.name) {
       name = hint.name;
@@ -215,42 +225,59 @@ class OsAbstractParser extends ParserAbstract {
       short = hint.short_name;
 
       // use version from user agent if non was provided in client hints, but os family from useragent matches
-      if (version === '' && data && this.parseOsFamily(short) === data.family) {
+      if (data && '' === version && data && this.parseOsFamily(short) === data.family) {
         version = data.version;
       }
 
-      //If the OS name detected from client hints matches the OS family from user agent
+      // On Windows, version 0.0.0 can be either 7, 8 or 8.1
+      if (data && 'Windows' === name && '0.0.0' === version) {
+        version = '10' === data.version ? '' : data.version;
+      }
+
+      // If the OS name detected from client hints matches the OS family from user agent
       // but the os name is another, we use the one from user agent, as it might be more detailed
       if (data && data.family === name && data.name !== name) {
         name = data.name;
+        if ('LeafOS' === name) {
+          version = '';
+          short = 'LEA';
+        }
+
+        if ('HarmonyOS' === name) {
+          version = '';
+          short = 'HAR';
+        }
+
+        if ('PICO OS' === name) {
+          version = data.version;
+          short = 'PIC';
+        }
+
+        if ('Fire OS' === name && '' !== hint.version) {
+          version = getVersionForMapping(hint.version, FIRE_OS_VERSION_MAPPING);
+          short = 'FIR';
+        }
       }
 
-      if ('HarmonyOS' === name) {
-        version = '';
-        short = 'HAR';
-      }
-
-      if ('PICO OS' === name) {
-        version = data.version;
-        short = 'PIC';
-      }
-
-      if (data && data.name === 'Fire OS') {
-        short = data.short_name;
-        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
-      }
-
-      if ('GNU/Linux' === name
-        && data
-        && 'Chrome OS' === data.name
-        && version === data.version
+      // Chrome OS is in some cases reported as Linux in client hints, we fix this only if the version matches
+      if (
+        data &&
+        'GNU/Linux' === name &&
+        'Chrome OS' === data.name &&
+        hint.version === data.version
       ) {
         name = data.name;
         short = data.short_name;
       }
 
-      family = this.parseOsFamily(short);
-    } else if (data && data.name) {
+      // Chrome OS is in some cases reported as Android in client hints
+      if (data && 'Android' === name && 'Chrome OS' === data.name) {
+        name = data.name;
+        version = '';
+        short = data.short_name;
+      }
+
+    } else if (data) {
       name = data.name;
       version = data.version;
       short = data.short_name;
@@ -259,23 +286,20 @@ class OsAbstractParser extends ParserAbstract {
     }
 
     if (clientHints && data && clientHints.app) {
-      if (ANDROID_APP_LIST.indexOf(clientHints.app) !== -1 && data.name !== 'Android') {
+      if (ANDROID_APP_LIST.indexOf(clientHints.app) !== -1 && 'Android' !== data.name) {
         name = 'Android';
         short = 'ADR';
-        family = 'Android';
         version = '';
       }
-      if (clientHints.app === 'org.mozilla.tv.firefox' && name !== 'Fire OS') {
-        name = 'Fire OS';
-        family = 'Android';
-        short = 'FIR';
-        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
-      }
-      if (clientHints.app === 'org.lineageos.jelly' && name !== 'Lineage OS') {
+      if ('org.lineageos.jelly' === clientHints.app && 'Lineage OS' !== name) {
         name = 'Lineage OS';
-        family = 'Android';
         short = 'LEN';
         version = getVersionForMapping(data.version, LINEAGE_OS_VERSION_MAPPING);
+      }
+      if ('org.mozilla.tv.firefox' === clientHints.app && 'Fire OS' !== name) {
+        name = 'Fire OS';
+        short = 'FIR';
+        version = getVersionForMapping(version, FIRE_OS_VERSION_MAPPING);
       }
     }
 
@@ -285,6 +309,11 @@ class OsAbstractParser extends ParserAbstract {
 
     if (name === '') {
       return data;
+    }
+
+    family = this.parseOsFamily(short);
+    if (data === null || data.short_name !== short) {
+      short = this.getOsDataByName(name).short;
     }
 
     return {
@@ -317,7 +346,7 @@ class OsAbstractParser extends ParserAbstract {
     if (this.getBaseRegExp('sparc64').test(userAgent)) {
       return 'SPARC64';
     }
-    if (this.getBaseRegExp('64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|amd64|x86_?64').test(userAgent)) {
+    if (this.getBaseRegExp('64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|x86_?64').test(userAgent)) {
       return 'x64';
     }
     if (this.getBaseRegExp('.+32bit|.+win32|(?:i[0-9]|x)86|i86pc').test(userAgent)) {

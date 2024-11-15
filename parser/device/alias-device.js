@@ -32,19 +32,25 @@ const normalizationUserAgent = (userAgent) => {
 const REPLACE_BRAND_REGEXP = createReplaceBrandRegexp();
 
 class AliasDevice extends AbstractParser {
+  #replaceBrand = true;
   constructor() {
     super();
     this.fixtureFile = 'device/alias-device.yml';
-    this.__replaceBrand = true;
     this.loadCollection();
   }
 
+  /**
+   * @return {boolean}
+   */
   hasReplaceBrand() {
-    return Boolean(this.__replaceBrand);
+    return Boolean(this.#replaceBrand);
   }
 
+  /**
+   * @param {boolean} replace
+   */
   setReplaceBrand(replace) {
-    this.__replaceBrand = replace;
+    this.#replaceBrand = replace;
   }
 
   getBaseRegExp(str) {
@@ -61,11 +67,11 @@ class AliasDevice extends AbstractParser {
   parse(userAgent) {
     userAgent = this.prepareUserAgent(userAgent);
     userAgent = normalizationUserAgent(userAgent);
-    let result = {
+    const result = {
       name: '',
     };
+    const isDecodeUA = /%[2-4][0-6A-F]/i.test(userAgent);
     let decodeUserAgent = '';
-    let isDecodeUA = /%[2-4][0-6A-F]/i.test(userAgent);
     try {
       decodeUserAgent = isDecodeUA ? decodeURIComponent(userAgent) : userAgent;
     } catch (err) {}
@@ -81,7 +87,9 @@ class AliasDevice extends AbstractParser {
         break;
       }
     }
+
     result.name = result.name.trim();
+
     return result;
   }
 

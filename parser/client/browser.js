@@ -58,11 +58,11 @@ class Browser extends ClientAbstractParser {
   /**
    * Generates the result for the parse method
    *
-   * @param userAgent
-   * @param data
-   * @param hint
-   * @param hash
-   * @returns {null|{engine: string, name: string, short_name: string, type: string, engine_version: string, family: string, version: string}}
+   * @param {string} userAgent
+   * @param {{}} data
+   * @param {{}} hint
+   * @param {{}} hash
+   * @returns {null|ResultClient}
    */
   prepareParseResult(
     userAgent,
@@ -78,24 +78,23 @@ class Browser extends ClientAbstractParser {
     let engineVersion = '';
     let short = '';
     let family = '';
-    // client-hint+user-agent
+
+    // use client hints in favor of user agent data if possible
     if (hint && hint.name && hint.version) {
       name = hint.name;
       version = hint.version;
       short = hint.short_name;
       family = this.buildFamily(short);
 
-      if (data) {
-        // If the version reported from the client hints is YYYY or YYYY.MM (e.g., 2022 or 2022.04),
-        // then it is the Iridium browser
-        // https://iridiumbrowser.de/news/
-        if (/^202[0-4]/.test(version)) {
-          name = 'Iridium';
-          short = 'I1';
-          engine = data.engine;
-          engineVersion = data.engine_version;
-        }
+      // If the version reported from the client hints is YYYY or YYYY.MM (e.g., 2022 or 2022.04),
+      // then it is the Iridium browser
+      // https://iridiumbrowser.de/news/
+      if (/^202[0-4]/.test(version)) {
+        name = 'Iridium';
+        short = 'I1';
+      }
 
+      if (data) {
         // https://bbs.360.cn/thread-16096544-1-1.html
         if (/^15/.test(version) && /^114/.test(data.version)) {
           name          = '360 Secure Browser';
@@ -113,13 +112,10 @@ class Browser extends ClientAbstractParser {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
-        
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
-        if (
-          ('Chromium' === name || 'Chrome Webview' === name) &&
-          data.name !== ''&&
-         ['CR', 'CV', 'AN'].indexOf(data.short_name) === -1
-        ) {
+        const hasChromeBased =  ('Chromium' === name || 'Chrome Webview' === name) && data.name
+          && ['CR', 'CV', 'AN'].indexOf(data.short_name) === -1;
+        if (hasChromeBased) {
           name = data.name;
           short = data.short_name;
           version = data.version;
@@ -144,22 +140,30 @@ class Browser extends ClientAbstractParser {
         if (data.version && data.version.indexOf(version) === 0 && helper.versionCompare(version, data.version) < 0) {
           version = data.version;
         }
-        // If DDG Private browser then set version empty string
-        if ('DuckDuckGo Privacy Browser' === name) {
-          version = '';
-        }
       }
+
+
+      // If DDG Private browser then set version empty string
+      if ('DuckDuckGo Privacy Browser' === name) {
+        version = '';
+      }
+
+      // In case client hints report a more detailed engine version, we try to use this instead
+      if ('Blink' === engine && 'Iridium' !== name && helper.versionCompare(engineVersion, hint.version) < 0) {
+        engineVersion = hint.version;
+      }
+
     } else if (data !== null) {
       name = data.name;
       version = data.version;
       short = data.short_name;
       engine = data.engine;
       engineVersion = data.engine_version;
-
     }
 
     family = this.buildFamily(short);
 
+    // is app id
     if (hash !== null && name !== hash.name) {
       name = hash.name;
       version = '';
@@ -217,22 +221,22 @@ class Browser extends ClientAbstractParser {
    * General method for parsing user-agent and client-hints
    *
    * @param {string} userAgent
-   * @param {*} clientHints
-   * @returns {{engine: string, name: (string|*), short_name: string, type: string, engine_version: string, family: (string|string), version: string}|null}
+   * @param {} clientHints
+   * @returns {ResultClient|null}
    */
   parse(userAgent, clientHints) {
     userAgent = this.prepareUserAgent(userAgent);
     const hash = this.parseFromHashHintsApp(clientHints);
     const hint = this.parseFromClientHints(clientHints);
-    const data = this.parseFromUserAgent(userAgent);
+    const data = this.parseFromUserAgent(userAgent, clientHints);
     return this.prepareParseResult(userAgent, data, hint, hash);
   }
 
   /**
    * Parses client-hints for getting the browser name from the application ID (clientHints.app)
    *
-   * @param {*} clientHints
-   * @return {{name: *}}
+   * @param {ResultClientHints} clientHints
+   * @return {{name: string}}
    */
   parseFromHashHintsApp(clientHints) {
     return browserHints.parse(clientHints);
@@ -241,7 +245,7 @@ class Browser extends ClientAbstractParser {
   /**
    * Parses client-hints for getting browser name, version, short name
    *
-   * @param {*} clientHints
+   * @param {ResultClientHints} clientHints
    * @return {{name: string, short_name: string, version: string}}
    */
   parseFromClientHints(clientHints) {
@@ -250,7 +254,7 @@ class Browser extends ClientAbstractParser {
     let version = '';
 
     if (clientHints && clientHints.client) {
-      let brands = ArrayPath.get(clientHints, 'client.brands', []);
+      const brands = ArrayPath.get(clientHints, 'client.brands', []);
       for (let brandItem of brands) {
         let brand = compareBrandForClientHints(brandItem.brand);
         for (let browserName in this.getCollectionBrowsers()) {
@@ -283,7 +287,7 @@ class Browser extends ClientAbstractParser {
     return {
       name: name,
       short_name: short,
-      version: version
+      version: this.buildVersion(version, [])
     };
   }
 
@@ -465,7 +469,7 @@ class Browser extends ClientAbstractParser {
     let engineToken = '' + engine;
 
     if ('Blink' === engine) {
-      engineToken = 'Chr[o0]me|Cronet';
+      engineToken = 'Chr[o0]me|Chromium|Cronet';
     }
 
     if ('LibWeb' === engine) {
@@ -478,7 +482,7 @@ class Browser extends ClientAbstractParser {
 
     let regexp = new RegExp(
       '(?:' + engineToken + ')' +
-      '\\s*\\/?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
+      '\\s*[/_]?\\s*(((?=\\d+\\.\\d)\\d+[.\\d]*|\\d{1,7}(?=(?:\\D|$))))',
       'i'
     );
 

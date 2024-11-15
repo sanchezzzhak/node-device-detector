@@ -19,8 +19,8 @@ class MobileApp extends ClientAbstractParser {
   }
   
   parseFromClientHints(clientHints) {
-    let name = '';
-    let version = '';
+    const name = '';
+    const version = '';
     return {name, version}
   }
   
@@ -56,9 +56,9 @@ class MobileApp extends ClientAbstractParser {
    * @returns {({name: string, type: string, version: string})|null}
    */
   parse(userAgent, clientHints) {
-    let hash = this.parseFromHashHintsApp(clientHints);
-    let hint = this.parseFromClientHints(clientHints);
-    let data = super.parse(userAgent, clientHints);
+    const hash = this.parseFromHashHintsApp(clientHints);
+    const hint = this.parseFromClientHints(clientHints);
+    const data = super.parse(userAgent, clientHints);
     return this.prepareParseResult(userAgent, data, hint, hash);
   }
 }
