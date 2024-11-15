@@ -202,6 +202,10 @@ class Browser extends ClientAbstractParser {
       }
     }
 
+    if (name === '') {
+      return null;
+    }
+
     return {
       type: String(type),
       name: String(name),
