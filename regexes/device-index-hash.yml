@@ -240,6 +240,8 @@ dilink5.0 for byd auto:
   - BYD
 apollo10 pro:
   - CPD
+dudu7:
+  - DUD
 pixel 3:
   - GO
 m2006c3lg:
@@ -533,6 +535,12 @@ iq&t n8:
   - QN
 hlte239e:
   - HI
+model d:
+  - SUN
+model a:
+  - SUN
+model 6:
+  - SUN
 archos gamepad:
   - AR
 archos gamepad2:
@@ -12218,6 +12226,10 @@ ss5314g:
   - '68'
 ss5424g:
   - '68'
+ms571:
+  - 7M
+ms572:
+  - 7M
 shf33:
   - SH
 shl25:
@@ -39468,6 +39480,38 @@ xiaomi 12:
   - XI
 24049rn28l:
   - XI
+rmx3996:
+  - RE
+sm-m356b:
+  - SA
+sm-s546vl:
+  - SA
+rmx3950:
+  - RE
+z2357n:
+  - '57'
+z2353:
+  - '57'
+innova30:
+  - SM
+innova20:
+  - SM
+sh-c05:
+  - SH
+tecno mobile kg5k:
+  - TB
+azom river 1:
+  - AZO
+aqua s10 pro:
+  - CH
+  - IX
+  - 2N
+sm-a920f:
+  - SA
+tecno cla6:
+  - TB
+tecno cla5:
+  - TB
 gs55-6:
   - GS
 gs57-6:
@@ -48890,6 +48934,14 @@ ipa2475:
   - XI
 azimut_4:
   - MC
+tmrv5gtb:
+  - TM
+ultrapad:
+  - 8U
+kenshi_k10:
+  - KHI
+wo pad max:
+  - WAO
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61135,6 +61187,49 @@ amaze ax-50 advance:
   - DAN
 senna_32sn6000h:
   - SEN
+aftdec012e:
+  - TC
+aft6e0fa:
+  - TS
+  - KN
+aftkade001:
+  - KN
+aftkauk001:
+  - KN
+aftshn01:
+  - KN
+24ovf6000h:
+  - ONV
+32ov6000h:
+  - ONV
+32ov6001h:
+  - ONV
+42ov6000f:
+  - ONV
+43ov6000f:
+  - ONV
+50ov6000u:
+  - ONV
+55ov6000u:
+  - ONV
+65ov6000u:
+  - ONV
+qilive smart tv:
+  - QI
+dctiw362_play:
+  - SAG
+28lh8120t:
+  - 8A
+28lh8110t:
+  - 8A
+vhix-55u169tsy:
+  - 3H
+vhix-50u169tsy:
+  - 3H
+yndx-00076:
+  - YD
+yndx-00074:
+  - YD
 bb2 pro:
   - 0M
 kii pro:
