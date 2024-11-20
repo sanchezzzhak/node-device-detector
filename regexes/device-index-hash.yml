@@ -1730,6 +1730,9 @@ infinix x6838:
   - XI
 2406ern9cc:
   - XI
+sc-55d:
+  - SA
+  - SU
 gi-626:
   - A5
 5039d_ru:
@@ -34359,8 +34362,6 @@ c1_max:
   - XI
 moto g14:
   - MR
-sm-m546b:
-  - SA
 sm-a346m:
   - SA
 sm-a145m:
@@ -39512,6 +39513,94 @@ tecno cla6:
   - TB
 tecno cla5:
   - TB
+sm-m556b:
+  - SA
+sm-a356b:
+  - SA
+xt2015-2:
+  - MR
+mz-meizu 20 inf:
+  - M1
+xt2409-5:
+  - MR
+buzz 5 lite:
+  - AE
+l24 ultra:
+  - LIB
+g15 pro max:
+  - LIB
+g24_mini:
+  - LIB
+g15_mini:
+  - LIB
+armor i1 slim:
+  - KHI
+alt-lx1:
+  - HU
+rmx3951:
+  - RE
+tecno kl6:
+  - TB
+umidigi g9 5g:
+  - UM
+tecno ae11:
+  - TB
+meizu s6:
+  - M1
+v2405a:
+  - VV
+wp52:
+  - OE
+xt2453-2:
+  - MR
+moto g85 5g:
+  - MR
+v2424:
+  - VV
+v2417:
+  - VV
+sc-51d:
+  - SA
+  - SU
+2410fpcc5g:
+  - 0P
+2405cpx3dg:
+  - XI
+tecno bg6s:
+  - TB
+ulefone armor 6e:
+  - UL
+tecno kl7:
+  - TB
+tecno kj8:
+  - TB
+tecno ae10:
+  - TB
+so-51d:
+  - SO
+sn339d:
+  - DQ
+sc-51e:
+  - SA
+  - SU
+rmx5003:
+  - RE
+wave 8:
+  - B2
+xt2271-5:
+  - MR
+moto e14:
+  - MR
+xq-ec44:
+  - SO
+cph2683:
+  - OP
+armor mini 20t pro:
+  - UL
+zte v70:
+  - ZT
+lenovo legion duel:
+  - LE
 gs55-6:
   - GS
 gs57-6:
@@ -48942,6 +49031,30 @@ kenshi_k10:
   - KHI
 wo pad max:
   - WAO
+sm-x926b:
+  - SA
+wo 7:
+  - WAO
+venus pad16:
+  - LIB
+venus pad15:
+  - LIB
+tg 30:
+  - TM1
+tg15:
+  - TM1
+l16 max:
+  - LIB
+ndl-w09:
+  - HU
+tb375fc:
+  - LE
+tab 16 pro:
+  - B2
+hi10_xpro_pad:
+  - 1C
+b22_eea:
+  - BIE
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61230,6 +61343,22 @@ yndx-00076:
   - YD
 yndx-00074:
   - YD
+tanix_tx3_mini:
+  - 9N
+bt_32fs32b:
+  - BLT
+hongtop_box:
+  - HON
+tox4:
+  - UG
+tox3_plus:
+  - UG
+sl-led50s02t2su:
+  - SC1
+32les901t2sm:
+  - '05'
+32les903t2sm:
+  - '05'
 bb2 pro:
   - 0M
 kii pro:
