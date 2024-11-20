@@ -105,7 +105,7 @@ const parserLog = (folderTestPath, folderFixturePath, options) => {
         }
 
         if (check && formatOutput === FORMAT_OUTPUT_STRING_RESTORE) {
-          console.log(detector.restoreUserAgentFromClientHints(useragent, clientHintData));
+          console.log(ParserHelper.restoreUserAgentFromClientHints(useragent, clientHintData));
         }
 
         if (check && formatOutput === FORMAT_OUTPUT_STRING_HEADER) {
