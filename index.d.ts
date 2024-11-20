@@ -34,16 +34,16 @@ export default class DeviceDetector {
   setOsVersionTruncate(value: any): void;
   setClientVersionTruncate(value: any): void;
 
-  set deviceTrusted(arg: boolean);
+  set deviceTrusted(stage: boolean);
   get deviceTrusted(): boolean;
 
-  set deviceInfo(arg: boolean);
+  set deviceInfo(stage: boolean);
   get deviceInfo(): boolean;
 
   /**
-   * @param {boolean} arg - true use indexes, false not use indexes
+   * @param {boolean} stage - true use indexes, false not use indexes
    */
-  set deviceIndexes(arg: boolean);
+  set deviceIndexes(stage: boolean);
 
   /**
    * @return {boolean} - true use indexes, false not use indexes

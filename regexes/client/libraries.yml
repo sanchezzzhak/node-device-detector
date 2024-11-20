@@ -204,10 +204,6 @@
 - regex: 'HTTP_Request2(?:/(\d+[.\d]+))?'
   name: 'HTTP_Request2'
   version: '$1'
-
-- regex: 'HTTP_Request2(?:/(\d+[.\d]+))?'
-  name: 'HTTP_Request2'
-  version: '$1'
   url: 'https://pear.php.net/package/http_request2'
 
 - regex: 'Mechanize(?:/(\d+[.\d]+))?'
@@ -643,3 +639,13 @@
   name: 'ICAP Client'
   version: '$1'
   url: 'https://github.com/Peoplecantfly/icapserver'
+
+- regex: 'Cygwin-Setup(?:/(\d+[.\d]+))?'
+  name: 'Cygwin'
+  version: '$1'
+  url: 'https://www.cygwin.com/'
+
+- regex: 'azsdk-python-storage-blob(?:/(\d+[.\d]+))?'
+  name: 'Azure Blob Storage'
+  version: '$1'
+  url: 'https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python'

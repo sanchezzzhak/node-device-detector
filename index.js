@@ -78,7 +78,7 @@ class DeviceDetector {
   /**
    * @param {DeviceDetectorOptions} options
    **/
-  constructor(options) {
+  constructor(options = {}) {
     this.init();
 
     this.skipBotDetection = attr(options, 'skipBotDetection', false);
@@ -116,8 +116,8 @@ class DeviceDetector {
     this.addParseBot(BOT_PARSER, new BotParser());
   }
 
-  set deviceTrusted(check) {
-    this.#deviceTrusted = check;
+  set deviceTrusted(stage) {
+    this.#deviceTrusted = stage;
   }
 
   get deviceTrusted() {
@@ -166,10 +166,10 @@ class DeviceDetector {
   }
 
   /**
-   * @param {boolean} status - true use indexes, false not use indexes
+   * @param {boolean} stage - true use indexes, false not use indexes
    */
-  set deviceIndexes(status) {
-    this.#deviceIndexes = status;
+  set deviceIndexes(stage) {
+    this.#deviceIndexes = stage;
   }
 
   /**
@@ -626,7 +626,7 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TV;
     }
     /**
-     * All devices that contain Andr0id in string are assumed to be a tv
+     * All devices that contain "Andr0id" in string are assumed to be a tv
      */
     if (helper.hasAndroidTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
@@ -696,6 +696,16 @@ class DeviceDetector {
   }
 
   /**
+   * restore original userAgent from clientHints object
+   * @param {string} userAgent
+   * @param {ResultClientHints} clientHints
+   * @return {string}
+   */
+  restoreUserAgentFromClientHints(userAgent, clientHints) {
+    return helper.restoreUserAgentFromClientHints(userAgent, clientHints)
+  }
+
+  /**
    * parse device
    * @param {string} userAgent
    * @param {ResultClientHints} clientHints
@@ -714,7 +724,7 @@ class DeviceDetector {
       trusted: null
     };
 
-    let ua = helper.restoreUserAgentFromClientHints(userAgent, clientHints);
+    const ua = this.restoreUserAgentFromClientHints(userAgent, clientHints);
     // skip all parse is client-hints useragent and model not exist
     if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(userAgent)) {
       return Object.assign({}, result);

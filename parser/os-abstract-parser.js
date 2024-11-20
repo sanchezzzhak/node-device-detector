@@ -346,7 +346,7 @@ class OsAbstractParser extends ParserAbstract {
     if (this.getBaseRegExp('sparc64').test(userAgent)) {
       return 'SPARC64';
     }
-    if (this.getBaseRegExp('64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|x86_?64').test(userAgent)) {
+    if (this.getBaseRegExp('64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64').test(userAgent)) {
       return 'x64';
     }
     if (this.getBaseRegExp('.+32bit|.+win32|(?:i[0-9]|x)86|i86pc').test(userAgent)) {
