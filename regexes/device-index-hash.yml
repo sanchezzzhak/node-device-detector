@@ -39601,6 +39601,62 @@ zte v70:
   - ZT
 lenovo legion duel:
   - LE
+vtl-202301:
+  - VE
+mipo_m33:
+  - MIP
+n6000 se:
+  - B2
+cuiud a91:
+  - CUI
+aix-an00:
+  - WI
+ds-bd3 pro:
+  - DCO
+e65 pro:
+  - EUD
+blackberry evolve x:
+  - RM
+xt2139-1:
+  - MR
+blackview color 8:
+  - B2
+oukitel wp23pro:
+  - OE
+  - OK
+gqml3:
+  - GO
+marie-l21bx:
+  - HU
+motorola razr 50 ultra:
+  - MR
+motorola moto e22:
+  - MR
+motorola edge 50 ultra:
+  - MR
+motorola edge 50 neo:
+  - MR
+motorola edge 50:
+  - MR
+meizu 21 pro:
+  - M1
+hmd fusion:
+  - HMD
+  - O1
+jelly max:
+  - UZ
+n55 plus:
+  - DO
+n55:
+  - DO
+moto g04s:
+  - MR
+f109:
+  - FOS
+f105:
+  - FOS
+cubot x50:
+  - CB
 gs55-6:
   - GS
 gs57-6:
@@ -49055,6 +49111,14 @@ hi10_xpro_pad:
   - 1C
 b22_eea:
   - BIE
+v10e-lte-464:
+  - VA2
+mes-b3:
+  - MES
+m10_c01_eea:
+  - PRI
+gravity_4:
+  - FS
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61359,6 +61423,8 @@ sl-led50s02t2su:
   - '05'
 32les903t2sm:
   - '05'
+rupa.smarttv.8800.f1010_1.0.0:
+  - RUP
 bb2 pro:
   - 0M
 kii pro:
@@ -62018,3 +62084,9 @@ pico neo 3 os5.9.5.0 like quest:
   - QP
 a8110:
   - QP
+sm-r960:
+  - SA
+sm-r950:
+  - SA
+sm-r920:
+  - SA
