@@ -490,6 +490,7 @@ module.exports = {
   'EHL': 'Ehlel',
   'EU': 'Eurostar',
   '4J': 'Eurocase',
+  'EUD': 'Eudora',
   'E9': 'Evercoss',
   'EV': 'Evertek',
   'EVE': 'Everest',
