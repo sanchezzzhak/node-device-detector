@@ -1378,8 +1378,6 @@ infinix x6716:
   - XI
 galaxy note 20 ultra:
   - SA
-galaxy s21:
-  - SA
 galaxy note 20:
   - SA
 galaxy note 10:
@@ -1554,32 +1552,6 @@ iphone14,3:
   - AP
 iphone14,5:
   - AP
-sm-g5306w:
-  - SA
-sm-n930s:
-  - SA
-sm-n9300:
-  - SA
-sm-n920r7:
-  - SA
-sm-n930t:
-  - SA
-sm-n930v:
-  - SA
-sm-n930p:
-  - SA
-sm-g530r7:
-  - SA
-sm-n920x:
-  - SA
-sm-s920l:
-  - SA
-samsung-sm-g530a:
-  - SA
-xperia z ultra:
-  - SO
-hlte720t:
-  - HI
 scg06:
   - SA
 infinix x6711:
@@ -1733,6 +1705,8 @@ infinix x6838:
 sc-55d:
   - SA
   - SU
+meizu note21:
+  - M1
 gi-626:
   - A5
 5039d_ru:
@@ -1773,6 +1747,8 @@ nexus 6:
   - GO
 nexus 6p:
   - HU
+hlte720t:
+  - HI
 hp slate 6 voice tab:
   - HP
 htc_one_max:
@@ -1897,6 +1873,10 @@ sm-g530m:
   - SA
 sm-g530mu:
   - SA
+sm-g5306w:
+  - SA
+sm-s920l:
+  - SA
 samsung sm-g530h:
   - SA
 sm-g530f:
@@ -1907,9 +1887,13 @@ sm-g530t:
   - SA
 sm-g530w:
   - SA
+sm-g530r7:
+  - SA
 sm-g5309w:
   - SA
 sm-g530p:
+  - SA
+samsung-sm-g530a:
   - SA
 sm-g530r4:
   - SA
@@ -2091,6 +2075,8 @@ sm-n920v:
   - SA
 sm-n920t:
   - SA
+sm-n920x:
+  - SA
 sm-n920f:
   - SA
 samsung sm-n920i:
@@ -2100,6 +2086,8 @@ samsung sm-n920s:
 sm-n920c:
   - SA
 sm-n920k:
+  - SA
+sm-n920r7:
   - SA
 samsung sm-n9200:
   - SA
@@ -2118,6 +2106,16 @@ sm-n920p:
 sm-n9208:
   - SA
 sm-n930f:
+  - SA
+sm-n930s:
+  - SA
+sm-n930t:
+  - SA
+sm-n9300:
+  - SA
+sm-n930v:
+  - SA
+sm-n930p:
   - SA
 scv34:
   - SA
@@ -2192,6 +2190,8 @@ c6833:
 sol24:
   - SO
 c6843:
+  - SO
+xperia z ultra:
   - SO
 zur722m:
   - SS
@@ -2693,8 +2693,6 @@ sm-g781b:
   - SA
 a1601:
   - OP
-iv2201:
-  - 'ON'
 clt-l29:
   - HU
 sm-a102u:
@@ -24168,6 +24166,8 @@ haipainoble s6:
   - XH
 kkg-an70:
   - HU
+iv2201:
+  - 'ON'
 ne2210:
   - 'ON'
 mgi-an00:
@@ -33747,6 +33747,8 @@ redmi 10 power:
   - XI
 galaxy s21 ultra:
   - SA
+galaxy s21:
+  - SA
 galaxy s10:
   - SA
 galaxy s20:
@@ -39657,6 +39659,52 @@ f105:
   - FOS
 cubot x50:
   - CB
+advance a5 plus lte:
+  - BU
+advance a6:
+  - BU
+advance a5 lte:
+  - BU
+blu studio g2:
+  - BU
+c5 lte:
+  - BU
+tecno kh7h:
+  - TB
+venus_plus:
+  - OL
+v2419:
+  - VV
+i2403:
+  - VV
+xt2073-2:
+  - MR
+nx724j:
+  - '57'
+flow 11:
+  - KE
+g020h:
+  - GO
+xt2055-2:
+  - MR
+g020i:
+  - GO
+gfe4j:
+  - GO
+a201xm:
+  - XI
+y52s:
+  - VV
+y71t:
+  - VV
+y76s:
+  - VV
+sm-a725m:
+  - SA
+lyn-an00:
+  - HU
+alt-lx2:
+  - HU
 gs55-6:
   - GS
 gs57-6:
@@ -49119,6 +49167,20 @@ m10_c01_eea:
   - PRI
 gravity_4:
   - FS
+advance a7:
+  - BU
+spacetab_h20_eea:
+  - HAQ
+ndl-l09:
+  - HU
+9199s:
+  - TC
+lifetab_p1075x:
+  - MD
+g10_us:
+  - GOO
+a130-2024:
+  - ACP
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61425,6 +61487,12 @@ sl-led50s02t2su:
   - '05'
 rupa.smarttv.8800.f1010_1.0.0:
   - RUP
+topdevice_tdtv75bs06u_9632:
+  - TOP
+topdevice_tdtv43bs05u_9632:
+  - TOP
+tq65ufbcv1:
+  - TUV
 bb2 pro:
   - 0M
 kii pro:
