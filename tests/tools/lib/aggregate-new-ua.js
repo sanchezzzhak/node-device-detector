@@ -110,8 +110,4 @@ class AggregateNewUa {
 
 }
 
-new AggregateNewUa();
-
-
-
-module.exports = AggregateNewUa
+module.exports = AggregateNewUa;
