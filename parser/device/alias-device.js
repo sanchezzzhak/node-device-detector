@@ -77,19 +77,22 @@ class AliasDevice extends AbstractParser {
     } catch (err) {}
 
     for (let cursor in this.collection) {
-      let item = this.collection[cursor];
-      let match = this.getBaseRegExp(item['regex']).exec(decodeUserAgent);
+      const item = this.collection[cursor];
+      const match = this.getBaseRegExp(item['regex']).exec(decodeUserAgent);
       if (match) {
-        result.name = this.buildByMatch(item['name'], match);
+        const name = this.buildByMatch(item['name'], match);
+        if (name) {
+          result.name = name;
+        }
         if (this.hasReplaceBrand()) {
           result.name = result.name.replace(REPLACE_BRAND_REGEXP, '');
         }
         break;
       }
     }
-
-    result.name = result.name.trim();
-
+    if (result.name) {
+      result.name = result.name.trim();
+    }
     return result;
   }
 

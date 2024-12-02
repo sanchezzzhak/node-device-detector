@@ -1707,6 +1707,8 @@ sc-55d:
   - SU
 meizu note21:
   - M1
+tecno kl8:
+  - TB
 gi-626:
   - A5
 5039d_ru:
@@ -39705,6 +39707,42 @@ lyn-an00:
   - HU
 alt-lx2:
   - HU
+jdy-lx3:
+  - HU
+alt-nx3:
+  - HU
+gfy-lx2p:
+  - HU
+alt-nx1:
+  - HU
+m2001j2i:
+  - XI
+tecno kl5n:
+  - TB
+pkd110:
+  - OP
+mde5:
+  - XI
+ubs1:
+  - OY
+pjt110:
+  - OP
+t7 pro:
+  - HV
+t5 max:
+  - HV
+t506t:
+  - TC
+t506k:
+  - TC
+t506g:
+  - TC
+pags0005in:
+  - MR
+t507d:
+  - TC
+t506a:
+  - TC
 gs55-6:
   - GS
 gs57-6:
@@ -49181,6 +49219,18 @@ g10_us:
   - GOO
 a130-2024:
   - ACP
+pad 80 wifi:
+  - OSC
+pad 70 wifi:
+  - OSC
+tab 10 wifi:
+  - B2
+mt16:
+  - UM
+tab r5:
+  - HV
+kst103sd-l:
+  - KIS
 jdn-al00:
   - HU
 ags2-al00hn:
