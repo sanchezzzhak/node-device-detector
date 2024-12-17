@@ -110,8 +110,12 @@ class ClientHints {
    */
   #parseHints(hints, result) {
     for (let key in hints) {
-      let value = hints[key];
+      const value = hints[key];
       const lowerCaseKey = key.toLowerCase().replace('_', '-');
+
+      if (void 0  === value || null === value || '' === value) {
+        continue;
+      }
 
       switch (lowerCaseKey) {
         case 'http-sec-ch-ua-arch':

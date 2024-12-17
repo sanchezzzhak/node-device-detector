@@ -278,11 +278,35 @@ Fuego:
     - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
       model: 'Smart TV ($1)'
 
+# FUJICOM (https://fujicom.com/)
+FUJICOM:
+  regex: 'FUJICOM[;,]'
+  device: 'tv'
+  models:
+    - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
+
+# GN Electronics (https://www.gnelectronics.in/)
+GN Electronics:
+  regex: 'GN_ELECTRONICS[;,]'
+  device: 'tv'
+  models:
+    - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
+
 # GoGEN (https://www.gogen.cz/)
 GoGEN:
   regex: 'GOGEN[;,]'
   device: 'tv'
   model: ''
+
+# Graetz (https://www.graetzitalia.it/)
+Graetz:
+  regex: 'GRAETZ[;,]'
+  device: 'tv'
+  models:
+    - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
 
 # Grundig
 Grundig:
@@ -655,14 +679,6 @@ Manhattan:
   models:
     - regex: 'T3'
       model: 'T3'
-
-# MediaTek
-MediaTek:
-  regex: 'MTK|MediaTek;'
-  device: 'tv'
-  models:
-    - regex: '(MT[0-9]{4})'
-      model: '$1'
 
 # Medion
 Medion:
@@ -1090,6 +1106,14 @@ TOKYO:
     - regex: 'TOKTCLED32S'
       model: 'TOKTCLED32S'
 
+# TUCSON
+TUCSON:
+  regex: 'TUCSON[;,]'
+  device: 'tv'
+  models:
+    - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
+
 # Turbo-X
 Turbo-X:
   regex: 'TURBO-X[;,]'
@@ -1117,6 +1141,14 @@ Tsinghua Tongfang:
   models:
     - regex: 'LE40GY15'
       model: 'LE40GY15'
+
+# UNITED (http://www.united-tv.eu/en/)
+UNITED:
+  regex: 'UNITED[;,]'
+  device: 'tv'
+  models:
+    - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
 
 # VANGUARD
 VANGUARD:
@@ -1220,8 +1252,9 @@ Xiaomi:
 
 # Unknown
 Unknown:
-  regex: 'OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});'
-  device: 'tv'
+  regex: 'OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\d+[.\d]+)_([0-9]{4})'
   models:
     - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
+    - regex: 'LaTivu_(?:\d+[.\d]+)_([0-9]{4})'
       model: 'Smart TV ($1)'
