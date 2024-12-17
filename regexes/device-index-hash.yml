@@ -1228,6 +1228,8 @@ hce700:
   - CHC
 m3sm15x:
   - M3M
+aura_telpad_mt7_tablet:
+  - PLD
 sm-f721u:
   - SA
 note 13p:
@@ -1709,6 +1711,16 @@ meizu note21:
   - M1
 tecno kl8:
   - TB
+sm-w9024:
+  - SA
+sm-f956n:
+  - SA
+sm-n9760:
+  - SA
+sm-f7310:
+  - SA
+sm-n970w:
+  - SA
 gi-626:
   - A5
 5039d_ru:
@@ -2804,6 +2816,8 @@ aeota:
 aeobp:
   - KN
 yndx-00055:
+  - YD
+yandexstation_2:
   - YD
 i7u:
   - A9
@@ -39743,6 +39757,136 @@ t507d:
   - TC
 t506a:
   - TC
+mi8 se:
+  - XI
+mi8se:
+  - XI
+mi8 youth:
+  - XI
+mi8 pro:
+  - XI
+mi8pro:
+  - XI
+mi8:
+  - XI
+sm-g736u:
+  - SA
+sm-s711n:
+  - SA
+max 5:
+  - CB
+itel p671l:
+  - IZ
+l78051:
+  - LE
+cat s52:
+  - CA
+lava lzg403 25i:
+  - LV
+alp-l09s:
+  - HU
+tecno mobile kj5n:
+  - TB
+gionee_star:
+  - OL
+l78071:
+  - LE
+l78011:
+  - LE
+l58091:
+  - LE
+l39051:
+  - LE
+l19111:
+  - LE
+l19041:
+  - LE
+neffos x20:
+  - NF
+fig-l31:
+  - HU
+blade a7 2020:
+  - ZT
+blade a5 2020ru:
+  - ZT
+blade a5 2020:
+  - ZT
+blade a5 2019:
+  - ZT
+blade a5 2019ru:
+  - ZT
+blade a3 2020ru:
+  - ZT
+blade a3 2020:
+  - ZT
+blade a3 2019ru:
+  - ZT
+blade a3 2019:
+  - ZT
+blade a7 2020ru:
+  - ZT
+blade l8ru:
+  - ZT
+blade v1000ru:
+  - ZT
+blade a3 lite:
+  - ZT
+2050ru:
+  - ZT
+y6 2019:
+  - HU
+y6prime:
+  - HU
+y6 pro 2019:
+  - HU
+ady-al10:
+  - HU
+moto g100:
+  - MR
+mde40:
+  - XI
+z7540:
+  - ZT
+nx302j:
+  - '57'
+xt2163-4:
+  - MR
+xt2045-3:
+  - MR
+2302epcc4h:
+  - 0P
+t431p:
+  - TC
+dns-dns-s3504:
+  - DN
+sm-a256n:
+  - SA
+sm-a256u1:
+  - SA
+sm-a3560:
+  - SA
+meizu 15 plus:
+  - M1
+v2415a:
+  - VV
+tcl 10 5g uw:
+  - TC
+meizu x8:
+  - M1
+v2419a:
+  - VV
+cyber 13:
+  - HV
+pjz110:
+  - 'ON'
+kingkong star 2:
+  - CB
+tecno cl7k:
+  - TB
+multilaser_elite_2:
+  - 1R
+2410dpn6cc:
+  - XI
 gs55-6:
   - GS
 gs57-6:
@@ -49231,6 +49375,22 @@ tab r5:
   - HV
 kst103sd-l:
   - KIS
+sm-x710:
+  - SA
+sm-x820:
+  - SA
+sm-x826b:
+  - SA
+p25t_row:
+  - T7
+tb-x306x:
+  - LE
+tb-x306f:
+  - LE
+qtab y2:
+  - QM
+98 (m1e3):
+  - T7
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61542,6 +61702,48 @@ topdevice_tdtv75bs06u_9632:
 topdevice_tdtv43bs05u_9632:
   - TOP
 tq65ufbcv1:
+  - TUV
+td43ffbhv1:
+  - TUV
+td43ufbhv1:
+  - TUV
+td50ufbhv1:
+  - TUV
+td50ufghv1:
+  - TUV
+td65ufbsv1:
+  - TUV
+tdtv24bs01h:
+  - TOP
+vekta ld-32sf4850bs:
+  - VEK
+hibergqled65y:
+  - HIB
+hiberg65yuhd:
+  - HIB
+mnbp-300g:
+  - 1X
+ptv50ss08x:
+  - PR
+nvx-75u131msy:
+  - NQ
+nvx-32h219msyx:
+  - NQ
+h24yq2200gr-2:
+  - HIP
+ct-8750:
+  - CEN
+mlt55usd02g:
+  - MAU
+32lh1212-v:
+  - VIT
+megamax_w_42mg11fsm:
+  - MGX
+u55f8000qg:
+  - DX
+mlt43fsx02:
+  - MAU
+td55ufghv1:
   - TUV
 bb2 pro:
   - 0M
