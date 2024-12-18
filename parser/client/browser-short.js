@@ -254,6 +254,7 @@ module.exports = {
   'HA': 'Hawk Turbo Browser',
   'HQ': 'Hawk Quick Browser',
   'HE': 'Helio',
+  'HN': 'Herond Browser',
   'HX': 'Hexa Web Browser',
   'HI': 'Hi Browser',
   'HO': 'hola! Browser',
