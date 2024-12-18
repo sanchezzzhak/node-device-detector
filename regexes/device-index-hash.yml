@@ -1721,6 +1721,8 @@ sm-f7310:
   - SA
 sm-n970w:
   - SA
+grl-al10:
+  - HU
 gi-626:
   - A5
 5039d_ru:
@@ -39887,6 +39889,16 @@ multilaser_elite_2:
   - 1R
 2410dpn6cc:
   - XI
+mipo_m46_plus:
+  - MIP
+ada-al10u:
+  - HU
+pure_iii:
+  - W3
+lt750:
+  - WA
+v2423:
+  - VV
 gs55-6:
   - GS
 gs57-6:
@@ -49391,6 +49403,12 @@ qtab y2:
   - QM
 98 (m1e3):
   - T7
+tpc1013_eea:
+  - LVI
+okapi_tab8_pro:
+  - OKA
+la_tab_link_74:
+  - LM
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61745,6 +61763,54 @@ mlt43fsx02:
   - MAU
 td55ufghv1:
   - TUV
+43u520s:
+  - 4B
+55ucy1-b:
+  - DX
+32f700wr:
+  - KV
+u50f8000eg:
+  - DX
+s800 max:
+  - RE2
+s700 max:
+  - RE2
+s600 max:
+  - RE2
+matador-pro:
+  - HIR
+matador pro:
+  - HIR
+matador:
+  - HIR
+ip-60 max:
+  - RE2
+ip-70 max:
+  - RE2
+netta 3:
+  - GOL
+prismplus 4k pro android tv:
+  - PRP
+hty-50uhd05b:
+  - HA1
+dm-led32sbb32:
+  - D2
+40fles900t2sm:
+  - '05'
+stv-65dubk1r:
+  - TUV
+42lf8130s:
+  - 8A
+fuego 2k smart tv:
+  - FG
+singer android tv:
+  - SIN
+singer 4k gsmart tv:
+  - SIN
+42fn6000f:
+  - FEN
+32evf5000s:
+  - EVF
 bb2 pro:
   - 0M
 kii pro:
