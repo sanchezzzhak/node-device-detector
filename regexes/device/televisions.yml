@@ -467,6 +467,8 @@ JVC:
   models:
     - regex: 'AFTSO001'
       model: '4K (2019)'
+    - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
+      model: 'Smart TV ($1)'
 
 # Kalley
 Kalley:
@@ -514,7 +516,7 @@ AXEN:
     - regex: 'LGE/ATMACA/AXEN; ([a-z0-9]+)-'
       model: '$1'
 
-# Dyon
+# Dyon (https://www.dyon.eu/)
 Dyon:
   regex: 'LGE/KONKA/DYON'
   device: 'tv'
@@ -788,8 +790,8 @@ OCEANIC:
     - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
       model: 'Smart TV ($1)'
 
-# Ok
-Ok:
+# ok. (https://www.ok-online.com/)
+ok.:
   regex: 'OK[;,]'
   device: 'tv'
   models:
@@ -1253,6 +1255,7 @@ Xiaomi:
 # Unknown
 Unknown:
   regex: 'OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\d+[.\d]+)_([0-9]{4})'
+  device: 'tv'
   models:
     - regex: '_TV_[A-Z0-9]+_([0-9]{4});'
       model: 'Smart TV ($1)'
