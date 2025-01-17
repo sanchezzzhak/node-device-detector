@@ -238,7 +238,7 @@ function hasPuffinTabletFragment(userAgent) {
  */
 function hasAndroidTVFragment(userAgent) {
   return matchUserAgent(
-      'Andr0id|(?:Android(?: UHD)?|Google) TV|[(]lite[)] TV|BRAVIA|[(]TV;| TV$',
+      'Andr0id|(?:Android(?: UHD)?|(?<!Xming )Google) TV|\\(lite\\) TV|BRAVIA| TV$',
       userAgent
   ) !== null;
 }

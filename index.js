@@ -576,9 +576,16 @@ class DeviceDetector {
 
     /**
      * All unknown devices under running Java ME
-     * are more likely a features phones
+     * are more likely features phones
      */
     if (deviceType === '' && osName === 'Java ME') {
+      deviceType = DEVICE_TYPE.FEATURE_PHONE;
+    }
+
+    /**
+     * All devices running KaiOS are more likely features phones
+     */
+    if ('KaiOS' === osName) {
       deviceType = DEVICE_TYPE.FEATURE_PHONE;
     }
 
@@ -626,9 +633,13 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TV;
     }
     /**
-     * All devices that contain "Andr0id" in string are assumed to be a tv
+     * All devices that contain Andr0id in string are assumed to be a tv
      */
-    if (helper.hasAndroidTVFragment(userAgent)) {
+    const hasDeviceTvType = [
+      DEVICE_TYPE.TV,
+      DEVICE_TYPE.PERIPHERAL
+    ].indexOf(deviceType) === -1 && helper.hasAndroidTVFragment(userAgent)
+    if (hasDeviceTvType) {
       deviceType = DEVICE_TYPE.TV;
     }
     /**
