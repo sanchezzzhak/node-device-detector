@@ -1000,6 +1000,148 @@ primo e10 plus:
   - WA
 e260t+:
   - HI
+fise_32433_3g:
+  - F8
+dixon_xk1_3g:
+  - X6
+tech_pad_kaios_one_3g:
+  - TP
+crosscall_core-s4_4g:
+  - C1
+alcatel4044t:
+  - AL
+ipro_k2_3g:
+  - IP
+cat b35:
+  - CA
+att_ea211101:
+  - 6A
+nokia 2720 v flip:
+  - NK
+nokia_2720_flip:
+  - NK
+3088x:
+  - AL
+alcatel 4052c:
+  - AL
+alcatel 4052o:
+  - AL
+alcatel 4052r:
+  - AL
+alcatel 4052w:
+  - AL
+alcatel 4052z:
+  - AL
+alcatel 4056w:
+  - AL
+alcatel 4056z:
+  - AL
+alcatel a406dl:
+  - AL
+mango_akabuto_4g:
+  - MAN
+att_u102aa:
+  - 6A
+att_u1030aa:
+  - 6A
+alcatel4044c:
+  - AL
+alcatel4044o:
+  - AL
+alcatel4044v:
+  - AL
+ckt_u102ac:
+  - CK
+ckt_u1030ac:
+  - CK
+doppio_texter_3g:
+  - JQ
+blackphone_blackphone_k330_3g:
+  - BLP
+geophone_t19i_4g:
+  - GEP
+geo_phone_t15_4g:
+  - GEP
+geo_phone_t19_4g:
+  - GEP
+accent_nubia50k:
+  - '00'
+accent_nubia60k:
+  - '00'
+accent_60k28_512:
+  - '00'
+b300v:
+  - BU
+blu_tankmega_3g:
+  - BU
+blu_zoey_smart:
+  - BU
+multilaser_zapp:
+  - 1R
+multilaser_zapp_ii_3g:
+  - 1R
+m560m3:
+  - N4
+m561m3:
+  - N4
+m562f3:
+  - OR
+m571m3:
+  - N4
+red_x_rx2441_4g:
+  - RDX
+sigmamobile-s3500-3g:
+  - 1S
+r3di_fr150:
+  - R3D
+symphony_pd1_4g_4g:
+  - SM
+bmobile_w125k_3g:
+  - BM
+digit_digit4g-bold_4g:
+  - DIG
+digit_digit4g-defender_4g:
+  - DIG
+digit_digit4g-elite_4g:
+  - DIG
+digit_digit4g-music_4g:
+  - DIG
+digit_digit4g-power_4g:
+  - DIG
+digit_digit4g-star_4g:
+  - DIG
+digit_digit4glite_4g:
+  - DIG
+digit_digit4gpowermax_4g:
+  - DIG
+digit_digit4g_shine_4g:
+  - DIG
+sanza-m560f3:
+  - OR
+energizer_e241:
+  - ED
+energizer_e241s:
+  - ED
+energizer_e242s_4g:
+  - ED
+energizer_e280s:
+  - ED
+energizer_e282sc_4g:
+  - ED
+energizer_h280a_512:
+  - ED
+idc_voice_20_4g:
+  - IDC
+free_wi-kif4g_4g:
+  - FRE
+telma_wi-kif+3g_3g:
+  - TEL
+telma_wi-kif+4g_4g:
+  - TEL
+telma_wikif_max_4g:
+  - TEL
+klt_k301:
+  - KLT
 iphone_4:
   - AP
 mb886:
@@ -2566,6 +2708,8 @@ infinix x6811:
   - IF
 infinix x695d:
   - IF
+iphone14,6:
+  - AP
 samsung sm-f926w:
   - SA
 2201117tl:
@@ -2726,6 +2870,8 @@ a1601:
   - OP
 clt-l29:
   - HU
+safaricom_kimem_kerefa_4g:
+  - X1
 sm-a102u:
   - SA
 sm-s134dl:
@@ -49183,7 +49329,11 @@ ipad16,6:
   - AP
 ipad14,3:
   - AP
+ipad14,4:
+  - AP
 ipad14,5:
+  - AP
+ipad14,6:
   - AP
 got-al19:
   - HU
