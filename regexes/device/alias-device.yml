@@ -86,7 +86,7 @@
   name: '$1'
 
 # iPhone/iPad/iPod/Watch code devices
-- regex: '[\(, ](iP(?:hone|[ao]d)|Watch)(\d{1,2}),(\d{1,2})[;\]]'
+- regex: '[\(, ](iP(?:hone|[ao]d)|Watch)(\d{1,2}),(\d{1,2})[ ;\]]'
   name: '$1$2,$3'
 
 # MS Office Apple
@@ -95,4 +95,8 @@
 
 # ipspirates
 - regex: '^com\.ipspirates\.ort v\.\d{3} \((.*), ?Android'
+  name: '$1'
+
+# KAIOS
+- regex: '\(Mobile; (?!LYF)([^;]+); (?:Android; )?rv:[\d\.]+(?:; CAEN)?\) Gecko/[\d\.]+ Firefox/[\d\.]+ KAIOS/'
   name: '$1'

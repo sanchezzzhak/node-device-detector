@@ -425,3 +425,19 @@
   user_agent: Mozilla/5.0 (Linux; Android 11; en-US; RMX3357; iPhone; Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36
   alias:
     name: RMX3357
+-
+  user_agent: Mozilla/5.0 (Mobile; Nokia 2720 V Flip; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.4 PodLP/2.2.1
+  alias:
+    name: 2720 V Flip
+-
+  user_agent: Mozilla/5.0 (Mobile; DIXON_XK1_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1
+  alias:
+    name: XK1_3G
+-
+  user_agent: Mozilla/5.0 (Mobile; LYF/F271i/LYF_F271i-000-01-20-101019; Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5 PodLP/1.3.2.0
+  alias:
+    name: ""
+-
+  user_agent: LiSTNR.au.com.podcastoneaustralia/3.24.1 iPhone12,1 iOS/16.5.1 CFNetwork/1408.0.4 Darwin/22.5.0
+  alias:
+    name: iPhone12,1

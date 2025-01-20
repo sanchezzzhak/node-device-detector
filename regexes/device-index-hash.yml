@@ -698,7 +698,6 @@ macbookpro3,1:
   - AP
 macmini7,1:
   - AP
-  - A9
 macbook7,1:
   - AP
 macpro5,1:
@@ -1001,6 +1000,148 @@ primo e10 plus:
   - WA
 e260t+:
   - HI
+fise_32433_3g:
+  - F8
+dixon_xk1_3g:
+  - X6
+tech_pad_kaios_one_3g:
+  - TP
+crosscall_core-s4_4g:
+  - C1
+alcatel4044t:
+  - AL
+ipro_k2_3g:
+  - IP
+cat b35:
+  - CA
+att_ea211101:
+  - 6A
+nokia 2720 v flip:
+  - NK
+nokia_2720_flip:
+  - NK
+3088x:
+  - AL
+alcatel 4052c:
+  - AL
+alcatel 4052o:
+  - AL
+alcatel 4052r:
+  - AL
+alcatel 4052w:
+  - AL
+alcatel 4052z:
+  - AL
+alcatel 4056w:
+  - AL
+alcatel 4056z:
+  - AL
+alcatel a406dl:
+  - AL
+mango_akabuto_4g:
+  - MAN
+att_u102aa:
+  - 6A
+att_u1030aa:
+  - 6A
+alcatel4044c:
+  - AL
+alcatel4044o:
+  - AL
+alcatel4044v:
+  - AL
+ckt_u102ac:
+  - CK
+ckt_u1030ac:
+  - CK
+doppio_texter_3g:
+  - JQ
+blackphone_blackphone_k330_3g:
+  - BLP
+geophone_t19i_4g:
+  - GEP
+geo_phone_t15_4g:
+  - GEP
+geo_phone_t19_4g:
+  - GEP
+accent_nubia50k:
+  - '00'
+accent_nubia60k:
+  - '00'
+accent_60k28_512:
+  - '00'
+b300v:
+  - BU
+blu_tankmega_3g:
+  - BU
+blu_zoey_smart:
+  - BU
+multilaser_zapp:
+  - 1R
+multilaser_zapp_ii_3g:
+  - 1R
+m560m3:
+  - N4
+m561m3:
+  - N4
+m562f3:
+  - OR
+m571m3:
+  - N4
+red_x_rx2441_4g:
+  - RDX
+sigmamobile-s3500-3g:
+  - 1S
+r3di_fr150:
+  - R3D
+symphony_pd1_4g_4g:
+  - SM
+bmobile_w125k_3g:
+  - BM
+digit_digit4g-bold_4g:
+  - DIG
+digit_digit4g-defender_4g:
+  - DIG
+digit_digit4g-elite_4g:
+  - DIG
+digit_digit4g-music_4g:
+  - DIG
+digit_digit4g-power_4g:
+  - DIG
+digit_digit4g-star_4g:
+  - DIG
+digit_digit4glite_4g:
+  - DIG
+digit_digit4gpowermax_4g:
+  - DIG
+digit_digit4g_shine_4g:
+  - DIG
+sanza-m560f3:
+  - OR
+energizer_e241:
+  - ED
+energizer_e241s:
+  - ED
+energizer_e242s_4g:
+  - ED
+energizer_e280s:
+  - ED
+energizer_e282sc_4g:
+  - ED
+energizer_h280a_512:
+  - ED
+idc_voice_20_4g:
+  - IDC
+free_wi-kif4g_4g:
+  - FRE
+telma_wi-kif+3g_3g:
+  - TEL
+telma_wi-kif+4g_4g:
+  - TEL
+telma_wikif_max_4g:
+  - TEL
+klt_k301:
+  - KLT
 iphone_4:
   - AP
 mb886:
@@ -1230,6 +1371,18 @@ m3sm15x:
   - M3M
 aura_telpad_mt7_tablet:
   - PLD
+neoviu d1:
+  - PH
+mogo pro:
+  - QX
+xming google tv:
+  - FRM
+scn550:
+  - PH
+sti6110:
+  - XP
+xk03h:
+  - QX
 sm-f721u:
   - SA
 note 13p:
@@ -1723,6 +1876,10 @@ sm-n970w:
   - SA
 grl-al10:
   - HU
+24094rad4c:
+  - XI
+note 12 ef:
+  - HV
 gi-626:
   - A5
 5039d_ru:
@@ -2551,6 +2708,8 @@ infinix x6811:
   - IF
 infinix x695d:
   - IF
+iphone14,6:
+  - AP
 samsung sm-f926w:
   - SA
 2201117tl:
@@ -2711,6 +2870,8 @@ a1601:
   - OP
 clt-l29:
   - HU
+safaricom_kimem_kerefa_4g:
+  - X1
 sm-a102u:
   - SA
 sm-s134dl:
@@ -2821,6 +2982,10 @@ yndx-00055:
   - YD
 yandexstation_2:
   - YD
+aeorh:
+  - KN
+aeohp:
+  - KN
 i7u:
   - A9
 i4u:
@@ -3860,6 +4025,8 @@ ek-5040:
   - 4K
 ek-6020:
   - 4K
+htc_tattoo_a3288:
+  - HT
 hammer titan 2:
   - HAM
   - UZ
@@ -28039,7 +28206,7 @@ isprit u50 lte:
 cph2275:
   - OP
 premier5:
-  - SW
+  - UNP
 rmx3492:
   - RE
 sm-a3360:
@@ -33403,6 +33570,7 @@ t501l:
 pixel 4a 5g:
   - GO
 black x:
+  - STV
   - KL
 dijitsu_smart_a11s:
   - DIJ
@@ -39899,6 +40067,99 @@ lt750:
   - WA
 v2423:
   - VV
+m1810f6g:
+  - XI
+v2408a:
+  - VV
+ptp-an00:
+  - HU
+24129pn74c:
+  - XI
+24117rk2cc:
+  - XI
+xiaomi15 pro:
+  - XI
+rmx5011:
+  - RE
+rmx5010:
+  - RE
+ptp-an10:
+  - HU
+nx733j:
+  - '57'
+gpj41:
+  - GO
+flex 2:
+  - V6
+v max pro:
+  - DO
+meizu lucky 08:
+  - M1
+moto g75 5g:
+  - MR
+moto g45 5g:
+  - MR
+moto g35 5g:
+  - MR
+neo 8 lite:
+  - SPX
+poco c75:
+  - 0P
+ivy-lx2:
+  - HU
+i2305:
+  - VV
+brp-nx1:
+  - HU
+brc-an00:
+  - HU
+unonu n55s:
+  - UU
+premier5max:
+  - UNP
+ptp-an60:
+  - HU
+mz-meizu 20 pro:
+  - M1
+v2433:
+  - VV
+rmx3987:
+  - RE
+swift_4g:
+  - '69'
+2409brn2cl:
+  - XI
+brp-an00:
+  - HU
+a142p:
+  - NOT
+agm_h_max:
+  - A3
+itel p671ln:
+  - IZ
+hmd skyline:
+  - HMD
+s200 x:
+  - DO
+s200:
+  - DO
+shark 9:
+  - B2
+concord_m20:
+  - C8
+movic f4501:
+  - MV
+premier pro:
+  - UNP
+mione q11:
+  - X7
+  - MO
+mione q1:
+  - X7
+  - MO
+viewphone q5:
+  - VS
+  - '60'
 gs55-6:
   - GS
 gs57-6:
@@ -48277,6 +48538,7 @@ ipad3,2:
   - AP
 ipad3,3:
   - AP
+  - '65'
 ipad2,5:
   - AP
 ipad2,7:
@@ -49067,7 +49329,11 @@ ipad16,6:
   - AP
 ipad14,3:
   - AP
+ipad14,4:
+  - AP
 ipad14,5:
+  - AP
+ipad14,6:
   - AP
 got-al19:
   - HU
@@ -49409,6 +49675,40 @@ okapi_tab8_pro:
   - OKA
 la_tab_link_74:
   - LM
+gk133m3:
+  - GH
+elite t10 pro:
+  - SW
+tab a11 pro:
+  - UL
+ot11:
+  - OE
+p101-eea:
+  - 6O
+noteair4c:
+  - 3O
+wo pad pro:
+  - WAO
+wo 10:
+  - WAO
+wo 12:
+  - WAO
+t181-eea:
+  - 6O
+itel p10003l:
+  - IZ
+hoco_hi10:
+  - HOC
+tb-x606x:
+  - LE
+tb-x606f:
+  - LE
+tb-x505x:
+  - LE
+tb-x505l:
+  - LE
+neocore_e1r1:
+  - NEO
 jdn-al00:
   - HU
 ags2-al00hn:
@@ -61350,8 +61650,6 @@ td86ufbtv1:
   - TUV
 43le7052d:
   - 4H
-xk03h:
-  - QX
 sei600go:
   - GO1
 heimat_h65pu2303svf:
@@ -61811,6 +62109,122 @@ singer 4k gsmart tv:
   - FEN
 32evf5000s:
   - EVF
+saba_32sb6000h:
+  - X5
+saba_42sb6000f:
+  - X5
+32les905t2sm:
+  - '05'
+g guard smart tv:
+  - GRD
+dyon 2k google tv:
+  - DYO
+walton gsmart 2ktv:
+  - WA
+bell streamer:
+  - BEL
+altibox tv:
+  - ALB
+supermax mx11 prime:
+  - SBM
+smx4k:
+  - PL
+telia nordic stb:
+  - '65'
+42qws9001:
+  - WLR
+akai_ta43bu500:
+  - AK
+akai_ta32bf550:
+  - AK
+65mt-udg54g:
+  - R3
+onvo_24ov6000h:
+  - ONV
+42fles901t2sm:
+  - '05'
+32lh5000t:
+  - 8A
+40lex-9201-fts2c:
+  - BB
+40lex-7291-fts2c:
+  - BB
+40lex-7246fts2c:
+  - BB
+40flx9000ct2:
+  - '05'
+40fles901t2sm:
+  - '05'
+32y-hd-r:
+  - BFF
+32lex-7292-ts2c:
+  - BB
+32lex-7291-ts2c:
+  - BB
+32lex-7288ts2c-t9:
+  - BB
+32lex-7264ts2c:
+  - BB
+32lex-7264-ts2c:
+  - BB
+32lex-7260-ts2c:
+  - BB
+32lex-7259ts2c:
+  - BB
+32lex-7257ts2c:
+  - BB
+32lex-7249ts2c:
+  - BB
+32lex-7246ts2c:
+  - BB
+32lex-7213-ts2c:
+  - BB
+32lex-7212-ts2c:
+  - BB
+32lex-7204ts2c:
+  - BB
+32lex-7202ts2c:
+  - BB
+32les906t2sm:
+  - '05'
+24lex-7289ts2c-t9:
+  - BB
+24hey1:
+  - DX
+gr32200:
+  - GRB
+gr43200:
+  - GRB
+as512:
+  - ALP
+as514:
+  - ALP
+as515:
+  - ALP
+as516:
+  - ALP
+vip7802:
+  - COM
+qs02:
+  - BQ
+allente 1:
+  - ALL
+fundroid mb18:
+  - MLB
+fundroid mb216:
+  - MLB
+stilevs smart tv:
+  - STI
+ok google tv:
+  - O9
+haier matrixtv ael:
+  - HA
+path_7xpro:
+  - KK
+lu-v78:
+  - LUO
+white x:
+  - STV
 bb2 pro:
   - 0M
 kii pro:

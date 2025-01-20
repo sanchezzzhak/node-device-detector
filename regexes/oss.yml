@@ -494,11 +494,15 @@
   version: ''
 
 ##########
-# Tizen
+# Tizen (https://www.tizen.org/)
 ##########
 - regex: 'Tizen[ /]?(\d+[.\d]+)?'
   name: 'Tizen'
   version: '$1'
+
+- regex: 'Maple (?!III)(?:\d+[.\d]+)|Maple_?\d{4}|HbbTV/.+Samsung'
+  name: 'Tizen'
+  version: ''
 
 ##########
 # YunOS (Android based)
@@ -546,7 +550,7 @@
   version: '10'
 
 ##########
-# KaiOS
+# KaiOS (https://www.kaiostech.com/)
 ##########
 - regex: 'KAIOS(?:/(\d+[.\d]+))?'
   name: 'KaiOS'
@@ -1360,6 +1364,8 @@
 - regex: '^(?!com\.apple\.Safari\.SearchHelper|Safari).*(?:CFNetwork|Mana)/.+ Darwin/(\d+[.\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))'
   name: 'iOS'
   versions:
+    - regex: 'Darwin/24\.3\.0'
+      version: '18.3'
     - regex: 'Darwin/24\.2\.0'
       version: '18.2'
     - regex: 'Darwin/24\.1\.0'
@@ -1591,6 +1597,8 @@
 - regex: '(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\d.]+)|C?Python.*Darwin|PowerMac|com\.apple\.Safari\.SearchHelper|^Safari'
   name: 'Mac'
   versions:
+    - regex: '(?:x86_64-apple-)?Darwin(?:/|; )?24\.3\.0'
+      version: '15.3'
     - regex: '(?:x86_64-apple-)?Darwin(?:/|; )?24\.2\.0'
       version: '15.2'
     - regex: '(?:x86_64-apple-)?Darwin(?:/|; )?24\.1\.0'
