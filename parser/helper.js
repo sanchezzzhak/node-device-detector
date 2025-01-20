@@ -246,10 +246,10 @@ function hasAndroidTVFragment(userAgent) {
 /**
  * All devices running Tizen TV or SmartTV are assumed to be a tv
  * @param {string} userAgent
- * @returns {boolean}
+ * @return {boolean}
  */
 function hasTVFragment(userAgent) {
-  return matchUserAgent('SmartTV|Tizen.+ TV .+$', userAgent) !== null;
+  return matchUserAgent('SmartTV|Tizen.+ TV .+$|\\(TV;', userAgent) !== null;
 }
 
 /**
