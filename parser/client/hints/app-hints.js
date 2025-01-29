@@ -4,8 +4,7 @@ class AppHints extends AbstractParser
 {
   constructor() {
     super();
-    this.fixtureFile = 'client/hints/apps.yml';
-    this.loadCollection();
+    this.collection = require('../../../regexes/client/hints/apps');
   }
 
   parse(clientHints) {

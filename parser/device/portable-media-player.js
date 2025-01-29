@@ -3,8 +3,7 @@ const DeviceAbstractParser = require('./../device-abstract-parser');
 class PortableMediaPlayer extends DeviceAbstractParser {
   constructor() {
     super();
-    this.fixtureFile = 'device/portable_media_player.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/device/portable_media_player');
   }
 }
 

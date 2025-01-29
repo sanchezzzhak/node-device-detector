@@ -71,8 +71,7 @@ function comparePlatform(platform, bitness = '') {
 class OsAbstractParser extends ParserAbstract {
   constructor() {
     super();
-    this.fixtureFile = 'oss.yml';
-    this.loadCollection();
+    this.collection = require('../regexes/oss');
   }
 
   /**
