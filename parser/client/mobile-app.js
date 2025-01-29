@@ -8,8 +8,7 @@ const appHints = new AppHints;
 class MobileApp extends ClientAbstractParser {
   constructor() {
     super();
-    this.fixtureFile = 'client/mobile_apps.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/client/mobile_apps');
     this.collectionLength = this.collection.length;
     this.type = CLIENT_TYPE.MOBILE_APP;
   }

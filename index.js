@@ -54,9 +54,6 @@ const aliasDevice = new AliasDevice();
 aliasDevice.setReplaceBrand(false);
 const infoDevice = new InfoDevice();
 
-IndexerDevice.init();
-IndexerClient.init();
-
 class DeviceDetector {
 
   vendorParserList = {};

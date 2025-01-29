@@ -1,5 +1,8 @@
 const ParserAbstract = require('./../abstract-parser');
 const DataPacker = require('./../../lib/data-packer');
+const collectionHardwareCPU = require('../../regexes/device-info/hardware-cpu');
+const collectionHardwareGPU = require('../../regexes/device-info/hardware-gpu');
+const collectionSoftware = require('../../regexes/device-info/software');
 
 
 
@@ -177,9 +180,6 @@ const SHORT_KEYS = {
   TG: 'performance.geekbench'      // int: geekbench score
 };
 
-let collectionHardwareCPU = null;
-let collectionHardwareGPU = null;
-let collectionSoftware = null;
 
 /**
  * Class for obtaining information on a device
@@ -193,23 +193,7 @@ class InfoDevice extends ParserAbstract {
     /** @type {boolean} convert display.resolution 1080x1920 to object {width, height} */
     this.resolutionConvertObject = false;
     /** @type {string} fixture path to file */
-    this.fixtureFile = 'device-info/device.yml';
-    this.loadCollection();
-  }
-
-  loadCollection() {
-    super.loadCollection();
-    // load hardware properties
-    if (collectionHardwareCPU === null) {
-      collectionHardwareCPU = this.loadYMLFile('device-info/hardware-cpu.yml');
-    }
-    if (collectionHardwareGPU === null) {
-      collectionHardwareGPU = this.loadYMLFile('device-info/hardware-gpu.yml');
-    }
-    // load software properties
-    if (collectionSoftware === null) {
-      collectionSoftware = this.loadYMLFile('device-info/software.yml');
-    }
+    this.collection = require('../../regexes/device-info/device');
   }
 
   /**

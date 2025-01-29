@@ -1,5 +1,6 @@
 const helper = require('../helper');
 const CLIENT_TYPES = require('../const/client-type');
+const collection = require('../../regexes/client-index-hash');
 
 const CLIENT_TYPES_MAP = {}
 CLIENT_TYPES_MAP[CLIENT_TYPES.BROWSER] = 0;
@@ -9,8 +10,6 @@ CLIENT_TYPES_MAP[CLIENT_TYPES.MEDIA_PLAYER] = 3;
 CLIENT_TYPES_MAP[CLIENT_TYPES.FEED_READER] = 4;
 CLIENT_TYPES_MAP[CLIENT_TYPES.PIM] = 5;
 
-let collection;
-let path = __dirname + '/../../regexes/client-index-hash.yml';
 
 class IndexerClient {
   
@@ -20,10 +19,6 @@ class IndexerClient {
    * @returns {null|array}
    */
   static findClientRegexPositionsForUserAgent(userAgent, type) {
-    if (!IndexerClient.ready()) {
-      return null;
-    }
-    
     let index = CLIENT_TYPES_MAP[type];
     if (index === void 0) {
       return null;
@@ -37,16 +32,6 @@ class IndexerClient {
     }
     
     return null;
-  }
-  
-  static ready() {
-    return collection !== void 0;
-  }
-  
-  static init() {
-    if (helper.hasFile(path)) {
-      collection = helper.loadYMLFile(path);
-    }
   }
   
 }

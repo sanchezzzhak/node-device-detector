@@ -5,8 +5,7 @@ const CLIENT_TYPE = require('./../const/client-type');
 class Library extends ClientAbstractParser {
   constructor() {
     super();
-    this.fixtureFile = 'client/libraries.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/client/libraries');
     this.collectionLength = this.collection.length;
     this.type = CLIENT_TYPE.LIBRARY;
   }

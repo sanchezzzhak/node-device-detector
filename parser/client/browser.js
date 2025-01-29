@@ -35,9 +35,8 @@ const compareBrandForClientHints = (brand) => {
 class Browser extends ClientAbstractParser {
   constructor() {
     super();
-    this.engine_collection = [];
-    this.fixtureFile = 'client/browsers.yml';
-    this.loadCollection();
+    this.engine_collection = require('../../regexes/client/browser_engine');
+    this.collection = require('../../regexes/client/browsers');
     this.type = CLIENT_TYPE.BROWSER;
     this.collectionLength = this.collection.length;
   }
@@ -48,11 +47,6 @@ class Browser extends ClientAbstractParser {
 
   getAvailableBrowsers() {
     return Object.keys(this.getCollectionBrowsers());
-  }
-
-  loadCollection() {
-    super.loadCollection();
-    this.engine_collection = this.loadYMLFile('client/browser_engine.yml');
   }
 
   /**

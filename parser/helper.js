@@ -335,10 +335,6 @@ function loadYMLFile(file) {
   return YAML.load(fs.readFileSync(file));
 }
 
-function hasFile(file) {
-  return fs.existsSync(file);
-}
-
 /**
  * Remove chars for string
  * @param {string} str
@@ -442,7 +438,6 @@ module.exports = {
   attr,
   revertObject,
   loadYMLFile,
-  hasFile,
   trimChars,
   splitUserAgent,
   matchReplace,

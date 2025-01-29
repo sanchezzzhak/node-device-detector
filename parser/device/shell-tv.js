@@ -8,8 +8,7 @@ class ShellTv extends DeviceAbstractParser {
    */
   constructor() {
     super();
-    this.fixtureFile = 'device/shell_tv.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/device/shell_tv');
   }
   
   /**

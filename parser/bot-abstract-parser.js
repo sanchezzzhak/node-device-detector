@@ -3,8 +3,7 @@ const ParserAbstract = require('./abstract-parser');
 class BotAbstractParser extends ParserAbstract {
   constructor() {
     super();
-    this.fixtureFile = 'bots.yml';
-    this.loadCollection();
+    this.collection = require('../regexes/bots');
   }
 
   /**

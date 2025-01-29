@@ -3,8 +3,7 @@ const DeviceAbstractParser = require('./../device-abstract-parser');
 class Camera extends DeviceAbstractParser {
   constructor() {
     super();
-    this.fixtureFile = 'device/cameras.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/device/cameras');
   }
 }
 

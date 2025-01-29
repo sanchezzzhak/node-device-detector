@@ -4,8 +4,7 @@ class BrowserHints extends AbstractParser
 {
   constructor() {
     super();
-    this.fixtureFile = 'client/hints/browsers.yml';
-    this.loadCollection();
+    this.collection = require('../../../regexes/client/hints/browsers');
   }
 
   parse(clientHints) {

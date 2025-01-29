@@ -4,8 +4,7 @@ const CLIENT_TYPE = require('./../const/client-type');
 class PIM extends ClientAbstractParser {
   constructor() {
     super();
-    this.fixtureFile = 'client/pim.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/client/pim');
     this.collectionLength = this.collection.length;
     this.type = CLIENT_TYPE.PIM;
   }
