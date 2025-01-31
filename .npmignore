@@ -11,3 +11,5 @@ tests/
 .nyc_output
 coverage/
 docs/
+regexes/*.yml
+regexes/*.yaml

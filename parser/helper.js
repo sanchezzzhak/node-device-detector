@@ -1,5 +1,3 @@
-const YAML = require('js-yaml');
-const fs = require('fs');
 
 /**
  * restore original userAgent from clientHints object
@@ -327,15 +325,6 @@ function revertObject(obj) {
 }
 
 /**
- * Load yaml file (sync read)
- * @param {string} file - absolute file path
- * @returns {*}
- */
-function loadYMLFile(file) {
-  return YAML.load(fs.readFileSync(file));
-}
-
-/**
  * Remove chars for string
  * @param {string} str
  * @param {string} chars
@@ -437,7 +426,6 @@ module.exports = {
   hasTouchFragment,
   attr,
   revertObject,
-  loadYMLFile,
   trimChars,
   splitUserAgent,
   matchReplace,
