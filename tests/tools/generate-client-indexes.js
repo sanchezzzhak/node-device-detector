@@ -1,6 +1,6 @@
 const fs = require('fs');
 const ArrayPath = require('../../lib/array-path');
-const { YAMLLoad, YAMLDump, getFixtureFolder } = require('./../functions');
+const { YAMLLoad, YAMLDump, getFixtureFolder, getRegexesFolder } = require('./../functions');
 const {
   splitUserAgent,
   matchUserAgent,
@@ -9,7 +9,7 @@ const {
 const CLIENT_TYPES = require('../../parser/const/client-type');
 
 let fixtureFolder = getFixtureFolder();
-let regexesFolder = __dirname + '/../../regexes/';
+let regexesFolder = getRegexesFolder();
 
 // regex list
 const databases = {};

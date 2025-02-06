@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 17/01/2025_
+_Last update: 07/02/2025_
 
 ## Description
 
@@ -55,8 +55,6 @@ const userAgent = 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWe
 const result = detector.detect(userAgent);
 console.log('result parse', result);
 ```
-> PS: When creating an object`detector = new DeviceDetector(DeviceDetectorOptions);` data for parsing is reloaded from files, consider this, the best option is initialization at application start
-> I recommend seeing [examples](#others)
 
 ### Result parse
 
@@ -287,10 +285,10 @@ const detector = new DeviceDetector({
   clientVersionTruncate: 2,  // Truncate Client version Chrome from 43.0.2357.78 to 43.0.2357 (default '' or null)
   deviceIndexes: true,       // Using indexes for faster device search (default false)
   clientIndexes: true,       // Using indexes for faster client search (default false)
-  deviceAliasCode: true,     // adds the device code to result device.code as is (default false)
+  deviceAliasCode: true,     // adds device code to result [device.code] as is (default false)
   maxUserAgentSize: 500,     // uses only 500 chars from useragent string (default null - unlimited)
   deviceTrusted: true,       // check device by specification (default false)
-  deviceInfo: true,          // adds the device info to result device.info (default false)
+  deviceInfo: true,          // adds device specification to result [device.info] (default false)
 });
 
 // You can override these settings at any time using special setters, example
@@ -320,7 +318,6 @@ const OS_PARSER_NAMES = detector.getOsParserNames();         // result collectio
 const BOT_PARSER_NAMES = detector.getBotParserNames();       // result collection names for bot parsers   
 
 const aliasDevice = detector.getParseAliasDevice();          // result AliasDevice parser
-const deviceAppleHint = detector.getParseDeviceAppleHint();  // result DeviceAppleHint parser
 const deviceInfo = detector.getParseInfoDevice();            // result InfoDevice parser
 
 // added custom parser

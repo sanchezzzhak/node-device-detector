@@ -35,7 +35,7 @@ const generateDirectoryCommonJs = (directoryPath) => {
   files.forEach((file) => {
     const absolutePath = path.join(directoryPath, file);
     const isDirectory = fs.statSync(absolutePath).isDirectory();
-    const isYaml = path.extname(absolutePath) === '.yaml' || path.extname(absolutePath) === '.yml';
+    const isYaml = ['.yaml', '.yml'].includes(path.extname(absolutePath));
     if (isDirectory) {
       const results = generateDirectoryCommonJs(absolutePath);
       result.push(...results);
