@@ -8,8 +8,7 @@ class HbbTv extends DeviceAbstractParser {
    */
   constructor() {
     super();
-    this.fixtureFile = 'device/televisions.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/device/televisions');
   }
 
   /**

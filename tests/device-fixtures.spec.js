@@ -103,6 +103,9 @@ describe('tests device fixtures files', function () {
     if (skipFiles.indexOf(file) !== -1) {
       return;
     }
+    if (/\.ya?ml$/.test(file) === false) {
+      return;
+    }
     describe('file fixture ' + file, function () {
       let fixtureData = YAMLLoad(pathRegexData + file);
       for (let brand in fixtureData) {

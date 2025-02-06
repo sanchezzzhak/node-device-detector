@@ -35,8 +35,7 @@ class AliasDevice extends AbstractParser {
   #replaceBrand = true;
   constructor() {
     super();
-    this.fixtureFile = 'device/alias-device.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/device/alias-device');
   }
 
   /**

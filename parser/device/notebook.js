@@ -5,8 +5,7 @@ const DEVICE_TYPE = require('./../const/device-type');
 class Notebook extends DeviceAbstractParser {
   constructor() {
     super();
-    this.fixtureFile = 'device/notebooks.yml';
-    this.loadCollection();
+    this.collection = require('../../regexes/device/notebooks');
   }
 
   /**

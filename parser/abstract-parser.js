@@ -1,5 +1,4 @@
 const helper = require('./helper');
-const BASE_REGEXES_DIR = __dirname + '/../regexes/';
 
 /**
  * @param {string} result
@@ -20,43 +19,12 @@ function fixStringVersion(result) {
   return result.trim();
 }
 
-const collectionMap = {};
-
 class ParserAbstract {
   constructor() {
-    this.fixtureFile = null;
+    this.collection = null;
     this.type = null;
     this.versionTruncation = null;
     this.maxUserAgentSize = null;
-  }
-
-  get collection() {
-    if (!this.hasLoadCollection()) {
-      return null;
-    }
-    return collectionMap[this.fixtureFile];
-  }
-
-  hasLoadCollection() {
-    return collectionMap[this.fixtureFile] !== void 0
-  }
-
-  /**
-   * load collection
-   */
-  loadCollection() {
-    if (!this.hasLoadCollection()) {
-      collectionMap[this.fixtureFile] = this.loadYMLFile(this.fixtureFile);
-    }
-  }
-
-  /**
-   * load yaml file
-   * @param {string} file
-   * @returns {*}
-   */
-  loadYMLFile(file) {
-    return helper.loadYMLFile(BASE_REGEXES_DIR + file);
   }
 
   /**
