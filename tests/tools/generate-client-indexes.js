@@ -1,29 +1,37 @@
 const fs = require('fs');
 const ArrayPath = require('../../lib/array-path');
-const {YAMLLoad, YAMLDump, getFixtureFolder} = require('./../functions');
-const {splitUserAgent, matchUserAgent, fuzzyCompare} = require(
-  './../../parser/helper');
+const { YAMLLoad, YAMLDump, getFixtureFolder, getRegexesFolder } = require('./../functions');
+const {
+  splitUserAgent,
+  matchUserAgent,
+  fuzzyCompare,
+} = require('./../../parser/helper');
 const CLIENT_TYPES = require('../../parser/const/client-type');
 
 let fixtureFolder = getFixtureFolder();
-let regexesFolder = __dirname + '/../../regexes/';
+let regexesFolder = getRegexesFolder();
 
 // regex list
 const databases = {};
 databases[CLIENT_TYPES.BROWSER] = YAMLLoad(
-  regexesFolder + 'client/browsers.yml');
+  regexesFolder + 'client/browsers.yml'
+);
 databases[CLIENT_TYPES.MOBILE_APP] = YAMLLoad(
-  regexesFolder + 'client/mobile_apps.yml');
+  regexesFolder + 'client/mobile_apps.yml'
+);
 databases[CLIENT_TYPES.MEDIA_PLAYER] = YAMLLoad(
-  regexesFolder + 'client/mediaplayers.yml');
+  regexesFolder + 'client/mediaplayers.yml'
+);
 databases[CLIENT_TYPES.FEED_READER] = YAMLLoad(
-  regexesFolder + 'client/feed_readers.yml');
-databases[CLIENT_TYPES.PIM] = YAMLLoad(
-  regexesFolder + 'client/pim.yml');
+  regexesFolder + 'client/feed_readers.yml'
+);
+databases[CLIENT_TYPES.PIM] = YAMLLoad(regexesFolder + 'client/pim.yml');
 
 let appFixtureData = YAMLLoad(fixtureFolder + 'clients/mobile_app.yml');
 let browserFixtureData = YAMLLoad(fixtureFolder + 'clients/browser.yml');
-let mediaplayerFixtureData = YAMLLoad(fixtureFolder + 'clients/mediaplayer.yml');
+let mediaplayerFixtureData = YAMLLoad(
+  fixtureFolder + 'clients/mediaplayer.yml'
+);
 let libraryFixtureData = YAMLLoad(fixtureFolder + 'clients/library.yml');
 let readerFixtureData = YAMLLoad(fixtureFolder + 'clients/feed_reader.yml');
 let pimFixtureData = YAMLLoad(fixtureFolder + 'clients/pim.yml');
@@ -69,17 +77,14 @@ const findDataKey = (groups, clientName) => {
         return String(keyName);
       }
     }
-
-  } catch (e) {
-
-  }
+  } catch (e) {}
   return null;
 };
 
 const findDataIndex = (userAgent, clientType) => {
   let database = databases[clientType];
   if (!database) {
-    return null
+    return null;
   }
 
   for (let i = 0, l = database.length; i < l; i++) {
@@ -103,10 +108,7 @@ const createIndexForFixture = (fixture) => {
   let keyIndex = findDataIndex(userAgent, clientType);
   let keyName = splitData.hash;
 
-  if (
-    !clientName ||
-    keyIndex === null
-  ) {
+  if (!clientName || keyIndex === null) {
     return;
   }
 
@@ -121,14 +123,18 @@ const createIndexForFixture = (fixture) => {
     ];
   }
 
-  if (!output[keyName][0].includes(keyIndex) && clientType ===
-    CLIENT_TYPES.BROWSER) {
+  if (
+    !output[keyName][0].includes(keyIndex) &&
+    clientType === CLIENT_TYPES.BROWSER
+  ) {
     output[keyName][0].push(keyIndex);
     output[keyName][0] = output[keyName][0].sort(sortAsc);
   }
 
-  if (!output[keyName][1].includes(keyIndex) && clientType ===
-    CLIENT_TYPES.MOBILE_APP) {
+  if (
+    !output[keyName][1].includes(keyIndex) &&
+    clientType === CLIENT_TYPES.MOBILE_APP
+  ) {
     output[keyName][1].push(keyIndex);
     output[keyName][1] = output[keyName][1].sort(sortAsc);
   }
@@ -191,6 +197,8 @@ ymlDeviceFiles.forEach((file) => {
   });
 });
 
-let content = YAMLDump(output);
-
-fs.writeFileSync(regexesFolder + 'client-index-hash.yml', content, 'utf8');
+fs.writeFileSync(
+  regexesFolder + 'client-index-hash.js',
+  `module.exports = ${JSON.stringify(output, null, 2)};\n`,
+  'utf8'
+);

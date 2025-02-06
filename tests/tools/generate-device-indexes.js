@@ -91,8 +91,8 @@ program.action(function(){
   });
 
   fs.writeFileSync(
-    __dirname + '/../../regexes/device-index-hash.yml',
-    YAMLDump(output),
+    __dirname + '/../../regexes/device-index-hash.js',
+    `module.exports = ${JSON.stringify(output, null, 2)};\n`,
     'utf8',
   );
 })

@@ -106,6 +106,10 @@ function normalizeVersion(version, count) {
   return version;
 }
 
+function getRegexesFolder() {
+  return __dirname + '/../regexes/'
+}
+
 function getFixtureFolder() {
   return __dirname + '/fixtures/';
 }
@@ -181,6 +185,7 @@ module.exports = {
   perryTable,
   perryJSON,
   getFixtureFolder,
+  getRegexesFolder,
   reportFixture,
   isObjNotEmpty,
 };
