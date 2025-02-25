@@ -8,6 +8,9 @@ class BrowserHints extends AbstractParser
   }
 
   parse(clientHints) {
+    if (!clientHints) {
+      return null;
+    }
     let appId = clientHints.app;
     if (!appId) {
       return null;

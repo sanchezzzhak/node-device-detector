@@ -8,10 +8,14 @@ class AppHints extends AbstractParser
   }
 
   parse(clientHints) {
+    if (!clientHints) {
+      return null;
+    }
     let appId = clientHints.app;
     if (!appId) {
       return null;
     }
+
     if (this.collection[appId] === void 0) {
       return null;
     }
