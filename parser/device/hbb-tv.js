@@ -44,7 +44,7 @@ class HbbTv extends DeviceAbstractParser {
    * @return {Boolean}
    */
   isHubTv(userAgent) {
-    let regex = '(?:HbbTV|SmartTvA)/([1-9]{1}(?:\.[0-9]{1}){1,2})';
+    let regex = '(?:HbbTV|SmartTvA)/([1-9]{1}(?:[.][0-9]{1}){1,2})';
     let match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;
   }
