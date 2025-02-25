@@ -255,6 +255,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "Telegram/(\\d+[.\\d]+) CFNetwork",
+    "name": "Telegram",
+    "version": ""
+  },
+  {
     "regex": "(?:^com\\.google\\.android\\.apps\\.youtube\\.music/|^YouTubeMusic(?:Dev)?/)([\\d.]+)?",
     "name": "Youtube Music",
     "version": "$1"
@@ -633,6 +638,11 @@ module.exports = [
     "regex": "iPhoneLync/([\\d.]+)",
     "name": "Skype for Business",
     "version": "$1"
+  },
+  {
+    "regex": "WebexTeams",
+    "name": "Webex Teams",
+    "version": ""
   },
   {
     "regex": "GroupMe/([\\d.]+)",
@@ -2892,6 +2902,21 @@ module.exports = [
   {
     "regex": "HFEducationIOS/([\\d.]+)",
     "name": "HeartFocus Education",
+    "version": "$1"
+  },
+  {
+    "regex": "OpenVAS-VT ([\\d.]+)",
+    "name": "OpenVAS",
+    "version": "$1"
+  },
+  {
+    "regex": "appdb/([\\d.]+)",
+    "name": "appdb",
+    "version": "$1"
+  },
+  {
+    "regex": "Apache/([\\d.]+)",
+    "name": "Apache",
     "version": "$1"
   },
   {

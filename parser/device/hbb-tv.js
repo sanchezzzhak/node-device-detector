@@ -12,12 +12,12 @@ class HbbTv extends DeviceAbstractParser {
   }
 
   /**
-   *
    * @param {string} userAgent
    * @param brandIndexes
    * @returns {null|{model: string, id: string, type: string, brand: string}}
    */
   parse(userAgent, brandIndexes) {
+    // only parse user agents containing fragments: hbbtv or SmartTvA
     if (!this.isHubTv(userAgent)) {
       return null;
     }
@@ -44,7 +44,7 @@ class HbbTv extends DeviceAbstractParser {
    * @return {Boolean}
    */
   isHubTv(userAgent) {
-    let regex = 'HbbTV/([1-9]{1}(?:.[0-9]{1}){1,2})';
+    let regex = '(?:HbbTV|SmartTvA)/([1-9]{1}(?:\.[0-9]{1}){1,2})';
     let match = this.getBaseRegExp(regex).exec(userAgent);
     return match !== null;
   }

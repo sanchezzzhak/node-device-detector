@@ -1,6 +1,6 @@
 module.exports = [
   {
-    "regex": "WireReaderBot(?:/([\\d+.]+))?",
+    "regex": "WireReaderBot",
     "name": "WireReaderBot",
     "category": "Feed Fetcher",
     "url": "https://wirereader.app/"
@@ -76,7 +76,7 @@ module.exports = [
     }
   },
   {
-    "regex": "AhrefsSiteAudit/[\\d.]+",
+    "regex": "AhrefsSiteAudit",
     "name": "AhrefsSiteAudit",
     "category": "Site Monitor",
     "url": "https://ahrefs.com/robot/site-audit",
@@ -106,7 +106,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Amazonbot/[\\d.]+",
+    "regex": "Amazonbot",
     "name": "Amazon Bot",
     "category": "Crawler",
     "url": "https://developer.amazon.com/support/amazonbot",
@@ -116,7 +116,7 @@ module.exports = [
     }
   },
   {
-    "regex": "AmazonAdBot/[\\d.]+",
+    "regex": "AmazonAdBot",
     "name": "Amazon AdBot",
     "category": "Crawler",
     "url": "https://adbot.amazon.com/",
@@ -763,7 +763,7 @@ module.exports = [
     }
   },
   {
-    "regex": "FacebookBot/[\\d.]+",
+    "regex": "FacebookBot",
     "name": "FacebookBot",
     "category": "Crawler",
     "url": "https://developers.facebook.com/docs/sharing/bot",
@@ -823,7 +823,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Fever/[0-9]",
+    "regex": "Fever/",
     "name": "Fever",
     "url": "http://feedafever.com/",
     "category": "Feed Fetcher",
@@ -1165,7 +1165,7 @@ module.exports = [
     "url": "https://vuhuv.com/bot.html"
   },
   {
-    "regex": "HTTPMon/[\\d.]+",
+    "regex": "HTTPMon",
     "name": "HTTPMon",
     "category": "Site Monitor",
     "url": "http://www.httpmon.com",
@@ -1220,7 +1220,7 @@ module.exports = [
     }
   },
   {
-    "regex": "k6/[0-9.]+",
+    "regex": "k6/",
     "name": "K6",
     "url": "https://k6.io/"
   },
@@ -1325,7 +1325,7 @@ module.exports = [
     }
   },
   {
-    "regex": "masscan-ng/[\\d.]+",
+    "regex": "masscan-ng",
     "name": "masscan-ng",
     "url": "https://github.com/bi-zone/masscan-ng",
     "category": "Crawler",
@@ -1540,7 +1540,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Octopus [0-9]",
+    "regex": "Octopus [\\d.]+",
     "name": "Octopus"
   },
   {
@@ -1630,7 +1630,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Pocket(?:ImageCache|Parser)/[\\d.]+",
+    "regex": "Pocket(?:ImageCache|Parser)",
     "name": "Pocket",
     "category": "Read-it-later Service",
     "url": "https://getpocket.com/pocketparser_ua",
@@ -1822,7 +1822,17 @@ module.exports = [
     }
   },
   {
-    "regex": "SerpReputationManagementAgent/[\\d.]+",
+    "regex": "BacklinksExtendedBot",
+    "name": "BacklinksExtendedBot",
+    "category": "Crawler",
+    "url": "https://www.semrush.com/bot/",
+    "producer": {
+      "name": "Semrush Inc.",
+      "url": "https://www.semrush.com/"
+    }
+  },
+  {
+    "regex": "SerpReputationManagementAgent",
     "name": "Semrush Reputation Management",
     "category": "Service Agent",
     "url": "https://www.semrush.com/bot/",
@@ -1842,7 +1852,7 @@ module.exports = [
     }
   },
   {
-    "regex": "SiteAuditBot/[\\d.]+",
+    "regex": "SiteAuditBot",
     "name": "SiteAuditBot",
     "category": "Crawler",
     "url": "https://www.semrush.com/bot/",
@@ -1869,16 +1879,6 @@ module.exports = [
     "producer": {
       "name": "SEO Engine",
       "url": "http://www.seoengine.com"
-    }
-  },
-  {
-    "regex": "SEOkicks-Robot",
-    "name": "SEOkicks-Robot",
-    "category": "Crawler",
-    "url": "http://www.seokicks.de/robot.html",
-    "producer": {
-      "name": "SEOkicks",
-      "url": "https://www.seokicks.de/"
     }
   },
   {
@@ -2054,7 +2054,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Sparkler/[0-9]",
+    "regex": "Sparkler",
     "name": "Sparkler",
     "category": "Crawler",
     "url": "https://github.com/USCDataScience/sparkler"
@@ -2234,7 +2234,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Uptime(?:bot)?/[\\d.]+",
+    "regex": "Uptime(?:bot)?/",
     "name": "Uptimebot",
     "category": "Site Monitor",
     "url": "https://uptime.com/uptime-bot",
@@ -2429,7 +2429,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Automattic Analytics Crawler/[\\d.]+",
+    "regex": "Automattic Analytics Crawler",
     "name": "Automattic Analytics",
     "category": "Crawler",
     "url": "https://wordpress.com/crawler/",
@@ -2609,7 +2609,7 @@ module.exports = [
     }
   },
   {
-    "regex": "YOURLS v[0-9]",
+    "regex": "YOURLS",
     "name": "Yourls",
     "category": "Crawler",
     "url": "http://yourls.org"
@@ -2691,7 +2691,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Pinterest(?:bot)?/[\\d.]+.*www\\.pinterest\\.com",
+    "regex": "Pinterest(?:bot)?/.*www\\.pinterest\\.com",
     "name": "Pinterest",
     "url": "https://help.pinterest.com/en/business/article/pinterest-crawler",
     "category": "Crawler",
@@ -2711,7 +2711,7 @@ module.exports = [
     }
   },
   {
-    "regex": ".* HLB/[\\d.]+",
+    "regex": ".* HLB",
     "name": "Site24x7 Defacement Monitor",
     "category": "Site Monitor",
     "url": "https://support.site24x7.com/portal/en/kb/articles/default-user-agent-used-in-website-defacement-monitor",
@@ -2741,7 +2741,7 @@ module.exports = [
     }
   },
   {
-    "regex": "SnapchatAds/[\\d.]+",
+    "regex": "SnapchatAds",
     "name": "Snapchat Ads",
     "category": "Crawler",
     "url": "https://businesshelp.snapchat.com/s/article/adsbot-crawler?language=en_US",
@@ -2955,7 +2955,7 @@ module.exports = [
     }
   },
   {
-    "regex": "by Siteimprove\\.com",
+    "regex": "Siteimprove",
     "name": "Siteimprove",
     "category": "Search bot",
     "url": "https://siteimprove.com/",
@@ -3025,13 +3025,13 @@ module.exports = [
     }
   },
   {
-    "regex": "IDG/IT",
-    "name": "IDG/IT",
-    "category": "Search bot",
-    "url": "https://spaziodati.eu/",
+    "regex": "IDG/(?:EU|IT|RU|UK)",
+    "name": "IDG",
+    "category": "Crawler",
+    "url": "https://www.spaziodati.eu/",
     "producer": {
       "name": "SpazioDati S.r.l.",
-      "url": "https://spaziodati.eu/"
+      "url": "https://www.spaziodati.eu/"
     }
   },
   {
@@ -3240,7 +3240,7 @@ module.exports = [
     }
   },
   {
-    "regex": "(?:BuiltWith|BW)/[\\d.]+",
+    "regex": "(?:BuiltWith|BW/)",
     "name": "BuiltWith",
     "category": "Crawler",
     "url": "https://builtwith.com/biup",
@@ -3308,7 +3308,7 @@ module.exports = [
     "url": "http://cloudsystemnetworks.com"
   },
   {
-    "regex": "HeartRails_Capture/[\\d.]+",
+    "regex": "HeartRails_Capture",
     "name": "Heart Rails Capture",
     "category": "Service Agent",
     "url": "http://capture.heartrails.com"
@@ -3324,7 +3324,7 @@ module.exports = [
     }
   },
   {
-    "regex": "DataXu/[\\d.]+",
+    "regex": "DataXu",
     "name": "DataXu",
     "category": "Service Agent",
     "url": "https://advertising.roku.com/dataxu",
@@ -3480,13 +3480,13 @@ module.exports = [
     }
   },
   {
-    "regex": "RyowlEngine/[\\d.]+",
+    "regex": "RyowlEngine",
     "name": "Ryowl",
     "category": "Crawler",
     "url": "https://ryowl.org"
   },
   {
-    "regex": "OdklBot/[\\d.]+",
+    "regex": "OdklBot",
     "name": "Odnoklassniki Bot",
     "category": "Crawler",
     "url": "https://odnoklassniki.ru"
@@ -3504,7 +3504,7 @@ module.exports = [
     "url": "https://www.zoominfo.com"
   },
   {
-    "regex": "WeViKaBot/[\\d.]+",
+    "regex": "WeViKaBot",
     "name": "WeViKaBot",
     "category": "Crawler",
     "url": "http://www.wevika.de"
@@ -3513,10 +3513,14 @@ module.exports = [
     "regex": "SEOkicks",
     "name": "SEOkicks",
     "category": "Crawler",
-    "url": "https://www.seokicks.de/robot.html"
+    "url": "https://www.seokicks.de/robot.html",
+    "producer": {
+      "name": "SEOkicks",
+      "url": "https://www.seokicks.de/"
+    }
   },
   {
-    "regex": "Plukkie/[\\d.]+",
+    "regex": "Plukkie",
     "name": "Plukkie",
     "category": "Crawler",
     "url": "http://www.botje.com/plukkie.htm"
@@ -3528,25 +3532,25 @@ module.exports = [
     "url": "https://www.comscore.com/Web-Crawler"
   },
   {
-    "regex": "SurdotlyBot/[\\d.]+",
+    "regex": "SurdotlyBot",
     "name": "SurdotlyBot",
     "category": "Crawler",
     "url": "http://sur.ly/bot.html"
   },
   {
-    "regex": "Gowikibot/[\\d.]+",
+    "regex": "Gowikibot",
     "name": "Gowikibot",
     "category": "Crawler",
     "url": "http:/www.gowikibot.com"
   },
   {
-    "regex": "SabsimBot/[\\d.]+",
+    "regex": "SabsimBot",
     "name": "SabsimBot",
     "category": "Crawler",
     "url": "https://sabsim.com"
   },
   {
-    "regex": "LumtelBot/[\\d.]+",
+    "regex": "LumtelBot",
     "name": "LumtelBot",
     "category": "Crawler",
     "url": "https://umtel.com"
@@ -3558,13 +3562,13 @@ module.exports = [
     "url": "http://www.pipl.com/bot"
   },
   {
-    "regex": "woobot/[\\d.]+",
+    "regex": "woobot",
     "name": "WooRank",
     "category": "Crawler",
     "url": "https://www.woorank.com/bot"
   },
   {
-    "regex": "Cookiebot/[\\d.]+",
+    "regex": "Cookiebot",
     "name": "Cookiebot",
     "category": "Crawler",
     "url": "https://support.cookiebot.com/hc/en-us/articles/360014264140-Scanner-User-Agent",
@@ -3584,7 +3588,7 @@ module.exports = [
     }
   },
   {
-    "regex": "CensysInspect/[\\d.]+",
+    "regex": "CensysInspect",
     "name": "CensysInspect",
     "category": "Security Checker",
     "url": "https://about.censys.io/",
@@ -3604,19 +3608,19 @@ module.exports = [
     }
   },
   {
-    "regex": "WellKnownBot/[\\d.]+",
+    "regex": "WellKnownBot",
     "name": "WellKnownBot",
     "category": "Crawler",
     "url": "https://well-known.dev"
   },
   {
-    "regex": "Adsbot/[\\d.]+",
+    "regex": "Adsbot",
     "name": "Adsbot",
     "category": "Crawler",
     "url": "https://seostar.co/robot/"
   },
   {
-    "regex": "MTRobot/[\\d.]+",
+    "regex": "MTRobot",
     "name": "MTRobot",
     "category": "Crawler",
     "url": "https://metrics-tools.de/robot.html",
@@ -3626,7 +3630,7 @@ module.exports = [
     }
   },
   {
-    "regex": "serpstatbot/[\\d.]+",
+    "regex": "serpstatbot",
     "name": "serpstatbot",
     "category": "Crawler",
     "url": "http://serpstatbot.com/",
@@ -3642,19 +3646,19 @@ module.exports = [
     "url": "https://github.com/gocolly/colly/"
   },
   {
-    "regex": "l9tcpid/v[\\d.]+",
+    "regex": "l9tcpid",
     "name": "l9tcpid",
     "category": "Security Checker",
     "url": "https://github.com/LeakIX/l9tcpid"
   },
   {
-    "regex": "l9explore/[\\d.]+",
+    "regex": "l9explore",
     "name": "l9explore",
     "category": "Security Checker",
     "url": "https://github.com/LeakIX/l9explore"
   },
   {
-    "regex": "l9scan/|^Lkx-.*/[\\d.]+",
+    "regex": "l9scan/|^Lkx-.*/",
     "name": "LeakIX",
     "category": "Security Checker",
     "url": "https://leakix.net/",
@@ -3664,7 +3668,7 @@ module.exports = [
     }
   },
   {
-    "regex": "MegaIndex\\.ru/[\\d.]+",
+    "regex": "MegaIndex\\.ru",
     "name": "MegaIndex",
     "category": "Crawler",
     "url": "https://megaindex.com/crawler"
@@ -3680,13 +3684,13 @@ module.exports = [
     }
   },
   {
-    "regex": "seolyt/[\\d.]+",
-    "name": "seolyt",
+    "regex": "Seolyt(?:Bot)?",
+    "name": "SeolytBot",
     "category": "Crawler",
     "url": "https://seolyt.com/"
   },
   {
-    "regex": "YaK/[\\d.]+",
+    "regex": "YaK/",
     "name": "YaK",
     "category": "Crawler",
     "url": "https://www.linkfluence.com/",
@@ -3696,7 +3700,7 @@ module.exports = [
     }
   },
   {
-    "regex": "KomodiaBot/[\\d.]+",
+    "regex": "KomodiaBot",
     "name": "KomodiaBot",
     "category": "Crawler",
     "url": "http://www.komodia.com/newwiki/index.php/URL_server_crawler",
@@ -3706,7 +3710,7 @@ module.exports = [
     }
   },
   {
-    "regex": "KStandBot/[\\d.]+",
+    "regex": "KStandBot",
     "name": "KStandBot",
     "category": "Crawler",
     "url": "https://url-classification.io/wiki/index.php?title=URL_server_crawler",
@@ -3716,7 +3720,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Neevabot/[\\d.]+",
+    "regex": "Neevabot",
     "name": "Neevabot",
     "category": "Search bot",
     "url": "https://neeva.com/neevabot",
@@ -3726,19 +3730,29 @@ module.exports = [
     }
   },
   {
-    "regex": "LinkPreview/[\\d.]+",
+    "regex": "Chatwork LinkPreview",
+    "name": "Chatwork LinkPreview",
+    "category": "Service Agent",
+    "url": "https://go.chatwork.com/en/",
+    "producer": {
+      "name": "kubell Co., Ltd.",
+      "url": "https://www.kubell.com/en/"
+    }
+  },
+  {
+    "regex": "LinkPreview",
     "name": "LinkPreview",
     "category": "Service Agent",
     "url": "https://www.linkpreview.net/"
   },
   {
-    "regex": "JungleKeyThumbnail/[\\d.]+",
+    "regex": "JungleKeyThumbnail",
     "name": "JungleKeyThumbnail",
     "category": "Crawler",
     "url": "https://junglekey.com/"
   },
   {
-    "regex": "rocketmonitor(?: |bot/)[\\d.]+",
+    "regex": "rocketmonitor(?:bot)?",
     "name": "RocketMonitorBot",
     "category": "Site Monitor",
     "url": "https://www.radiomast.io/docs/stream-monitoring/technical_details.html",
@@ -3748,7 +3762,7 @@ module.exports = [
     }
   },
   {
-    "regex": "SitemapParser-VIPnytt/[\\d.]+",
+    "regex": "SitemapParser-VIPnytt",
     "name": "SitemapParser-VIPnytt",
     "category": "Crawler",
     "url": "https://github.com/VIPnytt/SitemapParser/"
@@ -3760,7 +3774,7 @@ module.exports = [
     "url": "https://turnitin.com/robot/crawlerinfo.html"
   },
   {
-    "regex": "DMBrowser/[\\d.]+|DMBrowser-[UB]V",
+    "regex": "DMBrowser|DMBrowser-[UB]V",
     "name": "Dotcom Monitor",
     "category": "Site Monitor",
     "url": "https://www.dotcom-monitor.com"
@@ -3777,19 +3791,19 @@ module.exports = [
     "url": "https://dataforseo.com/dataforseo-bot"
   },
   {
-    "regex": "Discordbot/[\\d.]+",
+    "regex": "Discordbot",
     "name": "Discord Bot",
     "category": "Service Agent",
     "url": "https://discordapp.com"
   },
   {
-    "regex": "Linespider/[\\d.]+",
+    "regex": "Linespider",
     "name": "Linespider",
     "category": "Crawler",
     "url": "https://lin.ee/4dwXkTH"
   },
   {
-    "regex": "Cincraw/[\\d.]+",
+    "regex": "Cincraw",
     "name": "Cincraw",
     "category": "Crawler",
     "url": "http://cincrawdata.net/bot/"
@@ -3831,19 +3845,19 @@ module.exports = [
     }
   },
   {
-    "regex": "TigerBot/[\\d.]+",
+    "regex": "TigerBot",
     "name": "TigerBot",
     "category": "Crawler",
     "url": "https://tiger.ch/"
   },
   {
-    "regex": "TestCrawler/[\\d.]+",
+    "regex": "TestCrawler",
     "name": "TestCrawler",
     "category": "Crawler",
     "url": "https://www.comcepta.com/"
   },
   {
-    "regex": "CrowdTanglebot/[\\d.]+",
+    "regex": "CrowdTanglebot",
     "name": "CrowdTangle",
     "category": "Crawler",
     "url": "https://help.crowdtangle.com/en/articles/3009319-crowdtangle-bot",
@@ -3883,7 +3897,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Newslitbot/[\\d.]+",
+    "regex": "Newslitbot",
     "name": "Newslitbot",
     "category": "Crawler",
     "url": "https://www.newslit.co/",
@@ -3893,7 +3907,7 @@ module.exports = [
     }
   },
   {
-    "regex": "um-(?:ANS|CC|FC|IC|LN)/[\\d.]+",
+    "regex": "um-(?:ANS|CC|FC|IC|LN)",
     "name": "uMBot",
     "category": "Crawler",
     "url": "https://www.ubermetrics-technologies.com/",
@@ -3903,7 +3917,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Abonti/[\\d.]+",
+    "regex": "Abonti",
     "name": "Abonti",
     "category": "Crawler",
     "url": "http://abonti.com/"
@@ -3929,7 +3943,7 @@ module.exports = [
     }
   },
   {
-    "regex": "ev-crawler/[\\d.]+",
+    "regex": "ev-crawler",
     "name": "Headline",
     "category": "Crawler",
     "url": "https://headline.com/legal/crawler",
@@ -3939,7 +3953,7 @@ module.exports = [
     }
   },
   {
-    "regex": "webprosbot/[\\d.]+",
+    "regex": "webprosbot",
     "name": "WebPros",
     "category": "Crawler",
     "url": "https://webpros.com/",
@@ -3959,7 +3973,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Wheregoes\\.com Redirect Checker/[\\d.]+",
+    "regex": "Wheregoes\\.com Redirect Checker",
     "name": "WhereGoes",
     "category": "Crawler",
     "url": "https://wheregoes.com/"
@@ -3971,13 +3985,13 @@ module.exports = [
     "url": "http://66.240.192.82/"
   },
   {
-    "regex": "InternetMeasurement/[\\d.]+",
+    "regex": "InternetMeasurement",
     "name": "InternetMeasurement",
     "category": "Crawler",
     "url": "https://internet-measurement.com/"
   },
   {
-    "regex": "DomainAppender /[\\d.]+",
+    "regex": "DomainAppender",
     "name": "DomainAppender",
     "category": "Crawler",
     "url": "https://www.profound.net/product/domain_append/",
@@ -3987,7 +4001,7 @@ module.exports = [
     }
   },
   {
-    "regex": "FreeWebMonitoring SiteChecker/[\\d.]+",
+    "regex": "FreeWebMonitoring SiteChecker",
     "name": "FreeWebMonitoring",
     "category": "Site Monitor",
     "url": "https://www.freewebmonitoring.com/bot.html",
@@ -4017,7 +4031,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Iframely/[\\d.]+",
+    "regex": "Iframely",
     "name": "Iframely",
     "category": "Crawler",
     "url": "https://iframely.com/",
@@ -4027,7 +4041,7 @@ module.exports = [
     }
   },
   {
-    "regex": "DomainStatsBot/[\\d.]+",
+    "regex": "DomainStatsBot",
     "name": "DomainStatsBot",
     "category": "Crawler",
     "url": "https://domainstats.com/pages/our-bot",
@@ -4037,7 +4051,7 @@ module.exports = [
     }
   },
   {
-    "regex": "aiHitBot/[\\d.]+",
+    "regex": "aiHitBot",
     "name": "aiHitBot",
     "category": "Crawler",
     "url": "https://www.aihitdata.com/about"
@@ -4059,7 +4073,7 @@ module.exports = [
     "category": "Crawler"
   },
   {
-    "regex": "AdAuth/[\\d.]+",
+    "regex": "AdAuth",
     "name": "AdAuth",
     "category": "Crawler",
     "url": "https://www.adauth.com"
@@ -4143,7 +4157,7 @@ module.exports = [
     }
   },
   {
-    "regex": "ScamadviserExternalHit/[\\d.]+",
+    "regex": "ScamadviserExternalHit",
     "name": "Scamadviser External Hit",
     "category": "Crawler",
     "url": "https://www.scamadviser.com/",
@@ -4163,19 +4177,13 @@ module.exports = [
     }
   },
   {
-    "regex": "AFB/[\\d.]+",
+    "regex": "AFB",
     "name": "Allloadin Favicon Bot",
     "category": "Crawler",
     "url": "https://allloadin.com/"
   },
   {
-    "regex": "SeolytBot/[\\d.]+",
-    "name": "Seolyt Bot",
-    "category": "Crawler",
-    "url": "https://seolyt.com"
-  },
-  {
-    "regex": "LinkWalker/[\\d.]+",
+    "regex": "LinkWalker",
     "name": "LinkWalker",
     "category": "Crawler",
     "url": "https://www.phishlabs.com/",
@@ -4185,7 +4193,7 @@ module.exports = [
     }
   },
   {
-    "regex": "RenovateBot/[\\d.]+",
+    "regex": "RenovateBot",
     "name": "RenovateBot",
     "category": "Security Checker",
     "url": "https://github.com/renovatebot/renovate",
@@ -4195,7 +4203,7 @@ module.exports = [
     }
   },
   {
-    "regex": "INETDEX-BOT/[\\d.]+",
+    "regex": "INETDEX-BOT",
     "name": "Inetdex Bot",
     "category": "Crawler",
     "url": "https://www.inetdex.com/"
@@ -4231,7 +4239,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Nicecrawler/[\\d.]+",
+    "regex": "Nicecrawler",
     "name": "NiceCrawler",
     "category": "Crawler",
     "url": "https://www.nicecrawler.com/",
@@ -4241,7 +4249,7 @@ module.exports = [
     }
   },
   {
-    "regex": "t3versionsBot/[\\d.]+",
+    "regex": "t3versionsBot",
     "name": "t3versions",
     "category": "Crawler",
     "url": "https://www.t3versions.com/bot",
@@ -4251,7 +4259,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Crawlson/[\\d.]+",
+    "regex": "Crawlson",
     "name": "Crawlson",
     "category": "Crawler",
     "url": "https://www.crawlson.com/about",
@@ -4261,7 +4269,7 @@ module.exports = [
     }
   },
   {
-    "regex": "tchelebi/[\\d.]+",
+    "regex": "tchelebi",
     "name": "tchelebi",
     "category": "Crawler",
     "url": "https://tchelebi.io/",
@@ -4281,7 +4289,7 @@ module.exports = [
     }
   },
   {
-    "regex": "RepoLookoutBot/v?[\\d.]+",
+    "regex": "RepoLookoutBot",
     "name": "Repo Lookout",
     "category": "Security Checker",
     "url": "https://www.repo-lookout.org/",
@@ -4301,7 +4309,7 @@ module.exports = [
     }
   },
   {
-    "regex": "everyfeed-spider/[\\d.]+",
+    "regex": "everyfeed-spider",
     "name": "Everyfeed",
     "url": "https://web.archive.org/web/20050930235914/http://www.everyfeed.com/",
     "category": "Feed Fetcher",
@@ -4331,7 +4339,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Gregarius/[\\d.]+",
+    "regex": "Gregarius",
     "name": "Gregarius",
     "category": "Feed Fetcher",
     "url": "https://web.archive.org/web/20100614011837/http://devlog.gregarius.net/docs/ua/",
@@ -4361,7 +4369,7 @@ module.exports = [
     }
   },
   {
-    "regex": "KlarnaBot-(?:DownloadProductImage|EnrichProducts|PriceWatcher)/[\\d.]+",
+    "regex": "KlarnaBot-(?:DownloadProductImage|EnrichProducts|PriceWatcher)",
     "name": "KlarnaBot",
     "category": "Crawler",
     "url": "https://docs.klarna.com/klarna-bot/",
@@ -4371,7 +4379,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Taboolabot/[\\d.]+",
+    "regex": "Taboolabot",
     "name": "Taboolabot",
     "category": "Crawler",
     "url": "https://help.taboola.com/hc/en-us/articles/115002347594-The-Taboola-Crawler",
@@ -4381,7 +4389,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Asana/[\\d.]+",
+    "regex": "Asana",
     "name": "Asana",
     "category": "Crawler",
     "url": "https://asana.com/",
@@ -4401,7 +4409,7 @@ module.exports = [
     }
   },
   {
-    "regex": "URLinspectorBot/[\\d.]+",
+    "regex": "URLinspectorBot",
     "name": "URLinspector",
     "category": "Site Monitor",
     "url": "https://www.urlinspector.com/bot/",
@@ -4411,7 +4419,7 @@ module.exports = [
     }
   },
   {
-    "regex": "EntferBot/[\\d.]+",
+    "regex": "EntferBot",
     "name": "Entfer",
     "category": "Crawler",
     "url": "https://entfer.com/",
@@ -4421,7 +4429,7 @@ module.exports = [
     }
   },
   {
-    "regex": "TagInspector/[\\d.]+",
+    "regex": "TagInspector",
     "name": "Tag Inspector",
     "category": "Crawler",
     "url": "https://taginspector.com/",
@@ -4451,7 +4459,7 @@ module.exports = [
     }
   },
   {
-    "regex": "DisqusAdstxtCrawler/[\\d.]+",
+    "regex": "DisqusAdstxtCrawler",
     "name": "Disqus",
     "category": "Crawler",
     "url": "https://help.disqus.com/en/articles/1765357-ads-txt-implementation-guide",
@@ -4461,7 +4469,7 @@ module.exports = [
     }
   },
   {
-    "regex": "startmebot/[\\d.]+",
+    "regex": "startmebot",
     "name": "start.me",
     "category": "Crawler",
     "url": "https://about.start.me/",
@@ -4471,19 +4479,19 @@ module.exports = [
     }
   },
   {
-    "regex": "2ip bot/[\\d.]+",
+    "regex": "2ip bot",
     "name": "2ip",
     "category": "Crawler",
     "url": "https://2ip.io/"
   },
   {
-    "regex": "ReqBin Curl Client/[\\d.]+",
+    "regex": "ReqBin Curl Client",
     "name": "ReqBin",
     "category": "Crawler",
     "url": "https://reqbin.com/curl"
   },
   {
-    "regex": "XoviBot/[\\d.]+",
+    "regex": "XoviBot",
     "name": "XoviBot",
     "category": "Crawler",
     "url": "https://www.xovibot.net",
@@ -4493,13 +4501,13 @@ module.exports = [
     }
   },
   {
-    "regex": "Overcast/[\\d.]+ Podcast Sync",
+    "regex": "Overcast/.+Podcast Sync",
     "name": "Overcast Podcast Sync",
     "category": "Service Agent",
     "url": "https://overcast.fm/podcasterinfo"
   },
   {
-    "regex": "^Verity/[\\d.]+",
+    "regex": "^Verity",
     "name": "GumGum Verity",
     "category": "Service Agent",
     "url": "https://gumgum.com/verity"
@@ -4511,7 +4519,7 @@ module.exports = [
     "url": "https://github.com/snarfed/hackermention"
   },
   {
-    "regex": "BitSightBot/[\\d.]+",
+    "regex": "BitSightBot",
     "name": "BitSight",
     "category": "Security Checker",
     "url": "https://www.bitsight.com/",
@@ -4521,7 +4529,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Ezgif/[\\d.]+",
+    "regex": "Ezgif",
     "name": "Ezgif",
     "category": "Service Agent",
     "url": "https://ezgif.com/about"
@@ -4537,7 +4545,7 @@ module.exports = [
     }
   },
   {
-    "regex": "FemtosearchBot/[\\d.]+",
+    "regex": "FemtosearchBot",
     "name": "Femtosearch",
     "category": "Crawler",
     "url": "http://femtosearch.com/",
@@ -4547,7 +4555,7 @@ module.exports = [
     }
   },
   {
-    "regex": "AdsTxtCrawler/[\\d.]+",
+    "regex": "AdsTxtCrawler/",
     "name": "AdsTxtCrawler",
     "category": "Crawler",
     "url": "https://github.com/InteractiveAdvertisingBureau/adstxtcrawler",
@@ -4567,7 +4575,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Uptime-Kuma/[\\d.]+",
+    "regex": "Uptime-Kuma",
     "name": "Uptime-Kuma",
     "category": "Site Monitor",
     "url": "https://github.com/louislam/uptime-kuma"
@@ -4583,7 +4591,7 @@ module.exports = [
     }
   },
   {
-    "regex": "GPTBot/[\\d.]+",
+    "regex": "GPTBot",
     "name": "GPTBot",
     "category": "Crawler",
     "url": "https://platform.openai.com/docs/bots",
@@ -4603,7 +4611,7 @@ module.exports = [
     }
   },
   {
-    "regex": "BrightEdge Crawler/[\\d.]+",
+    "regex": "BrightEdge Crawler",
     "name": "BrightEdge",
     "category": "Crawler",
     "url": "https://www.brightedge.com/",
@@ -4613,7 +4621,7 @@ module.exports = [
     }
   },
   {
-    "regex": "sfFeedReader/[\\d.]+",
+    "regex": "sfFeedReader",
     "name": "sfFeedReader",
     "url": "https://github.com/diem-project/sfFeed2Plugin",
     "category": "Feed Fetcher"
@@ -4639,7 +4647,7 @@ module.exports = [
     }
   },
   {
-    "regex": "newspaper/[\\d.]+",
+    "regex": "newspaper",
     "name": "Scraping Robot",
     "category": "Crawler",
     "url": "https://scrapingrobot.com/",
@@ -4649,7 +4657,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Ant(?:\\.com beta|Bot)(?:/([\\d+.]+))?",
+    "regex": "Ant(?:\\.com beta|Bot)",
     "name": "Ant",
     "category": "Crawler",
     "url": "https://www.ant.com/",
@@ -4659,7 +4667,7 @@ module.exports = [
     }
   },
   {
-    "regex": "WebwikiBot/[\\d.]+",
+    "regex": "WebwikiBot",
     "name": "Webwiki",
     "category": "Crawler",
     "url": "https://www.webwiki.com/",
@@ -4675,7 +4683,7 @@ module.exports = [
     "url": "https://www.phpmyadmin.net/"
   },
   {
-    "regex": "Matomo/[\\d.]+",
+    "regex": "Matomo",
     "name": "Matomo",
     "category": "Service Agent",
     "url": "https://github.com/matomo-org/matomo",
@@ -4685,7 +4693,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Prometheus/[\\d.]+",
+    "regex": "Prometheus",
     "name": "Prometheus",
     "category": "Service Agent",
     "url": "https://github.com/prometheus/prometheus",
@@ -4705,7 +4713,7 @@ module.exports = [
     }
   },
   {
-    "regex": "MADBbot/[\\d.]+",
+    "regex": "MADBbot",
     "name": "MADBbot",
     "category": "Crawler",
     "url": "https://madb.zapto.org/bot.html"
@@ -4775,7 +4783,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Brightbot ([\\d+.]+)",
+    "regex": "Brightbot",
     "name": "BrightBot",
     "category": "Crawler",
     "url": "https://www.brightbot.app/",
@@ -4785,7 +4793,7 @@ module.exports = [
     }
   },
   {
-    "regex": "DaspeedBot/([\\d+.]+)",
+    "regex": "DaspeedBot",
     "name": "DaspeedBot",
     "category": "Crawler",
     "url": "https://daspeed.io/",
@@ -4795,7 +4803,7 @@ module.exports = [
     }
   },
   {
-    "regex": "StractBot(?:/([\\d+.]+))?",
+    "regex": "StractBot",
     "name": "Stract",
     "category": "Crawler",
     "url": "https://stract.com/webmasters",
@@ -4805,7 +4813,7 @@ module.exports = [
     }
   },
   {
-    "regex": "GeedoBot(?:/([\\d+.]+))?",
+    "regex": "GeedoBot",
     "name": "GeedoBot",
     "category": "Crawler",
     "url": "https://geedo.com/bot/"
@@ -4817,7 +4825,7 @@ module.exports = [
     "url": "https://geedo.com/product-search/"
   },
   {
-    "regex": "BackupLand(?:/([\\d+.]+))?",
+    "regex": "BackupLand",
     "name": "BackupLand",
     "category": "Crawler",
     "url": "https://go.backupland.com/",
@@ -4827,7 +4835,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Konturbot(?:/([\\d+.]+))?",
+    "regex": "Konturbot",
     "name": "Konturbot",
     "category": "Crawler",
     "url": "https://kontur.ru/",
@@ -4847,19 +4855,19 @@ module.exports = [
     }
   },
   {
-    "regex": "LetsearchBot(?:/([\\d+.]+))?",
+    "regex": "LetsearchBot",
     "name": "LetSearch",
     "category": "Crawler",
     "url": "https://letsearch.ru/bots"
   },
   {
-    "regex": "Example3(?:/([\\d+.]+))?",
+    "regex": "Example3",
     "name": "Example3",
     "category": "Crawler",
     "url": "https://www.example3.com/"
   },
   {
-    "regex": "StatOnlineRuBot(?:/([\\d+.]+))?",
+    "regex": "StatOnlineRuBot",
     "name": "StatOnline.ru",
     "category": "Crawler",
     "url": "https://statonline.ru/",
@@ -4963,7 +4971,7 @@ module.exports = [
     }
   },
   {
-    "regex": "NetpeakCheckerBot/[\\d.]+",
+    "regex": "NetpeakCheckerBot",
     "name": "Netpeak Checker",
     "category": "Crawler",
     "url": "https://netpeaksoftware.com/checker",
@@ -4973,7 +4981,7 @@ module.exports = [
     }
   },
   {
-    "regex": "SandobaCrawler/[\\d.]+",
+    "regex": "SandobaCrawler",
     "name": "Sandoba//Crawler",
     "category": "Crawler",
     "url": "https://www.sandoba.com/en/crawler/",
@@ -4993,7 +5001,7 @@ module.exports = [
     }
   },
   {
-    "regex": "CheckMarkNetwork/[\\d.]+",
+    "regex": "CheckMarkNetwork",
     "name": "CheckMark Network",
     "category": "Crawler",
     "url": "https://www.checkmarknetwork.com/spider.html/",
@@ -5013,7 +5021,7 @@ module.exports = [
     }
   },
   {
-    "regex": "PerplexityBot/[\\d.]+",
+    "regex": "PerplexityBot",
     "name": "PerplexityBot",
     "category": "Crawler",
     "url": "https://docs.perplexity.ai/docs/perplexitybot",
@@ -5043,13 +5051,13 @@ module.exports = [
     }
   },
   {
-    "regex": "Ruby, Twurly v[\\d.]+",
+    "regex": "Ruby, Twurly v",
     "name": "Twurly",
     "category": "Crawler",
     "url": "https://twurly.org/"
   },
   {
-    "regex": "Mixnode(?:(?:Cache)?/[\\d.]+)?",
+    "regex": "Mixnode(?:Cache)?",
     "name": "Mixnode",
     "category": "Crawler",
     "url": "https://www.mixnode.com/",
@@ -5059,12 +5067,12 @@ module.exports = [
     }
   },
   {
-    "regex": "CSSCheck/[\\d.]+",
+    "regex": "CSSCheck",
     "name": "CSSCheck",
     "category": "Validator"
   },
   {
-    "regex": "MicrosoftPreview/[\\d.]+",
+    "regex": "MicrosoftPreview",
     "name": "Microsoft Preview",
     "category": "Service Agent",
     "url": "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
@@ -5084,7 +5092,7 @@ module.exports = [
     }
   },
   {
-    "regex": "TinEye/[\\d.]+",
+    "regex": "TinEye",
     "name": "TinEye",
     "category": "Crawler",
     "url": "https://tineye.com/",
@@ -5124,7 +5132,7 @@ module.exports = [
     }
   },
   {
-    "regex": "online-webceo-bot/[\\d.]+",
+    "regex": "online-webceo-bot",
     "name": "WebCEO",
     "category": "Crawler",
     "url": "https://www.webceo.com/",
@@ -5150,7 +5158,7 @@ module.exports = [
     }
   },
   {
-    "regex": "TrendsmapResolver/[\\d.]+",
+    "regex": "TrendsmapResolver",
     "name": "Trendsmap",
     "category": "Crawler",
     "url": "https://www.trendsmap.com/",
@@ -5160,7 +5168,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Shareaholic(?:bot)?/[\\d.]+",
+    "regex": "Shareaholic(?:bot)?",
     "name": "Steve Bot",
     "category": "Crawler",
     "url": "https://www.shareaholic.com/steve",
@@ -5202,23 +5210,13 @@ module.exports = [
     "url": "https://www.whatsmyip.org/ua/"
   },
   {
-    "regex": "SenutoBot/[\\d.]+",
+    "regex": "SenutoBot",
     "name": "Senuto",
     "category": "Crawler",
     "url": "https://www.senuto.com/",
     "producer": {
       "name": "Senuto Sp. z o.o.",
       "url": "https://www.senuto.com/"
-    }
-  },
-  {
-    "regex": "spaziodati",
-    "name": "SpazioDati",
-    "category": "Crawler",
-    "url": "https://www.spaziodati.eu/",
-    "producer": {
-      "name": "SpazioDati s.r.l.",
-      "url": "https://www.spaziodati.eu/"
     }
   },
   {
@@ -5232,7 +5230,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Quantcastbot/[\\d.]+",
+    "regex": "Quantcastbot",
     "name": "Quantcast",
     "category": "Crawler",
     "url": "https://www.quantcast.com/bot/",
@@ -5282,7 +5280,7 @@ module.exports = [
     }
   },
   {
-    "regex": "RuxitSynthetic/[\\d.]+",
+    "regex": "RuxitSynthetic",
     "name": "RuxitSynthetic",
     "category": "Site Monitor",
     "url": "https://community.dynatrace.com/t5/Troubleshooting/Basic-Commands-for-Synthetic/ta-p/198164",
@@ -5292,7 +5290,7 @@ module.exports = [
     }
   },
   {
-    "regex": "DynatraceSynthetic/[\\d.]+",
+    "regex": "DynatraceSynthetic",
     "name": "DynatraceSynthetic",
     "category": "Site Monitor",
     "url": "https://community.dynatrace.com/t5/Troubleshooting/Basic-Commands-for-Synthetic/ta-p/198164",
@@ -5312,7 +5310,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Monsidobot/[\\d.]+",
+    "regex": "Monsidobot",
     "name": "Monsidobot",
     "category": "Crawler",
     "url": "https://monsido.com/bot-html",
@@ -5348,7 +5346,7 @@ module.exports = [
     "url": "https://www.google.com/script/start/"
   },
   {
-    "regex": "SiteOne-Crawler/[\\d.]+",
+    "regex": "SiteOne-Crawler",
     "name": "SiteOne Crawler",
     "category": "Crawler",
     "url": "https://crawler.siteone.io/bot/",
@@ -5378,7 +5376,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Paqlebot/[\\d.]+",
+    "regex": "Paqlebot",
     "name": "Paqlebot",
     "category": "Crawler",
     "url": "https://www.paqle.dk/about/paqlebot",
@@ -5400,7 +5398,7 @@ module.exports = [
     "url": "https://github.com/matrix-org/synapse"
   },
   {
-    "regex": "OSZKbot/[\\d.]+",
+    "regex": "OSZKbot",
     "name": "OSZKbot",
     "category": "Crawler",
     "url": "http://mekosztaly.oszk.hu/mia/",
@@ -5420,7 +5418,7 @@ module.exports = [
     }
   },
   {
-    "regex": "RavenCrawler/[\\d.]+",
+    "regex": "RavenCrawler",
     "name": "RavenCrawler",
     "category": "Crawler",
     "url": "https://raventools.com/site-auditor/",
@@ -5440,7 +5438,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Dubbotbot/[\\d.]+",
+    "regex": "Dubbotbot",
     "name": "Dubbotbot",
     "category": "Crawler",
     "url": "https://help.dubbot.com/en/articles/6746594-example-custom-user-agent",
@@ -5450,7 +5448,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Swiftbot/[\\d.]+",
+    "regex": "Swiftbot",
     "name": "Swiftbot",
     "category": "Crawler",
     "url": "https://swiftype.com/swiftbot",
@@ -5480,17 +5478,17 @@ module.exports = [
     }
   },
   {
-    "regex": "OmtrBot/[\\d.]+",
+    "regex": "OmtrBot",
     "name": "OmtrBot",
     "category": "Site Monitor"
   },
   {
-    "regex": "WebMon/[\\d.]+",
+    "regex": "WebMon",
     "name": "WebMon",
     "category": "Site Monitor"
   },
   {
-    "regex": "AdsTxtCrawlerTP/[\\d.]+",
+    "regex": "AdsTxtCrawlerTP",
     "name": "AdsTxtCrawlerTP",
     "category": "Crawler"
   },
@@ -5515,7 +5513,7 @@ module.exports = [
     }
   },
   {
-    "regex": "kiwitcms-gitops/[\\d.]+",
+    "regex": "kiwitcms-gitops",
     "name": "Kiwi TCMS GitOps",
     "category": "Service Agent",
     "url": "https://kiwitcms.org",
@@ -5587,7 +5585,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Uptimia(?:/[\\d.]+)?",
+    "regex": "Uptimia",
     "name": "Uptimia",
     "category": "Site Monitor",
     "url": "https://www.uptimia.com/",
@@ -5597,7 +5595,7 @@ module.exports = [
     }
   },
   {
-    "regex": "2GDPR/[\\d.]+",
+    "regex": "2GDPR",
     "name": "2GDPR",
     "category": "Service Agent",
     "url": "https://2gdpr.com/tos",
@@ -5627,7 +5625,7 @@ module.exports = [
     }
   },
   {
-    "regex": "LAC_IAHarvester/[\\d.]+",
+    "regex": "LAC_IAHarvester",
     "name": "LAC IA Harvester",
     "category": "Crawler",
     "url": "https://library-archives.canada.ca/eng/services/government-canada/web-social-media-preservation-program/Pages/web-archive.aspx",
@@ -5637,7 +5635,7 @@ module.exports = [
     }
   },
   {
-    "regex": "InsytfulBot/[\\d.]+",
+    "regex": "InsytfulBot",
     "name": "InsytfulBot",
     "category": "Crawler",
     "url": "https://www.insytful.com/",
@@ -5657,7 +5655,7 @@ module.exports = [
     }
   },
   {
-    "regex": "SubstackContentFetch/[\\d.]+",
+    "regex": "SubstackContentFetch",
     "name": "Substack Content Fetch",
     "category": "Crawler",
     "url": "https://substack.com/",
@@ -5697,7 +5695,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Castopod/[\\d.]+",
+    "regex": "Castopod",
     "name": "Castopod",
     "category": "Crawler",
     "url": "https://www.castopod.org/"
@@ -5713,7 +5711,7 @@ module.exports = [
     }
   },
   {
-    "regex": "WDG_Validator/[\\d.]+",
+    "regex": "WDG_Validator",
     "name": "WDG HTML Validator",
     "category": "Validator",
     "url": "http://www.htmlhelp.com/tools/validator/"
@@ -5725,7 +5723,7 @@ module.exports = [
     "url": "https://web.archive.org/web/20180910002802/http://www.aegis.network/"
   },
   {
-    "regex": "CrawlyProjectCrawler/[\\d.]+",
+    "regex": "CrawlyProjectCrawler",
     "name": "Crawly Project",
     "category": "Crawler",
     "url": "https://web.archive.org/web/20240326141952/https://crawlyproject.digitaldragon.dev/"
@@ -5743,7 +5741,7 @@ module.exports = [
     "url": "https://github.com/openeasm/punkmap"
   },
   {
-    "regex": "GenomeCrawlerd/[\\d.]+",
+    "regex": "GenomeCrawlerd",
     "name": "Deepfield Genome",
     "category": "Crawler",
     "url": "https://www.nokia.com/networks/ip-networks/deepfield/genome/",
@@ -5753,13 +5751,13 @@ module.exports = [
     }
   },
   {
-    "regex": "Gaisbot/[\\d.]+",
+    "regex": "Gaisbot",
     "name": "Gaisbot",
     "category": "Crawler",
     "url": "https://web.archive.org/web/20090604121511/https://gais.cs.ccu.edu.tw/robot.php"
   },
   {
-    "regex": "FAST-WebCrawler/[\\d.]+",
+    "regex": "FAST-WebCrawler",
     "name": "AlltheWeb",
     "category": "Crawler",
     "url": "https://web.archive.org/web/20041020050801/http://www.alltheweb.com/help/webmaster/crawler"
@@ -5771,7 +5769,7 @@ module.exports = [
     "url": "https://ducks.party/"
   },
   {
-    "regex": "DepSpid/[\\d.]+",
+    "regex": "DepSpid",
     "name": "DepSpid",
     "category": "Crawler",
     "url": "https://web.archive.org/web/20080321224033/http://about.depspid.net/"
@@ -5909,7 +5907,7 @@ module.exports = [
     }
   },
   {
-    "regex": "vu-server-health-scanner/[\\d.]+",
+    "regex": "vu-server-health-scanner",
     "name": "VU Server Health Scanner",
     "category": "Security Checker",
     "url": "https://130.37.198.75/index.html",
@@ -6129,7 +6127,91 @@ module.exports = [
     }
   },
   {
-    "regex": "nuhk|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr\\.com|teoma|oegp|http%20client|htdig|mogimogi|larbin|scrubby|searchsight|semanticdiscovery|snappy|vortex(?!(?: Build|Plus| CM62| HD65))|zeal(?!ot)|dataparksearch|findlinks|BrowserMob|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|7Siters|centuryb\\.o\\.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg|cortex|Re-re Studio|adreview|AHC/|NameOfAgent|Request-Promise|ALittle Client|Hello,? world|wp_is_mobile|0xAbyssalDoesntExist|Anarchy99|^revolt|nvd0rz|xfa1|Hakai|gbrmss|fuck-your-hp|IDBTE4M CODE87|Antoine|Insomania|Hells-Net|b3astmode|Linux Gnu \\(cow\\)|Test Certificate Info|iplabel|Magellan|TheSafex?Internetx?Search|Searcherx?web|kirkland-signature|LinkChain|survey-security-dot-txt|infrawatch|Time/|r00ts3c-owned-you|nvdorz|Root Slut|NiggaBalls|BotPoke|GlobalWebSearch|xx032_bo9vs83_2a|sslshed|geckotrail|Wordup|Keydrop|^xenu|^(?:chrome|firefox|Abcd|Dark|KvshClient|Node.js|Report Runner|url|Zeus|ZmEu)$",
+    "regex": "LightspeedSystemsCrawler",
+    "name": "LightspeedSystemsCrawler",
+    "category": "Crawler",
+    "url": "https://www.lightspeedsystems.com/",
+    "producer": {
+      "name": "Lightspeed Systems, Inc.",
+      "url": "https://www.lightspeedsystems.com/"
+    }
+  },
+  {
+    "regex": "Research JLU",
+    "name": "Research JLU",
+    "category": "Crawler",
+    "url": "https://www.uni-giessen.de/en/research",
+    "producer": {
+      "name": "Justus Liebig University Giessen",
+      "url": "https://www.uni-giessen.de/en"
+    }
+  },
+  {
+    "regex": "(?:hgf|OS)AlphaXCrawl",
+    "name": "AlphaXCrawl",
+    "category": "Crawler",
+    "url": "https://www.fim.uni-passau.de/en/data-science/research/open-search",
+    "producer": {
+      "name": "University of Passau",
+      "url": "https://www.uni-passau.de/en/"
+    }
+  },
+  {
+    "regex": "WPMU DEV",
+    "name": "WPMU DEV",
+    "category": "Crawler",
+    "url": "https://wpmudev.com/docs/wpmu-dev-plugins/broken-link-checker/#broken-link-checker-user-agent",
+    "producer": {
+      "name": "Incsub, LLC.",
+      "url": "https://incsub.com/"
+    }
+  },
+  {
+    "regex": "SnoopSecInspect",
+    "name": "SnoopSecInspect",
+    "category": "Security Checker",
+    "url": "https://web.archive.org/web/20241206193253/https://snoopsec.us.to/"
+  },
+  {
+    "regex": "ModatScanner",
+    "name": "ModatScanner",
+    "category": "Security Checker",
+    "url": "https://www.modat.io/scanning",
+    "producer": {
+      "name": "Modat B.V.",
+      "url": "https://www.modat.io/"
+    }
+  },
+  {
+    "regex": "researchcyber\\.net",
+    "name": "researchcyber.net",
+    "category": "Security Checker",
+    "url": "https://web.archive.org/web/20241219082407/https://researchcyber.net/"
+  },
+  {
+    "regex": "CrystalSemanticsBot",
+    "name": "CrystalSemanticsBot",
+    "category": "Crawler",
+    "url": "https://web.archive.org/web/20121230203310/http://www.crystalsemantics.com/user-agent/",
+    "producer": {
+      "name": "Crystal Semantics Ltd.",
+      "url": "https://web.archive.org/web/20121029062239/http://www.crystalsemantics.com/"
+    }
+  },
+  {
+    "regex": "najdu\\.s\\.holubem\\.eu",
+    "name": "najdu.s.holubem.eu",
+    "category": "Crawler",
+    "url": "https://najdu.s.holubem.eu/"
+  },
+  {
+    "regex": "VORTEX/",
+    "name": "VORTEX",
+    "category": "Crawler",
+    "url": "https://marty.anstey.ca/robots/vortex"
+  },
+  {
+    "regex": "nuhk|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr\\.com|teoma|oegp|http%20client|htdig|mogimogi|larbin|scrubby|searchsight|semanticdiscovery|snappy|zeal(?!ot)|dataparksearch|findlinks|BrowserMob|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|7Siters|centuryb\\.o\\.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg|cortex|Re-re Studio|adreview|AHC/|NameOfAgent|Request-Promise|ALittle Client|Hello,? world|wp_is_mobile|0xAbyssalDoesntExist|Anarchy99|^revolt|nvd0rz|xfa1|Hakai|gbrmss|fuck-your-hp|IDBTE4M CODE87|Antoine|Insomania|Hells-Net|b3astmode|Linux Gnu \\(cow\\)|Test Certificate Info|iplabel|Magellan|TheSafex?Internetx?Search|Searcherx?web|kirkland-signature|LinkChain|survey-security-dot-txt|infrawatch|Time/|r00ts3c-owned-you|nvdorz|Root Slut|NiggaBalls|BotPoke|GlobalWebSearch|xx032_bo9vs83_2a|sslshed|geckotrail|Wordup|Keydrop|\\(compatible\\)|John Recon|SPARK COMMIT|masjesu|Komaru_The_Cat|Jesus Christ of Nazareth is LORD|Kowai|Hakai|LoliSec|LMAO|^xenu|^(?:chrome|firefox|Abcd|Dark|KvshClient|Node.js|Report Runner|url|Zeus|ZmEu)$",
     "name": "Generic Bot"
   },
   {

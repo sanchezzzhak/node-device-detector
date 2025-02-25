@@ -3881,6 +3881,14 @@ module.exports = [
     }
   },
   {
+    "regex": "NetworkingExtension/.+ Network/.+ iOS/(\\d+[.\\d]+)",
+    "name": "Mobile Safari",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "(?:Version/(\\d+\\.[.\\d]+) .*)?Mobile.*Safari/",
     "name": "Mobile Safari",
     "version": "$1",
@@ -3898,6 +3906,14 @@ module.exports = [
   },
   {
     "regex": "Version/(\\d+\\.[.\\d]+) .*Safari/|(?:Safari|Safari(?:%20)?%E6%B5%8F%E8%A7%88%E5%99%A8)/?\\d+",
+    "name": "Safari",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "NetworkingExtension/(\\d+[.\\d]+).+ CFNetwork",
     "name": "Safari",
     "version": "$1",
     "engine": {
