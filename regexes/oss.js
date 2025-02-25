@@ -656,7 +656,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:Android (?:9|1[0-5])[.\\d]*|Linux x86_64); (?:asurada|atlas|brask|brya|cherry|coral|corsola|dedede|drallion|elm|eve|fizz|geralt|grunt|guybrush|hana|hatch|jacuzzi|kalista|kukui|nami|nautilus|nissa|nocturne|octopus|puff|pyro|rammus|reef|rex|sand|sarien|skyrim|snappy|soraka|staryu|strongbad|trogdor|volteer|zork)\\)",
+    "regex": "(?:Android (?:9|1[0-6])[.\\d]*|Linux x86_64); (?:asurada|atlas|brask|brya|cherry|coral|corsola|dedede|drallion|elm|eve|fizz|geralt|grunt|guybrush|hana|hatch|jacuzzi|kalista|kukui|nami|nautilus|nissa|nocturne|octopus|puff|pyro|rammus|reef|rex|sand|sarien|skyrim|snappy|soraka|staryu|strongbad|trogdor|volteer|zork)\\)",
     "name": "Chrome OS",
     "version": ""
   },
@@ -676,9 +676,13 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "(?:Android API \\d+|\\d+/tclwebkit(?:\\d+[.\\d]*)|(?:(?<!\\d )Android/\\d{2}|(?<!; |\\d{4}/)Android (?!1[0-5])\\d{2})(?![^ ]))",
+    "regex": "(?:Android API \\d+|\\d+/tclwebkit(?:\\d+[.\\d]*)|(?:(?<!\\d )Android/\\d{2}|Android (?!1[0-6])\\d{2})(?![^; ]))",
     "name": "Android",
     "versions": [
+      {
+        "regex": "Android API 36|36/tclwebkit|Android[ /]36",
+        "version": "16"
+      },
       {
         "regex": "Android API 35|35/tclwebkit|Android[ /]35",
         "version": "15"
@@ -822,6 +826,11 @@ module.exports = [
   },
   {
     "regex": "\\(Android:.*\\); API (\\d+[.\\d]*)",
+    "name": "Android",
+    "version": "$1"
+  },
+  {
+    "regex": "Android-(\\d+[.\\d]*);",
     "name": "Android",
     "version": "$1"
   },
@@ -1422,7 +1431,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
+    "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|NetworkingExtension).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
     "name": "iOS",
     "versions": [
       {
@@ -1440,6 +1449,10 @@ module.exports = [
       {
         "regex": "Darwin/24\\.0\\.0",
         "version": "18.0"
+      },
+      {
+        "regex": "Darwin/23\\.6\\.0",
+        "version": "17.6"
       },
       {
         "regex": "Darwin/23\\.5\\.0",
@@ -1829,7 +1842,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^Safari",
+    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:NetworkingExtension|Safari)",
     "name": "Mac",
     "versions": [
       {
@@ -1847,6 +1860,10 @@ module.exports = [
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.0\\.0",
         "version": "15.0"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.6\\.0",
+        "version": "14.6"
       },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.5\\.0",

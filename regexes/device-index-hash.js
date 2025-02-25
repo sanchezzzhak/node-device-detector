@@ -1712,6 +1712,21 @@ module.exports = {
   "klt_k301": [
     "KLT"
   ],
+  "aspera_f30_4g": [
+    "AQ"
+  ],
+  "aspera_r40_4g": [
+    "AQ"
+  ],
+  "condor_fp216l": [
+    "C5"
+  ],
+  "logan_panita_3g": [
+    "LGN"
+  ],
+  "maxcom mk241": [
+    "7M"
+  ],
   "iphone_4": [
     "AP"
   ],
@@ -2072,6 +2087,9 @@ module.exports = {
   ],
   "xk03h": [
     "QX"
+  ],
+  "havit pj209 pro": [
+    "HAV"
   ],
   "sm-f721u": [
     "SA"
@@ -2815,6 +2833,24 @@ module.exports = {
   ],
   "note 12 ef": [
     "HV"
+  ],
+  "redmi note 12 pro speed": [
+    "XI"
+  ],
+  "redmi note 13 pro": [
+    "XI"
+  ],
+  "24117rn76o": [
+    "XI"
+  ],
+  "24090ra29g": [
+    "XI"
+  ],
+  "24116raccg": [
+    "XI"
+  ],
+  "24115ra8eg": [
+    "XI"
   ],
   "gi-626": [
     "A5"
@@ -59209,6 +59245,27 @@ module.exports = {
   "g1b60": [
     "GO"
   ],
+  "tiger 13": [
+    "OSC"
+  ],
+  "ptp-an70": [
+    "HU"
+  ],
+  "u655ac": [
+    "CK"
+  ],
+  "sm-g556b": [
+    "SA"
+  ],
+  "cph3669": [
+    "OP"
+  ],
+  "v2425a": [
+    "VV"
+  ],
+  "2412dpc0ag": [
+    "0P"
+  ],
   "e6523": [
     "MI"
   ],
@@ -59985,6 +60042,120 @@ module.exports = {
   "viewphone q5": [
     "VS",
     "60"
+  ],
+  "cp12s": [
+    "CO"
+  ],
+  "cp12q": [
+    "CO"
+  ],
+  "pkc110": [
+    "OP"
+  ],
+  "pju110_a1": [
+    "OP"
+  ],
+  "n159v": [
+    "HMD"
+  ],
+  "pgr3042": [
+    "PAG"
+  ],
+  "neo 11": [
+    "SPX"
+  ],
+  "mione u1": [
+    "X7",
+    "MO"
+  ],
+  "meet": [
+    "HF"
+  ],
+  "lzx415": [
+    "LV"
+  ],
+  "cph2524": [
+    "OP"
+  ],
+  "c6l max": [
+    "BU"
+  ],
+  "c 38": [
+    "OE"
+  ],
+  "blade v 5g": [
+    "HAM"
+  ],
+  "blackview a96": [
+    "B2"
+  ],
+  "aeop520": [
+    "2X"
+  ],
+  "cph2653": [
+    "ON",
+    "OP"
+  ],
+  "ane-l22": [
+    "HU"
+  ],
+  "rmx5060": [
+    "RE"
+  ],
+  "rmx5051": [
+    "RE"
+  ],
+  "i2401": [
+    "VV"
+  ],
+  "nx789j": [
+    "57"
+  ],
+  "ptp-n49": [
+    "HU"
+  ],
+  "cph2655": [
+    "ON",
+    "OP"
+  ],
+  "cph2689": [
+    "OP"
+  ],
+  "rmx5002": [
+    "RE"
+  ],
+  "so-51e": [
+    "SO"
+  ],
+  "v2426a": [
+    "VV"
+  ],
+  "v2429a": [
+    "VV"
+  ],
+  "v2430a": [
+    "VV"
+  ],
+  "nx736j": [
+    "57"
+  ],
+  "a2022pg": [
+    "ZT"
+  ],
+  "rmx3938": [
+    "RE"
+  ],
+  "rmx3941": [
+    "RE"
+  ],
+  "pilot 1": [
+    "OSC"
+  ],
+  "shv-e470s": [
+    "SA"
+  ],
+  "f101 p": [
+    "FOS"
   ],
   "gs55-6": [
     "GS"
@@ -74258,6 +74429,78 @@ module.exports = {
   ],
   "neocore_e1r1": [
     "NEO"
+  ],
+  "digma pro hit 106 hs1007pl": [
+    "D2"
+  ],
+  "digma pro hit 104 hs1009pl": [
+    "D2"
+  ],
+  "redmi pad se 8.7 4g": [
+    "XI"
+  ],
+  "ag_1088_a133p": [
+    "SOW"
+  ],
+  "armor pad pro": [
+    "UL"
+  ],
+  "symtab20": [
+    "SM"
+  ],
+  "tb351fu": [
+    "LE"
+  ],
+  "tb321fu": [
+    "LE"
+  ],
+  "mro-w09": [
+    "HU"
+  ],
+  "tecno t1101": [
+    "TB"
+  ],
+  "sm-p555m": [
+    "SA"
+  ],
+  "rt9": [
+    "OE"
+  ],
+  "rt3 pro": [
+    "OE"
+  ],
+  "q8 da6b8p01": [
+    "D2"
+  ],
+  "pulse ta3e0p01": [
+    "D2"
+  ],
+  "pulse ta3d0p01": [
+    "D2"
+  ],
+  "pulse ta2d0p01": [
+    "D2"
+  ],
+  "spark ta1c8m01": [
+    "D2"
+  ],
+  "spectrum ta2d0p02": [
+    "D2"
+  ],
+  "tb3-710f": [
+    "LE"
+  ],
+  "n101b": [
+    "COG"
+  ],
+  "ft1000": [
+    "F0N"
+  ],
+  "ft800": [
+    "F0N"
+  ],
+  "ftb13": [
+    "XV"
   ],
   "jdn-al00": [
     "HU"
@@ -92921,6 +93164,24 @@ module.exports = {
   "white x": [
     "STV"
   ],
+  "40lf7010t": [
+    "8A"
+  ],
+  "iconbit xlr3089": [
+    "I2"
+  ],
+  "mqt55usd03": [
+    "MAU"
+  ],
+  "bt_32fs34b": [
+    "BLT"
+  ],
+  "32lh7011t": [
+    "8A"
+  ],
+  "bt_50fsu34b": [
+    "BLT"
+  ],
   "bb2 pro": [
     "0M"
   ],
@@ -93908,5 +94169,8 @@ module.exports = {
   ],
   "sm-r920": [
     "SA"
+  ],
+  "elari 4g wink": [
+    "7E"
   ]
 };

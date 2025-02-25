@@ -722,5 +722,23 @@ module.exports = [
     "name": "sqlmap",
     "version": "$1",
     "url": "https://sqlmap.org/"
+  },
+  {
+    "regex": "vimeo\\.php(?: (\\d+[.\\d]+))?",
+    "name": "vimeo.php",
+    "version": "$1",
+    "url": "https://github.com/vimeo/vimeo.php"
+  },
+  {
+    "regex": "^PHP/?(\\d+[.\\d]+)",
+    "name": "PHP",
+    "version": "$1",
+    "url": ""
+  },
+  {
+    "regex": "go-network-v(\\d+[.\\d]+)",
+    "name": "go-network",
+    "version": "$1",
+    "url": ""
   }
 ];
