@@ -1,5 +1,15 @@
 module.exports = [
   {
+    "regex": "Coolita OS QJY/.+LiteOS(\\d+[.\\d]+)",
+    "name": "Coolita OS",
+    "version": "$1"
+  },
+  {
+    "regex": "Coolita OS QJY/(\\d+[.\\d]+)",
+    "name": "Coolita OS",
+    "version": "$1"
+  },
+  {
     "regex": "^NEXT ",
     "name": "RTOS & Next",
     "version": ""
@@ -38,6 +48,11 @@ module.exports = [
     "regex": "ViziOS/(\\d+[.\\d]+)",
     "name": "ViziOS",
     "version": "$1"
+  },
+  {
+    "regex": "VIZIO(?: SmartCast|-DTV)",
+    "name": "ViziOS",
+    "version": ""
   },
   {
     "regex": "blackPanther OS",
@@ -378,6 +393,11 @@ module.exports = [
     "regex": "Maple (?!III)(?:\\d+[.\\d]+)|Maple_?\\d{4}|HbbTV/.+Samsung",
     "name": "Tizen",
     "version": ""
+  },
+  {
+    "regex": "Android (\\d+[.\\d]+)-RT",
+    "name": "YunOS",
+    "version": "$1"
   },
   {
     "regex": "(?:Ali)?YunOS[ /]?(\\d+[.\\d]+)?",
@@ -1266,7 +1286,7 @@ module.exports = [
     "version": "Server 2003"
   },
   {
-    "regex": "CYGWIN_NT-5\\.1|Windows NT 5\\.1|Windows XP",
+    "regex": "CYGWIN_NT-5\\.1|Windows NT 5\\.1|(?:Microsoft-)?Windows[ -]XP",
     "name": "Windows",
     "version": "XP"
   },
@@ -1434,6 +1454,10 @@ module.exports = [
     "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|NetworkingExtension).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
     "name": "iOS",
     "versions": [
+      {
+        "regex": "Darwin/24\\.4\\.0",
+        "version": "18.4"
+      },
       {
         "regex": "Darwin/24\\.3\\.0",
         "version": "18.3"
@@ -1845,6 +1869,10 @@ module.exports = [
     "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:NetworkingExtension|Safari)",
     "name": "Mac",
     "versions": [
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.4\\.0",
+        "version": "15.4"
+      },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.3\\.0",
         "version": "15.3"

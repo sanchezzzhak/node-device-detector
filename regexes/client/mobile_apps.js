@@ -180,7 +180,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "com\\.google\\.android\\.youtube(?:/([\\d.]+))?",
+    "regex": "com\\.google\\.(?:android|ios)\\.youtube(?:/([\\d.]+))?",
     "name": "YouTube",
     "version": "$1"
   },
@@ -2905,6 +2905,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "HFIOS/([\\d.]+)",
+    "name": "HeartFocus",
+    "version": "$1"
+  },
+  {
     "regex": "OpenVAS-VT ([\\d.]+)",
     "name": "OpenVAS",
     "version": "$1"
@@ -2918,6 +2923,21 @@ module.exports = [
     "regex": "Apache/([\\d.]+)",
     "name": "Apache",
     "version": "$1"
+  },
+  {
+    "regex": "smzdm ([\\d.]+)",
+    "name": "smzdm",
+    "version": "$1"
+  },
+  {
+    "regex": "Zite/([\\d.]+)",
+    "name": "Zite",
+    "version": "$1"
+  },
+  {
+    "regex": "DeepL/",
+    "name": "DeepL",
+    "version": ""
   },
   {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",

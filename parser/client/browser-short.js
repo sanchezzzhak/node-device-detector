@@ -448,6 +448,7 @@ module.exports = {
   'PP': 'Oppo Browser',
   'P6': 'Opus Browser',
   'PR': 'Palm Pre',
+  '2E': 'Pocket Internet Explorer',
   '7I': 'Puffin Cloud Browser',
   '6I': 'Puffin Incognito Browser',
   'PU': 'Puffin Secure Browser',

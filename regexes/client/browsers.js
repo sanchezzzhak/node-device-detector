@@ -111,7 +111,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "MIB/(\\d+[.\\d]+)",
+    "regex": "(?:MIB|MotorolaWebKit.*Version)/(\\d+[.\\d]+)",
     "name": "Motorola Internet Browser",
     "version": "$1"
   },
@@ -3692,6 +3692,14 @@ module.exports = [
     }
   },
   {
+    "regex": "(?:MSPIE|Pocket Internet Explorer)[ /](\\d+[.\\d]+)",
+    "name": "Pocket Internet Explorer",
+    "version": "$1",
+    "engine": {
+      "default": "Trident"
+    }
+  },
+  {
     "regex": "Kindle/(\\d+[.\\d]+)",
     "name": "Kindle Browser",
     "version": "$1"
@@ -3916,6 +3924,14 @@ module.exports = [
     "regex": "NetworkingExtension/(\\d+[.\\d]+).+ CFNetwork",
     "name": "Safari",
     "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Macintosh",
+    "name": "Safari",
+    "version": "",
     "engine": {
       "default": "WebKit"
     }

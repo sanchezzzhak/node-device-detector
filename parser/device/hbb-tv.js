@@ -24,7 +24,7 @@ class HbbTv extends DeviceAbstractParser {
 
     let result = {
       id: '',
-      type: DEVICE_TYPE.TV,
+      type: '',
       brand: '',
       model: '',
     };
@@ -34,7 +34,13 @@ class HbbTv extends DeviceAbstractParser {
       result.id = resultParse.id;
       result.brand = resultParse.brand;
       result.model = resultParse.model;
+      result.type = resultParse.type;
     }
+
+    if (!result.type) {
+      result.type = DEVICE_TYPE.TV;
+    }
+
     return result;
   }
 

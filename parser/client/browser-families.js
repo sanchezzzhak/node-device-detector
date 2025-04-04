@@ -47,7 +47,7 @@ module.exports = {
   'FP', 'AD', '2I', 'P9', 'KJ', 'WY', 'VK', 'W5',
   '7C', 'N7', 'W7',
   ],
-  'Internet Explorer': ['IE', 'CZ', 'BZ', 'IM', 'PS', '3A', '4A', 'RN'],
+  'Internet Explorer': ['IE', 'CZ', 'BZ', 'IM', 'PS', '3A', '4A', 'RN', '2E'],
   'Konqueror': ['KO'],
   'NetFront': ['NF'],
   'NetSurf': ['NE'],

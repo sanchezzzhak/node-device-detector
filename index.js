@@ -629,6 +629,14 @@ class DeviceDetector {
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     }
+
+    /**
+     * All devices running Coolita OS are assumed to be a tv
+     */
+    if ('Coolita OS' === osName) {
+      deviceType = DEVICE_TYPE.TV;
+    }
+
     /**
      * All devices that contain Andr0id in string are assumed to be a tv
      */
@@ -892,6 +900,13 @@ class DeviceDetector {
 
     if (!this.deviceInfo) {
       delete deviceData.info;
+    }
+
+    /**
+     * All devices running Coolita OS are assumed to be a tv
+     */
+    if ('Coolita OS' === osData.name && '' === deviceData.brand) {
+      deviceData.brand = 'coocaa';
     }
 
     return {
