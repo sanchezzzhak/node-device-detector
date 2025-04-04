@@ -2852,6 +2852,18 @@ module.exports = {
   "24115ra8eg": [
     "XI"
   ],
+  "24117rn76e": [
+    "XI"
+  ],
+  "24117rn76g": [
+    "XI"
+  ],
+  "24094rad4i": [
+    "XI"
+  ],
+  "24094rad4g": [
+    "XI"
+  ],
   "gi-626": [
     "A5"
   ],
@@ -60157,6 +60169,94 @@ module.exports = {
   "f101 p": [
     "FOS"
   ],
+  "2411drn47c": [
+    "XI"
+  ],
+  "2409brn2cg": [
+    "XI"
+  ],
+  "24095pcadg": [
+    "0P"
+  ],
+  "alpha a16": [
+    "NOV"
+  ],
+  "ds-cl4": [
+    "DCO"
+  ],
+  "coco10_ultra_4g": [
+    "4R"
+  ],
+  "cph2691": [
+    "ON",
+    "OP"
+  ],
+  "cph2651": [
+    "OP"
+  ],
+  "cph2649": [
+    "ON",
+    "OP"
+  ],
+  "cph2645": [
+    "ON",
+    "OP"
+  ],
+  "asusai2501c": [
+    "AU"
+  ],
+  "asusai2501b": [
+    "AU"
+  ],
+  "24129rt7cc": [
+    "XI"
+  ],
+  "24127rk2cc": [
+    "XI"
+  ],
+  "24122rkc7c": [
+    "XI"
+  ],
+  "umidigi g9t": [
+    "UM"
+  ],
+  "rmx3940": [
+    "RE"
+  ],
+  "blade gt": [
+    "DO"
+  ],
+  "blade10 max": [
+    "DO"
+  ],
+  "bv8200": [
+    "B2"
+  ],
+  "bv7300": [
+    "B2"
+  ],
+  "fire 6": [
+    "DO"
+  ],
+  "kingkong ace 2": [
+    "CB"
+  ],
+  "kingkong power 3": [
+    "CB",
+    "UM"
+  ],
+  "mblu 21": [
+    "M1"
+  ],
+  "land rover luxury": [
+    "L6"
+  ],
+  "ob_628": [
+    "A5"
+  ],
+  "cud go 2024": [
+    "CUD"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -74501,6 +74601,21 @@ module.exports = {
   ],
   "ftb13": [
     "XV"
+  ],
+  "yq10sk": [
+    "AT1"
+  ],
+  "infinity ta3e0m01": [
+    "D2"
+  ],
+  "infinity ta2d0m01": [
+    "D2"
+  ],
+  "hoco_hi12": [
+    "HOC"
+  ],
+  "np03j": [
+    "57"
   ],
   "jdn-al00": [
     "HU"
@@ -93181,6 +93296,150 @@ module.exports = {
   ],
   "bt_50fsu34b": [
     "BLT"
+  ],
+  "aiwaandroidtv": [
+    "AW"
+  ],
+  "32fcy2": [
+    "DX"
+  ],
+  "43fcy1": [
+    "DX"
+  ],
+  "43fcy2": [
+    "DX"
+  ],
+  "42lf8120t": [
+    "8A"
+  ],
+  "43ucy3": [
+    "DX"
+  ],
+  "43ucy2-g": [
+    "DX"
+  ],
+  "43ucy1-g": [
+    "DX"
+  ],
+  "43ucy1-b": [
+    "DX"
+  ],
+  "43u541t": [
+    "4B"
+  ],
+  "43lu1222": [
+    "VIT"
+  ],
+  "55xt-ud2g64n": [
+    "R3"
+  ],
+  "yndx-00077": [
+    "YD"
+  ],
+  "43lf7202t": [
+    "8A"
+  ],
+  "43f690ts": [
+    "HAR"
+  ],
+  "43f541t": [
+    "4B"
+  ],
+  "43fsq2020t2": [
+    "RUA"
+  ],
+  "43fles905t2sm": [
+    "05"
+  ],
+  "43fles900t2sm": [
+    "05"
+  ],
+  "43f01": [
+    "HA1"
+  ],
+  "40lst5975": [
+    "SKY"
+  ],
+  "40lf8130s": [
+    "8A"
+  ],
+  "32st20h": [
+    "OLT"
+  ],
+  "32lh1221": [
+    "VIT"
+  ],
+  "24r470ts": [
+    "HAR"
+  ],
+  "28h541t": [
+    "4B"
+  ],
+  "mclaut tv": [
+    "MCL"
+  ],
+  "tvs-su5007": [
+    "GAT"
+  ],
+  "tle-32sbm": [
+    "REN"
+  ],
+  "tq65ufbhv1": [
+    "TUV"
+  ],
+  "tdtv65bs06u": [
+    "TOP"
+  ],
+  "td43ufbsv1": [
+    "TUV"
+  ],
+  "td32hfbhv1": [
+    "TUV"
+  ],
+  "td24hfbhv1": [
+    "TUV"
+  ],
+  "t43fsm5160": [
+    "TN"
+  ],
+  "ct-8932": [
+    "CEN"
+  ],
+  "ct-8843": [
+    "CEN"
+  ],
+  "ct-8840": [
+    "CEN"
+  ],
+  "ct-8832": [
+    "CEN"
+  ],
+  "ct-8824": [
+    "CEN"
+  ],
+  "c50usy24f": [
+    "RAZ"
+  ],
+  "f32ey1000b": [
+    "ACC"
+  ],
+  "dm-led65ubb33": [
+    "D2"
+  ],
+  "dm-led50ubb33": [
+    "D2"
+  ],
+  "dm-led43ubb33": [
+    "D2"
+  ],
+  "dm-led43sbb33": [
+    "D2"
+  ],
+  "dm-led40sbb33": [
+    "D2"
+  ],
+  "dm-led32sbb33": [
+    "D2"
   ],
   "bb2 pro": [
     "0M"
