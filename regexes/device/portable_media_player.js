@@ -105,44 +105,6 @@ module.exports = {
     "device": "portable media player",
     "model": "$1"
   },
-  "SONOS": {
-    "regex": "(?:Sonos/.+\\((?:ZP.+)\\)|Sonos;)",
-    "device": "portable media player",
-    "models": [
-      {
-        "regex": "\\((ZPS(?:[13569]|1[1-578]|2[03])|ZP90)\\)",
-        "model": "$1"
-      },
-      {
-        "regex": "Sonos;Beam;",
-        "model": "Beam"
-      },
-      {
-        "regex": "Sonos;Roam;",
-        "model": "Roam"
-      },
-      {
-        "regex": "Sonos;Bookshelf;",
-        "model": "Bookshelf"
-      },
-      {
-        "regex": "Sonos;Move;",
-        "model": "Move"
-      },
-      {
-        "regex": "Sonos;Play(\\d);",
-        "model": "Play:$1"
-      },
-      {
-        "regex": "Sonos;One;",
-        "model": "One"
-      },
-      {
-        "regex": "Sonos;OneSL",
-        "model": "OneSL"
-      }
-    ]
-  },
   "Shanling": {
     "regex": "Shanling M6",
     "device": "portable media player",

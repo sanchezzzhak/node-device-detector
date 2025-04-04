@@ -4683,7 +4683,7 @@ module.exports = [
     "url": "https://www.phpmyadmin.net/"
   },
   {
-    "regex": "Matomo",
+    "regex": "Matomo/[\\d.]+",
     "name": "Matomo",
     "category": "Service Agent",
     "url": "https://github.com/matomo-org/matomo",

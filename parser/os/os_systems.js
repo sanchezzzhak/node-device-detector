@@ -31,6 +31,7 @@ module.exports = {
   'COS': 'Chrome OS',
   'CRS': 'Chromium OS',
   'CHN': 'China OS',
+  'COL': 'Coolita OS',
   'CYN': 'CyanogenMod',
   'DEB': 'Debian',
   'DEE': 'Deepin',
