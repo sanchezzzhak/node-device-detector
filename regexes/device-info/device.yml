@@ -6200,6 +6200,10 @@ realme:
   narzo 50: 'RE=2022.02;SZ=75.5x164.1x8.5;WT=194;DS=6.6;RS=1080x2412;OI=1;OV=11;CP=350;RM=4096;'
   rmx3286: '->narzo 50'
 
+sharp:
+  aquos s3 mini: 'RE=2018.03;SZ=73x142.7x7.8;WT=140;DS=5.5;RS=1080x2040;OS=OI=1;OV=7.1.1;CP=19;RM=6144;'
+  fs8018: '->aquos s3 mini'
+
 lg:
   v30: 'RE=2017.08;SZ=75.4x151.7x7.3;WT=158;DS=6.0;RS=1440x2880;OI=1;OV=7.1.2;CP=25;RM=4096;'
   lg-h933: '->v30'

@@ -126,8 +126,7 @@ cpu:
     process: 35nm
     gpu_id: 15
   19:
-    name: Qualcomm Snapdragon 630
-    # SDM630
+    name: Qualcomm Snapdragon 630 # SDM630
     type: ARM
     cores: 8
     clock_rate: 2200
