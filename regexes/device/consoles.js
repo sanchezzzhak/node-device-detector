@@ -91,12 +91,16 @@ module.exports = {
     "device": "console",
     "models": [
       {
-        "regex": "Retroid Pocket ([32]) ?(?:Plus|\\+)",
+        "regex": "Pocket ([23]) ?(?:Plus|\\+)",
         "model": "$1 Plus"
       },
       {
-        "regex": "Retroid Pocket 4 Pro",
+        "regex": "Pocket 4 Pro",
         "model": "4 Pro"
+      },
+      {
+        "regex": "Pocket ([235])",
+        "model": "$1"
       }
     ]
   }
