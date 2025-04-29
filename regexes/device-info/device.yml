@@ -4234,6 +4234,12 @@ nuvo:
   ns35: 'RE=2015.05;WT=120;SZ=61.5x114.5x10.6;RS=320x480;DS=3.5;SM=2;OI=1;OV=4.4;'
 
 samsung:
+  galaxy z flip 5: 'RE=2023.07;SZ=71.9x165.1x6.9;WT=187;DS=6.7;RS=1080x2640;OI=1;OV=13;CP=377;RM=8192;TT=1200783;TG=5478;'
+  sm-f731n: '->galaxy z flip 5'
+  sm-f731u1: '->galaxy z flip 5'
+  sm-f731w: '->galaxy z flip 5'
+  sm-f7310: '->galaxy z flip 5'
+  sm-f731b: '->galaxy z flip 5'
   galaxy z flip 3: 'RE=2021.08;SZ=72.2x166x6.9;WT=183;DS=6.7;RS=1080x2640;OI=1;OV=11;CP=305;RM=8192;TT=596866;TG=3441;'
   sm-f711w: '->galaxy z flip 3'
   sm-f711b: '->galaxy z flip 3'
