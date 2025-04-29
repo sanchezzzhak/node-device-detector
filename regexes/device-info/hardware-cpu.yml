@@ -126,8 +126,7 @@ cpu:
     process: 35nm
     gpu_id: 15
   19:
-    name: Qualcomm Snapdragon 630
-    # SDM630
+    name: Qualcomm Snapdragon 630 # SDM630
     type: ARM
     cores: 8
     clock_rate: 2200
@@ -1822,8 +1821,7 @@ cpu:
     process: 7nm
     gpu_id: 102
   275:
-    name: Qualcomm Snapdragon 750 5G
-    # SM7225
+    name: Qualcomm Snapdragon 750 5G    # SM7225
     type: ARM
     clock_rate: 2200
     cores: 8
@@ -2556,3 +2554,17 @@ cpu:
     clock_rate: 3300
     process: 4nm
     gpu_id: 127
+  379:
+    name: Samsung Exynos 1580
+    type: ARM
+    cores: 8
+    clock_rate: 2900
+    process: 4nm
+    gpu_id: 128
+  380:
+    name: MediaTek Dimensity 6100+
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 6nm
+    gpu_id: 108
