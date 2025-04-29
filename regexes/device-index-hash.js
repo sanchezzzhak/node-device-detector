@@ -846,6 +846,18 @@ module.exports = {
     "CB",
     "8R"
   ],
+  "rg556": [
+    "ANC"
+  ],
+  "rg406v": [
+    "ANC"
+  ],
+  "rgcube": [
+    "ANC"
+  ],
+  "retroid pocket 5": [
+    "8R"
+  ],
   "20jjs0cu1m": [
     "LE"
   ],
@@ -2862,6 +2874,12 @@ module.exports = {
     "XI"
   ],
   "24094rad4g": [
+    "XI"
+  ],
+  "24090ra29i": [
+    "XI"
+  ],
+  "24115ra8ei": [
     "XI"
   ],
   "gi-626": [
@@ -60257,6 +60275,161 @@ module.exports = {
   "cud go 2024": [
     "CUD"
   ],
+  "abr-lx1": [
+    "HU"
+  ],
+  "ctr-l91": [
+    "HU"
+  ],
+  "v2422": [
+    "VV"
+  ],
+  "amm-an00": [
+    "HU"
+  ],
+  "amg-an00": [
+    "HU"
+  ],
+  "amp-an00": [
+    "HU"
+  ],
+  "ptp-an20": [
+    "HU"
+  ],
+  "amp-an10": [
+    "HU"
+  ],
+  "tecno kl4h": [
+    "TB"
+  ],
+  "nexg n74": [
+    "WA"
+  ],
+  "new 26": [
+    "V6"
+  ],
+  "brc-nx1": [
+    "HU"
+  ],
+  "aligator_s6600": [
+    "4A"
+  ],
+  "lmk920": [
+    "LG"
+  ],
+  "lmk200e": [
+    "LG"
+  ],
+  "lmk200b": [
+    "LG"
+  ],
+  "a2019g pro": [
+    "ZT"
+  ],
+  "titan p8000 ultra carbon": [
+    "IH",
+    "UZ"
+  ],
+  "pa2310gbb": [
+    "UM"
+  ],
+  "neon ray ultra m": [
+    "X1",
+    "JG"
+  ],
+  "new 25": [
+    "V6"
+  ],
+  "mp21": [
+    "UM"
+  ],
+  "hero_20_pro": [
+    "AA"
+  ],
+  "five pro 32": [
+    "LM"
+  ],
+  "aeop513": [
+    "2X"
+  ],
+  "a301xm": [
+    "XI"
+  ],
+  "v2111-eg": [
+    "VV"
+  ],
+  "reno 4 pro": [
+    "OP"
+  ],
+  "reno 11 pro": [
+    "OP"
+  ],
+  "reno12 pro": [
+    "OP"
+  ],
+  "reno10 pro": [
+    "OP"
+  ],
+  "reno 11 f": [
+    "OP"
+  ],
+  "mis-lx9": [
+    "HU"
+  ],
+  "lava blaze": [
+    "LV"
+  ],
+  "kl505": [
+    "0K"
+  ],
+  "plu-al10": [
+    "HU"
+  ],
+  "icl-lx9": [
+    "HU"
+  ],
+  "gfy-lx1": [
+    "HU"
+  ],
+  "bl52pro": [
+    "BM"
+  ],
+  "v2405da": [
+    "VV"
+  ],
+  "asusai2501": [
+    "AU"
+  ],
+  "asusai2501a": [
+    "AU"
+  ],
+  "24116rnc1i": [
+    "XI"
+  ],
+  "17_pro_max": [
+    "TRP"
+  ],
+  "sparx neo 8i": [
+    "SPX"
+  ],
+  "stratus c8": [
+    "1J"
+  ],
+  "hero 20": [
+    "AA"
+  ],
+  "lt c60": [
+    "QL"
+  ],
+  "nitro_g55": [
+    "MW"
+  ],
+  "samsung sm-s911b": [
+    "SA"
+  ],
+  "orbit y12": [
+    "WA"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -74617,6 +74790,45 @@ module.exports = {
   "np03j": [
     "57"
   ],
+  "sm-t113n": [
+    "SA"
+  ],
+  "sm-p607t": [
+    "SA"
+  ],
+  "ocean k8 pro": [
+    "OLA"
+  ],
+  "mt06": [
+    "UM"
+  ],
+  "n02": [
+    "XG"
+  ],
+  "hanson_flex_7000": [
+    "HA2"
+  ],
+  "touch 7": [
+    "PRI"
+  ],
+  "j10_eea": [
+    "JUS"
+  ],
+  "bky-w09": [
+    "HU"
+  ],
+  "24091rpadc": [
+    "XI"
+  ],
+  "smartpad_a10_l": [
+    "BYY"
+  ],
+  "smartpad_a10_eu": [
+    "BYY"
+  ],
+  "alfa10tx_pro": [
+    "H0"
+  ],
   "jdn-al00": [
     "HU"
   ],
@@ -77316,7 +77528,8 @@ module.exports = {
     "PX"
   ],
   "pixus touch 7 3g": [
-    "PX"
+    "PX",
+    "PRI"
   ],
   "momo19": [
     "PY"
@@ -93441,6 +93654,109 @@ module.exports = {
   "dm-led32sbb33": [
     "D2"
   ],
+  "mortal t1": [
+    "MOR"
+  ],
+  "vgk02": [
+    "SK"
+  ],
+  "ip-80 max": [
+    "RE2"
+  ],
+  "ex-40fs001w": [
+    "35"
+  ],
+  "red 90": [
+    "SPD"
+  ],
+  "red 60": [
+    "SPD"
+  ],
+  "red 30": [
+    "SPD"
+  ],
+  "red 10": [
+    "SPD"
+  ],
+  "gazal_100mix": [
+    "GAL"
+  ],
+  "gazal_100": [
+    "GAL"
+  ],
+  "denka tv": [
+    "DNK"
+  ],
+  "dawlance gsmart 4ktv": [
+    "DAW"
+  ],
+  "sambox_km_35_pro": [
+    "SAB"
+  ],
+  "km22": [
+    "SAB"
+  ],
+  "sl-led58s01t2su": [
+    "SC1"
+  ],
+  "sl-led55s02t2su": [
+    "SC1"
+  ],
+  "onvo_65ov6000u": [
+    "ONV"
+  ],
+  "openbox gold": [
+    "OH"
+  ],
+  "n50hq2305svf": [
+    "NES"
+  ],
+  "n43hq2304svf": [
+    "NES"
+  ],
+  "n32hr2301sf": [
+    "NES"
+  ],
+  "n32hf2302sf": [
+    "NES"
+  ],
+  "epico 4k": [
+    "COE"
+  ],
+  "fresh smart tv": [
+    "FTH",
+    "JG"
+  ],
+  "crd65-uhd11": [
+    "MAG"
+  ],
+  "gtking_at_atv": [
+    "B0"
+  ],
+  "gt1-mini-at_atv": [
+    "B0"
+  ],
+  "caixun androidtv": [
+    "CAI"
+  ],
+  "ecostartv": [
+    "ECS"
+  ],
+  "fision tv plus": [
+    "FIS"
+  ],
+  "droidlogic hiremco": [
+    "HIR"
+  ],
+  "hiremco matrix": [
+    "HIR"
+  ],
+  "dm-led55ubb33": [
+    "D2"
+  ],
+  "dongle g 4k": [
+    "HOM"
+  ],
   "bb2 pro": [
     "0M"
   ],
@@ -94431,5 +94747,8 @@ module.exports = {
   ],
   "elari 4g wink": [
     "7E"
+  ],
+  "opwwe231": [
+    "ON"
   ]
 };
