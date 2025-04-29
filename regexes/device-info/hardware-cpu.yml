@@ -1821,8 +1821,7 @@ cpu:
     process: 7nm
     gpu_id: 102
   275:
-    name: Qualcomm Snapdragon 750 5G
-    # SM7225
+    name: Qualcomm Snapdragon 750 5G    # SM7225
     type: ARM
     clock_rate: 2200
     cores: 8
