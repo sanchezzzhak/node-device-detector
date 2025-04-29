@@ -4234,6 +4234,15 @@ nuvo:
   ns35: 'RE=2015.05;WT=120;SZ=61.5x114.5x10.6;RS=320x480;DS=3.5;SM=2;OI=1;OV=4.4;'
 
 samsung:
+  galaxy z fold 3 5g: 'RE=2021.08;SZ=128.1x158.2x6.4;WT=271;DS=7.6;RS=1768x2208;OI=1;OV=11;CP=305;RM=12288;TT=635918;TG=12719;'
+  sm-f926n: '->galaxy z fold 3 5g'
+  sm-f926w: '->galaxy z fold 3 5g'
+  sm-f926u1: '->galaxy z fold 3 5g'
+  sm-f926b: '->galaxy z fold 3 5g'
+  sc-55b: '->galaxy z fold 3 5g'
+  scg11: '->galaxy z fold 3 5g'
+  sm-f9260: '->galaxy z fold 3 5g'
+  sm-f926u: '->galaxy z fold 3 5g'
   galaxy a56 5g: 'RE=2025.03;SZ=77.5x162.2x7.4;WT=198;DS=6.7;RS=1080x2340;OI=1;OV=15;CP=379;RM=6144;TT=908689;TG=3899;'
   sm-a566e: '->galaxy a56 5g'
   sm-a566b: '->galaxy a56 5g'
