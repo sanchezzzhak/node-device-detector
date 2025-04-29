@@ -4234,6 +4234,10 @@ nuvo:
   ns35: 'RE=2015.05;WT=120;SZ=61.5x114.5x10.6;RS=320x480;DS=3.5;SM=2;OI=1;OV=4.4;'
 
 samsung:
+  galaxy a56 5g: 'RE=2025.03;SZ=77.5x162.2x7.4;WT=198;DS=6.7;RS=1080x2340;OI=1;OV=15;CP=379;RM=6144;TT=908689;TG=3899;'
+  sm-a566e: '->galaxy a56 5g'
+  sm-a566b: '->galaxy a56 5g'
+  sm-a566v: '->galaxy a56 5g'
   galaxy camera: 'RE=2012.08;SZ=70.8x128.7x19.1;WT=300;DS=4.8;RS=720x1280;OI=1;OV=4.1;CP=233;RM=1024;'
   ek-gc100: '->galaxy camera'
   galaxy camera 2: 'DS=4.8;RS=720x1280;SZ=71.2x132.5x19.3;WT=283;RE=2014;OI=1;OV=4.3;RM=2048;CP=233;'
