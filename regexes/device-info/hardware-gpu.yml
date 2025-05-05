@@ -380,3 +380,78 @@ gpu:
   127:
     name: Qualcomm Adreno 750
     clock_rate: 0
+  128:
+    name: Xclipse 540
+    clock_rate: 0
+  129:
+    name: ARM Mali-G78 MP20
+    clock_rate: 848
+  130:
+    name: ARM Mali-G710 MP7
+    clock_rate: 0
+  131:
+    name: ARM Mali-G78 MP24
+    clock_rate: 0
+  132:
+    name: ARM Mali-G78 MP22
+    clock_rate: 0
+  133:
+    name: Xclipse 920
+    clock_rate: 555
+  134:
+    name: Xclipse 530
+    clock_rate: 0
+  135:
+    name: ARM Mali-G610 MP6
+    clock_rate: 0
+  136:
+    name: ARM Mali-G610 MP4
+    clock_rate: 0
+  137:
+    name: Qualcomm Adreno 810
+    clock_rate: 0
+  138:
+    name: Qualcomm Adreno 643
+    clock_rate: 812
+  139:
+    name: Qualcomm Adreno 642
+    clock_rate: 0
+  140:
+    name: ARM Mali-G610 MP3
+    clock_rate: 0
+  141:
+    name: ARM Mali-G615 MP2
+    clock_rate: 0
+  142:
+    name: ARM Mali-G615 MP6
+    clock_rate: 0
+  143:
+    name: Qualcomm Adreno 710
+    clock_rate: 0
+  144:
+    name: Qualcomm Adreno 720
+    clock_rate: 0
+  145:
+    name: Qualcomm Adreno 725
+    clock_rate: 0
+  146:
+    name: Qualcomm Adreno 732
+    clock_rate: 0
+  147:
+    name: Qualcomm Adreno 735
+    clock_rate: 0
+  148:
+    name: Qualcomm Adreno 690
+    clock_rate: 0
+  149:
+    name: Qualcomm Adreno 685
+    clock_rate: 0
+  150:
+    name: Qualcomm Adreno 680
+    clock_rate: 0
+  151:
+    name: Qualcomm Adreno 619L
+    clock_rate: 0
+  152:
+    name: ARM Mali-G68 MP5
+    clock_rate: 0
