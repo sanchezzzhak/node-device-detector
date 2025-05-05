@@ -11,10 +11,10 @@ Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-d
 
 ## Code Status <a name="top"></a>
 
-![Chai](https://github.com/sanchezzzhak/node-device-detector/workflows/Tests/badge.svg?branch=master)
-![YAML Lint](https://github.com/sanchezzzhak/node-device-detector/workflows/YAML%20Lint/badge.svg?branch=master)
-![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg?branch=master)
-![CodeQL](https://github.com/sanchezzzhak/node-device-detector/workflows/CodeQL/badge.svg?branch=master)
+![Chai](https://github.com/sanchezzzhak/node-device-detector/workflows/Tests/badge.svg)
+![YAML Lint](https://github.com/sanchezzzhak/node-device-detector/workflows/YAML%20Lint/badge.svg)
+![Prettier](https://github.com/sanchezzzhak/node-device-detector/workflows/Prettier/badge.svg)
+![CodeQL](https://github.com/sanchezzzhak/node-device-detector/workflows/CodeQL/badge.svg)
 ## Contents
 
 + [Helpers](#helpers)
