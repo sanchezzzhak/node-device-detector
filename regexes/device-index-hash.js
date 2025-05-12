@@ -2103,6 +2103,9 @@ module.exports = {
   "havit pj209 pro": [
     "HAV"
   ],
+  "t3_pro": [
+    "6Z"
+  ],
   "sm-f721u": [
     "SA"
   ],
@@ -2880,6 +2883,24 @@ module.exports = {
     "XI"
   ],
   "24115ra8ei": [
+    "XI"
+  ],
+  "sm-f956b": [
+    "SA"
+  ],
+  "2502fra65g": [
+    "XI"
+  ],
+  "infinix x6855": [
+    "IF"
+  ],
+  "infinix x6858": [
+    "IF"
+  ],
+  "infinix x6856": [
+    "IF"
+  ],
+  "23021raaei": [
     "XI"
   ],
   "gi-626": [
@@ -60430,6 +60451,191 @@ module.exports = {
   "orbit y12": [
     "WA"
   ],
+  "sm-a566e": [
+    "SA"
+  ],
+  "sm-s721b": [
+    "SA"
+  ],
+  "5g ug phone u25": [
+    "ZT"
+  ],
+  "25010pn30g": [
+    "XI"
+  ],
+  "25019pnf3c": [
+    "XI"
+  ],
+  "raptor 5g": [
+    "5F"
+  ],
+  "sparx neo 9i": [
+    "SPX"
+  ],
+  "pkg110": [
+    "ON"
+  ],
+  "24129pn74g": [
+    "XI"
+  ],
+  "25028rn03a": [
+    "XI"
+  ],
+  "pkb110": [
+    "OP"
+  ],
+  "pkh110": [
+    "OP"
+  ],
+  "pkp110": [
+    "OP"
+  ],
+  "cph2695": [
+    "OP"
+  ],
+  "cph2671": [
+    "OP"
+  ],
+  "cph2697": [
+    "OP"
+  ],
+  "cph2711": [
+    "OP"
+  ],
+  "cph2701": [
+    "OP"
+  ],
+  "asusai2501h": [
+    "AU"
+  ],
+  "asusai2501e": [
+    "AU"
+  ],
+  "a059p": [
+    "NOT"
+  ],
+  "a059": [
+    "NOT"
+  ],
+  "pixel 9a": [
+    "GO"
+  ],
+  "motorola edge 60 fusion": [
+    "MR",
+    "O1"
+  ],
+  "2409fpcc4g": [
+    "0P"
+  ],
+  "2407fpn8er": [
+    "XI"
+  ],
+  "vi65pb1401na": [
+    "FV"
+  ],
+  "wildfire e star": [
+    "HT"
+  ],
+  "gfy-lx2": [
+    "HU"
+  ],
+  "flat 2": [
+    "OSC"
+  ],
+  "fire 6 power": [
+    "DO"
+  ],
+  "rmx5070": [
+    "RE"
+  ],
+  "rmx5071": [
+    "RE"
+  ],
+  "rmx5080": [
+    "RE"
+  ],
+  "rmx5090": [
+    "RE"
+  ],
+  "rmx5056": [
+    "RE"
+  ],
+  "rmx5050": [
+    "RE"
+  ],
+  "rmx3943": [
+    "RE"
+  ],
+  "sm-m055f": [
+    "SA"
+  ],
+  "tecno cm5": [
+    "TB"
+  ],
+  "marine 2": [
+    "OSC"
+  ],
+  "cph2699": [
+    "OP"
+  ],
+  "24117rk2cg": [
+    "0P"
+  ],
+  "24122rkc7g": [
+    "0P"
+  ],
+  "z2458": [
+    "ZT"
+  ],
+  "wp39 pro": [
+    "OE"
+  ],
+  "wp36 pro": [
+    "OE"
+  ],
+  "wp32_pro": [
+    "OE"
+  ],
+  "wp23 plus": [
+    "OE"
+  ],
+  "wp100 titan": [
+    "OE",
+    "UZ"
+  ],
+  "via m40": [
+    "R4"
+  ],
+  "v40 pro": [
+    "DO"
+  ],
+  "sm-a566b": [
+    "SA"
+  ],
+  "sm-a556v": [
+    "SA"
+  ],
+  "z2466": [
+    "ZT"
+  ],
+  "villaon v651l": [
+    "VI1"
+  ],
+  "v2438": [
+    "VV"
+  ],
+  "v2430": [
+    "VV"
+  ],
+  "u572ac": [
+    "CK"
+  ],
+  "infinix x6962": [
+    "IF"
+  ],
+  "xt2427-4": [
+    "MR"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -74828,6 +75034,78 @@ module.exports = {
   ],
   "alfa10tx_pro": [
     "H0"
+  ],
+  "tmnt": [
+    "5T"
+  ],
+  "smart_w84": [
+    "IG"
+  ],
+  "tab-10us": [
+    "WHO"
+  ],
+  "tbx11": [
+    "AND"
+  ],
+  "lguk932": [
+    "LG"
+  ],
+  "edge ta3e1m01": [
+    "D2"
+  ],
+  "edge ta2d1m01": [
+    "D2"
+  ],
+  "navo_p": [
+    "V2"
+  ],
+  "sm-x215": [
+    "SA"
+  ],
+  "mega 8": [
+    "B2"
+  ],
+  "mega 2": [
+    "B2"
+  ],
+  "2410crp4cg": [
+    "XI"
+  ],
+  "2410crp4cc": [
+    "XI"
+  ],
+  "24091rpadg": [
+    "XI"
+  ],
+  "zoom ta3d0p02": [
+    "D2"
+  ],
+  "zenith ta3e1p01": [
+    "D2"
+  ],
+  "zenith ta3d1p01": [
+    "D2"
+  ],
+  "via l50": [
+    "R4"
+  ],
+  "tab r9 pro": [
+    "HV"
+  ],
+  "tab r8": [
+    "HV"
+  ],
+  "p50case": [
+    "T7"
+  ],
+  "24076rp19i": [
+    "XI"
+  ],
+  "2405crpfdl": [
+    "XI"
+  ],
+  "xbook_12": [
+    "HM1"
   ],
   "jdn-al00": [
     "HU"
@@ -93757,6 +94035,76 @@ module.exports = {
   "dongle g 4k": [
     "HOM"
   ],
+  "tv-impact": [
+    "R3"
+  ],
+  "neko_wk_lt_32nh8000s": [
+    "NEK"
+  ],
+  "neko_lt-43nx7020s": [
+    "NEK"
+  ],
+  "multynet fhd android tv": [
+    "MLT"
+  ],
+  "ailetv": [
+    "AL1"
+  ],
+  "brandt uhd tv": [
+    "8B"
+  ],
+  "duotv": [
+    "DUO"
+  ],
+  "y8 max s905x3": [
+    "BQL",
+    "DO"
+  ],
+  "hty-24h06w-vz-m": [
+    "HA1"
+  ],
+  "indurama google tv 4k": [
+    "IND"
+  ],
+  "magentatv box": [
+    "MA4"
+  ],
+  "magentatv one": [
+    "MA4"
+  ],
+  "magentatv one (2. generation)": [
+    "MA4"
+  ],
+  "ntv_h43c612n": [
+    "7XR"
+  ],
+  "ntv-u50c614s": [
+    "7XR"
+  ],
+  "k55usy23": [
+    "RAZ"
+  ],
+  "red360 air 8k": [
+    "RE2"
+  ],
+  "td43ffbsv1": [
+    "TUV"
+  ],
+  "stv-43fdubk1r": [
+    "TUV"
+  ],
+  "senna_43sn6000f": [
+    "SEN"
+  ],
+  "qupi tv start": [
+    "QUP"
+  ],
+  "sencrom redrobox 4k plus": [
+    "SNM"
+  ],
+  "infinityprotv": [
+    "IPR"
+  ],
   "bb2 pro": [
     "0M"
   ],
@@ -94750,5 +95098,8 @@ module.exports = {
   ],
   "opwwe231": [
     "ON"
+  ],
+  "ticwatch pro 5": [
+    "MVO"
   ]
 };
