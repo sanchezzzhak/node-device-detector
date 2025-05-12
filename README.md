@@ -408,7 +408,7 @@ detector.detect (indexes on) x 1,032 ops/sec ±0.61% (94 runs sampled)
 </details>
 
 ### What about tests?
-Yes we use tests, total tests: ~83.3k
+Yes we use tests, total tests: ~83.7k
 
 ### Get more information about a device (experimental)
 > This parser is experimental and contains few devices. (1862 devices, alias devices 3923)

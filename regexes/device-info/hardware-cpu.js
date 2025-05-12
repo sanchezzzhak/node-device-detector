@@ -2914,6 +2914,22 @@ module.exports = {
       "clock_rate": 3300,
       "process": "4nm",
       "gpu_id": 127
+    },
+    "379": {
+      "name": "Samsung Exynos 1580",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2900,
+      "process": "4nm",
+      "gpu_id": 128
+    },
+    "380": {
+      "name": "MediaTek Dimensity 6100+",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2200,
+      "process": "6nm",
+      "gpu_id": 108
     }
   }
 };
