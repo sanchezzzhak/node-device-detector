@@ -1,3 +1,4 @@
+const CLIENT_TV_LIST = require('./const/clients-tv');
 
 /**
  * restore original userAgent from clientHints object
@@ -42,10 +43,19 @@ function restoreUserAgentFromClientHints(userAgent, clientHints) {
  * @returns {RegExpExecArray}
  */
 function matchUserAgent(str, userAgent) {
-  str = str.replace(new RegExp('/', 'g'), '\\/');
-  let regex = '(?:^|[^A-Z_-])(?:' + str + ')';
+  let regex = '(?:^|[^A-Z_-])(?:' + normalizeRegExp(str) + ')';
   let match = new RegExp(regex, 'i');
   return match.exec(userAgent);
+}
+
+function normalizeRegExp(regex) {
+  let string = '' + regex.replace(new RegExp('/', 'g'), '\\/');
+  return string.replace(new RegExp('\\+\\+', 'g'), '+');
+}
+
+function getBaseRegExp(str) {
+  const regex= '(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:' + normalizeRegExp(str) + ')';
+  return  new RegExp(regex, 'i');
 }
 
 function matchReplace(template, matches) {
@@ -236,7 +246,7 @@ function hasPuffinTabletFragment(userAgent) {
  */
 function hasAndroidTVFragment(userAgent) {
   return matchUserAgent(
-      'Andr0id|(?:Android(?: UHD)?|(?<!Xming )Google) TV|\\(lite\\) TV|BRAVIA| TV$',
+      'Andr0id|(?:Android(?: UHD)?|Google) TV|\\(lite\\) TV|BRAVIA|Firebolt| TV$',
       userAgent
   ) !== null;
 }
@@ -247,7 +257,8 @@ function hasAndroidTVFragment(userAgent) {
  * @return {boolean}
  */
 function hasTVFragment(userAgent) {
-  return matchUserAgent('SmartTV|Tizen.+ TV .+$|\\(TV;', userAgent) !== null;
+  return matchUserAgent('SmartTV|Tizen.+ TV .+$', userAgent) !== null;
+  // |\\(TV;
 }
 
 /**
@@ -263,10 +274,13 @@ function hasDesktopFragment(userAgent) {
     'PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)',
   ].join('|');
 
-  return matchUserAgent(DESKTOP_PATTERN, userAgent) !== null &&
-    !matchUserAgent(DESKTOP_EXCLUDE_PATTERN, userAgent) !== null;
+  return getBaseRegExp(DESKTOP_PATTERN).exec(userAgent) !== null &&
+    !(getBaseRegExp(DESKTOP_EXCLUDE_PATTERN).exec(userAgent) !== null);
 }
 
+function hasTVClient(name) {
+  return CLIENT_TV_LIST.indexOf(name) !== -1
+}
 
 /**
  * Check combinations is string that UserAgent ClientHints
@@ -407,6 +421,7 @@ function splitUserAgent(userAgent) {
 
 
 module.exports = {
+  hasTVClient,
   matchUserAgent,
   fuzzyCompare,
   fuzzyCompareNumber,
@@ -433,5 +448,6 @@ module.exports = {
   hasPuffinSmartphoneFragment,
   hasPuffinTabletFragment,
   hasDeviceModelWrong,
+  getBaseRegExp,
   restoreUserAgentFromClientHints
 };
