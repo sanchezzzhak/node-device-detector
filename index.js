@@ -843,24 +843,31 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
-    for (let name in this.clientParserList) {
-      const parser = this.clientParserList[name];
-
-      if (this.clientIndexes && extendParsers.includes(name) && userAgent) {
-        const hash = parser.parseFromHashHintsApp(clientHints);
-        const hint = parser.parseFromClientHints(clientHints);
+    // scan for indexes
+    if (this.clientIndexes) {
+      for (let name in this.clientParserList) {
+        const hasExtend = extendParsers.indexOf(name) !== -1;
+        const parser = this.clientParserList[name];
+        const hash = hasExtend ? parser.parseFromHashHintsApp(clientHints) : {};
+        const hint = hasExtend ? parser.parseFromClientHints(clientHints) : {};
         const data = parser.parseUserAgentByPositions(userAgent);
-        const result = parser.prepareParseResult(userAgent, data, hint, hash);
+        const result =  hasExtend ? parser.prepareParseResult(userAgent, data, hint, hash): data;
+
         if (result && result.name) {
           return Object.assign({}, result);
         }
       }
+    }
 
+    // scan full
+    for (let name in this.clientParserList) {
+      const parser = this.clientParserList[name];
       const result = parser.parse(userAgent, clientHints);
       if (result && result.name) {
         return Object.assign({}, result);
       }
     }
+
     return {};
   }
 

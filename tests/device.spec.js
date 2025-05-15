@@ -167,7 +167,7 @@ const createTestForFile = (file) => {
         if (forAsync) {
           result = await detector.detectAsync(cloneFixture.user_agent, clientHintData);
         } else {
-          result = await detector.detect(cloneFixture.user_agent, clientHintData);
+          result = detector.detect(cloneFixture.user_agent, clientHintData);
         }
 
         // check base

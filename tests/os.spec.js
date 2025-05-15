@@ -12,7 +12,7 @@ const ClientHints = require('../client-hints');
 
 
 const TIMEOUT = 6000;
-const detector = new OsDetector();
+const osDetector = new OsDetector();
 const clientHints = new ClientHints();
 let fixtureFolder = getFixtureFolder();
 
@@ -58,7 +58,7 @@ describe('tests oss', function () {
   let total = fixtureData.length;
   fixtureData.forEach((fixture, pos) => {
     it(pos + '/' + total, function () {
-      let result = detector.parse(fixture.user_agent, clientHints.parse(fixture.headers ?? {}));
+      let result = osDetector.parse(fixture.user_agent, clientHints.parse(fixture.headers ?? {}));
       runTest(fixture, result)
     });
   });
