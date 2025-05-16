@@ -18,6 +18,7 @@ const CLIENTHINT_MAPPING = {
 
 const FIRE_OS_VERSION_MAPPING = require('./os/fire-os-version-map');
 const LINEAGE_OS_VERSION_MAPPING = require('./os/lineage-os-version-map');
+const IndexerOs = require('./os/indexer-os');
 
 
 const getVersionForMapping = (version, map) => {
@@ -69,6 +70,17 @@ function comparePlatform(platform, bitness = '') {
 }
 
 class OsAbstractParser extends ParserAbstract {
+
+  #osIndexes = false;
+
+  get osIndexes() {
+    return this.#osIndexes;
+  }
+
+  set osIndexes(stage) {
+    this.#osIndexes = stage;
+  }
+
   constructor() {
     super();
     this.collection = require('../regexes/oss');
@@ -159,42 +171,65 @@ class OsAbstractParser extends ParserAbstract {
     };
   }
 
+
+  parseUserAgentByPosition(userAgent, position) {
+    let item = this.collection[position];
+    let regex = this.getBaseRegExp(item.regex);
+    let match = regex.exec(userAgent);
+    if (match !== null) {
+      let {
+        name,
+        short
+      } = this.getOsDataByName(this.buildByMatch(item.name, match));
+
+      let version = item.version !== void 0
+        ? this.buildVersion(item.version, match)
+        : '';
+
+      if (item.versions !== void 0) {
+        for (let versionItem of item.versions) {
+          let regex = this.getBaseRegExp(versionItem.regex);
+          let match = regex.exec(userAgent);
+          if (match !== null) {
+            version = this.buildVersion(versionItem.version, match);
+            break;
+          }
+        }
+      }
+
+      return {
+        name: name,
+        short_name: short,
+        version: version,
+        platform: this.parsePlatform(userAgent),
+        family: this.parseOsFamily(short)
+      };
+    }
+
+    return null;
+  }
+
   parseFromUserAgent(userAgent) {
     if (!userAgent) {
       return null;
     }
-    for (let i = 0, l = this.collection.length; i < l; i++) {
-      let item = this.collection[i];
-      let regex = this.getBaseRegExp(item.regex);
-      let match = regex.exec(userAgent);
-      if (match !== null) {
-        let {
-          name,
-          short
-        } = this.getOsDataByName(this.buildByMatch(item.name, match));
 
-        let version = item.version !== void 0
-          ? this.buildVersion(item.version, match)
-          : '';
-
-        if (item.versions !== void 0) {
-          for (let versionItem of item.versions) {
-            let regex = this.getBaseRegExp(versionItem.regex);
-            let match = regex.exec(userAgent);
-            if (match !== null) {
-              version = this.buildVersion(versionItem.version, match);
-              break;
-            }
+    if (this.osIndexes) {
+      let positions = IndexerOs.findOsRegexPositionsForUserAgent(userAgent);
+      if (positions !== null) {
+        for (let position of positions) {
+          let result = this.parseUserAgentByPosition(userAgent, position);
+          if (result !== null) {
+            return result;
           }
         }
+      }
+    }
 
-        return {
-          name: name,
-          short_name: short,
-          version: version,
-          platform: this.parsePlatform(userAgent),
-          family: this.parseOsFamily(short)
-        };
+    for (let i = 0, l = this.collection.length; i < l; i++) {
+      let result = this.parseUserAgentByPosition(userAgent, i);
+      if (result !== null) {
+        return result;
       }
     }
 

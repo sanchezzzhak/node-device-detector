@@ -63,6 +63,7 @@ class DeviceDetector {
 
   #skipBotDetection = false;
   #deviceIndexes = false;
+  #osIndexes = false;
   #clientIndexes = false;
   #deviceAliasCode = false;
   #deviceTrusted = false;
@@ -82,6 +83,7 @@ class DeviceDetector {
     this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
     this.deviceIndexes = attr(options, 'deviceIndexes', false);
     this.clientIndexes = attr(options, 'clientIndexes', false);
+    this.osIndexes = attr(options, 'osIndexes', false);
     this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
     this.maxUserAgentSize = attr(options, 'maxUserAgentSize', null);
     this.deviceTrusted = attr(options, 'deviceTrusted', false);
@@ -187,11 +189,29 @@ class DeviceDetector {
   }
 
   /**
-   * true use indexes, false not use indexes
    * @return {boolean}
    */
   get clientIndexes() {
     return this.#clientIndexes;
+  }
+
+  /**
+   * true use indexes, false not use indexes
+   * @param status
+   */
+  set osIndexes(status) {
+    this.#osIndexes = status;
+    for (let name in this.osParserList) {
+      this.osParserList[name].osIndexes = status;
+    }
+  }
+
+  /**
+   * true use indexes, false not use indexes
+   * @return {boolean}
+   */
+  get osIndexes() {
+    return this.#osIndexes;
   }
 
   /**

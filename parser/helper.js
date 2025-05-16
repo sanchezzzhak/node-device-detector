@@ -104,6 +104,7 @@ function fuzzyBetweenNumber(value, min, max) {
 }
 
 /**
+ * create hash from string
  * @param {string} str
  * @return {string}
  */
@@ -381,8 +382,7 @@ function getGroupForUserAgentTokens(tokens) {
 }
 
 function getTokensForUserAgent(userAgent) {
-  let tokenRegex = / (?![^(]*\))/i;
-  return userAgent.split(tokenRegex);
+  return userAgent.split(/ (?![^(]*\))/i);
 }
 
 /**
@@ -392,10 +392,9 @@ function getTokensForUserAgent(userAgent) {
  * @returns {{groups: *, userAgent: *, tokens: *}}
  */
 function splitUserAgent(userAgent) {
-  let tokens = getTokensForUserAgent(userAgent);
-  let groups = getGroupForUserAgentTokens(tokens);
-
-  let parts = [];
+  const tokens = getTokensForUserAgent(userAgent);
+  const groups = getGroupForUserAgentTokens(tokens);
+  const parts = [];
   for (let key in groups) {
     if (typeof groups[key] !== 'string' || !groups[key]) {
       continue;
@@ -414,11 +413,33 @@ function splitUserAgent(userAgent) {
     
     parts.push(String(key).toLowerCase());
   }
-  let hash = createHash(parts.join('.')).replace('-', '');
-  let path = parts.join('.');
+  const hash = createHash(parts.join('.')).replace('-', '');
+  const path = parts.join('.');
   return {tokens, groups, hash, path};
 }
 
+const OS_WEIGHTS = [
+  { regex: 'cfnetwork|darwin|mac os|apple ?tv', wt: 'apple general' },
+  { regex: 'watch ?os', wt: 'apple watch os'},
+  { regex: 'android|linux; andr0id|/tclwebkit', wt: 'android general' },
+  { regex: 'windows', wt: 'windows' },
+  { regex: '\\(x11;', wt: 'linux general'},
+  { regex: 'linux; ?tizen', wt: 'tizen'},
+  { regex: '[ \\(]web[0o]s', wt: 'webos general'},
+];
+
+function splitOsUserAgent(userAgent) {
+  const parts = [];
+  for(const record of OS_WEIGHTS) {
+    const match = new RegExp(normalizeRegExp(record.regex), 'i')
+    if (match.exec(userAgent)) {
+      parts.push(record.wt);
+    }
+  }
+  const hash = createHash(parts.join('.')).replace('-', '');
+  const path = parts.join('.');
+  return {hash, path};
+}
 
 module.exports = {
   hasTVClient,
@@ -443,6 +464,7 @@ module.exports = {
   revertObject,
   trimChars,
   splitUserAgent,
+  splitOsUserAgent,
   matchReplace,
   hasPuffinDesktopFragment,
   hasPuffinSmartphoneFragment,

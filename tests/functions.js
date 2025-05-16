@@ -5,6 +5,7 @@ const YAML = require('js-yaml');
 const csv = require('@fast-csv/parse');
 
 const ParserHelper = require('../parser/helper');
+const { matchUserAgent } = require('../parser/helper');
 
 const parseCsvLine = (string, separator = ',') => {
   return new Promise((resolve, reject) => {
@@ -41,6 +42,8 @@ function grabLogFiles(folderTestPath) {
 
   return files;
 }
+
+const sortAsc = (a, b) => a - b;
 
 /**
  * @param fixture
@@ -179,6 +182,7 @@ module.exports = {
   grabLogFiles,
   isFile,
   isDir,
+  sortAsc,
   parseCsvLine,
   revertKeysForObjects,
   normalizeVersion,
@@ -187,5 +191,5 @@ module.exports = {
   getFixtureFolder,
   getRegexesFolder,
   reportFixture,
-  isObjNotEmpty,
+  isObjNotEmpty
 };

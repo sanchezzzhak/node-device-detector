@@ -85,8 +85,18 @@ function testsFromFixtureDeviceMobile(fixture) {
   }
 }
 
-const runTest = (fixture, result) => {
+const runTest = (fixture, result, useIndex = null) => {
 
+  if (useIndex === true) {
+    expect(true).to.equal(detector.osIndexes);
+    expect(true).to.equal(detector.deviceIndexes);
+    expect(true).to.equal(detector.clientIndexes);
+  }
+  if (useIndex === false) {
+    expect(false).to.equal(detector.osIndexes);
+    expect(false).to.equal(detector.deviceIndexes);
+    expect(false).to.equal(detector.clientIndexes);
+  }
   let messageError = 'fixture data\n' + perryJSON(fixture);
 
   // remove client hints for diff result
@@ -145,14 +155,14 @@ const runTest = (fixture, result) => {
   }
 };
 
-const createTestForFile = (file) => {
+const createTestForFile = (file, useIndex = null) => {
   describe('file fixture ' + file, function() {
     let fixtureData = YAMLLoad(fixtureFolder + 'devices/' + file);
     
     let total = fixtureData.length;
     let firstTestFixture = false;
     
-    const createSubTests = (fixture, forAsync = false, pos) => {
+    const createSubTests = (fixture, forAsync = false, pos, useIndex = null) => {
       it(pos + '/' + total, async function() {
         if (fixture['bot'] !== void 0) {
           return this.skip();
@@ -175,7 +185,7 @@ const createTestForFile = (file) => {
         // print fixture and result is debug enable
         perryTable(cloneFixture, result);
         // check fixture test
-        runTest(cloneFixture, result);
+        runTest(cloneFixture, result, useIndex);
         // check tests fixture report
         if (!firstTestFixture) {
           testsFromFixtureDeviceMobile(result);
@@ -190,11 +200,12 @@ const createTestForFile = (file) => {
       before(() => {
         detector.deviceIndexes = false;
         detector.clientIndexes = false;
+        detector.osIndexes = false;
       });
       
       fixtureData.forEach((fixture, pos) => {
         normalizationFixture(fixture);
-        createSubTests(fixture, false, pos);
+        createSubTests(fixture, false, pos, false);
       });
     });
 
@@ -204,10 +215,11 @@ const createTestForFile = (file) => {
       before(() => {
         detector.deviceIndexes = true;
         detector.clientIndexes = true;
+        detector.osIndexes = true;
       });
       fixtureData.forEach((fixture, pos) => {
         normalizationFixture(fixture);
-        createSubTests(fixture, false, pos);
+        createSubTests(fixture, false, pos, true);
       });
     });
     
