@@ -49,8 +49,9 @@ function matchUserAgent(str, userAgent) {
 }
 
 function normalizeRegExp(regex) {
-  let string = '' + regex.replace(new RegExp('/', 'g'), '\\/');
-  return string.replace(new RegExp('\\+\\+', 'g'), '+');
+  return regex.replace(new RegExp('\\\\', 'g'), '\\\\')
+    .replace(new RegExp('/', 'g'), '\\/')
+    .replace(new RegExp('\\+\\+', 'g'), '+');
 }
 
 function getBaseRegExp(str) {
