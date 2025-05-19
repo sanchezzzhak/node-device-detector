@@ -49,8 +49,7 @@ function matchUserAgent(str, userAgent) {
 }
 
 function normalizeRegExp(regex) {
-  return regex.replace(new RegExp('\\\\', 'g'), '\\\\')
-    .replace(new RegExp('/', 'g'), '\\/')
+  return '' + regex.replace(new RegExp('/', 'g'), '\\/')
     .replace(new RegExp('\\+\\+', 'g'), '+');
 }
 
