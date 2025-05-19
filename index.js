@@ -34,7 +34,6 @@ const InfoDevice = require('./parser/device/info-device');
 const DeviceTrusted = require('./parser/device/device-trusted');
 // const, lists, parser names
 const DEVICE_TYPE = require('./parser/const/device-type');
-const CLIENT_TV_LIST = require('./parser/const/clients-tv');
 const CLIENT_TYPE = require('./parser/const/client-type');
 const APPLE_OS_LIST = require('./parser/const/apple-os');
 const DESKTOP_OS_LIST = require('./parser/const/desktop-os');
@@ -64,6 +63,7 @@ class DeviceDetector {
 
   #skipBotDetection = false;
   #deviceIndexes = false;
+  #osIndexes = false;
   #clientIndexes = false;
   #deviceAliasCode = false;
   #deviceTrusted = false;
@@ -83,6 +83,7 @@ class DeviceDetector {
     this.clientVersionTruncate = attr(options, 'clientVersionTruncate', null);
     this.deviceIndexes = attr(options, 'deviceIndexes', false);
     this.clientIndexes = attr(options, 'clientIndexes', false);
+    this.osIndexes = attr(options, 'osIndexes', false);
     this.deviceAliasCode = attr(options, 'deviceAliasCode', false);
     this.maxUserAgentSize = attr(options, 'maxUserAgentSize', null);
     this.deviceTrusted = attr(options, 'deviceTrusted', false);
@@ -188,11 +189,29 @@ class DeviceDetector {
   }
 
   /**
-   * true use indexes, false not use indexes
    * @return {boolean}
    */
   get clientIndexes() {
     return this.#clientIndexes;
+  }
+
+  /**
+   * true use indexes, false not use indexes
+   * @param status
+   */
+  set osIndexes(status) {
+    this.#osIndexes = status;
+    for (let name in this.osParserList) {
+      this.osParserList[name].osIndexes = status;
+    }
+  }
+
+  /**
+   * true use indexes, false not use indexes
+   * @return {boolean}
+   */
+  get osIndexes() {
+    return this.#osIndexes;
   }
 
   /**
@@ -487,7 +506,6 @@ class DeviceDetector {
     let clientFamily = attr(clientData, 'family', '');
     let deviceType = attr(deviceData, 'type', '');
 
-
     // client hint detect device type
     if (
       deviceType === '' &&
@@ -595,15 +613,15 @@ class DeviceDetector {
      * As most touch enabled devices are tablets and only a smaller part are desktops/notebooks we assume that
      * all Windows 8 touch devices are tablets.
      */
-    if (
-      deviceType === '' &&
-      (osName === 'Windows RT' || (osName === 'Windows' && helper.versionCompare(osVersion, '8') >= 0)) &&
-      helper.hasTouchFragment(userAgent)
-    ) {
+    const hasWindowTable = '' === deviceType &&
+      ('Windows RT' === osName || ('Windows' === osName && helper.versionCompare(osVersion, '8') >= 0)) &&
+      helper.hasTouchFragment(userAgent);
+
+    if (hasWindowTable) {
       deviceType = DEVICE_TYPE.TABLET;
     }
 
-    if (deviceType === '' && /Puffin\/\d/i.test(userAgent)) {
+    if ('' === deviceType && /Puffin\/\d/i.test(userAgent)) {
       /**
        * All devices running Puffin Secure Browser that contain letter 'D' are assumed to be desktops
        */
@@ -629,14 +647,12 @@ class DeviceDetector {
     if (helper.hasOperaTVStoreFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     }
-
     /**
      * All devices running Coolita OS are assumed to be a tv
      */
     if ('Coolita OS' === osName) {
       deviceType = DEVICE_TYPE.TV;
     }
-
     /**
      * All devices that contain Andr0id in string are assumed to be a tv
      */
@@ -650,19 +666,25 @@ class DeviceDetector {
     /**
      * All devices running Tizen TV or SmartTV are assumed to be a tv
      */
-    if (deviceType === '' && helper.hasTVFragment(userAgent)) {
+    if ('' === deviceType && helper.hasTVFragment(userAgent)) {
       deviceType = DEVICE_TYPE.TV;
     }
     /**
      * Devices running those clients are assumed to be a TV
      */
-    if (CLIENT_TV_LIST.indexOf(clientName) !== -1) {
+    if (helper.hasTVClient(clientName)) {
       deviceType = DEVICE_TYPE.TV;
     }
-
-    if (
-      DEVICE_TYPE.DESKTOP !== deviceType && userAgent.indexOf('Desktop') !== -1
-    ) {
+    /**
+     * All devices containing TV fragment are assumed to be a tv
+     */
+    if ('' === deviceType && helper.matchUserAgent('\\(TV;', userAgent)) {
+      deviceType = DEVICE_TYPE.TV;
+    }
+    /**
+     * Set device type desktop if string ua contains desktop
+     */
+    if (DEVICE_TYPE.DESKTOP !== deviceType && userAgent.indexOf('Desktop') !== -1) {
       if (helper.matchUserAgent('Desktop(?: (x(?:32|64)|WOW64))?;', userAgent)) {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
@@ -728,8 +750,8 @@ class DeviceDetector {
    * @return {ResultDevice}
    */
   parseDevice(userAgent, clientHints) {
+    let deviceModel = '';
     let brandIndexes = [];
-
     let result = {
       id: '',
       type: '',
@@ -741,11 +763,13 @@ class DeviceDetector {
     };
 
     const ua = this.restoreUserAgentFromClientHints(userAgent, clientHints);
+
     // skip all parse is client-hints useragent and model not exist
     if (!helper.hasDeviceModelByClientHints(clientHints) && helper.hasUserAgentClientHintsFragment(userAgent)) {
       return Object.assign({}, result);
     }
 
+    // add device.code to result
     if (this.deviceIndexes || this.deviceAliasCode || this.deviceInfo || this.deviceTrusted) {
       if (helper.hasDeviceModelByClientHints(clientHints)) {
         result.code = clientHints.device.model;
@@ -753,12 +777,19 @@ class DeviceDetector {
         const alias = this.parseDeviceCode(ua);
         result.code = alias.name ? alias.name : '';
       }
+      deviceModel = '' + result.code;
+    } else if(helper.hasDeviceModelByClientHints(clientHints)) {
+      deviceModel = '' + clientHints.device.model;
     }
 
+    // get indexes brands to scan only
     if (this.deviceIndexes) {
       brandIndexes = this.getBrandsByDeviceCode(result.code);
     }
-
+    // is desktop fragment then parsing device skip
+    if (deviceModel === '' && helper.hasDesktopFragment(ua)) {
+      return result;
+    }
     if (result && result.brand === '') {
       for (let name in this.deviceParserList) {
         let parser = this.deviceParserList[name];
@@ -832,24 +863,31 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
-    for (let name in this.clientParserList) {
-      const parser = this.clientParserList[name];
-
-      if (this.clientIndexes && extendParsers.includes(name) && userAgent) {
-        const hash = parser.parseFromHashHintsApp(clientHints);
-        const hint = parser.parseFromClientHints(clientHints);
+    // scan for indexes
+    if (this.clientIndexes) {
+      for (let name in this.clientParserList) {
+        const hasExtend = extendParsers.indexOf(name) !== -1;
+        const parser = this.clientParserList[name];
+        const hash = hasExtend ? parser.parseFromHashHintsApp(clientHints) : {};
+        const hint = hasExtend ? parser.parseFromClientHints(clientHints) : {};
         const data = parser.parseUserAgentByPositions(userAgent);
-        const result = parser.prepareParseResult(userAgent, data, hint, hash);
+        const result =  hasExtend ? parser.prepareParseResult(userAgent, data, hint, hash): data;
+
         if (result && result.name) {
           return Object.assign({}, result);
         }
       }
+    }
 
+    // scan full
+    for (let name in this.clientParserList) {
+      const parser = this.clientParserList[name];
       const result = parser.parse(userAgent, clientHints);
       if (result && result.name) {
         return Object.assign({}, result);
       }
     }
+
     return {};
   }
 

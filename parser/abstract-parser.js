@@ -45,10 +45,7 @@ class ParserAbstract {
    * @return {RegExp}
    */
   getBaseRegExp(str) {
-    str = str.replace(new RegExp('/', 'g'), '\\/');
-    str = str.replace(new RegExp('\\+\\+', 'g'), '+');
-    str = '(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:' + str + ')';
-    return new RegExp(str, 'i');
+    return helper.getBaseRegExp(str);
   }
 
   /**

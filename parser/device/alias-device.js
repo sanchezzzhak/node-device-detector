@@ -64,11 +64,16 @@ class AliasDevice extends AbstractParser {
    * @returns {{name: string}}
    */
   parse(userAgent) {
-    userAgent = this.prepareUserAgent(userAgent);
-    userAgent = normalizationUserAgent(userAgent);
     const result = {
       name: '',
     };
+
+    if (helper.hasDesktopFragment(userAgent)) {
+      return result;
+    }
+
+    userAgent = normalizationUserAgent(this.prepareUserAgent(userAgent));
+
     const isDecodeUA = /%[2-4][0-6A-F]/i.test(userAgent);
     let decodeUserAgent = '';
     try {

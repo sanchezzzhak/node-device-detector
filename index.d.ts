@@ -43,6 +43,16 @@ export default class DeviceDetector {
   /**
    * @param {boolean} stage - true use indexes, false not use indexes
    */
+  set osIndexes(stage: boolean);
+
+  /**
+   * @return {boolean} - true use indexes, false not use indexes
+   */
+  get osIndexes(): boolean;
+
+  /**
+   * @param {boolean} stage - true use indexes, false not use indexes
+   */
   set deviceIndexes(stage: boolean);
 
   /**
@@ -174,6 +184,7 @@ export interface DeviceDetectorOptions {
   osVersionTruncate?: number | null;
   clientVersionTruncate?: number | null;
   maxUserAgentSize?: number | null;
+  osIndexes?: boolean;
   deviceIndexes?: boolean;
   clientIndexes?: boolean;
   deviceAliasCode?: boolean;
