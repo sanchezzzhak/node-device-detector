@@ -858,6 +858,9 @@ module.exports = {
   "retroid pocket 5": [
     "8R"
   ],
+  "rg405m": [
+    "ANC"
+  ],
   "20jjs0cu1m": [
     "LE"
   ],
@@ -2902,6 +2905,12 @@ module.exports = {
   ],
   "23021raaei": [
     "XI"
+  ],
+  "sm-f741u": [
+    "SA"
+  ],
+  "sm-f741u1": [
+    "SA"
   ],
   "gi-626": [
     "A5"
@@ -54231,7 +54240,7 @@ module.exports = {
     "SA"
   ],
   "gar-an60": [
-    "HU"
+    "WI"
   ],
   "sh60 2gb/32gb 3000mah hms": [
     "FPS",
@@ -54742,13 +54751,13 @@ module.exports = {
     "HU"
   ],
   "gar-an00": [
-    "HU"
+    "WI"
   ],
   "rmx3841": [
     "RE"
   ],
   "bal-an20": [
-    "HU"
+    "WI"
   ],
   "atlas w": [
     "ZT"
@@ -56049,6 +56058,12 @@ module.exports = {
   ],
   "mzb07z2in": [
     "0P"
+  ],
+  "tyh641m": [
+    "U9"
+  ],
+  "digi r2": [
+    "D4"
   ],
   "y9plus": [
     "DO"
@@ -60635,6 +60650,227 @@ module.exports = {
   ],
   "xt2427-4": [
     "MR"
+  ],
+  "cp07": [
+    "CO"
+  ],
+  "mky-an20": [
+    "WI"
+  ],
+  "l202206": [
+    "LEB"
+  ],
+  "blade gt ultra": [
+    "DO"
+  ],
+  "armor 28 ultra": [
+    "UL"
+  ],
+  "armor 30 pro": [
+    "UL"
+  ],
+  "armor c1 max": [
+    "UL"
+  ],
+  "armor 27t": [
+    "UL"
+  ],
+  "armor x31 pro": [
+    "UL"
+  ],
+  "armor p1 pro": [
+    "UL"
+  ],
+  "armor mini 20 pro": [
+    "UL"
+  ],
+  "agm_x6": [
+    "A3"
+  ],
+  "nova60 i": [
+    "C5"
+  ],
+  "mipo_m59": [
+    "MIP"
+  ],
+  "magno p3": [
+    "ZU"
+  ],
+  "magno p1": [
+    "ZU"
+  ],
+  "nova_10_pro_4g": [
+    "KGT"
+  ],
+  "infinix x6881": [
+    "IF"
+  ],
+  "infinix x6880": [
+    "IF"
+  ],
+  "hyper 7": [
+    "HV"
+  ],
+  "hmd crest": [
+    "HMD"
+  ],
+  "g518": [
+    "GN"
+  ],
+  "g318": [
+    "GN"
+  ],
+  "fire 6 max": [
+    "DO"
+  ],
+  "c68": [
+    "9H"
+  ],
+  "c67": [
+    "9H"
+  ],
+  "armor x32": [
+    "UL"
+  ],
+  "armor v1s": [
+    "KHI"
+  ],
+  "armor p1w": [
+    "KHI"
+  ],
+  "armor mini 20": [
+    "UL"
+  ],
+  "armor 27": [
+    "UL"
+  ],
+  "armor i2w": [
+    "KHI"
+  ],
+  "2409brn2cc": [
+    "XI"
+  ],
+  "shahin ii": [
+    "GX"
+  ],
+  "sn509c": [
+    "CK"
+  ],
+  "sl219a": [
+    "6A"
+  ],
+  "plr-al00": [
+    "HU"
+  ],
+  "ptp-n59": [
+    "HU"
+  ],
+  "ptp-n29": [
+    "HU"
+  ],
+  "pks110": [
+    "OP"
+  ],
+  "pkr110": [
+    "ON"
+  ],
+  "pkm110": [
+    "OP"
+  ],
+  "pkl110": [
+    "OP"
+  ],
+  "pkk110": [
+    "OP"
+  ],
+  "pkj110": [
+    "OP"
+  ],
+  "xt2437-4": [
+    "MR"
+  ],
+  "xt1924-7": [
+    "MR"
+  ],
+  "xt2087-1": [
+    "MR"
+  ],
+  "v2451": [
+    "VV"
+  ],
+  "xiaomi poco m6 pro": [
+    "0P",
+    "XI"
+  ],
+  "armor h1s": [
+    "KHI"
+  ],
+  "plr-l29": [
+    "HU"
+  ],
+  "pla-al10": [
+    "HU"
+  ],
+  "icl-al20": [
+    "HU"
+  ],
+  "icl-al10": [
+    "HU"
+  ],
+  "v2444a": [
+    "VV"
+  ],
+  "sm-s936u": [
+    "SA"
+  ],
+  "sm-s931u": [
+    "SA"
+  ],
+  "sm-e145f": [
+    "SA"
+  ],
+  "pkv110": [
+    "OP"
+  ],
+  "ver-n49dp": [
+    "HU"
+  ],
+  "sm-a516f": [
+    "SA"
+  ],
+  "moto g15 power": [
+    "MR"
+  ],
+  "moto g05": [
+    "MR"
+  ],
+  "infinix x6873": [
+    "IF"
+  ],
+  "htc exodus 1": [
+    "HT"
+  ],
+  "cph2659": [
+    "OP"
+  ],
+  "cph2647": [
+    "ON",
+    "OP"
+  ],
+  "25028pc03g": [
+    "0P"
+  ],
+  "2412dpc0ai": [
+    "0P"
+  ],
+  "2412dpc0ag-art": [
+    "0P"
+  ],
+  "sm-s711w": [
+    "SA"
+  ],
+  "nexg n26": [
+    "WA"
   ],
   "gs55-6": [
     "GS"
@@ -75106,6 +75342,114 @@ module.exports = {
   ],
   "xbook_12": [
     "HM1"
+  ],
+  "wo pad 13": [
+    "WAO"
+  ],
+  "wo 9 ultra": [
+    "WAO"
+  ],
+  "wo 8 ultra": [
+    "WAO"
+  ],
+  "tgr-w00": [
+    "HU"
+  ],
+  "tab r5 pro": [
+    "HV"
+  ],
+  "alfa 11 bt": [
+    "H0"
+  ],
+  "m8_4g": [
+    "1R"
+  ],
+  "em103a": [
+    "APS"
+  ],
+  "buv7tblt10a": [
+    "V7T"
+  ],
+  "m50s": [
+    "T7"
+  ],
+  "m50-row": [
+    "T7"
+  ],
+  "m50_row": [
+    "T7"
+  ],
+  "m50plus": [
+    "T7"
+  ],
+  "m50mini": [
+    "T7"
+  ],
+  "lunnen ground 11": [
+    "LNN"
+  ],
+  "lunnen ground 10.4": [
+    "LNN"
+  ],
+  "infinix x1101": [
+    "IF"
+  ],
+  "infinity ta3d0m01": [
+    "D2"
+  ],
+  "iplay60 mini turbo": [
+    "3A"
+  ],
+  "h44": [
+    "KHI"
+  ],
+  "h34": [
+    "KHI"
+  ],
+  "h24": [
+    "KHI"
+  ],
+  "h14": [
+    "KHI"
+  ],
+  "gtx_jaculus_01": [
+    "GTX"
+  ],
+  "e10": [
+    "KHI"
+  ],
+  "c3_pro": [
+    "COL"
+  ],
+  "c10s": [
+    "QIW"
+  ],
+  "armor pad 4 ultra": [
+    "UL"
+  ],
+  "agm_pad_t1": [
+    "A3"
+  ],
+  "agm_pad_p2w": [
+    "A3"
+  ],
+  "xyao-w00": [
+    "HU"
+  ],
+  "rol-w00": [
+    "HU"
+  ],
+  "tab 60 pro": [
+    "B2"
+  ],
+  "web-w09": [
+    "HU"
+  ],
+  "web-w00": [
+    "HU"
+  ],
+  "wgrr-w19": [
+    "HU"
   ],
   "jdn-al00": [
     "HU"
@@ -94104,6 +94448,24 @@ module.exports = {
   ],
   "infinityprotv": [
     "IPR"
+  ],
+  "winkbox 2": [
+    "WN"
+  ],
+  "era8k pro": [
+    "KRX"
+  ],
+  "ntv-h3230ts": [
+    "NO2"
+  ],
+  "50mt-udg54g": [
+    "R3"
+  ],
+  "stv-32fdfbk1r": [
+    "TUV"
+  ],
+  "box r 4k plus": [
+    "HOM"
   ],
   "bb2 pro": [
     "0M"
