@@ -10,6 +10,7 @@ const detector = new DeviceDetector({
 });
 
 const createBenchmark = (useragent, useIndex = true) => {
+  const results = [];
   const status = useIndex ? 'on': 'off';
 
   detector.osIndexes = useIndex;
@@ -22,17 +23,34 @@ const createBenchmark = (useragent, useIndex = true) => {
 // add listeners
   suite.on('cycle', function(event) {
     console.log(String(event.target));
+    results.push({
+      name: event.target.name,
+      "indexes" : status,
+      'ops/sec': event.target.hz,
+      'margin of error': `±${Number(event.target.stats.rme).toFixed(2)}%`,
+      'runs sampled': event.target.stats.sample.length,
+    })
   });
-  suite.add(`detector.parseDevice (deviceIndexes ${status})`, function() {
+  suite.on('complete', function(event) {
+    console.table(
+      results
+        .map(result => ({
+          ...result,
+          'ops/sec': Math.round(result['ops/sec']).toLocaleString(),
+        }))
+        .reduce((acc, {name, ...cur }) => ({ ...acc, [name]: cur }), {})
+    );
+  });
+  suite.add('detector.parseDevice', function() {
     return detector.parseDevice(useragent, {});
   });
-  suite.add(`detector.parseClient (clientIndexes ${status})`, function() {
+  suite.add('detector.parseClient', function() {
     return detector.parseClient(useragent, {});
   });
-  suite.add(`detector.parseOS (indexes ${status})`, function() {
+  suite.add('detector.parseOS', function() {
     return detector.parseOs(useragent, {});
   });
-  suite.add(`detector.detect (indexes ${status})`, function() {
+  suite.add('detector.detect', function() {
     return detector.detect(useragent, {});
   });
   suite.run({async: false, queued: true});
@@ -51,6 +69,6 @@ const datasetBenchmark = [
 datasetBenchmark.forEach((useragent) => {
   createBenchmark(useragent, true);
 });
-// datasetBenchmark.forEach((useragent) => {
-//   createBenchmark(useragent, false);
-// });
+datasetBenchmark.forEach((useragent) => {
+  createBenchmark(useragent, false);
+});
