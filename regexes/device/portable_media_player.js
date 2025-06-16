@@ -145,7 +145,7 @@ module.exports = {
     ]
   },
   "Diofox": {
-    "regex": "Diofox[ _](M8)(?:[);/ ]|$)",
+    "regex": "Diofox[ _](M8|M10|M508)(?:[);/ ]|$)",
     "device": "portable media player",
     "model": "$1"
   },

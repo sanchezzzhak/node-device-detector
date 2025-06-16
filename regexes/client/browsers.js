@@ -2485,7 +2485,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Opera%20GX/.+CFNetwork/.+Darwin/",
+    "regex": "Opera(?:%20)?GX/.+CFNetwork/.+Darwin/",
     "name": "Opera GX",
     "version": "",
     "engine": {

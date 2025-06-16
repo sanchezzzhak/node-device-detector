@@ -758,5 +758,11 @@ module.exports = [
     "name": "webchk",
     "version": "$1",
     "url": "https://github.com/amgedr/webchk"
+  },
+  {
+    "regex": "MatomoTrackerSDK/(\\d+[.\\d]+)",
+    "name": "MatomoTracker",
+    "version": "$1",
+    "url": "https://github.com/matomo-org/matomo-sdk-ios"
   }
 ];
