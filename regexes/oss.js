@@ -1371,37 +1371,37 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "FBMD/iPad;.*FBSV/ ?(1[3-8]).(\\d+[.\\d]*);",
+    "regex": "FBMD/iPad;.*FBSV/ ?(1[3-8]|26).(\\d+[.\\d]*);",
     "name": "iPadOS",
     "version": "$1.$2"
   },
   {
-    "regex": "iPad(?:OS)?[ /](1[3-8])\\.(\\d+[.\\d]*)",
+    "regex": "iPad(?:OS)?[ /](1[3-8]|26)\\.(\\d+[.\\d]*)",
     "name": "iPadOS",
     "version": "$1.$2"
   },
   {
-    "regex": "^iPad(?:\\d+[\\,\\d]*)/(1[3-8])\\.(\\d+[.\\d]*)",
+    "regex": "^iPad(?:\\d+[\\,\\d]*)/(1[3-8]|26)\\.(\\d+[.\\d]*)",
     "name": "iPadOS",
     "version": "$1.$2"
   },
   {
-    "regex": "iPad(?:; (?:iOS|iPadOS|iPhone OS)|.+CPU (?:iPad |iPhone )?OS) ((1[3-8])+(?:[_.]\\d+)*)",
+    "regex": "iPad(?:; (?:iOS|iPadOS|iPhone OS)|.+CPU (?:iPad |iPhone )?OS) ((1[3-8]|26)+(?:[_.]\\d+)*)",
     "name": "iPadOS",
     "version": "$1"
   },
   {
-    "regex": "iOS/(1[3-8])\\.(\\d+[.\\d]*).+Apple/iPad",
+    "regex": "iOS/(1[3-8]|26)\\.(\\d+[.\\d]*).+Apple/iPad",
     "name": "iPadOS",
     "version": "$1.$2"
   },
   {
-    "regex": "iPhone OS,(1[3-8])\\.(\\d+[.\\d]*).+iPad",
+    "regex": "iPhone OS,(1[3-8]|26)\\.(\\d+[.\\d]*).+iPad",
     "name": "iPadOS",
     "version": "$1.$2"
   },
   {
-    "regex": "iphoneos(1[3-8])\\.(\\d+[.\\d]*); iPad",
+    "regex": "iphoneos(1[3-8]|26)\\.(\\d+[.\\d]*); iPad",
     "name": "iPadOS",
     "version": "$1.$2"
   },
@@ -1421,7 +1421,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "iphoneos(1[3-8])\\.(\\d+[.\\d]*); iPhone",
+    "regex": "iphoneos(1[3-8]|26)\\.(\\d+[.\\d]*); iPhone",
     "name": "iOS",
     "version": "$1.$2"
   },
@@ -1454,6 +1454,14 @@ module.exports = [
     "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|NetworkingExtension).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
     "name": "iOS",
     "versions": [
+      {
+        "regex": "Darwin/25\\.0\\.0",
+        "version": "26"
+      },
+      {
+        "regex": "Darwin/24\\.5\\.0",
+        "version": "18.5"
+      },
       {
         "regex": "Darwin/24\\.4\\.0",
         "version": "18.4"
@@ -1869,6 +1877,14 @@ module.exports = [
     "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:NetworkingExtension|Safari)",
     "name": "Mac",
     "versions": [
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.0\\.0",
+        "version": "26"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.5\\.0",
+        "version": "15.5"
+      },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.4\\.0",
         "version": "15.4"
