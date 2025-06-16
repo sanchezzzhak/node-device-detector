@@ -2912,6 +2912,24 @@ module.exports = {
   "sm-f741u1": [
     "SA"
   ],
+  "t803d": [
+    "TC"
+  ],
+  "t702d": [
+    "TC"
+  ],
+  "v2330": [
+    "VV"
+  ],
+  "sm-f7410": [
+    "SA"
+  ],
+  "tecno_lh8n": [
+    "TB"
+  ],
+  "iphone17,5": [
+    "AP"
+  ],
   "gi-626": [
     "A5"
   ],
@@ -60872,6 +60890,135 @@ module.exports = {
   "nexg n26": [
     "WA"
   ],
+  "wp35 s": [
+    "OE"
+  ],
+  "yuno": [
+    "LM"
+  ],
+  "umidigi g9c": [
+    "UM"
+  ],
+  "umidigi g9a": [
+    "UM"
+  ],
+  "tecno kl8h": [
+    "TB"
+  ],
+  "t702w": [
+    "TC"
+  ],
+  "t614d": [
+    "TC"
+  ],
+  "t611b": [
+    "TC"
+  ],
+  "v2441": [
+    "VV"
+  ],
+  "v2440": [
+    "VV"
+  ],
+  "v2437": [
+    "VV"
+  ],
+  "v2436": [
+    "VV"
+  ],
+  "v2434": [
+    "VV"
+  ],
+  "v2427": [
+    "VV"
+  ],
+  "v2425": [
+    "VV"
+  ],
+  "v2415": [
+    "VV"
+  ],
+  "v2413": [
+    "VV"
+  ],
+  "v2352ga": [
+    "VV"
+  ],
+  "v2009a": [
+    "VV"
+  ],
+  "z2465n": [
+    "57"
+  ],
+  "sm-a366u1": [
+    "SA"
+  ],
+  "sm-a366e": [
+    "SA"
+  ],
+  "sm-a366b": [
+    "SA"
+  ],
+  "wp35 pro": [
+    "OE"
+  ],
+  "t509k": [
+    "TC"
+  ],
+  "t433d": [
+    "TC"
+  ],
+  "t509a": [
+    "TC"
+  ],
+  "s118 pro": [
+    "DO"
+  ],
+  "s200 plus": [
+    "DO"
+  ],
+  "premier p50": [
+    "PR1"
+  ],
+  "bq-6861l": [
+    "BX"
+  ],
+  "bq-6761": [
+    "BX"
+  ],
+  "blade10 power": [
+    "DO"
+  ],
+  "yu5200": [
+    "Y1"
+  ],
+  "v2458a": [
+    "VV"
+  ],
+  "v2456a": [
+    "VV"
+  ],
+  "v2435a": [
+    "VV"
+  ],
+  "pkh120": [
+    "OP"
+  ],
+  "v2416": [
+    "VV"
+  ],
+  "rmx5030": [
+    "RE"
+  ],
+  "rmx5020": [
+    "RE"
+  ],
+  "v2420": [
+    "VV"
+  ],
+  "a171_plus": [
+    "I4"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -75451,6 +75598,57 @@ module.exports = {
   "wgrr-w19": [
     "HU"
   ],
+  "z168_eea": [
+    "ZIO"
+  ],
+  "xb-t11i": [
+    "XBI"
+  ],
+  "tb311fu": [
+    "LE"
+  ],
+  "tab a5 kids": [
+    "B2"
+  ],
+  "tab 9 wifi": [
+    "B2"
+  ],
+  "tab 90 wifi": [
+    "B2"
+  ],
+  "tab 90": [
+    "B2"
+  ],
+  "tab_868_pro": [
+    "TIB"
+  ],
+  "tab011": [
+    "NON"
+  ],
+  "pixus_deon": [
+    "PX"
+  ],
+  "pad lite e58": [
+    "KHI"
+  ],
+  "active 10 pro": [
+    "B2"
+  ],
+  "ipa2453": [
+    "VV"
+  ],
+  "ipa2451": [
+    "VV"
+  ],
+  "lecoo p116g": [
+    "LE"
+  ],
+  "m10_r02": [
+    "PRI"
+  ],
+  "dc-8015": [
+    "EVE"
+  ],
   "jdn-al00": [
     "HU"
   ],
@@ -89504,7 +89702,9 @@ module.exports = {
   "jvc shell 536d315xh33_hd": [
     "JV"
   ],
-  "yuno shell smarttv": [],
+  "yuno shell smarttv": [
+    "LM"
+  ],
   "yasin android tv": [
     "YJ"
   ],
@@ -94467,6 +94667,135 @@ module.exports = {
   "box r 4k plus": [
     "HOM"
   ],
+  "bq_42fs07b": [
+    "BX"
+  ],
+  "bq_32fsfo1b": [
+    "BX"
+  ],
+  "bq_32fs40b": [
+    "BX"
+  ],
+  "bq_32fs38b": [
+    "BX"
+  ],
+  "bt_32fs36b": [
+    "BLT"
+  ],
+  "bq_40fs36b": [
+    "BX"
+  ],
+  "65ules910t2sm": [
+    "05"
+  ],
+  "65ucy3": [
+    "DX"
+  ],
+  "24le7011d": [
+    "4H"
+  ],
+  "youwei box": [
+    "YO1"
+  ],
+  "43lex-8258uts2c": [
+    "BB"
+  ],
+  "43lex-8257uts2c": [
+    "BB"
+  ],
+  "43lex-8249uts2c": [
+    "BB"
+  ],
+  "43lex-8246uts2c": [
+    "BB"
+  ],
+  "43lex-7288fts2c-t9": [
+    "BB"
+  ],
+  "43lex-7260-fts2c": [
+    "BB"
+  ],
+  "43lex-7259fts2c": [
+    "BB"
+  ],
+  "43lex-7257fts2c": [
+    "BB"
+  ],
+  "43lex-8265-uts2c": [
+    "BB"
+  ],
+  "43lex-7246fts2c": [
+    "BB"
+  ],
+  "43lex-7236-fts2c": [
+    "BB"
+  ],
+  "32hsq1220t2": [
+    "RUA"
+  ],
+  "24lh8011t": [
+    "8A"
+  ],
+  "24lh7010t": [
+    "8A"
+  ],
+  "24lf8010t": [
+    "8A"
+  ],
+  "24h550t": [
+    "4B"
+  ],
+  "24f560t": [
+    "4B"
+  ],
+  "43u570t": [
+    "4B"
+  ],
+  "50u541t": [
+    "4B"
+  ],
+  "50lu1222": [
+    "VIT"
+  ],
+  "50u550t": [
+    "4B"
+  ],
+  "55le7053d": [
+    "4H"
+  ],
+  "55lu8030s": [
+    "8A"
+  ],
+  "55lu1222": [
+    "VIT"
+  ],
+  "55ulx9005t2": [
+    "05"
+  ],
+  "55ules901t2sm": [
+    "05"
+  ],
+  "55ue-byvb": [
+    "KTC"
+  ],
+  "k43uh902": [
+    "TRC"
+  ],
+  "k43uh901": [
+    "TRC"
+  ],
+  "k32hh902": [
+    "TRC"
+  ],
+  "h43qsy24f": [
+    "RAZ"
+  ],
+  "h32h5001sa": [
+    "TRC"
+  ],
+  "h32h5000sa": [
+    "TRC"
+  ],
   "bb2 pro": [
     "0M"
   ],
@@ -95463,5 +95792,17 @@ module.exports = {
   ],
   "ticwatch pro 5": [
     "MVO"
+  ],
+  "watch7,8": [
+    "AP"
+  ],
+  "watch7,10": [
+    "AP"
+  ],
+  "watch7,9": [
+    "AP"
+  ],
+  "watch7,11": [
+    "AP"
   ]
 };
