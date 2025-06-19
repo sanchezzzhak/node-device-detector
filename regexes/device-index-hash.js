@@ -2930,6 +2930,12 @@ module.exports = {
   "iphone17,5": [
     "AP"
   ],
+  "sm-w9025": [
+    "SA"
+  ],
+  "24117rn76l": [
+    "XI"
+  ],
   "gi-626": [
     "A5"
   ],
@@ -61019,6 +61025,243 @@ module.exports = {
   "a171_plus": [
     "I4"
   ],
+  "nokia 02-4g": [
+    "NK"
+  ],
+  "sbm106sh": [
+    "SH"
+  ],
+  "sm-a356u": [
+    "SA"
+  ],
+  "panasonic p55 novo": [
+    "PA"
+  ],
+  "sm-a066e": [
+    "SA"
+  ],
+  "wp200 pro": [
+    "OE"
+  ],
+  "sm-a217x": [
+    "SA"
+  ],
+  "25028rn03y": [
+    "XI"
+  ],
+  "z5157y": [
+    "ZT"
+  ],
+  "symphony p7": [
+    "SM"
+  ],
+  "aura_power": [
+    "KA"
+  ],
+  "blaupunkt_tx60": [
+    "BP"
+  ],
+  "marine 1": [
+    "OSC"
+  ],
+  "z2467": [
+    "ZT"
+  ],
+  "z2464n": [
+    "57"
+  ],
+  "rmx6688": [
+    "RE"
+  ],
+  "wp55": [
+    "OE"
+  ],
+  "rmx5303": [
+    "RE"
+  ],
+  "rmx5085": [
+    "RE"
+  ],
+  "rmx5079": [
+    "RE"
+  ],
+  "rmx5078": [
+    "RE"
+  ],
+  "rmx5061": [
+    "RE"
+  ],
+  "rmx5032": [
+    "RE"
+  ],
+  "rmx5031": [
+    "RE"
+  ],
+  "pkz110": [
+    "OP"
+  ],
+  "pkx110": [
+    "ON"
+  ],
+  "pkt110": [
+    "OP"
+  ],
+  "pilot 3": [
+    "OSC"
+  ],
+  "gvu6c": [
+    "GO"
+  ],
+  "gb7n6": [
+    "GO"
+  ],
+  "g025h": [
+    "GO"
+  ],
+  "doogee v11": [
+    "DO"
+  ],
+  "25028rn03l": [
+    "XI"
+  ],
+  "25053rt47c": [
+    "XI"
+  ],
+  "25028pc03i": [
+    "0P"
+  ],
+  "xt2255-1": [
+    "MR"
+  ],
+  "sm-s938w": [
+    "SA"
+  ],
+  "sm-s938u1": [
+    "SA"
+  ],
+  "sm-s938n": [
+    "SA"
+  ],
+  "sm-s938b": [
+    "SA"
+  ],
+  "sm-s9380": [
+    "SA"
+  ],
+  "sm-s937u": [
+    "SA"
+  ],
+  "sm-s936b": [
+    "SA"
+  ],
+  "sm-s931u1": [
+    "SA"
+  ],
+  "sm-s931n": [
+    "SA"
+  ],
+  "nx779j": [
+    "57"
+  ],
+  "nx737j": [
+    "57"
+  ],
+  "note 59": [
+    "DO"
+  ],
+  "note 58": [
+    "DO"
+  ],
+  "mblu 22 pro": [
+    "M1"
+  ],
+  "moto g15": [
+    "MR"
+  ],
+  "cph2729": [
+    "OP"
+  ],
+  "blade20 turbo": [
+    "DO"
+  ],
+  "wave 8c": [
+    "B2"
+  ],
+  "v2357ea": [
+    "VV"
+  ],
+  "vocal v2 lite": [
+    "VOC"
+  ],
+  "vocal v0core": [
+    "VOC"
+  ],
+  "24129pn74i": [
+    "XI"
+  ],
+  "24108pce2i": [
+    "0P"
+  ],
+  "primo x2mini": [
+    "WA"
+  ],
+  "v2464a": [
+    "VV"
+  ],
+  "v2454da": [
+    "VV"
+  ],
+  "v2454a": [
+    "VV"
+  ],
+  "v2452a": [
+    "VV"
+  ],
+  "v2435": [
+    "VV"
+  ],
+  "v2507": [
+    "VV"
+  ],
+  "rmx5055": [
+    "RE"
+  ],
+  "pld110": [
+    "OP"
+  ],
+  "plb110": [
+    "OP"
+  ],
+  "pkq110": [
+    "OP"
+  ],
+  "dnn-an00": [
+    "HU"
+  ],
+  "dnp-nx9": [
+    "HU"
+  ],
+  "dny-nx9": [
+    "HU"
+  ],
+  "dvd-an80": [
+    "HU"
+  ],
+  "dvd-an00": [
+    "HU"
+  ],
+  "agi-an00": [
+    "HU"
+  ],
+  "abr-nx1": [
+    "HU"
+  ],
+  "abr-lx3": [
+    "HU"
+  ],
+  "abr-lx2": [
+    "HU"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -75648,6 +75891,27 @@ module.exports = {
   ],
   "dc-8015": [
     "EVE"
+  ],
+  "sm-x620": [
+    "SA"
+  ],
+  "sm-x526b": [
+    "SA"
+  ],
+  "pad 100": [
+    "OSC"
+  ],
+  "vitumi 10.1": [
+    "VTM"
+  ],
+  "g1000 pro": [
+    "GVL"
+  ],
+  "g1000": [
+    "GVL"
+  ],
+  "g2000": [
+    "GVL"
   ],
   "jdn-al00": [
     "HU"
@@ -94795,6 +95059,15 @@ module.exports = {
   ],
   "h32h5000sa": [
     "TRC"
+  ],
+  "sun-led50xu400": [
+    "W8"
+  ],
+  "box r lite 4k": [
+    "HOM"
+  ],
+  "bq_43fs38b": [
+    "BX"
   ],
   "bb2 pro": [
     "0M"
