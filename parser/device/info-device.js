@@ -163,6 +163,7 @@ const sortObject = (o) =>
 
 const SHORT_KEYS = {
   DS: 'display.size',
+  DP: 'display.dpi',            // int: display densities
   // DT: 'display.type',        // string: display type IPS, LCD, OLED, SLED etc.
   // TS: 'display.touch',       // boolean: touch support
   RS: 'display.resolution',     // string|obj: 1080x1920
@@ -223,11 +224,39 @@ class InfoDevice extends ParserAbstract {
     return getDataByIdInCollection(collectionSoftware['os'], id);
   }
 
+  getGpuIdFromName(name) {
+    const lName = name.toLowerCase();
+    if (collectionHardwareGPU['gpu'] === void 0) {
+      return null;
+    }
+    for (let id in collectionHardwareGPU['gpu']) {
+      let gpu = collectionHardwareGPU['gpu'][id];
+      if (gpu !== void 0 && gpu.name.toLowerCase() === lName){
+        return id;
+      }
+    }
+    return null;
+  }
+
   getGpuById(id) {
     if (collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
     return getDataByIdInCollection(collectionHardwareGPU['gpu'], id);
+  }
+
+  getCpuIdFromName(name) {
+    const lName = name.toLowerCase();
+    if (collectionHardwareCPU['cpu'] === void 0) {
+      return null;
+    }
+    for (let id in collectionHardwareCPU['cpu']) {
+      let cpu = collectionHardwareCPU['cpu'][id];
+      if (cpu !== void 0 && cpu.name !== void 0 && cpu.name.toLowerCase() === lName){
+        return id;
+      }
+    }
+    return null
   }
 
   getCpuById(id) {
@@ -248,12 +277,13 @@ class InfoDevice extends ParserAbstract {
     let brand = fixStringName(deviceBrand).trim().toLowerCase();
     let model = fixStringName(deviceModel).trim().toLowerCase();
 
-    if (
-      this.collection[brand] === void 0 ||
-      this.collection[brand][model] === void 0
-    ) {
-      return null;
-    }
+     const isSkip = this.collection[brand] === void 0 ||
+       this.collection[brand] === null ||
+       this.collection[brand][model] === void 0;
+
+     if (isSkip) {
+       return null;
+     }
 
     let data = this.collection[brand][model];
     // get normalise data

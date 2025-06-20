@@ -178,6 +178,62 @@ ace:
   urban 1 pro: 'DS=5.7;RS=720x1440;SZ=75.9x159x9.9;WT=162;RE=2019;'
   clever 1: 'DS=6.19;RS=720x1440;SZ=75.9x159x9.9;WT=190;RE=2019;'
 
+evoo:
+  evmfv2: 'DS=5.03;DP=320;RS=720x1440;RM=3021;GP=4;OI=1;OV=9;'
+
+yumkem:
+  n10: 'DS=9.43;DP=160;RS=1280x800;RM=3805;GP=55;OI=1;OV=10;'
+  n10-eea: '>-n10'
+
+kzen:
+  eva e01: 'DS=4.47;DP=240;RS=480x960;RM=940;GP=4;OI=1;OV=8.1;'
+  eva_e01: '>-eva e01'
+
+mitsui:
+  mc32020: 'DS=5.03;DP=320;RS=720x1440;RM=2046;OI=1;OV=9;'
+
+bittium:
+  tough mobile 2: 'DS=5.25;DP=420;RS=1080x1920;RM=3889;OI=1;OV=11;'
+
+# Digidragon
+digidragon:
+  ds502: 'DS=4.88;DP=220;RS=480x960;RM=968;OI=1;OV=11;'
+  ds6261: 'DS=5.1;DP=220;RS=480x1014;RM=2032;OI=1;OV=11;'
+  ds6018: 'DS=5.89;DP=240;RS=600x1280;RM=1973;GP=55;OI=1;OV=11;'
+
+parrot mobile:
+  xplorer 2: 'DS=4.47;DP=240;RS=480x960;RM=972;OI=1;OV=8.1;'
+  xplorer_2: '>-xplorer 2'
+
+tps:
+  sc10: 'DS=8.09;DP=280;RS=1200x1920;RM=4208;GP=55;OI=1;OV=9;'
+  tps-sc10: '>-sc10'
+
+teracube:
+  teracube_one: 'DS=5.26;DP=480;RS=1080x2280;RM=6066;OI=1;OV=10;'
+  teracube_2e: 'DS=5.37;DP=320;RS=720x1560;RM=3982;GP=25;OI=1;OV=11;'
+
+cobalt:
+  t10 3g: 'DS=9.43;DP=160;RS=1280x800;RM=1003;OI=1;OV=7;'
+
+zik:
+  w1027: 'DS=7.09;DP=213;RS=1280x800;RM=2023;OI=1;OV=10;'
+# sankey
+sankey:
+  tab-7a3g05: 'DS=7.42;DP=160;RS=1024x600;RM=937;OI=1;OV=8.1;'
+  tab7a3g05: '>-tab-7a3g05'
+
+sprint:
+  aqt100: 'DS=7.09;DP=213;RS=1280x800;RM=956;GP=6;OI=1;OV=5.1;'
+  aqt82: 'DS=7.09;DP=213;RS=1280x800;RM=2007;GP=6;OI=1;OV=7.1;'
+
+dewalt:
+  md501: 'DS=4.59;DP=320;RS=720x1280;RM=2019;OI=1;OV=6;'
+
+winmax:
+  tiger x12: 'DS=3.13;DP=160;RS=320x385;RM=4000;OI=1;OV=8.1;'
+  tiger_x12: '>-tiger x12'
+
 # Acer
 acer:
   a1-810: '->iconia a'
