@@ -2568,3 +2568,66 @@ cpu:
     clock_rate: 2200
     process: 6nm
     gpu_id: 108
+  381:
+    name: Mediatek Helio G100
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 6nm
+    gpu_id: 108
+  382:
+    name: Mediatek Helio G81
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 153
+  383:
+    name: Allwinner A733
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 154
+  384:
+    name: Unisoc T620
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 12nm
+    gpu_id: 116
+  385:
+    name: Unisoc T606
+    type: ARM
+    cores: 8
+    clock_rate: 1600
+    process: 12nm
+    gpu_id: 116
+  386:
+    name: Mediatek Dimensity 7300
+    type: ARM
+    cores: 8
+    clock_rate: 2500
+    process: 4nm
+    gpu_id: 141
+  387:
+    name: Unisoc T820
+    type: ARM
+    cores: 8
+    clock_rate: 2100
+    process: 6nm
+    gpu_id: 155
+  388:
+    name: Unisoc Tiger T616
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 116
+  389:
+    name: Mediatek Helio G99
+    type: ARM
+    cores: 8
+    clock_rate: 2200
+    process: 6nm
+    gpu_id: 108
