@@ -441,7 +441,39 @@ function splitOsUserAgent(userAgent) {
   return {hash, path};
 }
 
+const mergeDeep = (target, source) => {
+  const isObject = (obj) =>
+    obj && typeof obj === 'object' && !Array.isArray(obj);
+
+  const isDeep = (prop) =>
+    isObject(source[prop]) &&
+    target.hasOwnProperty(prop) &&
+    isObject(target[prop]);
+
+  const replaced = Object.getOwnPropertyNames(source)
+    .map((prop) => ({
+      [prop]: isDeep(prop)
+        ? mergeDeep(target[prop], source[prop])
+        : source[prop]
+          ? source[prop]
+          : target[prop]
+    }))
+    .reduce((a, b) => ({ ...a, ...b }), {});
+
+  return {
+    ...target,
+    ...replaced
+  };
+};
+
+const sortObject = (o) =>
+  Object.keys(o)
+    .sort()
+    .reduce((r, k) => ((r[k] = o[k]), r), {});
+
 module.exports = {
+  mergeDeep,
+  sortObject,
   hasTVClient,
   matchUserAgent,
   fuzzyCompare,

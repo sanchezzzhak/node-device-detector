@@ -79,8 +79,8 @@ function YAMLLoad(yamlPath) {
   return YAML.load(fs.readFileSync(yamlPath, 'utf8'));
 }
 
-function YAMLDump(objects) {
-  return YAML.dump(objects);
+function YAMLDump(objects, options) {
+  return YAML.dump(objects, options);
 }
 
 function perryJSON(obj) {
