@@ -2778,3 +2778,10 @@ cpu:
     clock_rate: 0
     process: 28nm
     gpu_id: 0
+  406:
+    name: Mediatek MT8382
+    type: ARM
+    cores: 0
+    clock_rate: 0
+    process: 28nm
+    gpu_id: 0
