@@ -503,7 +503,7 @@ UA Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gec
 Yes we use tests, total tests: ~83.9k
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (2057 devices, alias devices 3987)
+> This parser is experimental and contains few devices. (2098 devices, alias devices 3987)
 >
 ##### Support detail brands/models list:
 
@@ -519,75 +519,76 @@ Yes we use tests, total tests: ~83.9k
 | ainol | 2 | 2 | - | airo wireless | 1 | 0 |
 | airtel | 1 | 0 | - | akai | 2 | 1 |
 | alcatel | 25 | 154 | - | alcor | 1 | 0 |
-| alldocube | 2 | 1 | - | altek | 1 | 0 |
-| amazon | 19 | 10 | - | amgoo | 2 | 2 |
-| amoi | 62 | 0 | - | apple | 46 | 101 |
-| archos | 89 | 7 | - | arian space | 4 | 4 |
-| ark | 1 | 1 | - | asanzo | 1 | 0 |
-| assistant | 2 | 2 | - | asus | 80 | 242 |
-| at&t | 1 | 1 | - | atol | 1 | 1 |
-| avenzo | 1 | 2 | - | avh | 1 | 0 |
-| avvio | 3 | 4 | - | barnes & noble | 1 | 0 |
-| bb mobile | 2 | 2 | - | beeline | 11 | 1 |
-| bellphone | 1 | 1 | - | bezkam | 1 | 0 |
-| bigben | 1 | 0 | - | bihee | 2 | 0 |
-| billion | 1 | 1 | - | biorugged | 1 | 0 |
-| bird | 1 | 0 | - | bitel | 4 | 0 |
-| bitmore | 2 | 1 | - | bittium | 1 | 0 |
-| bkav | 1 | 0 | - | black bear | 2 | 0 |
-| black fox | 18 | 18 | - | blackview | 97 | 19 |
-| blu | 23 | 16 | - | bravis | 24 | 16 |
-| byju\\'s | 1 | 1 | - | cgv | 1 | 0 |
-| clarmin | 3 | 0 | - | cobalt | 1 | 0 |
-| colors | 7 | 2 | - | cyrus | 1 | 1 |
-| dewalt | 1 | 0 | - | deyi | 1 | 1 |
-| dialog | 1 | 0 | - | digi | 6 | 0 |
-| digidragon | 3 | 0 | - | digifors | 1 | 1 |
-| doogee | 3 | 1 | - | engel | 1 | 1 |
-| estar | 2 | 0 | - | evoo | 1 | 0 |
-| firefly mobile | 4 | 0 | - | formuler | 2 | 0 |
-| geotel | 3 | 0 | - | gionee | 4 | 0 |
-| glocalme | 1 | 0 | - | google | 3 | 4 |
-| hafury | 1 | 0 | - | hisense | 2 | 0 |
-| hoffmann | 1 | 1 | - | hotwav | 18 | 2 |
-| huawei | 217 | 668 | - | i-mobile | 1 | 0 |
-| imo mobile | 5 | 5 | - | infinix | 26 | 42 |
-| inoi | 4 | 0 | - | intex | 18 | 4 |
-| ipro | 6 | 6 | - | irbis | 15 | 0 |
-| just5 | 1 | 0 | - | kalley | 3 | 1 |
-| kapsys | 1 | 0 | - | kiowa | 1 | 0 |
-| krip | 3 | 0 | - | kurio | 3 | 3 |
-| kzen | 1 | 0 | - | lava | 1 | 1 |
-| lg | 117 | 393 | - | malata | 1 | 0 |
-| maze | 4 | 0 | - | minix | 1 | 1 |
-| mipo | 2 | 0 | - | miray | 1 | 0 |
-| mitsui | 1 | 0 | - | mivo | 3 | 1 |
-| mobicel | 3 | 2 | - | motorola | 28 | 39 |
-| newland | 1 | 0 | - | noa | 1 | 0 |
-| nomi | 1 | 1 | - | nuu mobile | 9 | 8 |
-| nuvo | 3 | 2 | - | oneplus | 18 | 55 |
-| oppo | 108 | 240 | - | oukitel | 8 | 0 |
-| öwn | 1 | 2 | - | palm | 1 | 2 |
-| panasonic | 5 | 4 | - | parrot mobile | 1 | 0 |
-| pipo | 5 | 1 | - | pixpro | 1 | 0 |
-| poco | 9 | 26 | - | premier | 1 | 0 |
-| realme | 66 | 116 | - | samsung | 165 | 968 |
-| sankey | 1 | 0 | - | sansui | 1 | 0 |
-| senseit | 2 | 0 | - | sharp | 2 | 5 |
-| sony | 37 | 169 | - | sprint | 2 | 0 |
-| supra | 1 | 0 | - | tecno mobile | 91 | 162 |
-| teracube | 2 | 0 | - | tiphone | 1 | 0 |
-| tps | 1 | 0 | - | ulefone | 8 | 0 |
-| utok | 1 | 0 | - | uz mobile | 1 | 0 |
-| vernee | 9 | 2 | - | viewsonic | 1 | 0 |
-| visual land | 2 | 2 | - | vivo | 203 | 325 |
-| walton | 112 | 2 | - | we | 8 | 0 |
-| weimei | 1 | 0 | - | wiko | 7 | 16 |
-| wileyfox | 9 | 1 | - | wink | 4 | 0 |
-| winmax | 1 | 0 | - | x-age | 1 | 1 |
-| xiaomi | 9 | 26 | - | yumkem | 1 | 0 |
-| zen | 1 | 0 | - | zik | 1 | 0 |
-| zync | 2 | 1 | - | zyq | 1 | 1 |
+| alldocube | 2 | 1 | - | allview | 41 | 0 |
+| altek | 1 | 0 | - | amazon | 19 | 10 |
+| amgoo | 2 | 2 | - | amoi | 62 | 0 |
+| apple | 46 | 101 | - | archos | 89 | 7 |
+| arian space | 4 | 4 | - | ark | 1 | 1 |
+| asanzo | 1 | 0 | - | assistant | 2 | 2 |
+| asus | 80 | 242 | - | at&t | 1 | 1 |
+| atol | 1 | 1 | - | avenzo | 1 | 2 |
+| avh | 1 | 0 | - | avvio | 3 | 4 |
+| barnes & noble | 1 | 0 | - | bb mobile | 2 | 2 |
+| beeline | 11 | 1 | - | bellphone | 1 | 1 |
+| bezkam | 1 | 0 | - | bigben | 1 | 0 |
+| bihee | 2 | 0 | - | billion | 1 | 1 |
+| biorugged | 1 | 0 | - | bird | 1 | 0 |
+| bitel | 4 | 0 | - | bitmore | 2 | 1 |
+| bittium | 1 | 0 | - | bkav | 1 | 0 |
+| black bear | 2 | 0 | - | black fox | 18 | 18 |
+| blackview | 97 | 19 | - | blu | 23 | 16 |
+| bravis | 24 | 16 | - | byju\\'s | 1 | 1 |
+| cgv | 1 | 0 | - | clarmin | 3 | 0 |
+| cobalt | 1 | 0 | - | colors | 7 | 2 |
+| cyrus | 1 | 1 | - | dewalt | 1 | 0 |
+| deyi | 1 | 1 | - | dialog | 1 | 0 |
+| digi | 6 | 0 | - | digidragon | 3 | 0 |
+| digifors | 1 | 1 | - | doogee | 3 | 1 |
+| engel | 1 | 1 | - | estar | 2 | 0 |
+| evoo | 1 | 0 | - | firefly mobile | 4 | 0 |
+| formuler | 2 | 0 | - | geotel | 3 | 0 |
+| gionee | 4 | 0 | - | glocalme | 1 | 0 |
+| google | 3 | 4 | - | hafury | 1 | 0 |
+| hisense | 2 | 0 | - | hoffmann | 1 | 1 |
+| hotwav | 18 | 2 | - | huawei | 217 | 668 |
+| i-mobile | 1 | 0 | - | imo mobile | 5 | 5 |
+| infinix | 26 | 42 | - | inoi | 4 | 0 |
+| intex | 18 | 4 | - | ipro | 6 | 6 |
+| irbis | 15 | 0 | - | just5 | 1 | 0 |
+| kalley | 3 | 1 | - | kapsys | 1 | 0 |
+| kiowa | 1 | 0 | - | krip | 3 | 0 |
+| kurio | 3 | 3 | - | kzen | 1 | 0 |
+| lava | 1 | 1 | - | lg | 117 | 393 |
+| malata | 1 | 0 | - | maze | 4 | 0 |
+| minix | 1 | 1 | - | mipo | 2 | 0 |
+| miray | 1 | 0 | - | mitsui | 1 | 0 |
+| mivo | 3 | 1 | - | mobicel | 3 | 2 |
+| motorola | 28 | 39 | - | newland | 1 | 0 |
+| noa | 1 | 0 | - | nomi | 1 | 1 |
+| nuu mobile | 9 | 8 | - | nuvo | 3 | 2 |
+| oneplus | 18 | 55 | - | oppo | 108 | 240 |
+| oukitel | 8 | 0 | - | öwn | 1 | 2 |
+| palm | 1 | 2 | - | panasonic | 5 | 4 |
+| parrot mobile | 1 | 0 | - | pipo | 5 | 1 |
+| pixpro | 1 | 0 | - | poco | 9 | 26 |
+| premier | 1 | 0 | - | realme | 66 | 116 |
+| samsung | 165 | 968 | - | sankey | 1 | 0 |
+| sansui | 1 | 0 | - | senseit | 2 | 0 |
+| sharp | 2 | 5 | - | sony | 37 | 169 |
+| sprint | 2 | 0 | - | supra | 1 | 0 |
+| tecno mobile | 91 | 162 | - | teracube | 2 | 0 |
+| tiphone | 1 | 0 | - | tps | 1 | 0 |
+| ulefone | 8 | 0 | - | utok | 1 | 0 |
+| uz mobile | 1 | 0 | - | vernee | 9 | 2 |
+| viewsonic | 1 | 0 | - | visual land | 2 | 2 |
+| vivo | 203 | 325 | - | walton | 112 | 2 |
+| we | 8 | 0 | - | weimei | 1 | 0 |
+| wiko | 7 | 16 | - | wileyfox | 9 | 1 |
+| wink | 4 | 0 | - | winmax | 1 | 0 |
+| x-age | 1 | 1 | - | xiaomi | 9 | 26 |
+| yumkem | 1 | 0 | - | zen | 1 | 0 |
+| zik | 1 | 0 | - | zync | 2 | 1 |
+| zyq | 1 | 1 | - |  |  |  |
 
 </details>
 
