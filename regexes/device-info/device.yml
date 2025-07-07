@@ -688,6 +688,12 @@ allview:
   v2 viper x: 'RE=2015.10;SZ=77x154x7.2;WT=155.3;DS=5.5;RS=720x1280;OS=Android 5.1;CP=118;RM=1024;'
   v2 viper: 'RE=2015.10;SZ=67x137.2x7.9;WT=143;DS=4.7;RS=720x1280;OS=Android 5.0;CP=79;RM=1024'
   v2 viper i: 'RE=2015.12;SZ=72x143.3x8.9;WT=153;DS=5.0;RS=720x1280;OS=Android 5.1;CP=5;RM=1024;'
+  e2 living: 'RE=2014.05;SZ=61.9x124.6x9.5;WT=119.8;DS=4.0;RS=480x800;OS=Android 4.4.2;RM=512;'
+  p7 seon: 'RE=2014.07;SZ=77.7x157x8.4;WT=146.4;DS=5.5;RS=720x1280;OS=Android 4.4.2;CP=182;RM=1024;'
+  viva h1001 lte: 'RE=2016.03;SZ=155x257.5x10;WT=510;DS=10.1;RS=800x1280;OS=Android 5.1;CP=74;RM=1024;'
+  p9 energy mini tm: '->p9 energy mini'
+  p9 energy mini: 'RE=2016.09;SZ=71x144x9.9;WT=181;DS=5.0;RS=720x1280;OS=Android 6.0;CP=9;RM=3072;'
+  p9 energy lite: 'RE=2016.09;SZ=73.2x149x8.2;WT=174;DS=5.3;RS=720x1280;OS=Android 6.0;CP=40;RM=3072;'
 
 allwinner:
 
