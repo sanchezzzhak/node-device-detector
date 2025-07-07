@@ -783,7 +783,7 @@ cpu:
     process: 28nm
     gpu_id: 5
   114:
-    name: MediaTek Helio P70 MT6771
+    name: MediaTek Helio P70 MT6771   # MT6771T
     type: ARM
     cores: 8
     clock_rate: 2100
@@ -2156,7 +2156,7 @@ cpu:
     process: 12nm
     gpu_id: 112
   322:
-    name: MediaTek Helio G85
+    name: MediaTek Helio G85  # MT6769Z
     type: ARM
     cores: 8
     clock_rate: 2000
@@ -2569,14 +2569,14 @@ cpu:
     process: 6nm
     gpu_id: 108
   381:
-    name: Mediatek Helio G100
+    name: MediaTek Helio G100
     type: ARM
     cores: 8
     clock_rate: 2200
     process: 6nm
     gpu_id: 108
   382:
-    name: Mediatek Helio G81
+    name: MediaTek Helio G81
     type: ARM
     cores: 8
     clock_rate: 2000
@@ -2604,7 +2604,7 @@ cpu:
     process: 12nm
     gpu_id: 116
   386:
-    name: Mediatek Dimensity 7300
+    name: MediaTek Dimensity 7300
     type: ARM
     cores: 8
     clock_rate: 2500
@@ -2625,9 +2625,36 @@ cpu:
     process: 12nm
     gpu_id: 116
   389:
-    name: Mediatek Helio G99
+    name: MediaTek Helio G99
     type: ARM
     cores: 8
     clock_rate: 2200
     process: 6nm
     gpu_id: 108
+  390:
+    name: MediaTek Dimensity 8020
+    type: ARM
+    cores: 8
+    clock_rate: 2600
+    process: 6nm
+    gpu_id: 105
+  391:
+    name: Rockchip RK3562
+    type: ARM
+    cores: 4
+    clock_rate: 2000
+    gpu_id: 156
+  392:
+    name: MediaTek MT8788V
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 51
+  393:
+    name: MediaTek MTK8768
+    type: ARM
+    cores: 8
+    clock_rate: 2000
+    process: 12nm
+    gpu_id: 25

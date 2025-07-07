@@ -464,3 +464,6 @@ gpu:
   155:
     name: ARM Mali-G57 MP4
     clock_rate: 850
+  156:
+    name: ARM Mali-G52 2EE
+    clock_rate: 0
