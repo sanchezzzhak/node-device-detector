@@ -462,7 +462,7 @@ module.exports = {
     },
     "116": {
       "name": "ARM Mali-G57 MP1",
-      "clock_rate": 650
+      "clock_rate": 750
     },
     "117": {
       "name": "Qualcomm Adreno 730",
@@ -606,6 +606,22 @@ module.exports = {
     },
     "152": {
       "name": "ARM Mali-G68 MP5",
+      "clock_rate": 0
+    },
+    "153": {
+      "name": "ARM Mali-G52 MP2",
+      "clock_rate": 950
+    },
+    "154": {
+      "name": "IMG BXM-4-64",
+      "clock_rate": 0
+    },
+    "155": {
+      "name": "ARM Mali-G57 MP4",
+      "clock_rate": 850
+    },
+    "156": {
+      "name": "ARM Mali-G52 2EE",
       "clock_rate": 0
     }
   }

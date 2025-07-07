@@ -15,30 +15,17 @@ const fs = require('fs');
 const { YAMLDump } = require('../functions');
 const aliasDevice = new (require('../../parser/device/alias-device'))();
 const infoDevice = new (require('../../parser/device/info-device'))();
-
-
+const readline = require('readline');
+const { Command } = require('commander');
 let excludeFilesNames = ['bots.yml', 'alias_devices.yml'];
 let fixtureFolder = getFixtureFolder();
 let ymlDeviceFiles = fs.readdirSync(fixtureFolder + 'devices/');
 
-const report =YAMLLoad(
+let report = YAMLLoad(
   __dirname + '/../../regexes/device-info/device.yml'
 );
-const appendReport = (brand, name, code) => {
-  if (report[brand] === void 0 || report[brand] === null) {
-    report[brand] = {};
-  }
-  if (report[brand][name] === void 0) {
-    report[brand][name] = '';
-  }
-  const isCode = code && name !== code && (report[brand][code] === void 0 || report[brand][code] === '')
-  if (isCode) {
-    report[brand][code] = `->${name}`;
-  }
-};
 
 function escapeQuotes(str) {
-
   if (/^[0-9]$/.test(str) || str.indexOf('#') !== -1) {
     return `"${str}"`
   }
@@ -51,7 +38,93 @@ function escapeQuotes(str) {
   });
 }
 
+function printReport() {
+  // print help block
+  console.log(`
+# Compact format in line
+# DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;TT=;DP=;DR;
+
+# This file has a specific structure
+# what does each shortcode mean?
+# DS - Display size
+# DP:  Display densities
+# RS - Resolution screen (W x H)
+# DR - Device pixel ratio
+# SZ - Device Size (W x H x T)
+# WT - Weight grams
+# RE - Release date
+# OS - OS name + version
+# OI - OS ID
+# OV - OS version
+# UI - UI ID
+# RM - RAM in MB
+# CP - CPU id (Central processor)
+# GP - GPU id (Graphic processor)
+# SM - count SIM slots
+# TT - test AnTuTu score
+# TG - test GeekBench score
+`)
+  Object.keys(report).forEach((brand) => {
+    console.log('')
+    console.log(`${escapeQuotes(brand)}:`);
+    report[brand] !== null && Object.keys(report[brand]).forEach((model) => {
+      const data = YAMLDump({ [model]: report[brand][model] }, {forceQuotes: true}).trim();
+      console.log(`  ${data}`);
+    });
+  });
+
+}
+
+function cleanAndValidate(data) {
+  for (let key in data) {
+    if (data.hasOwnProperty(key) && data[key] === "") {
+      delete data[key];
+    }
+  }
+  for (let key in data) {
+    const value = data[key];
+    if (typeof value === "string" && value.startsWith("->")) {
+      const target = value.slice(2).trim();
+      if (!(target in data)) {
+        delete data[key];
+      }
+    }
+  }
+
+  return data;
+}
+
+const isEmpty = (...args) => {
+  return (
+    args.filter((mixed_var) => {
+      return (
+        mixed_var === '' ||
+        mixed_var === 0 ||
+        mixed_var === '0' ||
+        mixed_var === null ||
+        mixed_var === false ||
+        (mixed_var instanceof Array && mixed_var.length === 0)
+      );
+    }).length === args.length
+  );
+}
+
 function generateReport() {
+
+  const appendReport = (brand, name, code) => {
+    if (report[brand] === void 0 || report[brand] === null) {
+      report[brand] = {};
+    }
+    if (report[brand][name] === void 0) {
+      report[brand][name] = '';
+    }
+    const isCode = code && name !== code && (report[brand][code] === void 0 || report[brand][code] === '')
+    if (isCode) {
+      report[brand][code] = `->${name}`;
+    }
+  };
+
+
   ymlDeviceFiles.forEach((file) => {
     if (excludeFilesNames.indexOf(file) !== -1) {
       return;
@@ -96,41 +169,59 @@ function generateReport() {
   });
 }
 
-generateReport();
+function filterEmptyAndReferences(data) {
+  const result = {};
 
-// print help block
-console.log(`
-# Compact format in line
-# DS=;RS=;SZ=;WT=;RE=;RM=;CP=;OS=;SM=;TT=;DP=;DR;
+  for (const category in data) {
+    const devices = data[category];
+    const validKeys = new Set();
 
-# This file has a specific structure
-# what does each shortcode mean?
-# DS - Display size
-# DP:  Display densities
-# RS - Resolution screen (W x H)
-# DR - Device pixel ratio
-# SZ - Device Size (W x H x T)
-# WT - Weight grams
-# RE - Release date
-# OS - OS name + version
-# OI - OS ID
-# OV - OS version
-# UI - UI ID
-# RM - RAM in MB
-# CP - CPU id (Central processor)
-# GP - GPU id (Graphic processor)
-# SM - count SIM slots
-# TT - test AnTuTu score
-# TG - test GeekBench score
-`)
+    // Сначала ищем все ключи с пустыми значениями
+    for (const key in devices) {
+      if (devices[key] === "") {
+        validKeys.add(key);
+      }
+    }
 
+    // Теперь ищем ссылки, ведущие на эти пустые ключи
+    for (const key in devices) {
+      const value = devices[key];
+      if (typeof value === "string" && value.startsWith("->")) {
+        const target = value.slice(2).trim();
+        if (validKeys.has(target)) {
+          validKeys.add(key); // Добавляем эту ссылку как подходящую
+        }
+      }
+    }
 
-// print report to console
-Object.keys(report).forEach((brand) => {
-  console.log('')
-  console.log(`${escapeQuotes(brand)}:`);
-  report[brand] !== null && Object.keys(report[brand]).forEach((model) => {
-    const data = YAMLDump({ [model]: report[brand][model] }, {forceQuotes: true}).trim();
-    console.log(`  ${data}`);
-  });
+    // Формируем результирующий объект
+    const filtered = {};
+    for (const key of validKeys) {
+      filtered[key] = devices[key];
+    }
+
+    result[category] = filtered;
+  }
+
+  return result;
+}
+
+const program = new Command();
+program.option(
+  '-o, --output <string>',
+  'output type [full, record-exist, record-not-exist]', 'full')
+program.action(function() {
+  const options = this.opts();
+   generateReport(options.output);
+
+   if ('record-exist' === options.output) {
+     for(let brand in report) {
+       report[brand] = cleanAndValidate(report[brand]);
+     }
+   }
+  if ('record-not-exist' === options.output) {
+    report = filterEmptyAndReferences(report);
+  }
+   printReport();
 });
+program.parse(process.argv);

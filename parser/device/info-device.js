@@ -191,7 +191,7 @@ class InfoDevice extends ParserAbstract {
 
   find(deviceBrand, deviceModel, mergeData = {}) {
 
-    if (!deviceBrand.length || !deviceModel.length) {
+    if (!deviceBrand || !deviceModel) {
       return null;
     }
 
