@@ -1,7 +1,7 @@
 
 # [node-device-detector](https://www.npmjs.com/package/node-device-detector)
 
-_Last update: 07/07/2025_
+_Last update: 05/08/2025_
 
 ## Description
 
@@ -503,7 +503,7 @@ UA Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gec
 Yes we use tests, total tests: ~83.9k
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (2098 devices, alias devices 3987)
+> This parser is experimental and contains few devices. (2155 devices, alias devices 3997)
 >
 ##### Support detail brands/models list:
 
@@ -519,7 +519,7 @@ Yes we use tests, total tests: ~83.9k
 | ainol | 2 | 2 | - | airo wireless | 1 | 0 |
 | airtel | 1 | 0 | - | akai | 2 | 1 |
 | alcatel | 25 | 154 | - | alcor | 1 | 0 |
-| alldocube | 2 | 1 | - | allview | 41 | 0 |
+| alldocube | 2 | 1 | - | allview | 97 | 7 |
 | altek | 1 | 0 | - | amazon | 19 | 10 |
 | amgoo | 2 | 2 | - | amoi | 62 | 0 |
 | apple | 46 | 101 | - | archos | 89 | 7 |
@@ -572,7 +572,7 @@ Yes we use tests, total tests: ~83.9k
 | parrot mobile | 1 | 0 | - | pipo | 5 | 1 |
 | pixpro | 1 | 0 | - | poco | 9 | 26 |
 | premier | 1 | 0 | - | realme | 66 | 116 |
-| samsung | 165 | 968 | - | sankey | 1 | 0 |
+| samsung | 166 | 971 | - | sankey | 1 | 0 |
 | sansui | 1 | 0 | - | senseit | 2 | 0 |
 | sharp | 2 | 5 | - | sony | 37 | 169 |
 | sprint | 2 | 0 | - | supra | 1 | 0 |

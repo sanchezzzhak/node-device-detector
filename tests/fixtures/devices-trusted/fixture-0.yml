@@ -589,7 +589,8 @@
     brand: Samsung
     model: Galaxy S20 FE
     code: SM-G780G
-    trusted: true
+    ## the model multi versions cpu
+    trusted: false
   os_family: Android
   browser_family: Unknown
 -

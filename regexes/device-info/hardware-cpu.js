@@ -361,7 +361,8 @@ module.exports = {
       "gpu_id": 24
     },
     "44": {
-      "name": "MediaTek Helio A22 MT6761",
+      "name": "MediaTek Helio A22",
+      "code": "MT6761",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 2000,
@@ -922,7 +923,8 @@ module.exports = {
       "gpu_id": 5
     },
     "114": {
-      "name": "MediaTek Helio P70 MT6771",
+      "name": "MediaTek Helio P70",
+      "code": "MT6771",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2100,
@@ -946,6 +948,7 @@ module.exports = {
     },
     "117": {
       "name": "MediaTek Helio P10",
+      "code": "MT6755",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -1333,7 +1336,8 @@ module.exports = {
       "gpu_id": 26
     },
     "171": {
-      "name": "MediaTek Helio P22 MT6762",
+      "name": "MediaTek Helio P22",
+      "code": "MT6762",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -3156,6 +3160,22 @@ module.exports = {
       "clock_rate": 2900,
       "process": "10nm",
       "gpu_id": 82
+    },
+    "405": {
+      "name": "MediaTek MT6739",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 0,
+      "process": "28nm",
+      "gpu_id": 0
+    },
+    "406": {
+      "name": "Mediatek MT8382",
+      "type": "ARM",
+      "cores": 0,
+      "clock_rate": 0,
+      "process": "28nm",
+      "gpu_id": 0
     }
   }
 };

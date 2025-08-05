@@ -12,7 +12,7 @@
       ram: '2048'
       cpu_id: '43'
       cpu:
-        name: Qualcomm Snapdragon 430 MSM8937
+        name: Qualcomm Snapdragon 430
         type: ARM
         cores: 8
         clock_rate: 1400
