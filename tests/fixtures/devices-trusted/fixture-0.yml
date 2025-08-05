@@ -718,7 +718,7 @@
     type: smartphone
     brand: Xiaomi
     model: Mi 11 Lite
-    code:  M2101K9AG
+    code: M2101K9AG
     trusted: true
   os_family: Android
   browser_family: Unknown
