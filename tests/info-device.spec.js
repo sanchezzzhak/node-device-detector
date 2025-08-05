@@ -198,8 +198,13 @@ describe('tests info-device', function() {
           infoDevice.setResolutionConvertObject(true);
           infoDevice.setSizeConvertObject(true);
           let result = infoDevice.info(fixture.brand, fixture.model);
-          expect(fixture.result, 'Error in ' + itName).to.deep.equal(result);
+          expect(
+            fixture.result,
+            'Error in ' + itName + ' result: ' +  JSON.stringify(result)
+          ).to.deep.equal(result);
+
         });
+
       });
     });
   });

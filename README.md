@@ -503,7 +503,7 @@ UA Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gec
 Yes we use tests, total tests: ~83.9k
 
 ### Get more information about a device (experimental)
-> This parser is experimental and contains few devices. (2155 devices, alias devices 3997)
+> This parser is experimental and contains few devices. (2156 devices, alias devices 3998)
 >
 ##### Support detail brands/models list:
 
@@ -566,7 +566,7 @@ Yes we use tests, total tests: ~83.9k
 | motorola | 28 | 39 | - | newland | 1 | 0 |
 | noa | 1 | 0 | - | nomi | 1 | 1 |
 | nuu mobile | 9 | 8 | - | nuvo | 3 | 2 |
-| oneplus | 18 | 55 | - | oppo | 108 | 240 |
+| oneplus | 18 | 55 | - | oppo | 109 | 241 |
 | oukitel | 8 | 0 | - | öwn | 1 | 2 |
 | palm | 1 | 2 | - | panasonic | 5 | 4 |
 | parrot mobile | 1 | 0 | - | pipo | 5 | 1 |
