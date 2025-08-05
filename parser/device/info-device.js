@@ -3,8 +3,8 @@ const DataPacker = require('./../../lib/data-packer');
 const collectionHardwareCPU = require('../../regexes/device-info/hardware-cpu');
 const collectionHardwareGPU = require('../../regexes/device-info/hardware-gpu');
 const collectionSoftware = require('../../regexes/device-info/software');
-
-
+const SHORT_KEYS = require('../../regexes/device-info/schema');
+const { mergeDeep, sortObject } = require('../helper');
 
 /*
 
@@ -46,7 +46,7 @@ const castResolutionToObject = (size) => {
   return { width, height };
 };
 /**
- * Convert string 100x100x100 to object {width, height,thickness}
+ * Convert string 100x100x100 to object {width, height, thickness}
  * @param size
  * @return {{thickness: string, width: string, height: string}}
  */
@@ -71,20 +71,6 @@ const getDataByIdInCollection = (collection, id) => {
 };
 
 /**
- * calculate PPI
- * @param width
- * @param height
- * @param size
- * @returns {number}
- */
-const castResolutionPPI = (width, height, size) => {
-  return Math.round(
-    Math.sqrt(Math.pow(parseInt(width), 2) + Math.pow(parseInt(height), 2)) /
-    parseFloat(size)
-  );
-};
-
-/**
  * port gcd function
  * @param u
  * @param v
@@ -101,48 +87,6 @@ const gcd = (u, v) => {
   if (u > v) return gcd((u - v) >> 1, v);
   return gcd((v - u) >> 1, u);
 };
-
-const mergeDeep = (target, source) => {
-  const isObject = (obj) =>
-    obj && typeof obj === 'object' && !Array.isArray(obj);
-
-  const isDeep = (prop) =>
-    isObject(source[prop]) &&
-    target.hasOwnProperty(prop) &&
-    isObject(target[prop]);
-
-  const replaced = Object.getOwnPropertyNames(source)
-    .map((prop) => ({
-      [prop]: isDeep(prop)
-        ? mergeDeep(target[prop], source[prop])
-        : source[prop]
-          ? source[prop]
-          : target[prop]
-    }))
-    .reduce((a, b) => ({ ...a, ...b }), {});
-
-  return {
-    ...target,
-    ...replaced
-  };
-};
-
-/**
- * calculate ratio
- * @param width
- * @param height
- * @returns {string}
- */
-const castResolutionRatio = (width, height) => {
-  let d = gcd(width, height);
-  return `${Math.round(height / d)}:${Math.round(width / d)}`;
-};
-
-const sortObject = (o) =>
-  Object.keys(o)
-    .sort()
-    .reduce((r, k) => ((r[k] = o[k]), r), {});
-
 // help block
 
 /**
@@ -160,26 +104,6 @@ const sortObject = (o) =>
  * // result in not found
  * null
  */
-
-const SHORT_KEYS = {
-  DS: 'display.size',
-  // DT: 'display.type',        // string: display type IPS, LCD, OLED, SLED etc.
-  // TS: 'display.touch',       // boolean: touch support
-  RS: 'display.resolution',     // string|obj: 1080x1920
-  SZ: 'size',                   // string|obj: 155.4x75.2x7.7
-  WT: 'weight',                 // int: weight
-  RE: 'release',                // string:year release
-  RM: 'hardware.ram',           // int: RAM in MB
-  CP: 'hardware.cpu_id',        // int: <id>
-  GP: 'hardware.gpu_id',        // int: <id>
-  OS: 'os',                     // string: Android 4.4
-  OI: 'os_id',                  // int: OS ID
-  OV: 'os_version',             // int: OS ID
-  SM: 'sim',                    // int: count SIM
-  TT: 'performance.antutu',      // int: antutu score
-  TG: 'performance.geekbench'      // int: geekbench score
-};
-
 
 /**
  * Class for obtaining information on a device
@@ -223,11 +147,39 @@ class InfoDevice extends ParserAbstract {
     return getDataByIdInCollection(collectionSoftware['os'], id);
   }
 
+  getGpuIdFromName(name) {
+    const lName = name.toLowerCase();
+    if (collectionHardwareGPU['gpu'] === void 0) {
+      return null;
+    }
+    for (let id in collectionHardwareGPU['gpu']) {
+      let gpu = collectionHardwareGPU['gpu'][id];
+      if (gpu !== void 0 && gpu.name.toLowerCase() === lName){
+        return id;
+      }
+    }
+    return null;
+  }
+
   getGpuById(id) {
     if (collectionHardwareGPU['gpu'] === void 0) {
       return null;
     }
     return getDataByIdInCollection(collectionHardwareGPU['gpu'], id);
+  }
+
+  getCpuIdFromName(name) {
+    const lName = name.toLowerCase();
+    if (collectionHardwareCPU['cpu'] === void 0) {
+      return null;
+    }
+    for (let id in collectionHardwareCPU['cpu']) {
+      let cpu = collectionHardwareCPU['cpu'][id];
+      if (cpu !== void 0 && cpu.name !== void 0 && cpu.name.toLowerCase() === lName){
+        return id;
+      }
+    }
+    return null
   }
 
   getCpuById(id) {
@@ -239,7 +191,7 @@ class InfoDevice extends ParserAbstract {
 
   find(deviceBrand, deviceModel, mergeData = {}) {
 
-    if (!deviceBrand.length || !deviceModel.length) {
+    if (!deviceBrand || !deviceModel) {
       return null;
     }
 
@@ -248,12 +200,13 @@ class InfoDevice extends ParserAbstract {
     let brand = fixStringName(deviceBrand).trim().toLowerCase();
     let model = fixStringName(deviceModel).trim().toLowerCase();
 
-    if (
-      this.collection[brand] === void 0 ||
-      this.collection[brand][model] === void 0
-    ) {
-      return null;
-    }
+     const isSkip = this.collection[brand] === void 0 ||
+       this.collection[brand] === null ||
+       this.collection[brand][model] === void 0;
+
+     if (isSkip) {
+       return null;
+     }
 
     let data = this.collection[brand][model];
     // get normalise data
@@ -321,6 +274,7 @@ class InfoDevice extends ParserAbstract {
     }
   }
 
+
   prepareResultDisplay(result) {
     // set display data
     if (result.display) {
@@ -338,13 +292,13 @@ class InfoDevice extends ParserAbstract {
 
         if (resolutionWidth && resolutionHeight) {
           if (result.display.size) {
-            ppi = castResolutionPPI(
+            ppi = this.castResolutionPPI(
               resolutionWidth,
               resolutionHeight,
               result.display.size
             );
           }
-          ratio = castResolutionRatio(resolutionWidth, resolutionHeight);
+          ratio = this.castResolutionRatio(resolutionWidth, resolutionHeight);
         }
       }
 
@@ -385,6 +339,36 @@ class InfoDevice extends ParserAbstract {
   info(deviceBrand, deviceModel) {
     return this.find(deviceBrand, deviceModel, {});
   }
+
+  castScreenSizeInInches(widthPx, heightPx, dpi) {
+    const diagonalPx = Math.hypot(parseInt(widthPx), parseInt(heightPx));
+    return parseFloat((diagonalPx / dpi).toFixed(2));
+  }
+
+  /**
+   * calculate ratio
+   * @param width
+   * @param height
+   * @returns {string}
+   */
+  castResolutionRatio(width, height){
+    let d = gcd(width, height);
+    return `${Math.round(height / d)}:${Math.round(width / d)}`;
+  };
+
+  /**
+   * calculate PPI
+   * @param width
+   * @param height
+   * @param size
+   * @returns {number}
+   */
+  castResolutionPPI(width, height, size) {
+    return Math.round(
+      Math.sqrt(Math.pow(parseInt(width), 2) + Math.pow(parseInt(height), 2)) /
+      parseFloat(size)
+    );
+  };
 }
 
 module.exports = InfoDevice;

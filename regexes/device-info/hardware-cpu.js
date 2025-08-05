@@ -73,7 +73,8 @@ module.exports = {
       "gpu_id": 5
     },
     "10": {
-      "name": "Qualcomm Snapdragon 210 MSM8909",
+      "name": "Qualcomm Snapdragon 210",
+      "code": "MSM8909",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1100,
@@ -81,7 +82,8 @@ module.exports = {
       "gpu_id": 6
     },
     "11": {
-      "name": "Qualcomm Snapdragon 212 APQ8009",
+      "name": "Qualcomm Snapdragon 212",
+      "code": "APQ8009",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1300,
@@ -105,7 +107,8 @@ module.exports = {
       "gpu_id": 8
     },
     "14": {
-      "name": "Qualcomm Snapdragon S4 Plus MSM8960",
+      "name": "Qualcomm Snapdragon S4 Plus",
+      "code": "MSM8960",
       "type": "ARM",
       "cores": 2,
       "clock_rate": 1500,
@@ -113,7 +116,8 @@ module.exports = {
       "gpu_id": 9
     },
     "15": {
-      "name": "Qualcomm Snapdragon S4 Pro MSM8960T",
+      "name": "Qualcomm Snapdragon S4 Pro",
+      "code": "MSM8960T",
       "type": "ARM",
       "cores": 2,
       "clock_rate": 1700,
@@ -129,7 +133,8 @@ module.exports = {
       "gpu_id": 13
     },
     "17": {
-      "name": "Qualcomm Snapdragon 410 MSM8916",
+      "name": "Qualcomm Snapdragon 410",
+      "code": "MSM8916",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1400,
@@ -146,6 +151,7 @@ module.exports = {
     },
     "19": {
       "name": "Qualcomm Snapdragon 630",
+      "code": "SDM630",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2200,
@@ -153,7 +159,8 @@ module.exports = {
       "gpu_id": 16
     },
     "20": {
-      "name": "Qualcomm Snapdragon 425 MSM8917",
+      "name": "Qualcomm Snapdragon 425",
+      "code": "MSM8917",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1400,
@@ -169,7 +176,8 @@ module.exports = {
       "gpu_id": 1
     },
     "22": {
-      "name": "Qualcomm Snapdragon 615 MSM8939",
+      "name": "Qualcomm Snapdragon 615",
+      "code": "MSM8939",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1700,
@@ -193,7 +201,8 @@ module.exports = {
       "gpu_id": 1
     },
     "25": {
-      "name": "Qualcomm Snapdragon 835 MSM8998",
+      "name": "Qualcomm Snapdragon 835",
+      "code": "MSM8998",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2450,
@@ -233,6 +242,7 @@ module.exports = {
     },
     "30": {
       "name": "HiSilicon Kirin 920",
+      "code": "Hi3630",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1700,
@@ -240,7 +250,8 @@ module.exports = {
       "gpu_id": 21
     },
     "31": {
-      "name": "Qualcomm Snapdragon S1 MSM7227A",
+      "name": "Qualcomm Snapdragon S1",
+      "code": "MSM7227A",
       "type": "ARM",
       "cores": 1,
       "clock_rate": 1000,
@@ -248,7 +259,8 @@ module.exports = {
       "gpu_id": 22
     },
     "32": {
-      "name": "Qualcomm Snapdragon S4 Plus MSM8930",
+      "name": "Qualcomm Snapdragon S4 Plus",
+      "code": "MSM8930",
       "type": "ARM",
       "cores": 2,
       "clock_rate": 1200,
@@ -256,7 +268,8 @@ module.exports = {
       "gpu_id": 12
     },
     "33": {
-      "name": "Qualcomm Snapdragon 200 MSM8212",
+      "name": "Qualcomm Snapdragon 200",
+      "code": "MSM8212",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1200,
@@ -272,7 +285,8 @@ module.exports = {
       "gpu_id": 3
     },
     "35": {
-      "name": "Qualcomm Snapdragon 435 MSM8940",
+      "name": "Qualcomm Snapdragon 435",
+      "code": "MSM8940",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1400,
@@ -296,7 +310,8 @@ module.exports = {
       "gpu_id": 20
     },
     "38": {
-      "name": "MediaTek Helio P35 MT6765",
+      "name": "MediaTek Helio P35",
+      "code": "MT6765",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2300,
@@ -321,6 +336,7 @@ module.exports = {
     },
     "41": {
       "name": "Qualcomm Snapdragon 439",
+      "code": "SDM439",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -336,7 +352,8 @@ module.exports = {
       "gpu_id": 27
     },
     "43": {
-      "name": "Qualcomm Snapdragon 430 MSM8937",
+      "name": "Qualcomm Snapdragon 430",
+      "code": "MSM8937",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1400,
@@ -344,7 +361,8 @@ module.exports = {
       "gpu_id": 24
     },
     "44": {
-      "name": "MediaTek Helio A22 MT6761",
+      "name": "MediaTek Helio A22",
+      "code": "MT6761",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 2000,
@@ -352,7 +370,8 @@ module.exports = {
       "gpu_id": 25
     },
     "45": {
-      "name": "MediaTek Dimensity 800 MT6873",
+      "name": "MediaTek Dimensity 800",
+      "code": "MT6873",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -360,7 +379,8 @@ module.exports = {
       "gpu_id": 28
     },
     "46": {
-      "name": "Qualcomm Snapdragon S1 MSM7225A",
+      "name": "Qualcomm Snapdragon S1",
+      "code": "MSM7225A",
       "type": "ARM",
       "cores": 1,
       "clock_rate": 1000,
@@ -368,7 +388,8 @@ module.exports = {
       "gpu_id": 22
     },
     "47": {
-      "name": "MediaTek Helio P22 MT6762R",
+      "name": "MediaTek Helio P22",
+      "code": "MT6762R",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -384,7 +405,8 @@ module.exports = {
       "gpu_id": 27
     },
     "49": {
-      "name": "Qualcomm Snapdragon S2 MSM8255",
+      "name": "Qualcomm Snapdragon S2",
+      "code": "MSM8255",
       "type": "ARM",
       "cores": 1,
       "clock_rate": 1500,
@@ -504,6 +526,7 @@ module.exports = {
     },
     "64": {
       "name": "Qualcomm Snapdragon 632",
+      "code": "SDM632",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1800,
@@ -511,7 +534,8 @@ module.exports = {
       "gpu_id": 41
     },
     "65": {
-      "name": "Qualcomm Snapdragon 617 MSM8952",
+      "name": "Qualcomm Snapdragon 617",
+      "code": "MSM8952",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1500,
@@ -535,7 +559,8 @@ module.exports = {
       "gpu_id": 42
     },
     "68": {
-      "name": "Qualcomm Snapdragon 616 MSM8939v2",
+      "name": "Qualcomm Snapdragon 616",
+      "code": "MSM8939v2",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1700,
@@ -612,7 +637,8 @@ module.exports = {
       "clock_rate": 624
     },
     "78": {
-      "name": "Qualcomm Snapdragon 400 MSM8226",
+      "name": "Qualcomm Snapdragon 400",
+      "code": "MSM8226",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1200,
@@ -668,7 +694,8 @@ module.exports = {
       "cpu_id": 4
     },
     "85": {
-      "name": "MediaTek Helio X10 MT6795",
+      "name": "MediaTek Helio X10",
+      "code": "MT6795",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2200,
@@ -715,7 +742,8 @@ module.exports = {
       "gpu_id": 48
     },
     "91": {
-      "name": "Qualcomm Snapdragon S1 MSM7225",
+      "name": "Qualcomm Snapdragon S1",
+      "code": "MSM7225",
       "type": "ARM",
       "cores": 1,
       "clock_rate": 1000,
@@ -739,7 +767,8 @@ module.exports = {
       "gpu_id": 1
     },
     "94": {
-      "name": "Qualcomm Snapdragon 800 MSM8974",
+      "name": "Qualcomm Snapdragon 800",
+      "code": "MSM8974",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 2300,
@@ -755,7 +784,8 @@ module.exports = {
       "gpu_id": 8
     },
     "96": {
-      "name": "Qualcomm Snapdragon 810 MSM8994",
+      "name": "Qualcomm Snapdragon 810",
+      "code": "MSM8994",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -893,7 +923,8 @@ module.exports = {
       "gpu_id": 5
     },
     "114": {
-      "name": "MediaTek Helio P70 MT6771",
+      "name": "MediaTek Helio P70",
+      "code": "MT6771",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2100,
@@ -916,7 +947,8 @@ module.exports = {
       "gpu_id": 58
     },
     "117": {
-      "name": "MediaTek Helio P10 MT6755",
+      "name": "MediaTek Helio P10",
+      "code": "MT6755",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -1250,7 +1282,8 @@ module.exports = {
       "gpu_id": 1
     },
     "164": {
-      "name": "MediaTek Helio P22 MT6762D",
+      "name": "MediaTek Helio P22",
+      "code": "MT6762D",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -1266,7 +1299,8 @@ module.exports = {
       "gpu_id": 1
     },
     "166": {
-      "name": "MediaTek Helio P23 MT6763T",
+      "name": "MediaTek Helio P23",
+      "code": "MT6763T",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2500,
@@ -1302,7 +1336,8 @@ module.exports = {
       "gpu_id": 26
     },
     "171": {
-      "name": "MediaTek Helio P22 MT6762",
+      "name": "MediaTek Helio P22",
+      "code": "MT6762",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -1317,7 +1352,7 @@ module.exports = {
       "gpu_id": 73
     },
     "173": {
-      "name": "Qualcomm Snapdragon 820 MSM8996",
+      "name": "Qualcomm Snapdragon 820",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 2200,
@@ -1650,7 +1685,8 @@ module.exports = {
       "gpu_id": 22
     },
     "219": {
-      "name": "Qualcomm Snapdragon S4 Play MSM8225",
+      "name": "Qualcomm Snapdragon S4 Play",
+      "code": "MSM8225",
       "type": "ARM",
       "clock_rate": 1200,
       "cores": 2,
@@ -2141,7 +2177,7 @@ module.exports = {
       "gpu_id": 17
     },
     "282": {
-      "name": "Qualcomm Snapdragon 435 SDM435",
+      "name": "Qualcomm Snapdragon 435",
       "type": "ARM",
       "clock_rate": 1400,
       "cores": 8,
@@ -2461,6 +2497,7 @@ module.exports = {
     },
     "322": {
       "name": "MediaTek Helio G85",
+      "code": "MT6769Z",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -2485,6 +2522,7 @@ module.exports = {
     },
     "325": {
       "name": "MediaTek Helio G90T",
+      "code": "MT6785V/CC",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2050,
@@ -2508,7 +2546,8 @@ module.exports = {
       "gpu_id": 34
     },
     "328": {
-      "name": "Qualcomm Snapdragon 650 MSM8956",
+      "name": "Qualcomm Snapdragon 650",
+      "code": "MSM8956",
       "type": "ARM",
       "cores": 6,
       "clock_rate": 1800,
@@ -2556,7 +2595,8 @@ module.exports = {
       "gpu_id": 111
     },
     "334": {
-      "name": "MediaTek Helio G80 MT6769V/CU",
+      "name": "MediaTek Helio G80",
+      "code": "MT6769V/CU",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -2580,7 +2620,8 @@ module.exports = {
       "gpu_id": 1
     },
     "337": {
-      "name": "MediaTek Helio A20 MT6761D",
+      "name": "MediaTek Helio A20",
+      "code": "MT6761D",
       "type": "ARM",
       "cores": 4,
       "clock_rate": 1800,
@@ -2620,7 +2661,8 @@ module.exports = {
       "gpu_id": 1
     },
     "342": {
-      "name": "MediaTek Helio P35 MT6765V",
+      "name": "MediaTek Helio P35",
+      "code": "MT6765V",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2300,
@@ -2628,7 +2670,8 @@ module.exports = {
       "gpu_id": 25
     },
     "343": {
-      "name": "MediaTek Helio P25 MT6757CD",
+      "name": "MediaTek Helio P25",
+      "code": "MT6757CD",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2600,
@@ -2636,7 +2679,8 @@ module.exports = {
       "gpu_id": 75
     },
     "344": {
-      "name": "MediaTek Dimensity 800 MT6873V",
+      "name": "MediaTek Dimensity 800",
+      "code": "MT6873V",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -2644,7 +2688,8 @@ module.exports = {
       "gpu_id": 28
     },
     "345": {
-      "name": "MediaTek Helio P95 MT6779V",
+      "name": "MediaTek Helio P95",
+      "code": "MT6779V",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2200,
@@ -2652,7 +2697,8 @@ module.exports = {
       "gpu_id": 114
     },
     "346": {
-      "name": "MediaTek Helio P90 MT6779",
+      "name": "MediaTek Helio P90",
+      "code": "MT6779",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2200,
@@ -2660,7 +2706,8 @@ module.exports = {
       "gpu_id": 114
     },
     "347": {
-      "name": "MediaTek Dimensity 1000L MT6885Z",
+      "name": "MediaTek Dimensity 1000L",
+      "code": "MT6885Z",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2200,
@@ -2668,7 +2715,8 @@ module.exports = {
       "gpu_id": 110
     },
     "348": {
-      "name": "MediaTek Helio G35 MT6765G",
+      "name": "MediaTek Helio G35",
+      "code": "MT6765G",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2300,
@@ -2677,6 +2725,7 @@ module.exports = {
     },
     "349": {
       "name": "MediaTek Helio G88",
+      "code": "MT6769H",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2000,
@@ -2685,6 +2734,7 @@ module.exports = {
     },
     "350": {
       "name": "MediaTek Helio G96",
+      "code": "MT6781",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2050,
@@ -2701,6 +2751,7 @@ module.exports = {
     },
     "352": {
       "name": "Amlogic AML8726-M6",
+      "code": "AML8726-MX",
       "type": "ARM",
       "cores": 2,
       "clock_rate": 1500,
@@ -2708,7 +2759,8 @@ module.exports = {
       "gpu_id": 1
     },
     "353": {
-      "name": "MediaTek Helio P25 MT6757T",
+      "name": "MediaTek Helio P25",
+      "code": "MT6757T",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2600,
@@ -2725,6 +2777,7 @@ module.exports = {
     },
     "355": {
       "name": "MediaTek Helio A25",
+      "code": "MT6762V/WD",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 1800,
@@ -2732,7 +2785,8 @@ module.exports = {
       "gpu_id": 25
     },
     "356": {
-      "name": "Dimensity 810",
+      "name": "MediaTek Dimensity 810",
+      "code": "MT6833P",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2400,
@@ -2749,6 +2803,7 @@ module.exports = {
     },
     "358": {
       "name": "Qualcomm Snapdragon 695 5G",
+      "code": "SM6375",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2200,
@@ -2757,6 +2812,7 @@ module.exports = {
     },
     "359": {
       "name": "Qualcomm Snapdragon 778G 5G",
+      "code": "SM7325",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2400,
@@ -2789,6 +2845,7 @@ module.exports = {
     },
     "363": {
       "name": "Qualcomm Snapdragon 680 4G",
+      "code": "SM6225",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2400,
@@ -2797,6 +2854,7 @@ module.exports = {
     },
     "364": {
       "name": "Qualcomm Snapdragon 732G",
+      "code": "SM7150-AC",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2300,
@@ -2845,6 +2903,7 @@ module.exports = {
     },
     "370": {
       "name": "Qualcomm Snapdragon 7 Gen 1",
+      "code": "SM7450-AB",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 2400,
@@ -2869,6 +2928,7 @@ module.exports = {
     },
     "373": {
       "name": "Qualcomm Snapdragon 8+ Gen 1",
+      "code": "SM8475",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 3000,
@@ -2901,6 +2961,7 @@ module.exports = {
     },
     "377": {
       "name": "Qualcomm Snapdragon 8 Gen 2",
+      "code": "SM8550-AB",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 3200,
@@ -2909,6 +2970,7 @@ module.exports = {
     },
     "378": {
       "name": "Qualcomm Snapdragon 8 Gen 3",
+      "code": "SM8650-AB",
       "type": "ARM",
       "cores": 8,
       "clock_rate": 3300,
@@ -2930,6 +2992,190 @@ module.exports = {
       "clock_rate": 2200,
       "process": "6nm",
       "gpu_id": 108
+    },
+    "381": {
+      "name": "MediaTek Helio G100",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2200,
+      "process": "6nm",
+      "gpu_id": 108
+    },
+    "382": {
+      "name": "MediaTek Helio G81",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2000,
+      "process": "12nm",
+      "gpu_id": 153
+    },
+    "383": {
+      "name": "Allwinner A733",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2000,
+      "process": "12nm",
+      "gpu_id": 154
+    },
+    "384": {
+      "name": "Unisoc T620",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2200,
+      "process": "12nm",
+      "gpu_id": 116
+    },
+    "385": {
+      "name": "Unisoc T606",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 1600,
+      "process": "12nm",
+      "gpu_id": 116
+    },
+    "386": {
+      "name": "MediaTek Dimensity 7300",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2500,
+      "process": "4nm",
+      "gpu_id": 141
+    },
+    "387": {
+      "name": "Unisoc T820",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2100,
+      "process": "6nm",
+      "gpu_id": 155
+    },
+    "388": {
+      "name": "Unisoc Tiger T616",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2000,
+      "process": "12nm",
+      "gpu_id": 116
+    },
+    "389": {
+      "name": "MediaTek Helio G99",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2200,
+      "process": "6nm",
+      "gpu_id": 108
+    },
+    "390": {
+      "name": "MediaTek Dimensity 8020",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2600,
+      "process": "6nm",
+      "gpu_id": 105
+    },
+    "391": {
+      "name": "Rockchip RK3562",
+      "type": "ARM",
+      "cores": 4,
+      "clock_rate": 2000,
+      "gpu_id": 156
+    },
+    "392": {
+      "name": "MediaTek MT8788V",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2000,
+      "process": "12nm",
+      "gpu_id": 51
+    },
+    "393": {
+      "name": "MediaTek MTK8768",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2000,
+      "process": "12nm",
+      "gpu_id": 25
+    },
+    "394": {
+      "name": "MediaTek Helio G37",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2300,
+      "process": "12nm",
+      "gpu_id": 25
+    },
+    "395": {
+      "name": "Spreadtrum SC9830I",
+      "type": "ARM"
+    },
+    "396": {
+      "name": "Allwinner A50",
+      "type": "ARM"
+    },
+    "397": {
+      "name": "Rockchip RK3328",
+      "type": "ARM"
+    },
+    "398": {
+      "name": "Marvell PXA1928",
+      "type": "ARM"
+    },
+    "399": {
+      "name": "Marvell BG4-CT",
+      "type": "ARM"
+    },
+    "400": {
+      "name": "Marvell PX986",
+      "type": "ARM"
+    },
+    "401": {
+      "name": "MediaTek MT6580WP",
+      "type": "ARM",
+      "cores": 4,
+      "clock_rate": 1300,
+      "process": "28nm",
+      "gpu_id": 1
+    },
+    "402": {
+      "name": "MediaTek MT6577T",
+      "type": "ARM",
+      "cores": 2,
+      "clock_rate": 1000,
+      "process": "40nm",
+      "gpu_id": 48
+    },
+    "403": {
+      "name": "MediaTek MT8768CA",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 1800,
+      "process": "12nm",
+      "gpu_id": 25
+    },
+    "404": {
+      "name": "Qualcomm Snapdragon 850",
+      "code": "SDM850",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 2900,
+      "process": "10nm",
+      "gpu_id": 82
+    },
+    "405": {
+      "name": "MediaTek MT6739",
+      "type": "ARM",
+      "cores": 8,
+      "clock_rate": 0,
+      "process": "28nm",
+      "gpu_id": 0
+    },
+    "406": {
+      "name": "Mediatek MT8382",
+      "type": "ARM",
+      "cores": 0,
+      "clock_rate": 0,
+      "process": "28nm",
+      "gpu_id": 0
     }
   }
 };

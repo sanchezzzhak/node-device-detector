@@ -107,6 +107,11 @@ export default class DeviceDetector {
   getParseAliasDevice(): any;
 
   /**
+   * get info device parser
+   */
+  getParseInfoDevice(): any;
+
+  /**
    * get device parser by name
    * @param {string} name
    * @return {*}
