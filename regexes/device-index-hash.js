@@ -61262,6 +61262,214 @@ module.exports = {
   "abr-lx2": [
     "HU"
   ],
+  "pku110": [
+    "OP"
+  ],
+  "pla110": [
+    "OP"
+  ],
+  "sm-s936w": [
+    "SA"
+  ],
+  "motorola razr ultra 2025": [
+    "MR"
+  ],
+  "xt2245-1": [
+    "MR"
+  ],
+  "xt2235-2": [
+    "MR"
+  ],
+  "xt2231-1": [
+    "MR"
+  ],
+  "v2453a": [
+    "VV"
+  ],
+  "v2445ea": [
+    "VV"
+  ],
+  "v2445a": [
+    "VV"
+  ],
+  "v2443": [
+    "VV"
+  ],
+  "v2428": [
+    "VV"
+  ],
+  "sog11": [
+    "SO"
+  ],
+  "sm-s9310": [
+    "SA"
+  ],
+  "i2407": [
+    "VV"
+  ],
+  "i2405": [
+    "VV"
+  ],
+  "v1916t": [
+    "VV"
+  ],
+  "wlz-tn00": [
+    "HU"
+  ],
+  "live 12": [
+    "KE"
+  ],
+  "jp2": [
+    "JAM"
+  ],
+  "hmd xr21": [
+    "HMD"
+  ],
+  "hmd arc": [
+    "HMD"
+  ],
+  "hammer_construction_2_thermal_5g": [
+    "HAM"
+  ],
+  "hammer_construction_2_5g": [
+    "HAM"
+  ],
+  "f112 pro": [
+    "FOS"
+  ],
+  "discovery_2_me": [
+    "FS"
+  ],
+  "bold k50": [
+    "BU"
+  ],
+  "apex_5g": [
+    "69"
+  ],
+  "magno pro": [
+    "ZU"
+  ],
+  "magno c plus": [
+    "ZU"
+  ],
+  "kingkong power 5": [
+    "CB",
+    "L5"
+  ],
+  "tecno cm6": [
+    "TB"
+  ],
+  "tecno cm8": [
+    "TB"
+  ],
+  "a001": [
+    "CMF"
+  ],
+  "s punk pro": [
+    "DO"
+  ],
+  "s cyber pro": [
+    "DO"
+  ],
+  "panasonic eluga tapp": [
+    "PA"
+  ],
+  "25053pc47g": [
+    "0P"
+  ],
+  "inoi_5x": [
+    "I4"
+  ],
+  "l68_ultra": [
+    "1L"
+  ],
+  "soyes 7s": [
+    "8S"
+  ],
+  "perm10_k10": [
+    "OP"
+  ],
+  "cph2725": [
+    "OP"
+  ],
+  "25078ra3ey": [
+    "XI"
+  ],
+  "25067pye3c": [
+    "XI"
+  ],
+  "25042pn24c": [
+    "XI"
+  ],
+  "v max s": [
+    "DO"
+  ],
+  "sog13": [
+    "SO"
+  ],
+  "sm-m166p": [
+    "SA"
+  ],
+  "sm-e166p": [
+    "SA"
+  ],
+  "sm-a356n": [
+    "SA"
+  ],
+  "sm-a166e": [
+    "SA"
+  ],
+  "sm-a165f": [
+    "SA"
+  ],
+  "sm-a1560": [
+    "SA"
+  ],
+  "sl219c": [
+    "CK"
+  ],
+  "sh-m29": [
+    "SH"
+  ],
+  "s3 pro": [
+    "FOS"
+  ],
+  "s23 pro max": [
+    "RD"
+  ],
+  "s119": [
+    "DO"
+  ],
+  "rmx3952": [
+    "RE"
+  ],
+  "play25_pro_4g": [
+    "4R"
+  ],
+  "ob-a98": [
+    "UZ"
+  ],
+  "nokia 8": [
+    "NK"
+  ],
+  "lt c26": [
+    "QL"
+  ],
+  "kingkong x pro": [
+    "CB"
+  ],
+  "ajib i10": [
+    "AJI"
+  ],
+  "u380aa": [
+    "6A"
+  ],
+  "sm-a716s": [
+    "SA"
+  ],
+  "rungee x9": [
+    "RUN"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -75912,6 +76120,181 @@ module.exports = {
   ],
   "g2000": [
     "GVL"
+  ],
+  "p50_t_row": [
+    "T7"
+  ],
+  "p50_t_eea": [
+    "T7"
+  ],
+  "p50_b": [
+    "T7"
+  ],
+  "p50ai_row": [
+    "T7"
+  ],
+  "t60ai_row": [
+    "T7"
+  ],
+  "opd2409": [
+    "OP"
+  ],
+  "opd2404": [
+    "ON"
+  ],
+  "opd2401": [
+    "OP"
+  ],
+  "l10-t11-eea": [
+    "VAS"
+  ],
+  "l10-t11": [
+    "VAS"
+  ],
+  "tb373fu": [
+    "LE"
+  ],
+  "tb311xu": [
+    "LE"
+  ],
+  "i10_plus": [
+    "Y5"
+  ],
+  "novus tab": [
+    "ZU"
+  ],
+  "it-801b": [
+    "ATM"
+  ],
+  "globalsec tab ten": [
+    "GL2"
+  ],
+  "vtab7": [
+    "FV",
+    "VT"
+  ],
+  "2505drp06g": [
+    "XI"
+  ],
+  "zoom ta3e0p02": [
+    "D2"
+  ],
+  "zenith ta2d1p01": [
+    "D2"
+  ],
+  "tl65611s01": [
+    "LNN"
+  ],
+  "tl4648s01": [
+    "LNN"
+  ],
+  "impad 6414": [
+    "I3"
+  ],
+  "eln2-l29": [
+    "HU"
+  ],
+  "25040rp0ag": [
+    "XI"
+  ],
+  "t70_row": [
+    "T7"
+  ],
+  "t50max_row": [
+    "T7"
+  ],
+  "t50max_eea": [
+    "T7"
+  ],
+  "t50hd_row": [
+    "T7"
+  ],
+  "t50hd_eea": [
+    "T7"
+  ],
+  "t30 max": [
+    "DO"
+  ],
+  "t1201": [
+    "3A"
+  ],
+  "t10pro": [
+    "DO"
+  ],
+  "sm-x516c": [
+    "SA"
+  ],
+  "sm-x218b": [
+    "SA"
+  ],
+  "sm-t636b": [
+    "SA"
+  ],
+  "sirius plus tab 10": [
+    "69"
+  ],
+  "quantum ta2d5p01": [
+    "D2"
+  ],
+  "pad pro e111": [
+    "KHI"
+  ],
+  "pad pro e110": [
+    "KHI"
+  ],
+  "p50_row": [
+    "T7"
+  ],
+  "p50_eea": [
+    "T7"
+  ],
+  "optima 8430e 4g da1c8p01": [
+    "D2"
+  ],
+  "ob-p10": [
+    "UZ"
+  ],
+  "ob-p08": [
+    "UZ"
+  ],
+  "l10_t08_eea": [
+    "VAS"
+  ],
+  "k10 da1c0p01": [
+    "D2"
+  ],
+  "jaculus v2": [
+    "GTX"
+  ],
+  "iplay60_pro": [
+    "3A"
+  ],
+  "hoco_hi11": [
+    "HOC"
+  ],
+  "acd-tab-10s": [
+    "ACD"
+  ],
+  "u10 kid": [
+    "DO"
+  ],
+  "u320": [
+    "YUM"
+  ],
+  "prime 18 ms1003pl": [
+    "D2"
+  ],
+  "prime 18 ms1002pl": [
+    "D2"
+  ],
+  "prime 18 ms1001pl": [
+    "D2"
+  ],
+  "pad6 plus": [
+    "YIK"
+  ],
+  "ot6 kids": [
+    "OE"
   ],
   "jdn-al00": [
     "HU"
@@ -96077,5 +96460,11 @@ module.exports = {
   ],
   "watch7,11": [
     "AP"
+  ],
+  "quest 3s": [
+    "OQ"
+  ],
+  "quest 3": [
+    "OQ"
   ]
 };
