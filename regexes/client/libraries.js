@@ -764,5 +764,11 @@ module.exports = [
     "name": "MatomoTracker",
     "version": "$1",
     "url": "https://github.com/matomo-org/matomo-sdk-ios"
+  },
+  {
+    "regex": "libHTTP/(\\d+[.\\d]+)",
+    "name": "LibHTTP",
+    "version": "$1",
+    "url": "https://www.libhttp.org/"
   }
 ];

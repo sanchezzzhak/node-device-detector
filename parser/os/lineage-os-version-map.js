@@ -1,5 +1,6 @@
 // prettier-ignore
 module.exports = {
+  '16': '23',
   '15': '22',
   '14': '21',
   '13': '20.0',

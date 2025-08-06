@@ -69,6 +69,7 @@ module.exports = {
   'KAL': 'Kali',
   'KAN': 'Kanotix',
   'KIN': 'KIN OS',
+  'KOL': 'KolibriOS',
   'KNO': 'Knoppix',
   'KTV': 'KreaTV',
   'KBT': 'Kubuntu',
