@@ -500,6 +500,8 @@ module.exports = {
   'QS': 'Quick Browser',
   'QT': 'Qutebrowser',
   'QU': 'Quark',
+  'Q6': 'QuarkPC',
+  'Q7': 'Quetta',
   'QZ': 'QupZilla',
   'QM': 'Qwant Mobile',
   'Q5': 'QtWeb',

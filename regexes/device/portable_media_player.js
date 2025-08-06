@@ -162,5 +162,15 @@ module.exports = {
         "model": "$1"
       }
     ]
+  },
+  "Fanvace": {
+    "regex": "Fanvace",
+    "device": "portable media player",
+    "models": [
+      {
+        "regex": "Fanvace[- _]([^;/)]+)(?: Build|[);])",
+        "model": "$1"
+      }
+    ]
   }
 };

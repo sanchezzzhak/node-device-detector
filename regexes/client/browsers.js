@@ -1,5 +1,13 @@
 module.exports = [
   {
+    "regex": "QuarkPC/(\\d+\\.[\\.\\d]+)",
+    "name": "QuarkPC",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "AltiBrowser/([\\d.]+)",
     "name": "AltiBrowser",
     "version": "$1",

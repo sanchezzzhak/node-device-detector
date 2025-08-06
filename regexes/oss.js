@@ -1,5 +1,10 @@
 module.exports = [
   {
+    "regex": "KolibriOS",
+    "name": "KolibriOS",
+    "version": ""
+  },
+  {
     "regex": "Coolita OS QJY/.+LiteOS(\\d+[.\\d]+)",
     "name": "Coolita OS",
     "version": "$1"
@@ -554,6 +559,10 @@ module.exports = [
     "regex": "(?:Android (\\d([\\d.])*);? )?lineage_\\w+",
     "name": "Lineage OS",
     "versions": [
+      {
+        "regex": "Android 16",
+        "version": "23"
+      },
       {
         "regex": "Android 15",
         "version": "22"
