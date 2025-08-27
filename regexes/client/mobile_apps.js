@@ -145,6 +145,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "wxwork/(\\d+[.\\d]+)",
+    "name": "WeCom",
+    "version": "$1"
+  },
+  {
     "regex": "MicroMessenger/([\\d.]+)",
     "name": "WeChat",
     "version": "$1"
@@ -2953,5 +2958,15 @@ module.exports = [
     "regex": "(?!AlohaBrowser)([^/;]*)/(\\d+\\.[\\d.]+) \\((?:iPhone|iPad); (?:iOS|iPadOS) [0-9.]+; Scale/[0-9.]+\\)",
     "name": "$1",
     "version": "$2"
+  },
+  {
+    "regex": "^Seekr/([\\d\\.]+).*Android",
+    "name": "Seekr",
+    "version": "$1"
+  },
+  {
+    "regex": "^Seekr/([\\d\\.]+).*CFNetwork",
+    "name": "Seekr",
+    "version": "$1"
   }
 ];
