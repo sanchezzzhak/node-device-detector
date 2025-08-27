@@ -200,7 +200,22 @@ module.exports = {
   "100110603": [
     "O4"
   ],
+  "100135794": [
+    "O4"
+  ],
+  "100135920": [
+    "O4"
+  ],
+  "100135924": [
+    "O4"
+  ],
   "100135925": [
+    "O4"
+  ],
+  "100146660": [
+    "O4"
+  ],
+  "100146663": [
     "O4"
   ],
   "dmc-cm1": [
@@ -2934,6 +2949,15 @@ module.exports = {
     "SA"
   ],
   "24117rn76l": [
+    "XI"
+  ],
+  "infinix x6870": [
+    "IF"
+  ],
+  "infinix x671": [
+    "IF"
+  ],
+  "23021raa2g": [
     "XI"
   ],
   "gi-626": [
@@ -61470,6 +61494,267 @@ module.exports = {
   "rungee x9": [
     "RUN"
   ],
+  "z2472": [
+    "ZT"
+  ],
+  "xq-fs72": [
+    "SO"
+  ],
+  "xq-fs44": [
+    "SO"
+  ],
+  "rmx5062": [
+    "RE"
+  ],
+  "plf110": [
+    "ON"
+  ],
+  "plc110": [
+    "ON"
+  ],
+  "pkc130": [
+    "OP"
+  ],
+  "i2502": [
+    "VV"
+  ],
+  "i2221": [
+    "VV"
+  ],
+  "24095pcadi": [
+    "0P"
+  ],
+  "lt e18": [
+    "QL"
+  ],
+  "lt e16": [
+    "QL"
+  ],
+  "itel a671lc": [
+    "IZ"
+  ],
+  "hmd vibe": [
+    "HMD"
+  ],
+  "black_e": [
+    "KL"
+  ],
+  "alt-lx3": [
+    "HU"
+  ],
+  "2411drn47i": [
+    "XI"
+  ],
+  "4g mega power": [
+    "CAL"
+  ],
+  "4g maxx": [
+    "CAL"
+  ],
+  "4g hot": [
+    "CAL"
+  ],
+  "4g-hero": [
+    "CAL"
+  ],
+  "4g smart": [
+    "CAL"
+  ],
+  "4g prime": [
+    "CAL"
+  ],
+  "4g ultra pro": [
+    "0G"
+  ],
+  "4g style": [
+    "0G"
+  ],
+  "4g star": [
+    "CAL"
+  ],
+  "4g spark": [
+    "CAL"
+  ],
+  "4g 6700": [
+    "0G"
+  ],
+  "4g lite": [
+    "CAL"
+  ],
+  "4g power": [
+    "CAL"
+  ],
+  "4g music": [
+    "CAL"
+  ],
+  "4g cloud": [
+    "CAL"
+  ],
+  "dnp-an00": [
+    "HU"
+  ],
+  "armor 34 pro": [
+    "UL"
+  ],
+  "action a5pro": [
+    "5F"
+  ],
+  "armor x16": [
+    "UL"
+  ],
+  "via x45": [
+    "R4"
+  ],
+  "rmx5033": [
+    "RE"
+  ],
+  "poco x7 pro": [
+    "0P"
+  ],
+  "poco x7": [
+    "0P"
+  ],
+  "poco c61": [
+    "0P"
+  ],
+  "poco f7": [
+    "0P"
+  ],
+  "poco f7 pro": [
+    "0P"
+  ],
+  "poco f7 ultra": [
+    "0P"
+  ],
+  "poco m7 pro 5g": [
+    "0P"
+  ],
+  "nic-lx1": [
+    "HU"
+  ],
+  "nic-an00": [
+    "HU"
+  ],
+  "nic-lx2": [
+    "HU"
+  ],
+  "nic-lx3": [
+    "HU"
+  ],
+  "note58 pro": [
+    "DO"
+  ],
+  "note59 pro+": [
+    "DO"
+  ],
+  "mblu 22": [
+    "M1"
+  ],
+  "infinix x6885": [
+    "IF"
+  ],
+  "infinix x6728": [
+    "IF"
+  ],
+  "infinix x6726b": [
+    "IF"
+  ],
+  "infinix x6725c": [
+    "IF"
+  ],
+  "infinix x6882b": [
+    "IF"
+  ],
+  "infinix smart 8 pro": [
+    "IF"
+  ],
+  "infinix smart 8": [
+    "IF"
+  ],
+  "net hit": [
+    "K2"
+  ],
+  "net alpha": [
+    "K2"
+  ],
+  "aura prime": [
+    "ZU"
+  ],
+  "aura m1": [
+    "ZU"
+  ],
+  "aura z1": [
+    "ZU"
+  ],
+  "itel c671l": [
+    "IZ"
+  ],
+  "itel a6610l": [
+    "IZ"
+  ],
+  "itel p666l": [
+    "IZ"
+  ],
+  "f-51e": [
+    "FU"
+  ],
+  "w11": [
+    "HV"
+  ],
+  "phj110_a1": [
+    "OP"
+  ],
+  "infinix x6532c": [
+    "IF"
+  ],
+  "cph2773": [
+    "OP"
+  ],
+  "sens g": [
+    "ZU"
+  ],
+  "cls-al00": [
+    "HU"
+  ],
+  "cls-al30": [
+    "HU"
+  ],
+  "lt_6217": [
+    "QL"
+  ],
+  "xenium s706": [
+    "PH"
+  ],
+  "mrk-bd00": [
+    "8X"
+  ],
+  "sp210": [
+    "C3"
+  ],
+  "sp300": [
+    "C3"
+  ],
+  "sp200": [
+    "C3"
+  ],
+  "blk-lx9": [
+    "HU"
+  ],
+  "blk-al80": [
+    "HU"
+  ],
+  "bison1": [
+    "XT"
+  ],
+  "alpha 1r": [
+    "LA"
+  ],
+  "tlr-al00": [
+    "HU"
+  ],
+  "zeus_4g_pro": [
+    "FS"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -76295,6 +76580,81 @@ module.exports = {
   ],
   "ot6 kids": [
     "OE"
+  ],
+  "eln2-w29": [
+    "HU"
+  ],
+  "25040rp0ae": [
+    "XI"
+  ],
+  "a10-21_eea": [
+    "AC"
+  ],
+  "bigtech_b_ru": [
+    "6B"
+  ],
+  "active 12 pro": [
+    "B2"
+  ],
+  "t60plus_row": [
+    "T7"
+  ],
+  "t60plus_eea": [
+    "T7"
+  ],
+  "t65max_row": [
+    "T7"
+  ],
+  "t65max_eea": [
+    "T7"
+  ],
+  "t50mini_row": [
+    "T7"
+  ],
+  "rol-w60": [
+    "HU"
+  ],
+  "rod2-w69": [
+    "HU"
+  ],
+  "m10_r04": [
+    "PRI"
+  ],
+  "edge ta3d1m01": [
+    "D2"
+  ],
+  "eclipse ta3e1p02": [
+    "D2"
+  ],
+  "empire ta3e2m01": [
+    "D2"
+  ],
+  "agm pad t3": [
+    "A3"
+  ],
+  "bve-w10": [
+    "HU"
+  ],
+  "readboy_c26pro": [
+    "RB"
+  ],
+  "funpad-8max": [
+    "1F"
+  ],
+  "btkr-w09": [
+    "HU"
+  ],
+  "ags5-al00": [
+    "HU"
+  ],
+  "torex831b": [
+    "7T"
+  ],
+  "tk_e720_eea": [
+    "GRA"
+  ],
+  "techpad_832": [
+    "TP"
   ],
   "jdn-al00": [
     "HU"
@@ -95451,6 +95811,112 @@ module.exports = {
   ],
   "bq_43fs38b": [
     "BX"
+  ],
+  "43ov4000af": [
+    "ONV"
+  ],
+  "43lu6000t": [
+    "8A"
+  ],
+  "40lf7030st": [
+    "8A"
+  ],
+  "tdtv50cs06u": [
+    "TOP"
+  ],
+  "tdtv50cq08u": [
+    "TOP"
+  ],
+  "tdtv24bs02h_we": [
+    "TOP"
+  ],
+  "tdtv24bs01h_bk": [
+    "TOP"
+  ],
+  "sm-led32m07s": [
+    "X2",
+    "SA"
+  ],
+  "sm-qled50t21su": [
+    "X2",
+    "SA"
+  ],
+  "sl-led65s01t2su": [
+    "SC1"
+  ],
+  "hx-43f01fb": [
+    "3H"
+  ],
+  "hx-32h01fb": [
+    "3H"
+  ],
+  "hx-43u01fb": [
+    "3H"
+  ],
+  "hx-50u01fb": [
+    "3H"
+  ],
+  "hx-55u01fb": [
+    "3H"
+  ],
+  "hx-32f01fb": [
+    "3H"
+  ],
+  "hx-24h01fb": [
+    "3H"
+  ],
+  "50lu6000t": [
+    "8A"
+  ],
+  "32qws9002": [
+    "WLR"
+  ],
+  "an-232": [
+    "EPL"
+  ],
+  "zala smartbox dv9135": [
+    "ZAL",
+    "M9"
+  ],
+  "yndx-00095": [
+    "YD"
+  ],
+  "yndx-00094": [
+    "YD"
+  ],
+  "yndx-00093": [
+    "YD"
+  ],
+  "winkbox mini": [
+    "WN"
+  ],
+  "winkbox 3": [
+    "WN"
+  ],
+  "waipu tv stick": [
+    "WAT"
+  ],
+  "ulx-24tcs221-t9": [
+    "YN"
+  ],
+  "ulx-32tcs226-t9": [
+    "YN"
+  ],
+  "sm-led55m04su": [
+    "X2",
+    "SA"
+  ],
+  "sm-led43m03su": [
+    "X2",
+    "SA"
+  ],
+  "sm-led32m15s": [
+    "X2",
+    "SA"
+  ],
+  "sm-led24m11s": [
+    "X2",
+    "SA"
   ],
   "bb2 pro": [
     "0M"
