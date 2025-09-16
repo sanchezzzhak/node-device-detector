@@ -312,7 +312,7 @@ class OsAbstractParser extends ParserAbstract {
       }
 
       // Meta Horizon is reported as Linux in client hints
-      if ('GNU/Linux' === name && 'Meta Horizon' === data.name) {
+      if (data && 'GNU/Linux' === name && 'Meta Horizon' === data.name) {
         name = data.name;
         short = data.short_name;
       }
