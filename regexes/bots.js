@@ -763,6 +763,26 @@ module.exports = [
     }
   },
   {
+    "regex": "meta-webindexer",
+    "name": "Meta-WebIndexer",
+    "category": "Social Media Agent",
+    "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
+    "producer": {
+      "name": "Meta Platforms, Inc.",
+      "url": "https://www.meta.com/"
+    }
+  },
+  {
+    "regex": "meta-externalads",
+    "name": "Meta-ExternalAds",
+    "category": "Social Media Agent",
+    "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
+    "producer": {
+      "name": "Meta Platforms, Inc.",
+      "url": "https://www.meta.com/"
+    }
+  },
+  {
     "regex": "FacebookBot",
     "name": "FacebookBot",
     "category": "Crawler",
@@ -1377,7 +1397,7 @@ module.exports = [
   },
   {
     "regex": "MixrankBot",
-    "name": "Mixrank Bot",
+    "name": "MixRank Bot",
     "category": "Crawler",
     "url": "http://mixrank.com",
     "producer": {
@@ -2579,7 +2599,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Yandex(?:(?:\\.Gazeta |Accessibility|Mobile|MobileScreenShot|RenderResources|Screenshot|Sprav)?Bot|(?:AdNet|Antivirus|Blogs|Calendar|Catalog|Direct|Favicons|ForDomain|ImageResizer|Images|Market|Media|Metrika|News|OntoDB(?:API)?|Pagechecker|Partner|RCA|SearchShop|(?:News|Site)links|Tracker|Turbo|Userproxy|Verticals|Vertis|Video|Webmaster))|YaDirectFetcher",
+    "regex": "Yandex(?:(?:\\.Gazeta |Accessibility|Additional|Com|Mobile|MobileScreenShot|RenderResources|Screenshot|Sprav)?Bot|(?:Additional|AdNet|Antivirus|Blogs|Calendar|Catalog|Dialogs|Direct|Favicons|ForDomain|ImageResizer|Images|Market|Media|Metrika|News|OntoDB(?:API)?|Pagechecker|Partner|RCA|SearchShop|(?:News|Site)links|Tracker|Turbo|Userproxy|Verticals|Vertis|Video|Webmaster))|YaDirectFetcher",
     "name": "Yandex Bot",
     "category": "Search bot",
     "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
@@ -3118,7 +3138,7 @@ module.exports = [
     "regex": "MoodleBot-Linkchecker",
     "name": "MoodleBot Linkchecker",
     "category": "Search bot",
-    "url": "hhttps://docs.moodle.org/en/Usage",
+    "url": "https://docs.moodle.org/en/Usage",
     "producer": {
       "name": "Moodle Pty Ltd",
       "url": "https://moodle.org/"
@@ -3309,7 +3329,7 @@ module.exports = [
   },
   {
     "regex": "HeartRails_Capture",
-    "name": "Heart Rails Capture",
+    "name": "HeartRails Capture",
     "category": "Service Agent",
     "url": "http://capture.heartrails.com"
   },
@@ -3553,7 +3573,7 @@ module.exports = [
     "regex": "LumtelBot",
     "name": "LumtelBot",
     "category": "Crawler",
-    "url": "https://umtel.com"
+    "url": "https://lumtel.com"
   },
   {
     "regex": "PiplBot",
@@ -3782,6 +3802,11 @@ module.exports = [
   {
     "regex": "ThinkChaos/",
     "name": "ThinkChaos",
+    "category": "Crawler"
+  },
+  {
+    "regex": "Thinkbot/",
+    "name": "Thinkbot",
     "category": "Crawler"
   },
   {
@@ -5024,7 +5049,17 @@ module.exports = [
     "regex": "PerplexityBot",
     "name": "PerplexityBot",
     "category": "Crawler",
-    "url": "https://docs.perplexity.ai/docs/perplexitybot",
+    "url": "https://docs.perplexity.ai/guides/bots",
+    "producer": {
+      "name": "Perplexity AI, Inc.",
+      "url": "https://www.perplexity.ai/"
+    }
+  },
+  {
+    "regex": "Perplexity-User",
+    "name": "Perplexity-User",
+    "category": "Crawler",
+    "url": "https://docs.perplexity.ai/guides/bots",
     "producer": {
       "name": "Perplexity AI, Inc.",
       "url": "https://www.perplexity.ai/"
@@ -6273,11 +6308,47 @@ module.exports = [
     }
   },
   {
+    "regex": "Simbiat Software",
+    "name": "Simbiat Software",
+    "category": "Crawler",
+    "url": "https://www.simbiat.eu",
+    "producer": {
+      "name": "Simbiat Software",
+      "url": "https://www.simbiat.eu"
+    }
+  },
+  {
+    "regex": "IbouBot",
+    "name": "IbouBot",
+    "category": "Search bot",
+    "url": "https://ibou.io/iboubot.html"
+  },
+  {
+    "regex": "AddSearchBot",
+    "name": "AddSearchBot",
+    "category": "Crawler",
+    "url": "https://www.addsearch.com/docs/indexing/whitelisting-addsearch-bot/",
+    "producer": {
+      "name": "AddSearch Oy",
+      "url": "https://www.addsearch.com/"
+    }
+  },
+  {
+    "regex": "TerraCotta",
+    "name": "TerraCotta",
+    "category": "Crawler",
+    "url": "https://github.com/CeramicTeam/CeramicTerracotta",
+    "producer": {
+      "name": "Ceramic, Inc.",
+      "url": "https://ceramic.ai/"
+    }
+  },
+  {
     "regex": "nuhk|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr\\.com|teoma|oegp|http%20client|htdig|mogimogi|larbin|scrubby|searchsight|semanticdiscovery|snappy|zeal(?!ot)|dataparksearch|findlinks|BrowserMob|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|7Siters|centuryb\\.o\\.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg|cortex|Re-re Studio|adreview|AHC/|NameOfAgent|Request-Promise|ALittle Client|Hello,? world|wp_is_mobile|0xAbyssalDoesntExist|Anarchy99|^revolt|nvd0rz|xfa1|Hakai|gbrmss|fuck-your-hp|IDBTE4M CODE87|Antoine|Insomania|Hells-Net|b3astmode|Linux Gnu \\(cow\\)|Test Certificate Info|iplabel|Magellan|TheSafex?Internetx?Search|Searcherx?web|kirkland-signature|LinkChain|survey-security-dot-txt|infrawatch|Time/|r00ts3c-owned-you|nvdorz|Root Slut|NiggaBalls|BotPoke|GlobalWebSearch|xx032_bo9vs83_2a|sslshed|geckotrail|Wordup|Keydrop|\\(compatible\\)|John Recon|SPARK COMMIT|masjesu|Komaru_The_Cat|Jesus Christ of Nazareth is LORD|Kowai|Hakai|LoliSec|LMAO|^xenu|^(?:chrome|firefox|Abcd|Dark|KvshClient|Node.js|Report Runner|url|Zeus|ZmEu)$|OnlyScans|TheInternetSearchx",
     "name": "Generic Bot"
   },
   {
-    "regex": "[a-z0-9_-]*(?:(?<!cu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|analyzer|appengine|archiver?|checker|collector|crawl|crawler|(?<!node-|uclient-|Mikrotik/\\d\\.[x\\d] |electron-)fetch(?:er)?|indexer|inspector|monitor|(?<!Microsoft |banshee-)project(?!or)|(?<!Google Wap |Blue |SpeedMode; )proxy|(?<!P)research|resolver|robots|(?<!Cam)scanner|scraper|script|searcher|(?<!-)security|spider(?! 8)|study|transcoder|uptime|user[ _]?agent|validator)(?:[^a-z]|$)",
+    "regex": "[a-z0-9_-]*(?:(?<!cu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|analyzer|appengine|archiver?|checker|collector|crawl|crawler|(?<!node-|uclient-|Mikrotik/\\d\\.[x\\d] |electron-)fetch(?:er)?|indexer|inspector|monitor|(?<!Microsoft |banshee-)project(?!or)|(?<!Google Wap |Blue |SpeedMode; )proxy|(?<!P)research|resolver|robots|(?<!Cam)scanner|scraper|script|searcher|(?<!-)security|spider(?! 8)|study|transcoder|uptime|user[ _]?agent|validator|-(?:AI|Extended|User)/)(?:[^a-z]|$)",
     "name": "Generic Bot"
   }
 ];

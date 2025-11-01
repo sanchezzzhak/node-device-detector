@@ -1,5 +1,10 @@
 module.exports = [
   {
+    "regex": "HeyTapBrowser/([\\d.]+)",
+    "name": "HeyTapBrowser",
+    "version": "$1"
+  },
+  {
     "regex": "QuarkPC/(\\d+\\.[\\.\\d]+)",
     "name": "QuarkPC",
     "version": "$1",
