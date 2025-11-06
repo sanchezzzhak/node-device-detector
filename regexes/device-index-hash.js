@@ -1796,9 +1796,6 @@ module.exports = {
   "sm-t515": [
     "SA"
   ],
-  "pdem10": [
-    "OP"
-  ],
   "iphone12,1": [
     "AP"
   ],
@@ -7378,6 +7375,9 @@ module.exports = {
     "OP"
   ],
   "cph2023": [
+    "OP"
+  ],
+  "pdem10": [
     "OP"
   ],
   "cph2005": [
@@ -40714,7 +40714,7 @@ module.exports = {
     "18"
   ],
   "pl620": [
-    "PD"
+    "PC"
   ],
   "p77_pride_1e": [
     "9C"
@@ -44461,7 +44461,7 @@ module.exports = {
     "F3"
   ],
   "vida_i501": [
-    "VID"
+    "7U"
   ],
   "vida_i450": [
     "VID"
@@ -55988,6 +55988,7 @@ module.exports = {
     "LE"
   ],
   "xt2129-3": [
+    "LE",
     "MR"
   ],
   "panb0015in": [
@@ -59438,7 +59439,7 @@ module.exports = {
     "RE"
   ],
   "z2357n": [
-    "57"
+    "ZT"
   ],
   "z2353": [
     "57"
@@ -60718,7 +60719,7 @@ module.exports = {
     "UL"
   ],
   "armor c1 max": [
-    "UL"
+    "KHI"
   ],
   "armor 27t": [
     "UL"
@@ -60727,7 +60728,7 @@ module.exports = {
     "UL"
   ],
   "armor p1 pro": [
-    "UL"
+    "KHI"
   ],
   "armor mini 20 pro": [
     "UL"
@@ -60904,6 +60905,9 @@ module.exports = {
   "cph2647": [
     "ON",
     "OP"
+  ],
+  "redmi note 12 pro+ 5g": [
+    "XI"
   ],
   "25028pc03g": [
     "0P"
@@ -61754,6 +61758,18 @@ module.exports = {
   ],
   "zeus_4g_pro": [
     "FS"
+  ],
+  "iphone18,1": [
+    "AP"
+  ],
+  "iphone18,2": [
+    "AP"
+  ],
+  "iphone18,3": [
+    "AP"
+  ],
+  "iphone18,4": [
+    "AP"
   ],
   "gs55-6": [
     "GS"
@@ -76655,6 +76671,24 @@ module.exports = {
   ],
   "techpad_832": [
     "TP"
+  ],
+  "sm-x520": [
+    "SA"
+  ],
+  "sm-x626b": [
+    "SA"
+  ],
+  "sm-x510": [
+    "SA"
+  ],
+  "sm-x730": [
+    "SA"
+  ],
+  "sm-x920": [
+    "SA"
+  ],
+  "sm-x300": [
+    "SA"
   ],
   "jdn-al00": [
     "HU"

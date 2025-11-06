@@ -166,7 +166,7 @@ module.exports = [
   },
   {
     "regex": "mailapp/(\\d+\\.[.\\d]+)",
-    "name": "mailapp",
+    "name": "MailApp",
     "version": "$1"
   },
   {

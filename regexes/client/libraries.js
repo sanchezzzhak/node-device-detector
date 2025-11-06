@@ -770,5 +770,17 @@ module.exports = [
     "name": "LibHTTP",
     "version": "$1",
     "url": "https://www.libhttp.org/"
+  },
+  {
+    "regex": "BIC Tracker",
+    "name": "BIC Tracker",
+    "version": "",
+    "url": "https://github.com/Simbiat/BIC-Tracker"
+  },
+  {
+    "regex": "Lodestone PHP Parser",
+    "name": "Lodestone PHP Parser",
+    "version": "",
+    "url": "https://github.com/Simbiat/lodestone-parser"
   }
 ];

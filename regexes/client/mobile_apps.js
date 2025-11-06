@@ -490,11 +490,6 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "HeyTapBrowser/([\\d.]+)",
-    "name": "HeyTapBrowser",
-    "version": "$1"
-  },
-  {
     "regex": "RobloxApp/([\\d.]+)",
     "name": "Roblox",
     "version": "$1"
@@ -2945,14 +2940,29 @@ module.exports = [
     "version": ""
   },
   {
+    "regex": "anythingllm-desktop/([\\d.]+)",
+    "name": "Anything LLM",
+    "version": "$1"
+  },
+  {
+    "regex": "opgg-electron-app/([\\d.]+)",
+    "name": "OP.GG",
+    "version": "$1"
+  },
+  {
+    "regex": "VidJuiceUniTube/([\\d.]+)",
+    "name": "VidJuice UniTube",
+    "version": "$1"
+  },
+  {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",
     "name": "$1",
     "version": "$2"
   },
   {
-    "regex": "appname/([^/; ]*)",
-    "name": "$1",
-    "version": ""
+    "regex": "AppVersion/([\\d.]+).+appname/((?!\\(null\\))[^/; ]*)",
+    "name": "$2",
+    "version": "$1"
   },
   {
     "regex": "(?!AlohaBrowser)([^/;]*)/(\\d+\\.[\\d.]+) \\((?:iPhone|iPad); (?:iOS|iPadOS) [0-9.]+; Scale/[0-9.]+\\)",

@@ -321,7 +321,8 @@ module.exports = {
   "com.getkeepsafe.browser": "Keepsafe Browser",
   "com.hawk.android.browser": "Hawk Turbo Browser",
   "com.zte.nubrowser": "ZTE Browser",
-  "com.cloaktp.browser": "Privacy Pioneer Browser",
+  "com.cloaktp.browser": "Cloak Private Browser",
   "company.thebrowser.arc": "Arc Search",
-  "com.android.webview": "Chrome Webview"
+  "com.android.webview": "Chrome Webview",
+  "com.heytap.browser": "HeyTapBrowser"
 };

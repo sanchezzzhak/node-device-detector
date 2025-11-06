@@ -107,6 +107,7 @@ module.exports = {
   'OS2': 'OS/2',
   'T64': 'OSF1',
   'OBS': 'OpenBSD',
+  'OHS': 'OpenHarmony',
   'OVS': 'OpenVMS',
   'OVZ': 'OpenVZ',
   'OWR': 'OpenWrt',
