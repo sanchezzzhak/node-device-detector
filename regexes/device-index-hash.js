@@ -693,7 +693,7 @@ module.exports = {
     "KN"
   ],
   "bnd-al00": [
-    "HU"
+    "HNR"
   ],
   "bg2-w09": [
     "HU"
@@ -762,7 +762,7 @@ module.exports = {
     "SA"
   ],
   "vne-lx3": [
-    "HU"
+    "HNR"
   ],
   "infinix x688b": [
     "IF"
@@ -1827,6 +1827,7 @@ module.exports = {
     "AL"
   ],
   "bmh-tn10": [
+    "HNR",
     "HU"
   ],
   "ipad3,4": [
@@ -2798,10 +2799,10 @@ module.exports = {
     "TB"
   ],
   "fcp-n49": [
-    "HU"
+    "HNR"
   ],
   "fcp-an10": [
-    "HU"
+    "HNR"
   ],
   "biloba": [
     "XI"
@@ -4316,10 +4317,10 @@ module.exports = {
     "SA"
   ],
   "honor x10 max": [
-    "HU"
+    "HNR"
   ],
   "kkg-an00": [
-    "HU"
+    "HNR"
   ],
   "22041216c": [
     "XI"
@@ -12096,7 +12097,7 @@ module.exports = {
     "NK"
   ],
   "bkl-l04": [
-    "HU"
+    "HNR"
   ],
   "mya-l13": [
     "HU"
@@ -16578,7 +16579,7 @@ module.exports = {
     "ZT"
   ],
   "pct-l29": [
-    "HU"
+    "HNR"
   ],
   "z798bl": [
     "ZT"
@@ -17237,7 +17238,7 @@ module.exports = {
     "B2"
   ],
   "lra-lx1": [
-    "HU"
+    "HNR"
   ],
   "wp5 pro": [
     "OE"
@@ -17392,7 +17393,7 @@ module.exports = {
     "SH"
   ],
   "cdy-nx9a": [
-    "HU"
+    "HNR"
   ],
   "advance l5": [
     "BU"
@@ -17729,7 +17730,7 @@ module.exports = {
     "UZ"
   ],
   "dnn-lx9": [
-    "HU"
+    "HNR"
   ],
   "aligator_s5520": [
     "4A"
@@ -18631,7 +18632,7 @@ module.exports = {
     "XI"
   ],
   "moa-al20": [
-    "HU"
+    "HNR"
   ],
   "f-42a": [
     "FU"
@@ -18850,7 +18851,7 @@ module.exports = {
     "HU"
   ],
   "hlk-l41": [
-    "HU"
+    "HNR"
   ],
   "kiona": [
     "6W"
@@ -18961,7 +18962,7 @@ module.exports = {
     "KA"
   ],
   "ksa-lx3": [
-    "HU"
+    "HNR"
   ],
   "le9920": [
     "LV"
@@ -19411,7 +19412,7 @@ module.exports = {
     "VT"
   ],
   "stf-l09s": [
-    "HU"
+    "HNR"
   ],
   "spc smart lite": [
     "FS"
@@ -21871,7 +21872,7 @@ module.exports = {
     "AL"
   ],
   "are-l22": [
-    "HU"
+    "HNR"
   ],
   "astro_5_go_lte": [
     "MW"
@@ -21954,7 +21955,7 @@ module.exports = {
     "HM"
   ],
   "honor 4c pro": [
-    "HU"
+    "HNR"
   ],
   "k1 trio": [
     "7K"
@@ -24903,7 +24904,7 @@ module.exports = {
     "1L"
   ],
   "ebg-tn00": [
-    "HU"
+    "HNR"
   ],
   "note 8p": [
     "UL"
@@ -25291,7 +25292,7 @@ module.exports = {
     "0G"
   ],
   "hlk-l42": [
-    "HU"
+    "HNR"
   ],
   "hot pro 2": [
     "QM"
@@ -25357,7 +25358,7 @@ module.exports = {
     "HT"
   ],
   "ath-cl00": [
-    "HU"
+    "HNR"
   ],
   "myleagoo e4": [
     "L5"
@@ -25544,10 +25545,10 @@ module.exports = {
     "VV"
   ],
   "ala-an70": [
-    "HU"
+    "HNR"
   ],
   "ask-al20": [
-    "HU"
+    "HNR"
   ],
   "pecm30": [
     "OP"
@@ -25586,7 +25587,7 @@ module.exports = {
     "OP"
   ],
   "mxw-tn00": [
-    "HU"
+    "HNR"
   ],
   "rmx2173": [
     "RE"
@@ -25661,7 +25662,7 @@ module.exports = {
     "OP"
   ],
   "yok-an10": [
-    "HU"
+    "HNR"
   ],
   "dt1902a": [
     "S7"
@@ -27085,7 +27086,7 @@ module.exports = {
     "L1"
   ],
   "hry-lx1": [
-    "HU"
+    "HNR"
   ],
   "lenovo a1000": [
     "LE"
@@ -27774,7 +27775,7 @@ module.exports = {
     "PA"
   ],
   "col-al10": [
-    "HU"
+    "HNR"
   ],
   "lenovo l78011": [
     "LE"
@@ -28681,7 +28682,7 @@ module.exports = {
     "TB"
   ],
   "jat-l29": [
-    "HU"
+    "HNR"
   ],
   "lgh810": [
     "LG"
@@ -29784,7 +29785,7 @@ module.exports = {
     "HU"
   ],
   "jsn-l22": [
-    "HU"
+    "HNR"
   ],
   "inoi 5 lite 2021": [
     "I4"
@@ -29940,7 +29941,7 @@ module.exports = {
     "SA"
   ],
   "cor-l29": [
-    "HU"
+    "HNR"
   ],
   "alp-l09": [
     "HU"
@@ -29967,7 +29968,7 @@ module.exports = {
     "HU"
   ],
   "cam-ul00": [
-    "HU"
+    "HNR"
   ],
   "sla-l23": [
     "HU"
@@ -29979,7 +29980,7 @@ module.exports = {
     "HU"
   ],
   "aum-l29": [
-    "HU"
+    "HNR"
   ],
   "fla-lx2": [
     "HU"
@@ -30091,7 +30092,7 @@ module.exports = {
     "HU"
   ],
   "che-tl00": [
-    "HU"
+    "HNR"
   ],
   "ele-l09": [
     "HU"
@@ -30106,7 +30107,7 @@ module.exports = {
     "HU"
   ],
   "hry-al00": [
-    "HU"
+    "HNR"
   ],
   "lon-al00": [
     "HU"
@@ -30664,7 +30665,7 @@ module.exports = {
     "41"
   ],
   "bkl-al00": [
-    "HU"
+    "HNR"
   ],
   "bla-al00": [
     "HU"
@@ -31101,7 +31102,7 @@ module.exports = {
     "B2"
   ],
   "col-tl10": [
-    "HU"
+    "HNR"
   ],
   "fp3": [
     "FA"
@@ -32443,7 +32444,7 @@ module.exports = {
     "OE"
   ],
   "jat-al00": [
-    "HU"
+    "HNR"
   ],
   "ixion ms550": [
     "DX"
@@ -32548,6 +32549,7 @@ module.exports = {
     "LV"
   ],
   "cdy-an95": [
+    "HNR",
     "HU"
   ],
   "oce-an10": [
@@ -32605,6 +32607,7 @@ module.exports = {
     "OP"
   ],
   "cdy-tn90": [
+    "HNR",
     "HU"
   ],
   "m2104k10i": [
@@ -32614,13 +32617,13 @@ module.exports = {
     "OP"
   ],
   "nza-al00": [
-    "HU"
+    "HNR"
   ],
   "brq-al00": [
     "HU"
   ],
   "bkl-tl10": [
-    "HU"
+    "HNR"
   ],
   "brq-an00": [
     "HU"
@@ -33203,7 +33206,7 @@ module.exports = {
     "HU"
   ],
   "koz-al40": [
-    "HU"
+    "HNR"
   ],
   "hlte103e": [
     "HI"
@@ -33329,7 +33332,7 @@ module.exports = {
     "57"
   ],
   "nth-nx9": [
-    "HU"
+    "HNR"
   ],
   "kt5512": [
     "X6"
@@ -33432,7 +33435,7 @@ module.exports = {
     "SW"
   ],
   "koz-al00": [
-    "HU"
+    "HNR"
   ],
   "s40_vista": [
     "69"
@@ -33632,7 +33635,7 @@ module.exports = {
     "HU"
   ],
   "moa-tl00": [
-    "HU"
+    "HNR"
   ],
   "med-al20": [
     "HU"
@@ -33737,7 +33740,7 @@ module.exports = {
     "HU"
   ],
   "oxp-an00": [
-    "HU"
+    "HNR"
   ],
   "oce-an50": [
     "HU"
@@ -33752,7 +33755,7 @@ module.exports = {
     "HI"
   ],
   "hjc-an90": [
-    "HU"
+    "HNR"
   ],
   "cdl-an50": [
     "HU"
@@ -33794,7 +33797,7 @@ module.exports = {
     "SH"
   ],
   "ntn-an20": [
-    "HU"
+    "HNR"
   ],
   "so-53b": [
     "SO"
@@ -33812,7 +33815,7 @@ module.exports = {
     "SO"
   ],
   "rna-an00": [
-    "HU"
+    "HNR"
   ],
   "sm-g981u": [
     "SA"
@@ -33821,10 +33824,10 @@ module.exports = {
     "ZT"
   ],
   "chl-al00": [
-    "HU"
+    "HNR"
   ],
   "bln-al10": [
-    "HU"
+    "HNR"
   ],
   "impress_lagune": [
     "VX"
@@ -33957,7 +33960,7 @@ module.exports = {
     "K3"
   ],
   "lnd-al40": [
-    "HU"
+    "HNR"
   ],
   "zteu960e": [
     "ZT"
@@ -34233,7 +34236,7 @@ module.exports = {
     "HT"
   ],
   "ntn-lx1": [
-    "HU"
+    "HNR"
   ],
   "g310": [
     "GN"
@@ -34321,7 +34324,7 @@ module.exports = {
     "LG"
   ],
   "elz-an00": [
-    "HU"
+    "HNR"
   ],
   "nam-lx9": [
     "HU"
@@ -34962,7 +34965,7 @@ module.exports = {
     "TP"
   ],
   "ntn-lx3": [
-    "HU"
+    "HNR"
   ],
   "myphone_now_esim": [
     "MY1"
@@ -34992,7 +34995,7 @@ module.exports = {
     "X6"
   ],
   "jlh-an00": [
-    "HU"
+    "HNR"
   ],
   "iris plus 2021": [
     "HR"
@@ -35381,7 +35384,7 @@ module.exports = {
     "PL"
   ],
   "col-l10": [
-    "HU"
+    "HNR"
   ],
   "rmx3061": [
     "RE"
@@ -35632,7 +35635,7 @@ module.exports = {
     "CO"
   ],
   "ntn-l22": [
-    "HU"
+    "HNR"
   ],
   "mp02": [
     "UM"
@@ -36030,7 +36033,7 @@ module.exports = {
     "MR"
   ],
   "chl-an00": [
-    "HU"
+    "HNR"
   ],
   "v2171a": [
     "VV"
@@ -36054,7 +36057,7 @@ module.exports = {
     "XI"
   ],
   "lsa-an00": [
-    "HU"
+    "HNR"
   ],
   "zte a2322": [
     "ZT"
@@ -36231,19 +36234,19 @@ module.exports = {
     "XI"
   ],
   "elz-an10": [
-    "HU"
+    "HNR"
   ],
   "elz-an20": [
-    "HU"
+    "HNR"
   ],
   "conquest-s20": [
     "4C"
   ],
   "nth-an00": [
-    "HU"
+    "HNR"
   ],
   "rna-tn00": [
-    "HU"
+    "HNR"
   ],
   "rte-al00": [
     "HU"
@@ -36255,7 +36258,7 @@ module.exports = {
     "HU"
   ],
   "hjc-lx9": [
-    "HU"
+    "HNR"
   ],
   "wkg-tn00": [
     "HU"
@@ -36412,7 +36415,7 @@ module.exports = {
     "HU"
   ],
   "gia-an00": [
-    "HU"
+    "HNR"
   ],
   "tah-an00": [
     "HU"
@@ -36567,7 +36570,7 @@ module.exports = {
     "XH"
   ],
   "kkg-an70": [
-    "HU"
+    "HNR"
   ],
   "iv2201": [
     "ON"
@@ -36576,7 +36579,7 @@ module.exports = {
     "ON"
   ],
   "mgi-an00": [
-    "HU"
+    "HNR"
   ],
   "v2172a": [
     "VV"
@@ -36606,7 +36609,7 @@ module.exports = {
     "MR"
   ],
   "cma-an00": [
-    "HU"
+    "HNR"
   ],
   "zte a2021h": [
     "ZT"
@@ -36633,13 +36636,13 @@ module.exports = {
     "M1"
   ],
   "new-an90": [
-    "HU"
+    "HNR"
   ],
   "asus_i005db": [
     "AU"
   ],
   "any-an00": [
-    "HU"
+    "HNR"
   ],
   "vtr-tl00": [
     "HU"
@@ -36975,17 +36978,17 @@ module.exports = {
     "XI"
   ],
   "lge-an10": [
-    "HU",
+    "HNR",
     "LG"
   ],
   "sm-w2021": [
     "SA"
   ],
   "tna-an00": [
-    "HU"
+    "HNR"
   ],
   "tfy-an00": [
-    "HU"
+    "HNR"
   ],
   "v2168a": [
     "VV"
@@ -37198,7 +37201,7 @@ module.exports = {
     "HU"
   ],
   "lnd-tl30": [
-    "HU"
+    "HNR"
   ],
   "lineage_ss2": [
     "SH"
@@ -37222,7 +37225,7 @@ module.exports = {
     "SA"
   ],
   "mogolia": [
-    "HU"
+    "HNR"
   ],
   "sm-a225m": [
     "SA"
@@ -39848,7 +39851,7 @@ module.exports = {
     "TB"
   ],
   "tfy-lx1": [
-    "HU"
+    "HNR"
   ],
   "x626_4g": [
     "UQ"
@@ -40280,10 +40283,10 @@ module.exports = {
     "VH"
   ],
   "cma-lx3": [
-    "HU"
+    "HNR"
   ],
   "cma-lx2": [
-    "HU"
+    "HNR"
   ],
   "tecno kg5j": [
     "TB"
@@ -40298,7 +40301,7 @@ module.exports = {
     "TB"
   ],
   "tfy-lx2": [
-    "HU"
+    "HNR"
   ],
   "u696cl": [
     "UX"
@@ -40642,7 +40645,7 @@ module.exports = {
     "VV"
   ],
   "tfy-lx3": [
-    "HU"
+    "HNR"
   ],
   "v2131": [
     "VV"
@@ -40807,7 +40810,7 @@ module.exports = {
     "1R"
   ],
   "cma-lx1": [
-    "HU"
+    "HNR"
   ],
   "cyber 8": [
     "HV"
@@ -40907,7 +40910,7 @@ module.exports = {
     "XI"
   ],
   "any-lx1": [
-    "HU"
+    "HNR"
   ],
   "i8_rokr": [
     "2F"
@@ -42292,7 +42295,7 @@ module.exports = {
     "MI"
   ],
   "cma-an40": [
-    "HU"
+    "HNR"
   ],
   "isprit u50 lte": [
     "VN"
@@ -42566,7 +42569,7 @@ module.exports = {
     "AR"
   ],
   "honor x10 pro": [
-    "HU"
+    "HNR"
   ],
   "find x3 neo": [
     "OP"
@@ -42693,7 +42696,7 @@ module.exports = {
     "HU"
   ],
   "any-nx1": [
-    "HU"
+    "HNR"
   ],
   "vivo z1pro": [
     "VV"
@@ -42729,11 +42732,11 @@ module.exports = {
     "GN"
   ],
   "lge-an20": [
-    "HU",
+    "HNR",
     "LG"
   ],
   "lge-nx9": [
-    "HU",
+    "HNR",
     "LG"
   ],
   "22041219g": [
@@ -42866,7 +42869,7 @@ module.exports = {
     "XI"
   ],
   "fne-an00": [
-    "HU"
+    "HNR"
   ],
   "htc desire 12s": [
     "HT"
@@ -43395,7 +43398,7 @@ module.exports = {
     "57"
   ],
   "dio-an00": [
-    "HU"
+    "HNR"
   ],
   "t8s": [
     "L5"
@@ -43410,25 +43413,25 @@ module.exports = {
     "HU"
   ],
   "honor x10 5g": [
-    "HU"
+    "HNR"
   ],
   "honor x10 lite": [
-    "HU"
+    "HNR"
   ],
   "kle-ao": [
     "XI"
   ],
   "honor 9c": [
-    "HU"
+    "HNR"
   ],
   "honor 9a": [
-    "HU"
+    "HNR"
   ],
   "honor 30s": [
-    "HU"
+    "HNR"
   ],
   "honor 30": [
-    "HU"
+    "HNR"
   ],
   "m1908f1xe": [
     "XI"
@@ -43494,7 +43497,7 @@ module.exports = {
     "OP"
   ],
   "sdy-an00": [
-    "HU"
+    "HNR"
   ],
   "cph2401": [
     "ON",
@@ -44181,7 +44184,7 @@ module.exports = {
     "KA"
   ],
   "fne-nx9": [
-    "HU"
+    "HNR"
   ],
   "rmx3311": [
     "RE"
@@ -44219,7 +44222,7 @@ module.exports = {
     "OP"
   ],
   "vne-n41": [
-    "HU"
+    "HNR"
   ],
   "s35": [
     "DO"
@@ -44846,7 +44849,7 @@ module.exports = {
     "UL"
   ],
   "lge-an00": [
-    "HU",
+    "HNR",
     "LG"
   ],
   "air1": [
@@ -45254,7 +45257,7 @@ module.exports = {
     "4M"
   ],
   "honor play 4t": [
-    "HU"
+    "HNR"
   ],
   "s50_bold": [
     "69"
@@ -45308,7 +45311,7 @@ module.exports = {
     "IZ"
   ],
   "ath-tl00": [
-    "HU"
+    "HNR"
   ],
   "iro a55 q": [
     "AM"
@@ -45344,7 +45347,7 @@ module.exports = {
     "4M"
   ],
   "nnh-an00": [
-    "HU"
+    "HNR"
   ],
   "pdct00": [
     "OP"
@@ -45407,7 +45410,7 @@ module.exports = {
     "SA"
   ],
   "hpb-an00": [
-    "HU"
+    "HNR"
   ],
   "a2010l36": [
     "LE"
@@ -45731,8 +45734,7 @@ module.exports = {
     "CO"
   ],
   "coolpad cor-i0": [
-    "CO",
-    "HU"
+    "CO"
   ],
   "aqua ring": [
     "IX"
@@ -45828,7 +45830,7 @@ module.exports = {
     "OP"
   ],
   "vne-lx1": [
-    "HU"
+    "HNR"
   ],
   "u616at": [
     "WI"
@@ -46012,10 +46014,10 @@ module.exports = {
     "SO"
   ],
   "tfy-an40": [
-    "HU"
+    "HNR"
   ],
   "adt-an00": [
-    "HU"
+    "HNR"
   ],
   "tdt-ma01": [
     "YY"
@@ -46027,10 +46029,10 @@ module.exports = {
     "TET"
   ],
   "rmo-an00": [
-    "HU"
+    "HNR"
   ],
   "vne-an00": [
-    "HU"
+    "HNR"
   ],
   "cosmos three": [
     "CH",
@@ -46498,10 +46500,10 @@ module.exports = {
     "IZ"
   ],
   "vne-lx2": [
-    "HU"
+    "HNR"
   ],
   "any-lx2": [
-    "HU"
+    "HNR"
   ],
   "huawei g6-l11": [
     "HU"
@@ -46576,7 +46578,7 @@ module.exports = {
     "SH"
   ],
   "rky-an00": [
-    "HU"
+    "HNR"
   ],
   "mga-al00": [
     "HU"
@@ -46645,7 +46647,7 @@ module.exports = {
     "HU"
   ],
   "any-lx3": [
-    "HU"
+    "HNR"
   ],
   "eve-lx9": [
     "HU"
@@ -47148,7 +47150,7 @@ module.exports = {
     "VV"
   ],
   "anp-an00": [
-    "HU"
+    "HNR"
   ],
   "shg10": [
     "SH"
@@ -47591,7 +47593,7 @@ module.exports = {
     "XI"
   ],
   "holly-u19": [
-    "HU"
+    "HNR"
   ],
   "albatros c2": [
     "VGE"
@@ -47666,7 +47668,7 @@ module.exports = {
     "XI"
   ],
   "rky-lx1": [
-    "HU"
+    "HNR"
   ],
   "tecno ad8": [
     "TB"
@@ -48246,7 +48248,7 @@ module.exports = {
     "SA"
   ],
   "ann-an00": [
-    "HU"
+    "HNR"
   ],
   "sm-a315n": [
     "SA"
@@ -48343,16 +48345,16 @@ module.exports = {
     "OE"
   ],
   "vna-lx2": [
-    "HU"
+    "HNR"
   ],
   "m2010j19gc": [
     "0P"
   ],
   "rmo-nx1": [
-    "HU"
+    "HNR"
   ],
   "rky-lx3": [
-    "HU"
+    "HNR"
   ],
   "wp21": [
     "OE"
@@ -48370,7 +48372,7 @@ module.exports = {
     "UM"
   ],
   "crt-lx1": [
-    "HU"
+    "HNR"
   ],
   "infinix x666b": [
     "IF"
@@ -48867,6 +48869,7 @@ module.exports = {
     "XI"
   ],
   "ebg-n19": [
+    "HNR",
     "HU"
   ],
   "els-n29": [
@@ -49383,7 +49386,7 @@ module.exports = {
     "VV"
   ],
   "crt-lx2": [
-    "HU"
+    "HNR"
   ],
   "a170_plus": [
     "I4"
@@ -49432,7 +49435,7 @@ module.exports = {
     "TB"
   ],
   "pgt-an10": [
-    "HU"
+    "HNR"
   ],
   "22127rk46c": [
     "XI"
@@ -49674,13 +49677,13 @@ module.exports = {
     "XI"
   ],
   "lly-lx2": [
-    "HU"
+    "HNR"
   ],
   "lly-lx1": [
-    "HU"
+    "HNR"
   ],
   "lly-lx3": [
-    "HU"
+    "HNR"
   ],
   "celero3 5g+": [
     "DQ"
@@ -50274,7 +50277,7 @@ module.exports = {
     "VV"
   ],
   "rky-lx2": [
-    "HU"
+    "HNR"
   ],
   "t430w": [
     "TC"
@@ -50326,7 +50329,7 @@ module.exports = {
     "OP"
   ],
   "pgt-n19": [
-    "HU"
+    "HNR"
   ],
   "phb110": [
     "ON"
@@ -50890,7 +50893,7 @@ module.exports = {
     "ZT"
   ],
   "pgt-an20": [
-    "HU"
+    "HNR"
   ],
   "f101": [
     "FOS",
@@ -50906,7 +50909,7 @@ module.exports = {
     "AU"
   ],
   "anb-an00": [
-    "HU"
+    "HNR"
   ],
   "yal-l61": [
     "HU"
@@ -50939,7 +50942,7 @@ module.exports = {
     "TB"
   ],
   "vna-lx3": [
-    "HU"
+    "HNR"
   ],
   "lio-tn00": [
     "HU"
@@ -50960,7 +50963,7 @@ module.exports = {
     "SA"
   ],
   "vna-l29": [
-    "HU"
+    "HNR"
   ],
   "hongmi 4a": [
     "XI"
@@ -51292,7 +51295,7 @@ module.exports = {
     "TB"
   ],
   "crt-nx1": [
-    "HU"
+    "HNR"
   ],
   "goa-lx9": [
     "HU"
@@ -51325,7 +51328,7 @@ module.exports = {
     "RE"
   ],
   "vne-an40": [
-    "HU"
+    "HNR"
   ],
   "rx17neo": [
     "OP"
@@ -51403,7 +51406,7 @@ module.exports = {
     "HU"
   ],
   "crt-an00": [
-    "HU"
+    "HNR"
   ],
   "mna-al00": [
     "HU"
@@ -51503,10 +51506,10 @@ module.exports = {
     "HI"
   ],
   "wod-lx1": [
-    "HU"
+    "HNR"
   ],
   "rep-an00": [
-    "HU"
+    "HNR"
   ],
   "v2253": [
     "VV"
@@ -51521,7 +51524,7 @@ module.exports = {
     "IZ"
   ],
   "wdy-lx1": [
-    "HU"
+    "HNR"
   ],
   "foa-lx9": [
     "HU"
@@ -51558,7 +51561,7 @@ module.exports = {
     "OP"
   ],
   "ali-an00": [
-    "HU"
+    "HNR"
   ],
   "armor 21": [
     "UL"
@@ -51576,7 +51579,7 @@ module.exports = {
     "IZ"
   ],
   "rmo-nx3": [
-    "HU"
+    "HNR"
   ],
   "s100pro": [
     "DO"
@@ -51649,7 +51652,7 @@ module.exports = {
     "6E"
   ],
   "rea-nx9": [
-    "HU"
+    "HNR"
   ],
   "reno5 k 5g": [
     "OP"
@@ -51700,7 +51703,7 @@ module.exports = {
     "11"
   ],
   "honor play 4t pro": [
-    "HU"
+    "HNR"
   ],
   "sm-a146m": [
     "SA"
@@ -51817,10 +51820,10 @@ module.exports = {
     "SO"
   ],
   "rea-an00": [
-    "HU"
+    "HNR"
   ],
   "agt-an00": [
-    "HU"
+    "HNR"
   ],
   "sh-01d": [
     "SH"
@@ -52097,10 +52100,10 @@ module.exports = {
     "R4"
   ],
   "ver-an10": [
-    "HU"
+    "HNR"
   ],
   "ver-an00": [
-    "HU"
+    "HNR"
   ],
   "wtattrw2": [
     "6A"
@@ -52142,7 +52145,7 @@ module.exports = {
     "VV"
   ],
   "wdy-an00": [
-    "HU"
+    "HNR"
   ],
   "tecno bg6": [
     "TB"
@@ -52501,13 +52504,13 @@ module.exports = {
     "NOV"
   ],
   "fri-nx9": [
-    "HU"
+    "HNR"
   ],
   "diamond pro max": [
     "7I"
   ],
   "ali-nx1": [
-    "HU"
+    "HNR"
   ],
   "23076pc4bi": [
     "0P"
@@ -52761,7 +52764,7 @@ module.exports = {
     "CO"
   ],
   "crt-nx3": [
-    "HU"
+    "HNR"
   ],
   "eabf22206a": [
     "6A"
@@ -52962,7 +52965,7 @@ module.exports = {
     "R4"
   ],
   "honor magic 2 3d": [
-    "HU"
+    "HNR"
   ],
   "samsung sm-a156b": [
     "SA"
@@ -52983,7 +52986,7 @@ module.exports = {
     "XI"
   ],
   "honor play 8a": [
-    "HU"
+    "HNR"
   ],
   "rmx3834": [
     "RE"
@@ -53038,7 +53041,7 @@ module.exports = {
     "0P"
   ],
   "pgt-n09": [
-    "HU"
+    "HNR"
   ],
   "tmrv06p5g": [
     "TM"
@@ -53296,13 +53299,13 @@ module.exports = {
     "6A"
   ],
   "ver-n49": [
-    "HU"
+    "HNR"
   ],
   "t610e": [
     "TC"
   ],
   "lly-an00": [
-    "HU"
+    "HNR"
   ],
   "lava lzx404": [
     "LV"
@@ -53405,7 +53408,7 @@ module.exports = {
     "XI"
   ],
   "maa-an10": [
-    "HU"
+    "HNR"
   ],
   "meizu 21": [
     "M1"
@@ -53420,7 +53423,7 @@ module.exports = {
     "HI"
   ],
   "maa-an00": [
-    "HU"
+    "HNR"
   ],
   "myphone n23": [
     "MY1"
@@ -53441,13 +53444,13 @@ module.exports = {
     "UZ"
   ],
   "wod-lx2": [
-    "HU"
+    "HNR"
   ],
   "wdy-lx2": [
-    "HU"
+    "HNR"
   ],
   "bvl-an16": [
-    "HU"
+    "HNR"
   ],
   "note 50": [
     "CB"
@@ -53465,7 +53468,7 @@ module.exports = {
     "UL"
   ],
   "mag-an00": [
-    "HU"
+    "HNR"
   ],
   "mp33": [
     "UM"
@@ -53480,19 +53483,19 @@ module.exports = {
     "OP"
   ],
   "alp-an00": [
-    "HU"
+    "HNR"
   ],
   "agm_note_n1": [
     "A3"
   ],
   "rbn-nx1": [
-    "HU"
+    "HNR"
   ],
   "mao-al00": [
     "HU"
   ],
   "gia-an80": [
-    "HU"
+    "HNR"
   ],
   "g702": [
     "GN"
@@ -53555,7 +53558,7 @@ module.exports = {
     "HU"
   ],
   "rky-an10": [
-    "HU"
+    "HNR"
   ],
   "studio mini 2023": [
     "BU"
@@ -53634,7 +53637,7 @@ module.exports = {
     "BU"
   ],
   "clk-lx1": [
-    "HU"
+    "HNR"
   ],
   "play dash": [
     "18"
@@ -53748,7 +53751,7 @@ module.exports = {
     "5F"
   ],
   "clk-lx2": [
-    "HU"
+    "HNR"
   ],
   "f101 pro": [
     "FOS"
@@ -53860,7 +53863,7 @@ module.exports = {
     "MR"
   ],
   "bvl-an20": [
-    "HU"
+    "HNR"
   ],
   "tiger_x12": [
     "9W"
@@ -53908,7 +53911,7 @@ module.exports = {
     "VV"
   ],
   "clk-an00": [
-    "HU"
+    "HNR"
   ],
   "mi max3pro": [
     "XI"
@@ -54014,7 +54017,7 @@ module.exports = {
     "QQ"
   ],
   "pgt-an00": [
-    "HU"
+    "HNR"
   ],
   "sm-a526a": [
     "SA"
@@ -54358,8 +54361,7 @@ module.exports = {
     "ZT"
   ],
   "xsmart nova 7": [
-    "XSM",
-    "HU"
+    "XSM"
   ],
   "xig03": [
     "XI"
@@ -54492,7 +54494,7 @@ module.exports = {
     "BU"
   ],
   "yal-tl50": [
-    "HU"
+    "HNR"
   ],
   "b1550vl": [
     "BU"
@@ -54513,7 +54515,7 @@ module.exports = {
     "IZ"
   ],
   "bvl-n49": [
-    "HU"
+    "HNR"
   ],
   "xt2323-3": [
     "MR"
@@ -54699,7 +54701,7 @@ module.exports = {
     "M1"
   ],
   "bvl-an00": [
-    "HU"
+    "HNR"
   ],
   "asus_ai2401_h": [
     "AU"
@@ -54708,7 +54710,7 @@ module.exports = {
     "CB"
   ],
   "lly-nx1": [
-    "HU"
+    "HNR"
   ],
   "23129rn51h": [
     "XI"
@@ -54717,7 +54719,7 @@ module.exports = {
     "EMR"
   ],
   "clk-lx3": [
-    "HU"
+    "HNR"
   ],
   "cg65": [
     "JW"
@@ -54747,7 +54749,7 @@ module.exports = {
     "OL"
   ],
   "bkl-l09s": [
-    "HU"
+    "HNR"
   ],
   "bla-l29s": [
     "HU"
@@ -54826,7 +54828,7 @@ module.exports = {
     "VV"
   ],
   "vca-an00": [
-    "HU"
+    "HNR"
   ],
   "rmx3852": [
     "RE"
@@ -55155,7 +55157,7 @@ module.exports = {
     "WI"
   ],
   "fri-an00": [
-    "HU"
+    "HNR"
   ],
   "note 23": [
     "CB"
@@ -55612,7 +55614,7 @@ module.exports = {
     "XI"
   ],
   "bvl-n59": [
-    "HU"
+    "HNR"
   ],
   "sm-s926w": [
     "SA"
@@ -55696,7 +55698,7 @@ module.exports = {
     "OI"
   ],
   "ali-nx3": [
-    "HU"
+    "HNR"
   ],
   "pace a1": [
     "RHI"
@@ -55738,10 +55740,10 @@ module.exports = {
     "0V"
   ],
   "jdy-lx1": [
-    "HU"
+    "HNR"
   ],
   "eli-an00": [
-    "HU"
+    "HNR"
   ],
   "amico smartphone s+": [
     "BR"
@@ -55786,7 +55788,7 @@ module.exports = {
     "HU"
   ],
   "rbn-nx3": [
-    "HU"
+    "HNR"
   ],
   "vodafone pro 4g": [
     "VF"
@@ -55825,7 +55827,7 @@ module.exports = {
     "SA"
   ],
   "pe-cl00": [
-    "HU"
+    "HNR"
   ],
   "sm-a606y": [
     "SA"
@@ -55861,7 +55863,7 @@ module.exports = {
     "DO"
   ],
   "clk-nx1": [
-    "HU"
+    "HNR"
   ],
   "a52 pro": [
     "B2"
@@ -55886,7 +55888,7 @@ module.exports = {
     "UZ"
   ],
   "clk-nx2": [
-    "HU"
+    "HNR"
   ],
   "drive 10": [
     "KE"
@@ -55895,7 +55897,7 @@ module.exports = {
     "RE"
   ],
   "koz-al00cm": [
-    "HU"
+    "HNR"
   ],
   "m1903c3gi": [
     "XI"
@@ -55919,7 +55921,7 @@ module.exports = {
     "HI"
   ],
   "jdy-an00": [
-    "HU"
+    "HNR"
   ],
   "xt2141-1": [
     "MR"
@@ -57876,7 +57878,7 @@ module.exports = {
     "VV"
   ],
   "eli-nx9": [
-    "HU"
+    "HNR"
   ],
   "armor 25t pro": [
     "UL"
@@ -57945,7 +57947,7 @@ module.exports = {
     "GO"
   ],
   "elp-an00": [
-    "HU"
+    "HNR"
   ],
   "2pzc100": [
     "HT"
@@ -58003,13 +58005,13 @@ module.exports = {
     "OP"
   ],
   "lra-an00": [
-    "HU"
+    "HNR"
   ],
   "gbd-nx9": [
-    "HU"
+    "HNR"
   ],
   "elp-nx9": [
-    "HU"
+    "HNR"
   ],
   "xq-ec54": [
     "SO"
@@ -58099,7 +58101,7 @@ module.exports = {
     "OP"
   ],
   "honor 30 lite": [
-    "HU"
+    "HNR"
   ],
   "hisense u30": [
     "HI"
@@ -58108,7 +58110,7 @@ module.exports = {
     "SA"
   ],
   "honor 30 pro+": [
-    "HU"
+    "HNR"
   ],
   "cph2637": [
     "OP"
@@ -58120,16 +58122,16 @@ module.exports = {
     "OP"
   ],
   "honor 20 pro": [
-    "HU"
+    "HNR"
   ],
   "m1803d5xa": [
     "XI"
   ],
   "lra-tl00": [
-    "HU"
+    "HNR"
   ],
   "hry-l21": [
-    "HU"
+    "HNR"
   ],
   "solar": [
     "LM"
@@ -58159,29 +58161,29 @@ module.exports = {
     "WA"
   ],
   "lge-n49b": [
-    "HU",
+    "HNR",
     "LG"
   ],
   "honor 20 lite": [
-    "HU"
+    "HNR"
   ],
   "honor 9x lite": [
-    "HU"
+    "HNR"
   ],
   "honor 8a pro": [
-    "HU"
+    "HNR"
   ],
   "honor play 3e": [
-    "HU"
+    "HNR"
   ],
   "honor 20i": [
-    "HU"
+    "HNR"
   ],
   "wukong-l29a": [
     "HU"
   ],
   "honor play 8": [
-    "HU"
+    "HNR"
   ],
   "juliaqn-l01b": [
     "HU"
@@ -58190,7 +58192,7 @@ module.exports = {
     "DO"
   ],
   "honor 9s": [
-    "HU"
+    "HNR"
   ],
   "f7 youth": [
     "OP"
@@ -58606,7 +58608,7 @@ module.exports = {
     "SA"
   ],
   "rtg-nx9": [
-    "HU"
+    "HNR"
   ],
   "pro k10": [
     "NOV"
@@ -58615,7 +58617,7 @@ module.exports = {
     "DO"
   ],
   "fri-an10": [
-    "HU"
+    "HNR"
   ],
   "a302op": [
     "OP"
@@ -58847,7 +58849,7 @@ module.exports = {
     "7M"
   ],
   "alt-an00": [
-    "HU"
+    "HNR"
   ],
   "tecno bg6m": [
     "TB"
@@ -58961,7 +58963,7 @@ module.exports = {
     "GO"
   ],
   "jdy-lx2": [
-    "HU"
+    "HNR"
   ],
   "kingkong_es": [
     "CB"
@@ -59095,25 +59097,25 @@ module.exports = {
     "HU"
   ],
   "honor play 3": [
-    "HU"
+    "HNR"
   ],
   "honor 9x pro": [
-    "HU"
+    "HNR"
   ],
   "honor 9x": [
-    "HU"
+    "HNR"
   ],
   "honor 8s": [
-    "HU"
+    "HNR"
   ],
   "honor 8a": [
-    "HU"
+    "HNR"
   ],
   "honor 20": [
-    "HU"
+    "HNR"
   ],
   "honor 10i": [
-    "HU"
+    "HNR"
   ],
   "y85a": [
     "VV"
@@ -59158,7 +59160,7 @@ module.exports = {
     "UL"
   ],
   "aqm-tl10": [
-    "HU"
+    "HNR"
   ],
   "art-tl00": [
     "HU"
@@ -59364,7 +59366,7 @@ module.exports = {
     "OSC"
   ],
   "ptp-an70": [
-    "HU"
+    "HNR"
   ],
   "u655ac": [
     "CK"
@@ -59403,7 +59405,7 @@ module.exports = {
     "VV"
   ],
   "flc-an00": [
-    "HU"
+    "HNR"
   ],
   "redmi 14c": [
     "XI"
@@ -59507,7 +59509,7 @@ module.exports = {
     "KHI"
   ],
   "alt-lx1": [
-    "HU"
+    "HNR"
   ],
   "rmx3951": [
     "RE"
@@ -59751,22 +59753,22 @@ module.exports = {
     "SA"
   ],
   "lyn-an00": [
-    "HU"
+    "HNR"
   ],
   "alt-lx2": [
-    "HU"
+    "HNR"
   ],
   "jdy-lx3": [
-    "HU"
+    "HNR"
   ],
   "alt-nx3": [
-    "HU"
+    "HNR"
   ],
   "gfy-lx2p": [
-    "HU"
+    "HNR"
   ],
   "alt-nx1": [
-    "HU"
+    "HNR"
   ],
   "m2001j2i": [
     "XI"
@@ -60027,7 +60029,7 @@ module.exports = {
     "VV"
   ],
   "ptp-an00": [
-    "HU"
+    "HNR"
   ],
   "24129pn74c": [
     "XI"
@@ -60045,7 +60047,7 @@ module.exports = {
     "RE"
   ],
   "ptp-an10": [
-    "HU"
+    "HNR"
   ],
   "nx733j": [
     "57"
@@ -60084,10 +60086,10 @@ module.exports = {
     "VV"
   ],
   "brp-nx1": [
-    "HU"
+    "HNR"
   ],
   "brc-an00": [
-    "HU"
+    "HNR"
   ],
   "unonu n55s": [
     "UU"
@@ -60096,7 +60098,7 @@ module.exports = {
     "UNP"
   ],
   "ptp-an60": [
-    "HU"
+    "HNR"
   ],
   "mz-meizu 20 pro": [
     "M1"
@@ -60114,7 +60116,7 @@ module.exports = {
     "XI"
   ],
   "brp-an00": [
-    "HU"
+    "HNR"
   ],
   "a142p": [
     "NOT"
@@ -60227,7 +60229,7 @@ module.exports = {
     "57"
   ],
   "ptp-n49": [
-    "HU"
+    "HNR"
   ],
   "cph2655": [
     "ON",
@@ -60361,7 +60363,7 @@ module.exports = {
     "CUD"
   ],
   "abr-lx1": [
-    "HU"
+    "HNR"
   ],
   "ctr-l91": [
     "HU"
@@ -60370,19 +60372,19 @@ module.exports = {
     "VV"
   ],
   "amm-an00": [
-    "HU"
+    "HNR"
   ],
   "amg-an00": [
-    "HU"
+    "HNR"
   ],
   "amp-an00": [
-    "HU"
+    "HNR"
   ],
   "ptp-an20": [
-    "HU"
+    "HNR"
   ],
   "amp-an10": [
-    "HU"
+    "HNR"
   ],
   "tecno kl4h": [
     "TB"
@@ -60394,7 +60396,7 @@ module.exports = {
     "V6"
   ],
   "brc-nx1": [
-    "HU"
+    "HNR"
   ],
   "aligator_s6600": [
     "4A"
@@ -60601,7 +60603,7 @@ module.exports = {
     "HT"
   ],
   "gfy-lx2": [
-    "HU"
+    "HNR"
   ],
   "flat 2": [
     "OSC"
@@ -60812,10 +60814,10 @@ module.exports = {
     "HU"
   ],
   "ptp-n59": [
-    "HU"
+    "HNR"
   ],
   "ptp-n29": [
-    "HU"
+    "HNR"
   ],
   "pks110": [
     "OP"
@@ -60882,7 +60884,7 @@ module.exports = {
     "OP"
   ],
   "ver-n49dp": [
-    "HU"
+    "HNR"
   ],
   "sm-a516f": [
     "SA"
@@ -61264,31 +61266,31 @@ module.exports = {
     "OP"
   ],
   "dnn-an00": [
-    "HU"
+    "HNR"
   ],
   "dnp-nx9": [
-    "HU"
+    "HNR"
   ],
   "dny-nx9": [
-    "HU"
+    "HNR"
   ],
   "dvd-an80": [
-    "HU"
+    "HNR"
   ],
   "dvd-an00": [
-    "HU"
+    "HNR"
   ],
   "agi-an00": [
-    "HU"
+    "HNR"
   ],
   "abr-nx1": [
-    "HU"
+    "HNR"
   ],
   "abr-lx3": [
-    "HU"
+    "HNR"
   ],
   "abr-lx2": [
-    "HU"
+    "HNR"
   ],
   "pku110": [
     "OP"
@@ -61544,7 +61546,7 @@ module.exports = {
     "KL"
   ],
   "alt-lx3": [
-    "HU"
+    "HNR"
   ],
   "2411drn47i": [
     "XI"
@@ -61595,7 +61597,7 @@ module.exports = {
     "CAL"
   ],
   "dnp-an00": [
-    "HU"
+    "HNR"
   ],
   "armor 34 pro": [
     "UL"
@@ -61634,16 +61636,16 @@ module.exports = {
     "0P"
   ],
   "nic-lx1": [
-    "HU"
+    "HNR"
   ],
   "nic-an00": [
-    "HU"
+    "HNR"
   ],
   "nic-lx2": [
-    "HU"
+    "HNR"
   ],
   "nic-lx3": [
-    "HU"
+    "HNR"
   ],
   "note58 pro": [
     "DO"
@@ -63347,73 +63349,73 @@ module.exports = {
     "HU"
   ],
   "col-l29": [
-    "HU"
+    "HNR"
   ],
   "hry-tl00": [
-    "HU"
+    "HNR"
   ],
   "hry-lx2": [
-    "HU"
+    "HNR"
   ],
   "hry-lx1meb": [
-    "HU"
+    "HNR"
   ],
   "hry-al00a": [
-    "HU"
+    "HNR"
   ],
   "hry-lx1t": [
-    "HU"
+    "HNR"
   ],
   "huawei u9508": [
     "HU"
   ],
   "yal-l21": [
-    "HU"
+    "HNR"
   ],
   "yal-al00": [
-    "HU"
+    "HNR"
   ],
   "yal-tl00": [
-    "HU"
+    "HNR"
   ],
   "lra-al00": [
-    "HU"
+    "HNR"
   ],
   "yal-l41": [
-    "HU"
+    "HNR"
   ],
   "yal-al10": [
-    "HU"
+    "HNR"
   ],
   "hry-al00ta": [
-    "HU"
+    "HNR"
   ],
   "hry-al00t": [
-    "HU"
+    "HNR"
   ],
   "yal-al50": [
-    "HU"
+    "HNR"
   ],
   "mar-lx1h": [
-    "HU"
+    "HNR"
   ],
   "mxw-an00": [
-    "HU"
+    "HNR"
   ],
   "bmh-an10": [
-    "HU"
+    "HNR"
   ],
   "bmh-an20": [
-    "HU"
+    "HNR"
   ],
   "ebg-an00": [
-    "HU"
+    "HNR"
   ],
   "ebg-an10": [
-    "HU"
+    "HNR"
   ],
   "cdy-an90": [
-    "HU"
+    "HNR"
   ],
   "h30-u10": [
     "HU"
@@ -63446,448 +63448,451 @@ module.exports = {
     "HU"
   ],
   "scl-tl00h": [
-    "HU"
+    "HNR"
   ],
   "scl-cl00": [
-    "HU"
+    "HNR"
   ],
   "scl-al00": [
-    "HU"
+    "HNR"
   ],
   "chm-u01": [
-    "HU"
+    "HNR"
   ],
   "aqm-al10": [
-    "HU"
+    "HNR"
   ],
   "che2-tl00m": [
-    "HU"
+    "HNR"
   ],
   "che2-l11": [
-    "HU"
+    "HNR"
   ],
   "che2-l12": [
-    "HU"
+    "HNR"
   ],
   "che2-ul00": [
-    "HU"
+    "HNR"
   ],
   "che2-tl00": [
-    "HU"
+    "HNR"
   ],
   "che-tl00h": [
-    "HU"
+    "HNR"
   ],
   "che2-tl00h": [
-    "HU"
+    "HNR"
   ],
   "hw-che1-cl10": [
-    "HU"
+    "HNR"
   ],
   "che1-cl10": [
-    "HU"
+    "HNR"
   ],
   "che1-cl20": [
-    "HU"
+    "HNR"
   ],
   "che1-l04": [
-    "HU"
+    "HNR"
   ],
   "che2-l23": [
-    "HU"
+    "HNR"
   ],
   "cun-al00": [
-    "HU"
+    "HNR"
   ],
   "cun-tl00": [
-    "HU"
+    "HNR"
   ],
   "cam-al00": [
-    "HU"
+    "HNR"
   ],
   "cam-tl00": [
-    "HU"
+    "HNR"
   ],
   "cam-tl00h": [
-    "HU"
+    "HNR"
   ],
   "nem-l51": [
-    "HU"
+    "HNR"
   ],
   "nem-al10": [
-    "HU"
+    "HNR"
   ],
   "nem-ul10": [
-    "HU"
+    "HNR"
   ],
   "nem-tl00": [
-    "HU"
+    "HNR"
   ],
   "nem-tl00h": [
-    "HU"
+    "HNR"
   ],
   "nem-l22": [
-    "HU"
+    "HNR"
   ],
   "kiw-l22": [
-    "HU"
+    "HNR"
   ],
   "kiw-l24": [
-    "HU"
+    "HNR"
   ],
   "kiw-cl00": [
-    "HU"
+    "HNR"
   ],
   "kiw-l21": [
-    "HU"
+    "HNR"
   ],
   "kiw-al10": [
-    "HU"
+    "HNR"
   ],
   "kiw-ul00": [
-    "HU"
+    "HNR"
   ],
   "kiw-tl00": [
-    "HU"
+    "HNR"
   ],
   "kiw-tl00h": [
-    "HU"
+    "HNR"
   ],
   "kiw-l23": [
-    "HU"
+    "HNR"
   ],
   "hw-h60-j1": [
-    "HU"
+    "HNR"
   ],
   "h60-l01": [
-    "HU"
+    "HNR"
   ],
   "h60-l03": [
-    "HU"
+    "HNR"
   ],
   "h60-l11": [
-    "HU"
+    "HNR"
   ],
   "h60-l02": [
-    "HU"
+    "HNR"
   ],
   "h60-l04": [
-    "HU"
+    "HNR"
   ],
   "h60-l12": [
-    "HU"
+    "HNR"
   ],
   "mya-tl10": [
-    "HU"
+    "HNR"
   ],
   "pe-tl00m": [
-    "HU"
+    "HNR"
   ],
   "pe-tl20": [
-    "HU"
+    "HNR"
   ],
   "pe-tl10": [
-    "HU"
+    "HNR"
   ],
   "pe-ul00": [
-    "HU"
+    "HNR"
   ],
   "dli-al10": [
-    "HU"
+    "HNR"
   ],
   "dli-l42": [
-    "HU"
+    "HNR"
   ],
   "dli-tl20": [
-    "HU"
+    "HNR"
   ],
   "dli-l22": [
-    "HU"
+    "HNR"
   ],
   "dig-l21hn": [
-    "HU"
+    "HNR"
   ],
   "jmm-l22": [
+    "HNR",
     "HU"
   ],
   "bln-tl10": [
-    "HU"
+    "HNR"
   ],
   "bln-l22": [
-    "HU"
+    "HNR"
   ],
   "bln-tl00": [
-    "HU"
+    "HNR"
   ],
   "bln-l21": [
-    "HU"
+    "HNR"
   ],
   "bln-l24": [
-    "HU"
+    "HNR"
   ],
   "bln-al20": [
-    "HU"
+    "HNR"
   ],
   "bln-al30": [
-    "HU"
+    "HNR"
   ],
   "bln-al40": [
-    "HU"
+    "HNR"
   ],
   "hw-plk-cl00": [
-    "HU"
+    "HNR"
   ],
   "plk-ul00": [
-    "HU"
+    "HNR"
   ],
   "plk-l01": [
-    "HU"
+    "HNR"
   ],
   "plk-tl00": [
-    "HU"
+    "HNR"
   ],
   "plk-tl01h": [
-    "HU"
+    "HNR"
   ],
   "plk-al10": [
-    "HU"
+    "HNR"
   ],
   "plk": [
-    "HU"
+    "HNR"
   ],
   "nem-l21": [
-    "HU"
+    "HNR"
   ],
   "aum-tl20": [
-    "HU"
+    "HNR"
   ],
   "aum-l33": [
-    "HU"
+    "HNR"
   ],
   "aum-al20": [
-    "HU"
+    "HNR"
   ],
   "aum-al00": [
-    "HU"
+    "HNR"
   ],
   "lnd-l29": [
-    "HU"
+    "HNR"
   ],
   "lnd-tl40": [
-    "HU"
+    "HNR"
   ],
   "aum-l41": [
-    "HU"
+    "HNR"
   ],
   "lnd-al30": [
-    "HU"
+    "HNR"
   ],
   "ath-al00": [
-    "HU"
+    "HNR"
   ],
   "ath-ul00)": [
-    "HU"
+    "HNR"
   ],
   "ath-tl00h)": [
-    "HU"
+    "HNR"
   ],
   "dua-l22": [
-    "HU"
+    "HNR"
   ],
   "dua-lx3": [
-    "HU"
+    "HNR"
   ],
   "bnd-al10": [
-    "HU"
+    "HNR"
   ],
   "bnd-l21": [
-    "HU"
+    "HNR"
   ],
   "bnd-l31": [
-    "HU"
+    "HNR"
   ],
   "bnd-l24": [
-    "HU"
+    "HNR"
   ],
   "bnd-tl10": [
-    "HU"
+    "HNR"
   ],
   "frd-l04": [
-    "HU"
+    "HNR"
   ],
   "vat-l19": [
-    "HU"
+    "HNR"
   ],
   "frd-l09": [
-    "HU"
+    "HNR"
   ],
   "frd-l14": [
-    "HU"
+    "HNR"
   ],
   "frd-l02": [
-    "HU"
+    "HNR"
   ],
   "frd-l19": [
-    "HU"
+    "HNR"
   ],
   "frd-al00": [
+    "HNR",
     "HU"
   ],
   "frd-al10": [
-    "HU"
+    "HNR"
   ],
   "frd-dl00": [
-    "HU"
+    "HNR"
   ],
   "pra-al00x": [
-    "HU"
+    "HNR"
   ],
   "pra-al00": [
-    "HU"
+    "HNR"
   ],
   "pra-tl10": [
-    "HU"
+    "HNR"
   ],
   "duk-l09": [
-    "HU"
+    "HNR"
   ],
   "duk-tl30": [
-    "HU"
+    "HNR"
   ],
   "ven-l22": [
-    "HU"
+    "HNR"
   ],
   "jat-lx3": [
-    "HU"
+    "HNR"
   ],
   "jat-lx1": [
-    "HU"
+    "HNR"
   ],
   "jat-l41": [
-    "HU"
+    "HNR"
   ],
   "bkk-al00": [
-    "HU"
+    "HNR"
   ],
   "bkk-al10": [
-    "HU"
+    "HNR"
   ],
   "bkk-l21": [
-    "HU"
+    "HNR"
   ],
   "bkk-l22": [
-    "HU"
+    "HNR"
   ],
   "bkk-lx2": [
-    "HU"
+    "HNR"
   ],
   "bkk-tl00": [
-    "HU"
+    "HNR"
   ],
   "ksa-lx2": [
-    "HU"
+    "HNR"
   ],
   "ksa-al00": [
-    "HU"
+    "HNR"
   ],
   "ksa-lx9": [
-    "HU"
+    "HNR"
   ],
   "jsn-l21": [
-    "HU"
+    "HNR"
   ],
   "jsn-l42": [
-    "HU"
+    "HNR"
   ],
   "jsn-l23": [
-    "HU"
+    "HNR"
   ],
   "jsn-tl00": [
-    "HU"
+    "HNR"
   ],
   "jsn-al00a": [
-    "HU"
+    "HNR"
   ],
   "jsn-al00": [
-    "HU"
+    "HNR"
   ],
   "are-al00": [
-    "HU"
+    "HNR"
   ],
   "are-al10": [
-    "HU"
+    "HNR"
   ],
   "are-tl00": [
-    "HU"
+    "HNR"
   ],
   "are-l22hn": [
-    "HU"
+    "HNR"
   ],
   "stf-al10": [
+    "HNR",
     "HU"
   ],
   "stf-l09": [
-    "HU"
+    "HNR"
   ],
   "stf-tl10": [
-    "HU"
+    "HNR"
   ],
   "stf-al00": [
-    "HU"
+    "HNR"
   ],
   "lld-al00": [
-    "HU"
+    "HNR"
   ],
   "lld-l21": [
-    "HU"
+    "HNR"
   ],
   "lld-tl10": [
-    "HU"
+    "HNR"
   ],
   "lld-al10": [
-    "HU"
+    "HNR"
   ],
   "lld-l31": [
-    "HU"
+    "HNR"
   ],
   "moa-lx9n": [
-    "HU"
+    "HNR"
   ],
   "aka-l29": [
-    "HU"
+    "HNR"
   ],
   "lld-al20": [
-    "HU"
+    "HNR"
   ],
   "lld-al30": [
-    "HU"
+    "HNR"
   ],
   "dua-lx9": [
-    "HU"
+    "HNR"
   ],
   "hlk-al00": [
-    "HU"
+    "HNR"
   ],
   "hlk-al00a": [
-    "HU"
+    "HNR"
   ],
   "hlk-al10": [
-    "HU"
+    "HNR"
   ],
   "nts-al00": [
-    "HU"
+    "HNR"
   ],
   "tny-al00": [
-    "HU"
+    "HNR"
   ],
   "tny-tl00": [
-    "HU"
+    "HNR"
   ],
   "rvl-al09": [
-    "HU"
+    "HNR"
   ],
   "edi-al10": [
-    "HU"
+    "HNR"
   ],
   "vky-tl00": [
     "HU"
@@ -63902,103 +63907,106 @@ module.exports = {
     "HU"
   ],
   "cor-al10": [
+    "HNR",
     "HU"
   ],
   "cor-al00": [
-    "HU"
+    "HNR"
   ],
   "cor-tl10": [
-    "HU"
+    "HNR"
   ],
   "ask-al00x": [
-    "HU"
+    "HNR"
   ],
   "ksa-al10": [
-    "HU"
+    "HNR"
   ],
   "tnnh-an00": [
-    "HU"
+    "HNR"
   ],
   "chm-tl00": [
-    "HU"
+    "HNR"
   ],
   "chm-tl00h": [
-    "HU"
+    "HNR"
   ],
   "chm-ul00": [
-    "HU"
+    "HNR"
   ],
   "hw-chm-cl00": [
-    "HU"
+    "HNR"
   ],
   "aka-al10": [
-    "HU"
+    "HNR"
   ],
   "dua-tl00": [
-    "HU"
+    "HNR"
   ],
   "dua-al00": [
-    "HU"
+    "HNR"
   ],
   "jat-tl00": [
-    "HU"
+    "HNR"
   ],
   "moa-al00": [
-    "HU"
+    "HNR"
   ],
   "bkl-l09": [
-    "HU"
+    "HNR"
   ],
   "bkl-al20": [
+    "HNR",
     "HU"
   ],
   "pct-tl10": [
-    "HU"
+    "HNR"
   ],
   "pct-al10": [
-    "HU"
+    "HNR"
   ],
   "knt-al10": [
-    "HU"
+    "HNR"
   ],
   "knt-tl10": [
-    "HU"
+    "HNR"
   ],
   "knt-ul10": [
-    "HU"
+    "HNR"
   ],
   "knt-al20": [
-    "HU"
+    "HNR"
   ],
   "duk-al20": [
+    "HNR",
     "HU"
   ],
   "jmm-al00": [
-    "HU"
+    "HNR"
   ],
   "jmm-al10": [
-    "HU"
+    "HNR"
   ],
   "jmm-tl10": [
-    "HU"
+    "HNR"
   ],
   "oxf-an00": [
-    "HU"
+    "HNR"
   ],
   "oxf-an10": [
-    "HU"
+    "HNR"
   ],
   "tel-tn00": [
-    "HU"
+    "HNR"
   ],
   "tel-an00a": [
-    "HU"
+    "HNR"
   ],
   "tel-an00": [
-    "HU"
+    "HNR"
   ],
   "tel-an10": [
-    "HU"
+    "HNR"
   ],
   "scl-l01": [
     "HU"
@@ -72054,7 +72062,7 @@ module.exports = {
     "HU"
   ],
   "jdn-w09": [
-    "HU"
+    "HNR"
   ],
   "q93s": [
     "WU"
@@ -72650,10 +72658,10 @@ module.exports = {
     "CB"
   ],
   "eln-w09": [
-    "HU"
+    "HNR"
   ],
   "eln-l09": [
-    "HU"
+    "HNR"
   ],
   "23073rpbfc": [
     "XI"
@@ -74414,7 +74422,7 @@ module.exports = {
     "VV"
   ],
   "hey2-w09": [
-    "HU"
+    "HNR"
   ],
   "agm_pad_p1": [
     "A3"
@@ -74558,7 +74566,7 @@ module.exports = {
     "8L1"
   ],
   "gdi-w09": [
-    "HU"
+    "HNR"
   ],
   "twintab-t103gq1": [
     "TWN"
@@ -75208,7 +75216,7 @@ module.exports = {
     "D2"
   ],
   "hey2-n09": [
-    "HU"
+    "HNR"
   ],
   "zc-p95": [
     "ROT"
@@ -75823,7 +75831,7 @@ module.exports = {
     "EF"
   ],
   "rod2-w09": [
-    "HU"
+    "HNR"
   ],
   "leopad_10": [
     "ADR"
@@ -75895,7 +75903,7 @@ module.exports = {
     "LIB"
   ],
   "ndl-w09": [
-    "HU"
+    "HNR"
   ],
   "tb375fc": [
     "LE"
@@ -75928,7 +75936,7 @@ module.exports = {
     "HAQ"
   ],
   "ndl-l09": [
-    "HU"
+    "HNR"
   ],
   "9199s": [
     "TC"
@@ -76336,7 +76344,7 @@ module.exports = {
     "HU"
   ],
   "rol-w00": [
-    "HU"
+    "HNR"
   ],
   "tab 60 pro": [
     "B2"
@@ -76493,7 +76501,7 @@ module.exports = {
     "I3"
   ],
   "eln2-l29": [
-    "HU"
+    "HNR"
   ],
   "25040rp0ag": [
     "XI"
@@ -76598,7 +76606,7 @@ module.exports = {
     "OE"
   ],
   "eln2-w29": [
-    "HU"
+    "HNR"
   ],
   "25040rp0ae": [
     "XI"
@@ -76628,10 +76636,10 @@ module.exports = {
     "T7"
   ],
   "rol-w60": [
-    "HU"
+    "HNR"
   ],
   "rod2-w69": [
-    "HU"
+    "HNR"
   ],
   "m10_r04": [
     "PRI"
@@ -76691,25 +76699,25 @@ module.exports = {
     "SA"
   ],
   "jdn-al00": [
-    "HU"
+    "HNR"
   ],
   "ags2-al00hn": [
-    "HU"
+    "HNR"
   ],
   "jdn2-w09hn": [
-    "HU"
+    "HNR"
   ],
   "hdn-w09": [
-    "HU"
+    "HNR"
   ],
   "hdn-l09": [
-    "HU"
+    "HNR"
   ],
   "hdl-al09": [
-    "HU"
+    "HNR"
   ],
   "hdl-w09": [
-    "HU"
+    "HNR"
   ],
   "bah3-al00": [
     "HU"
@@ -83307,7 +83315,7 @@ module.exports = {
     "HU"
   ],
   "agr-w09hn": [
-    "HU"
+    "HNR"
   ],
   "ags3-w09": [
     "HU"
@@ -83316,7 +83324,7 @@ module.exports = {
     "HU"
   ],
   "ags3-al09hn": [
-    "HU"
+    "HNR"
   ],
   "ags3-w00d": [
     "HU"
@@ -83325,7 +83333,7 @@ module.exports = {
     "HU"
   ],
   "ags3-w09hn": [
-    "HU"
+    "HNR"
   ],
   "bah2-w09": [
     "HU"
@@ -84184,7 +84192,7 @@ module.exports = {
     "58"
   ],
   "jdn2-al00hn": [
-    "HU"
+    "HNR"
   ],
   "ira_duo": [
     "Q8"
@@ -84450,16 +84458,16 @@ module.exports = {
     "LE"
   ],
   "agr-al09hn": [
-    "HU"
+    "HNR"
   ],
   "kob2-w09hn": [
-    "HU"
+    "HNR"
   ],
   "kjr-w09": [
-    "HU"
+    "HNR"
   ],
   "krj-an00": [
-    "HU"
+    "HNR"
   ],
   "mrr-w39": [
     "HU"
@@ -84519,10 +84527,10 @@ module.exports = {
     "HU"
   ],
   "agm3-w09hn": [
-    "HU"
+    "HNR"
   ],
   "agm3-al09hn": [
-    "HU"
+    "HNR"
   ],
   "readboy_c12pro": [
     "RB"
@@ -84611,19 +84619,19 @@ module.exports = {
     "T7"
   ],
   "krj-w09": [
-    "HU"
+    "HNR"
   ],
   "krj2-w09": [
-    "HU"
+    "HNR"
   ],
   "krj2-an00": [
-    "HU"
+    "HNR"
   ],
   "brt-w09": [
-    "HU"
+    "HNR"
   ],
   "brt-an09": [
-    "HU"
+    "HNR"
   ],
   "leke pad-l06": [
     "ZJ"
@@ -84843,7 +84851,7 @@ module.exports = {
     "T7"
   ],
   "kob2-al00hn": [
-    "HU"
+    "HNR"
   ],
   "m40(n9h1)": [
     "T7"
@@ -86528,10 +86536,10 @@ module.exports = {
     "ZR"
   ],
   "honor v6 wi-fi": [
-    "HU"
+    "HNR"
   ],
   "honor v6 5g": [
-    "HU"
+    "HNR"
   ],
   "kobe3-l09": [
     "HU"
@@ -87270,7 +87278,7 @@ module.exports = {
     "00"
   ],
   "hey-w09": [
-    "HU"
+    "HNR"
   ],
   "sm-t735n": [
     "SA"
@@ -87902,7 +87910,7 @@ module.exports = {
     "LE"
   ],
   "rod-w09": [
-    "HU"
+    "HNR"
   ],
   "jt10-x": [
     "GEA"
@@ -88464,7 +88472,7 @@ module.exports = {
     "SA"
   ],
   "agm-w09hn": [
-    "HU"
+    "HNR"
   ],
   "m10 go": [
     "RD"
@@ -91333,8 +91341,7 @@ module.exports = {
     "XI"
   ],
   "neo-x8": [
-    "1X",
-    "HU"
+    "1X"
   ],
   "neo-x8-plus": [
     "1X"
@@ -96016,8 +96023,7 @@ module.exports = {
     "1V"
   ],
   "neo-u1": [
-    "1X",
-    "HU"
+    "1X"
   ],
   "neo-u9-h": [
     "1X"
@@ -96029,8 +96035,7 @@ module.exports = {
     "1X"
   ],
   "neo-x6": [
-    "1X",
-    "HU"
+    "1X"
   ],
   "neo-x7-216a": [
     "1X"
@@ -96048,8 +96053,7 @@ module.exports = {
     "1X"
   ],
   "neo-z64": [
-    "1X",
-    "HU"
+    "1X"
   ],
   "atom-108am": [
     "2A"
