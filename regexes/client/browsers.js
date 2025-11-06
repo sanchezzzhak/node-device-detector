@@ -1409,7 +1409,7 @@ module.exports = [
     "name": "Yaani Browser",
     "version": "$1",
     "engine": {
-      "default": "Blink"
+      "default": ""
     }
   },
   {
@@ -3295,6 +3295,14 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": ""
+    }
+  },
+  {
+    "regex": "iPhone;.* like Mac OS X.* Chrome(?:/(\\d+[.\\d]+))? Mobile/\\w{5,7} Safari/",
+    "name": "Chrome Mobile iOS",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
     }
   },
   {

@@ -28,8 +28,8 @@
     gpu: ANGLE (ARM, Mali-G76, OpenGL ES 3.2)
   device:
     type: smartphone
-    brand: Huawei
-    model: Honor 20
+    brand: Honor
+    model: "20"
     code: YAL-L21
     trusted: true
 -

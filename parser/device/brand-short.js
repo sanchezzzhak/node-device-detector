@@ -768,6 +768,7 @@ module.exports = {
   'JH': 'HOTREALS',
   'HW': 'How',
   'WH': 'Honeywell',
+  'HNR': 'Honor',
   'HON': 'HongTop',
   'HOG': 'HONKUAHG',
   'HP': 'HP',

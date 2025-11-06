@@ -139,6 +139,12 @@ const runTest = (fixture, result, useIndex = null) => {
   if (fixture.os_family === 'Unknown' && result.os_family === void 0) {
     result.os_family = fixture.os_family;
   }
+  // fix is fixture number
+  let fixtureModel = fixture.device.model ?? null;
+  if (fixtureModel !== null && Number.isInteger(fixtureModel)) {
+    fixture.device.model = '' + fixture.device.model;
+  }
+
   
   expect(fixture, `${messageError} device regex: ${regex}`).
   to.

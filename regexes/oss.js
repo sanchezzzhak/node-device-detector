@@ -834,7 +834,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:(?:Orca-)?(?<!like |/|RadioPublic |Anghami |Callpod Keeper for )Android|Adr|AOSP)[ /]?(?:[a-z]+ )?(\\d+[.\\d]*)",
+    "regex": "(?:(?:Orca-)?(?<!like |/|RadioPublic |Anghami |Callpod Keeper for |com\\.linkedin\\.)Android|Adr|AOSP)[ /]?(?:[a-z]+ )?(\\d+[.\\d]*)",
     "name": "Android",
     "version": "$1"
   },

@@ -169,7 +169,6 @@ class Browser extends ClientAbstractParser {
         engineVersion = this.buildEngineVersion(userAgent, engine);
       }
     }
-
     // exclude Blink engine version for browsers
     if ('Blink' === engine && 'Flow Browser' === name) {
       engineVersion = '';
@@ -186,8 +185,8 @@ class Browser extends ClientAbstractParser {
       engine = 'Blink';
       engineVersion = '';
     }
-
-    if ('Wolvic' === name) {
+    // This browser correct family by browser engine
+    if (['Yaani Browser', 'Wolvic'].includes(name)) {
       if ('Blink' === engine) {
         family = 'Chrome';
       }
