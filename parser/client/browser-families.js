@@ -37,7 +37,9 @@ module.exports = {
   'M9', 'F9', '0P', '0A', 'JR', 'D3', 'TK', 'BP', '2F',
   '2M', 'K7', '1N', '8A', 'H7', 'X3', 'T4', 'X4', '5O',
   '8C', '3M', '6I', '2P', 'PU', '7I', 'X5', 'AL', '3P',
-  'W2', 'ZB', 'HN', 'Q6', 'Q7', 'G0',
+  'W2', 'ZB', 'HN', 'Q6', 'Q7', 'G0', '00', 'R6', 'D8',
+  'PQ', 'LM', 'T5', '2N', 'SJ', 'X6', 'SM', 'AY', 'BQ',
+  'BC', 'NQ', 'VQ', '9C', 'KA', 'YS', 'D4', 'PZ', '0I',
   ],
   'Firefox': [
   'FF', 'BI', 'BF', 'BH', 'BN', 'C0', 'CU', 'EI', 'F1',
@@ -52,7 +54,10 @@ module.exports = {
   'NetFront': ['NF'],
   'NetSurf': ['NE'],
   'Nokia Browser': ['NB', 'DO', 'NO', 'NV'],
-  'Opera': ['OP', 'OG', 'OH', 'OI', 'OM', 'ON', 'OO', 'O1', 'OX', 'Y1'],
+  'Opera': [
+  'OP', 'OG', 'OH', 'OI', 'OM', 'ON', 'OO', 'O1', 'OX',
+  'Y1', '6O',
+  ],
   'Safari': ['SF', 'S7', 'MF', 'SO', 'PV'],
   'Sailfish Browser': ['SA'],
   
