@@ -60,6 +60,10 @@ module.exports = [
     "name": "LibWeb"
   },
   {
+    "regex": "ArkWeb/",
+    "name": "ArkWeb"
+  },
+  {
     "regex": "Maple (?!III)(\\d+[.\\d]+)|Maple\\d{4}",
     "name": "Maple"
   }

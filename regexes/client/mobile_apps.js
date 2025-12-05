@@ -2955,6 +2955,21 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "^Seekr/([\\d\\.]+).*Android",
+    "name": "Seekr",
+    "version": "$1"
+  },
+  {
+    "regex": "^Seekr/([\\d\\.]+).*CFNetwork",
+    "name": "Seekr",
+    "version": "$1"
+  },
+  {
+    "regex": "^Superbalist/([\\d.]+)",
+    "name": "Superbalist",
+    "version": "$1"
+  },
+  {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",
     "name": "$1",
     "version": "$2"
@@ -2968,15 +2983,5 @@ module.exports = [
     "regex": "(?!AlohaBrowser)([^/;]*)/(\\d+\\.[\\d.]+) \\((?:iPhone|iPad); (?:iOS|iPadOS) [0-9.]+; Scale/[0-9.]+\\)",
     "name": "$1",
     "version": "$2"
-  },
-  {
-    "regex": "^Seekr/([\\d\\.]+).*Android",
-    "name": "Seekr",
-    "version": "$1"
-  },
-  {
-    "regex": "^Seekr/([\\d\\.]+).*CFNetwork",
-    "name": "Seekr",
-    "version": "$1"
   }
 ];
