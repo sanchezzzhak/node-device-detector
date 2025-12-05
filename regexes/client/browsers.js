@@ -1617,6 +1617,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "Atlas/(\\d+[.\\d]+)$",
+    "name": "ChatGPT Atlas",
+    "version": "$1"
+  },
+  {
     "regex": "Falkon(?:/(\\d+[.\\d]+))?",
     "name": "Falkon",
     "version": "$1"
@@ -1937,6 +1942,14 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": "Blink"
+    }
+  },
+  {
+    "regex": "Browser/harmony360Browser/(\\d+[.\\d]+)$",
+    "name": "Harmony 360 Browser",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
     }
   },
   {
@@ -2319,6 +2332,14 @@ module.exports = [
     "regex": "UC[ ]?Browser.* \\(UCTurbo\\)",
     "name": "UC Browser Turbo",
     "version": ""
+  },
+  {
+    "regex": "ArkWeb/(?:\\d+[.\\d]+) (?:Mobile )?UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?$",
+    "name": "UC Browser",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
+    }
   },
   {
     "regex": "UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?",

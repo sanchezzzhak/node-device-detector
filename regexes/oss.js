@@ -829,6 +829,16 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "Android;(\\d+[.\\d]*);API",
+    "name": "Android",
+    "version": "$1"
+  },
+  {
+    "regex": "Android \\(\\d{2}/(\\d+[.\\d]*);",
+    "name": "Android",
+    "version": "$1"
+  },
+  {
     "regex": "[ ]([\\d.]+)\\) AppleWebKit.*ROBLOX Android App",
     "name": "Android",
     "version": "$1"
@@ -1404,7 +1414,7 @@ module.exports = [
     "version": "$1.$2"
   },
   {
-    "regex": "iPad(?:; (?:iOS|iPadOS|iPhone OS)|.+CPU (?:iPad |iPhone )?OS) ((1[3-9]|26)+(?:[_.]\\d+)*)",
+    "regex": "iPad(?:; (?:iOS|iPadOS|iPhone OS)|.+CPU (?:iPad ?|iPhone )?OS) ((1[3-9]|26)+(?:[_.]\\d+)*)",
     "name": "iPadOS",
     "version": "$1"
   },

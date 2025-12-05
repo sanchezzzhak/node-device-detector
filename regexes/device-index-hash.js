@@ -693,7 +693,7 @@ module.exports = {
     "KN"
   ],
   "bnd-al00": [
-    "HNR"
+    "HU"
   ],
   "bg2-w09": [
     "HU"
@@ -762,7 +762,8 @@ module.exports = {
     "SA"
   ],
   "vne-lx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "infinix x688b": [
     "IF"
@@ -1827,7 +1828,6 @@ module.exports = {
     "AL"
   ],
   "bmh-tn10": [
-    "HNR",
     "HU"
   ],
   "ipad3,4": [
@@ -2802,7 +2802,8 @@ module.exports = {
     "HNR"
   ],
   "fcp-an10": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "biloba": [
     "XI"
@@ -2956,6 +2957,36 @@ module.exports = {
     "IF"
   ],
   "23021raa2g": [
+    "XI"
+  ],
+  "pixel 10 pro fold": [
+    "GO"
+  ],
+  "pixel 9 pro fold": [
+    "GO"
+  ],
+  "ggh2x": [
+    "GO"
+  ],
+  "gc15s": [
+    "GO"
+  ],
+  "mbh-an10": [
+    "HNR"
+  ],
+  "25104radac": [
+    "XI"
+  ],
+  "25080rabdc": [
+    "XI"
+  ],
+  "infinix x6857b": [
+    "IF"
+  ],
+  "grl-lx9": [
+    "HU"
+  ],
+  "23013rk75c": [
     "XI"
   ],
   "gi-626": [
@@ -3997,9 +4028,6 @@ module.exports = {
   "sm-f711b": [
     "SA"
   ],
-  "m2104k10ac": [
-    "XI"
-  ],
   "joyeuse": [
     "XI"
   ],
@@ -4317,10 +4345,10 @@ module.exports = {
     "SA"
   ],
   "honor x10 max": [
-    "HNR"
+    "HU"
   ],
   "kkg-an00": [
-    "HNR"
+    "HU"
   ],
   "22041216c": [
     "XI"
@@ -12097,7 +12125,7 @@ module.exports = {
     "NK"
   ],
   "bkl-l04": [
-    "HNR"
+    "HU"
   ],
   "mya-l13": [
     "HU"
@@ -16579,7 +16607,7 @@ module.exports = {
     "ZT"
   ],
   "pct-l29": [
-    "HNR"
+    "HU"
   ],
   "z798bl": [
     "ZT"
@@ -17238,7 +17266,7 @@ module.exports = {
     "B2"
   ],
   "lra-lx1": [
-    "HNR"
+    "HU"
   ],
   "wp5 pro": [
     "OE"
@@ -17393,7 +17421,7 @@ module.exports = {
     "SH"
   ],
   "cdy-nx9a": [
-    "HNR"
+    "HU"
   ],
   "advance l5": [
     "BU"
@@ -17730,7 +17758,7 @@ module.exports = {
     "UZ"
   ],
   "dnn-lx9": [
-    "HNR"
+    "HU"
   ],
   "aligator_s5520": [
     "4A"
@@ -18632,7 +18660,7 @@ module.exports = {
     "XI"
   ],
   "moa-al20": [
-    "HNR"
+    "HU"
   ],
   "f-42a": [
     "FU"
@@ -18851,7 +18879,7 @@ module.exports = {
     "HU"
   ],
   "hlk-l41": [
-    "HNR"
+    "HU"
   ],
   "kiona": [
     "6W"
@@ -18962,7 +18990,7 @@ module.exports = {
     "KA"
   ],
   "ksa-lx3": [
-    "HNR"
+    "HU"
   ],
   "le9920": [
     "LV"
@@ -19412,7 +19440,7 @@ module.exports = {
     "VT"
   ],
   "stf-l09s": [
-    "HNR"
+    "HU"
   ],
   "spc smart lite": [
     "FS"
@@ -21872,7 +21900,7 @@ module.exports = {
     "AL"
   ],
   "are-l22": [
-    "HNR"
+    "HU"
   ],
   "astro_5_go_lte": [
     "MW"
@@ -21955,7 +21983,7 @@ module.exports = {
     "HM"
   ],
   "honor 4c pro": [
-    "HNR"
+    "HU"
   ],
   "k1 trio": [
     "7K"
@@ -24904,7 +24932,7 @@ module.exports = {
     "1L"
   ],
   "ebg-tn00": [
-    "HNR"
+    "HU"
   ],
   "note 8p": [
     "UL"
@@ -25292,7 +25320,7 @@ module.exports = {
     "0G"
   ],
   "hlk-l42": [
-    "HNR"
+    "HU"
   ],
   "hot pro 2": [
     "QM"
@@ -25358,7 +25386,7 @@ module.exports = {
     "HT"
   ],
   "ath-cl00": [
-    "HNR"
+    "HU"
   ],
   "myleagoo e4": [
     "L5"
@@ -25545,10 +25573,10 @@ module.exports = {
     "VV"
   ],
   "ala-an70": [
-    "HNR"
+    "HU"
   ],
   "ask-al20": [
-    "HNR"
+    "HU"
   ],
   "pecm30": [
     "OP"
@@ -25587,7 +25615,7 @@ module.exports = {
     "OP"
   ],
   "mxw-tn00": [
-    "HNR"
+    "HU"
   ],
   "rmx2173": [
     "RE"
@@ -25662,7 +25690,7 @@ module.exports = {
     "OP"
   ],
   "yok-an10": [
-    "HNR"
+    "HU"
   ],
   "dt1902a": [
     "S7"
@@ -27086,7 +27114,7 @@ module.exports = {
     "L1"
   ],
   "hry-lx1": [
-    "HNR"
+    "HU"
   ],
   "lenovo a1000": [
     "LE"
@@ -27775,7 +27803,7 @@ module.exports = {
     "PA"
   ],
   "col-al10": [
-    "HNR"
+    "HU"
   ],
   "lenovo l78011": [
     "LE"
@@ -28682,7 +28710,7 @@ module.exports = {
     "TB"
   ],
   "jat-l29": [
-    "HNR"
+    "HU"
   ],
   "lgh810": [
     "LG"
@@ -29785,7 +29813,7 @@ module.exports = {
     "HU"
   ],
   "jsn-l22": [
-    "HNR"
+    "HU"
   ],
   "inoi 5 lite 2021": [
     "I4"
@@ -29941,7 +29969,7 @@ module.exports = {
     "SA"
   ],
   "cor-l29": [
-    "HNR"
+    "HU"
   ],
   "alp-l09": [
     "HU"
@@ -29968,7 +29996,7 @@ module.exports = {
     "HU"
   ],
   "cam-ul00": [
-    "HNR"
+    "HU"
   ],
   "sla-l23": [
     "HU"
@@ -29980,7 +30008,7 @@ module.exports = {
     "HU"
   ],
   "aum-l29": [
-    "HNR"
+    "HU"
   ],
   "fla-lx2": [
     "HU"
@@ -30092,7 +30120,7 @@ module.exports = {
     "HU"
   ],
   "che-tl00": [
-    "HNR"
+    "HU"
   ],
   "ele-l09": [
     "HU"
@@ -30107,7 +30135,7 @@ module.exports = {
     "HU"
   ],
   "hry-al00": [
-    "HNR"
+    "HU"
   ],
   "lon-al00": [
     "HU"
@@ -30665,7 +30693,7 @@ module.exports = {
     "41"
   ],
   "bkl-al00": [
-    "HNR"
+    "HU"
   ],
   "bla-al00": [
     "HU"
@@ -31102,7 +31130,7 @@ module.exports = {
     "B2"
   ],
   "col-tl10": [
-    "HNR"
+    "HU"
   ],
   "fp3": [
     "FA"
@@ -32444,7 +32472,7 @@ module.exports = {
     "OE"
   ],
   "jat-al00": [
-    "HNR"
+    "HU"
   ],
   "ixion ms550": [
     "DX"
@@ -32549,7 +32577,6 @@ module.exports = {
     "LV"
   ],
   "cdy-an95": [
-    "HNR",
     "HU"
   ],
   "oce-an10": [
@@ -32607,7 +32634,6 @@ module.exports = {
     "OP"
   ],
   "cdy-tn90": [
-    "HNR",
     "HU"
   ],
   "m2104k10i": [
@@ -32623,7 +32649,7 @@ module.exports = {
     "HU"
   ],
   "bkl-tl10": [
-    "HNR"
+    "HU"
   ],
   "brq-an00": [
     "HU"
@@ -33635,7 +33661,7 @@ module.exports = {
     "HU"
   ],
   "moa-tl00": [
-    "HNR"
+    "HU"
   ],
   "med-al20": [
     "HU"
@@ -33740,7 +33766,7 @@ module.exports = {
     "HU"
   ],
   "oxp-an00": [
-    "HNR"
+    "HU"
   ],
   "oce-an50": [
     "HU"
@@ -33824,10 +33850,11 @@ module.exports = {
     "ZT"
   ],
   "chl-al00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "bln-al10": [
-    "HNR"
+    "HU"
   ],
   "impress_lagune": [
     "VX"
@@ -33960,7 +33987,7 @@ module.exports = {
     "K3"
   ],
   "lnd-al40": [
-    "HNR"
+    "HU"
   ],
   "zteu960e": [
     "ZT"
@@ -35384,7 +35411,7 @@ module.exports = {
     "PL"
   ],
   "col-l10": [
-    "HNR"
+    "HU"
   ],
   "rmx3061": [
     "RE"
@@ -36033,7 +36060,8 @@ module.exports = {
     "MR"
   ],
   "chl-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "v2171a": [
     "VV"
@@ -36258,7 +36286,8 @@ module.exports = {
     "HU"
   ],
   "hjc-lx9": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "wkg-tn00": [
     "HU"
@@ -36570,7 +36599,7 @@ module.exports = {
     "XH"
   ],
   "kkg-an70": [
-    "HNR"
+    "HU"
   ],
   "iv2201": [
     "ON"
@@ -36642,7 +36671,7 @@ module.exports = {
     "AU"
   ],
   "any-an00": [
-    "HNR"
+    "HU"
   ],
   "vtr-tl00": [
     "HU"
@@ -36979,6 +37008,7 @@ module.exports = {
   ],
   "lge-an10": [
     "HNR",
+    "HU",
     "LG"
   ],
   "sm-w2021": [
@@ -36988,7 +37018,7 @@ module.exports = {
     "HNR"
   ],
   "tfy-an00": [
-    "HNR"
+    "HU"
   ],
   "v2168a": [
     "VV"
@@ -37201,7 +37231,7 @@ module.exports = {
     "HU"
   ],
   "lnd-tl30": [
-    "HNR"
+    "HU"
   ],
   "lineage_ss2": [
     "SH"
@@ -37225,7 +37255,7 @@ module.exports = {
     "SA"
   ],
   "mogolia": [
-    "HNR"
+    "HU"
   ],
   "sm-a225m": [
     "SA"
@@ -39851,7 +39881,8 @@ module.exports = {
     "TB"
   ],
   "tfy-lx1": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "x626_4g": [
     "UQ"
@@ -42295,7 +42326,8 @@ module.exports = {
     "MI"
   ],
   "cma-an40": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "isprit u50 lte": [
     "VN"
@@ -42569,7 +42601,7 @@ module.exports = {
     "AR"
   ],
   "honor x10 pro": [
-    "HNR"
+    "HU"
   ],
   "find x3 neo": [
     "OP"
@@ -43413,25 +43445,25 @@ module.exports = {
     "HU"
   ],
   "honor x10 5g": [
-    "HNR"
+    "HU"
   ],
   "honor x10 lite": [
-    "HNR"
+    "HU"
   ],
   "kle-ao": [
     "XI"
   ],
   "honor 9c": [
-    "HNR"
+    "HU"
   ],
   "honor 9a": [
-    "HNR"
+    "HU"
   ],
   "honor 30s": [
-    "HNR"
+    "HU"
   ],
   "honor 30": [
-    "HNR"
+    "HU"
   ],
   "m1908f1xe": [
     "XI"
@@ -45257,7 +45289,7 @@ module.exports = {
     "4M"
   ],
   "honor play 4t": [
-    "HNR"
+    "HU"
   ],
   "s50_bold": [
     "69"
@@ -45311,7 +45343,7 @@ module.exports = {
     "IZ"
   ],
   "ath-tl00": [
-    "HNR"
+    "HU"
   ],
   "iro a55 q": [
     "AM"
@@ -46014,7 +46046,8 @@ module.exports = {
     "SO"
   ],
   "tfy-an40": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "adt-an00": [
     "HNR"
@@ -46029,10 +46062,12 @@ module.exports = {
     "TET"
   ],
   "rmo-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "vne-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "cosmos three": [
     "CH",
@@ -46578,7 +46613,8 @@ module.exports = {
     "SH"
   ],
   "rky-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "mga-al00": [
     "HU"
@@ -47143,9 +47179,6 @@ module.exports = {
   "cet-al60": [
     "HU"
   ],
-  "23013rk75c": [
-    "XI"
-  ],
   "v2244a": [
     "VV"
   ],
@@ -47593,7 +47626,7 @@ module.exports = {
     "XI"
   ],
   "holly-u19": [
-    "HNR"
+    "HU"
   ],
   "albatros c2": [
     "VGE"
@@ -48869,7 +48902,6 @@ module.exports = {
     "XI"
   ],
   "ebg-n19": [
-    "HNR",
     "HU"
   ],
   "els-n29": [
@@ -49683,7 +49715,8 @@ module.exports = {
     "HNR"
   ],
   "lly-lx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "celero3 5g+": [
     "DQ"
@@ -50963,7 +50996,7 @@ module.exports = {
     "SA"
   ],
   "vna-l29": [
-    "HNR"
+    "HU"
   ],
   "hongmi 4a": [
     "XI"
@@ -51506,7 +51539,8 @@ module.exports = {
     "HI"
   ],
   "wod-lx1": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "rep-an00": [
     "HNR"
@@ -51524,7 +51558,8 @@ module.exports = {
     "IZ"
   ],
   "wdy-lx1": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "foa-lx9": [
     "HU"
@@ -51703,7 +51738,7 @@ module.exports = {
     "11"
   ],
   "honor play 4t pro": [
-    "HNR"
+    "HU"
   ],
   "sm-a146m": [
     "SA"
@@ -52965,7 +53000,7 @@ module.exports = {
     "R4"
   ],
   "honor magic 2 3d": [
-    "HNR"
+    "HU"
   ],
   "samsung sm-a156b": [
     "SA"
@@ -52986,7 +53021,7 @@ module.exports = {
     "XI"
   ],
   "honor play 8a": [
-    "HNR"
+    "HU"
   ],
   "rmx3834": [
     "RE"
@@ -53305,7 +53340,8 @@ module.exports = {
     "TC"
   ],
   "lly-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "lava lzx404": [
     "LV"
@@ -54017,7 +54053,8 @@ module.exports = {
     "QQ"
   ],
   "pgt-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "sm-a526a": [
     "SA"
@@ -54494,7 +54531,7 @@ module.exports = {
     "BU"
   ],
   "yal-tl50": [
-    "HNR"
+    "HU"
   ],
   "b1550vl": [
     "BU"
@@ -54719,7 +54756,8 @@ module.exports = {
     "EMR"
   ],
   "clk-lx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "cg65": [
     "JW"
@@ -54749,7 +54787,7 @@ module.exports = {
     "OL"
   ],
   "bkl-l09s": [
-    "HNR"
+    "HU"
   ],
   "bla-l29s": [
     "HU"
@@ -54828,7 +54866,8 @@ module.exports = {
     "VV"
   ],
   "vca-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "rmx3852": [
     "RE"
@@ -55157,7 +55196,8 @@ module.exports = {
     "WI"
   ],
   "fri-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "note 23": [
     "CB"
@@ -55698,7 +55738,8 @@ module.exports = {
     "OI"
   ],
   "ali-nx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "pace a1": [
     "RHI"
@@ -55788,7 +55829,8 @@ module.exports = {
     "HU"
   ],
   "rbn-nx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "vodafone pro 4g": [
     "VF"
@@ -55827,7 +55869,7 @@ module.exports = {
     "SA"
   ],
   "pe-cl00": [
-    "HNR"
+    "HU"
   ],
   "sm-a606y": [
     "SA"
@@ -55897,7 +55939,8 @@ module.exports = {
     "RE"
   ],
   "koz-al00cm": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "m1903c3gi": [
     "XI"
@@ -58005,13 +58048,15 @@ module.exports = {
     "OP"
   ],
   "lra-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "gbd-nx9": [
     "HNR"
   ],
   "elp-nx9": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "xq-ec54": [
     "SO"
@@ -58101,7 +58146,7 @@ module.exports = {
     "OP"
   ],
   "honor 30 lite": [
-    "HNR"
+    "HU"
   ],
   "hisense u30": [
     "HI"
@@ -58110,7 +58155,7 @@ module.exports = {
     "SA"
   ],
   "honor 30 pro+": [
-    "HNR"
+    "HU"
   ],
   "cph2637": [
     "OP"
@@ -58122,16 +58167,16 @@ module.exports = {
     "OP"
   ],
   "honor 20 pro": [
-    "HNR"
+    "HU"
   ],
   "m1803d5xa": [
     "XI"
   ],
   "lra-tl00": [
-    "HNR"
+    "HU"
   ],
   "hry-l21": [
-    "HNR"
+    "HU"
   ],
   "solar": [
     "LM"
@@ -58165,25 +58210,25 @@ module.exports = {
     "LG"
   ],
   "honor 20 lite": [
-    "HNR"
+    "HU"
   ],
   "honor 9x lite": [
-    "HNR"
+    "HU"
   ],
   "honor 8a pro": [
-    "HNR"
+    "HU"
   ],
   "honor play 3e": [
-    "HNR"
+    "HU"
   ],
   "honor 20i": [
-    "HNR"
+    "HU"
   ],
   "wukong-l29a": [
     "HU"
   ],
   "honor play 8": [
-    "HNR"
+    "HU"
   ],
   "juliaqn-l01b": [
     "HU"
@@ -58192,7 +58237,7 @@ module.exports = {
     "DO"
   ],
   "honor 9s": [
-    "HNR"
+    "HU"
   ],
   "f7 youth": [
     "OP"
@@ -58959,9 +59004,6 @@ module.exports = {
   "pixel 9": [
     "GO"
   ],
-  "pixel 9 pro fold": [
-    "GO"
-  ],
   "jdy-lx2": [
     "HNR"
   ],
@@ -59097,25 +59139,25 @@ module.exports = {
     "HU"
   ],
   "honor play 3": [
-    "HNR"
+    "HU"
   ],
   "honor 9x pro": [
-    "HNR"
+    "HU"
   ],
   "honor 9x": [
-    "HNR"
+    "HU"
   ],
   "honor 8s": [
-    "HNR"
+    "HU"
   ],
   "honor 8a": [
-    "HNR"
+    "HU"
   ],
   "honor 20": [
-    "HNR"
+    "HU"
   ],
   "honor 10i": [
-    "HNR"
+    "HU"
   ],
   "y85a": [
     "VV"
@@ -59160,7 +59202,7 @@ module.exports = {
     "UL"
   ],
   "aqm-tl10": [
-    "HNR"
+    "HU"
   ],
   "art-tl00": [
     "HU"
@@ -59338,13 +59380,7 @@ module.exports = {
   "gkv4x": [
     "GO"
   ],
-  "ggh2x": [
-    "GO"
-  ],
   "gec77": [
-    "GO"
-  ],
-  "gc15s": [
     "GO"
   ],
   "g8hhn": [
@@ -59405,7 +59441,8 @@ module.exports = {
     "VV"
   ],
   "flc-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "redmi 14c": [
     "XI"
@@ -59753,16 +59790,19 @@ module.exports = {
     "SA"
   ],
   "lyn-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "alt-lx2": [
     "HNR"
   ],
   "jdy-lx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "alt-nx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "gfy-lx2p": [
     "HNR"
@@ -60098,7 +60138,8 @@ module.exports = {
     "UNP"
   ],
   "ptp-an60": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "mz-meizu 20 pro": [
     "M1"
@@ -60372,16 +60413,20 @@ module.exports = {
     "VV"
   ],
   "amm-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "amg-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "amp-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "ptp-an20": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "amp-an10": [
     "HNR"
@@ -60396,7 +60441,8 @@ module.exports = {
     "V6"
   ],
   "brc-nx1": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "aligator_s6600": [
     "4A"
@@ -61266,31 +61312,40 @@ module.exports = {
     "OP"
   ],
   "dnn-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "dnp-nx9": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "dny-nx9": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "dvd-an80": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "dvd-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "agi-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "abr-nx1": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "abr-lx3": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "abr-lx2": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "pku110": [
     "OP"
@@ -61639,10 +61694,12 @@ module.exports = {
     "HNR"
   ],
   "nic-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "nic-lx2": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "nic-lx3": [
     "HNR"
@@ -61772,6 +61829,490 @@ module.exports = {
   ],
   "iphone18,4": [
     "AP"
+  ],
+  "fire 3 pro": [
+    "DO"
+  ],
+  "fire 3 ultra": [
+    "DO"
+  ],
+  "fire 3": [
+    "DO"
+  ],
+  "cyber 16 pro": [
+    "HV"
+  ],
+  "color 6": [
+    "B2"
+  ],
+  "f109 s": [
+    "FOS"
+  ],
+  "f107 pro": [
+    "FOS"
+  ],
+  "blade20 pro": [
+    "DO"
+  ],
+  "blade20 play": [
+    "DO"
+  ],
+  "blade20 max": [
+    "DO"
+  ],
+  "blade20 ultra": [
+    "DO"
+  ],
+  "blade gt pro": [
+    "DO"
+  ],
+  "blade gt play": [
+    "DO"
+  ],
+  "blade20": [
+    "DO"
+  ],
+  "blade10 energy": [
+    "DO"
+  ],
+  "wp56": [
+    "OE"
+  ],
+  "wp53 s": [
+    "OE"
+  ],
+  "wp53 pro": [
+    "OE"
+  ],
+  "wp53": [
+    "OE"
+  ],
+  "wp55 ultra": [
+    "OE"
+  ],
+  "wp300": [
+    "OE"
+  ],
+  "pixel 10": [
+    "GO"
+  ],
+  "pixel 10 pro": [
+    "GO"
+  ],
+  "pixel 10 pro xl": [
+    "GO"
+  ],
+  "xplore 1": [
+    "B2"
+  ],
+  "hisense e71": [
+    "HI"
+  ],
+  "sparx edge 20": [
+    "SPX"
+  ],
+  "tyh651m-02": [
+    "U9"
+  ],
+  "mtn-nx1": [
+    "HNR",
+    "HU"
+  ],
+  "mtn-an80": [
+    "HNR",
+    "HU"
+  ],
+  "mtn-an00": [
+    "HNR",
+    "HU"
+  ],
+  "25060rk16c": [
+    "XI"
+  ],
+  "mz-meizu c9 pro": [
+    "M1"
+  ],
+  "qmobile e1": [
+    "QM"
+  ],
+  "25098pn5ac": [
+    "XI"
+  ],
+  "buzz 7 note": [
+    "AE"
+  ],
+  "clk-nx3": [
+    "HNR"
+  ],
+  "v2534": [
+    "VV"
+  ],
+  "v2531": [
+    "VV"
+  ],
+  "v2529": [
+    "VV"
+  ],
+  "v2527": [
+    "VV"
+  ],
+  "v2521": [
+    "VV"
+  ],
+  "v2520": [
+    "VV"
+  ],
+  "v2518": [
+    "VV"
+  ],
+  "v2513": [
+    "VV"
+  ],
+  "v2511": [
+    "VV"
+  ],
+  "v2510": [
+    "VV"
+  ],
+  "v2509": [
+    "VV"
+  ],
+  "v2508": [
+    "VV"
+  ],
+  "xiaomi 14t": [
+    "XI"
+  ],
+  "2509fpn0bc": [
+    "XI"
+  ],
+  "bkq-an10": [
+    "HNR"
+  ],
+  "xig07": [
+    "XI"
+  ],
+  "25113pn0ec": [
+    "XI"
+  ],
+  "xt2527-3": [
+    "MR"
+  ],
+  "xt2507-5": [
+    "MR"
+  ],
+  "xt2505-4": [
+    "MR"
+  ],
+  "xt2451-4": [
+    "MR"
+  ],
+  "wp210 pro": [
+    "OE"
+  ],
+  "v max play": [
+    "DO"
+  ],
+  "vtl-202402": [
+    "VE"
+  ],
+  "thinkphone 25 by motorola": [
+    "MR"
+  ],
+  "rugking": [
+    "UL"
+  ],
+  "v2507a": [
+    "VV"
+  ],
+  "v2530": [
+    "VV"
+  ],
+  "v2506a": [
+    "VV"
+  ],
+  "v2503": [
+    "VV"
+  ],
+  "v2502": [
+    "VV"
+  ],
+  "v2465a": [
+    "VV"
+  ],
+  "v2463a": [
+    "VV"
+  ],
+  "v2506": [
+    "VV"
+  ],
+  "v2455": [
+    "VV"
+  ],
+  "v2448": [
+    "VV"
+  ],
+  "v2446": [
+    "VV"
+  ],
+  "v2439": [
+    "VV"
+  ],
+  "v2432": [
+    "VV"
+  ],
+  "v2431": [
+    "VV"
+  ],
+  "v2407": [
+    "VV"
+  ],
+  "rmx5106": [
+    "RE"
+  ],
+  "rmx5101": [
+    "RE"
+  ],
+  "rmx5054": [
+    "RE"
+  ],
+  "rmx5004": [
+    "RE"
+  ],
+  "rmx3946": [
+    "RE"
+  ],
+  "rmx3945": [
+    "RE"
+  ],
+  "rmx3944": [
+    "RE"
+  ],
+  "poco c85": [
+    "0P"
+  ],
+  "poco c71": [
+    "0P"
+  ],
+  "poco m7": [
+    "0P"
+  ],
+  "2506bpn68g": [
+    "XI"
+  ],
+  "pln110": [
+    "OP"
+  ],
+  "ple110": [
+    "OP"
+  ],
+  "pkw110": [
+    "OP"
+  ],
+  "mz-meizu 20": [
+    "M1"
+  ],
+  "mz-meizu 21": [
+    "M1"
+  ],
+  "mz-meizu 21 note": [
+    "M1"
+  ],
+  "mz-meizu note 16 pro": [
+    "M1"
+  ],
+  "25010pn30c": [
+    "XI"
+  ],
+  "voix_u10": [
+    "VOI"
+  ],
+  "v smart 2": [
+    "6W"
+  ],
+  "wod-lx3": [
+    "HNR",
+    "HU"
+  ],
+  "wildfire e5": [
+    "HT"
+  ],
+  "abr-an00": [
+    "HNR",
+    "HU"
+  ],
+  "ai+ pulse 1": [
+    "AL2"
+  ],
+  "ai+ nova 1 5g": [
+    "AL2"
+  ],
+  "2508crn2be": [
+    "XI"
+  ],
+  "25078ra3ee": [
+    "XI"
+  ],
+  "25078ra3ea": [
+    "XI"
+  ],
+  "25078pc3eg": [
+    "0P"
+  ],
+  "25069ptebg": [
+    "XI"
+  ],
+  "25062rn2dy": [
+    "XI"
+  ],
+  "25062rn2de": [
+    "XI"
+  ],
+  "25062rn2da": [
+    "XI"
+  ],
+  "25062pc34g": [
+    "0P"
+  ],
+  "25062pc34e": [
+    "0P"
+  ],
+  "25028rn03i": [
+    "XI"
+  ],
+  "25010pn30i": [
+    "XI"
+  ],
+  "zte a2025h": [
+    "ZT"
+  ],
+  "wildfire e7": [
+    "HT"
+  ],
+  "v2505a": [
+    "VV"
+  ],
+  "v2502a": [
+    "VV"
+  ],
+  "hmd vibe 5g": [
+    "HMD"
+  ],
+  "shr-an00": [
+    "WI"
+  ],
+  "jlg-an00": [
+    "WI"
+  ],
+  "villaon v651w": [
+    "VI1"
+  ],
+  "plr-al30": [
+    "HU"
+  ],
+  "rocky_mt1": [
+    "EDX"
+  ],
+  "lmu-lx9": [
+    "HU"
+  ],
+  "hed-lx9": [
+    "HU"
+  ],
+  "i2505": [
+    "VV"
+  ],
+  "i2410": [
+    "VV"
+  ],
+  "i2409": [
+    "VV"
+  ],
+  "i2404": [
+    "VV"
+  ],
+  "hyper 7s": [
+    "HV"
+  ],
+  "lgn-lx1": [
+    "HNR",
+    "HU"
+  ],
+  "kingkong 11": [
+    "CB"
+  ],
+  "infinix zero 40": [
+    "IF"
+  ],
+  "infinix zero 40 5g": [
+    "IF"
+  ],
+  "infinix x6886": [
+    "IF"
+  ],
+  "infinix-x6833b": [
+    "IF"
+  ],
+  "infinix x6730": [
+    "IF"
+  ],
+  "infinix x6730b": [
+    "IF"
+  ],
+  "infinix gt 20 pro": [
+    "IF"
+  ],
+  "cle-an00": [
+    "HNR",
+    "HU"
+  ],
+  "2409fpcc4i": [
+    "0P"
+  ],
+  "ela-lx2": [
+    "HNR"
+  ],
+  "brp-nx3": [
+    "HNR",
+    "HU"
+  ],
+  "brp-nx1m": [
+    "HNR",
+    "HU"
+  ],
+  "v2414": [
+    "VV"
+  ],
+  "v2408": [
+    "VV"
+  ],
+  "sm-a556u": [
+    "SA"
+  ],
+  "rmx5313": [
+    "RE"
+  ],
+  "rmx5111": [
+    "RE"
+  ],
+  "rmx5250": [
+    "RE"
+  ],
+  "rmx5116": [
+    "RE"
+  ],
+  "rmx5110": [
+    "RE"
+  ],
+  "nla-lx2p": [
+    "HNR",
+    "HU"
+  ],
+  "m2104k10ac": [
+    "XI"
+  ],
+  "moto g play - 2023": [
+    "MR"
   ],
   "gs55-6": [
     "GS"
@@ -63349,73 +63890,73 @@ module.exports = {
     "HU"
   ],
   "col-l29": [
-    "HNR"
+    "HU"
   ],
   "hry-tl00": [
-    "HNR"
+    "HU"
   ],
   "hry-lx2": [
-    "HNR"
+    "HU"
   ],
   "hry-lx1meb": [
-    "HNR"
+    "HU"
   ],
   "hry-al00a": [
-    "HNR"
+    "HU"
   ],
   "hry-lx1t": [
-    "HNR"
+    "HU"
   ],
   "huawei u9508": [
     "HU"
   ],
   "yal-l21": [
-    "HNR"
+    "HU"
   ],
   "yal-al00": [
-    "HNR"
+    "HU"
   ],
   "yal-tl00": [
-    "HNR"
+    "HU"
   ],
   "lra-al00": [
-    "HNR"
+    "HU"
   ],
   "yal-l41": [
-    "HNR"
+    "HU"
   ],
   "yal-al10": [
-    "HNR"
+    "HU"
   ],
   "hry-al00ta": [
-    "HNR"
+    "HU"
   ],
   "hry-al00t": [
-    "HNR"
+    "HU"
   ],
   "yal-al50": [
-    "HNR"
+    "HU"
   ],
   "mar-lx1h": [
-    "HNR"
+    "HU"
   ],
   "mxw-an00": [
-    "HNR"
+    "HU"
   ],
   "bmh-an10": [
-    "HNR"
+    "HU"
   ],
   "bmh-an20": [
-    "HNR"
+    "HU"
   ],
   "ebg-an00": [
-    "HNR"
+    "HU"
   ],
   "ebg-an10": [
-    "HNR"
+    "HU"
   ],
   "cdy-an90": [
-    "HNR"
+    "HU"
   ],
   "h30-u10": [
     "HU"
@@ -63448,451 +63989,448 @@ module.exports = {
     "HU"
   ],
   "scl-tl00h": [
-    "HNR"
+    "HU"
   ],
   "scl-cl00": [
-    "HNR"
+    "HU"
   ],
   "scl-al00": [
-    "HNR"
+    "HU"
   ],
   "chm-u01": [
-    "HNR"
+    "HU"
   ],
   "aqm-al10": [
-    "HNR"
+    "HU"
   ],
   "che2-tl00m": [
-    "HNR"
+    "HU"
   ],
   "che2-l11": [
-    "HNR"
+    "HU"
   ],
   "che2-l12": [
-    "HNR"
+    "HU"
   ],
   "che2-ul00": [
-    "HNR"
+    "HU"
   ],
   "che2-tl00": [
-    "HNR"
+    "HU"
   ],
   "che-tl00h": [
-    "HNR"
+    "HU"
   ],
   "che2-tl00h": [
-    "HNR"
+    "HU"
   ],
   "hw-che1-cl10": [
-    "HNR"
+    "HU"
   ],
   "che1-cl10": [
-    "HNR"
+    "HU"
   ],
   "che1-cl20": [
-    "HNR"
+    "HU"
   ],
   "che1-l04": [
-    "HNR"
+    "HU"
   ],
   "che2-l23": [
-    "HNR"
+    "HU"
   ],
   "cun-al00": [
-    "HNR"
+    "HU"
   ],
   "cun-tl00": [
-    "HNR"
+    "HU"
   ],
   "cam-al00": [
-    "HNR"
+    "HU"
   ],
   "cam-tl00": [
-    "HNR"
+    "HU"
   ],
   "cam-tl00h": [
-    "HNR"
+    "HU"
   ],
   "nem-l51": [
-    "HNR"
+    "HU"
   ],
   "nem-al10": [
-    "HNR"
+    "HU"
   ],
   "nem-ul10": [
-    "HNR"
+    "HU"
   ],
   "nem-tl00": [
-    "HNR"
+    "HU"
   ],
   "nem-tl00h": [
-    "HNR"
+    "HU"
   ],
   "nem-l22": [
-    "HNR"
+    "HU"
   ],
   "kiw-l22": [
-    "HNR"
+    "HU"
   ],
   "kiw-l24": [
-    "HNR"
+    "HU"
   ],
   "kiw-cl00": [
-    "HNR"
+    "HU"
   ],
   "kiw-l21": [
-    "HNR"
+    "HU"
   ],
   "kiw-al10": [
-    "HNR"
+    "HU"
   ],
   "kiw-ul00": [
-    "HNR"
+    "HU"
   ],
   "kiw-tl00": [
-    "HNR"
+    "HU"
   ],
   "kiw-tl00h": [
-    "HNR"
+    "HU"
   ],
   "kiw-l23": [
-    "HNR"
+    "HU"
   ],
   "hw-h60-j1": [
-    "HNR"
+    "HU"
   ],
   "h60-l01": [
-    "HNR"
+    "HU"
   ],
   "h60-l03": [
-    "HNR"
+    "HU"
   ],
   "h60-l11": [
-    "HNR"
+    "HU"
   ],
   "h60-l02": [
-    "HNR"
+    "HU"
   ],
   "h60-l04": [
-    "HNR"
+    "HU"
   ],
   "h60-l12": [
-    "HNR"
+    "HU"
   ],
   "mya-tl10": [
-    "HNR"
+    "HU"
   ],
   "pe-tl00m": [
-    "HNR"
+    "HU"
   ],
   "pe-tl20": [
-    "HNR"
+    "HU"
   ],
   "pe-tl10": [
-    "HNR"
+    "HU"
   ],
   "pe-ul00": [
-    "HNR"
+    "HU"
   ],
   "dli-al10": [
-    "HNR"
+    "HU"
   ],
   "dli-l42": [
-    "HNR"
+    "HU"
   ],
   "dli-tl20": [
-    "HNR"
+    "HU"
   ],
   "dli-l22": [
-    "HNR"
+    "HU"
   ],
   "dig-l21hn": [
-    "HNR"
+    "HU"
   ],
   "jmm-l22": [
-    "HNR",
     "HU"
   ],
   "bln-tl10": [
-    "HNR"
+    "HU"
   ],
   "bln-l22": [
-    "HNR"
+    "HU"
   ],
   "bln-tl00": [
-    "HNR"
+    "HU"
   ],
   "bln-l21": [
-    "HNR"
+    "HU"
   ],
   "bln-l24": [
-    "HNR"
+    "HU"
   ],
   "bln-al20": [
-    "HNR"
+    "HU"
   ],
   "bln-al30": [
-    "HNR"
+    "HU"
   ],
   "bln-al40": [
-    "HNR"
+    "HU"
   ],
   "hw-plk-cl00": [
-    "HNR"
+    "HU"
   ],
   "plk-ul00": [
-    "HNR"
+    "HU"
   ],
   "plk-l01": [
-    "HNR"
+    "HU"
   ],
   "plk-tl00": [
-    "HNR"
+    "HU"
   ],
   "plk-tl01h": [
-    "HNR"
+    "HU"
   ],
   "plk-al10": [
-    "HNR"
+    "HU"
   ],
   "plk": [
-    "HNR"
+    "HU"
   ],
   "nem-l21": [
-    "HNR"
+    "HU"
   ],
   "aum-tl20": [
-    "HNR"
+    "HU"
   ],
   "aum-l33": [
-    "HNR"
+    "HU"
   ],
   "aum-al20": [
-    "HNR"
+    "HU"
   ],
   "aum-al00": [
-    "HNR"
+    "HU"
   ],
   "lnd-l29": [
-    "HNR"
+    "HU"
   ],
   "lnd-tl40": [
-    "HNR"
+    "HU"
   ],
   "aum-l41": [
-    "HNR"
+    "HU"
   ],
   "lnd-al30": [
-    "HNR"
+    "HU"
   ],
   "ath-al00": [
-    "HNR"
+    "HU"
   ],
   "ath-ul00)": [
-    "HNR"
+    "HU"
   ],
   "ath-tl00h)": [
-    "HNR"
+    "HU"
   ],
   "dua-l22": [
-    "HNR"
+    "HU"
   ],
   "dua-lx3": [
-    "HNR"
+    "HU"
   ],
   "bnd-al10": [
-    "HNR"
+    "HU"
   ],
   "bnd-l21": [
-    "HNR"
+    "HU"
   ],
   "bnd-l31": [
-    "HNR"
+    "HU"
   ],
   "bnd-l24": [
-    "HNR"
+    "HU"
   ],
   "bnd-tl10": [
-    "HNR"
+    "HU"
   ],
   "frd-l04": [
-    "HNR"
+    "HU"
   ],
   "vat-l19": [
-    "HNR"
+    "HU"
   ],
   "frd-l09": [
-    "HNR"
+    "HU"
   ],
   "frd-l14": [
-    "HNR"
+    "HU"
   ],
   "frd-l02": [
-    "HNR"
+    "HU"
   ],
   "frd-l19": [
-    "HNR"
+    "HU"
   ],
   "frd-al00": [
-    "HNR",
     "HU"
   ],
   "frd-al10": [
-    "HNR"
+    "HU"
   ],
   "frd-dl00": [
-    "HNR"
+    "HU"
   ],
   "pra-al00x": [
-    "HNR"
+    "HU"
   ],
   "pra-al00": [
-    "HNR"
+    "HU"
   ],
   "pra-tl10": [
-    "HNR"
+    "HU"
   ],
   "duk-l09": [
-    "HNR"
+    "HU"
   ],
   "duk-tl30": [
-    "HNR"
+    "HU"
   ],
   "ven-l22": [
-    "HNR"
+    "HU"
   ],
   "jat-lx3": [
-    "HNR"
+    "HU"
   ],
   "jat-lx1": [
-    "HNR"
+    "HU"
   ],
   "jat-l41": [
-    "HNR"
+    "HU"
   ],
   "bkk-al00": [
-    "HNR"
+    "HU"
   ],
   "bkk-al10": [
-    "HNR"
+    "HU"
   ],
   "bkk-l21": [
-    "HNR"
+    "HU"
   ],
   "bkk-l22": [
-    "HNR"
+    "HU"
   ],
   "bkk-lx2": [
-    "HNR"
+    "HU"
   ],
   "bkk-tl00": [
-    "HNR"
+    "HU"
   ],
   "ksa-lx2": [
-    "HNR"
+    "HU"
   ],
   "ksa-al00": [
-    "HNR"
+    "HU"
   ],
   "ksa-lx9": [
-    "HNR"
+    "HU"
   ],
   "jsn-l21": [
-    "HNR"
+    "HU"
   ],
   "jsn-l42": [
-    "HNR"
+    "HU"
   ],
   "jsn-l23": [
-    "HNR"
+    "HU"
   ],
   "jsn-tl00": [
-    "HNR"
+    "HU"
   ],
   "jsn-al00a": [
-    "HNR"
+    "HU"
   ],
   "jsn-al00": [
-    "HNR"
+    "HU"
   ],
   "are-al00": [
-    "HNR"
+    "HU"
   ],
   "are-al10": [
-    "HNR"
+    "HU"
   ],
   "are-tl00": [
-    "HNR"
+    "HU"
   ],
   "are-l22hn": [
-    "HNR"
+    "HU"
   ],
   "stf-al10": [
-    "HNR",
     "HU"
   ],
   "stf-l09": [
-    "HNR"
+    "HU"
   ],
   "stf-tl10": [
-    "HNR"
+    "HU"
   ],
   "stf-al00": [
-    "HNR"
+    "HU"
   ],
   "lld-al00": [
-    "HNR"
+    "HU"
   ],
   "lld-l21": [
-    "HNR"
+    "HU"
   ],
   "lld-tl10": [
-    "HNR"
+    "HU"
   ],
   "lld-al10": [
-    "HNR"
+    "HU"
   ],
   "lld-l31": [
-    "HNR"
+    "HU"
   ],
   "moa-lx9n": [
-    "HNR"
+    "HU"
   ],
   "aka-l29": [
-    "HNR"
+    "HU"
   ],
   "lld-al20": [
-    "HNR"
+    "HU"
   ],
   "lld-al30": [
-    "HNR"
+    "HU"
   ],
   "dua-lx9": [
-    "HNR"
+    "HU"
   ],
   "hlk-al00": [
-    "HNR"
+    "HU"
   ],
   "hlk-al00a": [
-    "HNR"
+    "HU"
   ],
   "hlk-al10": [
-    "HNR"
+    "HU"
   ],
   "nts-al00": [
-    "HNR"
+    "HU"
   ],
   "tny-al00": [
-    "HNR"
+    "HU"
   ],
   "tny-tl00": [
-    "HNR"
+    "HU"
   ],
   "rvl-al09": [
-    "HNR"
+    "HU"
   ],
   "edi-al10": [
-    "HNR"
+    "HU"
   ],
   "vky-tl00": [
     "HU"
@@ -63907,106 +64445,103 @@ module.exports = {
     "HU"
   ],
   "cor-al10": [
-    "HNR",
     "HU"
   ],
   "cor-al00": [
-    "HNR"
+    "HU"
   ],
   "cor-tl10": [
-    "HNR"
+    "HU"
   ],
   "ask-al00x": [
-    "HNR"
+    "HU"
   ],
   "ksa-al10": [
-    "HNR"
+    "HU"
   ],
   "tnnh-an00": [
-    "HNR"
+    "HU"
   ],
   "chm-tl00": [
-    "HNR"
+    "HU"
   ],
   "chm-tl00h": [
-    "HNR"
+    "HU"
   ],
   "chm-ul00": [
-    "HNR"
+    "HU"
   ],
   "hw-chm-cl00": [
-    "HNR"
+    "HU"
   ],
   "aka-al10": [
-    "HNR"
+    "HU"
   ],
   "dua-tl00": [
-    "HNR"
+    "HU"
   ],
   "dua-al00": [
-    "HNR"
+    "HU"
   ],
   "jat-tl00": [
-    "HNR"
+    "HU"
   ],
   "moa-al00": [
-    "HNR"
+    "HU"
   ],
   "bkl-l09": [
-    "HNR"
+    "HU"
   ],
   "bkl-al20": [
-    "HNR",
     "HU"
   ],
   "pct-tl10": [
-    "HNR"
+    "HU"
   ],
   "pct-al10": [
-    "HNR"
+    "HU"
   ],
   "knt-al10": [
-    "HNR"
+    "HU"
   ],
   "knt-tl10": [
-    "HNR"
+    "HU"
   ],
   "knt-ul10": [
-    "HNR"
+    "HU"
   ],
   "knt-al20": [
-    "HNR"
+    "HU"
   ],
   "duk-al20": [
-    "HNR",
     "HU"
   ],
   "jmm-al00": [
-    "HNR"
+    "HU"
   ],
   "jmm-al10": [
-    "HNR"
+    "HU"
   ],
   "jmm-tl10": [
-    "HNR"
+    "HU"
   ],
   "oxf-an00": [
-    "HNR"
+    "HU"
   ],
   "oxf-an10": [
-    "HNR"
+    "HU"
   ],
   "tel-tn00": [
-    "HNR"
+    "HU"
   ],
   "tel-an00a": [
-    "HNR"
+    "HU"
   ],
   "tel-an00": [
-    "HNR"
+    "HU"
   ],
   "tel-an10": [
-    "HNR"
+    "HU"
   ],
   "scl-l01": [
     "HU"
@@ -72062,7 +72597,7 @@ module.exports = {
     "HU"
   ],
   "jdn-w09": [
-    "HNR"
+    "HU"
   ],
   "q93s": [
     "WU"
@@ -72301,10 +72836,46 @@ module.exports = {
   "mids185pr": [
     "PL"
   ],
+  "ipad15,3": [
+    "AP"
+  ],
+  "ipad15,4": [
+    "AP"
+  ],
+  "ipad15,5": [
+    "AP"
+  ],
+  "ipad15,6": [
+    "AP"
+  ],
+  "ipad15,7": [
+    "AP"
+  ],
+  "ipad15,8": [
+    "AP"
+  ],
   "ipad13,16": [
     "AP"
   ],
   "ipad13,17": [
+    "AP"
+  ],
+  "ipad16,1": [
+    "AP"
+  ],
+  "ipad16,2": [
+    "AP"
+  ],
+  "ipad17,1": [
+    "AP"
+  ],
+  "ipad17,2": [
+    "AP"
+  ],
+  "ipad17,3": [
+    "AP"
+  ],
+  "ipad17,4": [
     "AP"
   ],
   "tb350fu": [
@@ -76636,10 +77207,12 @@ module.exports = {
     "T7"
   ],
   "rol-w60": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "rod2-w69": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "m10_r04": [
     "PRI"
@@ -76698,26 +77271,86 @@ module.exports = {
   "sm-x300": [
     "SA"
   ],
+  "rod-w19": [
+    "HNR",
+    "HU"
+  ],
+  "viewpad 7d pro": [
+    "VS"
+  ],
+  "ipad13,18": [
+    "AP"
+  ],
+  "ipad13,19": [
+    "AP"
+  ],
+  "wave taxx5p0x": [
+    "D2"
+  ],
+  "pixel tablet 2": [
+    "GO"
+  ],
+  "25099rp13g": [
+    "XI"
+  ],
+  "2509brp2dg": [
+    "XI"
+  ],
+  "2410crp4ci": [
+    "XI"
+  ],
+  "tab kingkong 2": [
+    "CB"
+  ],
+  "tab r9 plus": [
+    "HV"
+  ],
+  "dmoao_d2_eea": [
+    "DMO"
+  ],
+  "pixus_arena": [
+    "PX"
+  ],
+  "tgr-w10": [
+    "HU"
+  ],
+  "alfa 8tx": [
+    "H0"
+  ],
+  "hey3-w00": [
+    "HNR",
+    "HU"
+  ],
+  "hey3-n09": [
+    "HNR",
+    "HU"
+  ],
+  "bpad_mini_se": [
+    "BNC"
+  ],
+  "lomonosov3": [
+    "3O"
+  ],
   "jdn-al00": [
-    "HNR"
+    "HU"
   ],
   "ags2-al00hn": [
-    "HNR"
+    "HU"
   ],
   "jdn2-w09hn": [
-    "HNR"
+    "HU"
   ],
   "hdn-w09": [
-    "HNR"
+    "HU"
   ],
   "hdn-l09": [
-    "HNR"
+    "HU"
   ],
   "hdl-al09": [
-    "HNR"
+    "HU"
   ],
   "hdl-w09": [
-    "HNR"
+    "HU"
   ],
   "bah3-al00": [
     "HU"
@@ -83324,7 +83957,7 @@ module.exports = {
     "HU"
   ],
   "ags3-al09hn": [
-    "HNR"
+    "HU"
   ],
   "ags3-w00d": [
     "HU"
@@ -83333,7 +83966,7 @@ module.exports = {
     "HU"
   ],
   "ags3-w09hn": [
-    "HNR"
+    "HU"
   ],
   "bah2-w09": [
     "HU"
@@ -84192,7 +84825,7 @@ module.exports = {
     "58"
   ],
   "jdn2-al00hn": [
-    "HNR"
+    "HU"
   ],
   "ira_duo": [
     "Q8"
@@ -84464,10 +85097,10 @@ module.exports = {
     "HNR"
   ],
   "kjr-w09": [
-    "HNR"
+    "HU"
   ],
   "krj-an00": [
-    "HNR"
+    "HU"
   ],
   "mrr-w39": [
     "HU"
@@ -84619,13 +85252,14 @@ module.exports = {
     "T7"
   ],
   "krj-w09": [
-    "HNR"
+    "HU"
   ],
   "krj2-w09": [
     "HNR"
   ],
   "krj2-an00": [
-    "HNR"
+    "HNR",
+    "HU"
   ],
   "brt-w09": [
     "HNR"
@@ -85893,6 +86527,12 @@ module.exports = {
   "ift1018": [
     "IFT"
   ],
+  "bzi-w20": [
+    "HU"
+  ],
+  "oysters t72x 3g": [
+    "OY"
+  ],
   "tq700": [
     "GC"
   ],
@@ -86536,10 +87176,10 @@ module.exports = {
     "ZR"
   ],
   "honor v6 wi-fi": [
-    "HNR"
+    "HU"
   ],
   "honor v6 5g": [
-    "HNR"
+    "HU"
   ],
   "kobe3-l09": [
     "HU"
@@ -95958,6 +96598,63 @@ module.exports = {
   "sm-led24m11s": [
     "X2",
     "SA"
+  ],
+  "cadena pro a csb-230": [
+    "CAD"
+  ],
+  "cadena pro a3 csb-242": [
+    "CAD"
+  ],
+  "rh-le50dsy-c": [
+    "ROH"
+  ],
+  "rh-le32dsy-c": [
+    "ROH"
+  ],
+  "vontar h728": [
+    "1V"
+  ],
+  "yndx-00096": [
+    "YD"
+  ],
+  "yndx-00081": [
+    "YD"
+  ],
+  "yndx-00080": [
+    "YD"
+  ],
+  "yndx-00079": [
+    "YD"
+  ],
+  "yndx-00078": [
+    "YD"
+  ],
+  "samtron_43sa701": [
+    "SAM"
+  ],
+  "akai_ta50bu500": [
+    "AK"
+  ],
+  "akai_ta32bh500": [
+    "AK"
+  ],
+  "akai_ta32bf552": [
+    "AK"
+  ],
+  "korax-eurobox pro": [
+    "KRX"
+  ],
+  "kf-1500": [
+    "TUR"
+  ],
+  "hoco dq09": [
+    "HOC"
+  ],
+  "gd s1 atv": [
+    "GD1"
+  ],
+  "rombica tv emotion": [
+    "R3"
   ],
   "bb2 pro": [
     "0M"

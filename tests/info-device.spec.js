@@ -10,7 +10,10 @@ const DATA_DEVICE_INFO = YAMLLoad(
 );
 
 let ymlDeviceInfoFiles = fs.readdirSync(getFixtureFolder() + 'devices-info/');
-const detector = new DeviceDetector({});
+const detector = new DeviceDetector({
+  deviceIndexes: true,
+  deviceAliasCode: true,
+});
 const infoDevice = new InfoDevice();
 const TIMEOUT = 6000;
 
@@ -65,22 +68,26 @@ describe('tests info-device', function() {
         infoDevice.setSizeConvertObject(true);
         infoDevice.setResolutionConvertObject(true);
         let result = infoDevice.info(brand, model);
-        
+        let ua = `(${brand} ${model} build/xxxxx)`;
+        let detectResult = detector.detect(ua);
+
+
+
         if (result === null) {
           expect(rawSource !== void 0).to.equal(true);
           return;
         }
-        
-        let formatMessageFloat = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+$ result: ${perryJSON(
+        let baseMessage = `brand (${brand})  model (${model}) value does not match format`;
+        let formatMessageFloat = `${baseMessage} ^[0-9.]+$ result: ${perryJSON(
           result,
         )}`;
-        let formatMessageRatio = `brand (${brand})  model (${model}) value does not match format ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
+        let formatMessageRatio = `${baseMessage} ^[0-9.]+:[0-9.]+$ result: ${perryJSON(
           result,
         )}`;
-        let formatMessageNumber = `brand (${brand})  model (${model}) value does not match format ^[0-9]+$  result: ${perryJSON(
+        let formatMessageNumber = `${baseMessage} ^[0-9]+$  result: ${perryJSON(
           result,
         )}`;
-        let formatMessageYear = `brand (${brand})  model (${model}) value does not match format ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
+        let formatMessageYear = `${baseMessage} ^[0-9]{4}\.(1[0-2]|0[1-9])|[0-9]{4})$  result: ${perryJSON(
           result,
         )}`;
         
@@ -127,10 +134,8 @@ describe('tests info-device', function() {
           
           // check correct width height for tablet
           if (result.display && parseFloat(result.display.size) >= 7) {
-            let ua = `(${brand} ${model} build/xxxxx)`;
             if (result.size && parseFloat(result.size.width) <
               parseFloat(result.size.height)) {
-              let detectResult = detector.detect(ua);
               if (DeviceHelper.isTablet(detectResult)) {
                 console.log(result)
                 throw new Error(`${brand} ${model} - physical size: width < height for table`)
@@ -182,10 +187,17 @@ describe('tests info-device', function() {
             expect(result.hardware.gpu).to.property('clock_rate');
           }
         }
+      /*
+        if (['honor'].includes(brand)){
+          expect(
+            String(detectResult.device.brand).toLowerCase(),
+            `brand not match ${brand} - ${model}`
+          ).to.equal(brand);
+        }*/
       });
     }
   }
-  
+
   ymlDeviceInfoFiles.forEach(function(file) {
     describe('file fixture ' + file, function() {
       let fixtureData = YAMLLoad(getFixtureFolder() + 'devices-info/' + file);
@@ -202,9 +214,7 @@ describe('tests info-device', function() {
             fixture.result,
             'Error in ' + itName + ' result: ' +  JSON.stringify(result)
           ).to.deep.equal(result);
-
         });
-
       });
     });
   });
