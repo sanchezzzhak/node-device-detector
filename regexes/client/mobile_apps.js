@@ -2970,6 +2970,26 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "KeplrWalletMobile/([\\d.]+)",
+    "name": "Keplr",
+    "version": "$1"
+  },
+  {
+    "regex": "lookr/([\\d.]+)",
+    "name": "Lookr",
+    "version": "$1"
+  },
+  {
+    "regex": "Kimi/([\\d.]+)",
+    "name": "Kimi",
+    "version": "$1"
+  },
+  {
+    "regex": "genspark",
+    "name": "Genspark",
+    "version": ""
+  },
+  {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",
     "name": "$1",
     "version": "$2"

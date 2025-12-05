@@ -19,6 +19,7 @@ module.exports = {
   "com.videochat.livu": "LivU",
   "io.metamask": "MetaMask",
   "com.totalav.android": "TotalAV",
+  "com.fsecure.ms.fnac": "Ma Protection",
   "com.fsecure.ms.saunalahti_m": "Elisa Turvapaketti",
   "com.fsecure.ms.ziggo": "Ziggo Safe Online",
   "com.aol.mobile.aolapp": "AOL",
@@ -102,6 +103,7 @@ module.exports = {
   "com.fsecure.ms.upc.ch": "UPC Internet Security",
   "com.fsecure.ms.sfr": "SFR Sécurité",
   "com.fsecure.ms.sonera": "Telia Turvapaketti",
+  "com.fsecure.ms.voo": "VIS+",
   "com.bifrostwallet.app": "Bifrost Wallet",
   "com.anydesk.anydeskandroid": "AnyDesk Remote Desktop",
   "com.google.android.youtube": "YouTube",
@@ -151,6 +153,13 @@ module.exports = {
   "org.aka.lite": "Aka Messenger Lite",
   "the.best.gram": "Bestgram",
   "ir.ilmili.telegraph": "Graph Messenger",
+  "com.wecloud.lookr": "Lookr",
+  "com.viber.voip": "Viber",
+  "com.chainapsis.keplr": "Keplr",
+  "org.telegram.plus": "Plus Messenger",
+  "com.moonshot.kimichat": "Kimi",
+  "ai.mainfunc.genspark": "Genspark",
+  "com.deepseek.chat": "DeepSeek",
   "org.torproject.android": "Orbot",
   "free.vpn.unblock.proxy.vpnmonster": "VPN Monster",
   "com.udicorn.proxy": "Blue Proxy",
@@ -160,5 +169,7 @@ module.exports = {
   "com.kuto.vpn": "KUTO VPN",
   "com.ezt.vpn": "EZVPN",
   "com.nocardteam.nocardvpn": "NoCard VPN",
-  "com.nocardteam.nocardvpn.lite": "NoCard VPN Lite"
+  "com.nocardteam.nocardvpn.lite": "NoCard VPN Lite",
+  "com.canopy.vpn.filter.parent": "Canopy",
+  "com.potatovpn.free.proxy.wifi": "PotatoVPN"
 };

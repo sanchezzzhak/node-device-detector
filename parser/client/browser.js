@@ -16,7 +16,10 @@ const CLIENTHINT_MAPPING = {
   'Mi Browser': ['Miui Browser', 'XiaoMiBrowser'],
   'Microsoft Edge': ['Edge'],
   'Norton Private Browser': ['Norton Secure Browser'],
+  'Opera GX':['Opera GX Android'],
+  'Opera Mini': ['Opera Mini Android'],
   'Vewd Browser': ['Vewd Core'],
+  'Yandex Browser': ['YaSearchBrowser'],
 };
 
 const BROWSERHINT_SKIP_VERSION = ['A0', 'AL', 'HP', 'JR', 'MU', 'OM', 'OP', 'VR'];
@@ -108,7 +111,7 @@ class Browser extends ClientAbstractParser {
         }
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
         const hasChromeBased =  ('Chromium' === name || 'Chrome Webview' === name) && data.name
-          && ['CR', 'CV', 'AN'].indexOf(data.short_name) === -1;
+          && ['CR', 'CV', 'AN', 'CM'].indexOf(data.short_name) === -1;
         if (hasChromeBased) {
           name = data.name;
           short = data.short_name;

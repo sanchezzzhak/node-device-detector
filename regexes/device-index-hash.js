@@ -783,6 +783,30 @@ module.exports = {
   "sm-t503": [
     "SA"
   ],
+  "22101316g": [
+    "XI"
+  ],
+  "sm-s921u": [
+    "SA"
+  ],
+  "itel a669w": [
+    "IZ"
+  ],
+  "sm-s928b": [
+    "SA"
+  ],
+  "sm-s921b": [
+    "SA"
+  ],
+  "sm-a556b": [
+    "SA"
+  ],
+  "sm-g991u": [
+    "SA"
+  ],
+  "moto g stylus 5g - 2023": [
+    "MR"
+  ],
   "zc554kl": [
     "AU"
   ],
@@ -2306,9 +2330,6 @@ module.exports = {
   ],
   "infinix-x551": [
     "IF"
-  ],
-  "22101316g": [
-    "XI"
   ],
   "23028ra60l": [
     "XI"
@@ -4478,9 +4499,6 @@ module.exports = {
   ],
   "pixel 7 pro": [
     "GO"
-  ],
-  "sm-g991u": [
-    "SA"
   ],
   "ipod5,1": [
     "AP"
@@ -53129,9 +53147,6 @@ module.exports = {
   "sm-a556e": [
     "SA"
   ],
-  "sm-a556b": [
-    "SA"
-  ],
   "sm-e546b": [
     "SA"
   ],
@@ -53958,13 +53973,7 @@ module.exports = {
   "sm-s9210": [
     "SA"
   ],
-  "sm-s921b": [
-    "SA"
-  ],
   "samsung sm-s921w": [
-    "SA"
-  ],
-  "sm-s921u": [
     "SA"
   ],
   "sm-s921u1": [
@@ -53983,9 +53992,6 @@ module.exports = {
     "SA"
   ],
   "sm-s928n": [
-    "SA"
-  ],
-  "sm-s928b": [
     "SA"
   ],
   "sm-s928w": [

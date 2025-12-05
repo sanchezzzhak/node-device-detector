@@ -1,5 +1,20 @@
 module.exports = [
   {
+    "regex": "buscari/([\\d.]+)",
+    "name": "Seekee",
+    "version": ""
+  },
+  {
+    "regex": "ArtisReader/([\\d.]+)",
+    "name": "ArtisBrowser",
+    "version": "$1"
+  },
+  {
+    "regex": "SamanthaDoubao/([\\d.]+)",
+    "name": "Doubao",
+    "version": "$1"
+  },
+  {
     "regex": "HeyTapBrowser/([\\d.]+)",
     "name": "HeyTapBrowser",
     "version": "$1"
@@ -1913,7 +1928,7 @@ module.exports = [
     }
   },
   {
-    "regex": "(?<!motorola |; )Edge[ /](\\d+[.\\d]+)",
+    "regex": "(?<!motorola |Sparx |; )Edge[ /](\\d+[.\\d]+)",
     "name": "Microsoft Edge",
     "version": "$1",
     "engine": {
