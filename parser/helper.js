@@ -19,7 +19,7 @@ function restoreUserAgentFromClientHints(userAgent, clientHints) {
   if (hasUserAgentClientHintsFragment(newUserAgent)) {
     const osHints = attr(clientHints, 'os', {});
     const osVersion = attr(osHints, 'version', '');
-    newUserAgent = newUserAgent.replace(/(Android (?:10[.\d]*; K|1[1-5]))/,
+    newUserAgent = newUserAgent.replace(/(Android (?:10[.\d]*; K|1[1-9]))/,
       `Android ${osVersion !== '' ? osVersion : '10'}; ${deviceModel}`
     );
   }
@@ -289,7 +289,10 @@ function hasTVClient(name) {
  * @return {boolean}
  */
 function hasUserAgentClientHintsFragment(userAgent) {
-  return /Android (?:10[.\d]*; K(?: Build\/|[;)])|1[1-5]\)) AppleWebKit/i.test(userAgent);
+  if (/Android (?:1[0-6][.\d]*; K(?: Build\/|[;)])|1[0-6]\)) AppleWebKit/i.test(userAgent)) {
+    return /Telegram-Android\//i.test(userAgent) === false;
+  }
+  return false;
 }
 
 /**

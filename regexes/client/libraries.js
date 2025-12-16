@@ -782,5 +782,11 @@ module.exports = [
     "name": "Lodestone PHP Parser",
     "version": "",
     "url": "https://github.com/Simbiat/lodestone-parser"
+  },
+  {
+    "regex": "^Hubot/(\\d+[.\\d]+)",
+    "name": "Hubot",
+    "version": "$1",
+    "url": "https://github.com/hubotio/hubot"
   }
 ];

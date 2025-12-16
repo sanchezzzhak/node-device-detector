@@ -1730,7 +1730,7 @@ module.exports = {
     ]
   },
   "Apple": {
-    "regex": "(?:iTunes-)?Apple[ _]?TV|Apple/|(?:Apple-|iTunes-)?(?<!like )(?:iPad|iPhone)(?!\\: Build/)|iPh(?:[0-9]|1[0-7]),[0-9]|CFNetwork|HomePod|AirPlay|AirPodcasts/|Watch ?OS|Watch1,[12]|MDCR_i?Mac|ICRU_iP(?:ad|hone)|Mac OS X[,;]|OSX/|macOS,|for Apple Watch",
+    "regex": "(?:iTunes-)?Apple[ _]?TV|Apple/|(?:Apple-|iTunes-)?(?<!like )(?:iPad|iPhone)(?!\\: Build/)|iPh(?:[0-9]|1[0-7]),[0-9]|CFNetwork|HomePod|AirPlay|AirPodcasts/|Watch ?OS|Watch1,[12]|MDCR_i?Mac|ICRU_iP(?:ad|hone)|Mac OS X[,;]|OSX/|macOS,|for Apple Watch|nook browser",
     "models": [
       {
         "regex": "(?:HomePod|AirPodcasts/)",
@@ -2486,6 +2486,11 @@ module.exports = {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)1[34]",
         "device": "desktop",
         "model": "Mac Studio (2023)"
+      },
+      {
+        "regex": "nook browser",
+        "device": "desktop",
+        "model": ""
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?1[C,_]1",
@@ -7139,7 +7144,7 @@ module.exports = {
     ]
   },
   "Barnes & Noble": {
-    "regex": "Nook|BN[TR]V[0-9]+",
+    "regex": "Nook(?! browser)|BN[TR]V[0-9]+",
     "device": "tablet",
     "models": [
       {
@@ -7619,7 +7624,7 @@ module.exports = {
     ]
   },
   "Blackview": {
-    "regex": "Blackview|(BL8[08]00|BV([24-9]000|8[128]00|[468]900|(5[1589]|9[135689])00|6[12368]00|7[13]00)(?:[ _](?:PRO))?|(?<!Titan )P10000(?:[ _](?:PRO))?|omega[ _]pro|Alife[ _][PS]1|N6000|Heatwave|DM550|BV9700Pro|BL9000 Pro|(?<!Lenovo[_ ])A[68]0(?:Pro)?\\))|(?:SOLID 4 G2|A[86]0Plus|A80S|BL(?:6000|8800)Pro|R6 Lite|P2Lite|A8 MAX|A30-RU|A20Pro|Android 10(?:[\\d.]*);(?: [\\w-]+;)? Tab[89]|Android 10(?:[\\d.]*);(?: [\\w-]+;)? (?:A80)|Android 11(?:[\\d.]*);(?: [\\w-]+;)? (?:A95|A100|BL5000|Tab 12)|Android 1[12](?:[\\d.]*);(?: [\\w-]+;)? (?:A[79]0|A70 Pro|A55 Pro|Tab 1[01356]|Tab 6)|Android 13(?:[\\d.]*);(?: [\\w-]+;)? (?:A200 Pro|Tab [86]0|Tab 18|BL9000)|BV500|BV4800|BV[579]200|SOLID_4G1|BV5300(?: Pro| Plus)?|Tab A5 Kids|Tab [56]0 Kids|Active (?:8|1[02]) Pro|Active 8|SHARK [89]|Tab 8E|Tab (?:[579]0|[789]|1[01]) WiFi|COLOR [68]|Tab (?:1[236]|60) Pro|MEGA [128]|WAVE 6C|WAVE 8C?|HERO 10|A52 Pro| E7s|Tab 90|XPLORE [12])(?:[);/ ]|$)",
+    "regex": "Blackview|(BL8[08]00|BV([24-9]000|8[128]00|[468]900|(5[1589]|9[135689])00|6[12368]00|7[13]00)(?:[ _](?:PRO))?|(?<!Titan )P10000(?:[ _](?:PRO))?|omega[ _]pro|Alife[ _][PS]1|N6000|Heatwave|DM550|BV9700Pro|BL9000 Pro|(?<!Lenovo[_ ])A[68]0(?:Pro)?\\))|(?:SOLID 4 G2|A[86]0Plus|A80S|BL(?:6000|8800)Pro|R6 Lite|P2Lite|A8 MAX|A30-RU|A20Pro|Android 10(?:[\\d.]*);(?: [\\w-]+;)? Tab[89]|Android 10(?:[\\d.]*);(?: [\\w-]+;)? (?:A80)|Android 11(?:[\\d.]*);(?: [\\w-]+;)? (?:A95|A100|BL5000|Tab 12)|Android 1[12](?:[\\d.]*);(?: [\\w-]+;)? (?:A[79]0|A70 Pro|A55 Pro|Tab 1[01356]|Tab 6)|Android 13(?:[\\d.]*);(?: [\\w-]+;)? (?:A200 Pro|Tab [86]0|Tab 18|BL9000)|BV500|BV4800|BV[579]200|SOLID_4G1|BV5300(?: Pro| Plus)?|Tab A5 Kids|Tab [56]0 Kids|Active (?:8|1[02]) Pro|Active 8|SHARK [89]|Tab 8E|Tab (?:[579]0|[789]|1[01]) WiFi|COLOR [68]|Tab (?:1[236]|60) Pro|MEGA [1238]|WAVE 6C|WAVE 8C?|HERO 10|A52 Pro| E7s|Tab 90|XPLORE [12]|FORT [12])(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -7663,6 +7668,10 @@ module.exports = {
         "model": "N6000 SE"
       },
       {
+        "regex": "BV4800 SE",
+        "model": "BV4800 SE"
+      },
+      {
         "regex": "(BL[579]000|BV6000S|BL8[08]00|N6000)",
         "model": "$1"
       },
@@ -7681,6 +7690,10 @@ module.exports = {
       {
         "regex": "XPLORE ([12])",
         "model": "Xplore $1"
+      },
+      {
+        "regex": "FORT ([12])",
+        "model": "Fort $1"
       },
       {
         "regex": "SHARK ([89])",
@@ -7734,7 +7747,7 @@ module.exports = {
         "model": "Active 8"
       },
       {
-        "regex": "MEGA ([128])",
+        "regex": "MEGA ([1238])",
         "device": "tablet",
         "model": "Mega $1"
       },
@@ -8079,7 +8092,7 @@ module.exports = {
     ]
   },
   "Vivo": {
-    "regex": "((?:VIV-|BBG-)?(?<!FBCR/|NOA |Gtel )vivo(?!(?:Browser)| 4G_r))|iQOO Neo \\d|(?:V1730(D[AT]|GA)|V18(?:01A0|13B[AT])|1819|V1937|I(?:192[78]|201[28]|2218)|V(?:2026|2031|2036|2043)_21|V1916[AT]|V1936TL|V1936AL|V(?:1732|1809|181[3468]|182[149]|183[1268]|1901|191[13469]|192[1-48]|193[0246]|194[15]|195[05]|196[235]|198[16]|1990|201[12]|202[03-5]|203[146]|204[6789]|205[45679]|2066B|206[1568]|207[23]|208[05]|2099|2106|211[18]|212[135]|213[346]|214[1358]|2162)A|V1824BA|V(?:1731|1818|2020)CA|V(?:1818|1938)CT|V(?:1730|2031)EA|V(?:1732|1809|181[3468]|182[19]|183[1268]|1901|1913|1938)T|I201[19]|I212[67]|X50 Pro\\+|I220[123678]|I24(?:0[134579]|10)|I22(?:1[234679]|2[013])|I230[1-6]|I20(?:09|17|22)|I25(?:0[25])|V1962BA|V1930|PA2170|PA23[57]3|V20(?:0[1256]|0[2159]A|[34]4|29_PK|4[57]A?|23EA|2[2-9]|3[0-35-9]|4[0-3568]|5[02-5789]|6[015689]|69B?A|70)|V21(?:0[12459]|1[01]|2[04-79]|3[012459]A?|7[12]A|4[0-79]|40A|6[0289]|64[KP]A|6[234568]A|7[08]A|1[4-8]A?|0[28]A?|5[4678]A|5[0-478]|8[03568]A|80GA|66(?:BA)?|56FA|9[069]A|99GA)|V22(?:8[2345]A|7[01289]A|5[0123]|30EA|4[0246789]|41HA|5[46]A?|3[016789]|34(?:_PK)?|3[01289]A|4[2345]A|[34]1A|2[12589]|2[079]A|[36]6A|0[37]A|0[1-9]|1[789]A|1[24789])|V23(?:4[34]A|4[1-8]|12BA|24HA|61GA|66[GH]A|3[0-46789]|3[4789]A|39FA|0[1-479]A|0[23789]|52GA|5[01256]|5[23479]A|53DA|57EA|6[124]A|2[0-57]|2[3479]A|1[0124-9]|1[23478]A)|V24(?:0[1346-9]|1[02-9]|2[02-8]|3[0-9]|35A|4[01368]|4[45]A|45EA|0[358]A|05DA|54D?A|2[569]A|1[0579]A|30A|5[135]|5[2368]A|6[345]A)|V25(?:0[236-9]|0[2567]A|1[0138]|2[0179]|3[014])|S7t 5G| (?:Y30g|Y20T|Y31s 5G|Y33s|Y50t|Y55s 5G)|iQOO (?:U[13]x?|Z1x 5G|Z5x|[578]|Z[153])|V17 SD665|NEX 3s? 5G|Z5x 712|iPA2375|iPA24(?:5[13]|75)|PA2473|Y51A|Y51 PK|1907_19|V2111-EG|Android 8(?:[\\d.]*);(?: [\\w-]+;)? (?:Y85A?|Y83A|Y71A?)|X21i A|X21A|Y52s|Y71t|Y76s)(?:[);/ ]|$)",
+    "regex": "((?:VIV-|BBG-)?(?<!FBCR/|NOA |Gtel )vivo(?!(?:Browser)| 4G_r))|iQOO Neo \\d|(?:V1730(D[AT]|GA)|V18(?:01A0|13B[AT])|1819|V1937|I(?:192[78]|201[28]|2218)|V(?:2026|2031|2036|2043)_21|V1916[AT]|V1936TL|V1936AL|V(?:1732|1809|181[3468]|182[149]|183[1268]|1901|191[13469]|192[1-48]|193[0246]|194[15]|195[05]|196[235]|198[16]|1990|201[12]|202[03-5]|203[146]|204[6789]|205[45679]|2066B|206[1568]|207[23]|208[05]|2099|2106|211[18]|212[135]|213[346]|214[1358]|2162)A|V1824BA|V(?:1731|1818|2020)CA|V(?:1818|1938)CT|V(?:1730|2031)EA|V(?:1732|1809|181[3468]|182[19]|183[1268]|1901|1913|1938)T|I201[19]|I212[67]|X50 Pro\\+|I220[123678]|I24(?:0[134579]|10)|I22(?:1[234679]|2[013])|I230[1-6]|I20(?:09|17|22)|I25(?:0[25])|V1962BA|V1930|PA2170|PA23[57]3|PA24(?:73|55)|PA25(?:73|11)|V20(?:0[1256]|0[2159]A|[34]4|29_PK|4[57]A?|23EA|2[2-9]|3[0-35-9]|4[0-3568]|5[02-5789]|6[015689]|69B?A|70)|V21(?:0[12459]|1[01]|2[04-79]|3[012459]A?|7[12]A|4[0-79]|40A|6[0289]|64[KP]A|6[234568]A|7[08]A|1[4-8]A?|0[28]A?|5[4678]A|5[0-478]|8[03568]A|80GA|66(?:BA)?|56FA|9[069]A|99GA)|V22(?:8[2345]A|7[01289]A|5[0123]|30EA|4[0246789]|41HA|5[46]A?|3[016789]|34(?:_PK)?|3[01289]A|4[2345]A|[34]1A|2[12589]|2[079]A|[36]6A|0[37]A|0[1-9]|1[789]A|1[24789])|V23(?:4[34]A|4[1-8]|12BA|24HA|61GA|66[GH]A|3[0-46789]|3[4789]A|39FA|0[1-479]A|0[23789]|52GA|5[01256]|5[23479]A|53DA|57EA|6[124]A|2[0-57]|2[3479]A|1[0124-9]|1[23478]A)|V24(?:0[1346-9]|1[02-9]|2[02-8]|3[0-9]|35A|4[01368]|4[45]A|45EA|0[358]A|05DA|54D?A|2[569]A|1[0579]A|30A|5[135]|5[2368]A|6[345]A)|V25(?:0[236-9]|0[2567]A|1[0138]|2[0179]|3[014])|S7t 5G| (?:Y30g|Y20T|Y31s 5G|Y33s|Y50t|Y55s 5G)|iQOO (?:U[13]x?|Z1x 5G|Z5x|[578]|Z[153])|V17 SD665|NEX 3s? 5G|Z5x 712|iPA2375|iPA24(?:5[13]|75)|Y51A|Y51 PK|1907_19|V2111-EG|Android 8(?:[\\d.]*);(?: [\\w-]+;)? (?:Y85A?|Y83A|Y71A?)|X21i A|X21A|Y52s|Y71t|Y76s)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -8098,9 +8111,19 @@ module.exports = {
         "model": "Pad 3 Pro"
       },
       {
+        "regex": "PA2455",
+        "device": "tablet",
+        "model": "Pad 3"
+      },
+      {
         "regex": "PA2353",
         "device": "tablet",
         "model": "Pad Air"
+      },
+      {
+        "regex": "PA2511",
+        "device": "tablet",
+        "model": "Pad SE"
       },
       {
         "regex": "iPA2375",
@@ -8121,6 +8144,11 @@ module.exports = {
         "regex": "iPA2453",
         "device": "tablet",
         "model": "iQOO Pad2"
+      },
+      {
+        "regex": "PA2573",
+        "device": "tablet",
+        "model": "Pad 5 Pro"
       },
       {
         "regex": "V2170A(?:[);/ ]|$)",
@@ -11364,7 +11392,7 @@ module.exports = {
     "model": "$1"
   },
   "Casper": {
-    "regex": "CASPER[_ ]|VIA[- _](X30(?: Plus)?|[AXS]40|X45|[XF]20|F30|T7D|A[34]|E[43]|E30|F[123]|G[345]|M4|M3[05]|[LM]40|[LS]8|S7|P[23]|V8C|A[13]_Plus(?:_64)?|A1(?:_1)?|S[13]0|S48|S|T17_M|T1[07]|T7|[ST]7-3G|T8B|T8D-3G|S1[78]|S48_0|[LS]30_0|L[35]0|F30 Plus|M30 Plus)(?:[);/ ]|$)",
+    "regex": "CASPER[_ ]|(?:Pad H10 PEN|VIA[- _](X30(?: Plus)?|[AXS]40|X45|[XF]20|F30|T7D|A[34]|E[43]|E30|F[123]|G[345]|M4|M3[05]|[LM]40|[LS]8|S7|P[23]|V8C|A[13]_Plus(?:_64)?|A1(?:_1)?|S[13]0|S48|S|T17_M|T1[07]|T7|[ST]7-3G|T8B|T8D-3G|S1[78]|S48_0|[LS]30_0|L[35]0|F30 Plus|M30 Plus))(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -11383,6 +11411,11 @@ module.exports = {
         "regex": "CASPER_L10_4\\.5G",
         "model": "L10 4.5G",
         "device": "tablet"
+      },
+      {
+        "regex": "Pad H10 PEN",
+        "device": "tablet",
+        "model": "Pad H10 Pen"
       },
       {
         "regex": "CASPER_(S[23]8)(?:[);/ ]|$)",
@@ -12949,7 +12982,7 @@ module.exports = {
         "model": "King Kong 5 Pro"
       },
       {
-        "regex": "KING[_ ]?KONG[_ ](11|[35-9]|X|ES)",
+        "regex": "KING[_ ]?KONG[_ ](11|[35-9]|X|ES 3|ES)",
         "model": "King Kong $1"
       },
       {
@@ -15109,7 +15142,7 @@ module.exports = {
     "model": "$1"
   },
   "Sony": {
-    "regex": "Sony(?: ?Ericsson)?|SGP|Xperia|(?:[4-9]0[12])SO|C1[569]0[45]|C2[01]0[45]|C230[45]|C530[236]|C550[23]|C6[56]0[236]|C6616|C68(?:0[26]|[34]3)|C69(?:0[236]|16|43)|D(?:200[45]|21(?:0[45]|14)|22(?:0[236]|12|43)|230[2356]|240[36]|2502|2533|510[236]|530[36]|5316|5322|5503|58[03]3|65(?:0[23]|43|63)|66[03458]3|66[14]6|6708)|E(?:20[0345]3|2006|210[45]|2115|2124|230[36]|2312|23[356]3|530[36]|53[3456]3|5506|55[356]3|56[46305][36]|58[02]3|6508|65[35]3|66[0358]3|68[358]3)|F(?:311[12356]|331[13]|321[12356]|5[13]21|5122|813[12]|833[12])|G(?:2299|312[135]|311[26]|322[136]|3212|331[123]|3412|3416|342[136]|823[12]|834[123]|8[14]4[12]|8188)|H(?:3113|3123|3133|3213|3223|3311|3321|3413|4113|4133|4213|4233|4311|4331|4413|4433|4493|8116|8166|82[1679]6|83[12]4|8416|9436|9493)|I(?:3[12]23|3213|[34]113|[34]312|4193|42[19]3|4332)|J(?:3173|3273|81[17]0|82[17]0|91[15]0|92[16]0)|(?:WT|LT|SO|ST|SK|MK)[0-9]+[a-z]+[0-9]*(?: Build|\\))|X?L39H|XM50[ht]|XQ-[A-Z]{2}[0-9]{2}|W960|portalmmm/2\\.0 K|S3[69]h|SOG(?:0[1-9]|1[013])|SOL2[2-6]|SOT[23]1|SOV3[1-9]|SOV4[0-3]|X10[ia]v?|E1[05][ai]v?|MT[0-9]{2}[a-z]? Build|SO-0(?:[12]C|[2-5]D|[1-4]E|[1-5]F|[1-5]G|[1-4]H|[1-4]J|[1-5]K|1M|[1-3]L)|R800[aix]|LiveWithWalkman|BRAVIA|SGP771|E3 Dual|A[012]01SO|A204SO|A[123]02SO|SO-[45]1[AB]|SO-5[1234][ABCDE]|A[12]03SO|A002SO|NW-(A[13]00|ZX500|Z1000)Series|NSZ-GS7|SmartWatch 3|SVP-DTV15",
+    "regex": "Sony(?: ?Ericsson)?|SGP|Xperia|(?:[4-9]0[12])SO|C1[569]0[45]|C2[01]0[45]|C230[45]|C530[236]|C550[23]|C6[56]0[236]|C6616|C68(?:0[26]|[34]3)|C69(?:0[236]|16|43)|D(?:200[45]|21(?:0[45]|14)|22(?:0[236]|12|43)|230[2356]|240[36]|2502|2533|510[236]|530[36]|5316|5322|5503|58[03]3|65(?:0[23]|43|63)|66[03458]3|66[14]6|6708)|E(?:20[0345]3|2006|210[45]|2115|2124|230[36]|2312|23[356]3|530[36]|53[3456]3|5506|55[356]3|56[46305][36]|58[02]3|6508|65[35]3|66[0358]3|68[358]3)|F(?:311[12356]|331[13]|321[12356]|5[13]21|5122|813[12]|833[12])|G(?:2299|312[135]|311[26]|322[136]|3212|331[123]|3412|3416|342[136]|823[12]|834[123]|8[14]4[12]|8188)|H(?:3113|3123|3133|3213|3223|3311|3321|3413|4113|4133|4213|4233|4311|4331|4413|4433|4493|8116|8166|82[1679]6|83[12]4|8416|9436|9493)|I(?:3[12]23|3213|[34]113|[34]312|4193|42[19]3|4332)|J(?:3173|3273|81[17]0|82[17]0|91[15]0|92[16]0)|(?:WT|LT|SO|ST|SK|MK)[0-9]+[a-z]+[0-9]*(?: Build|\\))|X?L39H|XM50[ht]|XQ-[A-Z]{2}[0-9]{2}|W960|portalmmm/2\\.0 K|S3[69]h|SOG(?:0[1-9]|1[0-3])|SOL2[2-6]|SOT[23]1|SOV3[1-9]|SOV4[0-3]|X10[ia]v?|E1[05][ai]v?|MT[0-9]{2}[a-z]? Build|SO-0(?:[12]C|[2-5]D|[1-4]E|[1-5]F|[1-5]G|[1-4]H|[1-4]J|[1-5]K|1M|[1-3]L)|R800[aix]|LiveWithWalkman|BRAVIA|SGP771|E3 Dual|A[012]01SO|A204SO|A[123]02SO|SO-[45]1[AB]|SO-5[1234][ABCDE]|A[12]03SO|A002SO|A301SO|NW-(A[13]00|ZX500|Z1000)Series|NSZ-GS7|SmartWatch 3|SVP-DTV15",
     "device": "smartphone",
     "models": [
       {
@@ -15406,7 +15439,7 @@ module.exports = {
         "model": "Xperia 1 IV"
       },
       {
-        "regex": "(?:Sony(?:Ericsson)?)?(?:SOG10|SO-51D|XQ-DQ(?:[67]2|[45]4))(?:[);/ ]|$)",
+        "regex": "(?:Sony(?:Ericsson)?)?(?:SOG10|A301SO|SO-51D|XQ-DQ(?:[67]2|[45]4))(?:[);/ ]|$)",
         "model": "Xperia 1 V"
       },
       {
@@ -15438,7 +15471,7 @@ module.exports = {
         "model": "Xperia 5 II"
       },
       {
-        "regex": "(?:Sony(?:Ericsson)?)?(?:XQ-DE72|XQ-DE[45]4)",
+        "regex": "(?:Sony(?:Ericsson)?)?(?:XQ-DE72|XQ-DE[45]4|SOG12)",
         "model": "Xperia 5 V"
       },
       {
@@ -16808,7 +16841,7 @@ module.exports = {
     "model": ""
   },
   "Fujitsu": {
-    "regex": "(?:F-01[FHJKLM]|F-02[EFGHLK]|F-03[DEFGKHL]|F-04[EGFHKJ]|F-05[DEFJG]|F-06[EF]|F-07[DE]|F-0[18]D|F-09[DE]|F-[45]1A|F-41B|F-[45]2A|F-1[012]D|F-12C|F-5[12]B|F-51E|M532|FARTM933KZ|901FJ|arrows(?:RX|M03|M0[45](?:-PREMIUM)?)|801FJ|FJL2[12]|RM02|FCG01|A101FC|BZ02|LIFEBOOK AH532)(?:[);/ ]|$)",
+    "regex": "(?:F-01[FHJKLM]|F-02[EFGHLK]|F-03[DEFGKHL]|F-04[EGFHKJ]|F-05[DEFJG]|F-06[EF]|F-07[DE]|F-0[18]D|F-09[DE]|F-[45]1A|F-41B|F-[45]2A|F-1[012]D|F-12C|F-5[12]B|F-51[CE]|M532|FARTM933KZ|901FJ|arrows(?:RX|M03|M0[45](?:-PREMIUM)?)|801FJ|FJL2[12]|RM02|FCG01|A101FC|BZ02|LIFEBOOK AH532)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -16926,6 +16959,10 @@ module.exports = {
       {
         "regex": "F-06E(?:[);/ ]|$)",
         "model": "Arrows NX F-06E"
+      },
+      {
+        "regex": "F-51C(?:[);/ ]|$)",
+        "model": "Arrows N F-51C"
       },
       {
         "regex": "F-07D(?:[);/ ]|$)",
@@ -19420,7 +19457,7 @@ module.exports = {
     ]
   },
   "Honor": {
-    "regex": "(?:HONOR[ _]?|HW-)?(?:FCP-(?:N49|AN10)|AGM3-(?:W|AL)09HN|LGN-LX[1-3]|HEY3-(?:W00|N09)|HEY2-N09|HEY2?-W09|ELN2-[WL]29|ELN-(?:L0[39]|W09)|AGR-(?:W|AL)09HN|NDL-[LW]09|AGM-W09HN|KOB2-(?:AL00|W09)HN|BRT-(?:AN09|W09)|KRJ2-(?:AN00|W09)|ROD-W[01]9|ROD2-(?:W09|W69)|ROL-W[06]0|GDI-W09|NIC-(?:LX[1-3]|AN00)|WOD-LX[1-3]|AGI-AN00|BRP-(?:NX[13]|NX1M|AN[08]0)|BRC-(?:AN00|NX1)|LYN-AN00|ALP-AN00|ALI-(?:NX[13]|AN00)|LLY-AN00|CRT-(?:NX[13]|LX[123]|AN00)|GFY-(?:LX2|LX2P)|VNA-(?:LX[23])|ANY-(?:LX[123]|NX1)|DNP-(?:NX9|AN00)|DNY-NX9|RMO-(?:NX[13]|AN00)|ADT-AN00|DIO-AN00|CLK-AN00|HJC-(?:LX9|AN90)|KOZ-(?:AL00|AL00CM|AL40)|CHL-A[NL]00|CMA-(?:AN[04]0|LX[123])|NEW-AN90|NZA-AL00?|ALT-(?:AN00|LX[123]|NX[13])|CLK-(?:[LN]X[123])|RKY-(?:LX[123]|AN[01]0)|NNH-AN00|VNE-(?:AN[04]0|LX[123]|N41)|JDY-(?:AN00|LX[123])|DVD-AN[08]0|PTP-(?:AN[01267]0|N[245]9)|BVL-(?:AN[02]0|N[45]9|AN16)|MGI-AN00|PGT-(?:N[01]9|AN[012]0)|LGE-(?:AN[012]0|NX9|N49B)|GBD-NX9|ELZ-AN[012]0|FLC-AN00|FRI-(?:AN[10]0|NX9)|VER-(?:AN[01]0|N49|N49DP)|AMP-AN[01]0|AMM-AN00|HPB-AN00|GIA-AN[08]0|ANN-AN00|ANB-AN00|AGT-AN00|ANP-AN00|SDY-AN00|FNE-(?:NX9|AN00)|MAA-AN00|MAA-AN10|REP-AN00|MAG-AN00|REA-(?:NX9|AN00)|RTG-NX9|AMG-AN00|VCA-AN00|TNA-AN00|LSA-AN00|RNA-[AT]N00|NTN-(?:LX[13]|L22|AN20)|NTH-(?:NX9|AN00)|WDY-(?:LX[123]|AN00)|ELP-(?:AN00|NX9)|ELI-(?:AN00|NX9)|LLY-NX1|ABR-(?:NX1|LX[123]|AN00)|LLY-LX[123]|RBN-NX[13]|DNN-AN00|MTN-(?:NX1|AN[08]0)|JLH-AN00|MBH-AN10|BKQ-AN10|CLE-AN00|ELA-LX[23]|TFY-(?:LX[123]|AN40)|LRA-AN00|NLA-LX2P)(?:[);/ ]|$)",
+    "regex": "(?:HONOR[ _]?|HW-)?(?:FCP-(?:N49|AN10)|AGM3-(?:W|AL)09HN|LGN-LX[1-3]|HEY3-(?:W00|N09)|HEY2-N09|HEY2?-W09|ELN2-[WL]29|ELN-(?:L0[39]|W09)|AGR-(?:W|AL)09HN|NDL-[LW]09|AGM-W09HN|KOB2-(?:AL00|W09)HN|BRT-(?:AN09|W09)|KRJ2-(?:AN00|W09)|ROD-W[01]9|ROD2-(?:W09|W69)|ROL-W[06]0|GDI-W09|NIC-(?:LX[1-3]|AN00)|WOD-LX[1-3]|AGI-AN00|BRP-(?:NX[13]|NX1M|AN[08]0)|BRC-(?:AN00|NX1)|LYN-AN00|ALP-AN00|ALI-(?:NX[13]|AN00)|LLY-AN00|CRT-(?:NX[13]|LX[123]|AN00)|GFY-(?:LX2|LX2P)|VNA-(?:LX[23])|ANY-(?:LX[123]|NX1)|DNP-(?:NX9|AN00)|DNY-NX9|RMO-(?:NX[13]|AN00)|ADT-AN00|DIO-AN00|CLK-AN00|HJC-(?:LX9|AN90)|KOZ-(?:AL00|AL00CM|AL40)|CHL-A[NL]00|CMA-(?:AN[04]0|LX[123])|NEW-AN90|NZA-AL00?|ALT-(?:AN00|LX[123]|NX[13])|CLK-(?:[LN]X[123])|RKY-(?:LX[123]|AN[01]0)|NNH-AN00|VNE-(?:AN[04]0|LX[123]|N41)|JDY-(?:AN00|LX[123])|DVD-AN[08]0|PTP-(?:AN[01267]0|N[245]9)|BVL-(?:AN[02]0|N[45]9|AN16)|MGI-AN00|PGT-(?:N[01]9|AN[012]0)|LGE-(?:AN[012]0|NX9|N49B)|GBD-NX9|ELZ-AN[012]0|FLC-AN00|FRI-(?:AN[10]0|NX9)|VER-(?:AN[01]0|N49|N49DP)|AMP-AN[01]0|AMM-AN00|HPB-AN00|GIA-AN[08]0|ANN-AN00|ANB-AN00|AGT-AN00|ANP-AN00|SDY-AN00|FNE-(?:NX9|AN00)|MAA-AN00|MAA-AN10|REP-AN00|MAG-AN00|REA-(?:NX9|AN00)|RTG-NX9|AMG-AN00|VCA-AN00|TNA-AN00|LSA-AN00|RNA-[AT]N00|NTN-(?:LX[13]|L22|AN20)|NTH-(?:NX9|AN00)|WDY-(?:LX[123]|AN00)|ELP-(?:AN00|NX9)|ELI-(?:AN00|NX9)|LLY-NX1|ABR-(?:NX1|LX[123]|AN00)|LLY-LX[123]|RBN-NX[13]|DNN-AN00|MTN-(?:NX1|AN[08]0)|JLH-AN00|MBH-AN10|BKQ-AN10|CLE-AN00|ELA-LX[23]|TFY-(?:LX[123]|AN40)|LRA-AN00|PPG-AN00|NLA-LX2P)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -19484,6 +19521,10 @@ module.exports = {
       {
         "regex": "AMG-AN00",
         "model": "GT"
+      },
+      {
+        "regex": "PPG-AN00",
+        "model": "GT Pro"
       },
       {
         "regex": "AMM-AN00",
@@ -27555,7 +27596,7 @@ module.exports = {
     ]
   },
   "Lenovo": {
-    "regex": "(?:LNV-)?Lenovo|IdeaTab|IdeaPad|Thinkpad|Yoga Tablet|Tab2A[0-9]-[0-9]{2}[a-z]?|ZUK[ -_]|TB-X306|(?:TB2-X30L|TB3-710[IF]|TB128FU|YT3-X50[MFL]|K50a40|TB-(?:Q706Z|X103F|8504F|X304F|X704V|X704A)|A5500-H|A2107A-H|A3500-HV|A2109A|S6000|Z2 Plus|Vibe[ _](?:P1|S6i Plus|S[23567]i|C|[ZX]2|K5(?: Plus)?|V7)|P2A42|L38011|L18011|[5-8]01LV|[67]02LV|Z2131|K350t|K31-t3|Tab A1020|TAB 2 A8-50LC|S90-A|A101LV|P70-A|VR-1541F|d-42A|lineage_A6020|EveryPad2|A2010l36|F0CU0028RK|TB310XU|TB301[FX]U|TB132FU|TB32(?:8[FX]U|0FC)|TB138FC|PB-6505Y|TB-X505[FLX]|TB-8704V|TB351FU|TB3[05]0[FX]U|TB-X606[XFM]|L38043|TB3-X70L|TB-X605[LF]C?|A7600-HV?|YT-X703F|TB330XU|TB373FU|TB3[17]0FU|TB331FC|TB321FU|A397i|TB330FU|NL5H00X|L79031|XT2091-[78]|L71061|L70081|L78031|20JJS0CU1M|A6020l3[67]|A6020a46|TB360ZU|TB311[XF]U|TB37[15]FC|L58091|L39051|L19041|L19111|L780[157]1|Lecoo P116G|XT2129-3)(?:[);/ ]|$)",
+    "regex": "(?:LNV-)?Lenovo|XiaoXin Pad|IdeaTab|IdeaPad|Thinkpad|Yoga Tablet|Tab2A[0-9]-[0-9]{2}[a-z]?|ZUK[ -_]|TB-X306|(?:TB2-X30L|TB3-710[IF]|TB128FU|YT3-X50[MFL]|K50a40|TB-(?:Q706Z|X103F|8504F|X304F|X704V|X704A)|A5500-H|A2107A-H|A3500-HV|A2109A|S6000|Z2 Plus|Vibe[ _](?:P1|S6i Plus|S[23567]i|C|[ZX]2|K5(?: Plus)?|V7)|P2A42|L38011|L18011|[5-8]01LV|[67]02LV|Z2131|K350t|K31-t3|Tab A1020|TAB 2 A8-50LC|S90-A|A101LV|P70-A|VR-1541F|d-42A|lineage_A6020|EveryPad2|A2010l36|F0CU0028RK|TB310XU|TB301[FX]U|TB132FU|TB32(?:8[FX]U|0FC)|TB138FC|PB-6505Y|TB-X505[FLX]|TB-8704V|TB351FU|TB3[05]0[FX]U|TB-X606[XFM]|L38043|TB3-X70L|TB-X605[LF]C?|A7600-HV?|YT-X703F|TB330XU|TB373FU|TB3[17]0FU|TB331FC|TB321FU|A397i|TB330FU|NL5H00X|L79031|XT2091-[78]|L71061|L70081|L78031|20JJS0CU1M|A301LV|A6020(?:a46|l3[67])|TB360ZU|TB311[XF]U|TB37[15]FC|L58091|L39051|L19041|L19111|L780[157]1|Lecoo P116G|XT2129-3)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -27834,6 +27875,11 @@ module.exports = {
         "device": "tablet"
       },
       {
+        "regex": "A301LV",
+        "model": "Tab 7 5G",
+        "device": "tablet"
+      },
+      {
         "regex": "PB-6505",
         "model": "Tab V7",
         "device": "tablet"
@@ -27976,6 +28022,11 @@ module.exports = {
       {
         "regex": "TB37[15]FC",
         "model": "Xiaoxin Pad Pro 12.7\"",
+        "device": "tablet"
+      },
+      {
+        "regex": "XiaoXin Pad 2022",
+        "model": "Xiaoxin Pad Pro 10.6\" (2022)",
         "device": "tablet"
       },
       {
@@ -35618,7 +35669,7 @@ module.exports = {
     ]
   },
   "OnePlus": {
-    "regex": "(?:du_)?ONEPLUS|(?:PGKM10|CPH251[35]|CPH2551|CPH2569|CPH249[31]|CPH244[79]|CPH240[19]|CPH24[12]3|CPH246[579]|CPH2487|CPH241[157]|CPH2419|CPH245[91]|CPH2399|CPH238[19]|CPH258[135]|CPH2573|A0001|A200[135]|AC200[13]|A300[03]|A3010|A5000|A600[03]|A601[03]|BE201[1235]|BE202[5689]|E100[135]|GM191[03517]|GM190[0135]|GM192[05]|HD191[0137]|HD190[01357]|HD1925|IN201[013579]|IN202[0135]|KB200[01357]|LE211[01357]|LE212[035]|GN2200|Nord N10 5G|LE210[01]|LE212[17]|DE211[78]|DN210[13]|EB210[13]|MT211[01]|IV2201|NE221[01357]|PG[PZ]110|PH[BKP]110|OPD(?:2203|2403|2304|2404)|PK[GRX]110|PJ[ADEFXZ]110|CPH26(?:0[59]|1[139]|21|4[579]|5[35]|6[13]|91)|OPWWE231|PLF110|PLC110)(?: Build|[;)])",
+    "regex": "(?:du_)?ONEPLUS|(?:PGKM10|CPH25(?:1[35]|51|69|73|8[135])|CPH24(?:0[19]|1[1579]|[12]3|6[579]|87|9[31]|4[79]|5[91])|CPH271[79]|CPH2709|CPH2399|CPH238[19]|A0001|A200[135]|AC200[13]|A300[03]|A3010|A5000|A60[01][03]|BE201[1235]|BE202[5689]|E100[135]|GM191[03517]|GM190[0135]|GM192[05]|HD191[0137]|HD190[01357]|HD1925|IN201[013579]|IN202[0135]|KB200[01357]|LE211[01357]|LE212[035]|GN2200|Nord N10 5G|LE210[01]|LE212[17]|DE211[78]|DN210[13]|EB210[13]|MT211[01]|IV2201|NE221[01357]|PG[PZ]110|PH[BKP]110|OPD(?:2203|2403|2304|240[45]|2415|248[01])|PK[GRX]110|PJ[ADEFXZ]110|CPH26(?:0[59]|1[139]|21|4[579]|5[35]|6[13]|91)|OPWWE231|PLF110|PLC110)(?: Build|[;)])",
     "device": "smartphone",
     "models": [
       {
@@ -35726,8 +35777,16 @@ module.exports = {
         "model": "Nord CE 4"
       },
       {
+        "regex": "CPH271[79]",
+        "model": "Nord CE 5"
+      },
+      {
         "regex": "CPH266[13]",
         "model": "Nord 4"
+      },
+      {
+        "regex": "CPH2709",
+        "model": "Nord 5"
       },
       {
         "regex": "CPH26(?:19|21)",
@@ -35932,6 +35991,11 @@ module.exports = {
         "model": "Pad 11.61\" WiFi"
       },
       {
+        "regex": "OPD248[01]",
+        "device": "tablet",
+        "model": "Pad Lite 11.0\""
+      },
+      {
         "regex": "OPD2404",
         "device": "tablet",
         "model": "Pad Pro 12.1\""
@@ -35940,6 +36004,16 @@ module.exports = {
         "regex": "OPD2403",
         "device": "tablet",
         "model": "Pad 2 12.1\" WiFi"
+      },
+      {
+        "regex": "OPD2415",
+        "device": "tablet",
+        "model": "Pad 3 13.2\" WiFi"
+      },
+      {
+        "regex": "OPD2405",
+        "device": "tablet",
+        "model": "Pad 3 11.61\""
       },
       {
         "regex": "OPD2304",
@@ -36828,7 +36902,7 @@ module.exports = {
     ]
   },
   "OPPO": {
-    "regex": "(?:OB-)?OPPO[ _]?([a-z0-9]+)|N1T|R8001|R820[16]|A101OP|OPG0[1-4]|A00[12]OP|(?:X90[07][0679]|U70[57]T?|X909T?|R(?:10[01]1|2001|201[07]|6007|7005|7007|80[13579]|81[13579]|82[01379]|83[013]|800[067]|8015|810[679]|811[13]|820[057]|15 Neo)[KLSTW]?|N520[79]|N5117|A33[wf]|A33fw|A37fw?|PAAM00|A303OP|PAAT00|PAC[TM]00|R7kf|R7plus[fmt]?|A1601|CPH[0-9]{4}|CPH19(69|79|23|1[179])|PB(A[TM]00|CT10|BT30|CM[13]0|[FD]M00)|P(E[RFHG]M\\d{2}|E[GH]T\\d{2}|DAM10|ADM00|AF[TM]00|ADT00|AHM00|BBM[03]0|BBT00|BDT00|BFT00|[CB]E[MT]00|CA[MT]00|C[CDG]M00|CA[MT]10|[CD]PM00|CRM00|CDT00|CD[TM]10|CHM[013]0|CKM[08]0|CLM[15]0|DEM[13]0|DHM00|D[RK][TM]00|DPT00|DB[TM]00|DCM00|[CD]NM00|DVM00|DY[TM][12]0|DNT00|EA[TM]00|CRT01|EDM00)|PFDM00|PEG[MT]10|PEM[MT][02]0|PDCT00|PDET10|PDS[TM]00|PEC[MT]30|PE[QYPEXNLU]M00|PCHT[13]0|PCRT00|PFGM00|PF[VU]M10|A102OP|PFCM00|PFJM10|PGCM10|PECM20|PDAT10|A103OP|PCCT00|PFTM[12]0|PFFM20|OW19W[123]|OW20W1|PGJM10|PGAM10|PF[EF]M10|Reno ?(?:[4567]|Ace|1[012])|Find X[23]|Find N| R7sf| 1201|[56].*; (?:R7[gf])|OPD(?:210[12]A?|220[12]|230[123]|240[19])|PFZM10|PGIM10|A1603|A201OP|PESM10|PGBM10|PH[WQJMU]110|PH[AY]120|PGGM10|PG[WX]110|PGU110|PCCM40|PGT110|PGEM10|RX17Neo|R15 Dream Mirror|R9 Plustm A|PGFM10|A301OP|P(?:J[CGJSU]|H[FVSTNYZ])110|K9 Pro 5G| K9[xs]|CPH1821EX|PJ[HYBVRW]110|CHP(?:1723|2219|2365)|PKD130|RX17Pro|F7 Youth|A302OP|PJT110|PK[ABCDVJHPLKSTMZQUW]110|PL[ABEDJN]110|PKC130|PJU110_A1|PHJ110_A1|PKH120|PERM10_K10)(?:[);/ ]|$)",
+    "regex": "(?:OB-)?OPPO[ _]?([a-z0-9]+)|N1T|R8001|R820[16]|A101OP|OPG0[1-4]|A00[12]OP|(?:X90[07][0679]|U70[57]T?|X909T?|R(?:10[01]1|2001|201[07]|6007|7005|7007|80[13579]|81[13579]|82[01379]|83[013]|800[067]|8015|810[679]|811[13]|820[057]|15 Neo)[KLSTW]?|N520[79]|N5117|A33[wf]|A33fw|A37fw?|PAAM00|A303OP|PAAT00|PAC[TM]00|R7kf|R7plus[fmt]?|A1601|CPH[0-9]{4}|CPH19(69|79|23|1[179])|PB(A[TM]00|CT10|BT30|CM[13]0|[FD]M00)|P(E[RFHG]M\\d{2}|E[GH]T\\d{2}|DAM10|ADM00|AF[TM]00|ADT00|AHM00|BBM[03]0|BBT00|BDT00|BFT00|[CB]E[MT]00|CA[MT]00|C[CDG]M00|CA[MT]10|[CD]PM00|CRM00|CDT00|CD[TM]10|CHM[013]0|CKM[08]0|CLM[15]0|DEM[13]0|DHM00|D[RK][TM]00|DPT00|DB[TM]00|DCM00|[CD]NM00|DVM00|DY[TM][12]0|DNT00|EA[TM]00|CRT01|EDM00)|PFDM00|PEG[MT]10|PEM[MT][02]0|PDCT00|PDET10|PDS[TM]00|PEC[MT]30|PE[QYPEXNLU]M00|PCHT[13]0|PCRT00|PFGM00|PF[VU]M10|A102OP|PFCM00|PFJM10|PGCM10|PECM20|PDAT10|A103OP|PCCT00|PFTM[12]0|PFFM20|OW19W[123]|OW20W1|PGJM10|PGAM10|PF[EF]M10|Reno ?(?:[4567]|Ace|1[012])|Find X[23]|Find N| R7sf| 1201|[56].*; (?:R7[gf])|OPD(?:210[12]A?|220[12]|230[123]|240[19])|PFZM10|PGIM10|A1603|A201OP|PESM10|PGBM10|PH[WQJMU]110|PH[AY]120|PGGM10|PG[WX]110|PGU110|PCCM40|PGT110|PGEM10|RX17Neo|R15 Dream Mirror|R9 Plustm A|PGFM10|A301OP|P(?:J[CGJSU]|H[FVSTNYZ])110|K9 Pro 5G| K9[xs]|CPH1821EX|PJ[HYBVRW]110|CHP(?:1723|2219|2365)|PKD130|RX17Pro|F7 Youth|A302OP|PJT110|PK[ABCDVJHPLKSTMZQUW]110|PL[ABEDJNM]110|PKC130|PJU110_A1|PHJ110_A1|PKH120|PERM10_K10)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -37004,6 +37078,10 @@ module.exports = {
         "model": "A5 5G"
       },
       {
+        "regex": "CPH2727",
+        "model": "A5 (2025)"
+      },
+      {
         "regex": "CPH19(?:3[13]|43)(?:[);/ ]|$)",
         "model": "A5 (2020)"
       },
@@ -37102,6 +37180,10 @@ module.exports = {
       {
         "regex": "CPH2773",
         "model": "A5i"
+      },
+      {
+        "regex": "CPH2755",
+        "model": "A5i Pro"
       },
       {
         "regex": "(?:OPPO[ _]?)?(?:CPH190[15]|PBF[TM]00)(?:[);/ ]|$)",
@@ -37592,6 +37674,10 @@ module.exports = {
         "model": "K13 Turbo Pro 5G"
       },
       {
+        "regex": "PLM110",
+        "model": "K13 Turbo 5G"
+      },
+      {
         "regex": "(?:OPPO[ _]?)?N5117(?:[);/ ]|$)",
         "model": "N1 Mini"
       },
@@ -37824,8 +37910,16 @@ module.exports = {
         "model": "Reno 14 Pro"
       },
       {
+        "regex": "CPH2739",
+        "model": "Reno 14 Pro 5G"
+      },
+      {
         "regex": "PLA110",
         "model": "Reno 14"
+      },
+      {
+        "regex": "CPH2737",
+        "model": "Reno 14 5G"
       },
       {
         "regex": "(?:PCKM00|CPH1907)(?:[);/ ]|$)",
@@ -40336,7 +40430,17 @@ module.exports = {
         "model": "Galaxy Tab S6 Lite 10.4\""
       },
       {
-        "regex": "(?:SAMSUNG-)?SM-(?:P610X?|P620)(?:[);/ ]|$)",
+        "regex": "(?:SAMSUNG-)?SM-P625",
+        "device": "tablet",
+        "model": "Galaxy Tab S6 Lite 10.4\" (2024)"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-P620",
+        "device": "tablet",
+        "model": "Galaxy Tab S6 Lite 10.4\" (2024) WiFi"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-(?:P610X?)(?:[);/ ]|$)",
         "device": "tablet",
         "model": "Galaxy Tab S6 Lite 10.4\" WiFi"
       },
@@ -41190,6 +41294,14 @@ module.exports = {
         "model": "Galaxy Wide 5"
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-M156S",
+        "model": "Galaxy Wide 7"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-M166S",
+        "model": "Galaxy Wide 8"
+      },
+      {
         "regex": "(?:SAMSUNG-)?GT-I855[028]",
         "model": "Galaxy Win"
       },
@@ -41802,6 +41914,10 @@ module.exports = {
         "model": "Galaxy A06 5G"
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-A065",
+        "model": "Galaxy A06"
+      },
+      {
         "regex": "(?:SAMSUNG-)?SM-A260[FG]",
         "model": "Galaxy A2 Core"
       },
@@ -41830,7 +41946,7 @@ module.exports = {
         "model": "Galaxy A16"
       },
       {
-        "regex": "(?:SAMSUNG-)?(?:SM-A166)",
+        "regex": "(?:SAMSUNG-)?(?:SM-[AS]166)",
         "model": "Galaxy A16 5G"
       },
       {
@@ -42126,6 +42242,10 @@ module.exports = {
         "model": "Galaxy Quantum 4"
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-A566S",
+        "model": "Galaxy Quantum 6"
+      },
+      {
         "regex": "(?:SAMSUNG-)?(?:SM-[AS]546|SC-53D|SCG21)",
         "model": "Galaxy A54 5G"
       },
@@ -42164,6 +42284,14 @@ module.exports = {
       {
         "regex": "(?:SAMSUNG-)?SM-E045F",
         "model": "Galaxy F04"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-E055",
+        "model": "Galaxy F05"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-E066",
+        "model": "Galaxy F06 5G"
       },
       {
         "regex": "(?:SAMSUNG-)?SM-F127G(?:[);/ ]|$)",
@@ -42474,6 +42602,10 @@ module.exports = {
         "model": "Galaxy Jump 3"
       },
       {
+        "regex": "SM-M366K",
+        "model": "Galaxy Jump 4"
+      },
+      {
         "regex": "(?:SAMSUNG-)?SM-M015[FG]",
         "model": "Galaxy M01"
       },
@@ -42528,6 +42660,10 @@ module.exports = {
       {
         "regex": "(?:SAMSUNG-)?SM-M146B",
         "model": "Galaxy M14 5G"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-M145F",
+        "model": "Galaxy M14"
       },
       {
         "regex": "(?:SAMSUNG-)?SM-M156B",
@@ -45476,7 +45612,7 @@ module.exports = {
     ]
   },
   "Sharp": {
-    "regex": "SHARP(?!_2|1)|SBM|SH-?[0-9]+[a-z]?(?:[);/ ]|$)|AQUOS|(?:SH-T01|SH-M26|SH-M0[14-9]|SH-M1[1-7](?:-y)?|S[357]-SH|SH-[MZ]([12]0|01|22)|SH-C0[3-6]|SH-[CL]02|SH-RM(?:1[1258]|02)|SH-R?M19s?|SH-R10A|[34]04SH|401SH|[45]02SH|306SH|[36]05SH|70[1246]SH|80[138]SH|90[1678]SH|50[3679]SH|SHL2[1235]|SHV4[0-8]|SHV3[1-9](?:[-_]u)?|FS80(?:1[08]|32|28|0[29])|TG-L900S|NP601SH|403SH|603SH|SHF3[1-4]|SHV4[035][-_]u|SW001SH|SHG0[1-9]|X4-SH|A002SH|DM-01[JH]|A[01]01SH|606SH|FS801[56]|d-41A|d-51C|NP80[567]SH|NP501SH|A00[34]SH|A102SH|IS05|SH-(?:S50|53A|51B|[HDA]01|01FDQ|S40P|M24)|LP-0[12]|FS8014|SBM00[35]SH|SBM103SH|A10[345]SH|lineage_ss2|LCD_xxSUFOC475A|A20[1248]SH|FS802[56]|ADS1|STTM21VAPP|NPA205SH|SHG10|SHT21|A30[12]SH|SH-M29)(?:[);/ ]|$)",
+    "regex": "SHARP(?!_2|1)|SBM|SH-?[0-9]+[a-z]?(?:[);/ ]|$)|AQUOS|(?:SH-T01|SH-M26|SH-M0[14-9]|SH-(?:M1[1-7]|M19s)(?:-y)?|S[357]-SH|SH-[MZ]([12]0|01|22)|SH-C0[3-6]|SH-[CL]02|SH-RM(?:1[1258]|02)|SH-R?M19s?|SH-R10A|[34]04SH|401SH|[45]02SH|306SH|[36]05SH|70[1246]SH|80[138]SH|90[1678]SH|50[3679]SH|SHL2[1235]|SHV4[0-8]|SHV3[1-9](?:[-_]u)?|FS80(?:1[08]|32|28|0[29])|TG-L900S|NP601SH|403SH|603SH|SHF3[1-4]|SHV4[035][-_]u|SW001SH|SHG0[1-9]|X4-SH|A002SH|DM-01[JH]|A[01]01SH|606SH|FS801[56]|d-41A|d-51C|NP80[567]SH|NP501SH|A00[34]SH|A102SH|IS05|SH-(?:S50|53A|51B|[HDA]01|01FDQ|S40P|M24)|LP-0[12]|FS8014|SBM00[35]SH|SBM103SH|A10[345]SH|lineage_ss2|LCD_xxSUFOC475A|A20[1248]SH|FS802[56]|ADS1|STTM21VAPP|NPA205SH|SHG10|SHT21|A30[12]SH|SH-M29)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
@@ -45532,6 +45668,10 @@ module.exports = {
         "model": "Aquos Wish 2"
       },
       {
+        "regex": "(?:SH-53D)(?:[);/ ]|$)",
+        "model": "Aquos Wish 3"
+      },
+      {
         "regex": "SH-M04(?:[);/ ]|$)",
         "model": "Aquos SH-M04"
       },
@@ -45564,7 +45704,7 @@ module.exports = {
         "model": "Aquos Sense 4 Plus"
       },
       {
-        "regex": "(?:SH-54B|SHG05|SH-R?M19)(?:[);/ ]|$)",
+        "regex": "(?:SH-54B|SHG05|SH-R?M19|SH-M19s-y)(?:[);/ ]|$)",
         "model": "Aquos Sense 6"
       },
       {
@@ -46735,7 +46875,7 @@ module.exports = {
     ]
   },
   "Teclast": {
-    "regex": "Teclast|P80_G3M2|TLA00[12]|TLA016|X98 Air III|M20_4G|X98 Air II\\(HG5N\\)|Tbook|X80 Power\\(B2N4\\)|P80H\\(D1C2\\)|T20\\(T2E1\\)|(?:[TM]40 Plus|T30|P80[XHT]|P20HD|P10[_ ]HD|M40|P10SE?|M30_Pro|M40SE|P8[05]|P25(?:_T)?|P85T|P[23]0S|P[34]0HD|T40S)_(?:ROW|EEA|RUS|W_EEA)|P20HD\\(N6H5\\)|T40 Plus\\(M7T3\\)|T40Pro|T40 PRO(?:\\(T1A1\\))?|T10\\(E3C[56]\\)|P10S\\(N4H5\\)|98\\(M1E[45789]\\)|98\\(M3E3\\)|X10 \\(M1D3\\)|M89 Pro|M40\\(N9H[123]\\)|P20HD\\(N6H7\\)|M40SE\\(M5T3\\)|M50S|M40(?:SE?|Pro|Air)_(?:ROW|EEA|RUS)|M50Plus|[MT]50Mini|P30Air|P10HD_Lite|(?:T60Ai|P50Ai|P50_[BT]|T50|M40_?Plus|M40 Pro|T50Pro_W|TLG01|P26T|P40S|P50|P25T|T70|T50Max|T50HD|T60Plus|T65Max)_(?:ROW|EEA)|M50[-_]ROW|M40Plus_EEA|P40HD_T_(?:EEA|ROW)|T40_Plus_RUS|T40 Air|P50_B|P50Case|(?: (?:T4[05]HD|P30T|P80X|M50HD)|98 \\(M1E3\\))|(?:Android 13(?:[\\d.]*);(?: [\\w-]+;)? (?:M50 Pro|T[56]0)|T50HD)(?:[);/ ]|$)",
+    "regex": "Teclast|P80_G3M2|TLA00[12]|TLA016|X98 Air III|M20_4G|X98 Air II\\(HG5N\\)|Tbook|X80 Power\\(B2N4\\)|P80H\\(D1C2\\)|T20\\(T2E1\\)|(?:[TM]40 Plus|T30|P80[XHT]|P20HD|P10[_ ]HD|M40|P10SE?|M30_Pro|M40SE|P8[05]|P25(?:_T)?|P85T|P[23]0S|P[34]0HD|T40S)_(?:ROW|EEA|RUS|W_EEA)|P20HD\\(N6H5\\)|T40 Plus\\(M7T3\\)|T40Pro|T40 PRO(?:\\(T1A1\\))?|T10\\(E3C[56]\\)|P10S\\(N4H5\\)|98\\(M1E[45789]\\)|98\\(M3E3\\)|X10 \\(M1D3\\)|M89 Pro|M40\\(N9H[123]\\)|P20HD\\(N6H7\\)|M40SE\\(M5T3\\)|M50S|M40(?:SE?|Pro|Air)_(?:ROW|EEA|RUS)|M50Plus|[MT]50Mini|P30Air|P10HD_Lite|(?:T60Ai|P50Ai|P50_[BT]|T50|M40_?Plus|M40 Pro|T50Pro_W|TLG01|P26T|P40S|P50|P25T|T70|T50Max|T50HD|T60Plus|T65Max|ArtPadPro)_(?:ROW|EEA)|M50[-_]ROW|M40Plus_EEA|P40HD_T_(?:EEA|ROW)|T40_Plus_RUS|T40 Air|P50_B|P50Case|(?: (?:T4[05]HD|P30T|P80X|M50HD)|98 \\(M1E3\\))|(?:Android 13(?:[\\d.]*);(?: [\\w-]+;)? (?:M50 Pro|T[56]0)|T50HD)(?:[);/ ]|$)",
     "device": "tablet",
     "models": [
       {
@@ -46897,6 +47037,10 @@ module.exports = {
       {
         "regex": "P80H\\(D1C2\\)",
         "model": "P80h"
+      },
+      {
+        "regex": "ArtPadPro",
+        "model": "Art Pad Pro"
       },
       {
         "regex": "(P80[Xh]|P30HD|T30|M40|P25(?:_T)?|P10SE|T40S|P[24]0S|T[56]0|TLG01|P26T|P85T|P30T|T50HD|P25T|M50S?|T70)(?:[_ -](?:ROW|EEA))?(?:[);/ ]|$)",
@@ -54712,13 +54856,23 @@ module.exports = {
     ]
   },
   "Nubia": {
-    "regex": "Nubia[ _]|(?:NX(?:302J|403A|404H|406E|40[X2]|503A|50[5678]J|51[0123]J|521J|523J_V1|529Jq?|5[345]1J|5[48]9J|569[HJ]|5[67]3J|575J|59[157]J|60[1689]J|61[12679]J|62[79]J|65[19]J|6[126]9J|66[67]J|679[JS]|70[129]J|71[123]J|72[1459]J|73[367]J|769J|779J|709S|907J|789J)|NP0[13]J|Z235[12]N|Z6255CA|Z2353|Z246[45]N)(?:[);/ ]|$)",
+    "regex": "Nubia[ _]|(?:NX(?:302J|403A|404H|406E|40[X2]|503A|50[5678]J|51[0123]J|521J|523J_V1|529Jq?|5[345]1J|5[48]9J|569[HJ]|5[67]3J|575J|59[157]J|60[1689]J|61[12679]J|62[79]J|65[19]J|6[126]9J|66[67]J|679[JS]|70[129]J|71[123]J|72[1459]J|73[367]J|769J|779J|709S|907J|789J)|NP0[13]J|Z235[12]N|Z6255CA|Z2353|Z246[45]N|NT01|NP05J)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
         "regex": "NP0[13]J",
         "device": "tablet",
         "model": "Red Magic Gaming Pad"
+      },
+      {
+        "regex": "NP05J",
+        "device": "tablet",
+        "model": "Red Magic Astra"
+      },
+      {
+        "regex": "NT01(?:[);/ ]|$)",
+        "device": "tablet",
+        "model": "Pad Pro 10.9\" WiFi"
       },
       {
         "regex": "Z6255CA",
@@ -54869,11 +55023,11 @@ module.exports = {
         "model": "Z9"
       },
       {
-        "regex": "(NX5[12]1J|Nubia Z9 mini)",
+        "regex": "(?:NX5[12]1J|Nubia Z9 mini)",
         "model": "Z9 Mini"
       },
       {
-        "regex": "(NX510J|Nubia Z9 Max)",
+        "regex": "(?:NX510J|Nubia Z9 Max)",
         "model": "Z9 Max"
       },
       {
@@ -57714,12 +57868,20 @@ module.exports = {
     ]
   },
   "Chuwi": {
-    "regex": "(?:CW-(Hi8-super|Hi12|V99i?|V17HD3G|VX8-3G|V88-QUAD|V9-DUAL|V88S|Vi[78]|[HV]i10 (?:pro|plus))|Hi10 (?:Pro|plus)|HiPad[ -](?:X|X?Pro|Air|Max)|HiPadX|HiBox-hero|HiBook(?: pro)?|Hi(?:[89]|10)[ _]?(?:Air|[_ ]?X?Pro(?:_PAD)?)|HiPad ?Plus|Hi8SE|Vi8 plus|Vi10(?: ?Pro)?|Surpad|HiPadPro)(?:[);/ ]|$)",
+    "regex": "(?:CW-(Hi8-super|Hi12|V99i?|V17HD3G|VX8-3G|V88-QUAD|V9-DUAL|V88S|Vi[78]|[HV]i10 (?:pro|plus))|Hi10 (?:Pro|plus)|HiPad[ -](?:X|X?Pro|Air|Max)|HiPadX|HiBox-hero|HiBook(?: pro)?|Hi(?:[89]|10)[ _]?(?:Air|[_ ]?X?Pro(?:_PAD)?)|HiPad ?Plus|Hi8SE|Vi8 plus|Vi10(?: ?Pro)?|AuPad|Surpad|HiPadPro)(?:[);/ ]|$)",
     "device": "tablet",
     "models": [
       {
-        "regex": "(CW-Hi8-super)(?:[);/ ]|$)",
+        "regex": "(?:CW-Hi8-super)(?:[);/ ]|$)",
         "model": "Hi8"
+      },
+      {
+        "regex": "AuPadMini(?:[);/ ]|$)",
+        "model": "AuPad Mini"
+      },
+      {
+        "regex": "AuPad(?:[);/ ]|$)",
+        "model": "AuPad"
       },
       {
         "regex": "(?:CW-)?(Vi10|Hi10|Vi8) plus(?:[);/ ]|$)",
@@ -67476,7 +67638,13 @@ module.exports = {
   "Polestar": {
     "regex": "Polestar(?:[);/ ]|$)",
     "device": "car browser",
-    "model": ""
+    "models": [
+      {
+        "regex": "Polestar Phone",
+        "device": "smartphone",
+        "model": "Phone"
+      }
+    ]
   },
   "Porsche": {
     "regex": "Porsche Rear Seat Entertainment",
@@ -68149,12 +68317,20 @@ module.exports = {
     "model": "Nitro Pro"
   },
   "OMIX": {
-    "regex": "OMIX[ _.]|(?:X600 NFC|Android 1[12](?:[\\d.]*);(?: [\\w-]+;)? X[467]00)(?:[);/ ]|$)",
+    "regex": "OMIX[ _.]|(?:X600 NFC|O1 Neo|O1 Icon|Android 1[12](?:[\\d.]*);(?: [\\w-]+;)? X[467]00)(?:[);/ ]|$)",
     "device": "smartphone",
     "models": [
       {
         "regex": "X600 NFC",
         "model": "X600 NFC"
+      },
+      {
+        "regex": "O1 Neo",
+        "model": "O1 Neo"
+      },
+      {
+        "regex": "O1 Icon",
+        "model": "O1 Icon"
       },
       {
         "regex": "X(\\d*)",
@@ -72621,7 +72797,7 @@ module.exports = {
     "model": "$1"
   },
   "KENSHI": {
-    "regex": "(?:Android 1[34](?:[\\d.]*);(?: [\\w-]+;)? (?:E1[01278]|E28|E38|H3[48]|H2[14]|H19|H1[14]|H44)|Pad Lite E[45]8|Armor_C1w|Armor C1 Max|Armor (?:P1(?:[sw]| Pro)|I2w|V1s|H[12]s|I1 Slim)|Kenshi[_ ]K10|Pad Pro E11[01])(?:[);/ ]|$)",
+    "regex": "(?:Android 1[34](?:[\\d.]*);(?: [\\w-]+;)? (?:E1[01278]|E28|E38|H3[48]|H2[14]|H19|H1[14]|H44)|Pad Lite E[45]8|Armor_C1w|Armor C1 Max|Armor (?:P1(?:[sw]| Pro)|I2w|V1s|H[12]s|I1 Slim)|Kenshi[_ ]K10|Pad Pro (?:E11[012]|E90))(?:[);/ ]|$)",
     "device": "tablet",
     "models": [
       {
@@ -72643,7 +72819,7 @@ module.exports = {
         "model": "Pad Lite $1"
       },
       {
-        "regex": "Pad Pro (E11[01])",
+        "regex": "Pad Pro (E11[012]|E90)",
         "model": "Pad Pro $1"
       },
       {
@@ -73826,6 +74002,16 @@ module.exports = {
     "regex": "GD (S1 ATV)(?:[);/ ]|$)",
     "device": "tv",
     "model": "$1"
+  },
+  "G-Tab": {
+    "regex": "(?:PAD10_PRO)(?:[);/ ]|$)",
+    "device": "tablet",
+    "model": "Pad 10 Pro"
+  },
+  "SUAAT": {
+    "regex": "(?:S3_U_EEA)(?:[);/ ]|$)",
+    "device": "tablet",
+    "model": "S3"
   },
   "Unknown": {
     "regex": "Plasma Mobile|WebTV/(\\d+\\.\\d+)|PC; OpenHarmony|TV Bro| BOX|BOX | BOX |roku|YouView|DirectFB|avdn/|wired|wireless|AndroidTV|cordova-amazon-fireos|wv-atv|SDSTB|SDOTT|(?:M10 Ultra|FO-R15|TVBOX|Smart[ _-]?TV|SmartATV|M8S\\+ 4K|PCBox|rk(?:3128|322x|3368)(?:[_-]box)?|H10 PLAY|Smart AIO TV|TVBOX_L|L-BOX|TVBOX-5G|mips.+(?:Opera TV|wireless|wired)|smartbox|TV BOX|BOX TV|I12Pro Max|(?:audi_)?ks1280x480|AT&T TV|RealtekATV|AOSP on r33a0|tv001 on rtd289x|hx322x_box|X98_S500|8K3528-T|MX10|V88|H8S|X92|AI PONT|tv\\.plus|WayDroid x86_64 Device|MediaBox|Cloud Phone|HK1RBOX-X4)(?:[);/ ]|$)",

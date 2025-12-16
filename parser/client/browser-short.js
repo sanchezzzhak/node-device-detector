@@ -402,7 +402,7 @@ module.exports = {
   'N2': 'Norton Private Browser',
   'NX': 'Nox Browser',
   'N1': 'NOMone VR Browser',
-  'N6': 'NOOK Browser',
+  'N6': 'Nook Browser',
   'NE': 'NetSurf',
   'NF': 'NetFront',
   'NL': 'NetFront Life',

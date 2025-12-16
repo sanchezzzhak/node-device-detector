@@ -16,6 +16,10 @@
 - regex: 'WhatsApp/.+ Device/(?:(?:[^-]+)-)?(.+)$'
   name: '$1'
 
+# Telegram
+- regex: 'Telegram-?Android/[\d.]+ \(([^;]+); Android '
+  name: '$1'
+
 # Facebook
 - regex: '(?:like Mac.+FBDV|FBMD)/([^;]+);'
   name: '$1'

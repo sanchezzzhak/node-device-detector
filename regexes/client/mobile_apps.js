@@ -2990,6 +2990,11 @@ module.exports = [
     "version": ""
   },
   {
+    "regex": "Hulu/([\\d.]+)",
+    "name": "Hulu",
+    "version": "$1"
+  },
+  {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",
     "name": "$1",
     "version": "$2"

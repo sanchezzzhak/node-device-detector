@@ -441,3 +441,7 @@
   user_agent: LiSTNR.au.com.podcastoneaustralia/3.24.1 iPhone12,1 iOS/16.5.1 CFNetwork/1408.0.4 Darwin/22.5.0
   alias:
     name: iPhone12,1
+-
+  user_agent: Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.171 Mobile Safari/537.36 Telegram-Android/12.2.10 (Realme RMX3081; Android 12; SDK 31; AVERAGE)
+  alias:
+    name: RMX3081

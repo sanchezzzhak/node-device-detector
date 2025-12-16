@@ -495,7 +495,53 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "Fire OS(?:/(\\d+[.\\d]*))?",
+    "regex": "Smartisan[_ ]|(SM(?:70[15]|801|919)|YQ60[1357]|DT2002C|DE106|DT190[12]A|O[CE]106|OC105)[ /;\\)]",
+    "name": "Smartisan OS",
+    "versions": [
+      {
+        "regex": "SM70[15]",
+        "version": "1.5"
+      },
+      {
+        "regex": "SM801",
+        "version": "2.5"
+      },
+      {
+        "regex": "SM919",
+        "version": "3.0"
+      },
+      {
+        "regex": "YQ60[1357]",
+        "version": "2.0"
+      },
+      {
+        "regex": "DE106[ /;\\)]",
+        "version": "6.0"
+      },
+      {
+        "regex": "OE106[ /;\\)]",
+        "version": "6.0"
+      },
+      {
+        "regex": "OC10[56][ /;\\)]",
+        "version": "6.0"
+      },
+      {
+        "regex": "DT2002C[ /;\\)]",
+        "version": "6.0"
+      },
+      {
+        "regex": "DT190[12]A[ /;\\)]",
+        "version": "6.0"
+      },
+      {
+        "regex": "Smartisan U3 Pro",
+        "version": "3.0"
+      }
+    ]
+  },
+  {
+    "regex": "Fire OS(?:[ /](\\d+[.\\d]*))?",
     "name": "Fire OS",
     "version": "$1"
   },
@@ -1484,12 +1530,24 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|NetworkingExtension).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
+    "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|com\\.apple\\.WebKit\\.Networking|NetworkingExtension).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
     "name": "iOS",
     "versions": [
       {
+        "regex": "Darwin/25\\.2\\.0",
+        "version": "26.2"
+      },
+      {
+        "regex": "Darwin/25\\.1\\.0",
+        "version": "26.1"
+      },
+      {
         "regex": "Darwin/25\\.0\\.0",
         "version": "26"
+      },
+      {
+        "regex": "Darwin/24\\.6\\.0",
+        "version": "18.6"
       },
       {
         "regex": "Darwin/24\\.5\\.0",
@@ -1907,12 +1965,24 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:NetworkingExtension|Safari)",
+    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension|Safari)",
     "name": "Mac",
     "versions": [
       {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.2\\.0",
+        "version": "26.2"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.1\\.0",
+        "version": "26.1"
+      },
+      {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.0\\.0",
         "version": "26"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.6\\.0",
+        "version": "15.6"
       },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.5\\.0",
@@ -2327,7 +2397,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Darwin|Macintosh|Mac[ _]PowerPC|PPC|iMac|MacBook|.*macOS|AppleExchangeWebServices|com\\.apple\\.trustd|Sonos/.+\\(MDCR_|WhatsApp/.*N$",
+    "regex": "Darwin|Macintosh|Mac[ _]PowerPC|PPC|iMac|MacBook|.*macOS|AppleExchangeWebServices|com\\.apple\\.trustd|Sonos/.+\\(MDCR_|WhatsApp/.*N$|nook browser",
     "name": "Mac",
     "version": ""
   },

@@ -62320,6 +62320,108 @@ module.exports = {
   "moto g play - 2023": [
     "MR"
   ],
+  "polestar phone": [
+    "7O"
+  ],
+  "sh-53d": [
+    "SH"
+  ],
+  "bv4800 se": [
+    "B2"
+  ],
+  "bv6200 plus": [
+    "B2"
+  ],
+  "cph2755": [
+    "OP"
+  ],
+  "cph2739": [
+    "OP"
+  ],
+  "cph2737": [
+    "OP"
+  ],
+  "cph2727": [
+    "OP"
+  ],
+  "cph2719": [
+    "ON",
+    "OP"
+  ],
+  "cph2717": [
+    "ON",
+    "OP"
+  ],
+  "cph2709": [
+    "ON",
+    "OP"
+  ],
+  "fort 1": [
+    "B2"
+  ],
+  "kingkong es 3": [
+    "CB"
+  ],
+  "o1 neo": [
+    "QQ"
+  ],
+  "o1 icon": [
+    "QQ"
+  ],
+  "plm110": [
+    "OP"
+  ],
+  "sm-a366n": [
+    "SA"
+  ],
+  "sm-e066b": [
+    "SA"
+  ],
+  "sm-m156s": [
+    "SA"
+  ],
+  "sog12": [
+    "SO"
+  ],
+  "sm-m145f": [
+    "SA"
+  ],
+  "sm-m366k": [
+    "SA"
+  ],
+  "sm-s166v": [
+    "SA"
+  ],
+  "sm-a566s": [
+    "SA"
+  ],
+  "a301so": [
+    "SO"
+  ],
+  "f-51c": [
+    "FU"
+  ],
+  "sh-m19s-y": [
+    "SH"
+  ],
+  "sm-s721n": [
+    "SA"
+  ],
+  "sm-s721q": [
+    "SA"
+  ],
+  "sm-s721w": [
+    "SA"
+  ],
+  "sm-a5660": [
+    "SA"
+  ],
+  "ppg-an00": [
+    "HNR"
+  ],
+  "sm-a065f": [
+    "SA"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -77336,6 +77438,69 @@ module.exports = {
   ],
   "lomonosov3": [
     "3O"
+  ],
+  "pad pro e90": [
+    "KHI"
+  ],
+  "pad pro e112": [
+    "KHI"
+  ],
+  "pad lite e48": [
+    "KHI"
+  ],
+  "pad10_pro": [
+    "GTB"
+  ],
+  "xiaoxin pad 2022": [
+    "LE"
+  ],
+  "artpadpro_row": [
+    "T7"
+  ],
+  "aupad": [
+    "1C"
+  ],
+  "mega 3": [
+    "B2"
+  ],
+  "nt01": [
+    "57"
+  ],
+  "np05j": [
+    "57"
+  ],
+  "pad h10 pen": [
+    "R4"
+  ],
+  "s3_u_eea": [
+    "SUA"
+  ],
+  "sm-p625": [
+    "SA"
+  ],
+  "a301lv": [
+    "LE"
+  ],
+  "pa2573": [
+    "VV"
+  ],
+  "pa2511": [
+    "VV"
+  ],
+  "pa2455": [
+    "VV"
+  ],
+  "opd2481": [
+    "ON"
+  ],
+  "opd2480": [
+    "ON"
+  ],
+  "opd2415": [
+    "ON"
+  ],
+  "opd2405": [
+    "ON"
   ],
   "jdn-al00": [
     "HU"

@@ -2,7 +2,11 @@ const readline = require('readline');
 const DeviceDetector = require('../index');
 const YAML = require('js-yaml');
 
-const detector = new DeviceDetector;
+const detector = new DeviceDetector({
+  deviceIndexes: true,
+  osIndexes: true,
+  clientIndexes: true,
+});
 const formats = ['json', 'yml'];
 const format =
   process.argv[3] !== void 0 && formats.indexOf(process.argv[3]) !== -1
@@ -12,6 +16,7 @@ const format =
 const print = process.argv[4] || 'no';
 
 function parse(useragent) {
+  let time = process.hrtime();
   let result = {user_agent: useragent};
   let botResult = detector.parseBot(useragent);
   if (botResult && botResult.name) {
@@ -19,7 +24,9 @@ function parse(useragent) {
   } else {
     result = Object.assign(result, detector.detect(useragent));
   }
-  
+
+  result['time'] = (process.hrtime(time)[1] / 1e6).toFixed(3);
+
   if (print === 'fixture') {
     if (result.client) {
       let osFamily = result.os.family;

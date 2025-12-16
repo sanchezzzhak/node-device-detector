@@ -197,8 +197,11 @@ module.exports = [
   },
   {
     "regex": "nook browser(?:/(\\d+[.\\d]+))?",
-    "name": "NOOK Browser",
-    "version": "$1"
+    "name": "Nook Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
   },
   {
     "regex": "xChaos_Arachne/5\\.(\\d+\\.[.\\d]+)",
@@ -2893,10 +2896,7 @@ module.exports = [
   {
     "regex": "MobileIron(?:/(\\d+[.\\d]+))?",
     "name": "Iron Mobile",
-    "version": "$1",
-    "engine": {
-      "default": "Blink"
-    }
+    "version": "$1"
   },
   {
     "regex": "Chrome(?:/(\\d+\\.[.\\d]+) )?.*Iron",
@@ -3334,7 +3334,7 @@ module.exports = [
     }
   },
   {
-    "regex": "iPhone;.* like Mac OS X.* Chrome(?:/(\\d+[.\\d]+))? Mobile/\\w{5,7} Safari/",
+    "regex": "(?:iPad|iPhone);.* like Mac OS X.* Chrome(?:/(\\d+[.\\d]+))? Mobile/\\w{5,7} Safari/",
     "name": "Chrome Mobile iOS",
     "version": "$1",
     "engine": {
@@ -3978,7 +3978,7 @@ module.exports = [
     }
   },
   {
-    "regex": "NetworkingExtension/(\\d+[.\\d]+).+ CFNetwork",
+    "regex": "(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension)/(\\d+[.\\d]+).+ CFNetwork",
     "name": "Safari",
     "version": "$1",
     "engine": {

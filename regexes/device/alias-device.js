@@ -20,6 +20,10 @@ module.exports = [
     "name": "$1"
   },
   {
+    "regex": "Telegram-?Android/[\\d.]+ \\(([^;]+); Android ",
+    "name": "$1"
+  },
+  {
     "regex": "(?:like Mac.+FBDV|FBMD)/([^;]+);",
     "name": "$1"
   },
