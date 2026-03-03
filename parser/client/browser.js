@@ -21,7 +21,7 @@ const CLIENTHINT_MAPPING = {
   'Vewd Browser': ['Vewd Core'],
   'Yandex Browser': ['YaSearchBrowser'],
 };
-
+// If client hints report the following browsers, we use the version from useragent
 const BROWSERHINT_SKIP_VERSION = ['A0', 'AL', 'HP', 'JR', 'MU', 'OM', 'OP', 'VR'];
 
 const compareBrandForClientHints = (brand) => {
@@ -253,12 +253,13 @@ class Browser extends ClientAbstractParser {
       const brands = ArrayPath.get(clientHints, 'client.brands', []);
       for (let brandItem of brands) {
         let brand = compareBrandForClientHints(brandItem.brand);
+
         for (let browserName in this.getCollectionBrowsers()) {
 
           let shortName = this.getCollectionBrowsers()[browserName];
-          let found = helper.fuzzyCompare(`${brand}`, browserName)
+          let found = helper.fuzzyCompare(brand, browserName)
             || helper.fuzzyCompare(`${brand} Browser`, browserName)
-            || helper.fuzzyCompare(`${brand}`, browserName + ' Browser');
+            || helper.fuzzyCompare(brand, browserName + ' Browser');
 
           if (found) {
             name = String(browserName);

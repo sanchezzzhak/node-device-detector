@@ -118,11 +118,11 @@ module.exports = {
     ]
   },
   "AWOX": {
-    "regex": "LGE/XianYou/AWOX",
+    "regex": "AWOX[;,)]",
     "device": "tv",
     "models": [
       {
-        "regex": "LGE/XianYou/AWOX; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/AWOX; ([a-z0-9]+);",
         "model": "$1"
       }
     ]
@@ -161,6 +161,10 @@ module.exports = {
     "regex": "Botech[;,)]",
     "device": "tv",
     "models": [
+      {
+        "regex": "LGE/[^/]+/BOTECH; ([a-z0-9]+);",
+        "model": "$1"
+      },
       {
         "regex": "(ATV R[12])",
         "model": "$1"
@@ -297,7 +301,7 @@ module.exports = {
       }
     ]
   },
-  "DMM": {
+  "Dream Multimedia": {
     "regex": "DMM",
     "device": "tv",
     "model": "Dreambox"
@@ -625,7 +629,7 @@ module.exports = {
     "device": "peripheral",
     "model": ""
   },
-  "Hotel": {
+  "Hotel TV Company": {
     "regex": "HOTEL[;,)]",
     "device": "tv",
     "model": ""
@@ -679,6 +683,10 @@ module.exports = {
     "device": "tv",
     "models": [
       {
+        "regex": "LGE/[^/]+/HYUNDAI; ([a-z0-9]+);",
+        "model": "$1"
+      },
+      {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "model": "Smart TV ($1)"
       }
@@ -720,6 +728,10 @@ module.exports = {
       {
         "regex": "AFTSO001",
         "model": "4K (2019)"
+      },
+      {
+        "regex": "LGE/[^/]+/JVC; ([a-z0-9-]+);",
+        "model": "$1"
       },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
@@ -802,6 +814,16 @@ module.exports = {
       }
     ]
   },
+  "All Star": {
+    "regex": "ALLSTAR[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/ALLSTAR; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
   "Aiwa": {
     "regex": "LGE/SQY/RCA",
     "device": "tv",
@@ -813,22 +835,26 @@ module.exports = {
     ]
   },
   "AXEN": {
-    "regex": "LGE/ATMACA/AXEN",
+    "regex": "AXEN[;,)]",
     "device": "tv",
     "models": [
       {
-        "regex": "LGE/ATMACA/AXEN; ([a-z0-9]+)-",
+        "regex": "LGE/[^/]+/AXEN; ([a-z0-9]+)-",
         "model": "$1"
       }
     ]
   },
   "Dyon": {
-    "regex": "LGE/KONKA/DYON",
+    "regex": "DYON[;,)]",
     "device": "tv",
     "models": [
       {
         "regex": "SMART-32-X-EOS",
         "model": "Smart 32 X-EOS"
+      },
+      {
+        "regex": "LGE/[^/]+/DYON; ([a-z0-9]+)",
+        "model": "$1"
       }
     ]
   },
@@ -853,41 +879,85 @@ module.exports = {
     ]
   },
   "ONVO": {
-    "regex": "(?:SILICONPLAYER|XianYou)/ONVO",
+    "regex": "ONVO[;,)]",
     "device": "tv",
     "models": [
       {
-        "regex": "(?:SILICONPLAYER|XianYou)/ONVO; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/ONVO; ([a-z0-9]+);",
         "model": "$1"
       }
     ]
   },
   "DIJITSU": {
-    "regex": "LGE/SILICONPLAYER/DIJITSU",
+    "regex": "DIJITSU[;,)]",
     "device": "tv",
     "models": [
       {
-        "regex": "LGE/SILICONPLAYER/DIJITSU; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/DIJITSU; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "FOX": {
+    "regex": "FOX[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/FOX; ([a-z0-9-]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "Inno Hit": {
+    "regex": "INNOHIT[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/INNOHIT; ([a-z0-9-]+);",
         "model": "$1"
       }
     ]
   },
   "simfer": {
-    "regex": "LGE/WALTON/SIMFER",
+    "regex": "SIMFER[;,)]",
     "device": "tv",
     "models": [
       {
-        "regex": "LGE/WALTON/SIMFER; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/SIMFER; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "Smart Tech": {
+    "regex": "SMARTTECH[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/SMARTTECH; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "Stilevs": {
+    "regex": "STILEVS[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/STILEVS; ([a-z0-9]+);",
         "model": "$1"
       }
     ]
   },
   "Sunny": {
-    "regex": "(?:ATMACA|XianYou)/SUNNY",
+    "regex": "SUNNY[;,)]|SN55FMN243-0246",
     "device": "tv",
     "models": [
       {
-        "regex": "(?:ATMACA|XianYou)/SUNNY; ([a-z0-9]+)-",
+        "regex": "(SN55FMN243-0246)",
+        "model": "$1"
+      },
+      {
+        "regex": "(?:ATMACA|XianYou)/SUNNY; (?!\\d{2}AT\\d{3})([a-z0-9-]+);",
         "model": "$1"
       },
       {
@@ -911,17 +981,77 @@ module.exports = {
     ]
   },
   "Skytech": {
-    "regex": "LGE/WALTON/SKYTECH",
+    "regex": "SKYTECH[;,)]",
     "device": "tv",
     "models": [
       {
-        "regex": "LGE/WALTON/SKYTECH; ([a-z0-9-]+);",
+        "regex": "LGE/[^/]+/SKYTECH; ([a-z0-9-]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "Ssmart": {
+    "regex": "SSMART[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/SSMART; ([a-z0-9-]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "SUNGATE": {
+    "regex": "SUNGATE[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/SUNGATE; ([a-z0-9-]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "TAUBE": {
+    "regex": "TAUBE[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/TAUBE; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "Teknosa": {
+    "regex": "PREO[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/PREO; ([a-z0-9-]+);",
+        "model": "Preo $1"
+      }
+    ]
+  },
+  "Weston": {
+    "regex": "WESTON[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/WESTON; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
+  "Zimmer": {
+    "regex": "ZIMMER[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/ZIMMER; ([a-z0-9-]+);",
         "model": "$1"
       }
     ]
   },
   "LG": {
-    "regex": "LGE ?;",
+    "regex": "LGE ?;|43UN68006LA",
     "device": "tv",
     "models": [
       {
@@ -931,6 +1061,10 @@ module.exports = {
       {
         "regex": "43LJ614V-ZA",
         "model": "43LJ614V-ZA"
+      },
+      {
+        "regex": "43UN68006LA",
+        "model": "43UN68006LA"
       },
       {
         "regex": "55SK850V-ZA",
@@ -1090,6 +1224,16 @@ module.exports = {
       }
     ]
   },
+  "MIIA": {
+    "regex": "MIIA[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/MIIA; (MT[a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
+  },
   "Miray": {
     "regex": "MIRAY",
     "device": "tv",
@@ -1155,10 +1299,14 @@ module.exports = {
       }
     ]
   },
-  "NEXT": {
+  "Next & NextStar": {
     "regex": "NEXT[;,)]",
     "device": "tv",
     "models": [
+      {
+        "regex": "LGE/[^/]+/NEXT; ([a-z0-9-]+);",
+        "model": "$1"
+      },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "model": "Smart TV ($1)"
@@ -1276,7 +1424,12 @@ module.exports = {
   "PEAQ": {
     "regex": "PEAQ",
     "device": "tv",
-    "model": ""
+    "models": [
+      {
+        "regex": "LGE/[^/]+/PEAQ; ([a-z0-9-]+);",
+        "model": "$1"
+      }
+    ]
   },
   "TCL SCBC": {
     "regex": "SCBC[;,)]|_TV_[A-Z0-9_]+_TCL_SCBC",
@@ -1319,6 +1472,16 @@ module.exports = {
     "regex": "POLAROID[;,)]",
     "device": "tv",
     "model": ""
+  },
+  "PREMIER": {
+    "regex": "PREMIER[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/PREMIER; ([a-z0-9]+);",
+        "model": "$1"
+      }
+    ]
   },
   "PROFiLO": {
     "regex": "PROFILO[;,)]",
@@ -1546,6 +1709,16 @@ module.exports = {
       },
       {
         "regex": "([A-Z]{2}[0-9]{2}|ZAPPIX)",
+        "model": "$1"
+      }
+    ]
+  },
+  "Schneider": {
+    "regex": "SCHNEIDER[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LGE/[^/]+/SCHNEIDER; ([a-z0-9-]+);",
         "model": "$1"
       }
     ]
@@ -1862,7 +2035,7 @@ module.exports = {
       }
     ]
   },
-  "VOX": {
+  "VOX Electronics": {
     "regex": "VOX[;,)]",
     "device": "tv",
     "models": [
@@ -1975,9 +2148,13 @@ module.exports = {
     ]
   },
   "Unknown": {
-    "regex": "OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+    "regex": "OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})|LGE/[^/]+/[^/]+;",
     "device": "tv",
     "models": [
+      {
+        "regex": "LGE/[^/]+/[^/]+; ([a-z0-9-]+);",
+        "model": "$1"
+      },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "model": "Smart TV ($1)"

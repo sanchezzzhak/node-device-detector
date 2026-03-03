@@ -1,5 +1,55 @@
 module.exports = [
   {
+    "regex": "NuttX(?:/(\\d+[.\\d]+))?",
+    "name": "NuttX",
+    "version": "$1"
+  },
+  {
+    "regex": "Contiki/(\\d+[.\\d]+)",
+    "name": "Contiki",
+    "version": "$1"
+  },
+  {
+    "regex": "Minix (\\d+[.\\d]+)",
+    "name": "MINIX",
+    "version": "$1"
+  },
+  {
+    "regex": "Plan 9 (\\d+[.\\d]+)",
+    "name": "Plan 9",
+    "version": "$1"
+  },
+  {
+    "regex": "Linpus/(\\d+[.\\d]+)",
+    "name": "Linpus",
+    "version": "$1"
+  },
+  {
+    "regex": "ArcaOS(?: (\\d+[.\\d]+))?",
+    "name": "ArcaOS",
+    "version": "$1"
+  },
+  {
+    "regex": "GhostBSD/(\\d+[.\\d]+)",
+    "name": "GhostBSD",
+    "version": "$1"
+  },
+  {
+    "regex": "elementary OS/(\\d+[.\\d]+)",
+    "name": "elementary OS",
+    "version": "$1"
+  },
+  {
+    "regex": "SpreadTrum",
+    "name": "Mocor OS",
+    "version": ""
+  },
+  {
+    "regex": "TitanOS/(\\d+[.\\d]+)",
+    "name": "Titan OS",
+    "version": "$1"
+  },
+  {
     "regex": "KolibriOS",
     "name": "KolibriOS",
     "version": ""
@@ -85,7 +135,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "OpenVMS V(\\d+[.\\d]+)",
+    "regex": "OpenVMS(?: V(\\d+[.\\d]+))?",
     "name": "OpenVMS",
     "version": "$1"
   },
@@ -390,12 +440,17 @@ module.exports = [
     "version": ""
   },
   {
+    "regex": "SmartHub; ?SMART-TV|HbbTV/.+Maple|Samsung;SmartTV201[2-5]",
+    "name": "Orsay",
+    "version": ""
+  },
+  {
     "regex": "Tizen[ /]?(\\d+[.\\d]+)?",
     "name": "Tizen",
     "version": "$1"
   },
   {
-    "regex": "Maple (?!III)(?:\\d+[.\\d]+)|Maple_?\\d{4}|HbbTV/.+Samsung",
+    "regex": "HbbTV/.+Samsung",
     "name": "Tizen",
     "version": ""
   },
@@ -546,15 +601,19 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:Andr[o0]id (\\d([\\d.])*);? |Amazon;|smarttv_)AFT|AEO[ACBHKT]|KF[ADFGJKMORSTQ]|.*FIRETVSTICK2018",
+    "regex": "(?:Andr[o0]id (\\d([\\d.])*);? |Amazon;|smarttv_)AFT|AEO[ACBHKT]| KF[ADFGJKMORSTQ]|.+FIRETVSTICK2018",
     "name": "Fire OS",
     "versions": [
       {
-        "regex": "Andr[o0]id 1[01].+ (?:AFT|KF[ADFGJKMORSTQ])",
+        "regex": "Andr[o0]id 1[234]",
+        "version": "14"
+      },
+      {
+        "regex": "Andr[o0]id 1[01]",
         "version": "8"
       },
       {
-        "regex": "Andr[o0]id 9.+ (?:AEO[AHT]|AFT|KF[ADFGJKMORSTQ])|AFTSO001",
+        "regex": "Andr[o0]id 9|AFTSO001",
         "version": "7"
       },
       {
@@ -980,6 +1039,16 @@ module.exports = [
     "version": "$1.$2"
   },
   {
+    "regex": "MRE\\\\\\\\(\\d+[.\\d]+)",
+    "name": "MRE",
+    "version": "$1"
+  },
+  {
+    "regex": ".+MRE|MAUI Runtime",
+    "name": "MRE",
+    "version": ""
+  },
+  {
     "regex": "Linspire",
     "name": "Linspire",
     "version": ""
@@ -1000,7 +1069,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "moonOS/(\\d+.[\\d.]+)",
+    "regex": "moonOS/(\\d+[.\\d]+)",
     "name": "moonOS",
     "version": "$1"
   },
@@ -1010,7 +1079,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "Pardus/(\\d+.[\\d.]+)",
+    "regex": "Pardus/(\\d+[.\\d]+)",
     "name": "Pardus",
     "version": "$1"
   },
@@ -1025,7 +1094,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "RokuOS/.+RokuOS (\\d+.[\\d.]+)",
+    "regex": "RokuOS/.+RokuOS (\\d+[.\\d]+)",
     "name": "Roku OS",
     "version": "$1"
   },
@@ -1040,7 +1109,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "RokuBrowser/.+\\(TV-([a-z0-9]+)-(\\d+.[\\d.]+)\\)",
+    "regex": "RokuBrowser/.+\\(TV-([a-z0-9]+)-(\\d+[.\\d]+)\\)",
     "name": "Roku OS",
     "version": "$2"
   },
@@ -1100,7 +1169,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:rhel|Red Hat Enterprise Linux Server)/(\\d+[.\\d]+)",
+    "regex": "(?:rhel|Red ?Hat(?: Enterprise)? Linux(?: Server)?)[ /](\\d+[.\\d]+)",
     "name": "Red Hat",
     "version": "$1"
   },
@@ -1195,13 +1264,18 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(Debian|Knoppix|Mint(?! Browser)|Ubuntu|Kubuntu|Xubuntu|Lubuntu|Fedora|Red Hat|Mandriva|Gentoo|Sabayon|Slackware|SUSE|CentOS|BackTrack|Freebox|ASPLinux)(?:(?: Enterprise)? Linux)?(?:[ /\\-](\\d+[.\\d]+))?",
+    "regex": "(Debian|Knoppix|Mint(?! Browser)|Ubuntu|Kubuntu|Xubuntu|Lubuntu|Fedora|Red Hat|Mandriva|Gentoo|Sabayon|Slackware|openSUSE|SUSE|CentOS|BackTrack|Freebox|ASPLinux)(?:(?: Enterprise)? Linux)?(?:[ /\\-](\\d+[.\\d]+))?",
     "name": "$1",
     "version": "$2"
   },
   {
     "regex": "OS ROSA; Linux",
     "name": "Rosa",
+    "version": ""
+  },
+  {
+    "regex": ".+gentoo",
+    "name": "Gentoo",
     "version": ""
   },
   {
@@ -1465,7 +1539,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "iOS/(1[3-9]|26)\\.(\\d+[.\\d]*).+Apple/iPad",
+    "regex": "iOS[ /](1[3-9]|26)\\.(\\d+[.\\d]*).+iPad",
     "name": "iPadOS",
     "version": "$1.$2"
   },
@@ -1534,128 +1608,24 @@ module.exports = [
     "name": "iOS",
     "versions": [
       {
-        "regex": "Darwin/25\\.2\\.0",
-        "version": "26.2"
+        "regex": "Darwin/25\\.([0-4])\\.0",
+        "version": "26.$1"
       },
       {
-        "regex": "Darwin/25\\.1\\.0",
-        "version": "26.1"
+        "regex": "Darwin/24\\.([0-6])\\.0",
+        "version": "18.$1"
       },
       {
-        "regex": "Darwin/25\\.0\\.0",
-        "version": "26"
+        "regex": "Darwin/23\\.([0-6])\\.0",
+        "version": "17.$1"
       },
       {
-        "regex": "Darwin/24\\.6\\.0",
-        "version": "18.6"
+        "regex": "Darwin/22\\.([0-6])\\.0",
+        "version": "16.$1"
       },
       {
-        "regex": "Darwin/24\\.5\\.0",
-        "version": "18.5"
-      },
-      {
-        "regex": "Darwin/24\\.4\\.0",
-        "version": "18.4"
-      },
-      {
-        "regex": "Darwin/24\\.3\\.0",
-        "version": "18.3"
-      },
-      {
-        "regex": "Darwin/24\\.2\\.0",
-        "version": "18.2"
-      },
-      {
-        "regex": "Darwin/24\\.1\\.0",
-        "version": "18.1"
-      },
-      {
-        "regex": "Darwin/24\\.0\\.0",
-        "version": "18.0"
-      },
-      {
-        "regex": "Darwin/23\\.6\\.0",
-        "version": "17.6"
-      },
-      {
-        "regex": "Darwin/23\\.5\\.0",
-        "version": "17.5"
-      },
-      {
-        "regex": "Darwin/23\\.4\\.0",
-        "version": "17.4"
-      },
-      {
-        "regex": "Darwin/23\\.3\\.0",
-        "version": "17.3"
-      },
-      {
-        "regex": "Darwin/23\\.2\\.0",
-        "version": "17.2"
-      },
-      {
-        "regex": "Darwin/23\\.1\\.0",
-        "version": "17.1"
-      },
-      {
-        "regex": "Darwin/23\\.0\\.0",
-        "version": "17.0"
-      },
-      {
-        "regex": "Darwin/22\\.6\\.0",
-        "version": "16.6"
-      },
-      {
-        "regex": "Darwin/22\\.5\\.0",
-        "version": "16.5"
-      },
-      {
-        "regex": "Darwin/22\\.4\\.0",
-        "version": "16.4"
-      },
-      {
-        "regex": "Darwin/22\\.3\\.0",
-        "version": "16.3"
-      },
-      {
-        "regex": "Darwin/22\\.2\\.0",
-        "version": "16.2"
-      },
-      {
-        "regex": "Darwin/22\\.1\\.0",
-        "version": "16.1"
-      },
-      {
-        "regex": "Darwin/22\\.0\\.0",
-        "version": "16.0"
-      },
-      {
-        "regex": "Darwin/21\\.6\\.0",
-        "version": "15.6"
-      },
-      {
-        "regex": "Darwin/21\\.5\\.0",
-        "version": "15.5"
-      },
-      {
-        "regex": "Darwin/21\\.4\\.0",
-        "version": "15.4"
-      },
-      {
-        "regex": "Darwin/21\\.3\\.0",
-        "version": "15.3"
-      },
-      {
-        "regex": "Darwin/21\\.2\\.0",
-        "version": "15.2"
-      },
-      {
-        "regex": "Darwin/21\\.1\\.0",
-        "version": "15.1"
-      },
-      {
-        "regex": "Darwin/21\\.0\\.0",
-        "version": "15.0"
+        "regex": "Darwin/21\\.([0-6])\\.0",
+        "version": "15.$1"
       },
       {
         "regex": "Darwin/20\\.6\\.0",
@@ -1686,16 +1656,8 @@ module.exports = [
         "version": "14.0"
       },
       {
-        "regex": "Darwin/19\\.6\\.0",
-        "version": "13.6"
-      },
-      {
-        "regex": "Darwin/19\\.5\\.0",
-        "version": "13.5"
-      },
-      {
-        "regex": "Darwin/19\\.4\\.0",
-        "version": "13.4"
+        "regex": "Darwin/19\\.([456])\\.0",
+        "version": "13.$1"
       },
       {
         "regex": "Darwin/19\\.3\\.0",
@@ -1969,72 +1931,16 @@ module.exports = [
     "name": "Mac",
     "versions": [
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.2\\.0",
-        "version": "26.2"
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.([0-4])\\.0",
+        "version": "26.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.1\\.0",
-        "version": "26.1"
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.([0-6])\\.0",
+        "version": "15.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.0\\.0",
-        "version": "26"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.6\\.0",
-        "version": "15.6"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.5\\.0",
-        "version": "15.5"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.4\\.0",
-        "version": "15.4"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.3\\.0",
-        "version": "15.3"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.2\\.0",
-        "version": "15.2"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.1\\.0",
-        "version": "15.1"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.0\\.0",
-        "version": "15.0"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.6\\.0",
-        "version": "14.6"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.5\\.0",
-        "version": "14.5"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.4\\.0",
-        "version": "14.4"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.3\\.0",
-        "version": "14.3"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.2\\.0",
-        "version": "14.2"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.1\\.0",
-        "version": "14.1"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.0\\.0",
-        "version": "14.0"
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.([0-6])\\.0",
+        "version": "14.$1"
       },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.6\\.0",
@@ -2117,24 +2023,8 @@ module.exports = [
         "version": "11.0"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.6\\.0",
-        "version": "10.15.6"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.5\\.0",
-        "version": "10.15.5"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.4\\.0",
-        "version": "10.15.4"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.3\\.0",
-        "version": "10.15.3"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.2\\.0",
-        "version": "10.15.2"
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.([2-6])\\.0",
+        "version": "10.15.$1"
       },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.0\\.0",
@@ -2221,40 +2111,16 @@ module.exports = [
         "version": "10.12"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.6\\.0",
-        "version": "10.11.6"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.5\\.0",
-        "version": "10.11.5"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.4\\.0",
-        "version": "10.11.4"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.3\\.0",
-        "version": "10.11.3"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.2\\.0",
-        "version": "10.11.2"
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.([2-6])\\.0",
+        "version": "10.11.$1"
       },
       {
         "regex": "CFNetwork/760",
         "version": "10.11"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.5\\.0",
-        "version": "10.10.5"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.4\\.0",
-        "version": "10.10.4"
-      },
-      {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.3\\.0",
-        "version": "10.10.3"
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.([3-5])\\.0",
+        "version": "10.10.$1"
       },
       {
         "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.1\\.0",
@@ -2537,6 +2403,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "BSD Four",
+    "name": "BSD",
+    "version": "4"
+  },
+  {
     "regex": "ElectroBSD(?:[/ ]?(\\d+[.\\d]+))?",
     "name": "ElectroBSD",
     "version": "$1"
@@ -2567,7 +2438,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "IRIX(?:;64)?(?:[/ ]?(\\d+[.\\d]+))",
+    "regex": "IRIX(?:;?64)?(?:[/ ]?(\\d+[.\\d]+))?",
     "name": "IRIX",
     "version": "$1"
   },
@@ -2627,7 +2498,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "Java ME|(J2ME|Profile)/MIDP|MIDP-(?:\\d+[.\\d]+)/CLDC|Configuration/CLDC|Java; U; MIDP|MMP/\\d\\.\\d",
+    "regex": "Java ME|J2ME|Profile/MIDP|CLDC|Java; U; MIDP|MMP/\\d\\.\\d",
     "name": "Java ME",
     "version": ""
   }

@@ -1,5 +1,10 @@
 module.exports = [
   {
+    "regex": "FireSendBrowser/([\\d.]+)",
+    "name": "FireSend Browser",
+    "version": "$1"
+  },
+  {
     "regex": "buscari/([\\d.]+)",
     "name": "Seekee",
     "version": ""
@@ -1569,7 +1574,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "AVG(?:/(\\d+[.\\d]+))?",
+    "regex": "AVG/(\\d+[.\\d]+)",
     "name": "AVG Secure Browser",
     "version": "$1",
     "engine": {
@@ -1665,7 +1670,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "WIB(?:/(\\d+[.\\d]+))?",
+    "regex": "WIB/(\\d+[.\\d]+)",
     "name": "Wear Internet Browser",
     "version": "$1"
   },
@@ -1931,6 +1936,14 @@ module.exports = [
     }
   },
   {
+    "regex": "Edge/(\\d+[.\\d]+) CFNetwork",
+    "name": "Microsoft Edge",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "(?<!motorola |Sparx |; )Edge[ /](\\d+[.\\d]+)",
     "name": "Microsoft Edge",
     "version": "$1",
@@ -2052,6 +2065,22 @@ module.exports = [
     "version": ""
   },
   {
+    "regex": "Chrome/.+Tenta/(\\d+[.\\d]+)",
+    "name": "Tenta Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Tenta/(\\d+[.\\d]+)",
+    "name": "Tenta Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "Chrome.+(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1",
@@ -2065,6 +2094,14 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Android \\d+; [A-Za-z0-9]{10}; U; [^;]+\\) AppleWebKit/.+Chrome/",
+    "name": "Avast Secure Browser",
+    "version": "",
+    "engine": {
+      "default": "Blink"
     }
   },
   {
@@ -2572,7 +2609,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Opera%20Touch/(\\d+[.\\d]+)? CFNetwork/.+Darwin/.+(?!.*x86_64)",
+    "regex": "Opera%20Touch/(\\d+[.\\d]+)?.+CFNetwork",
     "name": "Opera Touch",
     "version": "$1",
     "engine": {
@@ -2580,8 +2617,16 @@ module.exports = [
     }
   },
   {
-    "regex": "Opera%20Touch/.+CFNetwork/.+Darwin/.+(?!.*x86_64)",
+    "regex": "Opera%20Touch/.+CFNetwork",
     "name": "Opera Touch",
+    "version": "",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Opera/.+CFNetwork",
+    "name": "Opera",
     "version": "",
     "engine": {
       "default": "WebKit"
@@ -2668,14 +2713,6 @@ module.exports = [
         "15": "Blink",
         "3.5": "Elektra"
       }
-    }
-  },
-  {
-    "regex": "Opera/.+CFNetwork",
-    "name": "Opera",
-    "version": "",
-    "engine": {
-      "default": "WebKit"
     }
   },
   {
@@ -3042,22 +3079,6 @@ module.exports = [
     "version": "",
     "engine": {
       "default": ""
-    }
-  },
-  {
-    "regex": "Chrome/.+Tenta/(\\d+[.\\d]+)",
-    "name": "Tenta Browser",
-    "version": "$1",
-    "engine": {
-      "default": "Blink"
-    }
-  },
-  {
-    "regex": "Tenta/(\\d+[.\\d]+)",
-    "name": "Tenta Browser",
-    "version": "$1",
-    "engine": {
-      "default": "WebKit"
     }
   },
   {
@@ -3796,6 +3817,14 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "NintendoBrowser(?:/(\\d+[.\\d]+))?",
+    "name": "Nintendo Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "NetFrontLifeBrowser(?:/(\\d+[.\\d]+))?",
     "name": "NetFront Life",
     "version": "$1",
@@ -3970,7 +3999,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Version/(\\d+\\.[.\\d]+) .*Safari/|(?:Safari|Safari(?:%20)?%E6%B5%8F%E8%A7%88%E5%99%A8)/?\\d+",
+    "regex": "Version/(\\d+\\.[.\\d]+) .*Safari/|(?:(?<!SmartTV )Safari|Safari(?:%20)?%E6%B5%8F%E8%A7%88%E5%99%A8)/?\\d+",
     "name": "Safari",
     "version": "$1",
     "engine": {

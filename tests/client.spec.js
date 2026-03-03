@@ -36,6 +36,7 @@ describe('tests clients', function () {
       fixtureData.forEach((fixture, pos) => {
         it(pos + '/' + total, function () {
           let clientHintData = clientHint.parse(fixture.headers || {});
+          console.log(clientHintData.client)
           let fixtureClientType = fixture.client.type ?? '';
           let client = {};
 

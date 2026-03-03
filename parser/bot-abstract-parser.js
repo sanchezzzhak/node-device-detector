@@ -9,9 +9,10 @@ class BotAbstractParser extends ParserAbstract {
   /**
    * parse user agent is bot
    * @param {string} userAgent
+   * @param {*} clientHintData
    * @returns {{name: string, producer: {}, category: string, url: string}|null}
    */
-  parse(userAgent) {
+  parse(userAgent, clientHintData) {
     for (let i = 0, l = this.collection.length; i < l; i++) {
       let item = this.collection[i];
       let regex = this.getBaseRegExp(item.regex);
@@ -24,7 +25,7 @@ class BotAbstractParser extends ParserAbstract {
         }
 
         return {
-          name: item.name ? item.name : '',
+          name: item.name ? this.buildByMatch(item.name, match) : '',
           category: item.category ? item.category : '',
           url: item.url ? item.url : '',
           producer: producer

@@ -343,5 +343,9 @@ module.exports = {
   "com.dajiu.stay": "Stay Browser",
   "com.ddu.browser.oversea": "DDU Browser",
   "com.panda.browser": "Panda Browser",
-  "com.ltd.ifbrowser": "Ifbrowser"
+  "com.ltd.ifbrowser": "Ifbrowser",
+  "ai.perplexity.comet": "Comet",
+  "com.uc.browser.en": "UC Browser Mini",
+  "com.kwah.privatebrowser": "Hawk Quick Browser",
+  "com.clariobrowser.clario": "Clario Browser"
 };

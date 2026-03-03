@@ -807,6 +807,51 @@ module.exports = {
   "moto g stylus 5g - 2023": [
     "MR"
   ],
+  "tecno pr651h": [
+    "TB"
+  ],
+  "sm-g935w8": [
+    "SA"
+  ],
+  "sc-42a": [
+    "SA",
+    "SU"
+  ],
+  "sm-a146p": [
+    "SA"
+  ],
+  "22101317c": [
+    "XI"
+  ],
+  "cph2581": [
+    "ON",
+    "OP"
+  ],
+  "x2_eea": [
+    "YES"
+  ],
+  "24048rn6cg": [
+    "XI"
+  ],
+  "23043rp34g": [
+    "XI"
+  ],
+  "mi 10 pro": [
+    "XI"
+  ],
+  "cph2219": [
+    "OP"
+  ],
+  "24090ra29g": [
+    "XI"
+  ],
+  "rea-nx9": [
+    "HNR",
+    "HU"
+  ],
+  "oneplus a3010": [
+    "ON"
+  ],
   "zc554kl": [
     "AU"
   ],
@@ -2289,9 +2334,6 @@ module.exports = {
   "22101316up": [
     "XI"
   ],
-  "22101317c": [
-    "XI"
-  ],
   "note 10p": [
     "UL"
   ],
@@ -2896,9 +2938,6 @@ module.exports = {
   "24117rn76o": [
     "XI"
   ],
-  "24090ra29g": [
-    "XI"
-  ],
   "24116raccg": [
     "XI"
   ],
@@ -3009,6 +3048,16 @@ module.exports = {
   ],
   "23013rk75c": [
     "XI"
+  ],
+  "redmi note 14 5g": [
+    "XI",
+    "UL"
+  ],
+  "mbh-n49": [
+    "HNR"
+  ],
+  "note 18 gt": [
+    "HV"
   ],
   "gi-626": [
     "A5"
@@ -6974,9 +7023,6 @@ module.exports = {
     "ON"
   ],
   "next-os oneplus3": [
-    "ON"
-  ],
-  "oneplus a3010": [
     "ON"
   ],
   "oneplus a5000": [
@@ -15177,7 +15223,7 @@ module.exports = {
     "ZU"
   ],
   "betacrux": [
-    "H13"
+    "CEI"
   ],
   "bl50p_tg05": [
     "BM"
@@ -19286,10 +19332,10 @@ module.exports = {
     "CO"
   ],
   "f534l": [
-    "6T"
+    "5E"
   ],
   "f572l": [
-    "6T"
+    "5E"
   ],
   "easy5": [
     "KW"
@@ -21573,10 +21619,6 @@ module.exports = {
     "SU"
   ],
   "sc-05l": [
-    "SA",
-    "SU"
-  ],
-  "sc-42a": [
     "SA",
     "SU"
   ],
@@ -24574,7 +24616,7 @@ module.exports = {
     "AM"
   ],
   "eg98": [
-    "HI"
+    "SC"
   ],
   "inco plain2 s": [
     "6I"
@@ -25368,7 +25410,7 @@ module.exports = {
     "M1"
   ],
   "e500a": [
-    "6T"
+    "5E"
   ],
   "cool55": [
     "KW"
@@ -29074,9 +29116,6 @@ module.exports = {
   "mi 10": [
     "XI"
   ],
-  "mi 10 pro": [
-    "XI"
-  ],
   "mi 10t": [
     "XI"
   ],
@@ -29376,9 +29415,6 @@ module.exports = {
     "OP"
   ],
   "cph2285": [
-    "OP"
-  ],
-  "cph2219": [
     "OP"
   ],
   "cph2217": [
@@ -34170,9 +34206,6 @@ module.exports = {
     "LG"
   ],
   "tecno kg6": [
-    "TB"
-  ],
-  "tecno pr651h": [
     "TB"
   ],
   "v2031_21": [
@@ -39230,7 +39263,7 @@ module.exports = {
     "PS"
   ],
   "dazen 6a": [
-    "DZ"
+    "CO"
   ],
   "m6 2021": [
     "BU"
@@ -45793,7 +45826,7 @@ module.exports = {
     "IX"
   ],
   "am1010v": [
-    "WHI"
+    "CH"
   ],
   "allinmobile_arena": [
     "ALI"
@@ -49027,9 +49060,6 @@ module.exports = {
   "sm-a346e": [
     "SA"
   ],
-  "sm-a146p": [
-    "SA"
-  ],
   "luna g6e": [
     "L9",
     "69"
@@ -49779,7 +49809,7 @@ module.exports = {
     "WA"
   ],
   "e8_ultra": [
-    "EKI"
+    "IG"
   ],
   "dl501": [
     "D3"
@@ -51703,9 +51733,6 @@ module.exports = {
   ],
   "takee 1": [
     "6E"
-  ],
-  "rea-nx9": [
-    "HNR"
   ],
   "reno5 k 5g": [
     "OP"
@@ -53658,10 +53685,6 @@ module.exports = {
   "cph2599": [
     "OP"
   ],
-  "cph2581": [
-    "ON",
-    "OP"
-  ],
   "cph2573": [
     "ON",
     "OP"
@@ -55355,9 +55378,6 @@ module.exports = {
   "cph2605": [
     "ON",
     "OP"
-  ],
-  "24048rn6cg": [
-    "XI"
   ],
   "sm-a546v": [
     "SA"
@@ -62422,6 +62442,113 @@ module.exports = {
   "sm-a065f": [
     "SA"
   ],
+  "log-an00": [
+    "HNR",
+    "HU"
+  ],
+  "wp60": [
+    "OE"
+  ],
+  "xt2503-3": [
+    "MR"
+  ],
+  "mz-meizu lucky 08": [
+    "M1"
+  ],
+  "nla-lx2": [
+    "HNR",
+    "HU"
+  ],
+  "mtn-nx1m": [
+    "HNR"
+  ],
+  "sm-e055f": [
+    "SA"
+  ],
+  "lxx513": [
+    "LV"
+  ],
+  "nova 70se": [
+    "C5"
+  ],
+  "buzz 7 prime": [
+    "AE"
+  ],
+  "nova 70": [
+    "C5"
+  ],
+  "buzz 7 lite": [
+    "AE"
+  ],
+  "mep-an00": [
+    "HNR"
+  ],
+  "mey-an00": [
+    "HNR"
+  ],
+  "note56 plus": [
+    "DO"
+  ],
+  "rmx5200": [
+    "RE"
+  ],
+  "rmx5100": [
+    "RE"
+  ],
+  "rmx5210": [
+    "RE"
+  ],
+  "rmx6699": [
+    "RE"
+  ],
+  "bkq-n49": [
+    "HNR"
+  ],
+  "asus_ai2401_n": [
+    "AU"
+  ],
+  "sm-a065m": [
+    "SA"
+  ],
+  "sm-a156l": [
+    "SA"
+  ],
+  "rmx5300": [
+    "RE"
+  ],
+  "rugking 4 pro": [
+    "UL"
+  ],
+  "panther2 pro": [
+    "LAG"
+  ],
+  "motorola s50": [
+    "MR"
+  ],
+  "fire 7": [
+    "DO"
+  ],
+  "fire 5 pro": [
+    "DO"
+  ],
+  "fire 3 max": [
+    "DO"
+  ],
+  "armor x32 pro": [
+    "UL"
+  ],
+  "action 15pro": [
+    "5F"
+  ],
+  "action 15": [
+    "5F"
+  ],
+  "huawei p30 pro": [
+    "HU"
+  ],
+  "huawei mate 60 pro": [
+    "HU"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -62910,10 +63037,10 @@ module.exports = {
     "HI"
   ],
   "i46d1g": [
-    "HI"
+    "SC"
   ],
   "eg680": [
-    "HI"
+    "SC"
   ],
   "hlte501n": [
     "HI"
@@ -70475,7 +70602,7 @@ module.exports = {
     "6S"
   ],
   "twoe e450r": [
-    "6T"
+    "5E"
   ],
   "maxtron s8": [
     "6X"
@@ -71748,10 +71875,10 @@ module.exports = {
     "O1"
   ],
   "q7a": [
-    "CM"
+    "OOR"
   ],
   "q7a+": [
-    "CM"
+    "OOR"
   ],
   "cnm touchpad 9.7": [
     "CN"
@@ -73145,9 +73272,6 @@ module.exports = {
   "mi pad4plus": [
     "XI"
   ],
-  "23043rp34g": [
-    "XI"
-  ],
   "dby2-w09": [
     "HU"
   ],
@@ -74259,10 +74383,10 @@ module.exports = {
     "1H"
   ],
   "+vt107c": [
-    "6C"
+    "CD"
   ],
   "+vtq007c": [
-    "6C"
+    "CD"
   ],
   "tab 3g 7-2": [
     "VX"
@@ -77501,6 +77625,30 @@ module.exports = {
   ],
   "opd2405": [
     "ON"
+  ],
+  "sm-x400": [
+    "SA"
+  ],
+  "sm-x406": [
+    "SA"
+  ],
+  "sm-x135g": [
+    "SA"
+  ],
+  "sm-x135f": [
+    "SA"
+  ],
+  "rt3 plus": [
+    "OE"
+  ],
+  "a10pro_eea": [
+    "JCK"
+  ],
+  "v-z80plus": [
+    "VIK"
+  ],
+  "w5a": [
+    "HEW"
   ],
   "jdn-al00": [
     "HU"
@@ -86223,7 +86371,7 @@ module.exports = {
     "FAC"
   ],
   "smb-h8009": [
-    "HLL"
+    "EXR"
   ],
   "n10-eea": [
     "YUM"
@@ -88263,7 +88411,7 @@ module.exports = {
     "WY"
   ],
   "ue pad 1": [
-    "UE1"
+    "0N"
   ],
   "iqt800": [
     "LS"
@@ -89992,9 +90140,6 @@ module.exports = {
   ],
   "m10es11": [
     "IBO"
-  ],
-  "x2_eea": [
-    "YES"
   ],
   "groberwert hd7": [
     "GR1"
@@ -92749,7 +92894,7 @@ module.exports = {
     "4E"
   ],
   "lpx-g box max": [
-    "LPX"
+    "1Y"
   ],
   "tf500": [
     "TL"
