@@ -70,9 +70,14 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:MessengerForiOS|MESSENGER|FB_IAB/Orca-Android).*(?:FBAV)(?:[ /]([\\d.]+))?",
+    "regex": "(?:MessengerForiOS|MESSENGER|(?:FB_IAB|FBAN)/Orca-Android).*(?:FBAV)(?:[ /]([\\d.]+))?",
     "name": "Facebook Messenger",
     "version": "$1"
+  },
+  {
+    "regex": "(?:MessengerForiOS|(?:FB_IAB|FBAN)/Orca-Android)",
+    "name": "Facebook Messenger",
+    "version": ""
   },
   {
     "regex": "(?:GroupsForiOS).*(?:FBAV)(?:[ /]([\\d.]+))?",
@@ -95,7 +100,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:FBAN|FBSV|FBID|FBBV)/",
+    "regex": "(?:FBAN|FBSV|FBID|FBBV)/|MetaIAB",
     "name": "Facebook",
     "version": ""
   },
@@ -118,6 +123,11 @@ module.exports = [
     "regex": "com\\.google\\.android\\.apps\\.searchlite",
     "name": "Google Go",
     "version": ""
+  },
+  {
+    "regex": "NSTNWV(?:/([\\d.]+))?",
+    "name": "Google Go",
+    "version": "$1"
   },
   {
     "regex": "com\\.google\\.android\\.apps\\.photos",
@@ -143,6 +153,16 @@ module.exports = [
     "regex": "OPA/([\\d.]+)",
     "name": "Google Assistant",
     "version": "$1"
+  },
+  {
+    "regex": "com\\.google\\.Maps/([\\d.]+)",
+    "name": "Google Maps",
+    "version": "$1"
+  },
+  {
+    "regex": "com\\.google\\.android\\.googlequicksearchbox",
+    "name": "Google",
+    "version": ""
   },
   {
     "regex": "wxwork/(\\d+[.\\d]+)",
@@ -402,6 +422,11 @@ module.exports = [
   {
     "regex": "Flipboard/([\\d.]+)?",
     "name": "Flipboard App",
+    "version": "$1"
+  },
+  {
+    "regex": "lite baiduboxapp/([\\d.]+)?",
+    "name": "Baidu Box App Lite",
     "version": "$1"
   },
   {
@@ -1341,7 +1366,7 @@ module.exports = [
   },
   {
     "regex": "NewsSapphire/(\\d+\\.[.\\d]+)",
-    "name": "Microsoft Start",
+    "name": "MSN",
     "version": "$1"
   },
   {
@@ -2920,11 +2945,6 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Apache/([\\d.]+)",
-    "name": "Apache",
-    "version": "$1"
-  },
-  {
     "regex": "smzdm ([\\d.]+)",
     "name": "smzdm",
     "version": "$1"
@@ -2992,6 +3012,41 @@ module.exports = [
   {
     "regex": "Hulu/([\\d.]+)",
     "name": "Hulu",
+    "version": "$1"
+  },
+  {
+    "regex": "TeraBox/([\\d.]+)",
+    "name": "TeraBox",
+    "version": "$1"
+  },
+  {
+    "regex": "dubox;([\\d.]+);",
+    "name": "TeraBox",
+    "version": "$1"
+  },
+  {
+    "regex": "DeepSeek Chat/([\\d.]+)",
+    "name": "DeepSeek",
+    "version": "$1"
+  },
+  {
+    "regex": "ChatGPT/([\\d.]+)",
+    "name": "ChatGPT",
+    "version": "$1"
+  },
+  {
+    "regex": "REDLINECLIENT.+V([\\d.]+)",
+    "name": "Redline",
+    "version": "$1"
+  },
+  {
+    "regex": "espn/([\\d.]+)",
+    "name": "ESPN",
+    "version": "$1"
+  },
+  {
+    "regex": "PrimeVideo/([\\d.]+)",
+    "name": "Amazon Prime Video",
     "version": "$1"
   },
   {

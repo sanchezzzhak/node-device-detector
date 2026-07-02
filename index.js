@@ -840,13 +840,8 @@ class DeviceDetector {
    */
   parseBot(userAgent, clientHints) {
     let result = {};
-
-    if (this.skipBotDetection) {
-      return result;
-    }
-
     for (let name in this.botParserList) {
-      let resultMerge = this.botParserList[name].parse(userAgent);
+      let resultMerge = this.botParserList[name].parse(userAgent, clientHints);
       if (resultMerge) {
         result = Object.assign(result, resultMerge);
         break;
@@ -993,9 +988,9 @@ class DeviceDetector {
    */
   detect(userAgent, clientHints = {}) {
     userAgent = this.prepareUserAgent(userAgent);
-    let deviceData = this.parseDevice(userAgent, clientHints);
-    let osData = this.parseOs(userAgent, clientHints);
-    let clientData = this.parseClient(userAgent, clientHints);
+    const deviceData = this.parseDevice(userAgent, clientHints);
+    const osData = this.parseOs(userAgent, clientHints);
+    const clientData = this.parseClient(userAgent, clientHints);
 
     return this.prepareDetectResult(
       userAgent,
