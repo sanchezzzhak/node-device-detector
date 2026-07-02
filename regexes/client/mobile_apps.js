@@ -100,7 +100,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:FBAN|FBSV|FBID|FBBV)/",
+    "regex": "(?:FBAN|FBSV|FBID|FBBV)/|MetaIAB",
     "name": "Facebook",
     "version": ""
   },
@@ -3037,6 +3037,16 @@ module.exports = [
   {
     "regex": "REDLINECLIENT.+V([\\d.]+)",
     "name": "Redline",
+    "version": "$1"
+  },
+  {
+    "regex": "espn/([\\d.]+)",
+    "name": "ESPN",
+    "version": "$1"
+  },
+  {
+    "regex": "PrimeVideo/([\\d.]+)",
+    "name": "Amazon Prime Video",
     "version": "$1"
   },
   {

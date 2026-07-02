@@ -112,6 +112,8 @@ class ClientHints {
     for (let key in hints) {
       const value = hints[key];
       const lowerCaseKey = key.toLowerCase().replace('_', '-');
+      const isValueString = typeof value === "string";
+
 
       if (void 0  === value || null === value || '' === value) {
         continue;
@@ -122,12 +124,16 @@ class ClientHints {
         case 'sec-ch-ua-arch':
         case 'arch':
         case 'architecture':
-          result.os.platform = this.#trim(value);
+          if (isValueString) {
+            result.os.platform = this.#trim(value);
+          }
           break;
         case 'http-sec-ch-ua-bitness':
         case 'sec-ch-ua-bitness':
         case 'bitness':
-          result.os.bitness = this.#trim(value);
+          if (isValueString) {
+            result.os.bitness = this.#trim(value);
+          }
           break;
         case 'http-sec-ch-ua-mobile':
         case 'sec-ch-ua-mobile':
@@ -137,13 +143,19 @@ class ClientHints {
         case 'http-sec-ch-ua-model':
         case 'sec-ch-ua-model':
         case 'model':
-          result.device.model = this.#trim(value);
+          if (isValueString) {
+            result.device.model = this.#trim(value);
+          }
+
           break;
         case 'http-sec-ch-ua-full-version':
         case 'sec-ch-ua-full-version':
         case 'uafullversion':
           result.upgradeHeader = true;
-          result.client.version = this.#trim(value);
+          if (isValueString) {
+            result.client.version = this.#trim(value);
+          }
+
           break;
         case 'http-sec-ch-ua-platform':
         case 'sec-ch-ua-platform':
@@ -173,9 +185,11 @@ class ClientHints {
         // eslint-disable-next-line no-fallthrough
         case 'http-sec-ch-ua-full-version-list':
         case 'sec-ch-ua-full-version-list':
-          const items = this.#parseFullVersionList(value);
-          if (items.length > 0) {
-            result.client.brands = items;
+          if (isValueString) {
+            const items = this.#parseFullVersionList(value);
+            if (items.length > 0) {
+              result.client.brands = items;
+            }
           }
           break;
         case 'x-requested-with':

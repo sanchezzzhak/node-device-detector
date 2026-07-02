@@ -1,5 +1,10 @@
 module.exports = [
   {
+    "regex": "MySudo Browser",
+    "name": "MySudo",
+    "version": ""
+  },
+  {
     "regex": "FireSendBrowser/([\\d.]+)",
     "name": "FireSend Browser",
     "version": "$1"
@@ -1857,6 +1862,14 @@ module.exports = [
     }
   },
   {
+    "regex": "com\\.huawei\\.hmos\\.browser",
+    "name": "Huawei Browser",
+    "version": "",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
     "regex": "ZTE ?Browser/",
     "name": "ZTE Browser",
     "version": "$1"
@@ -1962,6 +1975,14 @@ module.exports = [
   {
     "regex": "EdgA[ /](\\d+[.\\d]+)",
     "name": "Microsoft Edge",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "HeadlessChrome/.*(?:Headless)?Edg(?:/(\\d+[.\\d]+))?",
+    "name": "Headless Edge",
     "version": "$1",
     "engine": {
       "default": "Blink"
@@ -2081,7 +2102,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Chrome.+(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[.\\d]+))?",
+    "regex": "Chrome.+(?:Avast(?:SecureBrowser)?|ASW|Safer(?!Surf))(?:/(\\d+[.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1",
     "engine": {
@@ -2089,7 +2110,7 @@ module.exports = [
     }
   },
   {
-    "regex": "(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[.\\d]+))?",
+    "regex": "(?:Avast(?:SecureBrowser)?|ASW|Safer(?!Surf))(?:/(\\d+[.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1",
     "engine": {
@@ -2849,6 +2870,14 @@ module.exports = [
     }
   },
   {
+    "regex": "VivaiOS/(\\d+[.\\d]+)",
+    "name": "Vivaldi Mobile iOS",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "TweakStyle(?:/(\\d+[.\\d]+))?",
     "name": "TweakStyle",
     "version": "$1",
@@ -3352,6 +3381,19 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": ""
+    }
+  },
+  {
+    "regex": "iTop$",
+    "name": "iTop Private Browser",
+    "version": ""
+  },
+  {
+    "regex": "SafeBrowser/(\\d+[.\\d]+)",
+    "name": "SafeBrowser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
     }
   },
   {
@@ -4007,7 +4049,7 @@ module.exports = [
     }
   },
   {
-    "regex": "(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension)/(\\d+[.\\d]+).+ CFNetwork",
+    "regex": "(?:com\\.apple\\.WebKit\\.Networking|com\\.apple\\.AuthenticationServicesCore\\.AuthenticationServicesAgent|NetworkingExtension)/(\\d+[.\\d]+).+ (?:CF)?Network",
     "name": "Safari",
     "version": "$1",
     "engine": {

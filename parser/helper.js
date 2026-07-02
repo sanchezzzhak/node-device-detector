@@ -28,8 +28,13 @@ function restoreUserAgentFromClientHints(userAgent, clientHints) {
     return newUserAgent;
   }
 
+  // linux
   newUserAgent = newUserAgent.replace(/(X11; Linux x86_64)/,
     `X11; Linux x86_64; ${deviceModel}`
+  );
+  // windows
+  newUserAgent = newUserAgent.replace(/(Windows NT 10\.0; Win64; x64)/,
+    `Windows NT 10.0; Win64; x64; ${deviceModel}`
   );
 
   return newUserAgent;

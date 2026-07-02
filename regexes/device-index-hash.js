@@ -24623,7 +24623,8 @@ module.exports = {
     "AM"
   ],
   "eg98": [
-    "SC"
+    "SC",
+    "HI"
   ],
   "inco plain2 s": [
     "6I"
@@ -62557,9 +62558,11 @@ module.exports = {
     "HU"
   ],
   "cph2769": [
+    "ON",
     "OP"
   ],
   "cph2747": [
+    "ON",
     "OP"
   ],
   "mi 10t pro 5g": [
@@ -63053,10 +63056,12 @@ module.exports = {
     "HI"
   ],
   "i46d1g": [
-    "SC"
+    "SC",
+    "HI"
   ],
   "eg680": [
-    "SC"
+    "SC",
+    "HI"
   ],
   "hlte501n": [
     "HI"
@@ -66064,8 +66069,7 @@ module.exports = {
     "IO"
   ],
   "i-mobile i-style 7.8 dtv": [
-    "IO",
-    "KH"
+    "IO"
   ],
   "i-mobile i-style 8": [
     "IO"

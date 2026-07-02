@@ -9,6 +9,16 @@ module.exports = {
       }
     ]
   },
+  "Akai": {
+    "regex": ".+_AKAI[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "ALDI NORD": {
     "regex": "ALDINORD[;,)]",
     "device": "tv",
@@ -212,6 +222,16 @@ module.exports = {
     "models": [
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "Coles": {
+    "regex": ".+_COLES[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
         "model": "Smart TV ($1)"
       }
     ]
@@ -581,7 +601,7 @@ module.exports = {
         "model": "$1"
       },
       {
-        "regex": "(H[A-Z]?[0-9]{2}[A-Z][0-9]{3,4}[A-Z]{0,4})",
+        "regex": "(H[A-Z]?[0-9]{2}[A-Z][0-9]{3,4}[A-Z]{0,5})",
         "model": "$1"
       },
       {
@@ -721,6 +741,16 @@ module.exports = {
       }
     ]
   },
+  "ioplee": {
+    "regex": ".+_IOPLEE[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "JVC": {
     "regex": "AFTSO001|JVC[;,)]",
     "device": "tv",
@@ -845,7 +875,7 @@ module.exports = {
     ]
   },
   "Dyon": {
-    "regex": "DYON[;,)]",
+    "regex": "(?:.+_)?DYON[;,)]",
     "device": "tv",
     "models": [
       {
@@ -855,6 +885,10 @@ module.exports = {
       {
         "regex": "LGE/[^/]+/DYON; ([a-z0-9]+)",
         "model": "$1"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
       }
     ]
   },
@@ -869,11 +903,15 @@ module.exports = {
     ]
   },
   "Edenwood": {
-    "regex": "EDENWOOD[;,)]",
+    "regex": "(?:.+_)?EDENWOOD[;,)]",
     "device": "tv",
     "models": [
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
         "model": "Smart TV ($1)"
       }
     ]
