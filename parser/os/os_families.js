@@ -3,7 +3,7 @@ module.exports = {
   'Android': [
   'AND', 'CYN', 'FIR', 'REM', 'RZD', 'MLD', 'MCD', 'YNS', 'GRI', 'HAR',
   'ADR', 'CLR', 'BOS', 'REV', 'LEN', 'SIR', 'RRS', 'WER', 'PIC', 'ARM',
-  'HEL', 'BYI', 'RIS', 'PUF', 'LEA', 'MET', 'OHS', 'SMA',
+  'HEL', 'BYI', 'RIS', 'PUF', 'LEA', 'MET', 'SMA', 'AGO',
   ],
   'AmigaOS': ['AMG', 'MOR', 'ARO'],
   'BlackBerry': ['BLB', 'QNX'],
@@ -29,6 +29,7 @@ module.exports = {
   ],
   'Mac': ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],
+  'OpenHarmony': ['OHS', 'HNX'],
   'OpenVMS': ['OVS'],
   'Real-time OS': ['MTK', 'TDX', 'MRE', 'JME', 'REX', 'RXT', 'KOL', 'MOS', 'NTX'],
   'Other Mobile': ['WOS', 'POS', 'SBA', 'TIZ', 'SMG', 'MAE', 'LUN', 'GEO', 'CON'],
@@ -41,6 +42,6 @@ module.exports = {
   'WebTV': ['WTV'],
   'Windows': ['WIN'],
   'Windows Mobile': ['WPH', 'WMO', 'WCE', 'WRT', 'WIO', 'KIN'],
-  'Other Smart TV': ['WHS', 'TIT', 'ORS'],
+  'Other Smart TV': ['WHS', 'TIT', 'ORS', 'VEG'],
   
 };

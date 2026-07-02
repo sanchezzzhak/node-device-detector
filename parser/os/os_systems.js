@@ -2,6 +2,7 @@
 module.exports = {
   'AIX': 'AIX',
   'AND': 'Android',
+  'AGO': 'Android Go',
   'ADR': 'Android TV',
   'ALP': 'Alpine Linux',
   'AMZ': 'Amazon Linux',
@@ -64,6 +65,7 @@ module.exports = {
   'HAI': 'Haiku OS',
   'IPA': 'iPadOS',
   'HAR': 'HarmonyOS',
+  'HNX': 'HarmonyOS NEXT',
   'HAS': 'HasCodingOS',
   'HEL': 'HELIX OS',
   'IRI': 'IRIX',
@@ -180,6 +182,7 @@ module.exports = {
   'UBT': 'Ubuntu',
   'ULT': 'ULTRIX',
   'UOS': 'UOS',
+  'VEG': 'Vega OS',
   'VID': 'VIDAA',
   'VIZ': 'ViziOS',
   'WAS': 'watchOS',

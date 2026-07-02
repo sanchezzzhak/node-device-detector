@@ -3059,6 +3059,13 @@ module.exports = {
   "note 18 gt": [
     "HV"
   ],
+  "iphone18,5": [
+    "AP"
+  ],
+  "redmi note 14 pro+ 5g": [
+    "XI",
+    "UL"
+  ],
   "gi-626": [
     "A5"
   ],
@@ -62549,6 +62556,15 @@ module.exports = {
   "huawei mate 60 pro": [
     "HU"
   ],
+  "cph2769": [
+    "OP"
+  ],
+  "cph2747": [
+    "OP"
+  ],
+  "mi 10t pro 5g": [
+    "XI"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -77649,6 +77665,27 @@ module.exports = {
   ],
   "w5a": [
     "HEW"
+  ],
+  "sm-x930": [
+    "SA"
+  ],
+  "sm-x133": [
+    "SA"
+  ],
+  "sm-x236b": [
+    "SA"
+  ],
+  "sm-x230": [
+    "SA"
+  ],
+  "sm-x736b": [
+    "SA"
+  ],
+  "sm-x936b": [
+    "SA"
+  ],
+  "sm-x130": [
+    "SA"
   ],
   "jdn-al00": [
     "HU"
