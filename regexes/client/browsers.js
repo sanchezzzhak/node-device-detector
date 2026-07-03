@@ -1,5 +1,13 @@
 module.exports = [
   {
+    "regex": "Quiche%20Browser",
+    "name": "Quiche Browser",
+    "version": "",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "MySudo Browser",
     "name": "MySudo",
     "version": ""
@@ -1846,6 +1854,46 @@ module.exports = [
     }
   },
   {
+    "regex": "Browser/harmony360Browser/(\\d+[.\\d]+)$",
+    "name": "Harmony 360 Browser",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
+    "regex": "HBPC/(\\d+[.\\d]+)",
+    "name": "Huawei Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "PC;.+ArkWeb/.+HuaweiBrowser(?:/(\\d+[.\\d]+))?",
+    "name": "Huawei Browser",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
+    "regex": "PC;.+ArkWeb",
+    "name": "Huawei Browser",
+    "version": "",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
+    "regex": "ArkWeb/.+HuaweiBrowser(?:/(\\d+[.\\d]+))?",
+    "name": "Huawei Browser Mobile",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
     "regex": "HuaweiBrowser(?:/(\\d+[.\\d]+))?",
     "name": "Huawei Browser Mobile",
     "version": "$1",
@@ -1994,14 +2042,6 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": "Blink"
-    }
-  },
-  {
-    "regex": "Browser/harmony360Browser/(\\d+[.\\d]+)$",
-    "name": "Harmony 360 Browser",
-    "version": "$1",
-    "engine": {
-      "default": "ArkWeb"
     }
   },
   {
@@ -3481,6 +3521,14 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": "Blink"
+    }
+  },
+  {
+    "regex": "Chrome(?!book)(?:/(\\d+[.\\d]+))?.+ArkWeb/",
+    "name": "Chrome",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
     }
   },
   {

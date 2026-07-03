@@ -949,6 +949,9 @@ module.exports = {
   "20jjs0cu1m": [
     "LE"
   ],
+  "afrione 2in1": [
+    "AF"
+  ],
   "hibox-hero": [
     "1C"
   ],
@@ -3065,6 +3068,21 @@ module.exports = {
   "redmi note 14 pro+ 5g": [
     "XI",
     "UL"
+  ],
+  "tecno lj9": [
+    "TB"
+  ],
+  "tecno lj8": [
+    "TB"
+  ],
+  "tecno lj7": [
+    "TB"
+  ],
+  "tecno lj6": [
+    "TB"
+  ],
+  "v2429": [
+    "VV"
   ],
   "gi-626": [
     "A5"
@@ -62567,6 +62585,24 @@ module.exports = {
   ],
   "mi 10t pro 5g": [
     "XI"
+  ],
+  "tecno km8n": [
+    "TB"
+  ],
+  "tecno km6": [
+    "TB"
+  ],
+  "tecno km5": [
+    "TB"
+  ],
+  "tecno km4n": [
+    "TB"
+  ],
+  "tecno cm7": [
+    "TB"
+  ],
+  "x2034": [
+    "QQ"
   ],
   "gs55-6": [
     "GS"

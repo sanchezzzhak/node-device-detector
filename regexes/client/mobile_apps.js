@@ -3040,6 +3040,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "GM-Android/([\\d.]+)",
+    "name": "General Motors",
+    "version": "$1"
+  },
+  {
     "regex": "espn/([\\d.]+)",
     "name": "ESPN",
     "version": "$1"
@@ -3047,6 +3052,21 @@ module.exports = [
   {
     "regex": "PrimeVideo/([\\d.]+)",
     "name": "Amazon Prime Video",
+    "version": "$1"
+  },
+  {
+    "regex": "Citrix(?:SSO|VPN)(?:[ -](\\d+[.\\d]+))?",
+    "name": "Citrix VPN",
+    "version": "$1"
+  },
+  {
+    "regex": "(?:Citrix(?:Receiver| Workspace)|CWA(?:WEBVIEW)?)(?:/(\\d+[.\\d]+))?",
+    "name": "Citrix Workspace",
+    "version": "$1"
+  },
+  {
+    "regex": "Kobo.+/(\\d+[.\\d]+)",
+    "name": "Kobo eReader",
     "version": "$1"
   },
   {

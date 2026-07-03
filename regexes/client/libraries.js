@@ -788,5 +788,17 @@ module.exports = [
     "name": "Hubot",
     "version": "$1",
     "url": "https://github.com/hubotio/hubot"
+  },
+  {
+    "regex": "^PHP-SOAP(?:/(\\d+[.\\d]+))?",
+    "name": "PHP-SOAP",
+    "version": "$1",
+    "url": ""
+  },
+  {
+    "regex": "KlHttpClientCurl(?:/(\\d+[.\\d]+))?",
+    "name": "KlHttpClientCurl",
+    "version": "$1",
+    "url": ""
   }
 ];
