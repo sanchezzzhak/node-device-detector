@@ -521,6 +521,7 @@ module.exports = {
   'QI': 'Qiyu',
   'QJ': 'QJY TV Browser',
   'Q3': 'Qmamu',
+  'Q8': 'Quiche Browser',
   'Q4': 'Quick Search TV',
   'Q2': 'QQ Browser Lite',
   'Q1': 'QQ Browser Mini',

@@ -103,7 +103,7 @@ class OsAbstractParser extends ParserAbstract {
    * Normalisation os name and get short code os
    *
    * @param name
-   * @returns {{name: string, short: string}}
+   * @returns {ResultInlineOs}
    */
   getOsDataByName(name) {
     let short = 'UNK';
@@ -118,6 +118,10 @@ class OsAbstractParser extends ParserAbstract {
     return { name, short };
   }
 
+  /**
+   * @param {ResultClientHints} hint
+   * @return {{name: string, short_name: string, version: string, platform: string}|null}
+   */
   parseFromClientHints(hint) {
     if (!hint) {
       return null;
@@ -170,7 +174,6 @@ class OsAbstractParser extends ParserAbstract {
       platform: platform
     };
   }
-
 
   parseUserAgentByPosition(userAgent, position) {
     let item = this.collection[position];
@@ -239,7 +242,7 @@ class OsAbstractParser extends ParserAbstract {
   /**
    *
    * @param {string} userAgent
-   * @param {ClientHintsResult} clientHints
+   * @param {ResultClientHints} clientHints
    * @returns {null|{name: (string|*), short_name: string, family: string, version: string, platform: string}}
    */
   parse(userAgent, clientHints) {

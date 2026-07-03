@@ -4,6 +4,7 @@ const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
 const BrowserHints = require('./hints/browser-hints');
+const { versionCompare } = require('../helper');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 const browserHints = new BrowserHints;
@@ -75,9 +76,9 @@ class Browser extends ClientAbstractParser {
    * Generates the result for the parse method
    *
    * @param {string} userAgent
-   * @param {{}} data
-   * @param {{}} hint
-   * @param {{}} hash
+   * @param {ResultClient} data
+   * @param {ResultInlineClientHint} hint
+   * @param {ResultHashHint} hash
    * @returns {null|ResultClient}
    */
   prepareParseResult(
@@ -98,8 +99,10 @@ class Browser extends ClientAbstractParser {
     // use client hints in favor of user agent data if possible
     if (hint && hint.name && hint.version) {
       name = hint.name;
-      version = hint.version;
+      version = String(hint.version);
       short = hint.short_name;
+      engine = String(hint?.engine || '');
+      engineVersion = String(hint?.engine_version || '');
       family = this.buildFamily(short);
 
       // If the version reported from the client hints is YYYY or YYYY.MM (e.g., 2022 or 2022.04),
@@ -128,15 +131,28 @@ class Browser extends ClientAbstractParser {
           engine = data.engine;
           engineVersion = data.engine_version;
         }
+
+        if ('Blink' === engine && 'Iridium' !== name) {
+          if (data.engine_version && engineVersion && helper.versionCompare(data.engine_version, engineVersion) > 0) {
+            engineVersion = data.engine_version;
+          }
+        }
+
+
         // If client hints report Chromium, but user agent detects a Chromium based browser, we favor this instead
-        const hasChromeBased =  ('Chromium' === name || 'Chrome Webview' === name) && data.name
+        const hasChromeBased =  ('Chromium' === name || 'Chrome Webview' === name)
+          && data.name
           && ['CR', 'CV', 'AN', 'CM'].indexOf(data.short_name) === -1;
+
         if (hasChromeBased) {
           name = data.name;
           short = data.short_name;
-          version = data.version;
-          family = this.buildFamily(short);
+
+          if(parseInt(data.version) !== parseInt(version) || helper.versionCompare(version, data.version) <= 0) {
+            version = data.version;
+          }
         }
+
         // Fix mobile browser names e.g. Chrome => Chrome Mobile
         if (name + ' Mobile' === data.name) {
           name = data.name;
@@ -165,9 +181,25 @@ class Browser extends ClientAbstractParser {
       }
 
       // In case client hints report a more detailed engine version, we try to use this instead
-      if ('Blink' === engine && 'Iridium' !== name && helper.versionCompare(engineVersion, hint.version) < 0) {
-        engineVersion = hint.version;
+      if ('Blink' === engine && 'Iridium' !== name) {
+        if (
+          hint.version &&
+          engineVersion &&
+          helper.versionCompare(engineVersion, hint.version) < 0
+        ) {
+          engineVersion = hint.version;
+        }
+
+        if (
+          data !== null &&
+          hint.engine_version &&
+          data.engine_version &&
+          helper.versionCompare(data.engine_version, hint.engine_version) < 0
+        ) {
+          engineVersion = hint.engine_version;
+        }
       }
+
 
     } else if (data !== null) {
       name = data.name;
@@ -236,22 +268,22 @@ class Browser extends ClientAbstractParser {
    * General method for parsing user-agent and client-hints
    *
    * @param {string} userAgent
-   * @param {} clientHints
+   * @param {ResultClientHints} clientHints
    * @returns {ResultClient|null}
    */
   parse(userAgent, clientHints) {
-    userAgent = this.prepareUserAgent(userAgent);
+    const ua = '' + this.prepareUserAgent(userAgent);
     const hash = this.parseFromHashHintsApp(clientHints);
     const hint = this.parseFromClientHints(clientHints);
-    const data = this.parseFromUserAgent(userAgent, clientHints);
-    return this.prepareParseResult(userAgent, data, hint, hash);
+    const data = this.parseFromUserAgent(ua, clientHints);
+    return this.prepareParseResult(ua, data, hint, hash);
   }
 
   /**
    * Parses client-hints for getting the browser name from the application ID (clientHints.app)
    *
    * @param {ResultClientHints} clientHints
-   * @return {{name: string}}
+   * @return {ResultHashHint}
    */
   parseFromHashHintsApp(clientHints) {
     return browserHints.parse(clientHints);
@@ -261,17 +293,24 @@ class Browser extends ClientAbstractParser {
    * Parses client-hints for getting browser name, version, short name
    *
    * @param {ResultClientHints} clientHints
-   * @return {{name: string, short_name: string, version: string}}
+   * @return {ResultInlineClientHint}
    */
   parseFromClientHints(clientHints) {
-    let name = '';
-    let short = '';
-    let version = '';
+    let name = '', short = '', version = '', engine = '', engineVersion = '';
 
     if (clientHints && clientHints.client) {
       const brands = extractBrandsForClientHints(
         ArrayPath.get(clientHints, 'client.brands', [])
       );
+
+      const engineBrands = ['Android WebView', 'Chromium'];
+      for (let brandItem of brands) {
+        if (engineBrands.indexOf(brandItem.brand) !== -1) {
+          engine = 'Blink';
+          engineVersion = brandItem.version;
+          break;
+        }
+      }
 
       for (let brandItem of brands) {
         let brand = compareBrandForClientHints(brandItem.brand);
@@ -291,7 +330,7 @@ class Browser extends ClientAbstractParser {
 
         // If we detected a brand, that is not chromium,
         // we will use it, otherwise we will look further
-        if ('' !== name && 'Chromium' !== name && 'Microsoft Edge' !== name) {
+        if (['', 'Chromium', 'Microsoft Edge'].indexOf(name) === -1) {
           break;
         }
       }
@@ -304,7 +343,9 @@ class Browser extends ClientAbstractParser {
     return {
       name: name,
       short_name: short,
-      version: this.buildVersion(version, [])
+      version: this.buildVersion(version, []),
+      engine: engine,
+      engine_version: engineVersion
     };
   }
 
@@ -313,7 +354,7 @@ class Browser extends ClientAbstractParser {
    *
    * @param {string} userAgent
    * @param {number} position
-   * @return {{engine: *, name: string, short_name: *, engine_version: *, family: string, version: string}|null}
+   * @return {ResultClient|null}
    */
   parseUserAgentByPosition(userAgent, position = 0) {
     let item = this.collection[position];
@@ -354,6 +395,11 @@ class Browser extends ClientAbstractParser {
     return null;
   }
 
+  /**
+   * Base result data
+   * @param userAgent
+   * @return {ResultClient|null}
+   */
   parseFromUserAgent(userAgent) {
     if (!userAgent) {
       return null;

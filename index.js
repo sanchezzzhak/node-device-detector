@@ -684,8 +684,8 @@ class DeviceDetector {
     /**
      * Set device type desktop if string ua contains desktop
      */
-    if (DEVICE_TYPE.DESKTOP !== deviceType && userAgent.indexOf('Desktop') !== -1) {
-      if (helper.matchUserAgent('Desktop(?: (x(?:32|64)|WOW64))?;', userAgent)) {
+    if (DEVICE_TYPE.DESKTOP !== deviceType) {
+      if (helper.matchUserAgent('(?:Desktop|PC)(?: (x(?:32|64)|WOW64))?;', userAgent)) {
         deviceType = DEVICE_TYPE.DESKTOP;
       }
     }
@@ -909,6 +909,13 @@ class DeviceDetector {
      */
     if (deviceData.brand === '' && APPLE_OS_LIST.indexOf(osData.name) !== -1) {
       deviceData.brand = 'Apple';
+    }
+
+    /**
+     * Assume all devices running ThinOS are from Dell
+     */
+    if('ThinOS' === osData.name) {
+      deviceData.brand = 'Dell';
     }
 
     let deviceDataType = this.parseDeviceType(
