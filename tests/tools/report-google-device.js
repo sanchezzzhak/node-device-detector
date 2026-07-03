@@ -128,7 +128,9 @@ async function fetchGoogleDb(forceDownload) {
 function processLines(content, options, log) {
   console.warn('[ ] Task 3/4: Processing CSV data and running device simulations...');
   const groupBy = options.groupBy;
-  let lines = content.split(/\r?\n/);
+
+  // Split lines and clean any hidden null bytes immediately to prevent text corruption
+  let lines = content.replace(/\0/g, '').split(/\r?\n/);
 
   let headers = [
     'Brand','Marketing Name','Device','Model','MATCH POS','Brand (inUs)','Model (inUs)',
@@ -147,6 +149,10 @@ function processLines(content, options, log) {
   let brand, model, pos, columns;
   let column1, column2, column3, column4;
 
+  const totalLines = lines.length - 1; // Exclude header line
+  const progressBarWidth = 30;         // Width of the visual bar [████░░░░]
+  const step = 500;                    // Update progress every 500 rows for high performance
+
   for (let i = 1; i < lines.length; i++) {
     let line = lines[i];
     if (!line || line.trim() === '') continue;
@@ -156,18 +162,26 @@ function processLines(content, options, log) {
 
     totalCount++;
 
+    // High-performance progress bar update via stderr
+    if (totalCount % step === 0 || totalCount === totalLines) {
+      const percentage = (totalCount / totalLines) * 100;
+      const filledLength = Math.round((progressBarWidth * totalCount) / totalLines);
+      const bar = '█'.repeat(filledLength) + '░'.repeat(Math.max(0, progressBarWidth - filledLength));
+      process.stderr.write(`\r[ ] Progress: [${bar}] ${percentage.toFixed(1)}% (${totalCount}/${totalLines})`);
+    }
+
     brand = '';
     model = '';
     pos = '-';
 
-    column1 = columns[0] || '';
-    column2 = columns[1] || '';
-    column3 = columns[2] || '';
-    column4 = columns[3] || '';
+    // Extract columns and trim internal double spaces that leak from muddy CSV data
+    column1 = (columns[0] || '').replace(/\s+/g, ' ').trim();
+    column2 = (columns[1] || '').replace(/\s+/g, ' ').trim();
+    column3 = (columns[2] || '').replace(/\s+/g, ' ').trim();
+    column4 = (columns[3] || '').replace(/\s+/g, ' ').trim();
 
     let c4Lower = column4.toLowerCase();
     let c3Lower = column3.toLowerCase();
-    let c2Lower = column2.toLowerCase();
     let c1Lower = column1.toLowerCase();
 
     if (c4Lower && fixtures[c4Lower]) {
@@ -175,20 +189,6 @@ function processLines(content, options, log) {
       model = fixtures[c4Lower].model;
       pos = 4;
     }
-    /* else if (c3Lower && fixtures[c3Lower]) {
-      brand = fixtures[c3Lower].brand;
-      model = fixtures[c3Lower].model;
-      pos = 3;
-    } else if (c2Lower && fixtures[c2Lower]) {
-      brand = fixtures[c2Lower].brand;
-      model = fixtures[c2Lower].model;
-      pos = 2;
-    } else if (c1Lower && fixtures[c1Lower]) {
-      brand = fixtures[c1Lower].brand;
-      model = fixtures[c1Lower].model;
-      pos = 1;
-    }
-    */
 
     let simulate4 = ' - ';
     let simulate3 = ' - ';
@@ -241,6 +241,8 @@ function processLines(content, options, log) {
     }
   }
 
+  // Clear progress bar line and complete task cleanly
+  process.stderr.write('\r' + ' '.repeat(progressBarWidth + 35) + '\r');
   console.warn(`[✓] Task 3/4 Completed. Evaluated ${totalCount} lines.`);
   return { foundCount, totalCount, simulateDetect };
 }
