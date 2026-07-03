@@ -4,7 +4,6 @@ const BROWSER_FAMILIES = require('./browser-families');
 const ArrayPath = require('./../../lib/array-path');
 const helper = require('./../helper');
 const BrowserHints = require('./hints/browser-hints');
-const { versionCompare } = require('../helper');
 
 const BROWSER_SHORT = helper.revertObject(require('./browser-short'));
 const browserHints = new BrowserHints;
