@@ -212,6 +212,11 @@ export interface DetectResult {
   device: ResultDevice;
 }
 
+export interface ResultInlineOs {
+  name: string;
+  short: string;
+}
+
 export interface ResultOs {
   name: string;
   short_name: string;
@@ -221,7 +226,7 @@ export interface ResultOs {
 }
 
 export interface ResultClient {
-  type: string;
+  type?: string;
   name: string;
   short_name?: string;
   version: string;
@@ -262,6 +267,10 @@ export interface ResultDeviceInfoDisplay {
 export interface ResultDeviceInfoResolution {
   width: string;
   height: string;
+}
+
+export interface ResultHashHint {
+  name: string;
 }
 
 export interface ResultDeviceInfoPerformance {
@@ -306,3 +315,4 @@ export interface ResultDeviceInfo {
   hardware?: ResultDeviceInfoHardware|null;
   performance?: ResultDeviceInfoPerformance|null;
 }
+

@@ -21,18 +21,19 @@ class ClientAbstractParser extends ParserAbstract {
   
   /**
    * @param {string} userAgent
-   * @param {*} clientHintData
-   * @returns {{name: (string|*), type: string, version: string}|null}
+   * @param {ResultClientHints} clientHintData
+   * @returns {ResultClient|null}
    */
   parse(userAgent, clientHintData) {
     if (!userAgent) {
       return null;
     }
-    userAgent = this.prepareUserAgent(userAgent);
+
+    const ua = this.prepareUserAgent(userAgent);
 
     // scan indexes
     if (this.clientIndexes) {
-     let result = this.parseUserAgentByPositions(userAgent);
+     let result = this.parseUserAgentByPositions(ua);
       if (result !== null) {
         return result;
       }
@@ -40,7 +41,7 @@ class ClientAbstractParser extends ParserAbstract {
     
     // full scan
     for (let i = 0, l = this.collectionLength; i < l; i++) {
-      let result = this.parseUserAgentByPosition(userAgent, i);
+      let result = this.parseUserAgentByPosition(ua, i);
       if (result !== null) {
         return result;
       }

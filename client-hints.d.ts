@@ -45,6 +45,14 @@ export interface ResultClientHints {
   device: ResultDevicePropClientHints;
 }
 
+export interface ResultInlineClientHint {
+  name: string,
+  short_name: string,
+  version: string
+  engine?: string
+  engine_version?: string
+}
+
 export type JSONValue =
   | string
   | number

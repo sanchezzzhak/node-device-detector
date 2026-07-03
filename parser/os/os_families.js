@@ -26,6 +26,7 @@ module.exports = {
   'UOS', 'PIO', 'FRI', 'LIR', 'WEB', 'SER', 'ASP', 'AOS', 'LOO', 'EUL',
   'SCI', 'ALP', 'CLO', 'ROC', 'OVZ', 'PVE', 'RST', 'EZX', 'GNS', 'JOL',
   'TUR', 'QTP', 'WPO', 'PAN', 'VIZ', 'AZU', 'COL', 'OSS', 'ELM', 'LPU',
+  'KOB',
   ],
   'Mac': ['MAC'],
   'Mobile Gaming Console': ['PSP', 'NDS', 'XBX'],
@@ -37,7 +38,7 @@ module.exports = {
   'Unix': [
   'SOS', 'AIX', 'HPX', 'BSD', 'NBS', 'OBS', 'DFB', 'SYL', 'IRI', 'T64',
   'INF', 'ELE', 'GNX', 'ULT', 'NWS', 'NXT', 'SBL', 'BS1', 'GHO', 'PLN',
-  'MNX',
+  'MNX', 'THN',
   ],
   'WebTV': ['WTV'],
   'Windows': ['WIN'],
