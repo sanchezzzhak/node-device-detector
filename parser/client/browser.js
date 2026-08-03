@@ -18,6 +18,7 @@ const CLIENTHINT_MAPPING = {
   'Norton Private Browser': ['Norton Secure Browser'],
   'Opera GX':['Opera GX Android'],
   'Opera Mini': ['Opera Mini Android'],
+  'Puffin Cloud Browser': ['Puffin'],
   'Vewd Browser': ['Vewd Core'],
   'Yandex Browser': ['YaSearchBrowser'],
 };
@@ -320,6 +321,10 @@ class Browser extends ClientAbstractParser {
             || helper.fuzzyCompare(brand, browserName + ' Browser');
 
           if (found) {
+            if ('Chrome' === name && 'Chromium' === browserName) {
+              break;
+            }
+
             name = String(browserName);
             short = String(shortName);
             version = String(brandItem.version);
@@ -327,9 +332,8 @@ class Browser extends ClientAbstractParser {
           }
         }
 
-        // If we detected a brand, that is not chromium,
-        // we will use it, otherwise we will look further
-        if (['', 'Chromium', 'Microsoft Edge'].indexOf(name) === -1) {
+        // If we detected a brand, that is not in the array, we will use it, otherwise we will look further
+        if (['', 'Chrome', 'Chromium', 'Microsoft Edge'].indexOf(name) === -1) {
           break;
         }
       }

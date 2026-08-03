@@ -658,6 +658,7 @@ class DeviceDetector {
      */
     const hasDeviceTvType = [
       DEVICE_TYPE.TV,
+      DEVICE_TYPE.WEARABLE,
       DEVICE_TYPE.PERIPHERAL
     ].indexOf(deviceType) === -1 && helper.hasAndroidTVFragment(userAgent)
     if (hasDeviceTvType) {

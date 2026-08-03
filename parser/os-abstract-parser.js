@@ -13,7 +13,8 @@ const ANDROID_APP_LIST = [
 
 const CLIENTHINT_MAPPING = {
   'GNU/Linux': ['Linux'],
-  'Mac': ['MacOS']
+  'Mac': ['MacOS'],
+  'Puffin OS': ['Cloud Phone 2.4'],
 };
 
 const FIRE_OS_VERSION_MAPPING = require('./os/fire-os-version-map');
@@ -167,6 +168,7 @@ class OsAbstractParser extends ParserAbstract {
     if ('Windows' !== name && '0.0.0' !== version && 0 === parseInt(version)) {
       version = '';
     }
+
     return {
       name: name,
       short_name: short,
@@ -269,6 +271,10 @@ class OsAbstractParser extends ParserAbstract {
       // On Windows, version 0.0.0 can be either 7, 8 or 8.1
       if (data && 'Windows' === name && '0.0.0' === version) {
         version = '10' === data.version ? '' : data.version;
+      }
+
+      if (data && 'Puffin OS' === name) {
+        version = data.version;
       }
 
       // If the OS name detected from client hints matches the OS family from user agent

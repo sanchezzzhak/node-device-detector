@@ -31,9 +31,18 @@ module.exports = {
     ]
   },
   "Nintendo": {
-    "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
+    "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)|Switch(?: Lite| OLED)?\\)",
     "device": "console",
-    "model": "$1"
+    "models": [
+      {
+        "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
+        "model": "$1"
+      },
+      {
+        "regex": "(Switch(?: Lite| OLED)?)",
+        "model": "Nintendo $1"
+      }
+    ]
   },
   "OUYA": {
     "regex": "OUYA",

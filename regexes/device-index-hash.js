@@ -3084,6 +3084,24 @@ module.exports = {
   "v2429": [
     "VV"
   ],
+  "25080rabdt": [
+    "XI"
+  ],
+  "2510era8bg": [
+    "XI"
+  ],
+  "2510era8bc": [
+    "XI"
+  ],
+  "2510dra23g": [
+    "XI"
+  ],
+  "2510dra23e": [
+    "XI"
+  ],
+  "pnm-n49": [
+    "HNR"
+  ],
   "gi-626": [
     "A5"
   ],
@@ -62604,6 +62622,256 @@ module.exports = {
   "x2034": [
     "QQ"
   ],
+  "nx809j": [
+    "57"
+  ],
+  "via m45": [
+    "R4"
+  ],
+  "2510epc8bg": [
+    "0P"
+  ],
+  "neon smarta 2 t": [
+    "X1",
+    "JG"
+  ],
+  "neon smarta 2": [
+    "X1",
+    "JG"
+  ],
+  "m-kopa m10": [
+    "MKP"
+  ],
+  "neon ultra 2": [
+    "X1",
+    "JG"
+  ],
+  "nexg_n10": [
+    "WA"
+  ],
+  "nx741j": [
+    "57"
+  ],
+  "nx799j": [
+    "57"
+  ],
+  "pilot 5": [
+    "OSC"
+  ],
+  "pilot 6": [
+    "OSC"
+  ],
+  "26067pc09g": [
+    "0P"
+  ],
+  "2605epn8ec": [
+    "XI"
+  ],
+  "2604frk1ec": [
+    "XI"
+  ],
+  "2602bpc18g": [
+    "0P"
+  ],
+  "2512bpndag": [
+    "XI"
+  ],
+  "2512bpndac": [
+    "XI"
+  ],
+  "25128rn17y": [
+    "XI"
+  ],
+  "25128rn17a": [
+    "XI"
+  ],
+  "25128pna1g": [
+    "XI"
+  ],
+  "25128pna1c": [
+    "XI"
+  ],
+  "25128pc17l": [
+    "0P"
+  ],
+  "25128pc17g": [
+    "0P"
+  ],
+  "2511frt34c": [
+    "XI"
+  ],
+  "2511fpc34g": [
+    "0P"
+  ],
+  "25118pc98g": [
+    "0P"
+  ],
+  "25113pn0eg": [
+    "XI"
+  ],
+  "2510drk44c": [
+    "XI"
+  ],
+  "2510dpc44g": [
+    "0P"
+  ],
+  "25102rkbec": [
+    "XI"
+  ],
+  "25102pcbeg": [
+    "0P"
+  ],
+  "rock 1": [
+    "B2"
+  ],
+  "rock 1 pro": [
+    "B2"
+  ],
+  "rock 2": [
+    "B2"
+  ],
+  "rock 2 pro": [
+    "B2"
+  ],
+  "rock 3": [
+    "B2"
+  ],
+  "rock 5": [
+    "B2"
+  ],
+  "rmx8899": [
+    "RE"
+  ],
+  "rmx5566": [
+    "RE"
+  ],
+  "rmx5555": [
+    "RE"
+  ],
+  "rmx5388": [
+    "RE"
+  ],
+  "rmx5377": [
+    "RE"
+  ],
+  "ob-a99": [
+    "UZ"
+  ],
+  "fire 7 ultra": [
+    "DO"
+  ],
+  "fire 7 pro": [
+    "DO"
+  ],
+  "fire 5 ultra": [
+    "DO"
+  ],
+  "hyper 8 ultra": [
+    "HV"
+  ],
+  "hyper 8 pro": [
+    "HV"
+  ],
+  "flat 3c": [
+    "OSC"
+  ],
+  "plv110": [
+    "OP"
+  ],
+  "plw110": [
+    "OP"
+  ],
+  "ply110": [
+    "ON"
+  ],
+  "plz110": [
+    "ON"
+  ],
+  "plu110": [
+    "ON"
+  ],
+  "pls120": [
+    "OP"
+  ],
+  "plr110": [
+    "ON"
+  ],
+  "plq110": [
+    "ON"
+  ],
+  "plp110": [
+    "OP"
+  ],
+  "plk110": [
+    "ON"
+  ],
+  "plj110": [
+    "OP"
+  ],
+  "plg110": [
+    "OP"
+  ],
+  "pma110": [
+    "OP"
+  ],
+  "pma120": [
+    "OP"
+  ],
+  "pmm110": [
+    "OP"
+  ],
+  "pme110": [
+    "OP"
+  ],
+  "pmd110": [
+    "OP"
+  ],
+  "nla-lx1": [
+    "HNR",
+    "HU"
+  ],
+  "nla-lx3": [
+    "HNR",
+    "HU"
+  ],
+  "lgn-nx1": [
+    "HNR",
+    "HU",
+    "LG"
+  ],
+  "lgn-nx3": [
+    "HNR",
+    "HU",
+    "LG"
+  ],
+  "vkj-nx9": [
+    "HNR",
+    "HU"
+  ],
+  "abr-nx3": [
+    "HNR",
+    "HU"
+  ],
+  "lna-nx1": [
+    "HNR",
+    "HU"
+  ],
+  "gfy-lx3": [
+    "HNR",
+    "HU"
+  ],
+  "vkp-nx9": [
+    "HNR",
+    "HU"
+  ],
+  "lly-nx3": [
+    "HNR",
+    "HU"
+  ],
+  "nla-nx1": [
+    "HNR",
+    "HU"
+  ],
   "gs55-6": [
     "GS"
   ],
@@ -77726,6 +77994,43 @@ module.exports = {
   ],
   "sm-x130": [
     "SA"
+  ],
+  "2604erp4dg": [
+    "XI"
+  ],
+  "2603arp14g": [
+    "XI"
+  ],
+  "rugking pad pro": [
+    "UL"
+  ],
+  "rugking pad 2 pro": [
+    "UL"
+  ],
+  "mega 12": [
+    "B2"
+  ],
+  "bpad t1": [
+    "BNC"
+  ],
+  "iplay80miniultra": [
+    "3A"
+  ],
+  "ipa2575": [
+    "VV"
+  ],
+  "ipa2556": [
+    "VV"
+  ],
+  "jms-w09": [
+    "HNR"
+  ],
+  "ndl2-w09": [
+    "HNR",
+    "HU"
+  ],
+  "cga-w00": [
+    "HNR"
   ],
   "jdn-al00": [
     "HU"
@@ -97049,6 +97354,39 @@ module.exports = {
   "rombica tv emotion": [
     "R3"
   ],
+  "vodafone tv 3": [
+    "VF"
+  ],
+  "yutmart-mxqpro": [
+    "YUT"
+  ],
+  "imtm741": [
+    "BUL"
+  ],
+  "formuler z11 pro max": [
+    "F5"
+  ],
+  "formuler z11 pro": [
+    "F5"
+  ],
+  "formuler z10 neo": [
+    "F5"
+  ],
+  "formuler z10 se": [
+    "F5"
+  ],
+  "formuler z12 ultra": [
+    "F5"
+  ],
+  "formuler z mini": [
+    "F5"
+  ],
+  "43ds620andt": [
+    "HOO"
+  ],
+  "40fles907t2sm": [
+    "05"
+  ],
   "bb2 pro": [
     "0M"
   ],
@@ -98060,5 +98398,8 @@ module.exports = {
   ],
   "quest 3": [
     "OQ"
+  ],
+  "res102": [
+    "RKI"
   ]
 };
