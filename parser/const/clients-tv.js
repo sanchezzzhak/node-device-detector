@@ -14,4 +14,5 @@ module.exports = [
   'QJY TV Browser',
   'TV Bro',
   'Redline',
+  'Odin',
 ];

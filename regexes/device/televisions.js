@@ -107,6 +107,16 @@ module.exports = {
       }
     ]
   },
+  "ATLANTIC": {
+    "regex": "ATLANTIC [;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "Atlantic Electrics": {
     "regex": "ATLANTIC[;,)]",
     "device": "tv",
@@ -128,12 +138,16 @@ module.exports = {
     ]
   },
   "AWOX": {
-    "regex": "AWOX[;,)]",
+    "regex": ".+AWOX[;,)]",
     "device": "tv",
     "models": [
       {
         "regex": "LGE/[^/]+/AWOX; ([a-z0-9]+);",
         "model": "$1"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
       }
     ]
   },
@@ -326,6 +340,26 @@ module.exports = {
     "device": "tv",
     "model": "Dreambox"
   },
+  "Dual": {
+    "regex": "Dual[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "Durabase": {
+    "regex": "Durabase[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "EGL": {
     "regex": "EGL[;,)]",
     "device": "tv",
@@ -378,6 +412,16 @@ module.exports = {
   },
   "Essentielb": {
     "regex": "ESSENTIELB[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "Eversteel": {
+    "regex": "Eversteel[;,)]",
     "device": "tv",
     "models": [
       {
@@ -486,6 +530,16 @@ module.exports = {
       }
     ]
   },
+  "Grandin": {
+    "regex": "Grandin[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "Grundig": {
     "regex": "(OWB|(?:Amazon.+)?Grundig)",
     "device": "tv",
@@ -520,6 +574,16 @@ module.exports = {
       }
     ]
   },
+  "Heider": {
+    "regex": "Heider[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "Hi-Level": {
     "regex": "HI-LEVEL[;,)]",
     "device": "tv",
@@ -536,6 +600,26 @@ module.exports = {
     "models": [
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "TELE System": {
+    "regex": ".+Telesystem[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "KIWI": {
+    "regex": ".+KIWI[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
         "model": "Smart TV ($1)"
       }
     ]
@@ -747,6 +831,26 @@ module.exports = {
     "models": [
       {
         "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "IXI": {
+    "regex": "IXI[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "johnson": {
+    "regex": "johnson[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "model": "Smart TV ($1)"
       }
     ]
@@ -967,12 +1071,16 @@ module.exports = {
     ]
   },
   "Smart Tech": {
-    "regex": "SMARTTECH[;,)]",
+    "regex": ".+SMARTTECH[;,)]",
     "device": "tv",
     "models": [
       {
         "regex": "LGE/[^/]+/SMARTTECH; ([a-z0-9]+);",
         "model": "$1"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
       }
     ]
   },
@@ -1322,10 +1430,15 @@ module.exports = {
       }
     ]
   },
-  "Neo": {
-    "regex": "NEO, ([a-z0-9_ -]+), (?:wired|wireless)",
+  "NEO": {
+    "regex": "NEO[;,)]",
     "device": "tv",
-    "model": ""
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
   },
   "NEXON": {
     "regex": "NEXON[;,)]",
@@ -1383,6 +1496,16 @@ module.exports = {
   },
   "NORMANDE": {
     "regex": "NORMANDE[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "OCEAN": {
+    "regex": "OCEAN[;,)]",
     "device": "tv",
     "models": [
       {
@@ -1521,6 +1644,16 @@ module.exports = {
       }
     ]
   },
+  "ProCaster": {
+    "regex": "ProCaster[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "PROFiLO": {
     "regex": "PROFILO[;,)]",
     "device": "tv",
@@ -1555,6 +1688,16 @@ module.exports = {
       }
     ]
   },
+  "Quart": {
+    "regex": "Quart[;,)]",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
   "RCA Tablets": {
     "regex": "RCA;",
     "device": "tv",
@@ -1576,11 +1719,15 @@ module.exports = {
     ]
   },
   "Saba": {
-    "regex": "Saba[;,)]",
+    "regex": ".+Saba[;,)]",
     "device": "tv",
     "models": [
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
         "model": "Smart TV ($1)"
       }
     ]
@@ -1797,9 +1944,24 @@ module.exports = {
     ]
   },
   "Star-Light": {
-    "regex": "STAR LIGHT[;,)]",
+    "regex": ".+STAR ?LIGHT[;,)]",
     "device": "tv",
-    "model": ""
+    "models": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "SURFTV": {
+    "regex": "SURFTV",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "model": "Smart TV ($1)"
+      }
+    ]
   },
   "SULPICE TV": {
     "regex": "SULPICE_TV[;,)]",
@@ -1827,6 +1989,16 @@ module.exports = {
     "models": [
       {
         "regex": "SmartTV(2019|2020)",
+        "model": "Smart TV ($1)"
+      }
+    ]
+  },
+  "Technical": {
+    "regex": "Technical",
+    "device": "tv",
+    "models": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "model": "Smart TV ($1)"
       }
     ]

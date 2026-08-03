@@ -85,9 +85,9 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "Cloud Phone",
+    "regex": "Cloud Phone(?: (\\d+[.\\d]+))?",
     "name": "Puffin OS",
-    "version": ""
+    "version": "$1"
   },
   {
     "regex": "RisingOS",
@@ -95,7 +95,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": ".+.cm(\\d).x86_64",
+    "regex": ".+\\.cm(\\d)-x86_64",
     "name": "Azure Linux",
     "version": "$1"
   },
@@ -335,6 +335,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "VIDAA",
+    "name": "VIDAA",
+    "version": ""
+  },
+  {
     "regex": "PICO.+OS(\\d+[.\\d]*)",
     "name": "PICO OS",
     "version": "$1"
@@ -375,7 +380,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": ".+.amzn(\\d)(?:int)?.x86_64|Linux/.+aws",
+    "regex": ".+\\.amzn(\\d)(?:int)?\\.x86_64|Linux/.+aws",
     "name": "Amazon Linux",
     "version": "$1"
   },
@@ -690,7 +695,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:Android (\\d([\\d.])*);? )?lineage_\\w+",
+    "regex": "(?:Android (\\d([\\d.])*);? )?(?:lineage_\\w+|Switch(?: Lite| OLED)?\\))",
     "name": "Lineage OS",
     "versions": [
       {
@@ -1077,7 +1082,17 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": ".+MRE|MAUI Runtime",
+    "regex": "(MAUI_MRE.*?;)",
+    "name": "MRE",
+    "version": ""
+  },
+  {
+    "regex": "(MAUI RUNTIME.*?;)",
+    "name": "MRE",
+    "version": ""
+  },
+  {
+    "regex": "(MRE_VER_\\d+;)",
     "name": "MRE",
     "version": ""
   },
@@ -1207,7 +1222,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": ".+redhat-linux-gnu|rhel|Red Hat Enterprise Linux Server",
+    "regex": "(?:(?:i386|x86_64)-)?redhat-linux-gnu|rhel|Red Hat Enterprise Linux Server",
     "name": "Red Hat",
     "version": ""
   },
@@ -1222,7 +1237,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": ".+.el(\\d+(?:[_.]\\d+)*).(?:centos|x86_64)",
+    "regex": ".+\\.el(\\d+(?:[_.]\\d+)*)\\.(?:centos|x86_64)",
     "name": "CentOS",
     "version": "$1"
   },
@@ -1232,7 +1247,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Fedora/.+.fc(\\d+)",
+    "regex": "Fedora/.+\\.fc(\\d+)",
     "name": "Fedora",
     "version": "$1"
   },
@@ -1576,7 +1591,12 @@ module.exports = [
     "version": "$1.$2"
   },
   {
-    "regex": "iPad; CPU OS 18_7.+Version/(\\d+[.\\d]+)",
+    "regex": "iPad; CPU OS 18_[67].+\\) Version/(\\d+[.\\d]+)",
+    "name": "iPadOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iPad; CPU OS 18_[67].+Version/(2[67]+[.\\d]+)",
     "name": "iPadOS",
     "version": "$1"
   },
@@ -1641,12 +1661,12 @@ module.exports = [
     "version": "26.$1"
   },
   {
-    "regex": "iPhone OS 18_7.+Version/(\\d+[.\\d]+)",
+    "regex": "iPhone OS 18_[67].+(?:/iOS|Version)/(2[67](?:\\.\\d+){0,2})",
     "name": "iOS",
     "version": "$1"
   },
   {
-    "regex": "iOS/(\\d+[.\\d]+)$",
+    "regex": "iPhone OS 18_[67].+\\) Version/(\\d+\\.\\d+\\.\\d+)",
     "name": "iOS",
     "version": "$1"
   },
@@ -1993,7 +2013,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Mac OS X 10_15_7.+Version/(2[67]+[.\\d]+)",
+    "regex": "Mac OS X 10_15.+Version/(2[67]+[.\\d]+)",
     "name": "Mac",
     "version": "$1"
   },
@@ -2573,7 +2593,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Linux[^a-z]|Cinnamon/(?:\\d+[.\\d]+)|.+(?:pc|unknown)-linux-gnu|X11",
+    "regex": "Linux[^a-z]|Cinnamon/(?:\\d+[.\\d]+)|(?:(?:i386|x86_64)-)?(?:pc|unknown)-linux-gnu|X11",
     "name": "GNU/Linux",
     "version": ""
   },

@@ -165,6 +165,11 @@ module.exports = [
     "version": ""
   },
   {
+    "regex": "GNews (?:Android|iOS)/(\\d+[.\\d]+)",
+    "name": "Google News",
+    "version": "$1"
+  },
+  {
     "regex": "wxwork/(\\d+[.\\d]+)",
     "name": "WeCom",
     "version": "$1"
@@ -783,6 +788,11 @@ module.exports = [
     "regex": "Yandex/([\\d.]+)",
     "name": "Yandex",
     "version": ""
+  },
+  {
+    "regex": "YaBrowser/([\\d.]+).+YazekaApp/",
+    "name": "Yandex AI",
+    "version": "$1"
   },
   {
     "regex": "ZenKit/([\\d.]+)",
@@ -3067,6 +3077,41 @@ module.exports = [
   {
     "regex": "Kobo.+/(\\d+[.\\d]+)",
     "name": "Kobo eReader",
+    "version": "$1"
+  },
+  {
+    "regex": "GrokApp/([\\d.]+)",
+    "name": "Grok",
+    "version": "$1"
+  },
+  {
+    "regex": "QuickBooks/([\\d.]+)",
+    "name": "QuickBooks",
+    "version": "$1"
+  },
+  {
+    "regex": "Latina/([\\d.]+)",
+    "name": "Latina",
+    "version": "$1"
+  },
+  {
+    "regex": "HuffPost/ios/([\\d.]+)",
+    "name": "HuffPost",
+    "version": "$1"
+  },
+  {
+    "regex": "Phantom/ios/([\\d.]+)",
+    "name": "Phantom",
+    "version": "$1"
+  },
+  {
+    "regex": "poq\\.ios/([\\d.]+)",
+    "name": "poq",
+    "version": "$1"
+  },
+  {
+    "regex": "YuanBao/.+app_version/([\\d.]+)",
+    "name": "YuanBao",
     "version": "$1"
   },
   {

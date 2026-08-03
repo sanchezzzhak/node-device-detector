@@ -1,5 +1,10 @@
 module.exports = [
   {
+    "regex": "Lightpanda/([\\d.]+)",
+    "name": "Lightpanda",
+    "version": "$1"
+  },
+  {
     "regex": "Quiche%20Browser",
     "name": "Quiche Browser",
     "version": "",
@@ -670,9 +675,9 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(.*)Vast Browser/(\\d+\\.[.\\d]+)",
+    "regex": ".+Vast Browser/(\\d+\\.[.\\d]+)",
     "name": "Vast Browser",
-    "version": "$2",
+    "version": "$1",
     "engine": {
       "default": "Blink"
     }
@@ -686,9 +691,9 @@ module.exports = [
     }
   },
   {
-    "regex": "(.*)U Browser(\\d+\\.[.\\d]+)",
+    "regex": ".+U Browser(\\d+\\.[.\\d]+)",
     "name": "U Browser",
-    "version": "$2",
+    "version": "$1",
     "engine": {
       "default": "Blink"
     }
@@ -2448,6 +2453,14 @@ module.exports = [
     "regex": "UC[ ]?Browser.* \\(UCTurbo\\)",
     "name": "UC Browser Turbo",
     "version": ""
+  },
+  {
+    "regex": "UCPC/(\\d+[.\\d]+)",
+    "name": "UC Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
   },
   {
     "regex": "ArkWeb/(?:\\d+[.\\d]+) (?:Mobile )?UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?$",
