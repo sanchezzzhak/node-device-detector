@@ -7,7 +7,7 @@ _Last update: 03/08/2026_
 
 Port php lib [matomo-org/device-detector](https://github.com/matomo-org/device-detector) to NodeJs
 
-* [Online demo](https://mwfx8e.sse.codesandbox.io/)
+* [Online demo](https://codesandbox.io/p/devbox/demo-node-device-detect-v-last-mwfx8e)
 
 ## Code Status <a name="top"></a>
 
