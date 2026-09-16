@@ -15,11 +15,6 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "KPN_Veilig[ /](\\d+\\.[.\\d]+)",
-    "name": "KPN Veilig",
-    "version": "$1"
-  },
-  {
     "regex": "NAVER/(\\d+[.\\d]+) CFNetwork",
     "name": "Naver",
     "version": "$1"
@@ -730,7 +725,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "KAKAOTALK (\\d+\\.(?:[.\\d]+))?",
+    "regex": "KAKAOTALK[ /](\\d+\\.(?:[.\\d]+))?",
     "name": "KakaoTalk",
     "version": "$1"
   },
@@ -1397,6 +1392,41 @@ module.exports = [
   {
     "regex": "FSCDCSafe[ /](\\d+\\.[.\\d]+)",
     "name": "F-Secure SAFE",
+    "version": "$1"
+  },
+  {
+    "regex": "Swisscom[ /](\\d+\\.[.\\d]+)",
+    "name": "Swisscom Internet Security",
+    "version": "$1"
+  },
+  {
+    "regex": "Telia_swe[ /](\\d+\\.[.\\d]+)",
+    "name": "Telia Trygg",
+    "version": "$1"
+  },
+  {
+    "regex": "KPN_Veilig[ /](\\d+\\.[.\\d]+)",
+    "name": "KPN Veilig",
+    "version": "$1"
+  },
+  {
+    "regex": "elisaya[ /](\\d+\\.[.\\d]+)",
+    "name": "Elisa Turvapaketti",
+    "version": "$1"
+  },
+  {
+    "regex": "DNA[ /](\\d+\\.[.\\d]+)",
+    "name": "DNA Digiturva",
+    "version": "$1"
+  },
+  {
+    "regex": "Tokai[ /](\\d+\\.[.\\d]+)",
+    "name": "TOKAI SAFE",
+    "version": "$1"
+  },
+  {
+    "regex": "VandenBorre[ /](\\d+\\.[.\\d]+)",
+    "name": "Vanden Borre My Security",
     "version": "$1"
   },
   {
@@ -3112,6 +3142,56 @@ module.exports = [
   {
     "regex": "YuanBao/.+app_version/([\\d.]+)",
     "name": "YuanBao",
+    "version": "$1"
+  },
+  {
+    "regex": "super/([\\d.]+)/",
+    "name": "Yahoo",
+    "version": "$1"
+  },
+  {
+    "regex": "superhk/([\\d.]+)/",
+    "name": "Yahoo Hong Kong",
+    "version": "$1"
+  },
+  {
+    "regex": "YahooSearch/([\\d.]+)",
+    "name": "Yahoo Search",
+    "version": "$1"
+  },
+  {
+    "regex": "Azul ([\\d.]+)",
+    "name": "Azul",
+    "version": "$1"
+  },
+  {
+    "regex": "BNK48_101/([\\d.]+)",
+    "name": "iAM48",
+    "version": "$1"
+  },
+  {
+    "regex": "LoiLoNote/([\\d.]+)",
+    "name": "LoiLoNote",
+    "version": "$1"
+  },
+  {
+    "regex": "DelfiEEwww/([\\d.]+)",
+    "name": "Delfi EE",
+    "version": "$1"
+  },
+  {
+    "regex": "_sol_ _app_ __v([\\d.]+)",
+    "name": "Sol Nyheter",
+    "version": "$1"
+  },
+  {
+    "regex": "JOKERBET/([\\d.]+)",
+    "name": "JOKERBET",
+    "version": "$1"
+  },
+  {
+    "regex": "boohee/([\\d.]+)",
+    "name": "boohee",
     "version": "$1"
   },
   {

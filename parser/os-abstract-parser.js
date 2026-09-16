@@ -11,16 +11,10 @@ const ANDROID_APP_LIST = [
   'every.browser.inc'
 ];
 
-const CLIENTHINT_MAPPING = {
-  'GNU/Linux': ['Linux'],
-  'Mac': ['MacOS'],
-  'Puffin OS': ['Cloud Phone 2.4'],
-};
-
+const CLIENTHINT_MAPPING = require('./os/client-hint-os-map');
 const FIRE_OS_VERSION_MAPPING = require('./os/fire-os-version-map');
 const LINEAGE_OS_VERSION_MAPPING = require('./os/lineage-os-version-map');
 const IndexerOs = require('./os/indexer-os');
-
 
 const getVersionForMapping = (version, map) => {
   const majorVersion =  '' + version.split('.', 1)[0];

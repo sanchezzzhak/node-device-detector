@@ -35,12 +35,12 @@ module.exports = {
     "device": "console",
     "models": [
       {
-        "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
+        "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch(?: Lite| OLED)|GameBoy)",
         "model": "$1"
       },
       {
         "regex": "(Switch(?: Lite| OLED)?)",
-        "model": "Nintendo $1"
+        "model": "$1"
       }
     ]
   },
@@ -110,6 +110,16 @@ module.exports = {
       {
         "regex": "Pocket ([235])",
         "model": "$1"
+      }
+    ]
+  },
+  "Valve Corporation": {
+    "regex": "Steam",
+    "device": "console",
+    "models": [
+      {
+        "regex": "SteamDeck",
+        "model": "Steam Deck"
       }
     ]
   }

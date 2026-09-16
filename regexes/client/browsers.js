@@ -1,5 +1,35 @@
 module.exports = [
   {
+    "regex": "FulldiveBrowser/([\\d.]+)",
+    "name": "Fulldive",
+    "version": "$1"
+  },
+  {
+    "regex": "Teak/([\\d.]+)",
+    "name": "Teak Browser",
+    "version": "$1"
+  },
+  {
+    "regex": "Stadium/([\\d.]+)",
+    "name": "Stadium",
+    "version": "$1"
+  },
+  {
+    "regex": "MullvadBrowser/([\\d.]+)",
+    "name": "Mullvad Browser",
+    "version": "$1"
+  },
+  {
+    "regex": "[\\d\\s]+Lite Browser/(\\d+\\.\\d+)$",
+    "name": "GO Browser",
+    "version": "$1"
+  },
+  {
+    "regex": "Startpage(?:/(\\d+[.\\d]+))?",
+    "name": "Startpage",
+    "version": "$1"
+  },
+  {
     "regex": "Lightpanda/([\\d.]+)",
     "name": "Lightpanda",
     "version": "$1"
@@ -393,9 +423,9 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "DiigoBrowser$",
+    "regex": "DiigoBrowser(?:/([\\d.]+))?",
     "name": "Diigo Browser",
-    "version": ""
+    "version": "$1"
   },
   {
     "regex": ".*OnBrowserLite(\\d+\\.[.\\d]+)",
@@ -538,7 +568,7 @@ module.exports = [
     }
   },
   {
-    "regex": "\\[(?:HB/29|PB/(?:66|81))\\]",
+    "regex": "\\[(?:HB/29|PB/(?:6[36]|81|1[02]8|115|149)|SX/\\d+)\\]",
     "name": "SecureX",
     "version": "",
     "engine": {
@@ -638,6 +668,14 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": "Blink"
+    }
+  },
+  {
+    "regex": "Norton%20Private%20Browser",
+    "name": "Norton Private Browser",
+    "version": "",
+    "engine": {
+      "default": "WebKit"
     }
   },
   {
@@ -742,7 +780,7 @@ module.exports = [
     }
   },
   {
-    "regex": "lexi/(\\d+[.\\d]+)",
+    "regex": "lexi(?:Browser)?/(\\d+[.\\d]+)",
     "name": "Lexi Browser",
     "version": "$1",
     "engine": {
@@ -1019,6 +1057,17 @@ module.exports = [
   },
   {
     "regex": "Chrome/(\\d+\\.[.\\d]+) .*\\(Chromium GOST\\)",
+    "name": "Chromium GOST",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit",
+      "versions": {
+        "28": "Blink"
+      }
+    }
+  },
+  {
+    "regex": "Chromium GOST.+Chrome/(\\d+\\.[.\\d]+)",
     "name": "Chromium GOST",
     "version": "$1",
     "engine": {
@@ -1564,7 +1613,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Valve Steam GameOverlay/(?:(\\d+[.\\d]+))?",
+    "regex": "Valve Steam GameOverlay(?:/(\\d+[.\\d]+))?",
     "name": "Steam In-Game Overlay",
     "version": "$1"
   },
@@ -1658,9 +1707,12 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Atlas/(\\d+[.\\d]+)$",
+    "regex": "(?:ChatGPT%20)?Atlas/(\\d+[.\\d]+)",
     "name": "ChatGPT Atlas",
-    "version": "$1"
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
   },
   {
     "regex": "Falkon(?:/(\\d+[.\\d]+))?",
@@ -2065,6 +2117,11 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "360 Alitephone Browser(?:[ /]?\\(?(\\d+[.\\d]+)(?:beta)?\\)?)?",
+    "name": "360 Speed Browser",
+    "version": "$1"
+  },
+  {
     "regex": "SailfishBrowser(?:/(\\d+[.\\d]+))?",
     "name": "Sailfish Browser",
     "version": "$1",
@@ -2242,6 +2299,30 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "Mac OS X.+Brave(?:/([.\\d]+))?",
+    "name": "Brave",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Brave Browser(?: Nightly)?/([.\\d]+) Mac OS X",
+    "name": "Brave",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Mobile Safari/.+Brave/([.\\d]+)",
+    "name": "Brave",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Chrome/(\\d+\\.[.\\d]+).*Brave/",
     "name": "Brave",
     "version": "$1",
@@ -2250,7 +2331,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Brave(?: Chrome)?(?:/(\\d+[.\\d]+))?",
+    "regex": "Brave(?: Browser(?: Nightly)?| Chrome)?/(\\d+[.\\d]+)",
     "name": "Brave",
     "version": "$1",
     "engine": {
@@ -2274,6 +2355,14 @@ module.exports = [
     "version": "$1",
     "engine": {
       "default": "Gecko"
+    }
+  },
+  {
+    "regex": "WebPositive/([\\d.]+).+Version/",
+    "name": "WebPositive",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
     }
   },
   {
@@ -2427,14 +2516,14 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "UCMini(?:[ /]?(\\d+[.\\d]+))?",
+    "regex": "UC[ ]?Browser/(\\d+[.\\d]+) \\(UCMini\\)",
     "name": "UC Browser Mini",
     "version": "$1"
   },
   {
-    "regex": "UC[ ]?Browser.* \\(UCMini\\)",
+    "regex": "UCMini(?:[ /]?(\\d+[.\\d]+))?",
     "name": "UC Browser Mini",
-    "version": ""
+    "version": "$1"
   },
   {
     "regex": "Chrome.+uc mini browser(\\d+[.\\d]+)?",
@@ -2471,7 +2560,7 @@ module.exports = [
     }
   },
   {
-    "regex": "UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?",
+    "regex": "UC ?(?:Browser|Mobile)(?:[ /]?(\\d+[.\\d]+))?",
     "name": "UC Browser",
     "version": "$1"
   },
@@ -2852,7 +2941,7 @@ module.exports = [
     }
   },
   {
-    "regex": "bdhonorbrowser/(\\d+[.\\d]+)",
+    "regex": "(?:bd)?honorbrowser/(\\d+[.\\d]+)",
     "name": "HONOR Browser",
     "version": "$1"
   },
@@ -2907,12 +2996,9 @@ module.exports = [
     }
   },
   {
-    "regex": "Ya(?:ndex)?SearchBrowser(?:/(\\d+[.\\d]*))",
+    "regex": "Ya(?:ndex)?Search(?:App|Browser)?(?:/(\\d+[.\\d]*))",
     "name": "Yandex Browser",
-    "version": "$1",
-    "engine": {
-      "default": "Blink"
-    }
+    "version": "$1"
   },
   {
     "regex": "Viv(?:aldi)?/(\\d+[.\\d]+)",
@@ -2947,7 +3033,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Midori(?:[ /](\\d+[.\\d]+))?",
+    "regex": "Midori(?:[ /]([.\\d]+))?",
     "name": "Midori",
     "version": "$1",
     "engine": {
@@ -3080,7 +3166,7 @@ module.exports = [
     }
   },
   {
-    "regex": "M?QQ(?:Browser|浏览器)(?:/([.\\d]+))?",
+    "regex": "(?:M?QQ(?:Browser|浏览器)|MQBHD)(?:/([.\\d]+))?",
     "name": "QQ Browser",
     "version": "$1",
     "engine": {
@@ -3618,7 +3704,7 @@ module.exports = [
     }
   },
   {
-    "regex": "NCSA_Mosaic(?:/(\\d+[.\\d]+))?",
+    "regex": "NCSA_Mosaic(?:[ /](\\d+[.\\d]+))?",
     "name": "NCSA Mosaic",
     "version": "$1"
   },
@@ -3711,7 +3797,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Elinks(?:[ /](\\d+[.\\d]+))?",
+    "regex": "Elinks(?:[ /]\\(?(\\d+[.\\d]+))?",
     "name": "Elinks",
     "version": "$1",
     "engine": {
@@ -3729,7 +3815,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Firebird(?! Build)(?:/(\\d+[.\\d]+))?",
+    "regex": "Firebird(?! Build)(?: Browser)?(?:/(\\d+[.\\d]+))?",
     "name": "Firebird",
     "version": "$1",
     "engine": {
@@ -3907,7 +3993,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "OmniWeb(?:/[v]?(\\d+[.\\d]+))?",
+    "regex": "OmniWeb(?:[ /][v]?(\\d+[.\\d]+))?",
     "name": "OmniWeb",
     "version": "$1",
     "engine": {
