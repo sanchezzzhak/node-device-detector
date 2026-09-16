@@ -278,6 +278,7 @@ function hasDesktopFragment(userAgent) {
     'CE-HTML',
     ' Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser',
     'PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)',
+    'Steam',
   ].join('|');
 
   return getBaseRegExp(DESKTOP_PATTERN).exec(userAgent) !== null &&
@@ -294,9 +295,12 @@ function hasTVClient(name) {
  * @return {boolean}
  */
 function hasUserAgentClientHintsFragment(userAgent) {
-  if (/Android (?:1[0-6][.\d]*; K(?: Build\/|[;)])|1[0-6]\)) AppleWebKit/i.test(userAgent)) {
+  const pattern = /Android (?:1[0-7][.\d]*; (?:K(?: Build\/|[;)])|[A-Za-z0-9]{10}; U;.+)|1[0-7]\)) AppleWebKit/i;
+
+  if (pattern.test(userAgent)) {
     return /Telegram-Android\//i.test(userAgent) === false;
   }
+
   return false;
 }
 

@@ -132,7 +132,7 @@ class Browser extends ClientAbstractParser {
           engineVersion = data.engine_version;
         }
 
-        if ('Blink' === engine && 'Iridium' !== name) {
+        if ('Blink' === engine && 'Iridium' !== name && data.engine === engine) {
           if (data.engine_version && engineVersion && helper.versionCompare(data.engine_version, engineVersion) > 0) {
             engineVersion = data.engine_version;
           }

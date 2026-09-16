@@ -1,0 +1,7 @@
+// prettier-ignore
+module.exports = {
+  'GNU/Linux': ['Linux'],
+  'Mac': ['MacOS', 'Mac OS X', 'MacIntel'],
+  'Puffin OS': ['Cloud Phone 2.4'],
+  'Windows': ['Win32']
+};
