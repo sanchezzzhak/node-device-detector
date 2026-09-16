@@ -1,5 +1,15 @@
 module.exports = [
   {
+    "regex": "Steam",
+    "name": "SteamOS",
+    "version": ""
+  },
+  {
+    "regex": "FortiOS (\\d+[.\\d]+)",
+    "name": "FortiOS",
+    "version": "$1"
+  },
+  {
     "regex": "Kobo",
     "name": "KoboOS",
     "version": ""
@@ -45,7 +55,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "SpreadTrum",
+    "regex": "SpreadTrum|^(?!.*CLDC).*Dorado WAP-Browser",
     "name": "Mocor OS",
     "version": ""
   },
@@ -525,6 +535,16 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "MyOS(\\d+[.\\d]*)",
+    "name": "MyOS",
+    "version": "$1"
+  },
+  {
+    "regex": "[\\d\\s]+Lite Browser/(\\d+\\.\\d+)$",
+    "name": "HyperOS",
+    "version": ""
+  },
+  {
     "regex": "(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]([56][.\\d]+)",
     "name": "HarmonyOS NEXT",
     "version": "$1"
@@ -695,9 +715,13 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:Android (\\d([\\d.])*);? )?(?:lineage_\\w+|Switch(?: Lite| OLED)?\\))",
+    "regex": "(?:Android (\\d([\\d.])*);? )?(?:lineage_\\w+| Switch(?: Lite| OLED)?\\))",
     "name": "Lineage OS",
     "versions": [
+      {
+        "regex": "Android 17",
+        "version": "24"
+      },
       {
         "regex": "Android 16",
         "version": "23"
@@ -1681,11 +1705,11 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|com\\.apple\\.WebKit\\.Networking|NetworkingExtension).*(?:CFNetwork|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
+    "regex": "^(?!com\\.apple\\.Safari\\.SearchHelper|Safari|com\\.apple\\.WebKit\\.Networking|NetworkingExtension).*(?:CFNetwork(?!/macOS/)|Mana)/.+ Darwin/(\\d+[.\\d]+)(?!.*(?:x86_64|i386|PowerMac|Power%20Macintosh))",
     "name": "iOS",
     "versions": [
       {
-        "regex": "Darwin/26\\.(0)\\.0",
+        "regex": "Darwin/2[67]\\.(0)\\.0",
         "version": "27.$1"
       },
       {
@@ -2008,7 +2032,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "(?:macOS(?:\\(Catalyst\\))?[ /,]|Mac(?:os)?-)(\\d+[.\\d]+)",
+    "regex": "(?:(?<!CFNetwork/)macOS(?:\\(Catalyst\\))?[ /,]|Mac(?:os)?-)(\\d+[.\\d]+)",
     "name": "Mac",
     "version": "$1"
   },
@@ -2018,11 +2042,11 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension|Safari)",
+    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|CFNetwork/macOS/.+Darwin/|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension|Safari)",
     "name": "Mac",
     "versions": [
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?26\\.(0)\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?2[67]\\.(0)\\.0",
         "version": "27.$1"
       },
       {

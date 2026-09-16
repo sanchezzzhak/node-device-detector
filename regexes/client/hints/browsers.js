@@ -326,6 +326,7 @@ module.exports = {
   "com.cloaktp.browser": "Cloak Private Browser",
   "company.thebrowser.arc": "Arc Search",
   "com.android.webview": "Chrome Webview",
+  "com.google.android.webview": "Chrome Webview",
   "com.heytap.browser": "HeyTapBrowser",
   "com.netsky.tincat": "Tincat Browser",
   "com.neurobro.browser": "Neuro Browser",
@@ -347,5 +348,8 @@ module.exports = {
   "ai.perplexity.comet": "Comet",
   "com.uc.browser.en": "UC Browser Mini",
   "com.kwah.privatebrowser": "Hawk Quick Browser",
-  "com.clariobrowser.clario": "Clario Browser"
+  "com.clariobrowser.clario": "Clario Browser",
+  "com.startpage": "Startpage",
+  "com.startpage.app": "Startpage",
+  "com.startpage.mobile": "Startpage"
 };

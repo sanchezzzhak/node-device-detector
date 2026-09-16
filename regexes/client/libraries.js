@@ -800,5 +800,11 @@ module.exports = [
     "name": "KlHttpClientCurl",
     "version": "$1",
     "url": ""
+  },
+  {
+    "regex": "nscurl",
+    "name": "nscurl",
+    "version": "",
+    "url": ""
   }
 ];

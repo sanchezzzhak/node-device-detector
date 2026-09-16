@@ -3099,8 +3099,35 @@ module.exports = {
   "2510dra23e": [
     "XI"
   ],
+  "25098ra98t": [
+    "XI"
+  ],
+  "2510era8bt": [
+    "XI"
+  ],
   "pnm-n49": [
     "HNR"
+  ],
+  "2510dra23l": [
+    "XI"
+  ],
+  "25098ra98g": [
+    "XI"
+  ],
+  "25098ra98i": [
+    "XI"
+  ],
+  "25100ra69g": [
+    "XI"
+  ],
+  "25080rabdg": [
+    "XI"
+  ],
+  "tecno lk7k": [
+    "TB"
+  ],
+  "v2436a": [
+    "VV"
   ],
   "gi-626": [
     "A5"
@@ -4645,108 +4672,6 @@ module.exports = {
   ],
   "swofy m503-pro": [
     "SWO"
-  ],
-  "da220hql": [
-    "AC"
-  ],
-  "da241hl": [
-    "AC"
-  ],
-  "vsd220": [
-    "VS"
-  ],
-  "ifp7550-3": [
-    "VS"
-  ],
-  "ifp9850-3": [
-    "VS"
-  ],
-  "ifp8650-3": [
-    "VS"
-  ],
-  "ifp6550-3": [
-    "VS"
-  ],
-  "wt22m-fi": [
-    "55"
-  ],
-  "wt19m-fi": [
-    "55"
-  ],
-  "t2s_lite": [
-    "2J"
-  ],
-  "xdh-0f-a1": [
-    "XW"
-  ],
-  "xdh-17-a1": [
-    "XW"
-  ],
-  "xdh-18-a1": [
-    "XW"
-  ],
-  "xdh-21-a1": [
-    "XW"
-  ],
-  "xdh-29-b1": [
-    "XW"
-  ],
-  "xdh-2a-b1": [
-    "XW"
-  ],
-  "10bdl4151t": [
-    "PH"
-  ],
-  "da222hql": [
-    "AC"
-  ],
-  "blm-00": [
-    "HU"
-  ],
-  "xd-sdd05-2101": [
-    "XW"
-  ],
-  "portalgo": [
-    "OQ"
-  ],
-  "aeobc": [
-    "KN"
-  ],
-  "aeokn": [
-    "KN"
-  ],
-  "aeoch": [
-    "KN"
-  ],
-  "aeocw": [
-    "KN"
-  ],
-  "aeohy": [
-    "KN"
-  ],
-  "aeocn": [
-    "KN"
-  ],
-  "aeoat": [
-    "KN"
-  ],
-  "aeota": [
-    "KN"
-  ],
-  "aeobp": [
-    "KN"
-  ],
-  "yndx-00055": [
-    "YD"
-  ],
-  "yandexstation_2": [
-    "YD"
-  ],
-  "aeorh": [
-    "KN"
-  ],
-  "aeohp": [
-    "KN"
   ],
   "i7u": [
     "A9"
@@ -18867,6 +18792,33 @@ module.exports = {
   ],
   "ms572": [
     "7M"
+  ],
+  "ums9230_latte_natv": [
+    "RE"
+  ],
+  "t433e": [
+    "TC"
+  ],
+  "t442a": [
+    "TC"
+  ],
+  "t442m": [
+    "TC"
+  ],
+  "t431a": [
+    "TC"
+  ],
+  "t434d": [
+    "TC"
+  ],
+  "z2581": [
+    "ZT"
+  ],
+  "t452b": [
+    "AL"
+  ],
+  "t430ws": [
+    "TC"
   ],
   "shf33": [
     "SH"
@@ -61027,6 +60979,54 @@ module.exports = {
   "redmi note 12 pro+ 5g": [
     "XI"
   ],
+  "ez 1": [
+    "SNK"
+  ],
+  "m-kopa x3": [
+    "MKP"
+  ],
+  "s34": [
+    "MKP"
+  ],
+  "rmx5253": [
+    "RE"
+  ],
+  "rmx5120": [
+    "RE"
+  ],
+  "rmx5131": [
+    "RE"
+  ],
+  "v2532": [
+    "VV"
+  ],
+  "v2556": [
+    "VV"
+  ],
+  "v2575": [
+    "VV"
+  ],
+  "v2541": [
+    "VV"
+  ],
+  "v2553": [
+    "VV"
+  ],
+  "v2543": [
+    "VV"
+  ],
+  "v2538": [
+    "VV"
+  ],
+  "v2550": [
+    "VV"
+  ],
+  "25078pc3ee": [
+    "0P"
+  ],
+  "2602eptc0g": [
+    "XI"
+  ],
   "25028pc03g": [
     "0P"
   ],
@@ -62871,6 +62871,167 @@ module.exports = {
   "nla-nx1": [
     "HNR",
     "HU"
+  ],
+  "26020rnb4l": [
+    "XI"
+  ],
+  "2602dpt53g": [
+    "XI"
+  ],
+  "rmx3963": [
+    "RE"
+  ],
+  "25057rn09g": [
+    "XI"
+  ],
+  "25057rn09e": [
+    "XI"
+  ],
+  "25057rn09i": [
+    "XI"
+  ],
+  "25128rn17l": [
+    "XI"
+  ],
+  "26020rnb4a": [
+    "XI"
+  ],
+  "t450h": [
+    "TRA"
+  ],
+  "z2473": [
+    "ZT"
+  ],
+  "z2474": [
+    "ZT"
+  ],
+  "z2469n": [
+    "ZT"
+  ],
+  "z2459": [
+    "ZT"
+  ],
+  "z2577": [
+    "ZT"
+  ],
+  "z2460": [
+    "57"
+  ],
+  "lab-lx2": [
+    "HNR",
+    "HU"
+  ],
+  "tmrv08p5g": [
+    "TM"
+  ],
+  "twl m10": [
+    "TWL"
+  ],
+  "rmx5108": [
+    "RE"
+  ],
+  "rmx5057": [
+    "RE"
+  ],
+  "rmx5107": [
+    "RE"
+  ],
+  "rmx5171": [
+    "RE"
+  ],
+  "rmx5256": [
+    "RE"
+  ],
+  "rmx5258": [
+    "RE"
+  ],
+  "rmx5264": [
+    "RE"
+  ],
+  "rmx5353": [
+    "RE"
+  ],
+  "rmx5366": [
+    "RE"
+  ],
+  "lly-nx1-n31": [
+    "HNR"
+  ],
+  "serie_m_100": [
+    "DAM"
+  ],
+  "stellar-m6e": [
+    "C1"
+  ],
+  "u655aa": [
+    "6A"
+  ],
+  "sn509a": [
+    "6A"
+  ],
+  "sn512a": [
+    "6A"
+  ],
+  "sn512c": [
+    "CK"
+  ],
+  "sn333c": [
+    "CK"
+  ],
+  "sn333a": [
+    "6A"
+  ],
+  "v2509a": [
+    "VV"
+  ],
+  "sog16": [
+    "SO"
+  ],
+  "sog15": [
+    "SO"
+  ],
+  "sog14": [
+    "SO"
+  ],
+  "so-52f": [
+    "SO"
+  ],
+  "so-51f": [
+    "SO"
+  ],
+  "scg38": [
+    "SA"
+  ],
+  "scg33": [
+    "SA"
+  ],
+  "scg30": [
+    "SA"
+  ],
+  "scg31": [
+    "SA"
+  ],
+  "scg32": [
+    "SA"
+  ],
+  "stylo marvel": [
+    "69",
+    "DIS"
+  ],
+  "flat 2c": [
+    "OSC"
+  ],
+  "coolmintt niu": [
+    "OM"
+  ],
+  "so-53d": [
+    "SO"
+  ],
+  "v2571a": [
+    "VV"
+  ],
+  "v2520a": [
+    "VV"
   ],
   "gs55-6": [
     "GS"
@@ -71689,6 +71850,108 @@ module.exports = {
   "gsmart alto a2": [
     "GG"
   ],
+  "da220hql": [
+    "AC"
+  ],
+  "da241hl": [
+    "AC"
+  ],
+  "vsd220": [
+    "VS"
+  ],
+  "ifp7550-3": [
+    "VS"
+  ],
+  "ifp9850-3": [
+    "VS"
+  ],
+  "ifp8650-3": [
+    "VS"
+  ],
+  "ifp6550-3": [
+    "VS"
+  ],
+  "wt22m-fi": [
+    "55"
+  ],
+  "wt19m-fi": [
+    "55"
+  ],
+  "t2s_lite": [
+    "2J"
+  ],
+  "xdh-0f-a1": [
+    "XW"
+  ],
+  "xdh-17-a1": [
+    "XW"
+  ],
+  "xdh-18-a1": [
+    "XW"
+  ],
+  "xdh-21-a1": [
+    "XW"
+  ],
+  "xdh-29-b1": [
+    "XW"
+  ],
+  "xdh-2a-b1": [
+    "XW"
+  ],
+  "10bdl4151t": [
+    "PH"
+  ],
+  "da222hql": [
+    "AC"
+  ],
+  "blm-00": [
+    "HU"
+  ],
+  "xd-sdd05-2101": [
+    "XW"
+  ],
+  "portalgo": [
+    "OQ"
+  ],
+  "aeobc": [
+    "KN"
+  ],
+  "aeokn": [
+    "KN"
+  ],
+  "aeoch": [
+    "KN"
+  ],
+  "aeocw": [
+    "KN"
+  ],
+  "aeohy": [
+    "KN"
+  ],
+  "aeocn": [
+    "KN"
+  ],
+  "aeoat": [
+    "KN"
+  ],
+  "aeota": [
+    "KN"
+  ],
+  "aeobp": [
+    "KN"
+  ],
+  "yndx-00055": [
+    "YD"
+  ],
+  "yandexstation_2": [
+    "YD"
+  ],
+  "aeorh": [
+    "KN"
+  ],
+  "aeohp": [
+    "KN"
+  ],
   "bush 10.0 mytablet": [
     "B1",
     "MY1"
@@ -78032,6 +78295,18 @@ module.exports = {
   "cga-w00": [
     "HNR"
   ],
+  "jms-l09": [
+    "HNR"
+  ],
+  "t470": [
+    "DAN"
+  ],
+  "rmp2402": [
+    "RE"
+  ],
+  "rmp2501": [
+    "RE"
+  ],
   "jdn-al00": [
     "HU"
   ],
@@ -80367,10 +80642,12 @@ module.exports = {
     "OV"
   ],
   "ov10273g": [
-    "OV"
+    "OV",
+    "ONV"
   ],
   "ov10274g": [
-    "OV"
+    "OV",
+    "ONV"
   ],
   "at101-1116": [
     "OX"
@@ -92958,7 +93235,8 @@ module.exports = {
     "TIM"
   ],
   "flowbox-f1": [
-    "SK"
+    "SK",
+    "FLO"
   ],
   "leelbox": [
     "LEE"
@@ -97387,6 +97665,21 @@ module.exports = {
   "40fles907t2sm": [
     "05"
   ],
+  "flowbox-f2": [
+    "FLO"
+  ],
+  "mobo-edition": [
+    "NET"
+  ],
+  "flowbox-s2": [
+    "FLO"
+  ],
+  "flowbox-z4": [
+    "FLO"
+  ],
+  "flowbox-z3": [
+    "FLO"
+  ],
   "bb2 pro": [
     "0M"
   ],
@@ -98401,5 +98694,47 @@ module.exports = {
   ],
   "res102": [
     "RKI"
+  ],
+  "watch7,13": [
+    "AP"
+  ],
+  "watch7,14": [
+    "AP"
+  ],
+  "watch7,15": [
+    "AP"
+  ],
+  "watch7,16": [
+    "AP"
+  ],
+  "watch7,17": [
+    "AP"
+  ],
+  "watch7,18": [
+    "AP"
+  ],
+  "watch7,19": [
+    "AP"
+  ],
+  "watch7,20": [
+    "AP"
+  ],
+  "watch7,12": [
+    "AP"
+  ],
+  "watch8,1": [
+    "AP"
+  ],
+  "watch8,2": [
+    "AP"
+  ],
+  "watch8,3": [
+    "AP"
+  ],
+  "watch8,4": [
+    "AP"
+  ],
+  "watch8,5": [
+    "AP"
   ]
 };
