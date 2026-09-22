@@ -52,7 +52,7 @@
     "cli-table": "^0.3.6",
     "commander": "^11.1.0",
     "eslint": "^8.27.0",
-    "mocha": "^10.8.2",
+    "mocha": "^12.0.2",
     "prettier": "^2.4.1",
     "typescript": "^4.8.4"
   }
