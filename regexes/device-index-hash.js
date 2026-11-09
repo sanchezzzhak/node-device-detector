@@ -852,6 +852,18 @@ module.exports = {
   "oneplus a3010": [
     "ON"
   ],
+  "samsung galaxy z fold special": [
+    "SA"
+  ],
+  "fairphone 6": [
+    "FA"
+  ],
+  "2506bpn68g": [
+    "XI"
+  ],
+  "sm-s901b": [
+    "SA"
+  ],
   "zc554kl": [
     "AU"
   ],
@@ -951,6 +963,9 @@ module.exports = {
   ],
   "afrione 2in1": [
     "AF"
+  ],
+  "had-w32": [
+    "HU"
   ],
   "hibox-hero": [
     "1C"
@@ -1581,6 +1596,102 @@ module.exports = {
   "hp compaq 8200 elite sff pc": [
     "HP"
   ],
+  "macpro6,1": [
+    "AP"
+  ],
+  "macpro7,1": [
+    "AP"
+  ],
+  "mac15,13": [
+    "AP"
+  ],
+  "mac15,14": [
+    "AP"
+  ],
+  "mac16,1": [
+    "AP"
+  ],
+  "mac16,2": [
+    "AP"
+  ],
+  "mac16,3": [
+    "AP"
+  ],
+  "mac16,5": [
+    "AP"
+  ],
+  "mac16,6": [
+    "AP"
+  ],
+  "mac16,7": [
+    "AP"
+  ],
+  "mac16,8": [
+    "AP"
+  ],
+  "mac16,9": [
+    "AP"
+  ],
+  "mac16,10": [
+    "AP"
+  ],
+  "mac16,11": [
+    "AP"
+  ],
+  "mac16,12": [
+    "AP"
+  ],
+  "mac16,13": [
+    "AP"
+  ],
+  "mac17,2": [
+    "AP"
+  ],
+  "mac17,3": [
+    "AP"
+  ],
+  "mac17,4": [
+    "AP"
+  ],
+  "mac17,5": [
+    "AP"
+  ],
+  "mac17,6": [
+    "AP"
+  ],
+  "mac17,7": [
+    "AP"
+  ],
+  "mac17,8": [
+    "AP"
+  ],
+  "mac17,9": [
+    "AP"
+  ],
+  "imac15,1": [
+    "AP"
+  ],
+  "imac16,1": [
+    "AP"
+  ],
+  "imac16,2": [
+    "AP"
+  ],
+  "imac4,1": [
+    "AP"
+  ],
+  "imac4,2": [
+    "AP"
+  ],
+  "macbook10,1": [
+    "AP"
+  ],
+  "powermac10,2": [
+    "AP"
+  ],
+  "powermac8,1": [
+    "AP"
+  ],
   "impress_grip": [
     "VX"
   ],
@@ -2193,6 +2304,15 @@ module.exports = {
   ],
   "t3_pro": [
     "6Z"
+  ],
+  "k901": [
+    "KAI"
+  ],
+  "chcnav": [
+    "CHC"
+  ],
+  "c045rgn": [
+    "XI"
   ],
   "sm-f721u": [
     "SA"
@@ -3128,6 +3248,135 @@ module.exports = {
   ],
   "v2436a": [
     "VV"
+  ],
+  "scg41": [
+    "SA"
+  ],
+  "sm-f9710": [
+    "SA"
+  ],
+  "sm-f971b": [
+    "SA"
+  ],
+  "sm-f971n": [
+    "SA"
+  ],
+  "sm-f971q": [
+    "SA"
+  ],
+  "sm-f971u": [
+    "SA"
+  ],
+  "sm-f971u1": [
+    "SA"
+  ],
+  "sm-f971w": [
+    "SA"
+  ],
+  "sm-f971c": [
+    "SA"
+  ],
+  "sm-f9660": [
+    "SA"
+  ],
+  "sm-f966b": [
+    "SA"
+  ],
+  "bp2a.250605.031.a3": [
+    "SA"
+  ],
+  "sm-f966q": [
+    "SA"
+  ],
+  "sm-f966u": [
+    "SA"
+  ],
+  "sm-f966u1": [
+    "SA"
+  ],
+  "sm-f966w": [
+    "SA"
+  ],
+  "sm-f966z": [
+    "SA"
+  ],
+  "redmi note 13r pro": [
+    "XI"
+  ],
+  "redmi note 13 pro+": [
+    "XI"
+  ],
+  "redmi note 12 turbo": [
+    "XI"
+  ],
+  "redmi note12 pro 5g": [
+    "XI"
+  ],
+  "redmi note 11 pro plus": [
+    "XI"
+  ],
+  "redmi note10 pro max": [
+    "XI"
+  ],
+  "redmi note10 pro": [
+    "XI"
+  ],
+  "redmi note10 lite": [
+    "XI"
+  ],
+  "redmi note10 je": [
+    "XI"
+  ],
+  "redmi note10 5g": [
+    "XI"
+  ],
+  "redmi note9s pro": [
+    "XI"
+  ],
+  "redmi note9 pro": [
+    "XI"
+  ],
+  "redmi note9 pro 5g": [
+    "XI"
+  ],
+  "redmi note9": [
+    "XI"
+  ],
+  "redmi note9 5g": [
+    "XI"
+  ],
+  "mi note10 lite": [
+    "XI"
+  ],
+  "mi note10": [
+    "XI"
+  ],
+  "redmi note 12 pro+": [
+    "XI"
+  ],
+  "redmi note 15 pro+ 5g": [
+    "XI"
+  ],
+  "redmi note 15 5g": [
+    "XI"
+  ],
+  "redmi note 12 pro+ 5g": [
+    "XI"
+  ],
+  "iphone18,1": [
+    "AP"
+  ],
+  "iphone18,2": [
+    "AP"
+  ],
+  "iphone18,3": [
+    "AP"
+  ],
+  "iphone18,4": [
+    "AP"
+  ],
+  "m2104k10ac": [
+    "XI"
   ],
   "gi-626": [
     "A5"
@@ -4672,6 +4921,108 @@ module.exports = {
   ],
   "swofy m503-pro": [
     "SWO"
+  ],
+  "da220hql": [
+    "AC"
+  ],
+  "da241hl": [
+    "AC"
+  ],
+  "vsd220": [
+    "VS"
+  ],
+  "ifp7550-3": [
+    "VS"
+  ],
+  "ifp9850-3": [
+    "VS"
+  ],
+  "ifp8650-3": [
+    "VS"
+  ],
+  "ifp6550-3": [
+    "VS"
+  ],
+  "wt22m-fi": [
+    "55"
+  ],
+  "wt19m-fi": [
+    "55"
+  ],
+  "t2s_lite": [
+    "2J"
+  ],
+  "xdh-0f-a1": [
+    "XW"
+  ],
+  "xdh-17-a1": [
+    "XW"
+  ],
+  "xdh-18-a1": [
+    "XW"
+  ],
+  "xdh-21-a1": [
+    "XW"
+  ],
+  "xdh-29-b1": [
+    "XW"
+  ],
+  "xdh-2a-b1": [
+    "XW"
+  ],
+  "10bdl4151t": [
+    "PH"
+  ],
+  "da222hql": [
+    "AC"
+  ],
+  "blm-00": [
+    "HU"
+  ],
+  "xd-sdd05-2101": [
+    "XW"
+  ],
+  "portalgo": [
+    "OQ"
+  ],
+  "aeobc": [
+    "KN"
+  ],
+  "aeokn": [
+    "KN"
+  ],
+  "aeoch": [
+    "KN"
+  ],
+  "aeocw": [
+    "KN"
+  ],
+  "aeohy": [
+    "KN"
+  ],
+  "aeocn": [
+    "KN"
+  ],
+  "aeoat": [
+    "KN"
+  ],
+  "aeota": [
+    "KN"
+  ],
+  "aeobp": [
+    "KN"
+  ],
+  "yndx-00055": [
+    "YD"
+  ],
+  "yandexstation_2": [
+    "YD"
+  ],
+  "aeorh": [
+    "KN"
+  ],
+  "aeohp": [
+    "KN"
   ],
   "i7u": [
     "A9"
@@ -52890,9 +53241,6 @@ module.exports = {
   "5133mp": [
     "TC"
   ],
-  "chcnav": [
-    "CHC"
-  ],
   "allure a8 pro": [
     "C5"
   ],
@@ -57629,9 +57977,6 @@ module.exports = {
   "sm-s9010": [
     "SA"
   ],
-  "sm-s901b": [
-    "SA"
-  ],
   "sm-s901e": [
     "SA"
   ],
@@ -60976,9 +61321,6 @@ module.exports = {
     "ON",
     "OP"
   ],
-  "redmi note 12 pro+ 5g": [
-    "XI"
-  ],
   "ez 1": [
     "SNK"
   ],
@@ -61888,18 +62230,6 @@ module.exports = {
   "zeus_4g_pro": [
     "FS"
   ],
-  "iphone18,1": [
-    "AP"
-  ],
-  "iphone18,2": [
-    "AP"
-  ],
-  "iphone18,3": [
-    "AP"
-  ],
-  "iphone18,4": [
-    "AP"
-  ],
   "fire 3 pro": [
     "DO"
   ],
@@ -62167,9 +62497,6 @@ module.exports = {
   "poco m7": [
     "0P"
   ],
-  "2506bpn68g": [
-    "XI"
-  ],
   "pln110": [
     "OP"
   ],
@@ -62377,9 +62704,6 @@ module.exports = {
   "nla-lx2p": [
     "HNR",
     "HU"
-  ],
-  "m2104k10ac": [
-    "XI"
   ],
   "moto g play - 2023": [
     "MR"
@@ -63032,6 +63356,302 @@ module.exports = {
   ],
   "v2520a": [
     "VV"
+  ],
+  "a069p": [
+    "NOT"
+  ],
+  "a069": [
+    "NOT"
+  ],
+  "a024": [
+    "NOT"
+  ],
+  "a001t": [
+    "NOT"
+  ],
+  "2602brt18c": [
+    "XI"
+  ],
+  "uniwa_f400": [
+    "U2"
+  ],
+  "motorola edge 70 ultra": [
+    "MR"
+  ],
+  "v2578": [
+    "VV"
+  ],
+  "v2565": [
+    "VV"
+  ],
+  "v2562": [
+    "VV"
+  ],
+  "v2561": [
+    "VV"
+  ],
+  "duoqin f22": [
+    "QIN"
+  ],
+  "rmx5112": [
+    "RE"
+  ],
+  "hmd crest max": [
+    "HMD"
+  ],
+  "v2536a": [
+    "VV"
+  ],
+  "l5510": [
+    "FI"
+  ],
+  "v2546a": [
+    "VV"
+  ],
+  "sm-a266b": [
+    "SA"
+  ],
+  "sm-a266m": [
+    "SA"
+  ],
+  "sm-a266u": [
+    "SA"
+  ],
+  "sm-a266u1": [
+    "SA"
+  ],
+  "sm-s266v": [
+    "SA"
+  ],
+  "sm-a1760": [
+    "SA"
+  ],
+  "sm-a176u": [
+    "SA"
+  ],
+  "sm-a176u1": [
+    "SA"
+  ],
+  "sm-a176w": [
+    "SA"
+  ],
+  "sm-a176b": [
+    "SA"
+  ],
+  "sm-a576b": [
+    "SA"
+  ],
+  "sm-a5760": [
+    "SA"
+  ],
+  "sm-a576u": [
+    "SA"
+  ],
+  "sm-a576u1": [
+    "SA"
+  ],
+  "sm-a576q": [
+    "SA"
+  ],
+  "sm-a576w": [
+    "SA"
+  ],
+  "sm-a576z": [
+    "SA"
+  ],
+  "sm-s731n": [
+    "SA"
+  ],
+  "sm-s731u": [
+    "SA"
+  ],
+  "sm-s731u1": [
+    "SA"
+  ],
+  "sm-s731b": [
+    "SA"
+  ],
+  "sm-s731w": [
+    "SA"
+  ],
+  "sc-51f": [
+    "SA",
+    "SU"
+  ],
+  "sc-52f": [
+    "SA",
+    "SU"
+  ],
+  "sc-51g": [
+    "SA",
+    "SU"
+  ],
+  "sc-54g": [
+    "SA",
+    "SU"
+  ],
+  "sm-s9420": [
+    "SA"
+  ],
+  "sm-s942q": [
+    "SA"
+  ],
+  "sm-s942u": [
+    "SA"
+  ],
+  "sm-s942u1": [
+    "SA"
+  ],
+  "sm-s942w": [
+    "SA"
+  ],
+  "sm-s942z": [
+    "SA"
+  ],
+  "sm-s942b": [
+    "SA"
+  ],
+  "sm-s942n": [
+    "SA"
+  ],
+  "sm-a166l": [
+    "SA"
+  ],
+  "sm-a176l": [
+    "SA"
+  ],
+  "sm-a1660": [
+    "SA"
+  ],
+  "sm-a166b": [
+    "SA"
+  ],
+  "sm-a166m": [
+    "SA"
+  ],
+  "sm-a166u": [
+    "SA"
+  ],
+  "sm-a166u1": [
+    "SA"
+  ],
+  "sm-a166w": [
+    "SA"
+  ],
+  "sh-m25": [
+    "SH"
+  ],
+  "sh-m33": [
+    "SH"
+  ],
+  "sh-53e": [
+    "SH"
+  ],
+  "a402so": [
+    "SO"
+  ],
+  "hppl67a": [
+    "U8"
+  ],
+  "hppl62a": [
+    "U8"
+  ],
+  "hpph88c": [
+    "U8"
+  ],
+  "hpph88l": [
+    "U8"
+  ],
+  "f-52e": [
+    "FU"
+  ],
+  "f-51f": [
+    "FU"
+  ],
+  "infinix x6840": [
+    "IF"
+  ],
+  "infinix x6840b": [
+    "IF"
+  ],
+  "cph2735": [
+    "OP"
+  ],
+  "cph2763": [
+    "OP"
+  ],
+  "a402xm": [
+    "XI"
+  ],
+  "redmi a3 pro": [
+    "XI"
+  ],
+  "redmi k30 5g speed": [
+    "XI"
+  ],
+  "mi 10 lite": [
+    "XI"
+  ],
+  "mi 11t pro": [
+    "XI"
+  ],
+  "bkq-an00": [
+    "HNR",
+    "HU"
+  ],
+  "aap-an00": [
+    "HNR",
+    "HU"
+  ],
+  "aak-an00": [
+    "HNR",
+    "HU"
+  ],
+  "bkq-an90": [
+    "HNR",
+    "HU"
+  ],
+  "jdy-lx3p": [
+    "HNR",
+    "HU"
+  ],
+  "ali-nx3p": [
+    "HNR",
+    "HU"
+  ],
+  "honor magic6 pro": [
+    "HNR",
+    "HU"
+  ],
+  "tlr-lx9": [
+    "HU"
+  ],
+  "sgt-al00": [
+    "HU"
+  ],
+  "lmr-lx9": [
+    "HU"
+  ],
+  "huawei mate x9": [
+    "HU"
+  ],
+  "honor 30 pro": [
+    "HU"
+  ],
+  "moto g power 5g - 2024": [
+    "MR"
+  ],
+  "oppo r9 plusm a": [
+    "OP"
+  ],
+  "nothing phone 2": [
+    "NOT"
+  ],
+  "t phone 3 pro": [
+    "TM"
+  ],
+  "moto g5 plus (xt1681)": [
+    "MR"
   ],
   "gs55-6": [
     "GS"
@@ -69754,7 +70374,6 @@ module.exports = {
     "ML"
   ],
   "ph350b": [
-    "MM",
     "4P"
   ],
   "ph350": [
@@ -71849,108 +72468,6 @@ module.exports = {
   ],
   "gsmart alto a2": [
     "GG"
-  ],
-  "da220hql": [
-    "AC"
-  ],
-  "da241hl": [
-    "AC"
-  ],
-  "vsd220": [
-    "VS"
-  ],
-  "ifp7550-3": [
-    "VS"
-  ],
-  "ifp9850-3": [
-    "VS"
-  ],
-  "ifp8650-3": [
-    "VS"
-  ],
-  "ifp6550-3": [
-    "VS"
-  ],
-  "wt22m-fi": [
-    "55"
-  ],
-  "wt19m-fi": [
-    "55"
-  ],
-  "t2s_lite": [
-    "2J"
-  ],
-  "xdh-0f-a1": [
-    "XW"
-  ],
-  "xdh-17-a1": [
-    "XW"
-  ],
-  "xdh-18-a1": [
-    "XW"
-  ],
-  "xdh-21-a1": [
-    "XW"
-  ],
-  "xdh-29-b1": [
-    "XW"
-  ],
-  "xdh-2a-b1": [
-    "XW"
-  ],
-  "10bdl4151t": [
-    "PH"
-  ],
-  "da222hql": [
-    "AC"
-  ],
-  "blm-00": [
-    "HU"
-  ],
-  "xd-sdd05-2101": [
-    "XW"
-  ],
-  "portalgo": [
-    "OQ"
-  ],
-  "aeobc": [
-    "KN"
-  ],
-  "aeokn": [
-    "KN"
-  ],
-  "aeoch": [
-    "KN"
-  ],
-  "aeocw": [
-    "KN"
-  ],
-  "aeohy": [
-    "KN"
-  ],
-  "aeocn": [
-    "KN"
-  ],
-  "aeoat": [
-    "KN"
-  ],
-  "aeota": [
-    "KN"
-  ],
-  "aeobp": [
-    "KN"
-  ],
-  "yndx-00055": [
-    "YD"
-  ],
-  "yandexstation_2": [
-    "YD"
-  ],
-  "aeorh": [
-    "KN"
-  ],
-  "aeohp": [
-    "KN"
   ],
   "bush 10.0 mytablet": [
     "B1",
@@ -78306,6 +78823,89 @@ module.exports = {
   ],
   "rmp2501": [
     "RE"
+  ],
+  "zeno 1": [
+    "B2"
+  ],
+  "zeno 10": [
+    "B2"
+  ],
+  "zeno 100": [
+    "B2"
+  ],
+  "pulla": [
+    "U8"
+  ],
+  "25097rp43c": [
+    "XI"
+  ],
+  "25079rpdcc": [
+    "XI"
+  ],
+  "xiaomi pad 7 pro": [
+    "XI"
+  ],
+  "redmi pad 2": [
+    "XI"
+  ],
+  "2505drp06i": [
+    "XI"
+  ],
+  "mi pad5 wi-fi": [
+    "XI"
+  ],
+  "mi pad5 pro wi-fi": [
+    "XI"
+  ],
+  "mi pad5 pro 5g": [
+    "XI"
+  ],
+  "chg-w60": [
+    "HNR",
+    "HU"
+  ],
+  "eln2-w09": [
+    "HNR",
+    "HU"
+  ],
+  "txz-w09": [
+    "HU"
+  ],
+  "mrdi-w09": [
+    "HU"
+  ],
+  "mrdi-w00": [
+    "HU"
+  ],
+  "btk-w00": [
+    "HU"
+  ],
+  "bah4-w19": [
+    "HU"
+  ],
+  "matepad wi-fi": [
+    "HU"
+  ],
+  "matepad pro wi-fi": [
+    "HU"
+  ],
+  "matepad pro": [
+    "HU"
+  ],
+  "matepad lte": [
+    "HU"
+  ],
+  "matepad 5g": [
+    "HU"
+  ],
+  "matepad 10.8 wi-fi": [
+    "HU"
+  ],
+  "matepad 10.8 lte": [
+    "HU"
+  ],
+  "archos 101b oxygen": [
+    "AR"
   ],
   "jdn-al00": [
     "HU"
@@ -97679,6 +98279,30 @@ module.exports = {
   ],
   "flowbox-z3": [
     "FLO"
+  ],
+  "solo 8k": [
+    "DU"
+  ],
+  "24r750ts": [
+    "HAR"
+  ],
+  "ca24hsy25f": [
+    "RAZ"
+  ],
+  "hc55usy26f": [
+    "RAZ"
+  ],
+  "hc50usy26fc": [
+    "RAZ"
+  ],
+  "hc50usy26f": [
+    "RAZ"
+  ],
+  "hc43fsy26f": [
+    "RAZ"
+  ],
+  "hc32hsy26f": [
+    "RAZ"
   ],
   "bb2 pro": [
     "0M"

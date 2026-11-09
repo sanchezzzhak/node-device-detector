@@ -41,6 +41,7 @@ const DEVICE_PARSER_LIST = require('./parser/const/device-parser');
 const CLIENT_PARSER_LIST = require('./parser/const/client-parser');
 const FORM_FACTORS_MAPPING = require('./parser/const/form-factor-mapping');
 const MOBILE_BROWSER_LIST = require('./parser/client/browser-short-mobile');
+const ClientHints = require('./client-hints');
 const VENDOR_FRAGMENT_PARSER = 'VendorFragment';
 const OS_PARSER = 'Os';
 const BOT_PARSER = 'Bot';
@@ -654,6 +655,12 @@ class DeviceDetector {
       deviceType = DEVICE_TYPE.TV;
     }
     /**
+     * All devices running VIDAA are assumed to be a tv
+     */
+    if ('VIDAA' === osName) {
+      deviceType = DEVICE_TYPE.TV;
+    }
+    /**
      * All devices that contain Andr0id in string are assumed to be a tv
      */
     const hasDeviceTvType = [
@@ -859,6 +866,17 @@ class DeviceDetector {
    */
   parseClient(userAgent, clientHints) {
     const extendParsers = [CLIENT_PARSER_LIST.MOBILE_APP, CLIENT_PARSER_LIST.BROWSER];
+
+    // Build client hints from user-agent if Facebook in-app browser detected
+    const fbApp = /FBAB\/([a-z0-9.]+)/i.exec(userAgent);
+    if (userAgent !== '' && (!clientHints || !clientHints.app) && fbApp){
+      if (fbApp) {
+        (clientHints)
+          ? clientHints.app = fbApp[1]
+          : clientHints = new ClientHints().parse({ 'x-requested-with': fbApp[1] })
+      }
+    }
+
     // scan for indexes
     if (this.clientIndexes) {
       for (let name in this.clientParserList) {
@@ -948,6 +966,21 @@ class DeviceDetector {
      */
     if ('Coolita OS' === osData.name && '' === deviceData.brand) {
       deviceData.brand = 'coocaa';
+    }
+
+    /**
+     * All devices running iOS >= 13.0 are assumed to be a iPhone phablet
+     */
+    const isApplePhablet = (null === deviceData.type || '' === deviceData.type)
+      && 'iOS' === osData.name
+      && helper.versionCompare(osData.version, '13.0') >= 0;
+
+    if (isApplePhablet) {
+      deviceData.type = DEVICE_TYPE.PHABLET;
+
+      if ('' === deviceData.model) {
+        deviceData.model = 'iPhone';
+      }
     }
 
     return {

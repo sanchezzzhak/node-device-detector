@@ -48,7 +48,7 @@ function restoreUserAgentFromClientHints(userAgent, clientHints) {
  * @returns {RegExpExecArray}
  */
 function matchUserAgent(str, userAgent) {
-  let regex = '(?:^|[^A-Z_-])(?:' + normalizeRegExp(str) + ')';
+  let regex = '(?:^|[^A-Z_-])(?:' + str + ')';
   let match = new RegExp(regex, 'i');
   return match.exec(userAgent);
 }
@@ -59,7 +59,7 @@ function normalizeRegExp(regex) {
 }
 
 function getBaseRegExp(str) {
-  const regex= '(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:' + normalizeRegExp(str) + ')';
+  const regex= '(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:' + str + ')';
   return  new RegExp(regex, 'i');
 }
 
@@ -443,7 +443,7 @@ const OS_WEIGHTS = [
 function splitOsUserAgent(userAgent) {
   const parts = [];
   for(const record of OS_WEIGHTS) {
-    const match = new RegExp(normalizeRegExp(record.regex), 'i')
+    const match = new RegExp(record.regex, 'i')
     if (match.exec(userAgent)) {
       parts.push(record.wt);
     }

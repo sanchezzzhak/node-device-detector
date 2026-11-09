@@ -55,9 +55,19 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "AudienceNetworkForAndroid.+(?:FBAV)(?:[ /]([\\d.]+))?",
-    "name": "Facebook Audience Network",
+    "regex": "StellaForiOS",
+    "name": "Stella",
+    "version": ""
+  },
+  {
+    "regex": "WhatsApp/([\\d.]+).+CloudAPI|WhatsAppSMBIPhone",
+    "name": "WhatsApp Business",
     "version": "$1"
+  },
+  {
+    "regex": "FBAB/([a-z0-9.]+)",
+    "name": "$1",
+    "version": ""
   },
   {
     "regex": "(?:mLite|MessengerLite(?:ForiOS)?).*(?:FBAV)(?:[ /]([\\d.]+))?",
@@ -150,7 +160,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "com\\.google\\.Maps/([\\d.]+)",
+    "regex": "(?:com\\.google\\.Maps|AndroidMapsWebView)/([\\d.]+)",
     "name": "Google Maps",
     "version": "$1"
   },
@@ -245,8 +255,8 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "WhatsApp/([\\d.]+).+CloudAPI",
-    "name": "WhatsApp Business",
+    "regex": "WhatsApp/([\\d.]+) N$",
+    "name": "WhatsApp Web",
     "version": "$1"
   },
   {
@@ -405,7 +415,12 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:com\\.google\\.GoogleMobile|GSA|GoogleApp)/([\\d.]+)?",
+    "regex": "GoogleApp/(\\d+[.\\d]+).+GoogleLens",
+    "name": "Google Lens",
+    "version": "$1"
+  },
+  {
+    "regex": "(?:com\\.google\\.GoogleMobile(?:\\.SearchOnGoogleActionExtension)?|GSA|GoogleApp)/([\\d.]+)?",
     "name": "Google Search App",
     "version": "$1"
   },
@@ -542,6 +557,11 @@ module.exports = [
   {
     "regex": "Keeper/([\\d.]+)",
     "name": "Keeper Password Manager",
+    "version": "$1"
+  },
+  {
+    "regex": "Callpod Keeper for Android 1.0 \\((?:app )?([\\d.]+)/",
+    "name": "Keeper",
     "version": "$1"
   },
   {
@@ -711,7 +731,7 @@ module.exports = [
   },
   {
     "regex": "RoboForm/(\\d+[.\\d]+) CFNetwork",
-    "name": "RoboForm",
+    "name": "RoboForm Passwort Manager",
     "version": ""
   },
   {
@@ -2530,6 +2550,16 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "^TPA/(\\d+\\.[.\\d]+)",
+    "name": "The Podcast App (Magnolia)",
+    "version": "$1"
+  },
+  {
+    "regex": "^TPA-Wear/(\\d+\\.[.\\d]+)",
+    "name": "The Podcast App (Magnolia)",
+    "version": "$1"
+  },
+  {
     "regex": "^TREBLE/([\\d.]+)",
     "name": "Treble.fm",
     "version": "$1"
@@ -2760,7 +2790,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "HMSCore(?:[ /]([\\d.]+))?(?!.*HuaweiBrowser)",
+    "regex": "^(?!.*HuaweiBrowser).*?HMSCore(?:[ /]([\\d.]+))?",
     "name": "Huawei Mobile Services",
     "version": "$1"
   },
@@ -3195,6 +3225,66 @@ module.exports = [
     "version": "$1"
   },
   {
+    "regex": "FOX Sports GO",
+    "name": "FOX Sports GO",
+    "version": ""
+  },
+  {
+    "regex": "Lotus Notes Traveler (?:Nokia|WM) ([\\d.]+)|SyncML(?: HTTP)? Client",
+    "name": "Lotus Notes Traveler",
+    "version": "$1"
+  },
+  {
+    "regex": "newsbreak/([\\d.]+)",
+    "name": "NewsBreak",
+    "version": "$1"
+  },
+  {
+    "regex": "Grindr/([\\d.]+)",
+    "name": "Grindr",
+    "version": "$1"
+  },
+  {
+    "regex": "Aria2App/([\\d.]+)",
+    "name": "Aria2App",
+    "version": "$1"
+  },
+  {
+    "regex": "com\\.sidhbalitech\\.ninexplayer",
+    "name": "XP IPTV",
+    "version": ""
+  },
+  {
+    "regex": "Xiaoyuzhou/([\\d.]+)",
+    "name": "XiaoYuZhou",
+    "version": "$1"
+  },
+  {
+    "regex": "ChannelsApp/([\\d.]+)",
+    "name": "Channels",
+    "version": "$1"
+  },
+  {
+    "regex": "dogtorance/[\\d.]+",
+    "name": "Dogtorance",
+    "version": ""
+  },
+  {
+    "regex": "RingCentral",
+    "name": "RingCentral",
+    "version": ""
+  },
+  {
+    "regex": "com.zimride.instant",
+    "name": "zimride",
+    "version": ""
+  },
+  {
+    "regex": "RockstarGames/([\\d.]+)",
+    "name": "Rockstar Games Launcher",
+    "version": "$1"
+  },
+  {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",
     "name": "$1",
     "version": "$2"
@@ -3205,7 +3295,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?!AlohaBrowser)([^/;]*)/(\\d+\\.[\\d.]+) \\((?:iPhone|iPad); (?:iOS|iPadOS) [0-9.]+; Scale/[0-9.]+\\)",
+    "regex": "(?!AlohaBrowser|OperaGX)([^/;]*)/(\\d+\\.[\\d.]+) \\((?:iPhone|iPad|Apple TV); (?:iOS|iPadOS) [0-9.]+; Scale/[0-9.]+\\)",
     "name": "$1",
     "version": "$2"
   }

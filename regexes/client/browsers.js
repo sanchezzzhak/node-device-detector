@@ -2729,17 +2729,17 @@ module.exports = [
     }
   },
   {
-    "regex": "OP(?:RG)?X(?:/(\\d+[.\\d]+))?",
+    "regex": "Opera(?:%20)?GX/.+CFNetwork/.+Darwin/",
     "name": "Opera GX",
-    "version": "$1",
+    "version": "",
     "engine": {
       "default": "WebKit"
     }
   },
   {
-    "regex": "Opera(?:%20)?GX/.+CFNetwork/.+Darwin/",
+    "regex": "(?:OperaGX|OP(?:RG)?X)(?:/(\\d+[.\\d]+))?",
     "name": "Opera GX",
-    "version": "",
+    "version": "$1",
     "engine": {
       "default": "WebKit"
     }
@@ -3104,7 +3104,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Chrome(?:/(\\d+\\.[.\\d]+) )?.*Iron",
+    "regex": "Chrome(?:/(\\d+\\.[.\\d]+) )?.*Iron Safari",
     "name": "Iron",
     "version": "$1",
     "engine": {
@@ -3198,7 +3198,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:DDG-Android-|ddg_android/)(\\d+[.\\d]*)",
+    "regex": "(?:DDG-Android-|ddg_(?:android|win)/)(\\d+[.\\d]*)",
     "name": "DuckDuckGo Privacy Browser",
     "version": "$1",
     "engine": {
@@ -3544,7 +3544,7 @@ module.exports = [
     }
   },
   {
-    "regex": "(?: wv\\)|Version/).* Chrome(?:/(\\d+[.\\d]+))?",
+    "regex": "(?: wv\\)|(?:Version|Ojxvms)/).* Chrome(?:/(\\d+[.\\d]+))?",
     "name": "Chrome Webview",
     "version": "$1",
     "engine": {
@@ -4109,7 +4109,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "BlackBerry|PlayBook|BB10",
+    "regex": "BlackBerry(?!-WorkConnect)|PlayBook|BB10",
     "name": "BlackBerry Browser",
     "version": ""
   },
@@ -4180,7 +4180,7 @@ module.exports = [
     }
   },
   {
-    "regex": "(?!^AppleCoreMedia/1\\.0\\.0)(?:iPod|(?<!Apple TV; U; CPU )iPhone|iPad)",
+    "regex": "^(?!AppleCoreMedia).*?\\b(?<!Apple-)(?:iPod|(?<!Apple TV; U; CPU )iPhone|iPad)",
     "name": "Mobile Safari",
     "version": "",
     "engine": {
@@ -4204,7 +4204,7 @@ module.exports = [
     }
   },
   {
-    "regex": "Macintosh",
+    "regex": "^(?!AppleCoreMedia).*?\\bMacintosh",
     "name": "Safari",
     "version": "",
     "engine": {

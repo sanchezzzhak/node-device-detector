@@ -358,7 +358,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "aria2(?:/(\\d+[.\\d]+))?",
+    "regex": "aria2(?!App)(?:/(\\d+[.\\d]+))?",
     "name": "Aria2",
     "version": "$1"
   },
@@ -593,8 +593,8 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "AppleCoreMedia/1\\.0\\.0",
-    "name": "iOS Application",
+    "regex": "AppleCoreMedia",
+    "name": "Apple Core Media",
     "version": ""
   },
   {
@@ -806,5 +806,11 @@ module.exports = [
     "name": "nscurl",
     "version": "",
     "url": ""
+  },
+  {
+    "regex": "ocaml-cohttp/(\\d+[.\\d]+)",
+    "name": "ocaml-cohttp",
+    "version": "$1",
+    "url": "https://github.com/mirage/ocaml-cohttp"
   }
 ];

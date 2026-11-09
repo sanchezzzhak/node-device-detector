@@ -38,6 +38,7 @@ export interface ResultDevicePropClientHints {
 export interface ResultClientHints {
   upgradeHeader: boolean;
   formFactors?: string[];
+  app?: string;
   meta?: ResultMetaClientHints;
   prefers?: ResultPrefersClientHints;
   os: ResultOsPropClientHints;
