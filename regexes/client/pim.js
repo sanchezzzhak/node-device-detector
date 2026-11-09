@@ -173,5 +173,15 @@ module.exports = [
     "regex": "Android-Gmail",
     "name": "Gmail",
     "version": ""
+  },
+  {
+    "regex": "WorxMail/([\\d.]+)",
+    "name": "Citrix Secure Mail",
+    "version": "$1"
+  },
+  {
+    "regex": "BLACKBERRY-WorkConnect/([\\d.]+)",
+    "name": "BlackBerry Work",
+    "version": "$1"
   }
 ];

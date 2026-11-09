@@ -1,6 +1,16 @@
 module.exports = [
   {
-    "regex": "Steam",
+    "regex": "RES102(?:[);/ ]|$)",
+    "name": "YodaOS-Master",
+    "version": ""
+  },
+  {
+    "regex": "(?:YNDX-|Yandex).+ TV",
+    "name": "YaOS",
+    "version": ""
+  },
+  {
+    "regex": "SteamDeck|Valve Steam",
     "name": "SteamOS",
     "version": ""
   },
@@ -265,7 +275,7 @@ module.exports = [
     "version": ""
   },
   {
-    "regex": "SerenityOS|Ladybird/",
+    "regex": "SerenityOS",
     "name": "SerenityOS",
     "version": ""
   },
@@ -966,7 +976,7 @@ module.exports = [
     ]
   },
   {
-    "regex": "Android (\\d+[.\\d]*);.+release\\.go$",
+    "regex": "Android (\\d+[.\\d]*);.+release(?:_sp)?\\.go$",
     "name": "Android Go",
     "version": "$1"
   },
@@ -1440,7 +1450,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "mingw32|winhttp|WhatsApp/.*W$",
+    "regex": "mingw32|winhttp|ddg_win|WhatsApp/.*W$",
     "name": "Windows",
     "version": ""
   },
@@ -1666,6 +1676,11 @@ module.exports = [
   },
   {
     "regex": "Pinterest for iOS/.*iPhone.*; (\\d(?:[\\d.]*))[)]$",
+    "name": "iOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iOS:(\\d+[.\\d]+)",
     "name": "iOS",
     "version": "$1"
   },
@@ -2042,195 +2057,195 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "(?:CFNetwork|Mana|StudioDisplay)/.+Darwin(?:/|; )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|CFNetwork/macOS/.+Darwin/|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension|Safari)",
+    "regex": ".+Darwin(?:/|;? )(?:[\\d.]+).+(?:x86_64|i386|Power%20Macintosh)|CFNetwork/macOS/.+Darwin/|(?:x86_64-apple-)?darwin(?:[\\d.]+)|C?Python.*Darwin|PowerMac|com\\.apple\\.Safari\\.SearchHelper|^(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension|Safari)",
     "name": "Mac",
     "versions": [
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?2[67]\\.(0)\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?2[67]\\.(0)\\.0",
         "version": "27.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.([0-6])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?25\\.([0-6])\\.0",
         "version": "26.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?24\\.([0-6])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?24\\.([0-6])\\.0",
         "version": "15.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?23\\.([0-6])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?23\\.([0-6])\\.0",
         "version": "14.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.6\\.0",
         "version": "13.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.5\\.0",
         "version": "13.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.4\\.0",
         "version": "13.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.3\\.0",
         "version": "13.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.2\\.0",
         "version": "13.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.1\\.0",
         "version": "13.0.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?22\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?22\\.0\\.0",
         "version": "13.0"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.6\\.0",
         "version": "12.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.5\\.0",
         "version": "12.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.4\\.0",
         "version": "12.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.3\\.0",
         "version": "12.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.2\\.0",
         "version": "12.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.1\\.0",
         "version": "12.0.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?21\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?21\\.0\\.0",
         "version": "12.0"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?20\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?20\\.6\\.0",
         "version": "11.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?20\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?20\\.5\\.0",
         "version": "11.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?20\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?20\\.4\\.0",
         "version": "11.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?20\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?20\\.3\\.0",
         "version": "11.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?20\\.2\\.0.*",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?20\\.2\\.0.*",
         "version": "11.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?20\\.[01]\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?20\\.[01]\\.0",
         "version": "11.0"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.([2-6])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?19\\.([2-6])\\.0",
         "version": "10.15.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?19\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?19\\.0\\.0",
         "version": "10.15"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?18\\.7\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?18\\.7\\.0",
         "version": "10.14"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?18\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?18\\.6\\.0",
         "version": "10.14.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?18\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?18\\.5\\.0",
         "version": "10.14.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?18\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?18\\.2\\.0",
         "version": "10.14.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?18\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?18\\.0\\.0",
         "version": "10.14"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.7\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.7\\.0",
         "version": "10.13.6"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.6\\.0",
         "version": "10.13.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.5\\.0",
         "version": "10.13.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.4\\.0",
         "version": "10.13.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.3\\.0",
         "version": "10.13.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.2\\.0",
         "version": "10.13.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?17\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?17\\.0\\.0",
         "version": "10.13"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.7\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.7\\.0",
         "version": "10.12.6"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.6\\.0",
         "version": "10.12.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.5\\.0",
         "version": "10.12.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.4\\.0",
         "version": "10.12.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.3\\.0",
         "version": "10.12.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.2\\.0",
         "version": "10.12.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.1\\.0",
         "version": "10.12.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?16\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?16\\.0\\.0",
         "version": "10.12"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?15\\.([2-6])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?15\\.([2-6])\\.0",
         "version": "10.11.$1"
       },
       {
@@ -2238,115 +2253,135 @@ module.exports = [
         "version": "10.11"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.([3-5])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?14\\.([3-5])\\.0",
         "version": "10.10.$1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?14\\.1\\.0",
         "version": "10.10.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?14\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?14\\.0\\.0",
         "version": "10.10"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?13\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?13\\.4\\.0",
         "version": "10.9.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?13\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?13\\.3\\.0",
         "version": "10.9.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?13\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?13\\.2\\.0",
         "version": "10.9.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?13\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?13\\.1\\.0",
         "version": "10.9.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?13\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?13\\.0\\.0",
         "version": "10.9.0"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?12\\.6\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?12\\.6\\.0",
         "version": "10.8.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?12\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?12\\.5\\.0",
         "version": "10.8.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?12\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?12\\.4\\.0",
         "version": "10.8.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?12\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?12\\.3\\.0",
         "version": "10.8.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?12\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?12\\.2\\.0",
         "version": "10.8.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?12\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?12\\.1\\.0",
         "version": "10.8.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?11\\.5\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.5\\.0",
         "version": "10.7.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?11\\.4\\.2",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.4\\.2",
         "version": "10.7.5"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?11\\.4\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.4\\.0",
         "version": "10.7.4"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?11\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.3\\.0",
         "version": "10.7.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?11\\.2\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.2\\.0",
         "version": "10.7.2"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?11\\.1\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.1\\.0",
         "version": "10.7.1"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?10\\.8\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?11\\.0\\.0",
+        "version": "10.7"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.8\\.0",
         "version": "10.6.8"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?10\\.7\\.[34]",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.7\\.[034]",
         "version": "10.6.7"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?10\\.3\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.6\\.0",
+        "version": "10.6.6"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.5\\.0",
+        "version": "10.6.5"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.4\\.[0-3]",
+        "version": "10.6.4"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.3\\.0",
         "version": "10.6.3"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?10\\.0\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.2\\.0",
+        "version": "10.6.2"
+      },
+      {
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?10\\.0\\.0",
         "version": "10.6"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?9\\.8\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?9\\.8\\.0",
         "version": "10.5.8"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?9\\.7\\.1",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?9\\.7\\.[01]",
         "version": "10.5.7"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?9\\.6\\.2",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?9\\.6\\.[0-3]",
         "version": "10.5.6"
       },
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?9\\.5\\.[05]",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|;? )?9\\.5\\.[012]",
         "version": "10.5.5"
       }
     ]
@@ -2377,7 +2412,7 @@ module.exports = [
     "version": "$1"
   },
   {
-    "regex": "Darwin|Macintosh|Mac[ _]PowerPC|PPC|iMac|MacBook|.*macOS|AppleExchangeWebServices|com\\.apple\\.trustd|Sonos/.+\\(MDCR_|WhatsApp/.*N$|nook browser",
+    "regex": "Darwin|Macintosh|Mac[ _]PowerPC|PPC|iMac|MacBook|.*macOS|AppleExchangeWebServices|com\\.apple\\.trustd|Sonos/.+\\(MDCR_|nook browser",
     "name": "Mac",
     "version": ""
   },

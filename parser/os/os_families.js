@@ -4,6 +4,7 @@ module.exports = {
   'AND', 'CYN', 'FIR', 'REM', 'RZD', 'MLD', 'MCD', 'YNS', 'GRI', 'HAR',
   'ADR', 'CLR', 'BOS', 'REV', 'LEN', 'SIR', 'RRS', 'WER', 'PIC', 'ARM',
   'HEL', 'BYI', 'RIS', 'PUF', 'LEA', 'MET', 'SMA', 'AGO', 'HYP', 'MYO',
+  'YOD', 'YAS',
   ],
   'AmigaOS': ['AMG', 'MOR', 'ARO'],
   'BlackBerry': ['BLB', 'QNX'],

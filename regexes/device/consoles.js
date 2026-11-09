@@ -114,7 +114,7 @@ module.exports = {
     ]
   },
   "Valve Corporation": {
-    "regex": "Steam",
+    "regex": "SteamDeck|Valve Steam",
     "device": "console",
     "models": [
       {

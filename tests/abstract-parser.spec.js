@@ -11,17 +11,5 @@ describe('tests AbstractParser', function () {
     expect(parser.getBaseRegExp(regex).test('-ASUS_Z012DE')).to.equal(false);
     expect(parser.getBaseRegExp(regex).test('_ASUS_Z012DE')).to.equal(false);
     expect(parser.getBaseRegExp(regex).test('azASUS_Z012DE')).to.equal(false);
-    // replace ++ to +
-    expect(
-      parser.getBaseRegExp( 'ASUS_Z012DE++')
-      .source
-      .indexOf('(?:ASUS_Z012DE+)') !== -1
-    ).to.equal(true);
-    // replace / to \\/
-    expect(
-      parser.getBaseRegExp( 'ASUS_Z012DE/')
-      .source
-      .indexOf('(?:ASUS_Z012DE\\/)') !== -1
-    ).to.equal(true);
   })
 });

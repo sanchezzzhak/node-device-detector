@@ -204,6 +204,8 @@ module.exports = {
   'WPO': 'WoPhone',
   'XBX': 'Xbox',
   'XBT': 'Xubuntu',
+  'YAS': 'YaOS',
+  'YOD': 'YodaOS-Master',
   'YNS': 'YunOS',
   'ZEN': 'Zenwalk',
   'ZOR': 'ZorinOS',
