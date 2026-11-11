@@ -60,7 +60,7 @@ function normalizeRegExp(regex) {
 
 function getBaseRegExp(str) {
   const regex= '(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:' + str + ')';
-  return  new RegExp(regex, 'i');
+  return new RegExp(regex, 'i');
 }
 
 function matchReplace(template, matches) {
