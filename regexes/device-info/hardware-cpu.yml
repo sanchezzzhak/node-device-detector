@@ -1247,6 +1247,7 @@ cpu:
     type: ARM
     cores: 1
     clock_rate: 650
+    process: 65nm
     gpu_id: 48
   184:
     name: MediaTek MT8127
@@ -2785,3 +2786,11 @@ cpu:
     clock_rate: 0
     process: 28nm
     gpu_id: 0
+  407:
+    name: Qualcomm Snapdragon 205
+    code: MSM8905
+    type: ARM
+    cores: 2
+    clock_rate: 1100
+    process: 28nm
+    gpu_id: 6
