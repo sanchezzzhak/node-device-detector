@@ -7,79 +7,62 @@ const CLIENT_TYPES = require('./parser/const/client-type');
  * @param result
  * @returns {string|null}
  */
-const getDeviceType = (result) => {
-  return result.device && result.device.type ? result.device.type : null;
-};
-
+const getDeviceType = (result) => (result && result.device && result.device.type ? result.device.type : null);
 /**
  * get device type id for name
  * @param {string} name
  * @returns {number|null}
  */
-const getDeviceTypeIdForName = (name) => {
-  return name && DEVICE_TYPE_IDS[name] ? DEVICE_TYPE_IDS[name] : null;
-};
+const getDeviceTypeIdForName = (name) => (name && DEVICE_TYPE_IDS[name] ? DEVICE_TYPE_IDS[name] : null);
 
 /**
  * get device type id
  * @param result
  * @returns {number|null}
  */
-const getDeviceTypeId = (result) => {
-  return getDeviceTypeIdForName(getDeviceType(result))
-};
+const getDeviceTypeId = (result) => getDeviceTypeIdForName(getDeviceType(result));
+
 
 /**
  * get client type string
  * @param result
  * @returns {string|null}
  */
-const getClientType = (result) => {
-  return result.client && result.client.type ? result.client.type : null;
-};
+const getClientType = (result) => (result && result.client && result.client.type ? result.client.type : null);
+
 
 /**
  * is device type table
  * @param result
  * @returns {boolean}
  */
-const isTablet = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.TABLET;
-};
+const isTablet = (result) => getDeviceType(result) === DEVICE_TYPES.TABLET;
 /**
  * is device type phablet
  * @param result
  * @returns {boolean}
  */
-const isPhablet = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.PHABLET;
-};
+const isPhablet = (result) => getDeviceType(result) === DEVICE_TYPES.PHABLET;
 
 /**
  * is feature phone (push-button telephones)
  * @param result
  * @returns {boolean}
  */
-const isFeaturePhone = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.FEATURE_PHONE;
-};
+const isFeaturePhone = (result) => getDeviceType(result) === DEVICE_TYPES.FEATURE_PHONE;
 /**
  * is device type smartphone
  * @param result
  * @returns {boolean}
  */
-const isSmartphone = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.SMARTPHONE;
-};
+const isSmartphone = (result) => getDeviceType(result) === DEVICE_TYPES.SMARTPHONE;
 
 /**
  * is device type car
  * @param result
  * @returns {boolean}
  */
-const isCar = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.CAR_BROWSER;
-};
+const isCar = (result) => getDeviceType(result) === DEVICE_TYPES.CAR_BROWSER;
 
 /**
  * is device type mobile (feature phone, smartphone or phablet)
@@ -87,7 +70,12 @@ const isCar = (result) => {
  * @returns {boolean}
  */
 const isMobile = (result) => {
-  return isSmartphone(result) || isFeaturePhone(result) || isPhablet(result);
+  const type = getDeviceType(result);
+  return (
+    type === DEVICE_TYPES.SMARTPHONE ||
+    type === DEVICE_TYPES.FEATURE_PHONE ||
+    type === DEVICE_TYPES.PHABLET
+  );
 };
 
 /**
@@ -95,109 +83,86 @@ const isMobile = (result) => {
  * @param result
  * @returns {boolean}
  */
-const isDesktop = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.DESKTOP;
-};
+const isDesktop = (result) => getDeviceType(result) === DEVICE_TYPES.DESKTOP;
 
 /**
  * is os android
  * @param result
  * @returns {boolean}
  */
-const isAndroid = (result) => {
-  return result.os && result.os.family === 'Android';
-};
+const isAndroid = (result) => Boolean(result && result.os && result.os.family === 'Android');
 
 /**
  * is os ios
  * @param result
  * @returns {boolean}
  */
-const isIOS = (result) => {
-  return result.os && result.os.family === 'iOS';
-};
+const isIOS = (result) => Boolean(result && result.os && result.os.family === 'iOS');
 
 /**
  * is device type tv
  * @param result
  * @returns {boolean}
  */
-const isTv = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.TV;
-};
+const isTv = (result) => getDeviceType(result) === DEVICE_TYPES.TV;
 
 /**
  * is device type console (xBox, PlayStation, Nintendo etc)
  * @param result
  * @returns {boolean}
  */
-const isConsole = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.CONSOLE;
-};
+const isConsole = (result) => getDeviceType(result) === DEVICE_TYPES.CONSOLE;
 
 /**
  * is device type portable camera
  * @param result
  * @returns {boolean}
  */
-const isCamera = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.CAMERA;
-};
+const isCamera = (result) => getDeviceType(result) === DEVICE_TYPES.CAMERA;
 
 /**
  * is device type portable media player
  * @param result
  * @returns {boolean}
  */
-const isPortableMediaPlayer = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.PORTABLE_MEDIA_PLAYER;
-};
+const isPortableMediaPlayer = (result) => getDeviceType(result) === DEVICE_TYPES.PORTABLE_MEDIA_PLAYER;
 
 /**
  * is device type smart speaker (Alisa, Alexa, HomePod etc)
  * @param result
  * @returns {boolean}
  */
-const isSmartSpeaker = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.SMART_SPEAKER;
-};
-
+const isSmartSpeaker = (result) => getDeviceType(result) === DEVICE_TYPES.SMART_SPEAKER;
 /**
  * is device type peripheral (portable terminal, post terminal,
  * single board computers, portable projector)
  * @param result
  * @returns {boolean}
  */
-const isPeripheral = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.PERIPHERAL;
-};
+const isPeripheral = (result) => getDeviceType(result) === DEVICE_TYPES.PERIPHERAL;
 
 /**
  * is device type smart display (LCD panel or interactive panel)
  * @param result
  * @returns {boolean}
  */
-const isSmartDisplay = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.SMART_DISPLAY;
-};
+const isSmartDisplay = (result) => getDeviceType(result) === DEVICE_TYPES.SMART_DISPLAY;
 
 /**
  * is device type wearable (watches, headsets)
  * @param result
  * @returns {boolean}
  */
-const isWearable = (result) => {
-  return getDeviceType(result) === DEVICE_TYPES.WEARABLE;
-};
+const isWearable = (result) => getDeviceType(result) === DEVICE_TYPES.WEARABLE;
+
 
 /**
  * is client type browser
  * @param result
  * @returns {boolean}
  */
-const isBrowser = (result) => {
-  return getClientType(result) === CLIENT_TYPES.BROWSER;
-};
+const isBrowser = (result) => getClientType(result) === CLIENT_TYPES.BROWSER;
+
 
 /**
  * is client type app (any type of client other than browser)
@@ -205,7 +170,8 @@ const isBrowser = (result) => {
  * @returns {boolean}
  */
 const isApp = (result) => {
-  return getClientType(result) !== null && !isBrowser(result);
+  const type = getClientType(result);
+  return type !== null && type !== CLIENT_TYPES.BROWSER;
 };
 
 /**
@@ -213,9 +179,7 @@ const isApp = (result) => {
  * @param result
  * @returns {boolean}
  */
-const isDesktopApp = (result) => {
-  return isApp(result) && isDesktop(result);
-};
+const isDesktopApp = (result) => isApp(result) && isDesktop(result);
 
 /**
  * is client type app mobile
@@ -223,9 +187,15 @@ const isDesktopApp = (result) => {
  * @returns {boolean}
  */
 const isMobileApp = (result) => {
-  return isApp(result) && (isMobile(result) || isTablet(result));
+  if (!isApp(result)) return false;
+  const type = getDeviceType(result);
+  return (
+    type === DEVICE_TYPES.SMARTPHONE ||
+    type === DEVICE_TYPES.FEATURE_PHONE ||
+    type === DEVICE_TYPES.PHABLET ||
+    type === DEVICE_TYPES.TABLET
+  );
 };
-
 
 module.exports = {
   getDeviceType,
